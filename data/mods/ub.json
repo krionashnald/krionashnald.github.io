@@ -1,0 +1,636 @@
+{
+  "i": 62,
+  "t": "ub",
+  "sv": 1,
+  "pfx": "UB",
+  "ord": 10,
+  "c": "QUEST MODS BG2",
+  "n": "Unfinished Business",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "de": 3,
+    "es": 4,
+    "cs": 5,
+    "ru": 6,
+    "zh-cn": 7,
+    "it": 8
+  },
+  "no": "Similar to quest packs, but more involved in adding to, using, or altering vanilla content Unfinished Business BG2 , How to Fix Broken Minsc/Boo Quest (BeamDog). BG2’s version restores a quest where Boo is kidnapped (!) and Minsc and co must rescue him, for what is Minsc without Boo?Install Unfinished Business for BG2 after Imoen 4 Ever.",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "IR main conflicts with Extended ToB Item Descriptions. IR main (cn:0) No conflict.",
+      "myComps": "#20",
+      "theirComps": "#0",
+      "source": "eemodsetup",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "partial",
+      "reason": "New Ascension has separate and better Restored Bhaalspawn Powers component",
+      "myComps": "#19 Restored Bhaalspawn Powers / #24 Sarevok's Remorse",
+      "theirComps": "#4 Restored Bhaalspawn Powers / #2 Improved Sarevok-Player Interactions",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "Turnabout",
+      "withId": 110,
+      "severity": "partial",
+      "reason": "Sarevok's Remorse conflicts with Turnabout",
+      "myComps": "#24 Sarevok's Remorse",
+      "theirComps": "#0 Ascension: Turnabout",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "yoshimosremorse",
+      "withId": 224,
+      "severity": "partial",
+      "reason": "Sarevok's Remorse conflicts with Yoshimo",
+      "myComps": "#24 Sarevok's Remorse",
+      "theirComps": "#0 Yoshimo's Remorse",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#13 Yoshimo Original Portrait",
+      "theirComps": "#26 Yoshimo",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "YoshimoRomance",
+      "withId": 223,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#13 Yoshimo Original Portrait",
+      "theirComps": "#1-#5 Yoshimo Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "myComps": "#14 Anomen Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "myComps": "#14 Anomen Original Portrait",
+      "theirComps": "#12 Anomen",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "myComps": "#14 Anomen Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits (Coran, Safana, Faldorn, etc.). Last installed wins",
+      "myComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits (Coran, Safana, Faldorn, etc.). Last installed wins",
+      "myComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits. Last installed wins",
+      "myComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify BG1 NPC portraits. Last installed wins",
+      "myComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify Coran and non-joinable NPC portraits. Last installed wins",
+      "myComps": "#15 NPC Portrait Restorations",
+      "theirComps": "#155 Coran Portrait / #160 Non-Joinable NPC Portraits",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "anomen",
+          "portraits/ub/nanomen.png",
+          "bg2"
+        ],
+        [
+          "ub_suna",
+          "portraits/ub/suna.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ubsetup.tra file not found",
+      "severity": "info",
+      "category": "cosmetic",
+      "description": "External translation file missing. Harmless — falls back to bundled translations.",
+      "workaround": "Can be ignored safely.",
+      "user_action": "none"
+    }
+  ],
+  "kitAbilities": {
+    "20": {
+      "JUSTIFIER": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+10% Hide in Shadows and Move Silently"
+          },
+          {
+            "n": "Combat Bonus",
+            "type": "desc",
+            "desc": "+1 THAC0 and +1 speed factor per 10 levels (at 1, 11, 21, 31)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Cure Light Wounds",
+            "freq": "1/day",
+            "effects": "Innate Cure Light Wounds.",
+            "level": 8
+          },
+          {
+            "n": "Armour of Faith",
+            "freq": "1/day",
+            "effects": "Innate Armour of Faith.",
+            "level": 8
+          },
+          {
+            "n": "Remove Fear",
+            "freq": "1/day",
+            "effects": "Innate Remove Fear.",
+            "level": 10
+          },
+          {
+            "n": "Luck",
+            "freq": "1/day",
+            "effects": "Innate Luck.",
+            "level": 10
+          },
+          {
+            "n": "Draw Upon Holy Might",
+            "freq": "1/day",
+            "effects": "Innate Draw Upon Holy Might.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "alignment": "Lawful Good only",
+          "noSpells": true,
+          "items": "No Charm Animal. No ranger spellcasting (replaced by innate spells). No dual-classing."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No ranger spellcasting. Gains innate divine spells instead: CLW+Armour of Faith (lv8), Luck+Remove Fear (lv10), DUHM (lv12)."
+        },
+        "statBonus": {
+          "note": "Standard ranger stats. LG only."
+        }
+      }
+    },
+    "21": {
+      "FERALAN": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+10% Hide in Shadows and Move Silently"
+          },
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 5,
+            "value": 1,
+            "desc": "+1 AC per 5 levels"
+          },
+          {
+            "n": "CHA Penalty",
+            "type": "desc",
+            "desc": "-2 Charisma"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Feral Rage",
+            "freq": "1/day per 10 levels",
+            "effects": "+2 THAC0, +2 damage, -2 AC, +15 HP. Immune to charm, hold, fear, maze, imprisonment, stun, sleep. 60 sec. Winded after: -2 hit/damage, +2 AC.",
+            "level": 1
+          },
+          {
+            "n": "Call of the Wild",
+            "freq": "1/day",
+            "effects": "Summons scaling animal: Wild Dog → Wolf → Dire Wolf → Pack Leader. Lasts 3 rounds + 1/level.",
+            "level": 1
+          },
+          {
+            "n": "Charm Animal",
+            "freq": "extra uses at odd levels",
+            "effects": "Charm Animal (gains extra uses faster than base ranger).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "alignment": "NG or CG only (no Lawful)",
+          "items": "Cannot wear any armor. Many weapons limited to 1 pip. No large shields."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger druid spellcasting retained."
+        },
+        "statBonus": {
+          "cha": -2,
+          "note": "-2 Charisma (per research)"
+        }
+      }
+    }
+  },
+  "kits": {
+    "20": {
+      "new": [
+        [
+          "JUSTIFIER",
+          "ranger",
+          "Justifier",
+          "Ranger dedicated to opposing planar creatures. Extra-planar hunting abilities."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "FERALAN",
+          "ranger",
+          "Feralan",
+          "Wild ranger raised by animals. Feral combat style, enhanced animal empathy."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Pocket-Plane-Group/UnfinishedBusiness/releases",
+  "a": "Andyr, Cliffette, Barren, Icelus, Ghreyfain, SimDing0, DawidW, Nythrun, Kulyok; Angel Gryph",
+  "v": "v28",
+  "sum": "Restores 24 pieces of cut BG2/ToB content: quests, dialogues, encounters, and items that Bioware left unfinished or removed before shipping.",
+  "tags": [
+    "restore"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "UnfinishedBusiness"
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/UnfinishedBusiness/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "The Kidnapping of Boo by Cliffette",
+      "cn": 0,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "k": 0,
+      "no": "Restores Minsc quest where Boo is kidnapped. Safe, no known conflicts",
+      "tp2n": "The Kidnapping of Boo by Cliffette"
+    },
+    {
+      "n": "The Suna Seni/Valygar Relationship",
+      "cn": 1,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "no": "Restores Valygar/Suna Seni backstory dialogue. Safe",
+      "tp2n": "The Suna Seni/Valygar Relationship"
+    },
+    {
+      "n": "Kalah and What He Was Promised",
+      "cn": 2,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "no": "Restores how Kalah acquired powers, activated after circus tent quest. Safe",
+      "tp2n": "Kalah and What He Was Promised"
+    },
+    {
+      "n": "\"Cat and Mouse\" (Bodhi hunts you in Spellhold) by Ghreyfain",
+      "cn": 3,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "no": "Bodhi hunts you during Spellhold escape. Some find the chase annoying but no technical issues",
+      "tp2n": "\"Cat and Mouse\" (Bodhi hunts you in Spellhold) by Ghreyfain"
+    },
+    {
+      "n": "Gorje Hilldark and the Extended Illithium Quest",
+      "cn": 4,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "no": "Alternative illithium source through Gorje Hilldark. Safe",
+      "tp2n": "Gorje Hilldark and the Extended Illithium Quest"
+    },
+    {
+      "n": "The Pai'Na/Spider's Bane Quest",
+      "cn": 5,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "no": "Restores quest offering non-combat approach to Pai'Na. Pai'Na NPC mod has built-in crossmod support — install UB first, then Pai'Na NPC integrates Spider's Bane quest into companion recruitment.",
+      "tp2n": "The Pai'Na/Spider's Bane Quest"
+    },
+    {
+      "n": "Restored Crooked Crane Inn",
+      "cn": 6,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 6,
+      "wq": "exact",
+      "no": "Restores Crooked Crane Inn with gambler NPCs. Overlaps with MiH FR cn:9 Minor Restorations — choose one",
+      "tp2n": "Restored Crooked Crane Inn"
+    },
+    {
+      "n": "Restored Encounters",
+      "no": "Restores multiple encounters: Arkanis Gath, Bodhi, Slum muggers, Hell Hounds, Olive Slimes. Hell Hounds and Olive Slimes also done by MiH FR cn:9",
+      "cn": 7,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 7,
+      "wq": "exact",
+      "tp2n": "Restored Encounters"
+    },
+    {
+      "n": "Artemis Entreri in Bodhi's Lair",
+      "no": "Restores Artemis Entreri in Chapter 6 Bodhi fight. Also done by MiH FR cn:12 and Almateria's RP",
+      "cn": 8,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 8,
+      "wq": "exact",
+      "tp2n": "Artemis Entreri in Bodhi's Lair"
+    },
+    {
+      "n": "Corrected \"Xzar's Creations\"",
+      "no": "Replaces goblins in Prebek's lab with ghasts and flesh golem. Also done by MiH FR cn:9",
+      "cn": 9,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 9,
+      "wq": "exact",
+      "tp2n": "Corrected \"Xzar's Creations\""
+    },
+    {
+      "n": "Restored Hell Minions, by SimDing0",
+      "no": "Restores innate abilities to Irenicus's hell demons and fixes mislead image. Unique to UB",
+      "cn": 10,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "tp2n": "Restored Hell Minions, by SimDing0"
+    },
+    {
+      "n": "Gorf the Squisher Fix, by Gebhard Blucher",
+      "cn": 11,
+      "wf": "ub",
+      "wp": "ub\\setup-ub.tp2",
+      "wq": "verified",
+      "tp2n": "Gorf the Squisher Fix, by Gebhard Blucher"
+    },
+    {
+      "n": "Item Restorations",
+      "cn": 12,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "no": "Restores 8+ cut items: Gloves of Missile Snaring, Shazzellim, Wolfskin Bag, etc. Partial overlap with MiH FR cn:4 Item Restorations",
+      "tp2n": "Item Restorations"
+    },
+    {
+      "n": "Yoshimo's Original Portrait",
+      "no": "Replaces Yoshimo's EE portrait with pre-release original. Overridden by portrait packs",
+      "cn": 13,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 13,
+      "wq": "exact",
+      "tp2n": "Yoshimo's Original Portrait"
+    },
+    {
+      "n": "Anomen's Original Portrait",
+      "cn": 14,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 14,
+      "wq": "exact",
+      "no": "Restores Anomen's original younger portrait. Overridden by portrait packs",
+      "tp2n": "Anomen's Original Portrait"
+    },
+    {
+      "n": "NPC Portrait Restorations",
+      "no": "Restores portraits for Ryan Trawl, Coran, Safana, Faldorn, Garrick, Xzar, Tiax, Quayle, Suna Seni. Redundant with portrait packs",
+      "cn": 15,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 15,
+      "wq": "exact",
+      "tp2n": "NPC Portrait Restorations"
+    },
+    {
+      "n": "Corrected BAMs and Scripts",
+      "cn": 16,
+      "wf": "ub",
+      "wp": "ub\\setup-ub.tp2",
+      "wq": "verified",
+      "tp2n": "Corrected BAMs and Scripts"
+    },
+    {
+      "n": "Corrected Character Names and Biographies",
+      "cn": 17,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 17,
+      "wq": "exact",
+      "no": "Fixes creature names: Crazyface, Derrick, Malaaq, Hendron, Maheer, Hannah, Lellyn. Safe",
+      "tp2n": "Corrected Character Names and Biographies"
+    },
+    {
+      "n": "Restored Minor Dialogs",
+      "cn": 18,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 18,
+      "wq": "exact",
+      "no": "Restores minor dialogues: feral halfling, Anomen reactions, charm spell. Partial overlap with MiH FR cn:9",
+      "tp2n": "Restored Minor Dialogs"
+    },
+    {
+      "n": "Restored Bhaalspawn Powers, by David Gaider",
+      "cn": 19,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 19,
+      "wq": "exact",
+      "no": "Restores cut Bhaalspawn abilities from pocket plane challenges. Skip if using Ascension cn:4 (better version) or MiH FR cn:13",
+      "tp2n": "Restored Bhaalspawn Powers, by David Gaider"
+    },
+    {
+      "n": "Extended ToB Item Descriptions",
+      "no": "Extends truncated ToB item descriptions (11 items). Hard conflict with Item Revisions main component which rewrites these descriptions",
+      "cn": 20,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "tp2n": "Extended ToB Item Descriptions"
+    },
+    {
+      "n": "Throne of Bhaal Minor Restorations",
+      "no": "Fixes Sarevok soundset scripting, Quiver of Plenty icons, Cold Mistress encounter. Quiver part overlaps with IR but most content is unique",
+      "cn": 21,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 21,
+      "wq": "exact",
+      "tp2n": "Throne of Bhaal Minor Restorations"
+    },
+    {
+      "n": "Justifier Kit",
+      "cn": 22,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 22,
+      "wq": "exact",
+      "no": "Lawful Good ranger kit with enhanced combat and stealth. Safe, EE-compatible since v28",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Justifier Kit"
+    },
+    {
+      "n": "Feralan Kit",
+      "cn": 23,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 23,
+      "wq": "exact",
+      "no": "Feral ranger kit with AC bonuses, rage, animal summoning. Non-LG only. Safe",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Feralan Kit"
+    },
+    {
+      "n": "Sarevok's Remorse",
+      "no": "Sarevok dialogue about Tamoko and Yoshimo's deaths. Overlaps with Ascension cn:2, Turnabout, and Yoshimo's Remorse. Install UB before Ascension",
+      "cn": 24,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 24,
+      "wq": "exact",
+      "tp2n": "Sarevok's Remorse"
+    },
+    {
+      "n": "The Murder of Acton Balthis, by Kulyok",
+      "no": "Detective quest: Haer'Dalis arrested for murder. Turnabout/Yoshimo's Remorse may conflict with cn:24 but this component itself is independent",
+      "cn": 25,
+      "wf": "ub",
+      "wp": "ub\\SETUP-UB.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "tp2n": "The Murder of Acton Balthis, by Kulyok"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "paina",
+      "withId": 177,
+      "severity": "partial",
+      "reason": "NOT a real conflict — Pai'Na NPC has built-in UB crossmod (detects u!spbane.itm). UB adds Spider's Bane quest, Pai'Na NPC integrates it into companion recruitment at quest completion. Install UB before Pai'Na NPC. Complementary, not conflicting.",
+      "myComps": "#5 The Pai'Na/Spider's Bane Quest",
+      "theirComps": "#0 Pai'Na NPC",
+      "source": "tp2 analysis: Pai'Na NPC line 295 checks FILE_EXISTS_IN_GAME u!spbane.itm and compiles crossmod/UB.d",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "i": 148,
+  "t": "SkieCost",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 270,
+  "c": "NEW NPC MODS",
+  "n": "Skie: The Cost of One Girl's Soul",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2
+  },
+  "no": "Skie: The Cost of One Girl's Soul",
+  "ic": "Other Skie/Soultaker mods (Skie BG2 ReDone)",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Skie in BG2 WeiDU auto-skips the bg1npcsoa version when standalone is detected.",
+      "theirComps": "#8",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "skie",
+          "portraits/skiecost/l_sdski.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/skie-the-cost-of-one-girls-soul/",
+  "a": "Lava Del'Vortel",
+  "v": "v7.01",
+  "sum": "Continues Skie's story into BG2/ToB with a complex personal quest, romance option, and extensive dialogue about her experiences.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/skie-the-cost-of-one-girls-soul/",
+  "co": [
+    {
+      "n": "Skie: The Cost of One Girl's Soul - New quest for Baldur's Gate 2 EE",
+      "pi": "L#-SKIECOST-MAINQUEST",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wc": 0,
+      "wq": "known_folder",
+      "cn": 0,
+      "tp2n": "Skie: The Cost of One Girl's Soul - New quest for Baldur's Gate 2 EE"
+    },
+    {
+      "n": "Skie: The Cost of One Girl's Soul - Allow Skie to return as a joinable NPC",
+      "pi": "L#-SKIECOST-NPCSKIE",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wq": "known_folder",
+      "cn": 1,
+      "tp2n": "Skie: The Cost of One Girl's Soul - Allow Skie to return as a joinable NPC"
+    },
+    {
+      "n": "Skie: The Cost of One Girl's Soul - Add Player-Initiated Dialogue (PID) for Skie",
+      "pi": "L#-SKIECOST-NPCSKIEPIDS",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wq": "known_folder",
+      "cn": 2,
+      "tp2n": "Skie: The Cost of One Girl's Soul - Add Player-Initiated Dialogue (PID) for Skie"
+    },
+    {
+      "n": "Skie: The Cost of One Girl's Soul - The Return of Eddard Silvershield (quest & a joinable NPC)",
+      "pi": "L#-SKIECOST-NPCEDDARD",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wq": "known_folder",
+      "cn": 3,
+      "tp2n": "Skie: The Cost of One Girl's Soul - The Return of Eddard Silvershield (quest & a joinable NPC)"
+    },
+    {
+      "n": "Skie: The Cost of One Girl's Soul - Add Player-Initiated Dialogue (PID) for Eddard",
+      "pi": "L#-SKIECOST-NPCEDDARDPIDS",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wq": "known_folder",
+      "cn": 4,
+      "tp2n": "Skie: The Cost of One Girl's Soul - Add Player-Initiated Dialogue (PID) for Eddard"
+    },
+    {
+      "n": "Skie: The Cost of One Girl's Soul - Add brand new SoD-oriented items to BG2",
+      "pi": "L#-SKIECOST-SHOP",
+      "wf": "SkieCost",
+      "wp": "SkieCost\\SKIECOST.TP2",
+      "wq": "known_folder",
+      "cn": 5,
+      "tp2n": "Skie: The Cost of One Girl's Soul - Add brand new SoD-oriented items to BG2"
+    }
+  ]
+}

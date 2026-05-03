@@ -1,0 +1,1745 @@
+{
+  "i": 305,
+  "t": "SubtleD_Spell_Tweaks",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 190,
+  "c": "SPELL MODS",
+  "n": "SubtleD's Spell Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "REINSTALL CYCLES: SubtleD modifies many of the same spell files as SR, SCS, and others. WeiDU will trigger reinstall cascades of those earlier mods when SubtleD is installed after them — expected behavior, not errors, but significantly extends install time. SR-DEPENDENT COMPONENTS: cn:50, 1151, 1505, 1603, 1613, 2151, 2213, 2508, 2518, 2711, 2714 require SR (check dvsrv4here.mrk) — SKIPPED with no log entry if SR not installed. [Olvyn Spells placeholder] WARNING: ANY component adds outdated EEex functions for the new spells no matter what you install, causing massive slowdowns! Ranger/Paladin spell tweaks should go before ToF/SCS NPC customization, may not work with DoF or ToF. New spells and metamagic need to go after other spells and kits but also after SCS and before T&B.",
+  "_legacy_ids": [
+    361
+  ],
+  "conflicts": [
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Only one real overlap SD cn:2215 (Web applies Slow instead of Hold) and TnT cn:42 (Spider form ignores web) both modify spwi215/spdr201/spin683.spl. Complementary — SD changes the web effect type, TnT makes spider immune regardless. Install SD before TnT. SD cn:40/45/50 (Clones/Invisibility/Haste) SD cn:81 (Familiars) and cn:2108 (Petrification) have no TnT file overlap. TnT cn:51/52/54 (Project Image/Mislead/PnP ProtEvil)",
+      "myComps": "#2215 Web Slow (IN preset) #81 Familiars (IN, no overlap) #2108 Petrification (IN, no overlap) #40 Clones (NOT) #45 Invisibility (NOT) #50 Haste (NOT)",
+      "theirComps": "#42 Spider form (IN, overlaps cn:2215) #46 True Sight (IN, no overlap) #47 Otiluke (IN, no overlap) #48 Greater Command (IN, no overlap) #49 Non-Detection (IN, no overlap) #50 Chaos Shield (IN, no overlap) #55 Grease (IN, no overlap) #51 #52 #54 (NOT in preset)",
+      "orderOnly": true,
+      "source": "Both modify spwi215/spdr201/spin683; SD changes effect type, TnT adds immunity; complementary, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Some spell tweaks overlap with SCS spell changes. Install SubtleD after SCS.",
+      "orderOnly": true,
+      "myComps": "#21 #55 #2711",
+      "theirComps": "#1500 #1510 IWD spells #2000 #2010 #2050 #2060 #2070 Spell tweaks"
+    },
+    {
+      "with": "ZSTweaks",
+      "withId": 352,
+      "severity": "soft",
+      "reason": "Both modify overlapping spells (Slow Poison, Sunray, Luck, Goodberry, Wondrous Recall, Black Blade of Disaster). Use one or the other for each.",
+      "myComps": "#1212 #1707 #2209 #1207 #1611 #2915",
+      "theirComps": "#1537 #467 #145 #240 #464 #181"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "Several components require Spell Revisions to function correctly. These will have no effect without SR installed.",
+      "myComps": "#1151 #1202 #1609 #1614 #2151 #2201 #2213 #2215 #2451 #2508 #2514 #25231 #25232 #2714 #2808 #2811",
+      "theirComps": "#0"
+    },
+    {
+      "with": "wtpfamiliars",
+      "withId": 304,
+      "severity": "partial",
+      "reason": "WTP Familiars is incompatible with SubtleD's familiar components.",
+      "myComps": "#81 #82 #83",
+      "theirComps": "#0 WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "cn:2201 (Add Missile Avoidance to Blur) appends SNARE_ARROW to 7EYES.2DA, causing dw_talents cn:1500 APPEND_COL to fail with row count mismatch.",
+      "myComps": "#2201 Add Missile Avoidance to Blur",
+      "theirComps": "#1500 Include arcane spells from IWD",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "tweak",
+          "Reassigned spell school for balance"
+        ],
+        [
+          "SPWI308",
+          "tweak",
+          "Reassigned spell school for balance"
+        ]
+      ]
+    },
+    "8": {
+      "spells": [
+        [
+          "SPWI801",
+          "tweak",
+          "Now penetrates magic resistance"
+        ],
+        [
+          "SPWI901",
+          "tweak",
+          "Now penetrates magic resistance"
+        ],
+        [
+          "SPWI906",
+          "tweak",
+          "Now penetrates magic resistance"
+        ]
+      ]
+    },
+    "9": {
+      "spells": [
+        [
+          "SPWI921",
+          "tweak",
+          "Level drain now allows a saving throw"
+        ]
+      ]
+    },
+    "10": {
+      "spells": [
+        [
+          "SPWI921",
+          "tweak",
+          "Level drain is now temporary"
+        ]
+      ]
+    },
+    "11": {
+      "spells": [
+        [
+          "SPWI607",
+          "modify",
+          "Mislead clone reworked"
+        ],
+        [
+          "SPWI707",
+          "modify",
+          "Project Image reworked"
+        ],
+        [
+          "SPWI806",
+          "modify",
+          "Simulacrum reworked"
+        ]
+      ]
+    },
+    "12": {
+      "spells": [
+        [
+          "SPWI206",
+          "modify",
+          "Invisibility mechanics revised"
+        ],
+        [
+          "SPWI405",
+          "modify",
+          "Improved Invisibility revised"
+        ],
+        [
+          "SPWI606",
+          "modify",
+          "True Sight revised"
+        ],
+        [
+          "SPPR513",
+          "modify",
+          "True Seeing (priest) revised"
+        ]
+      ]
+    },
+    "13": {
+      "spells": [
+        [
+          "SPWI305",
+          "tweak",
+          "Haste and Slow now properly cancel each other"
+        ],
+        [
+          "SPWI312",
+          "tweak",
+          "Slow and Haste now properly cancel each other"
+        ]
+      ]
+    },
+    "14": {
+      "spells": [
+        [
+          "SPPR104",
+          "tweak",
+          "Cure spells now bypass Spell Deflection"
+        ],
+        [
+          "SPPR304",
+          "tweak",
+          "Cure spells now bypass Spell Deflection"
+        ],
+        [
+          "SPPR405",
+          "tweak",
+          "Cure spells now bypass Spell Deflection"
+        ],
+        [
+          "SPPR503",
+          "tweak",
+          "Cure spells now bypass Spell Deflection"
+        ],
+        [
+          "SPPR611",
+          "tweak",
+          "Heal now bypasses Spell Deflection"
+        ]
+      ]
+    },
+    "15": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSDC01",
+          "wizard",
+          0,
+          "Evocation",
+          "Fire Bolt (Cantrip)",
+          "Minor fire attack, at-will."
+        ],
+        [
+          "YOURSDC02",
+          "wizard",
+          0,
+          "Evocation",
+          "Ray of Frost (Cantrip)",
+          "Minor cold attack, at-will."
+        ],
+        [
+          "YOURSDC03",
+          "wizard",
+          0,
+          "Alteration",
+          "Mage Hand (Cantrip)",
+          "Minor telekinesis, at-will."
+        ],
+        [
+          "YOURSDC04",
+          "wizard",
+          0,
+          "Abjuration",
+          "Resistance (Cantrip)",
+          "Minor save bonus, at-will."
+        ],
+        [
+          "YOURSDC05",
+          "wizard",
+          0,
+          "Divination",
+          "Detect Magic (Cantrip)",
+          "Detect magical auras, at-will."
+        ],
+        [
+          "YOURSDC06",
+          "priest",
+          0,
+          "Evocation",
+          "Sacred Flame (Cantrip)",
+          "Minor divine fire attack, at-will.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURSDC07",
+          "priest",
+          0,
+          "Abjuration",
+          "Guidance (Cantrip)",
+          "Minor attack bonus, at-will.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURSDC08",
+          "priest",
+          0,
+          "Necromancy",
+          "Spare the Dying (Cantrip)",
+          "Stabilize dying creature, at-will.",
+          [
+            "healing"
+          ]
+        ]
+      ]
+    },
+    "16": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSDC01",
+          "wizard",
+          0,
+          "Evocation",
+          "Fire Bolt (Cantrip)",
+          "Minor fire attack, at-will."
+        ],
+        [
+          "YOURSDC02",
+          "wizard",
+          0,
+          "Evocation",
+          "Ray of Frost (Cantrip)",
+          "Minor cold attack, at-will."
+        ],
+        [
+          "YOURSDC03",
+          "wizard",
+          0,
+          "Alteration",
+          "Mage Hand (Cantrip)",
+          "Minor telekinesis, at-will."
+        ],
+        [
+          "YOURSDC04",
+          "wizard",
+          0,
+          "Abjuration",
+          "Resistance (Cantrip)",
+          "Minor save bonus, at-will."
+        ],
+        [
+          "YOURSDC05",
+          "wizard",
+          0,
+          "Divination",
+          "Detect Magic (Cantrip)",
+          "Detect magical auras, at-will."
+        ],
+        [
+          "YOURSDC06",
+          "priest",
+          0,
+          "Evocation",
+          "Sacred Flame (Cantrip)",
+          "Minor divine fire attack, at-will.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURSDC07",
+          "priest",
+          0,
+          "Abjuration",
+          "Guidance (Cantrip)",
+          "Minor attack bonus, at-will.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURSDC08",
+          "priest",
+          0,
+          "Necromancy",
+          "Spare the Dying (Cantrip)",
+          "Stabilize dying creature, at-will.",
+          [
+            "healing"
+          ]
+        ]
+      ]
+    },
+    "17": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSDC01",
+          "wizard",
+          0,
+          "Evocation",
+          "Fire Bolt (Cantrip)",
+          "Minor fire attack, at-will."
+        ],
+        [
+          "YOURSDC02",
+          "wizard",
+          0,
+          "Evocation",
+          "Ray of Frost (Cantrip)",
+          "Minor cold attack, at-will."
+        ],
+        [
+          "YOURSDC03",
+          "wizard",
+          0,
+          "Alteration",
+          "Mage Hand (Cantrip)",
+          "Minor telekinesis, at-will."
+        ],
+        [
+          "YOURSDC04",
+          "wizard",
+          0,
+          "Abjuration",
+          "Resistance (Cantrip)",
+          "Minor save bonus, at-will."
+        ],
+        [
+          "YOURSDC05",
+          "wizard",
+          0,
+          "Divination",
+          "Detect Magic (Cantrip)",
+          "Detect magical auras, at-will."
+        ],
+        [
+          "YOURSDC06",
+          "priest",
+          0,
+          "Evocation",
+          "Sacred Flame (Cantrip)",
+          "Minor divine fire attack, at-will.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURSDC07",
+          "priest",
+          0,
+          "Abjuration",
+          "Guidance (Cantrip)",
+          "Minor attack bonus, at-will.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURSDC08",
+          "priest",
+          0,
+          "Necromancy",
+          "Spare the Dying (Cantrip)",
+          "Stabilize dying creature, at-will.",
+          [
+            "healing"
+          ]
+        ]
+      ]
+    },
+    "21": {
+      "spells": [
+        [
+          "SPPR106",
+          "tweak",
+          "Faerie Fire improved"
+        ]
+      ]
+    },
+    "22": {
+      "spells": [
+        [
+          "SPPR113",
+          "tweak",
+          "Reduced damage but improved blindness (SR version)"
+        ]
+      ]
+    },
+    "23": {
+      "spells": [
+        [
+          "SPPR202",
+          "tweak",
+          "Barkskin now blocks one attack per round"
+        ]
+      ]
+    },
+    "24": {
+      "spells": [
+        [
+          "SPPR208",
+          "tweak",
+          "Goodberry becomes out-of-combat mass regeneration"
+        ]
+      ]
+    },
+    "25": {
+      "spells": [
+        [
+          "SPPR213",
+          "tweak",
+          "Slow Poison mechanics tweaked"
+        ]
+      ]
+    },
+    "26": {
+      "spells": [
+        [
+          "SPPR217",
+          "tweak",
+          "Improved damage and damage type"
+        ]
+      ]
+    },
+    "27": {
+      "spells": [
+        [
+          "SPPR322",
+          "tweak",
+          "Improved casting time"
+        ]
+      ]
+    },
+    "28": {
+      "spells": [
+        [
+          "SPPR323",
+          "tweak",
+          "Added Faerie Fire and Slow on hit"
+        ]
+      ]
+    },
+    "29": {
+      "spells": [
+        [
+          "SPPR414",
+          "modify",
+          "Changed to Remove Afflictions: broader cure"
+        ]
+      ]
+    },
+    "30": {
+      "spells": [
+        [
+          "SPPR425",
+          "tweak",
+          "Now party-friendly"
+        ]
+      ]
+    },
+    "31": {
+      "spells": [
+        [
+          "SPPR513",
+          "tweak",
+          "Now affects entire party"
+        ]
+      ]
+    },
+    "32": {
+      "spells": [
+        [
+          "SPPR603",
+          "tweak",
+          "Now dispellable by Breach"
+        ]
+      ]
+    },
+    "33": {
+      "spells": [
+        [
+          "SPPR608",
+          "tweak",
+          "Now bypasses magic resistance"
+        ]
+      ]
+    },
+    "34": {
+      "spells": [
+        [
+          "SPPR614",
+          "modify",
+          "Now restores all 1st and 2nd level spells"
+        ]
+      ]
+    },
+    "35": {
+      "spells": [
+        [
+          "SPPR612",
+          "tweak",
+          "Now blocks 1 attack per 3 seconds"
+        ]
+      ]
+    },
+    "36": {
+      "spells": [
+        [
+          "SPPR613",
+          "tweak",
+          "Easier to throw"
+        ]
+      ]
+    },
+    "37": {
+      "spells": [
+        [
+          "SPPR713",
+          "tweak",
+          "Now bypasses magic resistance"
+        ]
+      ]
+    },
+    "38": {
+      "spells": [
+        [
+          "SPPR708",
+          "tweak",
+          "Added Slow effect"
+        ]
+      ]
+    },
+    "39": {
+      "spells": [
+        [
+          "SPWI105",
+          "tweak",
+          "Added 1-round blindness effect"
+        ]
+      ]
+    },
+    "40": {
+      "spells": [
+        [
+          "SPWI108",
+          "modify",
+          "Changed to Mirrored Eyes: broader protection"
+        ]
+      ]
+    },
+    "41": {
+      "spells": [
+        [
+          "SPWI109",
+          "tweak",
+          "Now scales with caster level"
+        ]
+      ]
+    },
+    "42": {
+      "spells": [
+        [
+          "SPWI116",
+          "tweak",
+          "Sleeping targets now wake when hit"
+        ]
+      ]
+    },
+    "43": {
+      "spells": [
+        [
+          "SPWI120",
+          "modify",
+          "Changed to Chameleon (SR version)"
+        ]
+      ]
+    },
+    "44": {
+      "spells": [
+        [
+          "SPWI201",
+          "tweak",
+          "Added missile avoidance"
+        ]
+      ]
+    },
+    "45": {
+      "spells": [
+        [
+          "SPWI218",
+          "tweak",
+          "Now affects whole party"
+        ]
+      ]
+    },
+    "46": {
+      "spells": [
+        [
+          "SPWI212",
+          "modify",
+          "Moved to 3rd level"
+        ]
+      ]
+    },
+    "47": {
+      "spells": [
+        [
+          "SPWI213",
+          "tweak",
+          "Added lingering effects (SR version)"
+        ]
+      ]
+    },
+    "48": {
+      "spells": [
+        [
+          "SPWI214",
+          "modify",
+          "Web now Slows instead of Holds"
+        ]
+      ]
+    },
+    "49": {
+      "spells": [
+        [
+          "SPWI215",
+          "modify",
+          "Changed to Melf's Fiery Missiles"
+        ]
+      ]
+    },
+    "50": {
+      "spells": [
+        [
+          "SPWI222",
+          "tweak",
+          "Improved Glitterdust effects"
+        ]
+      ]
+    },
+    "51": {
+      "spells": [
+        [
+          "SPWI215",
+          "tweak",
+          "Added deafening effect on hit to Decastave"
+        ]
+      ]
+    },
+    "52": {
+      "spells": [
+        [
+          "SPWI321",
+          "modify",
+          "Moved to 1st level"
+        ]
+      ]
+    },
+    "53": {
+      "spells": [
+        [
+          "SPWI717",
+          "tweak",
+          "Control Undead now bypasses magic resistance"
+        ]
+      ]
+    },
+    "54": {
+      "spells": [
+        [
+          "SPWI303",
+          "tweak",
+          "Increased range of Icelance"
+        ]
+      ]
+    },
+    "55": {
+      "spells": [
+        [
+          "SPWI412",
+          "tweak",
+          "Target can now use inventory screen"
+        ]
+      ]
+    },
+    "56": {
+      "spells": [
+        [
+          "SPWI403",
+          "tweak",
+          "Fire Shield Blue now dispellable by Breach"
+        ],
+        [
+          "SPWI417",
+          "tweak",
+          "Fire Shield Red now dispellable by Breach"
+        ]
+      ]
+    },
+    "57": {
+      "spells": [
+        [
+          "SPWI504",
+          "tweak",
+          "Shadow Monster summons made more illusionary"
+        ]
+      ]
+    },
+    "58": {
+      "spells": [
+        [
+          "SPWI519",
+          "tweak",
+          "Improved function (SR version)"
+        ]
+      ]
+    },
+    "59": {
+      "spells": [
+        [
+          "SPWI515",
+          "modify",
+          "Now has an area of effect"
+        ]
+      ]
+    },
+    "60": {
+      "spells": [
+        [
+          "SPWI516",
+          "tweak",
+          "Changed damage type and spell school"
+        ]
+      ]
+    },
+    "61": {
+      "spells": [
+        [
+          "SPWI519",
+          "modify",
+          "Changed to Missile Storm"
+        ]
+      ]
+    },
+    "62": {
+      "spells": [
+        [
+          "SPWI519",
+          "modify",
+          "Changed to Scorcher Storm"
+        ]
+      ]
+    },
+    "63": {
+      "spells": [
+        [
+          "SPWI711",
+          "modify",
+          "Changed to Iron Skin"
+        ]
+      ]
+    },
+    "64": {
+      "spells": [
+        [
+          "SPWI508",
+          "tweak",
+          "Adjusted Chaos effects"
+        ]
+      ]
+    },
+    "65": {
+      "spells": [
+        [
+          "SPWI713",
+          "modify",
+          "Changed Prismatic Spray effects"
+        ]
+      ]
+    },
+    "66": {
+      "spells": [
+        [
+          "SPWI813",
+          "tweak",
+          "Moment of Prescience now not breachable"
+        ]
+      ]
+    },
+    "67": {
+      "spells": [
+        [
+          "SPWI811",
+          "modify",
+          "Symbol Fear moved to 7th level"
+        ]
+      ]
+    },
+    "68": {
+      "spells": [
+        [
+          "SPWI912",
+          "modify",
+          "Shapechange moved to 8th level"
+        ]
+      ]
+    },
+    "69": {
+      "spells": [
+        [
+          "SPWI913",
+          "modify",
+          "Black Blade of Disaster moved to 8th level"
+        ]
+      ]
+    },
+    "70": {
+      "spells": [
+        [
+          "SPWI921",
+          "modify",
+          "Added instant death effect"
+        ]
+      ]
+    },
+    "71": {
+      "spells": [
+        [
+          "SPWI922",
+          "modify",
+          "Changed to Summon Noble Genie"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "Make Identify Scale.*UI|SubtleD.*Identify",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Make Identify Scale with Level does not work with any UI mods (LeUI, Infinity UI++, Dragonspear UI++).",
+      "workaround": "Remove this component if using any UI mod.",
+      "user_action": "check-docs"
+    }
+  ],
+  "u": "https://github.com/subtledoctor/SubtleD_Spell_Tweaks/releases",
+  "a": "Subtledoctor",
+  "v": "2.9.1",
+  "sum": "71 individually selectable tweaks to spell behavior: casting times, durations, damage values, and saving throws across the entire spell list.",
+  "tags": [
+    "class",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "SubtleD_Spell_Tweaks"
+  },
+  "dl": "https://github.com/subtledoctor/SubtleD_Spell_Tweaks/releases",
+  "au": "subtledoctor",
+  "co": [
+    {
+      "n": "Rebalanced Spell Schools",
+      "tp2n": "Rebalanced Spell Schools",
+      "cn": 10,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 10,
+      "wq": "exact"
+    },
+    {
+      "n": "Revised Schools: No Opposition Schools",
+      "tp2n": "No Opposition Schools",
+      "no": "By default makes symbols divination; SCS makes them enchantment. Configurable via sdst_settings.ini.",
+      "cn": 21,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 21,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: IWD-style Opposition Schools",
+      "tp2n": "IWD-style Opposition Schools",
+      "cn": 22,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 22,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: IWD-style, Low-Level Spells Allowed",
+      "tp2n": "IWD-style Opposition Schools, Low-Level Spells Allowed",
+      "cn": 23,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 23,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: BG2-style Opposition Schools",
+      "tp2n": "BG2-style Opposition Schools",
+      "cn": 24,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 24,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: BG2-style, Low-Level Spells Allowed",
+      "tp2n": "BG2-style Opposition Schools, Low-Level Spells Allowed",
+      "cn": 25,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 25,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: PnP Opposition Schools",
+      "tp2n": "PnP Opposition Schools",
+      "cn": 26,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 26,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "Revised Schools: PnP, Low-Level Spells Allowed",
+      "tp2n": "PnP Opposition Schools, Low-Level Spells Allowed",
+      "cn": 27,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 27,
+      "wq": "exact",
+      "g": "revised_schools",
+      "scn": "Revised Arcane Opposition Schools"
+    },
+    {
+      "n": "High-Level Spells Penetrate Magic Resistance",
+      "tp2n": "High-Level Spells Penetrate Magic Resistance",
+      "cn": 30,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 30,
+      "wq": "exact",
+      "no": "High-level spells (7th+) ignore target's magic resistance."
+    },
+    {
+      "n": "Level Drain: Add a Saving Throw Against Level Drain Effects",
+      "tp2n": "Add a Saving Throw Against Level Drain",
+      "no": "REMOVED from tp2 — cn:35 does not exist (tp2 jumps from cn:30 to cn:36). Component was removed or renumbered in a SubtleD update. Do NOT select.",
+      "cn": 36,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 35,
+      "wq": "exact",
+      "g": "level_drain",
+      "scn": "Level Drain Effects"
+    },
+    {
+      "n": "Level Drain: Make Level Drain Temporary",
+      "tp2n": "Make Level Drain Temporary",
+      "cn": 37,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 37,
+      "wq": "exact",
+      "g": "level_drain",
+      "scn": "Level Drain Effects"
+    },
+    {
+      "n": "Revised Illusionary Clones",
+      "tp2n": "Revised Illusionary Clones",
+      "cn": 40,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 40,
+      "wq": "exact",
+      "sp": 1
+    },
+    {
+      "n": "Revised Invisibility and True Seeing",
+      "tp2n": "Revised Invisibility and True Seeing",
+      "cn": 45,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 45,
+      "wq": "exact"
+    },
+    {
+      "n": "Make Haste and Slow Properly Cancel Each Other",
+      "tp2n": "Make Haste and Slow Properly Cancel Each Other",
+      "cn": 50,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 50,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Cure Spells Bypass Spell Deflection",
+      "tp2n": "Cure Spells Bypass Spell Deflection",
+      "no": "Cure/heal/restoration spells bypass Spell Deflection by setting power level to 0. Unique to this mod — SCS does NOT do this",
+      "cn": 55,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 55,
+      "wq": "exact"
+    },
+    {
+      "n": "Cantrips: Innate Cantrips",
+      "tp2n": "Innate Cantrips",
+      "no": "Innate can be swapped in innate skills. Will only benefit the player, not NPCs.",
+      "cn": 61,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 61,
+      "wq": "exact",
+      "g": "cantrips",
+      "scn": "Cantrips",
+      "sp": 10
+    },
+    {
+      "n": "Cantrips: Level One Cantrips",
+      "tp2n": "Level One Cantrips",
+      "ss": 2,
+      "cn": 62,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 62,
+      "wq": "exact",
+      "g": "cantrips",
+      "scn": "Cantrips",
+      "sp": 10,
+      "no": "INSTALLS WITH WARNINGS: B3Contingency/B3Identify UI.MENU patches fail to find expected patterns (showMageMemorizationFlash, Infinity_ActivateInventory). Another mod already changed UI.MENU. Cantrips may not display correctly in spellbook UI.",
+      "ki": [
+        {
+          "pattern": "WARNING UI.MENU - pattern not found",
+          "severity": "info",
+          "description": "'Cantrips: Level One Cantrips' emits 2-3 'pattern not found' warnings while probing UI.MENU before successfully patching on a later attempt. The component DOES install — these are not errors."
+        },
+        {
+          "pattern": "[RH#ADR25.CRE].*Patching Failed.*Invalid_argument.*String.sub|ERROR Installing [Cantrips -> Level One Cantrips]",
+          "severity": "error",
+          "description": "'Cantrips: Level One Cantrips' fails when Rogue Rebalancing is installed first: SubtleD tries to patch RH#ADR25.CRE (RR's creature) but hits String.sub Invalid_argument because the creature layout differs from expectation. Triggers full rollback of this component.",
+          "workaround": "Install SubtleD BEFORE Rogue Rebalancing, or skip this Cantrips component when using RR."
+        }
+      ]
+    },
+    {
+      "n": "Cantrips: Cantrip Wands",
+      "tp2n": "Cantrip Wands",
+      "cn": 63,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 63,
+      "wq": "exact",
+      "g": "cantrips",
+      "scn": "Cantrips",
+      "sp": 10
+    },
+    {
+      "n": "Choose-Your-Own Familiar",
+      "tp2n": "Choose-Your-Own Familiar",
+      "no": "Choose-Your-Own Familiar. Conflicts with WTP Familiars mod. Don't mix with other familiar mods",
+      "cn": 81,
+      "ss": 2,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 81,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "splstates": 19
+    },
+    {
+      "n": "Pooky's Mod: Imbue Familiars",
+      "tp2n": "Pooky's Mod: Imbue Familiars",
+      "ss": 2,
+      "cn": 82,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 82,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Give Innate Cantrips to Familiars",
+      "tp2n": "Give Innate Cantrips to Familiars",
+      "ss": 1,
+      "cn": 83,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 83,
+      "wq": "exact"
+    },
+    {
+      "n": "Improve Faerie Fire",
+      "tp2n": "Improve Faerie Fire",
+      "cn": 1152,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1152,
+      "wq": "exact",
+      "no": "Faerie Fire grants attack bonus against affected targets."
+    },
+    {
+      "n": "Reduce Damage but Improve Blindness in SR's Sunscorch",
+      "tp2n": "Reduce Damage but Improve Blindness in SR's Sunscorch",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk. Not needed on ToF/SCS's Faerie Fire.",
+      "cn": 1151,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1151,
+      "wq": "exact"
+    },
+    {
+      "n": "Make Barkskin Block One Attack Each Round",
+      "tp2n": "Make Barkskin Block One Attack Each Round",
+      "cn": 1202,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1202,
+      "wq": "exact",
+      "no": "Barkskin blocks one physical attack per round in addition to AC bonus."
+    },
+    {
+      "n": "Make Goodberry an Out-of- Combat Mass Regeneration",
+      "tp2n": "Make Goodberry an Out-of-Combat Mass Regeneration",
+      "no": "Regenerating minor Stoneskin for 2 turns. Make sure you really want it.",
+      "cn": 1207,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1207,
+      "wq": "exact"
+    },
+    {
+      "n": "Tweak Slow Poison",
+      "tp2n": "Tweak Slow Poison",
+      "no": "Incompatible with ZSTweaks' Slow Poison component.",
+      "cn": 1212,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1212,
+      "wq": "exact"
+    },
+    {
+      "n": "Improve Damage and Damage Type of Alicorn Lance",
+      "tp2n": "Improve Damage and Damage Type of Alicorn Lance",
+      "cn": 1251,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1251,
+      "wq": "exact",
+      "no": "Improves Alicorn Lance damage and targeting."
+    },
+    {
+      "n": "Improve Casting Time of Exaltation and Spiritual Clarity",
+      "tp2n": "Improve Casting Time of Exaltation and Spiritual Clarity",
+      "cn": 1323,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1323,
+      "wq": "exact",
+      "no": "Exaltation and Spiritual Clarity have faster casting time."
+    },
+    {
+      "n": "Add Faerie Fire and Slow On Hit to Moonblade",
+      "tp2n": "Add Faerie Fire and Slow On Hit to Moonblade",
+      "cn": 1351,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1351,
+      "wq": "exact",
+      "no": "Improves Moonblade with better scaling and effects."
+    },
+    {
+      "n": "Change Neutralize Poison into 'Remove Afflictions'",
+      "tp2n": "Change Neutralize Poison into 'Remove Afflictions'",
+      "cn": 1404,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1404,
+      "wq": "exact",
+      "no": "Neutralize Poison becomes 'Remove Afflictions' which also cures disease and blindness."
+    },
+    {
+      "n": "Make Smashing Wave Party- Friendly",
+      "tp2n": "Make Smashing Wave Party-Friendly",
+      "cn": 1451,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1451,
+      "wq": "exact",
+      "no": "Improves Smashing Wave with better damage and area."
+    },
+    {
+      "n": "Make True Seeing Party-Wide",
+      "tp2n": "Make True Seeing Party-Wide",
+      "cn": 1505,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1505,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if neither SR nor QDTNB spelltweaks installed — requires dvsrv4here.mrk or qdtnb_spelltweaks_invis.qd."
+    },
+    {
+      "n": "Set Blade Barrier to be Breachable",
+      "tp2n": "Set Blade Barrier to be Breachable",
+      "cn": 1603,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1603,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Make False Dawn Bypass Magic Resistance",
+      "tp2n": "Make False Dawn Bypass Magic Resistance",
+      "cn": 1609,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1609,
+      "wq": "exact",
+      "no": "INSTALLS WITH WARNINGS (non-fatal): 'no effects altered on sppr609.spl' — Spell Revisions already restructured False Dawn. The MR bypass patch has no matching effects to alter."
+    },
+    {
+      "n": "Make Wondrous Recall Restore all 1st- and 2nd-level Spells",
+      "tp2n": "Make Wondrous Recall Restore all 1st- and 2nd-level Spells",
+      "cn": 1611,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1611,
+      "wq": "exact",
+      "no": ""
+    },
+    {
+      "n": "Make Physical Mirror Block 1 Attack Per Three Seconds",
+      "tp2n": "Make Physical Mirror Block 1 Attack Per Three Seconds",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk. Less attractive with iiSpellSystemAdjustments. Worse for druids.",
+      "cn": 1613,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1613,
+      "wq": "exact"
+    },
+    {
+      "n": "Make Sol's Searing Orb Easier to Throw",
+      "tp2n": "Make Sol's Searing Orb Easier to Throw",
+      "cn": 1614,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1614,
+      "wq": "exact",
+      "no": "Sol's Searing Orb has faster throwing speed and better range."
+    },
+    {
+      "n": "Make Sunray Bypass Magic Resistance",
+      "tp2n": "Make Sunray Bypass Magic Resistance",
+      "cn": 1707,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1707,
+      "wq": "exact",
+      "no": "INSTALLS WITH WARNINGS (non-fatal): 'no effects altered on sppr707.spl' — Spell Revisions already restructured Sunray. Same issue as False Dawn."
+    },
+    {
+      "n": "Add Slow Effect to Holy Word",
+      "tp2n": "Add Slow Effect to Holy Word",
+      "no": "Similar to ZSTweaks' Sunray component. Use one or the other.",
+      "cn": 1710,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 1710,
+      "wq": "exact"
+    },
+    {
+      "n": "Add 1-Round Blindness Effect to Color Spray",
+      "tp2n": "Add 1-Round Blindness Effect to Color Spray",
+      "cn": 2105,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2105,
+      "wq": "exact",
+      "no": "Color Spray adds a 1-round blindness effect on affected creatures."
+    },
+    {
+      "n": "Change Protection from Petrification into 'Mirrored Eyes'",
+      "tp2n": "Change Protection from Petrification into 'Mirrored Eyes'",
+      "cn": 2108,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2108,
+      "wq": "exact",
+      "no": "Protection from Petrification becomes 'Mirrored Eyes' with broader protection."
+    },
+    {
+      "n": "Make Identify Scale with Level",
+      "tp2n": "Make Identify Scale with Level",
+      "cn": 2110,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2110,
+      "wq": "exact",
+      "no": "Makes Identify scale with caster level. Modifies UI.MENU — incompatible with UI overhauls (LeUI, DragonspearUI++) and possibly partial UI tweaks"
+    },
+    {
+      "n": "Allow Targets of Sleep to Wake on Hit",
+      "tp2n": "Allow Targets of Sleep to Wake on Hit",
+      "no": "Sleeping targets wake when hit. No UI compatibility issues",
+      "cn": 2116,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2116,
+      "wq": "exact"
+    },
+    {
+      "n": "Change SR Expeditious Retreat into Chameleon",
+      "tp2n": "Change SR Expeditious Retreat into Chameleon",
+      "cn": 2151,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2151,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Add Missile Avoidance to Blur",
+      "tp2n": "Add Missile Avoidance to Blur",
+      "cn": 2201,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2201,
+      "wq": "exact",
+      "no": "Blur adds missile avoidance (chance to avoid ranged attacks entirely)."
+    },
+    {
+      "n": "Make Luck Affect Whole Party",
+      "tp2n": "Make Luck Affect Whole Party",
+      "ss": 1,
+      "cn": 2209,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2209,
+      "wq": "exact",
+      "no": "Luck spell affects the whole party instead of just one target."
+    },
+    {
+      "n": "Move Mirror Image to 3rd Level",
+      "tp2n": "Move Mirror Image to 3rd Level",
+      "cn": 2212,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2212,
+      "wq": "exact",
+      "sp": 1,
+      "no": "Mirror Image moved from 2nd to 3rd spell level for balance."
+    },
+    {
+      "n": "Add Lingering Effects to SR's Stinking Cloud",
+      "tp2n": "Add Lingering Effects to SR's Stinking Cloud",
+      "cn": 2213,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2213,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Make Web Slow Instead of Hold",
+      "tp2n": "Make Web Slow Instead of Hold",
+      "cn": 2215,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2215,
+      "wq": "exact",
+      "no": "Web slows instead of holding targets. Less powerful but still useful."
+    },
+    {
+      "n": "Change Agannazar's Scorcher to Melf's Fiery Missiles",
+      "tp2n": "Change Agannazar's Scorcher to Melf's Fiery Missiles",
+      "cn": 2217,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2217,
+      "wq": "exact",
+      "no": "Agannazar's Scorcher replaced with Melf's Fiery Missiles (multiple projectiles)."
+    },
+    {
+      "n": "Improve Glitterdust",
+      "tp2n": "Improve Glitterdust",
+      "cn": 2224,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2224,
+      "wq": "exact",
+      "no": "Glitterdust improved with better blindness effect and anti-invisibility."
+    },
+    {
+      "n": "Add Deafening Effect On Hit to Decastave",
+      "tp2n": "Add Deafening Effect On Hit to Decastave",
+      "cn": 2251,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2251,
+      "wq": "exact",
+      "no": "Improves Decastave with better damage. Requires SR."
+    },
+    {
+      "n": "Move Spell Thrust to 1st Level",
+      "tp2n": "Move Spell Thrust to 1st Level",
+      "cn": 2321,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2321,
+      "wq": "exact",
+      "sp": 1,
+      "no": "Spell Thrust moved from 3rd to 1st spell level for earlier access."
+    },
+    {
+      "n": "Make Hold Undead and Control Undead Bypass MR",
+      "tp2n": "Make Hold Undead and Control Undead Bypass MR",
+      "no": "Change the spell levele in sdst_settings.ini",
+      "cn": 2324,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2324,
+      "wq": "exact"
+    },
+    {
+      "n": "Increase Range of Icelance",
+      "tp2n": "Increase Range of Icelance",
+      "cn": 2352,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2352,
+      "wq": "exact",
+      "no": "Improves Icelance with better damage and effects."
+    },
+    {
+      "n": "Allow Target of Otiluke's Sphere to Use Inventory Screen",
+      "tp2n": "Allow Target of Otiluke's Sphere to Use Inventory Screen",
+      "cn": 2413,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2413,
+      "wq": "exact",
+      "no": "Improves Otiluke's Sphere with better mechanics."
+    },
+    {
+      "n": "Set Fire Shield and Acid Sheath Spells to be Breachable",
+      "tp2n": "Set Fire Shield and Acid Sheath Spells to be Breachable",
+      "cn": 2418,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2418,
+      "wq": "exact",
+      "no": "Improves Fire Shield (both red and blue) with better damage."
+    },
+    {
+      "n": "Make Shadow Monster Summons More Illusionary",
+      "tp2n": "Make Shadow Monster Summons More Illusionary",
+      "no": "Improves Shadow Monsters with better summoned creature stats.",
+      "cn": 2451,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2451,
+      "wq": "exact",
+      "sp": 3
+    },
+    {
+      "n": "Improve Function of SR's Waves of Fatigue",
+      "tp2n": "Improve Function of SR's Waves of Fatigue",
+      "cn": 2508,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2508,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Give Lower Resistance an Area of Effect",
+      "tp2n": "Give Lower Resistance an Area of Effect",
+      "cn": 2514,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2514,
+      "wq": "exact",
+      "no": "Lower Resistance gains an area of effect instead of single target."
+    },
+    {
+      "n": "Change Damage Type and School of Phantom Blade",
+      "tp2n": "Change Damage Type and School of Phantom Blade",
+      "cn": 2518,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2518,
+      "wq": "exact",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk."
+    },
+    {
+      "n": "Change Sunfire: Into Missile Storm",
+      "tp2n": "Change Sunfire into 'Missile Storm'",
+      "no": "Removes arcane casters' melee AoE.",
+      "cn": 25231,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 25231,
+      "wq": "exact",
+      "g": "sunfire",
+      "scn": "Change Sunfire"
+    },
+    {
+      "n": "Change Sunfire: Into Scorcher Storm",
+      "tp2n": "Change Sunfire into 'Scorcher Storm'",
+      "cn": 25232,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 25232,
+      "wq": "exact",
+      "g": "sunfire",
+      "scn": "Change Sunfire",
+      "no": "Change Sunfire variant: into a scorcher-style line attack."
+    },
+    {
+      "n": "Change Mantle into 'Iron Skin'",
+      "tp2n": "Change Mantle into 'Iron Skin'",
+      "cn": 2708,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2708,
+      "wq": "exact",
+      "no": "Mantle changed into 'Iron Skin' with different protective mechanics."
+    },
+    {
+      "n": "Adjust the Effects of Chaos",
+      "tp2n": "Adjust the Effects of Chaos",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk. Changes Sphere of Chaos effects (Berserk replaced with Feeblemind).",
+      "cn": 2711,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2711,
+      "wq": "exact"
+    },
+    {
+      "n": "Change the Effects of Prismatic Spray",
+      "tp2n": "Change the Effects of Prismatic Spray",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if SR not installed — requires dvsrv4here.mrk.",
+      "cn": 2714,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2714,
+      "wq": "exact"
+    },
+    {
+      "n": "Set Moment of Prescience to Not Breachable",
+      "tp2n": "Set Moment of Prescience to Not Breachable",
+      "no": "Requires SR.",
+      "cn": 2808,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2808,
+      "wq": "exact"
+    },
+    {
+      "n": "Move Symbol: Fear to 7th Level",
+      "tp2n": "Move Symbol: Fear to 7th Level",
+      "cn": 2811,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2811,
+      "wq": "exact",
+      "no": "INSTALL FAILURE (confirmed from WSETUP.DEBUG line 5865170): \"Couldn't add WIZARD_SYMBOL_FEAR_D5 to spell.ids as no slots remain\" → FAILURE \"Invalid spell number: -1\". ROOT CAUSE: WeiDU ADD_SPELL has a hard limit of 99 slots per wizard spell level. Level 7 uses IDs 2701–2799. At install time (SPELL.IDS = 36,919 bytes) all 99 slots were exhausted. WeiDU falls back to ADD_SPELL.IDS and returns -1. SubtleD's tweak_symbol_fear checks that the returned ID is ≥ 0; -1 causes an abort. SLOT CONSUMERS (wizard level 7, 2701–2799): - Vanilla BG2EE: 24 base spells at 2701–2727 (some gaps), plus 2705 duplicated (WARDING_WHIP alias) - IWDification Arcane Pack (cn=30): adds MALAVONS_RAGE (2728), SEVEN_EYES (2729), MASS_CHARM (2730), VESTCAKES_FLOATING_CURSE (2731), STYGIAN_ICE_STORM (2738), and others - Made in Heaven Spells arcane pack (cn=0): adds SUMMON_DAO (2732), SUMMON_MARID (2734), FAERIE_SWORD (2735), DOOM_LEGION (2736), MAGNIFICENT_MANSION (2737), WIZARD_BARRIER, and more — fills 2739–2799 - Weasels! (cn=0): adds WIZARD_SUMMON_WEASELS and related at level 2, but contributes to overall IDS pressure - Multiple other mods with level 6–8 overflow entries This is a hard WeiDU/engine limit, not a bug in SubtleD or the install order per se. WORKAROUNDS: 1. Skip this component — it is purely cosmetic: it edits the spell description to say \"Level: 7\" and relabels SPWI811's scroll. Symbol: Fear still functions at level 8 in-game. 2. Install SubtleD Spell Tweaks before IWDification and MIH_SP to claim level 7 slots before they fill up. 3. Omit MIH_SP Arcane Pack (cn=0) to free 5+ level 7 slots.",
+      "sp": 1
+    },
+    {
+      "n": "Move Shapechange to 8th Level",
+      "tp2n": "Move Shapechange to 8th Level",
+      "cn": 2916,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2916,
+      "wq": "exact",
+      "sp": 1,
+      "no": "Shapechange moved from 9th to 8th spell level."
+    },
+    {
+      "n": "Move Black Blade of Disaster to 8th level",
+      "tp2n": "Move Black Blade of Disaster to 8th level",
+      "cn": 2915,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2915,
+      "wq": "exact",
+      "sp": 1,
+      "no": "Black Blade of Disaster moved from 9th to 8th spell level."
+    },
+    {
+      "n": "Add Instant Death Effect to Energy Drain",
+      "tp2n": "Add Instant Death Effect to Energy Drain",
+      "cn": 2914,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2914,
+      "wq": "exact",
+      "sp": 1,
+      "no": "Energy Drain adds instant death effect on failed save (in addition to level drain)."
+    },
+    {
+      "n": "Change Summon Planetar into Summon Noble Genie",
+      "tp2n": "Change Summon Planetar into Summon Noble Genie",
+      "cn": 2923,
+      "wf": "SubtleD_Spell_Tweaks",
+      "wp": "SubtleD_Spell_Tweaks\\SubtleD_Spell_Tweaks.tp2",
+      "wc": 2923,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Improves Planetar summoning with better creature stats."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks Spellcraft and Knockdown feats may be incompatible with SubtleD's Magic Battles Revised",
+      "myComps": "#2215 Web Slow #2321 Spell Thrust to 1st Level #2916 Shapechange to 8th #2915 Black Blade to 8th",
+      "theirComps": "#6290 Spellcraft/Counterspell #6010 Knockdown",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "partial",
+      "reason": "Different domains (spells vs class abilities) but HLA and CLAB table modifications may overlap. Both used together . Install SubtleD Spell Tweaks before Skills and Abilities.",
+      "orderOnly": true,
+      "myComps": "#10 Rebalanced Schools #30 High-Level Spells Penetrate MR #55 Cure Bypass Deflection",
+      "theirComps": "#700 PfNW/PfMW #710 New HLAs #720 Updated HLAs #750 Concentration #130 Blade #180 Bard Songs #300 Weapon Styles",
+      "source": "tp2 analysis — SubtleD modifies spell behavior, S&A modifies class abilities/HLAs. Overlap limited to shared CLAB/LU 2da files, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

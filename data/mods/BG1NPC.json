@@ -1,0 +1,918 @@
+{
+  "i": 47,
+  "t": "bg1npc",
+  "sv": 1,
+  "pfx": "X#",
+  "ord": 140,
+  "c": "QUEST MODS BG1",
+  "n": "The BG1NPC Project",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "fr": 2,
+    "pl": 3,
+    "de": 4,
+    "ru": 5,
+    "it": 6
+  },
+  "no": "BG1 NPC Project Skips installing romances except those with BG2 continuations. Banters are fine, but the romances are of uneven quality; Shar-Teel's is particularly atrocious I've choosen the standard timer options for brevity, you can go and pick the faster or slower ones The Music Pack - installed after the BG1 NPC Project - adds appropriate music to some unvoiced dialog lines. Install the player-initiated dialog component of BG1 NPC Project after Mazzy MegaMod.. mod_installer: Romance components each recompile ~530 dialogue files (~8 min per component). Full install with all romances takes ~1-2 hours",
+  "ic": "bg1ub:27 [Sarevok's Extended Diary]",
+  "conflicts": [
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "soft",
+      "reason": "Both rewrite Sarevok's Diary item (SCRL3F.ITM). Install order dependent — last installed wins for diary text. BG1NPC diary component is #130/#241, not #10",
+      "myComps": "#10 Banters, Quests, and Interjections",
+      "theirComps": "#27 Sarevok's Diary Corrections",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both provide the same 'send NPCs to inn' functionality; install one or the other",
+      "myComps": "#90 NPCs can be sent to wait in an inn",
+      "theirComps": "#1075 Send BioWare NPCs to an Inn"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "Choose one \"NPCs can be sent to wait in an inn\"",
+      "myComps": "#90 NPCs can be sent to wait in an inn",
+      "theirComps": "#4120",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "banterpack",
+      "withId": 236,
+      "severity": "partial",
+      "reason": "Choose one Shadows of Amn Banter Accelerator",
+      "myComps": "#100 Jason Compton's Accelerated Banter Script",
+      "theirComps": "#1",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "A7-BANTERACCELERATOR",
+      "withId": 241,
+      "severity": "partial",
+      "reason": "Choose one banter timing system. BG1NPC cn:110-114 and Banter Accelerator both set banter timing globals. Using both causes unpredictable timing. Removed BG1NPC cn:110 .",
+      "myComps": "#110 #111 #112 #113 #114 Banter Timing options",
+      "theirComps": "#10 #11 #12 #20 #21 #22 #30 #31 #32 #40 #41 #42 #99 All banter timing options",
+      "source": "Both set banter timing globals; removed BG1NPC cn:110",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Both can set NPC portrait filenames. EET Tweaks appearance options let user choose BG1/BG2/SoD portraits. BG1NPC patches for consistency. Install BG1NPC before EET Tweaks.",
+      "myComps": "#150, #155",
+      "theirComps": "#0 BG1 portrait patches",
+      "source": "eemodsetup",
+      "orderOnly": true
+    },
+    {
+      "with": "DarkHorizons",
+      "withId": 573,
+      "severity": "soft",
+      "reason": "Generally compatible. Standard install order: Dark Horizons first, BG1 NPC Project after. Both add BG1 content but don't directly conflict.",
+      "orderOnly": true,
+      "source": "manual"
+    },
+    {
+      "with": "darkhorizonsbgee",
+      "withId": 512,
+      "severity": "soft",
+      "reason": "Generally compatible. Standard install order: Dark Horizons first, BG1 NPC Project after. Both add BG1 content but don't directly conflict.",
+      "orderOnly": true,
+      "source": "manual"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "theirComps": "#36 Kivan #14 Coran",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "theirComps": "#19 Kivan #5 #6 #7 Coran",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "hard",
+      "reason": "BG1UB tp2 uses FORBID_FILE for BG1NPC Phase 2. These components are mutually exclusive. Moot on EET (cn:4,6,7 blocked on BGEE)",
+      "myComps": "#10 Banters Quests and Interjections (Phase 2)",
+      "theirComps": "#4 Kagain Caravan #6 Kivan and Tazok #7 Branwen and Tranzig",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "hard",
+      "reason": "BG1UB tp2 uses FORBID_FILE for BG1NPC Core. Moot on EET (cn:5 blocked on BGEE)",
+      "myComps": "#0 Core",
+      "theirComps": "#5 Coran and the Wyverns",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Coran and non-joinable NPC portraits. Last installed wins",
+      "myComps": "#155 Coran Portrait / #160 Non-Joinable NPC Portraits",
+      "theirComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    },
+    {
+      "with": "VAULTEET",
+      "withId": 525,
+      "severity": "soft",
+      "reason": "BG1NPC EXTEND_TOPs CENTEOL.BCS, changing its structure so VaultEET's REPLACE_BCS_BLOCK for ocenteol-ee.baf no longer matches. VaultEET's Centeol dialog trigger patch is silently skipped. Non-fatal — vault quest still works.",
+      "myComps": "#10 Phase Two (BG1NPC extends Centeol script)",
+      "theirComps": "#0 The Vault",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "JA#BGT_AdvPack",
+      "withId": 926,
+      "severity": "partial",
+      "reason": "Multiple Adventure Pack components have FORBID_COMPONENT on bg1npc cn:10. Adventure Pack must install BEFORE BG1 NPC Project.",
+      "myComps": "#10 BG1 NPC dialogues",
+      "theirComps": "#2, #7, #30, #36, #39, #45, #51, #55",
+      "source": "JA#BGT_AdvPack tp2 FORBID_COMPONENT, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "DrizztSaga",
+      "requiresId": 513,
+      "type": "soft",
+      "reason": "Drizzt Saga with Dynaheir's BG1NPC Quest needs delayed Drizzt"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "43": [
+        [
+          "kivan",
+          "portraits/bg1npc_project/x_kivan.png",
+          "bg1"
+        ]
+      ],
+      "44": [
+        [
+          "coran",
+          "portraits/bg1npc_project/x_coran.png",
+          "bg1"
+        ]
+      ],
+      "45": [
+        [
+          "bg1npc_imoen",
+          "portraits/bg1npc_project/p_imane.png",
+          "bg1"
+        ],
+        [
+          "bg1npc_xan",
+          "portraits/bg1npc_project/pinkxan.png",
+          "bg1"
+        ],
+        [
+          "bg1npc_gae",
+          "portraits/bg1npc_project/x_gae.png",
+          "bg1"
+        ],
+        [
+          "bg1npc_garwy",
+          "portraits/bg1npc_project/x_garwy.png",
+          "bg1"
+        ],
+        [
+          "bg1npc_nel",
+          "portraits/bg1npc_project/x_nel.png",
+          "bg1"
+        ],
+        [
+          "bg1npc_rashe",
+          "portraits/bg1npc_project/x_rashe.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/BG1NPC/releases",
+  "a": "Blucher, Kish, Andyr, Domi, cmorgan, AstroBryGuy",
+  "v": "v32",
+  "sum": "Massively expands companion dialogue, banter, and romance options for all original BG1 NPCs. Adds hundreds of new conversations and inter-party interactions.",
+  "tags": [
+    "npc",
+    "story",
+    "romance"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "rec": {
+    "goes_with": [
+      "BG1 Romantic Encounters",
+      "Endless BG1",
+      "BG Quest Exchange",
+      "Crossmod Banter Pack"
+    ],
+    "avoid": [
+      "Can bloat BG1 with too much dialog if combined with every dialog mod"
+    ],
+    "tip": "The definitive BG1 dialog expansion. Most BG1 NPC mods are designed to work alongside it."
+  },
+  "eet_compat": {
+    "ver": "v24.2",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "BG1NPC"
+  },
+  "dl": "https://github.com/Gibberlings3/BG1NPC/releases",
+  "au": "The BG1 NPC Project Team",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Required Modifications",
+      "tp2n": "The BG1 NPC Project: Required Modifications",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "wc": 0,
+      "no": "Core required modifications for BG1 NPC Project."
+    },
+    {
+      "cn": 10,
+      "n": "Banters, Quests, and Interjections",
+      "tp2n": "The BG1 NPC Project: Banters, Quests, and Interjections",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 10,
+      "no": "Hundreds of banters, side quests, and interjections for BG1 NPCs.",
+      "grn": "The BG1 NPC Project: Banters, Quests, and Interjections"
+    },
+    {
+      "cn": 20,
+      "n": "Ajantis Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 20,
+      "g": "romance_ajantis",
+      "scn": "The BG1 NPC Project: Ajantis Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Ajantis Romance"
+    },
+    {
+      "cn": 21,
+      "n": "Ajantis Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 21,
+      "g": "romance_ajantis",
+      "scn": "The BG1 NPC Project: Ajantis Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 22,
+      "n": "Ajantis Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 22,
+      "g": "romance_ajantis",
+      "scn": "The BG1 NPC Project: Ajantis Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 23,
+      "n": "Ajantis Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 23,
+      "g": "romance_ajantis",
+      "scn": "The BG1 NPC Project: Ajantis Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 24,
+      "n": "Ajantis Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 24,
+      "g": "romance_ajantis",
+      "scn": "The BG1 NPC Project: Ajantis Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 30,
+      "n": "Branwen Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 30,
+      "g": "romance_branwen",
+      "scn": "The BG1 NPC Project: Branwen's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Branwen Romance"
+    },
+    {
+      "cn": 31,
+      "n": "Branwen Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 31,
+      "g": "romance_branwen",
+      "scn": "The BG1 NPC Project: Branwen's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 32,
+      "n": "Branwen Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 32,
+      "g": "romance_branwen",
+      "scn": "The BG1 NPC Project: Branwen's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 33,
+      "n": "Branwen Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 33,
+      "g": "romance_branwen",
+      "scn": "The BG1 NPC Project: Branwen's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 34,
+      "n": "Branwen Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 34,
+      "g": "romance_branwen",
+      "scn": "The BG1 NPC Project: Branwen's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 40,
+      "n": "Coran Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 40,
+      "g": "romance_coran",
+      "scn": "The BG1 NPC Project: Coran's Romance Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Coran Romance"
+    },
+    {
+      "cn": 41,
+      "n": "Coran Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 41,
+      "g": "romance_coran",
+      "scn": "The BG1 NPC Project: Coran's Romance Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 42,
+      "n": "Coran Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 42,
+      "g": "romance_coran",
+      "scn": "The BG1 NPC Project: Coran's Romance Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 43,
+      "n": "Coran Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 43,
+      "g": "romance_coran",
+      "scn": "The BG1 NPC Project: Coran's Romance Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 44,
+      "n": "Coran Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 44,
+      "g": "romance_coran",
+      "scn": "The BG1 NPC Project: Coran's Romance Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 50,
+      "n": "Dynaheir Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 50,
+      "g": "romance_dynaheir",
+      "scn": "The BG1 NPC Project: Dynaheir's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Dynaher Romance"
+    },
+    {
+      "cn": 51,
+      "n": "Dynaheir Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 51,
+      "g": "romance_dynaheir",
+      "scn": "The BG1 NPC Project: Dynaheir's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 52,
+      "n": "Dynaheir Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 52,
+      "g": "romance_dynaheir",
+      "scn": "The BG1 NPC Project: Dynaheir's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 53,
+      "n": "Dynaheir Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 53,
+      "g": "romance_dynaheir",
+      "scn": "The BG1 NPC Project: Dynaheir's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 54,
+      "n": "Dynaheir Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 54,
+      "g": "romance_dynaheir",
+      "scn": "The BG1 NPC Project: Dynaheir's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 60,
+      "n": "Shar-Teel Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 60,
+      "g": "romance_shar-teel",
+      "scn": "The BG1 NPC Project: Shar-Teel Relationship Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Shar-Teel Romance"
+    },
+    {
+      "cn": 61,
+      "n": "Shar-Teel Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 61,
+      "g": "romance_shar-teel",
+      "scn": "The BG1 NPC Project: Shar-Teel Relationship Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 62,
+      "n": "Shar-Teel Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 62,
+      "g": "romance_shar-teel",
+      "scn": "The BG1 NPC Project: Shar-Teel Relationship Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 63,
+      "n": "Shar-Teel Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 63,
+      "g": "romance_shar-teel",
+      "scn": "The BG1 NPC Project: Shar-Teel Relationship Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 64,
+      "n": "Shar-Teel Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 64,
+      "g": "romance_shar-teel",
+      "scn": "The BG1 NPC Project: Shar-Teel Relationship Core (adult content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 70,
+      "n": "Xan Romance: 1 hour (standard)",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 70,
+      "g": "romance_xan",
+      "scn": "The BG1 NPC Project: Xan's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances",
+      "no": "v Xan Romance"
+    },
+    {
+      "cn": 71,
+      "n": "Xan Romance: 45 minutes",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 71,
+      "g": "romance_xan",
+      "scn": "The BG1 NPC Project: Xan's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 72,
+      "n": "Xan Romance: 30 minutes",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 72,
+      "g": "romance_xan",
+      "scn": "The BG1 NPC Project: Xan's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 73,
+      "n": "Xan Romance: 15 minutes",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 73,
+      "g": "romance_xan",
+      "scn": "The BG1 NPC Project: Xan's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 74,
+      "n": "Xan Romance: 90 minutes",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 74,
+      "g": "romance_xan",
+      "scn": "The BG1 NPC Project: Xan's Romance Core (teen content)",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 80,
+      "n": "Female Romance Challenges (Ajantis vs Xan vs Coran)",
+      "tp2n": "The BG1 NPC Project: Female Romance Challenges, Ajantis vs Xan vs Coran",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 80,
+      "no": "Romantic rivalry conflicts between Ajantis, Xan, and Coran.",
+      "grn": "The BG1 NPC Project: Romances"
+    },
+    {
+      "cn": 90,
+      "n": "NPCs can be sent to wait in an inn",
+      "tp2n": "The BG1 NPC Project: NPCs can be sent to wait in an inn",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "wc": 90,
+      "no": "Dismissed NPCs can wait at an inn.",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 100,
+      "n": "Jason Compton's Accelerated Banter Script",
+      "tp2n": "Jason Compton's Accelerated Banter Script",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "wc": 100,
+      "no": "Accelerated banter script for faster NPC interactions.",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 110,
+      "n": "Banter Timing: Normal (~27 min)",
+      "tp2n": "Banter Timing: Normal (about 27 minutes between banter dialogs)",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 110,
+      "g": "banter_timing",
+      "scn": "BGEE Banter Timing Tweak",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 111,
+      "n": "Banter Timing: Accelerated (~14 min)",
+      "tp2n": "Banter Timing: Fast (about 20 minutes between banter dialogs)",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 111,
+      "g": "banter_timing",
+      "scn": "BGEE Banter Timing Tweak",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 112,
+      "n": "Banter Timing: Relaxed (~35 min)",
+      "tp2n": "Banter Timing: Very fast (about 13 minutes between banter dialogs)",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 112,
+      "g": "banter_timing",
+      "scn": "BGEE Banter Timing Tweak",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 113,
+      "n": "Banter Timing: One per rest",
+      "tp2n": "Banter Timing: Slow (about 40 minutes between banter dialogs)",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 113,
+      "g": "banter_timing",
+      "scn": "BGEE Banter Timing Tweak",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 114,
+      "n": "Banter Timing: One per real-time hour",
+      "tp2n": "Banter Timing: Very slow (about 55 minutes between banter dialogs)",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 114,
+      "g": "banter_timing",
+      "scn": "BGEE Banter Timing Tweak",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 120,
+      "n": "Bardic Reputation Adjustment",
+      "tp2n": "The BG1 NPC Project: Bardic Reputation Adjustment",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 120,
+      "no": "Adjusted bardic reputation effects.",
+      "grn": "The BG1 NPC Project: Tweaks"
+    },
+    {
+      "cn": 130,
+      "n": "Sarevok's Diary Adjustments",
+      "tp2n": "SixofSpades Extended Sarevok's Diary",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 130,
+      "g": "diary",
+      "scn": "The BG1 NPC Project: Sarevok's Diary Adjustments",
+      "grn": "The BG1 NPC Project: Tweaks",
+      "no": "Sarevok's diary adjustments for lore consistency."
+    },
+    {
+      "cn": 131,
+      "n": "Sarevok's Diary: Alternative text",
+      "tp2n": "Sarevok's Diary Date Changes only",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 131,
+      "g": "diary",
+      "scn": "The BG1 NPC Project: Sarevok's Diary Adjustments",
+      "grn": "The BG1 NPC Project: Tweaks",
+      "no": "Alternative text for Sarevok's diary."
+    },
+    {
+      "cn": 240,
+      "n": "Kivan Proficiency: Spears",
+      "tp2n": "Kivan uses spears",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 240,
+      "g": "kivan_prof",
+      "scn": "The BG1 NPC Project: Kivan's Proficiency",
+      "grn": "The BG1 NPC Project: Tweaks",
+      "no": "v Kivan's proficiency Do you want him using the modded spear Thalantyr gifts him or a vanilla higher end halberd?"
+    },
+    {
+      "cn": 241,
+      "n": "Kivan Proficiency: Halberds",
+      "tp2n": "Kivan uses halberds",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 241,
+      "g": "kivan_prof",
+      "scn": "The BG1 NPC Project: Kivan's Proficiency",
+      "grn": "The BG1 NPC Project: Tweaks",
+      "no": "Gives Kivan halberd proficiency."
+    },
+    {
+      "cn": 150,
+      "n": "Kivan's \"Kivan and Deheriana\" portrait",
+      "tp2n": "The BG1 NPC Project: Kivan's \"Kivan and Deheriana Companions\" portrait",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 150,
+      "no": "INSTALL FAILURE Copies portrait BMP to user Documents EET portraits folder (C:\\Users\\...\\Documents\\Baldur's Gate - Enhanced Edition Trilogy\\portraits\\). WeiDU backup path gets mangled to C..Users...Documents... and rollback fails with 'Bad file descriptor'. Cannot work in automated installs. Do NOT include s — install manually after mod stack is complete.",
+      "grn": "The BG1 NPC Project: Portrait Changes and Additions"
+    },
+    {
+      "cn": 155,
+      "n": "Coran's \"Murder in Baldur's Gate\" portrait",
+      "tp2n": "The BG1 NPC Project: Give Coran his \"Murder in Baldur's Gate\" portrait",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 155,
+      "no": "INSTALL FAILURE: Same Documents folder portrait issue as cn:150. Do NOT include s.",
+      "grn": "The BG1 NPC Project: Portrait Changes and Additions"
+    },
+    {
+      "cn": 160,
+      "n": "Add Non-Joinable NPC portraits",
+      "tp2n": "The BG1 NPC Project: Add Non-Joinable NPC portraits to quests and dialogues",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 160,
+      "no": "Portraits for non-joinable NPCs.",
+      "grn": "The BG1 NPC Project: Portrait Changes and Additions"
+    },
+    {
+      "cn": 200,
+      "n": "Player-Initiated Dialogues",
+      "tp2n": "The BG1 NPC Project: Player-Initiated Dialogues",
+      "wf": "BG1NPC",
+      "wp": "BG1NPC\\bg1npc.tp2",
+      "wq": "exact",
+      "wc": 200,
+      "no": "Player-initiated dialogue for all BG1 NPCs."
+    }
+  ]
+}

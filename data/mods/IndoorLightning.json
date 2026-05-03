@@ -1,0 +1,52 @@
+{
+  "i": 308,
+  "t": "IndoorLightning",
+  "sv": 1,
+  "ord": 130,
+  "c": "SPELL MODS",
+  "n": "Indoor Lightning",
+  "no": "Indoor Lightning probably redundant with SR",
+  "spl": {
+    "0": {
+      "spells": [
+        [
+          "SPWI308",
+          "tweak",
+          "Lightning Bolt now works properly indoors"
+        ],
+        [
+          "SPPR302",
+          "tweak",
+          "Call Lightning now works properly indoors"
+        ]
+      ]
+    }
+  },
+  "u": "https://forums.beamdog.com/discussion/comment/827909/#Comment_827909",
+  "a": "Tresset",
+  "sum": "Allows the Call Lightning spell to function indoors with reduced damage (2d6 + 1d6 per level) to maintain balance relative to other spells.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/comment/827909/#Comment_827909",
+  "au": "Tresset",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Indoor Lightning",
+      "cn": 0,
+      "wf": "IndoorLightning",
+      "wp": "IndoorLightning\\setup-IndoorLightning.tp2",
+      "wc": 0,
+      "wq": "verified"
+    }
+  ]
+}

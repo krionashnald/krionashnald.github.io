@@ -1,0 +1,4758 @@
+{
+  "i": 341,
+  "t": "stratagems",
+  "sv": 1,
+  "pfx": "DW",
+  "ord": 10,
+  "c": "TACTICAL MODS",
+  "n": "Sword Coast Stratagems",
+  "cats": [
+    "SPELL MODS",
+    "TACTICAL MODS",
+    "POST EET"
+  ],
+  "no": "SCS should be the LAST tactical mod installed. All creature mods (MiH E&Q, BGSpawn), encounter mods (BuTcHeRy, Tactics Remix, The Crucible), and content mods must install BEFORE SCS. SCS reads the game state and builds AI scripts based on what is installed — installing content after SCS means that content won't get SCS's AI improvements. INSTALL FIX REQUIRED: SFO lib_spl.tph line 1092 has DECOMPILE_AND_PATCH on all BCS files — fails on BDAERIEC.BCS and A7!GXRU.BCS. Patch stratagems/sfo2e/lib_spl.tph to add PATCH_IF NOT (SOURCE_RES = BDAERIEC OR A7!GXRU) guard. Same fix needed in 5 other SFO copies (ToF, IWDification, MiH FR/SP/Metamod). Automated fixes: eet-mod-forge-patches components #4-5.",
+  "ic": "level1npcs, npc_ee",
+  "_legacy_ids": [
+    387,
+    391,
+    687
+  ],
+  "conflicts": [
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "partial",
+      "reason": "Stratagems will not use revised HLAs",
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 Spell tweaks",
+      "theirComps": "#10 Install revised HLAs for all classes #11 #101 #102 #103 #104 #105 #106 #107 #108 #109 #110"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "SCS cn:6550 (Smarter Beholders) rewrites beholder AI including antimagic ray behavior. If JTweaks cn:181/182 is installed first, SCS overwrites those changes — JTweaks Antimagic component becomes ineffective. If using SCS Smarter Beholders, do not install JTweaks cn:181/182. JT cn:181/182 are subcomponents (pick one) — cn:181 makes rays ignore Spell Shield, cn:182 lets Spell Shield block one ray.",
+      "myComps": "#6550 Smarter Beholders",
+      "theirComps": "#181 #182 Antimagic Ray and Spell Shield",
+      "source": "SCS rewrites beholder AI; JTweaks antimagic changes overwritten; JT cn:181/182, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "soft",
+      "reason": "Install order note. SCS Smarter Ascension components (cn:6590/6840/6850) are designed to install AFTER Ascension and supersede the Tougher battle components (cn:8-13) with improved AI. SCS detects Ascension and applies its own tactical scripts on top. Standard EET install order handles this — Ascension installs in QUEST MODS, SCS installs in TACTICAL MODS (later). Not a conflict if install order is correct.",
+      "myComps": "#6590 Smarter final villain #6840 Ascension Irenicus/Sendai #6850 Ascension demons",
+      "theirComps": "#8 / #9 / #10 / #11 / #12 / #13 Tougher battles",
+      "orderOnly": true,
+      "source": "SCS detects Ascension via MOD_IS_INSTALLED; standard category order places SCS after Ascension, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "SCS cn:1500/1510/1520 are the same CamDawg/DavidW IWD spell ports as IWDification cn:30/40/50. SCS spell tweaks (cn:2000-2080) modify spells IWDification also adds. SCS has built-in IWDification detection. IWDification cn:30/40/50, SCS cn:1500-1520 (ToF provides IWD spells). No conflict.",
+      "myComps": "#1500 #1510 #1520 IWD spells #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 Spell tweaks",
+      "theirComps": "#30 IWD Arcane #40 IWD Divine #50 Bard Songs (none in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "soft",
+      "reason": "SCS IWD spell imports and spell tweaks overlap with Klatu tweaks",
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2050 #2060 #2070 Spell tweaks",
+      "theirComps": "#2040 Wild Mage fixes #2050 Wish spells #2070 Free Action/Haste #2120 Non-Magical abilities #2140 Spellcasting in Armor"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "Functionality provided by Spell Revisions (per II install notes)",
+      "orderOnly": true,
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 Spell tweaks #2500 #2510 New spells",
+      "theirComps": "#0",
+      "source": "SCS has built-in SR detection (MOD_IS_INSTALLED). SR readme confirms SCS compatibility, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "NOT a conflict. SCS cn:4100 reads kit field but never writes during installation. Runtime AddKit() in dialogue. AK assignments persist.",
+      "myComps": "#4100 NPC customization",
+      "orderOnly": true,
+      "theirComps": "AK kit overhauls",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "soft",
+      "reason": "SCS cn:4100 (leveller) and NPC_EE cn:2000 coexist — SCS zeros NPC levels but not inventory, NPC_EE tome persists. SCS cn:4100 has mutual FORBID with ToF cn:60300 — one leveller can install. s with ToF cn:60300, SCS cn:4100 auto-skips. NPC_EE works with whichever leveller is active.",
+      "myComps": "#4100 Improved NPC customization #4115 Thief skill multiples of five",
+      "theirComps": "#1010 #1020 #1030 #1200 Remove dual-class flags #2000 NPC choices",
+      "orderOnly": true,
+      "source": "SCS leveller_2.tpa same system as ToF; mutual FORBID at SCS tp2 line 693 and ToF tp2 line 1285, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "soft",
+      "reason": "TnB cn:40 (Revised Specialists) — would conflict with SCS spell school changes. TnB cn:51 (Metamagic) adds innate abilities independent of SCS spell tweaks. Install TnB before SCS.",
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2040 #2050 #2060 #2070 Spell tweaks",
+      "theirComps": "#40 Revised Specialists (NOT) #51 Metamagic (IN, safe)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "enhanced-powergaming-scripts",
+      "withId": 443,
+      "severity": "soft",
+      "reason": "SCS cn:5000 (Ease-of-use Party AI) and EPS cn:15 (Pre-Buffing) both provide player party automation scripts. They can coexist — SCS provides basic party AI (auto-attack, auto-heal), EPS provides pre-combat buffing sequences. EPS scripts are assigned to specific party members and don't override SCS party AI assignments. SCS cn:5900 (Initialize AI) is enemy AI infrastructure — no overlap with EPS player scripts. EPS cn:9 (Celestials) and cn:10 (Simulacrum) enhance summoned creature AI — complementary with SCS enemy AI. Install SCS before EPS so EPS scripts layer on top.",
+      "myComps": "#5000 Party AI #5900 Initialize AI",
+      "theirComps": "#14 #15 Pre-Buffing #9 Celestials",
+      "orderOnly": true,
+      "source": "SCS cn:5000 provides basic party AI; EPS provides pre-buffing scripts; different script slots; cn:5900 is enemy AI init, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "shadowadept",
+      "withId": 295,
+      "severity": "hard",
+      "reason": "SCS Improved Shade Lord and Shadow Magic's Enhanced Shade Lord both modify the same encounter. Use SM's ability-only option (#8) if using SCS.",
+      "myComps": "#8010",
+      "theirComps": "#6 #7",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "SCS has built-in IR detection code. Install IR BEFORE SCS. SCS silently skips overlapping features. Item Revisions and SCS overlap",
+      "orderOnly": true,
+      "myComps": "#3000, #3020, #3040, #3041, #3050, #3060, #3070, #3080, #3090, #3100, #3110; #3010, #3020, #3021, #3022; #2160, #3040, #3041, #4215, #4216, #4217, #4218, #4230; #1; #5030",
+      "theirComps": "#0 #1030 #2 #3",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "gminion",
+      "withId": 466,
+      "severity": "soft",
+      "reason": "G-Minion should install before SCS. SCS AI initialization patches over G-Minion's scripts. Install order dependent.",
+      "orderOnly": true,
+      "myComps": "#5900",
+      "theirComps": "#0 gMinion",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "IWD1_EET",
+      "withId": 643,
+      "severity": "partial",
+      "reason": "SCS IWD spell import components (#1500/#1510) conflict with IWD-in-EET's own spell resources. Use IWDification for IWD spells instead (canonical G3 source, same DavidW/SFO framework). SCS's AI/tactical components (#5000+) are completely unaffected — install those freely.",
+      "myComps": "#1500 IWD Arcane Spells, #1510 IWD Divine Spells (only these conflict; all AI/tactical components are fine)",
+      "source": "SCS tp2 has REQUIRE_PREDICATE !MOD_IS_INSTALLED iwdification on #1500/#1510; IWDification is the recommended IWD spell source for EET, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "jimfix",
+      "withId": 404,
+      "severity": "hard",
+      "reason": "Jimfix does not work for IWD spells",
+      "myComps": "#1500, #1510",
+      "theirComps": "#0 Spell school notifications",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_gui",
+      "withId": 684,
+      "severity": "hard",
+      "reason": "GUI does not support difficulty slider",
+      "myComps": "#8040",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "partial",
+      "reason": "Choose one \"disable quickslot items for Simulacra and Projected Images\" tweak",
+      "myComps": "#2180",
+      "theirComps": "#205",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "partial",
+      "reason": "Choose one \"NPCs can be sent to wait in an inn\"",
+      "myComps": "#4120",
+      "theirComps": "#90 NPCs can be sent to wait in an inn",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Choose one \"Allow player to choose NPC proficiencies and skills\" / \"TOB-style NPCs\" tweak",
+      "myComps": "Improved NPC customization and management; #5020; #5030; #4030",
+      "theirComps": "ToB-Style NPCs, #2370, #2372; #3150; #1150; #3191 Disable Non-Hostile Rest Spawns #3194 #3195 #3196 #3197 #3198 Rest Spawns #300 Slightly improved party AI",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "eseries",
+      "withId": 461,
+      "severity": "hard",
+      "reason": "Choose one Party AI set",
+      "myComps": "#5000",
+      "theirComps": "#0 eSeries",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "randomiser",
+      "withId": 385,
+      "severity": "partial",
+      "reason": "Item Randomiser Mode 1 needs time in starting area",
+      "myComps": "#4146",
+      "theirComps": "#1100 #1200 Mode 1 randomisation",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "d0questpack",
+      "withId": 64,
+      "severity": "partial",
+      "reason": "Smarter Mages",
+      "myComps": "#6030",
+      "theirComps": "#0",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "hard",
+      "reason": "Watcher's Keep access conflict",
+      "myComps": "#4190",
+      "theirComps": "#0 Longer Road",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "thecalling",
+      "withId": 39,
+      "severity": "hard",
+      "reason": "Choose one Peaceful Werewolf Isle Resolution",
+      "myComps": "#1060",
+      "theirComps": "#20 Peaceful Werewolf Isle Resolution",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Spell_Tweaks",
+      "withId": 305,
+      "severity": "soft",
+      "reason": "Some spell tweaks overlap with SCS spell changes. Install SubtleD after SCS.",
+      "orderOnly": true,
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2050 #2060 #2070 Spell tweaks",
+      "theirComps": "#21 #55 #2711"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Install order note. SCS cn:2040/4030 (Improved Shapeshifting) applies AI improvements to shapeshift forms. HT cn:2 replaces druid shapeshifting spells. SCS installs after HT and works on top of whatever forms exist. Install HT before SCS.",
+      "myComps": "#2040 Shapeshift spell changes #4030 Improved Shapeshifting",
+      "theirComps": "#2 Expanded Shapeshifting",
+      "orderOnly": true,
+      "source": "SCS applies AI scripts on top of HT form replacements; standard category order handles this, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "hard",
+      "reason": "TR v3.0+ is a comprehensive difficulty overhaul that substantially duplicates SCS's AI and encounter systems. User reports treat TR+SCS as effective either-or for the AI/encounter layer; a select few SCS general-game tweaks (non-AI, non-encounter) remain compatible. TR detects SCS and adapts technically, but functional overlap is significant — recommended to pick one or the other. TR's new-encounter components install BEFORE SCS (now encoded via cat override); update-existing-encounters + enemy-improvements install AFTER SCS. [Historical: Broad interaction — TR detects SCS via MOD_IS_INSTALLED for cn:1500, cn:1510, cn:5900, and cn:6030. TR adapts IWD spell handling, conditionally skips its Kangaxx demilich when SCS Smarter Mages is present, and removes SCS troll kill flags from boss weapons. SCS AI/encounter overhauls overlap with TR encounter overhauls — per TR author Morpheus: 'Any encounter or AI updates from SCS will not be compatible with Tactics Remix. SCS QoL updates prior to AI/tactical components should mostly be okay.' SCS must install before TR.]",
+      "myComps": "#1500 IWD Arcane / #1510 IWD Divine / #5900 Initialize AI / #6030 Smarter Mages / #8060 Improved de'Arnise Keep",
+      "theirComps": "#0 Improved de'Arnise Keep / #15 Tougher Kangaxx / #65 #66 Improved Irenicus / all encounter components",
+      "source": "TR TP2 MOD_IS_INSTALLED checks, lib/always.tph scs_ai/scs_smrt_mgs vars, Morpheus compatibility statement, G3 forums April 2026",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "ToF Point-Buy Stats (cn:80100-80104) have FORBID_COMPONENT SCS cn:5900 (Initialise AI). Point-buy auto-skips if SCS is installed. Cannot use both — choose SCS tactical AI or ToF point-buy.",
+      "myComps": "#5900 Initialise AI components",
+      "theirComps": "#80100-#80104 Point-Buy Stats",
+      "source": "ToF tp2 FORBID_COMPONENT setup-stratagems.tp2 5900, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "Install-order-dependent: ToF's tp2 has 77× FORBID_COMPONENT ~stratagems~ #5900 — if SCS #5900 (Initialise AI) installs BEFORE ToF, 20+ ToF components (#80150-#90100) silently skip. This is ToF-side enforcement, not SCS-side. Install ToF BEFORE SCS to avoid.",
+      "myComps": "#5900 Initialise AI components",
+      "theirComps": "#20000 Subraces #40000 Class/race restrictions #40100 Alignment #40150 #40160 #40190 Kits #50600 Blackguards #55000 Druid multiclass #60100 Minor abilities #80150 3E THAC0 #80160 #80500 INT spell restrictions #81000 Cleric/Ranger bows #81010 #81020 #81030 Dual-class prof #81100 Weapon Proficiency #81200 Weapon Styles #90000 Class menu #90100 Thief skills",
+      "source": "Audit 2026-04: grep of dw_talents.tp2 found 77× FORBID_COMPONENT stratagems/setup-stratagems.tp2 5900 covering 20 of the user's skipped ToF components",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "Install-order-dependent predicate: cdtweaks #4020 (ToB-Style NPCs) will skip if SCS #4100 (Improved NPC Customisation) is already installed. SCS #4100 supersedes cdtweaks #4020. Intentional by CamDawg via !MOD_IS_INSTALLED predicate.",
+      "myComps": "#4100 Improved NPC Customisation and Management",
+      "theirComps": "#4020 ToB-Style NPCs",
+      "source": "Audit 2026-04: REQUIRE_PREDICATE !MOD_IS_INSTALLED ~stratagems.tp2~ 4100 @24 in setup-cdtweaks.tp2",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "SCS spell/IWD components (cn:1500-2080) auto-skip if ToF equivalents installed (REQUIRE_PREDICATE checks in tp2). Already handled — SCS cn:1500-1520 (ToF provides IWD spells). SCS cn:4030 (Improved Shapeshifting) and ToF cn:40600 (Druid Shapeshift) both modify druid shapeshifting — SCS applies AI improvements, ToF replaces forms. Install SCS after ToF. SCS cn:4050 (Reputation Rate) has no ToF equivalent — independent. SCS cn:4115/4130/4240 already SCS cn:60300 vs ToF cn:60300 — mutual FORBID, SCS cn:4100 removed.",
+      "myComps": "#4030 Improved Shapeshifting (order note) #4050 Reputation Rate (safe) #1500-#2080 Spell/IWD (auto-skip if ToF present)",
+      "theirComps": "#40600 Druid shapeshift #1500-#2080 Spell equivalents #60300 NPC customisation #90100 Thief skill multiples",
+      "orderOnly": true,
+      "source": "SCS tp2 lines 129-318: REQUIRE_PREDICATE !MOD_IS_INSTALLED dw_talents for spell components; mutual FORBID on cn:4100/4115/4130/4240, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "candlekeep_revisited",
+      "withId": 58,
+      "severity": "hard",
+      "reason": "Design choice, not technical conflict. SCS cn:4145 (Remove tutorial NPCs) is compatible — just removes hand-holding NPCs. SCS cn:4146 (Skip Candlekeep entirely) bypasses the prologue, making Candlekeep Revisited content inaccessible. Do not use cn:4146 if you want Candlekeep Revisited content. No file-level conflict — purely a content accessibility choice.",
+      "myComps": "#4145 Remove tutorial NPCs (compatible) #4146 Skip Candlekeep entirely (defeats purpose)",
+      "theirComps": "#0 Candlekeep Revisited",
+      "orderOnly": true,
+      "source": "cn:4145 removes NPCs only; cn:4146 skips area; content choice not file conflict, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "k9RoughWorld",
+      "withId": 514,
+      "severity": "soft",
+      "reason": "Both modify creature spawning in BG1 areas",
+      "myComps": "#8050 Improved Random Encounters",
+      "theirComps": "#0 Scaled Spawning"
+    },
+    {
+      "with": "HIDEKT",
+      "withId": 691,
+      "severity": "hard",
+      "reason": "Hidden Kits replaces NPC CRE files wholesale, destroying SCS NPC customization changes. Fundamentally incompatible.",
+      "myComps": "#4100 Improved NPC customization",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LICHDOM",
+      "withId": 674,
+      "severity": "soft",
+      "reason": "Compatible with SCS per user reports. No specific install order requirement.",
+      "source": "Beamdog forums confirmation",
+      "orderOnly": true
+    },
+    {
+      "with": "subrace",
+      "withId": 680,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1011 vs 999)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "TheVanishingOfSkieSilvershield",
+      "withId": 52,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1011 vs 1094)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "JA#BGT_AdvPack",
+      "withId": 926,
+      "severity": "partial",
+      "reason": "Adventure Pack cn:35 (Merchants' League) has FORBID_COMPONENT on SCS cn:7000 (Improved Doppelgangers). Adventure Pack must install before SCS.",
+      "myComps": "#7000 Improved Doppelgangers",
+      "theirComps": "#35 Merchants' League investigations",
+      "source": "JA#BGT_AdvPack tp2 FORBID_COMPONENT, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "SCS #4030 (Improved shapeshifting) has !(MOD_IS_INSTALLED ~dw_talents~ 40600) and !(MOD_IS_INSTALLED ~dw_talents~ 41000) predicates. If either ToF component is installed, SCS #4030 silently skips. Knock-on: Bart_Tweaks #2030 (Revised Shapeshifting Tokens for SCS) then also skips because it requires SCS #4030.",
+      "myComps": "#4030 Improved shapeshifting",
+      "theirComps": "#40600 Revised Druid Shapeshifting, #41000 Rebalanced Kits: Default",
+      "source": "Audit 2026-04: SCS #4030 REQUIRE_PREDICATE !(MOD_IS_INSTALLED ~dw_talents~ 40600/41000) + knock-on to Bart_Tweaks #2030",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "hard",
+      "reason": "SCS Improved Ascension Encounters need Original Ascension",
+      "myComps": "#6840 Ascension Irenicus/Sendai, #6850 Ascension demons, #8085 Ascension Bodhi"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSCS01",
+          "wizard",
+          1,
+          "Alteration",
+          "Expeditious Retreat",
+          "Doubles movement speed for 1 round/level."
+        ],
+        [
+          "YOURSCS02",
+          "wizard",
+          2,
+          "Alteration",
+          "Cat's Grace",
+          "+2 DEX for 1 hour."
+        ],
+        [
+          "YOURSCS03",
+          "wizard",
+          2,
+          "Evocation",
+          "Decastave",
+          "Creates quarterstaff dealing 2d3 magic damage."
+        ],
+        [
+          "YOURSCS04",
+          "wizard",
+          2,
+          "Evocation",
+          "Snilloc's Snowball Swarm",
+          "1d6/level cold (max 8d6) in area."
+        ],
+        [
+          "YOURSCS05",
+          "wizard",
+          3,
+          "Evocation",
+          "Icelance",
+          "5d6 cold + stun. Save negates stun."
+        ],
+        [
+          "YOURSCS06",
+          "wizard",
+          3,
+          "Evocation",
+          "Lance of Disruption",
+          "Cone of force: 5d4+2/level magic damage."
+        ],
+        [
+          "YOURSCS07",
+          "wizard",
+          3,
+          "Conjuration",
+          "Monster Summoning I",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS08",
+          "wizard",
+          4,
+          "Alteration",
+          "Beltyn's Burning Blood",
+          "Blood boils: 3d2 fire +3d2 magic/round."
+        ],
+        [
+          "YOURSCS09",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Courage",
+          "Allies immune to fear, +1 THAC0/damage."
+        ],
+        [
+          "YOURSCS10",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Fear",
+          "Enemies flee. Save negates."
+        ],
+        [
+          "YOURSCS11",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Hope",
+          "+2 morale, +1 THAC0/damage/saves."
+        ],
+        [
+          "YOURSCS12",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Hopelessness",
+          "Enemies unable to act. Save negates."
+        ],
+        [
+          "YOURSCS13",
+          "wizard",
+          4,
+          "Conjuration",
+          "Monster Summoning II",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS14",
+          "wizard",
+          4,
+          "Evocation",
+          "Mordenkainen's Force Missiles",
+          "1d4+1 missiles, 2d4 magic each. No save."
+        ],
+        [
+          "YOURSCS15",
+          "wizard",
+          4,
+          "Illusion",
+          "Shadow Monsters",
+          "Summons shadow monsters."
+        ],
+        [
+          "YOURSCS16",
+          "wizard",
+          4,
+          "Evocation",
+          "Shout",
+          "Cone: 2d6 damage, deafens."
+        ],
+        [
+          "YOURSCS17",
+          "wizard",
+          4,
+          "Conjuration",
+          "Vitriolic Sphere",
+          "4d4 acid + 1d4/round residual."
+        ],
+        [
+          "YOURSCS18",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Lesser Air Elemental",
+          "Summons lesser air elemental."
+        ],
+        [
+          "YOURSCS19",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Lesser Earth Elemental",
+          "Summons lesser earth elemental."
+        ],
+        [
+          "YOURSCS20",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Lesser Fire Elemental",
+          "Summons lesser fire elemental."
+        ],
+        [
+          "YOURSCS21",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Lesser Water Elemental",
+          "Summons lesser water elemental."
+        ],
+        [
+          "YOURSCS22",
+          "wizard",
+          5,
+          "Illusion",
+          "Demi-Shadow Monsters",
+          "Summons powerful shadow monsters."
+        ],
+        [
+          "YOURSCS23",
+          "wizard",
+          5,
+          "Conjuration",
+          "Monster Summoning III",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS24",
+          "wizard",
+          5,
+          "Evocation",
+          "Shroud of Flame",
+          "2d6 fire/round for 5 rounds on target."
+        ],
+        [
+          "YOURSCS25",
+          "wizard",
+          6,
+          "Abjuration",
+          "Antimagic Shell",
+          "Immune to all magic, cannot cast."
+        ],
+        [
+          "YOURSCS26",
+          "wizard",
+          6,
+          "Necromancy",
+          "Darts of Bone",
+          "3 darts: 2d8 magic + 2d8 piercing each."
+        ],
+        [
+          "YOURSCS27",
+          "wizard",
+          6,
+          "Necromancy",
+          "Lich Touch",
+          "Paralyzes + drains 1d8 HP/level."
+        ],
+        [
+          "YOURSCS28",
+          "wizard",
+          6,
+          "Conjuration",
+          "Monster Summoning IV",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS29",
+          "wizard",
+          6,
+          "Evocation",
+          "Otiluke's Freezing Sphere",
+          "6d6 cold in 15ft radius."
+        ],
+        [
+          "YOURSCS30",
+          "wizard",
+          6,
+          "Illusion",
+          "Shades",
+          "Summons powerful shadow creatures."
+        ],
+        [
+          "YOURSCS31",
+          "wizard",
+          6,
+          "Necromancy",
+          "Soul Eater",
+          "Summons soul eater that level-drains."
+        ],
+        [
+          "YOURSCS32",
+          "wizard",
+          6,
+          "Alteration",
+          "Trollish Fortitude",
+          "Regenerate 3 HP/round for 1 turn."
+        ],
+        [
+          "YOURSCS33",
+          "wizard",
+          7,
+          "Evocation",
+          "Acid Storm",
+          "Acid rain 1d6/round for 5 rounds in area."
+        ],
+        [
+          "YOURSCS34",
+          "wizard",
+          7,
+          "Evocation",
+          "Malavon's Rage",
+          "3 ice strikes: 2d6 cold + stun each."
+        ],
+        [
+          "YOURSCS35",
+          "wizard",
+          7,
+          "Conjuration",
+          "Monster Summoning V",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS36",
+          "wizard",
+          7,
+          "Evocation",
+          "Mordenkainen's Force Blade",
+          "+4 force blade with extra APR."
+        ],
+        [
+          "YOURSCS37",
+          "wizard",
+          7,
+          "Abjuration",
+          "Seven Eyes",
+          "7 protective eye effects."
+        ],
+        [
+          "YOURSCS38",
+          "wizard",
+          7,
+          "Necromancy",
+          "Suffocate",
+          "2d6 crushing/round + slow. Save negates."
+        ],
+        [
+          "YOURSCS39",
+          "wizard",
+          8,
+          "Evocation",
+          "Great Shout",
+          "Cone: 10d3 damage, deafens, shatters."
+        ],
+        [
+          "YOURSCS40",
+          "wizard",
+          8,
+          "Alteration",
+          "Iron Body",
+          "DR 50%, STR 25, immune crits. Cannot cast."
+        ],
+        [
+          "YOURSCS41",
+          "wizard",
+          8,
+          "Abjuration",
+          "Mind Blank",
+          "Immune to all mind-affecting. 1 day."
+        ],
+        [
+          "YOURSCS42",
+          "wizard",
+          8,
+          "Conjuration",
+          "Monster Summoning VI",
+          "SCS-rebalanced summoning."
+        ],
+        [
+          "YOURSCS43",
+          "wizard",
+          9,
+          "Conjuration",
+          "Monster Summoning VII",
+          "SCS-rebalanced summoning."
+        ]
+      ]
+    },
+    "1": {
+      "scope": "additions",
+      "new": [
+        [
+          "SPPR117",
+          "priest",
+          1,
+          "Necromancy",
+          "Cause Light Wounds",
+          "Touch deals 8 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR116",
+          "priest",
+          1,
+          "Conjuration",
+          "Curse",
+          "Enemies -1 THAC0/morale.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "SPPR118",
+          "priest",
+          1,
+          "Evocation",
+          "Sunscorch",
+          "1d6+1/level fire. Undead +2/level.",
+          [
+            "sun",
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR217",
+          "priest",
+          2,
+          "Conjuration",
+          "Alicorn Lance",
+          "Ranged: 1d6+1/2 levels magic.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR218",
+          "priest",
+          2,
+          "Alteration",
+          "Beast Claw",
+          "Claws: 1d6+STR slashing.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR219",
+          "priest",
+          2,
+          "Necromancy",
+          "Cause Moderate Wounds",
+          "Touch deals 14 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR203",
+          "priest",
+          2,
+          "Conjuration",
+          "Chant",
+          "Allies +1, enemies -1.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR216",
+          "priest",
+          2,
+          "Necromancy",
+          "Cure Moderate Wounds",
+          "Heals 14 HP.",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPPR321",
+          "priest",
+          3,
+          "Necromancy",
+          "Cause Disease",
+          "Causes disease reducing stats.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPPR329",
+          "priest",
+          3,
+          "Necromancy",
+          "Cause Medium Wounds",
+          "Touch deals 17 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR324",
+          "priest",
+          3,
+          "Necromancy",
+          "Circle of Bones",
+          "Bone fragments: 1d6/round.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR326",
+          "priest",
+          3,
+          "Evocation",
+          "Cloudburst",
+          "2d8+1/level cold. Save half.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR322",
+          "priest",
+          3,
+          "Abjuration",
+          "Exaltation",
+          "Removes fatigue/fear/mental effects.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "SPPR330",
+          "priest",
+          3,
+          "Necromancy",
+          "Favor of Ilmater",
+          "Transfer ally's damage to caster.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR327",
+          "priest",
+          3,
+          "Alteration",
+          "Mold Touch",
+          "1d6+1/level poison. Save half.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR323",
+          "priest",
+          3,
+          "Evocation",
+          "Moonblade",
+          "+2 scimitar: 1d8+3 magic damage.",
+          [
+            "sun",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR320",
+          "priest",
+          3,
+          "Conjuration",
+          "Prayer",
+          "Allies +1, enemies -1 THAC0/dmg/saves.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR325",
+          "priest",
+          3,
+          "Alteration",
+          "Spike Growth",
+          "1d4 piercing/round, slows.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR328",
+          "priest",
+          3,
+          "Abjuration",
+          "Storm Shell",
+          "50% elec resist, attackers take 2d3 elec.",
+          [
+            "elemental",
+            "protection",
+            "guardian"
+          ]
+        ],
+        [
+          "SPPR421",
+          "priest",
+          4,
+          "Enchantment",
+          "Blood Rage",
+          "+2 STR/CON, -2 AC. Attacks nearest.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR428",
+          "priest",
+          4,
+          "Necromancy",
+          "Cause Serious Wounds",
+          "Touch deals 27 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR422",
+          "priest",
+          4,
+          "Conjuration",
+          "Cloud of Pestilence",
+          "Poison: 1 dmg/round, -1 STR/DEX.",
+          [
+            "elemental",
+            "combat"
+          ]
+        ],
+        [
+          "SPPR429",
+          "priest",
+          4,
+          "Alteration",
+          "Giant Insect",
+          "Summons giant insects.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR418",
+          "priest",
+          4,
+          "Evocation",
+          "Produce Fire",
+          "1d4+1/level fire in area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR420",
+          "priest",
+          4,
+          "Conjuration",
+          "Recitation",
+          "Allies +2, enemies -2. Better Prayer.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR425",
+          "priest",
+          4,
+          "Conjuration",
+          "Smashing Wave",
+          "1d6/level water, knocks prone.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR424",
+          "priest",
+          4,
+          "Evocation",
+          "Star Metal Cudgel",
+          "+3 club: 2d4+3 magic/elec.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR419",
+          "priest",
+          4,
+          "Alteration",
+          "Static Charge",
+          "2d8+1/level electrical.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR426",
+          "priest",
+          4,
+          "Alteration",
+          "Thorn Spray",
+          "Cone: 2d6+1/level piercing.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR423",
+          "priest",
+          4,
+          "Abjuration",
+          "Unfailing Endurance",
+          "Immune fatigue, +1 HP/round regen.",
+          [
+            "protection"
+          ]
+        ],
+        [
+          "SPPR427",
+          "priest",
+          4,
+          "Conjuration",
+          "Wall of Moonlight",
+          "Undead take 2d6/round in wall.",
+          [
+            "sun",
+            "creation"
+          ]
+        ],
+        [
+          "SPPR522",
+          "priest",
+          5,
+          "Enchantment",
+          "Animal Rage",
+          "Berserk: +2 THAC0/damage, attacks all.",
+          [
+            "summoning",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR524",
+          "priest",
+          5,
+          "Necromancy",
+          "Cause Critical Wounds",
+          "Touch deals 37 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR523",
+          "priest",
+          5,
+          "Necromancy",
+          "Mass Cause Light Wounds",
+          "All enemies take 8 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR518",
+          "priest",
+          5,
+          "Conjuration",
+          "Righteous Wrath of the Faithful",
+          "Allies +1 APR, +3 THAC0.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR520",
+          "priest",
+          5,
+          "Abjuration",
+          "Shield of Lathander",
+          "+1 saves/AC, immune drain.",
+          [
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR519",
+          "priest",
+          5,
+          "Alteration",
+          "Spike Stones",
+          "2d4 piercing/round, slows.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR521",
+          "priest",
+          5,
+          "Abjuration",
+          "Undead Ward",
+          "Barrier blocks undead.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "SPPR615",
+          "priest",
+          6,
+          "Abjuration",
+          "Entropy Shield",
+          "50% ranged miss, +2 vs elemental.",
+          [
+            "summoning",
+            "chaos"
+          ]
+        ],
+        [
+          "SPPR617",
+          "priest",
+          6,
+          "Evocation",
+          "Spiritual Wrath",
+          "1d6+1/level magic. Double vs undead.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR616",
+          "priest",
+          6,
+          "Evocation",
+          "Whirlwind",
+          "2d6 crush/round, pushes enemies.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR736",
+          "priest",
+          7,
+          "Necromancy",
+          "Destruction",
+          "Save or die. If saved 10d6.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPPR714",
+          "priest",
+          7,
+          "Necromancy",
+          "Energy Drain",
+          "Drains 2 levels. Save negates.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPPR737",
+          "priest",
+          7,
+          "Abjuration",
+          "Greater Shield of Lathander",
+          "+2 saves, immune drain/death/stun.",
+          [
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR735",
+          "priest",
+          7,
+          "Abjuration",
+          "Impervious Sanctity of Mind",
+          "Immune to all mental attacks.",
+          [
+            "charm",
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR738",
+          "priest",
+          7,
+          "Alteration",
+          "Mist of Eldath",
+          "Heals allies 2d6/round in mist.",
+          [
+            "healing",
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR739",
+          "priest",
+          7,
+          "Conjuration",
+          "Stalker",
+          "Summons invisible stalker.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR734",
+          "priest",
+          7,
+          "Enchantment",
+          "Symbol of Hopelessness",
+          "Area hopelessness. Save negates.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "SPPR733",
+          "priest",
+          7,
+          "Enchantment",
+          "Symbol of Pain",
+          "Area -2 attacks/saves from pain.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "3": {
+      "spells": [
+        [
+          "SPWI305",
+          "tweak",
+          "SCS: Haste rebalanced"
+        ],
+        [
+          "SPWI609",
+          "tweak",
+          "SCS: Improved Haste rebalanced"
+        ]
+      ]
+    },
+    "4": {
+      "spells": [
+        [
+          "SPWI302",
+          "tweak",
+          "SCS: Dispel Magic uses SR-compatible caster level"
+        ]
+      ]
+    },
+    "5": {
+      "spells": [
+        [
+          "SPWI305",
+          "tweak",
+          "SCS: Haste mechanics further tweaked"
+        ]
+      ]
+    },
+    "6": {
+      "spells": [
+        [
+          "SPPR707",
+          "modify",
+          "SCS: Greater Restoration mechanics changed"
+        ]
+      ]
+    },
+    "7": {
+      "spells": [
+        [
+          "SPPR415",
+          "modify",
+          "SCS: Druid shapeshift spells reworked"
+        ]
+      ]
+    },
+    "8": {
+      "spells": [
+        [
+          "SPWI408",
+          "tweak",
+          "SCS: IWD-inspired Stoneskin changes"
+        ]
+      ]
+    },
+    "9": {
+      "spells": [
+        [
+          "SPWI514",
+          "tweak",
+          "SCS: Breach rebalanced"
+        ],
+        [
+          "SPWI609",
+          "tweak",
+          "SCS: Improved Haste nerfed"
+        ]
+      ]
+    },
+    "10": {
+      "spells": [
+        [
+          "SPWI304",
+          "tweak",
+          "SCS: Spell school reassignments"
+        ]
+      ]
+    },
+    "11": {
+      "spells": [
+        [
+          "SPWI503",
+          "tweak",
+          "SCS: Cone of Cold buffed"
+        ],
+        [
+          "SPWI801",
+          "tweak",
+          "SCS: Horrid Wilting buffed"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "SPLSTATE.IDS.*limit|SPLSTATE",
+      "severity": "critical",
+      "category": "concerning",
+      "description": "SPLSTATE.IDS has a 256-entry limit. SCS adds ~40 entries, EE Fixpack ~20, Enhanced Powergaming Scripts ~20. Kit mods that add states can push over the limit.",
+      "workaround": "Reduce the number of kit mods, especially I Hate Undead, large kitpacks. Check SPLSTATE.IDS in your override folder — if it has >250 entries, you are at risk.",
+      "user_action": "check-docs",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "pattern": "namespace conflict|EXALTAH\\.VVC|OHVRPO\\.PRO",
+      "severity": "warning",
+      "category": "caution",
+      "description": "SCS v35.21 cn:1510 (IWD Divine) reports namespace conflict on EXALTAH.VVC, and cn:1520 (IWD Bard Songs) reports namespace conflict on OHVRPO.PRO (5 bard song spells) when EE Fixpack Alpha is installed before SCS. Install completes successfully but resources may not be copied.",
+      "workaround": "These are warnings, not errors. Likely resolved when EE Fixpack Alpha exits alpha. Monitor for gameplay impact on Exaltation spell and bard song projectiles.",
+      "user_action": "check-docs",
+      "components": [
+        1510,
+        1520
+      ],
+      "forum": "https://www.gibberlings3.net/forums/topic/41033-scs-v3521-install-warnings/",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "pattern": "ranged but not melee|has ranged but not melee weapon",
+      "severity": "info",
+      "category": "likely-benign",
+      "description": "SCS cn:6000 (Initialize AI) warns about ~20 creatures that have ranged but no melee weapons (C6WULF, HABIB, QUAYLE, VAELAG, WULFGAR, etc.). Also reports failed script insert: dw#gphlp above gpmerc in OHRSGUA1. These are informational warnings during SCS AI initialization.",
+      "workaround": "No action needed — SCS handles these gracefully. Creatures will use ranged weapons only.",
+      "user_action": "none",
+      "components": [
+        6000
+      ],
+      "forum": "https://www.gibberlings3.net/forums/topic/41033-scs-v3521-install-warnings/",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "pattern": "M_DW_OOD\\.lua|unexpected symbol.*lua",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Lua error 'string M_DW_OOD.lua:301: unexpected symbol' reported after SCS install. Suspected Infinity UI compatibility issue. Single report (shadow85, March 2026), unconfirmed.",
+      "workaround": "If using Infinity UI, set Force_Difficulty_Widget=1 in stratagems.ini and avoid SCS cn:4115 (Thieves skill points in multiples of five). If error persists, try without Infinity UI.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/37390-v35-comments-questions-report-a-bug-in-a-new-topic-not-here/page/19/",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "pattern": "Batch [0-9]+/[0-9]+ (?:done|cancelled) in (([2-9][0-9]+m)|([0-9]+\\.?[0-9]*h)): Sword Coast Stratagems \\(stratagems\\)",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Late-sequence SCS batches can cascade into slowdowns lasting tens of minutes to over an hour per batch. SCS shares the SFO library with Talents of Faerun, IWDification, and MiH mods — all accumulate SFO memory pressure. Observed: session 88733aac (2026-04-16) batch 450 ran 15min, batch 451 ran 1.1h with throughput cascade detected at 30min (417 → 147 lines/min). The slowest SCS component is typically cn:6000 (Initialise AI) which processes every creature file in the game with heavy ALTER_SCRIPT_BLOCK and COPY_EXISTING loops. Previous sessions (3e3996c9, c623ff72) also showed SCS batches running 3-9min each in the 440-455 range.",
+      "workaround": "If an SCS batch exceeds ~10 minutes, the slow-batch watchdog will warn in gui.log with the last WeiDU output line. The batch is not stuck — it's working but slow. Aborting and restarting usually resumes past the slow batch (checkpoint recovery). For faster installs, consider reducing SCS component count — cn:6000 (Initialise AI) is the single longest component and can be deferred to a lighter install.",
+      "user_action": "check-docs",
+      "components": [
+        6000,
+        6010,
+        6030,
+        6040
+      ],
+      "forum": "https://github.com/Gibberlings3/SwordCoastStratagems/issues",
+      "evidenceLevel": "observed",
+      "source": "Session references extracted from description on 2026-04-21 during Phase 2.3 validator rollout: session 88733aac"
+    },
+    {
+      "pattern": "finbalth\\.bcs.*PARSE ERROR|Smarter Throne of Bhaal final villain.*NOT INSTALLED|Smarter Illasera.*NOT INSTALLED|Smarter Gromnir.*NOT INSTALLED",
+      "severity": "error",
+      "category": "concerning",
+      "description": "SCS ToB final-villain components (cn:6590 Smarter Throne of Bhaal final villain, cn:6840 Smarter Illasera, cn:6860 Smarter Gromnir) call DECOMPILE_AND_PATCH on finbalth.bcs — a 44 KB override script with dense AI blocks. The round-trip produces BAF that fails to re-parse ('PARSE ERROR at line 124 column 1-40, Near Text: )'), likely because SCS's disjunctive_substitution output has unbalanced parentheses in an OR() block for this specific script's trigger shape. Observed in session 6693001a (2026-04-16): all 3 components rolled back, cascading into 48 downstream SCS batches (455-470) silently skipping their dependents over ~45 seconds due to failed REQUIRE_COMPONENT predicates.",
+      "workaround": "The DECOMPILE_AND_PATCH failure is at the WeiDU engine level, not inside SFO ALTER_SCRIPT_BLOCK, so the per-mod PATCH_TRY patches don't cover it. Two mitigations: (1) Enable Infinity Mod Runner's experimental Resilient WeiDU (Setup → Experimental) which catches round-trip failures at the engine level and returns original buffer unchanged; (2) If only a few components are affected, let them fail — the cascade-skipped components are pure tactical improvements and the install is functionally complete without them. Investigating the specific BAF output at line 124 of finbalth.bcs would need SCS-side debugging.",
+      "user_action": "check-docs",
+      "components": [
+        6590,
+        6840,
+        6860
+      ],
+      "evidenceLevel": "observed",
+      "source": "Session references extracted from description on 2026-04-21 during Phase 2.3 validator rollout: session 6693001a"
+    },
+    {
+      "pattern": "SKIPPING.*Revised Shapeshifting Tokens for SCS|Improved Shapeshifting.*must be installed",
+      "severity": "info",
+      "category": "cosmetic",
+      "description": "Bart_Tweaks cn:2030 (Revised Shapeshifting Tokens for SCS) silently skips if SCS #4030 (Improved Shapeshifting) is not installed. SCS #4030 itself auto-skips if ToF #40600 (Revised Druid Shapeshifting) or #41000 (Rebalanced Kits) is installed. 3-way chain: ToF #40600/#41000 installed → SCS #4030 skips → Bart #2030 skips.",
+      "workaround": "Either: (A) Skip ToF #40600/#41000 and enable SCS #4030 + Bart #2030; OR (B) Keep ToF and drop SCS #4030 + Bart #2030 from your preset. Cannot use all three together.",
+      "user_action": "none",
+      "components": [
+        4030
+      ],
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/SwordCoastStratagems/releases",
+  "a": "DavidW",
+  "v": "35.21",
+  "sum": "SCS pre-tactical section: AI initialization, spell tweaks, and setup components that must install before the main tactical changes.",
+  "tags": [
+    "tactical",
+    "combat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "rec": {
+    "goes_with": [
+      "Ascension",
+      "Enhanced Powergaming Scripts",
+      "Tweaks Anthology"
+    ],
+    "avoid": [
+      "aTweaks PnP Fiends (overlaps AI)",
+      "Mixing SFO and ClassSpellTool mods"
+    ],
+    "tip": "Install on Core/Hard first. Insane SCS is a very different game. Use Enhanced Powergaming Scripts for auto-buffing to match."
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "SwordCoastStratagems"
+  },
+  "dl": "https://github.com/Gibberlings3/SwordCoastStratagems/releases",
+  "au": "DavidW",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install in batch mode (DO NOT USE WITH PROJECT INFINITY)",
+      "cn": 100,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Install in batch mode (ask about all components before starting installation). DO NOT USE WITH PROJECT INFINITY.",
+      "no": "Meta/installer helper component. Skips per-component prompts. Incompatible with Project Infinity installer.",
+      "tg": "adv"
+    },
+    {
+      "n": "Include arcane spells from Icewind Dale: Enhanced Edition",
+      "cn": 1500,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 1500,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "sp": 38,
+      "spLv": {
+        "w1": 1,
+        "w2": 3,
+        "w3": 2,
+        "w4": 8,
+        "w5": 5,
+        "w6": 7,
+        "w7": 7,
+        "w8": 4,
+        "w9": 1
+      },
+      "no": "Adds IWD arcane spells to BG2. FORBID SCS cn:5900 (AI Init). Not compatible with SCS AI components.",
+      "tp2n": "Include arcane spells from Icewind Dale: Enhanced Edition",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Include divine spells from Icewind Dale: Enhanced Edition",
+      "cn": 1510,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 1510,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "sp": 50,
+      "spLv": {
+        "p1": 3,
+        "p2": 4,
+        "p3": 11,
+        "p4": 12,
+        "p5": 8,
+        "p6": 3,
+        "p7": 9
+      },
+      "no": "Adds IWD divine spells to BG2. FORBID SCS cn:5900.",
+      "tp2n": "Include divine spells from Icewind Dale: Enhanced Edition",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Include bard songs from Icewind Dale: Enhanced Edition",
+      "cn": 1520,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 1520,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Adds IWD bard songs to BG2. FORBID SCS cn:5900.",
+      "tp2n": "Include bard songs from Icewind Dale: Enhanced Edition",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "IWD: Use BG-style Insect Plague and Creeping Doom",
+      "cn": 1600,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Use Baldur's Gate-style Insect Plague and Creeping Doom instead of Icewind Dale versions",
+      "no": "IWDEE-only. FORBID_COMPONENT SCS #5900. Also forbids dw_som/dw_talents #1600.",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "IWD: Use BG-style Mordenkainen's Sword",
+      "cn": 1610,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Use Baldur's Gate-style Mordenkainen's Sword in addition to Icewind Dale version",
+      "no": "IWDEE-only. FORBID_COMPONENT SCS #5900. Also forbids dw_som/dw_talents #1610.",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Install all spell tweaks (if you don't select this, you will be given a chance to choose by category)",
+      "no": "Already done by IWDification. Take either this all-inclusive component, or the individual ones below",
+      "cn": 2000,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2000,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "tp2n": "Install all spell tweaks (if you don't select this, you will be given a chance to choose by category)",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Core Stratagems spell-system changes (installed by default by any AI component)",
+      "cn": 2010,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2010,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Redundant with ToF.",
+      "tp2n": "Core Stratagems spell-system changes (installed by default by any AI component)",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Baldur's Gate-inspired tweaks to Icewind Dale spells",
+      "ss": 1,
+      "cn": 2020,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2020,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "BG-inspired tweaks to IWD spells (IWDEE version).",
+      "tp2n": "Baldur's Gate-inspired tweaks to Icewind Dale spells",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Changes to Restoration",
+      "cn": 2030,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2030,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Changes Restoration to not restore drained levels instantly.",
+      "tp2n": "Changes to Restoration",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Changes to shapeshift spells",
+      "cn": 2040,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2040,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "INSTALLS WITH WARNINGS (non-fatal): 'no effects altered on SPIN150.spl' — shapeshift innate spell already modified by another mod. Redundant with ToF. INSTALLED WITH WARNINGS — SPWI904.spl (Malavon's Corrosive Fog) missing from override, struct_copy aborted. Harmless — SCS continues gracefully. Also SPPR120 no effects altered (normal).",
+      "tp2n": "Changes to shapeshift spells",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Icewind Dale-inspired tweaks to Baldur's Gate/Baldur's Gate II spells",
+      "no": "Incompatible with JTweaks' Shapeshift corrections Redundant with ToF.",
+      "cn": 2050,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2050,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "tp2n": "Icewind Dale-inspired tweaks to Baldur's Gate/Baldur's Gate II spells",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Rebalancings of slightly-too-powerful spells",
+      "cn": 2060,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2060,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Nerfs slightly overpowered spells (Protection from Magic Weapons duration, etc.).",
+      "tp2n": "Rebalancings of slightly-too-powerful spells",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Spell school changes",
+      "cn": 2070,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2070,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Redundant with ToF.",
+      "tp2n": "Spell school changes",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Spells increased in power",
+      "cn": 2080,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2080,
+      "wq": "exact",
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "no": "Redundant with ToF.",
+      "tp2n": "Spells increased in power",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Add 9 new arcane spells",
+      "cn": 2500,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2500,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "sp": 10,
+      "spLv": {
+        "w1": 2,
+        "w2": 2,
+        "w3": 1,
+        "w5": 1,
+        "w8": 1,
+        "w9": 3
+      },
+      "no": "INSTALLS WITH WARNINGS (non-fatal): 'supposed in-game object SPWI904.spl is missing' — SR removed/renamed this spell. SCS skips the struct_copy. Redundant with ToF.",
+      "tp2n": "Add 9 new arcane spells",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Add 6 new divine spells (some borrowed from Divine Remix)",
+      "cn": 2510,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2510,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "sp": 6,
+      "spLv": {
+        "p1": 2,
+        "p2": 2,
+        "p4": 1,
+        "p7": 1
+      },
+      "no": "INSTALLS WITH WARNINGS (non-fatal): 'no effects altered on SPPR120.spl' — divine spell already modified by SR. Redundant with ToF.",
+      "tp2n": "Add 6 new divine spells (some borrowed from Divine Remix)",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Revised elementals and elemental summoning",
+      "no": "Install after mods using Olvyn's spell system (Olvyn spells, Shadow Magic, Warlock)",
+      "cn": 2520,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2520,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tg": "adv",
+      "cat": "SPELL MODS",
+      "sp": 2,
+      "spLv": {
+        "p6": 1,
+        "p7": 1
+      },
+      "tp2n": "Revised elementals and elemental summoning",
+      "grn": "Spell system revisions and new spells"
+    },
+    {
+      "n": "Move or modify some overpowered magic items",
+      "cn": 2900,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 2900,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Moves or nerfs overpowered items (Robe of Vecna, Staff of the Magi, etc.).",
+      "tp2n": "Move or modify some overpowered magic items",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Replace +1 arrows and other projectiles with nonmagical \"fine\" ones",
+      "no": "Use .ini options for compatibility with other mods",
+      "cn": 3010,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3010,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "tp2n": "Replace +1 arrows and other projectiles with nonmagical \"fine\" ones",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Re-introduce potions of extra-healing",
+      "cn": 3015,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3015,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "qol",
+      "no": "Re-introduces Potions of Extra Healing to BG1 stores.",
+      "tp2n": "Re-introduce potions of extra-healing",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Make elemental arrows like BG2",
+      "cn": 3017,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3017,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Makes BG1 elemental arrows match BG2 damage values.",
+      "tp2n": "Make elemental arrows like BG2",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Replace many +1 magic weapons with nonmagical \"fine\" ones",
+      "cn": 3020,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3020,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Replaces many +1 weapons with non-magical 'fine' versions. Reduces magic item inflation.",
+      "tp2n": "Replace many +1 magic weapons with nonmagical \"fine\" ones",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Fine Weapons: Immune to iron crisis",
+      "no": "Also done by IWDification v Replace magic with fine weapons",
+      "cn": 3021,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3021,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "fine_weapons",
+      "scn": "Replace many +1 magic weapons with nonmagical \"fine\" ones",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Fine weapons are immune to the iron crisis"
+    },
+    {
+      "n": "Fine Weapons: Affected by iron crisis",
+      "cn": 3022,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3022,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "fine_weapons",
+      "scn": "Replace many +1 magic weapons with nonmagical \"fine\" ones",
+      "grn": "Gameplay tweaks",
+      "no": "Fine weapons variant: affected by iron crisis (break like normal weapons).",
+      "tp2n": "Fine weapons are affected by the iron crisis"
+    },
+    {
+      "n": "Arrows of Dispelling: Remove from stores",
+      "no": "v Reduce arrows of Dispelling",
+      "cn": 3040,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3040,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "arrows_dispel",
+      "scn": "Reduce the number of Arrows of Dispelling in stores",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Remove Arrows of Dispelling from stores"
+    },
+    {
+      "n": "Arrows of Dispelling: Max 5 per store",
+      "cn": 3041,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3041,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "arrows_dispel",
+      "scn": "Reduce the number of Arrows of Dispelling in stores",
+      "grn": "Gameplay tweaks",
+      "no": "Arrows of Dispelling variant: stores stock max 5 instead of removing entirely.",
+      "tp2n": "Stores sell a maximum of 5 Arrows of Dispelling"
+    },
+    {
+      "n": "Standardize Spells: Remove BG2 spells from BG1",
+      "no": "v Standardize spells between BG1-2",
+      "cn": 3500,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3500,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "std_spells",
+      "scn": "Standardise spells between BG and BG2",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Remove spells not in BG1"
+    },
+    {
+      "n": "Standardize Spells: Add BG2 scrolls to BG1",
+      "cn": 3501,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3501,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "std_spells",
+      "scn": "Standardise spells between BG and BG2",
+      "grn": "Gameplay tweaks",
+      "no": "Standardize spells variant: adds BG2 spell scrolls to BG1 shops.",
+      "tp2n": "Introduce BG2 spell scrolls into BG1"
+    },
+    {
+      "n": "Wider selection of random scrolls",
+      "cn": 3505,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3505,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Adds more variety to random spell scrolls found in loot.",
+      "tp2n": "Wider selection of random scrolls",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "IWD: Wider availability of wizard spell scrolls",
+      "cn": 3510,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Wider availability of wizard spell scrolls in Icewind Dale",
+      "no": "IWDEE-only.",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Inquisitor Dispel: 1.5x level",
+      "no": "Install error may occur with MiH Spells and Shadow Magic present",
+      "cn": 3540,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3540,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "inq_dispel",
+      "scn": "Reduce the power of Inquisitors' Dispel Magic",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Inquisitors dispel at 1.5 x their level (not twice their level)"
+    },
+    {
+      "n": "Inquisitor Dispel: 1x level",
+      "cn": 3541,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3541,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "inq_dispel",
+      "scn": "Reduce the power of Inquisitors' Dispel Magic",
+      "grn": "Gameplay tweaks",
+      "no": "Inquisitor Dispel variant: 1x caster level instead of 1.5x.",
+      "tp2n": "Inquisitors dispel at their level (not twice their level)"
+    },
+    {
+      "n": "Improved healing: Random damage/healing amount",
+      "cn": 3550,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Spells heal or inflict a random amount of damage (1d8 per level of the spell, plus 1 point per caster level, to a maximum of 5 points per spell level)",
+      "dep": "v18 author-marked DEPRECATED @50013",
+      "no": "SUBCOMPONENT @226 \"Improved Healing\". Part of a choose-one group with #3551.",
+      "scn": "Increase the power of Cure Wounds and Cause Wounds spells to the level found in 3rd Edition D&D",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Cure/Cause Wounds 3E: Maximum damage",
+      "no": "v Increase power of Cure/Cause Wounds to 3e",
+      "cn": 3551,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3551,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "cure_wounds",
+      "scn": "Increase the power of Cure Wounds and Cause Wounds spells to the level found in 3rd Edition D&D",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Spells heal or inflict the maximum amount of damage in this range"
+    },
+    {
+      "n": "Cure/Cause Wounds 3E: Average damage",
+      "cn": 3552,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 3552,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "cure_wounds",
+      "scn": "Increase the power of Cure Wounds and Cause Wounds spells to the level found in 3rd Edition D&D",
+      "grn": "Gameplay tweaks",
+      "no": "Cure/Cause Wounds variant: average damage instead of maximum.",
+      "tp2n": "Spells heal or inflict about the average amount of damage in this range"
+    },
+    {
+      "n": "Restoration spells cure ability drain",
+      "cn": 3580,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Greater Restoration and Lesser Restoration spells heal ability-score damage",
+      "dep": "v18 author-marked DEPRECATED @50013",
+      "no": "DEPRECATED. Note: tp2n in tra @233 resolves to beholder-related text but the LABEL is \"dw_restoration_ability_drain\"; tra appears misaligned in SCS v35+.",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "More Appropriate-Speed Bears",
+      "tp2n": "More Appropriate-Speed Bears",
+      "cn": 4000,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4000,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "cos",
+      "no": "Adjusts bear movement speed to match their size (brown bears slower than cave bears).",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "More realistic wolves and wild dogs",
+      "no": "May cause issues with Wilson",
+      "cn": 4020,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4020,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "tp2n": "More realistic wolves and wild dogs",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Improved shapeshifting",
+      "cn": 4030,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4030,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Redundant with AK, F&P, or ToF shapeshifting",
+      "tp2n": "Improved shapeshifting",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Reputation Rate: 2/3 normal",
+      "no": "v Reputation Rate Redundant with AK, F&P, or ToF reputation changes.",
+      "cn": 4050,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4050,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "rep_rate",
+      "scn": "Decrease the rate at which reputation improves",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Reputation increases at about 2/3 the normal rate"
+    },
+    {
+      "n": "Reputation Rate: 1/2 normal",
+      "cn": 4051,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4051,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "rep_rate",
+      "scn": "Decrease the rate at which reputation improves",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Reputation increases at about 1/2 the normal rate"
+    },
+    {
+      "n": "Reputation Rate: 1/3 normal",
+      "cn": 4052,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4052,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "rep_rate",
+      "scn": "Decrease the rate at which reputation improves",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Reputation increases at about 1/3 the normal rate"
+    },
+    {
+      "n": "Reputation Rate: 1/4 normal",
+      "cn": 4093,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4093,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "rep_rate",
+      "scn": "Decrease the rate at which reputation improves",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Reputation increases at about 1/4 the normal rate"
+    },
+    {
+      "n": "Allow player to choose NPC proficiencies and skills",
+      "cn": 4099,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Allow player to choose NPC proficiencies and skills",
+      "no": "BG-engine only (BGT/EET/Tutu/BGEE).",
+      "tg": "qol",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Improved NPC customization and management",
+      "cn": 4100,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4100,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST EET",
+      "no": "Overhauls NPC customization: proficiencies, spells, kits. POST EET component. FORBID cdtweaks cn:2370/2372 and ToF cn:60300.",
+      "tp2n": "Improved NPC customization and management",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Thieves assign skill points in multiples of five",
+      "no": "Don't mix with SubtleD's NPC EE or ToF's equivalent",
+      "cn": 4115,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4115,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "qol",
+      "tp2n": "Thieves assign skill points in multiples of five",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Revised handling of death effects like disintegration, petrification and imprisonment (party members who are disintegrated etc can be resurrected; imprisoned or petriied characters rejoin the party",
+      "no": "Use this only if not installing ToF's equivalent",
+      "cn": 4130,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4130,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tg": "qol",
+      "tp2n": "Revised handling of death effects like disintegration, petrification and imprisonment (party members who are disintegrated etc can be resurrected; imprisoned or petrified characters rejoin the party automatically; the game doesn't end if the main character is petrified or imprisoned)",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Revised resting: resting in the wild uses up provisions",
+      "cn": 4135,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4135,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tg": "adv",
+      "no": "Resting in the wild consumes provisions from inventory. Adds resource management.",
+      "tp2n": "Revised resting: resting in the wild uses up provisions",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Revised inn rooms: more expensive, more benefits",
+      "cn": 4140,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4140,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tg": "adv",
+      "no": "Inn rooms cost more but provide better healing and spell restoration benefits.",
+      "tp2n": "Revised inn rooms: more expensive, more benefits",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Candlekeep: Remove tutorial NPCs",
+      "no": "Convenient but second option defeats purpose of Candlekeep Revisited",
+      "cn": 4145,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4145,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "skip_ck",
+      "scn": "Skip the Candlekeep tutorial sections",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Remove the tutorial NPCs from Candlekeep"
+    },
+    {
+      "n": "Candlekeep: Skip entirely (breaks 4th wall)",
+      "cn": 4146,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4146,
+      "wq": "exact",
+      "tg": "cau",
+      "g": "skip_ck",
+      "scn": "Skip the Candlekeep tutorial sections",
+      "grn": "Gameplay tweaks",
+      "no": "Skips Candlekeep tutorial entirely and starts in the wilderness. Breaks fourth wall.",
+      "tp2n": "Skip Candlekeep altogether (warning: breaks the 4th wall!)"
+    },
+    {
+      "n": "Allow the Cowled Wizards to detect spellcasting in most indoor, above-ground areas in Athkatla",
+      "cn": 4150,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4150,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "",
+      "tp2n": "Allow the Cowled Wizards to detect spellcasting in most indoor, above-ground areas in Athkatla",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Magic License: 10,000 gp",
+      "no": "v Magic license price",
+      "cn": 4160,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4160,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "license",
+      "scn": "Increase the price of a license to practise magic in Athkatla",
+      "grn": "Gameplay tweaks",
+      "tp2n": "License costs 10,000 gp"
+    },
+    {
+      "n": "Magic License: 15,000 gp",
+      "cn": 4161,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4161,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "license",
+      "scn": "Increase the price of a license to practise magic in Athkatla",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "License costs 15,000 gp"
+    },
+    {
+      "n": "Magic License: 20,000 gp",
+      "cn": 4162,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4162,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "license",
+      "scn": "Increase the price of a license to practise magic in Athkatla",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "License costs 20,000 gp"
+    },
+    {
+      "n": "Magic License: 30,000 gp",
+      "cn": 4163,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4163,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "license",
+      "scn": "Increase the price of a license to practise magic in Athkatla",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "License costs 30,000 gp"
+    },
+    {
+      "n": "Magic License: 50,000 gp",
+      "cn": 4164,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4164,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "license",
+      "scn": "Increase the price of a license to practise magic in Athkatla",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "License costs 50,000 gp"
+    },
+    {
+      "n": "Gaelan Price: 40,000 gp",
+      "no": "Moot when I4E or Imoen Romance is installed",
+      "cn": 4170,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4170,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "gaelan",
+      "scn": "Increase the price asked by Gaelan Bayle",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Gaelan wants 40,000 gold pieces"
+    },
+    {
+      "n": "Gaelan Price: 60,000 gp",
+      "cn": 4171,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4171,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "gaelan",
+      "scn": "Increase the price asked by Gaelan Bayle",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Gaelan wants 60,000 gold pieces"
+    },
+    {
+      "n": "Gaelan Price: 80,000 gp",
+      "cn": 4172,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4172,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "gaelan",
+      "scn": "Increase the price asked by Gaelan Bayle",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Gaelan wants 80,000 gold pieces"
+    },
+    {
+      "n": "Gaelan Price: 100,000 gp",
+      "cn": 4173,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4173,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "gaelan",
+      "scn": "Increase the price asked by Gaelan Bayle",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Gaelan wants 100,000 gold pieces"
+    },
+    {
+      "n": "Gaelan Price: 120,000 gp",
+      "cn": 4174,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4174,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "gaelan",
+      "scn": "Increase the price asked by Gaelan Bayle",
+      "grn": "Gameplay tweaks",
+      "no": "",
+      "tp2n": "Gaelan wants 120,000 gold pieces"
+    },
+    {
+      "n": "Make Watchers' Keep accessible between SoA and ToB (WARNING: this will make it inaccessible until the end of SoA)",
+      "tp2n": "Make Watchers' Keep accessible between SoA and ToB (warning: this will make it inaccessible until the end of SoA)",
+      "cn": 4190,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4190,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Makes Watcher's Keep accessible between SoA and ToB instead of only during one campaign.",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Randomize the maze in Watcher's Keep",
+      "no": "v35.19 has chapter check issue. Fixed in v35.20+",
+      "cn": 4210,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4210,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "tp2n": "Randomize the maze in Watcher's Keep",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Remove unrealistically helpful items from certain areas",
+      "cn": 4215,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4215,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Removes unrealistically placed powerful items from certain areas (e.g., scrolls in easy dungeons).",
+      "tp2n": "Remove unrealistically helpful items from certain areas",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Ammo Removal: Nonmagical only",
+      "no": "v Convenient ammo removal",
+      "cn": 4216,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4216,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "g": "ammo_remove",
+      "scn": "Remove unrealistically convenient ammunition from the game",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Only remove nonmagical ammo from random containers"
+    },
+    {
+      "n": "Ammo Removal: Up to +2",
+      "cn": 4217,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4217,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "ammo_remove",
+      "scn": "Remove unrealistically convenient ammunition from the game",
+      "grn": "Gameplay tweaks",
+      "no": "Ammo removal variant: removes up to +2 enchanted ammo from containers.",
+      "tp2n": "Remove ammo up to the +2 level from random containers"
+    },
+    {
+      "n": "Ammo Removal: All ammo",
+      "cn": 4218,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4218,
+      "wq": "exact",
+      "tg": "adv",
+      "g": "ammo_remove",
+      "scn": "Remove unrealistically convenient ammunition from the game",
+      "grn": "Gameplay tweaks",
+      "no": "Ammo removal variant: removes all ammo from containers.",
+      "tp2n": "Remove all ammo from random containers"
+    },
+    {
+      "n": "Delay the arrival of the \"bonus merchants\" in the Adventurers' Mart and the Copper Coronet",
+      "cn": 4230,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4230,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Delays bonus merchants in Adventurer's Mart and Copper Coronet until later chapters.",
+      "tp2n": "Delay the arrival of the \"bonus merchants\" in the Adventurers' Mart and the Copper Coronet",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Treat mages' and priests' High-Level Abilities as innate abilities rather than memorisable spells (each may be taken only once)",
+      "cn": 4240,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4240,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Treats mage/priest HLAs as innate abilities (each taken once). Reads existing HLA tables — install AFTER all HLA table mods (Refinements, ToF, RR). FORBID Spell Revisions.",
+      "tp2n": "Treat mages' and priests' High-Level Abilities as innate abilities rather than memorisable spells (each may be taken only once)",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Make spell sequencers and contingencies into innate abilities",
+      "no": "Blocked by Tome and Blood metamagic system (qdtnb_metamagic.qd).",
+      "cn": 4250,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 4250,
+      "wq": "exact",
+      "tg": "adv",
+      "tp2n": "Make spell sequencers and contingencies into innate abilities",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Ease-of-use party AI",
+      "no": "Replaces standard Advanced AI with SCS party scripts. Auto-heals out of combat, intelligent target selection in combat, hotkey-based defensive prebuffing (C=Chaotic Commands, V=Death Ward, etc.). Precasting disabled by default for sorcerers/shamans. Complements EPS pre-buffing scripts (install SCS first).",
+      "cn": 5000,
+      "ss": 5,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 5000,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "qol",
+      "splstates": 5,
+      "tp2n": "Ease-of-use party AI",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Cosmetic change: stop Stoneskins from changing the caster's colour",
+      "no": "Original BG2:ToB engine only. Not compatible with Enhanced Edition.",
+      "cn": 5070,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 5070,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "cos",
+      "tp2n": "Cosmetic change: stop Stoneskins from changing the caster's colour",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Improved BG Textscreens",
+      "cn": 5080,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 5080,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "qol",
+      "no": "Adds flavor text screens between BG1 chapters, similar to BG2's chapter narrations.",
+      "tp2n": "Improved BG Textscreens",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Initialise AI components (required for all tactical and AI components)",
+      "cn": 5900,
+      "ss": 30,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 5900,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "REQUIRED for all SCS tactical and AI components (cn:6000-8190). Initializes AI framework.",
+      "splstates": 39,
+      "tp2n": "Initialise AI components (required for all tactical and AI components)",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter general AI",
+      "ss": 42,
+      "cn": 6000,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6000,
+      "wq": "exact",
+      "tg": "rec",
+      "no": "Core combat AI: enemies use better tactics, positioning, and target selection.",
+      "rd": 67,
+      "splstates": 1,
+      "tp2n": "Smarter general AI",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Better calls for help",
+      "ss": 1,
+      "cn": 6010,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6010,
+      "wq": "exact",
+      "tg": "rec",
+      "no": "Enemies call for reinforcements from nearby areas.",
+      "rd": 67,
+      "tp2n": "Better calls for help",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "IWD: Smarter general AI and better calls for help",
+      "cn": 6020,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Smarter general AI and better calls for help",
+      "no": "IWDEE-only. Requires SCS #5900 (Initialise AI) installed.",
+      "rd": 67,
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Mages",
+      "no": "Limit on help calls means encounter groups designed to work independently",
+      "cn": 6030,
+      "ss": 4,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6030,
+      "wq": "exact",
+      "tg": "rec",
+      "rd": 67,
+      "tp2n": "Smarter Mages",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Priests",
+      "cn": 6040,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6040,
+      "wq": "exact",
+      "tg": "rec",
+      "no": "Priest enemies cast prebuffs, use defensive spells, and heal intelligently.",
+      "rd": 67,
+      "tp2n": "Smarter Priests",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Potions for NPCs",
+      "cn": 6100,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6100,
+      "wq": "exact",
+      "tg": "rec",
+      "no": "Enemy NPCs use healing and buff potions in combat.",
+      "rd": 67,
+      "rd2": 68,
+      "tp2n": "Potions for NPCs",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Improved Spiders",
+      "cn": 6200,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6200,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Spiders use web and poison more tactically. BG1 areas.",
+      "rd": 67,
+      "tp2n": "Improved Spiders",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter sirines and dryads",
+      "cn": 6300,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6300,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Sirines use charm and abilities more effectively. BG1 areas.",
+      "rd": 67,
+      "tp2n": "Smarter sirines and dryads",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Slightly smarter carrion crawlers",
+      "cn": 6310,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6310,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Carrion crawlers use paralysis attacks more intelligently.",
+      "rd": 67,
+      "rd2": 68,
+      "tp2n": "Slightly smarter carrion crawlers",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter basilisks",
+      "cn": 6320,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6320,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Basilisks use petrification gaze more tactically. BG1 areas.",
+      "rd": 67,
+      "tp2n": "Smarter basilisks",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Improved golems",
+      "cn": 6500,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6500,
+      "wq": "exact",
+      "tg": "adv",
+      "no": ".ini No_Cursed_Golem_Wounds=1 to skip cursed fist on clay golems",
+      "rd": 67,
+      "tp2n": "Improved golems",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Improved fiends and celestials",
+      "no": "Personal note: .ini No_Cursed_Golem_Wounds set to 1 to skip the cursed fist on clay golems",
+      "cn": 6510,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6510,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved fiends and celestials",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter genies",
+      "no": "Some current problems with summoned creature AI",
+      "cn": 6520,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6520,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Smarter genies",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter dragons",
+      "cn": 6540,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6540,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Dragons use full spell repertoire and better combat tactics.",
+      "rd": 67,
+      "tp2n": "Smarter dragons",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter beholders",
+      "cn": 6550,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6550,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Beholders use antimagic rays and eye stalks strategically.",
+      "rd": 67,
+      "splstates": 16,
+      "tp2n": "Smarter beholders",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter mind flayers",
+      "cn": 6560,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6560,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Mind flayers use psionic blast and devour brain more effectively.",
+      "rd": 67,
+      "tp2n": "Smarter mind flayers",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter githyanki",
+      "cn": 6570,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6570,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Githyanki use their psionic abilities and silver swords.",
+      "rd": 67,
+      "rd2": 68,
+      "tp2n": "Smarter githyanki",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Improved Vampires",
+      "cn": 6580,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6580,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Vampires use domination, level drain, and gaseous form tactically.",
+      "rd": 67,
+      "tp2n": "Improved Vampires",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Throne of Bhaal final villain",
+      "cn": 6590,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6590,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Amelyssan uses improved AI and full spell repertoire.",
+      "rd": 67,
+      "tp2n": "Smarter Throne of Bhaal final villain",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "IWD: Revised Icewind Dale Undead",
+      "cn": 6700,
+      "wf": "stratagems",
+      "wp": "stratagems\\setup-stratagems.tp2",
+      "wq": "verified",
+      "tp2n": "Revised Icewind Dale Undead",
+      "no": "IWDEE-only. Requires SCS #5900 (Initialise AI) installed.",
+      "rd": 67,
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Illasera",
+      "cn": 6800,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6800,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Illasera uses better tactics and positioning.",
+      "rd": 67,
+      "tp2n": "Smarter Illasera",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Gromnir",
+      "cn": 6810,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6810,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Gromnir uses improved combat AI.",
+      "rd": 67,
+      "tp2n": "Smarter Gromnir",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Yaga-Shura",
+      "cn": 6820,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6820,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Yaga-Shura uses fire giant abilities and better tactics.",
+      "rd": 67,
+      "tp2n": "Smarter Yaga-Shura",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Smarter Abazigal",
+      "cn": 6830,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6830,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Abazigal uses dragon abilities more effectively.",
+      "rd": 67,
+      "tp2n": "Smarter Abazigal",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Ascension versions of Irenicus and Sendai use SCS abilities and AI",
+      "cn": 6840,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6840,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Ascension Irenicus and Sendai use SCS-enhanced AI.",
+      "rd": 67,
+      "rd2": 70,
+      "tp2n": "Ascension versions of Irenicus and Sendai use SCS abilities and AI",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Ascension demons use SCS abilities and AI",
+      "cn": 6850,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 6850,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Ascension demons use SCS fiend AI and abilities.",
+      "rd": 67,
+      "rd2": 78,
+      "tp2n": "Ascension demons use SCS abilities and AI",
+      "grn": "AI enhancements"
+    },
+    {
+      "n": "Improved doppelgangers",
+      "cn": 7000,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7000,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Doppelgangers use better disguise and ambush tactics.",
+      "rd": 67,
+      "tp2n": "Improved doppelgangers",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tougher Black Talons and Iron Throne guards",
+      "cn": 7010,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7010,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Black Talon and Iron Throne mercenaries are better equipped and use tactics.",
+      "rd": 67,
+      "tp2n": "Tougher Black Talons and Iron Throne guards",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved deployment for parties of assassins",
+      "cn": 7020,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7020,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Assassin parties use better positioning and ambush deployment.",
+      "rd": 67,
+      "tp2n": "Improved deployment for parties of assassins",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved kobolds",
+      "cn": 7030,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7030,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Kobolds use fire arrows, traps, and ambush tactics more effectively.",
+      "rd": 67,
+      "tp2n": "Improved kobolds",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Relocated bounty hunters",
+      "cn": 7040,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7040,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Bounty hunters appear at different locations for variety.",
+      "rd": 67,
+      "tp2n": "Relocated bounty hunters",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Ulcaster",
+      "cn": 7050,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7050,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Ulcaster dungeon enemies use better tactics.",
+      "rd": 67,
+      "tp2n": "Improved Ulcaster",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Balduran's Isle",
+      "cn": 7060,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7060,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Balduran's Isle encounters are more challenging with better tactics.",
+      "rd": 67,
+      "tp2n": "Improved Balduran's Isle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Durlag's Tower",
+      "cn": 7070,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7070,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Durlag's Tower encounters use improved AI throughout.",
+      "rd": 67,
+      "tp2n": "Improved Durlag's Tower",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Demon Cultists",
+      "cn": 7080,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7080,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Demon cultists use summoning and dark magic more effectively.",
+      "rd": 67,
+      "tp2n": "Improved Demon Cultists",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Cloakwood Druids",
+      "cn": 7090,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7090,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Cloakwood druids use nature spells and shapeshifting.",
+      "rd": 67,
+      "rd2": 71,
+      "tp2n": "Improved Cloakwood Druids",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Bassilus",
+      "cn": 7100,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7100,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Bassilus uses undead minions and necromancy more effectively.",
+      "rd": 67,
+      "tp2n": "Improved Bassilus",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Drasus party",
+      "cn": 7110,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7110,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Drasus party members use coordinated tactics.",
+      "rd": 67,
+      "tp2n": "Improved Drasus party",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Red Wizards",
+      "cn": 7130,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7130,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Red Wizards use high-level evocation and conjuration.",
+      "rd": 67,
+      "rd2": 70,
+      "tp2n": "Improved Red Wizards",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Undercity assassins",
+      "cn": 7140,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7140,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Undercity assassins use backstab and poison tactics.",
+      "rd": 67,
+      "tp2n": "Improved Undercity assassins",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Carsa/Kahrk interaction",
+      "cn": 7150,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7150,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Carsa/Kahrk interaction improved with better dialogue and combat.",
+      "rd": 67,
+      "tp2n": "Improved Carsa/Kahrk interaction",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tougher chapter-two end battle",
+      "cn": 7200,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7200,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Chapter 2 end battle (Nashkel Mines) is more challenging.",
+      "rd": 67,
+      "tp2n": "Tougher chapter-two end battle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tougher chapter-three end battle",
+      "cn": 7210,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7210,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Chapter 3 end battle is more challenging.",
+      "rd": 67,
+      "tp2n": "Tougher chapter-three end battle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tougher chapter-four end battle",
+      "cn": 7220,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7220,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Chapter 4 end battle is more challenging.",
+      "rd": 67,
+      "tp2n": "Tougher chapter-four end battle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tougher chapter-five end battle",
+      "cn": 7230,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7230,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Chapter 5 end battle is more challenging.",
+      "rd": 67,
+      "tp2n": "Tougher chapter-five end battle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved final battle",
+      "cn": 7250,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7250,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "adv",
+      "no": "Final battle with Sarevok is significantly more challenging.",
+      "rd": 67,
+      "tp2n": "Improved final battle",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved minor encounters",
+      "cn": 7900,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 7900,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Various minor BG1 encounters use improved AI.",
+      "rd": 67,
+      "tp2n": "Improved minor encounters",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Make the starting dungeon slightly harder",
+      "cn": 8000,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8000,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Irenicus dungeon encounters are slightly harder.",
+      "rd": 67,
+      "tp2n": "Make the starting dungeon slightly harder",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Shade Lord",
+      "no": "Incompatible with Shadow Magic Enhanced Shade Lord. Choose one",
+      "cn": 8010,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8010,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved Shade Lord",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Spellcasting Demiliches",
+      "no": "Unusual that demiliches don't cast in vanilla",
+      "cn": 8020,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8020,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "rd2": 70,
+      "tp2n": "Spellcasting Demiliches",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Tie difficulty of level-dependent monster groupings to the difficulty slider",
+      "tp2n": "Tie difficulty of level-dependent monster groupings to the difficulty slider",
+      "no": "As hard as this make them, it is weird they don't cast in vanilla",
+      "cn": 8040,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8040,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "rec",
+      "rd": 67,
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Random Encounters",
+      "cn": 8050,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8050,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Random encounters on world map are more varied and challenging.",
+      "rd": 67,
+      "tp2n": "Improved Random Encounters",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved de'Arnise Keep (\"Tactics Remix\")",
+      "cn": 8060,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8060,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "de'Arnise Keep uses Tactics Remix-style encounter improvements.",
+      "rd": 67,
+      "tp2n": "Improved de'Arnise Keep (\"Tactics Remix\")",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Unseeing Eye",
+      "no": ".ini No_Spirit_Troll_Magic=1 to remove spirit trolls",
+      "cn": 8070,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8070,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved Unseeing Eye",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Bodhi",
+      "cn": 8080,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8080,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Bodhi uses improved vampire tactics and abilities.",
+      "rd": 67,
+      "rd2": 84,
+      "tp2n": "Improved Bodhi",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Ascension version of Bodhi uses Improved-Bodhi abilities",
+      "cn": 8085,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8085,
+      "wq": "exact",
+      "tg": "adv",
+      "no": "Ascension Bodhi uses SCS Improved Bodhi abilities.",
+      "rd": 67,
+      "rd2": 120,
+      "tp2n": "Ascension version of Bodhi uses Improved-Bodhi abilities",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Party's items are taken from them in Spellhold",
+      "cn": 8090,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8090,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": ".ini Spellhold_Easycore=1 to get gear back before Irenicus fight",
+      "rd": 67,
+      "tp2n": "Party's items are taken from them in Spellhold",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved battle with Irenicus in Spellhold",
+      "no": "Ask yourself, do you really have the time for the extra inventory management? Still, you can set Spellhold_Easycore in the .ini to 1 to get the gear back before the Irenicus fight",
+      "cn": 8100,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8100,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved battle with Irenicus in Spellhold",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Sahuagin",
+      "cn": 8110,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8110,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Sahuagin City encounters use better tactics.",
+      "rd": 67,
+      "tp2n": "Improved Sahuagin",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Beholder hive",
+      "cn": 8120,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8120,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Beholder hive uses coordinated antimagic and eye stalk attacks.",
+      "rd": 67,
+      "tp2n": "Improved Beholder hive",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Rebalanced troll regeneration",
+      "no": "Trolls regenerate consistently and require fire or acid to kill permanently. Install after creature mods.",
+      "cn": 8130,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8130,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "rec",
+      "rd": 67,
+      "tp2n": "Rebalanced troll regeneration",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Drow",
+      "cn": 8140,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8140,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Caution in Ust Natha encounters",
+      "rd": 67,
+      "tp2n": "Improved Drow",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Watcher's Keep",
+      "no": "Tougher encounters throughout all levels of Watchers Keep. Significantly increased difficulty.",
+      "cn": 8150,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8150,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved Watcher's Keep",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Fire Giant temple",
+      "cn": 8160,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8160,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Fire giant temple encounters use improved tactics.",
+      "rd": 67,
+      "tp2n": "Improved Fire Giant temple",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Sendai's Enclave",
+      "no": ".ini Sendai_Component_Is_Sendai_Only=1 to change only Sendai",
+      "cn": 8170,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8170,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved Sendai's Enclave",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Abazigal's Lair",
+      "no": "Personal note: .ini Sendai_Component_Is_Sendai_Only set to 1 to change only Sendai. Upgrading the common drow sounds great, but readng the details on the extra magical monsters makes me lazy",
+      "cn": 8180,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8180,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "rd": 67,
+      "tp2n": "Improved Abazigal's Lair",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "n": "Improved Minor Encounters",
+      "cn": 8190,
+      "wf": "stratagems",
+      "wp": "stratagems\\SETUP-STRATAGEMS.TP2",
+      "wc": 8190,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "tg": "adv",
+      "no": "Various minor BG2 encounters use improved AI.",
+      "rd": 67,
+      "tp2n": "Improved Minor Encounters",
+      "grn": "Tactical Challenges"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "polytweak",
+      "withId": 228,
+      "severity": "soft",
+      "reason": "SCS Smarter Mind Flayers and Rebalanced Troll Regeneration may overwrite Polytweak's creature stat changes. Install Polytweak before SCS.",
+      "myComps": "#8060 Smarter mind flayers #8070 Rebalanced troll regeneration",
+      "theirComps": "#50 PnP mind flayers #60 Improved trolls",
+      "source": "tp2 analysis, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "soft",
+      "reason": "SCS Smarter Mages may override mage encounter scripts. Install Questpack before SCS.",
+      "orderOnly": true,
+      "myComps": "#6030 Smarter Mages",
+      "theirComps": "#0 A Job Well-Paid",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "MonasticOrders",
+      "withId": 656,
+      "severity": "soft",
+      "reason": "SCS AI expects vanilla Monk class for enemy monks. MO monks as Thief kits may confuse SCS creature scripts.",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "tobr",
+      "withId": 578,
+      "severity": "partial",
+      "reason": "ToBR has no SCS detection. Script REPLACE_TEXTUALLY may fail if SCS rewrites GROMNIR.BCS/YAGA01.bcs first. Install ToBR before SCS.",
+      "orderOnly": true,
+      "myComps": "#6810 Smarter Gromnir #6820 Smarter Yaga-Shura",
+      "theirComps": "#0 Gromnir #3 Yaga Shura",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "polylich",
+      "withId": 676,
+      "severity": "soft",
+      "reason": "Both overhaul demilich behavior. May produce unexpected interactions",
+      "myComps": "#8020 Spellcasting Demiliches",
+      "theirComps": "#0 Purist Demiliches core",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "S9BGEENPCTWEAKS",
+      "withId": 510,
+      "severity": "soft",
+      "reason": "SCS NPC customization may override s9 kit assignments",
+      "orderOnly": true,
+      "myComps": "#4100 Improved NPC customization",
+      "theirComps": "#3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Creature revision components may overlap with SCS creature improvements. Install MiH before SCS.",
+      "orderOnly": true,
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2040 #2050 #2060 Spell tweaks #2520 Revised elementals",
+      "theirComps": "#0 Revised Corporal Undead, #1 Revised Dragons, #2 Revised Golems, #3 Revised Liches, #4 Revised Lycanthropes, #5 Revised Magical Beasts, #6 Revised Monstrous Spiders, #7 Revised Oozes, #8 Revised Vampires",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Aurora",
+      "withId": 634,
+      "severity": "soft",
+      "reason": "Both modify kobold creatures. May conflict depending on install order.",
+      "orderOnly": true,
+      "myComps": "#7030 Improved kobolds",
+      "theirComps": "#520 Realistic Kobold Commandos",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "hiddenadventure",
+      "withId": 66,
+      "severity": "partial",
+      "reason": "Install order note. HA cn:9 uses EXTEND_TOP on SPSEQ12A.bcs to give scroll to yssold14. SCS cn:6030 (Smarter Mages) may rewrite SPSEQ12A.bcs as part of AI overhaul. Scroll may not auto-spawn but quest still completable via dialogue. Install HA before SCS.",
+      "myComps": "#1500 #1510 IWD spells #2000 #2010 #2050 Spell tweaks",
+      "theirComps": "#9",
+      "source": "eemodsetup",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "partial",
+      "reason": "SCS spell changes may interact with FnP sphere system. Compatible with correct install order (FnP before SCS). FnP provides ToF sphere data.",
+      "orderOnly": true,
+      "myComps": "#1500 #1510 #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 #4030 Improved shapeshifting",
+      "theirComps": "#80 Sphere System #31 Cleric Kits #33 Druid Kits #35 #36 Paladin Kits",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

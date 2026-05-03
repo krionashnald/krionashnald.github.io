@@ -1,0 +1,60 @@
+{
+  "i": 93,
+  "t": "ooze",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 310,
+  "c": "QUEST MODS BG2",
+  "n": "Athkatlan Grounds: The Ooze's Lounge",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "pl": 2,
+    "ru": 3,
+    "fr": 4,
+    "ko": 5,
+    "it": 6
+  },
+  "no": "FAILED on BG2EE/EET: COPY_EXISTING ~AR0400.wed~ fails because BG2:EE has ZERO AR-prefixed WED files in chitin.key or BIFs. Area WED files don't exist as standalone indexed resources on the EE engine. This is a fundamental EE incompatibility in the mod, not an EET-specific issue. The mod would also fail on vanilla BG2:EE. Author: Lava Del'Vortel. Needs to be updated to not require COPY_EXISTING on .wed files, or to generate/patch them differently.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ooze_nym",
+          "portraits/ooze/l_nsnym.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/oozes-lounge/",
+  "a": "Lava Del'Vortel",
+  "v": "v3.0",
+  "sum": "Adds a new section of Athkatlan sewers with three areas to explore, mini-quests, new items, and unique graphics.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v2.3",
+    "place": "post"
+  },
+  "dl": "https://downloads.weaselmods.net/download/oozes-lounge/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Athkatlan Grounds: The Ooze's Lounge - a new area under Athkatlan Slums",
+      "tp2n": "Athkatlan Grounds: The Ooze's Lounge - a new area under Athkatlan Slums",
+      "pi": "L#-OOZESLOUNGE",
+      "wf": "Ooze",
+      "wp": "Ooze\\OOZE.TP2",
+      "wc": 0,
+      "wq": "single_comp",
+      "cn": 0,
+      "no": "EXCLUDED: COPY_EXISTING ~AR0400.wed~ fails — BG2:EE engine does not store area WED files as indexed resources. Zero AR-prefixed WEDs exist in vanilla chitin.key.",
+      "x": null
+    }
+  ]
+}

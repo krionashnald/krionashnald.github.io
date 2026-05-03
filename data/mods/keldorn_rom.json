@@ -1,0 +1,177 @@
+{
+  "i": 211,
+  "t": "keldorn_rom",
+  "sv": 1,
+  "ord": 170,
+  "c": "NPC EXPANSIONS",
+  "n": "Berelinde's Keldorn Romance",
+  "no": "Keldorn Romance This married man of high stature is somehow available and likes girls.Install Keldorn Romance before Mazzy MegaMod.",
+  "pt": {
+    "npc": {
+      "5": [
+        [
+          "keldorn",
+          "portraits/keldorn_romance/keldorn.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Keldorn_Romance/releases",
+  "a": "berelinde; jastey",
+  "v": "8.1",
+  "sum": "Adds a romance path for Keldorn in BG2/ToB. Explores themes of duty, faith, and love with one of the most well-written mod romances.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Keldorn_Romance"
+  },
+  "au": "berelinde",
+  "dl": "https://github.com/Gibberlings3/Keldorn_Romance",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "berelinde's Keldorn Romance",
+      "pi": "berelinde-keldorn_rom-main",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "tp2n": "berelinde's Keldorn Romance"
+    },
+    {
+      "n": "Romance is available to LG/NG protagonists only (Recommended)",
+      "no": "v Romance match",
+      "pi": "berelinde-keldorn_rom-RomanceMatchLGNG",
+      "scn": "Romance Match",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "g": "keldorn_align",
+      "x": 0,
+      "tp2n": "Romance is available to LG/NG protagonists only (Recommended)"
+    },
+    {
+      "n": "Romance is available to LG/NG/CG protagonists",
+      "pi": "berelinde-keldorn_rom-RomanceMatchLGNGCG",
+      "scn": "Romance Match",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 2,
+      "g": "keldorn_align",
+      "x": 0,
+      "tp2n": "Romance is available to LG/NG/CG protagonists"
+    },
+    {
+      "n": "Romance is available to LG/NG/CG/LN protagonists",
+      "pi": "berelinde-keldorn_rom-RomanceMatchLGNGCGLN",
+      "scn": "Romance Match",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 3,
+      "g": "keldorn_align",
+      "x": 0,
+      "tp2n": "Romance is available to LG/NG/CG/LN protagonists"
+    },
+    {
+      "n": "Romance is available to LG/NG/CG/LN/N protagonists",
+      "pi": "berelinde-keldorn_rom-RomanceMatchLGNGCGLNN",
+      "scn": "Romance Match",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 4,
+      "g": "keldorn_align",
+      "x": 0,
+      "tp2n": "Romance is available to LG/NG/CG/LN/N protagonists"
+    },
+    {
+      "n": "More youthful-looking portrait by Senka",
+      "pi": "berelinde-keldorn_rom-YouthfulPortrait",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "cn": 5,
+      "x": 0,
+      "tp2n": "More youthful-looking portrait by Senka"
+    },
+    {
+      "n": "Speed: minimum 10 minutes (SoA)/15 minutes (ToB) real time between dialogues",
+      "no": "v Timer",
+      "pi": "berelinde-keldorn_rom-DialogTimer1015",
+      "scn": "Select Keldorn's dialogue timer:",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wq": "verified",
+      "cn": 6,
+      "g": "keldorn_speed",
+      "x": 0,
+      "tp2n": "Speed: minimum 10 minutes (SoA)/15 minutes (ToB) real time between dialogues"
+    },
+    {
+      "n": "Speed: minimum 20 minutes (SoA)/30 minutes (ToB) real time between dialogues",
+      "pi": "berelinde-keldorn_rom-DialogTimer2030",
+      "scn": "Select Keldorn's dialogue timer:",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wq": "verified",
+      "cn": 7,
+      "g": "keldorn_speed",
+      "x": 0,
+      "tp2n": "Speed: minimum 20 minutes (SoA)/30 minutes (ToB) real time between dialogues"
+    },
+    {
+      "n": "Speed (Default): minimum 30 minutes (SoA)/45 minutes (ToB) real time between dialogues",
+      "pi": "berelinde-keldorn_rom-DialogTimer3045",
+      "scn": "Select Keldorn's dialogue timer:",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wq": "verified",
+      "cn": 8,
+      "g": "keldorn_speed",
+      "x": 0,
+      "tp2n": "Speed (Default): minimum 30 minutes (SoA)/45 minutes (ToB) real time between dialogues"
+    },
+    {
+      "n": "Speed: minimum 45 minutes (SoA)/60 minutes (ToB) real time between dialogues",
+      "pi": "berelinde-keldorn_rom-DialogTimer4560",
+      "scn": "Select Keldorn's dialogue timer:",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wq": "verified",
+      "cn": 9,
+      "g": "keldorn_speed",
+      "x": 0,
+      "tp2n": "Speed: minimum 45 minutes (SoA)/60 minutes (ToB) real time between dialogues"
+    },
+    {
+      "n": "Speed: minimum 1 hour (SoA)/1.5 hour (ToB) real time between dialogues",
+      "pi": "berelinde-keldorn_rom-DialogTimer6090",
+      "scn": "Select Keldorn's dialogue timer:",
+      "wf": "keldorn_rom",
+      "wp": "keldorn_rom\\keldorn_rom.tp2",
+      "wq": "verified",
+      "cn": 10,
+      "g": "keldorn_speed",
+      "x": 0,
+      "tp2n": "Speed: minimum 1 hour (SoA)/1.5 hour (ToB) real time between dialogues"
+    }
+  ]
+}

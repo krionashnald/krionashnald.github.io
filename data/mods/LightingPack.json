@@ -1,0 +1,640 @@
+{
+  "i": 472,
+  "t": "LightingPack",
+  "sv": 1,
+  "ord": 90,
+  "c": "GRAPHICS",
+  "n": "Lighting Pack",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "de": 2
+  },
+  "no": "Shader-based lighting and color control. mod_installer: Uses ACTION_READLN for configuration. May require interactive input",
+  "in": [
+    {
+      "t": "Uses ACTION_READLN for configuration. Requires interactive input during install.",
+      "type": "manual"
+    }
+  ],
+  "u": "https://github.com/Argent77/A7-LightingPackEE",
+  "a": "Argent77",
+  "v": "v3.2",
+  "sum": "Adds dynamic lighting effects to area maps, making torches, spells, and time of day visually affect the environment.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-LightingPackEE"
+  },
+  "dl": "https://github.com/Argent77/A7-LightingPackEE",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Neutral settings for contrast, brightness and gamma",
+      "cn": 0,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Neutral settings for contrast, brightness and gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_NEUTRAL",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly increased contrast, brightness and gamma",
+      "cn": 1,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly increased contrast, brightness and gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_SIGHT_INCREASE",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Shader script files for lighting control -> Moderately increased contrast, brightness and gamma (recommended)",
+      "cn": 2,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately increased contrast, brightness and gamma (recommended)",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Greatly increased contrast, brightness and gamma",
+      "cn": 3,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Greatly increased contrast, brightness and gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_GREAT_INCREASE",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly reduced contrast, brightness and gamma",
+      "cn": 4,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly reduced contrast, brightness and gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_DECREASE",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately reduced contrast, brightness and gamma",
+      "cn": 5,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately reduced contrast, brightness and gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_DECREASE",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly increased contrast",
+      "cn": 6,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly increased contrast",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_INCREASE_CONTRAST",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately increased contrast",
+      "cn": 7,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately increased contrast",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_INCREASE_CONTRAST",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Greatly increased contrast",
+      "cn": 8,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Greatly increased contrast",
+      "pi": "A7-LIGHTINGPACK-CBG_GREAT_INCREASE_CONTRAST",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly reduced contrast",
+      "cn": 9,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly reduced contrast",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_DECREASE_CONTRAST",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately reduced contrast",
+      "cn": 10,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately reduced contrast",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_DECREASE_CONTRAST",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly increased brightness",
+      "cn": 11,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly increased brightness",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_INCREASE_BRIGHTNESS",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately increased brightness",
+      "cn": 12,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately increased brightness",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_INCREASE_BRIGHTNESS",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Greatly increased brightness",
+      "cn": 13,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Greatly increased brightness",
+      "pi": "A7-LIGHTINGPACK-CBG_GREAT_INCREASE_BRIGHTNESS",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly reduced brightness",
+      "cn": 14,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly reduced brightness",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_DECREASE_BRIGHTNESS",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately reduced brightness",
+      "cn": 15,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately reduced brightness",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_DECREASE_BRIGHTNESS",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly increased gamma",
+      "cn": 16,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly increased gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_INCREASE_GAMMA",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately increased gamma",
+      "cn": 17,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately increased gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_INCREASE_GAMMA",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Greatly increased gamma",
+      "cn": 18,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Greatly increased gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_GREAT_INCREASE_GAMMA",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Slightly reduced gamma",
+      "cn": 19,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Slightly reduced gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_SLIGHT_DECREASE_GAMMA",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Moderately reduced gamma",
+      "cn": 20,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Moderately reduced gamma",
+      "pi": "A7-LIGHTINGPACK-CBG_MODERATE_DECREASE_GAMMA",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Enter lighting values manually",
+      "cn": 21,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter lighting values manually",
+      "pi": "A7-LIGHTINGPACK-CBG_MANUAL",
+      "scn": "Shader script files for lighting control"
+    },
+    {
+      "n": "Apply preset \"Arctic blue\" (15,000 Kelvin)",
+      "cn": 100,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Arctic blue\" (15,000 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_15000",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Overcast sky\" (7,500 Kelvin)",
+      "cn": 101,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Overcast sky\" (7,500 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_7500",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Modify Color Temperature -> Apply preset \"Daylight (neutral)\" (6,500 Kelvin)",
+      "cn": 102,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wc": 102,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Daylight (neutral)\" (6,500 Kelvin)",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Sunlight\" (5,500 Kelvin)",
+      "cn": 103,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Sunlight\" (5,500 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_5500",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Moonlight\" (4,200 Kelvin)",
+      "cn": 104,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Moonlight\" (4,200 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_4200",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Sunset\" (3,500 Kelvin)",
+      "cn": 105,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Sunset\" (3,500 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_3500",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Lightbulb\" (2,800 Kelvin)",
+      "cn": 106,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Lightbulb\" (2,800 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_2800",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Apply preset \"Candlelight\" (1,900 Kelvin)",
+      "cn": 107,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Apply preset \"Candlelight\" (1,900 Kelvin)",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_1900",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Enter value for color temperature manually",
+      "cn": 108,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter value for color temperature manually",
+      "pi": "A7-LIGHTINGPACK-TEMPERATURE_MANUAL",
+      "scn": "Modify Color Temperature"
+    },
+    {
+      "n": "Enter value for hue manually",
+      "cn": 200,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter value for hue manually",
+      "pi": "A7-LIGHTINGPACK-HUE_MANUAL",
+      "scn": "Advanced settings: Modify Hue/Saturation/Lightness",
+      "grn": "Advanced settings"
+    },
+    {
+      "n": "Enter value for saturation manually",
+      "cn": 201,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter value for saturation manually",
+      "pi": "A7-LIGHTINGPACK-SATURATION_MANUAL",
+      "scn": "Advanced settings: Modify Hue/Saturation/Lightness",
+      "grn": "Advanced settings"
+    },
+    {
+      "n": "Enter value for lightness manually",
+      "cn": 202,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter value for lightness manually",
+      "pi": "A7-LIGHTINGPACK-LIGHTNESS_MANUAL",
+      "scn": "Advanced settings: Modify Hue/Saturation/Lightness",
+      "grn": "Advanced settings"
+    },
+    {
+      "n": "Enter values for hue, saturation, lightness",
+      "cn": 203,
+      "wf": "LightingPack",
+      "wp": "LightingPack\\LIGHTINGPACK.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "tp2n": "Enter values for hue, saturation, lightness",
+      "pi": "A7-LIGHTINGPACK-HSL_MANUAL",
+      "scn": "Advanced settings: Modify Hue/Saturation/Lightness",
+      "grn": "Advanced settings"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "i": 853,
+  "t": "tethyrforestpatch",
+  "sv": 1,
+  "ord": 710,
+  "c": "QUEST MODS BG2",
+  "n": "Tethyr Forest Patch",
+  "u": "https://github.com/Spellhold-Studios/Tethyr-Forest-Patch/",
+  "a": "Hoppy, White Agnus",
+  "sum": "Compatibility patch adding a new cave entrance to AR2602 in the Forest of Tethyr so Check the Bodies, Tortured Souls / Tortured Souls Lite, and Tashia NPC can all reference the original cave without CLUA console tricks.",
+  "tags": [
+    "fix",
+    "compat",
+    "patch"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/Spellhold-Studios/Tethyr-Forest-Patch/",
+  "au": "Hoppy",
+  "no": "AR2600/AR2602 area patch for the Forest of Tethyr (BG2 SoA). MUST INSTALL AFTER Check the Bodies (CtB) — per the mod's own readme. Check the Bodies redirects the original cave to AR3530; this patch restores a separate entrance to AR2602 so Tortured Souls (TS-BP / TS Lite) and Tashia can still reference the original cave. If TS-BP is installed, install this after it as well. WeiDU v212 (2009). English only. No active maintenance since 2009 — consider stale.",
+  "langs": {
+    "en": 0
+  },
+  "v": "v3b",
+  "conflicts": [
+    {
+      "with": "ctb",
+      "withId": 505,
+      "severity": "soft",
+      "orderOnly": true,
+      "after": true,
+      "reason": "Tethyr Forest Patch MUST install AFTER Check the Bodies — per the patch readme. CtB redirects the original Tethyr Forest cave (AR2602 -> AR3530); this patch adds back a separate entrance so TS-BP/TS Lite and Tashia NPC can still reach AR2602. Without this order, CtB overwrites the patch.",
+      "source": "Tethyr Forest Patch readme (v3b, 2009-11-26): \"Install Setup-TethyrForestPatch after you have installed CtB and TS-BP for these two to be fully compatible.\""
+    },
+    {
+      "with": "TorturedSoulsLite",
+      "withId": 579,
+      "severity": "soft",
+      "orderOnly": true,
+      "after": true,
+      "reason": "Tethyr Forest Patch should install AFTER Tortured Souls Lite (TS-BP equivalent) so the patch's AR2602 entrance is the final state. TS Lite uses AR2602 for quests/scripts.",
+      "source": "Tethyr Forest Patch readme (v3b): \"Install Setup-TethyrForestPatch after you have installed CtB and TS-BP for these two to be fully compatible.\""
+    },
+    {
+      "with": "tashia",
+      "withId": 500,
+      "severity": "soft",
+      "orderOnly": true,
+      "after": true,
+      "reason": "Tashia NPC uses the original AR2602 area script. Tethyr Forest Patch should install after CtB, which makes Tashia compatible. This conflict is effectively transitive through CtB.",
+      "source": "Tethyr Forest Patch readme (v3b): \"In regards to Tashia-Remix, this will also be compatible as long as the patch is installed after CtB as the Tashia mod just uses the area script for AR2602.\""
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "Tethyr Forest Patch|tethyrforestpatch",
+      "severity": "warning",
+      "description": "Tethyr Forest Patch produces no visible errors if installed BEFORE Check the Bodies — it silently patches AR2600, then CtB overwrites the area moments later. Result: no new cave entrance in-game. Always install this AFTER CtB (and after TS-BP/TS Lite if used).",
+      "workaround": "Install in this order: Check the Bodies -> Tortured Souls Lite (optional) -> Tethyr Forest Patch. Uninstall+reinstall TFP if it was installed too early."
+    }
+  ],
+  "co": [
+    {
+      "n": "Tethyr Forest Patch",
+      "tp2n": "Tethyr Forest Patch",
+      "cn": 0,
+      "wf": "tethyrforestpatch",
+      "wp": "tethyrforestpatch\\setup-tethyrforestpatch.tp2",
+      "wc": 0,
+      "wq": "lcc-github"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Tethyr-Forest-Patch"
+  }
+}

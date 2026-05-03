@@ -1,0 +1,48 @@
+{
+  "i": 26,
+  "t": "DruidGroveMakeover",
+  "sv": 1,
+  "ord": 30,
+  "c": "GRAPHICS",
+  "n": "Druid Grove Makeover",
+  "no": "Incompatible with BGGO. Hundreds of areas were slightly tweaked, including some with animated water effects.If you use Denoised Areas instead of BGGOEET, install those mods much earlier in the order instead of BGGOEET.",
+  "ic": "BG2EE_AI_Denoised_Areas",
+  "conflicts": [
+    {
+      "with": "BG2EE_AI_DENOISED_AREAS",
+      "withId": 520,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 333 vs 123)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/thisisulb/DruidGroveMakeover/releases",
+  "a": "Ulb",
+  "sum": "Druid Grove Makeover mod for BG2 / BG2EE / EET",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "thisisulb",
+    "r": "DruidGroveMakeover"
+  },
+  "dl": "https://github.com/thisisulb/DruidGroveMakeover/releases",
+  "au": "uLB",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Druid Grove Area Visual Makeover",
+      "tp2n": "Druid Grove Area Visual Makeover",
+      "cn": 0,
+      "wf": "druidgrovemakeover",
+      "wp": "druidgrovemakeover\\SETUP-DRUIDGROVEMAKEOVER.TP2",
+      "wc": 0,
+      "wq": "exact"
+    }
+  ]
+}

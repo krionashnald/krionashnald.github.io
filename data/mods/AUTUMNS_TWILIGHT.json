@@ -1,0 +1,501 @@
+{
+  "i": 689,
+  "t": "Autumns_Twilight",
+  "sv": 1,
+  "ord": 760,
+  "c": "QUEST MODS BG2",
+  "n": "Autumn's Twilight",
+  "langs": {
+    "es": 0,
+    "en": 1,
+    "it": 2,
+    "de": 3,
+    "pl": 4,
+    "fr": 5,
+    "ru": 6,
+    "zh-cn": 7
+  },
+  "no": "EET compatible but has a bug: only Alendir NPC transitions work in EET. Fall, Dusk, and Cho'Nuja transitions are broken. 4 joinable NPCs, 10+ quests, 100+ items, 6 race-exclusive kits.",
+  "cl": [
+    {
+      "d": "2026-03-11",
+      "m": "Added to catalog"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "AT_WILDGUARD": {
+        "passive": [
+          {
+            "n": "Innate Warrior",
+            "type": "desc",
+            "desc": "d12 hit die, +3 THAC0, immune to fear/morale failure. NPC-only (Cho'Nuja)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dreach-naga Wildshield",
+            "freq": "1/day",
+            "effects": "+50% fire resist, retaliatory 2d4 acid + 2d4 cold to melee attackers, 8 hours.",
+            "level": 10
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "race": "Lizardfolk only (NPC)",
+          "items": "Cannot use ANY weapons (claws only). No armor/boots/shields/helmets/cloaks/gloves. No ranged."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "npcOnly": true
+      },
+      "AT_FROSTMASTER": {
+        "passive": [
+          {
+            "n": "Cold Specialist",
+            "type": "desc",
+            "desc": "+50% cold resistance, extra spell slot per level, Evocation specialist. -2 STR, -2 CON. NPC-only."
+          },
+          {
+            "n": "Fire Vulnerability",
+            "type": "desc",
+            "desc": "-25% fire resistance. Loses 1 CON every 10 levels."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ice Summoning",
+            "freq": "tiered",
+            "effects": "I (lv4, Ice Mephit), II (lv8, Ice Salamander), III (lv12, Snow Troll). 8hr.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "race": "Elves only (NPC)",
+          "items": "Cannot learn Enchantment spells."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "npcOnly": true,
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Enchantment"
+          ],
+          "specialist": "Evocation"
+        }
+      },
+      "AT_TWILIGHT_BLADE": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 DEX, -1 CON, -10% MR. d8 hit die."
+          },
+          {
+            "n": "Speed",
+            "type": "desc",
+            "desc": "-1 speed factor every 6 levels (max lv18)"
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 (x3 at lv13)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Midnight Cloak",
+            "freq": "1/day per 5 levels",
+            "effects": "Improved Invisibility + Bless (+4 saves, enemies -4 attack). Scales 3/6/10 turns.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "no plate/full plate",
+          "race": "Elves only",
+          "items": "Grandmastery only in Long Sword/Short Sword/Dagger/Bow/Scimitar/Katana."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "dex": 1,
+          "con": -1,
+          "note": "Innate stat modifiers: +1 DEX, -1 CON"
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (fighter kit). Elves only."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      },
+      "AT_SHADOW_SLINGER": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 STR, +1 DEX. Grandmastery in Slings."
+          },
+          {
+            "n": "Ranged Bonus",
+            "type": "desc",
+            "desc": "+1 attack/+1 damage with ranged per 6 levels. Scaling APR bonuses at lv7/10/16/20."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Champion's Luck",
+            "freq": "1/day per 4 levels",
+            "effects": "Scaling debuffs on target + self-buffs (Luck, STR, damage, APR). 10-25s.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": false,
+          "race": "Halflings only",
+          "alignment": "Not Lawful Good",
+          "items": "Backstab capped at x2. 15 skill pts/level. No ranged prof except Sling."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "str": 1,
+          "dex": 1,
+          "note": "Innate stat modifiers: +1 STR, +1 DEX"
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. Halflings only."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      },
+      "AT_HYBRID_AGENT": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 (x3 at lv12)"
+          },
+          {
+            "n": "Illusion Song",
+            "type": "desc",
+            "desc": "Bard song dispels illusions/invisibility on non-party creatures"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Infiltrator Tools",
+            "freq": "scaling",
+            "effects": "Invisibility (1/6 levels), Improved Haste (1/9 levels), Set Snare (1/6 levels), Confounding/Silencing Trap (1/8 levels from lv8).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Half-elves only",
+          "alignment": "No LG/NG/LN/LE",
+          "items": "No Bow/Crossbow. -10% MR, -1 AC penalty."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard bard spellcasting. Half-elves only."
+        }
+      },
+      "AT_MISTWEAVER": {
+        "passive": [
+          {
+            "n": "Mobile Dance",
+            "type": "desc",
+            "desc": "Can move during Shamanic Dance, spirits linger ~10 min after. No AC penalty during dance."
+          },
+          {
+            "n": "Bonus Spells",
+            "type": "desc",
+            "desc": "Gains: Sanctuary, Command, Sleep, Emotion: Hopelessness, PW:Sleep, Greater Malison, Greater Command, Summon Nishruu/Hakeashar, Project Image, Simulacrum."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Veil of Dreams",
+            "freq": "1/day per 4 levels",
+            "effects": "-3 enemy attacks, +1 saves, Sanctuary, 10 min.",
+            "level": 1
+          },
+          {
+            "n": "Cloud of Dreams",
+            "freq": "1/day per 10 levels",
+            "effects": "9m radius, save vs spell or sleep 25s.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Half-orcs only",
+          "alignment": "Neutral only",
+          "items": "-2 CHA. Spirit response 50%. Detect Illusions at 1/4 rate. +1 AC penalty."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": -2,
+          "note": "Innate stat modifiers: -2 CHA"
+        },
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bonus spells per research: Sanctuary, Command, Sleep, Emotion: Hopelessness, PW:Sleep, Greater Malison, Greater Command, Summon Nishruu, Summon Hakeashar, Project Image, Simulacrum."
+        }
+      },
+      "AT_MIRRORBLADE": {
+        "passive": [
+          {
+            "n": "Mirror Images",
+            "type": "desc",
+            "desc": "10% chance on hit to generate Mirror Images (60s). -3 STR."
+          }
+        ],
+        "activated": [
+          {
+            "n": "ShadowStep",
+            "freq": "1/day per 10 levels",
+            "effects": "7 sec in Shadow Plane (time stop movement only).",
+            "level": 10
+          }
+        ],
+        "restrictions": {
+          "race": "Gnomes only",
+          "items": "No Two-Handed style. 1 pip max in non-grand weapons. Grandmastery in Short Sword/Katana/Scimitar/Dagger. Illusionist (no Necromancy)."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE"
+        ],
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Necromancy"
+          ],
+          "specialist": "Illusion"
+        },
+        "statBonus": {
+          "str": -3,
+          "note": "Innate stat modifiers: -3 STR"
+        },
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Fighter/Mage multi; uses mage HLA pool. Gnome only."
+        }
+      },
+      "AT_DWARVEN_ARTIFICER": {
+        "passive": [
+          {
+            "n": "Sturdy Build",
+            "type": "desc",
+            "desc": "d8 hit die (fighter HP). -1 WIS, -1 CHA."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Explosive Projectiles",
+            "freq": "scaling types lv1-13, +1 use/10 levels",
+            "effects": "Creates AoE explosive ammo (5d6 fire, friendly fire): Arrow (lv1), Bullet (lv3), Bolt (lv5), Dart (lv7), Dagger (lv9), Axe (lv11), Javelin (lv13). At lv20: secondary element.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": false,
+          "race": "Dwarves only",
+          "alignment": "Not Lawful Good",
+          "items": "Backstab capped at x2. 15 skill pts/level. No snare traps. 2 pips in W&S/Single-Weapon, 3 in Two-Weapon."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "wis": -1,
+          "cha": -1,
+          "note": "Innate stat modifiers: -1 WIS, -1 CHA"
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "exclude": [
+            "Set Spike Trap",
+            "Set Exploding Trap",
+            "Set Time Trap"
+          ],
+          "note": "Thief HLA pool minus snare traps (but explosive projectile HLAs retained)."
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. Dwarves only."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "AT_WILDGUARD",
+          "fighter",
+          "Wildguard",
+          "Elven warrior defending wild places"
+        ],
+        [
+          "AT_FROSTMASTER",
+          "mage",
+          "Frostmaster",
+          "Cold magic specialist"
+        ],
+        [
+          "AT_TWILIGHT_BLADE",
+          "fighter",
+          "Twilight Blade",
+          "Elven shadow fighter"
+        ],
+        [
+          "AT_SHADOW_SLINGER",
+          "thief",
+          "Shadow Slinger",
+          "Halfling ranged specialist"
+        ],
+        [
+          "AT_HYBRID_AGENT",
+          "bard",
+          "Hybrid Agent",
+          "Half-elf infiltrator"
+        ],
+        [
+          "AT_MISTWEAVER",
+          "shaman",
+          "Mistweaver",
+          "Half-orc spirit caller"
+        ],
+        [
+          "AT_MIRRORBLADE",
+          "multi",
+          "Mirrorblade",
+          "Gnome fighter/mage"
+        ],
+        [
+          "AT_DWARVEN_ARTIFICER",
+          "thief",
+          "Dwarven Artificer",
+          "Dwarven trap/device specialist"
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "at_dusk",
+          "portraits/autumns_twilight/dusk.png",
+          "bg2"
+        ],
+        [
+          "at_acrul",
+          "portraits/autumns_twilight/p_acrul.png",
+          "bg2"
+        ],
+        [
+          "at_alen",
+          "portraits/autumns_twilight/p_alen.png",
+          "bg2"
+        ],
+        [
+          "at_chon",
+          "portraits/autumns_twilight/p_chon.png",
+          "bg2"
+        ],
+        [
+          "at_fall",
+          "portraits/autumns_twilight/p_fall.png",
+          "bg2"
+        ],
+        [
+          "at_gerwu",
+          "portraits/autumns_twilight/p_gerwu.png",
+          "bg2"
+        ],
+        [
+          "at_qy",
+          "portraits/autumns_twilight/p_qy.png",
+          "bg2"
+        ],
+        [
+          "at_ske",
+          "portraits/autumns_twilight/p_ske.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/evancauteren/bg2-autumns-twilight-mod",
+  "a": "Pablo Alejandro Ramos",
+  "v": "v1.4",
+  "sum": "A (huge) mod for Baldur's Gate 2",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/evancauteren/bg2-autumns-twilight-mod",
+  "au": "Pol Rupes",
+  "co": [
+    {
+      "n": "Autumn's Twilight",
+      "tp2n": "Autumn's Twilight MOD",
+      "cn": 0,
+      "wf": "AUTUMNS_TWILIGHT",
+      "wp": "AUTUMNS_TWILIGHT\\AUTUMNS_TWILIGHT.TP2",
+      "k": 8,
+      "no": "Dark-themed questline with new areas and encounters.",
+      "kC": {
+        "fighter": 2,
+        "mage": 1,
+        "thief": 2,
+        "bard": 1,
+        "shaman": 1,
+        "multi": 1
+      }
+    },
+    {
+      "n": "Enemy Difficulty: Hard",
+      "tp2n": "Enemy Difficulty: Hard",
+      "cn": 1,
+      "wf": "AUTUMNS_TWILIGHT",
+      "wp": "AUTUMNS_TWILIGHT\\AUTUMNS_TWILIGHT.TP2",
+      "x": 0,
+      "no": "Hard mode enemy difficulty."
+    }
+  ],
+  "gh": {
+    "o": "evancauteren",
+    "r": "bg2-autumns-twilight-mod"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "i": 596,
+  "t": "ACBre",
+  "sv": 1,
+  "ord": 1060,
+  "c": "NEW NPC MODS",
+  "n": "Breagar NPC",
+  "langs": {
+    "de": 0,
+    "en": 1
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Patched: added English LANGUAGE line to tp2. Updated eet_cpmvars.tpa. Use lang:1 for English.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "in": [
+    {
+      "t": "Create ACBre/tra/english/ACStates.tra with exact English vanilla dialogue strings for Edwin (@99991-99993) and Imoen (@99990). Without this file, the mod crashes with STATE_WHICH_SAYS error on English games. Or use eet-mod-forge-patches #21.",
+      "type": "file"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "breagar",
+          "portraits/breagar/acbre.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/whiteagnus/ACBre",
+  "a": "Ascalon",
+  "v": "7.00b_20150127",
+  "sum": "Joinable dwarf NPC mod with full storyline content spanning BG1, BG2, and EET.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v7.0",
+    "place": "post"
+  },
+  "au": "whiteagnus",
+  "dl": "https://github.com/whiteagnus/ACBre",
+  "co": [
+    {
+      "n": "Breagar: Contents",
+      "cn": 0,
+      "wf": "ACBre",
+      "wp": "ACBRE\\SETUP-ACBRE.TP2",
+      "wc": 0,
+      "no": "KNOWN BUG: Missing English ACStates.tra — STATE_WHICH_SAYS fails on English installs. The mod author never provided English translations for dialogue state lookups (Edwin/Imoen vanilla text). Requires manual creation of tra/english/ACStates.tra with exact English game dialogue strings. German-language game installs work fine.",
+      "tp2n": "Breagar: Inhalte",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Breagar: Crossmods and PID",
+      "cn": 2,
+      "wf": "ACBre",
+      "wp": "ACBRE\\SETUP-ACBRE.TP2",
+      "wc": 2,
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Breagar: Crossmods und PID",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Change Breagar's dialog timer? (Default is 30 minutes between dialogues.) -> 45 minutes real time between talks",
+      "cn": 10,
+      "wf": "ACBre",
+      "wp": "ACBRE\\SETUP-ACBRE.TP2",
+      "wc": 10,
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "whiteagnus",
+    "r": "ACBre"
+  }
+}

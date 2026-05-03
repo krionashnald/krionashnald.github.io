@@ -1,0 +1,165 @@
+{
+  "i": 500,
+  "t": "tashia",
+  "sv": 1,
+  "pfx": "LE",
+  "ord": 750,
+  "c": "NEW NPC MODS",
+  "n": "Tashia NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "es": 3,
+    "fr": 4,
+    "it": 5
+  },
+  "no": "EET compatible since v1.5. Joinable elven sorcerer with romance for male PCs. Female Halfling of an unknown class.Install Tashia before Fade and Rjali NPC.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Faster chapter cutscenes (#3140/#3141) skip dream sequences where Tashia romance variables are set, breaking romance timers. Real mechanism but cdtweaks components not in database/not selectable.",
+      "theirComps": "#3140, #3141 Faster Chapter Cutscenes and Dreams",
+      "source": "TA tp2 REQUIRE_PREDICATE check; cdtweaks #3140/#3141 not in mods.json DB, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tethyrforestpatch",
+      "withId": 853,
+      "severity": "soft",
+      "orderOnly": true,
+      "before": true,
+      "reason": "Tashia NPC uses AR2602 area script. Install Tethyr Forest Patch after CtB (and this mod) to keep AR2602 reachable.",
+      "source": "Tethyr Forest Patch readme (v3b, 2009-11-26)"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "tashia",
+          "portraits/tashia/tashia.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Tashia-NPC",
+  "a": "Bons, Darios, Tashia Team",
+  "v": "v1.5",
+  "sum": "Adds Tashia, an elven fighter/mage, as a joinable BG2 NPC with a romance, personal quest, and gentle personality.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Arian (original mod), Bri and Lord Ernie (Tashia Remix)",
+  "dl": "https://github.com/Spellhold-Studios/Tashia-NPC",
+  "co": [
+    {
+      "n": "Full Version",
+      "cn": 0,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "g": "tashia_version",
+      "scn": "Tashia NPC Mod",
+      "tp2n": "Full Version"
+    },
+    {
+      "n": "SoA-Only Version",
+      "cn": 1,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 1,
+      "g": "tashia_version",
+      "scn": "Tashia NPC Mod",
+      "tp2n": "SoA-Only Version",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Action-Style Dialogues",
+      "cn": 2,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 2,
+      "g": "tashia_dialogues",
+      "scn": "Tashia Add-On Pack (by Bri and Lord Ernie)",
+      "tp2n": "Action-Style Dialogues",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Baldurized Dialogues",
+      "cn": 3,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 3,
+      "g": "tashia_dialogues",
+      "scn": "Tashia Add-On Pack (by Bri and Lord Ernie)",
+      "tp2n": "Baldurized Dialogues",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Tashia's Alternate Portrait 1 (by Amalthea)",
+      "cn": 4,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 4,
+      "g": "tashia_portrait",
+      "scn": "Alternate Portrait for Tashia",
+      "tp2n": "Tashia's Alternate Portrait 1 (by Amalthea)",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Tashia's Alternate Portrait 2",
+      "cn": 5,
+      "wf": "tashia",
+      "wp": "tashia\\tashia.tp2",
+      "wc": 5,
+      "g": "tashia_portrait",
+      "scn": "Alternate Portrait for Tashia",
+      "tp2n": "Tashia's Alternate Portrait 2",
+      "games": [
+        "bg2ee",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Tashia-NPC"
+  }
+}

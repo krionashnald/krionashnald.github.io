@@ -1,0 +1,81 @@
+{
+  "i": 182,
+  "t": "fyalvara",
+  "sv": 1,
+  "ord": 590,
+  "c": "NEW NPC MODS",
+  "n": "Fyalvara BG2EE NPC",
+  "no": "Fyalvara",
+  "u": "https://downloads.weaselmods.net/download/fyalvara/",
+  "a": "Lava Del'Vortel",
+  "sum": "Human warrioress from Rashemen recruitable in the Docks District, available as a kitless fighter, wizard slayer, or totemic druid/fighter dual-class.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/fyalvara/",
+  "langs": {
+    "en": 0
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "fyalvara",
+          "portraits/fyalvara/l_fya.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Make Fyalvara a kitless fighter.",
+      "pi": "L#-fyalvara-BC",
+      "scn": "Fyalvara - Baldur's Gate 2: EE NPC",
+      "wf": "fyalvara",
+      "wp": "fyalvara\\fyalvara.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "g": "fyalvara_class",
+      "tp2n": "Make Fyalvara a kitless fighter."
+    },
+    {
+      "n": "Make Fyalvara a wizard slayer.",
+      "pi": "L#-fyalvara-WS",
+      "scn": "Fyalvara - Baldur's Gate 2: EE NPC",
+      "wf": "fyalvara",
+      "wp": "fyalvara\\fyalvara.TP2",
+      "wq": "verified",
+      "cn": 1,
+      "g": "fyalvara_class",
+      "tp2n": "Make Fyalvara a wizard slayer."
+    },
+    {
+      "n": "Make Fyalvara a dual-class totemic druid / fighter (may only level up as a fighter)",
+      "pi": "L#-fyalvara-DC",
+      "scn": "Fyalvara - Baldur's Gate 2: EE NPC",
+      "wf": "fyalvara",
+      "wp": "fyalvara\\fyalvara.TP2",
+      "wq": "verified",
+      "cn": 2,
+      "g": "fyalvara_class",
+      "tp2n": "Make Fyalvara a dual-class totemic druid / fighter (may only level up as a fighter)"
+    },
+    {
+      "n": "Fyalvara - install Player-Initiated Dialogues?",
+      "cn": 3,
+      "wf": "fyalvara",
+      "wp": "fyalvara\\fyalvara.TP2",
+      "wc": 3,
+      "wq": "verified",
+      "x": 0,
+      "tp2n": "Fyalvara - install Player-Initiated Dialogues?"
+    }
+  ]
+}

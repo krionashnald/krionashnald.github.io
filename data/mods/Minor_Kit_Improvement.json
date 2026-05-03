@@ -1,0 +1,281 @@
+{
+  "i": 909,
+  "t": "Minor_Kit_Improvement",
+  "sv": 1,
+  "ord": 425,
+  "c": "KIT & CLASS MODS",
+  "n": "Minor Kit Improvement",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "u": "https://github.com/shohysie/Minor_Kit_Improvement/",
+  "a": "Shohy",
+  "sum": "Merging two kit mods (Shaman Hauler and Improved Monk). This mod also offers an upgrade to the Wizard Slayer kit with a passive ability and new HLA, the Beastmaster, which greatly improves the inte...",
+  "tags": [
+    "kit"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Shohy",
+  "dl": "https://github.com/shohysie/Minor_Kit_Improvement",
+  "no": "Monk and class kit improvements. Adds Drunken Master monk kit, improved monk/wizard slayer/beastmaster, shaman hauler, dragon disciple dual-class. FORBID_COMPONENT on improvedMonk and ImprovedWizardSlayer standalone mods. English and Simplified Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DRUNKMST": {
+        "passive": [
+          {
+            "n": "Drunken Defense",
+            "type": "desc",
+            "desc": "+2 AC vs weapons while intoxicated. Immune to movement effects (Haste/Slow/Hold). Resistant to mental effects."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Eight Drunken Immortals",
+            "freq": "wine flask system",
+            "effects": "Sip wine to activate stances (10 levels). Each sip unlocks combat styles: Lu Dongbin (bonus dmg), Zhongli Quan (knockback), Han Xiangzi (blindness), Cao Guojiu (instant death), etc.",
+            "level": 1
+          },
+          {
+            "n": "Fiery Breath",
+            "freq": "5/day",
+            "effects": "Fire cone attack.",
+            "level": 1
+          },
+          {
+            "n": "Drunken Frenzy",
+            "freq": "innate",
+            "effects": "Doubles APR while intoxicated.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No Magic Resistance. No movement speed bonus. No poison/disease/charm immunity. No Stunning Fist or Quivering Palm. No standard monk HLAs."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom HLA pool: no standard monk HLAs. Gains Unleashed Wine Power, Liquor's Numbness, Whale's Draught, Clarity in the Cup."
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. No Stunning Fist or Quivering Palm."
+        },
+        "statBonus": {
+          "note": "Standard monk requirements."
+        }
+      }
+    },
+    "3": {
+      "IMPMONK": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Second Wind",
+            "freq": "1/day",
+            "effects": "Full heal + cure diseases.",
+            "level": 1
+          },
+          {
+            "n": "Glitterdust",
+            "freq": "1/day, +1 at lv7/10",
+            "effects": "AoE blind + reveals invisible.",
+            "level": 4
+          },
+          {
+            "n": "Greater Malison",
+            "freq": "1/day, +1 at lv16/25",
+            "effects": "-4 enemy saves for 4 turns.",
+            "level": 7
+          },
+          {
+            "n": "Shadow Stance",
+            "freq": "1/day, +1 at lv15",
+            "effects": "Near-invisible attacks, enemies -6 to hit.",
+            "level": 10
+          },
+          {
+            "n": "Shadowless Kick",
+            "freq": "1/day, +1 at lv16",
+            "effects": "4d8 crushing + knockback + stun.",
+            "level": 11
+          }
+        ],
+        "restrictions": {
+          "items": "No Lay On Hands. No Stunning Blow. No Quivering Palm. No standard monk HLAs."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom HLA pool: Solar Stance, Lunar Stance, Dragon Fist, Tiger Strike, Hand of Murder, Resist Project."
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. No Lay On Hands, Stunning Blow, or Quivering Palm."
+        },
+        "statBonus": {
+          "note": "Standard monk requirements."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DRUNKMST",
+          "monk",
+          "Drunken Master",
+          "Monk variant with unpredictable combat style and alcohol-fueled abilities."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "IMPMONK",
+          "monk",
+          "Improved Monk",
+          "Enhanced monk as a new kit with revised abilities and progression."
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Drunken Master",
+      "cn": 0,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Only improves the base class monk with no kit",
+      "cn": 1,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Improves all monk kits, including installed monk kit MODs",
+      "cn": 2,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "Work as a new kit, the Honed Monk",
+      "cn": 3,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Allowing monks to become Specialized (2 slots) with allowed weapons",
+      "cn": 4,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 4,
+      "wq": "verified"
+    },
+    {
+      "n": "Allowing monks to become Grand Master (5 slots) with allowed weapons",
+      "cn": 5,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 5,
+      "wq": "verified"
+    },
+    {
+      "n": "Allowing all bare-handed skills (e.g. Stunning Blow and Quivering Palm) of monks to be effective also on melee weapons. Supports monk kit MODs installed already",
+      "cn": 6,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 6,
+      "wq": "verified"
+    },
+    {
+      "n": "Improved Wizard Slayer",
+      "cn": 7,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 7,
+      "wq": "verified"
+    },
+    {
+      "n": "Allows Wizard Slayers to use potions normally",
+      "cn": 8,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 8,
+      "wq": "verified"
+    },
+    {
+      "n": "Allows Wizard Slayers to wear bracers, belts, cloaks, and all items unusable by mages but equippable by pure-class warriors",
+      "cn": 9,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 9,
+      "wq": "verified"
+    },
+    {
+      "n": "Shaman Hauler",
+      "cn": 10,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 10,
+      "wq": "verified"
+    },
+    {
+      "n": "Enables manual control of Shaman-summoned spirits for a certain degree, and the shaman can immediately stop dancing to perform other actions",
+      "cn": 11,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 11,
+      "wq": "verified"
+    },
+    {
+      "n": "Improved Beastmaster",
+      "cn": 12,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 12,
+      "wq": "verified"
+    },
+    {
+      "n": "Dragon Disciple Reincarnation (Transforms into specified class and kit, disables original spellcasting, retains passive draconic traits: AC bonuses, Constitution, fire resistance, etc.)",
+      "cn": 13,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 13,
+      "wq": "verified"
+    },
+    {
+      "n": "Overhauls Dragon Disciple's passive progression rewards to align with 3rd Edition rules",
+      "cn": 14,
+      "wf": "Minor_Kit_Improvement",
+      "wp": "Minor_Kit_Improvement\\Setup-Minor_Kit_Improvement.tp2",
+      "wc": 14,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "Minor_Kit_Improvement"
+  }
+}

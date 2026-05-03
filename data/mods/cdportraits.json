@@ -1,0 +1,312 @@
+{
+  "i": 709,
+  "t": "cdportraits",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 140,
+  "c": "PORTRAITS",
+  "n": "Continuous NPC Portraits",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Standardizes NPC portraits across BG1/SoD/BG2 for Edwin, Imoen, Jaheira, Minsc, Viconia. Pick one portrait style per NPC to use throughout the entire saga",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "edwin",
+          "portraits/cdportraits/edwin_0.png",
+          "all"
+        ]
+      ],
+      "1": [
+        [
+          "edwin",
+          "portraits/cdportraits/edwin_2.png",
+          "all"
+        ]
+      ],
+      "2": [
+        [
+          "imoen",
+          "portraits/cdportraits/imoen_0.png",
+          "all"
+        ]
+      ],
+      "3": [
+        [
+          "imoen",
+          "portraits/cdportraits/imoen_2.png",
+          "all"
+        ]
+      ],
+      "4": [
+        [
+          "imoen",
+          "portraits/cdportraits/imoen_1.png",
+          "sod"
+        ]
+      ],
+      "5": [
+        [
+          "imoen",
+          "portraits/cdportraits/imoen_3.png",
+          "sod"
+        ]
+      ],
+      "6": [
+        [
+          "imoen",
+          "portraits/cdportraits/imoen_3.png",
+          "sod"
+        ]
+      ],
+      "7": [
+        [
+          "jaheira",
+          "portraits/cdportraits/jaheira_0.png",
+          "all"
+        ]
+      ],
+      "8": [
+        [
+          "jaheira",
+          "portraits/cdportraits/jaheira_2.png",
+          "all"
+        ]
+      ],
+      "9": [
+        [
+          "minsc",
+          "portraits/cdportraits/minsc_0.png",
+          "all"
+        ]
+      ],
+      "10": [
+        [
+          "minsc",
+          "portraits/cdportraits/minsc_2.png",
+          "all"
+        ]
+      ],
+      "11": [
+        [
+          "viconia",
+          "portraits/cdportraits/viconia_0.png",
+          "all"
+        ]
+      ],
+      "12": [
+        [
+          "viconia",
+          "portraits/cdportraits/viconia_2.png",
+          "all"
+        ]
+      ],
+      "13": [
+        [
+          "viconia",
+          "portraits/cdportraits/viconia_1.png",
+          "sod"
+        ]
+      ],
+      "14": [
+        [
+          "viconia",
+          "portraits/cdportraits/viconia_3.png",
+          "sod"
+        ]
+      ],
+      "15": [
+        [
+          "viconia",
+          "portraits/cdportraits/viconia_3.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.nexusmods.com/baldursgateenhancededition/mods/17",
+  "a": "CamDawg",
+  "v": "v3",
+  "sum": "Standardizes NPC portraits across BG1, SoD, and BG2 for Edwin, Imoen, Jaheira, Minsc, and Viconia. Pick one portrait style per NPC.",
+  "tags": [
+    "cosmetic",
+    "portraits"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "CamDawg",
+  "dl": "https://github.com/Gibberlings3/Continuous_NPC_Portraits",
+  "co": [
+    {
+      "n": "Edwin: Use BG portrait",
+      "tp2n": "Use BG portrait",
+      "cn": 10,
+      "g": "cdp_edwin",
+      "scn": "Edwin",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Edwin: Use BG2 portrait",
+      "tp2n": "Use BG2 portrait",
+      "cn": 11,
+      "g": "cdp_edwin",
+      "scn": "Edwin",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Imoen: Use BG portrait",
+      "tp2n": "Use BG portrait",
+      "cn": 20,
+      "g": "cdp_imoen",
+      "scn": "Imoen",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Imoen: Use BG2 portrait",
+      "tp2n": "Use BG2 portrait",
+      "cn": 21,
+      "g": "cdp_imoen",
+      "scn": "Imoen",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Imoen: Use SoD portrait",
+      "tp2n": "Use SoD portrait",
+      "cn": 22,
+      "g": "cdp_imoen",
+      "scn": "Imoen",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Imoen: Use Lava alternative SoD",
+      "tp2n": "Use Lava's alternative SoD portrait",
+      "cn": 23,
+      "g": "cdp_imoen",
+      "scn": "Imoen",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Imoen: Only replace SoD with Lava alt",
+      "tp2n": "Only replace the SoD portrait with Lava's alternative",
+      "cn": 24,
+      "g": "cdp_imoen",
+      "scn": "Imoen",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Jaheira: Use BG portrait",
+      "tp2n": "Use BG portrait",
+      "cn": 30,
+      "g": "cdp_jaheira",
+      "scn": "Jaheira",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Jaheira: Use BG2 portrait",
+      "tp2n": "Use BG2 portrait",
+      "cn": 31,
+      "g": "cdp_jaheira",
+      "scn": "Jaheira",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Minsc: Use BG portrait",
+      "tp2n": "Use BG portrait",
+      "cn": 40,
+      "g": "cdp_minsc",
+      "scn": "Minsc",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Minsc: Use BG2 portrait",
+      "tp2n": "Use BG2 portrait",
+      "cn": 41,
+      "g": "cdp_minsc",
+      "scn": "Minsc",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Viconia: Use BG portrait",
+      "tp2n": "Use BG portrait",
+      "cn": 50,
+      "g": "cdp_viconia",
+      "scn": "Viconia",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Viconia: Use BG2 portrait",
+      "tp2n": "Use BG2 portrait",
+      "cn": 51,
+      "g": "cdp_viconia",
+      "scn": "Viconia",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Viconia: Use SoD portrait",
+      "tp2n": "Use SoD portrait",
+      "cn": 52,
+      "g": "cdp_viconia",
+      "scn": "Viconia",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Viconia: Use Lava alternative SoD",
+      "tp2n": "Use Lava's alternative SoD portrait",
+      "cn": 53,
+      "g": "cdp_viconia",
+      "scn": "Viconia",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    },
+    {
+      "n": "Viconia: Only replace SoD with Lava alt",
+      "tp2n": "Only replace the SoD portrait with Lava's alternative",
+      "cn": 54,
+      "g": "cdp_viconia",
+      "scn": "Viconia",
+      "wf": "cdportraits",
+      "wp": "cdportraits\\setup-cdportraits.tp2",
+      "wq": "exact"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Continuous_NPC_Portraits"
+  }
+}

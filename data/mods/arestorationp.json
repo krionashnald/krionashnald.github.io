@@ -1,0 +1,213 @@
+{
+  "i": 63,
+  "t": "arestorationp",
+  "sv": 1,
+  "ord": 20,
+  "c": "QUEST MODS BG2",
+  "n": "Almateria's Restoration Project",
+  "langs": {
+    "pl": 0,
+    "en": 1,
+    "it": 2,
+    "nl": 3,
+    "zh-cn": 6,
+    "fr": 7,
+    "de": 8,
+    "pt-br": 9,
+    "ru": 10,
+    "cs": 11,
+    "es": 12
+  },
+  "no": "Almateria's Restoration Project. Restores cut content from BG2. Install after Unfinished Business per author recommendation.",
+  "u": "https://github.com/SpellholdStudios/Almaterias_Restoration_Project/releases/tag/v10.0",
+  "a": "Almateria",
+  "v": "v10.1",
+  "sum": "Restores 12 additional pieces of cut BG2 content not covered by Unfinished Business. Includes restored items, encounters, and quest threads.",
+  "tags": [
+    "story",
+    "restore"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v8.2.7",
+    "place": "post"
+  },
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Almaterias_Restoration_Project"
+  },
+  "dl": "https://github.com/SpellholdStudios/Almaterias_Restoration_Project/releases/tag/v10.0",
+  "au": "The Gibberlings Three",
+  "ki": [
+    {
+      "pattern": "Better Item Import|obsolete.*BG2EE|REQUIRE_PREDICATE NOT GAME_IS",
+      "severity": "info",
+      "category": "cosmetic",
+      "description": "arestorationp cn:9 (Better Item Import) has REQUIRE_PREDICATE NOT GAME_IS ~bg2ee eet~. Auto-skips on BG2EE/EET since Beamdog added their own item-import solution in patch 1.3.",
+      "workaround": "Do not include in BG2EE/EET installs. If selected, will silently skip via predicate.",
+      "user_action": "none",
+      "components": [
+        9
+      ],
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "co": [
+    {
+      "n": "Restored Locations",
+      "pi": "Almaterias_Restoration_Project-Restored_Locations",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "no": "Restores tent in Trademeet, Kiser bedroom, Yaga-Shura front door, Aran cloakroom jokes, Spellhold summoning book, Planar Sphere trap, Watcher Keep hints. Safe flavor additions",
+      "tp2n": "Restored Locations"
+    },
+    {
+      "n": "Restored Characters and Dialogs",
+      "pi": "Almaterias_Restoration_Project-Restored_Characters_and_Dialogs",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "no": "Restores ~20 cut characters (drow cook, Bodhi crypt allies, Gas Spores, Tax Collector) and ~20 dialogues (Deirex, Pelanna, Firkraag taunts, Viconia banter). Minor cosmetic issue with cdtweaks Pause All Dialogues",
+      "tp2n": "Restored Characters and Dialogs"
+    },
+    {
+      "n": "Restored Sounds",
+      "pi": "Almaterias_Restoration_Project-Restored_Sounds",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "no": "Restores proper damaged/dying/morale sounds to 1600+ creatures. Signature component — pure data restoration, no gameplay impact",
+      "tp2n": "Restored Sounds"
+    },
+    {
+      "n": "Restored Items",
+      "pi": "Almaterias_Restoration_Project-Restored_Items",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "cn": 3,
+      "no": "Restores Blessed Bolts, Horn of Kazgaroth, Boots of Phasing/Lightning Speed, Firkraag letter, Am-Si key. Items chosen specifically to not overlap with UB",
+      "tp2n": "Restored Items"
+    },
+    {
+      "n": "Restored Wish Options",
+      "pi": "Almaterias_Restoration_Project-Restored_Wish_Options",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "cn": 4,
+      "no": "Restores two cut Wish options: Globe of Blades (WIS>18) and 10,000 GP (WIS<9)",
+      "tp2n": "Restored Wish Options"
+    },
+    {
+      "n": "Restored XP for Minor Things",
+      "pi": "Almaterias_Restoration_Project-Restored_XP_for_Minor_Things",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 5,
+      "wq": "name_match",
+      "cn": 5,
+      "no": "Restores minor ToB XP rewards: Forest of Tethyr heads, Big Metal Unit assembly, Ehlastra XP correction",
+      "tp2n": "Restored XP for Minor Things"
+    },
+    {
+      "n": "Lich Deril",
+      "pi": "Almaterias_Restoration_Project-Lich_Deril",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 6,
+      "wq": "name_match",
+      "cn": 6,
+      "no": "If Cernd quest resolved peacefully, Deril returns as a lich after 3 days. Adds quest closure for Cernd players",
+      "tp2n": "Lich Deril"
+    },
+    {
+      "n": "Restored Random Encounters",
+      "pi": "Almaterias_Restoration_Project-Restored_Random_Encounters",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 7,
+      "wq": "manual_final",
+      "cn": 7,
+      "no": "Restores SoA wilderness ogre and ToB bounty hunter encounters. Install BEFORE Quest Pack. Has smart detection for Quest Pack and SCS",
+      "tp2n": "Restored Random Encounters"
+    },
+    {
+      "n": "Minor Restorations",
+      "pi": "Almaterias_Restoration_Project-Minor_Restorations",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 8,
+      "wq": "name_match",
+      "cn": 8,
+      "no": "Grab-bag: Saradush worldmap icon, distinct ability icons (Enrage, Lay On Hands), better Ranger Tracking text, Saemon monk disguise, Slayer form HP fix. Slayer fix may overlap with MiH SP",
+      "tp2n": "Minor Restorations"
+    },
+    {
+      "n": "Better Item Import",
+      "cn": 9,
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wq": "exact",
+      "dep": "v18 (auto-skips on BG2EE/EET: REQUIRE_PREDICATE NOT GAME_IS ~bg2ee eet~). Originally older versions had \"Restored Bard Stronghold Quests\" at cn:9, which was removed.",
+      "no": "Auto-skips on BG2EE/EET via REQUIRE_PREDICATE NOT GAME_IS ~bg2ee eet~. Obsoleted by BG2EE patch 1.3 which added its own item-import solution.",
+      "tp2n": "Better Item Import"
+    },
+    {
+      "n": "Restored Final Slayer Dream",
+      "pi": "Almaterias_Restoration_Project-Better_Item_Import",
+      "cn": 10,
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "no": "OBSOLETE on BG2EE/EET — tp2 has REQUIRE_PREDICATE NOT GAME_IS ~bg2ee eet~ with message 'Made obsolete by BG2EE patch 1.3'. The Enhanced Edition handles item import natively. Will not install on EET.",
+      "tp2n": "Restored Final Slayer Dream"
+    },
+    {
+      "n": "Alternate Slayer Change",
+      "pi": "Almaterias_Restoration_Project-Restored_Final_Slayer_Dream",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 11,
+      "wq": "name_match",
+      "cn": 11,
+      "no": "",
+      "tp2n": "Alternate Slayer Change"
+    },
+    {
+      "n": "Restored Waukeen's Promenade Cutscene",
+      "pi": "Almaterias_Restoration_Project-Alternate_Slayer_Change",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 12,
+      "wq": "name_match",
+      "cn": 12,
+      "no": "",
+      "rd": 11,
+      "tp2n": "Restored Waukeen's Promenade Cutscene"
+    },
+    {
+      "n": "Restored Waukeen's Promenade Cutscene",
+      "pi": "Almaterias_Restoration_Project-Restored_Waukeens_Promenade_Cutscene",
+      "wf": "arestorationp",
+      "wp": "arestorationp\\ARESTORATIONP.TP2",
+      "wc": 13,
+      "wq": "name_match",
+      "cn": 13,
+      "no": "v18 (component not present in tp2; legacy entry from older arestorationp version). Restores 6 unused voiced lines by Irenicus, Gaelan, and Imoen in the opening cutscene. Explains why Gaelan knew your location",
+      "gone": true
+    }
+  ]
+}

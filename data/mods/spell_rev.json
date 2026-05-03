@@ -1,0 +1,2206 @@
+{
+  "i": 288,
+  "t": "spell_rev",
+  "sv": 1,
+  "ord": 10,
+  "c": "SPELL MODS",
+  "n": "Spell Revisions",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "pl": 3
+  },
+  "no": "Install after all NPC mods. Not compatible with Spell50. Use at most one of SR, MiH Spell Pack, or IWDification for spell overhaul.",
+  "spl": {
+    "0": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPWI103",
+          "replace",
+          "Gains small area of effect; improved scaling"
+        ],
+        [
+          "SPWI104",
+          "modify",
+          "Rebalanced duration and save mechanics"
+        ],
+        [
+          "SPWI117",
+          "replace",
+          "1d8 cold damage + 1 STR drain; improved scaling"
+        ],
+        [
+          "SPWI118",
+          "replace",
+          "Random effects scale better with caster level"
+        ],
+        [
+          "SPWI105",
+          "replace",
+          "Stun/blindness/confusion based on HD comparison"
+        ],
+        [
+          "SPWI124",
+          "modify",
+          "Familiar mechanics fixes and improvements"
+        ],
+        [
+          "SPWI101",
+          "replace",
+          "Targets fall unconscious 1 round; reduced AoE"
+        ],
+        [
+          "SPWI109",
+          "modify",
+          "Minor tweaks to identification mechanics"
+        ],
+        [
+          "SPWI119",
+          "replace",
+          "Rebalanced drain amounts and temp HP"
+        ],
+        [
+          "SPWI112",
+          "replace",
+          "Rebalanced scaling: 1 missile per 2 levels"
+        ],
+        [
+          "SPWI121",
+          "modify",
+          "Wild surge table adjustments"
+        ],
+        [
+          "SPWI113",
+          "replace",
+          "Improved protection bonuses and duration"
+        ],
+        [
+          "SPWI108",
+          "modify",
+          "Extended duration and improved mechanics"
+        ],
+        [
+          "SPWI120",
+          "replace",
+          "Improved to provide better decoy mechanics"
+        ],
+        [
+          "SPWI114",
+          "replace",
+          "Improved AC values and Magic Missile immunity"
+        ],
+        [
+          "SPWI115",
+          "replace",
+          "Improved damage scaling with level"
+        ],
+        [
+          "SPWI116",
+          "replace",
+          "Rebalanced HD cap and duration"
+        ],
+        [
+          "SPWI122",
+          "replace",
+          "Improved fear mechanics and save penalty"
+        ],
+        [
+          "SPWI106",
+          "replace",
+          "Extended duration; reclassified as Necromancy",
+          {
+            "n": "Obscuring Mist"
+          }
+        ],
+        [
+          "SPWI215",
+          "replace",
+          "Improved damage and range mechanics"
+        ],
+        [
+          "SPWI201",
+          "replace",
+          "Improved AC and save bonuses"
+        ],
+        [
+          "SPWI221",
+          "modify",
+          "Improved wild surge bonus"
+        ],
+        [
+          "SPWI203",
+          "replace",
+          "Extended range and improved detection"
+        ],
+        [
+          "SPWI216",
+          "replace",
+          "Improved paralysis and added nausea effect"
+        ],
+        [
+          "SPWI222",
+          "replace",
+          "Improved blindness and glitter effects"
+        ],
+        [
+          "SPWI205",
+          "replace",
+          "Improved fear radius and save penalties"
+        ],
+        [
+          "SPWI206",
+          "modify",
+          "Minor duration and mechanic tweaks"
+        ],
+        [
+          "SPWI218",
+          "replace",
+          "Improved luck bonus mechanics"
+        ],
+        [
+          "SPWI211",
+          "replace",
+          "Improved acid damage scaling"
+        ],
+        [
+          "SPWI212",
+          "replace",
+          "Rebalanced image count and dispel mechanics"
+        ],
+        [
+          "SPWI223",
+          "replace",
+          "Adjusted HP threshold and sleep duration",
+          {
+            "n": "Sound Burst"
+          }
+        ],
+        [
+          "SPWI220",
+          "replace",
+          "Improved enfeeble scaling"
+        ],
+        [
+          "SPWI210",
+          "modify",
+          "Improved fear removal and immunity"
+        ],
+        [
+          "SPWI213",
+          "replace",
+          "Improved nausea mechanics and save type"
+        ],
+        [
+          "SPWI219",
+          "replace",
+          "Improved STR bonus calculation"
+        ],
+        [
+          "SPWI217",
+          "modify",
+          "Extended duration"
+        ],
+        [
+          "SPWI214",
+          "replace",
+          "Improved web mechanics and save frequency"
+        ],
+        [
+          "SPWI301",
+          "modify",
+          "Improved scrying mechanics"
+        ],
+        [
+          "SPWI318",
+          "modify",
+          "Improved illusion detection"
+        ],
+        [
+          "SPWI316",
+          "replace",
+          "Improved charm mechanics"
+        ],
+        [
+          "SPWI302",
+          "replace",
+          "Improved dispel check mechanics"
+        ],
+        [
+          "SPWI304",
+          "replace",
+          "Rebalanced damage and area mechanics"
+        ],
+        [
+          "SPWI303",
+          "replace",
+          "Improved arrow count and damage scaling"
+        ],
+        [
+          "SPWI315",
+          "replace",
+          "Improved AC scaling with level"
+        ],
+        [
+          "SPWI305",
+          "replace",
+          "Rebalanced: +1 APR, no AC bonus, no aging"
+        ],
+        [
+          "SPWI306",
+          "replace",
+          "Improved hold duration and save mechanics"
+        ],
+        [
+          "SPWI307",
+          "replace",
+          "Improved area invisibility mechanics",
+          {
+            "n": "Invisibility Sphere"
+          }
+        ],
+        [
+          "SPWI308",
+          "replace",
+          "Improved damage and bounce mechanics"
+        ],
+        [
+          "SPWI317",
+          "replace",
+          "Improved spell level absorption"
+        ],
+        [
+          "SPWI309",
+          "replace",
+          "Improved summoned creature scaling",
+          {
+            "n": "Monster Summoning III"
+          }
+        ],
+        [
+          "SPWI310",
+          "modify",
+          "Extended duration"
+        ],
+        [
+          "SPWI311",
+          "replace",
+          "Improved missile immunity mechanics"
+        ],
+        [
+          "SPWI313",
+          "replace",
+          "Improved damage and duration scaling"
+        ],
+        [
+          "SPWI312",
+          "replace",
+          "Improved slow effects and save mechanics"
+        ],
+        [
+          "SPWI321",
+          "modify",
+          "Improved spell protection removal"
+        ],
+        [
+          "SPWI314",
+          "replace",
+          "Improved drain scaling and temp HP"
+        ],
+        [
+          "SPWI401",
+          "replace",
+          "Improved confusion effects and area"
+        ],
+        [
+          "SPWI422",
+          "replace",
+          "Improved disease mechanics"
+        ],
+        [
+          "SPWI409",
+          "replace",
+          "Renamed Emotion: Despair; improved effects"
+        ],
+        [
+          "SPWI416",
+          "replace",
+          "Improved enchantment scaling"
+        ],
+        [
+          "SPWI423",
+          "modify",
+          "Improved scrying range and duration",
+          {
+            "n": "Monster Summoning IV"
+          }
+        ],
+        [
+          "SPWI403",
+          "disable",
+          "Disabled (Fire Shield Blue, AI-only)"
+        ],
+        [
+          "SPWI417",
+          "replace",
+          "Combined Fire Shield: improved fire damage"
+        ],
+        [
+          "SPWI411",
+          "replace",
+          "Improved save penalty and duration",
+          {
+            "n": "Emotion: Despair"
+          }
+        ],
+        [
+          "SPWI404",
+          "replace",
+          "Improved cold damage and area"
+        ],
+        [
+          "SPWI405",
+          "replace",
+          "Improved invisibility detection resistance"
+        ],
+        [
+          "SPWI406",
+          "replace",
+          "Improved spell level immunity threshold"
+        ],
+        [
+          "SPWI407",
+          "disable",
+          "Disabled (Monster Summoning II moved to level 2)"
+        ],
+        [
+          "SPWI412",
+          "replace",
+          "Improved sphere duration and immunity"
+        ],
+        [
+          "SPWI414",
+          "replace",
+          "Improved polymorph effects"
+        ],
+        [
+          "SPWI415",
+          "replace",
+          "Improved shapeshift forms and abilities"
+        ],
+        [
+          "SPWI418",
+          "replace",
+          "Improved spell protection removal"
+        ],
+        [
+          "SPWI419",
+          "replace",
+          "Renamed Simbul's Spell Matrix; improved storage"
+        ],
+        [
+          "SPWI413",
+          "replace",
+          "Improved AC and duration"
+        ],
+        [
+          "SPWI408",
+          "replace",
+          "Rebalanced: fewer skins, shorter duration"
+        ],
+        [
+          "SPWI420",
+          "replace",
+          "Improved teleport field mechanics",
+          {
+            "n": "Simbul's Spell Matrix"
+          }
+        ],
+        [
+          "SPWI425",
+          "modify",
+          "Improved eye mechanics"
+        ],
+        [
+          "SPWI514",
+          "replace",
+          "Rebalanced combat protection removal"
+        ],
+        [
+          "SPWI502",
+          "replace",
+          "Improved poison cloud mechanics"
+        ],
+        [
+          "SPWI503",
+          "replace",
+          "Improved cold damage scaling"
+        ],
+        [
+          "SPWI506",
+          "replace",
+          "Improved domination save and duration"
+        ],
+        [
+          "SPWI509",
+          "replace",
+          "Improved save penalty"
+        ],
+        [
+          "SPWI507",
+          "replace",
+          "Improved hold mechanics"
+        ],
+        [
+          "SPWI515",
+          "replace",
+          "Improved MR reduction mechanics"
+        ],
+        [
+          "SPWI504",
+          "replace",
+          "Improved summoned creature scaling",
+          {
+            "n": "Monster Summoning V"
+          }
+        ],
+        [
+          "SPWI516",
+          "replace",
+          "Improved phantom blade attacks"
+        ],
+        [
+          "SPWI511",
+          "replace",
+          "Improved weapon immunity mechanics"
+        ],
+        [
+          "SPWI505",
+          "replace",
+          "Improved shadow door decoy"
+        ],
+        [
+          "SPWI510",
+          "replace",
+          "Rebalanced spell school immunity",
+          {
+            "n": "Dispelling Screen"
+          }
+        ],
+        [
+          "SPWI513",
+          "replace",
+          "Renamed Spell Deflection; improved levels"
+        ],
+        [
+          "SPWI519",
+          "replace",
+          "Renamed Fireburst; party-friendly AoE"
+        ],
+        [
+          "SPWI605",
+          "replace",
+          "Improved lightning arc damage and scaling",
+          {
+            "n": "Banishment"
+          }
+        ],
+        [
+          "SPWI603",
+          "replace",
+          "Improved contingency conditions"
+        ],
+        [
+          "SPWI615",
+          "replace",
+          "Improved save and damage on save"
+        ],
+        [
+          "SPWI611",
+          "replace",
+          "Improved petrification mechanics"
+        ],
+        [
+          "SPWI612",
+          "modify",
+          "Improved stone to flesh mechanics"
+        ],
+        [
+          "SPWI602",
+          "replace",
+          "Improved spell level immunity"
+        ],
+        [
+          "SPWI609",
+          "replace",
+          "Rebalanced: doubles APR, no AC bonus",
+          {
+            "n": "True Seeing"
+          }
+        ],
+        [
+          "SPWI601",
+          "replace",
+          "Improved stalker abilities"
+        ],
+        [
+          "SPWI607",
+          "replace",
+          "Rebalanced mislead decoy and invisibility"
+        ],
+        [
+          "SPWI608",
+          "replace",
+          "Improved spell protection + MR removal"
+        ],
+        [
+          "SPWI604",
+          "replace",
+          "Improved silence HP threshold"
+        ],
+        [
+          "SPWI616",
+          "replace",
+          "Improved magic damage protection"
+        ],
+        [
+          "SPWI618",
+          "disable",
+          "Disabled (Spell Deflection moved to level 5)"
+        ],
+        [
+          "SPWI606",
+          "replace",
+          "Improved true sight mechanics"
+        ],
+        [
+          "SPWI610",
+          "replace",
+          "Improved spell deflection levels"
+        ],
+        [
+          "SPWI620",
+          "replace",
+          "Improved Nishruu abilities"
+        ],
+        [
+          "SPWI717",
+          "replace",
+          "Improved undead control mechanics"
+        ],
+        [
+          "SPWI704",
+          "replace",
+          "Improved delayed fireball damage"
+        ],
+        [
+          "SPWI701",
+          "replace",
+          "Improved death/damage mechanics",
+          {
+            "n": "Greater Spell Deflection"
+          }
+        ],
+        [
+          "SPWI705",
+          "replace",
+          "Improved spell turning capacity"
+        ],
+        [
+          "SPWI709",
+          "replace",
+          "Improved protection stripping"
+        ],
+        [
+          "SPWI716",
+          "replace",
+          "Improved limited wish options"
+        ],
+        [
+          "SPWI714",
+          "replace",
+          "Improved mass invisibility"
+        ],
+        [
+          "SPWI711",
+          "replace",
+          "Improved weapon immunity level",
+          {
+            "n": "Chaos"
+          }
+        ],
+        [
+          "SPWI703",
+          "replace",
+          "Improved sword attacks and damage"
+        ],
+        [
+          "SPWI713",
+          "replace",
+          "Improved prismatic ray effects"
+        ],
+        [
+          "SPWI707",
+          "replace",
+          "Rebalanced project image mechanics",
+          {
+            "n": "Summon Death Knight"
+          }
+        ],
+        [
+          "SPWI706",
+          "replace",
+          "Improved elemental damage absorption"
+        ],
+        [
+          "SPWI708",
+          "replace",
+          "Improved spell protection removal",
+          {
+            "n": "Prismatic Mantle"
+          }
+        ],
+        [
+          "SPWI715",
+          "replace",
+          "Renamed Simbul's Spell Sequencer; improved"
+        ],
+        [
+          "SPWI702",
+          "replace",
+          "Improved stun duration and HP threshold"
+        ],
+        [
+          "SPWI718",
+          "replace",
+          "Improved djinni abilities"
+        ],
+        [
+          "SPWI719",
+          "replace",
+          "Improved efreeti abilities",
+          {
+            "n": "Summon Hakeashar"
+          }
+        ],
+        [
+          "SPWI801",
+          "replace",
+          "Rebalanced damage and area"
+        ],
+        [
+          "SPWI809",
+          "replace",
+          "Renamed Bigby's Icy Grasp; cold damage + slow",
+          {
+            "n": "Simbul's Spell Trigger"
+          }
+        ],
+        [
+          "SPWI802",
+          "replace",
+          "Improved cloud damage and duration"
+        ],
+        [
+          "SPWI804",
+          "replace",
+          "Improved maze duration by INT"
+        ],
+        [
+          "SPWI805",
+          "replace",
+          "Improved blindness HP threshold"
+        ],
+        [
+          "SPWI806",
+          "replace",
+          "Rebalanced simulacrum power level"
+        ],
+        [
+          "SPWI807",
+          "replace",
+          "Renamed Simbul's Spell Trigger; improved"
+        ],
+        [
+          "SPWI812",
+          "replace",
+          "Improved fiend summoning"
+        ],
+        [
+          "SPWI803",
+          "replace",
+          "Improved death HP threshold"
+        ],
+        [
+          "SPWI810",
+          "replace",
+          "Improved stun mechanics"
+        ],
+        [
+          "SPWI813",
+          "replace",
+          "Improved energy absorption"
+        ],
+        [
+          "SPWI914",
+          "replace",
+          "Improved weapon immunity level"
+        ],
+        [
+          "SPWI913",
+          "replace",
+          "Improved blade mechanics"
+        ],
+        [
+          "SPWI909",
+          "replace",
+          "Improved chain contingency"
+        ],
+        [
+          "SPWI921",
+          "replace",
+          "Improved energy drain mechanics"
+        ],
+        [
+          "SPWI911",
+          "replace",
+          "Improved freedom mechanics"
+        ],
+        [
+          "SPWI902",
+          "replace",
+          "Improved gate summoning"
+        ],
+        [
+          "SPWI903",
+          "replace",
+          "Improved imprisonment save"
+        ],
+        [
+          "SPWI901",
+          "replace",
+          "Rebalanced meteor damage"
+        ],
+        [
+          "SPWI904",
+          "replace",
+          "Improved kill HP threshold"
+        ],
+        [
+          "SPWI912",
+          "replace",
+          "Improved shapechange forms"
+        ],
+        [
+          "SPWI905",
+          "replace",
+          "Improved spell protection removal"
+        ],
+        [
+          "SPWI908",
+          "replace",
+          "Improved spell trap absorption"
+        ],
+        [
+          "SPWI907",
+          "replace",
+          "Rebalanced time stop duration"
+        ],
+        [
+          "SPWI906",
+          "replace",
+          "Improved wail save penalty"
+        ],
+        [
+          "SPWI910",
+          "replace",
+          "Improved wish options"
+        ],
+        [
+          "SPPR101",
+          "replace",
+          "Improved damage resistance scaling"
+        ],
+        [
+          "SPPR102",
+          "replace",
+          "Improved THAC0/morale bonuses"
+        ],
+        [
+          "SPPR103",
+          "replace",
+          "Improved command sleep mechanics"
+        ],
+        [
+          "SPPR104",
+          "replace",
+          "Healing scales: 1d8+1/level",
+          {
+            "n": "Detect Alignment"
+          }
+        ],
+        [
+          "SPPR105",
+          "replace",
+          "Improved evil detection"
+        ],
+        [
+          "SPPR106",
+          "replace",
+          "Improved entangle mechanics"
+        ],
+        [
+          "SPPR107",
+          "replace",
+          "Improved magical stone damage"
+        ],
+        [
+          "SPPR108",
+          "replace",
+          "Improved protection bonuses"
+        ],
+        [
+          "SPPR109",
+          "replace",
+          "Improved fear removal/immunity"
+        ],
+        [
+          "SPPR110",
+          "replace",
+          "Improved sanctuary mechanics"
+        ],
+        [
+          "SPPR111",
+          "replace",
+          "Improved shillelagh damage and THAC0"
+        ],
+        [
+          "SPPR112",
+          "replace",
+          "Improved doom penalties"
+        ],
+        [
+          "SPPR113",
+          "replace",
+          "Improved sunscorch damage vs undead"
+        ],
+        [
+          "SPPR201",
+          "replace",
+          "Improved aid bonuses and duration"
+        ],
+        [
+          "SPPR202",
+          "replace",
+          "Improved barkskin AC scaling"
+        ],
+        [
+          "SPPR203",
+          "replace",
+          "Improved chant bonuses"
+        ],
+        [
+          "SPPR204",
+          "replace",
+          "Improved charm duration and save"
+        ],
+        [
+          "SPPR205",
+          "replace",
+          "Improved divine might bonuses"
+        ],
+        [
+          "SPPR206",
+          "modify",
+          "Minor trap detection improvements"
+        ],
+        [
+          "SPPR207",
+          "disable",
+          "Disabled (Goodberry moved to level 1)"
+        ],
+        [
+          "SPPR209",
+          "replace",
+          "Improved hold duration",
+          {
+            "n": "Know Opponent"
+          }
+        ],
+        [
+          "SPPR211",
+          "replace",
+          "Renamed Resist Elements; broader resistance"
+        ],
+        [
+          "SPPR212",
+          "replace",
+          "Improved silence radius and save"
+        ],
+        [
+          "SPPR213",
+          "replace",
+          "Improved poison removal"
+        ],
+        [
+          "SPPR214",
+          "replace",
+          "Improved hammer THAC0 and damage",
+          {
+            "n": "Draw upon Divine Might"
+          }
+        ],
+        [
+          "SPPR301",
+          "replace",
+          "Improved animate dead scaling"
+        ],
+        [
+          "SPPR302",
+          "replace",
+          "Improved lightning damage scaling"
+        ],
+        [
+          "SPPR303",
+          "modify",
+          "Improved disease removal"
+        ],
+        [
+          "SPPR304",
+          "replace",
+          "Healing scales: 2d8+3"
+        ],
+        [
+          "SPPR305",
+          "replace",
+          "Improved dispel mechanics"
+        ],
+        [
+          "SPPR306",
+          "disable",
+          "Disabled (Protection from Fire moved to level 5)"
+        ],
+        [
+          "SPPR307",
+          "replace",
+          "Renamed Hold Person or Animal",
+          {
+            "n": "Break Enchantment"
+          }
+        ],
+        [
+          "SPPR308",
+          "replace",
+          "Improved invisibility purge"
+        ],
+        [
+          "SPPR309",
+          "replace",
+          "Improved spell failure mechanics"
+        ],
+        [
+          "SPPR310",
+          "replace",
+          "Renamed Protection from Acid/Cold/etc"
+        ],
+        [
+          "SPPR311",
+          "modify",
+          "Improved curse removal"
+        ],
+        [
+          "SPPR312",
+          "modify",
+          "Improved paralysis removal"
+        ],
+        [
+          "SPPR313",
+          "replace",
+          "Improved confusion mechanics"
+        ],
+        [
+          "SPPR314",
+          "replace",
+          "Improved STR bonus"
+        ],
+        [
+          "SPPR315",
+          "replace",
+          "Improved insect swarm damage/failure",
+          {
+            "n": "Cure Serious Wounds"
+          }
+        ],
+        [
+          "SPPR401",
+          "replace",
+          "Renamed Animal Summoning IV; improved",
+          {
+            "n": "Cure Critical Wounds"
+          }
+        ],
+        [
+          "SPPR402",
+          "replace",
+          "Improved woodland being abilities",
+          {
+            "n": "Animal Summoning IV"
+          }
+        ],
+        [
+          "SPPR404",
+          "replace",
+          "Improved fear cloak mechanics"
+        ],
+        [
+          "SPPR405",
+          "replace",
+          "Healing scales: 3d8+5"
+        ],
+        [
+          "SPPR406",
+          "replace",
+          "Improved death ward duration"
+        ],
+        [
+          "SPPR407",
+          "disable",
+          "Disabled (Protection from Lightning moved to level 5)"
+        ],
+        [
+          "SPPR409",
+          "replace",
+          "Improved free action mechanics"
+        ],
+        [
+          "SPPR410",
+          "replace",
+          "Renamed Divine Power; improved"
+        ],
+        [
+          "SPPR411",
+          "replace",
+          "Improved level restoration"
+        ],
+        [
+          "SPPR412",
+          "replace",
+          "Improved domination mechanics",
+          {
+            "n": "Divine Power"
+          }
+        ],
+        [
+          "SPPR413",
+          "replace",
+          "Improved drain protection"
+        ],
+        [
+          "SPPR414",
+          "replace",
+          "Improved poison neutralization",
+          {
+            "n": "Cause Critical Wounds"
+          }
+        ],
+        [
+          "SPPR415",
+          "replace",
+          "Improved poison damage"
+        ],
+        [
+          "SPPR416",
+          "replace",
+          "Improved protection radius"
+        ],
+        [
+          "SPPR501",
+          "replace",
+          "Renamed Animal Summoning V; improved",
+          {
+            "n": "Animal Summoning V"
+          }
+        ],
+        [
+          "SPPR502",
+          "disable",
+          "Disabled (Cure Critical Wounds moved to level 4)"
+        ],
+        [
+          "SPPR503",
+          "replace",
+          "Healing scales: 4d8+7"
+        ],
+        [
+          "SPPR504",
+          "replace",
+          "Improved flame strike damage"
+        ],
+        [
+          "SPPR505",
+          "replace",
+          "Improved command area and duration"
+        ],
+        [
+          "SPPR506",
+          "replace",
+          "Improved insect plague mechanics"
+        ],
+        [
+          "SPPR507",
+          "replace",
+          "Renamed Stoneskin; druid-specific"
+        ],
+        [
+          "SPPR508",
+          "replace",
+          "Improved MR setting mechanics"
+        ],
+        [
+          "SPPR509",
+          "replace",
+          "Improved mass heal scaling"
+        ],
+        [
+          "SPPR510",
+          "disable",
+          "Disabled (Cause Critical Wounds moved to level 4)"
+        ],
+        [
+          "SPPR511",
+          "replace",
+          "Renamed Righteous Fury; improved bonuses"
+        ],
+        [
+          "SPPR512",
+          "replace",
+          "Improved slay mechanics"
+        ],
+        [
+          "SPPR513",
+          "replace",
+          "Improved true seeing",
+          {
+            "n": "Righteous Fury"
+          }
+        ],
+        [
+          "SPPR601",
+          "replace",
+          "Improved aerial servant abilities"
+        ],
+        [
+          "SPPR602",
+          "replace",
+          "Renamed Animal Summoning VI; improved",
+          {
+            "n": "Animal Summoning VI"
+          }
+        ],
+        [
+          "SPPR603",
+          "replace",
+          "Improved blade barrier damage"
+        ],
+        [
+          "SPPR604",
+          "disable",
+          "Disabled (Conjure Animals removed)"
+        ],
+        [
+          "SPPR606",
+          "replace",
+          "Improved elemental summoning"
+        ],
+        [
+          "SPPR607",
+          "replace",
+          "Improved decay damage and slow"
+        ],
+        [
+          "SPPR608",
+          "replace",
+          "Improved false dawn healing/damage"
+        ],
+        [
+          "SPPR609",
+          "replace",
+          "Improved fire seed damage"
+        ],
+        [
+          "SPPR610",
+          "replace",
+          "Improved harm mechanics"
+        ],
+        [
+          "SPPR611",
+          "replace",
+          "Improved heal mechanics"
+        ],
+        [
+          "SPPR612",
+          "replace",
+          "Improved physical mirror"
+        ],
+        [
+          "SPPR613",
+          "replace",
+          "Improved searing orb vs undead"
+        ],
+        [
+          "SPPR614",
+          "replace",
+          "Improved spell recall mechanics"
+        ],
+        [
+          "SPPR703",
+          "replace",
+          "Improved creeping doom mechanics",
+          {
+            "n": "Summon Death Knight"
+          }
+        ],
+        [
+          "SPPR704",
+          "replace",
+          "Improved earthquake damage and stun"
+        ],
+        [
+          "SPPR705",
+          "replace",
+          "Improved fire storm damage"
+        ],
+        [
+          "SPPR707",
+          "replace",
+          "Improved full restoration"
+        ],
+        [
+          "SPPR708",
+          "replace",
+          "Improved holy word level-based effects"
+        ],
+        [
+          "SPPR709",
+          "replace",
+          "Improved nature's beauty blindness",
+          {
+            "n": "Chaos"
+          }
+        ],
+        [
+          "SPPR710",
+          "replace",
+          "Improved regeneration rate"
+        ],
+        [
+          "SPPR711",
+          "replace",
+          "Improved resurrection mechanics"
+        ],
+        [
+          "SPPR712",
+          "replace",
+          "Improved archon shield protection"
+        ],
+        [
+          "SPPR713",
+          "replace",
+          "Improved sunray damage vs undead"
+        ],
+        [
+          "SPPR719",
+          "replace",
+          "Improved unholy word effects"
+        ],
+        [
+          "SPWI202",
+          "disable",
+          "Disabled (Detect Alignment moved to level 1)"
+        ],
+        [
+          "SPWI402",
+          "disable",
+          "Disabled (Dimension Door replaced by Dimension Jump at level 1)"
+        ]
+      ],
+      "new": [
+        [
+          "SPRA101",
+          "priest",
+          1,
+          "Conjuration",
+          "Faerie Fire",
+          "Outlines creatures, -2 AC penalty",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA102",
+          "priest",
+          1,
+          "Alteration",
+          "Strength of Stone",
+          "+1 STR and +1 CON",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA103",
+          "priest",
+          1,
+          "Invocation",
+          "Sunscorch",
+          "1d6+1/level fire, blinds undead",
+          [
+            "sun",
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA104",
+          "priest",
+          1,
+          "Necromancy",
+          "Regenerate Light Wounds",
+          "Regenerates HP over time",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA105",
+          "priest",
+          1,
+          "Conjuration",
+          "Goodberry",
+          "Healing berries (moved from lv2)",
+          [
+            "healing",
+            "creation"
+          ]
+        ],
+        [
+          "SPRA106",
+          "priest",
+          1,
+          "Necromancy",
+          "Cause Light Wounds",
+          "Touch attack damage",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPRA107",
+          "priest",
+          1,
+          "Conjuration",
+          "Animal Summoning I",
+          "Summons bats (moved from lv4)",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA108",
+          "priest",
+          1,
+          "Conjuration",
+          "Obscuring Mist",
+          "Fog cloud (druid)",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA201",
+          "priest",
+          2,
+          "Necromancy",
+          "Cure Moderate Wounds",
+          "Heals moderate damage (moved from lv3)",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA202",
+          "priest",
+          2,
+          "Evocation",
+          "Fire Trap",
+          "Fire damage trap (druid)",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA203",
+          "priest",
+          2,
+          "Necromancy",
+          "Regenerate Moderate Wounds",
+          "Moderate HP regen (druid)",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA204",
+          "priest",
+          2,
+          "Invocation",
+          "Gust of Wind",
+          "Disperses fog (druid)",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA205",
+          "priest",
+          2,
+          "Necromancy",
+          "Cause Moderate Wounds",
+          "Touch attack moderate damage",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPRA206",
+          "priest",
+          2,
+          "Conjuration",
+          "Animal Summoning II",
+          "Summons war dogs (moved from lv5)",
+          [
+            "summoning",
+            "war"
+          ]
+        ],
+        [
+          "SPRA301",
+          "priest",
+          3,
+          "Necromancy",
+          "Contagion",
+          "Inflicts disease",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPRA302",
+          "priest",
+          3,
+          "Conjuration",
+          "Animal Summoning III",
+          "Summons wolves (moved from lv6)",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA303",
+          "priest",
+          3,
+          "Necromancy",
+          "Cause Serious Wounds",
+          "Touch attack serious damage (moved from lv4)",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPRA304",
+          "priest",
+          3,
+          "Abjuration",
+          "Storm Shield",
+          "Resist electrical/fire (druid)",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "SPRA305",
+          "priest",
+          3,
+          "Necromancy",
+          "Regenerate Serious Wounds",
+          "Serious HP regen (druid)",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA306",
+          "priest",
+          3,
+          "Alteration",
+          "Magic Fang",
+          "+1 attack for animal companion (druid)",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPRA307",
+          "priest",
+          3,
+          "Alteration",
+          "Spike Growth",
+          "Area piercing damage + slow (druid)",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPRA308",
+          "priest",
+          3,
+          "Evocation",
+          "Icelance",
+          "Cold damage + knockback (druid)",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA401",
+          "priest",
+          4,
+          "Evocation",
+          "Ice Storm",
+          "Cold/bludgeoning AoE (druid)",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA402",
+          "priest",
+          4,
+          "Necromancy",
+          "Regenerate Critical Wounds",
+          "Critical HP regen (druid)",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA501",
+          "priest",
+          5,
+          "Alteration",
+          "Polymorph Other",
+          "Transforms target (druid)"
+        ],
+        [
+          "SPRA502",
+          "priest",
+          5,
+          "Abjuration",
+          "Protection from Acid",
+          "Absorbs acid damage",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "SPRA503",
+          "priest",
+          5,
+          "Abjuration",
+          "Protection from Cold",
+          "Absorbs cold damage",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "SPRA504",
+          "priest",
+          5,
+          "Abjuration",
+          "Protection from Electricity",
+          "Absorbs electrical (moved from lv4)",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "SPRA505",
+          "priest",
+          5,
+          "Abjuration",
+          "Protection from Fire",
+          "Absorbs fire (moved from lv3)",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "SPRA506",
+          "priest",
+          5,
+          "Necromancy",
+          "Mass Regenerate",
+          "Party-wide regeneration",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA507",
+          "priest",
+          5,
+          "Alteration",
+          "Animal Growth",
+          "Enhances summoned animals",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA601",
+          "priest",
+          6,
+          "Necromancy",
+          "Regeneration",
+          "Powerful regen (druid)",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPRA602",
+          "priest",
+          6,
+          "Abjuration",
+          "Banishment",
+          "Banishes extraplanar creatures",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA603",
+          "priest",
+          6,
+          "Conjuration",
+          "Conjure Air Elemental",
+          "Summons air elemental (druid)",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA604",
+          "priest",
+          6,
+          "Conjuration",
+          "Conjure Earth Elemental",
+          "Summons earth elemental (moved from lv7)",
+          [
+            "summoning",
+            "elemental"
+          ]
+        ],
+        [
+          "SPRA605",
+          "priest",
+          6,
+          "Necromancy",
+          "Animate Skeleton Warrior",
+          "Animates skeleton warrior",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA701",
+          "priest",
+          7,
+          "Conjuration",
+          "Animal Summoning VII",
+          "Summons polar bears (druid)",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPRA801",
+          "wizard",
+          1,
+          "Alteration",
+          "Expeditious Retreat",
+          "Doubles movement speed"
+        ],
+        [
+          "SPRA802",
+          "wizard",
+          1,
+          "Alteration",
+          "Dimension Jump",
+          "Short-range teleport (moved from lv4)"
+        ],
+        [
+          "SPRA803",
+          "wizard",
+          1,
+          "Divination",
+          "Detect Alignment",
+          "Detects alignment (moved from lv2)"
+        ],
+        [
+          "SPRA804",
+          "wizard",
+          2,
+          "Abjuration",
+          "Resist Elements",
+          "Resist elemental damage"
+        ],
+        [
+          "SPRA805",
+          "wizard",
+          2,
+          "Conjuration",
+          "Monster Summoning II",
+          "Summons green slimes (moved from lv4)"
+        ],
+        [
+          "SPRA806",
+          "wizard",
+          3,
+          "Evocation",
+          "Icelance",
+          "Cold damage + knockback"
+        ],
+        [
+          "SPRA807",
+          "wizard",
+          4,
+          "Abjuration",
+          "Protection from Elemental Energy",
+          "Protects from all elements"
+        ],
+        [
+          "SPRA808",
+          "wizard",
+          4,
+          "Conjuration",
+          "Vitriolic Sphere",
+          "Acid damage over rounds"
+        ],
+        [
+          "SPRA809",
+          "wizard",
+          5,
+          "Conjuration",
+          "Mestil's Acid Sheath",
+          "Acid damage aura"
+        ],
+        [
+          "SPRA810",
+          "wizard",
+          6,
+          "Conjuration",
+          "Monster Summoning VI",
+          "Summons wyverns"
+        ],
+        [
+          "SPRA811",
+          "wizard",
+          7,
+          "Conjuration",
+          "Monster Summoning VII",
+          "Summons otyughs"
+        ],
+        [
+          "SPRA812",
+          "wizard",
+          8,
+          "Necromancy",
+          "Ghostform",
+          "Ethereal form with immunities"
+        ],
+        [
+          "SPRA813",
+          "wizard",
+          8,
+          "Abjuration",
+          "Mind Blank",
+          "Immunity to mind-affecting"
+        ],
+        [
+          "SPRA814",
+          "wizard",
+          8,
+          "Conjuration",
+          "Monster Summoning VIII",
+          "Summons umber hulks"
+        ],
+        [
+          "SPRA815",
+          "wizard",
+          9,
+          "Conjuration",
+          "Monster Summoning IX",
+          "Summons basilisks"
+        ]
+      ]
+    },
+    "4": {
+      "spells": [
+        [
+          "SPWI610",
+          "modify",
+          "Spell Deflection now blocks AoE spells targeting the caster"
+        ]
+      ]
+    }
+  },
+  "conflicts": [
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "hard",
+      "reason": "Spell Revisions and Divine Remix are incompatible",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "hammers",
+      "withId": 291,
+      "severity": "partial",
+      "reason": "Component 15 (Thrown Spiritual Hammers) is incompatible with SR — SR completely redesigns Spiritual Hammer and the thrown patch causes damage to glitch to 0. Components 0, 25, 35, 50 are unaffected.",
+      "myComps": "#0",
+      "theirComps": "#15 Thrown Spiritual Hammers",
+      "source": "Mod ic field, SHS forum thread, tp2 analysis. Only comp 15 conflicts; other 4 components (0, 25, 35, 50) work fine with SR. 2026-03"
+    },
+    {
+      "with": "mih_sp",
+      "withId": 296,
+      "severity": "partial",
+      "reason": "MiH Spell Pack modifies spells also changed by SR. Install MiH SP after SR; overlapping changes use MiH SP's versions.",
+      "myComps": "#0 #10",
+      "theirComps": "#1 Arcane Spellpack #2 Divine Spellpack #13 Spell Improvements #16 Spell Improvements",
+      "source": "tp2 analysis (v4.20 G3 SpellRevisions), 2026-03",
+      "orderOnly": true
+    },
+    {
+      "with": "SNIFF",
+      "withId": 628,
+      "severity": "hard",
+      "reason": "Incompatible (per Infinity Insanity install notes)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "MESpells",
+      "withId": 358,
+      "severity": "soft",
+      "reason": "7 specific Olvyn components FORBID SR cn:0 — they auto-skip if SR is installed. These are all spell-modification components that overlap with SR's rewrites. Olvyn cn:980/990 (Ranger/Paladin progression, the only Olvyn components ) have NO SR FORBID and coexist safely — they only modify class progression 2DAs, not spell files.",
+      "myComps": "#0",
+      "theirComps": "#11051 BG1 Entangle #14021 BG1 Monster/Animal Summoning #15071 Champion's Strength STR 25 #17261 Weaken Devas #21111 Infravision→True Strike #23011 Indoor Clairvoyance #25011 Restore Animate Dead (all FORBID SR, all absent from Ultimate preset)",
+      "source": "MESpells.tp2 lines 2405/2637/2664/2755/2784/2850/3659: FORBID_COMPONENT setup-spell_rev.tp2 0; cn:980/990 have no SR check, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "SCS has built-in SR detection via FORBID_COMPONENT on 3 specific components (cn:2520 Revised Elementals, cn:4130 Resurrection, cn:4240 HLAs as innate) — these auto-block if SR present. All other SCS spell/IWD components detect SR and adjust behavior accordingly (different spell resources used). SCS is explicitly designed for SR compatibility. Install SR before SCS.",
+      "orderOnly": true,
+      "myComps": "#0",
+      "theirComps": "#2520 Revised elementals #4130 Resurrection #4240 HLAs as innate (FORBID with SR); #1500 #1510 #2000-#2080 #2500 #2510 (SR-aware)",
+      "source": "SCS tp2 lines 381/719/944: FORBID_COMPONENT spell_rev; SR readme confirms SCS compat, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "soft",
+      "reason": "KLATU spell tweaks overlap with Spell Revisions. The three Non-Magical ability components (#2120) are redundant if SR is installed",
+      "myComps": "#0",
+      "theirComps": "#2040 Wild Mage #2050 Wish spells #2070 Free Action/Haste #2120 Non-Magical abilities",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "partial",
+      "reason": "aTweaks auto-blocks components 102, 103, 204, 205, 211 when SR detected (content duplication prevention). Components 104, 105, 150-156 have built-in SR compatibility code and install fine. Install SR before aTweaks.",
+      "orderOnly": true,
+      "myComps": "#0",
+      "theirComps": "#102 Spiritual Hammer, #103 Dispel vs Globes, #204 Mislead, #205 Project Image, #211 Death Ward (auto-blocked by aTweaks installer when SR present)",
+      "source": "aTweaks tp2 REQUIRE_PREDICATE !MOD_IS_INSTALLED spell_rev.tp2 0; c150.tpa/c190.tpa SR compat code; Bart_Tweaks crossmod patches, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "SR #0 modifies spell-created weapons (overlaps cdtweaks #2220 Zero Weight) and magical traps (overlaps #2330 Remove Trap Delay). SR #70 Revised Saving Throws overlaps cdtweaks #2310-2312 Save Penalties. Install SR before cdtweaks.",
+      "orderOnly": true,
+      "myComps": "#0 Spell Revisions #70 Revised Saving Throws",
+      "theirComps": "#2220, #2330, #2310-2312",
+      "source": "tp2 analysis, G3 SpellRevisions v4.20, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "wildmage",
+      "withId": 300,
+      "severity": "partial",
+      "reason": "Spell Revisions conflict with Wild Mage Additions misc spell tweaks",
+      "myComps": "#0",
+      "theirComps": "#3",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "d0tweak",
+      "withId": 371,
+      "severity": "partial",
+      "reason": "D0 Tweak components #0 (BG1-Style Summoning Spells) and #23 overlap with SR's revised summoning. PnP Celestial Fury (#7) does not conflict. Only relevant if summoning components are installed.",
+      "myComps": "#0",
+      "theirComps": "#0 BG1-Style Summoning, #23",
+      "source": "tp2 analysis — d0tweak #7 (PnP Celestial Fury) is unrelated to SR spell changes, 2026-03"
+    },
+    {
+      "with": "SubtleD_Spell_Tweaks",
+      "withId": 305,
+      "severity": "soft",
+      "reason": "Complementary — SubtleD REQUIRES SR v4. Components use REQUIRE_PREDICATE FILE_EXISTS_IN_GAME dvsrv4here.mrk (SR v4 marker file). These components apply additional tweaks ON TOP of SR-modified spells. Will not install without SR. Safe to use together — designed as SR companion mod.",
+      "myComps": "#0",
+      "theirComps": "#1151 #1202 #1609 #1614 #2151 #2201 #2213 #2215 #2451 #2508 #2514 #25231 #25232 #2714 #2808 #2811",
+      "source": "SubtleD tp2 lines 294/438/574+: REQUIRE_PREDICATE FILE_EXISTS_IN_GAME dvsrv4here.mrk, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tb#tweaks",
+      "withId": 381,
+      "severity": "soft",
+      "reason": "Redundant. SR cn:0 rewrites all spell files wholesale. TB cn:100 patches sppr704.spl (Nature's Beauty), cn:150 patches imprisonment spells, cn:200 patches ALL .spl files for petrification. TB does NOT detect SR. If both installed, SR's versions dominate regardless of order (SR uses COPY which replaces entirely). Removed TB cn:100/150/200 .",
+      "myComps": "#0 Spell Revisions",
+      "theirComps": "#100 Nature's Beauty Tweak #150 Imprisonment Fix #200 Flesh to Stone Fix",
+      "source": "SR uses COPY for spell files; TB uses COPY_EXISTING/COPY_EXISTING_REGEXP; TB has no SR detection; removed",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Install order note. ToF IWD spell imports (cn:1500/1510) actively detect SR via MOD_IS_INSTALLED and use different code paths when SR is present (iwd_arcane_spells_postproduction.tpa line 8, iwd_divine_spells_postproduction.tpa line 15). ToF spell tweaks (cn:2000/2060) are built on SFO framework with SR awareness. Only ToF cn:2520 (Revised Elementals, has FORBID_COMPONENT for SR. Install SR before ToF. Keep both — ToF adapts to SR presence.",
+      "myComps": "#0 Spell Revisions",
+      "theirComps": "#1500 #1510 IWD spells #2000 #2010 #2050 #2060 #2070 Spell tweaks #2500 #2510 New spells",
+      "source": "ToF iwdspells_arcane.tpa line 35 + iwdspells_divine.tpa line 37: MOD_IS_INSTALLED spell_rev; postproduction files lines 8/15/26/32: conditional SR paths; only cn:2520 FORBIDs SR, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "hard",
+      "reason": "SnA #720 Update Existing HLAs has REQUIRE_PREDICATE !MOD_IS_INSTALLED SR #65. Both revise warrior HLAs — mutually exclusive. SnA #750 Concentration Check has NO conflict with SR #65 (only forbids Tactics Remix #60).",
+      "myComps": "#65 Revised Warrior HLAs",
+      "theirComps": "#720 Update Existing HLAs",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "NWNForBG",
+      "withId": 108,
+      "severity": "soft",
+      "reason": "SR replaces spells entirely. Install SR before NWNForBG so NWN patches the SR versions.",
+      "theirComps": "#0 Main component",
+      "myComps": "#0 Spell Revisions",
+      "orderOnly": true
+    },
+    {
+      "with": "crucible",
+      "withId": 390,
+      "severity": "hard",
+      "reason": "Crucible is not compatible with Spell Revisions. Creature scripts and spell references assume vanilla/SCS spell behavior.",
+      "myComps": "#0 Spell Revisions",
+      "theirComps": "#0 The Crucible",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "DeitiesOfFaerun",
+      "withId": 688,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 982 vs 297)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/SpellRevisions/releases",
+  "a": "Demivrgvs, mike1072",
+  "v": "v4.20",
+  "sum": "Comprehensive overhaul of the spell system, rebalancing and redesigning most arcane and divine spells. Changes how magic works throughout the game.",
+  "tags": [
+    "class",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "SpellRevisions"
+  },
+  "dl": "https://github.com/Gibberlings3/SpellRevisions/releases",
+  "au": "marco.montagnoli83",
+  "co": [
+    {
+      "n": "Spell Revisions",
+      "tp2n": "Spell Revisions",
+      "cn": 0,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tg": "adv",
+      "no": "Core spell revisions overhaul. Changes 100+ spells to PnP-inspired versions. Major mod — many other mods have SR detection code. INSTALLS WITH WARNINGS (non-fatal): 'no effects added to SPWI801.spl' (Horrid Wilting) — effect structure mismatch, cosmetic.",
+      "sp": 43,
+      "spLv": {
+        "p2": 3,
+        "p3": 2,
+        "p4": 1,
+        "p5": 4,
+        "p6": 2,
+        "p7": 4,
+        "w1": 3,
+        "w2": 4,
+        "w3": 1,
+        "w4": 4,
+        "w5": 4,
+        "w6": 3,
+        "w7": 3,
+        "w8": 5
+      }
+    },
+    {
+      "n": "Deva and Planetar Animations",
+      "tp2n": "Deva and Planetar Animations",
+      "cn": 10,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "tg": "adv",
+      "no": "Fixes Dispel Magic to use proper caster level checks. Recommended even without full SR"
+    },
+    {
+      "n": "Mirror Image Fix",
+      "tp2n": "Mirror Image Fix",
+      "cn": 20,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "Dispel Magic Fix",
+      "tp2n": "Dispel Magic Fix",
+      "no": "Not needed in EE unless main component (#0) is installed.",
+      "cn": 30,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "Spell Deflection blocks AoE spells",
+      "tp2n": "Spell Deflection blocks AoE spells",
+      "no": "Interferes with TotLM revenants and trolls, making them unkillable. Install before TotLM's main component to work around.",
+      "cn": 55,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 55,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "Update Spellbooks of Joinable NPCs",
+      "tp2n": "Update Spellbooks of Joinable NPCs",
+      "no": "Replaces NPC spellbook selections with SR-revised equivalents. CONFLICT: Removes MiH Spell Pack spells from NPC books. SR cn:0 already revises spell files globally — without cn:60, NPCs still cast SR-revised spells but keep MiH additions. Do NOT use with MiH Spell Pack .",
+      "cn": 60,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 60,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "Revised Warrior HLAs",
+      "tp2n": "Revised Warrior HLAs",
+      "cn": 65,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 65,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "Revised Saving Throws",
+      "tp2n": "Revised Saving Throws",
+      "cn": 70,
+      "wf": "spell_rev",
+      "wp": "spell_rev\\setup-spell_rev.tp2",
+      "wc": 70,
+      "wq": "verified",
+      "tg": "adv"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "partial",
+      "reason": "Complementary if installed in correct order. SR rewrites spell EFFECTS (what spells do). FnP reassigns spell ACCESS (which classes get which spells via sphere system). FnP does NOT detect SR but operates on different layer (lub_*.2da class tables vs spell .spl files). Install SR first, then FnP — FnP builds its sphere assignments on top of SR-modified spells. FnP's cleric/druid kits (cn:31/33) add new class ability entries that reference spells SR may have changed.",
+      "myComps": "#0 Spell Revisions",
+      "theirComps": "#80 Sphere Systems #31 Cleric Kits #33 Druid Kits",
+      "source": "SR modifies SPPR/SPWI .spl files; FnP modifies lub_*.2da/clabpr*.2da for sphere access; different file types, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "JTweaks does NOT detect SR. These components use COPY_EXISTING on spell files that SR also modifies. If SR installed first, JTweaks patches SR-modified spells (may produce unexpected hybrid behavior). If JTweaks installed first, SR overwrites JTweaks changes entirely. JTweaks spell fixes are largely redundant with SR — SR's comprehensive rewrite addresses the same issues. Install SR after JTweaks to ensure SR's versions win, or skip JTweaks spell components when using SR.",
+      "orderOnly": true,
+      "myComps": "#0",
+      "theirComps": "#40 Enchant Weapon #70 Polymorph immunity #81 #82 #83 Shapeshift #140 True Sight #170 Celestial spells #181 #182 Antimagic #200 Elemental protection #360 Nature's Beauty",
+      "source": "JTweaks tp2 has no MOD_IS_INSTALLED spell_rev checks; uses COPY_EXISTING on SPWI415/711 etc, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "partial",
+      "reason": "TR creature scripts assume vanilla/SCS spell behavior. TR tp2 has SPELL_REV variable but it is unused — scripts do not adapt to SR spells. Enemies may use ineffective spell combos. HP multiplier components (#25-30) are unaffected. Not a crash — just suboptimal enemy AI. Install SR before TR.",
+      "myComps": "#0 Spell Revisions",
+      "theirComps": "#8 Kuroisan #10 The Ritual #11 Red Badge #37 Lich in Docks #38 Gnome F/I #8 Improved Sahuagin #65 Improved Irenicus #37 Improved Guarded Compound #12 Improved Twisted Rune #14 Improved Demon Knights #15 Tougher Kangaxx #6 Improved Crypt King #17 Improved Copper Coronet #19 Improved Small Teeth #35 Improved Planar Prison #29 #39 Improved Drizzt #7018 Tougher Fire Giants #7020 Tougher Githyanki #7022 Tougher Yuan-ti",
+      "orderOnly": true,
+      "source": "TR tp2 SPELL_REV variable exists but unused in BAF scripts; enemy behavior suboptimal not broken, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

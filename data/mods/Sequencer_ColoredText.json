@@ -1,0 +1,50 @@
+{
+  "i": 672,
+  "t": "Sequencer_ColoredText",
+  "sv": 1,
+  "ord": 430,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Sequencer Colored Text",
+  "no": "Sequencer Colored Text by Gamemacik. Adds pink/red color to Spell Sequencer, Spell Trigger, Contingency, and Chain Contingency combat log messages, plus gold for Vorpal Hit. Purely cosmetic — modifies dialog.tlk string entries with color codes. Many TLK IDs are SCS-specific (enemy sequencer/contingency names), so install after SCS for full coverage. No hard dependencies, works without SCS but covers fewer strings.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "stratagems",
+      "requiresId": 341,
+      "type": "soft",
+      "reason": "Many colored TLK entries (40000-73000 range) are SCS-created sequencer/contingency names. Without SCS, those strings don't exist and the color patching has no effect on them."
+    }
+  ],
+  "u": "https://www.shsforums.net/files/file/1273-sequencer-coloredtext/",
+  "a": "Gamemacik",
+  "v": "1.0",
+  "sum": "Adds colored text indicators to spell sequencers and contingencies, making it easier to distinguish between different queued spells in the interface.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.shsforums.net/files/file/1273-sequencer-coloredtext/",
+  "au": "gamemacik",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Sequencer Colored Text",
+      "tp2n": "Sequencer_ColoredText",
+      "cn": 0,
+      "wf": "Sequencer_ColoredText",
+      "wp": "Sequencer_ColoredText\\setup-Sequencer_ColoredText.tp2",
+      "wc": 0,
+      "no": "Colors ~60 combat log strings pink/red: Spell Sequencer fired/contents, Spell Trigger fired/contents, Contingency/Chain Contingency fired/contents, plus Elminster pipe/evasion, tattoo abilities. Also colors Vorpal Hit text gold. Patches dialog.tlk directly via STRING_SET_EVALUATE."
+    }
+  ]
+}

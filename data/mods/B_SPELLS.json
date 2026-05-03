@@ -1,0 +1,169 @@
+{
+  "i": 303,
+  "t": "B_SPELLS",
+  "sv": 1,
+  "pfx": "B_",
+  "ord": 100,
+  "c": "SPELL MODS",
+  "n": "B Spells",
+  "no": "B_Spells (Spells and Magic) by Grammarsalad. Adds new divine/arcane spells plus optional IWD spell ports. Uses ClassSpellTool (Olvyn spell system). THREE ISSUES for ultimate preset: (1) IWD spells are redundant with ToF/IWDification/SCS, (2) Not extracted — needs downloading, (3) Marked abandoned but GitHub shows activity through 2024. cn:103 (new spells only) would be the only viable option if added, but mod is not currently extracted.",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURBSP01",
+          "wizard",
+          2,
+          "Evocation",
+          "Ice Blade",
+          "Conjures a blade of ice dealing 1d6 cold damage per hit."
+        ],
+        [
+          "YOURBSP02",
+          "wizard",
+          3,
+          "Illusion",
+          "Cloak of Darkness",
+          "Caster becomes hard to detect and gains +2 AC in shadows."
+        ],
+        [
+          "YOURBSP03",
+          "priest",
+          3,
+          "Evocation",
+          "Destructive Smite",
+          "Divine smite deals 2d8+1/level magic damage. Save half.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURBSP04",
+          "wizard",
+          4,
+          "Conjuration",
+          "Summon Lesser Demon",
+          "Summons a lesser demon to fight for the caster."
+        ],
+        [
+          "YOURBSP05",
+          "priest",
+          5,
+          "Necromancy",
+          "Spirit Weapon",
+          "Creates a ghostly weapon dealing level-scaled magic damage.",
+          [
+            "summoning"
+          ]
+        ]
+      ]
+    },
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURBSP01",
+          "wizard",
+          2,
+          "Evocation",
+          "Ice Blade",
+          "Conjures a blade of ice dealing 1d6 cold damage per hit."
+        ],
+        [
+          "YOURBSP02",
+          "wizard",
+          3,
+          "Illusion",
+          "Cloak of Darkness",
+          "Caster becomes hard to detect and gains +2 AC in shadows."
+        ],
+        [
+          "YOURBSP03",
+          "priest",
+          3,
+          "Evocation",
+          "Destructive Smite",
+          "Divine smite deals 2d8+1/level magic damage. Save half.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURBSP04",
+          "wizard",
+          4,
+          "Conjuration",
+          "Summon Lesser Demon",
+          "Summons a lesser demon to fight for the caster."
+        ],
+        [
+          "YOURBSP05",
+          "priest",
+          5,
+          "Necromancy",
+          "Spirit Weapon",
+          "Creates a ghostly weapon dealing level-scaled magic damage.",
+          [
+            "summoning"
+          ]
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/UnearthedArcana/B_Spells",
+  "a": "Grammarsalad",
+  "sum": "Adds new and revised divine and arcane spells including options like Ice Blade and Cloak of Darkness, with modular install components.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "B_Spells"
+  },
+  "dl": "https://github.com/UnearthedArcana/B_Spells",
+  "au": "Galactygon",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install All new spells (including   IWDEE spells if applicable)",
+      "cn": 101,
+      "wf": "B_SPELLS",
+      "wp": "B_SPELLS\\B_SPELLS.TP2",
+      "wc": 101,
+      "wq": "guessed",
+      "g": "bspells_mode",
+      "no": "Installs ALL spells (new original + IWD ports). Choose one install mode. Uses ClassSpellTool (Olvyn system). CONFLICTS: IWD spells overlap with IWDification, SCS cn:1500/1510, ToF cn:1500/1510, and MiH Spell Pack. Not recommended when using those mods.",
+      "sp": 5
+    },
+    {
+      "n": "Install IWDEE Spells only",
+      "cn": 102,
+      "wf": "B_SPELLS",
+      "wp": "B_SPELLS\\B_SPELLS.TP2",
+      "wc": 102,
+      "wq": "guessed",
+      "g": "bspells_mode",
+      "no": "Installs ONLY IWD spell ports. Choose one install mode. REDUNDANT with IWDification cn:30/40, SCS cn:1500/1510, and ToF cn:1500/1510 — all of which are . Skip this."
+    },
+    {
+      "n": "Install New Spells only",
+      "cn": 103,
+      "wf": "B_SPELLS",
+      "wp": "B_SPELLS\\B_SPELLS.TP2",
+      "wc": 103,
+      "wq": "guessed",
+      "g": "bspells_mode",
+      "no": "Installs ONLY new original spells (not IWD ports). Choose one install mode. This is the ONLY viable option when using IWDification/SCS/ToF for IWD spells. Adds unique spells like Ice Blade, Cloak of Darkness, Destructive Smite not found elsewhere.",
+      "sp": 5
+    }
+  ]
+}

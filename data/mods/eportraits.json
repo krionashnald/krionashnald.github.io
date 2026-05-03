@@ -1,0 +1,1054 @@
+{
+  "i": 692,
+  "t": "eportraits",
+  "sv": 1,
+  "ord": 80,
+  "c": "PORTRAITS",
+  "n": "Enkida Portrait Pack",
+  "conflicts": [
+    {
+      "with": "AllThingsMazzy",
+      "withId": 453,
+      "severity": "soft",
+      "reason": "Both provide a Mazzy portrait. Cosmetic conflict, last installed wins.",
+      "myComps": "#110, #111",
+      "theirComps": "#5 Hi-Res Portrait for Mazzy",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin/Edwina. Last installed wins",
+      "theirComps": "#1180 Female Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#0 Core",
+      "theirComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "NostalgiaPack",
+      "withId": 356,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "theirComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "theirComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "theirComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#0 Restore Irenicus Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "theirComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "theirComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ac-miscellaneous",
+      "withId": 427,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "theirComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ContinousViconiaAppearance",
+      "withId": 426,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "haerdalis",
+          "portraits/enkida/haerdalis.png",
+          "bg2"
+        ],
+        [
+          "korgan",
+          "portraits/enkida/korgan.png",
+          "bg2"
+        ]
+      ],
+      "1": [
+        [
+          "aerie",
+          "portraits/enkida/aerie.png",
+          "bg2"
+        ]
+      ],
+      "2": [
+        [
+          "anomen",
+          "portraits/enkida/anomen.png",
+          "bg2"
+        ]
+      ],
+      "3": [
+        [
+          "cernd",
+          "portraits/enkida/cernd.png",
+          "bg2"
+        ]
+      ],
+      "4": [
+        [
+          "edwin",
+          "portraits/enkida/edwin.png",
+          "all"
+        ]
+      ],
+      "5": [
+        [
+          "imoen",
+          "portraits/enkida/imoen.png",
+          "all"
+        ]
+      ],
+      "6": [
+        [
+          "jaheira",
+          "portraits/enkida/jaheira.png",
+          "all"
+        ]
+      ],
+      "7": [
+        [
+          "jan",
+          "portraits/enkida/jan.png",
+          "bg2"
+        ]
+      ],
+      "8": [
+        [
+          "keldorn",
+          "portraits/enkida/keldorn.png",
+          "bg2"
+        ]
+      ],
+      "9": [
+        [
+          "mazzy",
+          "portraits/enkida/mazzy.png",
+          "bg2"
+        ]
+      ],
+      "10": [
+        [
+          "minsc",
+          "portraits/enkida/minsc.png",
+          "all"
+        ]
+      ],
+      "11": [
+        [
+          "nalia",
+          "portraits/enkida/nalia.png",
+          "bg2"
+        ]
+      ],
+      "13": [
+        [
+          "valygar",
+          "portraits/enkida/valygar.png",
+          "bg2"
+        ]
+      ],
+      "14": [
+        [
+          "viconia",
+          "portraits/enkida/viconia.png",
+          "all"
+        ]
+      ]
+    }
+  },
+  "u": "http://www.shsforums.net/topic/54227-enkidas-portrait-pack-v2/",
+  "a": "Enkida",
+  "v": "v2.0",
+  "sum": "Comprehensive portrait pack with unified art style for BG2 NPCs. Maintains semi-fidelity to BioWare artwork with standardized sizing.",
+  "tags": [
+    "cosmetic",
+    "portraits"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Enkida",
+  "dl": "https://github.com/SpellholdStudios/Enkida_Portrait_Pack",
+  "no": "Comprehensive portrait pack by Enkida with a unified art style for BG2 NPCs. Maintains semi-fidelity to BioWare artwork with standardized sizing.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install Enkida's Portrait Mod?",
+      "cn": 0,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Install Enkida's Portrait Mod?"
+    },
+    {
+      "n": "Install portraits to portrait directory",
+      "cn": 100,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "tp2n": "Install portraits to the portrait directory"
+    },
+    {
+      "n": "Aerie",
+      "cn": 101,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 101,
+      "wq": "exact",
+      "tp2n": "Alternate Aerie",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Anomen",
+      "cn": 102,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 102,
+      "wq": "exact",
+      "tp2n": "Alternate Anomen",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Apply alternate Balthazar to all mods involving Balthazar (default)",
+      "cn": 202,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Apply alternate Balthazar to all mods involving Balthazar (default)",
+      "scn": "Alternate Balthazar",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Balthazar",
+      "cn": 118,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Balthazar",
+      "scn": "Alternate Balthazar",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Bodhi (default)",
+      "cn": 119,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Bodhi (default)",
+      "scn": "Alternate Bodhi",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate \"Vampiric\" Bodhi",
+      "cn": 120,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate \"Vampiric\" Bodhi",
+      "scn": "Alternate Bodhi",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Cernd",
+      "cn": 103,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 103,
+      "wq": "exact",
+      "tp2n": "Alternate Cernd",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Edwin",
+      "cn": 104,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 104,
+      "wq": "exact",
+      "tp2n": "Alternate Edwin (default)",
+      "scn": "Alternate Edwin",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Hairless Edwin",
+      "cn": 121,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Hairless Edwin",
+      "scn": "Alternate Edwin",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Ellesime",
+      "cn": 122,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Ellesime",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Haer'Dalis (default)",
+      "cn": 123,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Haer'Dalis (default)",
+      "scn": "Alternate Haer'Dalis",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Haer'Dalis without cheek scars",
+      "cn": 124,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Haer'Dalis without cheek scars",
+      "scn": "Alternate Haer'Dalis",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Illasera with racial bugfix (default)",
+      "cn": 125,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Illasera with racial bugfix (default)",
+      "scn": "Alternate Illasera",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate human Illasera",
+      "cn": 126,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate human Illasera",
+      "scn": "Alternate Illasera",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Imoen",
+      "cn": 105,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 105,
+      "wq": "exact",
+      "tp2n": "Alternate Imoen (default)",
+      "scn": "Alternate Imoen",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate tiefling Imoen (Subraces)",
+      "cn": 247,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate tiefling Imoen (Subraces)",
+      "scn": "Alternate Imoen",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Irenicus",
+      "cn": 106,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Irenicus",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Jaheira",
+      "cn": 107,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 107,
+      "wq": "exact",
+      "tp2n": "Alternate Jaheira (default)",
+      "scn": "Alternate Jaheira",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Jaheira in leather",
+      "cn": 127,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Jaheira in leather",
+      "scn": "Alternate Jaheira",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Jan",
+      "cn": 108,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 108,
+      "wq": "exact",
+      "tp2n": "Alternate Jan",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Keldorn",
+      "cn": 109,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 109,
+      "wq": "exact",
+      "tp2n": "Alternate Keldorn",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Korgan",
+      "cn": 128,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Korgan",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Mazzy",
+      "cn": 110,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 110,
+      "wq": "exact",
+      "tp2n": "Alternate Mazzy (default)",
+      "scn": "Alternate Mazzy",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Mazzy in platemail",
+      "cn": 111,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Mazzy in platemail",
+      "scn": "Alternate Mazzy",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Minsc",
+      "cn": 112,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 112,
+      "wq": "exact",
+      "tp2n": "Alternate Minsc (default)",
+      "scn": "Alternate Minsc",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Minsc with tattoos",
+      "cn": 129,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Minsc with tattoos",
+      "scn": "Alternate Minsc",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Nalia",
+      "cn": 113,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 113,
+      "wq": "exact",
+      "tp2n": "Alternate Nalia (default)",
+      "scn": "Alternate Nalia",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Nalia with short hair",
+      "cn": 130,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Nalia with short hair",
+      "scn": "Alternate Nalia",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Sarevok",
+      "cn": 114,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 114,
+      "wq": "exact",
+      "games": [
+        "tob"
+      ],
+      "tp2n": "Alternate Sarevok",
+      "scn": "Alternate Sarevok",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Restore original glow-eyed Sarevok portrait? (Tortured Souls)",
+      "cn": 246,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Restore original glow-eyed Sarevok portrait? (Tortured Souls)",
+      "scn": "Alternate Sarevok",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Sendai",
+      "cn": 131,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Sendai",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Valygar",
+      "cn": 115,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 115,
+      "wq": "exact",
+      "tp2n": "Alternate Valygar (default)",
+      "scn": "Alternate Valygar",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Valygar with short hair",
+      "cn": 132,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Valygar with short hair",
+      "scn": "Alternate Valygar",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Viconia",
+      "cn": 116,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 116,
+      "wq": "exact",
+      "tp2n": "Alternate Viconia",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Yaga Shura (default)",
+      "cn": 133,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Yaga Shura (default)",
+      "scn": "Alternate Yaga Shura",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Yaga Shura with short hair",
+      "cn": 134,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Yaga Shura with short hair",
+      "scn": "Alternate Yaga Shura",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Yoshimo",
+      "cn": 117,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wc": 117,
+      "wq": "exact",
+      "tp2n": "Alternate Yoshimo",
+      "grn": "BioWare NPCs"
+    },
+    {
+      "n": "Alternate Angelo and minor NPCs",
+      "cn": 200,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Angelo and minor NPCs",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Anomen Flirt Portrait",
+      "cn": 201,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Anomen Flirt Portrait",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Balthazar (Turnabout)",
+      "cn": 203,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Balthazar (Turnabout)"
+    },
+    {
+      "n": "Alternate portraits for Big Picture characters",
+      "cn": 223,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate portraits for Big Picture characters",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Apply alternate Bodhi to all mods involving Bodhi",
+      "cn": 224,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Apply alternate Bodhi to all mods involving Bodhi",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Chloe",
+      "cn": 228,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Chloe",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Edwina and minor NPCs",
+      "cn": 204,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Edwina and minor NPCs",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Edwina and minor NPCs (Edwin Romance)",
+      "cn": 205,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Edwina and minor NPCs (Edwin Romance)"
+    },
+    {
+      "n": "Alternate Eilistraee's Song portraits",
+      "cn": 230,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Eilistraee's Song portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Fade",
+      "cn": 206,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Fade",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Fading Promises portraits",
+      "cn": 231,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Fading Promises portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Gavin",
+      "cn": 254,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Gavin",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Homeward Bound portraits",
+      "cn": 233,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Homeward Bound portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Hubelpot",
+      "cn": 234,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Hubelpot",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Innershade portraits",
+      "cn": 235,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Innershade portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kachiko",
+      "cn": 207,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kachiko",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kari",
+      "cn": 236,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kari",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kelsey",
+      "cn": 208,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kelsey",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Keto",
+      "cn": 209,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Keto",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kiyone",
+      "cn": 238,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kiyone",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kova",
+      "cn": 239,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kova",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Apply Alternate Minsc portrait to Unfinished Business quest",
+      "cn": 210,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Apply Alternate Minsc portrait to Unfinished Business quest",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Miriam",
+      "cn": 241,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Miriam",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Moddy",
+      "cn": 232,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Moddy",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Nathaniel (default)",
+      "cn": 212,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Nathaniel (default)",
+      "scn": "Alternate Nathaniel",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate blonde Nathaniel",
+      "cn": 211,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate blonde Nathaniel",
+      "scn": "Alternate Nathaniel",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Nikita",
+      "cn": 213,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Nikita",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Ninafer",
+      "cn": 242,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Ninafer",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Otako",
+      "cn": 243,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Otako",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Rhilato",
+      "cn": 244,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Rhilato",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Sarah",
+      "cn": 245,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Sarah",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Sime",
+      "cn": 214,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Sime",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Solaufein (default)",
+      "cn": 215,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Solaufein (default)",
+      "scn": "Alternate Solaufein",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Solaufein with circlet",
+      "cn": 216,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Solaufein with circlet",
+      "scn": "Alternate Solaufein",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Suna Seni",
+      "cn": 217,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Suna Seni",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Tashia",
+      "cn": 248,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Tashia",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Tales of the Deep Garden portraits",
+      "cn": 249,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Tales of the Deep Garden portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Tsujatha",
+      "cn": 250,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Tsujatha",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Valen",
+      "cn": 218,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Valen",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate White Queen portraits",
+      "cn": 251,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate White Queen portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Xan for all BGT mods",
+      "cn": 222,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Xan for all BGT mods",
+      "scn": "Alternate Xan",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Xan for Kulyok's Xan only",
+      "cn": 219,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Xan for Kulyok's Xan only",
+      "scn": "Alternate Xan",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Xulaye",
+      "cn": 252,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Xulaye",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Getting Rid of Anomen portraits",
+      "cn": 220,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Getting Rid of Anomen portraits",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Kivan and minor NPCs (default)",
+      "cn": 221,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Kivan and minor NPCs (default)",
+      "scn": "Alternate Kivan",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate more elvish black-haired Kivan and minor NPCs",
+      "cn": 237,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate more elvish black-haired Kivan and minor NPCs",
+      "scn": "Alternate Kivan",
+      "grn": "Mod NPCs"
+    },
+    {
+      "n": "Alternate Yoshimo Romance portraits",
+      "cn": 253,
+      "wf": "eportraits",
+      "wp": "eportraits\\EPORTRAITS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Yoshimo Romance portraits",
+      "grn": "Mod NPCs"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Enkida_Portrait_Pack"
+  }
+}

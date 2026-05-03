@@ -1,0 +1,55 @@
+{
+  "i": 628,
+  "t": "SNIFF",
+  "sv": 1,
+  "ord": 360,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Sniff",
+  "no": "Gives dogs and wolves tracking abilities. Temnix mod — may have compatibility issues. Not on EET compat list.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "hard",
+      "reason": "Incompatible (per Infinity Insanity install notes)",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/forums/topic/34958-sniff-mod/",
+  "a": "Temnix",
+  "sum": "Gives dogs and wolves the ability to follow scent trails to find nearby creatures, detect and reveal invisible enemies, and protect friendly characters.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/forums/topic/34958-sniff-mod/",
+  "au": "morpheus562",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Sniff",
+      "cn": 0,
+      "wf": "SNIFF",
+      "wp": "SNIFF\\SNIFF.TP2",
+      "wc": 0
+    },
+    {
+      "n": "Personal Detect Invisibility",
+      "cn": 1,
+      "wf": "SNIFF",
+      "wp": "SNIFF\\SNIFF.TP2",
+      "wc": 1
+    }
+  ]
+}

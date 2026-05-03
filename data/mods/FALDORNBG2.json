@@ -1,0 +1,103 @@
+{
+  "i": 144,
+  "t": "FaldornBG2",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 230,
+  "c": "NEW NPC MODS",
+  "n": "Faldorn",
+  "no": "Returning Bioware characters by Lava Faldorn BG2EE",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Faldorn in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "theirComps": "#40 Faldorn's New Leaf",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "FALDORN_NPC_FOR_BG2EE",
+          "npc",
+          "Shadow Druid: Faldorn",
+          "Shadow Druid companion from BG1. Aggressive nature magic, hostile to civilization."
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/faldorn-bg2ee/",
+  "a": "Lava Del'Vortel",
+  "v": "1.3",
+  "sum": "Continues Faldorn's story into BG2 as a joinable NPC with new dialogue and druidic-themed content.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/faldorn-bg2ee/",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "FALDORN_NPC_FOR_BG2EE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Shadow Druid companion from BG1. Aggressive nature magic, hostile to civilizatio"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "faldorn",
+          "portraits/faldornbg2/l_fald.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Faldorn NPC for BG2EE",
+      "cn": 0,
+      "wf": "FALDORNBG2",
+      "wp": "FALDORNBG2\\FALDORNBG2.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Faldorn NPC for BG2EE"
+    },
+    {
+      "n": "Faldorn NPC for BG2EE: Player-Initiated Dialogues (PIDs)",
+      "cn": 1,
+      "wf": "FALDORNBG2",
+      "wp": "FALDORNBG2\\FALDORNBG2.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "x": 0,
+      "no": "Player-initiated dialogues. Requires main component",
+      "tp2n": "Faldorn NPC for BG2EE: Player-Initiated Dialogues (PIDs)"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "i": 157,
+  "t": "tyrisflare",
+  "sv": 1,
+  "pfx": "G#",
+  "ord": 360,
+  "c": "NEW NPC MODS",
+  "n": "Tyris Flare NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "zh-cn": 3
+  },
+  "no": "Tyris Flare from Golden Axe Fanservice by all accounts, but apparently good fanservice? Pick yourself whatever alternate portrait you like",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "CDTweaks romance cheats create stutter for mod NPCs",
+      "myComps": "#0 Tyris Flare NPC",
+      "theirComps": "#3183",
+      "source": "eemodsetup"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "tyris",
+          "portraits/tyris/g_tyris.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt1.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt2.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt3.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt4.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt5.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt6.png",
+          "bg2"
+        ],
+        [
+          "tyris",
+          "portraits/tyris/alt7.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/tyris/",
+  "a": "Grim Squeaker; Argent77, CamDawg",
+  "v": "v12",
+  "sum": "Adds Tyris Flare, a fire-themed human fighter, as a joinable BG2 NPC with romance and combat focus.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Grim Squeaker",
+  "dl": "https://www.gibberlings3.net/mods/npcs/tyris/",
+  "co": [
+    {
+      "n": "Tyris Flare NPC",
+      "pi": "TyrisFlare-main",
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "tp2n": "Tyris Flare NPC"
+    },
+    {
+      "n": "Alternate Portrait 1",
+      "cn": 101,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 1",
+      "pi": "TyrisFlare-Alternate_Portrait_1",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 2",
+      "cn": 2,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 2",
+      "pi": "TyrisFlare-Alternate_Portrait_2",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 3",
+      "cn": 3,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 3",
+      "pi": "TyrisFlare-Alternate_Portrait_3",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 4",
+      "cn": 4,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 4",
+      "pi": "TyrisFlare-Alternate_Portrait_4",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 5",
+      "cn": 5,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 5",
+      "pi": "TyrisFlare-Alternate_Portrait_5",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 6",
+      "cn": 6,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 6",
+      "pi": "TyrisFlare-Alternate_Portrait_6",
+      "scn": "Alternate Tyris Portraits"
+    },
+    {
+      "n": "Alternate Portrait 7",
+      "cn": 7,
+      "wf": "tyrisflare",
+      "wp": "tyrisflare\\setup-tyrisflare.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate Portrait 7",
+      "pi": "TyrisFlare-Alternate_Portrait_7",
+      "scn": "Alternate Tyris Portraits"
+    }
+  ]
+}

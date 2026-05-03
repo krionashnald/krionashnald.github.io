@@ -1,0 +1,103 @@
+{
+  "i": 227,
+  "t": "npc_tweak",
+  "sv": 1,
+  "ord": 330,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "NPC Tweak",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "es": 3,
+    "ru": 4,
+    "pl": 5
+  },
+  "no": "alternatives in Deities of Faerun (Arvoreen F/C kit), Faith & Powers (Arvoreen cleric and paladin kits, can be installed alone if so wanted by fiddling with its .ini file), and Artisan's Kitpack (allows asigning her its Divine Champion kit) NPC Tweak We plan to use all tweaks from this mod.Install NPC Tweak for BG2 before Hidden Adventure.",
+  "ic": "The Darkest Day",
+  "conflicts": [
+    {
+      "with": "polytweak",
+      "withId": 228,
+      "severity": "partial",
+      "reason": "Both modify Cernd's class/kit. Choose one.",
+      "myComps": "#1 Cernd",
+      "theirComps": "#150 Cernd",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "polytweak",
+      "withId": 228,
+      "severity": "partial",
+      "reason": "Both modify Nalia's class/kit. Choose one.",
+      "myComps": "#2 Nalia",
+      "theirComps": "#500 Nalia",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "Choose class/kit for Nalia",
+      "myComps": "#2 Nalia",
+      "theirComps": "#2500, #2510, #2511, #2512, #2513, #2514, #2515, #2516, #2517",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "tdd",
+      "withId": 716,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 736 vs 1062)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/NPCTweak/releases",
+  "a": "andrewas, Orion's Stardom, mike1072",
+  "v": "v6",
+  "sum": "Tweaks NPC stats, equipment, and abilities to fix oddities or rebalance companions. Individual changes you can pick and choose.",
+  "tags": [
+    "npc",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "NPCTweak"
+  },
+  "dl": "https://github.com/Gibberlings3/NPCTweak/releases",
+  "au": "maguswizardo",
+  "co": [
+    {
+      "n": "Anomen",
+      "tp2n": "Anomen",
+      "cn": 0,
+      "wf": "npc_tweak",
+      "wp": "npc_tweak\\npc_tweak.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Cernd",
+      "tp2n": "Cernd",
+      "cn": 1,
+      "wf": "npc_tweak",
+      "wp": "npc_tweak\\npc_tweak.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Nalia",
+      "tp2n": "Nalia",
+      "cn": 2,
+      "wf": "npc_tweak",
+      "wp": "npc_tweak\\npc_tweak.tp2",
+      "wc": 2,
+      "wq": "verified"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "i": 122,
+  "t": "A7-GolemConstruction",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 155,
+  "c": "SPELL MODS",
+  "n": "Golem Construction for Spellcasters",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "pl": 4,
+    "ru": 5,
+    "zh-cn": 6
+  },
+  "no": "Golem Construction for Spellcasters v6.4 by Argent77. Adds comprehensive golem crafting system with 6 golem types in 4 power tiers. INSTALL ORDER CRITICAL: Must install AFTER Spell Revisions (and any mod that modifies stats.ids). GC compiles AI scripts using Detectable Spells stat names; if stats.ids is modified after compilation, later mods using DECOMPILE_AND_PATCH will fail. FORBID: cn:10 conflicts with RR cn:8 (Upgradeable Equipment). ToF also includes flesh/bone golem content.",
+  "conflicts": [
+    {
+      "with": "mih_ip",
+      "withId": 251,
+      "severity": "soft",
+      "reason": "Both modify the Tome of Golems item; Golem Construction replaces the manual entirely while MiH improves it",
+      "myComps": "#10 Replace original Golem Manual",
+      "theirComps": "#8 Improved Tome of Golems"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Both revise golem types. Install MiH EQ before Golem Construction. MiH modifies creature stats; GC adds new golem construction mechanics. Complementary — different aspects of golem gameplay.",
+      "myComps": "#0 Golem Construction #25 Greater variety #35 Vulnerable to spells #40 Reduced immunities",
+      "theirComps": "#2 Revised Golems",
+      "orderOnly": true
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURGOLEM1",
+          "wizard",
+          6,
+          "Conjuration",
+          "Construct Clay Golem",
+          "Constructs a clay golem from materials."
+        ],
+        [
+          "YOURGOLEM2",
+          "wizard",
+          7,
+          "Conjuration",
+          "Construct Stone Golem",
+          "Constructs a stone golem from materials."
+        ],
+        [
+          "YOURGOLEM3",
+          "wizard",
+          8,
+          "Conjuration",
+          "Construct Iron Golem",
+          "Constructs an iron golem from materials."
+        ],
+        [
+          "YOURGOLEM4",
+          "wizard",
+          9,
+          "Conjuration",
+          "Construct Adamantine Golem",
+          "Constructs an adamantine golem from materials."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Argent77/A7-GolemConstruction/releases/tag/v6.1",
+  "a": "Argent77",
+  "v": "6.4",
+  "sum": "Lets spellcasters research and build custom golems as permanent companions. Adds crafting quests, materials gathering, and 10 golem types from flesh to adamantine.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v2.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-GolemConstruction"
+  },
+  "dl": "https://github.com/Argent77/A7-GolemConstruction/releases/tag/v6.1",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Golem Construction Ability for Spellcasters",
+      "tp2n": "Golem Construction Ability for Spellcasters",
+      "pi": "A7-GOLEMCONSTRUCTION-MAIN",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 0,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 0,
+      "ss": 19,
+      "no": "Core golem construction system. Adds 6 volumes of golem manuals (flesh, clay, stone, iron, mithral, adamantite) with 4 variants each (lesser to perfect). Spellcasters learn to build golems as companions. Uses Detectable Spells stats in AI scripts — MUST install after Spell Revisions to avoid broken stat references. Adds 0 kit slots. PARSE ERRORS (×4, non-fatal): ar0602_bottom.baf lines 66/68/80/82 — RemoveSpellRES triggers non-fatal PARSE warning. Same bug pattern as Brandock. Golem cleanup scripts won't fire correctly. WeiDU recovers and continues.",
+      "sp": 4,
+      "splstates": 1
+    },
+    {
+      "n": "Replace original Golem Manual",
+      "tp2n": "Replace original Golem Manual",
+      "pi": "A7-GOLEMCONSTRUCTION-REPLACE_MANUAL",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 10,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 10,
+      "x": 0,
+      "no": "Replaces vanilla Golem Manual with GC's version. HARD CONFLICT: FORBID_COMPONENT RR cn:8 (Upgradeable Equipment). RR cn:8 IS — this component will auto-skip. Remove ."
+    },
+    {
+      "n": "Improve enemy spellcaster AI",
+      "tp2n": "Improve enemy spellcaster AI",
+      "no": "Enhances enemy mage/priest AI against golems — they'll use appropriate spells and tactics. Note: items used by MiH Encounters & Quests' Revised Golems (cn:2) may be removed. BG2EE/EET only.",
+      "pi": "A7-GOLEMCONSTRUCTION-IMPROVE_ENEMY_AI",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 15,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 15,
+      "x": 0
+    },
+    {
+      "n": "Golems for enemy spellcasters",
+      "tp2n": "Golems for enemy spellcasters",
+      "no": "Adds golem servants to enemy spellcasters (randomized types). SCS's AI components may render this partially redundant — SCS already improves spellcaster tactics. Both can coexist but overlap. BG2EE/EET/SoD.",
+      "pi": "A7-GOLEMCONSTRUCTION-GOLEMS_FOR_ENEMIES",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 20,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 20,
+      "x": 0
+    },
+    {
+      "n": "Greater variety of enemy golem types",
+      "tp2n": "Greater variety of enemy golem types",
+      "pi": "A7-GOLEMCONSTRUCTION-ENEMY_GREATER_VARIETY",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 25,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 25,
+      "x": 0,
+      "no": "Increases diversity of enemy golem types and their tactical use. More varied encounters with different golem varieties. BG2EE/EET/SoD."
+    },
+    {
+      "n": "Fighter Stronghold golems may continue to serve you",
+      "tp2n": "Fighter Stronghold golems may continue to serve you",
+      "pi": "A7-GOLEMCONSTRUCTION-GOLEMS_FIGHTER_STRONGHOLD",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 30,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 30,
+      "x": 0,
+      "no": "Surviving chapel golems from de'Arnise Keep may continue to serve you at the Fighter Stronghold. BG2EE/EET only. Nice QoL for fighter PCs."
+    },
+    {
+      "n": "Make golems vulnerable to specific spell effects",
+      "tp2n": "Make golems vulnerable to specific spell effects",
+      "pi": "A7-GOLEMCONSTRUCTION-MAKE_VULNERABLE_TO_SPELLS",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 35,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 35,
+      "x": 0,
+      "no": "Makes golems vulnerable to specific spell effects (e.g., Flesh Golem vulnerable to fire). Adds tactical options for dealing with golems. All supported games."
+    },
+    {
+      "n": "Reduce weapon immunities and resistances for constructed golems",
+      "tp2n": "Reduce weapon immunities and resistances for constructed golems",
+      "pi": "A7-GOLEMCONSTRUCTION-REDUCE_IMMUNITIES",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 40,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 40,
+      "x": 0,
+      "no": "Reduces weapon immunity and resistance levels for player-constructed golems. Balance tweak — makes golems less overpowered. All supported games."
+    },
+    {
+      "n": "Identify all mod items",
+      "tp2n": "Identify all mod items",
+      "pi": "A7-GOLEMCONSTRUCTION-IDENTIFY_ITEMS",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 45,
+      "x": 0,
+      "no": "Auto-identifies all mod-added items. Convenience — no need to cast Identify on GC items. All supported games."
+    },
+    {
+      "n": "Add \"Teleport\" ability to golems",
+      "tp2n": "Add \"Teleport\" ability to golems",
+      "pi": "A7-GOLEMCONSTRUCTION-ADD_TELEPORT_ABILITY",
+      "grn": "Tweaks",
+      "wf": "A7-GolemConstruction",
+      "wp": "A7-GolemConstruction\\A7-GOLEMCONSTRUCTION.TP2",
+      "wc": 50,
+      "wq": "known_folder_uninstalled",
+      "cn": 50,
+      "x": 0,
+      "no": "Adds a Teleport ability to golems, letting them follow you across areas. Major QoL — without this, golems stay behind when you leave an area. All supported games."
+    }
+  ]
+}

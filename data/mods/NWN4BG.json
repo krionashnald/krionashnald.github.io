@@ -1,0 +1,274 @@
+{
+  "i": 108,
+  "t": "NWNForBG",
+  "sv": 1,
+  "ord": 450,
+  "c": "POST-TACTICAL QUESTS",
+  "n": "Neverwinter Nights for Baldur's Gate",
+  "langs": {
+    "ru": 0,
+    "en": 1,
+    "fr": 2,
+    "es": 3,
+    "de": 4,
+    "it": 5,
+    "pl": 6,
+    "zh-cn": 7,
+    "pt": 8
+  },
+  "no": "Neverwinter Nights for Baldur's Gate by AGKanevchev (WeiDU: paladin84). Recreates the full NWN campaign within BG2/EET. Triggered at 1.35M XP (recommended 1.75M). Does NOT require the original NWN game — all content is recreated. BG2 events are blocked while in NWN content. Some new wizard spells may conflict with ToF if ToF is installed after this mod. Install after Spell Revisions and IWDification if using those.",
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "SR replaces spells entirely. Install SR before NWNForBG so NWN patches the SR versions.",
+      "myComps": "#0 Main component",
+      "theirComps": "#0 Spell Revisions",
+      "orderOnly": true
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "Both add IWD spells. NWNForBG detects existing spells and skips duplicates. Install NWNForBG after IWDification to use IWDification spell versions.",
+      "myComps": "#0 Main component",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks cn:1330 (NPCs Cannot Use Doors) breaks one minor NWN quest (Hector). Do not use cn:1330 with this mod.",
+      "myComps": "#0 Main component",
+      "theirComps": "#1330 NPCs Cannot Use Doors",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "bp-bgt-worldmap",
+      "withId": 428,
+      "severity": "soft",
+      "reason": "BP-BGT-Worldmap must be installed AFTER NWNForBG. Worldmap mod auto-detects NWN and adds its locations.",
+      "myComps": "#10 BP-BGT Worldmap option",
+      "orderOnly": true
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "NWN_FOR_BG",
+          "npc",
+          "NWN For BG",
+          "Neverwinter Nights-inspired kit adaptation for Baldur's Gate."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "nwn_nwaavil",
+          "portraits/nwnforbg/nwaavil.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwarche",
+          "portraits/nwnforbg/nwarche.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwarwy",
+          "portraits/nwnforbg/nwarwy.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwbelia",
+          "portraits/nwnforbg/nwbelia.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwchalj",
+          "portraits/nwnforbg/nwchalj.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwdizi",
+          "portraits/nwnforbg/nwdizi.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwduma",
+          "portraits/nwnforbg/nwduma.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwecke",
+          "portraits/nwnforbg/nwecke.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwerro",
+          "portraits/nwnforbg/nwerro.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwfence",
+          "portraits/nwnforbg/nwfence.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwgerro",
+          "portraits/nwnforbg/nwgerro.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwhemme",
+          "portraits/nwnforbg/nwhemme.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwjahe",
+          "portraits/nwnforbg/nwjahe.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwjero",
+          "portraits/nwnforbg/nwjero.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwkrest",
+          "portraits/nwnforbg/nwkrest.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwmaega",
+          "portraits/nwnforbg/nwmaega.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwplscr",
+          "portraits/nwnforbg/nwplscr.png",
+          "bg2"
+        ],
+        [
+          "nwn_nwvenga",
+          "portraits/nwnforbg/nwvenga.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/abalabokhin/NWNForBG",
+  "a": "abalabokhin",
+  "sum": "Recreates the full Neverwinter Nights campaign within BG2/EET. Triggered at 1.35M XP with new areas, spells, and quests. Does NOT require the original NWN game. Campaign-locking once entered.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "abalabokhin",
+    "r": "NWNForBG"
+  },
+  "kitAbilities": {
+    "0": {
+      "NWN_FOR_BG": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Neverwinter Nights-inspired kit adaptation for Baldur's Gate."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "dl": "https://github.com/abalabokhin/NWNForBG",
+  "au": "AGKanevchev",
+  "co": [
+    {
+      "n": "NWN For BG",
+      "tp2n": "NWN For BG",
+      "pi": "NWN_MainComponent",
+      "wf": "NWNForBG",
+      "wp": "NWNForBG\\Setup-NWNForBG.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "no": "Installs the full NWN campaign. Triggered at 1.35M XP (recommended 1.75M). Campaign-locking once entered. Adds Sehhaneen ranger kit. Does NOT require the original NWN game.",
+      "k": 1,
+      "kC": {
+        "npc": 1
+      }
+    },
+    {
+      "n": "Place NWN locations on BP-BGT Worldmap",
+      "tp2n": "Place NWN locations on BP-BGT Worldmap",
+      "no": "Places NWN locations on the BP-BGT Worldmap. EE only. Requires main component.",
+      "pi": "NWN_WorldmapSelect_BP-Worldmap",
+      "scn": "NWN For BG - Worldmap select (EE-games only)",
+      "wf": "NWNForBG",
+      "wp": "NWNForBG\\Setup-NWNForBG.tp2",
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 10,
+      "g": "worldmap_select",
+      "rd": 0
+    },
+    {
+      "n": "Use separate worldmap for NWN areas",
+      "tp2n": "Use separate worldmap for NWN areas",
+      "pi": "NWN_WorldmapSelect_NWNWorld",
+      "scn": "NWN For BG - Worldmap select (EE-games only)",
+      "wf": "NWNForBG",
+      "wp": "NWNForBG\\Setup-NWNForBG.tp2",
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 11,
+      "no": "NWN areas use a separate dedicated worldmap. EE only. Requires main component.",
+      "g": "worldmap_select",
+      "rd": 0
+    },
+    {
+      "n": "Install NWN as a dedicated campaign",
+      "tp2n": "Install NWN as a dedicated campaign",
+      "pi": "NWN_WorldmapDedicatedCampaign",
+      "wf": "NWNForBG",
+      "wp": "NWNForBG\\Setup-NWNForBG.tp2",
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 20,
+      "no": "Installs NWN as a standalone campaign selectable from the main menu. EE only. Requires main component. For EET, added to campaign list. Install after IWD-in-EET if using both.",
+      "rd": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Some new wizard spells (e.g. Icelance) may conflict with ToF components if ToF is installed after NWNForBG.",
+      "myComps": "#0 Main component",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

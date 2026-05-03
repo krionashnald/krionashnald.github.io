@@ -1,0 +1,121 @@
+{
+  "i": 46,
+  "t": "c#brage",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 130,
+  "c": "QUEST MODS BG1",
+  "n": "Brage's Redemption",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "it": 2,
+    "zh-cn": 3
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Brage NPC - Brage's Redemption main component goes after BG1 Mini Quests and Encounters, before BG1NPC During WeiDU temporary uninstall/reinstall cycles, backup restore produces ~28 'ERROR: error copying' for TRA files. Cause: backup manifest has both lowercase (swordpath.tra) and uppercase (SWORDPATH.TRA) variants — first copy succeeds, second fails on Windows case-insensitive FS. Harmless; all files restore correctly.",
+  "conflicts": [
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "soft",
+      "reason": "Install order: Ascalon's Questpack must install BEFORE Brage's Redemption per readme",
+      "orderOnly": true,
+      "myComps": "#0 Brage Joinable NPC",
+      "theirComps": "#0 A Job Well-Paid"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "brage",
+          "portraits/c_brage/c_brage.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.baldurs-gate.de/index.php?resources/brages-redemption.42/",
+  "a": "jastey",
+  "v": "10.1",
+  "sum": "Expands Brage's redemption quest in BG1 with additional dialogue, encounters, and consequences for your choices about the cursed knight.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v0.1",
+    "place": "post"
+  },
+  "dl": "https://www.baldurs-gate.de/index.php?resources/brages-redemption.42/",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Brage NPC - Brage's Redemption - Brage Joinable NPC for Baldur's Gate",
+      "tp2n": "Brage's Redemption - Brage Joinable NPC for Baldur's Gate",
+      "pi": "BragesRedemption-main",
+      "wf": "c#brage",
+      "wp": "c#brage\\c#brage.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "no": "Brage's Redemption: joinable NPC with quest content."
+    },
+    {
+      "n": "Brage NPC - Assign the mod's portrait and soundset to the original Brage in game.",
+      "tp2n": "Assign the mod's portrait and soundset to the original Brage in game.",
+      "pi": "BragesRedemption-portrait_sound_original_Brage",
+      "wf": "c#brage",
+      "wp": "c#brage\\c#brage.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 1,
+      "no": "Assigns mod portrait and soundset to the original Brage."
+    },
+    {
+      "n": "Brage NPC - Give Brage unique Two-Handed Sword +1",
+      "tp2n": "Give Brage unique Two-Handed Sword +1",
+      "pi": "BragesRedemption-UniqueSword",
+      "wf": "c#brage",
+      "wp": "c#brage\\c#brage.tp2",
+      "wc": 5,
+      "wq": "manual_final",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 5,
+      "no": "Gives Brage a unique +1 two-handed sword."
+    },
+    {
+      "n": "Brage NPC - Brage's Redemption: Crossmod Content",
+      "tp2n": "Brage's Redemption: Crossmod Content",
+      "cn": 10,
+      "wf": "c#brage",
+      "wp": "c#brage\\c#brage.tp2",
+      "wc": 10,
+      "wq": "exact",
+      "no": "Crossmod banters and interjections with other NPC mods. Requires main component",
+      "cat": "NPC CROSSMOD"
+    }
+  ]
+}

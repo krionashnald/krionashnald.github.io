@@ -1,0 +1,146 @@
+{
+  "i": 146,
+  "t": "l#khalidbg2ee",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 250,
+  "c": "NEW NPC MODS",
+  "n": "Khalid",
+  "no": "Khalid BG2EE",
+  "conflicts": [
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Choose class/kit for Jaheira",
+      "myComps": "Khalid for BG2EE, #3, #4; Khalid for BG2EE, #2, #3, #4",
+      "theirComps": "#2000 NPC Customization",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "Choose class/kit for Khalid",
+      "myComps": "Khalid for BG2EE, #2, #3, #4",
+      "theirComps": "#4080",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "hard",
+      "reason": "Choose one Jaheira portrait",
+      "myComps": "#8, #9",
+      "theirComps": "#82000 BG1 Jaheira #82300 BG2 Jaheira #82600 Variant",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/khalid-bg2/",
+  "a": "Lava Del'Vortel",
+  "sum": "Restores Khalid as a living, joinable NPC in BG2 instead of the fate he suffers in vanilla. Includes new dialogue and romance continuation.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/khalid-bg2/",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "khalid",
+          "portraits/l_khalidbg2ee/l_kha.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Khalid for BG2EE: Player-Initiated Dialogues",
+      "pi": "L#-KHALIDBG2EE-PIDS",
+      "wf": "KHALIDBG2",
+      "wp": "L#KHALIDBG2EE\\L#KHALIDBG2EE.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "no": "Player-initiated dialogues for Khalid. Requires main component",
+      "x": 0,
+      "tp2n": "Khalid for BG2EE"
+    },
+    {
+      "n": "Khalid for BG2EE",
+      "pi": "L#-KHALIDBG2EE",
+      "wf": "KHALIDBG2",
+      "wp": "L#KHALIDBG2EE\\L#KHALIDBG2EE.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "no": "Restores Khalid as living joinable NPC in BG2. Lore-breaking — Khalid dies in vanilla Irenicus dungeon",
+      "tp2n": "Khalid for BG2EE: Player-Initiated Dialogues"
+    },
+    {
+      "wf": "l#khalidbg2ee",
+      "wp": "l#khalidbg2ee\\setup-l#khalidbg2ee.tp2",
+      "wq": "exact",
+      "cn": 2,
+      "n": "Khalid BG2: Romance Content",
+      "wc": 2,
+      "no": "Romance path for Khalid in BG2.",
+      "gone": true
+    },
+    {
+      "wf": "l#khalidbg2ee",
+      "wp": "l#khalidbg2ee\\setup-l#khalidbg2ee.tp2",
+      "wq": "exact",
+      "cn": 3,
+      "n": "Khalid BG2: Extended Banters",
+      "wc": 3,
+      "no": "Additional banters and dialogue for Khalid.",
+      "gone": true
+    },
+    {
+      "wf": "l#khalidbg2ee",
+      "wp": "l#khalidbg2ee\\setup-l#khalidbg2ee.tp2",
+      "wq": "exact",
+      "cn": 4,
+      "n": "Khalid BG2: Player-Initiated Dialogues",
+      "wc": 4,
+      "no": "Adds player-initiated dialogue options for Khalid.",
+      "gone": true
+    },
+    {
+      "wf": "l#khalidbg2ee",
+      "wp": "l#khalidbg2ee\\setup-l#khalidbg2ee.tp2",
+      "wq": "exact",
+      "cn": 8,
+      "n": "Portrait: Variant A",
+      "wc": 8,
+      "g": "khalid_portrait",
+      "no": "Portrait option for Khalid.",
+      "gone": true
+    },
+    {
+      "wf": "l#khalidbg2ee",
+      "wp": "l#khalidbg2ee\\setup-l#khalidbg2ee.tp2",
+      "wq": "exact",
+      "cn": 9,
+      "n": "Portrait: Variant B",
+      "wc": 9,
+      "g": "khalid_portrait",
+      "no": "Portrait option for Khalid.",
+      "gone": true
+    }
+  ]
+}

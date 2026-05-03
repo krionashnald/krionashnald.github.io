@@ -1,0 +1,478 @@
+{
+  "i": 405,
+  "t": "bart_tweaks",
+  "sv": 1,
+  "ord": 70,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Bart Tweaks",
+  "no": "Bart Tweaks by Bartimaeus. Post-tactical tweaks, fixes for SR/aTweaks/SCS, and rule changes. Several components require Spell Revisions + aTweaks or SCS.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Bart Tweaks has a broader version of this fix",
+      "theirComps": "#4200 Make Rancor +1 more reliable"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Similar to Bart Tweaks No Reputation Loss from Slayer Form. Choose one.",
+      "myComps": "#1000 No Reputation Loss from Slayer Form",
+      "theirComps": "#44 #45 Slayer Rep",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplsrc.2da (sorcerer max spells). Last installed wins.",
+      "myComps": "#3010 Alternative Sorcerer Spell Progression",
+      "theirComps": "#2250 Un-Nerfed Sorcerer Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 294,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplsrc.2da/splsrckn.2da. Last installed wins.",
+      "myComps": "#3010 Alternative Sorcerer Spell Progression",
+      "theirComps": "#2010 Streamlined Sorcerer Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 305,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplsrc.2da/splsrckn.2da. Last installed wins.",
+      "myComps": "#3010 Alternative Sorcerer Spell Progression",
+      "theirComps": "#21 Sorcerer Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both overwrite hpconbon.2da. Last installed wins.",
+      "myComps": "#3040 Alternative Constitution Bonuses",
+      "theirComps": "#80000 Ability Score Modifiers",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#3030 Alternative Wisdom Bonus Spells",
+      "theirComps": "#2150 Alter Wisdom-Based Divine Bonus Spell Table",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#3030 Alternative Wisdom Bonus Spells",
+      "theirComps": "#12 INT/WIS/CHA-based Bonus Spell Slots",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 303,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#3030 Alternative Wisdom Bonus Spells",
+      "theirComps": "#110 Stat-based Bonus Spell Slots #121 #122 5E Caster Bonus",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "zgtweaks",
+      "withId": 282,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#3030 Alternative Wisdom Bonus Spells",
+      "theirComps": "#100 Mixed PnP-BG wisdom-based bonus spells table",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/BartyMae/Bart_Tweaks",
+  "a": "Bartimaeus",
+  "v": "Version 1.2.3",
+  "sum": "26 misc tweaks installed after tactical mods: convenience features and adjustments that should apply on top of all other changes.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "BartyMae",
+    "r": "Bart_Tweaks"
+  },
+  "dl": "https://github.com/BartyMae/Bart_Tweaks",
+  "au": "Bartimaeus",
+  "langs": {
+    "en": 0
+  },
+  "dependencies": [
+    {
+      "requires": "item_rev",
+      "requiresId": 283,
+      "type": "hard",
+      "reason": "Bart #2001/#2002 (10%/20% Magic Resistance) have REQUIRE_PREDICATE MOD_IS_INSTALLED ~item-rev/setup-item_rev.tp2~ #0. Component silently skips if Item Revisions is not installed first.",
+      "myComps": "#2001 10% Magic Resistance, #2002 20% Magic Resistance",
+      "theirComps": "#0 Item Revisions core"
+    },
+    {
+      "requires": "stratagems",
+      "requiresId": 341,
+      "type": "hard",
+      "reason": "Bart #2030 (Revised Shapeshifting Tokens for SCS) REQUIRE_PREDICATE MOD_IS_INSTALLED ~stratagems~ #4030. Chain risk: SCS #4030 itself FORBIDs ToF #40600 and #41000 — if either is installed, SCS #4030 silently skips, which then silently skips this component. Install order requires: ToF without #40600/#41000 → SCS with #4030 → Bart_Tweaks.",
+      "myComps": "#2030 Revised Shapeshifting Tokens for SCS",
+      "theirComps": "#4030 Improved Shapeshifting"
+    },
+    {
+      "requires": "spell_rev",
+      "requiresId": 288,
+      "type": "hard",
+      "reason": "Bart #2041/#2042 (SR/atweaks Elementals), #2051/#2052 (SR/atweaks Fiends), #2060 (SR/atweaks Call Woodland Beings) all require Spell Revisions core installed first.",
+      "myComps": "#2041, #2042 Elementals; #2051, #2052 Fiends; #2060 Call Woodland Beings",
+      "theirComps": "#0 Spell Revisions core"
+    },
+    {
+      "requires": "aTweaks",
+      "requiresId": 290,
+      "type": "hard",
+      "reason": "Bart #2041/#2042 require aTweaks #190 (PnP Elementals); #2051/#2052 require aTweaks #152 (PnP Fiends); #2060 requires aTweaks #186 (Revised Call Woodland Beings). All silently skip if aTweaks not installed with matching components.",
+      "myComps": "#2041/#2042 (needs aTweaks #190), #2051/#2052 (needs aTweaks #152), #2060 (needs aTweaks #186)",
+      "theirComps": "#190 PnP Elementals, #152 PnP Fiends, #186 Revised Call Woodland Beings"
+    },
+    {
+      "requires": "tb#tweaks",
+      "requiresId": 381,
+      "type": "hard",
+      "reason": "Bart #3020 (Alternative Weapon Mastery) has REQUIRE_PREDICATE MOD_IS_INSTALLED ~SETUP-TB#TWEAKS.TP2~ #3600. Component silently skips if TB Tweaks #3600 is not installed first.",
+      "myComps": "#3020 Alternative Weapon Mastery",
+      "theirComps": "#3600 (TB Tweaks Weapon Mastery)"
+    }
+  ],
+  "co": [
+    {
+      "n": "No Reputation Loss from Slayer Form",
+      "cn": 1000,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1000,
+      "wq": "guessed",
+      "no": "Removes reputation loss from Slayer Form. Redundant with TnT cn:44 (reduced loss) and Slayer Revisions — choose one approach.",
+      "tp2n": "No Reputation Loss from Slayer Form",
+      "grn": "Random Stuff"
+    },
+    {
+      "n": "Debug Ring",
+      "no": "Adds a debug ring via CLUAConsole. Cheat/testing item — not for normal gameplay.",
+      "cn": 1010,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1010,
+      "wq": "guessed",
+      "tp2n": "Debug Ring",
+      "grn": "Random Stuff"
+    },
+    {
+      "n": "No Random Treasures",
+      "no": "Disables random treasure generation from containers.",
+      "cn": 1020,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1020,
+      "wq": "guessed",
+      "tp2n": "No Random Treasures",
+      "grn": "Random Stuff"
+    },
+    {
+      "n": "Droppable NPC Items",
+      "no": "Makes 7+ NPC-specific items droppable/movable (e.g. Minsc's sword, Jaheira's armor).",
+      "cn": 1030,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1030,
+      "wq": "guessed",
+      "tp2n": "Droppable NPC Items",
+      "grn": "Random Stuff"
+    },
+    {
+      "n": "\"Personal\" for Ranges of 0 and \"Touch\" for Ranges of 1",
+      "no": "Updates all spell descriptions to show 'Personal' for range 0 and 'Touch' for range 1. Most informative option. Scans all spell files — install after all spell mods.",
+      "cn": 1041,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1041,
+      "wq": "guessed",
+      "g": "spell_range",
+      "scn": "Display Actual Range of Spells in Descriptions",
+      "grn": "Random Stuff",
+      "tp2n": "\"Personal\" for Ranges of 0 and \"Touch\" for Ranges of 1"
+    },
+    {
+      "n": "\"Touch\" for Ranges of 1",
+      "cn": 1042,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1042,
+      "wq": "guessed",
+      "g": "spell_range",
+      "scn": "Display Actual Range of Spells in Descriptions",
+      "grn": "Random Stuff",
+      "no": "Shows 'Touch' for range 1 only in spell descriptions.",
+      "tp2n": "\"Touch\" for Ranges of 1"
+    },
+    {
+      "n": "\"Personal\" for Ranges of 0",
+      "cn": 1043,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1043,
+      "wq": "guessed",
+      "g": "spell_range",
+      "scn": "Display Actual Range of Spells in Descriptions",
+      "grn": "Random Stuff",
+      "no": "Shows 'Personal' for range 0 only in spell descriptions.",
+      "tp2n": "\"Personal\" for Ranges of 0"
+    },
+    {
+      "n": "Numbers Only",
+      "cn": 1044,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1044,
+      "wq": "guessed",
+      "g": "spell_range",
+      "scn": "Display Actual Range of Spells in Descriptions",
+      "grn": "Random Stuff",
+      "no": "Shows numeric range values only in spell descriptions.",
+      "tp2n": "Numbers Only"
+    },
+    {
+      "n": "10 Feet/Short",
+      "no": "Allows curing spells at 10ft range. Least permissive ranged healing option.",
+      "cn": 1051,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1051,
+      "wq": "guessed",
+      "g": "ranged_cure",
+      "scn": "Ranged Curing",
+      "grn": "Random Stuff",
+      "tp2n": "10 Feet/Short"
+    },
+    {
+      "n": "20 Feet/Medium",
+      "cn": 1052,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1052,
+      "wq": "guessed",
+      "g": "ranged_cure",
+      "scn": "Ranged Curing",
+      "grn": "Random Stuff",
+      "no": "Allows curing spells at 20ft range. Balanced option.",
+      "tp2n": "20 Feet/Medium"
+    },
+    {
+      "n": "30 Feet/Long",
+      "cn": 1053,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1053,
+      "wq": "guessed",
+      "g": "ranged_cure",
+      "scn": "Ranged Curing",
+      "grn": "Random Stuff",
+      "no": "Allows curing spells at 30ft range. Most permissive.",
+      "tp2n": "30 Feet/Long"
+    },
+    {
+      "n": "Disable Protection Against +x Weapon Enchantment Levels",
+      "cn": 1060,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 1060,
+      "wq": "guessed",
+      "no": "Disables Protection from Magical Weapons enchantment level checks. Major balance change.",
+      "tp2n": "Disable Protection Against +x Weapon Enchantment Levels",
+      "grn": "Random Stuff"
+    },
+    {
+      "n": "Carsomyr: 10% Magic Resistance",
+      "no": "Non-upgradeable Carsomyr with 10% MR. Requires Item Revisions cn:0.",
+      "cn": 2001,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2001,
+      "wq": "guessed",
+      "g": "carsomyr_ir",
+      "scn": "Non-Upgradeable Carsomyr for IR",
+      "grn": "Fixes/Tweaks for Other Mods",
+      "tp2n": "10% Magic Resistance"
+    },
+    {
+      "n": "Carsomyr: 20% Magic Resistance",
+      "cn": 2002,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2002,
+      "wq": "guessed",
+      "g": "carsomyr_ir",
+      "scn": "Non-Upgradeable Carsomyr for IR",
+      "grn": "Fixes/Tweaks for Other Mods",
+      "no": "Non-upgradeable Carsomyr with 20% MR. Requires Item Revisions cn:0.",
+      "tp2n": "20% Magic Resistance"
+    },
+    {
+      "n": "Quick Slot Ras",
+      "cn": 2010,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2010,
+      "wq": "guessed",
+      "no": "Puts Ras (Flail of Ages component) in a quick slot.",
+      "tp2n": "Quick Slot Ras",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "Quick Slot Ring of Djinni Summoning",
+      "no": "Puts Ring of Djinni Summoning in quick slot.",
+      "cn": 2080,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2080,
+      "wq": "guessed",
+      "tp2n": "Quick Slot Ring of Djinni Summoning",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "Original Lightning Bolt",
+      "no": "Reverts Lightning Bolt to original BG1 bouncing bolt behavior.",
+      "cn": 2020,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2020,
+      "wq": "guessed",
+      "tp2n": "Original Lightning Bolt",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "Revised Shapeshifting Tokens for SCS",
+      "no": "Fixes shapeshifting tokens for SCS compatibility. Requires SCS cn:4030 (Improved Shapeshifting).",
+      "cn": 2030,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2030,
+      "wq": "guessed",
+      "tp2n": "Revised Shapeshifting Tokens for SCS",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "SR/atweaks Elementals",
+      "no": "Fixes elemental summoning for SR+aTweaks combo. Requires Spell Revisions cn:0 + aTweaks cn:190 (PnP Elementals).",
+      "cn": 2042,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2042,
+      "wq": "guessed",
+      "tp2n": "SR/atweaks Elementals",
+      "scn": "Elementals for SR/atweaks",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "SR/atweaks Hybrid Fiends",
+      "cn": 2052,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2052,
+      "wq": "guessed",
+      "no": "Fixes hybrid fiends for SR+aTweaks combo. Requires Spell Revisions cn:0 + aTweaks cn:152 (PnP Fiends).",
+      "tp2n": "SR/atweaks Hybrid Fiends",
+      "scn": "Fiends for SR/atweaks",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "SR/atweaks Call Woodland Beings",
+      "cn": 2060,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2060,
+      "wq": "guessed",
+      "no": "Fixes Call Woodland Beings for SR+aTweaks combo. Requires Spell Revisions cn:0 + aTweaks cn:186 (Revised Woodland Beings).",
+      "tp2n": "SR/atweaks Call Woodland Beings",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "Set Summonable Flag",
+      "cn": 2070,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 2070,
+      "wq": "guessed",
+      "no": "Requires TB#Tweaks cn:3600 (WSPATCK for all) — not available in EET mod forge. Will fail to install.",
+      "tp2n": "Set Summonable Flag",
+      "grn": "Fixes/Tweaks for Other Mods"
+    },
+    {
+      "n": "Alternative Lore Progression",
+      "cn": 3000,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 3000,
+      "wq": "guessed",
+      "no": "Overwrites lore.2da with alternative class-based lore scaling. Hard COPY — no mod detection.",
+      "tp2n": "Alternative Lore Progression",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Alternative Sorcerer Spell Progression",
+      "cn": 3010,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 3010,
+      "wq": "guessed",
+      "no": "Overwrites mxsplsrc.2da and splsrckn.2da with more spells known per level. Hard COPY — no mod detection. Conflicts with cdtweaks cn:2250, klatu cn:2010, SelphiraTweaks cn:21 (last installed wins).",
+      "tp2n": "Alternative Sorcerer Spell Progression",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Alternative Weapon Mastery",
+      "cn": 3020,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternative Weapon Mastery",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Alternative Wisdom Bonus Spells",
+      "no": "Overwrites mxsplwis.2da with alternative WIS bonus spell slots. Hard COPY — no mod detection. Conflicts with cdtweaks, HouseTweaks, SubtleD Stat Overhauls, zgtweaks (all modify same file).",
+      "cn": 3030,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 3030,
+      "wq": "guessed",
+      "tp2n": "Alternative Wisdom Bonus Spells",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Alternative Constitution Bonuses",
+      "cn": 3040,
+      "wf": "Bart_Tweaks",
+      "wp": "Bart_Tweaks\\BART_TWEAKS.TP2",
+      "wc": 3040,
+      "wq": "guessed",
+      "no": "Overwrites hpconbon.2da with 3E-style CON bonuses and regeneration. Hard COPY — no mod detection. Conflicts with ToF cn:80000 (Ability Score Modifiers).",
+      "tp2n": "Alternative Constitution Bonuses",
+      "grn": "Rule Changes"
+    }
+  ]
+}

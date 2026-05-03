@@ -1,0 +1,93 @@
+{
+  "i": 3,
+  "t": "DlcMerger",
+  "sv": 1,
+  "ord": 10,
+  "c": "PRE EET BGEE MODS",
+  "n": "DLC Merger",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "pt-br": 2,
+    "es": 3,
+    "zh-cn": 4
+  },
+  "no": "Merges the Siege of Dragonspear DLC into the main game directory so mods can access and modify its content. Required before installing any SoD-touching mods.",
+  "rq": "BG1 + SoD",
+  "u": "https://github.com/Argent77/A7-DlcMerger/releases",
+  "a": "Argent77",
+  "v": "1.8",
+  "sum": "Merges the Siege of Dragonspear DLC into the main game directory so mods can access and modify its content. Required before installing any SoD-touching mods.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "ios": false,
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-DlcMerger"
+  },
+  "dl": "https://github.com/Argent77/A7-DlcMerger/releases",
+  "au": "K4thos",
+  "co": [
+    {
+      "cn": 1,
+      "n": "Merge DLC: Siege of Dragonspear",
+      "tp2n": "Merge \"Siege of Dragonspear\" DLC",
+      "g": "merge_dlc",
+      "scn": "Merge DLC into game",
+      "wf": "DlcMerger",
+      "wp": "DlcMerger\\DlcMerger.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee"
+      ],
+      "wc": 1,
+      "wb": 1,
+      "pi": "A7-DLCMERGER-MERGE_SOD"
+    },
+    {
+      "cn": 2,
+      "n": "Merge DLC: User-defined",
+      "tp2n": "Merge user-defined DLC",
+      "g": "merge_dlc",
+      "scn": "Merge DLC into game",
+      "wf": "DlcMerger",
+      "wp": "DlcMerger\\DlcMerger.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "wc": 2,
+      "wb": 1,
+      "pi": "A7-DLCMERGER-MERGE_CUSTOM_DLC"
+    },
+    {
+      "cn": 3,
+      "n": "Merge DLC: All available DLCs",
+      "tp2n": "Merge all available DLCs",
+      "g": "merge_dlc",
+      "scn": "Merge DLC into game",
+      "wf": "DlcMerger",
+      "wp": "DlcMerger\\DlcMerger.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ],
+      "wc": 3,
+      "wb": 1,
+      "pi": "A7-DLCMERGER-MERGE_ALL_DLCS"
+    }
+  ]
+}

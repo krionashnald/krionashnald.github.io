@@ -1,0 +1,535 @@
+{
+  "i": 359,
+  "t": "d2-script",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 150,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Better IWD Pregen",
+  "cats": [
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "Better IWD Pregen / d2-script v8.0 by Dan_P. Minimalist tweaks and scripts. 9 SUBCOMPONENT groups — each is choose-one. Compatible with EE/EET. cn:150 auto-skips if AK Rashemi Berserker installed. Overlaps with cdtweaks (bag, stackable, alignment) and ToF (falling prevention)",
+  "_legacy_ids": [
+    442
+  ],
+  "u": "https://github.com/D2-mods/Better-IWD-Pregen",
+  "a": "Dan_P",
+  "sum": "A minimalist script and tweak pack. Compatible with classic and EE versions of BG1, BG2, IWD, and IWD2 (including EET/BGT/IWD2EE).",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v0.6",
+    "place": "post"
+  },
+  "gh": {
+    "o": "D2-mods",
+    "r": "Better-IWD-Pregen"
+  },
+  "dl": "https://github.com/D2-mods/Better-IWD-Pregen",
+  "au": "Dan_P",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Bypass Free Action",
+      "pi": "D2-TWEAKS-PLYMOVEBONUS1",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 60,
+      "g": "d2_freeaction"
+    },
+    {
+      "n": "Blocked by Free Action",
+      "pi": "D2-TWEAKS-PLYMOVEBONUS0",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 61,
+      "g": "d2_freeaction"
+    },
+    {
+      "cn": 80,
+      "n": "Starting Equipment: Auto-equipped",
+      "g": "d2_startgear",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Gives party starting equipment (auto-equipped or inventory). Works on EET"
+    },
+    {
+      "cn": 81,
+      "n": "Starting Equipment: Bag with weapon mix",
+      "g": "d2_startgear",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Start with a bag containing mixed weapons"
+    },
+    {
+      "n": "\"Bottomless\" bag (same as Tweaks Anthology component)",
+      "no": "v Give party a Bag of Holding at game start (classic and EEs)",
+      "pi": "D2-TWEAKS-NGBAGA",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 90,
+      "g": "d2_bag"
+    },
+    {
+      "n": "Capacity = 50 items (IWD2 default)",
+      "pi": "D2-TWEAKS-NGBAGB",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 91,
+      "g": "d2_bag"
+    },
+    {
+      "n": "Capacity = 100 items (BG2 default)",
+      "pi": "D2-TWEAKS-NGBAGC",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 92,
+      "g": "d2_bag"
+    },
+    {
+      "n": "Bottomless, and Gold is exchanged when adding/removing items (experimental)",
+      "pi": "D2-TWEAKS-NGBAGD",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 93,
+      "g": "d2_bag"
+    },
+    {
+      "n": "2E-style HP bonuses (i.e. BG-style)",
+      "no": "v All classes get full HP bonuses from Constitution (classic and EEs)",
+      "pi": "D2-TWEAKS-CONBON2E",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 100,
+      "g": "d2_conhp"
+    },
+    {
+      "n": "3e-style bonuses (+1 or -1 every 2 Con) (WARNING: Prism will spawn dead in BG1.)",
+      "pi": "D2-TWEAKS-CONBON3E",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 101,
+      "g": "d2_conhp"
+    },
+    {
+      "n": "Mixed (use 3e-style at 10+, normal BG penalties at under 10)",
+      "pi": "D2-TWEAKS-CONBON25",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 102,
+      "g": "d2_conhp"
+    },
+    {
+      "cn": 110,
+      "n": "Stackable Items: Non-magical, no weapons",
+      "g": "d2_stackable",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Make stackable/nonmagical items stack to 999. No weapons"
+    },
+    {
+      "cn": 111,
+      "n": "Stackable Items: Stackable only",
+      "g": "d2_stackable",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Only already-stackable items get 999 cap"
+    },
+    {
+      "cn": 112,
+      "n": "Stackable Items: Non-magical + weapons",
+      "g": "d2_stackable",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Non-magical items including weapons stack to 999"
+    },
+    {
+      "cn": 113,
+      "n": "Stackable Items: Everything",
+      "g": "d2_stackable",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "All magical and nonmagical items stack to 999"
+    },
+    {
+      "n": "Can Sneak Attack a target once every 6 seconds (stat reduction does not stack)",
+      "no": "v Reduce delay for Sneak Attacks + uncap Crippling Strike (EEs)",
+      "pi": "D2-TWEAKS-CRIPPSTR6",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 120,
+      "g": "d2_sneak"
+    },
+    {
+      "n": "Can Sneak Attack a target once every 30 seconds (stat reduction does not stack)",
+      "pi": "D2-TWEAKS-CRIPPSTR30",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 121,
+      "g": "d2_sneak"
+    },
+    {
+      "n": "Uncap Crippling Strike, but do not change delay (420 seconds)",
+      "pi": "D2-TWEAKS-CRIPPSTR16",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 122,
+      "g": "d2_sneak"
+    },
+    {
+      "cn": 140,
+      "n": "Spell Tweaks: All",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "All spell tweaks (party-friendly, hit stun, no school restrictions)"
+    },
+    {
+      "cn": 141,
+      "n": "Spell Tweaks: Party-friendly damage",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "AoE damage spells don't hurt party"
+    },
+    {
+      "cn": 142,
+      "n": "Spell Tweaks: Hit stun on damage",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Taking damage briefly stuns casters"
+    },
+    {
+      "cn": 143,
+      "n": "Spell Tweaks: No mage school restrictions",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Specialist mages can learn all spells"
+    },
+    {
+      "cn": 144,
+      "n": "Spell Tweaks: Party-friendly + Hit stun",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Combo: party-friendly damage + hit stun"
+    },
+    {
+      "cn": 145,
+      "n": "Spell Tweaks: Party-friendly + No school",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Combo: party-friendly damage + no school restrictions"
+    },
+    {
+      "cn": 146,
+      "n": "Spell Tweaks: Hit stun + No school",
+      "g": "d2_spelltweaks",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Combo: hit stun + no school restrictions"
+    },
+    {
+      "n": "Use at will, and reduce duration to 5 rounds (30 seconds)",
+      "no": "v Allow Minsc to use his Berserk ability at will (BG games) not needed with Artisan's Kitpack Rashemi Berseker",
+      "pi": "D2-TWEAKS-MINSCRAGE30",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 150,
+      "g": "d2_minsc"
+    },
+    {
+      "n": "Use at will, and reduce duration to 1 turn (60 seconds)",
+      "pi": "D2-TWEAKS-MINSCRAGE60",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 151,
+      "g": "d2_minsc"
+    },
+    {
+      "n": "Use at will, but do not lower duration (120 seconds)",
+      "pi": "D2-TWEAKS-MINSCRAGE120",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 152,
+      "g": "d2_minsc"
+    },
+    {
+      "n": "Only install timing fix (prevents taking damage if at full HP when ability ends)",
+      "pi": "D2-TWEAKS-MINSCRAGE0",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 153,
+      "g": "d2_minsc"
+    },
+    {
+      "n": "for all classes",
+      "no": "v Remove alignment restrictions for classes (classic and EEs)",
+      "pi": "D2-TWEAKS-ALIGNMENTS1",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 170,
+      "g": "d2_alignment"
+    },
+    {
+      "n": "not paladins/monks",
+      "pi": "D2-TWEAKS-ALIGNMENTS2",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 171,
+      "g": "d2_alignment"
+    },
+    {
+      "n": "not clerics/druids/shamans",
+      "pi": "D2-TWEAKS-ALIGNMENTS3",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 172,
+      "g": "d2_alignment"
+    },
+    {
+      "n": "not paladins/monks/clerics/druids/shamans",
+      "pi": "D2-TWEAKS-ALIGNMENTS4",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 173,
+      "g": "d2_alignment"
+    },
+    {
+      "n": "not paladins/monks/clerics/druids/shamans/bards",
+      "pi": "D2-TWEAKS-ALIGNMENTS5",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 174,
+      "g": "d2_alignment"
+    },
+    {
+      "n": "for both (paladins and rangers)",
+      "no": "v Prevent paladins and rangers falling at low rep (EEs) Also done by ToF's Revised class alignment rules does it still allow you to fall if choosing the evil Hell Trials options?",
+      "pi": "D2-TWEAKS-NOFALLING1",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 180,
+      "g": "d2_nofalling"
+    },
+    {
+      "n": "Rangers only (paladins can fall)",
+      "pi": "D2-TWEAKS-NOFALLING2",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 181,
+      "g": "d2_nofalling"
+    },
+    {
+      "n": "Paladins only (rangers can fall)",
+      "pi": "D2-TWEAKS-NOFALLING3",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 182,
+      "g": "d2_nofalling"
+    },
+    {
+      "cn": 190,
+      "n": "Max Summons/Traps: All maxed",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Set summon cap to 999, celestial cap unlimited, trap cap to 999"
+    },
+    {
+      "cn": 191,
+      "n": "Max Summons/Traps: Summons 999, celestials 3",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Summons 999, celestials capped at 3"
+    },
+    {
+      "cn": 192,
+      "n": "Max Summons/Traps: Summons 999, celestials 1",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Summons 999, celestials capped at 1"
+    },
+    {
+      "cn": 193,
+      "n": "Max Summons/Traps: Summons 12, celestials unlimited",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Default 12 summons, but unlimited celestials"
+    },
+    {
+      "cn": 194,
+      "n": "Max Summons/Traps: Summons 12, celestials 3",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Default 12 summons, celestials capped at 3"
+    },
+    {
+      "cn": 195,
+      "n": "Max Summons/Traps: Traps only 999",
+      "g": "d2_summontraps",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Only change trap cap to 999, summons unchanged"
+    },
+    {
+      "cn": 200,
+      "n": "Shapeshifts Can Talk: Druids and Polymorphs",
+      "g": "d2_polytalk",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Allows talking while shapeshifted. Druids + Polymorph spells"
+    },
+    {
+      "cn": 201,
+      "n": "Shapeshifts Can Talk: Druids Only",
+      "g": "d2_polytalk",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Only druid shapeshifts can talk"
+    },
+    {
+      "cn": 202,
+      "n": "Shapeshifts Can Talk: Polymorphs Only",
+      "g": "d2_polytalk",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "exact",
+      "no": "Only Polymorph Self/Shapechange can talk"
+    },
+    {
+      "n": "Better IWD Pregen",
+      "pi": "D2-SCRIPT-IWDPGEN",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 10,
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Use revised script for nymph summon (compatible with SCS)",
+      "no": "v Better AI for Call Woodland Beings (EEs, BG2)",
+      "pi": "D2-SCRIPT-NYMPH",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 20,
+      "g": "d2_nymph",
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Use existing script, but patch in a few actions (choose this if using a revision mod, such as atweaks PnP Fey)",
+      "pi": "D2-SCRIPT-NYMPHLIGHT",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 21,
+      "g": "d2_nymph",
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Better IWD Pregen (d2scrp)",
+      "no": "v Auto-assign script to new characters",
+      "pi": "D2-SCRIPT-NGAUTO",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 9999,
+      "g": "d2_ngauto",
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "d2scrp+ (Calls for help enabled)",
+      "pi": "D2-SCRIPT-NGAUTO2",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 10000,
+      "g": "d2_ngauto",
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "d2scrp- (default mode is Cooldown)",
+      "pi": "D2-SCRIPT-NGAUTO3",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 10001,
+      "g": "d2_ngauto",
+      "cat": "POST-TACTICAL TWEAKS"
+    },
+    {
+      "n": "IWD Pregen (iwdpgen)",
+      "pi": "D2-SCRIPT-NGAUTO4",
+      "wf": "d2-script",
+      "wp": "d2-script\\d2-script.tp2",
+      "wq": "verified",
+      "cn": 10002,
+      "g": "d2_ngauto",
+      "cat": "POST-TACTICAL TWEAKS"
+    }
+  ]
+}

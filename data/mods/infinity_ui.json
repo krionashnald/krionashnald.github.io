@@ -1,0 +1,294 @@
+{
+  "i": 17,
+  "t": "infinity_ui",
+  "sv": 1,
+  "ord": 40,
+  "c": "INTERFACE",
+  "n": "Infinity UI",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "cs": 2,
+    "es": 3,
+    "zh-cn": 4,
+    "ru": 5,
+    "it": 6,
+    "de": 7
+  },
+  "no": "Infinity++ In development, wait for updates. Incompatible with ToF, possibly other mods tapping on the UI (Shadow Magic, Warlock, Olvyn's...) For SCS, go to stratagems.ini and set Force_Difficulty_Widget to 1 to use the settings skill instead of installiing the settings interface. And avoid installing \"Thieves assign skill points in multiples of five\". Reminder: the predecesor Dragonspear++ is abandoned, don't expect support for it (hence it won't show up anywhere here) \"If you have eeex install",
+  "ic": "Other UI overhauls",
+  "conflicts": [
+    {
+      "with": "LEUI-BG1EE",
+      "withId": 14,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LeUI-SoD",
+      "withId": 15,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LeUI",
+      "withId": 16,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "eeuitweaks",
+      "withId": 18,
+      "severity": "hard",
+      "reason": "Most EEUITweaks lefreut-branded components are incompatible with Infinity UI. Utility tweaks (Mods Options, Quick Loot, etc.) are compatible.",
+      "theirComps": "#1090 #1091 CharGen #2020 Message Box #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store #5000 Tooltip #5030 Scroll #5040 #5041 Fonts",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "pc": {
+      "0": {
+        "label": "Infinity UI: Character Portraits",
+        "images": [
+          "portraits/infinity_ui/2fdef1_.png",
+          "portraits/infinity_ui/2felf1_.png",
+          "portraits/infinity_ui/2felf2_.png",
+          "portraits/infinity_ui/2felf3_.png",
+          "portraits/infinity_ui/2fgnm1_.png",
+          "portraits/infinity_ui/2fhum1_.png",
+          "portraits/infinity_ui/2fhum2_.png",
+          "portraits/infinity_ui/2fhum3_.png",
+          "portraits/infinity_ui/2ftif1_.png",
+          "portraits/infinity_ui/2maas1_.png",
+          "portraits/infinity_ui/2mdef1_.png",
+          "portraits/infinity_ui/2mdef2_.png",
+          "portraits/infinity_ui/2mdwf1_.png",
+          "portraits/infinity_ui/2mdwf2_.png",
+          "portraits/infinity_ui/2melf1_.png",
+          "portraits/infinity_ui/2mgnm1_.png",
+          "portraits/infinity_ui/2mhaf1_.png",
+          "portraits/infinity_ui/2mhum2_.png",
+          "portraits/infinity_ui/2mhum3_.png",
+          "portraits/infinity_ui/2mhum4_.png",
+          "portraits/infinity_ui/2mhum5_.png",
+          "portraits/infinity_ui/2mhum6_.png",
+          "portraits/infinity_ui/2mhum7_.png",
+          "portraits/infinity_ui/2mpal1_.png",
+          "portraits/infinity_ui/baeloth.png",
+          "portraits/infinity_ui/bdimoen.png",
+          "portraits/infinity_ui/bdtma.png",
+          "portraits/infinity_ui/bdtmb.png",
+          "portraits/infinity_ui/bdtmc.png",
+          "portraits/infinity_ui/bdtmd.png",
+          "portraits/infinity_ui/bdtme.png",
+          "portraits/infinity_ui/bdtmf.png",
+          "portraits/infinity_ui/bdtmg.png",
+          "portraits/infinity_ui/bdtmh.png",
+          "portraits/infinity_ui/bdtmi.png",
+          "portraits/infinity_ui/bdtmj.png",
+          "portraits/infinity_ui/bdtmk.png",
+          "portraits/infinity_ui/caelar.png",
+          "portraits/infinity_ui/coran.png",
+          "portraits/infinity_ui/dsclara.png",
+          "portraits/infinity_ui/glint.png",
+          "portraits/infinity_ui/hephern.png",
+          "portraits/infinity_ui/imoen.png",
+          "portraits/infinity_ui/mkhiin.png",
+          "portraits/infinity_ui/ohhexx.png",
+          "portraits/infinity_ui/schael.png",
+          "portraits/infinity_ui/sorce.png",
+          "portraits/infinity_ui/unnamed.png",
+          "portraits/infinity_ui/voghiln.png",
+          "portraits/infinity_ui/yanner1.png",
+          "portraits/infinity_ui/yanner2.png",
+          "portraits/infinity_ui/yanner3.png",
+          "portraits/infinity_ui/yanner4.png",
+          "portraits/infinity_ui/yanner5.png",
+          "portraits/infinity_ui/yanner6.png"
+        ]
+      }
+    }
+  },
+  "u": "https://github.com/Renegade0/InfinityUI",
+  "a": "Renegade0",
+  "v": "v1.15",
+  "sum": "Modular UI overhaul with individually selectable improvements to inventory, spell book, character sheet, and other screens. More customizable than LeUI.",
+  "tags": [
+    "visual",
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "rec": {
+    "goes_with": [
+      "EEex",
+      "Bubb's Spell Menu Extended"
+    ],
+    "avoid": [
+      "Shadow Magic",
+      "Warlock (ClassSpellTool)",
+      "SubtleD Identify scaling",
+      "EEUITweaks",
+      "LeUI"
+    ],
+    "tip": "Modern UI but still in development. Set Force_Difficulty_Widget=1 in stratagems.ini for SCS compatibility."
+  },
+  "gh": {
+    "o": "Renegade0",
+    "r": "InfinityUI"
+  },
+  "dl": "https://github.com/Renegade0/InfinityUI",
+  "au": "Pecca",
+  "co": [
+    {
+      "n": "Install Infinity UI++ Core Component",
+      "tp2n": "Install Infinity UI++ Core Component",
+      "cn": 0,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 0,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Add Transparent Tooltip Background",
+      "tp2n": "Add Transparent Tooltip Background",
+      "cn": 1,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 1,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Update several strings in Dialog.tlk",
+      "tp2n": "Update several strings in Dialog.tlk",
+      "cn": 2,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 2,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "1",
+      "tp2n": "1",
+      "no": "v Select number of quicksave slots",
+      "cn": 3,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 3,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    },
+    {
+      "n": "2",
+      "tp2n": "2",
+      "cn": 4,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 4,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    },
+    {
+      "n": "3",
+      "tp2n": "3",
+      "cn": 5,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 5,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    },
+    {
+      "n": "4",
+      "tp2n": "4",
+      "cn": 6,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 6,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    },
+    {
+      "n": "5",
+      "tp2n": "5",
+      "cn": 7,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 7,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    },
+    {
+      "n": "6",
+      "tp2n": "6",
+      "cn": 8,
+      "wf": "infinity_ui",
+      "wp": "infinity_ui\\INFINITY_UI.TP2",
+      "wc": 8,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "scn": "Select Number of Quicksave Slots"
+    }
+  ]
+}

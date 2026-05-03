@@ -1,0 +1,95 @@
+{
+  "i": 59,
+  "t": "gorgon",
+  "sv": 1,
+  "ord": 250,
+  "c": "QUEST MODS BG1",
+  "n": "Gorgon",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "no": "The fighter start may not detect any changes the weapon proficiency after (tested with TA's IWD styles), at least not without installing CR after them (testing pending) mods recently developed The Gorgon's Eye broken replies? Wrong install position? find out Must install post-EET. EET does not recognize Gorgon — installing pre-EET in BG1 causes EET to fail with 'GORGON BG:EE mod is not recognized by EET'. Requires BG1 resources (BART4.DLG, CHILN.cre) which become available after EET merges BG1 content.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "gorgon",
+          "portraits/gorgon/h_liede.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/TotalMilk90/gorgon/releases",
+  "a": "TotalMilk90",
+  "v": "v4.8",
+  "sum": "A mod for BG:EE that adds a thieves guild into the town of Beregost.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "TotalMilk90",
+    "r": "gorgon"
+  },
+  "dl": "https://github.com/TotalMilk90/gorgon/releases",
+  "au": "TotalMilk90",
+  "co": [
+    {
+      "n": "Install The Gorgon's Eye",
+      "tp2n": "Install The Gorgon's Eye",
+      "cn": 0,
+      "wf": "gorgon",
+      "wp": "gorgon\\setup-gorgon.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "The Gorgon's Eye: BG1 quest involving a petrifying threat."
+    },
+    {
+      "n": "Give portraits to all characters added from this mod",
+      "tp2n": "Give portraits to all characters added from this mod",
+      "cn": 1,
+      "wf": "gorgon",
+      "wp": "gorgon\\setup-gorgon.tp2",
+      "wc": 1,
+      "g": "gorgon_portraits",
+      "no": "Portrait subcomponent group (pick one of cn:1/2/3). Copies portrait BMPs from gorgon/portraits/all/ to override. May conflict with portrait packs that override the same NPC portrait files."
+    },
+    {
+      "n": "Main characters only",
+      "tp2n": "Main characters only",
+      "cn": 2,
+      "wf": "gorgon",
+      "wp": "gorgon\\setup-gorgon.tp2",
+      "wc": 2,
+      "g": "gorgon_portraits",
+      "no": "Portrait subcomponent group (pick one of cn:1/2/3). Copies portrait BMPs from gorgon/portraits/main/ to override. Fewer files than cn:1, lower conflict risk with other portrait mods."
+    },
+    {
+      "n": "Joinable NPCs only",
+      "tp2n": "Joinable NPCs only",
+      "cn": 3,
+      "wf": "gorgon",
+      "wp": "gorgon\\setup-gorgon.tp2",
+      "wc": 3,
+      "g": "gorgon_portraits",
+      "scn": "NPC Character Portraits",
+      "no": "Portrait subcomponent group (pick one of cn:1/2/3). Copies portrait BMPs from gorgon/portraits/npc/ to override. Only covers NPCs that can join the party."
+    },
+    {
+      "n": "Add More Pickpocketable Items",
+      "tp2n": "Add More Pickpocketable Items",
+      "no": "EXCLUDED: WeiDU crashes with access violation (0xc0000005) during creature file patching. Causes segfault mid-install.",
+      "cn": 4,
+      "wf": "gorgon",
+      "wp": "gorgon\\setup-gorgon.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "x": 0,
+      "scn": "NPC Character Portraits"
+    }
+  ]
+}

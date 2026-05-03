@@ -1,0 +1,647 @@
+{
+  "i": 245,
+  "t": "METweaks",
+  "sv": 1,
+  "ord": 10,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "ME Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "cats": [
+    "RESTORATIONS",
+    "EXPERIENCE TWEAKS",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "Author advice it's safe to skip the Gate component if installing SCS technically they should go later with other tweaks, but ToF seems to check on files changed by these Other mods won't affect them so this may be a good place to group them v Olvyn Tweaks - Clerics and Monks only require 160k xp to reach lv9 If installing any of the cleric options, it should go before ToF's Druid xp tables using Cleric's",
+  "ic": "EET - [Make it possible to enter the Nashkel Mines through the back cave entrance & Make it possible to enter the catacombs beneath Candlekeep early]",
+  "_legacy_ids": [
+    357
+  ],
+  "conflicts": [
+    {
+      "with": "eet",
+      "withId": 12,
+      "severity": "partial",
+      "reason": "These components modify BG1 areas in ways incompatible with EET's area handling.",
+      "myComps": "#2800 Nashkel Mines back entrance #3000 Candlekeep catacombs early"
+    },
+    {
+      "with": "a7-improved_shamanic_dance",
+      "withId": 337,
+      "severity": "soft",
+      "reason": "METweaks' shamanic dance tweak is redundant with A7's Improved Shamanic Dance",
+      "myComps": "#600 Allow Shamans to move while dancing"
+    },
+    {
+      "with": "MESpells",
+      "withId": 358,
+      "severity": "soft",
+      "reason": "Olvyn cn:980 has FORBID_COMPONENT for METweaks cn:900 — same ranger/paladin progression. If METweaks cn:900 installed first, Olvyn cn:980 auto-skips. Choose one. Other METweaks components (cn:1000/1600) have no Olvyn overlap.",
+      "myComps": "#900 Ranger/Paladin caster level #1000 Monk Deflect Missiles #1600 Wizard Slayer MR",
+      "theirComps": "#980 Ranger/Paladin spell progression (Olvyn cn:980 FORBID METweaks cn:900)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "soft",
+      "reason": "METweaks proficiency rate, movement speed, and fighting style components overlap with M&G's revised mechanics",
+      "myComps": "#500 #505 #510 Proficiency rate #3400 #3405 #3410 #3415 Movement speed #4000 Fighting Styles",
+      "theirComps": "#201 Improved Rangers #210 Revised Movement #225 Revised Archers #290 Revised THAC0"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "METweaks class ability and proficiency tweaks overlap with Skills and Abilities",
+      "myComps": "#500 #505 #510 Proficiency rate #1000 Monk Deflect Missiles #1800 Assassin backstab",
+      "theirComps": "#141 #142 #143 Fighter multi-class pips #300 Weapon Styles #311 #312 #313 Proficiency Progression"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 248,
+      "severity": "soft",
+      "reason": "Both modify xplevel.2da XP tables. Last installed wins for overlapping rows.",
+      "myComps": "#800, #805, #810",
+      "theirComps": "#200 Slower Standardized XP Tables",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Both mods revise weapon fighting styles. Use one or the other.",
+      "myComps": "#4000 Modify Fighting Styles",
+      "theirComps": "#5 Rebalanced Weapon Styles"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "METweaks proficiency rate and fighting style components overlap with ToF's revised systems",
+      "myComps": "#500 #505 #510 Proficiency rate #4000 Fighting Styles",
+      "theirComps": "#81100 Weapon Proficiency #81200 Weapon Styles #40190 Revised Paladins #40400 Ranger spells"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 383,
+      "severity": "soft",
+      "reason": "Both modify store pricing mechanics",
+      "myComps": "#2180 Store prices",
+      "theirComps": "#10 Charisma on prices #11 Reputation on prices"
+    }
+  ],
+  "spl": {
+    "9": {
+      "spells": [
+        [
+          "SPPR201",
+          "tweak",
+          "Rangers and Paladins cast spells at full caster level"
+        ]
+      ]
+    },
+    "12": {
+      "spells": [
+        [
+          "SPPR204",
+          "tweak",
+          "Ranger Charm Animal powered up"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/OlvynChuru/Olvyn-Tweaks",
+  "a": "Olvyn Churu",
+  "sum": "Tweak mod for Infinity Engine games, particularly the Enhanced Editions",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "OlvynChuru",
+    "r": "Olvyn-Tweaks"
+  },
+  "dl": "https://github.com/OlvynChuru/Olvyn-Tweaks",
+  "au": "OlvynChuru",
+  "co": [
+    {
+      "n": "Make quest experience divided among party members",
+      "tp2n": "Make quest experience divided among party members",
+      "cn": 200,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 200,
+      "wq": "exact",
+      "no": "Quest XP divided among party members instead of each getting full amount."
+    },
+    {
+      "n": "Remove the limit of two proficiency points in a weapon at character creation",
+      "tp2n": "Remove the limit of two proficiency points in a weapon at character creation",
+      "no": "Use this or EET Tweaks'. MULTICAT to RESTORATIONS — must install BEFORE FnP/ToF/MiH EQ to avoid WeiDU cascade reinstall of all kit mods (profsmax.2da conflict). Installing after FnP adds ~20 min cascade + crash risk.",
+      "cat": "RESTORATIONS",
+      "cn": 400,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 400,
+      "wq": "exact"
+    },
+    {
+      "n": "Proficiency Rate: Fighters 1/2 lvl, Rangers/Paladins 1/3 lvl",
+      "tp2n": "Fighters get 1 point per 2 levels; Rangers and Paladins still get 1 point per 3 levels",
+      "no": "Incompatible with ToF's revised proficiency system",
+      "cn": 500,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 500,
+      "wq": "exact",
+      "g": "prof_rate",
+      "scn": "Increase the rate at which warriors get proficiency points"
+    },
+    {
+      "n": "Proficiency Rate: All warriors 1/2 lvl",
+      "tp2n": "Fighters, Rangers and Paladins get 1 point per 2 levels",
+      "cn": 505,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 505,
+      "wq": "exact",
+      "g": "prof_rate",
+      "scn": "Increase the rate at which warriors get proficiency points",
+      "no": "Proficiency rate: all warriors gain 1 pip per 2 levels."
+    },
+    {
+      "n": "Proficiency Rate: Fighters 1/lvl, Rangers/Paladins 1/2 lvl",
+      "tp2n": "Fighters get 1 point per level; Rangers and Paladins get 1 point per 2 levels",
+      "cn": 510,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 510,
+      "wq": "exact",
+      "g": "prof_rate",
+      "scn": "Increase the rate at which warriors get proficiency points",
+      "no": ""
+    },
+    {
+      "n": "Allow Shamans to move while dancing",
+      "tp2n": "Allow Shamans to move while dancing",
+      "cn": 600,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 600,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Redundant with A7's Improved Shamanic Dance"
+    },
+    {
+      "n": "Clerics/Monks Need 160K XP for Level 9: Clerics only",
+      "tp2n": "Clerics only",
+      "cn": 800,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 800,
+      "wq": "exact",
+      "g": "xp_160k",
+      "scn": "Make it so that clerics and/or monks require only 160000 experience to get to level 9",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Clerics/Monks Need 160K XP for Level 9: Monks only",
+      "tp2n": "Monks only",
+      "cn": 805,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 805,
+      "wq": "exact",
+      "g": "xp_160k",
+      "scn": "Make it so that clerics and/or monks require only 160000 experience to get to level 9",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Clerics/Monks Need 160K XP for Level 9: Both Clerics and Monks",
+      "tp2n": "Both Clerics and Monks",
+      "cn": 810,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 810,
+      "wq": "exact",
+      "g": "xp_160k",
+      "scn": "Make it so that clerics and/or monks require only 160000 experience to get to level 9",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Let Rangers and Paladins cast spells at their full caster level",
+      "tp2n": "Let Rangers and Paladins cast spells at their full caster level",
+      "cn": 900,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 900,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Rangers and paladins cast divine spells at their full class level instead of reduced."
+    },
+    {
+      "n": "Give Monks a cooler Deflect Missiles ability",
+      "tp2n": "Give Monks a cooler Deflect Missiles ability",
+      "cn": 1000,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1000,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Monks gain a Deflect Missiles ability that blocks ranged attacks."
+    },
+    {
+      "n": "Give Rangers the Tracking ability (from Throne of Bhaal) starting at level 1",
+      "tp2n": "Give Rangers the Tracking ability (from Throne of Bhaal) starting at level 1",
+      "cn": 1200,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1200,
+      "wq": "exact",
+      "no": "Rangers get the Tracking ability starting at level 1 instead of only in ToB."
+    },
+    {
+      "n": "Power Up Ranger Charm Animal",
+      "tp2n": "Power Up Ranger Charm Animal",
+      "cn": 1400,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1400,
+      "wq": "exact",
+      "no": "Powers up the Ranger Charm Animal ability with longer duration and wider creature range."
+    },
+    {
+      "n": "Turn Paladin Detect Evil into a passive ability that can be toggled on and off",
+      "tp2n": "Turn Paladin Detect Evil into a passive ability that can be toggled on and off",
+      "cn": 1500,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1500,
+      "wq": "exact",
+      "no": "Converts Paladin Detect Evil into a passive toggleable aura ability."
+    },
+    {
+      "n": "Increase Wizard Slayer Magic Resistance",
+      "tp2n": "Increase Wizard Slayer Magic Resistance",
+      "cn": 1600,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1600,
+      "wq": "exact",
+      "no": "Increases Wizard Slayer magic resistance gain per level."
+    },
+    {
+      "n": "Make Assassin backstab multiplier improve faster",
+      "tp2n": "Make Assassin backstab multiplier improve faster",
+      "cn": 1800,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 1800,
+      "wq": "exact",
+      "no": "Assassin backstab multiplier increases at lower levels for faster progression."
+    },
+    {
+      "n": "Allow cursed scrolls to be used on enemies",
+      "tp2n": "Allow cursed scrolls to be used on enemies",
+      "cn": 2000,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 2000,
+      "wq": "exact",
+      "no": "Cursed scrolls can be targeted at enemies instead of only affecting the reader."
+    },
+    {
+      "n": "Make creatures take up less space",
+      "tp2n": "Make creatures take up less space",
+      "cn": 2200,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 2200,
+      "wq": "exact",
+      "no": "Reduces creature collision circles so they take up less space in combat."
+    },
+    {
+      "n": "Make enemies change their attack targets more quickly",
+      "tp2n": "Make enemies change their attack targets more quickly",
+      "cn": 2400,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 2400,
+      "wq": "exact",
+      "no": "Enemies switch attack targets more quickly when better opportunities appear."
+    },
+    {
+      "n": "No Party Required area transitions",
+      "tp2n": "No Party Required area transitions",
+      "cn": 2600,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 2600,
+      "wq": "exact",
+      "no": "Allows area transitions without requiring the full party to be gathered."
+    },
+    {
+      "n": "Make it possible to enter the Nashkel Mines through the back cave entrance",
+      "tp2n": "Make it possible to enter the Nashkel Mines through the back cave entrance",
+      "no": "Incompatible with EET area handling. Caution: allows sequence-breaking",
+      "cn": 2800,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 2800,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Make it possible to enter the catacombs beneath Candlekeep early",
+      "tp2n": "Make it possible to enter the catacombs beneath Candlekeep early",
+      "cn": 3000,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3000,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Allows early entry into the Candlekeep catacombs."
+    },
+    {
+      "n": "Make it so the Jacil and Wiven encounters aren't replaced by other quests",
+      "tp2n": "Make it so the Jacil and Wiven encounters aren't replaced by other quests",
+      "no": "Possible bug: may only apply to prologue Candlekeep, not the later version. See issue #2 on GitHub",
+      "cn": 3100,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3100,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Give Belhifet more reasonable immunities",
+      "tp2n": "Give Belhifet more reasonable immunities",
+      "cn": 3150,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3150,
+      "wq": "exact",
+      "no": "Gives Belhifet more reasonable immunities instead of near-total immunity."
+    },
+    {
+      "n": "Infravision: THAC0 penalty in darkness",
+      "tp2n": "Creatures without infravision have -4 THAC0 at night or in dark places",
+      "cn": 3200,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3200,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "infravision",
+      "scn": "Make Infravision actually do something",
+      "no": "Infravision: characters without infravision suffer THAC0 penalty in darkness."
+    },
+    {
+      "n": "Infravision: Reduced visual range in darkness",
+      "tp2n": "Creatures without infravision have reduced visual range at night or in dark places",
+      "cn": 3205,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3205,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "infravision",
+      "scn": "Make Infravision actually do something",
+      "no": "Infravision: characters without infravision have reduced visual range in darkness."
+    },
+    {
+      "n": "Infravision: Both THAC0 penalty and reduced range",
+      "tp2n": "Both 1 and 2",
+      "cn": 3210,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3210,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "infravision",
+      "scn": "Make Infravision actually do something",
+      "no": "Infravision: both THAC0 penalty and reduced visual range in darkness."
+    },
+    {
+      "n": "Movement Speed: Double",
+      "tp2n": "Double the movement rate",
+      "cn": 3400,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3400,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "move_speed",
+      "scn": "Increase the speed of all creatures in the game (including party members)"
+    },
+    {
+      "n": "Movement Speed: Triple",
+      "tp2n": "Triple the movement rate",
+      "cn": 3405,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3405,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "move_speed",
+      "scn": "Increase the speed of all creatures in the game (including party members)"
+    },
+    {
+      "n": "Movement Speed: Quadruple",
+      "tp2n": "Quadruple the movement rate",
+      "cn": 3410,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3410,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "move_speed",
+      "scn": "Increase the speed of all creatures in the game (including party members)"
+    },
+    {
+      "n": "Movement Speed: Maximum",
+      "tp2n": "Set the movement rate to the maximum",
+      "cn": 3415,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3415,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "move_speed",
+      "scn": "Increase the speed of all creatures in the game (including party members)"
+    },
+    {
+      "n": "Implement a different kind of chunked death animation",
+      "tp2n": "Implement a different kind of chunked death animation",
+      "cn": 3600,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3600,
+      "wq": "exact",
+      "no": "Replaces the chunked death animation with a different visual effect."
+    },
+    {
+      "n": "Sneak Attack: Remove delay",
+      "tp2n": "Remove the delay before a creature can be sneak-attacked again",
+      "cn": 3800,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3800,
+      "wq": "exact",
+      "g": "sneak_delay",
+      "scn": "Modify Sneak Attack and Crippling Strike",
+      "no": "Sneak Attack: removes the delay between backstab and next attack."
+    },
+    {
+      "n": "Sneak Attack: Reduce delay to 1 round",
+      "tp2n": "Reduce the delay before a creature can be sneak-attacked again to 1 round",
+      "cn": 3805,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3805,
+      "wq": "exact",
+      "g": "sneak_delay",
+      "scn": "Modify Sneak Attack and Crippling Strike",
+      "no": ""
+    },
+    {
+      "n": "Sneak Attack: Remove delay, no stacking Crippling Strike",
+      "tp2n": "Remove the delay, but prevent multiple Crippling Strikes from stacking",
+      "cn": 3810,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3810,
+      "wq": "exact",
+      "g": "sneak_delay",
+      "scn": "Modify Sneak Attack and Crippling Strike",
+      "no": "Sneak Attack: no delay, Crippling Strike does not stack."
+    },
+    {
+      "n": "Sneak Attack: 1 round delay, no stacking Crippling Strike",
+      "tp2n": "Reduce the delay to 1 round, but prevent multiple Crippling Strikes from stacking",
+      "cn": 3815,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 3815,
+      "wq": "exact",
+      "g": "sneak_delay",
+      "scn": "Modify Sneak Attack and Crippling Strike",
+      "no": "Sneak Attack: 1 round delay, Crippling Strike does not stack."
+    },
+    {
+      "n": "Modify Fighting Styles",
+      "tp2n": "Modify Fighting Styles",
+      "cn": 4000,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 4000,
+      "wq": "exact",
+      "no": "Similar to HouseTweaks: styles go to 5 points with bigger bonuses. Overlaps with HT and ToF fighting styles"
+    },
+    {
+      "n": "Replace the \"I'm on it like ugly on an orc\" quote with \"I'm on it\"",
+      "tp2n": "Replace the \"I'm on it like ugly on an orc\" quote with \"I'm on it\"",
+      "cn": 4200,
+      "wf": "METweaks",
+      "wp": "METweaks\\METWEAKS.TP2",
+      "wc": 4200,
+      "wq": "exact"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "METweaks warrior proficiency rate changes may overlap with Tweaks Anthology proficiency tweaks.",
+      "myComps": "#500, #505, #510",
+      "theirComps": "#2160 #2161 #2162 #2163 #2164 Weapon proficiency",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both mods offer creature movement speed changes. Pick one.",
+      "myComps": "#3400, #3405, #3410, #3415",
+      "theirComps": "#3340 #3344 #3342 #3343 #3345 #3346 #3347 Movement speed",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

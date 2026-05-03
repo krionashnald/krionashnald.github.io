@@ -1,0 +1,64 @@
+{
+  "i": 569,
+  "t": "cliffhistory",
+  "sv": 1,
+  "ord": 410,
+  "c": "QUEST MODS BG1",
+  "n": "Cliffette's History",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Cliffette's History is a BG1 quest mod. cdtweaks #1160/#1161 (Multiple Strongholds) modifies BG2 stronghold scripts. Unlikely to have actual file-level conflict across game phases. Kept as informational.",
+      "myComps": "#0 Cliffette's 'History' BWI contest entry",
+      "theirComps": "#1160, #1161 Multiple Strongholds",
+      "source": "Cliffette's History is BG1 phase only. cdtweaks Multiple Strongholds modifies BG2 stronghold assignment. Cross-phase conflict unlikely, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "cliffhistory",
+          "portraits/cliffhistory/clfhsfx.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/quests/cliffette/",
+  "a": "Cliffette",
+  "v": "v2",
+  "sum": "Adds a quest at the Five Flagons Playhouse involving a character named Fonick, originally designed for a history-themed modding contest with multiple endings.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://www.gibberlings3.net/mods/quests/cliffette/",
+  "au": "supercliffette",
+  "no": "Adds a quest at the Five Flagons Playhouse involving a character named Fonick, originally designed for a history-themed modding contest with multiple endings.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Cliffette's 'History' BWI contest entry",
+      "tp2n": "Cliffette's 'History' BWI contest entry",
+      "cn": 0,
+      "wf": "cliffhistory",
+      "wp": "cliffhistory\\setup-cliffhistory.tp2",
+      "wc": 0,
+      "no": "PARSE ERRORS (non-fatal): CLFAR0510.baf and clfhswz1.baf use raw text strings in AddJournalEntry/EraseJournalEntry instead of STRREF integers. Fonick 'Bard out of Hell' journal entries won't display correctly. Also 3 PARSE WARNINGs in history.d for the same reason. Mod installs and quest works, just journal text is broken."
+    }
+  ]
+}

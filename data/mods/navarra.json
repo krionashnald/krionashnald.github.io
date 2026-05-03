@@ -1,0 +1,58 @@
+{
+  "i": 620,
+  "t": "navarra",
+  "sv": 1,
+  "ord": 1190,
+  "c": "NEW NPC MODS",
+  "n": "Navarra NPC",
+  "no": "CG Female Human Fighter Uses READLN for dialogue timer selection (1-6). Choose 1 for 1hr standard. Requires manual input. ACTION_READLN stall — mod prompts for dialogue timer selection (1-6) during install. Mod_installer now auto-responds with 1 in automated mode.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "navarra",
+          "portraits/navarra/kknav.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/navarra/",
+  "a": "Kitanna",
+  "sum": "Adds Navarra, a Chaotic Good female human Barbarian NPC to BG2 with a romance for non-evil males, a personal quest in the Bridge District, and banters with all Bioware NPCs.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Kitanna",
+  "dl": "https://www.gibberlings3.net/mods/npcs/navarra/",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Navarra for BG2",
+      "cn": 0,
+      "wf": "navarra",
+      "wp": "navarra\\setup-navarra.tp2",
+      "wc": 0,
+      "no": "ACTION_READLN — STALLS automated installs. blocked for 35+ minutes waiting for dialog timer input (1-6). Installer must pipe answer '1' (1hr default) or use --force-install with READLN auto-answer. Not bypassable with --force-install alone.",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for dialogue timer selection (1-6). Requires manual input.",
+          "type": "manual"
+        }
+      ],
+      "tp2n": "Navarra for BG2"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "i": 4,
+  "t": "eefixpack",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 20,
+  "c": "PRE EET BGEE MODS",
+  "n": "EE Fixpack",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2,
+    "fr": 3
+  },
+  "wb": true,
+  "no": "Still in Alpha (Alpha 3, Oct 2024). Install first in both BG1EE and BG2EE. Must be manually installed on BG1EE before EET — mod_installer and PI cannot reliably handle dual-install. Three components: Core Fixes (essential), Beta Core Fixes (additional fixes, MiH FR requires it), Game Text Update (text corrections, minor cosmetic issues with some older mods). All three recommended for Ultimate preset.",
+  "rq": "Unreleased, install at your own risk on BG2, needs EET Master until new version.",
+  "in": [
+    {
+      "t": "Install EE Fixpack manually via WeiDU on both BG1EE and BG2EE before running the automated installer.",
+      "type": "manual"
+    }
+  ],
+  "u": "https://github.com/gibberlings3/ee_fixpack",
+  "a": "Camdawg, Luke, argent77, DavidW",
+  "v": "Alpha 3",
+  "sum": "Community-driven fix compilation that corrects hundreds of bugs the official patches missed in BG1EE, SoD, BG2EE, and ToB. Still in beta but widely recommended.",
+  "tags": [
+    "qol",
+    "restore"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "required",
+    "place": "pre",
+    "notes": "Must be installed on BOTH BGEE and BG2EE"
+  },
+  "gh": {
+    "o": "gibberlings3",
+    "r": "ee_fixpack"
+  },
+  "dl": "https://github.com/gibberlings3/ee_fixpack",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Core Fixes",
+      "tp2n": "Core Fixes",
+      "cn": 0,
+      "wf": "eefixpack",
+      "wp": "eefixpack\\SETUP-EEFIXPACK.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec",
+      "no": "Essential. Fixes hundreds of bugs across all EE games."
+    },
+    {
+      "n": "Beta Core Fixes",
+      "tp2n": "Beta Core Fixes",
+      "ss": 19,
+      "no": "Additional fixes still in testing. MiH Fixes & Restorations requires this component. Recommended.",
+      "cn": 1,
+      "wf": "eefixpack",
+      "wp": "eefixpack\\SETUP-EEFIXPACK.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec"
+    },
+    {
+      "n": "Game Text Update",
+      "tp2n": "Game Text Update",
+      "no": "Corrects game text errors. Minor cosmetic issues possible with older mods not adapted to EE Fixpack text changes. Recommended.",
+      "cn": 2,
+      "wf": "eefixpack",
+      "wp": "eefixpack\\SETUP-EEFIXPACK.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tg": "rec"
+    }
+  ]
+}

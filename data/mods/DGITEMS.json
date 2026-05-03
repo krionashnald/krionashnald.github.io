@@ -1,0 +1,910 @@
+{
+  "i": 639,
+  "t": "DGItems",
+  "sv": 1,
+  "ord": 460,
+  "c": "ITEM ADDITION MODS",
+  "n": "DGItems",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/The-Gate-Project/DGItems",
+  "a": "Daniel Goodrich",
+  "v": "2.0",
+  "sum": "Adds a collection of powerful custom items, ammunition, weapons, and armor available at the Adventurer's Mart, with an optional component to delay some to ToB.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "PEAMUDG",
+          "amulet",
+          "Amulet of Spell Casting Speed",
+          "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount",
+          {
+            "ac": 1,
+            "magicResist": 25,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 25
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PEBAGDG",
+          "container",
+          "Bag of Holding",
+          "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount",
+          {}
+        ],
+        [
+          "PEBELTDG",
+          "belt",
+          "Girdle of Fire Giant Strength",
+          "The Acid Bullet is magically enhanced so that when it strikes an emeny, it will not only pierce its flesh but also begin to eat at the wound, enlarging and deepening it's severity.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 acid damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "str": 23
+          }
+        ],
+        [
+          "PEBO2DG",
+          "boots",
+          "Boots of Movement",
+          "The Acid Bullet is magically enhanced so that when it strikes an emeny, it will not only pierce its flesh but also begin to eat at the wound, enlarging and deepening it's severity.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 acid damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {}
+        ],
+        [
+          "PEBRA3DG",
+          "bracers",
+          "Gloves of Regeneration",
+          "The Acid Bullet is magically enhanced so that when it strikes an emeny, it will not only pierce its flesh but also begin to eat at the wound, enlarging and deepening it's severity.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 acid damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "PEBUL0DG",
+          "bullet",
+          "Acid Bullet",
+          "The Acid Bullet is magically enhanced so that when it strikes an emeny, it will not only pierce its flesh but also begin to eat at the wound, enlarging and deepening it's severity.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 acid damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "sling"
+          }
+        ],
+        [
+          "PEBUL1DG",
+          "bullet",
+          "Flame Bullet",
+          "The Flame Bullet is a magical stone that will burst into flames when thrown. The effect is similar to a bullet doused in oil and set on fire.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 fire damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "sling"
+          }
+        ],
+        [
+          "PEBUL2DG",
+          "bullet",
+          "Ice Bullet",
+          "The Ice Bullet is a magical stone that will burst into a rolling ball of ice and cold when fired. When the dart strikes it's victim, a shock of cold will travel through its body, both burning and numbing to the very core.\n\nSTATISTICS: \n\nCombat abilities: \n- Unlimited ammunition\n- Inflicts 3 cold damage to the target\n\nEnchantment: +3\nTHAC0: +3\nDamage: 1d4 +3\nDamage Type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "sling"
+          }
+        ],
+        [
+          "PEDAADG",
+          "dart",
+          "Acid Dart",
+          "Of course it is. Tell him, Rasaad.",
+          {
+            "thac0": 2,
+            "dmg": "1d3",
+            "dmgBonus": 2,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PEDAFDG",
+          "dart",
+          "Flame Dart",
+          "I came here to kill Alorgoth.",
+          {
+            "thac0": 2,
+            "dmg": "1d3",
+            "dmgBonus": 2,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PEDAGDG",
+          "dart",
+          "Ice Dart",
+          "I... would know the Twofold Truth. If it proves itself a worthy philosophy, then yes, I would join the Trust.",
+          {
+            "thac0": 2,
+            "dmg": "1d3",
+            "dmgBonus": 2,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PECLCDG",
+          "cloak",
+          "Elemental Adamantite Cloak",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.\n\nSTATISTICS:\n\nWeight: 3",
+          {
+            "ac": 5,
+            "fireResist": 20,
+            "coldResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        [
+          "PEHELDG",
+          "helmet",
+          "Elemental Adamantite Helmet",
+          "Who are you talking about?",
+          {
+            "ac": 3,
+            "fireResist": 20,
+            "coldResist": 20,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PEPLADG",
+          "armor",
+          "Elemental Adamantite Mail",
+          "I kn-know. I'm sorry. So sorry! Please take me home—I want to go home! I want to see Mama.",
+          {
+            "ac": -1,
+            "fireResist": 20,
+            "coldResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "PESHIDG",
+          "shield",
+          "Elemental Adamantite Shield",
+          "I'm sorry, are you looking for something?",
+          {
+            "ac": 5,
+            "fireResist": 20,
+            "coldResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIBDG",
+          "ring",
+          "Bard's Ring of Harmony",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            }
+          }
+        ],
+        [
+          "PERICDG",
+          "ring",
+          "Ring of High Clerical Skill",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIDDG",
+          "ring",
+          "Druidic Ring of Balance",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIEDG",
+          "ring",
+          "Ring of the Evil Archmagi",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "magicResist": 10,
+            "saves": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIAPDG",
+          "ring",
+          "Ring of Anti-Petrification",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "PERIGDG",
+          "ring",
+          "Ring of the Good Archmagi",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "magicResist": 10,
+            "saves": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PERINDG",
+          "ring",
+          "Ring of the Neutral Archmagi",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "magicResist": 10,
+            "saves": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIPDG",
+          "ring",
+          "Paladin's Ring of Holiness",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ]
+            }
+          }
+        ],
+        [
+          "PERIRDG",
+          "ring",
+          "Ranger's Ring of Clerical Skill",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "PERITDG",
+          "ring",
+          "Ring of Thieving skill",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PESCIMDG",
+          "large sword",
+          "Scimitar of Amnesia",
+          "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "2d8",
+            "dmgBonus": 5,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/The-Gate-Project/DGItems",
+  "au": "Daniel Goodrich, Prof Errata (port)",
+  "no": "Adds a collection of powerful custom items, ammunition, weapons, and armor available at the Adventurer's Mart, with an optional component to delay some to ToB.",
+  "co": [
+    {
+      "n": "Mod DGItems for BG2ToB / BGT or BG2EE / EET",
+      "tp2n": "Mod DGItems for BG2ToB / BGT or BG2EE / EET",
+      "cn": 0,
+      "wf": "DGITEMS",
+      "wp": "DGITEMS\\SETUP-DGITEMS.TP2",
+      "wc": 0,
+      "it": 26,
+      "itC": {
+        "amulet": 1,
+        "container": 1,
+        "belt": 1,
+        "boots": 1,
+        "bracers": 1,
+        "bullet": 3,
+        "dart": 3,
+        "cloak": 1,
+        "helmet": 1,
+        "armor": 1,
+        "shield": 1,
+        "ring": 10,
+        "large sword": 1
+      },
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Delay some powerful items to ToB (Zodesak store at Amkethran)",
+      "tp2n": "Delay some powerful items to ToB (Zodesak store at Amkethran)",
+      "cn": 1000,
+      "wf": "DGITEMS",
+      "wp": "DGITEMS\\SETUP-DGITEMS.TP2",
+      "wc": 1000
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "DGItems"
+  }
+}

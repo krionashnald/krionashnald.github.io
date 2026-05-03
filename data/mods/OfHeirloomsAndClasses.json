@@ -1,0 +1,482 @@
+{
+  "i": 275,
+  "t": "OfHeirloomsAndClasses",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 210,
+  "c": "ITEM ADDITION MODS",
+  "n": "Of Heirlooms and Classes",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2
+  },
+  "no": "Must go after Item Upgrade (still relevant? check) (Jastey doesn't seem to remember!) Of Heirlooms and Classes",
+  "u": "https://downloads.weaselmods.net/download/of-heirlooms-and-classes/",
+  "a": "Lava Del'Vortel",
+  "v": "v2.2",
+  "sum": "Introduces 11 class-exclusive artifacts restorable through Cromwell, each bound to a specific class and available during Shadows of Amn.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "L#ROCFI0",
+          "bow",
+          "Solar Kiss +4",
+          "This composite bow shaft appears to be made of an unusual material. It is missing a proper string, though, which renders the item unusable.\n\nSTATISTICS:\n\nWeight: 7",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmgBonus": 1,
+            "fireResist": 25,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "L#ROCFI1",
+          "misc",
+          "Solar Kiss Shaft",
+          "This is the shaft of a powerful composite bow known as Solar Kiss. Perhaps if its string is found, a skilled blacksmith or some other weapon specialist will be able to reforge the bow.\n\nSTATISTICS:\n\nWeight: 7",
+          {}
+        ],
+        [
+          "L#ROCFI2",
+          "misc",
+          "Solar Kiss String",
+          "This is the string of a powerful composite bow known as Solar Kiss. Perhaps if its shaft is found, a skilled blacksmith or some other weapon specialist will be able to reforge the bow.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCRA0",
+          "wand",
+          "Rod of Vinearrows",
+          "Rumor has it that this rod was created by the Oak Father himself. It has the power to create powerful \"living\" arrows that not only pierce the thickest skin but also feed on the target's blood.\n\nThe rod is believed to have been used by one of the defenders of Myth Drannor, but it's impossible to verify the truthfulness of this opinion. What is certain, however, is that in the right hands, the rod can prove more than useful.\n\nSTATISTICS:\n\nCharge abilities:\n– Create twenty Vinearrows once per day\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "L#ROCRA1",
+          "misc",
+          "Incomplete Rod",
+          "This rod looks as if a part of it was missing. Still, you can feel magical energy swirling inside it. Perhaps the missing element could be restored and the item repaired?\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "L#ROCRA2",
+          "misc",
+          "Greenhex Vines",
+          "These plants are known as Greenhex Vines. Some believe they have magic properties.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCRA3",
+          "arrow",
+          "Vinearrow",
+          "This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d6+1, +1d3 acid damage\nDamage type: Missile\nLauncher: Bow\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "L#ROCPA0",
+          "helmet",
+          "Crown of the Sun's Warmth",
+          "This crown was created for a paladin of Amaunator named Valsax Fahoral. She was known for her vigilance and unwavering hope she put in her god and the Sun. To her, it was a sign that Toril is worth the warmth and that its people are capable of making it a better place still.\n\nThe headpiece is believed to grant the wearer cosmic or even celestial powers that boost their wisdom and sound judgment so that they can always choose a path of righteousness and hope.\n\nSTATISTICS:\n\nCharge abilities:\n– Know Alignment once per day\n– Clairvoyance once per day\n\nEquipped abilities:\n– Lore: +20\n– Wisdom: +2\n– Armor Class: +2\n– Protects against critical hits\n\nWeight: 1",
+          {
+            "ac": 2,
+            "wis": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "L#ROCPA1",
+          "helmet",
+          "Incomplete Crown of the Sun's Warmth",
+          "This item is known as the Crown of the Sun's Warmth, somehow associated with the church of Amaunator. Unfortunately, it is incomplete and misses a few gemstones. If they were to be found, perhaps the crown and its properties could be restored.\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCPA2",
+          "gem",
+          "Crown of the Sun's Warmth Gemstones",
+          "These gemstones were once part of a powerful item known as the Crown of the Sun's Warmth. Perhaps if they were reattached to the crown, they could brighten the path of a new hero or heroine.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "L#ROCCL0",
+          "helmet",
+          "Gods' Ram",
+          "This helmet has been damaged significantly. It's also missing some parts.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "L#ROCCL1",
+          "misc",
+          "Part of the Gods' Ram Helmet",
+          "This is a part of the Gods' Ram helmet. It looks damaged. If the missing parts are provided, perhaps it can still be fixed.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCCL2",
+          "misc",
+          "The Gods' Ram Horns",
+          "These horns belong to the Gods' Ram helmet. Perhaps they can still be attached to the helmet's main part.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCDR0",
+          "wand",
+          "Bowl of the Silver Harvest",
+          "This bowl was created by a skilled elven artisan, devoted to both Elebrin Liothiel, the Celestial Gardener and Sehanine Moonbow, the Daughter of the Night Skies. This item, known as the Bowl of the Silver Harvest, was a gift to a human druid, a friend of the artisan. The druid's village was attacked by a horde of the undead, and the bowl was intended to help fight off the monsters.\n\nIt is said that the bowl has two powerful abilities: firstly, it can create Moonlit Berries, which can restore the life force stolen by undead energies. Secondly, it can produce a special balm which may be used to bring back those recently deceased... but there's a price to pay. When applied, the balm transfers some of the user's life force to the victim. The life force will return, but not right away.\n\nSTATISTICS:\n\nCharge abilities:\n– Moonlit Berries once per day\nCreates magical berries that restore drained levels when eaten\n– Moonlit Balm once per day:\nCreates 1 portion of a special balm that may be used to raise the target from the dead. The user of the balm loses 1 point of their Constitution for 7 days\n\nNOTE: When equipped, right-click the bowl to switch between charge abilities.\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "L#ROCDR1",
+          "misc",
+          "Damaged Magical Bowl",
+          "This bowl must have been quite beautiful once. Now its surface is cracked and uneven. However, you can sense there is still magic left within it. Perhaps the bowl could be repaired.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCDR2",
+          "food",
+          "Moonlit Berries",
+          "Moonlit Berries are created by the power of a magical bowl. It is believed these fruits can restore life essence stolen by vampires and other undead creatures.\n\nSTATISTICS:\n\nSpecial: Restores drained levels upon consumption.\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "L#ROCDR3",
+          "food",
+          "Moonlit Balm",
+          "Moonlit Balm is created by the power of a magical bowl. It is believed this ointment can bring a person or an animal back from the dead... but there is a price to pay.\n\nSTATISTICS:\n\nSpecial: Raises the target from the dead. The person who applies the balm loses 1 point of their Constitution for 7 days.\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "L#ROCMO0",
+          "boots",
+          "Boots of Precise Kicks",
+          "This pair of boots was created in Wa for a monk named Homura Tatamihi. He spent almost twenty years in solitude perfecting his skills and fighting techniques. Rumor has it that he managed to create similar boots on his own and described every step of the process on a scroll.\n\nSTATISTICS:\n\nEquipped abilities:\n– THAC0: +3\n– Armor Class: +1 vs. missile attacks\n– Movement Speed: +1\n\nWeight: 4",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            }
+          }
+        ],
+        [
+          "L#ROCMO1",
+          "misc",
+          "Recipe",
+          "This scroll describes how to create the Boots of Precise Kicks, a useful piece of gear that would surely be appreciated by most monks.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCMO2",
+          "misc",
+          "Enchanted Piece of Leather",
+          "This piece of leather is too small to turn into armor, but... maybe it can be used to create something else? What you can be sure of is that this item was enhanced with magical energy.\n\nSTATISTICS:\n\nWeight: 5",
+          {}
+        ],
+        [
+          "L#ROCSH0",
+          "axe",
+          "Spirit's Edge +4",
+          "This looks like the handle of some weapon, perhaps an axe or a morning star.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "speed": 5,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "magicResist": 15,
+            "profType": "axe",
+            "usability": {
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "L#ROCSH1",
+          "misc",
+          "Spirit's Edge Handle",
+          "This is the handle of a powerful shamanic weapon known as the Spirit's Edge.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCSH2",
+          "misc",
+          "Ghostmetal",
+          "This material is known as ghostmetal. Perhaps it can be used to forge some kind of weapon?\n\nSTATISTICS:\n\nWeight: 5",
+          {}
+        ],
+        [
+          "L#ROCMA0",
+          "staff",
+          "Sea's Beating Heart",
+          "This magical quarterstaff is actually the shaft of a more powerful weapon.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "2d8",
+            "dmgBonus": 3,
+            "coldResist": 50,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "L#ROCMA1",
+          "staff",
+          "Shaft of the Sea's Beating Heart",
+          "This is the shaft of the Sea's Beating Heart. Until the weapon is restored to its original shape, this shaft may be used as a quarterstaff +1.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d6+1 (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "L#ROCMA2",
+          "gem",
+          "Orb of the Sea's Beating Heart",
+          "This orb is a part of the Sea's Beating Heart, a powerful quarterstaff.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "L#ROCSO0",
+          "helmet",
+          "Heritage Amplifier",
+          "This circlet looks as if it was missing an important element.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "cha": 2
+          }
+        ],
+        [
+          "L#ROCSO1",
+          "misc",
+          "Broken Magic Circlet",
+          "This is a part of a magic circlet that had the power to enhance innate spellcasting abilities.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "L#ROCSO2",
+          "gem",
+          "Magic Gemstone",
+          "This magical gem was once part of a powerful circlet. Perhaps the two could be reconnected... under the right circumstances.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "L#ROCTH0",
+          "belt",
+          "Belt of Father's Vengeance",
+          "This belt is missing a buckle.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "L#ROCTH1",
+          "misc",
+          "Broken Belt of Father's Vengeance",
+          "This used to be a powerful belt known as the Belt of Father's Vengence. However, it is now missing a buckle.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "L#ROCTH2",
+          "misc",
+          "Buckle of a Magical Belt",
+          "This is a buckle, but... where's the rest of the belt? You can still sense dormant magic within the buckle.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "L#ROCBA0",
+          "dagger",
+          "Brass Knuckles of Heartbeat",
+          "This scroll contains complex drawings and text that seems to be describing... a weapon?\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "thac0": 6,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "ac": 1,
+            "apr": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minStr": 5
+            },
+            "profType": "dagger"
+          }
+        ],
+        [
+          "L#ROCBA1",
+          "misc",
+          "Knuckles Recipe",
+          "This scroll contains an instruction for forging magical knuckles.\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ]
+      ]
+    }
+  },
+  "dl": "https://downloads.weaselmods.net/download/of-heirlooms-and-classes/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "new artifacts forgeable by Cromwell - Of Heirlooms and Classes - new forgeable artifacts for different classes",
+      "tp2n": "Of Heirlooms and Classes - new forgeable artifacts for different classes",
+      "pi": "L#-OfHeirloomsAndClasses",
+      "wf": "OfHeirloomsAndClasses",
+      "wp": "OfHeirloomsAndClasses\\OfHeirloomsAndClasses.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "it": 34,
+      "itC": {
+        "bow": 1,
+        "misc": 15,
+        "wand": 2,
+        "arrow": 1,
+        "helmet": 4,
+        "gem": 3,
+        "food": 2,
+        "boots": 1,
+        "axe": 1,
+        "staff": 2,
+        "belt": 1,
+        "dagger": 1
+      }
+    }
+  ]
+}

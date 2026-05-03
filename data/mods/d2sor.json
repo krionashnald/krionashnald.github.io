@@ -1,0 +1,111 @@
+{
+  "i": 723,
+  "t": "d2sor",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Sorcerer Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Sorcerer kit for Sorcerer class. Fire, lightning, and cold spell trees. EE-only (BGEE, BG2EE, EET). Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_SORCERER": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Fire Spells",
+            "freq": "D2 skill point system",
+            "effects": "Fire Bolt, Inferno, Blaze, Fireball, Fire Wall, Meteor, Hydra.",
+            "level": 1
+          },
+          {
+            "n": "Lightning Spells",
+            "freq": "D2 skill point system",
+            "effects": "Charged Bolt, Static Field, Nova, Lightning, Chain Lightning, Teleport, Energy Shield, Thunder Storm.",
+            "level": 1
+          },
+          {
+            "n": "Cold Spells",
+            "freq": "D2 skill point system",
+            "effects": "Ice Bolt, Frost Nova, Ice Blast, Glacial Spike, Blizzard, Frozen Orb.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noSpells": true,
+          "items": "Replaces standard Sorcerer spell system with D2 skill point system. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "D2 skill-point system replaces standard Sorcerer spell system"
+        },
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "D2 elemental skill tree replaces sorcerer HLA pool."
+        },
+        "statBonus": {
+          "note": "D2 elemental trees: Fire/Lightning/Cold, each ~9 spells."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_SORCERER",
+          "sorcerer",
+          "Diablo2 Sorcerer",
+          "Diablo 2-inspired elemental mage. Fire, lightning, and cold spell mastery."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "0.5",
+  "sum": "Diablo 2-inspired Sorcerer kit for the Sorcerer class. Fire, lightning, and cold spell trees. EE-only.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Sorcerer Kit",
+      "tp2n": "Diablo2 Sorcerer Kit",
+      "wf": "d2sor",
+      "wp": "d2sor\\SETUP-d2sor.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

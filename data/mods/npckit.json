@@ -1,0 +1,1042 @@
+{
+  "i": 226,
+  "t": "npckit",
+  "sv": 1,
+  "ord": 320,
+  "c": "KIT & CLASS MODS",
+  "n": "NPC Kit",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "es": 3,
+    "it": 4,
+    "ru": 5
+  },
+  "no": "other mods can also do the drow penalties in more extensive ways (subraces mods, ToF, Jtweaks...) NPCKIT",
+  "ic": "Ding0’s Tweak Holy Symbols; may clash with other NPC kit mods; Faiths & Powers - Anomen gains cleric of helm",
+  "conflicts": [
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "partial",
+      "reason": "Mage specialist kit tweaks conflict",
+      "myComps": "#30",
+      "theirComps": "#5",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Choose class/kit for Imoen",
+      "myComps": "#1400, #1410, #1411, #1412, #1413, #1414, #1415, #1416, #1417, #2200, #2300, #2500, #2510, #2511, #2512, #2513, #2514, #2515, #2516, #2517",
+      "theirComps": "#2000 NPC Customization",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "polytweak",
+      "withId": 228,
+      "severity": "partial",
+      "reason": "Choose class/kit for Minsc",
+      "myComps": "#2300",
+      "theirComps": "#401, #402, #403",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "polytweak",
+      "withId": 228,
+      "severity": "partial",
+      "reason": "Both modify Nalia's class/kit. Choose one.",
+      "myComps": "#2500, #2510, #2511, #2512, #2513, #2514, #2515, #2516, #2517",
+      "theirComps": "#500 Nalia",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npc_tweak",
+      "withId": 227,
+      "severity": "partial",
+      "reason": "Choose class/kit for Nalia",
+      "myComps": "#2500, #2510, #2511, #2512, #2513, #2514, #2515, #2516, #2517",
+      "theirComps": "#2 Nalia",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "Choose class/kit for Imoen",
+      "myComps": "#1400, #1410, #1411, #1412, #1413, #1414, #1415, #1416, #1417",
+      "theirComps": "\"SwashImoen\", full revision (suggested), #21, #22",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HIDEKT",
+      "withId": 691,
+      "severity": "hard",
+      "reason": "Both assign kits to NPCs. Hidden Kits replaces CRE files wholesale.",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/files/file/793-npc-kitpack/",
+  "a": "Idobek",
+  "v": "v5",
+  "sum": "Assigns specific class kits to joinable NPCs who are kit-less in vanilla. Gives companions like Minsc and Jaheira proper kit abilities.",
+  "tags": [
+    "npc",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/files/file/793-npc-kitpack/",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "cn": 0,
+      "n": "Deprecated: Clear old components",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED. Clears old component data from previous versions.",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 4,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 5,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 6,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 7,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 8,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 9,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 10,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 11,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 12,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 13,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 14,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 15,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 16,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 17,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 18,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 19,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 20,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 21,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 22,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 23,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 24,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 25,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 26,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 27,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 28,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 29,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "cn": 30,
+      "n": "Improved Specialist Mage Descriptions",
+      "wc": 30,
+      "no": "Improves the kit descriptions for specialist mage schools.",
+      "tp2n": "Improved Specialist Mage Descriptions"
+    },
+    {
+      "n": "Replace Berserker Kit with Battlerager for Dwarves",
+      "cn": 31,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "Replace Berserker Kit with Battlerager for Dwarves"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 100,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 200,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 300,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "Anomen Gains Helm Kit on Passing Knighthood Test",
+      "cn": 400,
+      "wf": "npckit",
+      "wp": "npckit\\NPCKIT.TP2",
+      "wc": 400,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Anomen Gains Helm Kit on Passing Knighthood Test"
+    },
+    {
+      "n": "Anomen Gains Berserker Kit on Failing Knighthood Test",
+      "cn": 410,
+      "wf": "npckit",
+      "wp": "npckit\\NPCKIT.TP2",
+      "wc": 410,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Anomen Gains Berserker Kit on Failing Knighthood Test"
+    },
+    {
+      "n": "Prevent CN Anomen Gaining a Holy Symbol",
+      "cn": 420,
+      "wf": "npckit",
+      "wp": "npckit\\NPCKIT.TP2",
+      "wc": 420,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Prevent CN Anomen Gaining a Holy Symbol"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 500,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 600,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 700,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 800,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "Add Red Wizard to Edwin's Kit Description",
+      "cn": 900,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "Add Red Wizard to Edwin's Kit Description"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1000,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1100,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1200,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1300,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "cn": 1400,
+      "n": "Give Imoen Adventurer Kit",
+      "wc": 1400,
+      "no": "Assigns the Adventurer thief kit to Imoen.",
+      "tp2n": "Give Imoen Adventurer Kit"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1410,
+      "n": "Imoen Specialist: Abjurer",
+      "wc": 1410,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "no": "Assigns Abjurer specialist mage kit to Imoen.",
+      "tp2n": "Abjurer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1411,
+      "n": "Imoen Specialist: Conjurer",
+      "wc": 1411,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Conjurer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1412,
+      "n": "Imoen Specialist: Diviner",
+      "wc": 1412,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Diviner"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1413,
+      "n": "Imoen Specialist: Enchanter",
+      "wc": 1413,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Enchanter"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1414,
+      "n": "Imoen Specialist: Illusionist",
+      "wc": 1414,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Illusionist"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1415,
+      "n": "Imoen Specialist: Invoker",
+      "wc": 1415,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Invoker"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1416,
+      "n": "Imoen Specialist: Necromancer",
+      "wc": 1416,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Necromancer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1417,
+      "n": "Imoen Specialist: Transmuter",
+      "wc": 1417,
+      "g": "imoen_spec",
+      "scn": "Give Imoen a Mage Kit",
+      "tp2n": "Transmuter"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1500,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1600,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1700,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1800,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 1900,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2000,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "Change Korgan's Kit to Battlerager",
+      "cn": 2100,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Change Korgan's Kit to Battlerager"
+    },
+    {
+      "n": "Give Mazzy a Proper Truesword of Arvoreen Kit",
+      "cn": 2200,
+      "wf": "npckit",
+      "wp": "npckit\\NPCKIT.TP2",
+      "wc": 2200,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Give Mazzy a Proper Truesword of Arvoreen Kit"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "cn": 2300,
+      "n": "Change Minsc's Title to Rashemaar Ranger",
+      "wc": 2300,
+      "no": "Renames Minsc's class title to Rashemaar Ranger.",
+      "tp2n": "Change Minsc's Title to Rashemaar Ranger"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2400,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2500,
+      "n": "Give Nalia Adventurer Kit",
+      "wc": 2500,
+      "no": "Assigns the Adventurer thief kit to Nalia.",
+      "tp2n": "Give Nalia Adventurer Kit"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2510,
+      "n": "Nalia Specialist: Abjurer",
+      "wc": 2510,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "no": "Assigns Abjurer specialist mage kit to Nalia.",
+      "tp2n": "Abjurer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2511,
+      "n": "Nalia Specialist: Conjurer",
+      "wc": 2511,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Conjurer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2512,
+      "n": "Nalia Specialist: Diviner",
+      "wc": 2512,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Diviner"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2513,
+      "n": "Nalia Specialist: Enchanter",
+      "wc": 2513,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Enchanter"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2514,
+      "n": "Nalia Specialist: Illusionist",
+      "wc": 2514,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Illusionist"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2515,
+      "n": "Nalia Specialist: Invoker",
+      "wc": 2515,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Invoker"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2516,
+      "n": "Nalia Specialist: Necromancer",
+      "wc": 2516,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Necromancer"
+    },
+    {
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 2517,
+      "n": "Nalia Specialist: Transmuter",
+      "wc": 2517,
+      "g": "nalia_spec",
+      "scn": "Give Nalia a Mage Kit",
+      "tp2n": "Transmuter"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2600,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2700,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "Give Sarevok a Proper Deathbringer Kit",
+      "cn": 2800,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Give Sarevok a Proper Deathbringer Kit"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 2900,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3000,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3100,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3200,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3300,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3400,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3500,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3600,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    },
+    {
+      "n": "NPC Kit Pack",
+      "cn": 3700,
+      "wf": "npckit",
+      "wp": "npckit\\npckit.tp2",
+      "wq": "verified",
+      "tp2n": "NPC Kit Pack"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "AllThingsMazzy",
+      "withId": 453,
+      "severity": "partial",
+      "reason": "Both may modify Mazzy's kit. ATM includes its own Mazzy changes.",
+      "myComps": "#2200 Give Mazzy a Proper Truesword of Arvoreen Kit",
+      "theirComps": "#0 All Things Mazzy",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "partial",
+      "reason": "FnP cleric/paladin kit changes may conflict with NPC Kit's kit assignments for Anomen and others.",
+      "myComps": "#0 NPC Kit assignments",
+      "theirComps": "#31 Cleric Kits #35 #36 Paladin Kits",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

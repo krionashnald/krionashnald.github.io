@@ -1,0 +1,60 @@
+{
+  "i": 655,
+  "t": "WL_SUMMONSFOW",
+  "sv": 1,
+  "pfx": "WL",
+  "ord": 390,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Summons Clear Fog of War",
+  "cl": [
+    {
+      "d": "2026-03-23",
+      "m": "Marked abandoned: Hidden by author Jan 2025: not supported, has unfixed issues"
+    },
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://www.nexusmods.com/baldursgate2ee/mods/81",
+  "a": "Allbrother",
+  "sum": "Allows summoned creatures to reveal the fog of war as they move, giving the player visibility through their summons' line of sight.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.nexusmods.com/baldursgate2ee/mods/81",
+  "no": "Allows summoned creatures to reveal the fog of war as they move, giving the player visibility through their summons' line of sight.",
+  "au": "wisp",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Summons and charmed creatures clear fog of war",
+      "cn": 0,
+      "wf": "WL_SUMMONSFOW",
+      "wp": "WL_SUMMONSFOW\\WL_SUMMONSFOW.TP2",
+      "wc": 0
+    },
+    {
+      "n": "Summons (but NOT charmed creatures) follow through area changes.",
+      "cn": 1,
+      "wf": "WL_SUMMONSFOW",
+      "wp": "WL_SUMMONSFOW\\WL_SUMMONSFOW.TP2",
+      "wc": 1
+    },
+    {
+      "n": "Everyone (including summons) triggers traps",
+      "cn": 2,
+      "wf": "WL_SUMMONSFOW",
+      "wp": "WL_SUMMONSFOW\\WL_SUMMONSFOW.TP2",
+      "wc": 2
+    }
+  ]
+}

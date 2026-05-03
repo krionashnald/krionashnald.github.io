@@ -1,0 +1,403 @@
+{
+  "i": 805,
+  "t": "HighPower",
+  "sv": 1,
+  "ord": 600,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "High Power Baldur's Gate",
+  "u": "https://github.com/OlvynChuru/High-Power-Baldurs-Gate",
+  "a": "Olvyn Churu",
+  "sum": "This mod aims to renew the experience of the first opus in the BG saga. It gives new abilities to party members, as well as to most of the game's other creatures.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "OlvynChuru",
+  "dl": "https://github.com/OlvynChuru/High-Power-Baldurs-Gate",
+  "no": "Major overhaul giving new abilities to party members and most creatures. Requires EEex for main component (cn:0) and some optional components. 9 DEPRECATED components still in tp2. Has FORBID_COMPONENT on cdtweaks cn:3280. English only.",
+  "dependencies": [
+    {
+      "requires": "eeex",
+      "requiresId": 20,
+      "type": "hard",
+      "reason": "Main component (cn:0) and cn:4296/4680 require EEex.",
+      "myComps": "#0, #4296, #4680"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "cn:512 has FORBID_COMPONENT on cdtweaks cn:3280. Cannot install both.",
+      "myComps": "#512",
+      "theirComps": "#3280",
+      "source": "tp2 FORBID_COMPONENT setup-cdtweaks.tp2 cn:3280, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "High Power Baldur's Gate",
+      "cn": 0,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Patching scrolls...",
+      "cn": 128,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 128,
+      "wq": "verified"
+    },
+    {
+      "n": "Allow the damage from multiple Writhing Fog spells to stack",
+      "cn": 256,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 256,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the Friends spell set Charisma to 20 rather than increase it",
+      "cn": 384,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 384,
+      "wq": "verified"
+    },
+    {
+      "n": "Adjust charisma-based store discounts",
+      "cn": 512,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 512,
+      "wq": "verified"
+    },
+    {
+      "n": "Resistance Lowered",
+      "cn": 640,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 640,
+      "wq": "verified",
+      "g": "Remove helmet animations"
+    },
+    {
+      "n": "Make all helmets invisible",
+      "cn": 768,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 768,
+      "wq": "verified",
+      "g": "Remove helmet animations"
+    },
+    {
+      "n": "Set chance to learn spells to a minimum of 99%",
+      "cn": 896,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 896,
+      "wq": "verified",
+      "g": "Increase chance to learn spells"
+    },
+    {
+      "n": "Set chance to learn spells to 150%",
+      "cn": 1024,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1024,
+      "wq": "verified",
+      "g": "Increase chance to learn spells"
+    },
+    {
+      "n": "Let non-warrior Constitution HP bonuses continue past 16 Constitution",
+      "cn": 1088,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1088,
+      "wq": "verified"
+    },
+    {
+      "n": "Ankheg Culling\nAnkhegs are tough to kill, but Gerde's staff is a welcome reward.",
+      "cn": 1120,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1120,
+      "wq": "verified"
+    },
+    {
+      "n": "So, you have proved yourself to be of some use after all. As I told you, Gervisse was a dirty old man and this city is safer without him. Here, allow me to give this ring as a... thank you for services rendered.",
+      "cn": 1152,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1152,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove the limit of two proficiency points in a weapon at character creation",
+      "cn": 1280,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1280,
+      "wq": "verified"
+    },
+    {
+      "n": "Increase the rate at which warriors and bards get proficiency points",
+      "cn": 1408,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1408,
+      "wq": "verified"
+    },
+    {
+      "n": "Swashbucklers get extra attacks from proficiencies",
+      "cn": 1536,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1536,
+      "wq": "verified",
+      "g": "Give proficiency-based extra attacks per round to non-warriors"
+    },
+    {
+      "n": "All characters get extra attacks from proficiencies",
+      "cn": 1664,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1664,
+      "wq": "verified",
+      "g": "Give proficiency-based extra attacks per round to non-warriors"
+    },
+    {
+      "n": "Make Assassin backstab multiplier increase faster",
+      "cn": 1992,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 1992,
+      "wq": "verified"
+    },
+    {
+      "n": "SHAPESHIFTER: This Druid is not called Shapeshifter because <PRO_HESHE> has access to a great variety of forms, but rather because of <PRO_HISHER> complete dedication to a single alternate form. This Druid has willingly allowed <PRO_HIMHER>self to become infected with lycanthropy, but due to intense study and training <PRO_HESHE> has the ability to control <PRO_HISHER> affliction. The creature <PRO_HESHE> becomes is that of the werewolf, the most famous of the lycanthrope shape changers.\n\nAdvantages:\n- May shapeshift into the form of a werewolf once per day. Gains one use at level 1 and an additional use every 2 levels thereafter.\n- 10th level: May shapeshift into a greater werewolf once per day.\n\nDisadvantages:\n- May not wear any armor.\n- No other shapeshifting abilities due to the effort required in maintaining balance in <PRO_HISHER> primary forms.\n\nA Shapeshifter player character can use the following innate abilities:\n- Cure Minor Wounds at will\n- Protection from the Elements 2x per day\n- Regeneration 2x per day\n- Protection from Non-Silver Weapons 1x per day\n\nA Shapeshifter player character also gains the following passive effects:\n- Every second, the druid regains 1 Hit Point, in addition to any other regeneration <PRO_HESHE> has.",
+      "cn": 2120,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2120,
+      "wq": "verified"
+    },
+    {
+      "n": "A Seer Druid player character can use the following innate abilities:\n- Far Cast at will\n- Farsight at will\n- Extend Vision 3x per day\n- True Strike 3x per day\n- Clairvoyance 3x per day\n- Call Seer's Voice 1x per day\n\nA Seer Druid player character also gains the following passive effects:\n- The druid's visual range is increased.",
+      "cn": 2248,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2248,
+      "wq": "verified"
+    },
+    {
+      "n": "Improve Stalkers",
+      "cn": 2376,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2376,
+      "wq": "verified"
+    },
+    {
+      "n": "Improve Beast Masters",
+      "cn": 2504,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2504,
+      "wq": "verified"
+    },
+    {
+      "n": "Improve Shapeshifters",
+      "cn": 2632,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2632,
+      "wq": "verified"
+    },
+    {
+      "n": "Giant Spider\nSpiders are aggressive predators, dwelling both above and below ground. Most are poisonous and bite prey before devouring them because unconscious victims are easier to carry to a lair.\n\nSpiders have eight legs and eight eyes. They usually fit into two categories: web-spinners, which have bulbous abdomens and thin, sleek legs; and hunting spiders, which have smaller bodies, larger heads and fangs, and hairy bodies and legs.\n\nMost giant spiders are simply much bigger versions of the web-spinning large spiders. Though one kind of giant spider, the sword spider, is a much larger and much faster version of the hunting spider. Giant spiders have an additional ability that smaller spiders do not: each bite from a giant spider summons a smaller spider.",
+      "cn": 2760,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2760,
+      "wq": "verified"
+    },
+    {
+      "n": "Improve Monks",
+      "cn": 2888,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 2888,
+      "wq": "verified"
+    },
+    {
+      "n": "Make rangers and paladins get spells slightly quicker",
+      "cn": 3016,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3016,
+      "wq": "verified"
+    },
+    {
+      "n": "Let them wear gauntlets",
+      "cn": 3144,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3144,
+      "wq": "verified",
+      "g": "Allow Kensai to wear gloves"
+    },
+    {
+      "n": "Let them wear gauntlets and bracers",
+      "cn": 3272,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3272,
+      "wq": "verified",
+      "g": "Allow Kensai to wear gloves"
+    },
+    {
+      "n": "For sale in Sorcerous Sundries; it holds up to 100 items",
+      "cn": 3400,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3400,
+      "wq": "verified",
+      "g": "Put a Bag of Holding in the game"
+    },
+    {
+      "n": "For sale in Sorcerous Sundries; it holds up to 65535 items",
+      "cn": 3528,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3528,
+      "wq": "verified",
+      "g": "Put a Bag of Holding in the game"
+    },
+    {
+      "n": "For sale cheaply in Candlekeep Inn; it holds up to 100 items",
+      "cn": 3656,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3656,
+      "wq": "verified",
+      "g": "Put a Bag of Holding in the game"
+    },
+    {
+      "n": "For sale cheaply in Candlekeep Inn; it holds up to 65535 items",
+      "cn": 3784,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3784,
+      "wq": "verified",
+      "g": "Put a Bag of Holding in the game"
+    },
+    {
+      "n": "Remove it",
+      "cn": 3848,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3848,
+      "wq": "verified",
+      "g": "Change the summoning limit"
+    },
+    {
+      "n": "Set it to a value of your choice",
+      "cn": 3852,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3852,
+      "wq": "verified",
+      "g": "Change the summoning limit"
+    },
+    {
+      "n": "Raise the experience cap",
+      "cn": 3912,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 3912,
+      "wq": "verified"
+    },
+    {
+      "n": "Have all player-created characters start with some experience at the beginning of the game",
+      "cn": 4040,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4040,
+      "wq": "verified"
+    },
+    {
+      "n": "Move Quayle to be accessible near the beginning of the game",
+      "cn": 4168,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4168,
+      "wq": "verified"
+    },
+    {
+      "n": "Move Eldoth to be accessible near the beginning of the game",
+      "cn": 4200,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4200,
+      "wq": "verified"
+    },
+    {
+      "n": "Move Tiax to be accessible near the beginning of the game",
+      "cn": 4232,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4232,
+      "wq": "verified"
+    },
+    {
+      "n": "Allow bard songs to stack",
+      "cn": 4296,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4296,
+      "wq": "verified"
+    },
+    {
+      "n": "Revise Wisdom bonus spell table",
+      "cn": 4424,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4424,
+      "wq": "verified"
+    },
+    {
+      "n": "Allow Arkanis, Deder, Osprey, Mordaine, and Canderous to be taken outside of Candlekeep",
+      "cn": 4552,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4552,
+      "wq": "verified"
+    },
+    {
+      "n": "Add the Detect Magic spell",
+      "cn": 4680,
+      "wf": "HighPower",
+      "wp": "HighPower\\HighPower.tp2",
+      "wc": 4680,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "OlvynChuru",
+    "r": "High-Power-Baldurs-Gate"
+  }
+}

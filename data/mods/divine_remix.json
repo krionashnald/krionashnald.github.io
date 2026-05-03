@@ -1,0 +1,2740 @@
+{
+  "i": 338,
+  "t": "divine_remix",
+  "sv": 1,
+  "pfx": "A#",
+  "ord": 210,
+  "c": "KIT & CLASS MODS",
+  "n": "Divine Remix",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "cs": 3
+  },
+  "ss": 1,
+  "no": "Divine Remix by Andyr/CamDawg. AD&D sphere-based divine magic overhaul with deity-specific kits. MAJOR CONFLICTS with Faiths & Powers (sphere system overlap) and Talents of Faerun (divine revisions). All three rewrite cleric/druid spell access. Choose ONE divine overhaul system. Not . Individual kits add 1 slot each (10 cleric + 5 druid/ranger = 15 kit slots if all installed).",
+  "ic": "spell revisions",
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "hard",
+      "reason": "Spell Revisions and Divine Remix are incompatible",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "hard",
+      "reason": "Both overhaul divine spell spheres. FnP sphere system is incompatible with Divine Remix sphere assignments.",
+      "myComps": "#0 Druid Remix #1000 Cleric Remix",
+      "theirComps": "#80 Sphere System #31 Cleric Kits #33 Druid Kits",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Choose one \"add Priest (or Battleguard) of Tempus kit\"",
+      "myComps": "#109",
+      "theirComps": "#4000",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Alter Druid spell progression",
+      "myComps": "#0 Druid Remix #1000 Cleric Remix",
+      "theirComps": "#2290, #2291, #2292, #2293, #2294, #2295, #2296; #2280, #2281",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "hard",
+      "reason": "Both change Viconia's class/kit. Choose one method.",
+      "myComps": "#610",
+      "theirComps": "#0, #1, #2, #3, #4, #10, #11, #12, #13, #14, #15",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Choose class/kit for Branwen",
+      "myComps": "#600",
+      "theirComps": "#2000 NPC Customization",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both modify cleric/druid speciality priests and spell tables",
+      "theirComps": "#40610 Druid cleric tables #40650 Speciality priests #50400 New priest gods"
+    },
+    {
+      "with": "DeitiesOfFaerun",
+      "withId": 688,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 314 vs 297)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Install-order supersession: if Divine Remix #605 is installed first, cdtweaks #4050 auto-skips via !MOD_IS_INSTALLED predicate. The tp2 comment reads 'exact same thing from DR'.",
+      "myComps": "#605",
+      "theirComps": "#4050",
+      "source": "Audit 2026-04: mirror of cdtweaks predicate",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "eet",
+      "requiresId": 12,
+      "type": "hard",
+      "reason": "Branwen class/kit for BG1"
+    },
+    {
+      "requires": "branwen",
+      "requiresId": 456,
+      "type": "soft",
+      "reason": "Branwen class/kit for BG1"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDR01",
+          "priest",
+          1,
+          "Abjuration",
+          "Favor of the God",
+          "Deity-flavored protection spell.",
+          [
+            "protection",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDR02",
+          "priest",
+          2,
+          "Evocation",
+          "Spiritual Weapon",
+          "Deity's favored weapon manifests.",
+          [
+            "summoning",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDR03",
+          "priest",
+          3,
+          "Divination",
+          "Augury",
+          "Divine guidance about near-future actions.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURDR04",
+          "priest",
+          4,
+          "Abjuration",
+          "Divine Shell",
+          "Protective shell of divine energy.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "YOURDR05",
+          "priest",
+          5,
+          "Evocation",
+          "Flame of Faith",
+          "Holy fire damages enemies of the faith.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDR06",
+          "priest",
+          6,
+          "Conjuration",
+          "Planar Ally",
+          "Summons an extraplanar servant.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURDR07",
+          "priest",
+          7,
+          "Evocation",
+          "Holy Aura",
+          "Divine aura protects and empowers allies.",
+          [
+            "combat"
+          ]
+        ]
+      ]
+    },
+    "1": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDR01",
+          "priest",
+          1,
+          "Abjuration",
+          "Favor of the God",
+          "Deity-flavored protection spell.",
+          [
+            "protection",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDR02",
+          "priest",
+          2,
+          "Evocation",
+          "Spiritual Weapon",
+          "Deity's favored weapon manifests.",
+          [
+            "summoning",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDR03",
+          "priest",
+          3,
+          "Divination",
+          "Augury",
+          "Divine guidance about near-future actions.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURDR04",
+          "priest",
+          4,
+          "Abjuration",
+          "Divine Shell",
+          "Protective shell of divine energy.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "YOURDR05",
+          "priest",
+          5,
+          "Evocation",
+          "Flame of Faith",
+          "Holy fire damages enemies of the faith.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDR06",
+          "priest",
+          6,
+          "Conjuration",
+          "Planar Ally",
+          "Summons an extraplanar servant.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURDR07",
+          "priest",
+          7,
+          "Evocation",
+          "Holy Aura",
+          "Divine aura protects and empowers allies.",
+          [
+            "combat"
+          ]
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "3": {
+      "DR_SILVERSTAR": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Animal, Astral, Numbers, Sun, Travelers, Weather (major). Loses Creation, Protection."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Free Action",
+            "freq": "1/day per 5 levels",
+            "effects": "Free Action spell.",
+            "level": 1
+          },
+          {
+            "n": "Moon Shield",
+            "freq": "1/day per 10 levels",
+            "effects": "Sets MR to 2%/level.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "CG, NG, CN only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Animal, Astral, Numbers, Sun, Travelers, Weather (major)",
+          "lostSpheres": "Creation, Protection"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "4": {
+      "DR_NIGHTCLOAK": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Astral, Thoughts, Time (major). Healing/Creation downgraded to minor. Loses Summoning."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Confusion",
+            "freq": "1/day per 5 levels",
+            "effects": "Confusion spell.",
+            "level": 1
+          },
+          {
+            "n": "Dark Bolt",
+            "freq": "1/day per 10 levels",
+            "effects": "Thrown chakrams: 2d4 cold, silence + hold undead on failed save.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "NE, LE, CE, TN only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Thoughts, Time (major)",
+          "lostSpheres": "Summoning"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "5": {
+      "DR_STRATEGIST": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Law, Travelers, War (major). Loses Healing, Summoning."
+          },
+          {
+            "n": "APR Bonus",
+            "type": "desc",
+            "desc": "Extra melee attack/round at lv13"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Haste",
+            "freq": "1/day per 5 levels",
+            "effects": "Haste spell.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "LG, LN, LE only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Law, Travelers, War (major)",
+          "lostSpheres": "Healing, Summoning"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "6": {
+      "DR_BATTLEGUARD": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Animal, Chaos, all Elemental, War, Weather (major). All downgraded to minor. Loses Charm, Creation."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Holy Power",
+            "freq": "1/day per 5 levels",
+            "effects": "Holy Power spell.",
+            "level": 1
+          },
+          {
+            "n": "Rage",
+            "freq": "1/day per 10 levels",
+            "effects": "+2 att/dam/AC, immunities, +15 temp HP, 1 turn.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "CN, CG, TN, CE only",
+          "ranged": false,
+          "items": "Can specialize (2 pips) in any cleric melee weapon."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Animal, Chaos, all Elemental, War, Weather (major)",
+          "lostSpheres": "Charm, Creation"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "7": {
+      "DR_PAINBEARER": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Law, Travelers (major). Loses Creation, Divination."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Lay on Hands",
+            "freq": "1/day per 5 levels",
+            "effects": "Healing touch.",
+            "level": 1
+          },
+          {
+            "n": "Ilmater's Endurance",
+            "freq": "1/day per 10 levels",
+            "effects": "+2 saves, double HP, immune panic/disease/knockback, 1 round/level.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "LG, NG, LN only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Law, Travelers (major)",
+          "lostSpheres": "Creation, Divination"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "8": {
+      "DR_FIREWALKER": {
+        "passive": [
+          {
+            "n": "Fire Resistance",
+            "type": "desc",
+            "desc": "+2% fire resistance per level"
+          },
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Elemental Fire, Sun, Summoning (major). Very narrow: loses All, Charm, Creation, Guardian, Necromantic."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Sunfire",
+            "freq": "1/day per 5 levels",
+            "effects": "Sunfire spell.",
+            "level": 1
+          }
+        ],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Elemental Fire, Sun, Summoning (major)",
+          "lostSpheres": "All, Charm, Creation, Guardian, Necromantic"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "9": {
+      "DR_AUTHLIM": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "fear"
+            ],
+            "desc": "Immune to Fear"
+          },
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains all Elemental, War, Thoughts, Summoning (major). Loses Charm. Healing downgraded."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Greater Malison",
+            "freq": "1/day per 5 levels",
+            "effects": "Greater Malison spell.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "LE, LN, NE only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "all Elemental, War, Thoughts, Summoning (major)",
+          "lostSpheres": "Charm"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "10": {
+      "DR_LOREKEEPER": {
+        "passive": [
+          {
+            "n": "Lore",
+            "type": "desc",
+            "desc": "10 lore/level (vs normal ~3)"
+          },
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Astral, all Elemental, Thoughts, Travelers (major). Broad access."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Secret Word",
+            "freq": "1/day per 5 levels",
+            "effects": "Removes one spell protection from target.",
+            "level": 1
+          }
+        ],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, all Elemental, Thoughts, Travelers (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "11": {
+      "DR_HEARTWARDER": {
+        "passive": [
+          {
+            "n": "Charisma",
+            "type": "desc",
+            "desc": "+1 max Charisma"
+          },
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Astral, Creation, Thoughts, Time, Sun (major)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Emotion: Hopelessness",
+            "freq": "1/day per 5 levels",
+            "effects": "Emotion: Hopelessness spell.",
+            "level": 1
+          },
+          {
+            "n": "Veil of Djalice",
+            "freq": "1/day per 10 levels",
+            "effects": "CHA 20, dire charm hostiles, save vs spell -2.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "NG, CG, CN only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Creation, Thoughts, Time, Sun (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "12": {
+      "DR_FEYWARDEN": {
+        "passive": [
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+1 save vs death"
+          },
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Astral, Creation, War, Wards, Sun (major). Very broad."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Spell Immunity",
+            "freq": "1/day per 5 levels",
+            "effects": "Spell Immunity spell.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Elf/half-elf only",
+          "alignment": "CG, NG, CN only",
+          "items": "Can place 2 pips in weapons and max in fighting styles."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Creation, War, Wards, Sun (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "13": {
+      "STRIFELEADER_OF_CYRIC": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Gains Astral, Sun, Time, War, Weather (major). Loses Creation."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Poison Weapon",
+            "freq": "1/day per 5 levels",
+            "effects": "Next hit poisons target.",
+            "level": 1
+          },
+          {
+            "n": "Dread Blast",
+            "freq": "1/day per 10 levels",
+            "effects": "4d8 negative energy +1/level, confuses 1 round, save -2.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "CN or any evil"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Sun, Time, War, Weather (major)",
+          "lostSpheres": "Creation"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "16": {
+      "DR_OOZEMASTER": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Stripped to All, Elemental, Healing, Sun, Weather. Lost Animal, Plant."
+          },
+          {
+            "n": "CHA Penalty",
+            "type": "desc",
+            "desc": "-1 CHA at levels 1, 5, 7, 9, 11, 15"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Paralytic Touch",
+            "freq": "1/day per 5 levels",
+            "effects": "Ghoul Touch.",
+            "level": 1
+          },
+          {
+            "n": "Jelly Shapeshift",
+            "freq": "3/day",
+            "effects": "Shapeshift Mustard Jelly.",
+            "level": 7
+          }
+        ],
+        "restrictions": {
+          "items": "No standard druid shapeshifting. Immune to poison (lv5), acid (lv9), disease (lv11), blind/sleep/paralysis/stun (lv15)."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": -1,
+          "note": "Innate stat modifiers: -1 CHA"
+        },
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "lostSpheres": "Animal, Plant",
+          "spheres": "Stripped to All, Elemental, Healing, Sun, Weather"
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        }
+      },
+      "DR_BOWSLINGER": {
+        "passive": [
+          {
+            "n": "Ranged Bonus",
+            "type": "desc",
+            "desc": "+1 THAC0/damage with missiles per 3 levels. 4 pips in bows."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Steady Shot",
+            "freq": "1/day per 4 levels",
+            "effects": "+1 THAC0/dam per 4 levels for 20 sec.",
+            "level": 1
+          },
+          {
+            "n": "Speed Shot",
+            "freq": "1/day per 8 levels",
+            "effects": "+1 APR for 5 rounds.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Elf/half-elf only",
+          "armor": "leather/studded/hide only",
+          "items": "No Charm Animal. -1 melee damage. Only 1 pip in melee."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "DR_FERALAN": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+5% stealth"
+          },
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 5,
+            "value": 1,
+            "desc": "+1 AC per 5 levels"
+          },
+          {
+            "n": "CHA Penalty",
+            "type": "desc",
+            "desc": "-2 max CHA"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Feral Rage",
+            "freq": "1/day per 10 levels",
+            "effects": "+2 att/dam/AC, immunities, +15 HP, 1 turn. Winded after.",
+            "level": 1
+          },
+          {
+            "n": "Call of the Wild",
+            "freq": "1/day",
+            "effects": "Summon animal companion (scales).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "items": "Only 1 pip in select weapons."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "DR_FOREST_RUNNER": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+5% stealth. 3 pips in longbows, staves, longswords, daggers."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Inspire",
+            "freq": "1/day per 6 levels",
+            "effects": "Boosts morale and attack rolls for 3 rounds.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather/studded/hide only",
+          "items": "Only 1 pip in axes, 2H swords, warhammers, crossbows."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "DR_JUSTIFIER": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+10% stealth"
+          },
+          {
+            "n": "Combat Bonus",
+            "type": "desc",
+            "desc": "+1 THAC0 and +1 speed factor per 10 levels"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Innate Spells",
+            "freq": "tiered",
+            "effects": "CLW + Armour of Faith (lv8), Luck + Remove Fear (lv10), Draw Upon Holy Might (lv12).",
+            "level": 8
+          }
+        ],
+        "restrictions": {
+          "alignment": "Lawful Good only",
+          "noSpells": true,
+          "items": "No Charm Animal. Minimal spellcasting."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "17": {
+      "BOWSLINGER": {
+        "passive": [
+          {
+            "n": "Same as DR_BOWSLINGER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "note": "Ranger spellcasting. Archery-focused ranger kit."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "alias": "DR_BOWSLINGER",
+          "note": "Alias for DR_BOWSLINGER. Standard ranger HLA pool with missile focus."
+        }
+      }
+    },
+    "18": {
+      "FERALAN": {
+        "passive": [
+          {
+            "n": "Same as DR_FERALAN",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "note": "Ranger spellcasting. Feral-themed ranger kit."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "alias": "DR_FERALAN",
+          "note": "Alias for DR_FERALAN. Standard ranger HLA pool with feral rage."
+        }
+      }
+    },
+    "19": {
+      "FOREST_RUNNER": {
+        "passive": [
+          {
+            "n": "Same as DR_FOREST_RUNNER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "JUSTIFIER": {
+        "passive": [
+          {
+            "n": "Same as DR_JUSTIFIER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "noSpells": true,
+          "note": "Alias: limited innate divine spells only."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "alias": "DR_JUSTIFIER",
+          "note": "Alias for DR_JUSTIFIER. Ranger HLA pool."
+        }
+      }
+    },
+    "20": {
+      "SILVERSTAR_OF_SELUNE": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_SILVERSTAR."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Animal, Astral, Numbers, Sun, Travelers, Weather (major)",
+          "lostSpheres": "Creation, Protection"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "NIGHTCLOAK_OF_SHAR": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_NIGHTCLOAK."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Thoughts, Time (major)",
+          "lostSpheres": "Summoning"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "HOLY_STRATEGIST_OF_THE_RED_KNIGHT": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_STRATEGIST."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Law, Travelers, War (major)",
+          "lostSpheres": "Healing, Summoning"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "BATTLEGUARD_OF_TEMPUS": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_BATTLEGUARD."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Animal, Chaos, all Elemental, War, Weather (major)",
+          "lostSpheres": "Charm, Creation"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "PAINBEARER_OF_ILMATER": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_PAINBEARER."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Law, Travelers (major)",
+          "lostSpheres": "Creation, Divination"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FIREWALKER_OF_KOSSUTH": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_FIREWALKER."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Elemental Fire, Sun, Summoning (major)",
+          "lostSpheres": "All, Charm, Creation, Guardian, Necromantic"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "AUTHLIM_OF_IYACHTU_XVIM": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_AUTHLIM."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "all Elemental, War, Thoughts, Summoning (major)",
+          "lostSpheres": "Charm"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "LOREKEEPER_OF_OGHMA": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_LOREKEEPER."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, all Elemental, Thoughts, Travelers (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "HEARTWARDER_OF_SUNE": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_HEARTWARDER."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Creation, Thoughts, Time, Sun (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FEYWARDEN_OF_CORELLON": {
+        "passive": [
+          {
+            "n": "Spheres",
+            "type": "desc",
+            "desc": "Same as DR_FEYWARDEN."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "gainedSpheres": "Astral, Creation, War, Wards, Sun (major)"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "21": {
+      "OOZEMASTER_DRUID": {
+        "passive": [
+          {
+            "n": "Same as DR_OOZEMASTER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "lostSpheres": "Animal, Plant",
+          "spheres": "Stripped to All, Elemental, Healing, Sun, Weather"
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "BOWSLINGER_RANGER": {
+        "passive": [
+          {
+            "n": "Same as DR_BOWSLINGER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FERALAN_RANGER": {
+        "passive": [
+          {
+            "n": "Same as DR_FERALAN",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FOREST_RUNNER": {
+        "passive": [
+          {
+            "n": "Same as DR_FOREST_RUNNER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "JUSTIFIER": {
+        "passive": [
+          {
+            "n": "Same as DR_JUSTIFIER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "Divine Remix",
+          "noSpells": true,
+          "note": "Alias: limited innate divine spells only."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "alias": "DR_JUSTIFIER",
+          "note": "Alias for DR_JUSTIFIER. Ranger HLA pool."
+        }
+      },
+      "JUSTIFIER_RANGER": {
+        "passive": [
+          {
+            "n": "Same as DR_JUSTIFIER",
+            "type": "desc",
+            "desc": "Alternate component version."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "WILDERNESS_RUNNER": {
+        "passive": [
+          {
+            "n": "Wilderness Runner",
+            "type": "desc",
+            "desc": "+10% fire/cold resistance. 3 pips in longbows/staves. Enhanced Charm Animal (AoE, double duration). Can set snares."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf only",
+          "armor": "studded leather max",
+          "items": "-2 CHA."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": -2,
+          "note": "Innate stat modifiers: -2 CHA"
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Uses standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Spell access details in passive description."
+        }
+      }
+    },
+    "22": {
+      "DR_WILDERNESS_RUNNER": {
+        "passive": [
+          {
+            "n": "Same as WILDERNESS_RUNNER",
+            "type": "desc",
+            "desc": "+10% fire/cold resistance. Enhanced Charm Animal. Can set snares. Elf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    }
+  },
+  "kits": {
+    "3": {
+      "new": [
+        [
+          "DR_SILVERSTAR",
+          "cleric",
+          "Silverstar of Selune",
+          "Cleric of the Moonmaiden. Lunar magic, protection against lycanthropes and shapeshifters."
+        ],
+        [
+          "DR_NIGHTCLOAK",
+          "cleric",
+          "Nightcloak of Shar",
+          "Cleric of the Mistress of the Night. Shadow and darkness divine magic."
+        ],
+        [
+          "DR_STRATEGIST",
+          "cleric",
+          "Holy Strategist of the Red Knight",
+          "Cleric of the goddess of strategy. Tactical buffs and battlefield control."
+        ],
+        [
+          "DR_BATTLEGUARD",
+          "cleric",
+          "Battleguard of Tempus",
+          "Elite warrior-priest of the war god. Enhanced combat and war domain magic."
+        ],
+        [
+          "DR_PAINBEARER",
+          "cleric",
+          "Painbearer of Ilmater",
+          "Cleric of the Crying God. Absorbs pain of allies, enhanced healing."
+        ],
+        [
+          "DR_FIREWALKER",
+          "cleric",
+          "Firewalker of Kossuth",
+          "Cleric of the Firelord. Fire immunity and flame divine magic."
+        ],
+        [
+          "DR_AUTHLIM",
+          "cleric",
+          "Authlim of Iyachtu Xvim",
+          "Cleric of the Son of Bane. Dark commanding presence and fear magic."
+        ],
+        [
+          "DR_LOREKEEPER",
+          "cleric",
+          "Lorekeeper of Oghma",
+          "Knowledge priest of the god of invention. Enhanced lore, identification, and divination."
+        ],
+        [
+          "DR_HEARTWARDER",
+          "cleric",
+          "Heartwarder of Sune",
+          "Cleric of Firehair. Charm and beauty divine magic."
+        ],
+        [
+          "DR_FEYWARDEN",
+          "cleric",
+          "Feywarden of Corellon",
+          "Cleric of the elven Creator. Elven grace with divine nature magic."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "SILVERSTAR_OF_SELUNE",
+          "cleric",
+          "Silverstar of Selune",
+          "Cleric of the Moonmaiden. Lunar magic, protection against lycanthropes and shapeshifters."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "NIGHTCLOAK_OF_SHAR",
+          "cleric",
+          "Nightcloak of Shar",
+          "Cleric of the Mistress of the Night. Shadow and darkness divine magic."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "HOLY_STRATEGIST_OF_THE_RED_KNIGHT",
+          "cleric",
+          "Holy Strategist of the Red Knight",
+          "Cleric of the goddess of strategy. Tactical buffs and battlefield control."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "BATTLEGUARD_OF_TEMPUS",
+          "cleric",
+          "Battleguard of Tempus",
+          "Elite warrior-priest of the war god. Enhanced combat and war domain magic."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "PAINBEARER_OF_ILMATER",
+          "cleric",
+          "Painbearer of Ilmater",
+          "Cleric of the Crying God. Absorbs pain of allies, enhanced healing."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "FIREWALKER_OF_KOSSUTH",
+          "cleric",
+          "Firewalker of Kossuth",
+          "Cleric of the Firelord. Fire immunity and flame divine magic."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "AUTHLIM_OF_IYACHTU_XVIM",
+          "cleric",
+          "Authlim of Iyachtu Xvim",
+          "Cleric of the Son of Bane. Dark commanding presence and fear magic."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "LOREKEEPER_OF_OGHMA",
+          "cleric",
+          "Lorekeeper of Oghma",
+          "Knowledge priest of the god of invention. Enhanced lore, identification, and divination."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "HEARTWARDER_OF_SUNE",
+          "cleric",
+          "Heartwarder of Sune",
+          "Cleric of Firehair. Charm and beauty divine magic."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "FEYWARDEN_OF_CORELLON",
+          "cleric",
+          "Feywarden of Corellon",
+          "Cleric of the elven Creator. Elven grace with divine nature magic."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "STRIFELEADER_OF_CYRIC",
+          "cleric",
+          "Strifeleader of Cyric",
+          "Cleric of the Prince of Lies. Deception and conflict divine magic."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "DR_OOZEMASTER",
+          "druid",
+          "Oozemaster",
+          "Druid who studies oozes and slimes. Ooze summoning and acid resistance."
+        ],
+        [
+          "DR_BOWSLINGER",
+          "ranger",
+          "Bowslinger",
+          "Ranger variant with sling proficiency. Enhanced ranged combat with slings."
+        ],
+        [
+          "DR_FERALAN",
+          "ranger",
+          "Feralan",
+          "Wild ranger raised by animals. Feral combat style, enhanced animal empathy."
+        ],
+        [
+          "DR_FOREST_RUNNER",
+          "ranger",
+          "Forest Runner",
+          "Swift ranger excelling at woodland pursuit. Enhanced speed and tracking."
+        ],
+        [
+          "DR_JUSTIFIER",
+          "ranger",
+          "Justifier",
+          "Ranger dedicated to opposing planar creatures. Extra-planar hunting abilities."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "OOZEMASTER_DRUID",
+          "druid",
+          "Oozemaster",
+          "Druid who studies oozes and slimes. Ooze summoning and acid resistance."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "BOWSLINGER_RANGER",
+          "ranger",
+          "Bowslinger",
+          "Ranger variant with sling proficiency. Enhanced ranged combat with slings."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "FERALAN_RANGER",
+          "ranger",
+          "Feralan",
+          "Wild ranger raised by animals. Feral combat style, enhanced animal empathy."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "FOREST_RUNNER",
+          "ranger",
+          "Forest Runner",
+          "Swift ranger excelling at woodland pursuit. Enhanced speed and tracking."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "JUSTIFIER_RANGER",
+          "ranger",
+          "Justifier",
+          "Ranger dedicated to opposing planar creatures. Extra-planar hunting abilities."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "DR_WILDERNESS_RUNNER",
+          "ranger",
+          "Wilderness Runner",
+          "Swift ranger excelling at woodland pursuit. Enhanced speed and tracking."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Divine_Remix/releases",
+  "a": "Andyr, CamDawg, NiGHTMARE",
+  "v": "v9_Test_Build_2",
+  "sum": "Overhauls divine spellcasting with 24 components: new priest kits, revised spell spheres, and deity-specific spell access based on AD&D rules.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Divine_Remix"
+  },
+  "dl": "https://github.com/Gibberlings3/Divine_Remix/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Overwrite spells from other mods",
+      "cn": 10,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "k": 0,
+      "sp": 2,
+      "spLv": {
+        "p7": 2
+      },
+      "g": "dr_spell_mode",
+      "scn": "Install new spells",
+      "grn": "Cleric Remix Components",
+      "no": "Overwrite spells from other mods with DR's versions. Choose one: this or cn:11. More aggressive — replaces existing spell files.",
+      "tp2n": "Overwrite spells from other mods"
+    },
+    {
+      "n": "Only add spells if not present from other mods",
+      "cn": 11,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "sp": 2,
+      "spLv": {
+        "p7": 2
+      },
+      "g": "dr_spell_mode",
+      "scn": "Install new spells",
+      "grn": "Cleric Remix Components",
+      "no": "Only add DR spells if not already present from other mods. Choose one: this or cn:10. Safer — respects existing spell mods like IWDification/MiH SP.",
+      "tp2n": "Only add spells if not present from other mods"
+    },
+    {
+      "n": "Remove Only Mod Kits",
+      "cn": 50,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove Only Mod Kits",
+      "pi": "cd_dr_remove_cleric_kits_mod",
+      "scn": "Remove Cleric Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove All Kits",
+      "cn": 51,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove All Kits",
+      "pi": "cd_dr_remove_cleric_kits_all",
+      "scn": "Remove Cleric Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove Only Mod Kits",
+      "cn": 52,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove Only Mod Kits",
+      "pi": "cd_dr_remove_druid_kits_mod",
+      "scn": "Remove Druid Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove All Kits",
+      "cn": 53,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove All Kits",
+      "pi": "cd_dr_remove_druid_kits_a11",
+      "scn": "Remove Druid Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove Only Mod Kits",
+      "cn": 54,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove Only Mod Kits",
+      "pi": "cd_dr_remove_paladin_kits_mod",
+      "scn": "Remove Paladin Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove All Kits",
+      "cn": 55,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove All Kits",
+      "pi": "cd_dr_remove_paladin_kits_a11",
+      "scn": "Remove Paladin Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove Only Mod Kits",
+      "cn": 56,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove Only Mod Kits",
+      "pi": "cd_dr_remove_ranger_kits_mod",
+      "scn": "Remove Ranger Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Remove All Kits",
+      "cn": 57,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Remove All Kits",
+      "pi": "cd_dr_remove_ranger_kits_a11",
+      "scn": "Remove Ranger Kits",
+      "grn": "Kit Removers"
+    },
+    {
+      "n": "Cleric Remix",
+      "cn": 100,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "g": "dr_cleric_style",
+      "scn": "Cleric Remix",
+      "grn": "Cleric Remix Components",
+      "no": "Cleric Remix (conventional): Revises vanilla cleric kits with AD&D sphere system. Deity-specific spell access. Choose one: this or cn:101 (all kits). CONFLICTS with Faiths & Powers sphere system and ToF divine revisions — all three rewrite cleric spell tables.",
+      "tp2n": "Use conventional format for cleric kits"
+    },
+    {
+      "n": "Install all Cleric Kits",
+      "no": "Install ALL cleric kits at once (unconventional). Alternative to cn:100. Adds all DR kits in one go. Choose one: this or cn:100 + individual kits. CONFLICTS with F&P and ToF.",
+      "cn": 101,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 101,
+      "wq": "verified",
+      "g": "dr_cleric_style",
+      "scn": "Cleric Remix",
+      "grn": "Cleric Remix Components",
+      "k": 10,
+      "kC": {
+        "cleric": 10
+      },
+      "tp2n": "Use new format for cleric kits"
+    },
+    {
+      "n": "Install Silverstar of Selune Cleric Kit",
+      "no": "Silverstar of Selune — moonlight/protection themed cleric. Requires Cleric Remix (cn:100 or cn:101). Adds 1 kit slot.",
+      "cn": 103,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Silverstar of Selune Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Nightcloak of Shar Cleric Kit",
+      "cn": 106,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 106,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Nightcloak of Shar — darkness/stealth themed cleric. Requires Cleric Remix. Required for cn:610 (Viconia kit). Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Nightcloak of Shar Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Holy Strategist of the Red Knight Cleric Kit",
+      "no": "Holy Strategist of the Red Knight — tactical/warfare themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "cn": 107,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 107,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Holy Strategist of the Red Knight Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "exact",
+      "cn": 109,
+      "n": "Install Battleguard of Tempus Cleric Kit",
+      "wc": 109,
+      "no": "Adds Battleguard of Tempus cleric kit. War/combat focused divine caster.",
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Battleguard of Tempus Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Painbearer of Ilmater Cleric Kit",
+      "cn": 112,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 112,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Painbearer of Ilmater — suffering/endurance themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Painbearer of Ilmater Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Firewalker of Kossuth Cleric Kit",
+      "no": "Firewalker of Kossuth — fire/elemental themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "cn": 115,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 115,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Firewalker of Kossuth Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Authlim of Iyachtu Xvim Cleric Kit",
+      "cn": 118,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 118,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Authlim of Iyachtu Xvim — tyranny/evil themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Authlim of Iyachtu Xvim Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Lorekeeper of Oghma Cleric Kit",
+      "cn": 121,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 121,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Lorekeeper of Oghma — knowledge/divination themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Lorekeeper of Oghma Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Heartwarder of Sune Cleric Kit",
+      "cn": 124,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 124,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Heartwarder of Sune — love/beauty themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Heartwarder of Sune Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Feywarden of Corellon Cleric Kit",
+      "no": "Feywarden of Corellon — elven/nature themed cleric. Good for Yvette NPC. Requires Cleric Remix. Adds 1 kit slot.",
+      "cn": 127,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 127,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Feywarden of Corellon Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Strifeleader of Cyric Cleric Kit",
+      "cn": 130,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 130,
+      "wq": "verified",
+      "x": 2,
+      "k": 1,
+      "no": "Strifeleader of Cyric — strife/chaos themed cleric. Requires Cleric Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install Strifeleader of Cyric Cleric Kit",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Install Holy Justice of Tyr Cleric Kit",
+      "cn": 133,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "tp2n": "Install Holy Justice of Tyr Cleric Kit",
+      "pi": "cd_dr_holy_justice",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Druid Remix",
+      "cn": 200,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 200,
+      "wq": "verified",
+      "no": "Druid Remix: Loosens alignment restrictions, enforces stricter druid armor rules. Standalone from Cleric Remix. CONFLICTS with F&P and ToF druid revisions.",
+      "tp2n": "Druid Remix",
+      "grn": "Druid Remix Components"
+    },
+    {
+      "n": "Install Oozemaster Druid kit",
+      "cn": 203,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 203,
+      "wq": "verified",
+      "no": "Oozemaster — druid kit focused on ooze/slime magic. Requires Druid Remix (cn:200). Adds 1 kit slot.",
+      "x": 14,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      },
+      "tp2n": "Install Oozemaster Druid kit",
+      "grn": "Druid Remix Components"
+    },
+    {
+      "n": "Install Bowslinger Ranger Kit",
+      "cn": 403,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 403,
+      "wq": "verified",
+      "no": "Bowslinger — ranger kit specialized in ranged combat. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Install Bowslinger Ranger Kit",
+      "grn": "Ranger Remix Components"
+    },
+    {
+      "n": "Install Feralan Ranger Kit",
+      "cn": 406,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 406,
+      "wq": "verified",
+      "no": "Feralan — feral ranger kit with animal companion focus. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Install Feralan Ranger Kit",
+      "grn": "Ranger Remix Components"
+    },
+    {
+      "n": "Install Forest Runner Ranger Kit",
+      "cn": 409,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 409,
+      "wq": "verified",
+      "no": "Forest Runner — fast scout ranger. Similar to Artisan's Kitpack Wilderness Runner. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Install Forest Runner Ranger Kit",
+      "grn": "Ranger Remix Components"
+    },
+    {
+      "n": "Install Justifier Ranger Kit",
+      "cn": 412,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 412,
+      "wq": "verified",
+      "no": "Justifier — lawful ranger focused on justice. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Install Justifier Ranger Kit",
+      "grn": "Ranger Remix Components"
+    },
+    {
+      "n": "Install Wilderness Runner Ranger Kit",
+      "cn": 415,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 415,
+      "wq": "verified",
+      "no": "Wilderness Runner — nature-themed ranger. Name conflicts with Eldritch Magic's Wilderness Runner. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Install Wilderness Runner Ranger Kit",
+      "grn": "Ranger Remix Components"
+    },
+    {
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "exact",
+      "cn": 600,
+      "n": "Install Battleguard of Tempus Kit for Branwen",
+      "wc": 600,
+      "no": "Assigns Battleguard of Tempus kit to Branwen NPC.",
+      "tp2n": "Install Battleguard of Tempus Kit for Branwen",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "n": "Change Jaheira to Neutral Good",
+      "cn": 605,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 605,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Changes Jaheira's alignment to Neutral Good. Requires Druid Remix (cn:200). FORBID cdtweaks cn:4050 (similar tweak). Standalone NPC tweak.",
+      "x": 14,
+      "tp2n": "Change Jaheira to Neutral Good",
+      "grn": "Druid Remix Components"
+    },
+    {
+      "n": "Install Nightcloak of Shar Kit for Viconia",
+      "cn": 610,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 610,
+      "wq": "verified",
+      "no": "Assigns Nightcloak of Shar kit to Viconia. Thematic — Viconia worships Shar.",
+      "rd": 5,
+      "tp2n": "Install Nightcloak of Shar Kit for Viconia",
+      "grn": "Cleric Remix Components"
+    },
+    {
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "exact",
+      "cn": 1000,
+      "n": "Implement Sphere System for Regular Divine Spells",
+      "wc": 1000,
+      "no": "Core sphere system. Restricts divine spells by deity sphere access. REQUIRED for sphere-based kits.",
+      "tp2n": "Implement sphere system for regular divine spells",
+      "grn": "Divine Sphere System"
+    },
+    {
+      "n": "Implement sphere system for High-Level Abilities",
+      "cn": 1001,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Implement sphere system for High-Level Abilities",
+      "pi": "cd_dr_spheres_hlas",
+      "grn": "Divine Sphere System"
+    },
+    {
+      "n": "Alternative Item Usability Scheme for Cleric Kits",
+      "cn": 3000,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Alternative Item Usability Scheme for Cleric Kits",
+      "pi": "cd_dr_usabilities",
+      "grn": "Divine Sphere System"
+    },
+    {
+      "n": "Install all Druid & Ranger Kits",
+      "no": "Install ALL druid and ranger kits at once. Alternative to individual kit selection below.",
+      "cn": 201,
+      "wf": "divine_remix",
+      "wp": "divine_remix\\setup-divine_remix.tp2",
+      "wc": 201,
+      "wq": "verified",
+      "k": 5,
+      "kC": {
+        "druid": 1,
+        "ranger": 4
+      },
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "HLAs for Clerics, Paladins, Druids, Rangers might conflict",
+      "myComps": "#0 Druid Remix #1000 Cleric Remix",
+      "theirComps": "#10 #11 #103 #104 #105 #106",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "BardicWonders",
+      "withId": 325,
+      "severity": "partial",
+      "reason": "HLAs for Clerics, Paladins, Druids, Rangers might conflict",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

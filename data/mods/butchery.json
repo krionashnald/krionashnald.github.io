@@ -1,0 +1,623 @@
+{
+  "i": 242,
+  "t": "butchery",
+  "sv": 1,
+  "ord": 12,
+  "c": "CREATURE MODS",
+  "n": "BuTcHeRy",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2,
+    "es": 3,
+    "zh-cn": 4
+  },
+  "cats": [
+    "CREATURE MODS",
+    "TACTICAL MODS"
+  ],
+  "no": "pre SCS components from Butchery and MiH E&Q - Technically before SCS, but should prob be fine between Quests/NPCs and items? so that item and spell mods can account for their additions BuTcHeRy - New encounters.. Local fix applied: ALWAYS block guard changed from shared bg2_chapter to mod-specific d9_butchery_always",
+  "in": [
+    {
+      "t": "Edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip). Or use eet-mod-forge-patches #14.",
+      "type": "file"
+    }
+  ],
+  "_legacy_ids": [
+    397
+  ],
+  "conflicts": [
+    {
+      "with": "Angelo",
+      "withId": 592,
+      "severity": "partial",
+      "reason": "cn:30 spawns wraith Angelo (d9angelo.cre, DV=D9ANGELO) as enemy in Abyss battle. Content-incompatible with Angelo as joinable NPC. tp2 has REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~setup-angelo.tp2~ — auto-blocked when Angelo NPC present. Different DVs so no technical breakage, but thematically wrong.",
+      "myComps": "#30 Revisited fight against Wraith Sarevok in the Abyss",
+      "theirComps": "#0 Angelo NPC",
+      "source": "tp2 line 125 REQUIRE_PREDICATE; d9angelo.cre DV=D9ANGELO vs adangel.cre DV=adangel (no collision), 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Both add creatures to ar5203. Butchery adds 15 scripted spawns (hardest), MiH EQ adds 20 static creatures, and Ascension cn:1500 raises EXTRACOUNT to 60 with ~16 dynamic spawns. Combined total ~51 creatures in a 35-creature area — severe overcrowding, pathfinding issues, lag. Resolution: keep MiH EQ cn:46 (diverse static placement) + Ascension (dynamic scaling), removed Butchery cn:51 .",
+      "myComps": "#51 Butchery of Yaga-Shura Revisited",
+      "theirComps": "#46 Enhanced Battles: Yaga-Shura's Army",
+      "source": "Butchery d9yanew.baf spawns 5+5+5; MiH expand_yagas_army.tpa places 20 actors; Ascension yagashura.tpa EXTRACOUNT 35→60, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "soft",
+      "reason": "Component 51 enhanced by Ascension — patches Ascension spawn blocks if present, works without",
+      "myComps": "#51 Butchery of Yaga-Shura Revisited"
+    },
+    {
+      "requires": "stratagems",
+      "requiresId": 341,
+      "type": "soft",
+      "reason": "Component 51 enhanced by SCS AI — patches SCS creature blocks if present, works without",
+      "myComps": "#51 Butchery of Yaga-Shura Revisited",
+      "theirComps": "#6000 Initialise AI components"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "gro",
+          "portraits/butchery/d9gro.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/GwendolyneFreddy/butchery/releases",
+  "a": "DrAzTiK, Gwendolyne",
+  "v": "v5.0.2",
+  "sum": "Adds 9 optional tough combat encounters throughout BG2 areas. Each is a standalone fight you can enable or disable independently.",
+  "tags": [
+    "combat",
+    "tactical"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v4.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "GwendolyneFreddy",
+    "r": "butchery"
+  },
+  "dl": "https://github.com/GwendolyneFreddy/butchery/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "cn": 10,
+      "n": "Revisited fight against Tazok and DigDag",
+      "no": "Install before SCS. Install before Stratagems. Fix required: edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip when other mods install first)",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 10,
+      "cat": "CREATURE MODS",
+      "tp2n": "DrAzTiK's revisited fight against Tazok and DigDag [install before Stratagems]"
+    },
+    {
+      "cn": 11,
+      "n": "Rebalancing some generic creatures",
+      "no": "Install before SCS",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 11,
+      "cat": "CREATURE MODS",
+      "tp2n": "Rebalancing some generic creatures [install before Stratagems]"
+    },
+    {
+      "cn": 12,
+      "n": "Rebalancing Tazok and DigDag",
+      "no": "Install before SCS. Install before Stratagems. Fix required: edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip when other mods install first)",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 12,
+      "cat": "CREATURE MODS",
+      "tp2n": "Rebalancing Tazok and DigDag [install before Stratagems]"
+    },
+    {
+      "cn": 20,
+      "n": "Groumf and Bourrinos at Firkraag's Hideout entrance",
+      "no": "Install before SCS. Install before Stratagems. Fix required: edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip when other mods install first)",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 20,
+      "cat": "CREATURE MODS",
+      "tp2n": "Groumf and Bourrinos Encounter at Firkraag's Hideout entrance [install before Stratagems]"
+    },
+    {
+      "cn": 21,
+      "n": "Groumf and Bourrinos at Brynnlaw",
+      "no": "Install before SCS.",
+      "x": 3,
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 21,
+      "cat": "CREATURE MODS",
+      "rd": 3,
+      "tp2n": "Groumf and Bourrinos Encounter at Brynnlaw [install before Stratagems]"
+    },
+    {
+      "cn": 22,
+      "n": "Groumf and Bourrinos in the Underdark",
+      "no": "Install before SCS. Install before Stratagems. Fix required: edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip when other mods install first)",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 22,
+      "cat": "CREATURE MODS",
+      "tp2n": "Groumf and Bourrinos Encounter in the Underdark [install before Stratagems]"
+    },
+    {
+      "cn": 30,
+      "n": "Revisited fight against Wraith Sarevok in the Abyss",
+      "no": "Install before SCS. Incompatible with Angelo NPC — tp2 FORBID blocks install. Spawns wraith Angelo (d9angelo.cre) as enemy; thematically wrong when real Angelo is joinable NPC.",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 30,
+      "cat": "CREATURE MODS",
+      "tp2n": "Revisited fight against Wraith Sarevok in the Abyss [install before Stratagems]"
+    },
+    {
+      "cn": 32,
+      "n": "Add battle songs in areas without any",
+      "no": "Install before or after SCS",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 32,
+      "cat": "CREATURE MODS",
+      "tp2n": "Add battle songs in some areas that do not have any [install before or after Stratagems]"
+    },
+    {
+      "cn": 40,
+      "n": "DrAzTiK's Creatures",
+      "no": "Install before SCS. Required by some split 2 components. Install before Stratagems. Fix required: edit butchery/lib/always.tph line 13, change bg2_chapter to d9_butchery_always (shared guard variable causes ALWAYS block skip when other mods install first)",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 40,
+      "cat": "CREATURE MODS",
+      "tp2n": "DrAzTiK's Creatures [install before Stratagems, some following components need it]"
+    },
+    {
+      "n": "Butchery in Irenicus Dungeon (Dwarves)",
+      "pi": "d9_butchery_irenicus_dungeon",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 41,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 41,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in Irenicus Dungeon (Dwarves) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in the Forest of Tethyr (Animals and Druids)",
+      "no": "Install after Stratagems",
+      "pi": "d9_butchery_tethyr_forest",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 43,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 43,
+      "ord": 19,
+      "tp2n": "Butchery in the Forest of Tethyr (Animals and Druids) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in the planar sphere (Demonic creatures)",
+      "pi": "d9_butchery_planar_sphere",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 44,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 44,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in the planar sphere (Demonic creatures) [install after Stratagems]"
+    },
+    {
+      "n": "3 butcheries in Spellhold (Golems, Vampires and Trolls)",
+      "pi": "d9_butchery_spellhold",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 45,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 45,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "3 butcheries in Spellhold (Golems, Vampires and Trolls) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery outside de'Arnise Keep (Trolls)",
+      "pi": "d9_butchery_arnise_keep",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 46,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 46,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery outside de'Arnise Keep (Trolls) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in Windspear Hills (Orcs)",
+      "pi": "d9_butchery_windspear_hills",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 47,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 47,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in Windspear Hills (Orcs) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in Umar Hills (Wolves)",
+      "pi": "d9_butchery_umar_hills",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 48,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 48,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in Umar Hills (Wolves) [install after Stratagems]"
+    },
+    {
+      "n": "2 butcheries in Trademeet and outside Watcher's Keep (Animals) [install) after Stratagems]",
+      "pi": "d9_butchery_animals",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 49,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 49,
+      "ord": 19,
+      "tp2n": "2 butcheries in Trademeet and outside Watcher's Keep (Animals) [install) after Stratagems]"
+    },
+    {
+      "n": "2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor)",
+      "pi": "d9_butchery_golems",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 50,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 50,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "2 butcheries of Golems in Suldanessellar and Watcher's Keep (Machine of Lum the Mad floor) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery of Yaga-Shura revisited",
+      "pi": "d9_butchery_yaga_shura",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 51,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 51,
+      "ord": 18,
+      "no": "Install after Ascension and Stratagems. Overcrowding causes pathfinding/lag.",
+      "tp2n": "Butchery of Yaga-Shura revisited [install after Ascension and Stratagems]"
+    },
+    {
+      "n": "Butchery in the Druid Grove area (Animals and Druids)",
+      "pi": "d9_butchery_druid_grove",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 52,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 52,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in the Druid Grove area (Animals and Druids) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in the Beholder Hideout (Fanatics)",
+      "pi": "d9_butchery_eyeless",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 53,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 53,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in the Beholder Hideout (Fanatics) [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires",
+      "pi": "d9_butchery__bodi_chapter2",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 54,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 54,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in Bodhi's Hideout (chapter 2, before Underdark) - Vampires [install after Stratagems]"
+    },
+    {
+      "n": "Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires",
+      "pi": "d9_butchery_bodi_chapter6",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 55,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 55,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "Butchery in Bodhi's Hideout (chapter 6, after Underdark) - Vampires [install after Stratagems]"
+    },
+    {
+      "n": "2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment)",
+      "pi": "d9_butchery_sahuagins",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 56,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 56,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "2 butcheries of Sahuagins in Sahuagin City and Watcher's Keep (Githyanki Encampment) [install after Stratagems]"
+    },
+    {
+      "n": "4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep first floor (Altar level) and in the area outside Sendai's Hideout",
+      "pi": "d9_butchery_spiders",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 57,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 57,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "4 butcheries of spiders in Pai'Na's Hideout entrance, Temple City (Unseeing Eye Plot), Watcher's Keep first floor (Altar level) and in the area outside Sendai's Hideout [install after Stratagems]"
+    },
+    {
+      "n": "6 butcheries of skeletons in the lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout",
+      "pi": "d9_butchery_skeletons",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 58,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 58,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "6 butcheries of skeletons in the lower tombs of Athkatla, Shadow Temple Land, Spellhold, Watcher's Keep (Last Seals), and 2 in Nyalee's Hideout [install after Stratagems]"
+    },
+    {
+      "n": "More enemies scattered throughout the game",
+      "pi": "d9_butchery_more_ennemies",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wc": 80,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 80,
+      "ord": 18,
+      "no": "Install after Stratagems",
+      "tp2n": "More enemies scattered throughout the game [install after Stratagems]"
+    },
+    {
+      "cn": 90,
+      "n": "Cosmetic component",
+      "no": "Install before or after SCS",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "wc": 90,
+      "tp2n": "Cosmetic component [install before or after Stratagems]"
+    },
+    {
+      "cn": 31,
+      "n": "Move Samia to another area",
+      "no": "Install before SCS. REMOVED: Component 31 was commented out/removed in butchery v5.0. No longer exists in tp2.",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "wc": 31,
+      "x": 5,
+      "cat": "CREATURE MODS",
+      "gone": true
+    },
+    {
+      "cn": 42,
+      "ord": 18,
+      "n": "Reputation traps",
+      "no": "REMOVED: Component 42 (Reputation traps) commented out in butchery v5.0. Will fail to install.",
+      "wf": "butchery",
+      "wp": "butchery\\butchery.tp2",
+      "wq": "exact",
+      "wc": 42,
+      "gone": true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "i": 390,
+  "t": "crucible",
+  "sv": 1,
+  "pfx": "MO",
+  "ord": 40,
+  "c": "TACTICAL MODS",
+  "n": "The Crucible",
+  "langs": {
+    "en": 0,
+    "pt": 1,
+    "es": 2,
+    "zh-cn": 3,
+    "ru": 4
+  },
+  "au": "Acifer, morpheus562",
+  "dl": "https://github.com/Gibberlings3/Crucible",
+  "no": "Tactical encounter mod adding a final assault into Bhaal's realm with new areas. Install after Ascension and IWD spell mods. HARD CONFLICT with MiH EQ (mutually exclusive) and Spell Revisions.",
+  "conflicts": [
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "hard",
+      "reason": "REQUIRE_PREDICATE checks !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~. Crucible will not install if MiH EQ is present. Mutually exclusive.",
+      "myComps": "#0 The Crucible",
+      "theirComps": "All (file existence check)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "hard",
+      "reason": "Crucible is not compatible with Spell Revisions. Creature scripts and spell references assume vanilla/SCS spell behavior.",
+      "myComps": "#0 The Crucible",
+      "theirComps": "#0 Spell Revisions",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.morpheus-mart.com/crucible",
+  "a": "morpheus562, Acifer",
+  "v": "v5.0",
+  "sum": "Adds a single brutal gauntlet encounter designed to test optimized parties at their limits. An extreme combat challenge.",
+  "tags": [
+    "tactical"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1",
+    "place": "post"
+  },
+  "co": [
+    {
+      "n": "The Crucible: Fully Voiced NPCs using AI",
+      "tp2n": "Fully Voiced NPCs using AI",
+      "g": "crucible",
+      "scn": "Install Crucible",
+      "pi": "Crucible-FinalAssaultAI",
+      "cn": 1,
+      "wf": "crucible",
+      "wp": "crucible\\CRUCIBLE.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "AI-voiced version of The Crucible tactical encounter."
+    },
+    {
+      "n": "The Crucible: Standard (No AI Voicing)",
+      "tp2n": "Mute NPCs",
+      "g": "crucible",
+      "scn": "Install Crucible",
+      "pi": "Crucible-FinalAssault",
+      "cn": 3,
+      "wf": "crucible",
+      "wp": "crucible\\CRUCIBLE.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Standard version of The Crucible without AI voice acting."
+    },
+    {
+      "n": "Crucible Hotfix (v4.4 or earlier)",
+      "tp2n": "Hotfix for v4.4 and earlier",
+      "pi": "Crucible-Hotfix4-4",
+      "cn": 4,
+      "wf": "crucible",
+      "wp": "crucible\\CRUCIBLE.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Hotfix for saves from Crucible v4.4 or earlier. Only available if Crucible not yet installed."
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Crucible"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "i": 418,
+  "t": "CLERIC_THIEF_ARROWS",
+  "sv": 1,
+  "ord": 50,
+  "c": "NPC CUSTOMIZATION",
+  "n": "Cleric Thief Arrows",
+  "no": "Note: Standalone download URL not currently findable — mod may have been removed from public distribution. The fix is for Aura NPC's Cleric/Thief kit. If installing, source may need to come from archive/backup. Cleric/Thief Arrows Usability Fix by ArtemiusI. Fixes a bug where Aura NPC's Cleric/Thief multiclass kit cannot equip or use arrows. Install after Aura NPC.",
+  "dependencies": [
+    {
+      "requires": "Aura_BG1_2_EET",
+      "requiresId": 729,
+      "type": "hard",
+      "reason": "Fixes arrow usability specifically for the Aura NPC Cleric/Thief kit"
+    }
+  ],
+  "u": "https://github.com/ArtemiusI/Aura_BG1_BG2_EET",
+  "a": "ArtemiusI",
+  "sum": "Fixes arrow usability for Aura NPC's Cleric/Thief multiclass kit, ensuring the character can properly equip and use arrows.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/ArtemiusI/Aura_BG1_BG2_EET",
+  "langs": {
+    "en": 0
+  },
+  "au": "ArtemiusI",
+  "co": [
+    {
+      "n": "Aura NPC: Cleric/Thief Arrows Usability Fix",
+      "cn": 0,
+      "wf": "CLERIC_THIEF_ARROWS",
+      "wp": "CLERIC_THIEF_ARROWS\\CLERIC_THIEF_ARROWS.TP2",
+      "wc": 0,
+      "wq": "guessed",
+      "no": "Patches Aura's Cleric/Thief kit to allow arrow equipping. Without this fix, the multiclass kit inherits Cleric weapon restrictions that block arrows."
+    }
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Aura_BG1_BG2_EET"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "i": 941,
+  "t": "Hanna",
+  "sv": 1,
+  "ord": 1280,
+  "n": "Hanna NPC",
+  "c": "NEW NPC MODS",
+  "au": "drizzt905",
+  "no": "Joinable NPC for BG2/ToB/EET. Includes 6 optional tougher encounter components: Expanded De'Arnise Keep, Improved Irenicus, Improved Hell Djinn, Improved Dragon of Irenicus, Improved Hell Dragon, and Improved Trademeet Crypt. Spanish, German, French, English.",
+  "langs": {
+    "es": 0,
+    "de": 1,
+    "fr": 2,
+    "en": 3
+  },
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "sum": "Hanna — joinable NPC for Baldur's Gate (French original, English translation).",
+  "tags": [
+    "npc"
+  ],
+  "u": "https://d-m-b.me/hanna-pnj/",
+  "dl": "https://d-m-b.me/hanna-pnj/",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "hanna_dar1",
+          "portraits/hanna/hw_dar1.png",
+          "bg2"
+        ],
+        [
+          "hanna_dar2",
+          "portraits/hanna/hw_dar2.png",
+          "bg2"
+        ],
+        [
+          "hanna_drow",
+          "portraits/hanna/hw_drow.png",
+          "bg2"
+        ],
+        [
+          "hanna_elf",
+          "portraits/hanna/hw_elf.png",
+          "bg2"
+        ],
+        [
+          "hanna_fair",
+          "portraits/hanna/hw_fair.png",
+          "bg2"
+        ],
+        [
+          "hanna_man",
+          "portraits/hanna/hw_man.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Hanna NPC (ToB required)",
+      "cn": 0,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Main NPC component. Has EET_NPC_TRANSITION support.",
+      "tp2n": "Hanna NPC (ToB required)"
+    },
+    {
+      "n": "Expanded De'Arnise Keep",
+      "cn": 1,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified"
+    },
+    {
+      "n": "Improved Irenicus",
+      "cn": 2,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Irenicus"
+    },
+    {
+      "n": "Improved Hell Djinn",
+      "cn": 3,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Hell Djinn"
+    },
+    {
+      "n": "Improved Dragon of Irenicus",
+      "cn": 4,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Dragon of Irenicus"
+    },
+    {
+      "n": "Improved Hell Dragon",
+      "cn": 5,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Hell Dragon"
+    },
+    {
+      "n": "Improved Trademeet Crypt",
+      "cn": 6,
+      "wf": "Hanna",
+      "wp": "Hanna\\Hanna.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Trademeet Crypt"
+    }
+  ]
+}

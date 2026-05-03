@@ -1,0 +1,149 @@
+{
+  "i": 514,
+  "t": "k9RoughWorld",
+  "sv": 1,
+  "ord": 100,
+  "c": "PRE EET BGEE MODS",
+  "n": "Rough World",
+  "langs": {
+    "en": 0,
+    "pl": 1
+  },
+  "no": "Rough World BETA 1.41 by yellow hat elminster. Abandoned BG1/BGEE difficulty mod. Adds harder spawns, rest restrictions, Chapter 7 content, beggar encounters, reputation overhaul, and LoB/save restrictions. cn:0 and cn:1 are BGEE-only (FAIL on BG2/IWD). cn:6 uses COPY_EXISTING_REGEXP on ALL .cre files — very heavy patch. cn:7 modifies ALL .are files. Pre-EET install per compatibility table. Polish translation available.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify reputation tables (rmodrep.2da, repstart.2da, reputati.2da).",
+      "myComps": "#4 New Reputation Names #5 Reputation Rebalanced",
+      "theirComps": "#1130 Reputation Resets in BG2",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Only Autosaves disables manual/quicksave by clearing the save flag on all .are files. Conflicts with cdtweaks interval save components.",
+      "myComps": "#7 Only Autosaves",
+      "theirComps": "#3354 #3355 #3352 #3353 #3350 #3351 #3356 #3357 #3358 Interval Saves",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.shsforums.net/files/file/1149-rough-world-beta/",
+  "a": "yellow hat elminster",
+  "v": "BETA 1.41",
+  "sum": "Rough World increases the overall difficulty of Baldur's Gate by making enemies tougher and encounters more challenging throughout the game.",
+  "tags": [
+    "tweak",
+    "combat"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "vBeta",
+    "place": "pre"
+  },
+  "dl": "https://www.shsforums.net/files/file/1149-rough-world-beta/",
+  "au": "elminster",
+  "co": [
+    {
+      "n": "Scaled Spawning (BGEE Only)",
+      "tp2n": "Install Scaled Spawning (BGEE Only)",
+      "cn": 0,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "BGEE only — FAILs on BG2/IWD. Adds level-scaled enemy spawns to 20+ BG1 wilderness and dungeon areas (Nashkel Mines, Cloakwood, Bandit Camp, etc.). Includes new creatures: Iron Throne soldiers, priest, Cold Steel Orcs, small spiders with custom animations. Also adds dialogue extensions (Aolan, Drasus).",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "Sparse Resting (BGEE Only)",
+      "tp2n": "Install Sparse Resting (BGEE Only)",
+      "cn": 1,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "BGEE only — FAILs on BG2/IWD. Restricts resting in certain areas. Adds conditional rest messages based on quest progress (e.g., Seniyad's grove safe after clearing, Aldeth's area accessible). Extends 4 area scripts with rest-blocking conditions.",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "Chapter 7 Hardcore",
+      "tp2n": "Install Chapter 7 Hardcore Component",
+      "cn": 2,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "Major Chapter 7 overhaul. Makes Baldur's Gate city hostile — wanted posters, Flaming Fist encounters across 9 city districts. Adds a smuggler NPC, creates AR0800 bridge trigger region, and populates areas with ~30 new Flaming Fist creatures with custom scripts. Sets up a fugitive atmosphere.",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "Improved Beggars",
+      "tp2n": "Install Improved Beggars Component",
+      "cn": 3,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "Replaces standard beggar .cre files with 11 new variants. Adds fly swarm VVC/EFF effects. Includes new beggar dialogue. Cosmetic/atmospheric enhancement.",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "New Reputation Names",
+      "tp2n": "Install New Reputation Names Component",
+      "cn": 4,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "Replaces reputation level names in reptxt.2da with grittier labels: Sadist, Thug, Ruffian, Meddler, Adventurer, Hero, Savior.",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "Reputation Rebalanced",
+      "tp2n": "Install Reputation Rebalanced Component",
+      "cn": 5,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "Overwrites 4 reputation tables (rmodrep, repstart, reputati, repmodst + SoD variant). Well-liked characters can kill one innocent without catastrophic rep loss. Starting reputation narrowed to 9-11 range. Church donation costs rebalanced for evil characters.",
+      "grn": "BGEE Content"
+    },
+    {
+      "n": "Legacy of Bhaal forced Insane difficulty",
+      "tp2n": "Install Legacy of Bhaal is forced Insane difficulty",
+      "cn": 6,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "WARNING: Patches EVERY .cre file in override via COPY_EXISTING_REGEXP GLOB. Sets BIT22 (Legacy of Bhaal flag) on all creatures, forcing Insane-level difficulty. Very heavy patch — may significantly increase install time.",
+      "grn": "Alternative Legacy of Bhaal"
+    },
+    {
+      "n": "Only Autosaves",
+      "tp2n": "Only Autosaves",
+      "cn": 7,
+      "wf": "k9RoughWorld",
+      "wp": "k9RoughWorld\\setup-k9RoughWorld.tp2",
+      "wq": "exact",
+      "no": "WARNING: Patches EVERY .are file in override via COPY_EXISTING_REGEXP GLOB. Clears save permission flags, restricting saving to autosaves only. Ironman-lite experience. Very heavy patch.",
+      "grn": "Other BGEE Difficulty Settings"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Both add creatures/scripts to BG1 area files. SCS Random Encounters may conflict with Rough World's scaled spawning.",
+      "myComps": "#0 Scaled Spawning",
+      "theirComps": "#8050 Improved Random Encounters",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

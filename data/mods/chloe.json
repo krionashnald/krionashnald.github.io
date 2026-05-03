@@ -1,0 +1,82 @@
+{
+  "i": 556,
+  "t": "Chloe",
+  "sv": 1,
+  "ord": 900,
+  "c": "NEW NPC MODS",
+  "n": "Chloe NPC",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "it": 3,
+    "fr": 4,
+    "ru": 5,
+    "zh-cn": 6
+  },
+  "no": "TN Female Human Fighter",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "hard",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "myComps": "#1 Chloe EET (Extended content)",
+      "theirComps": "#0 Imoen Romance",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "soft",
+      "reason": "Chloe uses I_C_T on FINSOL01 27-32, Kelsey uses EXTEND_BOTTOM. Both additive, independent party checks.",
+      "myComps": "#1 Chloe EET (Extended content)",
+      "theirComps": "#4 Ascension-specific dialogue",
+      "source": "ChloeEET I_C_T and Kelsey EXTEND_BOTTOM are both additive WeiDU ops on FINSOL01, 2026-03"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/ChloeEET",
+  "a": "Lucythebeast",
+  "v": "v1.9 EE",
+  "sum": "Adds Chloe, a bladesinger, as a joinable BG2 NPC with combat prowess, romance option, and elven-themed storyline.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lucythebeast, Roxanne",
+  "dl": "https://github.com/RoxanneSHS/ChloeEET",
+  "pt": false,
+  "co": [
+    {
+      "n": "Chloe for EET (Original Contents): v1.8 EE",
+      "cn": 0,
+      "wf": "chloe",
+      "wp": "chloe\\CHLOE.TP2",
+      "wc": 0,
+      "tp2n": "Chloe for EET (Original Contents)"
+    },
+    {
+      "n": "Chloe EET (Extended content): v1.8 EE",
+      "cn": 1,
+      "wf": "chloe",
+      "wp": "chloe\\CHLOE.TP2",
+      "wc": 1,
+      "x": 0,
+      "tp2n": "Chloe EET (Extended content)"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "ChloeEET"
+  }
+}

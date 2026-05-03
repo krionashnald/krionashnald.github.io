@@ -1,0 +1,73 @@
+{
+  "i": 261,
+  "t": "mod-thalantyr-ex",
+  "sv": 1,
+  "ord": 100,
+  "c": "ITEM ADDITION MODS",
+  "n": "Thalantyr Extended",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Extension to Thalantyr Item Upgrade mod. Adds 12 new craftable item categories (plate mail, helmets, shields, axes, rings, amulets, cloaks, swords, hammers, daggers, crossbows, maces). Requires Thalantyr Item Upgrade (THALAN) installed first",
+  "dependencies": [
+    {
+      "requires": "thalan",
+      "requiresId": 260,
+      "type": "hard",
+      "reason": "Thalantyr Extended requires the base Thalantyr Item Upgrade mod (REQUIRE_COMPONENT in tp2)"
+    }
+  ],
+  "u": "https://github.com/BardezAnAvatar/BGEE-Thalantyr-Ex/",
+  "a": "BardezAnAvatar",
+  "v": "v1.1.1",
+  "sum": "An extension of Baldur's Gate mod Thalantyr Item Upgrade Mod",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "BardezAnAvatar",
+    "r": "BGEE-Thalantyr-Ex"
+  },
+  "dl": "https://github.com/BardezAnAvatar/BGEE-Thalantyr-Ex/",
+  "au": "Bardez",
+  "co": [
+    {
+      "n": "Bardez's extensions to Thalantyr Item Upgrade Mod",
+      "tp2n": "Bardez's extensions to Thalantyr Item Upgrade Mod",
+      "cn": 0,
+      "wf": "mod-thalantyr-ex",
+      "wp": "mod-thalantyr-ex\\setup-mod-thalantyr-ex.tp2",
+      "wc": 0,
+      "wq": "guessed",
+      "no": "Adds 12 categories of craftable items to Thalantyr. Requires Thalantyr Item Upgrade main component"
+    },
+    {
+      "n": "Koveras' Ring: Cursed Gift",
+      "tp2n": "Koveras' Ring: Cursed Gift",
+      "no": "Koveras Ring with curse effect — fits the lore (Koveras = Sarevok's alias) INSTALL ISSUE: koveras_ring_cursed.tph compiles KOVERA.d which does REPLACE_ACTION_TEXT on KOVERA.DLG (Koveras alias dialogue, BG1 content). KOVERA.DLG is a BG1 resource that is only available in override after EET has merged BG1 content. Installing Thalantyr Extended before EET world-build (wb:1) or in the wrong phase will cause this failure. Must install after EET has merged BG1 game data.",
+      "cn": 1,
+      "wf": "mod-thalantyr-ex",
+      "wp": "mod-thalantyr-ex\\setup-mod-thalantyr-ex.tp2",
+      "wc": 1,
+      "wq": "guessed",
+      "g": "koveras_ring",
+      "scn": "Koveras' Ring of Protection +2"
+    },
+    {
+      "n": "Koveras' Ring: No Cursed gift",
+      "tp2n": "Koveras' Ring: No Cursed gift",
+      "cn": 2,
+      "wf": "mod-thalantyr-ex",
+      "wp": "mod-thalantyr-ex\\setup-mod-thalantyr-ex.tp2",
+      "wc": 2,
+      "wq": "guessed",
+      "no": "Koveras Ring without curse. Simpler, no drawback Same KOVERA.DLG dependency as cn=1. Requires BG1 content merged by EET before this component installs.",
+      "g": "koveras_ring",
+      "scn": "Koveras' Ring of Protection +2"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "i": 159,
+  "t": "dace",
+  "sv": 1,
+  "pfx": "T#",
+  "ord": 380,
+  "c": "NEW NPC MODS",
+  "n": "Dace",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Dace Linton",
+  "conflicts": [
+    {
+      "with": "RJALI",
+      "withId": 631,
+      "severity": "partial",
+      "reason": "Install Dace before Rjali. Rjali comp #3 detects Dace via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "theirComps": "#3 Rjali Romance Mod",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED dace, patches T#DACEJ.dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dace_npc",
+          "portraits/dace/t_dace.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Dace_NPC/releases",
+  "a": "Tess Grey, jastey",
+  "v": "v5.1",
+  "sum": "A mod for Baldur's Gate II that introduces Dace Linton, a wry and sarcastic Chaotic Neutral female Bounty Hunter, as a joinable NPC.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Dace_NPC"
+  },
+  "au": "Tess Grey",
+  "dl": "https://github.com/Spellhold-Studios/Dace-NPC",
+  "co": [
+    {
+      "n": "Dace Linton NPC Mod for BG2:SoA & ToB",
+      "cn": 0,
+      "wf": "Dace",
+      "wp": "Dace\\DACE.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Dace Linton NPC Mod for BG2:SoA & ToB"
+    },
+    {
+      "n": "Install alternate portrait by Ilmatar?",
+      "cn": 1,
+      "wf": "Dace",
+      "wp": "Dace\\DACE.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "Install alternate portrait by Ilmatar?"
+    }
+  ]
+}

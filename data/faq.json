@@ -1,0 +1,94 @@
+{
+  "faq": [
+    {
+      "cat": "Installer Issues",
+      "items": [
+        {"q": "Project Infinity says \"mod list doesn't contain such mod ID\"", "a": "This happens when your WeiDU.log references a mod that PI doesn't have in its download database. Common example: DW_TALENTS (Talents of Faerun). Download the mod manually from its GitHub releases page and place the folder in your game directory. PI will then detect it on the next scan.", "tags": ["PI", "Project Infinity"]},
+        {"q": "Which installer should I use?", "a": "For automated installs, use mod_installer (github.com/dark0dave/mod_installer) v14.5+ \u2014 it can read the WeiDU.log files exported from Infinity Mod Forge and install all mods automatically. Use the \"eet\" command with --bg1-game-directory and --bg2-game-directory flags. IMPORTANT: versions before v14 have a bug that causes hangs during EET installs. Always use the latest release.\n\nProject Infinity can also import WeiDU.log files and handle mod downloading.\n\nFor manual installs, use WeiDU directly via command line. Note: Gideon's Install Tool has been discontinued.", "tags": ["PI", "WeiDU", "mod_installer"]},
+        {"q": "How do I use mod_installer with Infinity Mod Forge?", "a": "1) Export WeiDU.log and WeiDU-BGEE.log from Infinity Mod Forge\n2) Download mod_installer v14.5+ from github.com/dark0dave/mod_installer/releases\n3) Place all mod archives in one directory (e.g., Mods/)\n4) Run: mod_installer eet --bg1-game-directory \"path/to/BG1EE\" --bg2-game-directory \"path/to/BG2EE\" --bg1-log-file WeiDU-BGEE.log --bg2-log-file WeiDU.log --mod-directories \"path/to/Mods\" --weidu-binary \"path/to/weidu.exe\" --never-abort true\n5) Missing mods will be skipped. Use --download true to be prompted for download URLs.\n\nTips:\n\u2022 Use --never-abort true to continue past individual mod failures\n\u2022 Some mods need their tp2 moved into the mod subfolder (e.g., Tenya Thermidor)\n\u2022 The \"Mod Download List\" export gives you URLs for all selected mods", "tags": ["mod_installer", "export"]},
+        {"q": "WeiDU codepage bug (v247\u2013249)", "a": "WeiDU versions 24700\u201324900 have a codepage handling bug that can cause character encoding errors during installation. Upgrade to WeiDU 24901+ or downgrade to 24600.", "tags": ["WeiDU"]},
+        {"q": "Mod fails with \"PARSE ERROR\" or \"Failure\" during install", "a": "Usually caused by a mod version incompatible with the current game patch, or by installing mods in the wrong order. Check that you're using the latest version of the mod and that EET prerequisites (DLC Merger, EE Fixpack, EET) are installed first in the correct order.", "tags": ["WeiDU"]}
+      ]
+    },
+    {
+      "cat": "EET Setup",
+      "items": [
+        {"q": "What's the correct install order for EET essentials?", "a": "1) DLC Merger (on BG2:EE)\n2) EE Fixpack (install on BOTH BG1:EE and BG2:EE)\n3) Any Pre-EET BG1 mods (on BG1:EE)\n4) EET (on BG2:EE \u2014 this merges BG1 into BG2)\n5) All other mods (on the merged BG2:EE game)\n6) EET_End (last, to finalize)", "tags": ["EET", "essential"]},
+        {"q": "EET install fails or hangs", "a": "Common causes:\n\u2022 BG1:EE and BG2:EE are not at the same patch version\n\u2022 DLC Merger was not run first\n\u2022 A Pre-EET mod is incompatible with EET\n\u2022 Insufficient disk space (EET needs ~5GB free)\n\u2022 Game files are in a protected directory (Program Files). Move the game to a non-protected location.", "tags": ["EET"]},
+        {"q": "Do I need to start a new game after modding?", "a": "Yes \u2014 always start a fresh game after installing mods. Mid-game mod changes will cause crashes, broken quests, and save corruption. The only exceptions are pure cosmetic mods (portraits, sounds) that don't modify game scripts or dialogues.", "tags": ["general"]}
+      ]
+    },
+    {
+      "cat": "Platform & Compatibility",
+      "items": [
+        {"q": "Can I install mods on macOS or Linux?", "a": "Yes. All standard WeiDU mods are cross-platform. On macOS, install WeiDU for Mac and use Terminal. On Linux, you need a case-insensitive filesystem (ciopfs or ext4 with casefold). Only mods marked WIN (requiring EEex) are Windows-only (or Linux via Proton).", "tags": ["platform"]},
+        {"q": "What does \"DUAL INSTALL\" mean for EE Fixpack?", "a": "EE Fixpack must be installed on both your BG1:EE and BG2:EE game directories before running EET. EET copies the modded BG1 into BG2, so both need the fixes applied.", "tags": ["EET", "essential"]},
+        {"q": "Mods marked \"Standalone\" or with the \ud83d\udcf1 filter", "a": "These mods work without EET on standalone BG1:EE, BG2:EE, or mobile. If you're doing an EET install, most mods work fine. The Standalone filter helps iOS/Android players find compatible mods.", "tags": ["platform"]}
+      ]
+    },
+    {
+      "cat": "Conflicts & Compatibility",
+      "items": [
+        {"q": "What do the conflict severities mean?", "a": "HARD: These mods are mutually exclusive \u2014 install only one.\nPARTIAL: Specific components overlap. Often solvable with install order or by skipping conflicting components.\nSOFT: Minor overlap or historical issue. Usually safe to install both with correct ordering.", "tags": ["conflicts"]},
+        {"q": "A mod says \"Functionality provided by X\"", "a": "This means another mod in your selection already includes the same feature. You can safely skip the conflicting mod or its overlapping components. The side panel (click Info) shows which specific components conflict.", "tags": ["conflicts"]},
+        {"q": "How do I read the conflict alerts at the top?", "a": "Red alerts (\u25cf) are hard conflicts \u2014 you should remove one of the mods. Orange alerts (\u25cf) are soft/partial \u2014 usually fine with correct install order. Click any mod name in the alert to jump to it. Click Info for full conflict details in the side panel.", "tags": ["conflicts"]}
+      ]
+    },
+    {
+      "cat": "Post-Install Issues",
+      "items": [
+        {"q": "Game crashes on startup after modding", "a": "Common causes:\n\u2022 Conflicting UI mods (only install one major UI overhaul)\n\u2022 Missing EET_End (must be the very last mod installed)\n\u2022 Corrupted mod files \u2014 re-download and reinstall\n\u2022 Outdated mods incompatible with current game version\n\u2022 Try running Generalized Biffing as the final step to fix file loading issues", "tags": ["crash"]},
+        {"q": "Game crashes during combat or spellcasting", "a": "Likely the SPLSTATE.IDS limit. This file has a hardcoded 256-entry limit. SCS adds ~40 entries, EE Fixpack ~20, kit mods add variable amounts. If you exceed ~250 entries, the game crashes on spell-related actions.\n\nCheck: Open override/SPLSTATE.IDS and count entries. If near 256, remove large kit mods or Enhanced Powergaming Scripts.", "tags": ["crash", "SPLSTATE"]},
+        {"q": "Game is slow or takes long to load", "a": "Large mod installs create thousands of override files. Install Generalized Biffing after EET_End to compress these into BIFF archives, dramatically improving load times.", "tags": ["performance"]},
+        {"q": "Dialogue is broken or NPCs say wrong things", "a": "Usually caused by wrong install order for NPC/dialogue mods. Quest mods should install before NPC mods, and NPC mods before tweaks. Check the Order overlay for the correct sequence.", "tags": ["dialogue"]},
+        {"q": "WeiDU error: \"DELETE_BYTES out of bounds\"", "a": "A mod tried to modify a file that's a different size than expected because another mod already changed it. This is a mod ordering issue.\n\nFix: Move the failing mod earlier in the install sequence so it patches the file before other mods touch it. Klatu's item components (#2080, #2090) are especially prone to this.", "tags": ["WeiDU", "ordering"]},
+        {"q": "Items appearing twice (duplication)", "a": "Usually caused by overlapping import components. Example: EET Tweaks \"Import party items to SoA\" (#4040) + SoD2BG2_IU \"Force all import-able SoD items\" (#8) together cause SoD items to appear twice. Choose one import method, not both.", "tags": ["items", "duplication"]}
+      ]
+    },
+    {
+      "cat": "File & Path Issues",
+      "items": [
+        {"q": "WeiDU can't find game folder", "a": "Ensure your game is in a standard path without spaces or special characters. Don't install in Program Files (Windows) or use network drives.\n\nGood: C:\\Games\\BG2EE\nBad: C:\\Program Files (x86)\\Baldur's Gate II", "tags": ["WeiDU", "paths"]},
+        {"q": "Linux: mods fail with \"file not found\" errors", "a": "Linux filesystems are case-sensitive but Infinity Engine uses mixed case. You need a case-insensitive filesystem:\n\u2022 ext4 with casefold enabled\n\u2022 ciopfs overlay mount\n\u2022 Or run the game through Wine/Proton", "tags": ["Linux", "platform"]}
+      ]
+    },
+    {
+      "cat": "Engine Limits",
+      "items": [
+        {"q": "Kit Cap exceeded (320 limit)", "a": "The Infinity Engine supports a maximum of 320 kits. If your selection exceeds ~300, remove some kit mods. The Spells & Kits > Overview shows which mods add the most kits. Deities of Faerun (123 kits) and Faiths and Powers (97 kits) are the biggest contributors.", "tags": ["Kit Cap", "limits"]},
+        {"q": "SPLSTATE.IDS full (256 limit)", "a": "Similar to Kit Cap \u2014 the SPLSTATE counter shows which mods consume slots. Reduce spell/kit mods if approaching the limit. The Spells & Kits > Overview tracks this in real time as you toggle mods.", "tags": ["SPLSTATE", "limits"]},
+        {"q": "Spell IDs per level approaching 50", "a": "Each spell level (Wizard 1\u20139, Priest 1\u20137) has a ~50-slot limit. The Spells & Kits > Overview shows per-level usage. If a level is near capacity, avoid adding more mods that introduce spells at that level.", "tags": ["Spell IDs", "limits"]},
+        {"q": "Mod installs but features don't work", "a": "Some mods require specific install order relative to others. Check the notes on each component in Infinity Mod Forge. \"Last installed wins\" for mods that modify the same files \u2014 the Order overlay shows this. Some components are marked \"Requires SR\" (Spell Revisions) \u2014 skip these if you don't have SR installed.", "tags": ["ordering", "conflicts"]}
+      ]
+    },
+    {
+      "cat": "WeiDU Log Messages Explained",
+      "items": [
+        {"q": "\"[*.IDS] forgotten\"", "a": "This is normal. WeiDU is clearing its in-memory cache of IDS files (ACTION.IDS, TRIGGER.IDS, etc.) so they get re-read from disk. Mods do this after modifying IDS files to ensure subsequent operations see the new entries. Completely harmless.", "tags": ["WeiDU", "log"]},
+        {"q": "\"Not copying [X] because it did not change\"", "a": "Normal and harmless. A mod applied a patch to a file but the result was identical to the original. WeiDU skips writing the file to save disk I/O. Common with COPY_EXISTING_REGEXP operations that match thousands of files but only modify a few.", "tags": ["WeiDU", "log"]},
+        {"q": "\"WARNING: [X.BCS] cannot be decompiled and recompiled (round-trip failure)\"", "a": "A BCS (compiled script) file uses actions or triggers that aren't in the current IDS files, so WeiDU can't safely decompile and recompile it. WeiDU preserves the original file unchanged. This is a known WeiDU limitation with scripts modified by multiple mods. Usually harmless, but can occasionally cause issues with mods that need to patch that script.", "tags": ["WeiDU", "BCS", "log"]},
+        {"q": "\"LEXER ERROR\" or \"Parsing.Parse_error\" on a .BCS file", "a": "The script file has invalid format \u2014 either it was corrupted by a previous mod's failed round-trip, or it uses syntax WeiDU doesn't understand. If this causes a mod to fail, the script may need a pre-install patch. Known issue with RR#ARAN2.BCS (Rogue Rebalancing) and some Golem Construction scripts.", "tags": ["WeiDU", "BCS", "error"]},
+        {"q": "\"Unable to Unlink\" errors during rollback", "a": "Windows file locking prevented WeiDU from deleting a backup file during error recovery. This is cosmetic \u2014 the rollback still works, just leaves some orphaned backup files in weidu_external/backup/. These are safe to delete manually after the install completes.", "tags": ["WeiDU", "Windows", "log"]},
+        {"q": "\"Copying and patching 14000+ files\"", "a": "A mod is running COPY_EXISTING_REGEXP, which processes all matching files in the override directory. Large installs (300+ mods) can have 14,000\u201320,000 files in override. This operation is slow (1\u20135 minutes) but normal. Common culprits: SCS, Talents of Faerun (SFO library), and any mod that patches all items/spells/creatures.", "tags": ["WeiDU", "performance", "log"]},
+        {"q": "\"ERROR: [X.BCS] -> [weidu_external/workspace/discard.baf] Patching Failed\"", "a": "A mod tried to patch a BCS script that couldn't be decompiled. If the mod has an ALWAYS block with BCS round-trip guards, this error is caught and the original script is preserved. If not, the component will fail. This is the most common cause of install failures in large mod setups.", "tags": ["WeiDU", "BCS", "error"]},
+        {"q": "\"Stopping installation because of error\" (repeated many times)", "a": "WeiDU prints this once for each pending operation that gets cancelled after an error. Seeing 10\u201320 of these in a row is normal \u2014 it's just WeiDU unwinding its operation stack. The actual error is the line BEFORE the first \"Stopping\" message.", "tags": ["WeiDU", "error", "log"]}
+      ]
+    }
+  ],
+  "tips": [
+    {"title": "Start small", "desc": "Use \"First Adventure\" or \"Seasoned Adventurer\" before the mega-install."},
+    {"title": "Read conflict alerts", "desc": "A hard conflict means the game will likely break."},
+    {"title": "Back up your clean game", "desc": "Copy the entire game folder before modding."},
+    {"title": "Save your selection", "desc": "Use \"Share\" for a URL or \"Save As\" for a local preset."},
+    {"title": "Don't panic about soft conflicts", "desc": "Orange alerts usually mean \"install order matters\", not \"game will break\"."},
+    {"title": "EET_End must be last", "desc": "Always. No exceptions. The app enforces this in exports."},
+    {"title": "New game required", "desc": "EET creates a merged game. Old saves won't work."}
+  ],
+  "prefixRules": [
+    {"title": "Length", "desc": "2 characters is standard. 3 is acceptable for projects. Longer wastes precious resref space (max 8 chars)."},
+    {"title": "Safe characters", "desc": "Letters, digits, and symbols like # ! _ - are fine. Avoid regex special characters: $ ^ . * + ? [ ] \\ \u2014 these break WeiDU variable matching."},
+    {"title": "Case", "desc": "Prefixes are case-insensitive on Windows. A7 and a7 would collide."},
+    {"title": "Areas", "desc": "A 2-char prefix leaves 4 characters for area naming (6-char limit). A 3-char prefix leaves only 3."},
+    {"title": "Uniqueness", "desc": "Check both Project and Personal lists below. Some prefixes appear twice due to unresolved conflicts."}
+  ]
+}

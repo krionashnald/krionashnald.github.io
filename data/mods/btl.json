@@ -1,0 +1,96 @@
+{
+  "i": 150,
+  "t": "btl",
+  "sv": 1,
+  "ord": 290,
+  "c": "NEW NPC MODS",
+  "n": "Beyond the Law",
+  "no": "Beyond the Law - Kova Kiyone Kiyone is a LG Female Ranger (Archer) and Kova is a CG Male Half-Elf Mage/Thief.Install Beyond the Law before Neh’taniel NPC for BG2. REINSTALL BUG: portraits%ee_file% unresolved on reinstall — same ALWAYS block variable issue as Saradas. First install succeeds. Affects reinstall cycles only.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "btl_kiyo",
+          "portraits/btl/kiyo.png",
+          "bg2"
+        ],
+        [
+          "btl_kova",
+          "portraits/btl/kova.png",
+          "bg2"
+        ],
+        [
+          "btl_seida",
+          "portraits/btl/seida.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Beyond_the_Law",
+  "a": "Zyraen",
+  "v": "v2.0.0",
+  "sum": "Adds a law-enforcement themed quest mod with a joinable NPC. Investigate crimes and make justice-themed moral choices in BG2.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Beyond_the_Law"
+  },
+  "au": "Zyraen",
+  "dl": "https://github.com/SpellholdStudios/Beyond_the_Law",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Beyond the Law with Kiyone original sound set",
+      "pi": "z#_btl_main",
+      "scn": "Beyond the Law - Kova & Kiyone",
+      "wf": "btl",
+      "wp": "btl\\btl.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "g": "btl_sound",
+      "tp2n": "Beyond the Law with Kiyone original sound set"
+    },
+    {
+      "n": "Beyond the Law with alternate sound set for Kiyone (Female4)",
+      "pi": "z#_btl_main_vanilla_soundset",
+      "scn": "Beyond the Law - Kova & Kiyone",
+      "wf": "btl",
+      "wp": "btl\\btl.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1,
+      "g": "btl_sound",
+      "tp2n": "Beyond the Law with alternate sound set for Kiyone (Female4)"
+    },
+    {
+      "n": "Better balanced BTL items",
+      "pi": "z#_btl_better_balanced_items",
+      "wf": "btl",
+      "wp": "btl\\btl.tp2",
+      "wq": "manual_final",
+      "cn": 2,
+      "tp2n": "Portraits for minor non-joinable BTL NPCs"
+    }
+  ]
+}

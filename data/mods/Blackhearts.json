@@ -1,0 +1,72 @@
+{
+  "i": 60,
+  "t": "Blackhearts",
+  "sv": 1,
+  "ord": 260,
+  "c": "QUEST MODS BG1",
+  "n": "Blackhearts",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "no": "Blackhearts AWizardDidIt's original: JohnBob's fork with fixes and unified installation: https://github.com/11jo/Black-Hearts-EET We'll be currently using JohnBob's fork, which uses different install lines than the original mod.",
+  "rq": "EET",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "neris",
+          "portraits/blackhearts/neris.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/A-Wizard-Did-It/Black-Hearts-EET/releases",
+  "a": "AWizardDidIt",
+  "v": "v2.03",
+  "sum": "Quest mod adding two major questlines: 'The Huntress' (BG1) featuring Illasera as a bounty-hunting quest-giver, and 'Pilgrimage' (SoD) uncovering Sarevok's legacy, with new areas, items, and dialogue.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "A-Wizard-Did-It",
+    "r": "Black-Hearts-EET"
+  },
+  "dl": "https://github.com/A-Wizard-Did-It/Black-Hearts-EET/releases",
+  "au": "AWizardDidIt",
+  "co": [
+    {
+      "n": "Install Blackhearts for BGEE or EET",
+      "tp2n": "Install Blackhearts for \"BGEE\" or \"EET including BGEE and BG2EE\"",
+      "pi": "AWizardDidIt-Blackhearts_BG1",
+      "wf": "Blackhearts",
+      "wp": "Blackhearts\\setup-Blackhearts.tp2",
+      "wc": 1,
+      "wq": "manual_final",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 1,
+      "no": "Dark-themed adventure for BGEE/EET."
+    },
+    {
+      "n": "Install Blackhearts for BG2EE only",
+      "tp2n": "Install Blackhearts for \"BG2EE only\"",
+      "cn": 20005,
+      "wf": "Blackhearts",
+      "wp": "Blackhearts\\setup-Blackhearts.tp2",
+      "wc": 20005,
+      "no": "Blackhearts for BG2EE standalone only.",
+      "games": [
+        "bg2ee"
+      ]
+    }
+  ]
+}

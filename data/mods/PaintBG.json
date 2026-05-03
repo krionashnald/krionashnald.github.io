@@ -1,0 +1,1800 @@
+{
+  "i": 690,
+  "t": "PaintBG",
+  "sv": 1,
+  "ord": 70,
+  "c": "PORTRAITS",
+  "n": "PaintBG Portrait Pack",
+  "no": "Replaces NPC portraits with original artwork by artastrophe. Many NPCs have variant portrait choices.",
+  "conflicts": [
+    {
+      "with": "AllThingsMazzy",
+      "withId": 453,
+      "severity": "soft",
+      "reason": "Both provide a Mazzy portrait. Cosmetic conflict, last installed wins.",
+      "myComps": "#40 Mazzy",
+      "theirComps": "#5 Hi-Res Portrait for Mazzy",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin/Edwina. Last installed wins",
+      "theirComps": "#1180 Female Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#17 Edwin #18 Edwin #19 Edwin #20 Edwina",
+      "theirComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "NostalgiaPack",
+      "withId": 356,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "theirComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "theirComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "theirComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#0 Restore Irenicus Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "theirComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#36 Kivan #14 Coran",
+      "theirComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ac-miscellaneous",
+      "withId": 427,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "theirComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ContinousViconiaAppearance",
+      "withId": 426,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#26 Yoshimo",
+      "theirComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "myComps": "#12 Anomen",
+      "theirComps": "#14 Anomen Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits (Coran, Safana, Faldorn, etc.). Last installed wins",
+      "theirComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dorn",
+          "portraits/paintbg/dorn.png",
+          "all"
+        ],
+        [
+          "neera",
+          "portraits/paintbg/neera.png",
+          "all"
+        ],
+        [
+          "rasaad",
+          "portraits/paintbg/rasaad.png",
+          "all"
+        ],
+        [
+          "isra_npc",
+          "portraits/paintbg/isra.png",
+          "all"
+        ],
+        [
+          "arath_npc",
+          "portraits/paintbg/arath.png",
+          "bg2"
+        ],
+        [
+          "dace_npc",
+          "portraits/paintbg/dace.png",
+          "bg2"
+        ],
+        [
+          "fade_npc",
+          "portraits/paintbg/fade.png",
+          "bg2"
+        ],
+        [
+          "adrian_npc",
+          "portraits/paintbg/adrian.png",
+          "bg2"
+        ],
+        [
+          "angelo_npc",
+          "portraits/paintbg/angelo.png",
+          "bg1"
+        ],
+        [
+          "gavin_npc",
+          "portraits/paintbg/gavin.png",
+          "all"
+        ],
+        [
+          "ninde_npc",
+          "portraits/paintbg/ninde_v1.png",
+          "bg2"
+        ],
+        [
+          "ninde_npc",
+          "portraits/paintbg/ninde_v2.png",
+          "bg2"
+        ],
+        [
+          "valen_npc",
+          "portraits/paintbg/valen.png",
+          "bg2"
+        ],
+        [
+          "petsy_npc",
+          "portraits/paintbg/petsy.png",
+          "bg2"
+        ],
+        [
+          "baeloth",
+          "portraits/paintbg/baeloth.png",
+          "all"
+        ],
+        [
+          "paintbg_aeon",
+          "portraits/paintbg/aeon.png",
+          "bg2"
+        ],
+        [
+          "paintbg_darian",
+          "portraits/paintbg/darian.png",
+          "bg2"
+        ],
+        [
+          "paintbg_nathaniel",
+          "portraits/paintbg/nathaniel.png",
+          "bg2"
+        ],
+        [
+          "paintbg_sarah",
+          "portraits/paintbg/sarah.png",
+          "bg2"
+        ],
+        [
+          "paintbg_solaufein",
+          "portraits/paintbg/solaufein.png",
+          "bg2"
+        ],
+        [
+          "paintbg_varshoon",
+          "portraits/paintbg/varshoon.png",
+          "bg2"
+        ],
+        [
+          "paintbg_white",
+          "portraits/paintbg/white.png",
+          "bg2"
+        ],
+        [
+          "paintbg_xulaye",
+          "portraits/paintbg/xulaye.png",
+          "bg2"
+        ],
+        [
+          "paintbg_yvette",
+          "portraits/paintbg/yvette.png",
+          "bg2"
+        ]
+      ],
+      "7": [
+        [
+          "aerie",
+          "portraits/paintbg/aerie_v1.png",
+          "bg2"
+        ]
+      ],
+      "8": [
+        [
+          "aerie",
+          "portraits/paintbg/aerie_v2.png",
+          "bg2"
+        ]
+      ],
+      "9": [
+        [
+          "ajantis",
+          "portraits/paintbg/ajantis.png",
+          "bg1"
+        ]
+      ],
+      "10": [
+        [
+          "alora",
+          "portraits/paintbg/alora.png",
+          "bg1"
+        ]
+      ],
+      "11": [
+        [
+          "anomen",
+          "portraits/paintbg/anomen.png",
+          "bg2"
+        ]
+      ],
+      "12": [
+        [
+          "branwen",
+          "portraits/paintbg/branwen.png",
+          "bg1"
+        ]
+      ],
+      "13": [
+        [
+          "cernd",
+          "portraits/paintbg/cernd.png",
+          "bg2"
+        ]
+      ],
+      "14": [
+        [
+          "coran",
+          "portraits/paintbg/coran.png",
+          "bg1"
+        ]
+      ],
+      "15": [
+        [
+          "dynaheir",
+          "portraits/paintbg/dynaheir_v1.png",
+          "bg1"
+        ]
+      ],
+      "16": [
+        [
+          "dynaheir",
+          "portraits/paintbg/dynaheir_v2.png",
+          "bg1"
+        ]
+      ],
+      "17": [
+        [
+          "edwin",
+          "portraits/paintbg/edwin_v1.png",
+          "all"
+        ]
+      ],
+      "18": [
+        [
+          "edwin",
+          "portraits/paintbg/edwin_v2.png",
+          "all"
+        ]
+      ],
+      "19": [
+        [
+          "edwin",
+          "portraits/paintbg/edwin_v3.png",
+          "all"
+        ]
+      ],
+      "21": [
+        [
+          "eldoth",
+          "portraits/paintbg/eldoth.png",
+          "bg1"
+        ]
+      ],
+      "22": [
+        [
+          "faldorn",
+          "portraits/paintbg/faldorn.png",
+          "bg1"
+        ]
+      ],
+      "23": [
+        [
+          "garrick",
+          "portraits/paintbg/garrick.png",
+          "bg1"
+        ]
+      ],
+      "24": [
+        [
+          "haerdalis",
+          "portraits/paintbg/haerdalis_v1.png",
+          "bg2"
+        ]
+      ],
+      "25": [
+        [
+          "haerdalis",
+          "portraits/paintbg/haerdalis_v2.png",
+          "bg2"
+        ]
+      ],
+      "26": [
+        [
+          "imoen",
+          "portraits/paintbg/imoen_v1.png",
+          "all"
+        ]
+      ],
+      "27": [
+        [
+          "imoen",
+          "portraits/paintbg/imoen_v2.png",
+          "all"
+        ]
+      ],
+      "28": [
+        [
+          "imoen",
+          "portraits/paintbg/imoen_v3.png",
+          "all"
+        ]
+      ],
+      "29": [
+        [
+          "jaheira",
+          "portraits/paintbg/jaheira_v1.png",
+          "all"
+        ]
+      ],
+      "30": [
+        [
+          "jaheira",
+          "portraits/paintbg/jaheira_v2.png",
+          "all"
+        ]
+      ],
+      "31": [
+        [
+          "jan",
+          "portraits/paintbg/jan.png",
+          "bg2"
+        ]
+      ],
+      "32": [
+        [
+          "kagain",
+          "portraits/paintbg/kagain.png",
+          "bg1"
+        ]
+      ],
+      "33": [
+        [
+          "keldorn",
+          "portraits/paintbg/keldorn.png",
+          "bg2"
+        ]
+      ],
+      "34": [
+        [
+          "khalid",
+          "portraits/paintbg/khalid_v1.png",
+          "all"
+        ]
+      ],
+      "35": [
+        [
+          "khalid",
+          "portraits/paintbg/khalid_v2.png",
+          "all"
+        ]
+      ],
+      "36": [
+        [
+          "kivan",
+          "portraits/paintbg/kivan.png",
+          "bg1"
+        ]
+      ],
+      "37": [
+        [
+          "korgan",
+          "portraits/paintbg/korgan.png",
+          "bg2"
+        ]
+      ],
+      "38": [
+        [
+          "montaron",
+          "portraits/paintbg/montaron_v1.png",
+          "bg1"
+        ]
+      ],
+      "39": [
+        [
+          "montaron",
+          "portraits/paintbg/montaron_v2.png",
+          "bg1"
+        ]
+      ],
+      "40": [
+        [
+          "mazzy",
+          "portraits/paintbg/mazzy.png",
+          "bg2"
+        ]
+      ],
+      "41": [
+        [
+          "minsc",
+          "portraits/paintbg/minsc_v1.png",
+          "all"
+        ]
+      ],
+      "42": [
+        [
+          "minsc",
+          "portraits/paintbg/minsc_v2.png",
+          "all"
+        ]
+      ],
+      "43": [
+        [
+          "minsc",
+          "portraits/paintbg/minsc_v3.png",
+          "all"
+        ]
+      ],
+      "44": [
+        [
+          "nalia",
+          "portraits/paintbg/nalia.png",
+          "bg2"
+        ]
+      ],
+      "45": [
+        [
+          "quayle",
+          "portraits/paintbg/quayle.png",
+          "bg1"
+        ]
+      ],
+      "47": [
+        [
+          "safana",
+          "portraits/paintbg/safana.png",
+          "bg1"
+        ]
+      ],
+      "48": [
+        [
+          "sarevok",
+          "portraits/paintbg/sarevok_v1.png",
+          "bg2"
+        ]
+      ],
+      "49": [
+        [
+          "sarevok",
+          "portraits/paintbg/sarevok_v2.png",
+          "bg2"
+        ]
+      ],
+      "50": [
+        [
+          "sharteel",
+          "portraits/paintbg/sharteel.png",
+          "bg1"
+        ]
+      ],
+      "51": [
+        [
+          "skie",
+          "portraits/paintbg/skie.png",
+          "bg1"
+        ]
+      ],
+      "53": [
+        [
+          "tiax",
+          "portraits/paintbg/tiax.png",
+          "bg1"
+        ]
+      ],
+      "54": [
+        [
+          "valygar",
+          "portraits/paintbg/valygar.png",
+          "bg2"
+        ]
+      ],
+      "55": [
+        [
+          "viconia",
+          "portraits/paintbg/viconia_v1.png",
+          "all"
+        ]
+      ],
+      "56": [
+        [
+          "viconia",
+          "portraits/paintbg/viconia_v2.png",
+          "all"
+        ]
+      ],
+      "57": [
+        [
+          "xan",
+          "portraits/paintbg/xan.png",
+          "bg1"
+        ]
+      ],
+      "59": [
+        [
+          "xzar",
+          "portraits/paintbg/xzar.png",
+          "bg1"
+        ]
+      ],
+      "60": [
+        [
+          "yeslick",
+          "portraits/paintbg/yeslick.png",
+          "bg1"
+        ]
+      ],
+      "61": [
+        [
+          "yoshimo",
+          "portraits/paintbg/yoshimo_v1.png",
+          "bg2"
+        ]
+      ],
+      "62": [
+        [
+          "yoshimo",
+          "portraits/paintbg/yoshimo_v2.png",
+          "bg2"
+        ]
+      ],
+      "63": [
+        [
+          "bodhi",
+          "portraits/paintbg/bodhi.png",
+          "bg2"
+        ],
+        [
+          "irenicus",
+          "portraits/paintbg/irenicus.png",
+          "bg2"
+        ]
+      ],
+      "64": [
+        [
+          "gorion",
+          "portraits/paintbg/gorion.png",
+          "bg1"
+        ]
+      ],
+      "65": [
+        [
+          "tamoko",
+          "portraits/paintbg/tamoko.png",
+          "bg1"
+        ]
+      ]
+    },
+    "pc": {
+      "2": {
+        "label": "PaintBG: BG2 PC Portraits",
+        "images": [
+          "portraits/paintbg_pc/edwin.png",
+          "portraits/paintbg_pc/gendwrf.png",
+          "portraits/paintbg_pc/genmelf.png",
+          "portraits/paintbg_pc/genmhlf.png",
+          "portraits/paintbg_pc/imoen.png",
+          "portraits/paintbg_pc/jaheira.png",
+          "portraits/paintbg_pc/man1.png",
+          "portraits/paintbg_pc/man2.png",
+          "portraits/paintbg_pc/minsc.png",
+          "portraits/paintbg_pc/nhorc.png",
+          "portraits/paintbg_pc/pa_ma10.png",
+          "portraits/paintbg_pc/pa_ma11.png",
+          "portraits/paintbg_pc/pa_ma12.png",
+          "portraits/paintbg_pc/pa_ma13.png",
+          "portraits/paintbg_pc/pa_ma14.png",
+          "portraits/paintbg_pc/pa_ma15.png",
+          "portraits/paintbg_pc/pa_ma16.png",
+          "portraits/paintbg_pc/pa_ma17.png",
+          "portraits/paintbg_pc/pa_ma18.png",
+          "portraits/paintbg_pc/pa_ma19.png",
+          "portraits/paintbg_pc/pa_ma9.png",
+          "portraits/paintbg_pc/pa_wo10.png",
+          "portraits/paintbg_pc/pa_wo11.png",
+          "portraits/paintbg_pc/pa_wo12.png",
+          "portraits/paintbg_pc/pa_wo13.png",
+          "portraits/paintbg_pc/pa_wo14.png",
+          "portraits/paintbg_pc/pa_wo15.png",
+          "portraits/paintbg_pc/pa_wo16.png",
+          "portraits/paintbg_pc/pa_wo6.png",
+          "portraits/paintbg_pc/pa_wo7.png",
+          "portraits/paintbg_pc/pa_wo8.png",
+          "portraits/paintbg_pc/pa_wo9.png",
+          "portraits/paintbg_pc/viconia.png",
+          "portraits/paintbg_pc/woman1.png",
+          "portraits/paintbg_pc/woman2.png"
+        ]
+      },
+      "4": {
+        "label": "PaintBG: BG1 PC Portraits",
+        "images": [
+          "portraits/paintbg_pc/edwin.png",
+          "portraits/paintbg_pc/gendwrf.png",
+          "portraits/paintbg_pc/genmelf.png",
+          "portraits/paintbg_pc/genmhlf.png",
+          "portraits/paintbg_pc/imoen.png",
+          "portraits/paintbg_pc/jaheira.png",
+          "portraits/paintbg_pc/man1.png",
+          "portraits/paintbg_pc/man2.png",
+          "portraits/paintbg_pc/minsc.png",
+          "portraits/paintbg_pc/nhorc.png",
+          "portraits/paintbg_pc/pa_ma10.png",
+          "portraits/paintbg_pc/pa_ma11.png",
+          "portraits/paintbg_pc/pa_ma12.png",
+          "portraits/paintbg_pc/pa_ma13.png",
+          "portraits/paintbg_pc/pa_ma14.png",
+          "portraits/paintbg_pc/pa_ma15.png",
+          "portraits/paintbg_pc/pa_ma16.png",
+          "portraits/paintbg_pc/pa_ma17.png",
+          "portraits/paintbg_pc/pa_ma18.png",
+          "portraits/paintbg_pc/pa_ma19.png",
+          "portraits/paintbg_pc/pa_ma9.png",
+          "portraits/paintbg_pc/pa_wo10.png",
+          "portraits/paintbg_pc/pa_wo11.png",
+          "portraits/paintbg_pc/pa_wo12.png",
+          "portraits/paintbg_pc/pa_wo13.png",
+          "portraits/paintbg_pc/pa_wo14.png",
+          "portraits/paintbg_pc/pa_wo15.png",
+          "portraits/paintbg_pc/pa_wo16.png",
+          "portraits/paintbg_pc/pa_wo6.png",
+          "portraits/paintbg_pc/pa_wo7.png",
+          "portraits/paintbg_pc/pa_wo8.png",
+          "portraits/paintbg_pc/pa_wo9.png",
+          "portraits/paintbg_pc/viconia.png",
+          "portraits/paintbg_pc/woman1.png",
+          "portraits/paintbg_pc/woman2.png"
+        ]
+      }
+    }
+  },
+  "u": "http://www.spellholdstudios.net/ie/portraits",
+  "a": "artastrophe, Lava Del'Vortel",
+  "sum": "87 portrait replacements for BG1/BG2 NPCs and mod NPCs. Multiple variants available for Aerie, Dynaheir, Edwin, Haer'Dalis, Imoen, Jaheira, Khalid, Montaron, Minsc, Sarevok, Viconia, Yoshimo, and Ninde.",
+  "tags": [
+    "cosmetic",
+    "portraits"
+  ],
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "au": "artastrophe, Lava Del'Vortel",
+  "dl": "https://github.com/SpellholdStudios/PaintBG",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Make portraits available via portraits directory",
+      "tp2n": "PaintBG: make portraits available via 'portraits' directory",
+      "cn": 0,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 0,
+      "wq": "exact"
+    },
+    {
+      "n": "Copy portraits to the portraits directory",
+      "tp2n": "PaintBG: Copy portraits to the 'portraits' directory",
+      "cn": 1,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "scn": "Portraits for PC (BG2/BGT)"
+    },
+    {
+      "n": "PC Portraits BG2: Override (suggested)",
+      "tp2n": "PaintBG: Override old PC portraits with new the selection (suggested)",
+      "cn": 2,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "pc_bg2",
+      "scn": "Portraits for PC (BG2/BGT)"
+    },
+    {
+      "n": "PC Portraits BG2: Copy to directory",
+      "tp2n": "PaintBG: Copy new portraits to the \"portraits\" directory",
+      "cn": 3,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 3,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "pc_bg2",
+      "scn": "Portraits for PC (BG1/Tutu)"
+    },
+    {
+      "n": "PC Portraits BG1: Override (suggested)",
+      "tp2n": "PaintBG: Override the old PC portraits with new the selection (suggested)",
+      "cn": 4,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 4,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "pc_bg1",
+      "scn": "Portraits for PC (BG1/Tutu)"
+    },
+    {
+      "n": "PC Portraits BG1: Copy for Tutu",
+      "tp2n": "PaintBG: BG2 Portraits for BG Tutu",
+      "cn": 5,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 5,
+      "wq": "exact",
+      "games": [
+        "tutu"
+      ],
+      "g": "pc_bg1"
+    },
+    {
+      "n": "Install all BG1-only NPC portraits for BG2",
+      "tp2n": "PaintBG: Install all BG1-only NPC portraits for BG2 (should affect most mods that bring back NPCs from BG1)",
+      "cn": 6,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 6,
+      "wq": "exact",
+      "games": [
+        "bg2"
+      ]
+    },
+    {
+      "n": "Aerie: Lighter, smaller eyes",
+      "tp2n": "Lighter Aerie, with smaller eyes",
+      "cn": 7,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 7,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "aerie",
+      "scn": "PaintBG: Aerie"
+    },
+    {
+      "n": "Aerie: Bigger blue eyes",
+      "tp2n": "Aerie has slightly bigger blue eyes",
+      "cn": 8,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 8,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "aerie",
+      "scn": "PaintBG: Aerie"
+    },
+    {
+      "n": "Ajantis",
+      "tp2n": "PaintBG: Ajantis",
+      "cn": 9,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 9,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Alora",
+      "tp2n": "PaintBG: Alora",
+      "cn": 10,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Anomen",
+      "tp2n": "PaintBG: Anomen",
+      "cn": 11,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 11,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Branwen",
+      "tp2n": "PaintBG: Branwen",
+      "cn": 12,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 12,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Cernd",
+      "tp2n": "PaintBG: Cernd",
+      "cn": 13,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 13,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Coran",
+      "tp2n": "PaintBG: Coran",
+      "cn": 14,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 14,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Dynaheir: Slimmer and more confident",
+      "tp2n": "Slimer and more confident Dynaheir",
+      "cn": 15,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 15,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "dynaheir",
+      "scn": "PaintBG: Dynaheir"
+    },
+    {
+      "n": "Dynaheir: BioWare face features",
+      "tp2n": "Dynaheir with her more BioWare face features",
+      "cn": 16,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 16,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "dynaheir",
+      "scn": "PaintBG: Dynaheir"
+    },
+    {
+      "n": "Edwin: #1 Lore-wise shaved",
+      "tp2n": "Install Edwin portrait #1 (lore-wise shaved portrait)",
+      "cn": 17,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 17,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "edwin",
+      "scn": "PaintBG: Edwin"
+    },
+    {
+      "n": "Edwin: #2 Hooded",
+      "tp2n": "Install Edwin portrait #2 (hooded)",
+      "cn": 18,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 18,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "edwin",
+      "scn": "PaintBG: Edwin"
+    },
+    {
+      "n": "Edwin: #3 With hair",
+      "tp2n": "Install Edwin portrait #3 (with hair)",
+      "cn": 19,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 19,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "edwin",
+      "scn": "PaintBG: Edwin"
+    },
+    {
+      "n": "Edwina (female Edwin)",
+      "tp2n": "PaintBG: Edwina (female Edwin)",
+      "cn": 20,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 20,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Eldoth",
+      "tp2n": "PaintBG: Eldoth",
+      "cn": 21,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 21,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Faldorn",
+      "tp2n": "PaintBG: Faldorn",
+      "cn": 22,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 22,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Garrick",
+      "tp2n": "PaintBG: Garrick",
+      "cn": 23,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 23,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Haer'Dalis: Dark hair, light fiendish",
+      "tp2n": "Haer'Dalis has dark hair and light fiendish features",
+      "cn": 24,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 24,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "haerdalis",
+      "scn": "PaintBG: Haer'Dalis"
+    },
+    {
+      "n": "Haer'Dalis: Blue hair, more fiendish",
+      "tp2n": "Haer'Dalis has more blue hair and fiendish features",
+      "cn": 25,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 25,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "haerdalis",
+      "scn": "PaintBG: Haer'Dalis"
+    },
+    {
+      "n": "Imoen: Slightly more painted",
+      "tp2n": "Slightly more painted Imoen",
+      "cn": 26,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 26,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "imoen",
+      "scn": "PaintBG: Imoen"
+    },
+    {
+      "n": "Imoen: More detailed, cheerful",
+      "tp2n": "More detailed Imoen; a bit more cheerful",
+      "cn": 27,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 27,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "imoen",
+      "scn": "PaintBG: Imoen"
+    },
+    {
+      "n": "Imoen: Crafty smile",
+      "tp2n": "Imoen with a crafty smile",
+      "cn": 28,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 28,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "imoen",
+      "scn": "PaintBG: Imoen"
+    },
+    {
+      "n": "Jaheira: More druidic",
+      "tp2n": "More druidic Jaheira",
+      "cn": 29,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 29,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "jaheira",
+      "scn": "PaintBG: Jaheira"
+    },
+    {
+      "n": "Jaheira: More noble",
+      "tp2n": "More noble Jaheira",
+      "cn": 30,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 30,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "jaheira",
+      "scn": "PaintBG: Jaheira"
+    },
+    {
+      "n": "Jan",
+      "tp2n": "PaintBG: Jan",
+      "cn": 31,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 31,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Kagain",
+      "tp2n": "PaintBG: Kagain",
+      "cn": 32,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 32,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Keldorn",
+      "tp2n": "PaintBG: Keldorn",
+      "cn": 33,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 33,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Khalid: Brown hair",
+      "tp2n": "Khalid with brown hair",
+      "cn": 34,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 34,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "khalid",
+      "scn": "PaintBG: Khalid"
+    },
+    {
+      "n": "Khalid: Ginger hair",
+      "tp2n": "Khalid with ginger hair",
+      "cn": 35,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 35,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "khalid",
+      "scn": "PaintBG: Khalid"
+    },
+    {
+      "n": "Kivan",
+      "tp2n": "PaintBG: Kivan",
+      "cn": 36,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 36,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Korgan",
+      "tp2n": "PaintBG: Korgan",
+      "cn": 37,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 37,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Montaron: Childish look",
+      "tp2n": "PaintBG: Montaron; more childish look",
+      "cn": 38,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 38,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "montaron",
+      "scn": "PaintBG: Montaron"
+    },
+    {
+      "n": "Montaron: Manly and evil look",
+      "tp2n": "PaintBG: Montaron; more manly and evil look",
+      "cn": 39,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 39,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "montaron",
+      "scn": "PaintBG: Montaron"
+    },
+    {
+      "n": "Mazzy",
+      "tp2n": "PaintBG: Mazzy",
+      "cn": 40,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 40,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Minsc: Without tattoo",
+      "tp2n": "Minsc (without tattoo)",
+      "cn": 41,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 41,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "minsc",
+      "scn": "PaintBG: Minsc"
+    },
+    {
+      "n": "Minsc: With tattoo",
+      "tp2n": "Minsc (with tattoo)",
+      "cn": 42,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 42,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "minsc",
+      "scn": "PaintBG: Minsc"
+    },
+    {
+      "n": "Minsc: Tattoo, less fur",
+      "tp2n": "Minsc (tattoo; less fur)",
+      "cn": 43,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 43,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "minsc",
+      "scn": "PaintBG: Minsc"
+    },
+    {
+      "n": "Nalia",
+      "tp2n": "PaintBG: Nalia",
+      "cn": 44,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 44,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Quayle",
+      "tp2n": "PaintBG: Quayle",
+      "cn": 45,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 45,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Quayle (BG2 NPC mod by Lava)",
+      "tp2n": "PaintBG: Quayle (BG2 NPC mod by Lava - 'BG1 NPC portraits for BG1' component does not affect Lava's Quayle as different file names are used)",
+      "cn": 46,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 46,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Safana",
+      "tp2n": "PaintBG: Safana",
+      "cn": 47,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 47,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Sarevok: Without glowing eyes",
+      "tp2n": "Sarevok without glowing eyes",
+      "cn": 48,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 48,
+      "wq": "exact",
+      "games": [
+        "tob"
+      ],
+      "g": "sarevok",
+      "scn": "PaintBG: Sarevok"
+    },
+    {
+      "n": "Sarevok: With glowing eyes",
+      "tp2n": "Sarevok with glowing eyes",
+      "cn": 49,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 49,
+      "wq": "exact",
+      "games": [
+        "tob"
+      ],
+      "g": "sarevok",
+      "scn": "PaintBG: Sarevok"
+    },
+    {
+      "n": "Shar-Teel",
+      "tp2n": "PaintBG: Shar-Teel",
+      "cn": 50,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 50,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Skie",
+      "tp2n": "PaintBG: Skie",
+      "cn": 51,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 51,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Skie (BG2 NPC mod by Lava)",
+      "tp2n": "PaintBG: Skie (BG2 NPC mod by Lava - 'BG1 NPC portraits for BG1' component does not affect Lava's Skie as different file names are used)",
+      "cn": 52,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 52,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Tiax",
+      "tp2n": "PaintBG: Tiax",
+      "cn": 53,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 53,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Valygar",
+      "tp2n": "PaintBG: Valygar",
+      "cn": 54,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 54,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Viconia: Original, with hood",
+      "tp2n": "Original Viconia; with a hood",
+      "cn": 55,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 55,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "viconia",
+      "scn": "PaintBG: Viconia"
+    },
+    {
+      "n": "Viconia: Darker, without hood",
+      "tp2n": "Darker Viconia; without a hood",
+      "cn": 56,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 56,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "g": "viconia",
+      "scn": "PaintBG: Viconia"
+    },
+    {
+      "n": "Xan",
+      "tp2n": "PaintBG: Xan",
+      "cn": 57,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 57,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Xan (BG2 NPC mod)",
+      "tp2n": "PaintBG: Xan (BG2 NPC mod)",
+      "cn": 58,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 58,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ]
+    },
+    {
+      "n": "Xzar",
+      "tp2n": "PaintBG: Xzar",
+      "cn": 59,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 59,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Yeslick",
+      "tp2n": "PaintBG: Yeslick",
+      "cn": 60,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 60,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ]
+    },
+    {
+      "n": "Yoshimo: Oriental hairstyle, partially shaved",
+      "tp2n": "Yoshimo with oriental hairstyle; partially shaved",
+      "cn": 61,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 61,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "yoshimo",
+      "scn": "PaintBG: Yoshimo"
+    },
+    {
+      "n": "Yoshimo: More usual hairstyle",
+      "tp2n": "Yoshimo with more usual hairstyle",
+      "cn": 62,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 62,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "g": "yoshimo",
+      "scn": "PaintBG: Yoshimo"
+    },
+    {
+      "n": "Extra portraits (Bodhi, Jon, Ellesime, ToB characters)",
+      "tp2n": "PaintBG: Extra portraits (Bodhi, Jon, Ellesime and ToB characters) - affects LR Jon, TS Bodhi and Ascension Balthazar",
+      "cn": 63,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 63,
+      "wq": "exact",
+      "games": [
+        "soa"
+      ],
+      "no": "Requires original BG2 engine (SOA/TOB). Not compatible with EET."
+    },
+    {
+      "n": "Gorion",
+      "tp2n": "PaintBG: Additional portrait for Gorion (BG1 character)",
+      "cn": 64,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 64,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "no": "Requires original BG1 engine or BGT. Not compatible with EET."
+    },
+    {
+      "n": "Tamoko",
+      "tp2n": "PaintBG: Additional portrait for Tamoko (BG1 character)",
+      "cn": 65,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 65,
+      "wq": "exact",
+      "games": [
+        "bg1"
+      ],
+      "no": "Requires original BG1 engine or BGT. Not compatible with EET."
+    },
+    {
+      "n": "Arath mod NPC",
+      "tp2n": "PaintBG: Arath mod NPC",
+      "cn": 66,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 66,
+      "wq": "exact"
+    },
+    {
+      "n": "Dace mod NPC",
+      "tp2n": "PaintBG: Dace mod NPC",
+      "cn": 67,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 67,
+      "wq": "exact"
+    },
+    {
+      "n": "Fade mod NPC",
+      "tp2n": "PaintBG: Fade mod NPC",
+      "cn": 68,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 68,
+      "wq": "exact"
+    },
+    {
+      "n": "Gavin mod NPC (BG1)",
+      "tp2n": "PaintBG: Gavin mod NPC (BG1)",
+      "cn": 69,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 69,
+      "wq": "exact"
+    },
+    {
+      "n": "Gavin mod NPC (BG2)",
+      "tp2n": "PaintBG: Gavin mod NPC (BG2)",
+      "cn": 70,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 70,
+      "wq": "exact"
+    },
+    {
+      "n": "Sarah mod NPC",
+      "tp2n": "PaintBG: Sarah mod NPC",
+      "cn": 71,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 71,
+      "wq": "exact"
+    },
+    {
+      "n": "Solaufein mod NPC",
+      "tp2n": "PaintBG: Solaufein mod NPC",
+      "cn": 72,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 72,
+      "wq": "exact",
+      "no": "Requires Solaufein NPC mod to be installed."
+    },
+    {
+      "n": "Weimer's Valen mod NPC",
+      "tp2n": "PaintBG: Weimer's Valen mod NPC",
+      "cn": 73,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 73,
+      "wq": "exact"
+    },
+    {
+      "n": "Xulaye mod NPC",
+      "tp2n": "PaintBG: Xulaye mod NPC",
+      "cn": 74,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 74,
+      "wq": "exact",
+      "no": "Requires Xulaye NPC mod to be installed."
+    },
+    {
+      "n": "Yvette mod NPC",
+      "tp2n": "PaintBG: Yvette mod NPC",
+      "cn": 75,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 75,
+      "wq": "exact"
+    },
+    {
+      "n": "Petsy mod NPC",
+      "tp2n": "PaintBG: Petsy mod NPC",
+      "cn": 76,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 76,
+      "wq": "exact"
+    },
+    {
+      "n": "Adrian mod NPC",
+      "tp2n": "PaintBG: Adrian mod NPC",
+      "cn": 77,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 77,
+      "wq": "exact"
+    },
+    {
+      "n": "Aeon mod NPC",
+      "tp2n": "PaintBG: Aeon mod NPC",
+      "cn": 78,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 78,
+      "wq": "exact",
+      "no": "Requires Aeon NPC mod to be installed."
+    },
+    {
+      "n": "Angelo mod NPC",
+      "tp2n": "PaintBG: Angelo mod NPC",
+      "cn": 79,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 79,
+      "wq": "exact",
+      "no": "Requires Angelo NPC mod to be installed."
+    },
+    {
+      "n": "Darian mod NPC",
+      "tp2n": "PaintBG: Darian mod NPC",
+      "cn": 80,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 80,
+      "wq": "exact"
+    },
+    {
+      "n": "Isra mod NPC",
+      "tp2n": "PaintBG: Isra mod NPC",
+      "cn": 81,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 81,
+      "wq": "exact"
+    },
+    {
+      "n": "Nathaniel mod NPC",
+      "tp2n": "PaintBG: Nathaniel mod NPC",
+      "cn": 82,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 82,
+      "wq": "exact"
+    },
+    {
+      "n": "Ninde mod NPC: Without arcane tattoo",
+      "tp2n": "Ninde without the arcane tattoo - more in-character",
+      "cn": 83,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 83,
+      "wq": "exact",
+      "g": "ninde",
+      "scn": "PaintBG: Ninde mod NPC"
+    },
+    {
+      "n": "Ninde mod NPC: With arcane tattoo",
+      "tp2n": "Ninde with the arcane tattoo",
+      "cn": 84,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 84,
+      "wq": "exact",
+      "g": "ninde",
+      "scn": "PaintBG: Ninde mod NPC"
+    },
+    {
+      "n": "Varshoon mod NPC",
+      "tp2n": "PaintBG: Varshoon mod NPC",
+      "cn": 85,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 85,
+      "wq": "exact"
+    },
+    {
+      "n": "White mod NPC",
+      "tp2n": "PaintBG: White mod NPC",
+      "cn": 86,
+      "wf": "PaintBG",
+      "wp": "PaintBG\\PaintBG.tp2",
+      "wc": 86,
+      "wq": "exact"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "PaintBG"
+  }
+}

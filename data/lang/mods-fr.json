@@ -1,0 +1,3265 @@
+{
+  "3": {
+    "n": "Fusion de DLC",
+    "sum": "Intègre le DLC « Siege of Dragonspear » dans le répertoire du jeu principal afin que les mods puissent accéder à son contenu et le modifier. Indispensable avant d'installer tout mod concernant « SoD »."
+  },
+  "4": {
+    "n": "EE Fixpack",
+    "sum": "Compilation de correctifs élaborée par la communauté qui corrige des centaines de bogues que les correctifs officiels n'avaient pas détectés dans BG1 EE, SoD, BG2EE et ToB. Elle est encore en version bêta, mais largement recommandée."
+  },
+  "5": {
+    "n": "BG1 Une affaire en suspens",
+    "sum": "Restaure 35 éléments supprimés dans la version « Cut BG1 ». 16 d'entre eux fonctionnent sur BGEE / EET ; 19 sont bloqués (problème déjà résolu dans l'édition Enhanced). Cela concerne les quêtes, les PNJ, les dialogues, les objets, les créatures et les zones."
+  },
+  "6": {
+    "n": "Tenya Thermidor",
+    "sum": "Ajoute le jeune Tenya, issu de « Baldur's Gate », en tant que compagnon PNJ clerc pouvant être recruté, doté de capacités liées à l'eau, de dialogues uniques et d'une quête personnelle autour du « Bol de maîtrise des élémentaires de l'eau »."
+  },
+  "9": {
+    "n": "Verr'Sza",
+    "sum": "Ajoute Verr'Sza, une chasseuse de primes rakshasa, en tant que PNJ pouvant rejoindre votre groupe dans «BG1». Une compagne de camp maléfique dotée de dialogues uniques."
+  },
+  "128": {
+    "n": "Zakrion",
+    "sum": "Ajoute Zakrion, un PNJ duelliste humain à «BGEE », que l'on trouve près d'une épave sur la Côte de l'Épée, avec des portraits personnalisés, des répliques vocales, une ligne de dialogue d'amitié et une intrigue semi-romantique."
+  },
+  "10": {
+    "n": "Blanc",
+    "sum": "PNJ barbare humain de faction « neutre chaotique » pouvant être recruté dans «BG2 », proposant des échanges humoristiques avec tous les PNJ d’BioWare, ainsi que des options romantiques pour les protagonistes masculins."
+  },
+  "513": {
+    "n": "La saga de Drizzt",
+    "sum": "La saga de Drizzt sur BG2EE et EET"
+  },
+  "514": {
+    "n": "Un monde impitoyable",
+    "sum": "« Rough World » augmente la difficulté générale d'Baldur's Gate, en rendant les ennemis plus coriaces et les combats plus difficiles tout au long du jeu."
+  },
+  "515": {
+    "n": "C'était un bateau lent venu de Kara-Tur",
+    "sum": "Exporté automatiquement depuis code.google.com/p/karatur"
+  },
+  "516": {
+    "n": "Margarita NPC",
+    "sum": "Ajoute Margarita Zelleod, une compagne PNJ halfling de type « traqueuse » d'alignement neutre et loyal, dotée de dialogues personnalisés, de répliques d'humour entre PNJ et d'une histoire mystérieuse en tant que messagère."
+  },
+  "12": {
+    "n": "Baldur's Gate : Trilogie Édition améliorée",
+    "sum": "Fusionne BG1:EE, SoD, BG2:EE et ToB en un seul jeu continu, ce qui vous permet d'incarner un personnage depuis Candlekeep jusqu'à l'Throne of Bhaal, sans avoir à recommencer."
+  },
+  "13": {
+    "n": "Annuler le calcul d'itinéraire",
+    "sum": "Rétablit le comportement d'origine d'BG2 pour l'algorithme de recherche de chemin de l'édition améliorée. Corrige les problèmes qui faisaient que les personnages empruntaient des itinéraires étranges pour contourner les obstacles."
+  },
+  "20": {
+    "n": "Ça suffit",
+    "sum": "Extension du moteur qui offre des possibilités de modding allant au-delà de celles offertes par le moteur EE de base. Requis par plusieurs mods avancés (Bubb's Spell Menu, certains mods de kits)."
+  },
+  "14": {
+    "n": "Interface utilisateur améliorée de Lefreut (thème EE de BG1)",
+    "sum": "Remplace l'interface utilisateur par défaut par une interface plus épurée et plus fonctionnelle, adoptant le style visuel classique d'BG1. Apporte des améliorations au journal, à l'inventaire et à la carte en mode écran large."
+  },
+  "15": {
+    "n": "Interface utilisateur améliorée de Lefreut (thème « SoD »)",
+    "sum": "Remplace l'interface utilisateur par défaut par une interface plus épurée et plus fonctionnelle, utilisant le style visuel «Siege of Dragonspear». Apporte les mêmes améliorations fonctionnelles que le thème «BG1 EE»."
+  },
+  "16": {
+    "n": "Interface utilisateur améliorée de Lefreut (thème « BG2EE »)",
+    "sum": "Remplace l'interface utilisateur par défaut par une interface plus épurée et plus fonctionnelle, utilisant le style visuel «BG2». Apporte les mêmes améliorations fonctionnelles que les autres skins LeUI."
+  },
+  "17": {
+    "n": "Interface utilisateur Infinity",
+    "sum": "Refonte de l'interface utilisateur modulaire, avec des améliorations sélectionnables individuellement pour l'inventaire, le grimoire, l'eet du personnage et d'autres écrans. Plus personnalisable que LeUI."
+  },
+  "18": {
+    "n": "Modifications de l'interface utilisateur",
+    "sum": "Une sélection de 58 modifications d'interface utilisateur parmi lesquelles vous pouvez choisir : options d'infobulles masquées, modifications des boîtes de dialogue, changements apportés à l'inventaire et améliorations visant à faciliter l'utilisation."
+  },
+  "19": {
+    "n": "Séparateur de genre pour portraits",
+    "sum": "Trie les fichiers de portraits dans des sous-dossiers classés par sexe afin que la sélection de portraits lors de la création de personnage n'affiche que les portraits correspondant au sexe que vous avez choisi."
+  },
+  "21": {
+    "n": "Menu des sorts de Bubb (version étendue)",
+    "sum": "Ajoute un menu de sorts consultable et triable pour faciliter la sélection des sorts pendant le jeu. Nécessite l'extension «EEex»."
+  },
+  "736": {
+    "n": "BuffBot",
+    "sum": "Automatise les séquences de buffs avant le combat grâce à des capacités innées configurables. Prend en charge les préréglages et les listes de sorts par classe. Nécessite l'extension «EEex»."
+  },
+  "22": {
+    "n": "Auto Loot",
+    "sum": "Récupère automatiquement le butin des conteneurs et des ennemis vaincus, vous évitant ainsi de devoir cliquer sans cesse. Filtres personnalisables pour choisir ce que vous souhaitez ramasser."
+  },
+  "23": {
+    "n": "Infinity Innovations : les principaux acteurs",
+    "sum": "iiKeyNames est un mod pour *Baldur's Gate* 2 qui modifie le nom des objets clés une fois qu'ils ont été utilisés, afin de vous aider à organiser votre inventaire et à ne transporter que les objets indispensables."
+  },
+  "120": {
+    "n": "Réalisations !",
+    "sum": "Ajoute un système de succès qui recense vos réalisations tout au long du jeu. Des succès à débloquer pour les quêtes terminées, les découvertes et les étapes franchies."
+  },
+  "498": {
+    "n": "Boutons de la barre d'outils recolorés",
+    "sum": "Un mod d'interface graphique pour BG:EE et BG2:EE"
+  },
+  "590": {
+    "n": "Interface utilisateur de Dragonspear++",
+    "sum": "Une interface utilisateur améliorée spécialement conçue pour les écrans de campagne d'Siege of Dragonspear, qui optimise l'interface de la campagne, les dialogues et la mise en page du journal."
+  },
+  "707": {
+    "n": "Interface utilisateur Pocket Play++",
+    "sum": "Mod d'interface graphique optimisé pour BG:EE sur téléphones et tablettes. Adapte les éléments de l'interface aux petits écrans tactiles. Destiné aux appareils mobiles — ne convient pas aux PC/ordinateurs de bureau."
+  },
+  "374": {
+    "n": "Afficher les options de jeu cachées",
+    "sum": "Ajoute des options en jeu pour plus de 30 paramètres système cachés, ainsi qu'un menu de triche amélioré, des raccourcis clavier et des messages d'interface utilisateur. Par Argent77."
+  },
+  "869": {
+    "n": "L'interface utilisateur de Tipun",
+    "sum": "Ce mod modifie l'interface utilisateur d'Baldur's Gate, d'Siege of Dragonspear, de Baldur's Gate II Enhanced Edition et de la trilogie Enhanced Edition."
+  },
+  "930": {
+    "n": "IWDEE Interface utilisateur pour BGEE",
+    "sum": "Ce mod remplace entièrement l'interface utilisateur par défaut d'Baldur's Gatee 1 Enhanced Edition et d'Baldur's Gatee 2 Enhanced Edition par celle d'Icewind Dale Enhanced Edition."
+  },
+  "24": {
+    "n": "BG:EE Films classiques",
+    "sum": "Il s'agit d'un mod d'WeiDU qui restaure les cinématiques « classiques » de l'Baldur's Gate originale ainsi que certaines cinématiques de Baldur's Gate II sur BGEE / SoD / EET. Un nouveau composant permet de rétablir les écrans de chapitre et de rêve de la version de base d'BG1 sur BGEE / SoD / EET (en utilisant le thème approprié)."
+  },
+  "25": {
+    "n": "Baldur's Gate Refonte graphique",
+    "sum": "Des arrière-plans et des sprites de personnages améliorés par l'IA qui optimisent les graphismes du jeu aux résolutions élevées. Fichier volumineux, mais purement esthétique."
+  },
+  "26": {
+    "n": "Relooking du bosquet des druides",
+    "sum": "Mod « Druid Grove Makeover » pour BG2 / BG2EE / EET"
+  },
+  "27": {
+    "n": "Pack d'animations Sentrizeal",
+    "sum": "Fournit des animations d'avatar de remplacement et corrige les ensembles d'animations manquants pour diverses classes et races dans les jeux «Baldur's Gate» et «Icewind Dale»."
+  },
+  "28": {
+    "n": "Jaheira Recast",
+    "sum": "Rétablit le doublage prévu pour Jaheira dans «SoD», en réintégrant les répliques coupées et en lui attribuant un ensemble de sons mis à jour, avec des options pour les sons de BG1+BG2 ainsi que son portrait de BG2."
+  },
+  "356": {
+    "n": "Pack Nostalgie",
+    "sum": "Rétablit les règles, les objets et les mécanismes de l'époque d'BG1 dans l'édition améliorée. Pour les joueurs qui préfèrent l'ambiance du jeu original."
+  },
+  "935": {
+    "n": "Mauvais temps"
+  },
+  "293": {
+    "n": "Icônes de sorts remasterisées",
+    "sum": "Icônes de sorts remasterisées en HD pour les jeux IE:EE"
+  },
+  "947": {
+    "n": "Modèles d'évaluation de la biomasse (BAM) améliorés",
+    "sum": "Remplace les icônes BAM de l'inventaire par des versions améliorées."
+  },
+  "460": {
+    "n": "Améliorations esthétiques EE",
+    "sum": "Améliorations esthétiques, notamment de meilleures animations, des couleurs corrigées et une finition visuelle soignée pour les sorts, les objets et les créatures dans toutes les campagnes."
+  },
+  "472": {
+    "n": "Kit d'éclairage",
+    "sum": "Ajoute des effets d'éclairage dynamiques aux cartes de zone, permettant ainsi aux torches, aux sorts et à l'heure de la journée d'influencer visuellement l'environnement."
+  },
+  "509": {
+    "n": "One Pixel Productions",
+    "sum": "Les icônes des armes, des armures et des objets ont été redessinées dans un style graphique cohérent et de meilleure qualité. Il s'agit d'une amélioration purement esthétique de l'inventaire."
+  },
+  "519": {
+    "n": "Zones débruitées par l'IA de BG:EE",
+    "sum": "Arrière-plans de la région d'BG1, améliorés par IA, pour des images plus nettes aux résolutions modernes. Modification purement esthétique, fichiers volumineux."
+  },
+  "520": {
+    "n": "Zones débruitées par IA BG2:EE",
+    "sum": "Arrière-plans de la région d'BG2, améliorés par IA, pour des images plus nettes aux résolutions modernes. Modification purement esthétique, fichiers volumineux."
+  },
+  "651": {
+    "n": "Effets visuels SpellFix",
+    "sum": "Corrige et améliore les effets visuels de divers sorts de la série «Baldur's Gate», en remédiant aux erreurs graphiques et aux incohérences dans les animations des sorts."
+  },
+  "708": {
+    "n": "BGEE Graphismes améliorés (upscaling 4x)",
+    "sum": "Fonds de zone agrandis 4x par IA pour BG:EE. Remplace les graphismes de zone d'origine d'BG1 par des textures haute résolution améliorées. Nécessite l'EEex."
+  },
+  "865": {
+    "n": "De meilleurs effets visuels pour les sorts",
+    "sum": "Ce petit mod rend les effets visuels de divers sorts (en particulier les sorts d'abjuration tels que « Déflexion de sort » et « Retour de sort », etc.) plus homogènes, moins agressifs pour les yeux et plus faciles à..."
+  },
+  "864": {
+    "n": "BG1 Pack d'icônes",
+    "sum": "Ce mod ajoute de nouvelles icônes pour les objets de quête et les objets liés à l'intrigue dans «BG1:EE». Dans «BG2», la plupart des objets de quête disposent de leur propre image, ce qui n'est pas le cas dans «BG1»."
+  },
+  "866": {
+    "n": "Couleurs personnalisées pour les portraits",
+    "sum": "Ce mod vous permet de définir des couleurs personnalisées pour les portraits, les points de vie des personnages et les bordures de certaines icônes de personnages en modifiant le fichier exécutable du jeu."
+  },
+  "867": {
+    "n": "Filtre de netteté",
+    "sum": "Ce mod vise à utiliser des opérations de couleur plus cohérentes, ainsi que d'autres filtres de netteté et de mise à l'échelle grâce aux fichiers de shaders introduits dans BG(2)EE."
+  },
+  "868": {
+    "n": "Artisan's Font Pack",
+    "sum": "Ce mod remplace les polices d'origine des jeux utilisant le moteur Infinity Engine par de nouvelles polices. Toutes les polices sélectionnées proviennent des sites FontSquirrel et 1001 Fonts et sont sous licence pour un usage commercial."
+  },
+  "724": {
+    "n": "Infinity Mod Forge Patchs",
+    "sum": "WeiDU Correctifs de compatibilité pour le préréglage «Infinity Mod Forge». Corrige les échecs d'installation avec plusieurs mods. Aucune modification du contenu — uniquement des corrections techniques."
+  },
+  "29": {
+    "n": "Made in Heaven : Réparations et restaurations",
+    "sum": "Corrige et rétablit le contenu supprimé sur BG1 et BG2 dans un seul fichier. Comprend des corrections concernant les créatures, la restauration de dialogues et des corrections d'objets."
+  },
+  "30": {
+    "n": "Correction de Sareveff",
+    "sum": "Corrige la capacité « Assaut du Porteur de mort » de Sarevok dans «Throne of Bhaal » : correction de l'application des dégâts infligés aux créatures de niveau inférieur, ajustement du timing du rire et ajout d'un effet visuel lorsqu'il étourdit ses ennemis."
+  },
+  "31": {
+    "n": "Arme empoisonnée rééquilibrée",
+    "sum": "Rééquilibre la compétence « Arme empoisonnée » des Gardes noirs et des Assassins en adaptant les dégâts en fonction du niveau du personnage, ce qui la rend viable tout au long du jeu."
+  },
+  "32": {
+    "n": "Animaux de compagnie",
+    "sum": "Permet aux rangers et aux druides d'avoir des compagnons animaux qui montent de niveau avec vous, à l'instar du système de NWN. Un compagnon permanent qui combat aux côtés du groupe."
+  },
+  "844": {
+    "n": "Correction des dialogues en polonais",
+    "sum": "Ce mod corrige de nombreuses erreurs linguistiques en polonais dans les dialogues du jeu."
+  },
+  "842": {
+    "n": "BG2 FixPack",
+    "sum": "Le FixPack «BG2» est le pack de correctifs le plus complet à ce jour. Il corrige tous les bugs corrigés par Baldurdash (de Kevin Dorner), ainsi qu'un million d'autres, garantissant ainsi un jeu parfaitement fonctionnel."
+  },
+  "843": {
+    "n": "Configuration Big World FR Fixpack",
+    "sum": "BWS-FR Fixpack est un ensemble de correctifs initialement destiné à Big World Setup FR, mais qui peut également être utilisé de manière autonome."
+  },
+  "846": {
+    "n": "Correction de la traduction française de BG1:EE",
+    "sum": "L'objectif de ce mod est de corriger la traduction française d'Baldur's Gate : Enhanced Edition et de l'extension Siege of Dragonspear, afin de proposer une version française complète digne de ce nom, tant au niveau..."
+  },
+  "847": {
+    "n": "Correction de la traduction française de BG2:EE",
+    "sum": "L'objectif de ce mod est de corriger la traduction française d'Baldur's Gatee II : Édition améliorée, et de proposer une version française complète digne de ce nom, tant au niveau du texte que du doublage audio.|I..."
+  },
+  "849": {
+    "n": "Correction du jet de sauvegarde dans « Legacy ofBhaal »",
+    "sum": "Ce mod apporte une correction au niveau de difficulté « Legacy Of Bhaal », qui a fixé le nombre de jets de sauvegarde à 20."
+  },
+  "852": {
+    "n": "Remède pour bien dormir",
+    "sum": "Ce mod corrige le dysfonctionnement des effets « sleep » et « reverse », qui sont gérés par le même opcode du jeu."
+  },
+  "853": {
+    "n": "Mise à jour de la forêt de Tethyr",
+    "sum": "La grotte de la forêt de Tethyr a été modifiée par le mod « Check the Bodies ». Les mods « Tortured Souls-BP » et « Tashia NPC » utilisent également la grotte d'origine pour leurs quêtes et leurs scripts."
+  },
+  "33": {
+    "n": "Mod « Endless » pourBG1",
+    "sum": "Ajoute des événements et des rencontres à la période post-Sarevok de l'BG1, vous permettant ainsi de continuer à explorer la Côte de l'Épée après la bataille finale au lieu de passer immédiatement à l'SoD."
+  },
+  "34": {
+    "n": "Encore un sacré enfer",
+    "sum": "Ajoute une quête planétaire autour de la politique des Baatezu et des Tanar'ri. Explorez une partie des Neuf Enfers avec de nouvelles zones et des rencontres démoniaques."
+  },
+  "35": {
+    "n": "Les astuces de Jastey",
+    "sum": "Recueil de 17 ajustements pour la transition entre «SoD» et «EET» : corrections de dialogues, correctifs de cohérence et améliorations de la qualité de vie pour le parcours allant de «BG1» à «SoD», puis à «BG2»."
+  },
+  "36": {
+    "n": "La scène du pont de Boareskyr",
+    "sum": "Enrichit la scène du pont de Boareskyr dans «SoD» avec des options de dialogue supplémentaires, des réactions des PNJ et des choix de jeu de rôle pour ce moment crucial de l'histoire."
+  },
+  "37": {
+    "n": "Imoen pour toujours",
+    "sum": "Permet à Imoen de rester un membre actif du groupe tout au long de «SoD» et jusqu’à «BG2», avec de nouveaux dialogues. Empêche le scénario de la retirer de force du groupe."
+  },
+  "39": {
+    "n": "La vocation",
+    "sum": "Série de quêtes majeure «BG1» avec de nouvelles zones et de nouvelles rencontres. PROBLÈME D'INSTALLATION : les composants 0 et 20 échouent lors de l'installation via mod_installer (bug AUTO_TRA). Le composant 40 (Objets exotiques) fonctionne. Il est recommandé de procéder à une installation manuelle ou via PI."
+  },
+  "40": {
+    "n": "Pack bonus dans «Baldur's Gate»",
+    "sum": "Intègre le contenu du pack bonus «Baldur's Gate 2» dans «BG1». Ajoute le marchand bonus et les objets issus du CD bonus original «BG2»."
+  },
+  "41": {
+    "n": "Reflets du destin",
+    "sum": "Mod de refonte majeure de l'intrigue couvrant BG1 / SoD / BG2. Réorganisation du contenu, réécriture de l'histoire de Caelar, ajout de zones d'SoD à BG2. Version bêta v0.9"
+  },
+  "42": {
+    "n": "Baldur's Gate Modification des mini-quêtes et des rencontres",
+    "sum": "Ajoute 17 petites quêtes et rencontres réparties dans les zones d'BG1. Chacune est de courte durée (15 à 30 minutes) et s'intègre aux lieux existants."
+  },
+  "43": {
+    "n": "Le pack de quêtes d'Ascalon",
+    "sum": "Ajoute 13 nouvelles quêtes secondaires à *BG1*, avec des dénouements multiples. Comprend des quêtes d'enquête, des dilemmes moraux et des explorations de donjons à travers la Côte de l'Épée."
+  },
+  "44": {
+    "n": "Des rencontres encore plus riches et variées !",
+    "sum": "Ajoute 8 nouvelles rencontres aléatoires et enrichit celles qui existent déjà dans les zones sauvages d'BG1. Rend les déplacements entre les zones moins prévisibles."
+  },
+  "45": {
+    "n": "Les nuances de la Côte de l'Épée",
+    "sum": "Mod de quête de grande envergure pour «BG1» qui ajoute de nouvelles zones, quêtes et rencontres au sud d'Baldur's Gate. Il comprend un nouveau scénario mettant en scène les Ombres ainsi qu'un complexe de donjons."
+  },
+  "46": {
+    "n": "La rédemption de Brage",
+    "sum": "Prolonge la quête de rédemption de Brage dans *BG1* grâce à des dialogues, des rencontres et des conséquences supplémentaires liés à vos choix concernant le chevalier maudit."
+  },
+  "47": {
+    "n": "Le projet NPC «BG1»",
+    "sum": "Élargit considérablement les dialogues, les échanges humoristiques et les options romantiques avec tous les PNJ de la version originale d'BG1. Ajoute des centaines de nouvelles conversations et d'interactions au sein du groupe."
+  },
+  "48": {
+    "n": "BG1 NPC Music",
+    "sum": "Comme nous n'avons pas réussi à convaincre les doubleurs originaux d'enregistrer toutes les nouvelles répliques, nous avons plutôt cherché des morceaux de musique adaptés à chaque PNJ, qui seront diffusés chaque fois qu'ils entameront une conversation. Ce pack musical est un pack distinct et facultatif."
+  },
+  "49": {
+    "n": "Ajantis BG1 Expansion Modification",
+    "sum": "Prolonge l'histoire d'BG1, de l'univers d'Ajantis, avec des dialogues supplémentaires, une romance plus approfondie et un développement des personnages allant au-delà du contenu de base."
+  },
+  "50": {
+    "n": "Les pourparlers d'amitié élargis de Coran",
+    "sum": "Ce mod enrichit la séquence de dialogues d'amitié de Coran en ajoutant jusqu'à dix-huit (18) nouvelles répliques avec le protagoniste (ainsi qu'un commentaire potentiel de Garrick) pour un personnage joueur qui n'est pas en couple avec lui. Si vous avez installé le projet PNJ « The BG1 », ces dialogues commencent après le dernier échange d'amitié standard. Si le joueur a entamé puis interrompu la romance de Coran dans le cadre du projet PNJ « The BG1 », la séquence d'amitié devrait alors se déclencher. Si vous n'avez pas installé le projet de PNJ « The BG1 », ces dialogues deviennent disponibles immédiatement."
+  },
+  "51": {
+    "n": "Le chemin de l'amitié de Xan",
+    "sum": "Ce mod ajoute un parcours d'amitié pour le PNJ Xan dans «Baldur's GateI »."
+  },
+  "52": {
+    "n": "La disparition de Skie Silvershield",
+    "sum": "BG1 / SoD : un mod de quête qui explore ce qui est arrivé à Skie Silvershield. Il propose un scénario mystérieux comprenant une enquête et plusieurs dénouements."
+  },
+  "53": {
+    "n": "Aerie dans BG:EE",
+    "sum": "Aerie dans BG:EE"
+  },
+  "55": {
+    "n": "Baldur's Gate Modification « Romantic Encounters » (RE de BG1)",
+    "sum": "Ajoute 49 petites scènes optionnelles de rencontres romantiques et sociales tout au long de *BG1*. Chacune consiste en une courte scène (flirt, événements dans une taverne, rencontres fortuiteseet) qui apporte une touche supplémentaire à l'ambiance."
+  },
+  "56": {
+    "n": "Le Seatower de Balduran",
+    "sum": "Un mod de quêtes qui ajoute un nouveau quartier et de nombreuses quêtes à la ville de Badur's Gate ! "
+  },
+  "57": {
+    "n": "L'attrait de l'appel de la sirène",
+    "sum": "BG1 Mod de quête ajoutant une nouvelle zone côtière avec un scénario mettant en scène des sirènes. Environ 2 à 3 heures de contenu, avec de nouvelles cartes, de nouveaux objets et de nouvelles rencontres."
+  },
+  "58": {
+    "n": "Retour à Candlekeep",
+    "sum": "Vous permet de retourner à Candlekeep en tant que visiteur pendant l'événement «BG1», avec de nouveaux dialogues et de nouvelles interactions qui reflètent votre parcours depuis votre départ."
+  },
+  "59": {
+    "n": "Gorgone",
+    "sum": "Un mod pour BG:EE qui ajoute une guilde de voleurs dans la ville de Beregost."
+  },
+  "60": {
+    "n": "Les Cœurs noirs",
+    "sum": "Mod de quêtes ajoutant deux séries de quêtes majeures : « The Huntress » (BG1), dans laquelle Illasera incarne une chasseuse de primes qui confie des missions, et « Pilgrimage » (SoD), qui dévoile l'héritage de Sarevok, avec de nouvelles zones, de nouveaux objets et de nouveaux dialogues."
+  },
+  "61": {
+    "n": "Loretakers",
+    "sum": "Mod de quête ajoutant un nouveau donjon à deux niveaux sous la ville d'Baldur's Gate, avec de nouvelles zones, de nouveaux ennemis et de nouvelles quêtes, pour environ 1 à 2 heures de jeu."
+  },
+  "458": {
+    "n": "La face cachée de la Côte de l'Épée",
+    "sum": "Une vaste extension d'BG1, proposant de nouvelles quêtes, zones et rencontres dans les recoins les plus sombres de la Côte de l'Épée. Entre 8 et 12 heures de contenu, avec des intrigues aux choix moraux ambigus."
+  },
+  "473": {
+    "n": "Contes du nord de la Côte des Épées",
+    "sum": "Une importante extension intitulée «BG1» qui ajoute de nombreuses nouvelles zones, quêtes, PNJ et un scénario se déroulant dans le nord de la Côte des Épées. Entre 10 et 15 heures de nouveau contenu."
+  },
+  "573": {
+    "n": "Dark Horizons (Ancien)",
+    "sum": "Mod original « Dark Horizons » (version héritée) ajoutant une série de quêtes intitulée «BG1». Utilisez plutôt « Dark Horizons BG:EE (512) » pour la compatibilité avec EE."
+  },
+  "512": {
+    "n": "Dark Horizons : BG:EE",
+    "sum": "Ajoute une série de quêtes intitulée «BG1» mettant en scène de mystérieuses forces obscures qui menacent la Côte de l'Épée. Plusieurs heures de nouveau contenu, avec de nouvelles zones et de nouvelles rencontres."
+  },
+  "716": {
+    "n": "Le jour le plus sombre (Version originale)",
+    "sum": "Dépendance requise pour TDDz (programme d'installation de EET). Téléchargez-la depuis SHS, ne l'installez pas directement — TDDz se charge de l'installation."
+  },
+  "521": {
+    "n": "Le jour le plus sombre",
+    "sum": "Une extension massive d'BG1, proposant une longue série de quêtes, des dizaines de nouvelles zones et de nombreuses heures de contenu. L'un des plus grands mods d'BG1 Classic."
+  },
+  "522": {
+    "n": "Le retour de Loron",
+    "sum": "La quête « Le retour de Loron » commence lorsque Brus vous parle d'un mage qui se trouve dans le bâtiment du Conseil"
+  },
+  "525": {
+    "n": "Le Coffre-fort",
+    "sum": "Ajoute un nouveau complexe de donjons souterrains accessible depuis l'BG1, avec des pièges, des énigmes et des trésors. Une expérience classique d'exploration de donjons."
+  },
+  "526": {
+    "n": "Banque d'Baldur's Gate",
+    "sum": "Ajoute une banque fonctionnelle à la ville d'Baldur's Gate, où vous pouvez déposer de l'or et percevoir des intérêts. Une amélioration pratique pour la gestion de l'or."
+  },
+  "527": {
+    "n": "Le secret de Bonehill",
+    "sum": "Adaptation du module classique d'AD&D « Secret of Bonehill » sous forme de quête pour «BG1 ». Une aventure autonome proposant de nouvelles zones et de nouvelles rencontres."
+  },
+  "529": {
+    "n": "Les Immortels",
+    "sum": "BG1 Mod de quête consacré aux menaces des morts-vivants. Il ajoute de nouvelles rencontres, de nouvelles zones et un scénario mettant en scène les morts-vivants."
+  },
+  "531": {
+    "n": "Bibliothèque des Drows",
+    "sum": "Ajoute une petite zone de quête intitulée «BG2» comprenant une bibliothèque drow cachée, avec des informations sur l'univers, des objets et des rencontres."
+  },
+  "532": {
+    "n": "Souvenirs de Candlekeep",
+    "sum": "Mod d'BG1s de courte durée qui enrichit votre expérience dans Candlekeep de souvenirs et de réflexions. Il s'agit principalement de dialogues et d'ambiance, pour environ 30 minutes de contenu."
+  },
+  "533": {
+    "n": "Désobéissance civile",
+    "sum": "Mod de quête court pour «BG1» sur le thème des troubles civils. Ajoute un petit scénario proposant des choix moraux."
+  },
+  "569": {
+    "n": "L'histoire de Cliffette",
+    "sum": "Ajoute une quête au Five Flagons Playhouse mettant en scène un personnage nommé Fonick, initialement conçu pour un concours de modding sur le thème de l'histoire proposant plusieurs fins."
+  },
+  "571": {
+    "n": "Va-t'en, petit gardien de la flamme !",
+    "sum": "Le mod « Out, Brief Candlekeep! » de Temnix pour «BG1: EE » et «EET ».  "
+  },
+  "574": {
+    "n": "Kit Tomes",
+    "sum": "Ajoute des grimoires de carrière magiques à «BG1», qui vous permettent d'ajouter un kit à n'importe quel personnage joueur ou non-joueur, rendant ainsi possibles des combinaisons de kits normalement impossibles."
+  },
+  "583": {
+    "n": "Le porte-clés de Cliffette",
+    "sum": "Ajoute un trousseau de clés pour vous aider à gérer le grand nombre de clés acquises tout au long de votre périple à travers Faerûn."
+  },
+  "585": {
+    "n": "L'épée de Noober",
+    "sum": "Un mod humoristique pour «BG1» mettant en scène l'épée légendaire de Noober. Une quête secondaire pleine de bonne humeur."
+  },
+  "587": {
+    "n": "Le clan Grey, épisode 1sod",
+    "sum": "Premier épisode d'une série de quêtes intitulée « BG1 ». Il propose un scénario consacré au Clan Gris, avec de nouvelles zones, de nouveaux personnages et de nouvelles rencontres."
+  },
+  "588": {
+    "n": "Certaines personnes",
+    "sum": "Le mod « Some Individuals » de Temnix, avec le patch officiel d'eyre appliqué."
+  },
+  "589": {
+    "n": "Transitions",
+    "sum": "Ajoute 15 scènes de transition entre les campagnes d'EET, ce qui fluidifie le déroulement de l'histoire lorsque vous passez de « BG1 » à « SoD », puis à « BG2 » et enfin à « ToB »."
+  },
+  "682": {
+    "n": "La pierre d'Askavar",
+    "sum": "« The Stone of Askavar » est un mod basé sur « WeiDU » pour Totsc, Tutu, BGT et BGEE. Ce mod comprend une quête principale et plusieurs quêtes secondaires. Il propose de nouveaux objets et de nouvelles zones, ainsi que de nombreuses nouvelles créatures à combattre."
+  },
+  "495": {
+    "n": "Sang et foi",
+    "sum": "BG1 mod de quêtes comprenant 14 quêtes mettant en scène un clerc lathanderite en quête de justice, qui met l'accent sur le jeu de rôle et propose des dénouements pouvant modifier l'alignement du personnage en fonction des choix du joueur."
+  },
+  "734": {
+    "n": "Une fête à se damner",
+    "sum": "Une quête policière sur l'île de Dukes' Retreat, inspirée d'Agatha Christie. Les invités sont assassinés les uns après les autres : trouvez le coupable. Musique originale, nouveaux lieux, interventions des compagnons."
+  },
+  "926": {
+    "n": "Le pack d'aventure de Jarl",
+    "sum": "Ce mod enrichit la section BG du jeu. Il réintroduit dans le jeu un certain nombre d'éléments qui étaient inutilisés ou inachevés, et que le mod [[112]] n'avait pas restaurés."
+  },
+  "62": {
+    "n": "Une affaire en suspens",
+    "sum": "Récupère 24 éléments supprimés d'BG2 / ToB : quêtes, dialogues, rencontres et objets que Bioware avait laissés inachevés ou supprimés avant la sortie du jeu."
+  },
+  "63": {
+    "n": "Le projet de restauration d'Almateria",
+    "sum": "Récupère 12 éléments supplémentaires du contenu supprimé d'BG2 qui n'étaient pas inclus dans « Unfinished Business ». Comprend des objets, des rencontres et des séries de quêtes restaurés."
+  },
+  "64": {
+    "n": "Pack de quêtes",
+    "sum": "Ajoute 15 nouvelles quêtes à «BG2 » : des scénarios de forteresse supplémentaires, des extensions de rencontres et de nouvelles séries de quêtes. Chacune est autonome et parfaitement intégrée."
+  },
+  "66": {
+    "n": "Aventures cachées",
+    "sum": "Ajoute 10 séries de quêtes cachées à «BG2» qui se déclenchent naturellement au fil de l'exploration. De nouveaux donjons, PNJ et scénarios s'intègrent aux zones existantes."
+  },
+  "67": {
+    "n": "Lanterne de Rhynn restaurée",
+    "sum": "Il s'agit d'un petit mod qui rétablit la quête étendue originale de la Lanterne de Rhynn, qui figurait dans la version bêta d'Baldur's Gatee II mais qui avait été supprimée avant la sortie du jeu. Presque tous les fichiers sont encore présents dans le jeu, ce qui permet de la restaurer de manière très fidèle."
+  },
+  "68": {
+    "n": "Le sang d'Adalon",
+    "sum": "Petite extension de quête pour «Baldur's Gatee II »."
+  },
+  "69": {
+    "n": "Autres solutions",
+    "sum": "Ajoute des solutions alternatives aux moments clés de l'intrigue d'BG2, vous permettant ainsi de mener à bien les quêtes principales d'une manière inédite."
+  },
+  "70": {
+    "n": "Fief des voleurs agrandi",
+    "sum": "Élargit la série de quêtes du repaire des voleurs dans «BG2» avec des missions supplémentaires, des PNJ et un scénario plus long pour les chefs des voleurs de l'ombre."
+  },
+  "71": {
+    "n": "Aventures au Pays du Papier",
+    "sum": "Ce mod ajoute quelques dialogues amusants avec quatre musiciens appelés « The Beatles »."
+  },
+  "72": {
+    "n": "Lucy la wyverne",
+    "sum": "Ajoute Lucy, une petite wyverne de compagnie, en tant que compagnon pseudo-PNJ dans «BG2». Elle grandit au fil du jeu et apporte son aide au combat."
+  },
+  "73": {
+    "n": "Le Minotaure et Lilacor",
+    "sum": "Ce mod ajoute une petite trame de fond au minotaure, qui explique ce que lui et les trois cadavres font dans les égouts d'Athkatla."
+  },
+  "74": {
+    "n": "Alcool",
+    "sum": "Ajoute une interaction humoristique entre les membres du groupe à la fin du chapitre 3 d'« BG2 », lorsqu'ils acceptent de se rendre à Spellhold ; cette interaction se déclenche si Korgan fait partie du groupe."
+  },
+  "75": {
+    "n": "Tous les mods et tous les chiens",
+    "sum": "Ajoute une sélection de petites activités et de quêtes secondaires facultatives à *Baldur's Gate II*, dans le but de retrouver l'esprit plus léger et plus aventureux du *Baldur's Gate* original."
+  },
+  "76": {
+    "n": "Rencontres CoM",
+    "sum": "Ajoute de nouvelles rencontres et des améliorations à «BG2», notamment des druides du Bosquet des Druides améliorés, des rencontres avec les drows de l'Underdark et une rencontre améliorée avec Shagbag."
+  },
+  "77": {
+    "n": "Se mettre dans le pétrin",
+    "sum": "BG2 Mod proposant une quête sur le thème de la pêche. Une quête secondaire décontractée avec de nouvelles zones et de nouveaux personnages."
+  },
+  "78": {
+    "n": "La Tour de la Tromperie",
+    "sum": "BG2 Mod de donjon proposant une tour trompeuse avec des énigmes, des pièges et des défis sur le thème des illusions. Quelques heures de contenu à explorer dans les donjons."
+  },
+  "79": {
+    "n": "Mettez-vous à l'épreuve !",
+    "sum": "BG2 Mod de défis de combat proposant 6 affrontements de type arène qui mettront vos compétences tactiques à l'épreuve. Comprend des récompenses uniques à l'issue des défis."
+  },
+  "80": {
+    "n": "Assassinats",
+    "sum": "BG2 Mod de quêtes sur les contrats d'assassinat. Petite série de quêtes avec des affrontements axés sur la furtivité."
+  },
+  "81": {
+    "n": "Les Mercenaires",
+    "sum": "BG2 Mod de quête mettant en scène un groupe de mercenaires. Ajoute un scénario autour des mercenaires, avec de nouveaux personnages et des combats."
+  },
+  "82": {
+    "n": "Retour à Brynnlaw",
+    "sum": "Ajoute une quête consistant à retourner sur l'île de Brynnlaw dans «BG2» après avoir terminé le scénario principal de Spellhold, avec du nouveau contenu et de nouvelles rencontres sur place."
+  },
+  "83": {
+    "n": "Exploration de donjon",
+    "sum": "BG2 Mod de type « dungeon-crawl » proposant une aventure souterraine étendue comprenant plusieurs niveaux, des pièges et des combats contre des boss."
+  },
+  "84": {
+    "n": "Des promesses qui s'évanouissent",
+    "sum": "BG2 Un mod de quête avec un scénario autour des promesses non tenues et de leurs conséquences. Riche en dialogues et proposant des choix moraux."
+  },
+  "85": {
+    "n": "L'Ogre de Derat",
+    "sum": "Une petite quête"
+  },
+  "86": {
+    "n": "Rencontres romantiques",
+    "sum": "Ajoute 54 scènes optionnelles de rencontres romantiques et sociales tout au long de *BG2*. De courtes vignettes qui ajoutent du piquant : flirts dans les tavernes, rencontres fortuites et moments intimes."
+  },
+  "87": {
+    "n": "Les couleurs de l'infini : Contes des jardins profonds",
+    "sum": "Quête autonome pour *BG2* proposant un nouveau jardin à explorer, avec des rencontres, des énigmes et un scénario indépendant. Elle fait partie de la série *Colours of Infinity*."
+  },
+  "88": {
+    "n": "Les couleurs de l'infini : Innershade",
+    "sum": "BG2 Mod proposant des quêtes qui ajoute la ville d'Innershade, avec ses quêtes, ses boutiques et ses PNJ. Une nouvelle colonie entièrement développée à explorer. Fait partie de la série Colours of Infinity."
+  },
+  "89": {
+    "n": "Les couleurs de l'infini : La Reine Blanche",
+    "sum": "BG2 Mod proposant une série de quêtes sur le thème de l'Arctique mettant en scène la Reine Blanche. De nouvelles zones et de nouvelles rencontres dans un décor glacé. Fait partie de la série « Colours of Infinity »."
+  },
+  "90": {
+    "n": "Les couleurs de l'infini : Je n'oublierai jamais",
+    "sum": "Mod pour l'BG2, une histoire courte axée sur la mémoire et la perte. Un jeu axé sur les dialogues, avec une narration pleine d'ambiance. Fait partie de la série Colours of Infinity."
+  },
+  "91": {
+    "n": "Le chant d'Eilistraee",
+    "sum": "BG2 Mod de quête consacré à Eilistraee, la déesse drow de la danse. Il propose un scénario qui explore la culture drow au-delà du mal de l'Underdark."
+  },
+  "92": {
+    "n": "Le domaine d'Athkatlan : la lisière sud",
+    "sum": "Le nouveau quartier d'Athkatlan sera disponible dès le lancement d'BG2. Il proposera une quête principale, des mini-quêtes, des boutiques, une taverne et un temple."
+  },
+  "93": {
+    "n": "Enseigne d'Athkatlan : Le Salon de l'Ooze",
+    "sum": "Ajoute une nouvelle section des égouts d'Athkatlan comprenant trois zones à explorer, des mini-quêtes, de nouveaux objets et des graphismes uniques."
+  },
+  "94": {
+    "n": "Les Terres d'Athkatlan : L'Île du Chêne Enchevêtré",
+    "sum": "Nouvelle zone d'Athkatlan où les joueurs contribuent à rétablir la paix au sein d'une communauté de l'île du Chêne enchevêtré, un village autrefois indépendant qui a été intégré à la ville."
+  },
+  "95": {
+    "n": "Quartier d'Athkatlan : le quartier de Bridge",
+    "sum": "Ajoute deux nouveaux espaces intérieurs au quartier du Pont, avec quatre quêtes, de nouveaux personnages, des objets et des sorts à découvrir."
+  },
+  "96": {
+    "n": "Les Terres d'Athkatlan : Sables d'albâtre",
+    "sum": "Petit mod de quêtes ajoutant la zone de la plage publique d'Athkatla, avec sept nouvelles quêtes, de nouveaux personnages, des objets et des graphismes d'objets inédits."
+  },
+  "97": {
+    "n": "Le voyage vers Whin Hill",
+    "sum": "Une aventure dans l'esprit d'IWD pour «BG2 », où les joueurs partent à la recherche d'un homme dans la région de Whin Hill, affrontant des wyvernes et dévoilant le mystère qui entoure un village dangereux."
+  },
+  "100": {
+    "n": "Les contes effrayants : Les piqûres sanglantes de Barovia",
+    "sum": "Une aventure sombre sur le thème de Ravenloft qui transporte les joueurs à Barovia, avec des rencontres horrifiques de style gothique, des créatures mort-vivantes et des énigmes complexes."
+  },
+  "102": {
+    "n": "Nouvelles",
+    "sum": "Un mod de quête pour «Baldur's Gate II » qui commence dans le quartier des docks d'Athkatla et propose de nouvelles zones, de nouveaux ennemis et de nouveaux objets pour les groupes de niveau 9 à 12."
+  },
+  "103": {
+    "n": "L'appel de la déesse perdue",
+    "sum": "Mod de quête majeure ajoutant 46 nouvelles zones, un nouveau quartier (Goldspires), plus de 40 objets uniques et 8 à 10 heures de jeu. Inspiré de « For Duty and Deity »."
+  },
+  "104": {
+    "n": "Un souhait de volaille",
+    "sum": "Mod proposant une quête courte mettant en scène un domaine noble, un apprenti mage, des poulets et une bougie aux vœux limités, avec en récompense un familier unique : un poulet."
+  },
+  "105": {
+    "n": "À fond dans la folie",
+    "sum": "GoneNuts, une quête d'BG2EE"
+  },
+  "106": {
+    "n": "Jardins morts",
+    "sum": "DeadGardens, une quête d'BG2EE"
+  },
+  "107": {
+    "n": "Errant Justice",
+    "sum": "NON PRIS EN CHARGE : L'auteur a masqué le dépôt GitHub et n'assure plus le support de ce mod. Un mod de remplacement, Blood and Faith, est en cours de développement pour BG1. Le mod fonctionne toujours, mais présente des problèmes connus qui n'ont pas été corrigés."
+  },
+  "464": {
+    "n": "Gibberlings Three Mod anniversaire",
+    "sum": "BG2 Mod de quête créé à l'occasion de l'anniversaire d'Gibberlings Three. Une aventure autonome rendant hommage à la communauté des moddeurs."
+  },
+  "468": {
+    "n": "Héros, voleurs et usuriers",
+    "sum": "BG2 Mod de quête comprenant 5 éléments qui ajoutent des rencontres avec des héros, des voleurs et des marchands. Contenu varié allant des combats aux interactions sociales."
+  },
+  "469": {
+    "n": "Hirondelle de Imnes",
+    "sum": "Combats tactiques à Imnesvale après votre retour de l'Underdark. Des envahisseurs pillards attaquent le village. Choisissez le niveau de difficulté."
+  },
+  "476": {
+    "n": "La région de la terreur",
+    "sum": "Mod de quêtes de grande envergure pour *BG2* proposant une nouvelle région périlleuse avec de nombreux donjons à explorer, de nouvelles créatures et un scénario en plusieurs parties."
+  },
+  "479": {
+    "n": "Éclats de glace",
+    "sum": "Tout le monde a son mod raté — Goo, Alassa, The Circle, The Darkest Day — et voilà le mien. Les deux quêtes ne sont pas si mauvaises que ça. Pas vraiment. Enfin, pas trop. Mais si vous installez le composant de restauration du sort « Summon Cow », vous devriez avoir honte de vous. Vraiment. "
+  },
+  "505": {
+    "n": "Vérifiez les corps",
+    "sum": "BG2 Mod proposant un scénario d'enquête. Vous examinez des corps et des indices pour résoudre un mystère à Athkatla."
+  },
+  "506": {
+    "n": "Le trône du Dieu fou",
+    "sum": "BG2 Mod de quête proposant un scénario autour d'une divinité démente. Il ajoute de nouvelles zones, un donjon et des combats difficiles."
+  },
+  "528": {
+    "n": "Les mercenaires de la Côte de l'Épée",
+    "sum": "Mod massif pour «BG2» comprenant 68 éléments qui ajoutent des contrats de mercenaires, des chasses à la prime et des missions de combat à travers Amn. Entièrement personnalisable grâce à des options individuelles."
+  },
+  "530": {
+    "n": "Libération de Hlondeth",
+    "sum": "Ajoute une série de quêtes intitulée «BG2» qui se déroule dans la ville de Hlondeth. De nouvelles zones, des PNJ et un scénario consacré à la libération d'une ville occupée."
+  },
+  "534": {
+    "n": "Avoir de la glace",
+    "sum": "Petit mod pour «BG1» proposant des rencontres et du contenu sur le thème de l'hiver."
+  },
+  "535": {
+    "n": "Velvetfoot (La Soumission)",
+    "sum": "Une ancienne aventure CtB en version moderne pour BG2EE et EET"
+  },
+  "537": {
+    "n": "Des elfes et des artefacts",
+    "sum": "Une ancienne quête tirée de « Check the Bodies », dans une version moderne pour BG2EE et EET"
+  },
+  "541": {
+    "n": "Le règne de la liberté",
+    "sum": "BG2 Mod de quête sur le thème de la fuite de la captivité. Ajoute un scénario comprenant de nouvelles zones et des rencontres sur le thème de la liberté."
+  },
+  "550": {
+    "n": "Forteresse des mages agrandie",
+    "sum": "Élargit la série de quêtes de la forteresse des mages dans «BG2» avec de nouvelles expériences magiques, la gestion des apprentis et des rencontres interdimensionnelles."
+  },
+  "551": {
+    "n": "Rencontre à Azengaard",
+    "sum": "Un voyageur dans le temps ramène le groupe au cœur d'une bataille épique et laisse entrevoir une autre qui s'annonce"
+  },
+  "552": {
+    "n": "Une quête au service d'Oghma",
+    "sum": "Ajoute une petite quête confiée par un nouveau moine au Temple d'Oghma, offrant des pouvoirs supplémentaires en récompense, avec des commentaires de PNJ tout au long du jeu."
+  },
+  "553": {
+    "n": "Les contes d'Anegh",
+    "sum": "BG2 Série de quêtes en 6 ésods, s'inscrivant dans l'univers de « Tales of Anegh ». Plusieurs heures de contenu axé sur l'histoire."
+  },
+  "568": {
+    "n": "Procédure d'asile améliorée",
+    "sum": "Enrichit la section « Spellhold Asylum » de l'extension «BG2» avec de nouvelles rencontres, énigmes et du contenu supplémentaire au sein de l'asile."
+  },
+  "570": {
+    "n": "La Lanterne brisée",
+    "sum": "Réparer la lanterne cassée - Quête disponible dans les trois zones de Tethir dans «SoA»."
+  },
+  "572": {
+    "n": "Les ombres planent sur Soubar",
+    "sum": "Une vaste extension pour *BG2* se déroulant dans la ville de Soubar et ses environs. Elle propose de nouvelles zones étendues, des quêtes et un scénario sombre. Plus de 10 heures de contenu."
+  },
+  "579": {
+    "n": "Âmes tourmentées (version allégée)",
+    "sum": "BG2 Mod de quête avec PNJ. Ajoute Kachiko, un PNJ que l'on peut recruter sur une île isolée, avec des rencontres sur le thème de l'horreur."
+  },
+  "649": {
+    "n": "BG1 PNJ dans «SoA : Water Gardens »",
+    "sum": "Pack de PNJ complet intégrant les compagnons d'BG1 à BG2. Ajoute le quartier des Jardins aquatiques, plus de 15 PNJ à recruter (Shar-Teel, Yeslick, Garrick, Coran, Safana, Alora, Skie, Eldoth, Faldorn, Xzar, Montaron, Quayle, Tiax, Ajantis, Dynaheir, Kivan, Xan, Kagain, Branwen), des modifications d'apparence et une quête du cirque étendue. Ignore automatiquement les PNJ lorsque des mods autonomes sont détectés."
+  },
+  "689": {
+    "n": "Le crépuscule d'automne",
+    "sum": "Un (énorme) mod pour «Baldur's Gate 2 »"
+  },
+  "702": {
+    "n": "Le monde des vampires",
+    "sum": "Extension sur le thème des vampires comprenant 29 éléments : scénarios de vampires, résurrection de PNJ, forteresse de Bodhi, vampires pouvant rejoindre le groupe, kits et contenu inter-modules. Version expérimentale v0.53 — aucune vérification du jeu dans « tp2 ». Certains éléments nécessitent Vampire Tales ou DSotSC."
+  },
+  "823": {
+    "n": "Les Deepgnomes de la Côte des Épées",
+    "sum": "EET - Restauration exclusive du contenu des quêtes et des boutiques issues de « Aurora’s Shoes and Boots ». Ajoute des rencontres avec les Svirfneblin et la boutique de bottes d’Aurora dans les zones d’BG1s et d’BG2s."
+  },
+  "824": {
+    "n": "Guilde des détectives d'Athkatla",
+    "sum": "Ce mod ajoute un nouveau bâtiment de la Guilde des détectives dans le quartier des bidonvilles, qui peut devenir un bastion supplémentaire pour un joueur de n'importe quelle classe – à condition qu'il parvienne à sauver la guilde de la faillite en deux semaines..."
+  },
+  "825": {
+    "n": "Les domaines de l'effroi",
+    "sum": "Ce mod ajoute une nouvelle quête assez difficile : parler à la personne complètement folle au Marché des aventuriers."
+  },
+  "826": {
+    "n": "Encadré",
+    "sum": "Ce mod propose deux versions différentes du chapitre 6. Le retour à Candlekeep devient une quête secondaire qui n'implique pas le Trône de fer."
+  },
+  "827": {
+    "n": "Le rêve de Gorion",
+    "sum": "Ce mod remet au goût du jour une séquence onirique inutilisée d'Bhaal issue du jeu original et la transforme en une mini-quête dans le chapitre 7 d'BGEE ou d'EET."
+  },
+  "828": {
+    "n": "Quête perdue",
+    "sum": "Ce mod modifie la quête du cirque en y ajoutant de petites épreuves. Les résultats de ces épreuves influent sur la difficulté du combat final."
+  },
+  "829": {
+    "n": "Lunia pour de belles fêtes",
+    "sum": "La carte de Lunia offre un contraste rafraîchissant avec les nombreux décors infernaux présents dans «Baldur's Gate II»."
+  },
+  "830": {
+    "n": "Pack de quêtes « Paladins de Faerûn »",
+    "sum": "Cette adaptation de « Paladins of Faerûn » reprend toutes les quêtes du mod tchèque original, mais n'en est pas une copie conforme."
+  },
+  "831": {
+    "n": "Médiateur pour la paix",
+    "sum": "Lancez-vous dans une petite aventure mettant en scène une épée rusée, un apprenti malin et un sorcier grincheux."
+  },
+  "832": {
+    "n": "Les abîmes du désespoir",
+    "sum": "Mod d'extension pour «Baldur's Gates 2 : Enhanced Edition ». Intègre et enrichit «Black Pits 2 : Gladiators of Thay» dans les campagnes «Shadows of Amn» et «Throne of Bhaal», ainsi que le contenu personnalisé «Pits of...»"
+  },
+  "833": {
+    "n": "Reflections of Destiny (Remix de SoD)",
+    "sum": "Ce mod est conçu pour modifier, améliorer et parfois déplacer différentes parties de la campagne «Siege of Dragonspear», ainsi que les sections de «BG1» qui la précèdent et celles de «BG2» qui la suivent."
+  },
+  "834": {
+    "n": "Champ de bataille de Sylmar",
+    "sum": "Ce mod ajoute des combats et une quête stratégique au contenu d'Baldur's Gate II : Shadows of Amn."
+  },
+  "836": {
+    "n": "Mod Sphère plane",
+    "sum": "Ce mod prolonge la durée de la quête de classe liée à la sphère magique, ce qui rend le jeu en tant que mage plus intéressant."
+  },
+  "837": {
+    "n": "Tomoyo et la ville souterraine",
+    "sum": "En hommage au manga « Tomoyo After : It's a Wonderful Life », ce mod ajoute une ville souterraine (dont l'entrée se trouve dans la crypte du liche, près des portes de la ville)."
+  },
+  "838": {
+    "n": "Les voyageurs à Faerûn",
+    "sum": "Selon son auteur, ce mod vise à faire d'EET une histoire encore plus cohérente :|- il introduit certains PNJ avec lesquels il n'est pas possible de s'allier et donne un avant-goût de leur histoire, tirée de BG2 / ToB, dès les premières parties du jeu.|- vous pouvez..."
+  },
+  "839": {
+    "n": "Tourbillonner avec la rune",
+    "sum": "Ce mod donne tout son sens à la rencontre avec les membres de la Twisted Rune. Dans «EET», l'histoire commence dans la section BG."
+  },
+  "840": {
+    "n": "Umbra de Torto",
+    "sum": "Ce mod propose des combats d'arène contre de puissantes créatures extraplanaires. L'objectif est simple : gagner ou mourir !"
+  },
+  "841": {
+    "n": "Un souhait insolite",
+    "sum": "Quête déclenchée par le sort « Souhait limité ». Un djinn remet un message d'un barde, ce qui mène à des rencontres avec un orque, une princesse, un kobold et des paladins à Trademeet, ainsi qu'au Cimetière."
+  },
+  "859": {
+    "n": "En quête de justice",
+    "sum": "Permet aux personnages de bonne alignement (niveau 14+) de se rendre à la Gorge de la Résurrection. Nouveau contenu de quête proposant des choix éthiques."
+  },
+  "863": {
+    "n": "Compagnie mercenaire du Cheval d'Or",
+    "sum": "Protégez Revan Artecratos, un PNJ que vous pouvez recruter, contre des assassins dans le cadre d'un scénario de compagnie de mercenaires. Comprend des choix de classes alternatifs pour Revan. Compatible uniquement avec les versions classiques d'BG2/ToB et BGT — pas de prise en charge d'EET."
+  },
+  "835": {
+    "n": "L'émission de Jerry Zinger",
+    "sum": "Vos personnages peuvent participer à un talk-show animé par Jerry Zinger, un célèbre présentateur d'Amn (une sorte de pseudonyme de Jerry Springer)."
+  },
+  "938": {
+    "n": "Jan's Quest Remix"
+  },
+  "109": {
+    "n": "Ascension",
+    "sum": "Cette version remet au goût du jour et enrichit la fin de *Throne of Bhaal* en respectant la vision originale de David Gaider : une Melissan plus intelligente, davantage d'options pour Balthazar, des interactions plus approfondies avec l'Bhaalspawn, et des combats finaux plus difficiles."
+  },
+  "110": {
+    "n": "Revirement",
+    "sum": "Vous permet d'incarner le méchant dans le dernier acte d'ToB. Après la fin classique, changez de perspective pour découvrir un dénouement alternatif proposant de nouveaux défis tactiques."
+  },
+  "111": {
+    "n": "Le chemin le plus long",
+    "sum": "Développe l'histoire d'Irenicus dans *ToB*, en proposant une quête visant à le ressusciter et à le racheter (ou à le détruire à nouveau). Ajoute plusieurs heures de nouveau contenu chargé de sens."
+  },
+  "112": {
+    "n": "Les roues de la prophétie",
+    "sum": "Cette version revisite le déroulement de l'intrigue autour de la prophétie d'ToB, vous offrant ainsi davantage de contrôle sur l'Bhaalspawn. Elle modifie le rythme et les choix proposés dans les chapitres 9 et 10."
+  },
+  "113": {
+    "n": "Réparer les Roues de la Prophétie",
+    "sum": "Correction de compatibilité pour Wheels of Prophecy. Installez ce mod après Wheels afin de résoudre tout conflit de script avec d'autres mods."
+  },
+  "115": {
+    "n": "Affronter les cieux",
+    "sum": "ToB Mod de quête mettant en cause l'ordre divin. Ajoute un parcours alternatif en fin de jeu avec des rencontres sur le thème du céleste."
+  },
+  "116": {
+    "n": "Les retrouvailles",
+    "sum": "ToB Mod de quête consacré aux retrouvailles avec des personnages de votre passé. Ajoute des scènes et des rencontres qui apportent une conclusion émotionnelle."
+  },
+  "117": {
+    "n": "La menace rampante",
+    "sum": "Ce mod ajoute une petite « quête » comprenant « une rencontre de nature serpentine » dans la dimension du plan de poche, ainsi qu'un tout nouvel objet (très stylé !)."
+  },
+  "119": {
+    "n": "Caravanes artisanales",
+    "sum": "Ajoute des maîtres de caravane qui, moyennant une somme d'or, transportent le groupe vers des destinations précises en deux fois moins de temps qu'un trajet normal, ce qui réduit les longs et fastidieux déplacements à travers la Côte de l'Épée."
+  },
+  "121": {
+    "n": "Révisions de Slayer",
+    "sum": "Cette mise à jour revisite la transformation « Slayer » d'Bhaalspawn, avec de nouvelles capacités, des effets visuels et un système de progression. Elle fait de la forme « Slayer » un choix tactique viable plutôt qu'un handicap."
+  },
+  "575": {
+    "n": "Ehlastra ToB",
+    "sum": "Libérez la concubine enchaînée de Yaga-Shura : elle pourra alors se joindre à vous et devenir une alliée redoutable dans «ToB»."
+  },
+  "578": {
+    "n": "Throne of Bhaal Une nouvelle approche",
+    "sum": "Une refonte complète d'Throne of Bhaal, avec 13 éléments : des rencontres enrichies, du contenu restauré, des combats rééquilibrés et des branches narratives supplémentaires tout au long de la campagne."
+  },
+  "98": {
+    "n": "Les Contes effrayants : Amour et non-mort",
+    "sum": "Des quêtes centrées sur le Temple de la Gloire du Soir, une divinité de l'amour, de la beauté et de la non-mort, avec un nouveau compagnon et une histoire d'amour optionnelle."
+  },
+  "101": {
+    "n": "Les Contes effrayants : Juniper et la sangsue de pierre",
+    "sum": "ToB un mod proposant une quête et un compagnon dans le royaume de Har'Akir, situé dans l'univers de Ravenloft, qui met en scène une enquête dans un temple sinistre avec une option de romance pour les héroïnes."
+  },
+  "674": {
+    "n": "Lichdom",
+    "sum": "Permet aux membres du groupe de subir une transformation en liche grâce à la série de quêtes de Morris le Gardien des tombes. Confère des immunités propres aux morts-vivants, le « toucher paralysant » et le système de phylactères."
+  },
+  "7": {
+    "n": "PNJ Sirène",
+    "sum": "Ajoute Sirene, une paladine tiefling, en tant que PNJ pouvant rejoindre votre groupe dans *BG1*, avec un doublage complet, des répliques d'humour, une quête personnelle et une option de relation amoureuse."
+  },
+  "123": {
+    "n": "Indira NPC",
+    "sum": "Ajoute Indira, une guerrière/mage demi-elfe, en tant que PNJ pouvant rejoindre l'équipe dans «BG1 », avec des quêtes personnelles et des dialogues."
+  },
+  "124": {
+    "n": "Ishlilka, la tueuse de sorciers",
+    "sum": "Ishlilka est une chasseuse de sorciers que l'on peut trouver à l'auberge « Friendly Arm », juste au nord de l'entrée."
+  },
+  "125": {
+    "n": "Valérie, personnage non-joueur pour BG",
+    "sum": "Ajoute Valérie en tant que compagnon PNJ pouvant être recruté dans «Baldur's Gate » ; il s'agit d'un nouveau personnage doté de sa propre personnalité, de ses propres dialogues et de son propre scénario."
+  },
+  "8": {
+    "n": "PNJ Drake",
+    "sum": "Ajoute Drake, un combattant humain, en tant que PNJ pouvant être recruté dans BG1 / SoD, avec des dialogues, des échanges humoristiques et un scénario personnel."
+  },
+  "126": {
+    "n": "NPC israélien pour BG",
+    "sum": "Ajoute Isra, une paladine cavalière, en tant que PNJ pouvant rejoindre votre groupe dans «BG1», avec des dialogues bien écrits, des échanges pleins d'esprit et une histoire d'amour pour les personnages masculins."
+  },
+  "727": {
+    "n": "Ophysia (PNJ)",
+    "sum": "Un compagnon skald demi-elfe de tendance « chaotique bon », originaire de Daggerford, que l'on peut recruter à Nashkel. Possibilité de romance pour les personnages féminins."
+  },
+  "728": {
+    "n": "Shar-Teel SoD",
+    "sum": "Ajoute Shar-Teel en tant que compagnon PNJ pouvant être recruté au cours de la campagne «Siege of Dragonspear»."
+  },
+  "729": {
+    "n": "Épouse le PNJ"
+  },
+  "127": {
+    "n": "Pack PNJ Glam",
+    "sum": "Ajoute cinq nouveaux PNJ avec lesquels il est possible d'interagir dans «BGEE» (un archer halfelin, un assassin drow, un défenseur nain, un prêtre de Talos et un disciple du dragon), chacun disposant d'un système de relation, de quêtes personnelles et de dialogues au sein du groupe."
+  },
+  "129": {
+    "n": "BristlelickBG1 EE NPC",
+    "sum": "Ajoute Bristlelick, un PNJ unique, en tant que compagnon pouvant être recruté dans «BG1»."
+  },
+  "130": {
+    "n": "Walahnan",
+    "sum": "PNJ chronomancien recrutable souffrant de germophobie, que l'on trouve à Ulgoth's Beard, avec du contenu pour les versions EE d'BG1 et Siege of Dragonspear."
+  },
+  "131": {
+    "n": "Emily",
+    "sum": "Ajoute Emily en tant que PNJ pouvant être recruté dans «BG1», avec des dialogues et une évolution du personnage."
+  },
+  "132": {
+    "n": "Château",
+    "sum": "Ajoute Kale en tant que PNJ pouvant être recruté dans «BG1 », avec des dialogues et un scénario personnel."
+  },
+  "133": {
+    "n": "Helga",
+    "sum": "Données du mod NPC de Helga pour BG1"
+  },
+  "134": {
+    "n": "Enregistreur",
+    "sum": "Ajoute « Recorder », un PNJ gardien du savoir, en tant que compagnon que l'on peut recruter, avec de nombreux dialogues, des commentaires sur les lieux et une quête personnelle."
+  },
+  "135": {
+    "n": "Vienxay",
+    "sum": "Mod NPC pour l'Baldur's Gate"
+  },
+  "137": {
+    "n": "Étouffer",
+    "sum": "Ajoute K'Vel, un compagnon drow de type guerrier/mage/voleur que l'on peut recruter au chapitre 5 d'Baldur's Gate : Enhanced Edition, avec des dialogues uniques et des échanges humoristiques entre mods."
+  },
+  "138": {
+    "n": "Le sauvetage de Solaufein",
+    "sum": "Permet de transformer Solaufein en compagnon PNJ recrutable dans *Baldur's Gate* II en ajoutant une quête visant à le sauver des chambres des driders avant qu'il ne puisse rejoindre le groupe."
+  },
+  "139": {
+    "n": "Donc, PNJ",
+    "sum": "Enrichit le personnage d'Alora avec de nouveaux dialogues et interactions qui vont au-delà de sa brève apparition dans la version de base d'BG1."
+  },
+  "140": {
+    "n": "Monsieur l'Agent (PNJ)",
+    "sum": "Poursuit l'histoire d'Ajantis dans «BG2» / «ToB» sous la forme d'un PNJ que l'on peut recruter, avec de nouvelles quêtes, la suite de l'histoire d'amour et de nombreux dialogues."
+  },
+  "141": {
+    "n": "Coran NPC",
+    "sum": "Poursuit l'histoire de Coran dans « BG2 » / « ToB » sous la forme d'un PNJ que l'on peut recruter, avec de nouvelles quêtes, des dialogues humoristiques et du contenu romantique."
+  },
+  "142": {
+    "n": "Fils d'un PNJ",
+    "sum": "Poursuit l'histoire de Xan dans «BG2» / «ToB» sous la forme d'un PNJ que l'on peut recruter, avec une histoire d'amour complète, de nombreuses répliques humoristiques et des quêtes personnelles. L'un des mods de PNJ les plus populaires."
+  },
+  "143": {
+    "n": "Yeslick (PNJ)",
+    "sum": "Ce mod intègre Yeslick, issu de Baldur's Gate, dans BGII : SoA et ToB. Il propose une grande variété de répliques et d'interventions, un nouveau kit (Alaghor de Clangeddin) ainsi que de nombreux dialogues avec les personnages joueurs tout au long du jeu."
+  },
+  "144": {
+    "n": "Foldorn",
+    "sum": "Poursuit l'histoire de Faldorn dans «BG2» sous la forme d'un PNJ que l'on peut recruter, avec de nouveaux dialogues et du contenu sur le thème des druides."
+  },
+  "145": {
+    "n": "Hephernaan",
+    "sum": "Un PNJ maléfique recrutable, de retour après la campagne «Siege of Dragonspear», proposant des dialogues d'amitié, de nouvelles zones, des objets et des rencontres qui font le lien entre «SoD» et «BG2»."
+  },
+  "146": {
+    "n": "Khalid",
+    "sum": "Permet à Khalid de réapparaître en tant que PNJ vivant et avec lequel on peut s'allier dans «BG2», au lieu du sort qui lui est réservé dans la version standard. Comprend de nouveaux dialogues et la suite de l'histoire d'amour."
+  },
+  "147": {
+    "n": "Quayle",
+    "sum": "Permet de faire revenir Quayle, personnage issu d'BG1, en tant que PNJ pouvant être recruté dans BG2. Il est disponible en remplacement d'Aerie via une mini-quête qui débloque une nouvelle zone."
+  },
+  "148": {
+    "n": "Skie : Le prix de l'âme d'une jeune fille",
+    "sum": "Poursuit l'histoire de Skie dans «BG2» / «ToB» avec une quête personnelle complexe, une option romantique et de nombreux dialogues sur ses expériences."
+  },
+  "149": {
+    "n": "Amber",
+    "sum": "Ajoute Amber, une tiefling combattante/voleur, en tant que PNJ «BG2» pouvant rejoindre le groupe, avec une histoire d'amour, des quêtes personnelles et de nombreux échanges humoristiques."
+  },
+  "150": {
+    "n": "Au-delà de la loi",
+    "sum": "Ajoute un mod de quête sur le thème des forces de l'ordre avec un PNJ que l'on peut accompagner. Menez l'enquête sur des crimes et faites des choix moraux liés à la justice dans «BG2»."
+  },
+  "151": {
+    "n": "Le PNJ du mariage d'Aseph",
+    "sum": "Ajoute Auren Aseph, un guerrier humain, en tant que PNJ de l'BG2e que l'on peut recruter, doté d'une personnalité enjouée, de répliques pleines d'humour et d'une quête personnelle."
+  },
+  "152": {
+    "n": "Sarah, personnage non joueur (PNJ) de Romance",
+    "sum": " Ce mod ajoutera Sarah, une jeune garde forestière indépendante, à «Baldur's Gate II »."
+  },
+  "153": {
+    "n": "Hubelpot, le marchand de légumes (PNJ)",
+    "sum": "Ce mod ajoute-t-il au jeu le PNJ Hubelpot Thistledown, le marchand de légumes ?"
+  },
+  "154": {
+    "n": "Contes de vampires",
+    "sum": "Miriam, un PNJ vampire voleur"
+  },
+  "155": {
+    "n": "Qu'est-ce que le NPC ?",
+    "sum": "Ajoute Ninde, une nécromancienne elfe, en tant que PNJ pouvant rejoindre l'BG2, avec un humour noir, une option romantique et une quête sur le thème de la nécromancie."
+  },
+  "156": {
+    "n": "Haldamir",
+    "sum": "Ce mod ajoute un guerrier elfe à «BG2 », « BGT », « BGII:EE » ou « EET ». Haldamir se trouve à l'intérieur du Repaire des Sept Vallées, sur la Promenade de Waukeen. "
+  },
+  "157": {
+    "n": "Tyris Flare (PNJ)",
+    "sum": "Ajoute Tyris Flare, une combattante humaine sur le thème du feu, en tant que PNJ de l'BG2s pouvant être recrutée, avec une orientation vers la romance et le combat."
+  },
+  "158": {
+    "n": "PNJ d'Arath",
+    "sum": "Ce mod pour BGII ajoute Arath, un PNJ druide complexe, sûr de lui, plein d'humour et quelque peu hédoniste, avec lequel il est possible d'avoir une relation amoureuse."
+  },
+  "159": {
+    "n": "Convient",
+    "sum": "Un mod pour «Baldur's Gate II » qui permet d'intégrer Dace Linton, une chasseuse de primes de sexe féminin, au caractère ironique et sarcastique, de tendance « Chaotique Neutre », en tant que PNJ pouvant rejoindre votre groupe."
+  },
+  "160": {
+    "n": "Sheena",
+    "sum": "Ajoute Sheena, une compagne mi-dragon de camp neutre et bienveillante, de type guerrière/sorcière, que l'on peut recruter dans l'antre de Firkraag. Elle propose de nombreux échanges avec les PNJ ainsi qu'un parcours d'amitié et de romance."
+  },
+  "161": {
+    "n": "Kelsey NPC",
+    "sum": "Ajoute Kelsey, une sorcière, en tant que PNJ «BG2» pouvant rejoindre votre groupe, avec l'un des mods de romance et de dialogue les plus complets jamais créés. Entièrement doublé, avec des milliers de répliques."
+  },
+  "162": {
+    "n": "Keto NPC",
+    "sum": "Keto est un mod de PNJ pourBaldur's Gatee 2."
+  },
+  "163": {
+    "n": "La famille Luxley",
+    "sum": "Ce mod ajoute à votre jeu deux PNJ que vous pouvez recruter : Sebastian et Andrei Luxley. Vous les trouverez dans le quartier du Pont à Athkatla. Ils ont tous deux des dialogues détaillés avec le personnage principal et échangent de nombreuses plaisanteries tout au long du jeu. Nouvelles zones, doublage..."
+  },
+  "164": {
+    "n": "Kiara Zaiya",
+    "sum": "Ce mod ajoute à votre jeu deux PNJ que vous pouvez recruter : Zaiya et Kiara. Zaiya est une demi-elfe mage sauvage de type « Chaotique Bon », tandis que Kiara est une moine humaine de type « Neutre Maléfique ». Vous trouverez Zaiya à l'intérieur du navire négrier (quartier des bidonvilles) ; elle ne rejoindra votre groupe que si votre personnage est de type « Bon » ou « Neutre »."
+  },
+  "165": {
+    "n": "Nephele NPC",
+    "sum": "Un mod pour «Baldur's Gate II » qui présente Nephele, une prêtresse halfling de Yondalla, joyeuse et maternelle, en tant que PNJ que l'on peut recruter."
+  },
+  "166": {
+    "n": "PNJ en fondu",
+    "sum": "Ajoute Fade, un voleur de l'ombre, en tant que PNJ de l'BG2e pouvant être recruté, avec une histoire d'amour et une quête personnelle liées aux voleurs de l'ombre."
+  },
+  "167": {
+    "n": "Adrian (PNJ)",
+    "sum": "Ajoute Adrian, un sorcier demi-elfe, en tant que PNJ de l'BG2e que l'on peut recruter, doté d'un passé sombre, d'une histoire d'amour riche et complexe, et considéré comme l'un des PNJ les mieux écrits du mod."
+  },
+  "168": {
+    "n": "Isra NPC",
+    "sum": "Ajoute Isra, une paladine cavalière, en tant que PNJ pouvant être recrutée dans BG2 / ToB, prolongeant ainsi son histoire depuis BG1 avec de nouvelles quêtes et une histoire d'amour."
+  },
+  "169": {
+    "n": "Evandra",
+    "sum": "Ajoute Evandra, un PNJ elfe illusionniste de camp « Véritablement neutre » à BG2, que l'on trouve dans la Sphère planaire, avec un parcours d'amitié, une histoire d'amour pour les personnages masculins elfiques, ainsi que du contenu pour SoA et ToB."
+  },
+  "170": {
+    "n": "Zakrion",
+    "sum": "Ajoute Zakrion, un PNJ duelliste humain à «BG2EE », que l'on trouve à la taverne « Sea's Bounty », avec des quêtes, un système d'amitié et deux parcours romantiques pour les personnages féminins."
+  },
+  "171": {
+    "n": "Saradas Magic",
+    "sum": "Saradas Magic pour BGEE / EET / BGT présente un nouveau PNJ non jouable"
+  },
+  "173": {
+    "n": "Valkrana",
+    "sum": "Ajoute Valkrana, un PNJ nécromancien squelettique, à l'BG2 ; il se trouve au-dessus du Copper Coronet et dispose de répliques doublées, d'une quête de personnage, de traits raciaux de mort-vivant et d'un support de sort unique."
+  },
+  "174": {
+    "n": "Ignorer les PNJ",
+    "sum": "Ajoute plusieurs PNJ avec lesquels il est possible de s'allier, créés par Skitia sur BG1 et BG2, chacun doté de classes, de personnalités et de quêtes uniques."
+  },
+  "175": {
+    "n": "PNJ Sirène",
+    "sum": "Poursuit l'histoire de Sirène dans « BG2 » / « ToB » sous la forme d'un PNJ que l'on peut recruter, avec la suite de l'histoire d'amour et de nouvelles quêtes personnelles."
+  },
+  "177": {
+    "n": "PNJ de Pai'Na",
+    "sum": "Permet de transformer Pai'Na, la drow du cimetière passionnée par les araignées, en un PNJ de l'BG2 que l'on peut recruter, doté de dialogues et de répliques."
+  },
+  "178": {
+    "n": "Les couleurs de l'infini : L'enfant trouvé",
+    "sum": "Mod de PNJ et de quêtes « Shadow Adept » mettant en scène un serviteur d'un dragon des ténèbres, qui introduit la magie du Tissage des Ténèbres, de nouvelles zones, de nouveaux personnages et de nouveaux objets."
+  },
+  "179": {
+    "n": "Les couleurs de l'infini : Yvette Romance",
+    "sum": "Mod romantique permettant aux protagonistes masculins de recruter Yvette en tant que PNJ, avec du contenu couvrant à la fois Shadows of Amn et Throne of Bhaal."
+  },
+  "180": {
+    "n": "BG2EE, PNJ à Dvaradime",
+    "sum": "Compagnon nain, à la fois guerrier, mage et voleur, d'alignement bon, recruté après être entré dans la Promenade de Waukeen, cherchant de l'aide pour retrouver son mari disparu."
+  },
+  "181": {
+    "n": "Faux",
+    "sum": "PNJ moine demi-orc neutre proposant des quêtes personnelles, des conversations amicales, une histoire d'amour pour les protagonistes masculins et un kit de moine « Twin Tusks » personnalisé."
+  },
+  "182": {
+    "n": "Fyalvara, PNJ d'BG2EE",
+    "sum": "Guerrière humaine originaire de Rashemen, recrutable dans le quartier des Docks, disponible en tant que combattante sans équipement, tueuse de sorciers ou en double classe druidesse totémique/combattante."
+  },
+  "184": {
+    "n": "Arrivée",
+    "sum": "Un sorcier demi-orc de l'alignement « loyal et bon », un paria en quête de paix sur les eaux de Faerûn, dont l'histoire s'étend sur plusieurs chapitres."
+  },
+  "185": {
+    "n": "PNJ de LandBG2EE",
+    "sum": "Ranger déchu de tendance « bon chaotique », issu d'une famille d'Athkatlan autrefois noble. Ajoute des quêtes qui élargissent le quartier du gouvernement, notamment le domaine Valdove, avec des options d'amitié et de romance."
+  },
+  "186": {
+    "n": "L'animal de compagnie d'un PNJ",
+    "sum": "PNJ barde demi-homme avec lequel il est possible d'avoir une relation amoureuse, disponible pour les gnomes, les nains et les demi-hommes masculins, proposant du contenu issu à la fois des campagnes «SoA» et «ToB»."
+  },
+  "187": {
+    "n": "Atelier",
+    "sum": "Un compagnon illithid (déchire-esprit) unique, doté d'un kit « Psionic Enforcer » personnalisé, de nombreux dialogues, de répliques entre PNJ et de modifications apportées aux tunnels illithides de l'Underdark."
+  },
+  "188": {
+    "n": "Verr'Sza",
+    "sum": "Verr'Sza fait son retour dans «BG2» en tant que PNJ avec lequel on peut s'allier, avec de nouveaux dialogues et du contenu sur le thème des rakshasas."
+  },
+  "189": {
+    "n": "Walahnan",
+    "sum": "PNJ chronomancien recrutable proposant des quêtes personnelles et des dialogues tout au long de «BG2 », qui prolonge l'histoire de Walahnan commencée dans «BG1 EE »."
+  },
+  "190": {
+    "n": "Feu follet",
+    "sum": "Ajoute des améliorations pour le chaman, notamment de nouveaux kits de chaman, une forteresse, un compagnon PNJ mort-vivant nommé Will, ainsi que des objets et des ennemis supplémentaires."
+  },
+  "191": {
+    "n": "Brandock le Mage",
+    "sum": "Mod NPC pour Baldur's Gate"
+  },
+  "192": {
+    "n": "Afaaq, le compagnon djinn",
+    "sum": "Ajoute Afaaq, un djinn, en tant que compagnon PNJ pouvant être recruté dans «Baldur's Gate II », avec ses propres dialogues, quêtes et interactions."
+  },
+  "456": {
+    "n": "Branwen BG2 PNJ",
+    "sum": "Un tutoriel de modding jouable sous forme de PNJ pour BGII !"
+  },
+  "481": {
+    "n": "La tante est un PNJ.",
+    "sum": "Un mod de PNJ pour «Baldur's Gate II » (BGII, BGT, BGII:EE, EET) !"
+  },
+  "486": {
+    "n": "Dynaheir",
+    "sum": "Permet de choisir entre Minsc et Dynaheir comme compagnon de Rashemaar dans *BG2*, avec de nouvelles quêtes, des échanges, des options romantiques et un temple sur le thème de la divination."
+  },
+  "487": {
+    "n": "Le retour de Xzar et Montaron",
+    "sum": "Mod de quête permettant aux joueurs de ressusciter Xzar et Montaron en tant que compagnons à part entière, proposant de nouvelles quêtes, des échanges humoristiques et une intrigue amoureuse originale pour Montaron."
+  },
+  "490": {
+    "n": "Maman disparue",
+    "sum": "Ajoute un compagnon guerrier mort-vivant à la campagne «Siege of Dragonspear», qui rejoint le groupe vers la fin de l'histoire et intervient avec des dialogues et des commentaires."
+  },
+  "499": {
+    "n": "Baeloth",
+    "sum": "Baeloth sur BG2EE / EET"
+  },
+  "500": {
+    "n": "Tashia (PNJ)",
+    "sum": "Ajoute Tashia, une guerrière/mage elfe, en tant que PNJ pouvant être recrutée dans l'BG2, avec une histoire d'amour, une quête personnelle et une personnalité douce."
+  },
+  "501": {
+    "n": "PNJ Darian",
+    "sum": "Un mod pour «Baldur's Gate II » qui permet d'intégrer Darian, un guerrier solitaire issu du mystérieux peuple des elfes d'Avariel, en tant que PNJ."
+  },
+  "502": {
+    "n": "Hélas, PNJ",
+    "sum": "Alassa la voleuse"
+  },
+  "503": {
+    "n": "PNJ permanents",
+    "sum": "Permet aux compagnons PNJ qui n'apparaissent que dans « Baldur's Gate 1 » de poursuivre leur aventure dans « Siege of Dragonspear » et « Baldur's Gate 2 » en conservant leurs caractéristiques et leurs compétences acquises."
+  },
+  "536": {
+    "n": "Ryberg, PNJ (Parler aux morts)",
+    "sum": "Une ancienne aventure CtB en version moderne pour BG2EE et EET"
+  },
+  "538": {
+    "n": "Melinda la muette",
+    "sum": "Une ancienne quête tirée de « Check the Bodies », dans une version moderne pour BG2EE et EET"
+  },
+  "539": {
+    "n": "Holly l'elfe",
+    "sum": "Quête modernisée issue de l'ancienne quête « Check the Bodies »"
+  },
+  "540": {
+    "n": "PNJ Maître vampire",
+    "sum": "Une ancienne aventure CtB en version moderne pour BG2EE et EET"
+  },
+  "543": {
+    "n": "Tsujatha NPC",
+    "sum": "Ajoute Tsujatha, une elfe vampire, en tant que PNJ «BG2» avec lequel il est possible de s'allier, proposant une romance sombre, de nombreux dialogues et un scénario sur le thème des morts-vivants."
+  },
+  "544": {
+    "n": "PNJ Valen",
+    "sum": "Ajoute Valen, un chasseur de vampires, en tant que PNJ pouvant rejoindre l'BG2, avec une option de romance et un scénario autour de la non-mort et de la rédemption."
+  },
+  "546": {
+    "n": "Une histoire d'amour à deux",
+    "sum": "Ajoute Solaufein, la drow originaire d'Ust Natha, en tant que PNJ pouvant rejoindre définitivement le groupe dans «BG2» / «ToB», avec une histoire d'amour et de nombreux dialogues."
+  },
+  "548": {
+    "n": "Yasraena (personnage non-joueur)",
+    "sum": "Ajoute Yasraena, une guerrière drow, en tant que PNJ de l'BG2s que l'on peut recruter, avec une histoire d'amour et du contenu explorant le choc des cultures entre les Drows de la surface et ceux des profondeurs."
+  },
+  "549": {
+    "n": "Nathaniel (PNJ)",
+    "sum": "Ajoute Nathaniel Aplin-Fletcher, un PNJ que l'on peut recruter dans «BG2» — un ancien officier des Flaming Fist issu de «Baldur's Gate» qui a été témoin de la destruction de Sarevok."
+  },
+  "554": {
+    "n": "PNJ de l'arène",
+    "sum": "Ariena, PNJ demi-orque pour BG2EE et EET"
+  },
+  "555": {
+    "n": "Corwin PNJ",
+    "sum": "Extension Corwin pour l'EET"
+  },
+  "556": {
+    "n": "Chloé (PNJ)",
+    "sum": "Ajoute Chloé, une chanteuse-épéiste, en tant que PNJ de l'BG2s pouvant être recrutée, dotée de compétences au combat, d'une option romantique et d'un scénario sur le thème des elfes."
+  },
+  "557": {
+    "n": "Le père NPC",
+    "sum": "Ajoute Faren, un PNJ de classe double (Combattant/Voleur) de neutralité véritable avec lequel il est possible de faire équipe, que l'on trouve dans la prison d'eet, à Tradem. Il propose des échanges humoristiques, des dialogues déclenchés par le joueur, des rencontres et de nouveaux objets."
+  },
+  "558": {
+    "n": "Kido le bouffon",
+    "sum": "Un bouffon qui reçoit des visions de Cyric pour BG2EE / EET"
+  },
+  "559": {
+    "n": "Kim NPC",
+    "sum": "Tu incarneet, la belle et dépravée pirate Kim, aux côtés des Voleurs de l'Ombre."
+  },
+  "560": {
+    "n": "Kindrek (PNJ)",
+    "sum": "Un PNJ qui déteste la magie et qui a tué des sorciers, et qui rejoindra votre groupe aux portes de la ville."
+  },
+  "561": {
+    "n": "NPC d'Orelios",
+    "sum": "Orelios est un PNJ moine pour BG2EE / EET et BG2"
+  },
+  "562": {
+    "n": "Rose NPC",
+    "sum": "Le personnage de Rose fait son retour dans «EET»"
+  },
+  "563": {
+    "n": "Architecture NPC",
+    "sum": "Ajoute Saerileth, un PNJ paladin de Tyr avec lequel il est possible d'avoir une relation amoureuse dans «BG2 » ; il s'agit d'un humain originaire d'un plan extérieur envoyé en mission sur Toril, proposant de nombreuses conversations romantiques, des échanges pleins d'humour et un comportement sensible à la réputation du joueur."
+  },
+  "564": {
+    "n": "NPC Silver Star",
+    "sum": "Ce mod ajoute une assassin elfe neutre-maléfique qui peut rejoindre le groupe pour la première fois dans le charmant repaire souterrain d'Irenicus. Silver Star est en partie folle et souffre d'un empoisonnement chronique. Elle tient des propos grossiers et cruels, et échange des plaisanteries avec les PNJ dans « SoA », mais pas dans « ToB »."
+  },
+  "565": {
+    "n": "PNJ « Toucher la Lune »",
+    "sum": "Touchstone est un guerrier elfe sauvage originaire de la Grande Forêt, qui s'est lancé dans une quête un peu étrange."
+  },
+  "566": {
+    "n": "PNJ d'Uldar",
+    "sum": "On peut trouver Uldar, le demi-orc barbare, parmi les esclaves de la Couronne de Cuivre."
+  },
+  "576": {
+    "n": "PNJ d'Iyla",
+    "sum": "Mod Iylos pour les PNJ de BGII : Throne of Bhaal."
+  },
+  "591": {
+    "n": "Kivan de Shilmista",
+    "sum": "Poursuit l'histoire de Kivan dans «BG2» / «ToB» sous la forme d'un PNJ que l'on peut recruter, avec des quêtes sur le thème des rôdeurs, un scénario de vengeance et une option romantique."
+  },
+  "592": {
+    "n": "Angelo (PNJ)",
+    "sum": "Permet à Angelo de devenir un PNJ avec lequel on peut faire équipe dans «BG2», transformant ainsi l'antagoniste d'«BG1» en un compagnon complexe aux thèmes de rédemption."
+  },
+  "593": {
+    "n": "Anishai NPC",
+    "sum": "De Barren Fischa : Voici ma modeste contribution au projet de PNJ d'une journée lancé par JCompton. Elle permet de faire d'Anishai, le moine de la guilde de Mae'Var, un PNJ avec lequel on peut interagir."
+  },
+  "594": {
+    "n": "Aran Whitehand",
+    "sum": "Ajoute Aran Whitehand, un guerrier humain, en tant que PNJ de l'BG2s que l'on peut recruter, doté de nombreux dialogues souvent humoristiques et d'une option de romance."
+  },
+  "596": {
+    "n": "Avis de la NPC",
+    "sum": "Mod proposant des PNJ nains que l'on peut recruter, avec un scénario complet couvrant les sites BG1, BG2 et EET."
+  },
+  "597": {
+    "n": "PNJ Finch",
+    "sum": "Ajoute Finch, un clerc halfelin de Deneir, en tant que PNJ «BG1» pouvant être recruté, doté de dialogues axés sur sa personnalité et d'une vision philosophique."
+  },
+  "114": {
+    "n": "Gavin (PNJ)",
+    "sum": "Ajoute Gavin, un clerc de Morninglord, en tant que PNJ de l'BG1e pouvant être recruté, avec une romance de type « sweet », une spécialisation en soins et des dialogues bien pensés."
+  },
+  "600": {
+    "n": "Gavin (PNJ)",
+    "sum": "Gavin fait son retour dans *BG2* en tant que PNJ que l'on peut recruter, avec une suite de sa histoire d'amour, de nouvelles quêtes et des dialogues enrichis."
+  },
+  "603": {
+    "n": "Neh'taniel (PNJ)",
+    "sum": "Ajoute Neh'taniel en tant que compagnon PNJ recrutable dans «Baldur's Gate II : Enhanced Edition », avec son propre scénario, ses propres dialogues et son évolution de personnage."
+  },
+  "604": {
+    "n": "Calin (PNJ)",
+    "sum": "Ajoute Calin, un PNJ humain de type « Maître de l'épée » de camp « Neutre-Bon », à BG2 : il propose une histoire d'amour avec des personnages féminins non maléfiques, échange des plaisanteries avec tous les PNJ de Bioware, et offre du contenu pour SoA et ToB."
+  },
+  "606": {
+    "n": "Saradas Magic 2",
+    "sum": "Ce mod introduit un nouveau PNJ, Saradas l'archimage, qui interagit de diverses manières avec le groupe de l'Bhaalspawn. Dans « Shadows of Amn », il s'agit d'un PNJ non jouable qui offre de nombreux services au groupe de l'Bhaalspawn. Vous pouvez le trouver dans le temple de Lathander, situé dans le quartier des temples d'Athkatla. Outre plusieurs dialogues exclusifs qui se déroulent au fur et à mesure que l'intrigue se développe, sa boutique vaut le détour. Dans Throne of Bhaal, Saradas est enfin un PNJ recrutable ! Vous pouvez l'invoquer via l'Esprit du Destin dans votre plan de poche. C'est un prêtre humain de Lathander ayant une double classe de mage."
+  },
+  "611": {
+    "n": "Chaos Knight et Jacob (PNJ)",
+    "sum": "Askaria : PNJ et quêtes & Kit ChaosKnight et PNJ"
+  },
+  "612": {
+    "n": "Askaria Quest",
+    "sum": "Askaria : PNJ et quêtes & Kit ChaosKnight et PNJ"
+  },
+  "613": {
+    "n": "PNJ Dusk",
+    "sum": "MOD Dusk NPC pourBaldur's Gatee II"
+  },
+  "617": {
+    "n": "PNJ sur le lieu de travail",
+    "sum": "Ishlilka est une chasseuse de sorciers que l'on peut trouver à l'auberge « Friendly Arm », juste au nord de l'entrée."
+  },
+  "618": {
+    "n": "Il s'agit d'un PNJ",
+    "sum": "Un mod de personnage non-joueur (NPC) pour «Baldur's Gate 2 » : Lena, une guerrière dotée d'un équipement personnalisé"
+  },
+  "619": {
+    "n": "Mur'Neth (PNJ)",
+    "sum": "Ajoute Mur'Neth, un ghaunadan (métamorphe de la boue), en tant que PNJ de l'BG1s que l'on peut recruter. Un compagnon vraiment atypique, dont les dialogues reflètent une perspective étrangère."
+  },
+  "620": {
+    "n": "PNJ de Navarre",
+    "sum": "Ajoute Navarra, une barbare humaine PNJ de camp « Chaotique Bon », à « BG2 » : elle propose une histoire d'amour avec les personnages masculins non maléfiques, une quête personnelle dans le quartier du Pont, ainsi que des échanges humoristiques avec tous les PNJ d'Bioware."
+  },
+  "547": {
+    "n": "Question de NPC",
+    "sum": "La sœur de Phaere peut se joindre à vous pour une quête prolongée dans l'Underdark."
+  },
+  "626": {
+    "n": "Zelink NPC",
+    "sum": "Le mod « Zelda & Link » de Smiling Imp, permettant de recruter ces personnages dans BGII, BG2EE et EET."
+  },
+  "627": {
+    "n": "Grey le chien (PNJ)",
+    "sum": "Grey est un PNJ chien dans le jeu «Baldur's Gate» !"
+  },
+  "703": {
+    "n": "La chute de Caelar",
+    "sum": "Ajoute Caelar Argent en tant que compagnon PNJ que l'on peut recruter après les événements d'Siege of Dragonspear. Version démo — v0.3, inachevée."
+  },
+  "705": {
+    "n": "La sœur d'Bhaalspawn",
+    "sum": "Ajoute un PNJ « sœur » dans le Plan de poche pendant la quête «Throne of Bhaal». Version démo — v0.2, inachevée."
+  },
+  "715": {
+    "n": "Clara, la vivante",
+    "sum": "Permet à Clara de rester en vie en tant que compagnon PNJ pouvant être recruté dans « BG2EE » et « EET », au lieu de mourir lors de sa scène d'introduction."
+  },
+  "733": {
+    "n": "Edwin Bromance",
+    "sum": "Mod « Amitié avec Edwin » (pas de romance). 9 dialogues qui vous font passer du statut de simples connaissances à peine tolérées à celui de vrais potes, avec un contenu sur Edwina et un changement d'alignement potentiel."
+  },
+  "744": {
+    "n": "NPC Banane",
+    "sum": "Ce mod ajoute une banane « guerrier/mage/voleur » à l'entrée du Copper Coronet.|FOR 18/00, AGI 18, CON 18, INT 18, SAG 18, CHAR 18."
+  },
+  "936": {
+    "n": "Haiass le Loup"
+  },
+  "745": {
+    "n": "Biff, le PNJ remplaçant",
+    "sum": "Ce mod est conçu comme un tutoriel destiné aux moddeurs, afin de leur montrer comment créer le script de la structure de base nécessaire à un PNJ de type «SoD»."
+  },
+  "941": {
+    "n": "Hanna (PNJ)"
+  },
+  "746": {
+    "n": "Cassius",
+    "sum": "Cassius est un barde scalde humain mystérieux qui ne dévoile pas grand-chose de son passé."
+  },
+  "943": {
+    "n": "Compagnon du barbare : Édition surpuissante"
+  },
+  "747": {
+    "n": "Chiara NPC",
+    "sum": "Ce mod ajoute une combattante vampire dotée de capacités spéciales. Si vous l'aidez, elle peut s'avérer d'une aide précieuse pour le groupe."
+  },
+  "748": {
+    "n": "La boussole de la féminité",
+    "sum": "Son objectif est de créer un ensemble varié de compagnons intéressants qui s'intègrent parfaitement à l'univers des Royaumes Oubliés et aux jeux de base."
+  },
+  "749": {
+    "n": "Gemma",
+    "sum": "Fidèle d'Umberlie, Gemma n'est pas vraiment le genre de naine à passer son temps à chanter des chansons joyeuses, une chope de bière à la main."
+  },
+  "750": {
+    "n": "Aller au PNJ",
+    "sum": "Ce mod vous permet de recruter Hendak, le gladiateur de la Couronne de Cuivre. Vous le trouverez dans sa cellule, comme d'habitude."
+  },
+  "751": {
+    "n": "Horace (PNJ)",
+    "sum": "Ce mod ajoute un squelette de camp « chaotique bon » en tant que PNJ membre du groupe. On le trouve dans la crypte de Tradem eet."
+  },
+  "752": {
+    "n": "Jason (PNJ)",
+    "sum": "Jazon le revenant est un guerrier mort-vivant muet qui peut vous accompagner en tant que septième membre du groupe."
+  },
+  "753": {
+    "n": "Kitanya",
+    "sum": "Kitanya est une elfe sympathique, à la fois magicienne et chasseuse de démons, qui offre une compagnie agréable et un peu déjantée, avec beaucoup d'interactions et de romance."
+  },
+  "754": {
+    "n": "Kri'binn l'Araignée (PNJ)",
+    "sum": "Gilbertus vend une araignée semi-mécanique qui vous suivra partout, comme un septième compagnon."
+  },
+  "755": {
+    "n": "Larsha (PNJ)",
+    "sum": "Larsha est une dryade à la recherche de son arbre, avec lequel elle s'unira pour acquérir un immense pouvoir sous la forme d'un sort très intéressant."
+  },
+  "756": {
+    "n": "PNJ Malthis",
+    "sum": "Malthis est un aventurier au cœur pur et au caractère turbulent que l'on peut rencontrer près de Cromwell. Il ne ressemble pas aux autres et cache un sombre secret."
+  },
+  "757": {
+    "n": "PNJ Mawgul",
+    "sum": "Mawgul est un elfe combattant/mage de camp neutre, qui officie en tant que Heaum grâce à un équipement puissant et à des capacités spéciales similaires à celles des prêtres de Helm."
+  },
+  "758": {
+    "n": "Mhoram NPC",
+    "sum": "Ce mini-mod ajoute un skald elfe, un poète du Grand Nord, avec une quête optionnelle dans le quartier du Pont.|FOR 16, DEX 18, CON 15, INT 10, SAG 14, CHA 16."
+  },
+  "759": {
+    "n": "Moddie la renarde (PNJ)",
+    "sum": "Issue d'une expérience menée par Irenicus, cette renarde est obsédée par la nourriture. Elle peut se transformer en muloup ou en grand muloup, ce qui modifie ses caractéristiques."
+  },
+  "761": {
+    "n": "Nikita Redux (PNJ)",
+    "sum": "Nikita, une elfe guerrière/voleur au caractère chaotique et bienveillant, rappelle à première vue Minsc, par sa façon d'agir pour le bien avec une pointe de naïveté..."
+  },
+  "762": {
+    "n": "Je suis un PNJ sauvage",
+    "sum": "Ninafer est une guerrière/mage neutre et respectueuse de la loi, disponible à la Couronne de Cuivre et créée dans la forge de chosenofmystra.|Elle possède une bague magique très puissante et indestructible, ainsi qu'une épée redoutable.|Elle a peu de ba..."
+  },
+  "760": {
+    "n": "Générateur de PNJ",
+    "sum": "Avez-vous déjà regretté que le jeu ne vous permette de constituer un groupe de départ composé que du protagoniste et (avec un peu d'effort) d'un petit nombre de personnages supplémentaires ?"
+  },
+  "763": {
+    "n": "Safana à Amn NPC",
+    "sum": "La voleuse séductrice de la Côte des Épées fait partie des PNJ qui ont été considérablement remaniés dans BG:EE, et elle est devenue un personnage intéressant dans l'extension «SoD»."
+  },
+  "764": {
+    "n": "Severian de Demerya (PNJ)",
+    "sum": "Anciennement connu sous le nom de « Les Chroniques de Severian », ce mod vous permet de recruter Severian Stark, un hors-la-loi Halfshade (kit de ranger), pour vos parties d'BG2 : SoA et ToB."
+  },
+  "765": {
+    "n": "PNJ Sime (RoxanneSHS)",
+    "sum": "Ce mod permet de recruter Sime, le voleur envoyé par Aran Linvail pour superviser votre voyage vers Brynnlaw."
+  },
+  "766": {
+    "n": "Invoquer «Bhaalspawn» (PNJ Sandra)",
+    "sum": "Ce mod vous permet de recruter ce paladin chasseur de morts-vivants sur les quais. Pas de romance ni de dialogues approfondis, mais quelques échanges humoristiques et une surprise spéciale pour Imoen."
+  },
+  "767": {
+    "n": "PNJ Thael",
+    "sum": "Ce mod ajoute un nouveau PNJ : un elfe mage/voleur. Il propose des dialogues avec les PNJ d'Bioware, ainsi qu'une quête principale qui commence dans SoA et se poursuit dans ToB."
+  },
+  "768": {
+    "n": "Pack « Solaufein Flirt »",
+    "sum": "En plus du mod NPC Solaufein permettant de recruter la célèbre drow à Ust Natha, voici la suite de l'histoire d'amour que vous pouvez mener à son terme, avec de nombreuses idées rassemblées dans ce mod complet, notamment..."
+  },
+  "769": {
+    "n": "L'épée du chaos (PNJ Tamoko)",
+    "sum": "Ce mod ajoute Tamoko, l'ancienne petite amie de Sarevok, en tant que PNJ recrutable à la fin de BG:EE et pendant l'SoD."
+  },
+  "770": {
+    "n": "La quête de l'âme tourmentée",
+    "sum": "À ne pas confondre avec le méga-mod « Tortured Souls-BP », ce mod ajoute une petite quête à l'issue de laquelle vous obtenez un tout nouvel objet qui vous permet d'invoquer Baenwuld, le Tueur de Sorciers, à volonté."
+  },
+  "771": {
+    "n": "Sime (Vlad)",
+    "sum": "Voici la version autonome de Sime, tirée de Tortured Souls Lite."
+  },
+  "772": {
+    "n": "Jardins NPC",
+    "sum": "Ce mod ajoute Mag Xardas, le nécromancien, à l'entrée du donjon d'Arnise. Il porte l'anneau de l'archimage.|FOR 12, AGI 18, CON 14, INT 20, SAG 19, CHAR 17."
+  },
+  "861": {
+    "n": "M'Khiin pour l'BG2EE",
+    "sum": "Ajoute M’Khiin Grubdoubler (le compagnon chaman gobelin de SoD) à BG2EE en tant que PNJ pouvant être recruté. Comprend un portrait alternatif optionnel et le mod croisé « BAE » BG2."
+  },
+  "925": {
+    "n": "Husam NPC",
+    "sum": "Husam est un voleur de l'ombre originaire d'Amnia, qui a été envoyé à l'BG1e pour s'assurer que les accusations portées contre sa guilde concernant les meurtres s'avéraient infondées."
+  },
+  "934": {
+    "n": "Dynaheir pour BG2",
+    "sum": "Ajoute Dynaheir en tant que compagnon PNJ recrutable dans Shadows of Amn et Throne of Bhaal."
+  },
+  "196": {
+    "n": "Imoen la bavarde",
+    "sum": "Permet à Imoen de commenter plus souvent les lieux et les événements de «BG2» grâce à des répliques restaurées et inédites. Apporte davantage de personnalité sans ajouter de nouvelles quêtes."
+  },
+  "197": {
+    "n": "Garrick : Chroniques d'un troubadour",
+    "sum": "Enrichit le personnage de Garrick avec de nouveaux dialogues, de nouvelles rencontres et de nouveaux chants de barde, en s'appuyant sur le contenu PNJ d'BG1 pour en faire un compagnon plus intéressant et offrant davantage de possibilités de jeu de rôle."
+  },
+  "730": {
+    "n": "Amitié M'Khiin",
+    "sum": "Un bref parcours d'amitié avec M'Khiin dans le cadre d'Siege of Dragonspear, ponctué de discussions chronométrées et d'échanges narratifs."
+  },
+  "198": {
+    "n": "Extension Neera",
+    "sum": "Enrichit le contenu de Neera dans «BG2» avec 8 éléments : des dialogues supplémentaires, des événements de magie sauvage, une extension de l'intrigue amoureuse et le développement des personnages."
+  },
+  "199": {
+    "n": "Nira Banters",
+    "sum": "Le mod « Neera Banters » ajoute des échanges humoristiques entre Neera et d'autres PNJ d'BGEE, ainsi que des interventions de Neera dans d'autres dialogues du jeu."
+  },
+  "201": {
+    "n": "Haer'Dalis Romance",
+    "sum": "Ajoute un scénario romantique complet pour Haer'Dalis dans «BG2». Transforme les avances du barde tiefling en une relation approfondie, avec de nombreux dialogues."
+  },
+  "203": {
+    "n": "Ailes",
+    "sum": "Concept, rédaction et programmation par Coutelier. Toutes les mises à jour de 2020 et suivantes par Skitia"
+  },
+  "204": {
+    "n": "Amitié Cernd",
+    "sum": "Ajoute des conversations amicales avec Cernd tout au long de «BG2» pour les personnages qui ne s'engagent pas dans une relation amoureuse avec lui. Approfondit sa philosophie de druide et sa tragédie familiale."
+  },
+  "205": {
+    "n": "Edwin Romance",
+    "sum": "Ajoute une intrigue amoureuse pour Edwin dans «BG2» / ToB. Le sorcier rouge arrogant se voit offrir une histoire d'amour étonnamment profonde, ponctuée de dialogues pleins d'esprit."
+  },
+  "206": {
+    "n": "L'héritage des Beaurin",
+    "sum": "Ajoute la série de quêtes de la famille Beaurin, avec des interactions avec des PNJ. Une histoire centrée sur les personnages, mêlant les intrigues des maisons nobles d'BG2."
+  },
+  "207": {
+    "n": "L'amitié de Haer'dalis",
+    "sum": "Ajoute des dialogues amicaux avec Haer'Dalis tout au long de l'aventure «BG2 ». Développe la vision planétaire et la nature artistique du barde tiefling."
+  },
+  "208": {
+    "n": "L'amitié d'Imoen",
+    "sum": "Ajoute des conversations amicales avec Imoen tout au long de «BG2» / «ToB» pour les personnages joueurs qui n'ont pas de relation amoureuse avec elle. Renforce le lien fraternel."
+  },
+  "209": {
+    "n": "Imoen Romance",
+    "sum": "Ajoute un scénario amoureux complet pour Imoen dans «BG2» / «ToB». Transforme la relation d'amitié d'enfance en histoire d'amour grâce à des dialogues riches et subtils."
+  },
+  "210": {
+    "n": "Jan Quest",
+    "sum": "Prolonge la quête initiale de Jan Jansen dans «Baldur's Gate II» avec deux courtes missions supplémentaires proposant de nouveaux dialogues, des personnages secondaires et une exploration plus approfondie de la relation entre Jan et son ex-petite amie."
+  },
+  "211": {
+    "n": "La romance de Keldorn par Berelinde",
+    "sum": "Ajoute une intrigue amoureuse pour Keldorn dans «BG2» / ToB. Explore les thèmes du devoir, de la foi et de l'amour à travers l'une des intrigues amoureuses les mieux écrites du mod."
+  },
+  "212": {
+    "n": "L'amitié de Korgan",
+    "sum": "Ajoute des dialogues d'amitié avec Korgan tout au long de *BG2*. Met en lumière la personnalité étonnamment complexe du berserker nain qui se cache derrière sa violence."
+  },
+  "213": {
+    "n": "La rédemption de Korgan",
+    "sum": "Ce mod permet de sauver Korgan si Mazzy fait partie de votre groupe."
+  },
+  "214": {
+    "n": "L'amitié de Mazzy",
+    "sum": "Ajoute des conversations amicales avec Mazzy tout au long de l'aventure «BG2 ». Développe la dévotion quasi-paladinesque du demi-homme ainsi que ses tourments personnels."
+  },
+  "215": {
+    "n": "L'amitié de Minsc",
+    "sum": "Ajoute des dialogues amicaux avec Minsc tout au long de *BG2*. Cela permet d'approfondir le personnage du ranger tant apprécié, au-delà de son célèbre « Vise les yeux, Boo ! »."
+  },
+  "216": {
+    "n": "De'Arnise Romance",
+    "sum": "Ajoute une intrigue amoureuse pour Nalia dans «BG2» / «ToB». Met en avant son idéalisme noble et son évolution personnelle à travers de nombreux dialogues."
+  },
+  "217": {
+    "n": "Nalia, enfin",
+    "sum": "Une histoire d'amour indépendante dans l'univers de Nalia, destinée à «ToB », avec une intrigue secondaire permettant de poursuivre une histoire d'amour issue de « De'Arnise Romance » ou de « Arnel's Nalia Romance »"
+  },
+  "218": {
+    "n": "Sarevok Romance",
+    "sum": "Ajoute une intrigue amoureuse pour Sarevok dans «ToB». Explore la dynamique complexe d'une histoire d'amour avec son ancien ennemi juré."
+  },
+  "219": {
+    "n": "L'amitié de Sarevok",
+    "sum": "Ajoute des conversations amicales avec Sarevok dans «ToB». Explore son adaptation à la condition mortelle et la dynamique complexe qui règne entre vous, frère et sœur."
+  },
+  "220": {
+    "n": "L'amitié Valygar",
+    "sum": "Ajoute des dialogues amicaux avec Valygar tout au long de l'aventure «BG2 ». Approfondit les opinions du ranger sur l'antimagie et ses liens avec la Sphère planaire."
+  },
+  "221": {
+    "n": "L'amitié Viconia",
+    "sum": "Ajoute des conversations amicales avec Viconia tout au long de *BG2*. Explore son passé de drow et son adaptation à la vie à la surface, sans dimension romantique."
+  },
+  "222": {
+    "n": "L'amitié de Yoshimo",
+    "sum": "Ajoute des conversations amicales avec Yoshimo tout au long de *BG2*. Cela donne plus de profondeur à son personnage avant la révélation concernant Spellhold."
+  },
+  "223": {
+    "n": "Yoshimo Romance",
+    "sum": "Ajoute une intrigue amoureuse pour Yoshimo dans «BG2». Développe son personnage à travers de nombreux dialogues avant et après la révélation concernant Spellhold."
+  },
+  "224": {
+    "n": "Le remords de Yoshimo",
+    "sum": "Développe l'histoire de Yoshimo dans *BG2* grâce à des scènes supplémentaires qui explorent sa culpabilité, ses dilemmes et les conséquences de ses choix."
+  },
+  "225": {
+    "n": "Viconia revisitée",
+    "sum": "Mise à jour majeure de Viconia comprenant 21 éléments : dialogues réécrits, relations amoureuses enrichies, nouvelles quêtes et développement plus approfondi des personnages sur BG2 / ToB."
+  },
+  "229": {
+    "n": "L'amitié Dorn",
+    "sum": "Un mod pour «BG2:EE» qui permet de nouer une amitié avec Dorn, le demi-orc de la Garde Noire."
+  },
+  "230": {
+    "n": "L'amitié chez Hexxat",
+    "sum": "Un mod pour «BG2:EE» qui permet de nouer une relation d'amitié avec le mystérieux voleur Hexxat."
+  },
+  "231": {
+    "n": "Les Chroniques de Wilson",
+    "sum": "Ajoute de nombreux dialogues et interactions au sein du groupe pour Wilson, l'ours de compagnie, notamment des échanges avec des PNJ, de nouveaux objets et des améliorations de compétences dans «SoA» et «ToB»."
+  },
+  "232": {
+    "n": "PNJ pratiques de l'édition améliorée",
+    "sum": "Permet de personnaliser les PNJ ajoutés par «Beamdog» (Neera, Dorn, Hexxat, Rasaad) grâce à 20 options : modification des caractéristiques, de l'équipement, de la classe et de l'intégration dans l'histoire."
+  },
+  "233": {
+    "n": "En route vers la découverte",
+    "sum": "Ajoute du contenu « Road to Discovery » qui enrichit l'histoire des PNJ et dévoile des détails cachés sur le passé des compagnons grâce à de nouveaux dialogues et découvertes."
+  },
+  "234": {
+    "n": "SoD Dialogue Banters",
+    "sum": "Ce mod remplace les dialogues informels des PNJ d'Siege of Dragonspear, qui adoptaient le style « en mouvement » utilisé dans SoD, par le format de dialogue avec pause utilisé dans BG1 et BG2."
+  },
+  "235": {
+    "n": "Bioware Packs de flirt pour PNJ",
+    "sum": "Ajoute des options de dialogue coquettes avec les PNJ avec lesquels on peut avoir une relation amoureuse dans la version originale d'Bioware. Des interactions courtes et réutilisables qui apportent une touche de chaleur entre les conversations importantes."
+  },
+  "239": {
+    "n": "BG2 Romance : l'univers élargi",
+    "sum": "Enrichit les histoires d'amour existantes d'BG2s en y ajoutant des dialogues, des scènes et des interactions supplémentaires. Apporte davantage de profondeur aux histoires d'amour avec Jaheira, Viconia, Aerie et Anomen."
+  },
+  "453": {
+    "n": "Tout sur Mazzy",
+    "sum": "Notre énorme Megamod pour «Baldur's Gate 2 », comprenant une histoire d'amitié avec Mazzy, une histoire d'amour, un nouveau PNJ et bien trop d'autres éléments pour les énumérer tous. Cette version suit le format plus traditionnel de «GitHub » grâce à JohnBob."
+  },
+  "454": {
+    "n": "Mazzy Romance",
+    "sum": "Ajoute une intrigue romantique complète avec Mazzy, la paladine demi-humaine, dans «Baldur's Gate II», comprenant 20 conversations à durée limitée dans «Shadows of Amn», 8 échanges dans «Throne of Bhaal» et un épilogue romantique."
+  },
+  "465": {
+    "n": "L'engouement de Garrick",
+    "sum": "Ajoute un scénario de séduction et de romance pour Garrick le barde dans «Baldur's Gate», permettant à un personnage féminin de mener 25 conversations avec lui au cours de la partie «BG1» de la saga."
+  },
+  "471": {
+    "n": "Jaheira et ses amis",
+    "sum": "Un mod pour *Baldur's Gate* II qui permet de nouer une relation d'amitié avec Jaheira, l'emblématique combattante/druidesse."
+  },
+  "488": {
+    "n": "Cernd Romance",
+    "sum": "Ajoute une intrigue romantique pour Cernd dans «BG2» / «ToB». Explore son lien avec la nature et ses conflits intérieurs à travers de nouveaux dialogues, quêtes et épilogues."
+  },
+  "492": {
+    "n": "L'amour triomphe de tout (LCA)",
+    "sum": "Recrutez Corwin sur Shadows of Amn et Caelar sur Throne of Bhaal : plus de 200 dialogues, 12 quêtes, de nouveaux objets et des voix générées par IA."
+  },
+  "504": {
+    "n": "Extension Dorn Romance",
+    "sum": "Mod d'extension romantique pour les PNJ de Dorn - BG2:EE"
+  },
+  "629": {
+    "n": "Révision de Nalia Romance",
+    "sum": "Ce mod ajoute une histoire d'amour complète avec Nalia, comprenant les dialogues de l'Arbre de vie, la mise en danger de l'être aimé, l'enlèvement de Nalia par Bodhi et d'autres quêtes liées à l'amour. Il ajoute également de nouvelles quêtes et interactions entre les personnages. Nous vous recommandons vivement d'avoir Minsc dans votre groupe."
+  },
+  "630": {
+    "n": "Romance sanglante",
+    "sum": "Jini NPC MOD est une extension romantique pour *Baldur's Gate* Extended Edition, comprenant l'extension *Siege of Dragonspear*."
+  },
+  "631": {
+    "n": "Personnages non-joueurs royaux",
+    "sum": "Ajoute Rjali en tant que compagnon PNJ avec lequel il est possible d'avoir une relation amoureuse dans BG2, SoA et ToB, avec de nombreux dialogues, quêtes et équipements."
+  },
+  "696": {
+    "n": "Brille, Caelar",
+    "sum": "Vous permet de vous ranger aux côtés de Caelar dans «SoD» pour trouver une solution pacifique, puis de la sauver d'Avernus dans «ToB» en tant que compagne d'EET."
+  },
+  "697": {
+    "n": "NPC Aurora (ToB)",
+    "sum": "Ajoute Aurora en tant que compagnon PNJ pouvant être recruté dans «Throne of Bhaal», avec des dialogues, des objets et un épilogue."
+  },
+  "704": {
+    "n": "Grossesse",
+    "sum": "Un personnage féminin peut tomber enceinte à la suite de rencontres issues du mod « Romantic Encounters ». Le bébé naît après 9 mois de jeu et bénéficie de bonus de caractéristiques. Mod proposant un contenu de niche."
+  },
+  "775": {
+    "n": "Baeloth pour l'BG2",
+    "sum": "Ce mod propose une suite aux aventures de notre adorable Baeloth dans « BG2EE » et « EET ». Baeloth a été capturé par les Sorciers Rouges et est prêt à conclure un marché en échange de sa liberté."
+  },
+  "776": {
+    "n": "Corthala Romantique",
+    "sum": "Ce mod ajoute une histoire d'amour pour les PJ féminines de tendance bonne ou neutre (à l'exception de la tendance neutre chaotique) ou pour les druidesses."
+  },
+  "777": {
+    "n": "Garder Yoshimo",
+    "sum": "Ce mod vous évite de devoir vous séparer de Yoshimo. Il ajoute des dialogues supplémentaires."
+  },
+  "860": {
+    "n": "Ajustements apportés aux dialogues d'Edwina",
+    "sum": "Modifie quatre des options de dialogue d'CHARNAME avec Edwina afin de les rendre plus respectueuses."
+  },
+  "862": {
+    "n": "Réflexion",
+    "sum": "Ajouts de courts dialogues pour les PNJ de base, enrichissant les interactions d'Imoen dans «ToB»."
+  },
+  "928": {
+    "n": "Viconia Romance : l'extension",
+    "sum": "« Viconia Romance Expanded » est le premier d'une série de mods qui enrichissent avec soin les romances originales d'BG2."
+  },
+  "932": {
+    "n": "Imoen Is Stone",
+    "sum": "Ce mini-mod pétrifie Imoen pendant le combat sur la Promenade de Waukeen. L'idée est d'apaiser la conscience du PNJ afin de pouvoir terminer toutes les quêtes du chapitre 2, sachant qu'Imoen ne..."
+  },
+  "236": {
+    "n": "Packs de blagues",
+    "sum": "Ajoute des échanges humoristiques entre les PNJ d'Bioware, qui communiquent rarement entre eux dans la version de base. Cela rend le groupe plus vivant pendant les déplacements."
+  },
+  "237": {
+    "n": "IEP : discussions approfondies",
+    "sum": "Ajoute de nombreux nouveaux dialogues informels entre tous les PNJ d'BG2, y compris des conversations entre les différents jeux. Des centaines de nouvelles interactions entre les groupes."
+  },
+  "238": {
+    "n": "Pack de dialogues Crossmod",
+    "sum": "Ajoute des échanges humoristiques entre les PNJ ajoutés par des mods et ceux d'Bioware, afin que votre groupe hétérogène donne une impression de cohésion plutôt que de division."
+  },
+  "241": {
+    "n": "Accélérateur Banter pour l'édition améliorée",
+    "sum": "Réduit le délai entre les répliques des PNJ afin que vous puissiez entendre davantage de conversations au sein du groupe pendant le jeu, plutôt que d'attendre des heures entre chacune d'elles."
+  },
+  "632": {
+    "n": "Mod « Smiling Imp Cross Banter »",
+    "sum": "Ajoute des échanges humoristiques entre les PNJ de «BG1» (Shar-Teel, Garrick, Branwen, etc.) et divers PNJ d'autres mods lorsque les deux font partie du groupe."
+  },
+  "673": {
+    "n": "SoD Restauration de Banter",
+    "sum": "SoD Restauration de Banter pour l'EET"
+  },
+  "243": {
+    "n": "Made in Heaven : Rencontres et quêtes",
+    "sum": "Le pack de rencontres « Made in Heaven » : 62 rencontres, petites quêtes et nouvelles créatures activables individuellement, réparties sur BG1 et BG2."
+  },
+  "242": {
+    "n": "Boucherie",
+    "sum": "Ajoute 9 combats difficiles optionnels répartis dans les zones d'BG2. Chacun d'entre eux constitue un combat autonome que vous pouvez activer ou désactiver séparément."
+  },
+  "244": {
+    "n": "La menace encapuchonnée",
+    "sum": "Ajoute des rencontres avec des sorciers encapuchonnés et un scénario autour de l'application des lois magiques à Athkatla. Développe les conséquences de l'utilisation non autorisée de sorts."
+  },
+  "299": {
+    "n": "Des fouines !",
+    "sum": "Ajoute des créatures, des objets et des sorts sur le thème de la belette dans les jeux «Baldur's Gate» et «Icewind Dale»."
+  },
+  "461": {
+    "n": "Série E",
+    "sum": "Une collection de scripts d'IA de groupe pour BG2 et ToB, offrant une automatisation intelligente pour les archers, les guerriers, les mages, les personnages multiclasses, les prêtres, les guerriers purs et les voleurs."
+  },
+  "463": {
+    "n": "Super col roulé",
+    "sum": "Ce mod vise à rendre Firkraag encore plus redoutable que sa version « améliorée » du mod Tactics."
+  },
+  "667": {
+    "n": "BGEE Points d'apparition pour gagner des niveaux",
+    "sum": "BGEE Mod « Leveled Spawns »"
+  },
+  "466": {
+    "n": "G-Minion",
+    "sum": "Améliore les scripts d'IA des créatures invoquées afin qu'elles se comportent de manière plus intelligente et conformément aux intentions initiales des concepteurs et aux conventions du Donjons et Dragons sur table."
+  },
+  "774": {
+    "n": "Compagnon dragon féérique",
+    "sum": "Ce mod vous permet d'adopter un dragon féérique comme familier, qui est un peu plus puissant et, surtout, plus proche dans l'esprit du dragon original d'AD&D : il a un sacré potentiel pour les farces et les..."
+  },
+  "250": {
+    "n": "Objets, sorts et sac à dos du Trollkiller",
+    "sum": "Un mod pour les éditions améliorées d'Baldur's Gates 1 et 2 ainsi que d'Icewind Dale, une réinterprétation de SoD vers BG2 Amélioration d'objets"
+  },
+  "251": {
+    "n": "Made in Heaven : Pack d'objets",
+    "sum": "Ajoute de nouveaux objets en phase avec l'univers du jeu, disséminés dans divers lieux d'BG1. S'intègre naturellement aux boutiques et aux trésors existants."
+  },
+  "195": {
+    "n": "Hell Rec",
+    "sum": "Ajoute un objet qui vous permet de choisir rétrospectivement les résultats des épreuves de l'Enfer. Utile pour les importations d'EETs manquant des bonus de l'Enfer. Objet consommable à usage unique."
+  },
+  "253": {
+    "n": "Combino de Derat",
+    "sum": "Ce personnage peut combiner 3 objets de type « +x » pour en obtenir 1 de type « x+1 ». Cela fonctionne avec tous les objets de type « +x »."
+  },
+  "254": {
+    "n": "Derat's Todd",
+    "sum": "Objets de Morrowind / Arcanum. Qu'ils soient géniaux ou nuls, ils sont tous là."
+  },
+  "255": {
+    "n": "Derat's Illo",
+    "sum": "Les gros livres sont dépassés."
+  },
+  "256": {
+    "n": "Le tir à l'arc de Derat",
+    "sum": "Lanceurs, munitions et objets à lancer."
+  },
+  "257": {
+    "n": "Arme D2",
+    "sum": "Pack d'armes inspiré de la série « Souls » pour les jeux de la série « Icewind Dale ». Comprend actuellement 15 armes + un module marchand en option. Compatible avec « BG:EE », « BG2:EE », « IWD:EE », « PST:EE » et « EET »."
+  },
+  "258": {
+    "n": "Produits des Planes",
+    "sum": "Un mod pour BG:EE, SoD, BG2:EE et EET qui importe un grand nombre d'objets de l'univers de Planescape dans la série «Baldur's Gate» et les rend disponibles auprès d'un marchand unique."
+  },
+  "260": {
+    "n": "Amélioration d'objet Thalantyr",
+    "sum": "Ajoute des améliorations d'objets auprès de Thalantyr à High Hedge : armes, armures, bagues, capes et sacs de rangement."
+  },
+  "261": {
+    "n": "Thalantyr : L'Extension",
+    "sum": "Une extension du mod « Baldur's Gate » : le mod « Thalantyr Item Upgrade »"
+  },
+  "263": {
+    "n": "Douanes",
+    "sum": "Les coutumes de la Côte des Épées"
+  },
+  "264": {
+    "n": "Torche perturbatrice",
+    "sum": "Ajoute une massue magique qui inflige des dégâts de feu et a 10 % de chances de lancer « Mains enflammées » au moment de l'impact, avec une chance de désarmer les cibles qui échouent à leur jet de sauvegarde contre les sorts."
+  },
+  "265": {
+    "n": "Les affaires des Rois mages",
+    "sum": "Modifie et complète le Bâton des Rois mages ainsi que d'autres objets puissants du jeu original. Ajuste leur puissance et leurs possibilités d'amélioration."
+  },
+  "266": {
+    "n": "Pack d'objets IWD",
+    "sum": "Cette modification intègre les objets d'Icewind Dale dansBG2, ajoutant ainsi les armes, armures et accessoires uniques d'IWD dans les boutiques et les trésors tout au long du jeu."
+  },
+  "268": {
+    "n": "Éléments sous-représentés",
+    "sum": "Ce mod ajoute des objets à *Baldur's Gate* 2. Ces objets proviennent d'*Icewind Dale 2*. Seuls certains types d'objets ont été retenus. Ils ont été sélectionnés afin d'étoffer les familles d'armes les moins fournies."
+  },
+  "269": {
+    "n": "Donc",
+    "sum": "Ajoute Kaya, un compagnon PNJ que l'on peut recruter dans « BG2 » et « IWDEE », avec des objets spécialement conçus pour Edwin et les personnages mages."
+  },
+  "270": {
+    "n": "Huiles pour armes",
+    "sum": "Un mod pour «WeiDu» qui ajoute des huiles pour armes dans «BGEE», «BG2EE» et «EET», et les distribue dans divers magasins à travers ces jeux"
+  },
+  "271": {
+    "n": "Sir Renal",
+    "sum": "Ajoute Sir Renal, un marchand de l'Ordre du Cœur le plus Radieux qui vend de nouveaux objets sur le thème des paladins, notamment des armes sacrées, des armures sacrées et des anneaux protecteurs."
+  },
+  "272": {
+    "n": "Armurerie volcanique",
+    "sum": "Ajoute plusieurs nouveaux objets défensifs et divers dans différentes boutiques d'BG2, notamment des casques, des boucliers, des armures et des armes enchantées."
+  },
+  "273": {
+    "n": "Amélioration d'objet",
+    "sum": "Ajoute des recettes d'amélioration d'objets de style Cromwell à «BG2 », vous permettant ainsi de forger de puissants équipements à partir de composants trouvés tout au long du jeu."
+  },
+  "275": {
+    "n": "Des objets de famille et des cours",
+    "sum": "Présente 11 artefacts exclusifs à chaque classe, pouvant être restaurés par Cromwell ; chacun est lié à une classe spécifique et disponible pendant l'événement «Shadows of Amn»."
+  },
+  "276": {
+    "n": "Épées HaerDalis améliorées",
+    "sum": "Ce mod vous permet d'améliorer les épées de Haer'Dalis dans l'Underdark."
+  },
+  "277": {
+    "n": "UB Elm Ring",
+    "sum": "Ajoute un djinn dans Tradem eet capable de transformer les armes rapides (Belm, Kundane, Scarlet Ninja-To) en anneaux +APR, rendant ainsi les configurations d'armes à deux mains plus viables."
+  },
+  "278": {
+    "n": "Pack d'objets non officiel",
+    "sum": "Ajoute 9 ensembles d'objets inédits à «BG2 », chacun étant axé sur différents styles de jeu et niveaux de puissance."
+  },
+  "279": {
+    "n": "La force de tempête de FaenyaDail",
+    "sum": "Ajoute un nouvel arc long doté de munitions illimitées, d'un effet de repoussement et d'une capacité « Appel de la foudre » utilisable une fois par jour."
+  },
+  "280": {
+    "n": "Evermemory",
+    "sum": "Evermemory pour l'BG2EE"
+  },
+  "281": {
+    "n": "Infinity Innovations : Produits",
+    "sum": "iiItem ajoute plusieurs dizaines de nouveaux objets aux jeux utilisant le moteur Infinity Engine, en mettant l'accent sur les types d'objets moins connus (tels que les potions, les brassards, les flèches, etc.)."
+  },
+  "282": {
+    "n": "Encore plus de style pour les mages",
+    "sum": "Ajoute des bâtons de sorcier, des améliorations pour le Bâton des mages, des diadèmes, un étui à baguette, une pierre de téléportation, des palettes de couleurs pour les robes et des familiers personnalisables pour les mages."
+  },
+  "283": {
+    "n": "Modifications apportées aux articles",
+    "sum": "Une refonte complète de centaines d'objets dans «BG2 », visant à rééquilibrer les armes, les armures et les accessoires afin de les rendre plus distincts et plus intéressants. Modifications apportées aux statistiques, aux descriptions et aux effets des objets."
+  },
+  "286": {
+    "n": "Canne améliorée",
+    "sum": "Rééquilibre le Bâton de la terreur en limitant son drain de charisme à 8 heures, et renforce les trois armes seigneuriales en augmentant leurs bonus d'enchantement et en leur conférant des effets de combat spéciaux."
+  },
+  "451": {
+    "n": "Boutique d'objets insolites",
+    "sum": "Un mod pour «Baldur's Gate II » qui ajoute un marchand très atypique dans le quartier des Docks d'Athkatla."
+  },
+  "452": {
+    "n": "L'alchimie de Jan",
+    "sum": "Le Livre de brassage de Jan est un ouvrage magique qui permettra à Jan de créer 8 potions en suivant des recettes précises."
+  },
+  "455": {
+    "n": "Sac Merchant",
+    "sum": "Ce mod «Baldur's Gatee II » ajoute Bolsa, un nouveau marchand qui vend divers conteneurs, sacs, ceintures de munitions et autres objets utiles à l'auberge « Five Flagons »."
+  },
+  "457": {
+    "n": "Darron le vendeur",
+    "sum": "Un mod pour «Baldur's Gate II » qui présente Darron, un marchand proposant de nouveaux objets spécialement conçus pour les voleurs, que l'on trouve dans la cave des Voleurs de l'Ombre."
+  },
+  "467": {
+    "n": "Au cœur de la forêt",
+    "sum": "Une baguette druidique qui invoque de puissants monstres et créatures de la forêt"
+  },
+  "475": {
+    "n": "Rolles Safyer",
+    "sum": "Un mod pour «Baldur's Gate II » qui ajoute un nouveau forgeron sur la Promenade de Waukeen, au-dessus de l'entrée de l'Adventurer Mart."
+  },
+  "477": {
+    "n": "Ruad Ro'fhessa",
+    "sum": "Un mod pour «Baldur's Gate II » qui présente Ruad, un forgeron qui fabrique et améliore des objets, que l'on trouve sur la Promenade de Waukeen."
+  },
+  "478": {
+    "n": "Rupert, le marchand de teintures",
+    "sum": "Ce mod ajoute un nouveau marchand qui vend divers colorants et de nouvelles tenues."
+  },
+  "480": {
+    "n": "SoD Mise à niveau de l'objet «BG2»",
+    "sum": "Améliore les objets de l'SoD afin qu'ils restent utiles dans l'BG2 au lieu de devenir obsolètes. Ajoute des recettes d'amélioration pour l'équipement de l'Siege of Dragonspear."
+  },
+  "483": {
+    "n": "Cornes du Valhalla améliorées",
+    "sum": "Il s'agit d'une modification mineure apportée à «Baldur's Gatee II » qui améliore les berserkers invoqués par les trois Cornes de Valhalla. Seules les créatures et leurs équipements sont modifiés. Les cornes elles-mêmes restent inchangées. Les berserkers disposent d'un armement et de compétences améliorés, et sont constamment en état de rage (conformément au kit Berserker). "
+  },
+  "485": {
+    "n": "Deidre et Joluv",
+    "sum": "Intègre les marchands bonus Deidre et Joluv, issus d'Baldur's Gate 2, dans BG1 ; ils vendent des objets magiques exotiques à la taverne Elfsong et à la boutique Sorcerous Sundries."
+  },
+  "511": {
+    "n": "Big Metal Unit",
+    "sum": "Mod « Big Metal Unit », mod d'objets et d'ajustements pour les versions classiques et EE d'BG1, BG2, IWD et IWD2 (y compris EET /BGT/IWD2EE)."
+  },
+  "545": {
+    "n": "Pack d'objets magiques « Boards of Magick »",
+    "sum": "Présente deux nouveaux marchands proposant une sélection soigneusement choisie d'objets rééquilibrés et jusqu'alors peu utilisés dans *Baldur's Gate* II."
+  },
+  "635": {
+    "n": "Pack Volcano amélioré !",
+    "sum": "Sorts et objets pour BGII : Throne of Bhaal"
+  },
+  "638": {
+    "n": "L'équipement d'Akun",
+    "sum": "Il s'agit d'un mod d'objets comprenant 2 katanas enchantés et 1 armure pour un « Wizard Slayer »."
+  },
+  "639": {
+    "n": "DGItems",
+    "sum": "Ajoute une sélection d'objets personnalisés puissants, de munitions, d'armes et d'armures disponibles au Marché de l'aventurier, avec une option permettant de reporter la mise à disposition de certains d'entre eux jusqu'à l'ToB."
+  },
+  "642": {
+    "n": "Retour à l'eet Tradem : Pack d'articles",
+    "sum": "51 nouveaux objets magiques ont été ajoutés aux boutiques des marchands. Vous pouvez les trouver tous dans la boutique de Ribald, située après Spellhold, ou répartis entre les marchands de Trademeetet Umar Hills."
+  },
+  "714": {
+    "n": "Consommables",
+    "sum": "Ajoute plus de 50 objets consommables inspirés de BG3, NWN et The Witcher : élixirs, potions, huiles pour armes, remèdes et objets à lancer."
+  },
+  "634": {
+    "n": "Les chaussures et bottes d'Aurora",
+    "sum": "Ajoute une nouvelle boutique tenue par Aurora dans «Baldur's Gatee II», proposant plus d'une douzaine de nouvelles paires de bottes, ainsi que de nouveaux PNJ et des éléments d'univers qui enrichissent le monde d'Athkatla."
+  },
+  "542": {
+    "n": "Les armures de TeamBG pour l'EET",
+    "sum": "Ajoute un marchand nommé Kurtz Goldenaxe qui vend des variantes de couleurs ainsi que de nouvelles pièces d'armure, magiques ou non, dans tous les jeux de la série «Baldur's Gate»."
+  },
+  "797": {
+    "n": "Coup dans le dos sur le Copper Coronet",
+    "sum": "Ce mod ajoute un marchand sur le toit du Copper Coronet, où vous pouvez acheter des tablettes de voleur pour quelques pièces d'or."
+  },
+  "815": {
+    "n": "Le génie de Ribald",
+    "sum": "Vous en avez assez de parcourir la moitié de la carte d'aventure et de mettre une heure à revenir au Magasin de l'aventurier pour y dépenser vos sous durement gagnés ?"
+  },
+  "870": {
+    "n": "L'Emporium d'Aelar",
+    "sum": "Après avoir parcouru un long chemin depuis les terres du nord de Faerûn, Aelar s'est désormais installé à Athkatla, sur la Promenade de Waukeen !"
+  },
+  "871": {
+    "n": "Invocation de créatures",
+    "sum": "Ce mod ajoute un nouveau pack de 9 sorts d'invocation de créatures destinés aux sorciers. Chaque sort invoque soit quelques monstres dont le nombre de dés de vie correspond au niveau du sort, soit de nombreux monstres dotés de deux dés de vie..."
+  },
+  "872": {
+    "n": "La boutique de tir à l'arc de Houyi",
+    "sum": "Ce mod ajoute au jeu un nouveau marchand sur la Promenade de Waukeen qui vend beaucoup de munitions pour le Gros-Bill."
+  },
+  "873": {
+    "n": "IRStore",
+    "sum": "Voici une sélection d'objets puissants que vous trouverez à la Promenade de Waukeen, chez Nathan."
+  },
+  "874": {
+    "n": "La tempête de missiles d'Isaac",
+    "sum": "Ce mod ajoute la série de sorts « Tempête de projectiles d'Isaac »."
+  },
+  "875": {
+    "n": "Pour faire de la publicité",
+    "sum": "Ce mod ajoute un nouveau marchand, Jarnip, au Marché des aventuriers. Tout comme ses collègues Joluv et Deidre, Jarnip propose toute une gamme d'objets magiques uniques qui vous aideront lors de vos aventures à Amn."
+  },
+  "876": {
+    "n": "La boutique Interplan",
+    "sum": "L'Interplan est une boutique proposant une large gamme d'articles originaux et plus d'une centaine de nouveaux sorts."
+  },
+  "877": {
+    "n": "Mersetek, le bijoutier",
+    "sum": "Vous trouverez ce marchand spécial dans votre Pocket Plane. Il vous permettra de pallier le manque de gemmes nécessaires à la fabrication des objets dans le mod « Amélioration des objets »."
+  },
+  "878": {
+    "n": "Mini Mod n'existe plus",
+    "sum": "Ce mod ajoute deux boutiques (l'une dans le donjon d'Irenicus, derrière la cellule de Jaheira, et l'autre dans les ruines de l'Ombre – le temple d'Amaunator) qui vendent des potions vous permettant de vous transformer en diverses créatures..."
+  },
+  "879": {
+    "n": "Nanstein",
+    "sum": "Nanstein est un nouveau forgeron qui apparaît face à Cromwell sur les quais. Il est capable de transformer des objets légendaires en d'autres qui pourraient s'avérer plus utiles selon le style de jeu, ou du moins plus originaux."
+  },
+  "880": {
+    "n": "Oups, le magicien",
+    "sum": "Oops est un personnage très particulier : il a le pouvoir de transformer un parchemin de sort en une capacité spéciale."
+  },
+  "881": {
+    "n": "Téléporteur sphérique plan",
+    "sum": "Publié à l'origine sur [ce site](http://mods.jo-ge.net/bg/index.htm), ce mini-mod ajoute un objet, offert par Lavok, qui vous permet de vous téléporter directement dans la Sphère planaire (et de revenir là où vous..."
+  },
+  "882": {
+    "n": "Carquois de l'abondance +4",
+    "sum": "Ce mini-mod ajoute au jeu un carquois contenant 4 flèches. Cet objet peut être créé via la console à l'aide du code `D8QUIV01`."
+  },
+  "883": {
+    "n": "Retournez sur vos anciens lieux de prédilection",
+    "sum": "Ce mod vous permet de vous téléporter vers une zone que vous avez déjà visitée à l'aide d'un sort « Souhait » ou « Petit souhait »."
+  },
+  "884": {
+    "n": "Pack d'objets de RoyalProtector",
+    "sum": "Ce mod ajoute des objets dans l'univers d'BGEE et d'BG2EE. Chaque objet est entièrement facultatif lors de l'installation."
+  },
+  "885": {
+    "n": "Semi-clercs",
+    "sum": "Ce mod ajoute une marchande, la Dame des Mystères, adoratrice de Mystra, qui vend un manuel de magie donnant accès à une trentaine de sorts divins, dont un inédit."
+  },
+  "886": {
+    "n": "Magasin militaire Shohy",
+    "sum": "Voici un mod proposant un marchand anachronique qui vend des armes à feu modernes (par exemple, des fusils d'assaut ou des fusils de précision), du matériel militaire (par exemple, des gilets pare-balles ou des grenades tactiques) et de l'équipement de pointe."
+  },
+  "887": {
+    "n": "Mod « L'anniversaire de Sigil »",
+    "sum": "Curieusement, ce mod ajoute à votre inventaire une nouvelle amulette qui vous permet d'invoquer l'une des 12 personnalités célèbres du forum Sigil."
+  },
+  "888": {
+    "n": "Modpack Standard Awesome",
+    "sum": "Une collection de mods conçus pour enrichir la ville d'Baldur's Gate, et pimenter les parties en mode « FullEET »."
+  },
+  "889": {
+    "n": "Pack d'objets communautaire G3",
+    "sum": "Un mod destiné à former les moddeurs en herbe. On recommande de commencer par créer un pack d'objets."
+  },
+  "890": {
+    "n": "Trovador REO",
+    "sum": "Volo n'est pas le seul à connaître des histoires qui méritent d'être racontées. Il existe de nombreux troubadours et bardes qui parcourent tout Faerûn au péril de leur vie pour égayer les tavernes où nous nous rendons."
+  },
+  "927": {
+    "n": "Trésor des arcanes",
+    "sum": "Ce mod ajoute 60 nouveaux objets à la série «Baldur's Gate», qu'il place dans des boutiques, des conteneurs et les inventaires des ennemis."
+  },
+  "933": {
+    "n": "Porte dimensionnelle"
+  },
+  "288": {
+    "n": "Corrections orthographiques",
+    "sum": "Refonte complète du système de sorts, avec un rééquilibrage et une refonte de la plupart des sorts arcaniques et divins. Cela modifie le fonctionnement de la magie dans l'ensemble du jeu."
+  },
+  "292": {
+    "n": "IWDification",
+    "sum": "Intègre des éléments d'IWD dans l'BG2 : plus de 65 nouveaux sorts, des animations de lancement de sorts, des haches à deux mains, le sort « Polymorph », des mises à jour de classes et des ajustements visuels."
+  },
+  "296": {
+    "n": "Made in Heaven : Pack de sorts",
+    "sum": "Pack de sorts « Made in Heaven » : 36 nouveaux sorts et modifications de sorts dans les écoles arcanique et divine. Ajouts sélectionnables individuellement."
+  },
+  "295": {
+    "n": "Magie des ombres",
+    "sum": "Ajoute une école de sorts de magie de l'ombre comprenant 9 nouveaux sorts destinés aux lanceurs de sorts arcaniques. Des capacités sur le thème de l'ombre, telles que la conjuration de l'ombre et l'évocation de l'ombre."
+  },
+  "297": {
+    "n": "Les épreuves du Maître de l'appât",
+    "sum": "Transpose les sorts et objets de l'épreuve « IWD Trials of the Luremaster » dans «BG2 ». Ajoute du contenu magique unique, exclusif à IWD."
+  },
+  "300": {
+    "n": "Ajouts pour le mage sauvage",
+    "sum": "Ajoute de nouveaux sorts et effets de magie sauvage pour les mages sauvages. Amplifie le chaos grâce à des résultats encore plus imprévisibles et à de nouvelles options de « vague sauvage »."
+  },
+  "301": {
+    "n": "Rituel d'invocation de démons",
+    "sum": "Il s'agit d'un grimoire de rituels d'invocation de démons, qui appartient au grand sorcier Tolgerias (Sphère planaire/Baraques)."
+  },
+  "302": {
+    "n": "Invocation du Dragon rouge",
+    "sum": "Ce mod ajoute un parchemin permettant d'invoquer un dragon"
+  },
+  "303": {
+    "n": "Sorts de niveau B",
+    "sum": "Ajoute des sorts divins et arcaniques nouveaux et révisés, notamment des options telles que « Lame de glace » et « Cape des ténèbres », avec des éléments d'installation modulaires."
+  },
+  "304": {
+    "n": "Familles du WTP",
+    "sum": "Ajoute de nouveaux types de familiers, améliore ceux qui existent déjà et confère aux familiers davantage de capacités à mesure qu'ils gagnent des niveaux."
+  },
+  "307": {
+    "n": "Chance améliorée",
+    "sum": "Double les effets du sort « Double chance » pour conférer +10 % aux compétences de voleur et +2 à la chance et aux jets de sauvegarde, tout en prolongeant sa durée à 1 tour."
+  },
+  "308": {
+    "n": "Éclairage intérieur",
+    "sum": "Permet au sort « Appel de la foudre » de fonctionner à l'intérieur avec des dégâts réduits (2d6 + 1d6 par niveau) afin de maintenir un équilibre par rapport aux autres sorts."
+  },
+  "309": {
+    "n": "Sort-50",
+    "sum": "Ajuste la puissance des sorts pour les personnages de niveau 50 et plus, afin de remédier aux problèmes d'équilibre aux niveaux très élevés, où les sorts de base deviennent insignifiants."
+  },
+  "652": {
+    "n": "Sort de téléportation",
+    "sum": "Sort de téléportation sans erreur pour BG2, BG2EE et EET, créé par Razfallow et mis à jour par d'autres. La dernière version utilise l'outil Class Spell Tool d'OlvynChuru pour faciliter la compatibilité entre les modules."
+  },
+  "122": {
+    "n": "Création de golems pour les lanceurs de sorts",
+    "sum": "Permet aux lanceurs de sorts d'étudier et de créer des golems personnalisés qui leur serviront de compagnons permanents. Ajoute des quêtes d'artisanat, la collecte de matériaux et 10 types de golems, allant de ceux en chair et os à ceux en adamantine."
+  },
+  "706": {
+    "n": "Moulage spontané",
+    "sum": "Ajoute un système de lancement spontané de type « PnP » pour les lanceurs de sorts divins, permettant aux clercs et aux druides de transformer les sorts mémorisés en sorts de guérison ou d'infliction."
+  },
+  "291": {
+    "n": "Marteaux",
+    "sum": "Ajoute des animations de lancer de marteau et quelques objets à la plupart des jeux IE."
+  },
+  "305": {
+    "n": "Les ajustements de sorts de SubtleD",
+    "sum": "71 paramètres personnalisables pour régler le comportement des sorts : temps d'incantation, durées, valeurs de dégâts et jets de sauvegarde pour l'ensemble de la liste des sorts."
+  },
+  "294": {
+    "n": "Magie aléatoire de Graion",
+    "sum": "Sorts aléatoires (ajustements) par Graion Dilach pour le moteur Infinity Engine."
+  },
+  "633": {
+    "n": "L'époque du vampirisme",
+    "sum": "Un mod de quête en allemand pour «Baldur's Gate II » qui explore la malédiction du vampirisme, en ajoutant de nouveaux éléments scénaristiques et des rencontres liées aux morts-vivants."
+  },
+  "314": {
+    "n": "Refonte du Danseur de l'ombre",
+    "sum": "Refonte le kit du Danseur de l'Ombre en 8 éléments. Rend les capacités liées à l'ombre plus utiles et plus cohérentes sur le plan thématique."
+  },
+  "315": {
+    "n": "L'épée et le poing",
+    "sum": "Ajoute de nouvelles options d'équipement et de classe pour les classes de guerriers, notamment les combattants et les moines, issues à l'origine du mod « Lands of Intrigue »."
+  },
+  "316": {
+    "n": "Sorcier géomantique",
+    "sum": "Kit hybride Sorcier/Druide proposant des capacités de métamorphose uniques et des HLA personnalisés. Comprend 49 portraits optionnels pour chaque forme animale adoptée."
+  },
+  "317": {
+    "n": "Kit d'archer amélioré",
+    "sum": "Kit d'archer amélioré, mod «WeiDU» pour «BG2», «BG:EE», «BG2:EE» et «IWD:EE»"
+  },
+  "725": {
+    "n": "Kit Storm Caller",
+    "sum": "Un kit de chaman qui invoque des orages électriques depuis le plan élémentaire de l'air grâce à une danse rituelle."
+  },
+  "726": {
+    "n": "Kit Spiritwalker",
+    "sum": "Un kit de chaman proposant trois transformations en animal totem : le yack (tank), le tigre (dégâts) et la grue (soutien)."
+  },
+  "318": {
+    "n": "Le sorcier du chaos : un kit de magie sauvage pour les sorciers",
+    "sum": "Un mod pour BG:EE, BG2:EE et IWD:EE qui propose le nouveau kit « Chaos Sorcerer »."
+  },
+  "320": {
+    "n": "Le Kitpack de Morpheus562",
+    "sum": "33 kits répartis entre combattants, rangers, paladins, clercs, mages, moines et personnages multiclasses. Comprend des kits de PNJ pour Korgan, Sarevok, Minsc, Xan et Jaheira."
+  },
+  "322": {
+    "n": "Des chemins et des voies",
+    "sum": "Ajoute 13 kits originaux répartis dans différentes classes, dotés de mécanismes distinctifs tels que des ruses arcaniques pour les voleurs, des bardes lanceurs de sorts et des styles de combat spécialisés."
+  },
+  "323": {
+    "n": "Kit du sorcier",
+    "sum": "Ajoute le sorcier en tant que nouvelle classe, dotée de son propre système de lancement de sorts basé sur les invocations et de multiples options de configuration pour la progression des sorts."
+  },
+  "325": {
+    "n": "Merveilles bardiques",
+    "sum": "Ajoute 17 kits et compétences spécifiques au barde. Élargit les options de chants du barde et propose de nouveaux styles de jeu allant au-delà des archétypes de base."
+  },
+  "326": {
+    "n": "Le kit de l'artisan",
+    "sum": "Un pack de maillots complet comprenant 50 nouveaux maillots pour toutes les catégories. L'une des collections de maillots les plus vastes et les plus variées du marché."
+  },
+  "327": {
+    "n": "Artisans Kitpack NPC",
+    "sum": "Permet d'attribuer des kits personnalisés issus du Kitpack de l'Artisan à des PNJ existants tels que Khalid, Minsc et d'autres, avec différentes options d'attribution de kits."
+  },
+  "329": {
+    "n": "Ajustements des artisans chamaniques",
+    "sum": "Apporte des modifications et des ajustements à la classe du chaman dans «Baldur's Gate », en rééquilibrant les compétences et en améliorant l'expérience de jeu de cette classe."
+  },
+  "330": {
+    "n": "Je déteste les morts-vivants",
+    "sum": "Ajoute des kits sur le thème de la lutte contre les morts-vivants pour plusieurs classes (Prédateur des morts-vivants, Rédempteur sacré, Tueur de morts-vivants, etc.) destinés aux personnages spécialisés dans la lutte contre les morts-vivants."
+  },
+  "331": {
+    "n": "Tome et sang",
+    "sum": "Une refonte complète des classes de sorcier et de magicien comprenant 19 éléments : nouveaux kits, métamagie, écoles de sorts et mécanismes de lancement de sorts pour les lanceurs de sorts arcaniques."
+  },
+  "333": {
+    "n": "Affinements",
+    "sum": "Améliorations apportées à la section HLA : 17 tableaux de capacités de haut niveau révisés, offrant à chaque classe et à chaque kit des choix plus pertinents en matière de puissance en fin de partie."
+  },
+  "311": {
+    "n": "Rééquilibrage du voleur",
+    "sum": "Une refonte complète des kits du voleur et du barde, avec 12 versions rééquilibrées. Une refonte des mécanismes d'attaque sournoise, de pose de pièges et des chants du barde afin de rendre les voleurs plus intéressants sur le plan tactique."
+  },
+  "334": {
+    "n": "La volonté de puissance",
+    "sum": "Un mod de psionique inspiré de 2E pour BGEE / SoD / BG2EE / IWDEE"
+  },
+  "335": {
+    "n": "Force et ruse",
+    "sum": "Refonte des classes de guerrier, de ranger et de voleur comprenant 35 éléments : compétences révisées, nouveaux kits et capacités de combat rééquilibrées pour les classes martiales."
+  },
+  "336": {
+    "n": "Chanson de barde",
+    "sum": "Permet aux bardes de passer librement d'un chant à l'autre pendant le jeu, à l'instar d'Icewind Dale, avec des capacités de chant améliorées et persistantes aux niveaux élevés."
+  },
+  "355": {
+    "n": "Dualadins",
+    "sum": "Permet au paladin d'opter pour une double spécialisation en tant que clerc en implémentant en interne le kit de ranger pour le paladin. Comprend la prise en charge de Blackguard et Keldorn, des corrections concernant l'accès aux objets et des ajustements d'alignement."
+  },
+  "338": {
+    "n": "Remix divin",
+    "sum": "Réorganise le système de lancement de sorts divins à l'aide de 24 éléments : de nouveaux kits de prêtre, des sphères de sorts remaniées et un accès aux sorts spécifique à chaque divinité, basé sur les règles d'AD&D."
+  },
+  "339": {
+    "n": "Croyances et pouvoirs",
+    "sum": "Une refonte en profondeur des classes de prêtre et de paladin, comprenant 17 éléments. Elle répartit les sorts par sphère divine, ajoute de nouveaux kits et rend l'utilisation des sorts divins plus stratégique."
+  },
+  "340": {
+    "n": "Le kit d'atelier",
+    "sum": "Ajoute 6 kits soigneusement conçus, dotés de mécanismes uniques. Chaque kit propose un style de jeu distinct, avec des capacités personnalisées et une progression équilibrée."
+  },
+  "717": {
+    "n": "Kit Amazone Diablo 2",
+    "sum": "Ensemble Amazon inspiré de Diablo 2 pour la classe Ranger. Réservé aux personnages féminins (humaine, elfe, demi-elfe). Trois arbres de compétences : javelot/lance, passif/magie, arc/arbalète. Comprend une compagne Valkyrie."
+  },
+  "718": {
+    "n": "Diablo2 Assassin Kit",
+    "sum": "Équipement d'Assassin inspiré de Diablo 2 pour la classe Voleur. Réservé aux Humains et aux Demi-elfes. Arts martiaux à charge avec coups de grâce, pose de pièges et compagnon de l'ombre."
+  },
+  "719": {
+    "n": "Kit du Barbare de Diablo 2",
+    "sum": "Équipement de barbare inspiré de Diablo 2 pour la classe Combattant. Humain, Nain, Demi-elfe, Demi-orc. Cris de guerre, maîtrises de combat et option d'utilisation à une main de l'épée à deux mains."
+  },
+  "720": {
+    "n": "Kit de druide pour Diablo 2",
+    "sum": "Équipement de druide inspiré de Diablo 2 pour la classe Druide. Humain, demi-elfe. Lancement de sorts élémentaires, métamorphose en loup-garou ou en ours-garou, et invocation de compagnons animaux."
+  },
+  "721": {
+    "n": "Kit Nécromancien Diablo 2",
+    "sum": "Kit de nécromancien inspiré de Diablo 2 pour la classe Clerc. Arbres de compétences « Invocation », « Poison/Os » et « Malédiction », avec des serviteurs persistants en zone en option."
+  },
+  "722": {
+    "n": "Kit du Paladin pour Diablo 2",
+    "sum": "Équipement de paladin inspiré de Diablo 2 pour la classe Paladin. Auras offensives et défensives, ainsi que des compétences de combat."
+  },
+  "723": {
+    "n": "Kit du sorcier de Diablo 2",
+    "sum": "Kit de sorcier inspiré de Diablo 2 pour la classe Sorcier. Arbres de sorts de feu, de foudre et de glace. Réservé à EE."
+  },
+  "450": {
+    "n": "Kits personnalisés",
+    "sum": "Un mod qui ajoute le kit de combattant « Spellsword »."
+  },
+  "496": {
+    "n": "Kit Bear Walker",
+    "sum": "Un kit « ours-garou/ranger » pour «BG2» : ToB / BGT / TuTu / BGEE / BG2EE / EET"
+  },
+  "497": {
+    "n": "Kit Dream Walker",
+    "sum": "Dream Walker - Un kit de chaman axé sur la manipulation du sommeil, des rêves et des cauchemars. Pour BGEE / BG2EE / EET"
+  },
+  "640": {
+    "n": "Magie eldritch",
+    "sum": "Ajoute 10 kits (Chanteur de lames, Chevalier eldritch, Guerrier abyssal, etc.), ainsi qu'une extension d'objets «BG2EE» et des objets de collection."
+  },
+  "654": {
+    "n": "Le pack « Aventuriers complètement dingues » de Derat",
+    "sum": "63 tenues farfelues pour toutes les classes : mages, sorciers, clercs, druides, bardes, chamans, guerriers, paladins, moines. Chacune peut être sélectionnée individuellement, certaines proposant plusieurs variantes d'animation."
+  },
+  "656": {
+    "n": "Ordres monastiques",
+    "sum": "Ajoute 5 nouveaux kits de moine inspirés de différentes traditions monastiques. Chaque ordre dispose de capacités et de styles de combat uniques."
+  },
+  "657": {
+    "n": "Chant et silence",
+    "sum": "Ce mod propose de nombreuses options pour ceux qui jouent des voleurs et des bardes dans «Baldur's Gate» et «Baldur's Gate II»."
+  },
+  "658": {
+    "n": "Kits aléatoires D2",
+    "sum": "Kit de modification pour les jeux utilisant le moteur Infinity Engine. Comprend 3 kits : Kensaizerker, Monastery Swordsman et Jesterblade. Compatible avec les versions EEs et la version classique d'BG2."
+  },
+  "226": {
+    "n": "Kit PNJ",
+    "sum": "Attribue des kits de classe spécifiques aux PNJ pouvant être recrutés qui n'en possèdent pas dans la version de base. Confère aux compagnons tels que Minsc et Jaheira les capacités propres à leur kit."
+  },
+  "660": {
+    "n": "Kit de séduction",
+    "sum": "Ajoute un kit de voleur « Séducteur » axé sur des capacités de charme et de domination permettant de contrôler les ennemis, contrebalancé par de graves faiblesses au combat et la perte des compétences standard du voleur."
+  },
+  "661": {
+    "n": "Kits d'atelier D2",
+    "sum": "17 kits inspirés de Soulsborne, proposant des variantes multiclasses, plus de 30 objets, ainsi qu'un outil de mise à jour des kits qui résout les conflits de compétences/HLA avec d'autres mods."
+  },
+  "664": {
+    "n": "Kit Mule",
+    "sum": "Ajoute un kit comprenant toutes les capacités spéciales (y compris celles des HLA et celles ajoutées par des mods). Compatible avec les EE et la version classique d'BG2."
+  },
+  "678": {
+    "n": "Kits multi-classes",
+    "sum": "Un mod qui permet d'installer toutes sortes de combinaisons de kits multiclasses authentiques à partir de kits monoclasses."
+  },
+  "735": {
+    "n": "Archétypes arcanes",
+    "sum": "Kit de sorcier comprenant 6 kits : « Willbinder », « Aberrant Mind », « Fatespinner », « Fey-Touched », « Solar Adept » et « Fell-Touched ». Chacun d'entre eux échange un emplacement de sort contre des capacités uniques."
+  },
+  "892": {
+    "n": "Kit Ranger Auror",
+    "sum": "Ce mod ajoute un archer unique doté de compétences exceptionnelles en matière de maîtrise de la glace et de l'hiver."
+  },
+  "893": {
+    "n": "B_Kits",
+    "sum": "L'objectif de ce mod est de rééquilibrer les kits de base et les classes, à l'instar de « Kit Revisions »."
+  },
+  "894": {
+    "n": "Kit du moine Corbeau noir",
+    "sum": "Ce mod ajoute un nouveau profil de moine : le moine de l'Ordre du Corbeau Noir, qui bénéficie de bonus permanents chaque fois qu'il libère des esclaves."
+  },
+  "897": {
+    "n": "Chanter Kit",
+    "sum": "Ce mod ajoute un profil de barde, le « cantor », qui lance des sorts divins plutôt qu'arcaniques, peut lancer des sorts tout en portant une armure et a le choix entre plusieurs chants puissants."
+  },
+  "898": {
+    "n": "La trousse du charlatan",
+    "sum": "Dans BG:EE et EET, un composant optionnel vous permet de l'attribuer à Eldoth."
+  },
+  "688": {
+    "n": "Les divinités de Faerûn",
+    "sum": "53 kits de clercs dédiés à des divinités spécifiques, dotés de capacités uniques et de restrictions en matière d'armes, ainsi que 25 missions pour PNJ. Système de sphères optionnel et modifications des forteresses."
+  },
+  "899": {
+    "n": "Kits de puissance CrossClass",
+    "sum": "Combinaisons de kits Vanilla pour des résultats « trichés ».|Quelques exemples : Kensai disciple du dragon, clerc aventurier, moine sorcier..."
+  },
+  "808": {
+    "n": "Kensai Tweaks",
+    "sum": "Ce module vous permet d'appliquer toutes les capacités et tous les inconvénients du kensai à n'importe quelle classe."
+  },
+  "937": {
+    "n": "Garde Grise"
+  },
+  "900": {
+    "n": "Lot de kits non utilisés de Deratiseur",
+    "sum": "Dans ce kitpack, vous trouverez le Chasseur de vermine (ranger), le Porteur de haine (guerrier demi-orc), le Prêcheur des flammes (clerc offensif), le Seigneur de guerre (guerrier à double classe de mage), le Garagos cr..."
+  },
+  "939": {
+    "n": "Moine au poing bling-bling"
+  },
+  "923": {
+    "n": "Kit du guerrier lion",
+    "sum": "Anciennement connu sous le nom de « Zulu kit », ce mod ajoute un profil de ranger qui allie des compétences de combat redoutables à des techniques de survie en pleine nature, ainsi qu'un lien profond avec la nature."
+  },
+  "940": {
+    "n": "Kit Maître des bêtes amélioré"
+  },
+  "907": {
+    "n": "Kit de mercenaire",
+    "sum": "L'installation de ce mod vous permet d'installer un nouveau kit de combattant spécialisé dans les techniques de combat déloyales.| Un composant optionnel vous permet de changer l'alignement de Kagain en « neutre maléfique » afin de lui conférer..."
+  },
+  "942": {
+    "n": "Cours approfondis"
+  },
+  "908": {
+    "n": "Kit d'officier de milice",
+    "sum": "Ce mod ajoute un nouveau kit de combattant spécialisé dans la protection des autres ; un élément optionnel attribue le profil d'officier de milice à Khalid."
+  },
+  "909": {
+    "n": "Amélioration mineure du kit",
+    "sum": "Fusion de deux mods de kit (Shaman Hauler et Improved Monk). Ce mod propose également une amélioration du kit Wizard Slayer avec une capacité passive et un nouveau HLA, le Beastmaster, qui améliore considérablement l'inte..."
+  },
+  "910": {
+    "n": "Kit « Moine miroir »",
+    "sum": "Ce mod ajoute un nouveau profil de moine capable de créer temporairement des clones de lui-même."
+  },
+  "911": {
+    "n": "Kit Morituri",
+    "sum": "Les Morituri, l'une des classes de guerriers au corps à corps les plus singulières, sont des combattants qui ont renoncé à porter une armure ou à utiliser des objets magiques pour améliorer leurs capacités."
+  },
+  "917": {
+    "n": "Kit du prêtre de Mystra",
+    "sum": "Ce mod ajoute une nouvelle classe de clerc : le Prêtre de Mystra. Il gagne 1 % de résistance à la magie par niveau, et a accès à « Déflexion des sorts » à partir du niveau 10 et à « Lame noire du désastre » à partir du niveau 20."
+  },
+  "913": {
+    "n": "Kit de clerc Oozelord",
+    "sum": "Ce mod ajoute un profil de prêtre inspiré de la classe de prestige « Seigneur des limons » de Pathfinder."
+  },
+  "916": {
+    "n": "Kit « Prêtre d'Bhaal »",
+    "sum": "Ce mod ajoute un kit de clerc du mal chaotique capable de lancer les sorts « Chaos », « Balle de feu (parodie) » et « Éclair en chaîne (parodie) ».|Il devient immunisé contre le poison à partir du niveau 10 et contre la paralysie et la perte de niveaux à partir du niveau 16..."
+  },
+  "915": {
+    "n": "Kit Prestige",
+    "sum": "Ce mod ajoute toute une série de profils (17 au total !) pour toutes les classes du jeu (qui en disposent, bien sûr) :|- 3 profils de combattant : Dreadnought légendaire, Chevalier noir et Ssaulabi.|- 2 profils de paladin..."
+  },
+  "914": {
+    "n": "Pirate Kit",
+    "sum": "Création originale de Huxaltec, ce profil de voleur (très bien documenté et inspiré) est réservé exclusivement au personnage principal et vous permet d'incarner un pirate de l'Épée..."
+  },
+  "920": {
+    "n": "Kit RiskBreaker",
+    "sum": "Un combattant agile, maître de la vitesse. Léger et fluide dans ses mouvements, il peut se précipiter pour frapper à la vitesse de l'éclair tout en ralentissant ses adversaires."
+  },
+  "919": {
+    "n": "Vaincre le Tueur d'enchanteurs",
+    "sum": "Ce mod modifie (améliore ?) le profil du « tueur de sorciers ». Un composant optionnel vous permet de l'attribuer à Valygar."
+  },
+  "737": {
+    "n": "Kit « Chevalier de la Lumière »",
+    "sum": "Cette installation du mod inclut le profil de paladin « Chevalier de la Lumière ». Il peut atteindre un haut niveau de maîtrise avec les épées longues et les épées bâtardes."
+  },
+  "905": {
+    "n": "Kit de mutation de slime",
+    "sum": "Ce kit de combattant permet au personnage de se transformer en gelée de moutarde. Il offre plusieurs avantages, notamment l'immunité contre le poison, le sommeil et les attaques mentales, ainsi que des bonus aux jets de sauvegarde."
+  },
+  "902": {
+    "n": "Kit « Âme divine »",
+    "sum": "Maîtrisez le pouvoir divin grâce à deux nouvelles variantes de sorcier inspirées de la très populaire « Divine Soul » de la 5e édition."
+  },
+  "739": {
+    "n": "Kit de chaman chasseur d'esprits",
+    "sum": "Ce mod ajoute un nouveau profil de chaman. À mi-chemin entre le chaman et le chasseur, c'est un tireur d'élite hors pair capable d'utiliser sa danse chamanique pour invoquer un esprit canin qui l'aidera à chasser."
+  },
+  "740": {
+    "n": "Kits tactiques",
+    "sum": "Certains kits Tactics ne sont plus compatibles avec les dernières versions d'EE ; ce mod les propose donc à nouveau en français."
+  },
+  "891": {
+    "n": "Le kit du sorcier",
+    "sum": "À l'instar d'un charmeur de serpents, ce barde a étudié la sensibilité vibratoire des démons et des morts-vivants."
+  },
+  "904": {
+    "n": "Kit du moine Hunyuan",
+    "sum": "Hunyuan est un personnage de type « Moine » capable, par exemple, de se transformer en nuage, ce qui lui permet de récupérer un bon nombre de points de vie."
+  },
+  "895": {
+    "n": "Kit Chantelame",
+    "sum": "Ce mod ajoute un nouveau kit de combattant pour les elfes, une sorte de mélange entre combattant, mage et clerc..."
+  },
+  "922": {
+    "n": "Kit du chevalier de la mort",
+    "sum": "Un paladin qui ne respecte pas son honneur est maudit par les dieux et devient un chevalier de la mort."
+  },
+  "903": {
+    "n": "Kit du druide dragon",
+    "sum": "En tant que druide issu d'une lignée draconique, tu bénéficies de bonus aux caractéristiques, de sorts supplémentaires et du pouvoir d'invoquer des dragons à mesure que tu gagnes des niveaux ; tu peux même choisir la multiclasse pour devenir un sorcier dragon."
+  },
+  "921": {
+    "n": "Kit Ranger de l'Ombre",
+    "sum": "Ce mod ajoute un nouvel équipement de ranger, réservé aux humains, aux elfes et aux demi-elfes de tendance « maléfique et ordonné » ou « maléfique et neutre »."
+  },
+  "741": {
+    "n": "Lame du kit Cut-throat",
+    "sum": "Un kit de voleur qui permet de récolter l'essence de diverses créatures et de la transformer en poison."
+  },
+  "901": {
+    "n": "Disciple de Jin Yong",
+    "sum": "Les romans wuxia de Jin Yong vous permettent d'apprendre toutes sortes de techniques d'arts martiaux."
+  },
+  "912": {
+    "n": "Mode Multikit multi-classes",
+    "sum": "Vous avez toujours rêvé de jouer un anti-paladin, un nécromancien ou un assassin ? Un kensai, un transmutateur ou un chasseur de primes ?"
+  },
+  "811": {
+    "n": "Refonte du moine",
+    "sum": "Avez-vous apprécié la section « Compétences de moine de haut niveau » du mod Oversight ? Alors ce mod est fait pour vous : il reprend ce contenu et le rend compatible avec les jeux EE."
+  },
+  "906": {
+    "n": "Kit Stalker",
+    "sum": "Les marcheurs furtifs : compagnons des ombres, ces maîtres du camouflage excellent dans l'art d'agir dans l'obscurité."
+  },
+  "918": {
+    "n": "Kit Ranger Warden",
+    "sum": "Ce mod propose un kit de Ranger : le Ranger des forêts. Gardien de la nature, il est débrouillard et n'a que peu, voire aucun respect pour les lois du monde « civilisé »."
+  },
+  "896": {
+    "n": "Kit Runic Chantelame",
+    "sum": "Ce mod installe le kit runique Chantelame, réservé aux guerriers elfiques. Il leur confère le pouvoir des mots magiques."
+  },
+  "924": {
+    "n": "Kit du mage chantant",
+    "sum": "Ce mod propose un kit de mage. Le barde est une classe intermédiaire entre le voleur et le mage."
+  },
+  "738": {
+    "n": "Kit Ninja Shuri",
+    "sum": "Ce mod ajoute un nouveau profil de voleur au jeu, le ninja Shuri, et propose deux nouveaux éléments pour les jeux EE."
+  },
+  "743": {
+    "n": "Kit « Maître des éléments »",
+    "sum": "Ce mod ajoute un profil de druide, le Maître des éléments."
+  },
+  "742": {
+    "n": "Rééquilibrage du Tueur de sorciers",
+    "sum": "Ce mod s'inspire largement d'autres mods de rééquilibrage de Wizard Slayer parus précédemment, notamment « Kit Improvements » de Grey Acumen, « Konalan's Tweaks », « Ashes of Embers » et « Kitanya's fixes » (par SixOfSpades)."
+  },
+  "683": {
+    "n": "Les talents de Faerûn",
+    "sum": "Mise à jour complète : 87 éléments couvrant les sorts de l'IWD, les races et sous-races, les révisions de classes, les nouveaux kits, les kits multiclasses, les HLA révisés, les modifications de règles (caractéristiques, système d'achat de points, THAC0, compétences, styles d'armes) et les ajustements de l'interface utilisateur."
+  },
+  "337": {
+    "n": "Danse chamanique améliorée",
+    "sum": "Un mod pour BG:EE, BG2:EE et EET visant à rendre la classe Chaman plus utile."
+  },
+  "800": {
+    "n": "Modifications apportées aux cours",
+    "sum": "Un mod qui modifie et peaufine les classes, dans la lignée du mod « Kit Revisions », qui semble désormais abandonné."
+  },
+  "691": {
+    "n": "Kits cachés",
+    "sum": "Introduit des kits de double classe cachés, obtenus au niveau 12, qui permettent une progression accélérée de la classe inactive et offrent des capacités uniques. Permet, en option, d'appliquer ces kits aux PNJ d'Bioware."
+  },
+  "193": {
+    "n": "Navire Château Irenicus",
+    "sum": "Vous permet de sauter ou de raccourcir le donjon d'ouverture du Château Irenicus dans «BG2». Les options vont d'un raccourcissement à un contournement complet."
+  },
+  "245": {
+    "n": "Ajustements ME",
+    "sum": "Modification pour les jeux utilisant le moteur Infinity Engine, en particulier les éditions améliorées"
+  },
+  "194": {
+    "n": "Fausse importation",
+    "sum": "Vous permet de créer une sauvegarde d'importation fictive pour démarrer BG2 / EET avec un équipement et des indicateurs de scénario personnalisés, comme si vous aviez terminé BG1 en effectuant des choix spécifiques."
+  },
+  "247": {
+    "n": "L'anthologie Tweaks",
+    "sum": "Vaste collection de réglages (Section 1 : XP et progression). Des centaines de modifications des règles et du comportement du jeu, sélectionnables individuellement."
+  },
+  "252": {
+    "n": "L'armement oublié",
+    "sum": "Ajoute de nouvelles armes, armures et objets magiques sur BG1 et BG2. Les objets sont placés à des emplacements logiques et intégrés aux boutiques."
+  },
+  "287": {
+    "n": "Règlement de la maison d'AionZ",
+    "sum": "Recueil de modifications des règles maison comprenant une liste élargie d'ennemis par race, une amélioration de la métamorphose des druides, une révision des bonus raciaux et d'autres changements au niveau du gameplay."
+  },
+  "345": {
+    "n": "Compétences et aptitudes au combat",
+    "sum": "Refonte du système de maîtrise des armes en 5 volets. Modification de la manière dont les points de maîtrise se traduisent en bonus de combat."
+  },
+  "348": {
+    "n": "Tôles pleines et tôles d'emballage",
+    "sum": "Système d'armure alternatif qui modifie la manière dont l'armure interagit avec les mécanismes de lancement de sorts, de vol et de combat."
+  },
+  "349": {
+    "n": "Ajustements apportés aux objets par SubtleD",
+    "sum": "Ajustements optionnels des objets, notamment le système d'armure YARAS, des modifications des armes et des ajustements individuels des objets."
+  },
+  "351": {
+    "n": "Enchant",
+    "sum": "Permet aux lanceurs à distance enchantés de transmettre l'enchantement à leurs munitions, ajoute un système de munitions récupérables, apporte des ajustements à Eldoth/Jan et corrige la quête de Fuller."
+  },
+  "352": {
+    "n": "ZS Tweaks",
+    "sum": "Une immense collection de modifications comprenant 254 ajustements sélectionnables individuellement concernant les règles du jeu, les objets, les sorts et les mécanismes. Le plus grand mod de modifications jamais créé."
+  },
+  "358": {
+    "n": "Sorts d'Olvyn",
+    "sum": "Ajoute plus de 150 nouveaux sorts, dont des sorts permettant de voler et de traverser les murs. De nombreux sorts nécessitent l'EEex."
+  },
+  "359": {
+    "n": "Mieux vaut marquer la Journée internationale des femmes",
+    "sum": "Un pack de scripts et de modifications minimaliste. Compatible avec les versions Classic et EE d'BG1, d'BG2, d'IWD et d'IWD2 (y compris EET /BGT/IWD2EE)."
+  },
+  "360": {
+    "n": "P&P Celestials",
+    "sum": "Ce mod modifie les dévas et les planétaires invoqués par le joueur afin qu'ils acquièrent la plupart des capacités et des caractéristiques décrites dans le Monster Manual. J'ai pris quelques petites libertés dans la manière dont j'ai adapté certaines de ces capacités. Étant donné que les dévas et les planétaires invoqués sont des créatures de niveau 25 alors que le Monster Manual les classe à des niveaux bien inférieurs, j'ai choisi une classe pour chacune de ces créatures et j'ai augmenté leurs caractéristiques en fonction de leur classe. "
+  },
+  "362": {
+    "n": "CD Twinkle",
+    "sum": "  Le mod « Make Twinkle a True 'Defender' Weapon » est un petit mod pour «WeiDU» qui permet au cimeterre Twinkle de fonctionner comme une véritable arme « Defender »."
+  },
+  "310": {
+    "n": "Ajustements et corrections de Klatu",
+    "sum": "Ce mod regroupe une série de modifications, mineures ou majeures, qui touchent à de nombreux aspects du jeu."
+  },
+  "368": {
+    "n": "Évaluation bardique",
+    "sum": "Ajoute à tous les bardes une capacité qu'ils peuvent utiliser à volonté et qui leur permet d'estimer la valeur de n'importe quel objet identifié en possession du groupe."
+  },
+  "369": {
+    "n": "Connaissances issues de l'apprentissage",
+    "sum": "Le mod « Lore From Learning » est un petit mod pour «WeiDU» qui ajoute des bonus de connaissances à votre personnage principal au fur et à mesure que vous apprenez et vivez des aventures tout au long du jeu. Ces bonus (ainsi que les éléments qui les déclenchent) sont, par nature, destinés à être mineurs et à renforcer l'aspect jeu de rôle du jeu. "
+  },
+  "370": {
+    "n": "Dés de vie de Pathfinder",
+    "sum": "Remplace le système de dés de vie par défaut par les valeurs de dés de vie du jeu de rôle Pathfinder, modifiant ainsi la progression des points de vie pour toutes les classes de personnages."
+  },
+  "290": {
+    "n": "aTweaks (Votre pack d'optimisation PnP)",
+    "sum": "Ajustements précis, conformes à la version PnP, apportés aux créatures, aux sorts et aux mécanismes de jeu. Rapproche les démons, les morts-vivants et les effets magiques des règles de l'AD&D sur table."
+  },
+  "371": {
+    "n": "D0 Tweaks",
+    "sum": "Le mod « Tweak » classique de D0 pour «BG2 ». Il est antérieur à « Tweaks Anthology » et propose des ajustements de règles classiques."
+  },
+  "372": {
+    "n": "Lancement de sorts dans 5E",
+    "sum": "Remplace le système de mémorisation des sorts de Vancian par un système de cases de sorts inspiré de la 5e édition. Il s'agit d'un changement fondamental dans le fonctionnement du lancement de sorts."
+  },
+  "373": {
+    "n": "La boutique magique de Vergadain",
+    "sum": "Ajoute la boutique magique de Vergadain, proposant 13 ensembles d'objets à acheter, inspirés de différentes divinités et de différents styles de jeu."
+  },
+  "378": {
+    "n": "Made in Heaven : Ajustements",
+    "sum": "Le pack d'ajustements de Made in Heaven : 10 modifications visant à améliorer le confort de jeu et l'équilibre dans le jeu «EET »."
+  },
+  "381": {
+    "n": "TB Tweaks",
+    "sum": "26 réglages portant sur des fonctionnalités pratiques, des modifications de règles et des améliorations du confort d'utilisation. Sélectionnables individuellement."
+  },
+  "382": {
+    "n": "JTweaks",
+    "sum": "68 modifications proposées par jastey, portant sur les dialogues, le gameplay et des améliorations pratiques. Une grande variété de modifications sélectionnables individuellement."
+  },
+  "383": {
+    "n": "Ajustements Selphira",
+    "sum": "12 réglages personnalisables permettant d'apporter des modifications mineures au gameplay et d'améliorer le confort d'utilisation."
+  },
+  "384": {
+    "n": "Objets uniques",
+    "sum": "Garantit que les objets uniques ne peuvent apparaître qu'une seule fois dans le jeu. Empêche l'apparition de copies en double d'objets tels que l'Anneau de Gaxx."
+  },
+  "385": {
+    "n": "Randomiser",
+    "sum": "Génère aléatoirement l'emplacement des objets, les stocks des boutiques et les trésors dans le jeu. Rend le butin différent à chaque partie."
+  },
+  "523": {
+    "n": "Recueil de l'aventurier",
+    "sum": "Le mod « Adventurer's Miscellany » de Temnix a rendu le jeu compatible avec l'EET."
+  },
+  "524": {
+    "n": "RestBeGone",
+    "sum": "RestBeGone (également connu sous les noms Rest Begone ou Rest Be Gone) réinitialise automatiquement toutes les compétences après un certain temps passé hors combat."
+  },
+  "227": {
+    "n": "Réglage des PNJ",
+    "sum": "Ajuste les statistiques, l'équipement et les capacités des PNJ afin de corriger les anomalies ou de rééquilibrer les compagnons. Vous pouvez sélectionner les modifications qui vous intéressent."
+  },
+  "648": {
+    "n": "Ultravision",
+    "sum": "Confère des améliorations visuelles liées à l'ultravision aux races et classes dotées de la vision dans le noir ou de l'infravision dans les éditions améliorées."
+  },
+  "228": {
+    "n": "Polytweak",
+    "sum": "Modifications apportées aux classes, kits et compétences des compagnons de «BG2» (Anomen, Cernd, Jaheira, Keldorn, Minsc, Nalia, Valygar, Viconia), ainsi que des ajustements concernant certains objets (icônes de Blackrazor, la «Masse de la perturbation» de la version papier)."
+  },
+  "240": {
+    "n": "Skitia Romance Tweak",
+    "sum": "Ce mod modifie les relations amoureuses de la version originale d'BG2 afin qu'elles soient un peu moins difficiles à vivre lorsque vous vous séparez temporairement d'un compagnon avec lequel vous pouvez nouer une relation amoureuse."
+  },
+  "812": {
+    "n": "Compétences",
+    "sum": "Ce mod vise à élargir le système de compétences des jeux utilisant le moteur Infinity Engine, en permettant aux personnages d'accomplir de nouvelles actions, comme soigner des blessures, étourdir des ennemis avec des armes contondantes, provoquer des hémorragies avec des lames, et bien plus encore."
+  },
+  "817": {
+    "n": "Compétences et aptitudes",
+    "sum": "Il s'agit d'un mod qui ajoute au jeu plusieurs capacités spéciales et compétences de type voleur (pour les voleurs comme pour les autres personnages)."
+  },
+  "819": {
+    "n": "Armes reforgées",
+    "sum": "Une refonte complète de l'ergonomie et des compétences liées aux armes modulaires. Elle offre un accès universel aux armes, des seuils de compétence configurables, des options de compétence spécifiques à certaines classes, la suppression des limites imposées par les styles de combat, ainsi que l'alignement..."
+  },
+  "341": {
+    "n": "Stratagèmes de la Côte des Épées",
+    "sum": "Section pré-tactique de SCS : initialisation de l'IA, ajustements des sorts et composants de configuration à installer avant les modifications tactiques principales."
+  },
+  "386": {
+    "n": "Tactics Remix",
+    "sum": "Section « Pré-tactique » de Tactics Remix : configuration initiale et améliorations des créatures qui renforcent l'intelligence des ennemis."
+  },
+  "390": {
+    "n": "Les Sorcières de Salem",
+    "sum": "Ajoute un combat acharné unique, conçu pour pousser les groupes optimisés à leurs limites. Un défi de combat extrême."
+  },
+  "412": {
+    "n": "Magic Battles Revised (MBR)",
+    "sum": "Optimise les combats de sorts des mages en révisant les mécanismes de déviation, de brèche et de dissipation. Configurable, avec détection inter-modules pour SR/SCS/TnB."
+  },
+  "854": {
+    "n": "Générateur aléatoire d'ennemis",
+    "sum": "Vous en avez assez d'affronter les mêmes blaireaux à chaque fois que vous jouez à Baldur's Gate ? Ce mod modifie l'apparition aléatoire des ennemis secondaires (ceux qui ne sont liés à aucune quête ni à aucun dialogue) pour vous offrir une nouvelle expérience à chaque fois..."
+  },
+  "856": {
+    "n": "Ilyich, légèrement amélioré",
+    "sum": "Tu en as assez de te battre contre cette bande de duergars qui sont décidément trop faciles à vaincre pour tes bras puissants ou tes sorts destructeurs – alors que tu n'en as que quelques-uns au début du jeu ?"
+  },
+  "857": {
+    "n": "Mod « Éponge à balles »",
+    "sum": "Ce mod comprend de légères modifications destinées à ajuster la difficulté du jeu en augmentant considérablement les caractéristiques des créatures qui ne font pas partie du groupe."
+  },
+  "246": {
+    "n": "Baldur's Gate : Ajustements pour la trilogie Enhanced Edition (Ajustements pour EET)",
+    "sum": "EET - des ajustements spécifiques au jeu complet : modifications des points d'expérience, transitions entre les chapitres, gestion du journal et corrections de cas particuliers d'EETs dans toutes les campagnes."
+  },
+  "248": {
+    "n": "Les modifications apportées aux statistiques par SubtleD",
+    "sum": "Recueil modulaire de modifications apportées aux caractéristiques et aux règles de jeu associées, notamment les jets de sauvegarde, les bonus raciaux, les points d'expérience et la résistance à la magie."
+  },
+  "346": {
+    "n": "Diabolisation",
+    "sum": "Transforme le butin et les combats d'BG2en un système de type Diablo, avec des objets générés aléatoirement et des affrontements plus fréquents."
+  },
+  "403": {
+    "n": "Autoriser l'empilement des potions",
+    "sum": "Annule la modification apportée par le patch 2.6.4.0 qui empêchait le cumul de potions identiques, rétablissant ainsi la possibilité de combiner des potions du même type dans l'inventaire."
+  },
+  "404": {
+    "n": "Jimfix",
+    "sum": "Une petite série d'ajustements et de corrections pour BG2"
+  },
+  "405": {
+    "n": "Bart Tweaks",
+    "sum": "26 réglages divers installés après les mods tactiques : des fonctionnalités pratiques et des ajustements qui devraient s'appliquer en plus de toutes les autres modifications."
+  },
+  "406": {
+    "n": "Astuces et conseils",
+    "sum": "80 astuces et réglages personnalisables couvrant un large éventail d'ajustements de gameplay. Installez ce mod en dernier pour remplacer les modifications apportées par les mods précédents."
+  },
+  "407": {
+    "n": "Polyvorp",
+    "sum": "Rééquilibre et uniformise les effets des armes vorpales dans l'ensemble d'BG2, en modifiant à la fois les armes vorpales utilisables par les joueurs et celles des ennemis afin d'assurer un gameplay plus cohérent et plus équitable."
+  },
+  "408": {
+    "n": "Kitpack Artisans Tweak",
+    "sum": "Permet d'attribuer des kits personnalisés issus du Kitpack de l'Artisan à des PNJ existants tels que Khalid, Minsc et d'autres, avec différentes options d'attribution de kits."
+  },
+  "409": {
+    "n": "Compétences et aptitudes",
+    "sum": "25 modifications apportées aux compétences et aux capacités : ajustements de la compétence « Vol », changements apportés aux capacités de classe et modifications des niveaux de maîtrise."
+  },
+  "413": {
+    "n": "Tout ce qui a été révisé",
+    "sum": "Un mod complet qui modifie et rééquilibre divers éléments de jeu dans toute la série «Baldur's Gate»."
+  },
+  "414": {
+    "n": "Le vol épique",
+    "sum": "Un mod pour les jeux utilisant le moteur Infinity Engine qui offre des possibilités spéciales aux voleurs dotés d'une compétence en vol particulièrement élevée."
+  },
+  "415": {
+    "n": "Révision complète du piège",
+    "sum": "Une refonte complète du système de pièges comprenant 15 éléments : un placement plus judicieux des pièges, de nouveaux types de pièges, ainsi qu'un rééquilibrage des dégâts et de la détection des pièges."
+  },
+  "416": {
+    "n": "HLA du guerrier passif",
+    "sum": "Cette mise à jour transforme la plupart des compétences de haut niveau des guerriers en bonus passifs, ce qui réduit la microgestion pour les personnages de type combattant dans «Throne of Bhaal»."
+  },
+  "417": {
+    "n": "Infinity Innovations : modifications apportées au système de sorts",
+    "sum": "Ajuste et rééquilibre le système de sorts dans «Baldur's Gate II», en modifiant les mécanismes des sorts, leur progression et l'équilibre entre les écoles arcanique et divine."
+  },
+  "420": {
+    "n": "Astuces ZG",
+    "sum": "Diverses modifications proposées par Graion Dilach pour les jeux utilisant le moteur Infinity Engine."
+  },
+  "421": {
+    "n": "Infinity Innovations : Ajustements",
+    "sum": "28 modifications supplémentaires proposées par l'équipe d'Infinity Innovations, portant sur divers ajustements du gameplay."
+  },
+  "427": {
+    "n": "Diverses modifications de l'AC",
+    "sum": "Une série de modifications et de corrections diverses concernant le gameplay de la série «Baldur's Gate»."
+  },
+  "628": {
+    "n": "Renifler",
+    "sum": "Permet aux chiens et aux loups de suivre des pistes olfactives pour repérer les créatures à proximité, de détecter et de démasquer les ennemis invisibles, et de protéger les personnages alliés."
+  },
+  "655": {
+    "n": "Invoquer « Dissiper le brouillard de guerre »",
+    "sum": "Permet aux créatures invoquées de dissiper le brouillard de guerre à mesure qu'elles se déplacent, offrant ainsi au joueur une visibilité à travers leur champ de vision."
+  },
+  "668": {
+    "n": "Astuces pour le M7",
+    "sum": "Astuces et raccourcis pratiques pour «BG2» : ToB, BG2EE et EET"
+  },
+  "669": {
+    "n": "Baguettes de recharge",
+    "sum": "Permet aux joueurs de recharger leurs baguettes épuisées en payant de l'or ou via d'autres mécanismes du jeu, plutôt que de les jeter lorsque leurs charges sont épuisées."
+  },
+  "670": {
+    "n": "Réglages thématiques",
+    "sum": "L'objectif principal de ce mod est d'enrichir l'expérience de jeu de rôle tout au long de la série. À cette fin, il apporte des modifications au scénario à plusieurs endroits."
+  },
+  "672": {
+    "n": "Texte en couleur du séquenceur",
+    "sum": "Ajoute des indicateurs de texte colorés aux séquenceurs de sorts et aux conditions, ce qui permet de distinguer plus facilement les différents sorts en attente dans l'interface."
+  },
+  "675": {
+    "n": "Les chiens clignotants et les araignées de phase",
+    "sum": "Revoir les combats contre les chiens téléportateurs et les araignées de phase afin qu'ils reflètent plus fidèlement le comportement des versions papier-crayon, notamment en intégrant des tactiques de meute pour les chiens téléportateurs et la capacité de se rendre éthérés pour les araignées de phase."
+  },
+  "676": {
+    "n": "Purist Demiliches (Polylich)",
+    "sum": "Cette refonte des démiliches vise à les rendre plus fidèles aux règles du jeu de rôle sur table, en rétablissant des capacités telles que le piégeage d'âmes et les malédictions, tout en ajoutant des faiblesses appropriées à certains sorts spécifiques."
+  },
+  "677": {
+    "n": "Fabrication de Mod Caster",
+    "sum": "Mod pour les jeux utilisant le moteur Infinity Engine qui ajoute un système d'artisanat (parchemins, potions, baguettes) destiné aux personnages lanceurs de sorts (mages, clercs, druides, etc.)"
+  },
+  "680": {
+    "n": "Mode Subrace",
+    "sum": "Mod « Subrace » pour les jeux de l'édition améliorée."
+  },
+  "794": {
+    "n": "Les astuces d'Ahungry",
+    "sum": "Voici quelques améliorations que j'aimerais apporter à ma propre configuration et qui pourraient vous être utiles."
+  },
+  "795": {
+    "n": "Identification automatique",
+    "sum": "Ce mod fixe à 0 le niveau de Connaissance requis pour identifier tous les objets, ce qui évite au joueur de devoir les identifier manuellement."
+  },
+  "796": {
+    "n": "AutoRest",
+    "sum": "Ce petit mod très pratique vous permet de simuler un repos sans avoir à dormir pendant 8 heures."
+  },
+  "798": {
+    "n": "Lames et boulons",
+    "sum": "Éléments permettant aux clercs d'utiliser des épées droites et aux clercs et aux mages d'utiliser des arbalètes légères."
+  },
+  "799": {
+    "n": "Je peux te poignarder ?",
+    "sum": "Ce mod offre une grande flexibilité pour s'adapter à vos préférences en matière d'immunité aux attaques furtives."
+  },
+  "801": {
+    "n": "Réglages de difficulté",
+    "sum": "Une série d'options destinées à rendre le jeu plus difficile, telles que la réduction du nombre d'objets disponibles dans les boutiques, l'interdiction pour les joueurs de changer de zone pendant un combat, la limitation du repos aux auberges et aux enclos..."
+  },
+  "802": {
+    "n": "EECustom",
+    "sum": "Ce mod ajoute plusieurs fonctionnalités : il fait passer la limite de niveau à 50, augmente le niveau maximal d'apprentissage des sorts pour les bardes (jusqu'au niveau 8), permet d'empiler un nombre illimité d'objets..."
+  },
+  "803": {
+    "n": "La renaissance de la magie eldritch",
+    "sum": "Ce mod propose une version mise à jour (mais toujours incomplète) d'Eldritch Magic. Il inclut la possibilité de cumuler les pierres ioniques, une refonte de l'armure elfique et le kit Bladesinger."
+  },
+  "804": {
+    "n": "Suivre",
+    "sum": "Ce mod vous permet de transformer n'importe quel compagnon en suiveur (qui ne compte pas dans la limite du groupe)."
+  },
+  "805": {
+    "n": "Baldur's Gate haute puissance",
+    "sum": "Ce mod vise à renouveler l'expérience du premier opus de la saga BG. Il confère de nouvelles capacités aux membres du groupe, ainsi qu'à la plupart des autres créatures du jeu."
+  },
+  "806": {
+    "n": "Retour à la maison",
+    "sum": "Ce mod vous permet de renvoyer vos compagnons chez eux ou de les faire retourner à l'avion de poche de l'Throne of Bhaal, ainsi que d'accéder à l'épilogue de tous vos compagnons, même ceux qui ne font plus partie de votre groupe..."
+  },
+  "807": {
+    "n": "Fini JOster",
+    "sum": "Vous en avez assez de retourner à la Guilde des voleurs tous les cinq jours ? Ce mod vous permet de retourner à la guilde quelques instants pour régler vos comptes avec Joster, le percepteur des voleurs de l'ombre."
+  },
+  "809": {
+    "n": "Changeur de niveau",
+    "sum": "Ce mod vous permet de modifier le tableau d'expérience des classes. Vous pouvez appliquer le même tableau d'expérience à toutes les classes (à votre discrétion) ET/OU attribuer le tableau d'expérience de votre choix à la classe de votre choix."
+  },
+  "810": {
+    "n": "Mods Tweaker",
+    "sum": "Ce mod revisite légèrement d'anciens mods, en leur apportant davantage de cohérence. Tous les composants sont facultatifs et les mods doivent être installés avant celui-ci."
+  },
+  "813": {
+    "n": "Pack Réactivité BFS",
+    "sum": "Ce mod apporte une touche de nuance aux réactions d'Charname en fonction de sa race, de sa classe ou de son kit."
+  },
+  "814": {
+    "n": "Retrouver le statut de ranger ou de paladin",
+    "sum": "Ce mod rétablit la classe/le kit du personnage s'il est tombé en tant que ranger ou paladin. La réputation du groupe est simultanément portée à 10 si elle est inférieure à 10.|Il s'agit d'un mod de triche permettant d'annuler et de..."
+  },
+  "816": {
+    "n": "La plateforme personnalisée de Shohy",
+    "sum": "Ce mod modifie le combat et le lancement de sorts. Les ennemis peuvent désormais utiliser leurs capacités innées."
+  },
+  "818": {
+    "n": "Vérification de l'immunité aux pièges",
+    "sum": "Une petite modification permettant de contrer les pièges posés par la compétence « Poser un piège » des voleurs grâce à l'immunité aux armes normales.|Cela modifie les effets sur les créatures, les objets et les sorts qui confèrent une immunité aux armes normales..."
+  },
+  "820": {
+    "n": "WeissMod Tweaks",
+    "sum": "Ce mod comprend trois éléments : l'un permettant de payer pour se reposer, un autre permettant de conserver son or d'une partie à l'autre, et un dernier qui redéfinit le mécanisme de suspension du temps."
+  },
+  "822": {
+    "n": "Tes affaires à Athkatla",
+    "sum": "Vous permet de conserver tous vos objets au début d'une partBG2e. Reproduit l'astuce du jeu original qui permettait de mettre le jeu en pause et de déposer ses objets au début d'une nouvelle partie."
+  },
+  "821": {
+    "n": "XP Exchange",
+    "sum": "Dans les jeux de type «BGEE», où les classes sont plus nombreuses, un personnage de classe unique peut atteindre le niveau maximum plus tôt et se sentir isolé face à des coéquipiers qui progressent plus tardivement."
+  },
+  "851": {
+    "n": "Réglages multijoueur",
+    "sum": "Ce mod corrige quelques problèmes rencontrés lors des sessions multijoueurs. Au cours d'un combat, jusqu'à 5 adversaires peuvent suivre un membre du groupe à travers une porte (cela ne s'applique qu'aux zones intérieures dont les entrées sont accessibles aux PNJ)."
+  },
+  "855": {
+    "n": "Scripts d'aide au jeu",
+    "sum": "Ce mod ajoute trois nouveaux scripts automatiques pour les personnages : un script de combat, un script de pause automatique et un script semi-automatique d'application des buffs."
+  },
+  "858": {
+    "n": "Réglages divers",
+    "sum": "Offre de nombreuses options permettant d'augmenter la difficulté du jeu, à associer de préférence à « Sword Coast Stratagems », ainsi que de nombreuses corrections de bugs et des améliorations générales de l'IA."
+  },
+  "929": {
+    "n": "Packmule Mod",
+    "sum": "Ce mod ajoute une mule de bât qui vous accompagnera partout, transportant vos objets sans jamais faillir."
+  },
+  "418": {
+    "n": "Flèches du clerc voleur",
+    "sum": "Corrige le fonctionnement des flèches pour le kit de multiclasse Clerc/Voleur des PNJ Aura, permettant ainsi au personnage d'équiper et d'utiliser correctement les flèches."
+  },
+  "426": {
+    "n": "Présence continue de Viconia",
+    "sum": "Harmonise l'apparence de Viconia sur BG1 EE, BG2EE, SoD et EET grâce à des couleurs SoD cohérentes et à des options de portrait personnalisables."
+  },
+  "447": {
+    "n": "Ajustements de l'édition améliorée de NPC",
+    "sum": "Permet de modifier les PNJ d'origine grâce à 5 options d'amélioration : ajustements des caractéristiques, changements d'équipement et améliorations des compétences pour les compagnons d'Bioware."
+  },
+  "510": {
+    "n": "S9 BG:EE - Ajustements des PNJ",
+    "sum": "15 modifications spécialement destinées aux PNJ d'BG1 : ajustements des caractéristiques, attribution d'équipements et corrections de classes pour les compagnons de l'Baldur's Gate originale."
+  },
+  "773": {
+    "n": "Générateur de fêtes prêtes à l'emploi",
+    "sum": "Permet au joueur d'ajouter des parties personnalisées à l'écran de sélection de partie."
+  },
+  "108": {
+    "n": "Neverwinter Nights pour l'Baldur's Gate",
+    "sum": "Recrée l'intégralité de la campagne Neverwinter Nights dans BG2 / EET. Se déclenche à 1,35 million de points d'expérience et propose de nouvelles zones, de nouveaux sorts et de nouvelles quêtes. Ne nécessite PAS le jeu NWN original. Une fois la campagne lancée, il n'est plus possible d'y accéder."
+  },
+  "643": {
+    "n": "Icewind Dale sur EET",
+    "sum": "Intègre la campagne Icewind Dale à votre jeu «EET », sous forme de quête secondaire. L'intégralité de l'histoire d'IWD est accessible depuis la Côte des Épées."
+  },
+  "850": {
+    "n": "Icewind Dale dans «EET» : plaisanteries entre amis",
+    "sum": "Ce mod ajoute des interjections et des commentaires sur la zone à tous les compagnons de base dans les versions «BG1» et «BG2» (y compris les PNJ de «Beamdog») de la campagne IWD, grâce au mod «IWD1-IWD2-EET»."
+  },
+  "644": {
+    "n": "Icewind Dale 2 sur EET",
+    "sum": "Intègre le contenu d'Icewind Dale 2 à votre jeu «EET». Les quêtes et les zones d'IWD2 sont accessibles dans le jeu combiné."
+  },
+  "647": {
+    "n": "Intégration d'Icewind Dale et d'EET",
+    "sum": "Composants d'intégration reliant l'application IWD-in-EET à l'expérience principale d'EET : liens vers la carte du monde, entrées de journal et accroches narratives."
+  },
+  "646": {
+    "n": "Icewind Dale dans «EET's End »",
+    "sum": "Mod de finalisation pour les conversions IWD-in-EET, à installer après les autres mods mais avant « EET_End », gérant l'intégration de la carte du monde et des transitions."
+  },
+  "731": {
+    "n": "Voices Voices Extravaganza (BG1)",
+    "sum": "Des doublages en anglais générés par l'IA pour tous les personnages d'Baldur's Gateie 1 et de Tales of the Sword Coast."
+  },
+  "732": {
+    "n": "Voices Voices Extravaganza (SoD)",
+    "sum": "Des voix off en anglais générées par l'IA pour tous les personnages d'Siege of Dragonspear. Plus de 7 000 répliques doublées."
+  },
+  "429": {
+    "n": "ZG BG Voices",
+    "sum": "Baldur's Gate Pack vocal II pour les jeux Infinity Engine Enhanced Edition, version 2.6 et ultérieures."
+  },
+  "430": {
+    "n": "ZG : Les voix d'BG2",
+    "sum": "Baldur's Gate Pack vocal pour les jeux Infinity Engine Enhanced Edition, version 2.6 et ultérieures."
+  },
+  "431": {
+    "n": "ZG BG Voix du NPC",
+    "sum": "Baldur's Gate Pack de voix pour les PNJ destiné aux jeux Infinity Engine Enhanced Edition, version 2.6 et ultérieures."
+  },
+  "432": {
+    "n": "ZG IWD Voices",
+    "sum": "Pack vocal Icewind Dale pour les jeux Infinity Engine Enhanced Edition, version 2.6 et supérieure."
+  },
+  "433": {
+    "n": "ZG IWD2 Voix",
+    "sum": "Pack vocal Icewind Dale II pour les jeux Infinity Engine Enhanced Edition, version 2.6 et supérieure."
+  },
+  "434": {
+    "n": "ZG NWN Voices",
+    "sum": "Pack vocal Neverwinter Nights pour les jeux Infinity Engine Enhanced Edition, version 2.6 et supérieure."
+  },
+  "435": {
+    "n": "Ensembles sonores de NWN2",
+    "sum": "Ajoute 30 ensembles de sons de NWN2 avec sous-titres sous forme de jeux de voix sélectionnables pour les personnages joueurs, y compris la plupart des compagnons de NWN2 et les voix génériques des personnages joueurs."
+  },
+  "436": {
+    "n": "Ensembles de sons AW PF",
+    "sum": "Ajoute les répliques des compagnons issues du jeu « Pathfinder: Wrath of the Righteous » d'Owlcat Games à «BG2:EE », « BG:EE » et « IWD:EE »"
+  },
+  "437": {
+    "n": "Extraits audio de haute qualité",
+    "sum": "Récupère les fichiers audio de haute qualité pour le contenu « ExtendedBG2EE », qui avaient été perdus depuis la mise à jour v1.3 du jeu."
+  },
+  "778": {
+    "n": "Ensemble de sons « Xan French » pour l'BG2",
+    "sum": "Découvrez le gameplay du PNJ Xan BG2 avec une bande-son originale en français."
+  },
+  "787": {
+    "n": "Ensembles de sons ZS",
+    "sum": "Ce mod ajoute deux ensembles de sons pour les personnages féminins :|- `Chevalier pieux`, adapté aux personnages de bonne alignement|- `Voleuse redoutable`, avec un ton légèrement espiègle et cynique"
+  },
+  "470": {
+    "n": "Infinity Sounds",
+    "sum": "Remplace les sons de combat, de sorts et d'ambiance par des versions de meilleure qualité issues d'IWD et d'autres jeux de la série IE. Rend les combats plus percutants."
+  },
+  "438": {
+    "n": "La norme en matière d'image",
+    "sum": "Remplace les portraits des PNJ par des versions de meilleure qualité. 63 éléments couvrant les compagnons, les méchants et les personnages importants."
+  },
+  "439": {
+    "n": "Pack Portrait de la collection Infinity",
+    "sum": "Pack de portraits comprenant des portraits issus de divers jeux utilisant le moteur Infinity Engine. Plusieurs ensembles sont proposés, couvrant différents styles artistiques."
+  },
+  "440": {
+    "n": "IWD Portrait Variations",
+    "sum": "Améliore les portraits des personnages d'IWD:EE en agrandissant ceux de la barre latérale pour mettre l'accent sur les visages et en ajoutant des variantes de portraits retouchées pour la création de personnages."
+  },
+  "441": {
+    "n": "Le pack de portraits de RoorenArt",
+    "sum": "Pack de portraits dessinés à la main par RoorenArt dans un style pictural. Des portraits alternatifs pour les PNJ et les personnages des joueurs."
+  },
+  "474": {
+    "n": "Des portraits partout",
+    "sum": "Attribue des portraits uniques aux PNJ nommés qui, habituellement, partagent des portraits génériques. Des centaines d'habitants, de gardes et de PNJ secondaires se voient ainsi dotés de visages distincts."
+  },
+  "681": {
+    "n": "Pack Portrait de la collection Infinity",
+    "sum": "Le « Portrait Pack » de la collection Infinity est un ensemble de portraits officiels issus de tous les jeux utilisant le moteur Infinity Engine, regroupés pour pouvoir être utilisés dans n'importe quel jeu. Cela vous permettra, par exemple, d'utiliser les portraits originaux d'IWD2 pour un personnage dans un jeu «Siege of Dragonspear», ou inversement. "
+  },
+  "690": {
+    "n": "Pack Portrait PaintBG",
+    "sum": "87 images de remplacement pour les PNJ de « BG1 » / « BG2 » et ceux des mods. Plusieurs variantes sont disponibles pour Aerie, Dynaheir, Edwin, Haer'Dalis, Imoen, Jaheira, Khalid, Montaron, Minsc, Sarevok, Viconia, Yoshimo et Ninde."
+  },
+  "692": {
+    "n": "Enkida Portrait Pack",
+    "sum": "Ensemble complet de portraits présentant un style artistique harmonisé pour les PNJ d'BG2. Respecte dans une certaine mesure les illustrations d'BioWare tout en adoptant des dimensions standardisées."
+  },
+  "693": {
+    "n": "Mod de portrait Wonnimchunha",
+    "sum": "Pack de portraits alternatifs pour les PNJ d'BG1 et d'BG2, présentant une esthétique harmonisée entre les deux jeux."
+  },
+  "694": {
+    "n": "Plasmocat BG1 Portraits in BG2 Style",
+    "sum": "Des reskins de 24 portraits de PNJ d'BG1, réalisés par Plasmocat dans le style d'BG2, qui préservent la personnalité des personnages tout en améliorant leur esthétique."
+  },
+  "695": {
+    "n": "BG1 Pack de portraits de PNJ",
+    "sum": "Portraits alternatifs pour les PNJ d'BG1, réalisés par Amok, XVIII et d'autres. Comprend des variantes pour Coran et Dynaheir. De nombreuses places réservées aux PNJ en vue d'une future extension."
+  },
+  "698": {
+    "n": "Pack de portraits « Baldurs Goth »",
+    "sum": "Portraits et poupées en papier sur le thème gothique pour les PNJ d'BG2. Comprend des portraits alternatifs réalisés par plusieurs artistes et la prise en charge des PNJ entre mods."
+  },
+  "699": {
+    "n": "Phaere NPC Portraits",
+    "sum": "De nouveaux portraits des PNJ d'BG2, réalisés dans un style distinctif de peinture à la main."
+  },
+  "709": {
+    "n": "Portraits de PNJ en continu",
+    "sum": "Harmonise les portraits des PNJ sur BG1, SoD et BG2 pour Edwin, Imoen, Jaheira, Minsc et Viconia. Choisissez un style de portrait par PNJ."
+  },
+  "710": {
+    "n": "Portraits dans le style de Dragon Age Origins",
+    "sum": "Remplace les portraits des PNJ par des illustrations inspirées de Dragon Age : Origins. Plus de 30 PNJ avec plusieurs variantes de style."
+  },
+  "711": {
+    "n": "Portraits réalistes pour l'BGEE",
+    "sum": "Remplacements de portraits réalistes générés par l'IA pour les PNJ d'BG1:EE. Mod de remplacement uniquement — placez les fichiers manuellement dans le dossier « override » du jeu."
+  },
+  "712": {
+    "n": "Portraits réalistes pour l'BG2EE",
+    "sum": "Remplacements de portraits réalistes générés par l'IA pour les PNJ d'BG2:EE. Mod de remplacement uniquement — placez les fichiers manuellement dans le dossier « override » du jeu."
+  },
+  "713": {
+    "n": "EET Portraits réalistes : édition étendue",
+    "sum": "Étend les portraits réalistes générés par IA à d'autres PNJ dans les jeux BG1, SoD et BG2, grâce à un vieillissement tenant compte des phases de vie et à des illustrations générées par ComfyUI."
+  },
+  "779": {
+    "n": "Pack de portraits Ajantis",
+    "sum": "Ce mod ajoute de nouveaux portraits d'Ajantis créés par des membres de la communauté."
+  },
+  "780": {
+    "n": "Blonde Imoen",
+    "sum": "Ce mod remplace les portraits d'Imoen par une version blonde. Un composant permet de les installer comme portraits de personnage dans n'importe quel jeu utilisant le moteur Infinity Engine (à l'exception de PsT et PsT:EE)."
+  },
+  "781": {
+    "n": "Portraits conscients",
+    "sum": "Une série de portraits de PNJ pour les éditions EE ; pour plus d'informations, cliquez [ici](https://zenosziggurat.com/rpg-character-sketches-baldurs-gate-revisited-6/)."
+  },
+  "782": {
+    "n": "Portraits d'Ensrick",
+    "sum": "Ce mod propose des portraits alternatifs de qualité pour les personnages de BG, ainsi qu'un grand nombre d'autres utilisables pour le protagoniste."
+  },
+  "944": {
+    "n": "Poupées en papier et portraits améliorés ACE",
+    "sum": "Ajoute 8 portraits de création de personnage compatibles avec le mode « paperdoll »."
+  },
+  "783": {
+    "n": "Le pack de portraits d'Hannah",
+    "sum": "Ce mod ajoute six nouveaux portraits originaux (cinq femmes et un homme) que votre personnage peut utiliser dans n'importe quel jeu utilisant le moteur Infinity Engine (à l'exception de PsT et PsT:EE)."
+  },
+  "945": {
+    "n": "Les portraits d'BG1, par Amaurea",
+    "sum": "45 portraits de PNJ de remplacement pour les personnages d'BG1 et d'SoD."
+  },
+  "784": {
+    "n": "Les coups de cœur de Plasmocat",
+    "sum": "Ce mod propose des portraits supplémentaires pour le joueur (pas pour les PNJ) et rassemble les portraits préférés de Plasmocat, dont beaucoup ont été commandés pour divers mods et d'autres qui sont simplement des portraits..."
+  },
+  "946": {
+    "n": "Les portraits d'BG2, par Amaurea",
+    "sum": "34 portraits de PNJ de remplacement pour les personnages d'BG2 et d'ToB."
+  },
+  "785": {
+    "n": "Portraits tirés d'Icewind Dale II",
+    "sum": "Ce mod ajoute 24 portraits d'Icewind Dale II convertis à la résolution et au format EE."
+  },
+  "786": {
+    "n": "Sandrah : Portraits alternatifs",
+    "sum": "Portraits alternatifs pour les personnages du mod NPC Sandrah."
+  },
+  "931": {
+    "n": "Les portraits de PNJ de Gerri",
+    "sum": "Portraits de PNJ de remplacement pour BGT et EET. Comprend BG1, BG2, ainsi que de nombreux PNJ issus de mods populaires, notamment DSotSC, NTotSC et Solaufein."
+  },
+  "54": {
+    "n": "Made in Heaven : Meta-Mod",
+    "sum": "Le méta-mod « Made in Heaven » pour «BG1 » : configure automatiquement les composants recommandés pour la famille de mods « Made in Heaven »."
+  },
+  "428": {
+    "n": "Carte du monde",
+    "sum": "Ajoute une carte du monde améliorée, avec des itinéraires plus clairs, des indicateurs de distance et des repères de zone optimisés dans toutes les campagnes."
+  },
+  "449": {
+    "n": "Trilogie Édition améliorée (Fin)",
+    "sum": "Finalise l'installation d'EETe une fois que tous les autres mods ont été installés. Ce mod doit être le tout dernier de votre liste d'installation."
+  },
+  "848": {
+    "n": "Description détaillée",
+    "sum": "Équivalent en chinois d'AutoDescription. Analyse tous les objets et sorts, puis génère de nouvelles descriptions correspondant aux statistiques réelles. Comprend un correctif pour l'encodage chinois. À installer après tous les mods de contenu."
+  },
+  "448": {
+    "n": "Auto Description",
+    "sum": "Génère automatiquement les descriptions des objets et des sorts à l'aide d'un texte technique standardisé qui reflète les statistiques réelles du jeu, tout en s'adaptant à tous les mods installés."
+  },
+  "443": {
+    "n": "Scripts de powergaming améliorés",
+    "sum": "Ajoute des scripts d'IA améliorés pour les membres de votre groupe, avec 4 options : un lancement automatique optimisé, un comportement au combat plus intelligent et des tactiques personnalisées."
+  },
+  "459": {
+    "n": "Kit double",
+    "sum": "Permet d'opter pour une double spécialisation dans un kit spécifique plutôt que de se limiter à la classe de base, avec des composants optionnels pour des emplacements de bonus de mage spécialisés et l'application de compétences propres au kit."
+  },
+  "684": {
+    "n": "EET Interface utilisateur graphique",
+    "sum": "EET - Ajustements spécifiques de l'interface graphique qui s'appliquent après la fusion de la trilogie. Correction des éléments d'interface pour le jeu fusionné."
+  },
+  "685": {
+    "n": "Generalized Biffing",
+    "sum": "Compresse les fichiers du jeu non compressés dans des archives BIF pour accélérer les temps de chargement. À installer en dernier ; il s'agit uniquement d'une optimisation des performances qui n'a aucune incidence sur le gameplay."
+  },
+  "686": {
+    "n": "Nouveau système de transport entre les quartiers de BG City",
+    "sum": "Ajoute un nouveau système de déplacement permettant de se rendre d'un quartier à l'autre d'Baldur's Gate, remplaçant les transitions standard entre zones par une méthode de navigation plus rapide."
+  },
+  "700": {
+    "n": "Lancers aléatoires",
+    "sum": "Remplace le générateur de nombres pseudo-aléatoires du jeu par le générateur matériel RDRAND afin d'améliorer le caractère aléatoire des lancers de dés, des tables de butin et des combats."
+  },
+  "701": {
+    "n": "Réduire Enregistrer Compresser",
+    "sum": "Réduit le niveau de compression des fichiers de sauvegarde afin d'accélérer la sauvegarde, au prix d'une légère augmentation de la taille des fichiers. Particulièrement utile pour les installations modifiées volumineuses."
+  },
+  "792": {
+    "n": "Succès Steam pour «EET »",
+    "sum": "Ce mod permet de débloquer correctement les succès Steam de BG1 EE, SoD et BG2EE lors d'une partie d'EET."
+  },
+  "845": {
+    "n": "CluAreas",
+    "sum": "Ce mod traduit les zones de triche accessibles via la console CLUA, y compris celles ajoutées par d'autres mods."
+  },
+  "_meta": {
+    "lang": "fr",
+    "generated": "2026-04-13",
+    "scope": "names+summaries",
+    "version": 1
+  }
+}

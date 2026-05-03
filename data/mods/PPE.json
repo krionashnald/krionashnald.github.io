@@ -1,0 +1,561 @@
+{
+  "i": 474,
+  "t": "PPE",
+  "sv": 1,
+  "ord": 50,
+  "c": "PORTRAITS",
+  "n": "Portraits Portraits Everywhere",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "es": 3
+  },
+  "no": "Adds portraits for NPCs who lack them Adds portraits to various minor NPCs throughout the game that lacked them.Install Portraits Portraits Everywhere near the end of your mod install order, soon before EET End!",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin/Edwina. Last installed wins",
+      "theirComps": "#1180 Female Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "NostalgiaPack",
+      "withId": 356,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "theirComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "theirComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "theirComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#0 Restore Irenicus Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "theirComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ac-miscellaneous",
+      "withId": 427,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "theirComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ContinousViconiaAppearance",
+      "withId": 426,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "theirComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "theirComps": "#14 Anomen Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits (Coran, Safana, Faldorn, etc.). Last installed wins",
+      "theirComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "4": [
+        [
+          "irenicus",
+          "portraits/ppe/irenicus.png",
+          "bg2"
+        ]
+      ],
+      "5": [
+        [
+          "edwina",
+          "portraits/ppe/edwina.png",
+          "bg2"
+        ]
+      ],
+      "8": [
+        [
+          "imoen",
+          "portraits/default/imoen.png",
+          "bg1"
+        ]
+      ],
+      "9": [
+        [
+          "imoen",
+          "portraits/default_sod/imoen.png",
+          "sod"
+        ]
+      ],
+      "11": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "bg1"
+        ]
+      ],
+      "12": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "sod"
+        ]
+      ],
+      "14": [
+        [
+          "jaheira",
+          "portraits/default/jaheira.png",
+          "bg1"
+        ]
+      ],
+      "16": [
+        [
+          "minsc",
+          "portraits/default/minsc.png",
+          "bg1"
+        ]
+      ],
+      "18": [
+        [
+          "edwin",
+          "portraits/default_bg1/edwin.png",
+          "bg1"
+        ]
+      ],
+      "19": [
+        [
+          "edwin",
+          "portraits/default/edwin.png",
+          "all"
+        ]
+      ],
+      "20": [
+        [
+          "aerie",
+          "portraits/ppe/aerie.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/forums/topic/38053-pp-enhanced-portraits-portraits-everywhere-overhaul/",
+  "a": "Isandir",
+  "v": "1.02",
+  "sum": "Assigns unique NPC portraits to named characters who normally share generic ones. Hundreds of townsfolk, guards, and minor NPCs get distinct faces.",
+  "tags": [
+    "visual",
+    "portraits"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "IsanDir",
+    "r": "PPE"
+  },
+  "au": "Smeagolheart, bob_veng",
+  "dl": "https://github.com/smeagolheart/Portraits-Portraits-Everywhere",
+  "co": [
+    {
+      "n": "Portraits Portraits Everywhere (PPE) - core component",
+      "tp2n": "Portraits Portraits Everywhere (PPE) - core component",
+      "cn": 0,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Category Portraits: Sequenced (Recommended)",
+      "tp2n": "Sequenced",
+      "cn": 100,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "cat_portraits",
+      "scn": "Category Portraits (Recommended)"
+    },
+    {
+      "n": "Category Portraits: Random",
+      "tp2n": "Random",
+      "cn": 150,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 150,
+      "g": "cat_portraits",
+      "scn": "Category Portraits (Recommended)"
+    },
+    {
+      "n": "Isandir's CHARNAME Portraits",
+      "tp2n": "Isandir's CHARNAME Portraits",
+      "cn": 10,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 10,
+      "wq": "exact"
+    },
+    {
+      "n": "Replace Low Quality TOB & SOA Portraits",
+      "tp2n": "Replace Low Quality TOB & SOA Portraits",
+      "cn": 20,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Edwin/Edwina",
+      "tp2n": "Edwin/Edwina",
+      "cn": 25,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Imoen Portrait: BG1",
+      "tp2n": "BG1 Portrait",
+      "cn": 300,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 300,
+      "g": "imoen_portrait",
+      "scn": "Change Imoen portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Imoen Portrait: SoD",
+      "tp2n": "SOD Portrait",
+      "cn": 301,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 301,
+      "g": "imoen_portrait",
+      "scn": "Change Imoen portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Imoen Portrait: BG2",
+      "tp2n": "BG2 Portrait",
+      "cn": 302,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 302,
+      "g": "imoen_portrait",
+      "scn": "Change Imoen portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Viconia Portrait: BG1",
+      "tp2n": "BG1 Portrait",
+      "cn": 310,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 310,
+      "g": "viconia_portrait",
+      "scn": "Change Viconia portraits",
+      "grn": "BG2 Companion Portraits",
+      "no": "Mod bug: suffbg1='IA' creates wrong filename VICONIAIAbg1L.bmp (file is VICONIAbg1L.BMP). Will fail to install."
+    },
+    {
+      "n": "Viconia Portrait: SoD",
+      "tp2n": "SOD Portrait",
+      "cn": 311,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 311,
+      "g": "viconia_portrait",
+      "scn": "Change Viconia portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Viconia Portrait: BG2",
+      "tp2n": "BG2 Portrait",
+      "cn": 312,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 312,
+      "g": "viconia_portrait",
+      "scn": "Change Viconia portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Jaheira Portrait: BG1",
+      "tp2n": "BG1 Portrait",
+      "cn": 320,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 320,
+      "g": "jaheira_portrait",
+      "scn": "Change Jaheira portraits",
+      "grn": "BG2 Companion Portraits",
+      "no": "Mod bug: suffbg1='A' creates wrong filename JAHEIRAAbg1L.bmp (file is JAHEIRAbg1L.BMP). Will fail to install."
+    },
+    {
+      "n": "Jaheira Portrait: BG2",
+      "tp2n": "BG2 Portrait",
+      "cn": 322,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 322,
+      "g": "jaheira_portrait",
+      "scn": "Change Jaheira portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Minsc Portrait: BG1",
+      "tp2n": "BG1 Portrait",
+      "cn": 330,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 330,
+      "g": "minsc_portrait",
+      "scn": "Change Minsc portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Minsc Portrait: BG2",
+      "tp2n": "BG2 Portrait",
+      "cn": 332,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 332,
+      "g": "minsc_portrait",
+      "scn": "Change Minsc portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Edwin Portrait: BG1",
+      "tp2n": "BG1 Portrait",
+      "cn": 340,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 340,
+      "g": "edwin_portrait",
+      "scn": "Change Edwin portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Edwin Portrait: BG2",
+      "tp2n": "BG2 Portrait",
+      "cn": 342,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 342,
+      "g": "edwin_portrait",
+      "scn": "Change Edwin portraits",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Longhair Aerie",
+      "tp2n": "Longhair Aerie",
+      "cn": 350,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 350,
+      "no": "Requires cn:300-342 installed first (macro dependency). Works if Imoen BG1 portrait (cn:300) is also selected.",
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Ust Natha Drow NPCs",
+      "tp2n": "Ust Natha Drow NPCs",
+      "cn": 30,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 30,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "BG2 Companion Portraits"
+    },
+    {
+      "n": "Vampire NPCs",
+      "tp2n": "Vampire NPCs",
+      "cn": 40,
+      "wf": "PPE",
+      "wp": "PPE\\SETUP-PPE.TP2",
+      "wc": 40,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "BG2 Companion Portraits"
+    }
+  ]
+}

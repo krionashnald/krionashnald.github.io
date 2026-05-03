@@ -1,0 +1,41 @@
+{
+  "i": 61,
+  "t": "Loretakers",
+  "sv": 1,
+  "ord": 270,
+  "c": "QUEST MODS BG1",
+  "n": "Loretakers",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "zh-cn": 2,
+    "ru": 3,
+    "es": 4,
+    "pl": 5
+  },
+  "no": "Loretakers by Acifer Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly.",
+  "u": "https://www.baldurs-gate.de/index.php?resources/loretakers.68/",
+  "a": "Acifer, Lava Del'Vortel",
+  "v": "V 2.6",
+  "sum": "Quest mod adding a new 2-level dungeon beneath Baldur's Gate city with fresh areas, enemies, and quests for approximately 1-2 hours of gameplay.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://www.baldurs-gate.de/index.php?resources/loretakers.68/",
+  "au": "Acifer",
+  "co": [
+    {
+      "n": "Loretakers V 1.2",
+      "tp2n": "Loretakers V 2.6",
+      "cn": 0,
+      "wf": "Loretakers",
+      "wp": "Loretakers\\SETUP-LORETAKERS.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "INSTALL ISSUE: %CentralSewers%.are not found. Loretakers sets CentralSewers = BG0225 (EET) or AR0225 (BGEE) via conditional GAME_IS blocks. If neither condition matches at install time (e.g. unexpected engine state), the variable is never set and COPY_EXISTING ~%CentralSewers%.are~ fails. Also possible: BG0225.are is not accessible if BG1 content has not been merged yet. Ensure Loretakers installs after EET world-build (wb:1) so BG1 areas are available."
+    }
+  ]
+}

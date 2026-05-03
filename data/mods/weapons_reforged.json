@@ -1,0 +1,222 @@
+{
+  "i": 819,
+  "t": "weapons_reforged",
+  "sv": 1,
+  "ord": 770,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Weapons Reforged",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "de": 2,
+    "fr": 3,
+    "pt": 4,
+    "pl": 5,
+    "uk": 6,
+    "es": 7
+  },
+  "u": "https://github.com/CelestialFury-BG/weapons-reforged/",
+  "a": "Celestial Fury",
+  "sum": "A modular weapon usability and proficiency overhaul. Provides universal weapon access, configurable proficiency minimums, class‑restricted proficiency options, fighting style cap removal, and align...",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "prof": {
+    "2": {
+      "global": {
+        "minPips": 1
+      },
+      "desc": "All classes start with minimum 1 pip (Proficient) in every weapon"
+    },
+    "3": {
+      "global": {
+        "minPips": 2
+      },
+      "desc": "All classes start with minimum 2 pips (Specialized) in every weapon"
+    },
+    "4": {
+      "global": {
+        "minPips": 3
+      },
+      "desc": "All classes start with minimum 3 pips (Mastery) in every weapon"
+    },
+    "5": {
+      "global": {
+        "minPips": 4
+      },
+      "desc": "All classes start with minimum 4 pips (High Mastery) in every weapon"
+    },
+    "6": {
+      "global": {
+        "minPips": 5
+      },
+      "desc": "All classes start with minimum 5 pips (Grand Mastery) in every weapon"
+    },
+    "7": {
+      "global": {
+        "maxPips": 2
+      },
+      "desc": "Non-warrior classes capped at 2 pips (Specialized)"
+    },
+    "8": {
+      "global": {
+        "maxPips": 3
+      },
+      "desc": "Non-warrior classes capped at 3 pips (Mastery)"
+    },
+    "9": {
+      "global": {
+        "maxPips": 4
+      },
+      "desc": "Non-warrior classes capped at 4 pips (High Mastery)"
+    },
+    "10": {
+      "global": {
+        "maxPips": 5
+      },
+      "desc": "All classes can reach Grand Mastery (5 pips)"
+    },
+    "11": {
+      "global": {
+        "styleMaxPips": 3
+      },
+      "modify": [
+        {
+          "id": "SWORD_SHIELD",
+          "maxPips": 3
+        },
+        {
+          "id": "SINGLE_WEAPON",
+          "maxPips": 3
+        },
+        {
+          "id": "TWO_HANDED",
+          "maxPips": 3
+        }
+      ],
+      "desc": "Fighting style caps removed (raised to 3 for all)"
+    }
+  },
+  "au": "CelestialFury",
+  "dl": "https://github.com/CelestialFury-BG/weapons-reforged",
+  "no": "Weapon proficiency overhaul. Core rules: remove class restrictions, universal access with 1-5 pip minimums. Class-restricted variant with 2-5 pip minimums. Standalone style proficiencies component. 8 languages.",
+  "co": [
+    {
+      "n": "Remove All Class-based Restrictions on Weapons (Item Usability)",
+      "cn": 0,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "g": "Item Usability"
+    },
+    {
+      "n": "All Classes Can Use All Weapons (Class Usability/Monks Excluded)",
+      "cn": 1,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "Item Usability"
+    },
+    {
+      "n": "Universal Proficiencies: Minimum 1 Pip (Proficient)",
+      "cn": 2,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "Proficiency Minimums"
+    },
+    {
+      "n": "Universal Proficiencies: Minimum 2 Pips (Specialized)",
+      "cn": 3,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "g": "Proficiency Minimums"
+    },
+    {
+      "n": "Universal Proficiencies: Minimum 3 Pips (Mastery)",
+      "cn": 4,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "g": "Proficiency Minimums"
+    },
+    {
+      "n": "Universal Proficiencies: Minimum 4 Pips (High Mastery)",
+      "cn": 5,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "g": "Proficiency Minimums"
+    },
+    {
+      "n": "Universal Proficiencies: Minimum 5 Pips (Grand Mastery)",
+      "cn": 6,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "g": "Proficiency Minimums"
+    },
+    {
+      "n": "Standard Class Restrictions: Maximum 2 Pips (Specialized)",
+      "cn": 7,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "g": "Proficiency Maximums"
+    },
+    {
+      "n": "Standard Class Restrictions: Maximum 3 Pips (Mastery)",
+      "cn": 8,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "g": "Proficiency Maximums"
+    },
+    {
+      "n": "Standard Class Restrictions: Maximum 4 Pips (High Mastery)",
+      "cn": 9,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "g": "Proficiency Maximums"
+    },
+    {
+      "n": "Standard Class Restrictions: Maximum 5 Pips (Grand Mastery)",
+      "cn": 10,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "g": "Proficiency Maximums"
+    },
+    {
+      "n": "Fighting Style Proficiency Caps Removed (2/2/2/3 [All Classes] Monks and Kensai are excluded)",
+      "cn": 11,
+      "wf": "weapons_reforged",
+      "wp": "weapons_reforged.tp2",
+      "wc": 11,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "CelestialFury-BG",
+    "r": "weapons-reforged"
+  }
+}

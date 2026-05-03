@@ -1,0 +1,992 @@
+{
+  "i": 326,
+  "t": "ArtisansKitpack",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 110,
+  "c": "KIT & CLASS MODS",
+  "n": "The Artisan's Kitpack",
+  "no": "Some overhauls overlap with ToF's revised kits — skip conflicting AK components or disable ToF's on its .ini. Re-Enable Classes components should go before Tweaks Anthology.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "AK kit overhauls and cdtweaks racial restrictions + Luke class feats modify overlapping class abilities",
+      "myComps": "#1 Enable All Classes for All Races",
+      "theirComps": "#2360 Remove Racial Restrictions #2380 Remove Racial Restrictions for Kits #2350 #2351 #2352 #2353 #2358 Multi-class restrictions #6080 Divine Grace Paladins #6110 Sneak Attack Blackguards #6120 Fearless Halflings #6140 Planar Turning #6160 Barbarian Rage"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "HT cn:2 (Expanded Shapeshifting) and AK cn:5100 (Shapeshifter Overhaul) both modify CLABDR04.2DA — pick one or install HT before AK. HT cn:5 (Rebalanced Weapon Styles) modifies WEAPPROF rows 28-31; AK fighter kits use ADD_KIT_EX which writes kit-specific columns — no overlap. HT cn:4 (Rebalanced Proficiencies) modifies WEAPPROF globally — conflicts with AK fighter overhauls if both selected.",
+      "theirComps": "#2 Expanded Shapeshifting #4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles",
+      "myComps": "#5100 Shapeshifter Overhaul #1003 #1004 #1006 #1100 Fighter kits",
+      "orderOnly": true,
+      "source": "HT modifies CLABDR04/WEAPPROF rows 28-31; AK replaces CLABDR03 and uses ADD_KIT_EX columns, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Only JT cn:50 (NPC null kits) is from this list. JT cn:50 assigns default kit (0x40000000) to joinable NPCs with null kits — but only IF kit==0. AK's kit overhauls create new kits (Berserker, Wizard Slayer, Kensai, etc.) that NPCs would only get via ArtisansKitpack_npc Safe — JT cn:50's condition (kit==0) skips NPCs that already have kits. JT cn:81-83 (Shapeshift) and cn:240 (Undead Hunter)",
+      "theirComps": "#50 NPC null kits (IN preset, safe) #81 #82 #83 Shapeshift corrections (NOT in preset) #240 Undead Hunter (NOT in preset)",
+      "source": "JT cn:50 uses PATCH_IF kit==0 condition; AK creates new kits via ADD_KIT_EX; AK_npc, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "NOT a conflict. SCS cn:4100 (Improved NPC customization) reads the kit field (offset 0x244) but NEVER writes to it during installation. Kit customization happens at runtime via AddKit() game action in dialogue. AK's kit assignments (from ArtisansKitpack_npc) persist through SCS installation. SCS has no detection of AK. ArtisansKitpack_npc regardless.",
+      "theirComps": "#4100 NPC customization",
+      "source": "SCS leveller_2.tpa lines 303-304 READ_SHORT 0x244 but no WRITE; kit changes are runtime AddKit() in customise_2.tpa dialogue, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Item_Tweaks",
+      "withId": 349,
+      "severity": "soft",
+      "reason": "Only relevant if AK Red Wizard kit is installed (in ArtisansKitpack_npc, AK Red Wizard modifies misc89.itm (Edwin's amulet) via redwizard.tpa. SD IT cn:1091-1093 also modify misc89.itm. If both installed, last-installed-wins on amulet effects. AK Red Wizard, SD IT cn:1092 IS selected. No overlap — SD IT safely nerfs the amulet without AK interference.",
+      "myComps": "Red Wizard kit (in ArtisansKitpack_npc, NOT in preset)",
+      "theirComps": "#1092 Edwin Amulet limited to 7th level (IN preset)",
+      "orderOnly": true,
+      "source": "AK redwizard.tpa modifies misc89.itm; SD IT tweak_edwin_amulet modifies misc89.itm; AK Red Wizard, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "No overlap . AK paladin overhauls (cn:3000-3011) — fighter/thief kits are. SnA cn:80 (Paladin Abilities) modifies CLABPA01.2DA which no selected AK component touches. SnA cn:60 (Inquisitor), cn:130 (Blade), cn:170 (Archer), cn:300 (Weapon Styles) all Only SnA cn:80 is selected and it has no file overlap with selected AK fighter/thief kits.",
+      "myComps": "#3000-#3011 Paladin Overhauls (NOT in preset) #1003 #1004 #1006 #1100 Fighter kits (IN preset, no SnA overlap)",
+      "theirComps": "#80 Paladin Abilities (IN preset, no AK overlap) #60 #130 #170 #300 (NOT in preset)",
+      "orderOnly": true,
+      "source": "SnA cn:80 modifies CLABPA01; no selected AK component touches paladin CLABs; AK paladin overhauls, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "MonasticOrders",
+      "withId": 656,
+      "severity": "hard",
+      "reason": "AK monk kits assume vanilla Monk class. MO disables vanilla Monk entirely, breaking AK monk kits.",
+      "myComps": "#10001 Monk Revisions #10002 Brawler #10003 Sacred Fist #10004 Ninja",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Install-order supersession: if Artisan's Kitpack #5100 is installed first, cdtweaks #1150 (Reveal Map Icons) auto-skips via !MOD_IS_INSTALLED predicate. Intentional by CamDawg.",
+      "myComps": "#5100",
+      "theirComps": "#1150 Reveal Map Icons",
+      "source": "Audit 2026-04: mirror of cdtweaks predicate",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "4": {
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Pale Master: restricted to Unholy Necromancy (Cause Wounds only)"
+        ]
+      ]
+    },
+    "5": {
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Pale Master: access to all Necromancy divine spells"
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "18": {
+      "ARCANE_ARCHER": {
+        "passive": [
+          {
+            "n": "Ranged THAC0",
+            "type": "desc",
+            "desc": "+1 THAC0 with missiles at lv1, scaling every 5 levels"
+          },
+          {
+            "n": "Enhance Arrow",
+            "type": "desc",
+            "desc": "Projectiles gain +1 enchantment and +1 magic damage, scaling to +5 at lv20"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Imbue Arrow",
+            "freq": "3/day",
+            "effects": "Enchants arrows with spell effects.",
+            "level": 5
+          },
+          {
+            "n": "Seeker Arrow",
+            "freq": "1/day",
+            "effects": "Unerring arrow that ignores cover.",
+            "level": 9
+          },
+          {
+            "n": "Phase Arrow",
+            "freq": "1/day",
+            "effects": "Arrow passes through obstacles.",
+            "level": 13
+          },
+          {
+            "n": "Arrow of Death",
+            "freq": "1/day",
+            "effects": "Instantly slays on failed save.",
+            "level": 17
+          }
+        ],
+        "restrictions": {
+          "armor": "no armor heavier than elven chain",
+          "race": "Human/Elf/Half-Elf only",
+          "items": "d8 hit die. -3 THAC0 penalty with melee. Max 1 pip in non-bow weapons."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (no custom additions documented)"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (fighter kit). Uses innate arcane arrow abilities."
+        },
+        "statBonus": {
+          "note": "Requires elf, half-elf, or human race"
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "27": {
+      "DARK_HUNTER": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 (lv1-8), x3 (lv9-16), x4 (lv17+)"
+          },
+          {
+            "n": "Humanoid Hunter",
+            "type": "desc",
+            "desc": "+2 THAC0 and damage vs humanoids"
+          },
+          {
+            "n": "Thief Skills",
+            "type": "desc",
+            "desc": "Pick Pockets, Open Locks, Find/Remove Traps at 100. Up to 6 traps per area."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Poison Weapon",
+            "freq": "1/day, +1 per 5 levels",
+            "effects": "2-10 poison damage, CON drain 1-3, save penalties scale to -4 at lv21+.",
+            "level": 1
+          },
+          {
+            "n": "Manhunter Snare",
+            "freq": "1/day",
+            "effects": "10d10+20 missile damage, paralysis or slow, 24 bleed. Not vs undead/elementals.",
+            "level": 10
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max",
+          "noSpells": true,
+          "items": "Arcane spells instead of druid spells. No Charm Animal. No dual-class. All alignments, never falls."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Uses mage spells instead of ranger druid spells"
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "statBonus": {
+          "note": "No Charm Animal ability."
+        }
+      }
+    },
+    "49": {
+      "ARCANE_TRICKSTER": {
+        "passive": [
+          {
+            "n": "Bonus Spell Slot",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "+1 bonus spell per spell level"
+          },
+          {
+            "n": "Skill Bonus",
+            "type": "desc",
+            "desc": "+10% Pick Pockets and Detect Illusions"
+          },
+          {
+            "n": "Stealth Caster",
+            "type": "desc",
+            "desc": "Spells cast while hidden have casting time reduced to 1"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Pilfer Magic",
+            "freq": "1/day at lv1, +1 at 5/9/13/17",
+            "effects": "Steals highest memorized arcane spell from target. At lv10+ also strips spell protections.",
+            "level": 1
+          },
+          {
+            "n": "Impromptu Sneak Attack",
+            "freq": "passive on backstab",
+            "effects": "Backstabs reduce target's DEX and saves vs spells for 1 hour.",
+            "level": 5
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-lawful only",
+          "items": "Mage/Thief multiclass kit. 20 skill pts/level. Requires INT 12, DEX 12."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/THIEF"
+        ],
+        "note": "Multi-class kit (Mage/Thief base)",
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Mage/Thief multiclass kit; uses mage HLA pool"
+        },
+        "statBonus": {
+          "note": "Requires INT 12, DEX 12."
+        }
+      }
+    }
+  },
+  "kits": {
+    "18": {
+      "new": [
+        [
+          "ARCANE_ARCHER",
+          "fighter",
+          "Arcane Archer",
+          "Fighter combining archery with arcane magic. Enchanted arrows and spell shots."
+        ]
+      ]
+    },
+    "27": {
+      "new": [
+        [
+          "DARK_HUNTER",
+          "ranger",
+          "Dark Hunter",
+          "Ranger stalking prey through darkness. Enhanced stealth and night-hunting abilities."
+        ]
+      ]
+    },
+    "49": {
+      "new": [
+        [
+          "ARCANE_TRICKSTER",
+          "thief",
+          "Arcane Trickster",
+          "Thief with minor arcane talent. Combines roguish skills with illusion magic."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "a": "Artemius_I",
+  "v": "6.0",
+  "sum": "Massive kitpack with 50 new kits across all classes. One of the largest and most varied kit collections available.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "The-Artisan-s-Kitpack"
+  },
+  "dl": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "au": "Artemius_I",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Artisan's Kitpack: Enable All Classes for All Races",
+      "cn": 1,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "k": 0,
+      "no": "Removes race restrictions for all classes. Allows any race to play any class.",
+      "tp2n": "Artisan's Kitpack: Enable All Classes for All Races",
+      "grn": "Rule Tweaks"
+    },
+    {
+      "n": "Enable Classes: All Races",
+      "cn": 2,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "g": "multiclass",
+      "scn": "Artisan's Kitpack: Enable Multi-Classes for",
+      "grn": "Rule Tweaks",
+      "x": 0,
+      "tp2n": "All Races"
+    },
+    {
+      "n": "Enable Classes: All Races Except Human",
+      "cn": 3,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "g": "multiclass",
+      "scn": "Artisan's Kitpack: Enable Multi-Classes for",
+      "grn": "Rule Tweaks",
+      "x": 0,
+      "tp2n": "All Races Except Human"
+    },
+    {
+      "n": "Artisan's Kitpack: Eldritch Knight (Fighter / Mage Kit)",
+      "cn": 20000,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 20000,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Eldritch Knight (Fighter / Mage Kit)",
+      "grn": "Multi-Class Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Trickster (Mage / Thief Kit)",
+      "cn": 20001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 20001,
+      "wq": "exact",
+      "k": 1,
+      "no": "Aura cn:3 (Artificer) FAILED with Invalid_argument(String.sub) on AR0300.are patching. Left corrupted c0au#at1.bcs in override that crashes ALL subsequent SFO COPY_EXISTING_REGEXP operations (killed 27+ ToF components). WeiDU fork patched to catch Invalid_argument on BCS files. Consider removing Aura Artificer class option .",
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Artisan's Kitpack: Arcane Trickster (Mage / Thief Kit)",
+      "grn": "Multi-Class Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Pale Master Sorcerer Kit",
+      "cn": 8001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8001,
+      "wq": "exact",
+      "no": "Pale Master sorcerer kit. Necromantic sorcerer gaining undead traits, touch attacks, and summoning.",
+      "tp2n": "Artisan's Kitpack: Pale Master Sorcerer Kit",
+      "grn": "Sorcerer Kits"
+    },
+    {
+      "n": "Pale Master Spells: Unholy Necromancy Only (Cause Wounds, Disease, Poison, etc.)",
+      "cn": 8101,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8101,
+      "wq": "exact",
+      "g": "pale_master_spells",
+      "scn": "Artisan's Kitpack: Pale Master Spells",
+      "grn": "Sorcerer Kits",
+      "x": 3,
+      "tp2n": "'Unholy' Necromancy Spells Only (Cause Wounds, Disease, Poison, etc.)"
+    },
+    {
+      "n": "Pale Master Spells: All Necromancy Divine Spells (including Cure Wounds, etc.)",
+      "cn": 8102,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8102,
+      "wq": "exact",
+      "g": "pale_master_spells",
+      "scn": "Artisan's Kitpack: Pale Master Spells",
+      "grn": "Sorcerer Kits",
+      "x": 3,
+      "tp2n": "All Necromancy Divine Spells (including Cure Wounds, Neutralize Poison, etc.)"
+    },
+    {
+      "n": "Dragon Disciple: Original Stat Bonuses",
+      "no": "Clashes with ToF's Dragon Disciple variants | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 8002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8002,
+      "wq": "exact",
+      "g": "dragon_disciple",
+      "scn": "Artisan's Kitpack: 3e-accurate Dragon Disciple",
+      "grn": "Sorcerer Kits",
+      "tp2n": "Original Stat Bonuses"
+    },
+    {
+      "n": "Dragon Disciple: Nerfed Stat Bonuses (net +2 to STR)",
+      "cn": 8003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8003,
+      "wq": "exact",
+      "g": "dragon_disciple",
+      "scn": "Artisan's Kitpack: 3e-accurate Dragon Disciple",
+      "grn": "Sorcerer Kits",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "tp2n": "Nerfed stat bonuses (net +2 to STR)"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Trickster Sorcerer Kit",
+      "cn": 8004,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 8004,
+      "wq": "verified",
+      "pl": "win",
+      "no": "Sorcerer variant of the Arcane Trickster kit. SKIPPED by WeiDU if EEex not installed — requires EEex_Actionbar.lua.",
+      "tp2n": "Artisan's Kitpack: Arcane Trickster Sorcerer Kit—EEEx required",
+      "grn": "Sorcerer Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Brawler Kit",
+      "cn": 10002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 10002,
+      "wq": "exact",
+      "no": "Brawler monk kit. Unarmed combat specialist focused on raw physical power over spiritual discipline.",
+      "tp2n": "Artisan's Kitpack: Brawler Kit",
+      "grn": "Monk Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Monk Revisions",
+      "cn": 10001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 10001,
+      "wq": "exact",
+      "no": "Overhauls the base monk class with revised abilities and progression.",
+      "tp2n": "Artisan's Kitpack: Monk Revisions",
+      "grn": "Monk Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Sacred Fist (Cleric) and Enlightened Fist (Sorcerer) Kitsâ€”EEEx required",
+      "cn": 10003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 10003,
+      "wq": "exact",
+      "pl": "win",
+      "no": "Sacred Fist cleric/monk kit and Enlightened Fist variant. Divine martial artist combining faith with unarmed combat.",
+      "tp2n": "Artisan's Kitpack: Sacred Fist (Cleric) and Enlightened Fist (Sorcerer) Kits—EEEx required",
+      "grn": "Monk Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Ninja \"Class\" (Monk Kit)â€”EEEx required",
+      "cn": 10004,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 10004,
+      "wq": "exact",
+      "pl": "win",
+      "no": "Ninja monk kit. Stealth-focused martial artist with shadow arts and assassination abilities. Requires EEex.",
+      "tp2n": "Artisan's Kitpack: Ninja \"Class\" (Monk Kit)—EEEx required",
+      "grn": "Monk Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Fighter Overhaul",
+      "cn": 1100,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1100,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "tp2n": "Artisan's Kitpack: Fighter Overhaul",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Berserker Overhaul",
+      "no": "New poison breaks ToF's feats on install | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 1003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1003,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Berserker Overhaul",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Wizard Slayer Overhaul",
+      "no": "Potential conflicts with ToF's rage HLAs and classing/kits",
+      "cn": 1006,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1006,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Wizard Slayer Overhaul",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Kensai Overhaul",
+      "cn": 1004,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1004,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "tp2n": "Artisan's Kitpack: Kensai Overhaul",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Barbarian Overhaul",
+      "cn": 1005,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1005,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "tp2n": "Artisan's Kitpack: Barbarian Overhaul",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Dwarven Defender Overhaul + Vanguard Fighter Kit",
+      "no": "AK, TA, and ToF rages are all different implementations — don't mix | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 1007,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1007,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Dwarven Defender Overhaul + Vanguard Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Vanguard Fighter Kit",
+      "cn": 1002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1002,
+      "wq": "exact",
+      "no": "Vanguard fighter kit. Front-line defender with shield specialization and protective abilities.",
+      "tp2n": "Artisan's Kitpack: Vanguard Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Archer Fighter Kit",
+      "no": "Already included in the Dwarven Defender Overhaul component",
+      "cn": 1000,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1000,
+      "wq": "exact",
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Artisan's Kitpack: Arcane Archer Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Archer (Fighter/Mage)",
+      "cn": 1001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1001,
+      "wq": "exact",
+      "no": "Arcane Archer fighter/mage kit. Hybrid warrior blending melee combat with arcane spellcasting. Can cast in armor.",
+      "tp2n": "Artisan's Kitpack: Arcane Archer (Fighter/Mage)",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Siegemaster Fighter Kit",
+      "cn": 1008,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1008,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Siegemaster Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Dreadnought Fighter Kit",
+      "cn": 1009,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1009,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Dreadnought Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Samurai Fighter Kit",
+      "cn": 1010,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 1010,
+      "wq": "verified",
+      "no": "Bushido-themed fighter kit. Gains immunity to backstab/fear/morale, Bushido passive (bonus to THAC0/damage/AC/saves when fighting alone), Challenge ability, and Great Kiai at level 14.",
+      "tp2n": "Artisan's Kitpack: Samurai Fighter Kit",
+      "grn": "Fighter Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Ranger Overhaul",
+      "no": "Both M&G and AK patch Tracking files; check if M&G installed after still works. AK ranger kits may benefit from M&G's backstab",
+      "cn": 2000,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2000,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Ranger Overhaul",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Archer Overhaul",
+      "cn": 2010,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2010,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Archer Overhaul",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Stalker Overhaul",
+      "no": "Does the same as Argent77's Imp Archer Kit. Argent77's seems to scale better?",
+      "cn": 2011,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2011,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Stalker Overhaul",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Beast Master Overhaul",
+      "cn": 2012,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2012,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Beast Master Overhaul",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Dark Hunter Ranger Kit",
+      "cn": 2002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2002,
+      "wq": "exact",
+      "k": 1,
+      "no": "HARD FAIL: Uses ClassSpellTool (ADD_CLASS_SPELL) to register C0DH101-304 as priest-type spells — only AK component that does so. ClassSpellTool initializes MEPR1.TXT on first use (copies from ArtisansKitpack/no_overwrite/). Fails with 'MEPR1.TXT not found in KEY file' if a previous partial AK/BW install left stale MEWI1.txt in override but MEPR1.txt is absent — initialization is skipped and the APPEND fails. Fix: delete stale MEWI*.txt and MEPR*.txt from override before reinstalling. cn:1001 Arcane Archer (F/M) installs WITH WARNINGS: 'Internal ability name too long [C0ARC03Z], making copy as [SGAB0000]' — cosmetic, does not affect function.",
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Artisan's Kitpack: Dark Hunter Ranger Kit",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Archer (Ranger variant)",
+      "cn": 2003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 2003,
+      "wq": "verified",
+      "no": "Ranger variant of the Arcane Archer kit. REQUIRES cn:1000 Arcane Archer Fighter Kit to be installed (REQUIRE_COMPONENT in tp2).",
+      "rd": 18,
+      "tp2n": "Artisan's Kitpack: Arcane Archer (Ranger variant)",
+      "grn": "Ranger Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Paladin Overhaul",
+      "no": "May cause bug with ClassSpellTool; clashes with F&P's paladin kits. Overlaps with MiH Spell Pack and ToF | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3000,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3000,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Paladin Overhaul",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Cavalier Overhaul",
+      "no": "Almost identical to ToF's IWD-style paladins + Revised Ability Scores, but without aura | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3010,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3010,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Cavalier Overhaul",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Inquisitor Overhaul",
+      "no": "AK focuses on party utility and full immunities; ToF on personal power and leveled immunities | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3003,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Inquisitor Overhaul",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Undead Hunter Overhaul",
+      "no": "AK has auto True Sight/round, magic aura, and dispel smite; ToF is vanilla+ | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3011,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3011,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Undead Hunter Overhaul",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Blackguard Overhaul",
+      "no": "AK has antiundead aura and full passives; ToF is vanilla+ with leveled passives. Will clash with ToF's versions | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3004,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3004,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Blackguard Overhaul",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Divine Champion Paladin Kit",
+      "no": "AK gives enrage/victory rush + x2 backstab at lv11; ToF makes it a proper class with kits. New poison breaks ToF's feats on install | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 3001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3001,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Divine Champion Paladin Kit",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Mystic Fire Paladin Kit",
+      "cn": 3002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3002,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Mystic Fire Paladin Kit",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Martyr Paladin Kit",
+      "cn": 3005,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 3005,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Martyr Paladin Kit",
+      "grn": "Paladin Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Shapeshifter Overhaul",
+      "no": "Must install after Sirene BG1/2 | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 5100,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 5100,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Shapeshifter Overhaul",
+      "grn": "Druid Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Shapeshifter Form Only",
+      "cn": 5110,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\Setup-ArtisansKitpack.tp2",
+      "wq": "verified",
+      "tp2n": "Shapeshifter Form Only",
+      "rd": 36,
+      "tg": "cos",
+      "scn": "Artisan's Kitpack: Shapeshifter Overhaul – Custom Werewolf Sprite",
+      "grn": "Druid Kits"
+    },
+    {
+      "n": "Replace all NPC Werewolf Sprites",
+      "cn": 5111,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 5111,
+      "wq": "exact",
+      "x": 36,
+      "tp2n": "Replace all NPC Werewolf Sprites",
+      "scn": "Artisan's Kitpack: Shapeshifter Overhaul – Custom Werewolf Sprite",
+      "grn": "Druid Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Elementalist Druid Kit",
+      "cn": 5001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 5001,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Elementalist Druid Kit",
+      "grn": "Druid Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Hivemaster Druid Kit",
+      "cn": 5002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 5002,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Hivemaster Druid Kit",
+      "grn": "Druid Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Assassin Overhaul",
+      "cn": 7004,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7004,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "tp2n": "Artisan's Kitpack: Assassin Overhaul",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Swashbuckler Overhaul",
+      "no": "Faster backstab progression than ToF's; new poison breaks ToF's feats on install | Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100 and Revised Weapon Styles cn:81200",
+      "cn": 7006,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7006,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Swashbuckler Overhaul",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Rogue Archer Thief Kit",
+      "cn": 7001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7001,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Rogue Archer Thief Kit",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Magekiller Thief Kit",
+      "cn": 7002,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7002,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Magekiller Thief Kit",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Trickster Thief Kit",
+      "cn": 7003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7003,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Trickster Thief Kit",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Invisible Blade Thief Kit",
+      "no": "Benefits from having all other AK kits available; serious conflicts with ToF",
+      "cn": 7005,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 7005,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Invisible Blade Thief Kit",
+      "grn": "Thief Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Warhorn Shaman Kit",
+      "cn": 9001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 9001,
+      "wq": "exact",
+      "tp2n": "Artisan's Kitpack: Warhorn Shaman Kit",
+      "grn": "Shaman Kits"
+    },
+    {
+      "n": "Artisan's Kitpack: Favored Soul",
+      "cn": 30001,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 30001,
+      "wq": "verified",
+      "pl": "win",
+      "no": "Favored Soul class (appears under Shaman in chargen). SKIPPED by WeiDU if EEex not installed — requires EEex_Actionbar.lua.",
+      "tp2n": "Artisan's Kitpack: Favored Soul (EEex only, under Shaman in chargen)",
+      "grn": "Other"
+    },
+    {
+      "n": "Artisan's Kitpack: Red Wizard Mage Kit for Edwin",
+      "no": "v18 (removed: Red Wizard Mage Kit for Edwin no longer present in tp2). NOT PRESENT in v6.0 tp2 — confirmed by mod_installer (exit code 6). Was present in earlier versions. Do not select.",
+      "cn": 5003,
+      "wf": "ArtisansKitpack",
+      "wp": "ArtisansKitpack\\ARTISANSKITPACK.TP2",
+      "wc": 5003,
+      "wq": "unresolved",
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "aTweaks druid shapeshift and clone tweaks may conflict with AK's shapeshifter overhaul",
+      "theirComps": "#203 Druid shapeshift uninterruptable #204 Mislead clones",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "FnP paladin kits overlap with AK's paladin overhauls; druid kit assignments may conflict with AK's Hivemaster/Elementalist",
+      "myComps": "#3000 #3001 #3002 #3003 #3004 #3005 #3010 #3011 Paladin Overhauls #5001 #5002 Druid Kits",
+      "theirComps": "#35 #36 Paladin Kits #33 Druid Kits",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Component-level overlaps — choose carefully if using both. AK cn:5100 (Shapeshifter) vs ToF cn:41000: DESTRUCTIVE — both replace CLABDR03.2DA, pick one. AK cn:1003 (Berserker) vs ToF cn:41000: AK replaces CLABFI02 entirely using C0BER#00 Rage — ToF's progressive-immunity Berserker Rage (SPCL321) becomes dead code. AK cn:1006 (Wizard Slayer) vs ToF cn:41000: both modify magic resistance progression, may stack unexpectedly. AK cn:1100 (Fighter Overhaul) vs ToF cn:81100: AK's auto-specialization spell uses SPLPROT proficiency checks that may silently fail under ToF's Lua proficiency system. AK cn:1004 (Kensai): safe — ToF has no Kensai rebalance. AK Assassin/Blackguard poison: breaks ToF feat system if both installed. Neither mod detects the other. Install AK before ToF.",
+      "myComps": "#5100 Shapeshifter #1003 Berserker #1006 Wizard Slayer #1100 Fighter Overhaul #1004 Kensai (safe) #3004 Blackguard #7004 Assassin (poison/feat issue)",
+      "theirComps": "#41000 Rebalanced Kits #81100 Weapon Proficiency #40600 Druid shapeshift",
+      "source": "AK COPY_EXISTING replaces CLABFI02/03/DR03; ToF kit.edit modifies same CLABs via SFO; cn:81100 externalizes WEAPPROF to Lua; no cross-detection, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

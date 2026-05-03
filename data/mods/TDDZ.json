@@ -1,0 +1,190 @@
+{
+  "i": 521,
+  "t": "TDDz",
+  "sv": 1,
+  "ord": 320,
+  "c": "QUEST MODS BG1",
+  "n": "The Darkest Day",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "pl": 2,
+    "de": 3,
+    "fr": 4,
+    "it": 5,
+    "es": 6
+  },
+  "no": "Legacy mega-mod. TDDz is the EE/EET-compatible version by JohnBob. Some components may have rough edges. Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly.",
+  "in": [
+    {
+      "t": "Download TDD v1.14 and extract the TDD/ folder to your BG2EE game directory.",
+      "type": "download"
+    }
+  ],
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    },
+    {
+      "d": "2026-03-11",
+      "m": "Phase corrected from BG1 to SoA; author identified as TeamBG"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Kivan in BG2. BG1NPCinSoA auto-skips its Kivan if TDD's kivan10.cre detected.",
+      "theirComps": "#70 Kivan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME kivan10.cre. Fixed stale comp_b (removed unrelated Xzar/Monty reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "BGGO",
+      "requiresId": 25,
+      "type": "soft",
+      "reason": "Reported as requirement by LCC-docs database (lcc id 1601 requires 146)",
+      "source": "lcc-docs"
+    },
+    {
+      "requires": "tdd",
+      "requiresId": 716,
+      "type": "soft",
+      "reason": "Reported as requirement by LCC-docs database (lcc id 1601 requires 1062)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Spellhold-Studios/TDDz",
+  "a": "TeamBG, shadowlich",
+  "v": "v1.3.3",
+  "sum": "Massive BG1 expansion adding an extended quest chain, dozens of new areas, and many hours of content. One of the largest classic BG1 mods.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/Spellhold-Studios/TDDz",
+  "au": "Roxanne (BWP EET port of TDD by Rastor/SimDing0)",
+  "co": [
+    {
+      "n": "Core",
+      "tp2n": "TDD - Core",
+      "cn": 0,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 0,
+      "no": "Requires TDD/ resource folder (i=716) extracted to game folder first. TDDz.tp2 references TDD/ subfolders (Bam, ogg, ARE, MOS, WED, ITM, BAM, TIZ, CRE, STO, SPL) via Lib/Importer.tpa.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Trollford",
+      "tp2n": "TDD - Trollford",
+      "cn": 1,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 1,
+      "no": "Trollford area and questline.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Eshpurta",
+      "tp2n": "TDD - Eshpurta",
+      "cn": 2,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 2,
+      "no": "Eshpurta area and questline.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Purskal",
+      "tp2n": "TDD - Purskal",
+      "cn": 3,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 3,
+      "no": "Purskal area and questline.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Riatavin",
+      "tp2n": "TDD - Riatavin",
+      "cn": 4,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 4,
+      "no": "Riatavin area and questline.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Onset of the Darkest Day",
+      "tp2n": "TDD - Onset of the Darkest Day",
+      "cn": 5,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 5,
+      "no": "PARSE ERROR (non-fatal): DDGAME03.BAF line 12 references SUMMON_SKELETON_WARRIOR3 which does not exist in Spell.IDS — likely a pre-EE spell identifier never updated for EE. One RESPONSE block in the Cyric finale encounter won't fire (skeleton warrior summon). Other responses in the same script work fine.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Robilard",
+      "tp2n": "TDD - Robilard",
+      "cn": 6,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 6,
+      "no": "Robilard questline.",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Use BGGO extended BG1 areas for TDDz",
+      "tp2n": "Use BGGO extended BG1 areas for TDDz",
+      "cn": 1000,
+      "wf": "TDDZ",
+      "wp": "TDDz\\TDDz.tp2",
+      "wc": 1000,
+      "no": "",
+      "games": [
+        "bgt",
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "TDDz"
+  }
+}

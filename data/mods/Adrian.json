@@ -1,0 +1,159 @@
+{
+  "i": 167,
+  "t": "adrian",
+  "sv": 1,
+  "ord": 460,
+  "c": "NEW NPC MODS",
+  "n": "Adrian NPC",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Adrian NPC for BGII Sorcerer, not-dumb evil, has good rep among modders",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "CDTweaks romance cheats create stutter for mod NPCs",
+      "theirComps": "#3183",
+      "source": "eemodsetup"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "adrian_npc",
+          "portraits/adrian/rh_adr.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Adrian_NPC/releases",
+  "a": "Rhaella",
+  "v": "v6.1",
+  "sum": "Adds Adrian, a half-elven sorcerer, as a joinable BG2 NPC with a dark past, extensive romance, and one of the best-written mod NPCs.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "V4.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Adrian_NPC"
+  },
+  "au": "Rhaella",
+  "dl": "https://github.com/SpellholdStudios/Adrian_NPC",
+  "co": [
+    {
+      "n": "Adrian is a Sorcerer",
+      "pi": "adrian_sorcerer",
+      "scn": "Adrian for BGII",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wc": 0,
+      "wq": "known_folder_uninstalled",
+      "cn": 0,
+      "g": "adrian_class",
+      "tp2n": "Adrian is a Sorcerer"
+    },
+    {
+      "n": "Change Adrian's class to Cleric/Mage",
+      "pi": "adrian_cleric_mage",
+      "scn": "Adrian for BGII",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 1,
+      "g": "adrian_class",
+      "tp2n": "Change Adrian's class to Cleric/Mage"
+    },
+    {
+      "n": "Change Adrian's class to Mage/Thief",
+      "pi": "adrian_mage_thief",
+      "scn": "Adrian for BGII",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 2,
+      "g": "adrian_class",
+      "tp2n": "Change Adrian's class to Mage/Thief"
+    },
+    {
+      "n": "Phaelin's soundset",
+      "no": "v Install soundset",
+      "pi": "adrian_phaelin_soundset",
+      "scn": "Install optional soundset for Adrian (only in English)",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wc": 10,
+      "wq": "known_folder_uninstalled",
+      "cn": 10,
+      "g": "adrian_sound",
+      "x": 0,
+      "tp2n": "Phaelin's soundset"
+    },
+    {
+      "n": "Tatterdemalion's soundset",
+      "pi": "adrian_tatterdemalion_soundset",
+      "scn": "Install optional soundset for Adrian (only in English)",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 11,
+      "g": "adrian_sound",
+      "x": 0,
+      "tp2n": "Tatterdemalion's soundset"
+    },
+    {
+      "n": "Crossmod content",
+      "pi": "adrian_crossmod_content",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wc": 20,
+      "wq": "known_folder_uninstalled",
+      "cn": 20,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Crossmod content"
+    },
+    {
+      "n": "Always",
+      "no": "goes after angelo, arath, coran, darian, faren, gavin, iylos, kivan, nephele, ninde, tiax, xan and xulaye v Tolerates high reputation",
+      "pi": "adrian_tolerates_high_reputation-always",
+      "scn": "Adrian Tolerates High Reputation",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wc": 30,
+      "wq": "known_folder_uninstalled",
+      "cn": 30,
+      "g": "adrian_rep",
+      "x": 0,
+      "tp2n": "Always"
+    },
+    {
+      "n": "For Active Romance or Friendship",
+      "pi": "adrian_tolerates_high_reputation-active_romance",
+      "scn": "Adrian Tolerates High Reputation",
+      "wf": "Adrian",
+      "wp": "Adrian\\ADRIAN.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 31,
+      "g": "adrian_rep",
+      "x": 0,
+      "tp2n": "For Active Romance or Friendship"
+    }
+  ]
+}

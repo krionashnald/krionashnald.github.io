@@ -1,0 +1,76 @@
+{
+  "i": 89,
+  "t": "WhiteQueen",
+  "sv": 1,
+  "pfx": "WQ",
+  "ord": 270,
+  "c": "QUEST MODS BG2",
+  "n": "Colours of Infinity: The White Queen",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "pl": 3,
+    "fr": 4,
+    "it": 5,
+    "zh-cn": 6,
+    "ko": 7,
+    "cs": 8
+  },
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Worldmap optional"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "white_queen",
+          "portraits/white_npc/v_1whi.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/the-white-queen/",
+  "a": "Lava Del'Vortel",
+  "v": "v7.4.1",
+  "sum": "BG2 quest mod with an arctic-themed quest chain involving the White Queen. New areas and encounters in a frozen setting. Part of the Colours of Infinity series.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/the-white-queen/",
+  "au": "Lava Del'Vortel",
+  "no": "BG2 quest mod with an arctic-themed quest chain involving the White Queen. New areas and encounters in a frozen setting. Part of the Colours of Infinity series.",
+  "co": [
+    {
+      "n": "Yes, but don't patch the existing save games",
+      "tp2n": "Yes, but don't patch the existing save games",
+      "pi": "L#-WHITEQUEEN-NOPATCH",
+      "scn": "Colours of Infinity - The White Queen",
+      "wf": "WhiteQueen",
+      "wp": "WhiteQueen\\WhiteQueen.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "g": "whitequeen_install",
+      "no": "New game required. Recommended for fresh EET installs"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes, and patch the existing save games",
+      "x": 0,
+      "g": "whitequeen_install",
+      "scn": "Colours of Infinity - The White Queen",
+      "no": "Patches existing saves. Use if mid-playthrough"
+    }
+  ]
+}

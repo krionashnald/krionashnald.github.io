@@ -1,0 +1,274 @@
+{
+  "i": 421,
+  "t": "IITWEAK",
+  "sv": 1,
+  "ord": 200,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Infinity Innovations: Tweaks",
+  "no": "28 miscellaneous gameplay tweaks from the Infinity Innovations team. Includes no exclusion schools, equal starting gold, immunity removals, stat effect removals, and more. English and Spanish. cn:1000/2000 are NO_LOG_RECORD readme viewer components.",
+  "u": "https://github.com/btigi/iiTweak",
+  "a": "btigi",
+  "sum": "28 additional tweaks from the Infinity Innovations team covering miscellaneous gameplay adjustments.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "btigi",
+    "r": "iiTweak"
+  },
+  "au": "btigi (Infinity Innovations)",
+  "dl": "https://github.com/btigi/iiTweak",
+  "langs": {
+    "en": 0,
+    "es": 1
+  },
+  "co": [
+    {
+      "n": "No Exclusion Schools",
+      "cn": 2001,
+      "no": "EXTREME: removes all spell school exclusions. Edwin can learn Divination etc. Undermines specialist mage identity. SCS may expect school restrictions for AI.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2001,
+      "wq": "verified"
+    },
+    {
+      "n": "No Item Exclusion",
+      "cn": 2002,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2002,
+      "wq": "verified"
+    },
+    {
+      "n": "Equal Starting Gold",
+      "cn": 2003,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2003,
+      "wq": "verified"
+    },
+    {
+      "n": "Raise Dead cost",
+      "cn": 2004,
+      "no": "Safe rebalance: Raise Dead costs 1000gp * level",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2004,
+      "wq": "verified"
+    },
+    {
+      "n": "No Class Requirements",
+      "cn": 2005,
+      "no": "EXTREME: removes all stat requirements for classes",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2005,
+      "wq": "verified"
+    },
+    {
+      "n": "No Class Modifiers",
+      "cn": 2006,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2006,
+      "wq": "verified"
+    },
+    {
+      "n": "No Resultant Dual-Class Requirements",
+      "cn": 2007,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2007,
+      "wq": "verified"
+    },
+    {
+      "n": "No Initial Dual-Class Requirements",
+      "cn": 2008,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2008,
+      "wq": "verified"
+    },
+    {
+      "n": "No Racial Advantage Modifiers",
+      "cn": 2009,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2009,
+      "wq": "verified"
+    },
+    {
+      "n": "No Racial Requirements",
+      "cn": 2010,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2010,
+      "wq": "verified"
+    },
+    {
+      "n": "No Class Alignment Restrictions",
+      "cn": 2011,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2011,
+      "wq": "verified"
+    },
+    {
+      "n": "0 XP Task Awards - Lock Picking",
+      "cn": 2012,
+      "no": "Conflicts with aTweaks cn:261 and EET_Tweaks cn:2040-2044 (XP from locks). Pick one source.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2012,
+      "wq": "verified"
+    },
+    {
+      "n": "0 XP Task Awards - Disarm Traps",
+      "cn": 2013,
+      "no": "Conflicts with aTweaks cn:262 and EET_Tweaks cn:2040-2044 (XP from traps). Pick one source.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2013,
+      "wq": "verified"
+    },
+    {
+      "n": "0 XP Task Awards - Learn Spells",
+      "cn": 2014,
+      "no": "Conflicts with EET_Tweaks cn:2040-2044 (XP from spells). Pick one source.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2014,
+      "wq": "verified"
+    },
+    {
+      "n": "Restored Maze Spell",
+      "cn": 2015,
+      "no": "Bugfix-like: restores Maze spell duration to match manual description",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2015,
+      "wq": "verified"
+    },
+    {
+      "n": "No Item Stat Requirements",
+      "cn": 2016,
+      "no": "EXTREME: any character can equip any item regardless of stats",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2016,
+      "wq": "verified"
+    },
+    {
+      "n": "Fully Explored Areas",
+      "cn": 2017,
+      "no": "QoL: auto-explores areas. Requires Party AI on. Only for veterans tired of map clearing.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2017,
+      "wq": "verified"
+    },
+    {
+      "n": "Zero Weight Items",
+      "no": "EXTREME CHEAT: all items weigh 0. Destroys inventory management.",
+      "cn": 2018,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2018,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove Cursed Item Flag (remove information string)",
+      "no": "Die, vile encumbrance system, die v Cursed item tweak",
+      "cn": 2019,
+      "g": "cursed_item",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2019,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove Cursed Item Flag (maintain information string)",
+      "cn": 2020,
+      "g": "cursed_item",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2020,
+      "wq": "verified"
+    },
+    {
+      "n": "All stores buy stolen goods",
+      "cn": 2021,
+      "no": "QoL: all stores accept stolen goods",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2021,
+      "wq": "verified"
+    },
+    {
+      "n": "All stores buy all item types",
+      "cn": 2022,
+      "no": "",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2022,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of intoxication",
+      "cn": 2023,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2023,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of luck",
+      "cn": 2024,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2024,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of dexterity",
+      "cn": 2025,
+      "no": "EXTREME: removes all Dexterity bonuses to AC/missile/reaction. Breaks stat system.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2025,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of strength",
+      "cn": 2026,
+      "no": "EXTREME: removes all Strength bonuses to THAC0/damage. Breaks stat system.",
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2026,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of strength-extra",
+      "cn": 2027,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2027,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove effects of charisma",
+      "cn": 2028,
+      "wf": "IITWEAK",
+      "wp": "IITWEAK\\IITWEAK.TP2",
+      "wc": 2028,
+      "wq": "verified"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "i": 266,
+  "t": "malek-iwditempack",
+  "sv": 1,
+  "ord": 140,
+  "c": "ITEM ADDITION MODS",
+  "n": "IWD Item Pack",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2,
+    "it": 3,
+    "fr": 4
+  },
+  "no": "Ports 12 IWD items into BG2 Joluv's store. Choose EITHER cn:100 (all items at once) OR individual items (cn:1-61). Cannot mix — each individual component FORBID's cn:100 and vice versa. For the ultimate preset, cn:100 is recommended.",
+  "u": "https://github.com/The-Gate-Project/IWD_Item-Pack",
+  "a": "malek",
+  "v": "1.3",
+  "sum": "Ports Icewind Dale items into BG2, adding IWD's unique weapons, armor, and accessories to shops and treasure throughout the game.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "IWD_Item-Pack"
+  },
+  "items": {},
+  "dl": "https://github.com/The-Gate-Project/IWD_Item-Pack",
+  "au": "malek.deneith",
+  "co": [
+    {
+      "n": "12 new items in Joluv store",
+      "tp2n": "12 new items in Joluv store",
+      "pi": "Malek-iwditempack_100",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 100,
+      "no": "Installs all 12 IWD items to Joluv's store at once. Mutually exclusive with individual item components — if you select this, do NOT select individual items (cn:1-61). Each individual component has FORBID_COMPONENT against cn:100.",
+      "g": "iwdip_mode",
+      "it": 12
+    },
+    {
+      "n": "Black Wolf Talisman",
+      "tp2n": "Black Wolf Talisman",
+      "pi": "Malek-iwditempack_1",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 1,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Chain of Drakkas' Fury",
+      "tp2n": "Chain of Drakkas' Fury",
+      "pi": "Malek-iwditempack_6",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 1,
+      "wq": "known_folder_uninstalled",
+      "cn": 6,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "House of Despana Insignia",
+      "tp2n": "House of Despana Insignia",
+      "pi": "Malek-iwditempack_11",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 2,
+      "wq": "known_folder_uninstalled",
+      "cn": 11,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Kegsplitter of Shaengarne Ford",
+      "tp2n": "Kegsplitter of Shaengarne Ford",
+      "pi": "Malek-iwditempack_19",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 3,
+      "wq": "known_folder_uninstalled",
+      "cn": 19,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Kresselack's Full Plate Mail",
+      "tp2n": "Kresselack's Full Plate Mail",
+      "pi": "Malek-iwditempack_24",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 4,
+      "wq": "known_folder_uninstalled",
+      "cn": 24,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Mantle of the Coming Storm",
+      "tp2n": "Mantle of the Coming Storm",
+      "pi": "Malek-iwditempack_29",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 5,
+      "wq": "known_folder_uninstalled",
+      "cn": 29,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "SkullFlail",
+      "tp2n": "SkullFlail",
+      "pi": "Malek-iwditempack_35",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 6,
+      "wq": "known_folder_uninstalled",
+      "cn": 35,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Spear of White Ash",
+      "tp2n": "Spear of White Ash",
+      "pi": "Malek-iwditempack_40",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 7,
+      "wq": "known_folder_uninstalled",
+      "cn": 40,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Twelve Paces",
+      "tp2n": "Twelve Paces",
+      "pi": "Malek-iwditempack_45",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 8,
+      "wq": "known_folder_uninstalled",
+      "cn": 45,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Belib's Everlasting Torch",
+      "tp2n": "Belib's Everlasting Torch",
+      "pi": "Malek-iwditempack_51",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 9,
+      "wq": "known_folder_uninstalled",
+      "cn": 51,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Binding Sash of the Black Raven",
+      "tp2n": "Binding Sash of the Black Raven",
+      "pi": "Malek-iwditempack_56",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 10,
+      "wq": "known_folder_uninstalled",
+      "cn": 56,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    },
+    {
+      "n": "Young Ned's Knucky",
+      "tp2n": "Young Ned's Knucky",
+      "pi": "Malek-iwditempack_61",
+      "wf": "iwditempack",
+      "wp": "iwditempack\\iwditempack.tp2",
+      "wc": 11,
+      "wq": "known_folder_uninstalled",
+      "cn": 61,
+      "no": "Individual item install. Mutually exclusive with cn:100 (Install All). FORBID_COMPONENT prevents both from being installed."
+    }
+  ]
+}

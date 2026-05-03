@@ -1,0 +1,399 @@
+{
+  "i": 356,
+  "t": "nostalgiapack",
+  "sv": 1,
+  "ord": 50,
+  "c": "GRAPHICS",
+  "n": "Nostalgia Pack",
+  "no": "Nostalgia Pack by Andrea C. Restores BG1-era visual assets: character sprites, paperdolls, portraits, item icons, creature appearances, and spell effects. Purely cosmetic/graphical — no gameplay changes except cn:90 (Undo EE changes). Belongs in Graphics & Sound, not tweaks.",
+  "conflicts": [
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "myComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "myComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "myComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "myComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "myComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "3": [
+        [
+          "edwin",
+          "portraits/default_bg1/edwin.png",
+          "all"
+        ],
+        [
+          "imoen",
+          "portraits/default_bg1/imoen.png",
+          "all"
+        ],
+        [
+          "imoen",
+          "portraits/nostalgia/imoen_sod.png",
+          "all"
+        ],
+        [
+          "jaheira",
+          "portraits/default_bg1/jaheira.png",
+          "all"
+        ],
+        [
+          "minsc",
+          "portraits/default_bg1/minsc.png",
+          "all"
+        ],
+        [
+          "viconia",
+          "portraits/default_bg1/viconia.png",
+          "all"
+        ],
+        [
+          "viconia",
+          "portraits/nostalgia/viconia_sod.png",
+          "sod"
+        ],
+        [
+          "ajantis",
+          "portraits/default_bg1/ajantis.png",
+          "bg1"
+        ],
+        [
+          "branwen",
+          "portraits/default_bg1/branwen.png",
+          "bg1"
+        ],
+        [
+          "coran",
+          "portraits/default_bg1/coran.png",
+          "bg1"
+        ],
+        [
+          "dynaheir",
+          "portraits/default_bg1/dynaheir.png",
+          "bg1"
+        ],
+        [
+          "faldorn",
+          "portraits/default_bg1/faldorn.png",
+          "bg1"
+        ],
+        [
+          "garrick",
+          "portraits/default_bg1/garrick.png",
+          "bg1"
+        ],
+        [
+          "kagain",
+          "portraits/default_bg1/kagain.png",
+          "bg1"
+        ],
+        [
+          "khalid",
+          "portraits/default_bg1/khalid.png",
+          "all"
+        ],
+        [
+          "kivan",
+          "portraits/default_bg1/kivan.png",
+          "bg1"
+        ],
+        [
+          "montaron",
+          "portraits/default_bg1/montaron.png",
+          "bg1"
+        ],
+        [
+          "quayle",
+          "portraits/default_bg1/quayle.png",
+          "bg1"
+        ],
+        [
+          "safana",
+          "portraits/default_bg1/safana.png",
+          "bg1"
+        ],
+        [
+          "sharteel",
+          "portraits/default_bg1/sharteel.png",
+          "bg1"
+        ],
+        [
+          "skie",
+          "portraits/default_bg1/skie.png",
+          "bg1"
+        ],
+        [
+          "tiax",
+          "portraits/default_bg1/tiax.png",
+          "bg1"
+        ],
+        [
+          "xan",
+          "portraits/default_bg1/xan.png",
+          "bg1"
+        ],
+        [
+          "xzar",
+          "portraits/default_bg1/xzar.png",
+          "bg1"
+        ],
+        [
+          "yeslick",
+          "portraits/default_bg1/yeslick.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Nostalgia-Pack/releases",
+  "a": "Andrea C.",
+  "v": "1.1",
+  "sum": "Restores BG1-era rules, items, and mechanics in the Enhanced Edition. For players who prefer the original game feel.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Nostalgia-Pack"
+  },
+  "dl": "https://github.com/SpellholdStudios/Nostalgia-Pack/releases",
+  "au": "ac86public",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Everything but saved games",
+      "tp2n": "Everything but saved games",
+      "pi": "ac-bg-spritesns",
+      "scn": "Restore BG1 Character Sprites",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 20,
+      "g": "np_sprites",
+      "no": "Restores BG1 character sprites. Does NOT affect saved games."
+    },
+    {
+      "n": "Everything including saved games",
+      "tp2n": "Everything including saved games",
+      "pi": "ac-bg-sprites",
+      "scn": "Restore BG1 Character Sprites",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 21,
+      "g": "np_sprites",
+      "no": "Restores BG1 character sprites. Also patches existing saved games."
+    },
+    {
+      "n": "Restore BG1 Inventory Paperdolls (by Erephine)",
+      "tp2n": "Restore BG1 Inventory Paperdolls (by Erephine)",
+      "pi": "ac-bg-paperdolls",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 30
+    },
+    {
+      "n": "Restore BG1 portraits and colors for all",
+      "tp2n": "Restore BG1 portraits and colors for all",
+      "no": "v Restore BG1 Portraits Colors",
+      "pi": "ac-bg-portraits",
+      "scn": "Restore BG1 Portraits & Colors",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 40,
+      "g": "np_portraits"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Imoen",
+      "tp2n": "Restore BG1 portraits and colors; SOD for Imoen",
+      "pi": "ac-bg-portraits-sodimoen",
+      "scn": "Restore BG1 Portraits & Colors",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 41,
+      "g": "np_portraits"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Viconia",
+      "tp2n": "Restore BG1 portraits and colors; SOD for Viconia",
+      "pi": "ac-bg-portraits-sodviccy",
+      "scn": "Restore BG1 Portraits & Colors",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 42,
+      "g": "np_portraits"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Imoen and Viconia",
+      "tp2n": "Restore BG1 portraits and colors; SOD for Imoen and Viconia",
+      "pi": "ac-bg-portraits-sodboth",
+      "scn": "Restore BG1 Portraits & Colors",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 43,
+      "g": "np_portraits"
+    },
+    {
+      "n": "Restore BG1 Item Icons and Appearance",
+      "tp2n": "Restore BG1 Item Icons and Appearance",
+      "pi": "ac-bg-icons-colors",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 50
+    },
+    {
+      "n": "Restore BG1 Flaming Fist appearance",
+      "tp2n": "Restore BG1 Flaming Fist appearance",
+      "pi": "ac-bg-flamingfist",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wc": 60,
+      "wq": "verified",
+      "cn": 60
+    },
+    {
+      "n": "Restore BG1 Amnian Guard appearance",
+      "tp2n": "Restore BG1 Amnian Guard appearance",
+      "no": "May cause coloring issues with some setups.",
+      "pi": "ac-bg-amnianguard",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wc": 80,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 80
+    },
+    {
+      "n": "Restore BG1 Dimension Door Effect",
+      "tp2n": "Restore BG1 Dimension Door Effect",
+      "pi": "ac-bg-dimensiondoor",
+      "grn": "Visual Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wc": 70,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 70
+    },
+    {
+      "n": "Undo EE changes",
+      "tp2n": "Undo EE changes",
+      "pi": "ac-bg-undoeechanges",
+      "grn": "Miscellaneous Nostalgia",
+      "wf": "NostalgiaPack",
+      "wp": "NostalgiaPack\\nostalgiapack.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 90,
+      "no": "Reverts various EE-specific changes. Check readme for details."
+    }
+  ]
+}

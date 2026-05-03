@@ -1,0 +1,108 @@
+{
+  "i": 127,
+  "t": "glamnpcpack",
+  "sv": 1,
+  "ord": 60,
+  "c": "NEW NPC MODS",
+  "n": "Glam NPC Pack",
+  "no": "Glam's NPC Pack Thread for known bugs and fixeS: report-bugs-and-typos-here/ fighter, sorcerer, ranger, assasin, cleric Glam before Skitia Lava and Artemis npcs",
+  "conflicts": [
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "soft",
+      "reason": "Only affects comp #5 (Of Wolves and Men, High Hedge variant) which shares High Hedge House with Glam's Talassans. Both use safe EXTEND ops with independent variables. Mod author provides Beregost variant (#6) as compatibility alternative — that's the version in the database. Already covered by AscalonsQuestpack vs glamnpcpack partial entry.",
+      "myComps": "#0 Glam NPC Pack",
+      "theirComps": "#5 Of Wolves and Men (High Hedge variant)",
+      "source": "ac_quest README recommends Beregost variant for Glam compat; comp #5 not in mods.json DB (only #6 Beregost is listed), 2026-03"
+    },
+    {
+      "with": "ntotsc",
+      "withId": 473,
+      "severity": "soft",
+      "reason": "Idol of Kozah item contention: NTotSC's spirit quest uses the idol (traded for Vampiric Sword), while Dave's Toppling Taranis quest also wants it. Both quests have alternative completion paths (spirits can be freed by fighting). RPG choice, not a bug.",
+      "myComps": "#0 Glam NPC Pack (Dave's Toppling Taranis quest)",
+      "theirComps": "#0 NTotSC main (spirit quest / Idol of Kozah)",
+      "source": "jastey (NTotSC maintainer) DSotSC GitHub issue #16: 'this is less of a mod conflict than an ingame RPG problem... Not to mention that the three spirits can also be freed by killing them', 2026-03",
+      "orderOnly": true
+    },
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "partial",
+      "reason": "Requires specific install order choices",
+      "orderOnly": true,
+      "myComps": "#0 Glam NPC Pack",
+      "theirComps": "Of Wolves and Men (High Hedge variant), #5",
+      "source": "Only High Hedge variant conflicts. Beregost variant (#6) is compatible, 2026-03"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "glam_dave",
+          "portraits/glam/dave.png",
+          "bg2"
+        ],
+        [
+          "glam_flara",
+          "portraits/glam/flara.png",
+          "bg2"
+        ],
+        [
+          "glam_littlu",
+          "portraits/glam/littlu.png",
+          "bg2"
+        ],
+        [
+          "glam_moidre",
+          "portraits/glam/moidre.png",
+          "bg2"
+        ],
+        [
+          "glam_vynd",
+          "portraits/glam/vynd.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/glam-npc-pack/",
+  "a": "Glam Vrock",
+  "v": "v7",
+  "sum": "Adds five new joinable NPCs to BGEE (a halfling archer, drow assassin, dwarven defender, priest of Talos, and dragon disciple), each with friendship tracks, personal quests, and inter-party dialogue.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Glam Vrock",
+  "dl": "https://github.com/Gibberlings3/Glam-NPC-Pack",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Glam's NPC Pack for BG:EE, BGT and BG TUTU",
+      "cn": 0,
+      "wf": "glamnpcpack",
+      "wp": "glamnpcpack\\setup-glamnpcpack.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Glam's NPC Pack for BG:EE, BGT and BG TUTU"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Glam-NPC-Pack"
+  }
+}

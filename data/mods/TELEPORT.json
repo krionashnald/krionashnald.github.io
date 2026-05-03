@@ -1,0 +1,89 @@
+{
+  "i": 652,
+  "t": "Teleport",
+  "sv": 1,
+  "ord": 150,
+  "c": "SPELL MODS",
+  "n": "Teleport Spell",
+  "langs": {
+    "cs": 0,
+    "en": 1,
+    "ru": 2,
+    "it": 3,
+    "pl": 4,
+    "de": 5,
+    "es": 6,
+    "fr": 7
+  },
+  "no": "Teleport Without Error spell by Razfallow (updated by Endarire). v16 (Jul 2023). 7th level arcane spell that teleports party to previously visited areas. Uses OlvynChuru Class Spell Tool for intermod compatibility. Note: GitHub repo is documentation-only — mod files are in the release ZIP",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTELE1",
+          "wizard",
+          5,
+          "Alteration",
+          "Teleport",
+          "Teleports party to a previously visited location."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Endarire/Teleport-without-Error-Spell-for-BG2-BG2EE-and-EET",
+  "a": "Endarire",
+  "sum": "Teleport without Error Spell for BG2, BG2EE, and EET by Razfallow and updated by others.  The latest version uses OlvynChuru's Class Spell Tool to aid with intermod compatibility.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Endarire/Teleport-without-Error-Spell-for-BG2-BG2EE-and-EET",
+  "au": "Razfallow",
+  "co": [
+    {
+      "n": "Teleport spell for SoA",
+      "tp2n": "Teleportacni kouzlo pro BG2:SoA",
+      "cn": 0,
+      "wf": "TELEPORT",
+      "wp": "TELEPORT\\Teleport.tp2",
+      "wc": 0,
+      "wq": "unresolved",
+      "no": "HARD FAIL: tp2 declares 'Cesky' (Czech) language without a charset declaration; WeiDU v251 cannot infer ISO-8859-2 encoding and exits with 'ERROR: charset could not be inferred for language cesky'. Czech-only mod — no fix possible on English installation.",
+      "sp": 1
+    },
+    {
+      "n": "Teleport spell for ToB",
+      "tp2n": "Teleportacni kouzlo pro BG2:ToB",
+      "cn": 1,
+      "wf": "TELEPORT",
+      "wp": "TELEPORT\\Teleport.tp2",
+      "wc": 1,
+      "wq": "unresolved",
+      "no": "HARD FAIL: same Czech charset inference failure as cn:0."
+    },
+    {
+      "n": "Modification of NPCs and strongholds quests.",
+      "tp2n": "Uprava NPC a stronghold questu.",
+      "cn": 2,
+      "wf": "TELEPORT",
+      "wp": "TELEPORT\\Teleport.tp2",
+      "wc": 2,
+      "wq": "unresolved",
+      "no": "HARD FAIL: same Czech charset inference failure as cn:0."
+    }
+  ],
+  "gh": {
+    "o": "Endarire",
+    "r": "Teleport-without-Error-Spell-for-BG2-BG2EE-and-EET"
+  }
+}

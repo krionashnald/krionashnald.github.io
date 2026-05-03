@@ -1,0 +1,308 @@
+{
+  "i": 35,
+  "t": "c#sodtweaks",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 30,
+  "c": "QUEST MODS BG1",
+  "n": "Jastey's Tweaks",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "fr": 3,
+    "pl": 4,
+    "es": 5,
+    "zh-cn": 6
+  },
+  "no": "Jastey's Tweaks for SoD and EET (and BGT) goes after Endless and Another fine hell Among other things, this mod improves NPC interactions in SoD.Install Jastey’s SoD Tweakpack before Imoen 4 Ever (SoD components) then Road to Discovery.From this mod, we use these components.",
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "Jastey Imoen SoD portrait overlaps with EET Tweaks Imoen appearance. Cosmetic — last installed wins.",
+      "myComps": "#6 Use Imoen's SoD Portrait for BGII",
+      "theirComps": "#1012 Imoen appearance (SoD)",
+      "orderOnly": true
+    },
+    {
+      "with": "c#anotherfinehell",
+      "withId": 34,
+      "severity": "hard",
+      "reason": "SoD ending components are mutually exclusive; Another Fine Hell tp2 uses FORBID_COMPONENT for Jastey's ending variants (cn 12-15). Install one or the other.",
+      "myComps": "#12 Revised Full Version / #13 Revised Streamlined / #14 Original Streamlined / #15 Skipit Version",
+      "theirComps": "#0 Another Fine Hell - Optional Ending for SoD",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "imoen",
+          "portraits/jasteys_sod/imoen_1.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Jasteys_SoD_Tweakpack",
+  "a": "jastey",
+  "v": "v13",
+  "sum": "Collection of 17 SoD and EET transition tweaks: dialogue fixes, continuity patches, and quality-of-life improvements for the BG1-to-SoD-to-BG2 journey.",
+  "tags": [
+    "story",
+    "tweak"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Jasteys_SoD_Tweakpack"
+  },
+  "dl": "https://github.com/Gibberlings3/Jasteys_SoD_Tweakpack",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Ending Independent on PC Replies",
+      "pi": "JasteySodTweaks-EndingIndependentReplies",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 1,
+      "wq": "single_comp",
+      "cn": 1,
+      "no": "Makes ending dialogue independent of PC replies. FORBID with Another Fine Hell cn:0 — not needed if AFH is installed. Must install before EET_End.",
+      "tp2n": "Ending Independent on PC Replies"
+    },
+    {
+      "n": "NPC Dialogues: NPCs in Party Only",
+      "no": "NPCs only speak up when in party. Choose one NPC dialogue option. Must install before EET_End.",
+      "pi": "JasteySodTweaks-DoNotMissDialogues_NPCInParty",
+      "scn": "Do Not Miss NPC-PC Dialogues",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 2,
+      "wq": "single_comp",
+      "cn": 2,
+      "g": "sodtweaks_npc_dlg",
+      "tp2n": "For NPCs in Party Only"
+    },
+    {
+      "n": "NPC Dialogues: Activate All Always",
+      "pi": "JasteySodTweaks-DoNotMissDialogues_All",
+      "scn": "Do Not Miss NPC-PC Dialogues",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 3,
+      "wq": "single_comp",
+      "cn": 3,
+      "g": "sodtweaks_npc_dlg",
+      "no": "All NPCs always available for dialogue regardless of party. Choose one NPC dialogue option. Must install before EET_End.",
+      "tp2n": "Activate All NPC-PC Dialogues Always"
+    },
+    {
+      "n": "Skip Korlasz's Dungeon",
+      "no": "BROKEN: Crashes WeiDU (0xc0000005) when EndlessBG1 cn:14 (Korlasz Dungeon) is installed. DO NOT USE with EndlessBG1. Must install before EET_End.",
+      "pi": "JasteySodTweaks-SkipKorlaszDungeon",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 4,
+      "wq": "single_comp",
+      "cn": 4,
+      "tp2n": "Skip Korlasz's Dungeon"
+    },
+    {
+      "n": "More Dialogue Choices & Prevent Dead Ends",
+      "pi": "JasteySodTweaks-MoreDialogueChoices_PreventDeadEnds",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 5,
+      "wq": "name_match",
+      "cn": 5,
+      "no": "Adds more dialogue choices and prevents conversational dead ends in SoD. Must install before EET_End.",
+      "tp2n": "More Dialogue Choices & Prevent Dead Ends"
+    },
+    {
+      "n": "Use Imoen's SoD Portrait for BGII in EET & BGT",
+      "pi": "JasteySodTweaks-ImoensSoDPortrait",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 6,
+      "wq": "name_match",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "cn": 6,
+      "no": "EET/BGT only. Uses Imoen's SoD portrait in BGII instead of BG1 portrait.",
+      "tp2n": "Use Imoen's SoD Portrait for BGII in EET & BGT"
+    },
+    {
+      "n": "Restore scripted Abduction Scene Fight",
+      "pi": "JasteySodTweaks-RestoreAbductionFight",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 7,
+      "wq": "single_comp",
+      "games": [
+        "bgee"
+      ],
+      "cn": 7,
+      "no": "SoD ONLY (not EET). Restores the scripted fight in the abduction scene. Will not install on EET. PRE-EET CANDIDATE: No — SoD-specific, EET handles SoD transitions differently.",
+      "eet_only": false,
+      "tp2n": "Restore scripted Abduction Scene Fight"
+    },
+    {
+      "n": "SoD Starting XP: 65,000",
+      "no": "Set SoD starting XP to 65,000. Choose one XP option.",
+      "pi": "JasteySodTweaks-AdjustStartingXP",
+      "scn": "Adjust PC's Starting XP at Beginning of SoD, by subtledoctor",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 8,
+      "wq": "single_comp",
+      "cn": 8,
+      "g": "sodtweaks_xp",
+      "tp2n": "Set Starting XP to 65,000"
+    },
+    {
+      "n": "SoD Starting XP: 90,000",
+      "pi": "JasteySodTweaks-AdjustStartingXP_90000",
+      "scn": "Adjust PC's Starting XP at Beginning of SoD, by subtledoctor",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 9,
+      "wq": "single_comp",
+      "cn": 9,
+      "g": "sodtweaks_xp",
+      "no": "Set SoD starting XP to 90,000. Choose one XP option.",
+      "tp2n": "Set Starting XP to 90,000"
+    },
+    {
+      "n": "SoD Starting XP: 125,000",
+      "pi": "JasteySodTweaks-AdjustStartingXP_125000",
+      "scn": "Adjust PC's Starting XP at Beginning of SoD, by subtledoctor",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 10,
+      "wq": "single_comp",
+      "cn": 10,
+      "g": "sodtweaks_xp",
+      "no": "Set SoD starting XP to 125,000. Choose one XP option.",
+      "tp2n": "Set Starting XP to 125,000"
+    },
+    {
+      "n": "SoD Starting XP: 161,000",
+      "pi": "JasteySodTweaks-AdjustStartingXP_161000",
+      "scn": "Adjust PC's Starting XP at Beginning of SoD, by subtledoctor",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 11,
+      "wq": "single_comp",
+      "cn": 11,
+      "g": "sodtweaks_xp",
+      "no": "Set SoD starting XP to 161,000. Choose one XP option.",
+      "tp2n": "Set Starting XP to 161,000"
+    },
+    {
+      "n": "SoD Ending: Revised Full Version",
+      "no": "Revised full SoD ending. FORBID with Another Fine Hell cn:0. Choose one ending option.",
+      "pi": "JasteySodTweaks-SoDEnding_RevisedFull",
+      "scn": "SoD Ending: jastey's Tweaks",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 12,
+      "wq": "single_comp",
+      "cn": 12,
+      "g": "sodtweaks_ending",
+      "tp2n": "Revised Full Version"
+    },
+    {
+      "n": "SoD Ending: Revised Streamlined",
+      "pi": "JasteySodTweaks-SoDEnding_RevisedStreamlined",
+      "scn": "SoD Ending: jastey's Tweaks",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 13,
+      "wq": "single_comp",
+      "cn": 13,
+      "g": "sodtweaks_ending",
+      "no": "Revised streamlined SoD ending. FORBID with Another Fine Hell cn:0. Choose one ending option.",
+      "tp2n": "Revised Streamlined Version"
+    },
+    {
+      "n": "SoD Ending: Original Streamlined",
+      "pi": "JasteySodTweaks-SoDEnding_OriginalStreamlined",
+      "scn": "SoD Ending: jastey's Tweaks",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 14,
+      "wq": "single_comp",
+      "cn": 14,
+      "g": "sodtweaks_ending",
+      "no": "Original streamlined SoD ending. FORBID with Another Fine Hell cn:0. Choose one ending option.",
+      "tp2n": "Original Streamlined Version"
+    },
+    {
+      "n": "SoD Ending: Skipit Version",
+      "pi": "JasteySodTweaks-SoDEnding_Skipit",
+      "scn": "SoD Ending: jastey's Tweaks",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 15,
+      "wq": "single_comp",
+      "cn": 15,
+      "g": "sodtweaks_ending",
+      "no": "Skip SoD ending entirely. FORBID with Another Fine Hell cn:0. Choose one ending option.",
+      "tp2n": "Skipit Version"
+    },
+    {
+      "n": "Make Portal Close from Dragonspear Castle (Aun Argent survives always)",
+      "pi": "JasteySoDTweaks_PortalCloseToril",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 20,
+      "wq": "name_match",
+      "cn": 20,
+      "no": "Makes the portal close from Dragonspear Castle so Aun Argent always survives. Patches Another Fine Hell if installed. Must install before EET_End.",
+      "tp2n": "Make Portal Close from Dragonspear Castle (Aun Argent survives always)"
+    },
+    {
+      "n": "Hephernaan takes Dragonspear Vault Key",
+      "pi": "JasteySoDTweaks_HephernaanTakesKey",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 21,
+      "wq": "name_match",
+      "cn": 21,
+      "no": "Hephernaan takes the Dragonspear Vault Key during the story. Must install before EET_End.",
+      "tp2n": "Hephernaan takes Dragonspear Vault Key"
+    },
+    {
+      "n": "Fledgling Vampire: Only Make it Permanently Killable",
+      "pi": "JasteySoDTweaks_FledglingVampirePermaKill",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 31,
+      "wq": "single_comp",
+      "cn": 31,
+      "g": "sodtweaks_vampire",
+      "no": "Makes the fledgling vampire in bd7410 permanently killable with a stake. Choose one option.",
+      "gone": true
+    },
+    {
+      "n": "Fledgling Vampire: Also Returns if Not Staked",
+      "pi": "JasteySoDTweaks_FledglingVampireReturns",
+      "wf": "c#sodtweaks",
+      "wp": "c#sodtweaks\\setup-c#sodtweaks.tp2",
+      "wc": 32,
+      "wq": "single_comp",
+      "cn": 32,
+      "g": "sodtweaks_vampire",
+      "no": "Fledgling vampire is permanently killable with stake but will return if not staked. Choose one option.",
+      "gone": true
+    }
+  ]
+}

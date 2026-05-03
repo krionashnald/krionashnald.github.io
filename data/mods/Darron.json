@@ -1,0 +1,395 @@
+{
+  "i": 457,
+  "t": "darron",
+  "sv": 1,
+  "ord": 340,
+  "c": "ITEM ADDITION MODS",
+  "n": "Darron the Vendor",
+  "langs": {
+    "es": 0,
+    "en": 1,
+    "it": 2,
+    "de": 3,
+    "fr": 4,
+    "ru": 5
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan. Most of what he sells is tailored to the roguish types.Install Darron after Spell Revisions.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "darron",
+          "portraits/darron/elfo09.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Darron",
+  "a": "Eslizon",
+  "v": "v2.0.0",
+  "sum": "A mod for Baldur's Gate II that introduces Darron, a salesman offering new items created especially for rogues, found in the Shadow Thieves' cellar.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Darron"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "ESLIRIN0",
+          "ring",
+          "Ring of Electric Resistance",
+          "A ring is a small band of precious metal that is used as a gem. Some rare rings have had enchantments that confer various magical properties. These rings are highly sought after, especially by those who are dedicated to adventuring.",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 40
+              }
+            ]
+          }
+        ],
+        [
+          "ESLIRIN1",
+          "ring",
+          "Open Sesame Ring",
+          "Guarded Dimensional Chest\n(Conjuration/Summoning, Invocation/Evocation)\n\nLevel: 7\nRange: Unlimited\nDuration: Special\nCasting Time: 9\nArea of Effect: Special\nSaving throw: Special\n\nThis spell is an advanced version of the spell \"Dimensional Chest\". Basically, the spell functions similarly, but incorporates a planar guard to watch over the casket on its location between the planes, preventing it from being looted and inspected by creatures native to that plane.\n\nWhen casting the spell, it will invoke the Keeper of the Chest, which describes the contents of the mage's Chest. The interior of this chest is virtually devoid of substance, and can store as many items you like.\n\nThe Guardian is linked to the will of the mage, but will struggle while in the Prime Material Plane, only planar creatures will fight to try to open the chest. However, if attacked in the short term remain with the mage, will defend itself by attacking her attacker and dispelling any magic. If destroyed, it recomposes beside the chest on another level, because its essence is tied to it and will only be effectively destroyed when the box is destroyed. Another reason that forces it to guard the treasure chest.",
+          {
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "ESLIARM0",
+          "armor",
+          "Aurumvorax Armor +2",
+          "The leather armor, unlike the widespread popular belief, is not smooth and thin as the leather used for boots of the adventurers or the furs of the Druids. This type of leather offers no better protection than normal clothing.\n\nSTATISTICS:\n\nArmor Class: 8\nWeight: 15\nNot Usable by:\n  Mage",
+          {
+            "ac": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "ESLIARM1",
+          "armor",
+          "Armor of the Master Thief",
+          "The leather armor, unlike the widespread popular belief, is not smooth and thin as the leather used for boots of the adventurers or the furs of the Druids. This type of leather offers no better protection than normal clothing.\n\nSTATISTICS:\n\nArmor Class: 8\nWeight: 15\nNot Usable by:\n  Mage",
+          {
+            "ac": 4,
+            "dex": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "ESLIBOW0",
+          "bow",
+          "Short Bow +2 Defense",
+          "Bracelets are thick bands of metal or leather that are strapped to the forearm of the character. Usually, the magic infused in armbands can be used only during combat, since most of them serve to protect the wearer from injuries and increase your chances of hitting the opponent. There are exceptions however, and the number increases everyday.\n\nSTATISTICS:\n\nWeight:",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "ac": 1,
+            "twoHanded": true,
+            "profType": "short bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "ESLIBRA0",
+          "bracers",
+          "Veteran Pickpocketer's Gloves",
+          "Bracelets are thick bands of metal or leather that are strapped to the forearm of the character. Usually, the magic infused in armbands can be used only during combat, since most of them serve to protect the wearer from injuries and increase your chances of hitting the opponent. There are exceptions however, and the number increases everyday.\n\nSTATISTICS:\n\nWeight:",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "ESLICLO0",
+          "cloak",
+          "Cloak of Shadows",
+          "A cloak may be of any shape and be made by any type of fabric. The most common form is a round piece of cloth with a hole in the middle for the head, with fabric draped from the neck on a chain, a brooch, a belt or pins.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "ESLIDAG0",
+          "dagger",
+          "Dagger +1 Scorpion Sting",
+          "The typical dagger has a pointed double-edged blade, unlike the knife, which has only one edge and is slightly shorter than the dagger.\n\nSTATISTICS:\n\nDamage: 1D4\nDamage Type: Piercing\nWeight: 1\nSpeed Factor: 2\nProficiency: Dagger\nNot Usable by:\n  Cleric",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "ESLIDAG1",
+          "dagger",
+          "Death Dagger +2",
+          "The typical dagger has a pointed double-edged blade, unlike the knife, which has only one edge and is slightly shorter than the dagger.\n\nSTATISTICS:\n\nDamage: 1D4\nDamage Type: Piercing\nWeight: 1\nSpeed Factor: 2\nProficiency: Dagger\nNot Usable by:\n  Cleric",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "ESLIHEL0",
+          "helmet",
+          "Serick's Hood",
+          "The boots are crafted by cobblers. Normal boots are made from a mold, but boots of good standing are designed for any notable person.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "ESLIBOT0",
+          "boots",
+          "Veteran Tracker's Boots",
+          "The boots are crafted by cobblers. Normal boots are made from a mold, but boots of good standing are designed for any notable person.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "ESLIBOT1",
+          "boots",
+          "Snakeskin Boots",
+          "The boots are crafted by cobblers. Normal boots are made from a mold, but boots of good standing are designed for any notable person.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ]
+          }
+        ],
+        [
+          "ESLISWO0",
+          "large sword",
+          "The Way of Master Li",
+          "The katana is a curved sword with one edge and tapered. Perhaps one of the best swords that were ever crafted. The steps in its creation, a long and secret process, are more an art form than anything else. Your resume is one of the most important facets of the culture of Kara-Tur. Touching or picking the katana of a samurai is an insult to attract his anger. A gaijin or foreigner who has one of these swords is rare. Either the gaijin has been honored by a senior Kara-Turan minister or murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1D10\nDamage Type: Slashing\nWeight: 6\nSpeed Factor: 4\nProficiency: Katana\nType: One-handed\nNot usable by:\n  Druid\n  Mage\n  Cleric",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "ESLISWO1",
+          "large sword",
+          "Dragon Fury Katana +3",
+          "Guarded Dimensional Chest\n(Conjuration/Summoning, Invocation/Evocation)\n\nLevel: 7\nRange: Unlimited\nDuration: Special\nCasting Time: 9\nArea of Effect: Special\nSaving throw: Special\n\nThis spell is an advanced version of the spell \"Dimensional Chest\". Basically, the spell functions similarly, but incorporates a planar guard to watch over the casket on its location between the planes, preventing it from being looted and inspected by creatures native to that plane.\n\nWhen casting the spell, it will invoke the Keeper of the Chest, which describes the contents of the mage's Chest. The interior of this chest is virtually devoid of substance, and can store as many items you like.\n\nThe Guardian is linked to the will of the mage, but will struggle while in the Prime Material Plane, only planar creatures will fight to try to open the chest. However, if attacked in the short term remain with the mage, will defend itself by attacking her attacker and dispelling any magic. If destroyed, it recomposes beside the chest on another level, because its essence is tied to it and will only be effectively destroyed when the box is destroyed. Another reason that forces it to guard the treasure chest.",
+          {
+            "speed": 1,
+            "dmg": "1d12",
+            "dmgBonus": 3,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "SERVIDOR",
+          "scroll",
+          "Guarded Dimensional Chest",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "SERVIDO2",
+          "wand",
+          "Guardian Statue",
+          "This statue has been enchanted with a spell improved Dimensional Chest. In use, the statue will call a creature called the Guardian, whose role is to protect a magic box.\n\nThis chest is made of more valuable materials, but their power is that it is capable of storing a large number of objects. The chest, being interplanar, resides in a location away from any theft.\n\nThe mage can call to your side the Guardian up to twice a day to enter and remove objects from inside at will.\n\nWeight: 15",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Darron",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Darron",
+      "tp2n": "Darron",
+      "cn": 0,
+      "wf": "Darron",
+      "wp": "Darron\\DARRON.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "it": 16,
+      "itC": {
+        "ring": 2,
+        "armor": 2,
+        "bow": 1,
+        "bracers": 1,
+        "cloak": 1,
+        "dagger": 2,
+        "helmet": 1,
+        "boots": 2,
+        "large sword": 2,
+        "scroll": 1,
+        "wand": 1
+      }
+    }
+  ]
+}

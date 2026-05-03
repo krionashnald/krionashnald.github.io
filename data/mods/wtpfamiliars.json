@@ -1,0 +1,77 @@
+{
+  "i": 304,
+  "t": "wtpfamiliars",
+  "sv": 1,
+  "ord": 110,
+  "c": "SPELL MODS",
+  "n": "WTP Familiars",
+  "no": "Install after SR and anything else modifying familiars. Compatible with Tweaks and Tricks' familiar components.",
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "EET Tweaks' familiar death components are redundant with WTP Familiars. Use one or the other.",
+      "myComps": "#0 WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET",
+      "theirComps": "#3020 #3021 #3022"
+    },
+    {
+      "with": "msfm",
+      "withId": 282,
+      "severity": "partial",
+      "reason": "Both modify familiar behavior. WTP Familiars is incompatible with MSFM's familiar components.",
+      "myComps": "#0 WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET",
+      "theirComps": "#18 #19 #20 #21 #22 #24"
+    },
+    {
+      "with": "SubtleD_Spell_Tweaks",
+      "withId": 305,
+      "severity": "partial",
+      "reason": "WTP Familiars is incompatible with SubtleD's familiar components.",
+      "myComps": "#0 WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET",
+      "theirComps": "#81 #82 #83"
+    }
+  ],
+  "spl": {
+    "0": {
+      "spells": [
+        [
+          "SPWI124",
+          "replace",
+          "Find Familiar replaced with expanded familiar choices and improved mechanics"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Black-Wyrm-Lair/WTPFamiliars",
+  "a": "Rabain, Salk",
+  "sum": "Adds new familiar types, improves existing ones, and gives familiars more abilities as they level up.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "WeareTheDraiken",
+    "r": "WTPFamiliars"
+  },
+  "dl": "https://github.com/Black-Wyrm-Lair/WTPFamiliars",
+  "au": "SubtleD",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET)",
+      "cn": 0,
+      "wf": "wtpfamiliars",
+      "wp": "wtpfamiliars\\setup-wtpfamiliars.tp2",
+      "wc": 0,
+      "wq": "verified"
+    }
+  ]
+}

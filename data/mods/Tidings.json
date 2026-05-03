@@ -1,0 +1,52 @@
+{
+  "i": 102,
+  "t": "Tidings",
+  "sv": 1,
+  "ord": 390,
+  "c": "QUEST MODS BG2",
+  "n": "Tidings",
+  "langs": {
+    "de": 5,
+    "en": 1,
+    "fr": 2,
+    "pl": 3,
+    "zh-cn": 4,
+    "ru": 6
+  },
+  "no": "Dark Tidings for-bg2/",
+  "ki": [
+    {
+      "pattern": "0xc0000005.*Tidings|Tidings.*0xc0000005",
+      "severity": "warning",
+      "category": "caution",
+      "description": "WeiDU may crash (0xc0000005) during process cleanup after successfully installing Tidings. The mod installs correctly — the crash occurs during teardown, not installation. Check WeiDU.log to confirm the component was installed.",
+      "workaround": "Retry or verify WeiDU.log. The mod_installer will auto-detect this as a warning if the component is in WeiDU.log.",
+      "user_action": "retry",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "u": "https://baldurs-gate.de/index.php?resources/dark-tidings.65/",
+  "a": "acifer",
+  "v": "2.9",
+  "sum": "A quest mod for Baldur's Gate II that starts in the Docks District of Athkatla and introduces new areas, enemies, and items for parties around levels 9-12.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://baldurs-gate.de/index.php?resources/dark-tidings.65/",
+  "au": "Acifer",
+  "co": [
+    {
+      "n": "Dark Tidings",
+      "tp2n": "Dark Tidings",
+      "cn": 0,
+      "wf": "Tidings",
+      "wp": "Tidings\\SETUP-TIDINGS.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Dark Tidings: ominous portents and dark forces in BG2."
+    }
+  ]
+}

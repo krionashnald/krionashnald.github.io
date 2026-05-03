@@ -1,0 +1,444 @@
+{
+  "i": 265,
+  "t": "stuffofthemagi",
+  "sv": 1,
+  "ord": 130,
+  "c": "ITEM ADDITION MODS",
+  "n": "Stuff of the Magi",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "es": 2,
+    "cs": 3,
+    "fr": 4,
+    "it": 5,
+    "ru": 6
+  },
+  "no": "Adds Staff of the Magi and other powerful items to the game. Choose between rebalanced or original item stats, and whether enemies equip them (harder fights) or just carry them as loot. Abandoned mod but stable.",
+  "u": "https://github.com/SpellholdStudios/StuffofTheMagi/releases",
+  "a": "kevmus",
+  "v": "6.0.0",
+  "sum": "Modifies and completes the Staff of the Magi and other powerful items from the original game. Adjusts their power and upgrade paths.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "StuffofTheMagi"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "WZRDROBE",
+          "cloak",
+          "Cloak of the Magi",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.",
+          {
+            "ac": 2,
+            "saves": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDRING",
+          "ring",
+          "Ring of the Magi",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDCLCK",
+          "armor",
+          "Robe of the Magi",
+          "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.",
+          {
+            "ac": 1,
+            "magicResist": 50,
+            "saveDeath": 2,
+            "saveWand": 2,
+            "savePoly": 2,
+            "saveBreath": 2,
+            "saveSpell": 3,
+            "coldResist": 25,
+            "fireResist": 25,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 25
+              },
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDAMUL",
+          "amulet",
+          "Amulet of the Magi",
+          "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.",
+          {
+            "int": 1,
+            "magicResist": 25,
+            "savePoly": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDBOOT",
+          "boots",
+          "Boots of the Magi",
+          "Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDSTAF",
+          "staff",
+          "Staff of the Magi",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6\nDamage type: Crushing\nWeight: 4\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: 2-handed\nRequires: 5 Strength",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "2d6",
+            "dmgBonus": 2,
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              },
+              {
+                "type": "other",
+                "desc": "Haste"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "WZRDBRAC",
+          "bracers",
+          "Gauntlets of the Magi",
+          "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.",
+          {
+            "int": 1,
+            "ac": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDHELM",
+          "helmet",
+          "Circlet of the Magi",
+          "This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface - hinting at hidden power within the golden circlet.",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 18
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "WZRDBELT",
+          "belt",
+          "Girdle of the Magi",
+          "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WZRDBAG1",
+          "container",
+          "Scroll Case",
+          "This sturdy container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.\n\nSTATISTICS:\n\nCapacity: 20 scrolls\nWeight: 2",
+          {}
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/SpellholdStudios/StuffofTheMagi/releases",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Use new, less cheesy items AND Add them to creatures' equipment (recommended)",
+      "tp2n": "Use new, less cheesy items AND Add them to creatures' equipment (recommended)",
+      "cn": 0,
+      "wf": "stuffofthemagi",
+      "wp": "stuffofthemagi\\STUFFOFTHEMAGI.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "sotm_version",
+      "scn": "Stuff of the Magi",
+      "no": "Recommended. Rebalanced items placed in creature equipment slots (visible and usable by enemies).",
+      "it": 10,
+      "itC": {
+        "cloak": 1,
+        "ring": 1,
+        "armor": 1,
+        "amulet": 1,
+        "boots": 1,
+        "staff": 1,
+        "bracers": 1,
+        "helmet": 1,
+        "belt": 1,
+        "container": 1
+      }
+    },
+    {
+      "n": "Use new, less cheesy items AND Add them to creatures' inventory",
+      "tp2n": "Use new, less cheesy items AND Add them to creatures' inventory",
+      "cn": 1,
+      "wf": "stuffofthemagi",
+      "wp": "stuffofthemagi\\STUFFOFTHEMAGI.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "sotm_version",
+      "scn": "Stuff of the Magi",
+      "no": "Rebalanced items placed in creature inventory (not equipped, found as loot only)."
+    },
+    {
+      "n": "Use original, overpowered items AND Add them to creatures' equipment",
+      "tp2n": "Use original, overpowered items AND Add them to creatures' equipment",
+      "cn": 2,
+      "wf": "stuffofthemagi",
+      "wp": "stuffofthemagi\\STUFFOFTHEMAGI.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "sotm_version",
+      "scn": "Stuff of the Magi",
+      "no": "Original overpowered items placed in creature equipment (enemies use them against you)."
+    },
+    {
+      "n": "Use original, overpowered items AND Add them to creatures' inventory",
+      "tp2n": "Use original, overpowered items AND Add them to creatures' inventory",
+      "cn": 3,
+      "wf": "stuffofthemagi",
+      "wp": "stuffofthemagi\\STUFFOFTHEMAGI.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "sotm_version",
+      "scn": "Stuff of the Magi",
+      "no": "Original overpowered items placed in creature inventory (loot only, not equipped)."
+    }
+  ]
+}

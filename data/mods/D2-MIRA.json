@@ -1,0 +1,320 @@
+{
+  "i": 511,
+  "t": "d2-mira",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 420,
+  "c": "ITEM ADDITION MODS",
+  "n": "Big Metal Unit",
+  "no": "Adds companion-specific equipment and item improvements.",
+  "u": "https://github.com/D2-mods/D2-Mira",
+  "a": "Dan_P",
+  "v": "4.18",
+  "sum": "Big Metal Unit mod, item/tweak mod for classic and EE versions of BG1, BG2, IWD, and IWD2 (including EET/BGT/IWD2EE).",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/D2-mods/D2-Mira",
+  "au": "Dan_P",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Check item usability (can re-run at any time)",
+      "cn": 99,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Check item usability (can re-run at any time)",
+      "pi": "D2-MIRA-USABLE"
+    },
+    {
+      "n": "Big Metal Unit",
+      "cn": 0,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Standard Installation",
+      "scn": "The Big Metal Unit mod"
+    },
+    {
+      "n": "Start with the core Big Metal items",
+      "cn": 2,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Start with the core Big Metal items",
+      "pi": "D2-MIRA-BAG",
+      "scn": "The Big Metal Unit mod"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have +2 APR, +5 enchantment",
+      "cn": 10,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have +2 APR, +5 enchantment",
+      "pi": "D2-MIRA-AMMOREV3IWD2",
+      "scn": "Adjust APR and enchantment level (IWD2)"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have 5 APR, +1 enchantment (vanilla BG2)",
+      "cn": 4,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have 5 APR, +1 enchantment (vanilla BG2)",
+      "pi": "D2-MIRA-AMMOBG2",
+      "scn": "Adjust APR and enchantment level"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have 3 APR, +5 enchantment",
+      "cn": 5,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have 3 APR, +5 enchantment",
+      "pi": "D2-MIRA-AMMOREV3",
+      "scn": "Adjust APR and enchantment level"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have 5 APR, +3 enchantment",
+      "cn": 6,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have 5 APR, +3 enchantment",
+      "pi": "D2-MIRA-AMMOREV4",
+      "scn": "Adjust APR and enchantment level"
+    },
+    {
+      "n": "Scorcher/Frag Grenade/Pulse have 5 APR, +5 enchantment",
+      "cn": 7,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade/Pulse have 5 APR, +5 enchantment",
+      "pi": "D2-MIRA-AMMOREV5",
+      "scn": "Adjust APR and enchantment level"
+    },
+    {
+      "n": "No (default)",
+      "cn": 20,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "games": [
+        "iwd2"
+      ],
+      "tp2n": "No (default)",
+      "pi": "D2-MIRA-PULSECRIT0",
+      "scn": "Pulse ammo does double damage on a critical hit (EEs)"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have 5 APR, +1 enchantment (vanilla BG2)",
+      "cn": 9,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have 5 APR, +1 enchantment (vanilla BG2)",
+      "pi": "D2-MIRA-AMMOREV2IWD2",
+      "scn": "Adjust APR and enchantment level (IWD2)"
+    },
+    {
+      "n": "Scorcher/Frag Grenade have 5 APR, +3 enchantment",
+      "cn": 11,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade have 5 APR, +3 enchantment",
+      "pi": "D2-MIRA-AMMOREV4IWD2",
+      "scn": "Adjust APR and enchantment level (IWD2)"
+    },
+    {
+      "n": "Scorcher/Frag Grenade/Pulse have 5 APR, +5 enchantment",
+      "cn": 12,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Scorcher/Frag Grenade/Pulse have 5 APR, +5 enchantment",
+      "pi": "D2-MIRA-AMMOREV5IWD2",
+      "scn": "Adjust APR and enchantment level (IWD2)"
+    },
+    {
+      "n": "Fire (default)",
+      "cn": 30,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Fire (default)",
+      "pi": "D2-MIRA-FRAGFIRE",
+      "scn": "Choose damage type for Frag Grenade"
+    },
+    {
+      "n": "Slashing",
+      "cn": 14,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Slashing",
+      "pi": "D2-MIRA-FRAGSLASH",
+      "scn": "Choose damage type for Frag Grenade"
+    },
+    {
+      "n": "Allies protected (note: damage from the launcher still applies)",
+      "cn": 40,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Allies protected (note: damage from the launcher still applies)",
+      "pi": "D2-MIRA-SAFEAMMO1",
+      "scn": "Make Scorcher and Frag Grenade more party friendly"
+    },
+    {
+      "n": "Allies not protected (default)",
+      "cn": 16,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Allies not protected (default)",
+      "pi": "D2-MIRA-SAFEAMMO0",
+      "scn": "Make Scorcher and Frag Grenade more party friendly"
+    },
+    {
+      "n": "Allies protected (note: damage from the launcher still applies)",
+      "cn": 45,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "games": [
+        "how",
+        "iwd",
+        "iwd2",
+        "totlm"
+      ],
+      "tp2n": "Allies protected (note: damage from the launcher still applies)",
+      "pi": "D2-MIRA-SAFEAMMOIWD1",
+      "scn": "Make Frag Grenade more party friendly (IWD1/IWD2)"
+    },
+    {
+      "n": "Allies not protected (default)",
+      "cn": 18,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Allies not protected (default)",
+      "pi": "D2-MIRA-SAFEAMMOIWD0",
+      "scn": "Make Frag Grenade more party friendly (IWD1/IWD2)"
+    },
+    {
+      "n": "Yes",
+      "cn": 50,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Yes",
+      "pi": "D2-MIRA-PULSECRIT1",
+      "scn": "Pulse ammo does double damage on a critical hit (EEs)"
+    },
+    {
+      "n": "Unlimited (default)",
+      "cn": 60,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Unlimited (default)",
+      "pi": "D2-MIRA-RECHARGE1",
+      "scn": "Adjust ammo charges per day (default is unlimited)"
+    },
+    {
+      "n": "999 charges",
+      "cn": 22,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "999 charges",
+      "pi": "D2-MIRA-RECHARGE2",
+      "scn": "Adjust ammo charges per day (default is unlimited)"
+    },
+    {
+      "n": "300 charges",
+      "cn": 23,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "300 charges",
+      "pi": "D2-MIRA-RECHARGE3",
+      "scn": "Adjust ammo charges per day (default is unlimited)"
+    },
+    {
+      "n": "80 charges",
+      "cn": 24,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "80 charges",
+      "pi": "D2-MIRA-RECHARGE4",
+      "scn": "Adjust ammo charges per day (default is unlimited)"
+    },
+    {
+      "n": "Use default form, normalize movement",
+      "cn": 70,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Use default form, normalize movement",
+      "pi": "D2-MIRA-ARMORANIM1",
+      "scn": "Animation tweaking (Big Metal Unit)"
+    },
+    {
+      "n": "Demon Knight (note: wields a sword)",
+      "cn": 26,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Demon Knight (note: wields a sword)",
+      "pi": "D2-MIRA-ARMORANIM2",
+      "scn": "Animation tweaking (Big Metal Unit)"
+    },
+    {
+      "n": "No animation",
+      "cn": 27,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "No animation",
+      "pi": "D2-MIRA-ARMORANIM3",
+      "scn": "Animation tweaking (Big Metal Unit)"
+    },
+    {
+      "n": "Option 1, smaller personal space (EEs)",
+      "cn": 28,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Option 1, smaller personal space (EEs)",
+      "pi": "D2-MIRA-ARMORANIM4",
+      "scn": "Animation tweaking (Big Metal Unit)"
+    },
+    {
+      "n": "Option 2, smaller personal space (EEs)",
+      "cn": 29,
+      "wf": "D2-MIRA",
+      "wp": "D2-MIRA\\D2-MIRA.TP2",
+      "wq": "verified",
+      "tp2n": "Option 2, smaller personal space (EEs)",
+      "pi": "D2-MIRA-ARMORANIM5",
+      "scn": "Animation tweaking (Big Metal Unit)"
+    }
+  ],
+  "gh": {
+    "o": "D2-mods",
+    "r": "D2-Mira"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "i": 483,
+  "t": "valhorn",
+  "sv": 1,
+  "ord": 400,
+  "c": "ITEM ADDITION MODS",
+  "n": "Improved Horns of Valhalla",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "pl": 4
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 541 vs 562)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Improved_Horns_of_Valhalla",
+  "a": "Cirerrek",
+  "v": "v2",
+  "sum": "This is a minor modification to Baldur's Gate II that improves the berserkers summoned by the three Horns of Valhalla. Only the creatures and their items are modified. The horns themselves are left unchanged. The berserkers have improved weaponry, proficiencies, and are constantly in a state of enrage (per the Berserker kit). ",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Improved_Horns_of_Valhalla"
+  },
+  "dl": "https://github.com/Gibberlings3/Improved_Horns_of_Valhalla",
+  "au": "cirerrek",
+  "co": [
+    {
+      "n": "Improved Horns of Valhalla",
+      "tp2n": "Improved Horns of Valhalla",
+      "cn": 0,
+      "wf": "valhorn",
+      "wp": "valhorn\\SETUP-VALHORN.TP2",
+      "wc": 0,
+      "wq": "exact"
+    }
+  ]
+}

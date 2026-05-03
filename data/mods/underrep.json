@@ -1,0 +1,1225 @@
+{
+  "i": 268,
+  "t": "underrep",
+  "sv": 1,
+  "ord": 150,
+  "c": "ITEM ADDITION MODS",
+  "n": "Under-Represented Items",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2,
+    "it": 3,
+    "pl": 4,
+    "zh-cn": 5
+  },
+  "no": "Underrepresented Items From Icewind Dale II",
+  "ic": "item_rev",
+  "u": "https://github.com/Pocket-Plane-Group/Under-Respresented_Items/releases",
+  "a": "Westley Weimer, CamDawg",
+  "v": "v14",
+  "sum": "This mod adds items to Baldur's Gate 2. The items come from Icewind Dale 2. Only certain kinds of items were chosen. Items were selected to flesh out smaller weapon families.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Under-Respresented_Items"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "U#AX2H85",
+          "axe",
+          "Holy Greataxe of Justice +5",
+          "This mighty weapon consists of a four to five foot haft with a very heavy blade.  The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade.  It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it. Dwarven runes have been etched into the giant blade to further enhance the axe.\n\nSTATISTICS:\n\nCombat abilities:\n– Creatures struck are under the effects of the spell Blindness (Save vs. Spell negates)\n\nTHAC0: +5 \nDamage: 1d12+5, +2d6 magic damage vs. evil creatures\nDamage type: slashing\nSpeed Factor: 4\nProficiency Type: Axe\nType: Two-handed\nRequires: \n 10 Strength\n \nWeight: 20",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#AX2H86",
+          "axe",
+          "Greataxe of Ice +5",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "coldResist": 50,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#AX2H87",
+          "axe",
+          "Greataxe of Blurred Visions +5",
+          "This mighty weapon consists of a four to five foot haft with a very heavy blade.  The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade.  It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it. Dwarven runes have been etched into the giant blade to further enhance the axe.\n\nSTATISTICS:\n\nEquipped abilities:\n– Blur (+3 bonus to AC, +1 bonus to saving throws)\n\nCombat abilities:\n– Target must save vs. Poison or take 1 additional point of damage per round for 10 rounds\n\nTHAC0: +5 \nDamage: 1d12+5 (slashing)\nSpeed Factor: 4\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 20",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "ac": 3,
+            "saves": 1,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#AX2H93",
+          "axe",
+          "Greataxe of Digestion +5",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#AX2H94",
+          "axe",
+          "Massive Greataxe of Flame +5",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "2d12",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "U#AX2H95",
+          "axe",
+          "Greataxe of Might +5",
+          "This mighty weapon consists of a four to five foot haft with a very heavy blade.  The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade.  It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it. Dwarven runes have been etched into the giant blade to further enhance the axe.\n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: +1\n\nTHAC0: +5\nDamage: 1d12+5 (slashing)\nSpeed Factor: 4\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 20",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "str": 1,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#AX2H98",
+          "axe",
+          "Greataxe of Elemental Bursts",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 9,
+            "dmg": "1d12",
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "U#AX2H99",
+          "axe",
+          "Greataxe of Vampiric Flame",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "dmg": "1d12",
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "U#BELT05",
+          "belt",
+          "Girdle of Beatification",
+          "Priests of Helm in Berdusk consecrated this belt and gave it to the warrior Thom Wainwright, who had performed a number of great services for the church, including the destruction of the Unseeing Eye and the cult that followed him, the Blinded Acolytes.  Thom wore the girdle proudly until he fell into severe debt in his later years.  To his undying regret, he auctioned it off to a well-known priest of Mask.\n\nSTATISTICS:\n\nEquipped abilities:\n– Bless on wearer\n\nWeight: 2",
+          {}
+        ],
+        [
+          "U#CHAN07",
+          "armor",
+          "Elven Chainmail of the Hand +3",
+          "What is it?",
+          {
+            "ac": 2,
+            "coldResist": 50,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "U#DAGG90",
+          "dagger",
+          "Viper's Fang +2",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. \n\nSTATISTICS:\n\nCombat abilities:\n– Target must save vs. Poison or take 2 additional points of damage per second for 6 seconds\n\nTHAC0: +2 \nDamage: 1d4+2 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequire:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "U#DAGG96",
+          "dagger",
+          "Cat's Paw Dagger +3",
+          "Hm?",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "U#DAGG98",
+          "dagger",
+          "Vampiric Dagger +1",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. \n\nSTATISTICS:\n\nCombat abilities:\n– Vampiric: +2 magic damage and adds +2 temporary hit points to wielder\n\nTHAC0: +1 \nDamage: 1d4+1 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequire:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "U#DART83",
+          "dart",
+          "Returning Stun Dart +1",
+          "As you wish.",
+          {
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#DART84",
+          "dart",
+          "Returning Poison Tipped Dart",
+          "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. Lines of power have been carefully scribed into the shaft of the weapon.\n\nSTATISTICS:\n\nCombat abilities:\n– Returns to the wielder's hand when thrown\n– Target must save vs. Poison or take 2 additional points of damage per second for 6 seconds\n\nDamage: 1d4 (missile)\nSpeed Factor: 2\nProficiency Type: Dart\nType: One-handed\n \nWeight: 0",
+          {
+            "speed": 2,
+            "dmg": "1d4",
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#HALB95",
+          "halberd",
+          "Infernal Halberd of the Defender",
+          "[pain grunt]",
+          {
+            "speed": 4,
+            "dmg": "1d10",
+            "ac": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "U#HALB96",
+          "halberd",
+          "Massive Halberd of Hate +4",
+          "Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find the bone while its barbed tip will seek out gaps in their armor.\n\nSTATISTICS:\n\nCombat abilities:\n– Vampiric: +2 magic damage and adds +2 temporary hit points to wielder\n\nTHAC0: +4 \nDamage: 2d8+4, +2d6 magic damage vs. good creatures\nDamage type: piercing\nSpeed Factor: 5\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 18 Strength\n\nWeight: 28",
+          {
+            "speed": 5,
+            "thac0": 4,
+            "dmg": "2d8",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "U#HALB97",
+          "halberd",
+          "Halberd of Speed +5",
+          "Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find the bone while its barbed tip will seek out gaps in their armor.\n\nSTATISTICS:\n\nCombat abilities:\n– 1 extra attack per round\n\nTHAC0: +5 \nDamage: 1d10+5 (piercing)\nSpeed Factor: 4\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 14",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "apr": 0.5,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "U#HAMM94",
+          "hammer",
+          "Holy Hammer of Corrosive Burst +5",
+          "Fresh air, birdsong, wind whistling through the branches... I despise it all.",
+          {
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "U#HFDTDD",
+          "dart",
+          "Delnar's Eye Gouger",
+          "This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 9\nProficiency Type: Axe\nType: Two-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 5,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#HFDTPD",
+          "dart",
+          "Dire Plague Darts",
+          "Devised forty years ago by the ambitious Talonite necromancer-priestess Presio, these devices only started gaining popularity among the church of Talona in the past six or seven years.  Presio was well known in certain circles throughout the north, though her presence often went unnoticed by those who would dread it.  Around 1280, Presio became involved in a strange demonic plot in the Spine of the World mountains.  Only a few of her fellows followed her on her journey.  Though she and her allies were slain in the volcano of Dragon's Eye, the many recipes and formulae for her potions and magical weapons survived.\n\nSTATISTICS:\n\nCombat abilities:\n– Casts Insect Plague upon striking a target\n \nTHAC0: +3\nDamage: 1d4+3 (missile)\nSpeed Factor: 0\nProficiency Type: Dart\nType: One-handed\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#HFHBHL",
+          "halberd",
+          "Holy Swizarnian Hammer of Lucerne",
+          "Careful and quiet.",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "U#HFSRIM",
+          "spear",
+          "Life's Blood Drinker",
+          "Life's Blood Drinker is a beautiful weapon to behold.  The spear sports an eighteen inch head with a serrated blade fashioned from adamantine steel.  Upon each face of the blade are small openings that appear to lead within the haft of the weapon.  The blade is also etched with glowing silver runes.  The haft of the weapon measures six feet in length.  It is constructed of highly polished oak reinforced with mithril bands along its length.  The haft is hollow.\n\nLife's Blood Drinker is vicious in combat.  The spear is a poison weapon (make a save vs. poison or suffer damage each round) and vampiric (deals magic damage to the target and heals the wielder).  The accuracy of the weapon has been enhanced as well.\n\nSTATISTICS:\n\nCombat abilities:\n– Vampiric: +2 magic damage and adds +2 temporary hit points to wielder\n– Target must save vs. Poison or take 1 additional point of damage per round for 10 rounds\n\nTHAC0: +5\nDamage: 1d8+5 (piercing)\nSpeed Factor: 1\nProficiency Type: Spear \nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#HFSSLS",
+          "short sword",
+          "Lolth's Cruel Sting",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#MACE92",
+          "mace",
+          "Mace of Stunning Frost Burst",
+          "I can no longer stand beside you. Farewell.",
+          {
+            "speed": 2,
+            "dmg": "1d8",
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#MACE94",
+          "mace",
+          "Mace of Holy Smite",
+          "Sleep well, my friend.",
+          {
+            "speed": 2,
+            "dmg": "1d8",
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#MACE95",
+          "mace",
+          "Flaming Burst Mace of Disruption",
+          "[yelling]",
+          {
+            "speed": 2,
+            "dmg": "1d8",
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#SPER89",
+          "spear",
+          "Spear of Stunning +2",
+          "One of man's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end.  When man mastered metals, spearheads were made from iron and steel.  Having reached this end, weaponers began experimenting with different types of spear heads, thus leading to the development of certain polearm types.  This spear is slightly different though, as it has been imbued with certain magical properties.\n\nSTATISTICS:\n\nCombat abilities:\n– Target must save vs. Paralyzation or be stunned for 3 seconds\n\nTHAC0: +2 \nDamage: 1d8+2 (piercing)\nSpeed Factor: 4\nProficiency Type: Spear \nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#STAF86",
+          "staff",
+          "Phantom Staff +5",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length.  Masterwork quarterstaffs are made of stout oak and are shod with metal at both ends.  This one is particularly special as it has been imbued with magical properties.  \n\nSTATISTICS:\n\nCombat abilities:\n– Phantom: Projects a ghostly image of the weapon, allowing the wielder to strike opponents up to 15 lengths away. \n\nTHAC0: +5 \nDamage: 1d6+5 (crushing)\nSpeed Factor: 0\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#STAF90",
+          "staff",
+          "Staff of Greater Spell Resistance +5",
+          "Yes?",
+          {
+            "speed": 3,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "magicResist": 15,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#SWDB94",
+          "large sword",
+          "Miasmic Bastard Sword",
+          "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.\n\nSTATISTICS:\n\nDamage: 2d4 (slashing)\nSpeed Factor: 8\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 3,
+            "dmg": "1d10",
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "U#SWDB95",
+          "large sword",
+          "Bastard Sword of Wrath",
+          "Quickly, now.",
+          {
+            "speed": 3,
+            "dmg": "1d10",
+            "str": 2,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "U#SWDBRC",
+          "large sword",
+          "Rage of Chaos",
+          "This weapon is a sight to behold.  The blade is crafted of red-gold with a silver edge.  The guard is finely polished platinum, and the wire wound hilt is crafted of black adamantine.  When drawn, the blade radiates a rainbow of colors.\n\nThis weapon has been considered both a curse and a blessing by those who wield it.  Against most creatures it does devastating damage and attacks are made with an uncanny accuracy.  Rage of Chaos has been known to turn the tide in many a battle.  Unfortunately, the victim often loses control of his or her faculties and flies into a state of confusion when struck by the weapon.  The chaotic powers of the blade also prevent the wielder from being controlled or confused in battle.\n\nThe history of Rage of Chaos is unknown.  The weapon has appeared throughout the realms in various battles over the centuries only to be lost once again.\n\nSTATISTICS:\n\nEquipped abilities:\n– Chaotic Commands on wearer\n\nCombat abilities:\n– Target must save vs. Spells at -4 or be under the effects of Chaos for 3 rounds\n\nTHAC0: +3 \nDamage: 1d10+3, +2d6 magic damage vs. lawful creatures\nDamage type: slashing\nSpeed Factor: 5\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 8",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "U#SWDS94",
+          "short sword",
+          "Charged Short Sword of Wounding +5",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#HFHRCR",
+          "hammer",
+          "Slow and Steady",
+          "This heavy-headed hammer looks like it was used for construction on the Palisade, and it's possible that none of the workers were aware of its enchanted nature.  While this weapon is a little slower and heavier than a warhammer, its swing is true and does more damage when it hits.  A single tap from this hammer creates a clear, ringing note. \n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: +3\n\nTHAC0: +4 \nDamage: 1d8+4 (crushing)\nSpeed Factor: 6\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 9",
+          {
+            "speed": 6,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "str": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "U#HFSRNP",
+          "spear",
+          "Twelve Paces",
+          "This long spear is made of a thick shaft of oak, and it looks like it has been used extensively in hunting arctic boars.  It bears numerous sigils and runes along its haft to help it strike straight and true, and when held in a life or death situation, the spear can lash out at an opponent up to five lengths from the wielder, taking the victim down before they can even enter close combat.\n\nSTATISTICS:\n\nCombat abilities:\n– Reach of 5 lengths, rather than a spear's normal 2\n\nCharge abilities:\n– Breach three times per day\n  Special: Dispels all specific and combat protections on target\n  Range: 40 ft.\n  Area of Effect: 1 creature\n\n– Lower Resistance three times per day\n  Special: Lowers the magic resistance of the target creature\n  Range: 40 ft.\n  Area of Effect: 1 creature\n\nTHAC0: +4 \nDamage: 1d8+4 (piercing)\nSpeed Factor: 2\nProficiency Type: Spear \nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 7",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#HFSFWS",
+          "staff",
+          "Caballus' Whispering Staff",
+          "[death grunt]",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#CLUBBT",
+          "mace",
+          "Belib's Everlasting Torch",
+          "We live to see another dawn.",
+          {
+            "speed": 7,
+            "dmg": "1d6",
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#HFHEAH",
+          "armor",
+          "Cornugon Hide Armor",
+          "There is great mystery surrounding this leather armor. No one knows how or where it came into existence.  What is known is that the leather was cut from the hide of a Cornugon. The armor is colored a deep black and riddled with very tough, barbed scales.  In addition, it has an unusual, very light, vinegary smell.\n\nThose that have worn the Cornugon Hide were bestowed with a rather high invulnerability to non-magical weapons and the ability to slowly regenerate from injuries. \n\nSTATISTICS:\n\nEquipped abilities: \n– Immunity to normal weapons\n– Regenerate 1 Hit Point per turn\n\nArmor Class: 5 (7 vs. piercing and missile)\nRequires:\n 6 Strength\n\nWeight: 15",
+          {
+            "ac": 5,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#HFHRVA",
+          "hammer",
+          "The Dire-Hammer Valorfoe",
+          "The Dire-Hammer Valorfoe is a frightful weapon, one forged to break an enemy's spirit as well as their armor and bones.  It is ancient, its artisan's name long-lost even to the vast historical records of the gray dwarves.  Covered in runes of cruel power, The Dire-Hammer Valorfoe bears a single inscription in the tongue of ancient dwarves, now used only by the duergar:\n\n\"'Tis Not Death That Is Worthy of Dread, But The Fear of Death\"\n\nEvery blow from The Dire-Hammer Valorfoe has the chance of striking terror into the target's heart, causing them to flee madly from the hammer's wielder.\n\nSTATISTICS:\n\nCombat abilities:\n– Target must save vs. Spell or flee in terror for 21 seconds\n\nTHAC0: +3 \nDamage: 1d10+3 (crushing)\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 7",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "U#HFDGSH",
+          "dagger",
+          "\"Baron\" Sulo's Hook",
+          "Useless!",
+          {
+            "speed": 1,
+            "thac0": -1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "ac": 3,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 15
+              }
+            ],
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "U#HFDGXF",
+          "dagger",
+          "Xvimian Fang of Despair",
+          "I have need of this.",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 5,
+            "int": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "U#CLUBMP",
+          "mace",
+          "Monkey Paw of Discipline",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "apr": 0.5,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#HAMMBI",
+          "hammer",
+          "Brutal Impact",
+          "I've traveled with many adventurers. And you are among the finest.",
+          {
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "str": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "U#HFHBPB",
+          "halberd",
+          "Pudu's Fiery Blight",
+          "If you continue on this path, it will soon diverge from mine.",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "U#ZZL6MA",
+          "mace",
+          "Mace of Goblin Slaying +1",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end.  In this case, the head is pyramidal and seems to glow with an inner blue light, as it sits atop a polished oak shaft.  \n\nSTATISTICS:\n\nCombat abilities:\n– Slays gnolls, goblins, hobgoblins, kobolds, and orcs\n\nTHAC0: +1 \nDamage: 1d8+1 (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/Under-Respresented_Items/releases",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Underrepresented Items From Icewind Dale II",
+      "tp2n": "Underrepresented Items From Icewind Dale II",
+      "pi": "u#_under-represented_items",
+      "wf": "underrep",
+      "wp": "underrep\\SETUP-UNDERREP.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "it": 46,
+      "itC": {
+        "axe": 8,
+        "belt": 1,
+        "armor": 2,
+        "dagger": 5,
+        "dart": 4,
+        "halberd": 5,
+        "hammer": 4,
+        "spear": 3,
+        "short sword": 2,
+        "mace": 6,
+        "staff": 3,
+        "large sword": 3
+      }
+    }
+  ]
+}

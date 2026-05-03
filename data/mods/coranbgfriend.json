@@ -1,0 +1,43 @@
+{
+  "i": 50,
+  "t": "coranbgfriend",
+  "sv": 1,
+  "ord": 170,
+  "c": "QUEST MODS BG1",
+  "n": "Coran's BG Extended Friendship Talks",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2
+  },
+  "no": "Coran's Extended BG Friendship Talks If you aren’t actively romancing Coran, the two of you get some friendly chats!If you have BG1 NPC Project installed, Coran’s mod-added talks begin after those finish.",
+  "u": "https://github.com/Gibberlings3/CoranBGFriend/releases",
+  "a": "Domi",
+  "sum": "This mod expands Coran's Friendship talk sequence, adding up to eighteen (18) new banters with the protagonist (and one potential comment by Garrick) for a player character who is not in an active romance with him. If you have The BG1 NPC Project installed, they begin playing after the last regular friendship talk. If the player started and interrupted Coran's The BG1 NPC Project romance, the friendship sequence should initiate after that. If you do not have The BG1 NPC Project installed, they become available immediately.",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "CoranBGFriend"
+  },
+  "dl": "https://github.com/Gibberlings3/CoranBGFriend/releases",
+  "au": "berelinde",
+  "co": [
+    {
+      "n": "Coran's Extended BG Friendship Talks",
+      "tp2n": "Coran's Extended BG Friendship Talks",
+      "pi": "Domi-CoranBGFriend-Main",
+      "wf": "coranbgfriend",
+      "wp": "coranbgfriend\\CORANBGFRIEND.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "no": "mod_installer: game detection fails when installed pre-EET — ALWAYS block conditionally includes eet/other/cpmvars/eet_cpmvars.tpa which does not exist until EET is installed. tp2 correctly handles GAME_IS eet (line 56) and has no missing check. Fix: install after EET_Start on the BG2EE executable (not pre-EET on BGEE). Phase is BG1 content installed in EET phase."
+    }
+  ]
+}

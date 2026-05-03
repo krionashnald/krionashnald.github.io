@@ -1,0 +1,136 @@
+{
+  "i": 576,
+  "t": "iylos",
+  "sv": 1,
+  "ord": 1010,
+  "c": "NEW NPC MODS",
+  "n": "Iylos NPC",
+  "no": "ToB-only NPC by K'aeloree. Has Ascension crossmod (detects cn:0 and cn:10). Known issue: silent crash during COMPILE of imoen25j.d in large mod lists — IMOEN25J.DLG too bloated from many prior NPC mod APPENDs. Install-order dependent, no local fix. Also has open Ascension 2.1.0 crossmod bug (GitHub #1).",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "iylos",
+          "portraits/iylos/lk_iyl.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/liamesler/iylos",
+  "a": "K'aeloree",
+  "v": "2.7.2",
+  "sum": "Iylos NPC mod for BGII: Throne of Bhaal.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "au": "Kaeloree",
+  "dl": "https://github.com/SpellholdStudios/Iylos_NPC",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Iylos NPC for BGII:ToB",
+      "pi": "lk#-Iylos-Main",
+      "cn": 0,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Main NPC component. Spawns in ar6200. Has Ascension crossmod dialogue.",
+      "tp2n": "Iylos NPC for BGII:ToB"
+    },
+    {
+      "n": "Extended content (PID, interjections, friendship, scenery & plot dialogues)",
+      "pi": "lk#-Iylos-ExtendedContent",
+      "cn": 1,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "Install extended content (PID, more interjections, friendship, scenery & plot dialogues)?"
+    },
+    {
+      "n": "Iylos' talk timer: 15 minutes",
+      "g": "timer",
+      "scn": "How much time would you like in between Iylos' PC dialogues?",
+      "pi": "lk#-Iylos-Talk-Timer-15",
+      "cn": 2,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "15 Minutes"
+    },
+    {
+      "n": "Iylos' talk timer: 20 minutes",
+      "g": "timer",
+      "scn": "How much time would you like in between Iylos' PC dialogues?",
+      "pi": "lk#-Iylos-Talk-Timer-20",
+      "cn": 3,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "20 Minutes"
+    },
+    {
+      "n": "Iylos' talk timer: 30 minutes",
+      "g": "timer",
+      "scn": "How much time would you like in between Iylos' PC dialogues?",
+      "pi": "lk#-Iylos-Talk-Timer-30",
+      "cn": 4,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "30 Minutes"
+    },
+    {
+      "n": "Iylos' talk timer: 45 minutes",
+      "g": "timer",
+      "scn": "How much time would you like in between Iylos' PC dialogues?",
+      "pi": "lk#-Iylos-Talk-Timer-45",
+      "cn": 5,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "45 Minutes"
+    },
+    {
+      "n": "Iylos' talk timer: 60 minutes",
+      "g": "timer",
+      "scn": "How much time would you like in between Iylos' PC dialogues?",
+      "pi": "lk#-Iylos-Talk-Timer-60",
+      "cn": 6,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "60 Minutes"
+    },
+    {
+      "n": "Alternate Iylos portrait by Ilmatar",
+      "pi": "lk#-Iylos-Portrait-Ilmatar",
+      "cn": 7,
+      "wf": "iylos",
+      "wp": "iylos\\IYLOS.TP2",
+      "wq": "verified",
+      "tp2n": "Alternate Iylos portrait by Ilmatar"
+    }
+  ],
+  "gh": {
+    "o": "liamesler",
+    "r": "iylos"
+  }
+}

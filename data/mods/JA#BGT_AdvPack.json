@@ -1,0 +1,610 @@
+{
+  "i": 926,
+  "t": "JA#BGT_AdvPack",
+  "sv": 1,
+  "ord": 1000,
+  "c": "QUEST MODS BG1",
+  "n": "Jarl's Adventure Pack",
+  "au": "Jarl, Ychap, jastey",
+  "dl": "https://github.com/Gitjas/JA-AdventurePack",
+  "no": "BG1 quest and restoration mod with 50+ components. Restores cut NPCs, dialogues, items, and quests from the original BG1. Must install BEFORE bg1re, bg1npc, garrick-tt, and stratagems. Must install AFTER bg1ub, EET, c#endlessbg1, ntotsc, bgqe.",
+  "langs": {
+    "de": 0,
+    "en": 1
+  },
+  "u": "https://github.com/Gitjas/JA-AdventurePack/",
+  "a": "Jarl, Ychap, jastey",
+  "sum": "This mod adds content to the BG section of the game. It reintroduces into the game a number of elements that were unused or unfinished, and which the [[112]] mod didn't restore.",
+  "tags": [
+    "story",
+    "quest"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "conflicts": [
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "partial",
+      "reason": "Multiple components have FORBID_COMPONENT on bg1npc cn:10. Must install Adventure Pack BEFORE BG1 NPC Project.",
+      "myComps": "#2 Ramazith, #7 Gervisse & Voltine, #30 Marl, #36 Aldeth & Seniyad, #39 Tenya Umberlee, #45 Caldo, #51 Mini-Quest, #55 Xzar & Niemain",
+      "theirComps": "#10 BG1 NPC dialogues",
+      "source": "tp2 FORBID_COMPONENT bg1npc.tp2 cn:10, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "bg1re",
+      "withId": 68,
+      "severity": "partial",
+      "reason": "Must install Adventure Pack BEFORE BG1 Romantic Encounters. Multiple FORBID_COMPONENT constraints.",
+      "myComps": "#2 Ramazith, #48 Ender Sai, #51 Mini-Quest",
+      "theirComps": "#6, #27, #30, #41",
+      "source": "tp2 FORBID_COMPONENT bg1re cn:6/27/30/41, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "cn:35 (Merchants' League) has FORBID_COMPONENT on SCS cn:7000 (Improved Doppelgangers). Must install Adventure Pack before SCS.",
+      "myComps": "#35 Merchants' League investigations",
+      "theirComps": "#7000 Improved Doppelgangers",
+      "source": "tp2 FORBID_COMPONENT stratagems cn:7000, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "GARRICK-TT",
+      "withId": 482,
+      "severity": "partial",
+      "reason": "cn:38, 39, 47 have FORBID_COMPONENT on Garrick Tales cn:0. Must install Adventure Pack before Garrick-TT.",
+      "myComps": "#38 Tenya, #39 Tenya Umberlee, #47 Shop of Silence",
+      "theirComps": "#0 Garrick: Tales of a Troubadour",
+      "source": "tp2 FORBID_COMPONENT GARRICK-TT cn:0, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "co": [
+    {
+      "n": "Extended Law System",
+      "cn": 1,
+      "pi": "JA#BGT_AdvPack-Law_System",
+      "no": "Cannot install after own cn:6 (Ducal Palace).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Ramazith",
+      "cn": 2,
+      "pi": "JA#BGT_AdvPack-Ramazith",
+      "no": "Cannot install after BG1 Romantic Encounters (cn:6, cn:30) or BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "Jopi and his uncle Ragefast",
+      "cn": 3,
+      "pi": "JA#BGT_AdvPack-Jopi",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "Yuxi - Ragefast's imp",
+      "cn": 4,
+      "pi": "JA#BGT_AdvPack-Yuxi",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 4,
+      "wq": "verified"
+    },
+    {
+      "n": "Husam's story line finished",
+      "cn": 5,
+      "pi": "JA#BGT_AdvPack-Husam",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 5,
+      "wq": "verified"
+    },
+    {
+      "n": "IMPROVED/RESTORED: Ducal Palace",
+      "cn": 6,
+      "pi": "JA#BGT_AdvPack-Ducal_Palace",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 6,
+      "wq": "verified"
+    },
+    {
+      "n": "Gervisse & Voltine",
+      "cn": 7,
+      "pi": "JA#BGT_AdvPack-Gervisse_Voltine",
+      "no": "Cannot install after BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 7,
+      "wq": "verified"
+    },
+    {
+      "n": "Seven Suns",
+      "cn": 8,
+      "pi": "JA#BGT_AdvPack-Seven_Suns",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 8,
+      "wq": "verified"
+    },
+    {
+      "n": "Krammoch Arkhstaff",
+      "cn": 9,
+      "pi": "JA#BGT_AdvPack-Arkhstaff",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 9,
+      "wq": "verified"
+    },
+    {
+      "n": "Iron Throne guard",
+      "cn": 10,
+      "pi": "JA#BGT_AdvPack-Iron_Throne",
+      "no": "Requires cn:9 (Krammoch Arkhstaff).",
+      "rd": 8,
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 10,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Palin - Aldeth's hunter comrade",
+      "cn": 11,
+      "pi": "JA#BGT_AdvPack-Palin",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 11,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Svlast - the fallen Paladin",
+      "cn": 12,
+      "pi": "JA#BGT_AdvPack-Svlast",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 12,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Nashkel Garrison soldier",
+      "cn": 13,
+      "pi": "JA#BGT_AdvPack-Nashkel_Garrison",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 13,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Velvet - Cockfight",
+      "cn": 14,
+      "pi": "JA#BGT_AdvPack-Velvet",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 14,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Nim Furlwing",
+      "cn": 15,
+      "pi": "JA#BGT_AdvPack-Nim_Furlwing",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 15,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Caravan merchant",
+      "cn": 16,
+      "pi": "JA#BGT_AdvPack-Caravan_merchant",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 16,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Galtoth - the fence",
+      "cn": 17,
+      "pi": "JA#BGT_AdvPack-Galtoth",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 17,
+      "wq": "verified"
+    },
+    {
+      "n": "Phandalyn waits in Elfsong Tavern",
+      "cn": 18,
+      "pi": "JA#BGT_AdvPack-Phandalyn",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 18,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Suthie & Sthief at Silence's Store",
+      "cn": 19,
+      "pi": "JA#BGT_AdvPack-Suthie_Sthief",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 19,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Warehouse Workers",
+      "cn": 20,
+      "pi": "JA#BGT_AdvPack-Warehouse_Workers",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 20,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Townspeople dialogues",
+      "cn": 21,
+      "pi": "JA#BGT_AdvPack-Townspeople_dialogues",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 21,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Yago's guard in Low Lantern",
+      "cn": 22,
+      "pi": "JA#BGT_AdvPack-Yago",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 22,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Ignatio Phleed - the invitation seller",
+      "cn": 23,
+      "pi": "JA#BGT_AdvPack-Ignatio_Phleed",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 23,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Shalasin",
+      "cn": 24,
+      "pi": "JA#BGT_AdvPack-Shalasin",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 24,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Sir Artolas",
+      "cn": 25,
+      "pi": "JA#BGT_AdvPack-Artolas",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 25,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Pilar & Gheldehar",
+      "cn": 26,
+      "pi": "JA#BGT_AdvPack-Pilar_Gheldehar",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 26,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Llindellyn - the archer",
+      "cn": 27,
+      "pi": "JA#BGT_AdvPack-Llindellyn",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 27,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Mal-Kalen - Ulcaster's Adept",
+      "cn": 28,
+      "pi": "JA#BGT_AdvPack-Mal-Kalen",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 28,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Keelor & Nasha",
+      "cn": 29,
+      "pi": "JA#BGT_AdvPack-Keelor_Nasha",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 29,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Marl - Tavern brawl at Feldepost's Inn",
+      "cn": 30,
+      "pi": "JA#BGT_AdvPack-Marl",
+      "no": "Cannot install after BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 30,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Beregost guards",
+      "cn": 31,
+      "pi": "JA#BGT_AdvPack-Beregost_guards",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 31,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED ITEM: Rythe's Last Arrow",
+      "cn": 32,
+      "pi": "JA#BGT_AdvPack-Rythes_Last_Arrow",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 32,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED ITEM: The Protector of the Unworthy",
+      "cn": 33,
+      "pi": "JA#BGT_AdvPack-The_Protector_of_the_Unworthy",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 33,
+      "wq": "verified"
+    },
+    {
+      "n": "IMPROVED/FIXED: Counting House",
+      "cn": 34,
+      "pi": "JA#BGT_AdvPack-Counting_House",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 34,
+      "wq": "verified"
+    },
+    {
+      "n": "Merchants' League investigations",
+      "cn": 35,
+      "pi": "JA#BGT_AdvPack-Merchants_League",
+      "no": "Cannot install after SCS Improved Doppelgangers (cn:7000).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 35,
+      "wq": "verified"
+    },
+    {
+      "n": "Aldeth & Seniyad",
+      "cn": 36,
+      "pi": "JA#BGT_AdvPack-Aldeth_Seniyad",
+      "no": "Cannot install after BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 36,
+      "wq": "verified"
+    },
+    {
+      "n": "Aldeth's Sellout",
+      "cn": 37,
+      "pi": "JA#BGT_AdvPack-Sellout",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 37,
+      "wq": "verified"
+    },
+    {
+      "n": "Tenya and the fishermen",
+      "cn": 38,
+      "pi": "JA#BGT_AdvPack-Tenya",
+      "no": "Cannot install after Garrick Tales of a Troubadour.",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 38,
+      "wq": "verified"
+    },
+    {
+      "n": "Tenya's quest in Temple of Umberlee",
+      "cn": 39,
+      "pi": "JA#BGT_AdvPack-Tenya2",
+      "no": "Cannot install after BG1 NPC Project (cn:10) or Garrick Tales.",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 39,
+      "wq": "verified"
+    },
+    {
+      "n": "Nashkel",
+      "cn": 40,
+      "pi": "JA#BGT_AdvPack-Nashkel",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 40,
+      "wq": "verified"
+    },
+    {
+      "n": "Stationary soldiers in Nashkel",
+      "cn": 41,
+      "pi": "JA#BGT_AdvPack-Nashkel_soldiers",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 41,
+      "wq": "verified"
+    },
+    {
+      "n": "Imoen at Winthrop's inn",
+      "cn": 42,
+      "pi": "JA#BGT_AdvPack-Imoen_Winthrop",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 42,
+      "wq": "verified"
+    },
+    {
+      "n": "Priest of Oghma, Gond and Ilmater in Baldur's Gate",
+      "cn": 43,
+      "pi": "JA#BGT_AdvPack-Priests",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 43,
+      "wq": "verified"
+    },
+    {
+      "n": "Extended/Improved dialogues",
+      "cn": 44,
+      "pi": "JA#BGT_AdvPack-Improved_dialogues",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 44,
+      "wq": "verified"
+    },
+    {
+      "n": "Caldo can be charmed",
+      "cn": 45,
+      "pi": "JA#BGT_AdvPack-Caldo",
+      "no": "Cannot install after BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 45,
+      "wq": "verified"
+    },
+    {
+      "n": "Hulrik and his cows",
+      "cn": 46,
+      "pi": "JA#BGT_AdvPack-Hulrik",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 46,
+      "wq": "verified"
+    },
+    {
+      "n": "Improved Shop of Silence",
+      "cn": 47,
+      "pi": "JA#BGT_AdvPack-Shop_of_Silence",
+      "no": "Cannot install after Garrick Tales of a Troubadour.",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 47,
+      "wq": "verified"
+    },
+    {
+      "n": "Ender Sai in Baldur's Gate",
+      "cn": 48,
+      "pi": "JA#BGT_AdvPack-Ender_Sai",
+      "no": "Incompatible with BG1 Romantic Encounters cn:27 (Ender Sai).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 48,
+      "wq": "verified"
+    },
+    {
+      "n": "Sorcerous Sundries",
+      "cn": 49,
+      "pi": "JA#BGT_AdvPack-Sorcerous_Sundries",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 49,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Elfsong Tavern Movie",
+      "cn": 50,
+      "pi": "JA#BGT_AdvPack-Elfsong_movie",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 50,
+      "wq": "verified"
+    },
+    {
+      "n": "Mini-Quest \"The mystery of the silent ghostly voice\"",
+      "cn": 51,
+      "pi": "JA#BGT_AdvPack-Miniquest",
+      "no": "Cannot install after BG1 Romantic Encounters (cn:41) or BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 51,
+      "wq": "verified"
+    },
+    {
+      "n": "Unusual keg in Elfsong Tavern",
+      "cn": 52,
+      "pi": "JA#BGT_AdvPack-Unusual_keg",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 52,
+      "wq": "verified"
+    },
+    {
+      "n": "Black Alaric's Cave",
+      "cn": 53,
+      "pi": "JA#BGT_AdvPack-Black_Alarics_Cave",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 53,
+      "wq": "verified"
+    },
+    {
+      "n": "RESTORED: Cloakwood druid",
+      "cn": 54,
+      "pi": "JA#BGT_AdvPack-Cloakwood_druid",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 54,
+      "wq": "verified"
+    },
+    {
+      "n": "Extended meeting between Xzar and Niemain",
+      "cn": 55,
+      "pi": "JA#BGT_AdvPack-Niemain_Zentarim",
+      "no": "Cannot install after BG1 NPC Project (cn:10).",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 55,
+      "wq": "verified"
+    },
+    {
+      "n": "Graphical improvements: Animated torches and candles",
+      "cn": 100,
+      "pi": "JA#BGT_AdvPack-Graphical",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 100,
+      "wq": "verified"
+    },
+    {
+      "n": "Backdoor to Gellana's temple",
+      "cn": 101,
+      "pi": "JA#BGT_AdvPack-Backdoor_Gellana",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 101,
+      "wq": "verified"
+    },
+    {
+      "n": "Backdoor to Waterqueen's House",
+      "cn": 102,
+      "pi": "JA#BGT_AdvPack-Backdoor_Waterqueen",
+      "wf": "JA#BGT_AdvPack",
+      "wp": "JA#BGT_AdvPack\\Setup-JA#BGT_AdvPack.tp2",
+      "wc": 102,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "Gitjas",
+    "r": "JA-AdventurePack"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "i": 34,
+  "t": "c#anotherfinehell",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 20,
+  "c": "QUEST MODS BG1",
+  "n": "Another Fine Hell",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2
+  },
+  "no": "SoD ending mod by jastey. Installs after EndlessBG1 — may get @10012 journal bleed from EndlessBG1. Non-critical (cn:1 installs with warnings). cn:1 alpha bug: missing @10012 translation",
+  "conflicts": [
+    {
+      "with": "c#sodtweaks",
+      "withId": 35,
+      "severity": "hard",
+      "reason": "SoD ending components are mutually exclusive; Another Fine Hell tp2 uses FORBID_COMPONENT for Jastey's ending variants (cn 12-15). Install one or the other.",
+      "myComps": "#0 Another Fine Hell - Optional Ending for SoD",
+      "theirComps": "#12 Revised Full Version / #13 Revised Streamlined / #14 Original Streamlined / #15 Skipit Version",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Reflections",
+      "withId": 41,
+      "severity": "partial",
+      "reason": "Reflections of Destiny cn:200 ('Rewriting History') rewrites SoD Caelar backstory and narrative. Another Fine Hell also modifies BG1-to-SoD transition. Users report dialogue inconsistencies when both installed.",
+      "myComps": "#0",
+      "theirComps": "#200 Rewriting History",
+      "source": "User report shaigan G3 topic 38225, Feb 2026",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Another_Fine_Hell/releases/tag/vAlpha_230919",
+  "a": "jastey",
+  "v": "Alpha_230919",
+  "sum": "Adds a planar quest involving Baatezu and Tanar'ri politics. Visit a slice of the Nine Hells with new areas and fiendish encounters.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoD"
+  ],
+  "eet_compat": {
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Another_Fine_Hell"
+  },
+  "dl": "https://github.com/Gibberlings3/Another_Fine_Hell/releases/tag/vAlpha_230919",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Another Fine Hell - Optional Ending for SoD and BGII Closure",
+      "tp2n": "Another Fine Hell - Optional Ending for SoD and BGII Closure",
+      "pi": "C#AnotherFineHell-Main",
+      "wf": "c#anotherfinehell",
+      "wp": "c#anotherfinehell\\c#anotherfinehell.tp2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "no": "Optional alternative ending for SoD and BGII closure."
+    },
+    {
+      "n": "Get the Hells Out - Quest Option with Extended BGII Content",
+      "tp2n": "Get the Hells Out - Quest Option with Extended BGII Content",
+      "pi": "C#AnotherFineHell-Extended",
+      "wf": "c#anotherfinehell",
+      "wp": "c#anotherfinehell\\c#anotherfinehell.tp2",
+      "wc": 1,
+      "wq": "label_prefix",
+      "cn": 1,
+      "no": "Quest to escape the hells with extended BGII content."
+    },
+    {
+      "n": "PC's and Imoen's chest in Palace should have their content",
+      "tp2n": "PC's and Imoen's chest in Palace should have their content",
+      "pi": "C#AnotherFineHell-ImoensChest",
+      "wf": "c#anotherfinehell",
+      "wp": "c#anotherfinehell\\c#anotherfinehell.tp2",
+      "wc": 2,
+      "wq": "label_prefix",
+      "cn": 2,
+      "no": "PC's and Imoen's storage chests retain their contents."
+    }
+  ]
+}

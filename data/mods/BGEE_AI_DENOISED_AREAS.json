@@ -1,0 +1,60 @@
+{
+  "i": 519,
+  "t": "BGEE_AI_Denoised_Areas",
+  "sv": 1,
+  "ord": 110,
+  "c": "GRAPHICS",
+  "n": "BG:EE AI Denoised Areas",
+  "no": "Replaces 329 BG1 TIS + 2,082 PVRZ area background files via COPY to override (last writer wins). GAME_IS bgee only — safe for EET because EET runs it in BG1 phase. CONFLICT with BGGO (i=25): BGGO covers all 58 of its BG1 areas (AR0100, AR0200, AR0300 etc.) using the same TIS/PVRZ files; whichever installs later wins. In infinity-insanity these install after BGGO (pos 1607 vs 52), so AI Denoised overrides BGGO for those areas — BGGO work is wasted. Pick one or the other. CONFLICT with BGEE_Graphics_Enhanced (i=708): that mod also replaces BG1 area PVRZ/TIS. NO conflict with SotSC/DSotSC/NToSC/1PP: those mods use entirely different area codes or touch different file types. Install order: position here (after most content mods) is correct to ensure these visuals are the final word on BG1 area graphics.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    },
+    {
+      "d": "2026-03-24",
+      "m": "Conflict analysis: BGGO and BGEE_Graphics_Enhanced conflict (same TIS/PVRZ); SotSC/DSotSC/NToSC/1PP do not"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "BGGO",
+      "withId": 25,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 126 vs 146)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/WillScarlettOhara/BGEE_AI_Denoised_Areas",
+  "a": "WillScarlettOhara",
+  "v": "220506",
+  "sum": "AI-upscaled BG1 area backgrounds for sharper visuals at modern resolutions. Purely cosmetic, large file size.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/WillScarlettOhara/BGEE_AI_Denoised_Areas",
+  "au": "WillScarlettOhara",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "BGEE_AI_Denoised_Areas",
+      "tp2n": "BGEE_AI_Denoised_Areas",
+      "cn": 0,
+      "wf": "BGEE_AI_DENOISED_AREAS",
+      "wp": "BGEE_AI_DENOISED_AREAS\\BGEE_AI_DENOISED_AREAS.TP2",
+      "wc": 0,
+      "games": [
+        "bgee"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "WillScarlettOhara",
+    "r": "BGEE_AI_Denoised_Areas"
+  }
+}

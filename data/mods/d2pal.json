@@ -1,0 +1,115 @@
+{
+  "i": 722,
+  "t": "d2pal",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Paladin Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Paladin kit for Paladin class. Offensive/defensive auras and combat skills. Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_PALADIN": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Defensive Auras",
+            "freq": "D2 skill point system",
+            "effects": "Prayer, Defiance, Cleansing, Meditation, Redemption, Salvation.",
+            "level": 1
+          },
+          {
+            "n": "Offensive Auras",
+            "freq": "D2 skill point system",
+            "effects": "Might, Holy Fire/Freeze/Shock, Thorns, Fanaticism, Conviction.",
+            "level": 1
+          },
+          {
+            "n": "Combat Skills",
+            "freq": "D2 skill point system",
+            "effects": "Sacrifice, Smite, Holy Bolt, Zeal, Charge, Vengeance, Blessed Hammer, Holy Shield, Fist of the Heavens.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noSpells": true,
+          "items": "Loses standard Paladin spellcasting. Max 1 pip in two-handed weapons. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "D2 skill tree replaces standard Paladin spellcasting"
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "D2 paladin aura system replaces standard paladin HLAs."
+        },
+        "statBonus": {
+          "note": "D2 skill trees: Defensive/Offensive Auras + Combat Skills."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_PALADIN",
+          "paladin",
+          "Diablo2 Paladin",
+          "Diablo 2-inspired holy warrior. Auras, combat skills, and divine offensive abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "1.2",
+  "sum": "Diablo 2-inspired Paladin kit for the Paladin class. Offensive and defensive auras plus combat skills.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Paladin Kit",
+      "tp2n": "Diablo2 Paladin Kit",
+      "wf": "d2pal",
+      "wp": "d2pal\\SETUP-d2pal.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "paladin": 1
+      }
+    },
+    {
+      "n": "Turns off the white wiffle ball animation of Holy Shield",
+      "tp2n": "Turns off the white wiffle ball animation of Holy Shield",
+      "wf": "d2pal",
+      "wp": "d2pal\\SETUP-d2pal.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

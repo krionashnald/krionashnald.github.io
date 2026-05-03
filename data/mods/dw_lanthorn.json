@@ -1,0 +1,66 @@
+{
+  "i": 67,
+  "t": "dw_lanthorn",
+  "sv": 1,
+  "pfx": "DW",
+  "ord": 50,
+  "c": "QUEST MODS BG2",
+  "n": "Restored Rhynn Lanthorn",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Restores the extended Rhynn Lanthorn lens quest cut from BG2 beta. Almost all files still exist in the game data, allowing faithful restoration. By DavidW (SCS author). Adds extra content to Chapter 6 before entering the Underdark.",
+  "conflicts": [
+    {
+      "with": "LENSHUNT",
+      "withId": 570,
+      "severity": "hard",
+      "reason": "Both rework the Rhynn Lanthorn lens quest. Shared ar2401.bcs and c6lens items. Choose one.",
+      "source": "lcc-docs",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Restored-Rhynn-Lanthorn",
+  "a": "DavidW",
+  "v": "Beta 3",
+  "sum": "This is a small mod that restores the original extended quest for the Rhynn Lanthorn, which was present in the beta version of Baldur's Gate II but was cut before release. Almost all the files are still in the game, so that it can be restored very faithfully.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Restored-Rhynn-Lanthornhttps:"
+  },
+  "dl": "https://github.com/Gibberlings3/Restored-Rhynn-Lanthorn",
+  "au": "DavidW",
+  "co": [
+    {
+      "n": "Classic Version (faithful restoration of cut content from the original game)",
+      "tp2n": "Classic Version (faithful restoration of cut content from the original game)",
+      "cn": 10,
+      "wf": "dw_lanthorn",
+      "wp": "dw_lanthorn\\DW_LANTHORN.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "g": "lanthorn_version",
+      "scn": "Restored Rhynn Lanthorn lens quest",
+      "no": "Faithful restoration using only original game files. 3 lens locations as originally designed. Recommended for purists"
+    },
+    {
+      "n": "Expanded Version (adds four new locations where lenses can be found)",
+      "tp2n": "Expanded Version (adds four new locations where lenses can be found)",
+      "cn": 20,
+      "wf": "dw_lanthorn",
+      "wp": "dw_lanthorn\\DW_LANTHORN.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "g": "lanthorn_version",
+      "scn": "Restored Rhynn Lanthorn lens quest",
+      "no": "Adds 4 new custom locations for lenses on top of the original quest. More content but deviates from cut original"
+    }
+  ]
+}

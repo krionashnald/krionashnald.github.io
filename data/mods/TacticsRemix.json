@@ -1,0 +1,1857 @@
+{
+  "i": 386,
+  "t": "tactics-remix",
+  "sv": 1,
+  "pfx": "MO",
+  "ord": 50,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Tactics Remix",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "zh-cn": 2,
+    "pl": 3,
+    "pt": 4
+  },
+  "no": "Per morpheus562: 'New encounters should be installed prior to SCS while updates to existing encounters should be installed after SCS.' TR detects SCS and adapts. v7.3 (April 2026): Beholder attack fix, Resar mage scripts, thief/MF script fixes, IWD mage Comet HLA level prereq, Kryll casting update.",
+  "v": "7.3",
+  "ic": "Spellrevisions & any spell overhaul mods",
+  "_legacy_ids": [
+    396
+  ],
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "TR v3.0+ is a comprehensive difficulty overhaul that substantially duplicates SCS's AI and encounter systems. User reports recommend treating TR and SCS as effective either-or for the AI/encounter layer; a select few SCS general-game tweaks (non-AI, non-encounter) remain compatible. TR's author designed TR to detect SCS and adapt, so technical co-installation works, but the functional overlap is significant enough that picking one is usually cleaner. Previous framing (partial/orderOnly): Broad interaction — TR detects SCS via MOD_IS_INSTALLED for 4 components: IWD Arcane Spells (cn:1500), IWD Divine Spells (cn:1510), Initialize AI (cn:5900), and Smarter Mages (cn:6030). TR adapts spell handling when SCS IWD spells are present, conditionally skips its Kangaxx demilich script when SCS cn:6030 is installed, and removes SCS troll kill flags from boss weapons (dragons, Irenicus). SCS AI/encounter overhauls overlap with TR encounter overhauls — per Morpheus (TR author): 'Any encounter or AI updates from SCS will not be compatible with Tactics Remix. SCS QoL updates prior to AI/tactical components should mostly be okay.' Install SCS before TR; TR must install after SCS.",
+      "myComps": "#0 Improved de'Arnise Keep / #15 Tougher Kangaxx / #65 #66 Improved Irenicus / all encounter components",
+      "theirComps": "#1500 IWD Arcane / #1510 IWD Divine / #5900 Initialize AI / #6030 Smarter Mages / #8060 Improved de'Arnise Keep",
+      "source": "TP2 MOD_IS_INSTALLED checks, lib/always.tph scs_ai/scs_smrt_mgs vars, Morpheus compatibility statement on TR website, G3 forums April 2026",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_tweaks",
+      "withId": 378,
+      "severity": "soft",
+      "reason": "Both increase creature HP. MiH cn:6 adds bonus HP per HD by creature type (configurable). TR cn:25-30 apply blanket multipliers. Stacking makes enemies extremely tanky.",
+      "myComps": "#25 #26 #27 #28 #30 HP multipliers",
+      "theirComps": "#6 Give Monsters Bonus HP",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_ip",
+      "withId": 251,
+      "severity": "hard",
+      "reason": "Tactics Remix auto-skips all components when Made in Heaven mods are detected. Incompatible — choose one.",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1022 vs 665)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://www.morpheus-mart.com/",
+  "a": "Wes Weimer, Gebhard Blucher, Kensai Ryu, Xyx, Ishan, morpheus562",
+  "sum": "Tactics Remix pre-tactical section: initial setup and creature improvements that enhance enemy intelligence.",
+  "tags": [
+    "tactical"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.morpheus-mart.com/",
+  "au": "morpheus562",
+  "ki": [
+    {
+      "pattern": "stratagems|SCS|Smarter.*Mages|Initialize AI",
+      "severity": "info",
+      "description": "Tactics Remix is a comprehensive difficulty overhaul (v3.0+) that overlaps substantially with SCS's AI and encounter systems. Most TR components are effective replacements for SCS equivalents. TR author says TR detects SCS and adapts, but user feedback suggests picking one or the other for the AI/encounter layer gives a cleaner experience. Safe SCS-with-TR components: general-game tweaks (non-AI, non-encounter) like item/spell additions (IWD Arcane/Divine Spells cn:1500/1510).",
+      "workaround": "If using SCS alongside TR: pick SCS for AI/encounter framework OR pick TR for comprehensive difficulty overhaul; not both for the same content. TR's Add New Encounters group installs BEFORE SCS; Update Existing Encounters + Enemy Improvements groups install AFTER SCS — this is already encoded via per-component category placement.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "cats": [
+    "TACTICAL MODS",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "co": [
+    {
+      "n": "Mage Chess Changes (RECOMMENDED)",
+      "cn": 58,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Mage Chess Changes (RECOMMENDED)",
+      "pi": "TacticsRemix-MageChess",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Revise IWDEE Spells (RECOMMENDED)",
+      "cn": 63,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Revise IWDEE Spells (RECOMMENDED)",
+      "pi": "TacticsRemix-IWDSpells",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Revise Cause Harm / Wound Spells (RECOMMENDED)",
+      "cn": 62,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Revise Cause Harm / Wound Spells (RECOMMENDED)",
+      "pi": "TacticsRemix-HarmWound",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Update All Physical Protection Spells",
+      "cn": 81,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Update All Physical Protection Spells",
+      "pi": "TacticsRemix-PfMW1",
+      "scn": "Overhaul Mage Physical Defense Spells",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Update ONLY (Improved) Mantle and Absolute Immunity",
+      "cn": 82,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Update ONLY (Improved) Mantle and Absolute Immunity",
+      "pi": "TacticsRemix-PfMW2",
+      "scn": "Overhaul Mage Physical Defense Spells",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Revise Insect Spells",
+      "cn": 59,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Revise Insect Spells",
+      "pi": "TacticsRemix-Insects",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Add Concentration Check to Resist Spell Disruption",
+      "cn": 60,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Add Concentration Check to Resist Spell Disruption",
+      "pi": "TacticsRemix-Concentration",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Alter Inquisitor Dispel Magic Cast Level",
+      "cn": 68,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Alter Inquisitor Dispel Magic Cast Level",
+      "pi": "TacticsRemix-ReviseRemoveMagic1",
+      "scn": "Revise Remove/Dispel Magic Cast Level",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Unaltered Inquisitor Dispel Magic Cast Level",
+      "cn": 69,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Unaltered Inquisitor Dispel Magic Cast Level",
+      "pi": "TacticsRemix-ReviseRemoveMagic2",
+      "scn": "Revise Remove/Dispel Magic Cast Level",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Spell Tweaks",
+      "cn": 97,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Spell Tweaks",
+      "pi": "TacticsRemix-SpellTweaks",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Successful Vorpal Hit Removes Death Ward",
+      "cn": 96,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Successful Vorpal Hit Removes Death Ward",
+      "pi": "TacticsRemix-Vorpal",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Update Dispel on Hit Weapons",
+      "cn": 95,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Update Dispel on Hit Weapons",
+      "pi": "TacticsRemix-DispelWeapon",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "+2 Enchantment",
+      "cn": 7030,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "+2 Enchantment",
+      "pi": "TacticsRemix-MelfMet2",
+      "scn": "Update Melf's Minute Meteor's Enchantment Level",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "+3 Enchantment",
+      "cn": 7031,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "+3 Enchantment",
+      "pi": "TacticsRemix-MelfMet3",
+      "scn": "Update Melf's Minute Meteor's Enchantment Level",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "+4 Enchantment",
+      "cn": 7032,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "+4 Enchantment",
+      "pi": "TacticsRemix-MelfMet4",
+      "scn": "Update Melf's Minute Meteor's Enchantment Level",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Characters will be knocked unconcsious when reduced to 0hp",
+      "cn": 99,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Characters will be knocked unconcsious when reduced to 0hp",
+      "pi": "TacticsRemix-Unconscious",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Nipple Grease",
+      "cn": 3007,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Nipple Grease",
+      "pi": "TacticsRemix-NippleGrease",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Remove Screenshake from Earthquake Spells",
+      "cn": 7033,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Remove Screenshake from Earthquake Spells",
+      "pi": "TacticsRemix-Earthquake",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Set Haste Fatigue to Match Baldur's Gate",
+      "cn": 7035,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "Set Haste Fatigue to Match Baldur's Gate",
+      "pi": "TacticsRemix-IWDHaste",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "Reduce Raise Dead & Resurrection Temple Costs",
+      "cn": 7036,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "Reduce Raise Dead & Resurrection Temple Costs",
+      "pi": "TacticsRemix-IWDRaiseDead",
+      "grn": "Spell and Item Changes"
+    },
+    {
+      "n": "\"Kuroisan\", the Acid Kensai",
+      "pi": "TacticsRemix-Kuroisan",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2,
+      "sp": 3,
+      "spLv": {
+        "w1": 1,
+        "w6": 1,
+        "w8": 1
+      },
+      "wc": 2,
+      "no": "Adds Kuroisan the Acid Kensai encounter. Uses wizard and priest spells.",
+      "tp2n": "\"Kuroisan\", the Acid Kensai",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "The Ritual",
+      "pi": "TacticsRemix-Ritual",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1,
+      "no": "Adds a ritual encounter with summoned creatures.",
+      "tp2n": "The Ritual",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "\"Red Badge\" Poison-Based Encounter",
+      "pi": "TacticsRemix-RedBadge",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 3,
+      "no": "Adds a poison-themed encounter (Red Badge).",
+      "tp2n": "\"Red Badge\" Poison-Based Encounter",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Gebhard Blucher's Lich in the Docks",
+      "pi": "TacticsRemix-LichDocks",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 4,
+      "no": "Adds a lich encounter in the Docks District.",
+      "tp2n": "Gebhard Blucher's Lich in the Docks",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Kensai Ryu's Gnome Fighter/Illusionist in the Docks",
+      "pi": "TacticsRemix-GnomeFI",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 5,
+      "no": "Adds a Gnome Fighter/Illusionist encounter in the Docks.",
+      "tp2n": "Kensai Ryu's Gnome Fighter/Illusionist in the Docks",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Mike Barnes' Improved Small Teeth Pass",
+      "pi": "TacticsRemix-SmallTeethPass",
+      "grn": "Add New Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 19,
+      "no": "Adds improved encounters in Small Teeth Pass area.",
+      "tp2n": "Mike Barnes' Improved Small Teeth Pass",
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Nightmare Mode",
+      "cn": 870,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Nightmare Mode",
+      "pi": "TacticsRemix-IlyichNightmare",
+      "scn": "Improved Ilyich",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Lite Mode (RECOMMENDED)",
+      "cn": 871,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Lite Mode (RECOMMENDED)",
+      "pi": "TacticsRemix-IlyichLite",
+      "scn": "Improved Ilyich",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Improved Sahuagin City",
+      "pi": "TacticsRemix-Sahuagin",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 8,
+      "no": "Overhauls Sahuagin City encounters with tougher enemies.",
+      "tp2n": "Improved Sahuagin City"
+    },
+    {
+      "n": "Improved Bodhi",
+      "cn": 9,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Improved Bodhi",
+      "pi": "TacticsRemix-Bodhi",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Improved Irenicus: Nightmare Mode",
+      "pi": "TacticsRemix-IrenicusNightmare",
+      "scn": "Improved Irenicus",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 65,
+      "g": "irenicus_mode",
+      "no": "",
+      "tp2n": "Nightmare Mode"
+    },
+    {
+      "n": "Improved Irenicus: Lite Mode",
+      "pi": "TacticsRemix-IrenicusLite",
+      "scn": "Improved Irenicus",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 66,
+      "g": "irenicus_mode",
+      "no": "Improved Irenicus: Lite mode difficulty (recommended by author).",
+      "tp2n": "Lite Mode"
+    },
+    {
+      "n": "Improved Guarded Compound in the Temple District",
+      "pi": "TacticsRemix-GuardedCompound",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 11,
+      "no": "",
+      "tp2n": "Improved Guarded Compound in the Temple District"
+    },
+    {
+      "n": "Improved Twisted Rune",
+      "pi": "TacticsRemix-TwistedRune",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 12,
+      "no": "",
+      "tp2n": "Improved Twisted Rune"
+    },
+    {
+      "n": "Gebhard Blucher's Improved Mae'Var",
+      "cn": 13,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Gebhard Blucher's Improved Mae'Var",
+      "pi": "TacticsRemix-MaeVar",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Gebhard Blucher's Improved Demon Knights",
+      "pi": "TacticsRemix-DemonKnights",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 14,
+      "no": "Improved Demon Knight encounters.",
+      "tp2n": "Gebhard Blucher's Improved Demon Knights"
+    },
+    {
+      "n": "Kensai Ryu's Tougher Kangaxx and Guardians",
+      "pi": "TacticsRemix-Kangaxx",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 15,
+      "no": "Tougher Kangaxx and his guardians.",
+      "tp2n": "Kensai Ryu's Tougher Kangaxx and Guardians"
+    },
+    {
+      "n": "Kensai Ryu's Improved Crypt King",
+      "pi": "TacticsRemix-CryptKing",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 6,
+      "no": "Improved Crypt King encounter.",
+      "tp2n": "Kensai Ryu's Improved Crypt King"
+    },
+    {
+      "n": "Ishan's \"Always Toughest Random Spawns in Dungeons\"",
+      "cn": 79,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Ishan's \"Always Toughest Random Spawns in Dungeons\"",
+      "pi": "TacticsRemix-ToughestRandomSpawns",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Gebhard Blucher's Random City Encounters",
+      "cn": 78,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Gebhard Blucher's Random City Encounters",
+      "pi": "TacticsRemix-CityEncounters",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Kensai Ryu's Random Wilderness Encounters",
+      "cn": 31,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Kensai Ryu's Random Wilderness Encounters",
+      "pi": "TacticsRemix-WildernessEncounters",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Kensai Ryu's Improved Copper Coronet",
+      "pi": "TacticsRemix-CopperCoronet",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 17,
+      "no": "Improved Copper Coronet encounter.",
+      "tp2n": "Kensai Ryu's Improved Copper Coronet"
+    },
+    {
+      "n": "Improved TorGal and De'Arnisse Keep",
+      "cn": 7,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Improved TorGal and De'Arnisse Keep",
+      "pi": "TacticsRemix-TorGal",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Windspear Hills Dungeon",
+      "cn": 34,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Windspear Hills Dungeon",
+      "pi": "TacticsRemix-Samia",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Planar Prison Bounty Hunters",
+      "pi": "TacticsRemix-PPBounty",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 35,
+      "no": "Improved Planar Prison bounty hunter encounter.",
+      "tp2n": "Morpheus562's Tougher Planar Prison"
+    },
+    {
+      "n": "Tougher Druid Grove",
+      "cn": 22,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Tougher Druid Grove",
+      "pi": "TacticsRemix-DruidGrove",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Planar Sphere",
+      "cn": 47,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Planar Sphere",
+      "pi": "TacticsRemix-PlanarSphere",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Umar Hills Dungeon",
+      "cn": 83,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Umar Hills Dungeon",
+      "pi": "TacticsRemix-Umar",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Mike Barnes' Improved North Forest",
+      "cn": 20,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mike Barnes' Improved North Forest",
+      "pi": "TacticsRemix-NorthForest",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Mike Barnes' Marching Mountains",
+      "cn": 21,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mike Barnes' Marching Mountains",
+      "pi": "TacticsRemix-MarchingMountains",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "SimDing0's Improved Oasis",
+      "cn": 18,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "SimDing0's Improved Oasis",
+      "pi": "TacticsRemix-Oasis",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Sendai's Enclave",
+      "cn": 84,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Sendai's Enclave",
+      "pi": "TacticsRemix-Sendai",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Abazigal's Lair",
+      "cn": 85,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Abazigal's Lair",
+      "pi": "TacticsRemix-Abazigal",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Watcher's Keep",
+      "cn": 86,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Watcher's Keep",
+      "pi": "TacticsRemix-WatchersKeep",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Update Ascension Final Fight",
+      "cn": 7034,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Update Ascension Final Fight",
+      "pi": "TacticsRemix-Ascension",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Drizzt (BGEE)",
+      "pi": "TacticsRemix-DrizztBGEE",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 29,
+      "no": "Improved Drizzt encounter for BG1 (BGEE).",
+      "tp2n": "Morpheus562's Improved Drizzt (BGEE)"
+    },
+    {
+      "n": "Morpheus562's Improved Drizzt (BG2EE)",
+      "pi": "TacticsRemix-DrizztBG2EE",
+      "grn": "Update Existing Encounters",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 39,
+      "no": "Improved Drizzt encounter for BG2 (BG2EE).",
+      "tp2n": "Morpheus562's Improved Drizzt (BG2EE)"
+    },
+    {
+      "n": "Morpheus562's Improved Mutamin's Garden and Tougher Basilisks",
+      "cn": 41,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Improved Mutamin's Garden and Tougher Basilisks",
+      "pi": "TacticsRemix-Basilisks",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Gnoll Stronghold and Tougher Gnolls",
+      "cn": 43,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Improved Gnoll Stronghold and Tougher Gnolls",
+      "pi": "TacticsRemix-Gnolls",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Party vs. Party Encounters",
+      "cn": 45,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Improved Party vs. Party Encounters",
+      "pi": "TacticsRemix-PvP",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Tougher Ulcaster",
+      "cn": 94,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Tougher Ulcaster",
+      "pi": "TacticsRemix-Ulcaster",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Durlag's Tower",
+      "cn": 42,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Morpheus562's Improved Durlag's Tower",
+      "pi": "TacticsRemix-DurlagDemonKnight",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 2: Improved Nashkel Mines",
+      "cn": 88,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 2: Improved Nashkel Mines",
+      "pi": "TacticsRemix-ChapterTwo",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 3: Improved Bandit Camp",
+      "cn": 89,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 3: Improved Bandit Camp",
+      "pi": "TacticsRemix-ChapterThree",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 4: Improved Cloakwood Mines",
+      "cn": 90,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 4: Improved Cloakwood Mines",
+      "pi": "TacticsRemix-ChapterFour",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 5: Iron Throne Headquarters Boss Improvements",
+      "cn": 91,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 5: Iron Throne Headquarters Boss Improvements",
+      "pi": "TacticsRemix-ChapterFive",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 6: Improved Return to Candlekeep",
+      "cn": 92,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 6: Improved Return to Candlekeep",
+      "pi": "TacticsRemix-ChapterSix",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "BGEE Chapter 7: Improved BGEE Finale",
+      "cn": 93,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "BGEE Chapter 7: Improved BGEE Finale",
+      "pi": "TacticsRemix-ChapterSeven",
+      "grn": "Update Existing Encounters"
+    },
+    {
+      "n": "Morpheus562's Improved Generic Enemies",
+      "cn": 46,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Morpheus562's Improved Generic Enemies",
+      "pi": "TacticsRemix-GenericScripts",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Improved Undead",
+      "cn": 48,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Improved Undead",
+      "pi": "TacticsRemix-ImprovedUndead",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7000,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedGolemDouble",
+      "scn": "Improved Golems",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7001,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedGolemNormal",
+      "scn": "Improved Golems",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7002,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedMindFlayerDouble",
+      "scn": "Gebhard Blucher's Improved Mind Flayers",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7003,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedMindFlayerNormal",
+      "scn": "Gebhard Blucher's Improved Mind Flayers",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7004,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-DragonsDouble",
+      "scn": "Smarter Dragons",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7005,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-DragonsNormal",
+      "scn": "Smarter Dragons",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7006,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedBeholderDouble",
+      "scn": "Improved Beholders",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7007,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedBeholderNormal",
+      "scn": "Improved Beholders",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7008,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedVampiresDouble",
+      "scn": "Improved Vampires",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7009,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedVampiresNormal",
+      "scn": "Improved Vampires",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7010,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedRakshasaDouble",
+      "scn": "Morpheus562's Improved Rakshasa",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7011,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ImprovedRakshasaNormal",
+      "scn": "Morpheus562's Improved Rakshasa",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7012,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-CelestialsDouble",
+      "scn": "Morpheus562's Improved Celestials",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7013,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-CelestialsNormal",
+      "scn": "Morpheus562's Improved Celestials",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7014,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-DemonsDouble",
+      "scn": "Improved Demons",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7015,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-DemonsNormal",
+      "scn": "Improved Demons",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7016,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-GeniesDouble",
+      "scn": "Morpheus562's Improved Genies",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7017,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-GeniesNormal",
+      "scn": "Morpheus562's Improved Genies",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Tougher Fire Giants: Double HP",
+      "pi": "TacticsRemix-FireGiantsDouble",
+      "scn": "Tougher Giants",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 7018,
+      "g": "fire_giants",
+      "no": "Tougher Fire Giants with double TR HP values.",
+      "tp2n": "Double Tactics Remix HP values"
+    },
+    {
+      "n": "Tougher Fire Giants: Default HP",
+      "pi": "TacticsRemix-FireGiantsNormal",
+      "scn": "Tougher Giants",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 7019,
+      "g": "fire_giants",
+      "no": "Tougher Fire Giants with default TR HP values.",
+      "tp2n": "Default Tactics Remix HP values"
+    },
+    {
+      "n": "Morpheus562's Tougher Githyanki: Double HP",
+      "pi": "TacticsRemix-GithyankiDouble",
+      "scn": "Morpheus562's Tougher Githyanki",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 7020,
+      "g": "githyanki",
+      "no": "Tougher Githyanki with double TR HP values.",
+      "tp2n": "Double Tactics Remix HP values"
+    },
+    {
+      "n": "Morpheus562's Tougher Githyanki: Default HP",
+      "pi": "TacticsRemix-GithyankiNormal",
+      "scn": "Morpheus562's Tougher Githyanki",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 7021,
+      "g": "githyanki",
+      "no": "Tougher Githyanki with default TR HP values.",
+      "tp2n": "Default Tactics Remix HP values"
+    },
+    {
+      "n": "Morpheus562's Tougher Yuan-ti: Double HP",
+      "pi": "TacticsRemix-YuantiDouble",
+      "scn": "Morpheus562's Tougher Yuan-ti",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 7022,
+      "g": "yuanti",
+      "no": "Tougher Yuan-ti with double TR HP values.",
+      "tp2n": "Double Tactics Remix HP values"
+    },
+    {
+      "n": "Morpheus562's Tougher Yuan-ti: Default HP",
+      "pi": "TacticsRemix-YuantiNormal",
+      "scn": "Morpheus562's Tougher Yuan-ti",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 7023,
+      "g": "yuanti",
+      "no": "Tougher Yuan-ti with default TR HP values.",
+      "tp2n": "Default Tactics Remix HP values"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7028,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-ElementalsDouble",
+      "scn": "Morpheus562's Tougher Elementals",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7029,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-ElementalsNormal",
+      "scn": "Morpheus562's Tougher Elementals",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Dread Wolves Need to be Killed by Fire or Acid",
+      "cn": 7024,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Dread Wolves Need to be Killed by Fire or Acid",
+      "pi": "TacticsRemix-WolvesDread",
+      "scn": "Morpheus562's Improved Wolves",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Dread Wolves do NOT Need Fire or Acid to be Killed",
+      "cn": 7025,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Dread Wolves do NOT Need Fire or Acid to be Killed",
+      "pi": "TacticsRemix-WolvesNoDread",
+      "scn": "Morpheus562's Improved Wolves",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Morpheus562's Improved Wolves",
+      "cn": 80,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "Morpheus562's Improved Wolves",
+      "pi": "TacticsRemix-Wolves",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Double Tactics Remix HP values",
+      "cn": 7026,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Double Tactics Remix HP values",
+      "pi": "TacticsRemix-TrollsDouble",
+      "scn": "Streamlined Trolls",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Default Tactics Remix HP values",
+      "cn": 7027,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Default Tactics Remix HP values",
+      "pi": "TacticsRemix-TrollsNormal",
+      "scn": "Streamlined Trolls",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Add extra spells to casters",
+      "cn": 100,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Add extra spells to casters",
+      "pi": "TacticsRemix-SmarterMagesExtra",
+      "scn": "Smarter Mages",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "NO extra spells",
+      "cn": 101,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "NO extra spells",
+      "pi": "TacticsRemix-SmarterMagesNoExtra",
+      "scn": "Smarter Mages",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Add extra spells to casters",
+      "cn": 102,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Add extra spells to casters",
+      "pi": "TacticsRemix-SmarterDivineCastersExtra",
+      "scn": "Smarter Divine Casters",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "NO extra spells",
+      "cn": 103,
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "NO extra spells",
+      "pi": "TacticsRemix-SmarterDivineCastersNoExtra",
+      "scn": "Smarter Divine Casters",
+      "grn": "Enemy Improvements"
+    },
+    {
+      "n": "Enemy HP: x1.5",
+      "no": "v Improve all enemies hitpoints",
+      "pi": "TacticsRemix-HitPoints6",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 40,
+      "g": "hp_mult",
+      "tp2n": "Enemies Have 1.5x Hit Points"
+    },
+    {
+      "n": "Enemy HP: x2",
+      "no": "v Improve all enemies hitpoints",
+      "pi": "TacticsRemix-HitPoints1",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 25,
+      "g": "hp_mult",
+      "tp2n": "Enemies Have x2 Hit Points"
+    },
+    {
+      "n": "Enemy HP: x2+20",
+      "pi": "TacticsRemix-HitPoints2",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 26,
+      "g": "hp_mult",
+      "no": "Enemy HP: x2 + 20 bonus HP.",
+      "tp2n": "Enemies Have x2+20 Hit Points"
+    },
+    {
+      "n": "Enemy HP: x3",
+      "pi": "TacticsRemix-HitPoints3",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 27,
+      "g": "hp_mult",
+      "no": "Enemy HP: x3 multiplier.",
+      "tp2n": "Enemies Have x3 Hit Points"
+    },
+    {
+      "n": "Enemy HP: x3+30",
+      "pi": "TacticsRemix-HitPoints4",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 28,
+      "g": "hp_mult",
+      "no": "Enemy HP: x3 + 30 bonus HP.",
+      "tp2n": "Enemies Have x3+30 Hit Points"
+    },
+    {
+      "n": "Enemy HP: Custom (ini)",
+      "pi": "TacticsRemix-HitPoints5",
+      "scn": "Improve All Enemies Hit Points",
+      "grn": "Enemy Improvements",
+      "wf": "tactics-remix",
+      "wp": "tactics-remix\\tactics-remix.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 30,
+      "g": "hp_mult",
+      "no": "Enemy HP: custom multiplier via ini file.",
+      "tp2n": "Use ini Custom Enemy Hit Point Modifications"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "TR creature scripts assume vanilla/SCS spell behavior and do not adapt to SR. Enemies may use ineffective spell combos. HP multiplier components (#25-30) unaffected. Not a crash — just suboptimal enemy AI. Install SR before TR.",
+      "myComps": "#8 Kuroisan #10 The Ritual #11 Red Badge #37 Lich in Docks #38 Gnome F/I #8 Improved Sahuagin #65 Improved Irenicus #37 Improved Guarded Compound #12 Improved Twisted Rune #14 Improved Demon Knights #15 Tougher Kangaxx #6 Improved Crypt King #17 Improved Copper Coronet #19 Improved Small Teeth #35 Improved Planar Prison #29 #39 Improved Drizzt #7018 Tougher Fire Giants #7020 Tougher Githyanki #7022 Tougher Yuan-ti",
+      "theirComps": "#0 Spell Revisions",
+      "orderOnly": true,
+      "source": "TR SPELL_REV variable unused; suboptimal not broken, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

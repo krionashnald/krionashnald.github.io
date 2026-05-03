@@ -1,0 +1,105 @@
+{
+  "i": 706,
+  "t": "spontaneous_casting",
+  "sv": 1,
+  "ord": 160,
+  "c": "SPELL MODS",
+  "n": "Spontaneous Casting",
+  "no": "Spontaneous Casting by Bubb. PnP-style spontaneous casting for divine casters. Only 1 commit (March 2019), abandoned. Not extracted. cdtweaks cn:6030 provides similar functionality and is more maintained. Magic Fang (cn:1) is a unique spell not found elsewhere.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both add spontaneous casting for Clerics. Spontaneous Casting covers Clerics AND Druids; cdtweaks #6030 covers Clerics only",
+      "myComps": "#0 Spontaneous Casting",
+      "theirComps": "#6030 Spontaneous Casting for Clerics",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPPR104",
+          "tweak",
+          "Priests can spontaneously cast Cure spells"
+        ],
+        [
+          "SPPR304",
+          "tweak",
+          "Priests can spontaneously cast Cure spells"
+        ],
+        [
+          "SPPR405",
+          "tweak",
+          "Priests can spontaneously cast Cure spells"
+        ],
+        [
+          "SPPR503",
+          "tweak",
+          "Priests can spontaneously cast Cure spells"
+        ]
+      ]
+    },
+    "1": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSC01",
+          "priest",
+          1,
+          "Alteration",
+          "Magic Fang",
+          "Enhances animal companion attacks with magic.",
+          [
+            "combat"
+          ]
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Renegade0/SpontaneousCasting",
+  "a": "Bubb",
+  "sum": "Adds PnP-style spontaneous casting for divine casters, allowing clerics and druids to convert memorized spells into cure/inflict spells.",
+  "tags": [
+    "spell"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Renegade0/SpontaneousCasting",
+  "au": "SubtleD",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Spontaneous Casting",
+      "cn": 0,
+      "wf": "spontaneous_casting",
+      "wp": "spontaneous_casting\\Spontaneous_Casting.tp2",
+      "wq": "exact",
+      "no": "PnP-style spontaneous casting for Clerics (convert memorized spells to Cure/Cause Wounds) and Druids (convert to Summon Nature's Ally). Overlaps with cdtweaks cn:6030 (Luke's version). Only 1 commit (March 2019), effectively abandoned. By Bubb (EEex author). Not extracted."
+    },
+    {
+      "n": "Magic Fang",
+      "cn": 1,
+      "wf": "spontaneous_casting",
+      "wp": "spontaneous_casting\\Spontaneous_Casting.tp2",
+      "wq": "exact",
+      "no": "Adds Magic Fang druid spell — enhances animal companion/summoned animal attacks with magical bonus. Standalone spell addition. Adds 1 priest IDS slot.",
+      "sp": {
+        "p2": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "Renegade0",
+    "r": "SpontaneousCasting"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "i": 696,
+  "t": "ShineOnCaelar",
+  "sv": 1,
+  "ord": 620,
+  "c": "NPC EXPANSIONS",
+  "n": "Shine on Caelar",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2,
+    "fr": 3
+  },
+  "no": "Component 0 works standalone or EET. Component 1 (rescue in ToB) requires EET. Has Longer Road compatibility built in.",
+  "conflicts": [
+    {
+      "with": "LCA",
+      "withId": 492,
+      "severity": "hard",
+      "reason": "Both mods modify Caelars storyline. LCA website explicitly lists Shine on Caelar as incompatible.",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "CaelarsFall",
+      "withId": 703,
+      "severity": "soft",
+      "reason": "Reverse of LCC-docs incompatibility (lcc id 948 vs 1475)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/Caelar/releases",
+  "a": "Roxanne",
+  "v": "v1.5",
+  "sum": "Lets you side with Caelar in SoD for a peaceful resolution, then rescue her from Avernus in ToB as an EET companion.",
+  "tags": [
+    "npc",
+    "quest"
+  ],
+  "ph": [
+    "SoD",
+    "ToB"
+  ],
+  "au": "Roxanne",
+  "dl": "https://github.com/RoxanneSHS/Caelar",
+  "co": [
+    {
+      "n": "SoD Alternative",
+      "wf": "SHINEONCAELAR",
+      "wp": "SHINEONCAELAR\\SHINEONCAELAR.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "no": "mod_installer: game detection fails — FILE_EXISTS_IN_GAME ~bdcaelar.cre~ (tp2 line 17) requires SoD resources merged by EET. bdcaelar.cre does not exist until EET_Start merges SoD content. Fix: install after EET_Start on BG2EE executable (SoD phase). No missing GAME_IS check — this is purely a resource dependency on EET-merged SoD content.",
+      "tp2n": "SoD Alternative"
+    },
+    {
+      "n": "Caelars Rescue (EET only)",
+      "wf": "SHINEONCAELAR",
+      "wp": "SHINEONCAELAR\\SHINEONCAELAR.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "cn": 1,
+      "x": 0,
+      "no": "Note: REQUIRE_PREDICATE GAME_IS ~ eet~ (line 38) has a leading space in the game identifier string (~ eet~) — verify this does not cause detection failure on some WeiDU versions.",
+      "tp2n": "Caelar's Rescue"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Caelar"
+  }
+}

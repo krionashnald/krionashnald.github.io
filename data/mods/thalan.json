@@ -1,0 +1,411 @@
+{
+  "i": 260,
+  "t": "thalan",
+  "sv": 1,
+  "ord": 90,
+  "c": "ITEM ADDITION MODS",
+  "n": "Thalantyr Item Upgrade",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "de": 3,
+    "es": 4,
+    "it": 5,
+    "pl": 6,
+    "zh-cn": 7
+  },
+  "no": "Adds 15 upgradeable items to Thalantyr's shop in High Hedge plus storage bags. Modifies THALAN.dlg — install order matters with The Calling. Known issue: thalan.tra may not reload after charset conversion on some systems — add LOAD_TRA before ALWAYS END if COMPILE fails with missing strings.",
+  "ki": [
+    {
+      "pattern": "Unable to find.*thalan\\.tra|No translation provided",
+      "severity": "error",
+      "category": "concerning",
+      "description": "thalan.tra not reloaded after charset_wrapper conversion. The charset wrapper reloads game.tra and setup.tra but not thalan.tra, which is used by COMPILE USING directives.",
+      "workaround": "Add LOAD_TRA \"%out_path%/%LANGUAGE%/thalan.tra\" before the ALWAYS END block in thalan/thalan.tp2, or apply the infinity-mod-runner patch.",
+      "user_action": "check-docs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "thecalling",
+      "withId": 39,
+      "severity": "partial",
+      "reason": "Both heavily modify Thalantyr dialogue and shop. Compatible with EXTEND_BOTTOM since Calling Beta 2 but install order matters. Install The Calling first.",
+      "orderOnly": true,
+      "myComps": "#0 Thalantyr Item Upgrade",
+      "theirComps": "#0 The Calling",
+      "source": "tp2 analysis, both use EXTEND_BOTTOM/APPEND on THALAN.dlg, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/CrevsDaak/thalan/releases",
+  "a": "Serdrick, CrevsDaak",
+  "v": "v4.5.1",
+  "sum": "Adds item upgrades through Thalantyr at High Hedge: weapons, armor, rings, cloaks, and storage bags.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "gh": {
+    "o": "CrevsDaak",
+    "r": "thalan"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "THBAG01",
+          "container",
+          "Sword of Rage",
+          "This small bag is ideally suited for holding gems.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "THBAG02",
+          "container",
+          "Sword of Rage",
+          "This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning—common hazards faced by any adventuring wizard.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "THBAG03",
+          "container",
+          "Sword of Rage",
+          "Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "THBAG04",
+          "container",
+          "Sword of Rage",
+          "This shoulder belt is ideally suited for holding sling bullets, darts, arrows, or bolts.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "THBAG05",
+          "container",
+          "Sword of Rage",
+          "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.\n\nSTATISTICS:\n\nWeight: 5",
+          {}
+        ],
+        [
+          "THSW2H01",
+          "large sword",
+          "Sword of Rage",
+          "Ah! ...Missed!",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "THDAGG01",
+          "dagger",
+          "Dagger of Venom +3",
+          "The dagger of venom is a potent blade favored by assassins all across the Realms. This particular dagger of venom was created for use by the Shadow Thieves of Amn. Everytime it hits an opponent it secretes a venom into the blood stream of the creature. The venom works quickly and efficiently.\nThis dagger was magically changed, and it became now a more powerful weapon.\n\nSTATISTICS:\n\nCombat Abilities:\n  +1 additional attack per round\n  Each hit slows a victim for 15 seconds (saving throw vs death)\n  \nTHAC0: +3 bonus\nDamage: 1D4 + 3\nDamage type: piercing\nPoison Damage: 6 points per round up to a total of 15 damage (saving throw vs poison)\nWeight: 2\nSpeed Factor: 0\nProficiency Type: Dagger\nType: 1-handed\nRequires: 3 Strength\nNot Usable By:\n Cleric",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "apr": 0.5,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "THDAGG02",
+          "dagger",
+          "Well... it's rather amusing actually.  You see, I happened to rescue this... um... talking chicken...",
+          "This throwing dagger is made from a magically changed Dagger +1. The dagger instantly returns to the wielder's hand after an attack.\n\nSTATISTICS:\n  \nTHAC0: +1 bonus\nDamage: 1D4 + 1\nDamage type: missile (piercing)\nWeight: 1\nSpeed Factor: 1\nProficiency Type: Dagger\nType: 1-handed\nRequires: 3 Strength\nNot Usable By:\n Cleric",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "THRING01",
+          "ring",
+          "Ring of Free Action +1",
+          "Can you make magic items or alter them?",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "THRING02",
+          "ring",
+          "Ring of Free Action +2",
+          "It is you again. I sincerely hope you have some reason for bothering me.",
+          {
+            "ac": 2,
+            "saves": 2
+          }
+        ],
+        [
+          "THBRAC01",
+          "bracers",
+          "Show me what you sell.",
+          "Do I have anything you could alter?",
+          {
+            "ac": 1
+          }
+        ],
+        [
+          "THCLCK01",
+          "cloak",
+          "We have no need of anything at the moment.",
+          "I would be a bad magician if I weren't adept at it. However, not each item can be altered or improved.",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "THCLCK02",
+          "armor",
+          "Thanks, but we have no need of anything at the moment. I'm leaving.",
+          "Show me what you have, and I'll tell you if it can be altered.",
+          {
+            "ac": 2,
+            "coldResist": 20,
+            "fireResist": 20,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "THBELT01",
+          "belt",
+          "I have a Cursed Berserking Sword +3. Certainly you can make something from it.",
+          "I have a Dagger of Venom. Certainly you can make something from it.",
+          {
+            "ac": 3,
+            "str": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "THSW1H01",
+          "short sword",
+          "I have a Dagger +1. Certainly you can make something from it.",
+          "Can you do anything with this Ring of Free Action?",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "THBOW01",
+          "bow",
+          "Can you do anything with these Gauntlets?",
+          "I have a Cloak of Non-Detection. Certainly you can make something from it.",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "THBOOT01",
+          "boots",
+          "Can you do anything with this Mage Robe?",
+          "Can you do anything with this Girdle?",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "THAMUL01",
+          "amulet",
+          "I have a Short Sword of Backstabbing. What can you do to improve it?",
+          "I have a Long Bow of Marksmanship. What can you do to improve it?",
+          {
+            "ac": 4,
+            "saves": 1
+          }
+        ],
+        [
+          "THHELM01",
+          "helmet",
+          "Can you do anything with this Ring of Protection +1?",
+          "I have Boots of Stealth. What can you do to improve them?",
+          {
+            "ac": 1,
+            "cha": 1,
+            "coldResist": 20,
+            "fireResist": 20,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "THCLCK03",
+          "cloak",
+          "I have a Shield Amulet. What can you do to improve it?",
+          "Can you do anything with this Helm?",
+          {
+            "ac": 2,
+            "magicResist": 25,
+            "saves": 2
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/CrevsDaak/thalan/releases",
+  "au": "Ikki Ikkyo",
+  "co": [
+    {
+      "n": "Thalantyr Item Upgrade",
+      "tp2n": "Thalantyr Item Upgrade",
+      "cn": 0,
+      "wf": "thalan",
+      "wp": "thalan\\thalan.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "pi": "ThalantyrItemUpgrade-Main",
+      "it": 20,
+      "itC": {
+        "container": 5,
+        "large sword": 1,
+        "dagger": 2,
+        "ring": 2,
+        "bracers": 1,
+        "cloak": 2,
+        "armor": 1,
+        "belt": 1,
+        "short sword": 1,
+        "bow": 1,
+        "boots": 1,
+        "amulet": 1,
+        "helmet": 1
+      }
+    }
+  ]
+}

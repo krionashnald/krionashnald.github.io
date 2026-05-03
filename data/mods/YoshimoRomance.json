@@ -1,0 +1,159 @@
+{
+  "i": 223,
+  "t": "YoshimoRomance",
+  "sv": 1,
+  "pfx": "YRX",
+  "ord": 290,
+  "c": "NPC EXPANSIONS",
+  "n": "Yoshimo Romance",
+  "langs": {
+    "en": 1,
+    "zh-cn": 2
+  },
+  "no": "By romancing Yoshimo, Yoshimo’s Remorse content won’t activate. Install Yoshimo Romance before Mazzy Megamod.",
+  "conflicts": [
+    {
+      "with": "yoshimosremorse",
+      "withId": 224,
+      "severity": "soft",
+      "reason": "Both can be installed together. Romancing Yoshimo means his Remorse arc won't trigger — player chooses path in-game via dialogue. No tp2 FORBID or MOD_IS_INSTALLED checks between them.",
+      "myComps": "#0 Yoshimo Romance",
+      "theirComps": "#0 Yoshimo's Remorse",
+      "source": "mod readme",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "myComps": "#1-#5 Yoshimo Portraits",
+      "theirComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "1": [
+        [
+          "yoshimo",
+          "portraits/yoshimo_romance/yoshimo_v1.png",
+          "bg2"
+        ]
+      ],
+      "2": [
+        [
+          "yoshimo",
+          "portraits/yoshimo_romance/yoshimo_v2.png",
+          "bg2"
+        ]
+      ],
+      "3": [
+        [
+          "yoshimo",
+          "portraits/yoshimo_romance/yoshimo_v3.png",
+          "bg2"
+        ]
+      ],
+      "4": [
+        [
+          "yoshimo",
+          "portraits/default/yoshimo.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/yoshimo-romance/",
+  "a": "Lava Del’Vortel",
+  "v": "v8.0",
+  "sum": "Adds a romance path for Yoshimo in BG2. Develops his character with extensive dialogue before and after the Spellhold reveal.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/yoshimo-romance/",
+  "co": [
+    {
+      "n": "Yoshimo Romance and additional friendship talks for BG2 / BG2EE",
+      "tp2n": "Yoshimo Romance and additional friendship talks for BG2 / BG2EE",
+      "pi": "L#-YOSHIMO-ROMANCE",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0
+    },
+    {
+      "n": "Improved portrait #1 for Yoshimo",
+      "no": "v Yoshimo portraits",
+      "pi": "L#-YOSHIMO-ROMANCE-P1",
+      "scn": "Yoshimo Portraits",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "x": 0,
+      "g": "p",
+      "tp2n": "Improved portrait #1 for Yoshimo"
+    },
+    {
+      "n": "Improved portrait #2 for Yoshimo",
+      "pi": "L#-YOSHIMO-ROMANCE-P2",
+      "scn": "Yoshimo Portraits",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 2,
+      "wq": "verified",
+      "cn": 2,
+      "x": 0,
+      "g": "p",
+      "tp2n": "Improved portrait #2 for Yoshimo"
+    },
+    {
+      "n": "New portrait by MiLeah",
+      "tp2n": "New portrait by MiLeah",
+      "pi": "L#-YOSHIMO-ROMANCE-P3",
+      "scn": "Yoshimo Portraits",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 3,
+      "wq": "verified",
+      "cn": 3,
+      "x": 0,
+      "g": "p"
+    },
+    {
+      "n": "Restored old portrait for Yoshimo",
+      "pi": "L#-YOSHIMO-ROMANCE-P4",
+      "scn": "Yoshimo Portraits",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 4,
+      "wq": "verified",
+      "cn": 4,
+      "x": 0,
+      "g": "p",
+      "tp2n": "Restored old portrait for Yoshimo"
+    },
+    {
+      "n": "Restored and improved old portrait for Yoshimo",
+      "pi": "L#-YOSHIMO-ROMANCE-P5",
+      "scn": "Yoshimo Portraits",
+      "wf": "YoshimoRomance",
+      "wp": "YoshimoRomance\\YOSHIMOROMANCE.TP2",
+      "wc": 5,
+      "wq": "verified",
+      "cn": 5,
+      "x": 0,
+      "g": "p",
+      "tp2n": "Restored and improved old portrait for Yoshimo"
+    }
+  ]
+}

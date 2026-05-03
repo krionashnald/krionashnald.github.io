@@ -1,0 +1,118 @@
+{
+  "i": 627,
+  "t": "c#greythedog",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 1220,
+  "c": "NEW NPC MODS",
+  "n": "Grey the Dog NPC",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Install the crossmod component near the end of your mod wad, soon before EET End! Things in this character’s inventory and spellbook are only accessible/changeable as a full party member instead of as a tagalong!The term “7th” Party Member is somewhat misleading: You can have a var...",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "grey_dog",
+          "portraits/c_greythedog/c_greyp.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Grey_The_Dog",
+  "a": "jastey, Rabain",
+  "v": "10",
+  "sum": "Grey is a dog NPC for Baldur's Gate!",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1.0",
+    "place": "post"
+  },
+  "au": "jastey and Rabain",
+  "dl": "https://github.com/Gibberlings3/Grey_The_Dog",
+  "co": [
+    {
+      "n": "Grey The Dog NPC",
+      "cn": 0,
+      "wf": "c#greythedog",
+      "wp": "c#greythedog\\setup-c#greythedog.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Grey The Dog NPC"
+    },
+    {
+      "n": "Grey the Dog: Crossmod Content",
+      "cn": 10,
+      "wf": "c#greythedog",
+      "wp": "c#greythedog\\setup-c#greythedog.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Grey the Dog: Crossmod Content"
+    },
+    {
+      "n": "Grey the Dog: Alternate Portrait -> Alternative #1: Original with Red Bandana, by Rabain",
+      "cn": 20,
+      "wf": "c#greythedog",
+      "wp": "c#greythedog\\setup-c#greythedog.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "grey_portrait",
+      "scn": "Grey the Dog: Alternate Portrait",
+      "tp2n": "Alternative #1: Original with Red Bandana, by Rabain"
+    },
+    {
+      "n": "Alternative #2: Original with Black Bandana",
+      "cn": 21,
+      "wf": "c#greythedog",
+      "wp": "c#greythedog\\setup-c#greythedog.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "g": "grey_portrait",
+      "scn": "Grey the Dog: Alternate Portrait",
+      "tp2n": "Alternative #2: Original with Black Bandana, by Rabain (edited by Acifer)"
+    },
+    {
+      "n": "Default Portrait: Newly Done with Collar",
+      "cn": 22,
+      "wf": "c#greythedog",
+      "wp": "c#greythedog\\setup-c#greythedog.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "g": "grey_portrait",
+      "scn": "Grey the Dog: Alternate Portrait",
+      "tp2n": "Default Portrait: Newly Done with Collar, by Acifer (is included in the main component)"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Grey_The_Dog"
+  }
+}

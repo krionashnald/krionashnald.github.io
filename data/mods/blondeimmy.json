@@ -1,0 +1,88 @@
+{
+  "i": 780,
+  "t": "blondeimmy",
+  "sv": 1,
+  "ord": 200,
+  "c": "PORTRAITS",
+  "n": "Blonde Imoen",
+  "langs": {
+    "en": 0
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "imoen",
+          "portraits/blondeimmy/nimoen1.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/BlondeImoen",
+  "a": "Grim Squeaker",
+  "sum": "This mod replaces Imoen's portraits with a blond version. A component allows them to be installed as player portraits in any Infinity Engine game (except PsT and PsT:EE).",
+  "tags": [
+    "portrait"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Grim Squeaker",
+  "dl": "https://github.com/Gibberlings3/BlondeImoen",
+  "no": "Replaces Imoen's portraits with a blonde version. Offers short and long hair variants plus an option to install as player character portraits.",
+  "co": [
+    {
+      "n": "Short Hair",
+      "tp2n": "Short Hair",
+      "cn": 0,
+      "wf": "blondeimmy",
+      "wp": "blondeimmy\\setup-blondeimmy.tp2",
+      "wc": 0,
+      "wq": "lcc-github",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "Blonde Imoen Hair Style",
+      "scn": "Blonde Imoen"
+    },
+    {
+      "n": "Long Hair",
+      "tp2n": "Long Hair",
+      "cn": 1,
+      "wf": "blondeimmy",
+      "wp": "blondeimmy\\setup-blondeimmy.tp2",
+      "wc": 1,
+      "wq": "lcc-github",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "g": "Blonde Imoen Hair Style",
+      "scn": "Blonde Imoen"
+    },
+    {
+      "n": "Make all portraits available for use by the PC",
+      "tp2n": "Make all portraits available for use by the PC",
+      "cn": 2,
+      "wf": "blondeimmy",
+      "wp": "blondeimmy\\setup-blondeimmy.tp2",
+      "wc": 2,
+      "wq": "lcc-github"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "BlondeImoen"
+  }
+}

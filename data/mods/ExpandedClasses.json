@@ -1,0 +1,1905 @@
+{
+  "i": 942,
+  "t": "ExpandedClasses",
+  "sv": 1,
+  "ord": 415,
+  "c": "KIT & CLASS MODS",
+  "n": "Expanded Classes",
+  "langs": {
+    "en": 0
+  },
+  "au": "semiticgod",
+  "dl": "https://github.com/semiticgod/ExpandedClasses",
+  "no": "Massive kitpack adding ~45 kits across all classes. Fighter Archer, Paladin Archer, Thief Archer, Stalker/Assassin/Kensai Monks, Shapeshifter Fighter, Sword Dancer, Seducer, Psionicist, War Hulk, Alchemist, Plasma/War/Force/Red Soul/Green Soul Mages, Multiclass Kits, Seer, Flare/Sky Dancer Monks, Witch Doctor Bard, Kuo-toa Disciple, Bog Witch Shaman, Butcher, Poison Druid, Spy Thief. English only. Some components are utility (stat drain, fixpack, race restrictions, summoning limit).",
+  "kitAbilities": {
+    "0": {
+      "USAF00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Archer: bow specialist with Called Shot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg with missiles every 3 levels. Grand Mastery in bows/crossbows/darts/slings. Leather/studded/hide armor only. Melee 1 pip max."
+        }
+      }
+    },
+    "1": {
+      "USAP00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Archer: bow specialist paladin variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells. Called Shot scaling like Fighter Archer."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg with missiles every 3 levels. Grand Mastery in bows/crossbows. Leather/studded/hide max. d10 HD."
+        }
+      }
+    },
+    "2": {
+      "USAT00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Archer: ranged weapon specialist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg missiles every 3 levels. Grand Mastery in shortbows/crossbows/darts/slings. Specialization in daggers. No backstab. 15 skill points/level."
+        }
+      }
+    },
+    "3": {
+      "USSM01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Stalker: minor backstab with stealth bonuses."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+20% Move Silently and Hide in Shadows. Backstab x2 to lv8, x3 lv9-18, x4 lv19+. d8 HD."
+        }
+      }
+    },
+    "4": {
+      "USAM01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Assassin: high backstab multiplier, poison weapons."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg. Backstab to x6. +0.5 APR every 6 levels. No Lay on Hands. d8 HD. HLAs: Assassination, Power Attack, Critical Strike."
+        }
+      }
+    },
+    "5": {
+      "USSF00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Shapeshifter: werewolf form with scaling stat boosts."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "No armor/shields/missiles. Weapons 1 pip max. Loses extra attacks at lv7 and lv13."
+        }
+      }
+    },
+    "6": {
+      "USKT00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Kensai: Critical Strike instead of Use Any Item."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+2 AC. +1 hit/dmg every 3 levels. -1 SF every 4 levels. No armor/gauntlets/bracers/missiles. 20 skill points/level. No trap-setting. Backstab caps x4. d6 HD."
+        }
+      }
+    },
+    "7": {
+      "USKM01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Kensai: weapon specialization instead of unarmed."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+2 AC. +1 hit/dmg every 5 levels. -1 SF every 4 levels. Grand Mastery in longswords/short swords/daggers/katanas/scimitars/clubs. No armor/gauntlets/bracers/missiles. No Stunning Blow/Quivering Palm. d8 HD."
+        }
+      }
+    },
+    "8": {
+      "USKP01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Kensai: unarmed sword saint variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells. Forum truncated."
+        },
+        "statBonus": {
+          "note": "Kensai package (AC bonus, +hit/dmg, Kai, armor restriction) on paladin chassis. Forum-truncated."
+        }
+      }
+    },
+    "9": {
+      "USSN00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Sniper: backstab with ranged weapons."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for full numbers."
+        }
+      },
+      "USSN01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. Wildhaunt: stealth attacks apply fear."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger spells. Fear-themed rider effects on stealth attacks."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for mechanical specifics."
+        }
+      }
+    },
+    "10": {
+      "USVA00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Vampyre: life drain with level drain penalties."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+0.5 attacks at lv7 and lv13. +15% Hide/Move Silently. Level-drain immune. Backstab caps x2. 10 skill points/level. Cannot dual-class."
+        }
+      },
+      "USVA01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Sword Dancer: triple APR, low damage per hit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "All physical damage reduced to 1/5. Studded leather max. Mastery cap on light weapons only. d8 HD."
+        }
+      }
+    },
+    "11": {
+      "USAPR0P": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Sword Dancer: telekinetic attack multiplication."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells. Forum truncated."
+        },
+        "statBonus": {
+          "note": "Sword Dancer core (extra attack rolls, reduced dmg, light armor). Forum-truncated for full details."
+        }
+      },
+      "USSD77": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Spy: divination-based vulnerability effects."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for specifics."
+        }
+      }
+    },
+    "13": {
+      "USPS00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Psionicist: Mind Blast, Psionic Domination."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "int": 1,
+          "note": "+1 INT. 1-pip weapons only. d6 HD. HLAs include Psionic Shield, Astral Comet, etc."
+        }
+      },
+      "USPS01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Psionicist: mind control abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "int": 1,
+          "note": "+1 INT. No Stunning Blow, Lay on Hands, or Quivering Palm. +0.5 APR every 4 levels. No fist enchantment bonuses. d6 HD."
+        }
+      }
+    },
+    "14": {
+      "USWH00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. War Hulk: single APR, massive damage scaling per hit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "+1 STR per level through lv5, then +1 THAC0 and +5% melee dmg per level. Locked to 1 APR. No missiles/armor/helmet/shield. 2d8 HD until lv9, 2d6 after."
+        }
+      }
+    },
+    "15": {
+      "USAL00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Alchemist: potion crafting and poison weapon."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Loses one spell slot/level, -1 casting time, -2 caster level, most mage HLAs. Concoctions (out-of-combat crafting) and Poison Weapon scaling 1d2-1d12."
+        },
+        "statBonus": {
+          "note": "Poison-immune. +10% acid and +5% fire resist per level. +1d6 HP/level. +1 save vs death/polymorph every 3 levels. d6 HD."
+        }
+      }
+    },
+    "16": {
+      "USPL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Plasma Wizard: custom evocation spells with plasma rod."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "bannedSchools": [
+            "Enchantment"
+          ],
+          "note": "One fewer spell slot/level. +15% scribe Invocation, -15% others. +2 save vs Invocation. Crafts Plasma Rod (9 projectile types scaling damage and enchantment)."
+        },
+        "statBonus": {
+          "note": "d4 HD. HLAs: Spirit of Flame, Aegis of Rime, Scion of Storms, Voice of Entropy."
+        }
+      }
+    },
+    "17": {
+      "USPL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Plasma Sorcerer variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "bannedSchools": [
+            "Enchantment"
+          ],
+          "note": "One fewer spell slot/level. +15% scribe Invocation, -15% others. +2 save vs Invocation. Crafts Plasma Rod (9 projectile types scaling damage and enchantment)."
+        },
+        "statBonus": {
+          "note": "d4 HD. HLAs: Spirit of Flame, Aegis of Rime, Scion of Storms, Voice of Entropy."
+        }
+      }
+    },
+    "18": {
+      "USWA1": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. War Mage: armor/weapon use with reduced spellcasting."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Enchantment",
+            "Illusion"
+          ],
+          "note": "+1 spell slot/level. Can wear any armor and use any weapon. Immune to spell failure. -3 casting time. All spell durations shortened 25%."
+        },
+        "statBonus": {
+          "note": "+1 THAC0 every 2 levels. +5% fire resist/level. d8 HD."
+        }
+      }
+    },
+    "19": {
+      "USRS00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Red Soul: +50% elemental damage, half spell duration."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "+50% damage on fire/cold/electricity/acid/poison/magical-damage spells. All spell durations halved."
+        },
+        "statBonus": {
+          "cha": 1,
+          "wis": -1,
+          "note": "+1 CHA, -1 WIS. Cannot be lawful alignment."
+        }
+      },
+      "USRS01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Red Soul variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "+50% damage on elemental/magic spells. All spell durations halved."
+        },
+        "statBonus": {
+          "cha": 1,
+          "wis": -1,
+          "note": "+1 CHA, -1 WIS. Cannot be lawful alignment."
+        }
+      }
+    },
+    "20": {
+      "USGS00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Green Soul: +50% spell duration, half spell damage."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "All arcane spells last 50% longer but deal half damage. +1 extra spell/level."
+        },
+        "statBonus": {
+          "con": 1,
+          "dex": -1,
+          "note": "+1 CON, -1 DEX. Cannot be chaotic alignment."
+        }
+      },
+      "USGS01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Green Soul variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "All arcane spells last 50% longer but deal half damage. +1 extra spell/level."
+        },
+        "statBonus": {
+          "con": 1,
+          "dex": -1,
+          "note": "+1 CON, -1 DEX. Cannot be chaotic alignment."
+        }
+      }
+    },
+    "22": {
+      "USSE00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Seer: extrasensory perception abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Same Seer mechanics as cleric variant on druid chassis."
+        },
+        "statBonus": {
+          "note": "Same Seer restrictions on druid chassis. d6 HD."
+        }
+      },
+      "USSE01": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Seer: divination/insight bonuses."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "+3 Lore/level. Loses one spell/day/level. Innate Identify, Share Insight, Dissociation, True Seeing, Secret Word, Foresight, Call Seer's Voice. Immune to beneficial illusions."
+        },
+        "statBonus": {
+          "note": "Immune to blindness and hostile illusions. Sees invisible. Supernatural Insight (+1 AC/THAC0 scaling). No armor/helmet/shield. Cannot dual-class. d6 HD."
+        }
+      }
+    },
+    "23": {
+      "USFW00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Force Wizard: melee wizard with strong unarmed attacks."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Melee-oriented wizard with enhanced unarmed attacks. Forum-truncated for specifics."
+        },
+        "statBonus": {
+          "note": "Force damage scaling. Forum-truncated."
+        }
+      }
+    },
+    "24": {
+      "USEX00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Executioner: specializes in one-hit kills."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "Forum-truncated; mechanical details limited."
+        }
+      }
+    },
+    "25": {
+      "USAPR03": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Flare Dancer: triple attacks with fire damage."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "dex": 1,
+          "note": "+1 DEX. Two extra attack rolls/attack. +1 fire dmg per unarmed strike. +5% fire resist per level. Damage reduced to 1/5. No Stunning Blow/Lay on Hands/Quivering Palm. MR scaling drops to 2%/level after lv14. d6 HD."
+        }
+      },
+      "USAPR04": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Sky Dancer: triple attacks with lightning, teleportation."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "dex": 1,
+          "note": "+1 DEX. Two extra attack rolls/attack. +5% electricity resist per level. Damage reduced to 1/5. No Stunning Blow/Lay on Hands/Quivering Palm. d6 HD."
+        }
+      }
+    },
+    "26": {
+      "USPWD0": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Primordial Witch Doctor: 40+ neolithic custom spells."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Neolithic-themed support bard with ~40 custom spells."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for full song/spell details."
+        }
+      }
+    },
+    "30": {
+      "USPKU0": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Kuo-toa Disciple: kuo-toa themed bonuses."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Weakened spellcasting with kuo-toa themed bonuses. Psionic song replaces standard bard song."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for specifics."
+        }
+      }
+    },
+    "31": {
+      "USPOS0": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Bog Witch: summons shadow monsters at HP cost."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Swamp/bog-themed shaman. Summons shadow monsters at HP cost."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for full mechanics."
+        }
+      }
+    },
+    "32": {
+      "USBU00": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Butcher: bonuses from consecutive hits."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "Forum-truncated; mechanical details limited."
+        }
+      }
+    },
+    "33": {
+      "USPOI0": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Poison Druid: 14 poison-themed custom spells."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "note": "Cannot cast normal druid spells; replaces with custom poison-themed spell list (~14 spells)."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for specifics."
+        }
+      }
+    },
+    "34": {
+      "USPY": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Nightmare: fear spells bypassing immunities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Expanded Classes; some kits have custom HLAs - see passive description)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Expanded Classes."
+        },
+        "statBonus": {
+          "note": "Forum-truncated for scaling."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "USAF00",
+          "fighter",
+          "Archer (Fighter)",
+          "Fighter variant of the Archer ranger kit."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "USAP00",
+          "paladin",
+          "Archer (Paladin)",
+          "Paladin variant of the Archer ranger kit."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "USAT00",
+          "thief",
+          "Archer (Thief)",
+          "Thief variant of the Archer ranger kit."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "USSM01",
+          "monk",
+          "Stalker (Monk)",
+          "Monk variant of the Stalker ranger kit."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "USAM01",
+          "monk",
+          "Assassin (Monk)",
+          "Monk variant of the Assassin thief kit."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "USSF00",
+          "fighter",
+          "Shapeshifter (Fighter)",
+          "Fighter variant of the Shapeshifter druid kit."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "USKT00",
+          "thief",
+          "Kensai (Thief)",
+          "Thief variant of the Kensai fighter kit."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "USKM01",
+          "monk",
+          "Kensai (Monk)",
+          "Monk variant of the Kensai fighter kit."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "USKP01",
+          "paladin",
+          "Kensai (Paladin)",
+          "Paladin variant of the Kensai fighter kit."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "USSN00",
+          "thief",
+          "Sniper (Thief)",
+          "Thief sniper kit with ranged combat focus."
+        ],
+        [
+          "USSN01",
+          "ranger",
+          "Sniper (Ranger)",
+          "Ranger sniper kit with ranged combat focus."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "USVA00",
+          "thief",
+          "Vampyre (Thief)",
+          "Thief vampyre kit with life-draining abilities."
+        ],
+        [
+          "USVA01",
+          "fighter",
+          "Vampyre (Fighter)",
+          "Fighter vampyre kit with life-draining abilities."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "USAPR0P",
+          "paladin",
+          "Sword Dancer (Paladin)",
+          "Paladin sword dancer kit."
+        ],
+        [
+          "USSD77",
+          "thief",
+          "Sword Dancer (Thief)",
+          "Thief sword dancer kit."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "USPS00",
+          "fighter",
+          "Psionicist (Fighter)",
+          "Fighter psionicist with mental powers."
+        ],
+        [
+          "USPS01",
+          "monk",
+          "Psionicist (Monk)",
+          "Monk psionicist with mental powers."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "USWH00",
+          "fighter",
+          "War Hulk",
+          "Fighter kit focused on raw physical power."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "USAL00",
+          "mage",
+          "Alchemist",
+          "Mage kit focused on potion crafting and transmutation."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "USPL",
+          "mage",
+          "Plasma Wizard",
+          "Mage kit specializing in plasma-based magic."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "USPL",
+          "mage",
+          "Plasma Wizard (IWD)",
+          "IWD version of the Plasma Wizard kit."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "USWA1",
+          "mage",
+          "War Mage",
+          "Mage kit focused on combat magic."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "USRS00",
+          "mage",
+          "Red Soul (Mage)",
+          "Mage variant of the Red Soul kit."
+        ],
+        [
+          "USRS01",
+          "sorcerer",
+          "Red Soul (Sorcerer)",
+          "Sorcerer variant of the Red Soul kit."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "USGS00",
+          "mage",
+          "Green Soul (Mage)",
+          "Mage variant of the Green Soul kit."
+        ],
+        [
+          "USGS01",
+          "sorcerer",
+          "Green Soul (Sorcerer)",
+          "Sorcerer variant of the Green Soul kit."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "USSE00",
+          "druid",
+          "Seer (Druid)",
+          "Druid seer with divination abilities."
+        ],
+        [
+          "USSE01",
+          "cleric",
+          "Seer (Cleric)",
+          "Cleric seer with divination abilities."
+        ]
+      ]
+    },
+    "23": {
+      "new": [
+        [
+          "USFW00",
+          "mage",
+          "Force Wizard",
+          "Mage kit specializing in force-based magic."
+        ]
+      ]
+    },
+    "24": {
+      "new": [
+        [
+          "USEX00",
+          "fighter",
+          "Executioner",
+          "Fighter kit focused on dealing lethal blows."
+        ]
+      ]
+    },
+    "25": {
+      "new": [
+        [
+          "USAPR03",
+          "monk",
+          "Flare Dancer",
+          "Monk kit with fire-based martial arts."
+        ],
+        [
+          "USAPR04",
+          "monk",
+          "Sky Dancer",
+          "Monk kit with air-based martial arts."
+        ]
+      ]
+    },
+    "26": {
+      "new": [
+        [
+          "USPWD0",
+          "bard",
+          "Primordial Witch Doctor",
+          "Bard kit with primal healing and curse magic."
+        ]
+      ]
+    },
+    "30": {
+      "new": [
+        [
+          "USPKU0",
+          "bard",
+          "Kuo-toa Disciple",
+          "Bard kit inspired by Kuo-toa aquatic rituals."
+        ]
+      ]
+    },
+    "31": {
+      "new": [
+        [
+          "USPOS0",
+          "shaman",
+          "Bog Witch",
+          "Shaman kit with swamp and decay magic."
+        ]
+      ]
+    },
+    "32": {
+      "new": [
+        [
+          "USBU00",
+          "fighter",
+          "Butcher",
+          "Fighter kit focused on brutal melee combat."
+        ]
+      ]
+    },
+    "33": {
+      "new": [
+        [
+          "USPOI0",
+          "druid",
+          "Poison Druid",
+          "Druid kit specializing in poison and venom."
+        ]
+      ]
+    },
+    "34": {
+      "new": [
+        [
+          "USPY",
+          "thief",
+          "Spy",
+          "Thief kit focused on espionage and infiltration."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/semiticgod/ExpandedClasses",
+  "sum": "Large kitpack adding ~45 kits across all classes including archer variants, wizard specialists, and class overhauls.",
+  "tags": [
+    "kit",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "cn": 0,
+      "n": "Archer Kit for Fighters",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Archer Kit for Fighters"
+    },
+    {
+      "cn": 1,
+      "n": "Archer Kit for Paladins",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "paladin": 1
+      },
+      "tp2n": "Archer Kit for Paladins"
+    },
+    {
+      "cn": 2,
+      "n": "Archer Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Archer Kit for Thieves"
+    },
+    {
+      "cn": 3,
+      "n": "Stalker Kit for Monks",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      },
+      "tp2n": "Stalker Kit for Monks"
+    },
+    {
+      "cn": 4,
+      "n": "Assassin Kit for Monks",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      },
+      "tp2n": "Assassin Kit for Monks"
+    },
+    {
+      "cn": 5,
+      "n": "Shapeshifter Fighter Kit",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Shapeshifter Fighter Kit"
+    },
+    {
+      "cn": 6,
+      "n": "Kensai Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Kensai Kit for Thieves"
+    },
+    {
+      "cn": 7,
+      "n": "Kensai Kit for Monks",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      },
+      "tp2n": "Kensai Kit for Monks"
+    },
+    {
+      "cn": 8,
+      "n": "Kensai Kit for Paladins",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "paladin": 1
+      },
+      "tp2n": "Kensai Kit for Paladins"
+    },
+    {
+      "cn": 9,
+      "n": "Sniper Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "thief": 2,
+        "ranger": 1
+      },
+      "tp2n": "Sniper Kit for Thieves"
+    },
+    {
+      "cn": 10,
+      "n": "Vampyre Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "thief": 1,
+        "fighter": 1
+      },
+      "tp2n": "Vampyre Kit for Thieves"
+    },
+    {
+      "cn": 11,
+      "n": "Sword Dancer Kit for Fighters and Paladins",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "paladin": 1,
+        "thief": 1
+      },
+      "tp2n": "Sword Dancer Kit for Fighters and Paladins"
+    },
+    {
+      "cn": 12,
+      "n": "Seducer Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Seducer Kit for Thieves"
+    },
+    {
+      "cn": 13,
+      "n": "Psionicist Kit for Fighters and Monks",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1,
+        "monk": 1
+      },
+      "tp2n": "Psionicist Kit for Fighters and Monks"
+    },
+    {
+      "cn": 14,
+      "n": "War Hulk Kit for Fighters",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "War Hulk Kit for Fighters"
+    },
+    {
+      "cn": 15,
+      "n": "Alchemist Kit for Mages",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "mage": 1
+      },
+      "tp2n": "Alchemist Kit for Mages"
+    },
+    {
+      "cn": 16,
+      "n": "Plasma Wizard Kit for BG1, BG2, and EET",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "kC": {
+        "mage": 1
+      },
+      "tp2n": "Plasma Wizard Kit for BG1, BG2, and EET"
+    },
+    {
+      "cn": 17,
+      "n": "Plasma Wizard Kit for IWD",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "kC": {
+        "mage": 1
+      },
+      "tp2n": "Plasma Wizard Kit for IWD"
+    },
+    {
+      "cn": 18,
+      "n": "War Mage Kit for Mages",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "mage": 1
+      },
+      "tp2n": "War Mage Kit for Mages"
+    },
+    {
+      "cn": 19,
+      "n": "Red Soul Kit for Mages and Sorcerers",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "mage": 1,
+        "sorcerer": 1
+      },
+      "tp2n": "Red Soul Kit for Mages and Sorcerers"
+    },
+    {
+      "cn": 20,
+      "n": "Green Soul Kit for Mages and Sorcerers",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "mage": 1,
+        "sorcerer": 1
+      },
+      "tp2n": "Green Soul Kit for Mages and Sorcerers"
+    },
+    {
+      "cn": 21,
+      "n": "Multiclass Kits (Cleric/Druid, Druid/Thief, etc.)",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "cleric": 2
+      },
+      "tp2n": "Multiclass Kits (Cleric/Druid, Druid/Thief, etc.)"
+    },
+    {
+      "cn": 22,
+      "n": "Seer Kit for Clerics and Druids",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "druid": 1,
+        "cleric": 1
+      },
+      "tp2n": "Seer Kit for Clerics and Druids"
+    },
+    {
+      "cn": 23,
+      "n": "Force Wizard Kit for Mages",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "mage": 1
+      },
+      "tp2n": "Force Wizard Kit for Mages"
+    },
+    {
+      "cn": 24,
+      "n": "Executioner Kit for Fighters",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Executioner Kit for Fighters"
+    },
+    {
+      "cn": 25,
+      "n": "Flare Dancer and Sky Dancer Kits for Monks",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "monk": 2
+      },
+      "tp2n": "Flare Dancer and Sky Dancer Kits for Monks"
+    },
+    {
+      "cn": 26,
+      "n": "Primordial Witch Doctor Kit for Bards",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Primordial Witch Doctor Kit for Bards"
+    },
+    {
+      "cn": 27,
+      "n": "Primordial Witch Doctor-related Items for BG1",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Primordial Witch Doctor-related Items for BG1"
+    },
+    {
+      "cn": 28,
+      "n": "Primordial Witch Doctor-related Items for BG2",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Primordial Witch Doctor-related Items for BG2"
+    },
+    {
+      "cn": 29,
+      "n": "Primordial Witch Doctor-related Items for IWD",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Primordial Witch Doctor-related Items for IWD"
+    },
+    {
+      "cn": 30,
+      "n": "Kuo-toa Disciple Kit for Bards",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Kuo-toa Disciple Kit for Bards"
+    },
+    {
+      "cn": 31,
+      "n": "Bog Witch Kit for Shamans",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "shaman": 1
+      },
+      "tp2n": "Bog Witch Kit for Shamans"
+    },
+    {
+      "cn": 32,
+      "n": "Butcher Kit for Fighters",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Butcher Kit for Fighters"
+    },
+    {
+      "cn": 33,
+      "n": "Poison Druid Kit",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "druid": 1
+      },
+      "tp2n": "Poison Druid Kit"
+    },
+    {
+      "cn": 34,
+      "n": "Spy Kit for Thieves",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Spy Kit for Thieves"
+    },
+    {
+      "cn": 35,
+      "n": "Remove Race Restrictions for Classes",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Better Stat Drain (recommended for Cross Class Kits and Vampyre Kit for Thieves)"
+    },
+    {
+      "cn": 36,
+      "n": "Better Stat Drain",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Dan_P's Fixpack (bugfixes for thief and wizard kits)"
+    },
+    {
+      "cn": 37,
+      "n": "Dan_P's Fixpack (bugfixes for thief and wizard kits)",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "tp2n": "Remove Summoning Limit for Non-Celestial Summons (recommended for Primordial Witch Doctor and Bog Witch; will still limit celestial summons to 1)"
+    },
+    {
+      "cn": 38,
+      "n": "Remove Summoning Limit for Non-Celestial Summons",
+      "wf": "ExpandedClasses",
+      "wp": "ExpandedClasses\\ExpandedClasses.tp2",
+      "wq": "verified",
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "semiticgod",
+    "r": "ExpandedClasses"
+  }
+}

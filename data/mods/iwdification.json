@@ -1,0 +1,1444 @@
+{
+  "i": 292,
+  "t": "iwdification",
+  "sv": 1,
+  "pfx": "DW",
+  "ord": 30,
+  "c": "SPELL MODS",
+  "n": "IWDification",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "ru": 3,
+    "zh-cn": 4,
+    "pl": 5
+  },
+  "cats": [
+    "SPELL MODS",
+    "KIT & CLASS MODS"
+  ],
+  "no": "Install before SR and TotLM if using IWD spells. Based on the IWD-in-BG2 conversion project.",
+  "_legacy_ids": [
+    312
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Managed conflict — crosslinked shared code with mutual REQUIRE_PREDICATE NOT MOD_IS_INSTALLED detection. Spell table 2DA files are byte-identical. Whichever installs first wins; the other auto-skips. Note: IWDification cn values for spell tables are 150/160/170 (DESIGNATED), NOT 2270/2390/2400 (those are cdtweaks cn values). No overlapping components selected .",
+      "myComps": "#10 Casting Graphics #20 Drab Colors #150 Bard Spells #160 Paladin Spells #170 Ranger Spells",
+      "theirComps": "#70 Casting Graphics #100 Drab Colors #2270 Bard Spells #2390 Paladin Spells #2400 Ranger Spells",
+      "source": "Crosslinked code headers; REQUIRE_PREDICATE at IWDification tp2 lines 92/107/680/918/963; cdtweaks tp2 lines 2843/2873, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "IWDification cn:70 (IWD Shapeshifting) conflicts with HouseTweaks cn:2 (Expanded Shapeshifting) — both overhaul druid wild shape forms and CLAB tables. Choose one. IWDification cn:70, HouseTweaks cn:2 IS selected. No conflict. Original entry incorrectly listed cn:130 (Damage Animations) which is unrelated to shapeshifting.",
+      "myComps": "#70 IWD Shapeshifting (NOT in Ultimate preset)",
+      "theirComps": "#2 Expanded Shapeshifting",
+      "source": "IWDification cn:70 modifies CLABDR01/04 + shapeshifting spells; HT wildshape.tpa does same; cn:130 is damage animations (no overlap), 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "soft",
+      "reason": "IWDification cn:50 (IWD Bard Songs) and cn:150 (Bard Spell Progression) overlap with M&G cn:400 (Bard Overhaul). Both modify bard CLAB and song tables. IWDification cn:50 and cn:150 No conflict.",
+      "myComps": "#50 IWD Bard Songs #150 Bard Spell Progression (neither in Ultimate preset)",
+      "theirComps": "#400 Bard Overhaul",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_sp",
+      "withId": 296,
+      "severity": "soft",
+      "reason": "IWDification cn:30 (IWD Arcane Spells) overlaps with MiH SP cn:1 (IWD Arcane Spellpack — same CamDawg/DavidW codebase). IWDification cn:40 (IWD Divine Spells) overlaps with MiH SP cn:3 (IWD Divine Spellpack). IWDification cn:50 (Bard Songs) overlaps with MiH SP cn:8 (Revised Bard Powers). IWDification cn:30/40/50 all MiH SP cn:0 (MiH Arcane, different from IWD arcane) IS selected. No conflict.",
+      "myComps": "#30 IWD Arcane #40 IWD Divine #50 Bard Songs (none in Ultimate preset)",
+      "theirComps": "#1 IWD Arcane Spellpack #3 IWD Divine Spellpack #8 Revised Bard Powers",
+      "source": "MiH SP cn:1/3 are CamDawg/DavidW IWD spell ports (same as IWDification cn:30/40); cn:0 is MiH original arcane spells (different), 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS cn:1500/1510 (IWD Arcane/Divine Spells) and cn:1520 (IWD Bard Songs) are the SAME IWD spell imports as IWDification cn:30/40/50. SCS spell tweaks (cn:2000-2080) modify spells that IWDification also adds. SCS has built-in detection for IWDification. IWDification cn:30/40/50 SCS cn:1500/1510/1520 (ToF provides IWD spells instead). No conflict.",
+      "myComps": "#30 IWD Arcane #40 IWD Divine #50 IWD Bard Songs (none in Ultimate preset)",
+      "theirComps": "#1500 IWD Arcane #1510 IWD Divine #1520 IWD Bard Songs #2000-#2080 Spell tweaks",
+      "source": "SCS/IWDification/MiH SP all share CamDawg/DavidW IWD spell codebase; SCS detects IWDification, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-TotLM-BG2EE",
+      "withId": 297,
+      "severity": "partial",
+      "reason": "IWDification cn:30/40/50 (IWD spell packs) conflict with TotLM cn:10 (also adds IWD spells). Different spell implementations can't coexist. IWDification cn:30/40/50 No conflict.",
+      "myComps": "#30 IWD Arcane #40 IWD Divine #50 IWD Bard Songs (none in Ultimate preset)",
+      "theirComps": "#10",
+      "source": "eemodsetup",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 383,
+      "severity": "soft",
+      "reason": "IWDification cn:160 (Paladin IWD Spell Progression) and cn:170 (Ranger IWD Spell Progression) overlap with Selphira cn:22/23 — both modify mxsplpal.2da/mxsplran.2da. IWDification cn:160/170 No conflict.",
+      "myComps": "#160 Paladin Spell Progression #170 Ranger Spell Progression (neither in Ultimate preset)",
+      "theirComps": "#22 Paladin #23 Ranger spell progression",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "zgtweaks",
+      "withId": 420,
+      "severity": "soft",
+      "reason": "ZGT cn:101 (Ranger spells for Cleric-Ranger) grants ranger spell slots to multiclass. Only interacts with IWDification cn:170 (Ranger IWD Spell Progression) which modifies mxsplran.2da. IWDification cn:170 ZGT cn:101 IS selected but safe since it modifies cleric-ranger CLAB, not the ranger spell table itself. No conflict.",
+      "myComps": "#170 Ranger Spell Progression (NOT in Ultimate preset)",
+      "theirComps": "#101 Ranger spells for Cleric-Ranger",
+      "source": "ZGT cn:101 modifies cleric-ranger CLAB to add ranger spell access; IWDification cn:170 replaces mxsplran.2da; different mechanisms, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "ToF cn:1500/1510/1520 (IWD spell imports) are the SAME CamDawg/DavidW IWD spell codebase as IWDification cn:30/40/50. ToF cn:40200 (IWD Paladins) and cn:40400 (Ranger Spells) overlap with IWDification cn:160/170. Redundant — use one source for IWD spells, not both. IWDification cn:30/40/50/160/170 all ToF cn:1500/1510/1520/40200/40400 ARE selected as the IWD spell source. No conflict — ToF is the chosen provider.",
+      "myComps": "#30 IWD Arcane #40 IWD Divine #50 Bard Songs #160 Paladin Spells #170 Ranger Spells (none in Ultimate preset)",
+      "theirComps": "#1500 IWD Arcane #1510 IWD Divine #1520 IWD Bard Songs #40200 IWD Paladins #40400 Ranger Spells",
+      "source": "All share CamDawg/DavidW IWD spell ports; Ultimate preset uses ToF as single IWD spell source, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "NWNForBG",
+      "withId": 108,
+      "severity": "soft",
+      "reason": "Both add IWD spells. NWNForBG detects existing spells and skips duplicates. Install NWNForBG after IWDification to use IWDification spell versions.",
+      "theirComps": "#0 Main component",
+      "orderOnly": true
+    }
+  ],
+  "spl": {
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURIWDA01",
+          "wizard",
+          1,
+          "Alteration",
+          "Expeditious Retreat",
+          "Doubles movement speed for 1 round/level."
+        ],
+        [
+          "YOURIWDA02",
+          "wizard",
+          2,
+          "Alteration",
+          "Cat's Grace",
+          "+2 DEX for 1 hour. Stacks with other buffs."
+        ],
+        [
+          "YOURIWDA03",
+          "wizard",
+          2,
+          "Evocation",
+          "Decastave",
+          "Creates a quarterstaff that deals 2d3 magic damage."
+        ],
+        [
+          "YOURIWDA04",
+          "wizard",
+          2,
+          "Evocation",
+          "Snilloc's Snowball Swarm",
+          "Snowballs deal 1d6/level cold (max 8d6) in area."
+        ],
+        [
+          "YOURIWDA05",
+          "wizard",
+          3,
+          "Evocation",
+          "Icelance",
+          "Ice lance deals 5d6 cold + stun 1 round. Save negates stun."
+        ],
+        [
+          "YOURIWDA06",
+          "wizard",
+          3,
+          "Evocation",
+          "Lance of Disruption",
+          "Cone of force deals 5d4+2/level magic damage."
+        ],
+        [
+          "YOURIWDA07",
+          "wizard",
+          4,
+          "Alteration",
+          "Beltyn's Burning Blood",
+          "Target's blood boils: 3d2 fire +3d2 magic/round for 3 rounds."
+        ],
+        [
+          "YOURIWDA08",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Courage",
+          "Allies immune to fear, +1 THAC0/damage/saves."
+        ],
+        [
+          "YOURIWDA09",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Fear",
+          "Enemies flee in terror. Save negates."
+        ],
+        [
+          "YOURIWDA10",
+          "wizard",
+          4,
+          "Enchantment",
+          "Emotion: Hope",
+          "Allies gain +2 morale, +1 THAC0/damage/saves."
+        ],
+        [
+          "YOURIWDA11",
+          "wizard",
+          4,
+          "Evocation",
+          "Mordenkainen's Force Missiles",
+          "1d4+1 missiles dealing 2d4 magic each. No save."
+        ],
+        [
+          "YOURIWDA12",
+          "wizard",
+          4,
+          "Illusion",
+          "Shadow Monsters",
+          "Summons 2 shadow monsters to fight for caster."
+        ],
+        [
+          "YOURIWDA13",
+          "wizard",
+          4,
+          "Evocation",
+          "Shout",
+          "Cone of sound deals 2d6 damage, deafens targets."
+        ],
+        [
+          "YOURIWDA14",
+          "wizard",
+          4,
+          "Conjuration",
+          "Vitriolic Sphere",
+          "Acid sphere deals 4d4 + 1d4/round residual for 4 rounds."
+        ],
+        [
+          "YOURIWDA15",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Lesser Water Elemental",
+          "Summons a lesser water elemental."
+        ],
+        [
+          "YOURIWDA16",
+          "wizard",
+          5,
+          "Illusion",
+          "Demi-Shadow Monsters",
+          "Summons 2 powerful shadow monsters."
+        ],
+        [
+          "YOURIWDA17",
+          "wizard",
+          5,
+          "Evocation",
+          "Shroud of Flame",
+          "Target surrounded by flames, 2d6 fire/round for 5 rounds."
+        ],
+        [
+          "YOURIWDA18",
+          "wizard",
+          5,
+          "Illusion",
+          "Summon Shadow",
+          "Summons 2 shadows to fight for the caster."
+        ],
+        [
+          "YOURIWDA19",
+          "wizard",
+          6,
+          "Abjuration",
+          "Antimagic Shell",
+          "Caster immune to all magic but cannot cast spells."
+        ],
+        [
+          "YOURIWDA20",
+          "wizard",
+          6,
+          "Conjuration",
+          "Conjure Water Elemental",
+          "Summons a water elemental."
+        ],
+        [
+          "YOURIWDA21",
+          "wizard",
+          6,
+          "Necromancy",
+          "Darts of Bone",
+          "3 bone darts each dealing 2d8 magic + 2d8 piercing."
+        ],
+        [
+          "YOURIWDA22",
+          "wizard",
+          6,
+          "Necromancy",
+          "Lich Touch",
+          "Touch paralyzes + drains 1d8 HP/level."
+        ],
+        [
+          "YOURIWDA23",
+          "wizard",
+          6,
+          "Conjuration",
+          "Monster Summoning IV",
+          "Summons powerful monsters."
+        ],
+        [
+          "YOURIWDA24",
+          "wizard",
+          6,
+          "Evocation",
+          "Otiluke's Freezing Sphere",
+          "6d6 cold in 15ft radius or single-target missile."
+        ],
+        [
+          "YOURIWDA25",
+          "wizard",
+          6,
+          "Illusion",
+          "Shades",
+          "Summons 2 powerful shadow creatures."
+        ],
+        [
+          "YOURIWDA26",
+          "wizard",
+          6,
+          "Necromancy",
+          "Soul Eater",
+          "Summons a soul eater that level-drains enemies."
+        ],
+        [
+          "YOURIWDA27",
+          "wizard",
+          6,
+          "Alteration",
+          "Trollish Fortitude",
+          "Regenerate 3 HP/round for 1 turn."
+        ],
+        [
+          "YOURIWDA28",
+          "wizard",
+          7,
+          "Evocation",
+          "Acid Storm",
+          "Acid rain deals 1d6/round for 5 rounds in area."
+        ],
+        [
+          "YOURIWDA29",
+          "wizard",
+          7,
+          "Evocation",
+          "Malavon's Rage",
+          "3 ice strikes each dealing 2d6 cold + stun."
+        ],
+        [
+          "YOURIWDA30",
+          "wizard",
+          7,
+          "Conjuration",
+          "Monster Summoning V",
+          "Summons very powerful monsters."
+        ],
+        [
+          "YOURIWDA31",
+          "wizard",
+          7,
+          "Evocation",
+          "Mordenkainen's Force Blade",
+          "Creates +4 force blade with extra APR."
+        ],
+        [
+          "YOURIWDA32",
+          "wizard",
+          7,
+          "Abjuration",
+          "Seven Eyes",
+          "7 protective eye effects orbit caster."
+        ],
+        [
+          "YOURIWDA33",
+          "wizard",
+          7,
+          "Necromancy",
+          "Suffocate",
+          "Target takes 2d6 crushing/round and slowed. Save negates."
+        ],
+        [
+          "YOURIWDA34",
+          "wizard",
+          8,
+          "Evocation",
+          "Great Shout",
+          "Cone deals 10d3 damage, deafens, shatters."
+        ],
+        [
+          "YOURIWDA35",
+          "wizard",
+          8,
+          "Alteration",
+          "Iron Body",
+          "DR 50%, immune critical/backstab, STR 25. Cannot cast."
+        ],
+        [
+          "YOURIWDA36",
+          "wizard",
+          8,
+          "Abjuration",
+          "Mind Blank",
+          "Immune to all mind-affecting for 1 day."
+        ],
+        [
+          "YOURIWDA37",
+          "wizard",
+          8,
+          "Conjuration",
+          "Monster Summoning VI",
+          "Summons elite monsters."
+        ],
+        [
+          "YOURIWDA38",
+          "wizard",
+          9,
+          "Conjuration",
+          "Monster Summoning VII",
+          "Summons the most powerful monsters."
+        ]
+      ]
+    },
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "SPPR117",
+          "priest",
+          1,
+          "Necromancy",
+          "Cause Light Wounds",
+          "Touch deals 8 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR116",
+          "priest",
+          1,
+          "Conjuration",
+          "Curse",
+          "Enemies -1 THAC0/morale. Reverse of Bless.",
+          [
+            "charm",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR118",
+          "priest",
+          1,
+          "Evocation",
+          "Sunscorch",
+          "1d6+1/level fire. Undead take +2/level.",
+          [
+            "sun",
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR217",
+          "priest",
+          2,
+          "Conjuration",
+          "Alicorn Lance",
+          "Ranged attack deals 1d6+1/2 levels magic damage.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR218",
+          "priest",
+          2,
+          "Alteration",
+          "Beast Claw",
+          "Caster's hands become claws: 1d6+STR slashing.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR219",
+          "priest",
+          2,
+          "Necromancy",
+          "Cause Moderate Wounds",
+          "Touch deals 14 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR216",
+          "priest",
+          2,
+          "Necromancy",
+          "Cure Moderate Wounds",
+          "Heals 14 HP.",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "SPPR321",
+          "priest",
+          3,
+          "Necromancy",
+          "Cause Disease",
+          "Causes disease reducing stats.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPPR329",
+          "priest",
+          3,
+          "Necromancy",
+          "Cause Medium Wounds",
+          "Touch deals 17 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR324",
+          "priest",
+          3,
+          "Necromancy",
+          "Circle of Bones",
+          "Bone fragments orbit caster dealing 1d6/round.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR326",
+          "priest",
+          3,
+          "Evocation",
+          "Cloudburst",
+          "Cold rain deals 2d8+1/level. Save for half.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR322",
+          "priest",
+          3,
+          "Abjuration",
+          "Exaltation",
+          "Removes fatigue, fear, and mental effects.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "SPPR330",
+          "priest",
+          3,
+          "Necromancy",
+          "Favor of Ilmater",
+          "Transfer ally's damage to caster.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR327",
+          "priest",
+          3,
+          "Alteration",
+          "Mold Touch",
+          "Touch deals 1d6+1/level poison. Save for half.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR323",
+          "priest",
+          3,
+          "Evocation",
+          "Moonblade",
+          "Creates +2 scimitar dealing 1d8+3 magic damage.",
+          [
+            "sun",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR320",
+          "priest",
+          3,
+          "Conjuration",
+          "Prayer",
+          "Allies +1 THAC0/damage/saves, enemies -1.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR325",
+          "priest",
+          3,
+          "Alteration",
+          "Spike Growth",
+          "Area deals 1d4 piercing/round. Movement slowed.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR328",
+          "priest",
+          3,
+          "Abjuration",
+          "Storm Shell",
+          "50% electrical resist, attackers take 2d3 electrical.",
+          [
+            "elemental",
+            "protection",
+            "guardian"
+          ]
+        ],
+        [
+          "SPPR421",
+          "priest",
+          4,
+          "Enchantment",
+          "Blood Rage",
+          "Target gains +2 STR/CON, -2 AC. Attacks nearest.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR428",
+          "priest",
+          4,
+          "Necromancy",
+          "Cause Serious Wounds",
+          "Touch deals 27 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR422",
+          "priest",
+          4,
+          "Conjuration",
+          "Cloud of Pestilence",
+          "Poison cloud deals 1 dmg/round, -1 STR/DEX.",
+          [
+            "elemental",
+            "combat"
+          ]
+        ],
+        [
+          "SPPR429",
+          "priest",
+          4,
+          "Alteration",
+          "Giant Insect",
+          "Summons giant insects to fight.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR418",
+          "priest",
+          4,
+          "Evocation",
+          "Produce Fire",
+          "Creates fire dealing 1d4+1/level in area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR420",
+          "priest",
+          4,
+          "Conjuration",
+          "Recitation",
+          "Allies +2 THAC0/saves, enemies -2. Better than Prayer.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR425",
+          "priest",
+          4,
+          "Conjuration",
+          "Smashing Wave",
+          "Water wave deals 1d6/level, knocks prone.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR424",
+          "priest",
+          4,
+          "Evocation",
+          "Star Metal Cudgel",
+          "Creates +3 club dealing 2d4+3 magic/electrical.",
+          [
+            "elemental",
+            "combat"
+          ]
+        ],
+        [
+          "SPPR419",
+          "priest",
+          4,
+          "Alteration",
+          "Static Charge",
+          "Charged bolt deals 2d8+1/level electrical.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR426",
+          "priest",
+          4,
+          "Alteration",
+          "Thorn Spray",
+          "Cone of thorns deals 2d6+1/level piercing.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR423",
+          "priest",
+          4,
+          "Abjuration",
+          "Unfailing Endurance",
+          "Target immune to fatigue, +1 HP/round regen.",
+          [
+            "protection"
+          ]
+        ],
+        [
+          "SPPR427",
+          "priest",
+          4,
+          "Conjuration",
+          "Wall of Moonlight",
+          "Undead take 2d6/round in wall. Others unaffected.",
+          [
+            "sun",
+            "creation"
+          ]
+        ],
+        [
+          "SPPR522",
+          "priest",
+          5,
+          "Enchantment",
+          "Animal Rage",
+          "Target goes berserk: +2 THAC0/damage, attacks all.",
+          [
+            "summoning",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR524",
+          "priest",
+          5,
+          "Necromancy",
+          "Cause Critical Wounds",
+          "Touch deals 37 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR523",
+          "priest",
+          5,
+          "Necromancy",
+          "Mass Cause Light Wounds",
+          "All enemies in area take 8 damage.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "SPPR518",
+          "priest",
+          5,
+          "Conjuration",
+          "Righteous Wrath of the Faithful",
+          "Allies +1 APR and +3 THAC0.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR520",
+          "priest",
+          5,
+          "Abjuration",
+          "Shield of Lathander",
+          "+1 saves/AC, immunity to level drain.",
+          [
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR519",
+          "priest",
+          5,
+          "Alteration",
+          "Spike Stones",
+          "Area deals 2d4 piercing/round, slows movement.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "SPPR521",
+          "priest",
+          5,
+          "Abjuration",
+          "Undead Ward",
+          "Barrier blocks undead passage.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "SPPR615",
+          "priest",
+          6,
+          "Abjuration",
+          "Entropy Shield",
+          "Ranged attacks miss 50%, +2 vs elemental.",
+          [
+            "summoning",
+            "chaos"
+          ]
+        ],
+        [
+          "SPPR617",
+          "priest",
+          6,
+          "Evocation",
+          "Spiritual Wrath",
+          "Targets take 1d6+1/level magic. Undead double.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "SPPR616",
+          "priest",
+          6,
+          "Evocation",
+          "Whirlwind",
+          "Wind column deals 2d6 crush/round, pushes enemies.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR736",
+          "priest",
+          7,
+          "Necromancy",
+          "Destruction",
+          "Save vs Death or die. If saved, 10d6 damage.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "SPPR737",
+          "priest",
+          7,
+          "Abjuration",
+          "Greater Shield of Lathander",
+          "+2 saves, immune to drain/death/stun.",
+          [
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR735",
+          "priest",
+          7,
+          "Abjuration",
+          "Impervious Sanctity of Mind",
+          "Immune to all mental attacks. 1 turn.",
+          [
+            "charm",
+            "guardian",
+            "protection"
+          ]
+        ],
+        [
+          "SPPR738",
+          "priest",
+          7,
+          "Alteration",
+          "Mist of Eldath",
+          "Heals allies 2d6/round in mist area.",
+          [
+            "healing",
+            "elemental"
+          ]
+        ],
+        [
+          "SPPR739",
+          "priest",
+          7,
+          "Conjuration",
+          "Stalker",
+          "Summons an invisible stalker creature.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "SPPR734",
+          "priest",
+          7,
+          "Enchantment",
+          "Symbol of Hopelessness",
+          "All in area become hopeless. Save negates.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "SPPR733",
+          "priest",
+          7,
+          "Enchantment",
+          "Symbol of Pain",
+          "All in area suffer -2 attacks/saves from pain.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "Smite Evil.*all creatures|smite.*evil.*bug",
+      "severity": "warning",
+      "category": "caution",
+      "description": "IWDification Smite Evil ability works on all creatures, not just evil-aligned ones. Confirmed bug reported by Aedwyr (Sept 2025), acknowledged by CamDawg (March 2026).",
+      "workaround": "No fix available yet. Smite Evil will deal bonus damage to all targets regardless of alignment.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/forum/185-iwdification/"
+    },
+    {
+      "pattern": "Tracking.*LABEL|LABEL.*missing",
+      "severity": "info",
+      "category": "likely-benign",
+      "description": "IWDification Tracking component does not have WeiDU LABELs. Reported by Dan_P (Oct 2025), acknowledged by CamDawg (March 2026). May affect mod installers that use LABEL-based detection (e.g., Project Infinity).",
+      "workaround": "No workaround needed for manual installs. PI users may see the component as undetected.",
+      "user_action": "none",
+      "forum": "https://www.gibberlings3.net/forums/forum/185-iwdification/",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "pattern": "bgee\\.lua.*corrupt|Chinese.*lua",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Installing IWD Spell components corrupts bgee.lua on Chinese game versions. Reported by MephistoSatanDevil (Sept 2025), acknowledged by CamDawg (March 2026). Locale-specific encoding issue.",
+      "workaround": "Chinese users should back up bgee.lua before installing IWD spell components and restore if corrupted.",
+      "user_action": "check-docs",
+      "components": [
+        30,
+        40
+      ],
+      "forum": "https://www.gibberlings3.net/forums/forum/185-iwdification/"
+    },
+    {
+      "pattern": "Protection from Evil.*duration|24 hours.*24 turns",
+      "severity": "info",
+      "category": "likely-benign",
+      "description": "IWDification Paladin Protection from Evil has 24-hour duration, while IWDEE original is 24 turns. Unclear if intentional or a bug. Reported by Melcar (April 2026), no reply yet.",
+      "user_action": "none",
+      "forum": "https://www.gibberlings3.net/forums/forum/185-iwdification/"
+    },
+    {
+      "pattern": "winter wolf.*haste|boring beetle.*haste|shapeshift.*haste",
+      "severity": "warning",
+      "category": "caution",
+      "description": "IWDification v11 winter wolf and boring beetle shapeshifting forms are incorrectly hasted. Reported by Dan_P (Aug 2025), no reply yet.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/forum/185-iwdification/"
+    },
+    {
+      "pattern": "[IWDIFICATION/SFO/ALTER_SCRIPT.TPH] PARSE ERROR at line 548",
+      "severity": "critical",
+      "description": "IWDification bundles an older SFO library that fails GLR-parsing ALTER_SCRIPT.TPH line 548 col 1-25 under WeiDU 25201+ (parser grammar change). Blocks most item-pack and damage-animation components that call ALTER_SCRIPT. Same root cause as mih_fr/mih_sp failures.",
+      "workaround": "Use WeiDU <= 25200, or wait for IWDification to ship an updated SFO. Skip affected components in the meantime.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/iwdification/releases",
+  "a": "CamDawg",
+  "v": "v11",
+  "sum": "Brings IWD elements into BG2: 65+ new spells, casting graphics, two-handed axes, polymorph, class updates, and visual tweaks.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "iwdification"
+  },
+  "dl": "https://github.com/Gibberlings3/iwdification/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Icewind Dale Casting Graphics (Andyr)",
+      "pi": "cd_tweaks_iwd_casting_graphics",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 10,
+      "no": "Replaces EE casting animations with IWD-style. Also done by cdtweaks #70",
+      "tp2n": "Icewind Dale Casting Graphics (Andyr)"
+    },
+    {
+      "n": "Commoners Use Drab Colors",
+      "pi": "cd_tweaks_drab_commoners",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 20,
+      "no": "Gives commoners drab-colored clothing. Also done by cdtweaks #100",
+      "tp2n": "Commoners Use Drab Colors"
+    },
+    {
+      "n": "Two-Handed Axe Item Pack",
+      "no": "Also done by Tweaks Anthology",
+      "pi": "cd_iwdification_2h_axes",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 60,
+      "tp2n": "Two-Handed Axe Item Pack"
+    },
+    {
+      "n": "Expanded Polymorph Self",
+      "pi": "cd_iwdification_expanded_polymorph_self",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 90,
+      "no": "Adds IWD polymorph forms to Polymorph Self spell. Conflicts with JTweaks shapeshift corrections and SCS/ToF shapeshift changes",
+      "tp2n": "Expanded Polymorph Self"
+    },
+    {
+      "n": "Use IWD Damage Animations",
+      "pi": "cd_iwdification_damage_animations",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wc": 130,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "sod",
+        "totlm",
+        "totsc"
+      ],
+      "cn": 130,
+      "no": "Adds IWD-style damage number animations",
+      "tp2n": "Use IWD Damage Animations"
+    },
+    {
+      "n": "Add High Quality Items",
+      "no": "v Randomized enemy equipment",
+      "pi": "cd_iwdification_randomized_equipment_hq",
+      "scn": "Randomized Enemy Equipment",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 140,
+      "g": "iwd_hq_items",
+      "tp2n": "Add High Quality Items"
+    },
+    {
+      "n": "Do Not Add High Quality Items",
+      "pi": "cd_iwdification_randomized_equipment",
+      "scn": "Randomized Enemy Equipment",
+      "grn": "Miscellaneous Changes",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 141,
+      "g": "iwd_hq_items",
+      "no": "Skip high-quality items if using Item Revisions or other item overhauls",
+      "tp2n": "Do Not Add High Quality Items"
+    },
+    {
+      "n": "Increase Spear Damage",
+      "cn": 190,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "tp2n": "Increase Spear Damage",
+      "pi": "cd_iwdification_spear_damage",
+      "grn": "Miscellaneous Changes"
+    },
+    {
+      "n": "IWD Class Updates: Bard: Add IWD Bard Songs",
+      "pi": "cd_iwdification_bard_songs",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 50,
+      "no": "Adds War Chant of Sith, The Ballad of Three Heroes, and other IWD bard songs. Overlaps with MiH Spell Pack's Bard Powers. INSTALL ISSUE: CLABclass_clab_CLFDBARD01.2da not found. IWDification Bard Songs reads kitlist.2da to enumerate all bard kits and processes each CLAB file. CLFDBARD is a bard kit from Cliffette's History; its CLAB (CLABclass_clab_CLFDBARD01.2da) is referenced in kitlist.2da but the file is missing from override, likely because Cliffette's History failed or was not installed. Also cascades from RR bard component failures (cn=4,5) if RR was expected to set up bard CLAB tables. Ensure all bard kit mods install successfully before IWDification Bard Songs.",
+      "cat": "KIT & CLASS MODS",
+      "tp2n": "Bard Class Update: Add IWD Bard Songs"
+    },
+    {
+      "n": "IWD Class Updates: Bard: Selectable Bard Songs for Jesters and Skalds",
+      "pi": "cd_iwdification_bard_kit_selectable_songs",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 180,
+      "no": "Allows Jesters and Skalds to choose their bard song instead of being locked to their kit song.",
+      "cat": "KIT & CLASS MODS",
+      "tp2n": "Bard Class Update: Selectable Bard Songs for Jesters and Skalds"
+    },
+    {
+      "n": "IWD Class Updates: Bard: Use IWD Spell Progression",
+      "pi": "cd_tweaks_bard_spell_progression_unnerfed",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 150,
+      "no": "Gives bards IWD spell progression. Also done by cdtweaks and ToF",
+      "tp2n": "Bard Class Update: Use IWD Spell Progression"
+    },
+    {
+      "n": "IWD Class Updates: Druid: Use IWD Shapeshifting and Ability Progression",
+      "pi": "cd_iwdification_druid_abilities",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 70,
+      "no": "Adds IWD druid shapeshift forms and ability progression. May conflict with SCS, ToF, AK shapeshifting changes",
+      "tp2n": "Druid Class Update: Use IWD Shapeshifting and Ability Progression"
+    },
+    {
+      "n": "IWD Class Updates: Druid: Allow Elves to be Druids",
+      "cn": 71,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "tp2n": "Druid Class Update: Allow Elves to be Druids",
+      "pi": "cd_iwdification_elven_druids",
+      "grn": "Class Updates",
+      "tg": "pnp"
+    },
+    {
+      "n": "deprecated (now separate components)",
+      "cn": 72,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "tp2n": "deprecated",
+      "dep": "v18 author-marked DEPRECATED (now separate, independent components — use #111/#120/#121)"
+    },
+    {
+      "n": "IWD Class Updates: Paladin: IWD Abilities and Skills",
+      "no": "Don't mix with the overhauls from ToF's, SCs', or AK', or JTweaks' fix",
+      "pi": "cd_iwdification_paladin_abilities",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 100,
+      "tp2n": "Paladin Class Update: IWD Abilities and Skills"
+    },
+    {
+      "n": "IWD Class Updates: Paladin: Use IWD Spell Progression",
+      "pi": "cd_tweaks_paladin_spell_progression_iwd",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 160,
+      "no": "Gives paladins IWD spell progression. Also done by cdtweaks #2390 and ToF",
+      "tp2n": "Paladin Class Update: Use IWD Spell Progression"
+    },
+    {
+      "n": "IWD Class Updates: Ranger: Tracking",
+      "cn": 110,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wc": 110,
+      "wq": "verified",
+      "no": "Adds Ranger tracking ability from IWD. Also done by cdtweaks #3390 and METweaks #1200",
+      "tp2n": "Change Tracking for all rangers and ranger kits",
+      "g": "iwd_tracking",
+      "scn": "Ranger Class Update: Tracking",
+      "grn": "Class Updates"
+    },
+    {
+      "n": "IWD Class Updates: Ranger: Change Tracking only for non-kitted rangers",
+      "cn": 111,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "tp2n": "Change Tracking only for non-kitted rangers",
+      "g": "iwd_tracking",
+      "scn": "Ranger Class Update: Tracking",
+      "grn": "Class Updates"
+    },
+    {
+      "n": "IWD Class Updates: Ranger: Use IWD Spell Progression",
+      "no": "Note: Tracking won't install in BG2 due to no BG2 content yet for it.",
+      "pi": "cd_tweaks_ranger_spell_progression_iwd",
+      "grn": "Class Updates",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "cn": 170,
+      "tp2n": "Ranger Class Update: Use IWD Spell Progression"
+    },
+    {
+      "n": "IWD Class Updates: Thief: Add evasion to thieves and all thief kits",
+      "cn": 120,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "sod",
+        "totlm",
+        "totsc"
+      ],
+      "tp2n": "Add evasion to thieves and all thief kits",
+      "pi": "cd_iwdification_thief_evasion",
+      "scn": "Thief Class Update: Evasion",
+      "grn": "Class Updates",
+      "g": "iwd_thief_evasion",
+      "tg": "pnp"
+    },
+    {
+      "n": "IWD Class Updates: Thief: Add evasion only to non-kitted thieves",
+      "cn": 121,
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "sod",
+        "totlm",
+        "totsc"
+      ],
+      "tp2n": "Add evasion only to non-kitted thieves",
+      "pi": "cd_iwdification_thief_evasion_no_kits",
+      "scn": "Thief Class Update: Evasion",
+      "grn": "Class Updates",
+      "g": "iwd_thief_evasion",
+      "tg": "pnp"
+    },
+    {
+      "n": "IWD Arcane Spell Pack",
+      "pi": "cd_iwdification_arcane_spells",
+      "grn": "Additional Spells",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "cn": 30,
+      "no": "Adds IWD arcane spells. Also done by SCS #1500 and ToF #1500. Choose one source",
+      "sp": 36,
+      "spLv": {
+        "w1": 1,
+        "w2": 3,
+        "w3": 2,
+        "w4": 8,
+        "w5": 4,
+        "w6": 7,
+        "w7": 6,
+        "w8": 4,
+        "w9": 1
+      },
+      "tp2n": "IWD Arcane Spell Pack"
+    },
+    {
+      "n": "IWD Divine Spell Pack",
+      "pi": "cd_iwdification_divine_spells",
+      "grn": "Additional Spells",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wc": 40,
+      "wq": "verified",
+      "cn": 40,
+      "no": "Adds IWD divine spells. Also done by SCS #1510 and ToF #1510. Choose one source",
+      "sp": 48,
+      "spLv": {
+        "p1": 3,
+        "p2": 4,
+        "p3": 11,
+        "p4": 12,
+        "p5": 7,
+        "p6": 3,
+        "p7": 8
+      },
+      "tp2n": "IWD Divine Spell Pack"
+    },
+    {
+      "n": "Additional Portrait Icons",
+      "pi": "cd_iwdification_thief_evasion",
+      "grn": "Additional Spells",
+      "wf": "iwdification",
+      "wp": "iwdification\\setup-iwdification.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 80,
+      "no": "Gives thieves Evasion (halve damage on successful save). Also done by ToF #40450 and Rogue Rebalancing",
+      "tp2n": "Additional Portrait Icons"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "IWDification cn:40 (IWD Divine Spells) adds priest spells that FnP cn:75 may need to categorize into spheres. Install IWDification before FnP. IWDification cn:40 No conflict.",
+      "orderOnly": true,
+      "myComps": "#40 IWD Divine Spells (NOT in Ultimate preset)",
+      "theirComps": "#75 Alter Priests Weapon/Armor Usability",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "i": 485,
+  "t": "WMART",
+  "sv": 1,
+  "ord": 410,
+  "c": "ITEM ADDITION MODS",
+  "n": "Deidre and Joluv",
+  "langs": {
+    "en": 0,
+    "pl": 1
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "eet",
+      "withId": 12,
+      "severity": "hard",
+      "reason": "Not in EET compatibility.tbl — EET install will fail. Mod unmaintained since 2013, no EET support.",
+      "source": "EET compatibility.tbl (absent), Beamdog forums, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/13451/mod-deidre-and-joluv-in-bg-ee",
+  "a": "CoM_Solaufein",
+  "sum": "Brings the bonus merchants Deidre and Joluv from Baldur's Gate 2 into BG1, selling exotic magical items at the Elfsong Tavern and Sorcerous Sundries.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "WA2AMU",
+          "amulet",
+          "Sensate Amulet",
+          "Sensate Amulet\nThis amulet originates in the city of Sigil where is was forged the by the Society of Sensation.  It was given out to the most loyal sensates, to protect them when they traveled the Planes looking for new experiences.\n\nSTATISTICS\n\nWhile Equipped:\n+5 bonus to hit points\n+2 bonus to charisma\nPermanent protection from evil\n\nUsable By:\n Cleric",
+          {
+            "cha": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+5 Max HP"
+              },
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Monk"
+              ]
+            }
+          }
+        ],
+        [
+          "WA2DAK",
+          "large sword",
+          "Dak'kon's Zerth Blade",
+          "Dak'kon's Zerth Blade +2\nThis sword was the weapon of choice of the famous githzerai Dak'kon.  Dak'kon was killed by a powerful entity while working for a creature known as the 'Nameless One'.  \n\nSTATISTICS:\n\nEquipped Abilities:\n+1 AC bonus\nable to memorize one extra 1st, 2nd, 3rd, and 4th level mage spell\n\nTHAC0: +2 bonus\nDamage:  1D10 +2\nDamage type:  slashing\nWeight:  4\nSpeed Factor: 2\nProficiency Type: Katana\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "ac": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "WA2HALB",
+          "halberd",
+          "Harmonium Halberd",
+          "Harmonium Halberd +3\nThis weapon is a powerful weapon usually given out to the most important of Harmonium captains.  The Harmonium is an faction based out of the planar city known as 'Sigil'.\n\nSTATISTICS:\n\nEquipped Abilities:\n +1 strength\n -1 Intelligence\n -1 Wisdom\nTHAC0: +3 bonus\nDamage:  1D10 +3\nDamage type:  piercing\nWeight: 12\nSpeed Factor: 9\nProficiency Type: Halberd\nType:  2-handed\nRequires: 11 Strength",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "str": 1,
+            "int": -1,
+            "wis": -1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "WA2HARP",
+          "misc",
+          "Harp of Pandemonium",
+          "Ravel's Harp of Pandemonium\nRavel was a powerful night hag that lived in the city of Sigil.  Somehow she angered the Lady of Pain, a powerful godlike figure that rules the city of Sigil.  The Lady of Pain imprisoned Ravel within a magical maze, where the night hag would be trapped for all time.  The  harp was one of the many artifacts that Ravel left behind in Sigil when she was imprisoned.\n\nSTATISTICS\n\nSpecial Abilities:  3 times a day can cause Pandemonium: all enemies must make a saving throw vs. spells or be tossed away from the bard as well as confused for three rounds.\n\nUsable By\n Bards",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "WA2HELM",
+          "helmet",
+          "Vhailor's Helm",
+          "Vhailor's Helm\nThis helmet was worn by a mysterious warrior named Vhailor.  The warrior was destroyed while helping a creature known as the 'Nameless one'.  \n\nSTATISTICS:\n\nSpecial Abilities (once per day): cast simulacrum\nArmor Class Bonus: 1\nWeight:  2",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "WA2PLAT",
+          "armor",
+          "Plate of Balduran",
+          "Plate of Balduran\nThis plate was worn by the famous hero Balduran.  It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate.\n\nSTATISTICS:\n\nEquipped Abilities:\n +4 hit points\n +1 Charisma bonus\nArmor Class: -1\nWeight: 50\nRequires: 15 Strength",
+          {
+            "ac": -1,
+            "cha": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+4 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "WA2RING",
+          "ring",
+          "Mercykiller Ring",
+          "A ring is a small band of precious metal that is used as jewelry.  Some rare rings have had enchantments placed upon them that confer various magical abilities.  These rings are highly sought after, especially by those of the adventuring profession.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Monk",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "WA2ROBE",
+          "armor",
+          "Robe of Vecna",
+          "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.",
+          {
+            "ac": 5,
+            "magicResist": 10,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "WA2S1H",
+          "large sword",
+          "Sword of Balduran",
+          "These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. \n\nSTATISTICS:\n\nDamage:  1D8\nDamage type:  slashing\nWeight: 4\nSpeed Factor: 5\nProficiency Type: Long Sword\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "magicResist": 10,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "WA2SHIEL",
+          "shield",
+          "Shield of Balduran",
+          "Shield of Balduran +3\nThis shield was worn by the hero Balduran.   It is part of a set of weapons and armor that was stolen from the museum in the city of Baldur's Gate.\n\nSTATISTICS:\n\nEquipped Abilities:\n Reflects beholder rays\n -1 Penalty to Strength\nArmor Class Bonus: 4\nWeight: 5\nRequires: 12 Strength",
+          {
+            "ac": 4,
+            "str": -1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "WAAXE",
+          "axe",
+          "Axe of Hrothgar +3",
+          "Axe of Hrothgar +3\nThis axe was wielded by an adventurer who lived within the town of Easthaven in Icewind Dale.  He died about a century ago trying to rescue his town from the ancient demon Balhifet.\n\nSTATISTICS:\n\nEquipped Abilities:\n+1 Charisma\n+1 Wisdom\nTHAC0: +3 bonus\nDamage:  1D8 +3\nDamage type:  slashing\nWeight: 5\nSpeed Factor: 4\nProficiency Type: Axe\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "cha": 1,
+            "wis": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "WAFLAIL",
+          "flail",
+          "Defender of Easthaven +2",
+          "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link.  The weapon was originally used as a tool for threshing grain.  \n\nSTATISTICS:\n\nDamage:  1D6 +1\nDamage type:  crushing\nWeight: 15\nSpeed Factor: 7\nProficiency Type: Flail/Morningstar\nType:  1-handed\nRequires: 13 Strength",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "ac": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              }
+            ],
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "WAMACE",
+          "mace",
+          "Jerrod's Mace",
+          "Jerrod's Mace\nThis was the favored weapon of the priest of Tempus named Jerrod.  Jerrod sacrificed his life to save the town of Easthaven from the powerful demon known as Balhifet.\n\nSTATISTICS:\n\nTHACO:  +2 bonus\nDamage:  1D6 +3\nDamage type:  crushing\nWeight: 7\nSpeed Factor: 5\nProficiency Type: Mace\nType:  1-handed",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "WANINJA",
+          "large sword",
+          "Scarlet Ninja-To +3",
+          "Ninja-To of the Scarlet Brotherhood\nWhen a member of the Scarlet Brotherhood kills one of that organization's 'great enemies', they are often rewarded with this sword.  How this sword made its way from the world of Greyhawk (where the Brotherhood is based) to Faerun is a mystery.  When unsheathed the ninja-to will glow blood red.\n\nSTATISTICS\n\nEquipped Ability: one extra attack per round\nCombat Ability: Poison damage of 6 hit-points per round, for two rounds, if target fails a saving throw versus poison\nTHAC0: +3 bonus\nDamage:  1D8 +3\nDamage type:  slashing\nWeight:  2\nSpeed Factor: 1\nProficiency Type: Scimitar/Wakizashi/Ninja-To\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "apr": 0.5,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "WAS2H",
+          "large sword",
+          "Joril's Dagger +3",
+          "The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. \n\nSTATISTICS:\n\nDamage:  1D10\nDamage type:  slashing\nWeight: 15\nSpeed Factor: 10\nProficiency Type: Two Handed sword\nType:  2-handed\nRequires: 14 Strength",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "WASLING",
+          "sling",
+          "Sling of Everard +5",
+          "Sling of Everard\nThe sling of Everard was a holy weapon created by the god Tempus and given to Everard to help him defeat the enemies of Icewind Dale.    \n\nSTATISTICS:\n\nEquipped Ability: does not require bullets\nTHACO:  +5 bonus\nDamage:  +2 (missile damage)\nWeight: 0\nSpeed Factor: 0\nProficiency Type: Sling\nType:  1-handed\nRequires: 3 Strength",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "sling",
+            "usability": {
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "WASPEAR",
+          "spear",
+          "Spear of Kuldahar +3",
+          "Spear of Kuldahar +3\nThis spear was forged by the druids who dwelt close to the great tree of Kuldahar.  It was meant to be used by the warrior who was appointed as Kuldahar's defender.\n\nSTATISTICS:\n\nEquipped Ability: +8 to max hit points\nTHAC0: +3 bonus\nDamage:  1D6 +3\nDamage type:  piercing\nWeight: 3\nSpeed Factor: 3\nProficiency Type: Spear \nType:  2-handed\nRequires: 5 Strength",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+8 Max HP"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "WASTAFF",
+          "staff",
+          "Staff of Arundel",
+          "The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath.  Morning stars have an overall length of about four feet.  Some such weapons have a round, oval, or cylindrical shaped head studded with spikes.  Extending from most morning star heads, regardless of design, is a long point for thrusting.  \n\nSTATISTICS:\n\nDamage:  2D4\nDamage type:  crushing\nWeight: 12\nSpeed Factor: 7\nProficiency Type: Flail/Morningstar\nType:  1-handed\nRequires: 11 Strength",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "fireResist": 10,
+            "coldResist": 10,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "minDex": 9
+            }
+          }
+        ],
+        [
+          "WASTAR",
+          "morning star",
+          "Everard's Morning Star +2",
+          "The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath.  Morning stars have an overall length of about four feet.  Some such weapons have a round, oval, or cylindrical shaped head studded with spikes.  Extending from most morning star heads, regardless of design, is a long point for thrusting.  \n\nSTATISTICS:\n\nDamage:  2D4\nDamage type:  crushing\nWeight: 12\nSpeed Factor: 7\nProficiency Type: Flail/Morningstar\nType:  1-handed\nRequires: 11 Strength",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "WAWAK",
+          "short sword",
+          "Kachiko's Wakizashi +3",
+          "Kachiko's Wakizashi +3\nThis sword was the favored weapon of a female warrior named Kachiko.  Not much was known about her other than that she hailed from the far eastern lands in Kara-Tur.\n\nSTATISTICS\n\nCombat Ability: drains 2 points of target's wisdom (lasts two rounds) on each hit. Target may save vs. death to avoid wisdom loss.\nTHAC0: +3 bonus\nDamage:  1D8 +3\nDamage type:  piercing\nWeight:  2\nSpeed Factor: 0\nProficiency Type: Scimitar/Wakizashi/Ninja-To\nType:  1-handed\nRequires: 5 Strength",
+          {
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://forums.beamdog.com/discussion/13451/mod-deidre-and-joluv-in-bg-ee",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Deidre and Joluv in BG:EE",
+      "tp2n": "Deidre and Joluv in BG:EE",
+      "cn": 0,
+      "wf": "WMART",
+      "wp": "WMART\\SETUP-WMART.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "it": 20,
+      "itC": {
+        "amulet": 1,
+        "large sword": 4,
+        "halberd": 1,
+        "misc": 1,
+        "helmet": 1,
+        "armor": 2,
+        "ring": 1,
+        "shield": 1,
+        "axe": 1,
+        "flail": 1,
+        "mace": 1,
+        "sling": 1,
+        "spear": 1,
+        "staff": 1,
+        "morning star": 1,
+        "short sword": 1
+      }
+    }
+  ]
+}

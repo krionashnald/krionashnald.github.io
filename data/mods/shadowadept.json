@@ -1,0 +1,358 @@
+{
+  "i": 295,
+  "t": "shadowadept",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 50,
+  "c": "SPELL MODS",
+  "n": "Shadow Magic",
+  "no": "Install before MiH Spell Pack and Table of Forms. Avoid combining SM + MiH SP + ToF together. Bardic Wonders can update SM's bard kit if installed after.",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "SCS Improved Shade Lord and Shadow Magic's Enhanced Shade Lord both modify the same encounter. Use SM's ability-only option (#8) if using SCS.",
+      "myComps": "#6 #7",
+      "theirComps": "#8010",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "in": [
+    {
+      "t": "Pre-copy shadowadept/no_overwrite/MEWI*.txt files to game override/ directory before installing resource cost components (cn:1-4). These files are needed by ClassSpellTool and may be missing if cn:0 is rolled back. Or use eet-mod-forge-patches #20.",
+      "type": "file"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "shadow_magic",
+          "portraits/shadow_magic/c0shade.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSHAD1",
+          "wizard",
+          3,
+          "Illusion",
+          "Shadow Spray",
+          "Shadow energy deals 1d4/level cold damage."
+        ],
+        [
+          "YOURSHAD2",
+          "wizard",
+          5,
+          "Illusion",
+          "Shadow Walk",
+          "Enter shadow plane for fast travel."
+        ],
+        [
+          "YOURSHAD3",
+          "wizard",
+          7,
+          "Illusion",
+          "Shadow Twin",
+          "Creates shadow duplicate of caster."
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "SHADOWADEPT.*INFINITY_UI|INFINITY_UI.*SHADOWADEPT",
+      "severity": "critical",
+      "category": "concerning",
+      "description": "Shadow Magic is incompatible with Infinity UI++. Shadow Magic uses ClassSpellTool to register custom UI elements that Infinity UI++ cannot render.",
+      "workaround": "Choose one: either Infinity UI++ or Shadow Magic. If using Shadow Magic, use LeUI instead.",
+      "user_action": "check-docs"
+    }
+  ],
+  "kitAbilities": {
+    "5": {
+      "SHADOW_MAGIC_SHADOW_MONK_MONK": {
+        "passive": [
+          {
+            "n": "Darkvision",
+            "type": "desc",
+            "desc": "Permanent infravision and immunity to blindness"
+          },
+          {
+            "n": "Life-Drain",
+            "type": "desc",
+            "desc": "Fists drain 1 HP/hit (lv1-9), 2 HP + STR drain (lv10-19), 3 HP + STR drain + 20% level drain (lv20+)"
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 (lv1-10), x3 (lv11-20), x4 (lv21+)"
+          },
+          {
+            "n": "Stat Modifiers",
+            "type": "desc",
+            "desc": "+1 DEX, -1 STR, -4 CON"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Shadow Pool I",
+            "freq": "multiple uses (lv3,5,6,9,12)",
+            "effects": "Pick-one-of-four: Shadow Missile, Blinding Darkness, Shadow Veil, Decoy.",
+            "level": 3
+          },
+          {
+            "n": "Shadow Pool II",
+            "freq": "multiple uses (lv7,10,13,16)",
+            "effects": "Pick-one-of-four: Dark Mirage, Black Mist, Ghostly Visage, Shadow Walk.",
+            "level": 7
+          },
+          {
+            "n": "Shadow Pool III",
+            "freq": "uses at lv11,17,23",
+            "effects": "Pick-one-of-four: Shadowblast, Lifedrinker Touch, Shadow Comets, Impose.",
+            "level": 11
+          },
+          {
+            "n": "Shadow Pool IV",
+            "freq": "uses at lv15,21,27",
+            "effects": "Pick-one-of-four: Fireshield (Shadow), Shadeskin, Summon Shadow, Shar's Blessing.",
+            "level": 15
+          },
+          {
+            "n": "Shadowstep",
+            "freq": "1/day per 5 levels",
+            "effects": "Step into Shadow Plane for 7 seconds.",
+            "level": 5
+          },
+          {
+            "n": "Shadow Door",
+            "freq": "uses at lv12,16,20",
+            "effects": "Invisibility via shadow plane.",
+            "level": 12
+          },
+          {
+            "n": "Deathstrike",
+            "freq": "1/day",
+            "effects": "Teleport to target, turn invisible 1 round, next attack is guaranteed crit + drains 6 levels.",
+            "level": 15
+          }
+        ],
+        "restrictions": {
+          "alignment": "TN, NE, CN, CE only (non-lawful, non-good)",
+          "noBackstab": false,
+          "items": "No Stunning Blow. No Quivering Palm. No Lay on Hands. Shadowdancer HLAs instead of fighter HLAs (no Use Any Item). Hit Die: d6 (vs monk d8). Requires DEX 14, WIS 9."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "include": [
+            "One With Shadows"
+          ],
+          "exclude": [
+            "Use Any Item"
+          ],
+          "note": "Uses shadowdancer HLA table (not monk) per research. No Use Any Item."
+        },
+        "statBonus": {
+          "dex": 1,
+          "str": -1,
+          "con": -4,
+          "note": "Innate stat modifiers: +1 DEX, -1 STR, -4 CON"
+        }
+      }
+    }
+  },
+  "kits": {
+    "5": {
+      "new": [
+        [
+          "SHADOW_MAGIC_SHADOW_MONK_MONK",
+          "monk",
+          "Shadow Monk",
+          "Monk wielding shadow magic. Shadow Step, blindness, and dark ki abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Shadow-Magic",
+  "a": "Artemius_I",
+  "sum": "Adds a Shadow Magic spell school with 9 new spells for arcane casters. Shadow-themed abilities like shadow conjuration and shadow evocation.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Shadow-Magic"
+  },
+  "dl": "https://github.com/ArtemiusI/Shadow-Magic",
+  "au": "Artemius_I",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Shadow Magic: Main Component",
+      "tp2n": "Shadow Magic: Main Component",
+      "cn": 0,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "Core shadow magic system. Required for all other components",
+      "sp": 3
+    },
+    {
+      "n": "Resource Costs: Drain Constitution on Cast",
+      "tp2n": "Drain Constitution on Cast",
+      "no": "CON cost is harsh, but fun! Put those CON drain spells to use.",
+      "cn": 1,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "sm_resource_cost",
+      "scn": "Shadow Magic: Resource Costs",
+      "x": 0,
+      "rd": 0
+    },
+    {
+      "n": "Resource Costs: Drain Maximum Hit Points on Cast",
+      "tp2n": "Drain Maximum Hit Points on Cast",
+      "cn": 2,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "sm_resource_cost",
+      "scn": "Shadow Magic: Resource Costs",
+      "x": 0,
+      "no": "Drain max HP as resource cost — permanent until rest",
+      "rd": 0
+    },
+    {
+      "n": "Resource Costs: Drain Current Hit Points on Cast",
+      "tp2n": "Drain Current Hit Points on Cast",
+      "cn": 3,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "k": 0,
+      "g": "sm_resource_cost",
+      "scn": "Shadow Magic: Resource Costs",
+      "x": 0,
+      "no": "HARD FAIL: 'MEWI4.TXT not found in KEY file'. Root cause: Transitions cn:0 triggers cascade uninstall of EndlessBG1, which temporarily removes Out Brief Candlekeep — the mod that initializes ClassSpellTool. On reinstall, MEWI1.txt is restored from backup so ClassSpellTool skips initialization, leaving MEWI4-9 missing. WORKAROUND: manually copy all MEWI*.txt and MEPR*.txt from any ClassSpellTool mod's no_overwrite/ folder into override before installing Shadow Magic. Or use cn:1 (Drain Constitution) or cn:4 (No Cost) which don't use ClassSpellTool.",
+      "rd": 0
+    },
+    {
+      "n": "Resource Costs: No Resource Cost",
+      "tp2n": "No Resource Cost",
+      "cn": 4,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "g": "sm_resource_cost",
+      "scn": "Shadow Magic: Resource Costs",
+      "x": 0,
+      "no": "No cost — shadow magic becomes free. Overpowered?",
+      "rd": 0
+    },
+    {
+      "n": "Shadow Magic: Shadow Monk monk kit",
+      "tp2n": "Shadow Magic: Shadow Monk monk kit",
+      "cn": 5,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "no": "New monk kit using shadow magic abilities",
+      "k": 1,
+      "rd": 0,
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Enhanced Shade Lord: Hardcore (up to 9th level spells)",
+      "tp2n": "Hardcore Difficulty: Casts up to 9th level spells",
+      "no": "Hardcore Shade Lord with 9th level spells. INCOMPATIBLE with SCS Improved Shade Lord — both replace the Shade Lord entirely. Use cn:8 instead for SCS compatibility.",
+      "cn": 6,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sm_shade_lord",
+      "scn": "Shadow Magic: Enhanced Shade Lord (BG2:EE)",
+      "x": 0,
+      "rd": 0
+    },
+    {
+      "n": "Enhanced Shade Lord: Standard (up to 7th level spells)",
+      "tp2n": "Standard Difficulty: Casts up to 7th level spells",
+      "cn": 7,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sm_shade_lord",
+      "scn": "Shadow Magic: Enhanced Shade Lord (BG2:EE)",
+      "x": 0,
+      "no": "Standard Shade Lord with 7th level spells. INCOMPATIBLE with SCS Improved Shade Lord — use cn:8 instead.",
+      "rd": 0
+    },
+    {
+      "n": "Enhanced Shade Lord: Add Bonus Special Ability Only",
+      "tp2n": "Add Bonus Special Ability Only",
+      "cn": 8,
+      "wf": "shadowadept",
+      "wp": "shadowadept\\shadowadept.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sm_shade_lord",
+      "scn": "Shadow Magic: Enhanced Shade Lord (BG2:EE)",
+      "x": 0,
+      "no": "Minimal Shade Lord enhancement — adds a shadow special ability. COMPATIBLE with SCS Improved Shade Lord: Shadow Magic COPYs enhanced CRE first (SPELL MODS), then SCS patches it with AI improvements (TACTICAL MODS). Install order is correct by category.",
+      "rd": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "NOT a real conflict. Shadow Magic cn:0 is empty prerequisite. Shadow Magic creatures (shadel.cre) outside MiH scope.",
+      "myComps": "#0",
+      "theirComps": "#0-#8 Creature revisions (no shared creatures)",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

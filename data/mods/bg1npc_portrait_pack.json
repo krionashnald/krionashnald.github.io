@@ -1,0 +1,661 @@
+{
+  "i": 695,
+  "t": "bg1npc_portrait_pack",
+  "sv": 1,
+  "ord": 110,
+  "c": "PORTRAITS",
+  "n": "BG1 NPC Portrait Pack",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2
+  },
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin/Edwina. Last installed wins",
+      "theirComps": "#1180 Female Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#11 Edwin (reserved)",
+      "theirComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "NostalgiaPack",
+      "withId": 356,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "theirComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "theirComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "theirComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#0 Restore Irenicus Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "theirComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "myComps": "#19 Kivan #5 #6 #7 Coran",
+      "theirComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ac-miscellaneous",
+      "withId": 427,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "theirComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ContinousViconiaAppearance",
+      "withId": 426,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify BG1 NPC portraits. Last installed wins",
+      "theirComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "1": [
+        [
+          "ajantis",
+          "portraits/bg1npc_pack/ajantis.png",
+          "bg1"
+        ]
+      ],
+      "2": [
+        [
+          "alora",
+          "portraits/bg1npc_pack/alora.png",
+          "bg1"
+        ]
+      ],
+      "4": [
+        [
+          "edwin",
+          "portraits/bg1npc_pack/edwin.png",
+          "bg1"
+        ]
+      ],
+      "5": [
+        [
+          "coran",
+          "portraits/bg1npc_pack/coran.png",
+          "bg1"
+        ],
+        [
+          "eldoth",
+          "portraits/bg1npc_pack/eldoth.png",
+          "bg1"
+        ]
+      ],
+      "7": [
+        [
+          "garrick",
+          "portraits/bg1npc_pack/garrick.png",
+          "bg1"
+        ]
+      ],
+      "8": [
+        [
+          "imoen",
+          "portraits/bg1npc_pack/imoen.png",
+          "bg1"
+        ]
+      ],
+      "9": [
+        [
+          "jaheira",
+          "portraits/bg1npc_pack/jaheira.png",
+          "bg1"
+        ]
+      ],
+      "10": [
+        [
+          "kagain",
+          "portraits/bg1npc_pack/kagain.png",
+          "bg1"
+        ]
+      ],
+      "11": [
+        [
+          "khalid",
+          "portraits/bg1npc_pack/khalid.png",
+          "bg1"
+        ]
+      ],
+      "14": [
+        [
+          "minsc",
+          "portraits/bg1npc_pack/minsc.png",
+          "bg1"
+        ]
+      ],
+      "19": [
+        [
+          "kivan",
+          "portraits/bg1npc_pack/kivan.png",
+          "bg1"
+        ]
+      ],
+      "20": [
+        [
+          "sharteel",
+          "portraits/bg1npc_pack/sharteel.png",
+          "bg1"
+        ]
+      ],
+      "21": [
+        [
+          "skie",
+          "portraits/bg1npc_pack/skie.png",
+          "bg1"
+        ]
+      ],
+      "22": [
+        [
+          "tiax",
+          "portraits/bg1npc_pack/tiax.png",
+          "bg1"
+        ]
+      ],
+      "23": [
+        [
+          "safana",
+          "portraits/bg1npc_pack/safana.png",
+          "bg1"
+        ]
+      ],
+      "24": [
+        [
+          "xan",
+          "portraits/bg1npc_pack/xan.png",
+          "bg1"
+        ]
+      ],
+      "25": [
+        [
+          "xzar",
+          "portraits/bg1npc_pack/xzar.png",
+          "bg1"
+        ]
+      ],
+      "26": [
+        [
+          "yeslick",
+          "portraits/bg1npc_pack/yeslick.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/other/portraitpacks/",
+  "a": "Diffa, XVIII, Amok, Domi",
+  "v": "v3",
+  "sum": "Alternative portraits for BG1 NPCs by Amok, XVIII, and others. Includes variant choices for Coran and Dynaheir. Many NPC slots reserved for future expansion.",
+  "tags": [
+    "cosmetic",
+    "portraits"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Diffa, XVIII, Amok, Domi",
+  "dl": "https://www.gibberlings3.net/mods/other/portraitpacks/",
+  "no": "Alternative portraits for BG1 NPCs by Amok, XVIII, and others. Includes variant choices for Coran and Dynaheir with many NPC slots reserved for future expansion.",
+  "co": [
+    {
+      "n": "Copy all portraits for PC use",
+      "tp2n": "Copy all portraits for use by player characters",
+      "cn": 0,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 0,
+      "wq": "exact"
+    },
+    {
+      "n": "Replace all NPC portraits (Amok)",
+      "tp2n": "Replace all NPC portraits (AMOK)",
+      "cn": 1,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Ajantis (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 2,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Alora (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 3,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Branwen: BioWare edit by XVIII",
+      "tp2n": "Alternate Branwen portrait: BioWare edit by XVIII",
+      "cn": 4,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Coran: Amok",
+      "tp2n": "Alternate by Amok",
+      "cn": 5,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "coran",
+      "scn": "Alternate Coran Portrait"
+    },
+    {
+      "n": "Coran: Tancred & NiGHTMARE",
+      "tp2n": "BioWare edit by Tancred and NiGHTMARE",
+      "cn": 6,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 6,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "coran",
+      "scn": "Alternate Coran Portrait"
+    },
+    {
+      "n": "Coran: Melisah",
+      "tp2n": "Alternate by Melisah",
+      "cn": 7,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 7,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "coran",
+      "scn": "Alternate Coran Portrait"
+    },
+    {
+      "n": "Dynaheir: Amok #1",
+      "tp2n": "Alternate #1 by Amok",
+      "cn": 8,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 8,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "dynaheir",
+      "scn": "Alternate Dynaheir Portrait"
+    },
+    {
+      "n": "Dynaheir: Amok #2",
+      "tp2n": "Alternate #2 by Amok",
+      "cn": 9,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 9,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "dynaheir",
+      "scn": "Alternate Dynaheir Portrait"
+    },
+    {
+      "n": "Dynaheir: Amok #3",
+      "tp2n": "Alternate #3 by Amok",
+      "cn": 10,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "dynaheir",
+      "scn": "Alternate Dynaheir Portrait"
+    },
+    {
+      "n": "Edwin (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 11,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 11,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Eldoth (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 12,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Faldorn: XVIII",
+      "tp2n": "Alternate Faldorn Portrait: by XVIII",
+      "cn": 13,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 13,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Garrick (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 14,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 14,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Imoen (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 15,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 15,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Jaheira (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 16,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 16,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Kagain (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 17,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 17,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Khalid (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 18,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 18,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Kivan: BioWare edit by XVIII",
+      "tp2n": "Alternate Kivan Portrait: BioWare edit by XVIII",
+      "cn": 19,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 19,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Minsc (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 20,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Montaron (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 21,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 21,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Quayle (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 22,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 22,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Safana: BioWare edit by XVIII",
+      "tp2n": "Alternate Safana Portrait: BioWare edit by XVIII",
+      "cn": 23,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 23,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Shar-Teel (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 24,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 24,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Skie (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 25,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Tiax (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 26,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 26,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Viconia: BioWare edit by XVIII",
+      "tp2n": "Alternate Viconia Portrait: BioWare edit by XVIII",
+      "cn": 27,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 27,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Xan (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 28,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 28,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Xzar (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 29,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 29,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    },
+    {
+      "n": "Yeslick (reserved)",
+      "tp2n": "Reserved spot for future expansion",
+      "cn": 30,
+      "wf": "bg1npc_portrait_pack",
+      "wp": "bg1npc_portrait_pack\\BG1NPC_PORTRAIT_PACK.TP2",
+      "wc": 30,
+      "wq": "exact",
+      "no": "Placeholder for future expansion"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "i": 205,
+  "t": "edwinromance",
+  "sv": 1,
+  "ord": 110,
+  "c": "NPC EXPANSIONS",
+  "n": "Edwin Romance",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "ru": 3,
+    "de": 4,
+    "pl": 5,
+    "zh-cn": 6
+  },
+  "no": "Edwin Romance makes him even more of an ass so bleh Gals can get intimate with this egomaniacal Red Wizard.Install Edwin Romance after Imoen 4 Ever.Install Edwin Romance before Ascension and Mazzy MegaMod.",
+  "ic": "Big Picture. May conflict with other \"Female Edwina\" components",
+  "conflicts": [
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "hard",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both provide Edwin portraits. Cosmetic 'last installed wins' — no crashes or script breaks.",
+      "myComps": "#1",
+      "theirComps": "#80000 BG1 Edwin #80300 BG2 Edwin #80600 Variant A #80900 Variant B",
+      "source": "Portrait BMP overwrite only, no gameplay impact, 2026-03",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Both provide an Edwina portrait. Cosmetic 'last installed wins' — no crashes or script breaks. Pick whichever portrait you prefer.",
+      "myComps": "#4 Give Edwina a Portrait",
+      "theirComps": "#1180 Female Edwina",
+      "source": "Portrait BMP overwrite only, no gameplay impact, 2026-03",
+      "orderOnly": true
+    },
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "soft",
+      "reason": "Both EXTEND_BOTTOM FINSOL01 29-32 and FATESP 6 with romance-specific guards. Additive ops, mutually exclusive conditions (only one romance active).",
+      "myComps": "#0 Edwin Romance",
+      "theirComps": "#4 Ascension-specific dialogue",
+      "source": "Both use EXTEND_BOTTOM with independent romance globals; standard WeiDU additive pattern, 2026-03"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "theirComps": "#17 Edwin #18 Edwin #19 Edwin #20 Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "theirComps": "#11 Edwin (reserved)",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin, Edwina. Last installed wins",
+      "myComps": "#1 Restore BG1 Portrait #4 Edwina Portrait",
+      "theirComps": "#0 Core",
+      "orderOnly": true
+    },
+    {
+      "with": "EdwinBromance",
+      "withId": 733,
+      "severity": "hard",
+      "reason": "Edwin Romance is incompatible with Edwin Bromance. Both modify Edwin's dialogue and character arc.",
+      "myComps": "#0 Edwin Romance",
+      "theirComps": "#0 Edwin Bromance",
+      "source": "EdwinBromance author states incompatibility, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "syntia",
+          "portraits/edwin_rom/syntia13.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Edwin_Romance/releases",
+  "a": "Kaeloree, jastey",
+  "v": "v4.0",
+  "sum": "Adds a romance path for Edwin in BG2/ToB. The arrogant Red Wizard gets a surprisingly deep relationship arc with witty dialogue.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Edwin_Romance"
+  },
+  "au": "Laufey and others",
+  "dl": "https://github.com/SpellholdStudios/Edwin_Romance",
+  "co": [
+    {
+      "n": "Edwin Romance",
+      "pi": "LaufeysEdwinRomance-Main",
+      "wf": "edwinromance",
+      "wp": "edwinromance\\EDWINROMANCE.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 0,
+      "sp": 1,
+      "spLv": {
+        "w1": 1
+      },
+      "tp2n": "Edwin Romance"
+    },
+    {
+      "n": "Restore Edwin's BG1 portrait",
+      "pi": "LaufeysEdwinRomance-RestoreBG1Portrait",
+      "wf": "edwinromance",
+      "wp": "edwinromance\\EDWINROMANCE.TP2",
+      "wq": "norm_match",
+      "cn": 1,
+      "tp2n": "Restore Edwin's BG1 portrait"
+    },
+    {
+      "n": "Edwin flirts",
+      "pi": "LaufeysEdwinRomance-Flirts",
+      "wf": "edwinromance",
+      "wp": "edwinromance\\EDWINROMANCE.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "tp2n": "Edwin flirts"
+    },
+    {
+      "n": "New ending for Viconia Romance by Laufey",
+      "pi": "LaufeysNewViconiaEnding-Main",
+      "wf": "edwinromance",
+      "wp": "edwinromance\\EDWINROMANCE.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 3,
+      "tp2n": "New ending for Viconia Romance by Laufey"
+    },
+    {
+      "n": "Give Edwina a Portrait",
+      "no": "while I understand fans might dislike the vanilla ending, I feel this leans too hard into the extreme of fix-fic",
+      "pi": "LaufeysEdwinRomance-EdwinaPortrait",
+      "wf": "edwinromance",
+      "wp": "edwinromance\\EDWINROMANCE.TP2",
+      "wc": 4,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 4,
+      "tp2n": "Give Edwina a Portrait"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "i": 426,
+  "t": "ContinousViconiaAppearance",
+  "sv": 1,
+  "ord": 210,
+  "c": "NPC CUSTOMIZATION",
+  "n": "Continuous Viconia Appearance",
+  "no": "Standardizes Viconia appearance across BG1EE/SoD/BG2EE/EET with consistent SoD colors and customizable portrait options. By Lava Del'Vortel. Cosmetic only — no gameplay changes. May conflict with portrait mods that change Viconia (PPE, PaintBG, ViconiaRevamped)",
+  "conflicts": [
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/56009/mod-continous-viconia-appearance-for-bg1ee-bg2ee-sod-and-eet",
+  "a": "Smeagolheart",
+  "v": "1",
+  "sum": "Standardizes Viconia's appearance across BG1EE, BG2EE, SoD, and EET with consistent SoD colors and customizable portrait options.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoD"
+  ],
+  "au": "Smeagolheart",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://forums.beamdog.com/discussion/56009/mod-continous-viconia-appearance-for-bg1ee-bg2ee-sod-and-eet",
+  "co": [
+    {
+      "n": "Continuous Viconia Appearance",
+      "pi": "colors",
+      "wf": "ContinousViconiaAppearance",
+      "wp": "ContinousViconiaAppearance\\Setup-ContinousViconiaAppearance.tp2",
+      "wq": "single_comp",
+      "cn": 100,
+      "no": "Applies SoD Vanilla portrait and consistent skin colors to Viconia across BG1/SoD/BG2. To use alternative portrait, edit the tp2 selectedportrait variable before installing",
+      "tp2n": "Continous Viconia"
+    }
+  ]
+}

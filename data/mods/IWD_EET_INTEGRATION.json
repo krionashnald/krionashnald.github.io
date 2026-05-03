@@ -1,0 +1,141 @@
+{
+  "i": 647,
+  "t": "IWD_EET_INTEGRATION",
+  "sv": 1,
+  "ord": 730,
+  "c": "POST-TACTICAL QUESTS",
+  "n": "Icewind Dale EET Integration",
+  "no": "IWD EET Integration v1.2 by Subtledoctor. Connects IWD-in-EET campaigns with the main EET experience. All components require IWD1_EET or IWD2_EET to be installed. cn:110-160 require cn:100 (EET Menu). cn:150/155 also work with HoW_EET (https://github.com/The-Gate-Project/HoW_EET). cn:180 requires NWNForBG.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "IWD1_EET",
+      "requiresId": 643,
+      "type": "hard",
+      "reason": "Most components require IWD1-in-EET to be installed"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "NWN4BG",
+      "withId": 108,
+      "severity": "soft",
+      "reason": "cn:180 adds NWN access after IWD1 campaign. Requires NWNForBG to be installed.",
+      "myComps": "#180 Add NWN after IWD1",
+      "theirComps": "#0 NWN Main",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/subtledoctor/IWD_EET_Integration",
+  "a": "Subtledoctor",
+  "sum": "Integration components connecting IWD-in-EET with the main EET experience: world map links, journal entries, and story hooks.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "dl": "https://github.com/subtledoctor/IWD_EET_Integration",
+  "au": "K4thos",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Add IWD Campaigns to the EET Menu",
+      "cn": 100,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 100,
+      "wq": "exact",
+      "no": "Adds IWD campaigns to the EET menu. REQUIRED by cn:110-180. Requires IWD1_EET cn:1 or IWD2_EET cn:0."
+    },
+    {
+      "n": "Adjust IWD1 XP for Full Campaign",
+      "cn": 110,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 110,
+      "wq": "exact",
+      "no": "Scales IWD1 XP rewards for integration with the full BG/IWD campaign progression. Requires IWD1_EET and cn:100.",
+      "rd": 0
+    },
+    {
+      "n": "Adjust IWD1 Creature Stats for Full Campaign",
+      "cn": 115,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 115,
+      "wq": "exact",
+      "no": "Adjusts IWD1 creature stats for full campaign difficulty balance. Requires IWD1_EET and cn:100.",
+      "rd": 0
+    },
+    {
+      "n": "Adjust IWD2 XP for Full Campaign",
+      "cn": 130,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 130,
+      "wq": "exact",
+      "no": "Scales IWD2 XP rewards for integration. Requires IWD2_EET and cn:100. Needs testing.",
+      "rd": 0
+    },
+    {
+      "n": "Adjust IWD2 Creature Stats for Full Campaign",
+      "cn": 135,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 135,
+      "wq": "exact",
+      "no": "Adjusts IWD2 creature stats for full campaign balance. Requires IWD2_EET and cn:100.",
+      "rd": 0
+    },
+    {
+      "n": "Add HoW access to BG2",
+      "cn": 150,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 150,
+      "wq": "exact",
+      "no": "Adds Heart of Winter area access from BG2 world map. Requires IWD1_EET or HoW_EET."
+    },
+    {
+      "n": "Remove Overpowered Items from HoW",
+      "cn": 155,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 155,
+      "wq": "exact",
+      "no": "Removes overpowered items from HoW to prevent balance issues in BG2. Requires IWD1_EET or HoW_EET."
+    },
+    {
+      "n": "Add IWD1 Easter Egg Content to BG2",
+      "cn": 160,
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wc": 160,
+      "wq": "exact",
+      "no": "Adds IWD1 easter egg content (Belhifet, etc.) accessible from BG2. Requires IWD1_EET."
+    },
+    {
+      "cn": 180,
+      "n": "Add NWN after IWD1 Campaign",
+      "wf": "IWD_EET_integration",
+      "wp": "IWD_EET_integration\\IWD_EET_integration.tp2",
+      "wq": "exact",
+      "no": "Adds NWN campaign access after completing IWD1. Requires both IWD1_EET and NWNForBG."
+    }
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "IWD_EET_Integration"
+  }
+}

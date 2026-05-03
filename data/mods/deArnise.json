@@ -1,0 +1,75 @@
+{
+  "i": 216,
+  "t": "deArnise",
+  "sv": 1,
+  "ord": 220,
+  "c": "NPC EXPANSIONS",
+  "n": "De'Arnise Romance",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2
+  },
+  "no": "de'Arnise Romance",
+  "conflicts": [
+    {
+      "with": "RJALI",
+      "withId": 631,
+      "severity": "partial",
+      "reason": "Install order dependency, not incompatibility. Rjali explicitly detects De'Arnise Romance via MOD_IS_INSTALLED and patches it for multi-romance integration using DECOMPILE_AND_PATCH. Install Rjali AFTER De'Arnise Romance.",
+      "orderOnly": true,
+      "myComps": "#0 de'Arnise Romance for Baldur's Gate II",
+      "theirComps": "#3 Rjali Romance Mod",
+      "source": "Rjali multi.tpa has MOD_IS_INSTALLED check for deArnise, then patches its BCS/DLG files for multi-romance support. Designed to work together, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "luvnalia",
+      "withId": 629,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 292 vs 69)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/deArnise_Romance/releases",
+  "a": "Jason Compton, Kulyok, jastey",
+  "v": "v7",
+  "sum": "Adds a romance path for Nalia in BG2/ToB. Develops her noble idealism and personal growth through extensive dialogue.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "deArnise_Romance"
+  },
+  "au": "jcompton",
+  "dl": "https://github.com/Pocket-Plane-Group/deArnise_Romance",
+  "co": [
+    {
+      "n": "de'Arnise Romance for Baldur's Gate II",
+      "cn": 0,
+      "wf": "deArnise",
+      "wp": "deArnise\\DEARNISE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "de'Arnise Romance for Baldur's Gate II"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Likely NOT a real conflict. Standard romance mods (including de'Arnise Romance) use RealSetGlobalTimer mechanics checked after PartyRested() in the main NPC script loop — independent of dream cutscene content. cdtweaks cn:3140/3141 (Faster Cutscenes) shorten dreams but preserve RestParty() calls. Romance timers fire based on game time, not during dream execution. Verified safe with Tashia and Solaufein using same timer pattern.",
+      "orderOnly": true,
+      "source": "eemodsetup",
+      "myComps": "#0 de'Arnise Romance",
+      "theirComps": "#3140, #3141; #3183",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

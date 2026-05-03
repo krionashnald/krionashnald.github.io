@@ -1,0 +1,130 @@
+{
+  "i": 384,
+  "t": "ua",
+  "sv": 1,
+  "ord": 290,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Unique Artifacts",
+  "langs": {
+    "en": 0,
+    "pt": 1,
+    "ru": 2,
+    "sv": 3
+  },
+  "no": "Unique Artifacts v7.16 by Magus. Ensures unique items appear only once across the game. Components 0-2 (allow exceptions) must install BEFORE Core (3/4). Hard conflict with Item Revisions (both modify unique items). SCS also has item removal components that overlap",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "Item Revisions conflict with Unique Artifacts",
+      "myComps": "#3 Core Expanded / #4 Core Strict",
+      "theirComps": "#0 Item Revisions main",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/BGforgeNet/bg2-uniqueartifacts/releases",
+  "a": "Magus",
+  "v": "v7.16",
+  "sum": "Ensures unique artifacts can only be found once across the game. Prevents duplicate copies of items like the Ring of Gaxx.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "BGforgeNet",
+    "r": "bg2-uniqueartifacts"
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ua_ququay",
+          "portraits/ua/ququay.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/BGforgeNet/bg2-uniqueartifacts/releases",
+  "au": "UnearthedArcana team",
+  "co": [
+    {
+      "n": "Allow non-unique Amulet of Protection +1",
+      "tp2n": "Allow non-unique Amulet of Protection +1",
+      "cn": 0,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 0,
+      "wq": "guessed",
+      "no": "Allows multiple copies of Amulet of Protection +1 to exist. Install before Core"
+    },
+    {
+      "n": "Allow non-unique Ring of Protection +2 and Cloak of Protection +2",
+      "tp2n": "Allow non-unique Ring of Protection +2 and Cloak of Protection +2",
+      "cn": 1,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 1,
+      "wq": "guessed",
+      "no": "Allows multiple copies of Ring of Protection +2 and Cloak of Protection +2. Install before Core"
+    },
+    {
+      "n": "Allow non-unique Boots of Speed",
+      "tp2n": "Allow non-unique Boots of Speed",
+      "cn": 2,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 2,
+      "wq": "guessed",
+      "no": "Allows multiple copies of Boots of Speed. Install before Core"
+    },
+    {
+      "n": "Core: Expanded",
+      "tp2n": "Expanded",
+      "no": "Core component (Expanded): removes duplicate unique artifacts from the game. More lenient — some items kept in shops",
+      "cn": 3,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 3,
+      "wq": "guessed",
+      "g": "ua_core",
+      "scn": "Unique Artifacts - core"
+    },
+    {
+      "n": "Core: Strict",
+      "tp2n": "Strict",
+      "cn": 4,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 4,
+      "wq": "guessed",
+      "g": "ua_core",
+      "scn": "Unique Artifacts - core",
+      "no": "Core component (Strict): removes ALL duplicate unique artifacts. Most restrictive option"
+    },
+    {
+      "n": "Remove bonus merchants",
+      "tp2n": "Remove bonus merchants",
+      "cn": 5,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 5,
+      "wq": "guessed",
+      "no": "Removes the bonus merchants added by Throne of Bhaal. Requires BG2"
+    },
+    {
+      "n": "Less magical items",
+      "tp2n": "Less magical items",
+      "cn": 6,
+      "wf": "UA",
+      "wp": "UA\\UA.TP2",
+      "wc": 6,
+      "wq": "guessed",
+      "no": "Reduces the number of magical items found throughout the game"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "i": 197,
+  "t": "garrick-tt",
+  "sv": 1,
+  "ord": 50,
+  "c": "NPC EXPANSIONS",
+  "n": "Garrick: Tales of a Troubadour",
+  "no": "Garrick: Tales of a Troubadour Mirandir's original: The Gate Project fork: Troubadour If using the original, install in the BG1 pre EET stage. Incompatible with Tenya?",
+  "rq": "bg1npc",
+  "ic": "garrick_flirt, tenyathermidor",
+  "conflicts": [
+    {
+      "with": "TenyaThermidor",
+      "withId": 6,
+      "severity": "hard",
+      "reason": "Direct incompatibility",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "garrick_flirt",
+      "withId": 465,
+      "severity": "hard",
+      "reason": "Direct incompatibility",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "JA#BGT_AdvPack",
+      "withId": 926,
+      "severity": "partial",
+      "reason": "Adventure Pack cn:38, 39, 47 have FORBID_COMPONENT on Garrick Tales cn:0. Adventure Pack must install before Garrick-TT.",
+      "myComps": "#0 Garrick: Tales of a Troubadour",
+      "theirComps": "#38 Tenya, #39 Tenya Umberlee, #47 Shop of Silence",
+      "source": "JA#BGT_AdvPack tp2 FORBID_COMPONENT, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "BG1NPC",
+      "requiresId": 47,
+      "type": "soft",
+      "reason": "Requires BG1 NPC Project"
+    }
+  ],
+  "u": "https://github.com/The-Gate-Project/Garrick_Tales-of-a-Troubadour",
+  "a": "Mirandir, Zyl, Erg",
+  "sum": "Expands Garrick with new dialogues, encounters, and bard songs, building on BG1NPC content to make him a more interesting and roleplay-rich companion.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "Garrick_Tales-of-a-Troubadour"
+  },
+  "dl": "https://github.com/The-Gate-Project/Garrick_Tales-of-a-Troubadour",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "ru": 3
+  },
+  "au": "The Gate Project (Mirandir, Zyl, Erg)",
+  "co": [
+    {
+      "n": "Garrick: Tales of a Troubadour",
+      "cn": 0,
+      "wf": "garrick-tt",
+      "wp": "garrick-tt\\garrick-tt.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "BG1 mod. SKIP expected on BG2EE pre-EET — installs after EET merge."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "i": 684,
+  "t": "EET_gui",
+  "sv": 1,
+  "ord": 30,
+  "c": "POST EET",
+  "n": "EET GUI",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "fr": 3,
+    "cs": 4,
+    "ru": 5,
+    "de": 6,
+    "zh-cn": 7
+  },
+  "no": "GUI component of EET. Installs after EET_End to apply the correct game GUI. We like getting items and don’t want to bug the game on our end.Install Deletifier after all mods that add or move items, such as EET End from Enhanced Edition Trilogy (EET) and Item Randomizer.",
+  "rq": "EET",
+  "conflicts": [
+    {
+      "with": "eeuitweaks",
+      "withId": 18,
+      "severity": "hard",
+      "reason": "EET GUI conflicts with these EEUITweaks components",
+      "myComps": "#0 SoD GUI",
+      "theirComps": "#1080 Portrait Picker #1090 #1091 CharGen #4005 #4006 Store Tweaks",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "GUI does not support difficulty slider",
+      "theirComps": "#8040",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LeUI",
+      "withId": 16,
+      "severity": "hard",
+      "reason": "Choose one GUI",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "hard",
+      "reason": "EET Gui does not display all functions",
+      "myComps": "#0 SoD GUI",
+      "theirComps": "#16",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/EET/releases",
+  "a": "K4thos",
+  "v": "v14.0",
+  "sum": "EET-specific GUI adjustments that apply after the trilogy merge. Fixes interface elements for the combined game.",
+  "tags": [
+    "visual",
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "dl": "https://github.com/Gibberlings3/EET/releases",
+  "au": "K4thos (swit)",
+  "co": [
+    {
+      "n": "SoD GUI",
+      "tp2n": "Siege of Dragonspear",
+      "cn": 0,
+      "wf": "EET_gui",
+      "wp": "EET_gui\\EET_GUI.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "scn": "EET alternative GUI"
+    },
+    {
+      "n": "IWD:EE GUI",
+      "tp2n": "Icewind Dale: Enhanced Edition",
+      "cn": 1,
+      "wf": "EET_gui",
+      "wp": "EET_gui\\EET_GUI.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "scn": "EET alternative GUI"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "EET"
+  }
+}

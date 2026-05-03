@@ -1,0 +1,63 @@
+{
+  "i": 155,
+  "t": "ninde",
+  "sv": 1,
+  "ord": 340,
+  "c": "NEW NPC MODS",
+  "n": "Ninde NPC",
+  "no": "mod_installer: WeiDU ALWAYS block may not execute if folder casing mismatches. Use lowercase ninde folder name",
+  "conflicts": [
+    {
+      "with": "RJALI",
+      "withId": 631,
+      "severity": "partial",
+      "reason": "Install Ninde before Rjali. Rjali comp #3 detects Ninde via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "myComps": "#0 Ninde NPC Mod for BGII",
+      "theirComps": "#3 Rjali Romance Mod",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED ninde, patches LK#NINDJ.dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ninde_npc",
+          "portraits/ninde_npc/lk_nind.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Ninde_NPC",
+  "a": "Deva, K'aeloree, Rhaella; Gwendolyne",
+  "v": "v3.0",
+  "sum": "Adds Ninde, an elven necromancer, as a joinable BG2 NPC with dark humor, romance option, and necromancy-themed quest.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Ninde_NPC"
+  },
+  "au": "Deva and Rhaella",
+  "dl": "https://github.com/SpellholdStudios/Ninde_NPC",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Ninde NPC Mod for BGII",
+      "cn": 0,
+      "wf": "ninde",
+      "wp": "ninde\\ninde.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Ninde NPC Mod for BGII"
+    }
+  ]
+}

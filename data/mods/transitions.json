@@ -1,0 +1,425 @@
+{
+  "i": 589,
+  "t": "transitions",
+  "sv": 1,
+  "ord": 490,
+  "c": "QUEST MODS BG1",
+  "n": "Transitions",
+  "no": "Quest/content mod that smooths transitions between campaigns. Should be installed with quest mods, NOT tactical mods. Install before Endless BG1 and BG1RE if using them.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "themed_tweaks",
+      "withId": 670,
+      "severity": "soft",
+      "reason": "Managed conflict. Transitions cn:140 and Themed Tweaks cn:200 are functionally identical (same script code for CUT59B.BCS). TT cn:200 has REQUIRE_PREDICATE that auto-skips if Transitions cn:140 is installed. Transitions cn:140 is ABSENT, TT cn:200 is present — no conflict. Transitions cn:10 (BG1 dream) is present and coexists safely with TT cn:200 (different files: PLAYER1D vs CUT59B). If cn:10 installed, TT cn:200 also grants the #LPWR powers.",
+      "myComps": "#10 Use BGI ending movie as dream #140 Use Irenicus in hell movie to restore powers",
+      "theirComps": "#200 Use Irenicus in hell movie as dream",
+      "source": "TT tp2 line 183: REQUIRE_PREDICATE !(MOD_IS_INSTALLED transitions.tp2 #L-TRANSITIONS-RESTORE_POWER); identical scripts in CUT59B, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Complementary, different files. Transitions replaces StartMovie('ENDMOVIE') in AR0125 script with post-Sarevok continuation. MiH cn:21 removes LeaveAreaLUA/AdvanceTime from DELTAN dialogue. No shared files. Install Transitions before MiH cn:21 — MiH's change becomes redundant but harmless. No multicat needed since they don't modify the same resources.",
+      "myComps": "#0 Main component",
+      "theirComps": "#21 Prevent Ch6 Cutscene from Moving Party",
+      "source": "Transitions main_bg1.tpa patches AR0125; MiH setup_no_ch6_teleport.tpa patches DELTAN dialog; no shared files, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "c#endlessbg1",
+      "withId": 33,
+      "severity": "hard",
+      "reason": "Transitions tp2 explicitly uninstalls EndlessBG1 cn:14 (Korlasz' Dungeon is in BG1) because it supersedes that functionality. Remove cn:14 from selection when using Transitions.",
+      "theirComps": "#14 Korlasz' Dungeon is in BG1",
+      "myComps": "#0 Main component",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/transitions",
+  "a": "Lauriel",
+  "v": "v2.4",
+  "sum": "Adds 15 transition scenes between campaigns in EET, smoothing the story flow as you move from BG1 to SoD to BG2 to ToB.",
+  "tags": [
+    "quest"
+  ],
+  "ph": [
+    "BG1",
+    "SoA"
+  ],
+  "dl": "https://github.com/Gibberlings3/transitions",
+  "langs": {
+    "en": 0
+  },
+  "au": "Wisp",
+  "co": [
+    {
+      "n": "Main component: Allow continued play after Sarevok and/or Irenicus is defeated",
+      "cn": 0,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 0,
+      "no": "",
+      "tp2n": "Main component: Allow continued play after Sarevok and/or Irenicus is defeated"
+    },
+    {
+      "n": "Use BGI ending movie as a dream and give new bhaal-spawn power at first rest",
+      "cn": 10,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 10,
+      "x": 0,
+      "no": "Uses BG1 ending movie as a dream sequence and grants a new Bhaalspawn power at first rest. Requires main component.",
+      "tp2n": "Use BGI ending movie as a dream and give new bhaal-spawn power at first rest",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Give Sarevok his armor, helm, and sword -> Equipped",
+      "cn": 20,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 20,
+      "g": "sarevok_equip",
+      "scn": "Give Sarevok his armor, helm, and sword",
+      "no": "Sarevok's equipment is equipped on him when he joins. Choose one option.",
+      "tp2n": "Equipped",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "In inventory only",
+      "cn": 3,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "In inventory only",
+      "pi": "#L-TRANSITIONS-SAREVOK_EQUIPMENT_IN_INVENTORY",
+      "scn": "Give Sarevok his armor, helm, and sword"
+    },
+    {
+      "n": "Use EndlessBG1's handling of Sarevok's equipment, if available, else use Option 2",
+      "cn": 4,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Use EndlessBG1's handling of Sarevok's equipment, if available, else use Option 2",
+      "pi": "#L-TRANSITIONS-SAREVOK_EQUIPMENT_USE_ENDLESS",
+      "scn": "Give Sarevok his armor, helm, and sword"
+    },
+    {
+      "n": "Clean-up Quests -> Those supporters that are still alive when Sarevok dies immediately flee the area (to give more clean-up quests)",
+      "cn": 30,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 30,
+      "g": "cleanup_quests",
+      "scn": "Clean-up Quests",
+      "no": "Supporters that are still alive when Sarevok dies immediately flee, harsh resolution. Choose one option.",
+      "tp2n": "Those supporters that are still alive when Sarevok dies immediately flee the area (to give more clean-up quests)",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Behavior of the Sarevok's supporters in the final BGI battle is unchanged",
+      "cn": 6,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Behavior of the Sarevok's supporters in the final BGI battle is unchanged",
+      "pi": "#L-TRANSITIONS-QUESTS_NO_FLEE_HARSH",
+      "scn": "Clean-up Quests"
+    },
+    {
+      "n": "Option 1 and use gentler Tamoko quest",
+      "cn": 7,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Option 1 and use gentler Tamoko quest",
+      "pi": "#L-TRANSITIONS-QUESTS_FLEE_GENTLE",
+      "scn": "Clean-up Quests"
+    },
+    {
+      "n": "Option 2 and use gentler Tamoko quest",
+      "cn": 8,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Option 2 and use gentler Tamoko quest",
+      "pi": "#L-TRANSITIONS-QUESTS_NO_FLEE_GENTLE",
+      "scn": "Clean-up Quests"
+    },
+    {
+      "n": "Close quests and rumors that can't be finished after Sarevok is defeated",
+      "cn": 200,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 200,
+      "no": "Closes open quests and rumors that can't be finished after Sarevok is defeated. Prevents journal clutter.",
+      "tp2n": "Close quests and rumors that can't be finished after Sarevok is defeated",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Clean up the town folk chatter with regard to Sarevok",
+      "cn": 40,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 40,
+      "no": "Cleans up town folk chatter that references Sarevok as if he's still a threat.",
+      "tp2n": "Clean up the town folk chatter with regard to Sarevok",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Clean up the wounded from the thieves' maze",
+      "cn": 50,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 50,
+      "no": "Removes wounded NPCs from the thieves' maze after the plot is resolved.",
+      "tp2n": "Clean up the wounded from the thieves' maze",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Elminster makes an appearance outside of the Ducal Palace",
+      "cn": 60,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 60,
+      "no": "Elminster appears outside the Ducal Palace after Sarevok is defeated.",
+      "tp2n": "Elminster makes an appearance outside of the Ducal Palace",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Eltan Reward: House near Ducal Palace",
+      "cn": 70,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 70,
+      "g": "eltan_reward",
+      "no": "Eltan rewards hero with a house near the Ducal Palace.",
+      "tp2n": "Duke Eltan's reward option: House near Ducal Palace",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Duke Eltan's reward option: Cabin in High Hedge",
+      "cn": 14,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Duke Eltan's reward option: Cabin in High Hedge",
+      "pi": "#L-TRANSITIONS-ELTAN_HOUSE_HEDGE"
+    },
+    {
+      "n": "Duke Eltan's reward option: Gray house in NW Beregost",
+      "cn": 15,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Duke Eltan's reward option: Gray house in NW Beregost",
+      "pi": "#L-TRANSITIONS-ELTAN_HOUSE_BEREGOST_NW"
+    },
+    {
+      "n": "Duke Eltan's reward option: House across from Flaming Fist compound",
+      "cn": 16,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Duke Eltan's reward option: House across from Flaming Fist compound",
+      "pi": "#L-TRANSITIONS-ELTAN_HOUSE_BG_SW"
+    },
+    {
+      "n": "Add Waves of Refugees to Baldur's Gate",
+      "cn": 80,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 80,
+      "no": "Adds waves of refugees flowing into Baldur's Gate after the crisis.",
+      "tp2n": "Add Waves of Refugees to Baldur's Gate",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Use abbreviated capture scene leading to BG2",
+      "cn": 130,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 130,
+      "no": "Uses an abbreviated capture scene when transitioning to BG2. Requires SoD.",
+      "tp2n": "Use abbreviated capture scene leading to BG2"
+    },
+    {
+      "n": "Use Irenicus in hell movie to restore Bhaal-spawn powers after he is defeated",
+      "cn": 140,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 140,
+      "no": "Uses the Irenicus in hell movie to restore Bhaalspawn powers after defeating him. BG2EE/EET only.",
+      "tp2n": "Use Irenicus in hell movie to restore Bhaal-spawn powers after he is defeated",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "cn": 21,
+      "n": "Give Sarevok his armor, helm, and sword -> In Inventory",
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 21,
+      "g": "sarevok_equip",
+      "no": "Sarevok's equipment placed in inventory instead of equipped. Choose one option.",
+      "gone": true
+    },
+    {
+      "cn": 22,
+      "n": "Give Sarevok his armor, helm, and sword -> Use EndlessBG1 handling",
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 22,
+      "g": "sarevok_equip",
+      "no": "HARD FAIL: PARSE ERROR in sarevok1.tpa line 10 — uses 'IF' instead of 'ACTION_IF' inside a DEFINE_ACTION_FUNCTION body. WeiDU cannot parse this. Bug in Transitions mod. Choose cn:20 or cn:21 instead.",
+      "gone": true
+    },
+    {
+      "cn": 31,
+      "n": "Clean-up Quests: Supporters don't flee (harsh)",
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 31,
+      "g": "cleanup_quests",
+      "no": "Supporters stay when Sarevok dies, harsh resolution. Choose one option.",
+      "gone": true
+    },
+    {
+      "cn": 32,
+      "n": "Clean-up Quests: Supporters flee (gentle)",
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 32,
+      "g": "cleanup_quests",
+      "no": "Supporters flee when Sarevok dies, gentle resolution. Choose one option.",
+      "gone": true
+    },
+    {
+      "cn": 33,
+      "n": "Clean-up Quests: Supporters don't flee (gentle)",
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 33,
+      "g": "cleanup_quests",
+      "no": "Supporters stay, gentle resolution. Choose one option.",
+      "gone": true
+    },
+    {
+      "n": "Eltan Reward: Cabin in High Hedge",
+      "cn": 71,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 71,
+      "g": "eltan_reward",
+      "no": "",
+      "gone": true
+    },
+    {
+      "n": "Eltan Reward: Gray house in NW Beregost",
+      "cn": 72,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 72,
+      "g": "eltan_reward",
+      "no": "",
+      "gone": true
+    },
+    {
+      "n": "Eltan Reward: House near Flaming Fist compound",
+      "cn": 73,
+      "wf": "transitions",
+      "wp": "transitions\\TRANSITIONS.TP2",
+      "wc": 73,
+      "g": "eltan_reward",
+      "no": "Eltan rewards hero with a house near the Flaming Fist compound.",
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "Both modify Bhaalspawn power acquisition. May interact unexpectedly",
+      "myComps": "#10 BGI dream with new Bhaalspawn power #140 Irenicus movie restores Bhaalspawn powers",
+      "theirComps": "#202 #241 Revised Bhaalpowers #218 Regain Bhaalpowers in ToB",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "transitions"
+  }
+}

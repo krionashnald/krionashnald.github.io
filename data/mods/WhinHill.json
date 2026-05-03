@@ -1,0 +1,83 @@
+{
+  "i": 97,
+  "t": "WhinHill",
+  "sv": 1,
+  "ord": 350,
+  "c": "QUEST MODS BG2",
+  "n": "The Journey to the Whin Hill",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "no": "IWD-style adventure for BG2. Search for a missing man in the Whin Hill area, facing wyverns and uncovering a dangerous settlement",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "afu",
+          "portraits/whinhill/l_afu.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/the-journey-to-the-whin-hill/",
+  "a": "Lava Del'Vortel",
+  "v": "v1.3.3",
+  "sum": "IWD-style adventure for BG2 where players search for a man in the Whin Hill area, facing wyverns and uncovering the mystery behind a dangerous settlement.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/the-journey-to-the-whin-hill/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Yes, but don't patch existing save games",
+      "tp2n": "Yes, but don't patch existing save games",
+      "pi": "L#-WhinHill-NOPATCH",
+      "scn": "The Journey to the Whin Hill - a Baldur's Gate 2: EE quest",
+      "wf": "WhinHill",
+      "wp": "WhinHill\\WhinHill.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "g": "whinhill_install",
+      "no": "New game required. Recommended for fresh EET installs"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes, and patch existing save games",
+      "wp": "WhinHill\\WhinHill.tp2",
+      "g": "whinhill_install",
+      "scn": "The Journey to the Whin Hill - a Baldur's Gate 2: EE quest",
+      "no": "Patches existing saves to add the quest. Use if mid-playthrough"
+    },
+    {
+      "n": "The Journey to the Whin Hill: add the optional minor joinable companion - Afu-Zuuvi",
+      "tp2n": "The Journey to the Whin Hill: add the optional minor joinable companion - Afu-Zuuvi",
+      "pi": "L#_AFUZUUVI",
+      "wf": "WhinHill",
+      "wp": "WhinHill\\WhinHill.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "cn": 2,
+      "no": "Adds Afu-Zuuvi, a minor joinable companion for the Whin Hill quest"
+    },
+    {
+      "n": "The Journey to the Whin Hill: Player-Initiated Dialogues for the optional companion - Afu-Zuuvi",
+      "tp2n": "The Journey to the Whin Hill: Player-Initiated Dialogues for the optional companion - Afu-Zuuvi",
+      "pi": "L#_AFUZUUVI-PIDs",
+      "wf": "WhinHill",
+      "wp": "WhinHill\\WhinHill.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "cn": 3,
+      "no": "Player-initiated dialogue for Afu-Zuuvi. Requires companion (cn:2)",
+      "x": 2
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "i": 547,
+  "t": "xulaye_eet",
+  "sv": 1,
+  "ord": 1200,
+  "c": "NEW NPC MODS",
+  "n": "Xulaye NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "EpicThieving",
+      "withId": 414,
+      "severity": "soft",
+      "reason": "Epic Locks modifies doors in Spellhold/Brynnlaw areas. However, Epic Locks explicitly preserves all existing unlock methods (keys, plot events) — it only adds picklock as an alternative. Xulaye quest should still function.",
+      "myComps": "#0 Xulaye NPC Mod for EET",
+      "theirComps": "Epic Locks, #1",
+      "source": "Epic Thieving README: 'you can still unlock an epic lock through any way it could previously be unlocked', 2026-03"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "xulaye",
+          "portraits/xulaye_eet/lk_xul.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/RoxanneSHS/XulayeEet",
+  "a": "Riviera, Bookwyrme",
+  "v": "v2.0",
+  "sum": "Phaere's sister can join for an extended quest in Underdark.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "au": "K'aeloreeand others",
+  "dl": "https://github.com/RoxanneSHS/XulayeEet",
+  "no": "Phaere's sister can join for an extended quest in Underdark.",
+  "co": [
+    {
+      "n": "Xulaye NPC Mod for EET",
+      "cn": 0,
+      "wf": "xulaye",
+      "wp": "xulaye\\xulaye.tp2",
+      "wc": 0,
+      "tp2n": "Xulaye NPC Mod for BG2:SoA"
+    },
+    {
+      "n": "Xulaye's Player Initiated Dialogues",
+      "cn": 1,
+      "x": 0,
+      "wf": "xulaye",
+      "wp": "xulaye\\xulaye.tp2",
+      "tp2n": "Xulaye's Player Initiated Dialogues"
+    },
+    {
+      "n": "Korgan Fights at the Pits",
+      "cn": 2,
+      "wf": "xulaye",
+      "wp": "xulaye\\xulaye.tp2",
+      "tp2n": "Korgan Fights at the Pits"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "XulayeEet"
+  }
+}

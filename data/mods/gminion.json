@@ -1,0 +1,60 @@
+{
+  "i": 466,
+  "t": "gminion",
+  "sv": 1,
+  "ord": 60,
+  "c": "CREATURE MODS",
+  "n": "G-Minion",
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "G-Minion should install before SCS. SCS AI initialization patches over G-Minion's scripts. Install order dependent.",
+      "orderOnly": true,
+      "myComps": "#0 gMinion",
+      "theirComps": "#5900",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both provide AI automation. Use one or the other",
+      "myComps": "#0 gMinion",
+      "theirComps": "#300 Slightly improved party AI"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/files/file/717-gminion/",
+  "a": "Sarkyn",
+  "v": "v3",
+  "sum": "Improves the AI scripts of summoned creatures so they behave more intelligently and in line with original design intentions and PnP D&D conventions.",
+  "tags": [
+    "combat"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "gMinion"
+  },
+  "dl": "https://www.gibberlings3.net/files/file/717-gminion/",
+  "langs": {
+    "en": 0
+  },
+  "au": "Daxtreme",
+  "co": [
+    {
+      "n": "gMinion",
+      "tp2n": "gMinion",
+      "cn": 0,
+      "wf": "gminion",
+      "wp": "gminion\\SETUP-GMINION.TP2",
+      "wc": 0,
+      "wq": "exact"
+    }
+  ]
+}

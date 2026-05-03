@@ -1,0 +1,192 @@
+{
+  "i": 572,
+  "t": "SoS",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 680,
+  "c": "QUEST MODS BG2",
+  "n": "Shadows Over Soubar",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "es": 3,
+    "it": 4,
+    "zh-cn": 5
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURSOS01",
+          "wizard",
+          5,
+          "Conjuration",
+          "Soubar's Bane",
+          "Quest-specific summoning spell."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "sos_gareth",
+          "portraits/sos/cbtbgga.png",
+          "bg2"
+        ],
+        [
+          "sos_merci",
+          "portraits/sos/cbtbgme.png",
+          "bg2"
+        ],
+        [
+          "sos_polaris",
+          "portraits/sos/cbtbgpo.png",
+          "bg2"
+        ],
+        [
+          "sos_torque",
+          "portraits/sos/cbtbgto.png",
+          "bg2"
+        ],
+        [
+          "sos_charlotte",
+          "portraits/sos/charlot.png",
+          "bg2"
+        ],
+        [
+          "sos_selence",
+          "portraits/sos/selence.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/RoxanneSHS/SoS-EE",
+  "a": "CBisson, Horred the Plague",
+  "v": "2.1.3",
+  "sum": "Large BG2 expansion set in and around the town of Soubar. Adds extensive new areas, quests, and a dark storyline. 10+ hours of content.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/RoxanneSHS/SoS-EE",
+  "au": "Charles Bisson, Horred The Plague",
+  "no": "Large BG2 expansion set in and around the town of Soubar. Adds extensive new areas, quests, and a dark storyline. 10+ hours of content.",
+  "co": [
+    {
+      "n": "Shadows Over Soubar",
+      "tp2n": "Shadows Over Soubar",
+      "cn": 0,
+      "wf": "SOS",
+      "wp": "SOS\\SOS.TP2",
+      "wc": 0,
+      "sp": 1,
+      "spLv": {
+        "w5": 1
+      },
+      "no": "Major quest mod adding the town of Soubar with new quests and areas."
+    },
+    {
+      "n": "Alternative Soubar area (by Cuttooth)",
+      "tp2n": "Alternative Soubar area (by Cuttooth)",
+      "cn": 4,
+      "wf": "SOS",
+      "wp": "SOS\\SOS.TP2",
+      "wc": 4,
+      "no": ""
+    },
+    {
+      "n": "Shadows over Soubar Resource biffing",
+      "tp2n": "Shadows over Soubar Resource biffing",
+      "cn": 3,
+      "wf": "SoS",
+      "wp": "SoS\\SoS.TP2",
+      "wc": 3,
+      "no": "Biffs SOS resources for faster loading.",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Selence arrives to Waukeens Promenade after the meeting with Gaelan in the slums",
+      "tp2n": "Selence arrives to Waukeens Promenade after the meeting with Gaelan in the slums",
+      "cn": 1,
+      "wf": "SOS",
+      "wp": "SOS\\SOS.TP2",
+      "wc": 1,
+      "no": "Selence arrives at Waukeen's Promenade after meeting Gaelan."
+    },
+    {
+      "n": "Remorhaz walking speed adjustment",
+      "tp2n": "Remorhaz walking speed adjustment (for ENGLISH version .EXE ONLY!!!)",
+      "cn": 2,
+      "wf": "SoS",
+      "wp": "SoS\\SoS.TP2",
+      "wc": 2,
+      "no": "Adjusts remorhaz creature movement speed.",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "SoS-EE"
+  }
+}

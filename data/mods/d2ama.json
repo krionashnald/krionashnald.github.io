@@ -1,0 +1,120 @@
+{
+  "i": 717,
+  "t": "d2ama",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Amazon Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Amazon kit for Ranger class. Female only; Human, Elf, Half-elf. Three skill trees: javelin/spear, passive/magic, bow/crossbow. Includes Valkyrie companion. Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_AMAZON": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 DEX at creation"
+          },
+          {
+            "n": "Critical Strike",
+            "type": "desc",
+            "desc": "Chance to deal double damage"
+          },
+          {
+            "n": "Dodge/Avoid",
+            "type": "desc",
+            "desc": "+2 AC, evasion chance"
+          },
+          {
+            "n": "Penetrate",
+            "type": "desc",
+            "desc": "+2 THAC0 bonus"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Javelin/Bow/Summon Skills",
+            "freq": "D2 skill point system",
+            "effects": "Jab, Power Strike, Magic/Fire/Freezing Arrow, Multiple Shot, Guided Arrow, Decoy, Valkyrie, Inner Sight, Slow Missiles.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "no plate",
+          "race": "Female Human/Elf/Half-elf only",
+          "noSpells": true,
+          "items": "No Ranger spells or stealth. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "dex": 1,
+          "note": "Innate stat modifiers: +1 DEX"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_AMAZON",
+          "ranger",
+          "Diablo2 Amazon",
+          "Diablo 2-inspired ranged warrior. Javelin and bow skills with elemental abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "1.0",
+  "sum": "Diablo 2-inspired Amazon kit for the Ranger class. Female only (Human, Elf, Half-elf). Three skill trees: javelin/spear, passive/magic, bow/crossbow. Includes Valkyrie companion.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Amazon Kit",
+      "tp2n": "Diablo2 Amazon Kit",
+      "wf": "d2ama",
+      "wp": "d2ama\\SETUP-d2ama.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Turns off the white wiffle ball animation of Avoid and Evade",
+      "tp2n": "Turns off the white wiffle ball animation of Avoid and Evade",
+      "wf": "d2ama",
+      "wp": "d2ama\\SETUP-d2ama.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

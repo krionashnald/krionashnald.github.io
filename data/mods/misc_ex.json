@@ -1,0 +1,273 @@
+{
+  "i": 858,
+  "t": "misc_ex",
+  "sv": 1,
+  "ord": 1060,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "misc_ex Tweaks",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/qvni/misc_ex-v1",
+  "a": "auiwqi",
+  "sum": "Provides numerous options to improve the game's difficulty, best combined with Sword Coast Stratagems, in addition to numerous bug fixes and general AI improvements.",
+  "tags": [
+    "combat",
+    "difficulty"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "auiwqi",
+  "dl": "https://github.com/qvni/misc_ex-v1",
+  "no": "Difficulty enhancement and AI improvement mod. Includes wizard/priest spell changes, AoE spell fixes, revised items, earlier HLAs, table changes (lore, reputation), NPC hotkeys (choose-one), LoB fixes (choose-one), responsive summons, and familiar tweaks. Best paired with SCS. English only.",
+  "co": [
+    {
+      "n": "Wizard Spells",
+      "cn": 0,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Priest Spells",
+      "cn": 5,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "sp": 1,
+      "spLv": {
+        "p5": 1
+      }
+    },
+    {
+      "n": "AoE Spell Fixes",
+      "cn": 10,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 10,
+      "wq": "verified"
+    },
+    {
+      "n": "Disband Threshold for Joinable NPCs",
+      "cn": 105,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 105,
+      "wq": "verified"
+    },
+    {
+      "n": "Items*See Readme",
+      "cn": 110,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 110,
+      "wq": "verified"
+    },
+    {
+      "n": "Item Recharging",
+      "cn": 115,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 115,
+      "wq": "verified"
+    },
+    {
+      "n": "Additional NPC Levels",
+      "cn": 120,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 120,
+      "wq": "verified"
+    },
+    {
+      "n": "Lore Scaling",
+      "cn": 300,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 300,
+      "wq": "verified"
+    },
+    {
+      "n": "Paladin/Ranger Reputation",
+      "cn": 305,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 305,
+      "wq": "verified"
+    },
+    {
+      "n": "Enchanted Ranged",
+      "cn": 310,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 310,
+      "wq": "verified"
+    },
+    {
+      "n": "Constituion Table",
+      "cn": 315,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 315,
+      "wq": "verified",
+      "g": "NPC Hotkeys"
+    },
+    {
+      "n": "Remove Hotkey from Balthazar",
+      "cn": 325,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 325,
+      "wq": "verified",
+      "g": "NPC Hotkeys"
+    },
+    {
+      "n": "Remove Hotkey from Saverok",
+      "cn": 326,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 326,
+      "wq": "verified",
+      "g": "NPC Hotkeys"
+    },
+    {
+      "n": "Remove Hotkey from Balthazar and Saverok",
+      "cn": 327,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 327,
+      "wq": "verified",
+      "g": "NPC Hotkeys"
+    },
+    {
+      "n": "Modified STR/thac0 Tables",
+      "cn": 330,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 330,
+      "wq": "verified"
+    },
+    {
+      "n": "Misc Changes",
+      "cn": 400,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 400,
+      "wq": "verified"
+    },
+    {
+      "n": "Area Transitions & NPCs",
+      "cn": 401,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 401,
+      "wq": "verified"
+    },
+    {
+      "n": "Thieved Inventory Items",
+      "cn": 405,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 405,
+      "wq": "verified"
+    },
+    {
+      "n": "Donation Adjustment",
+      "cn": 410,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 410,
+      "wq": "verified"
+    },
+    {
+      "n": "Starting Reputation",
+      "cn": 415,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 415,
+      "wq": "verified"
+    },
+    {
+      "n": "Store Discounts",
+      "cn": 420,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 420,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove Identification",
+      "cn": 425,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 425,
+      "wq": "verified"
+    },
+    {
+      "n": "High Level Ability Table",
+      "cn": 500,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 500,
+      "wq": "verified",
+      "sp": 1,
+      "ss": 9,
+      "spLv": {
+        "i9": 1
+      }
+    },
+    {
+      "n": "Corrected Saves for LoB",
+      "cn": 505,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 505,
+      "wq": "verified",
+      "g": "LoB Options"
+    },
+    {
+      "n": "Scaling AC and Corrected Saves for LoB",
+      "cn": 506,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 506,
+      "wq": "verified",
+      "g": "LoB Options"
+    },
+    {
+      "n": "Increased AC and Corrected Saves for LoB",
+      "cn": 507,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 507,
+      "wq": "verified",
+      "g": "LoB Options"
+    },
+    {
+      "n": "Responsive Summons *See Readme",
+      "cn": 510,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 510,
+      "wq": "verified"
+    },
+    {
+      "n": "Familiars (EET)",
+      "cn": 515,
+      "wf": "misc_ex",
+      "wp": "misc_ex\\misc_ex.tp2",
+      "wc": 515,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "qvni",
+    "r": "misc_ex-v1"
+  }
+}

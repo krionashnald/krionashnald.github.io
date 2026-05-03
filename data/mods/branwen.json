@@ -1,0 +1,70 @@
+{
+  "i": 456,
+  "t": "branwen",
+  "sv": 1,
+  "ord": 690,
+  "c": "NEW NPC MODS",
+  "n": "Branwen BG2 NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2
+  },
+  "no": "Branwen as joinable NPC in BG2 TN Female Human Cleric",
+  "conflicts": [
+    {
+      "with": "RJALI",
+      "withId": 631,
+      "severity": "partial",
+      "reason": "Install order dependency, not incompatibility. Rjali explicitly detects Branwen BG2 via MOD_IS_INSTALLED and patches it for multi-romance integration using DECOMPILE_AND_PATCH. Install Rjali AFTER Branwen.",
+      "orderOnly": true,
+      "myComps": "#0 Branwen BG2 NPC mod for players and modders",
+      "theirComps": "#3 Rjali Romance Mod",
+      "source": "Rjali multi.tpa has MOD_IS_INSTALLED check for BRANWEN, then patches its BCS/DLG files for multi-romance support. Designed to work together, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Branwen in BG2. BG1NPCinSoA auto-skips its Branwen if standalone detected.",
+      "myComps": "#0 Branwen BG2 NPC mod for players and modders",
+      "theirComps": "#10 Branwen",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME o#bran.cre. Fixed stale comp_b (removed unrelated Water Gardens reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/Branwen_for_BGII",
+  "a": "Pocket Plane Group",
+  "v": "v8pre",
+  "sum": "A playable modding tutorial NPC mod for BGII!",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v4",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Branwen_for_BGII"
+  },
+  "au": "Kulyok",
+  "dl": "https://github.com/Pocket-Plane-Group/Branwen_for_BGII",
+  "pt": false,
+  "co": [
+    {
+      "n": "Branwen BG2 NPC mod for players and modders",
+      "cn": 0,
+      "wf": "branwen",
+      "wp": "branwen\\BRANWEN.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Branwen BG2 NPC mod for players and modders"
+    }
+  ]
+}

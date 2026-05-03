@@ -1,0 +1,268 @@
+{
+  "i": 600,
+  "t": "gavin_bg2",
+  "sv": 1,
+  "pfx": "B!",
+  "ord": 1090,
+  "c": "NEW NPC MODS",
+  "n": "Gavin NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b_gavin.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/amgav.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b_gavin1.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b_gavin2.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b_gavin4.png",
+          "bg2"
+        ],
+        [
+          "gavin_npc",
+          "portraits/gavin_bg2/b_gavin5.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Gavin_BG2",
+  "a": "berelinde",
+  "v": "v24.1",
+  "sum": "Continues Gavin into BG2 as a joinable NPC with romance continuation, new quests, and expanded dialogue.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v22",
+    "place": "post"
+  },
+  "au": "berelinde",
+  "dl": "https://github.com/Gibberlings3/Gavin_BG2",
+  "no": "This mod adds Gavin, a neutral good Dawnbringer of Lathander, to Baldur's Gate II (original or Enhanced Edition) as well as the conversion projects EET or BGT.",
+  "co": [
+    {
+      "n": "Gavin for BG2",
+      "cn": 0,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wc": 0,
+      "tp2n": "Speed: 1 hour real time minimum between dialogues",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Speed: 45 minutes real time minimum between dialogues",
+      "cn": 10,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Speed: 45 minutes real time minimum between dialogues",
+      "pi": "b!gavin_bg2_2700",
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Speed: 30 minutes real time minimum between dialogues",
+      "cn": 11,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Speed: 30 minutes real time minimum between dialogues",
+      "pi": "b!gavin_bg2_1800",
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Speed: 15 minutes real time minimum between dialogues",
+      "cn": 12,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Speed: 15 minutes real time minimum between dialogues",
+      "pi": "b!gavin_bg2_900",
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Speed: 1 hour 30 minutes real time minimum between dialogues",
+      "cn": 13,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Speed: 1 hour 30 minutes real time minimum between dialogues",
+      "pi": "b!gavin_bg2_5400",
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Speed: 2 hours real time minimum between dialogues",
+      "cn": 14,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Speed: 2 hours real time minimum between dialogues",
+      "pi": "b!gavin_bg2_7200",
+      "scn": "Gavin for BG2"
+    },
+    {
+      "n": "Gavin heals the PC when below 50% health  (Can be disabled or enabled via player-initiated dialogue)",
+      "cn": 1,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wc": 1,
+      "tp2n": "Gavin heals the PC when below 50% health \n(Can be disabled or enabled via player-initiated dialogue)"
+    },
+    {
+      "n": "Normal romance kills",
+      "cn": 2,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Normal romance kills"
+    },
+    {
+      "n": "Multi-romance cheat -> Normal romance kills",
+      "cn": 3,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wc": 3,
+      "tp2n": "Multi-romance cheat"
+    },
+    {
+      "n": "Dawnbringer, by Amaurea",
+      "cn": 4,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Dawnbringer, by Amaurea",
+      "pi": "b!gavin_portrait_alt_1",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    },
+    {
+      "n": "Dawn skies, by Kaeloree",
+      "cn": 5,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Dawn skies, by Kaeloree",
+      "pi": "b!gavin_portrait_alt_2",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    },
+    {
+      "n": "Grey skies, by Kaeloree",
+      "cn": 6,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Grey skies, by Kaeloree",
+      "pi": "b!gavin_portrait_alt_3",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    },
+    {
+      "n": "Red tunic, by Miloch",
+      "cn": 7,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Red tunic, by Miloch",
+      "pi": "b!gavin_portrait_alt_4",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    },
+    {
+      "n": "Original alternate, by Kaeloree",
+      "cn": 8,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wq": "verified",
+      "tp2n": "Original alternate, by Kaeloree",
+      "pi": "b!gavin_portrait_alt_5",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    },
+    {
+      "n": "Alternate Portrait Selection  (Default portrait is already installed) -> Dragon Age style portrait by berelinde",
+      "cn": 9,
+      "wf": "gavin_bg2",
+      "wp": "gavin_bg2\\SETUP-GAVIN_BG2.TP2",
+      "wc": 9,
+      "tp2n": "Dragon Age style portrait by berelinde",
+      "scn": "Alternate Portrait Selection \n(Default portrait is already installed)"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Gavin_BG2"
+  }
+}

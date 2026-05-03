@@ -1,0 +1,97 @@
+{
+  "i": 318,
+  "t": "A7-ChaosSorcerer",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 60,
+  "c": "KIT & CLASS MODS",
+  "n": "The Chaos Sorcerer: A Wild Magic Kit for Sorcerers",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "pl": 2,
+    "ru": 3,
+    "fr": 4
+  },
+  "no": "Chaos Sorcerer Possible conflict with SD's Spell Tweaks' Lv1 Cantrips (it moves Nahal's to 2nd level)",
+  "spl": {
+    "1": {
+      "spells": [
+        [
+          "SPWI121",
+          "modify",
+          "Chaos Weave spell selection lists recreated"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Argent77/A7-ChaosSorcerer/releases/",
+  "a": "Argent77",
+  "v": "2.11",
+  "sum": "A mod for BG:EE, BG2:EE and IWD:EE that introduces the new kit Chaos Sorcerer.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-ChaosSorcerer"
+  },
+  "dl": "https://github.com/Argent77/A7-ChaosSorcerer/releases/",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "\"Chaos Sorcerer\" kit",
+      "tp2n": "\"Chaos Sorcerer\" kit",
+      "pi": "A7-CHAOSSORCERER-MAIN",
+      "wf": "A7-ChaosSorcerer",
+      "wp": "A7-ChaosSorcerer\\A7-CHAOSSORCERER.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 0
+    },
+    {
+      "n": "Recreate \"Chaos Weave\" spell selection lists",
+      "tp2n": "Recreate \"Chaos Weave\" spell selection lists",
+      "pi": "A7-CHAOSSORCERER-RECREATE_SPELL_LIST",
+      "wf": "A7-ChaosSorcerer",
+      "wp": "A7-ChaosSorcerer\\A7-CHAOSSORCERER.TP2",
+      "wq": "substr_match",
+      "cn": 10
+    },
+    {
+      "n": "Make \"Wild Mage\" kit unavailable for character creation",
+      "tp2n": "Make \"Wild Mage\" kit unavailable for character creation",
+      "pi": "A7-CHAOSSORCERER-HIDE_WILDMAGE",
+      "wf": "A7-ChaosSorcerer",
+      "wp": "A7-ChaosSorcerer\\A7-CHAOSSORCERER.TP2",
+      "wq": "substr_match",
+      "cn": 20
+    },
+    {
+      "n": "Add \"Primordial Artifacts\"",
+      "tp2n": "Add \"Primordial Artifacts\"",
+      "pi": "A7-CHAOSSORCERER-PRIMORDIAL_ARTIFACTS",
+      "wf": "A7-ChaosSorcerer",
+      "wp": "A7-ChaosSorcerer\\A7-CHAOSSORCERER.TP2",
+      "wc": 30,
+      "wq": "name_match",
+      "cn": 30
+    }
+  ]
+}

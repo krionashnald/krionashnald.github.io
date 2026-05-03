@@ -1,0 +1,654 @@
+{
+  "i": 649,
+  "t": "BG1NPCSoA",
+  "sv": 1,
+  "ord": 740,
+  "c": "QUEST MODS BG2",
+  "n": "BG1 NPC in SoA: Water Gardens",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2
+  },
+  "au": "Smiling Imp",
+  "dl": "https://github.com/SpellholdStudios/BG1_NPCs_for_SoA_-_ToB",
+  "no": "Massive NPC pack bringing BG1 NPCs to BG2. Includes Water Gardens district, Kagain's Corner store, Coran & Safana, Alora, Faldorn, Xzar & Monty, Quayle & Tiax, Ajantis, Dynaheir, Kivan, Xan, Shar-Teel, Skie & Eldoth, Yeslick, Garrick, and more. Many components auto-skip when standalone NPC mods are detected.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "coran",
+      "withId": 141,
+      "severity": "hard",
+      "reason": "Choose one Coran in BG2. Standalone Coran (by Domi/PPG) is more feature-rich with full romance and quest content. BG1NPCinSoA auto-skips its Coran if standalone detected.",
+      "myComps": "#20 Coran & Safana",
+      "theirComps": "#0 Coran NPC",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME O#Coran.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TDDZ",
+      "withId": 521,
+      "severity": "hard",
+      "reason": "Choose one Kivan in BG2. BG1NPCinSoA auto-skips its Kivan if TDD's kivan10.cre detected.",
+      "myComps": "#70 Kivan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME kivan10.cre. Fixed stale comp_b (removed unrelated Xzar/Monty reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Kivan",
+      "withId": 591,
+      "severity": "hard",
+      "reason": "Choose one Kivan in BG2. Standalone Kivan of Shilmista is more feature-rich. BG1NPCinSoA auto-skips its Kivan if standalone detected.",
+      "myComps": "#70 Kivan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME p#kivan.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Tiax",
+      "withId": 481,
+      "severity": "soft",
+      "reason": "BG1NPCinSoA comp 50 auto-skips its Tiax when standalone Tiax detected (FILE_EXISTS_IN_GAME O#Tiax.cre); installs Quayle only. Both can coexist.",
+      "myComps": "#50 Gnomes in the City: Quayle & Tiax",
+      "theirComps": "#0 Tiax NPC",
+      "source": "BG1NPCSoA.tp2 line 9513: REQUIRE_PREDICATE with OR; line 9540: ACTION_IF NOT FILE_EXISTS_IN_GAME O#Tiax.cre, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ajantisbg2",
+      "withId": 140,
+      "severity": "hard",
+      "reason": "Choose one Ajantis in BG2. Standalone Sir Ajantis (by jastey) is more feature-rich with full romance and quests. BG1NPCinSoA auto-skips its Ajantis if standalone detected.",
+      "myComps": "#60 Ajantis",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME c#ajan08.cre. Fixed stale comp_b (was 'Dynaheir' — wrong NPC, should be #60 Ajantis), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "yeslicknpc",
+      "withId": 143,
+      "severity": "hard",
+      "reason": "Choose one Yeslick in BG2. BG1NPCinSoA auto-skips its Yeslick if standalone detected.",
+      "myComps": "#4 Yeslick",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME lk#yesl.cre. Fixed stale comp_b (removed unrelated Water Gardens reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SkieCost",
+      "withId": 148,
+      "severity": "hard",
+      "reason": "Choose one Skie in BG2 WeiDU auto-skips the bg1npcsoa version when standalone is detected.",
+      "myComps": "#8",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "branwen",
+      "withId": 456,
+      "severity": "hard",
+      "reason": "Choose one Branwen in BG2. BG1NPCinSoA auto-skips its Branwen if standalone detected.",
+      "myComps": "#10 Branwen",
+      "theirComps": "#0 Branwen BG2 NPC mod for players and modders",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME o#bran.cre. Fixed stale comp_b (removed unrelated Water Gardens reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Xan",
+      "withId": 142,
+      "severity": "hard",
+      "reason": "Choose one Xan in BG2. Standalone Xan (by Kulyok) is vastly more feature-rich with full romance and personal quests. BG1NPCinSoA auto-skips its Xan if standalone detected.",
+      "myComps": "#75 Xan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME O#Xan09.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "L#QUAYLEBG2",
+      "withId": 147,
+      "severity": "hard",
+      "reason": "Choose one Quayle and Tiax in BG2 WeiDU auto-skips the bg1npcsoa version when standalone Quayle detected.",
+      "myComps": "#0 Gnomes in the City",
+      "theirComps": "#0 Quayle NPC",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "FALDORNBG2",
+      "withId": 144,
+      "severity": "hard",
+      "reason": "Choose one Faldorn in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "myComps": "#40 Faldorn's New Leaf",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "XZARMONT",
+      "withId": 487,
+      "severity": "hard",
+      "reason": "Choose one Xzar/Montaron in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "myComps": "#45 Xzar and Monty Murder Mysteries",
+      "theirComps": "#0 Return of Xzar and Montaron (main)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "DYNBG2",
+      "withId": 934,
+      "severity": "hard",
+      "reason": "Choose one Dynaheir in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "myComps": "#65 Dynaheir",
+      "theirComps": "#0 Dynaheir BG2EE (main)",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/BG1_NPCs_for_SoA_-_ToB",
+  "a": "Smiling Imp",
+  "sum": "Massive NPC pack bringing BG1 companions to BG2. Adds Water Gardens district, 15+ joinable NPCs (Shar-Teel, Yeslick, Garrick, Coran, Safana, Alora, Skie, Eldoth, Faldorn, Xzar, Montaron, Quayle, Tiax, Ajantis, Dynaheir, Kivan, Xan, Kagain, Branwen), kit changes, and expanded circus quest. Auto-skips NPCs when standalone mods detected.",
+  "tags": [
+    "npc",
+    "quest"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Water Gardens. New Athkatla's district & new quests",
+      "cn": 0,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 0,
+      "no": "",
+      "tp2n": "Water Gardens. New Athkatla's district & new quests",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "OPTIONAL component, NOT RECOMMENDED! Add unbalanced and non-lore items to merchant shops in Water Gardens?",
+      "cn": 1,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 1,
+      "no": "OPTIONAL unbalanced non-lore items (not recommended).",
+      "tp2n": "OPTIONAL component, NOT RECOMMENDED! Add unbalanced and non-lore items to merchant shops in Water Gardens?",
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Shar-Teel NPC in BG2. \"Nightbringer of Shar\" (SoA)",
+      "cn": 2,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 2,
+      "no": "Shar-Teel as Nightbringer of Shar NPC in BG2.",
+      "tp2n": "Shar-Teel NPC in BG2. \"Nightbringer of Shar\" (SoA)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "New portrait of Shar-Teel (blonde, slightly older)",
+      "cn": 3,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "no": "Alternate Shar-Teel portrait. Requires cn:2 (Shar-Teel NPC).",
+      "tp2n": "New portrait of Shar-Teel (blonde, slightly older)",
+      "grn": "Main Mod"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 4,
+      "n": "Yeslick Orothiar NPC in BG2 (SoA)",
+      "wc": 4,
+      "no": "REMOVED FROM ULTIMATE PRESET — standalone Yeslick NPC (i=143) is in the preset. BG1NPCSoA auto-skips via REQUIRE_PREDICATE when standalone Yeslick detected. Use one or the other.",
+      "tp2n": "Yeslick Orothiar NPC in BG2 (SoA)",
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Brave Sir Garrick NPC in BG2 (SoA)",
+      "cn": 6,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 6,
+      "no": "",
+      "tp2n": "Brave Sir Garrick NPC in BG2 (SoA)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 8,
+      "n": "Skie & Eldoth NPCs in BG2 (SoA)",
+      "wc": 8,
+      "no": "REMOVED FROM ULTIMATE PRESET — standalone Skie: Cost of One Girl's Soul (i=148) is in the preset. BG1NPCSoA auto-skips via REQUIRE_PREDICATE when standalone Skie detected. Use one or the other.",
+      "tp2n": "ToB-part for Shar-Teel or/and Yeslick, Garrick, Branwen, Skie, Eldoth",
+      "grn": "Main Mod"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 10,
+      "n": "Branwen NPC in BG2 (SoA)",
+      "wc": 10,
+      "no": "REMOVED FROM ULTIMATE PRESET — standalone Branwen BG2 NPC (i=456) is more feature-rich with full romance, quests, Bodhi abduction, and ToB content. BG1NPCSoA auto-skips via REQUIRE_PREDICATE when standalone Branwen detected.",
+      "tp2n": "Branwen NPC in BG2 (SoA)",
+      "grn": "Main Mod"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 20,
+      "n": "Coran & Safana Chronicles (SoA & ToB)",
+      "wc": 20,
+      "no": "Adds Coran and Safana as joinable NPCs with a shared questline.",
+      "tp2n": "Coran & Safana Chronicles (SoA & ToB)",
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Alora (SoA & ToB)",
+      "cn": 25,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 25,
+      "no": "Alora joinable in SoA and ToB.",
+      "tp2n": "Alora (SoA & ToB)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Kagain's Corner (SoA & ToB): Store with crazy amount of magical items",
+      "g": "kagain_store",
+      "scn": "Kagain's Corner (SoA & ToB)",
+      "grn": "Main Mod",
+      "cn": 30,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 30,
+      "no": "Kagain's Corner: store with many magical items.",
+      "tp2n": "Store with crazy amount of magical items",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Kagain's Corner (SoA & ToB): Store with Vanilla Items Only",
+      "g": "kagain_store",
+      "scn": "Kagain's Corner (SoA & ToB)",
+      "grn": "Main Mod",
+      "cn": 35,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Kagain's Corner: store with vanilla items only.",
+      "tp2n": "Store with Vanilla Items Only"
+    },
+    {
+      "n": "Faldorn's New Leaf (SoA & ToB)",
+      "cn": 40,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 40,
+      "no": "Faldorn's New Leaf: reformed druid in SoA/ToB.",
+      "tp2n": "Faldorn's New Leaf (SoA & ToB)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Xzar and Monty Murder Mysteries (SoA & ToB)",
+      "cn": 45,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 45,
+      "no": "",
+      "tp2n": "Xzar and Monty Murder Mysteries (SoA & ToB) (R, 18+!)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Gnomes in the City: Quayle & Tiax (SoA & ToB)",
+      "cn": 50,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 50,
+      "no": "",
+      "tp2n": "Gnomes in the City: Quayle & Tiax (SoA & ToB)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Expanded circus quest: Standard difficulty",
+      "g": "circus",
+      "scn": "Expanded cirqus quest",
+      "grn": "Main Mod",
+      "cn": 55,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 55,
+      "no": "Expanded circus quest. Requires cn:50 (Gnomes in the City).",
+      "tp2n": "Expanded cirqus quest (Standard difficulty)"
+    },
+    {
+      "n": "Expanded circus quest: EXTREME difficulty",
+      "g": "circus",
+      "scn": "Expanded cirqus quest",
+      "grn": "Main Mod",
+      "cn": 56,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "no": "Very difficult battles in circus. Requires cn:50 (Gnomes in the City).",
+      "tp2n": "Expanded cirqus quest - VERY difficult battles in circus (EXTREME difficulty)"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 60,
+      "n": "Ajantis (SoA & ToB)",
+      "wc": 60,
+      "no": "REMOVED FROM ULTIMATE PRESET — standalone Sir Ajantis NPC (i=140) by jastey is more feature-rich with full romance and quests. BG1NPCSoA auto-skips via REQUIRE_PREDICATE when standalone Ajantis detected.",
+      "tp2n": "Ajantis (SoA & ToB)",
+      "grn": "Main Mod"
+    },
+    {
+      "n": "Dynaheir (SoA)",
+      "cn": 65,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 65,
+      "no": "Dynaheir joinable in SoA.",
+      "tp2n": "Dynaheir (SoA)",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Unfinished NPCs (little content in components!!!)"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 70,
+      "n": "Kivan (SoA & ToB)",
+      "wc": 70,
+      "no": "Adds Kivan as a joinable NPC in BG2. Hard conflict with Kivan of Shilmista mod.",
+      "tp2n": "Kivan (SoA & ToB)",
+      "grn": "Unfinished NPCs (little content in components!!!)"
+    },
+    {
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSoA.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 75,
+      "n": "Xan (SoA & ToB)",
+      "wc": 75,
+      "no": "Adds Xan as a joinable NPC in BG2. Hard conflict with Xan BG2 mod.",
+      "tp2n": "Xan (SoA & ToB)",
+      "grn": "Unfinished NPCs (little content in components!!!)"
+    },
+    {
+      "n": "Make Branwen a Priest of Tempus",
+      "cn": 80,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Requires BG2:EE or EET and Branwen component installed.",
+      "tp2n": "Make Branwen a Priest of Tempus",
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Eldoth a Jester",
+      "cn": 81,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Requires Eldoth component installed.",
+      "tp2n": "Make Eldoth a Jester",
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Faldorn an Avenger",
+      "cn": 82,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 82,
+      "no": "Makes Faldorn use the Avenger druid kit.",
+      "tp2n": "Make Faldorn an Avenger",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Garrick a Skald",
+      "cn": 83,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 83,
+      "no": "Incompatible with Might & Guile. Use standalone kit mod instead.",
+      "tp2n": "Make Garrick a Skald",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Montaron an Assasin",
+      "cn": 84,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 84,
+      "no": "Provided by Tweaks Anthology",
+      "tp2n": "Make Montaron an Assasin",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Safana a Swashbuckler",
+      "cn": 85,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Requires Safana component installed.",
+      "tp2n": "Make Safana a Swashbuckler",
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Make Skie a Shadowdancer",
+      "cn": 86,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Requires BG2:EE or EET and Skie component installed.",
+      "tp2n": "Make Skie a Shadowdancer",
+      "grn": "Change NPC Kits"
+    },
+    {
+      "n": "Inter Component Banter Pack",
+      "cn": 29,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wq": "verified",
+      "tp2n": "Inter Component Banter Pack"
+    },
+    {
+      "n": "ToB-part for Shar-Teel or/and Yeslick, Garrick, Branwen, Skie, Eldoth",
+      "cn": 11,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 11,
+      "no": "INSTALLS WITH WARNINGS: EET_NPC_TRANSITION reports 7XCRE2/4/5/6.cre don't exist — CRE files for some NPCs not found. BG2/ToB NPC functionality unaffected; BG1→BG2 transitions for these NPCs may not trigger.",
+      "gone": true
+    },
+    {
+      "n": "Inter Component Banter Pack",
+      "cn": 87,
+      "wf": "BG1NPCSoA",
+      "wp": "BG1NPCSoA\\BG1NPCSOA.TP2",
+      "wc": 87,
+      "no": "Inter-component banter pack for BG1NPCSoA NPCs.",
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "k9SharteelNPC",
+      "withId": 728,
+      "severity": "soft",
+      "reason": "BG1NPCSoA cn:2 adds Shar-Teel to BG2 as Nightbringer of Shar. k9SharteelNPC adds her to SoD. Both can coexist (different campaigns) but may have continuity inconsistencies.",
+      "myComps": "#2 Shar-Teel NPC in BG2",
+      "theirComps": "#99971 Shar-Teel for SoD",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "BG1_NPCs_for_SoA_-_ToB"
+  }
+}

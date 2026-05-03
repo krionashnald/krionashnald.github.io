@@ -1,0 +1,1055 @@
+{
+  "i": 281,
+  "t": "iiItemMod",
+  "sv": 1,
+  "ord": 270,
+  "c": "ITEM ADDITION MODS",
+  "n": "Infinity Innovations: Items",
+  "langs": {
+    "en": 0,
+    "es": 1
+  },
+  "no": "iiItem old mod, test first, goes before Rogue Rebalancing? Adds a variety of items to in-game shops and creatures, even ones added by mods.Install iiItem after all mods that add creatures, items, or shops to the game!",
+  "u": "https://github.com/btigi/iiItem",
+  "a": "btigi",
+  "v": "v5.2",
+  "sum": "iiItem adds several dozen new items to the Infinity Engine games, concentrating on lesser known item types (such as potions, bracers, arrows etc).",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "btigi",
+    "r": "iiItem"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "I1PO001",
+          "potion",
+          "Potion of Mirror Image",
+          "One of the most useful spells in any mages repertoire is Mirror Image. It reduces the chances of being struck, by either spell, arrow, or sword. It confuses and puzzles enemies. It intimidates animals and monsters alike. It's also a pain to go without it when the party mage has kicked the bucket.\n\nThat's the marketing mantra behind the makers of this potion. Consuming this potion acts the same as casting Mirror Image on the imbiber.",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO002",
+          "potion",
+          "Potion of Lesser Restoration",
+          "Thuzinn was never the most honest cleric, even before he was kicked out of the Order, so he was as surprised as everyone else when his latest get-rich-quick scheme actually worked!\n\nUsing a few common herbs, mixed in just the right way, heated gently over night and a few mumbo-jumbo 'blessings' actually Thuzinn actually managed to bottle the Lesser Restoration spell, a miracle in itself.\n\nThe potion is bright and seems full of energy, to the point of warming the bottle containing it.\n\nSTATISTICS:\n\nSpecial: Lesser Restoration on imbiber",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO003",
+          "potion",
+          "Potion of Protection from Timestop",
+          "Timestop is one of the most powerful spells any mage can cast. Using it, a mage can devastate an opposing army, clear out an entire dungeon single-handedly or bring down even the most deadliest foes.\n\nThis simple potion offers the imbiber protection from the Timestop spell for a short while.\n\nSTATISTICS:\n\nSpecial: Protects from Timestop for 5 rounds",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO004",
+          "potion",
+          "Potion of Refreshment",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO005",
+          "potion",
+          "Potion of Elemental Stability",
+          "There are many magical artifacts that allow brave adventurers to survive devastating elemental attacks, including fireballs, iceshards and lightning spells. Likewise, there are many spells which can counteract the bonuses provided by these artifacts.\n\nThe Potion of Elemental Stability is the next step in this chain - it prevents the elemental resistances of the imbiber from being altered (in either a positive or negative way) for a significant amount of time - usually enough to take care of the immediate threat at the least.\n\nSTATISTICS:\n\nSpecial: Lock elemental resistances at current values for 1 turn",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO006",
+          "potion",
+          "Potion of Vocalize",
+          "One of the most fearsome tortures that can be inflicted upon a mage is the Silence spell. Such a spell prevents the mage from casting their own spells, potentially dooming them to an early grave - for mages often rely upon their spells to stay alive in dangerous situations.\n\nThis sweet smelling purple potion can act as a life-saver in these situations, countering the Silence spell and allowing the imbiber to speak normally.\n\nSTATISTICS:\nSpecial: Casts Vocalize on imbiber",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO007",
+          "potion",
+          "Potion of Necromantic Recuperation",
+          "In trying to duplicate the natural regeneration abilities of trolls and other creatures, mages have pushed the boundaries further and further. The mixture for this potion is the result of a particularly gruesome series of experiments, which are reflected in how the potion works. Upon drinking the bitter tasting liquid, the imbiber falls to the ground in a deep coma. While in this deep coma, the target appears dead (and is hence ignored by ravenous monsters), though in reality the opposite is true - the target is recuperating wounds and damage at a rapid rate. The real negative to using this potion comes from the fact that it works by accessing the negative energy inherent within all beings - this causes a permanent loss of vitality.\n\nSTATISTICS:\nSpecial: Imbiber will not be directly targetted by enemies\nSpecial: Regain 1hp/second for 5 rounds\nSpecial: -5 Maximum HP per use",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO008",
+          "potion",
+          "Potion of Critical Skill",
+          "It has long been known that certain roots and berries can increase concentration. This potion uses several of these herbal ingredients in a concentrated form, to the point of danger. The increase in concentration is immense and often allows the imbiber to perform extraordinary feats of intelligence or combat, however the ingredients are required in such high doses that the potion becomes highly poisonous, infecting the imbiber with a virulent disease.\n\nSTATISTICS:\n\nSpecial: Every strike is a critical hit (5 rounds)\nSpecial: Imbiber suffers effects of slow (10 rounds)\nSpecial: Imbiber suffers 1d20 disease damage",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO009",
+          "potion",
+          "Umberhulk Blood",
+          "This bright, pungent, foul smelling liquid is made from actual Umberhulk blood. By consuming the liquid, the imbiber becomes effectively invisible to Umberhulks, due to the complex pheromones given off.\n\nThis potion is quite rare, both in its sale and its use - dead Umberhulks are not a common appearance in the alchemist quarters of most cities, and though adventurers will often put up with some inconveniences, smelling strongly of an Umberhulk is not usually one of them.\n\nSTATISTICS:\n\nSpecial: Invisible to Umber Hulks for 1 turn",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO010",
+          "potion",
+          "Rocksalt",
+          "The liquid of this potion is thin and flows easily, and has the sandy pick colour of its main physical ingredient - rocksalt. With a few magical spells cast on it during its mixing, the rocksalt takes on special properties. Upon use, the potion hardens the skin of the imbiber, making it harder to piece, and hence making this potion an excellent choice for melee adventurers. The downside of this skin hardening process is slight a loss of dexterity - this is not noticeable in many cases, though it does disable spell-casting, as the complex and movements required are no longer possible.\n\nSTATISTICS:\n\nSpecial: 5pt AC bonus for 3 rounds\nSpecial: Disables spell casting for 3 rounds\nSpecial: -1 Dexterity for 3 rounds",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1PO011",
+          "potion",
+          "Perfume",
+          "This beautifully shaped and engraved bottle contains an exclusive (and expensive) perfume. You cannot place the scent exactly, though it seems somewhere between roses and chocolate.\n\nSTATISTICS:\n\nSpecial: +2 Charisma for 24 hours",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "I1AR000",
+          "arrow",
+          "Arrows of Silencing",
+          "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.\n\nSTATISTICS:\n\nDamage: 1d6 (missile)\nLauncher: Bow\n\nWeight: 0",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR001",
+          "arrow",
+          "Arrows of Slowing",
+          "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.\n\nSTATISTICS:\n\nDamage: 1d6 (missile)\nLauncher: Bow\n\nWeight: 0",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR002",
+          "arrow",
+          "Arrows of Pacifism",
+          "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.\n\nSTATISTICS:\n\nDamage: 1d6 (missile)\nLauncher: Bow\n\nWeight: 0",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR003",
+          "arrow",
+          "Arrows of Healing",
+          "In times past, innovative adventurers under pressure resorted to firing arrows dipped in healing solutions at their companions to save their lives. The arrow would cause damage, though the healing solution would heal it, and other wounds the target may have had. This is a dangerous practice, as the initial shock of the arrow impact may cause death, which the healing solution can not reverse, and so the practice has remained in use only by desperate people in desperate situations.\n\nSTATISTICS:\n\nSpecial: Restore 18 HP\nDamage:  1D6\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR004",
+          "arrow",
+          "Barbed Arrows",
+          "Barbed Arrows are identical to normal arrows in all respects save one; they are augmented with several sharp, vicious barbs along the arrowhead. These barbs prevent the arrows from being easily removed, and causes extra damage and bleeding, tearing the muscles under the skin.\n\nSTATISTICS:\n\nSpecial: Bleeding damage\nDamage:  1D6\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR005",
+          "arrow",
+          "Arrows of Stone to Flesh",
+          "This type of arrow is a standard arrow, though with a magical enchantment to cast the Stone to Flesh spell on the target. These arrows are not common, though can be extremely useful in the right situation.\n\nSTATISTICS:\n\nSpecial: Cast Stone to Flesh on target\nDamage:  1D6\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR006",
+          "arrow",
+          "Arrows of Fatigue",
+          "Arrows of Fatigue are primarily intended to act as a combat averter in crowd control situations. Instead of intending to kill the target, Arrows of Fatigue are magically enchanted to increase fatigue and tiredness. This means that targets are less likely to be inclined to pursue a fight, and if they are still so inclined, there ability to right effectively is reduced. Note that Arrows of Fatigue do not produce instant fatigue, and are a cumulative effect.\n\nSTATISTICS:\n\nSpecial: Increase fatigue of target\nDamage:  1D6\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR007",
+          "arrow",
+          "Arrows of Restriction",
+          "Arrows of Restriction were specially developed as the ultimate arrow for use in large army engagements. The arrows were intended to prevent charges, eliminate the rapid repositioning required by the enemy battle-plan, and to prevent retreat of the enemy, if required.\n\nAlthough the arrows proved useful in army warfare, it wasn't long until enterprising adventurers began using them in their roles; the arrows often prove their use by immobilising fast foes, preventing warnings being sounded, and protecting more fragile adventurers.\n\n\nSTATISTICS:\n\nSpecial: Prevent movement for 5 rounds (save vs spell to resist)\nDamage:  1D6\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AR008",
+          "arrow",
+          "Far Range Arrows",
+          "The Far Range Arrow has the longest range of all commonly used arrows. Far Range Arrows are small and lightweight, and so cause less damage than standard arrows, however in many cases the extra range these arrows gives outweighs the immediate damage inflicted. \n\nSTATISTICS:\n\nSpecial: Extra long range\nDamage:  1D4\nDamage type:  missile (piercing)\nWeight:  0\nLauncher:  Bow\nNot usable by:\n Cleric\n Druid\n Mage",
+          {
+            "dmg": "1d4",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1LT001",
+          "armor",
+          "Skeleton Ribcage",
+          "This skeletal ribcage has been specially enchanted to have a rather interesting power. While equipped, the wearer appears invisible to skeletal undead creatures - in effect the creatures see the wearer as one of their own, and completely ignore them. How this is accomplished is not known, for the process to enchant armor in such a way has long been lost, however there is an interesting side-effect, the wearer develops a sympathetic link with skeletal creatures, to the point of sub-consciously despising doing physical damage to such a creature.\n\nSTATISTICS:\n\nSpecial: Invisible to skeletons\nSpecial: 10pt THAC0 penalty vs. skeletons\nArmor Class: 8\nWeight: 15\nRequires: 4 Strength\nNot Usable By:\n Mage",
+          {
+            "ac": 8,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "I1PL001",
+          "armor",
+          "Gubbie Armor",
+          "This suit of armor is commonly known as Gubbie Armor. No-one knows what the origins of the name are, nor what the strange purpose of the armor is. The only known power of this armor is to prevent the wearer from becoming invisible via magical means (spells or potions). What use this could be to anyone is unknown.\n\nSTATISTICS:\n\nSpecial: Immune to invisibility\nArmor Class: 3\nWeight: 50\nRequires: 12 Strength\nNot Usable By:\n Bard \n Druid\n Mage\n Thief",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "I1CK001",
+          "armor",
+          "Mucky Robes",
+          "Although these robes are extremely dirty and are held together as much by the mud that covers them as by the original stitching, there is something 'lucky' about them, something that discourages you from washing them. While wearing the robes, you have a slight, but general sense that things are just going to work out ok.\n\nSTATISTICS:\n\nSpecial: 1pt saving throw bonus\nWeight: 3\nOnly usable by:\nMage (single, dual, & multi-class)",
+          {
+            "saves": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "I1CH001",
+          "armor",
+          "Smoke Armor",
+          "This wonderous armor seems to be crafted from contained smoke. Light and supple, yet strong, this Armor conforms to your body shape, and imposes no restrictions your actions.\n\nThe origin of this armor is unknown, no smith or mage has ever been known to work with smoke as a medium. While providing protection from swords and the like, it is unknown how the armor would withstand other attacks, from wind or water. Despite this, the armor is most definitely a wonder work, and whoever created it must surely want it back.\n\nSTATISTICS:\n\nArmor Class: 5\nWeight: 7\nRequires: 5 Strength",
+          {
+            "ac": 2,
+            "usability": {
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "I1CH002",
+          "armor",
+          "Voice of Doom",
+          "Chain mail is made of interlocking metal rings.  It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.  \n\nThis particular armor bears no makers mark, no inscription or decoration, no dents or scratches, it almost looks as if the armor has been carved out of a single piece of indestructable metal. The only adornments on the armor are the dozens of sticky red stains, of various shades.\n\nSTATISTICS:\n\nArmor Class: 5\nWeight: 40\nRequires: 8 Strength\nNot Usable By:\n Druid \n Mage \n Thief",
+          {
+            "ac": 4,
+            "dex": -3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "I1CK002",
+          "cloak",
+          "Leafy Cloak",
+          "Some people are born into Druidry, others have it thrust upon them, while other discover it within themselves. Ardin was on such person.\n\nAccording to legend, the story goes something like this; Ardin lived with his family, in a small village deep in the forest. One night, a powerful lightning storm caused a devastating forest fire, which rapidly spread throughout the forest, and into the village. Ardin and the other villages worked frantically, pitching water over the flames, and after hours of hard labour the village was saved, though the forest still burned.\n\nWhile the rest of the villagers tentatively rested, Ardin carried on the fight against the fire, trying to protect the trees, the shrubs and the animals within. Hours later, overcome with exhaustion, breathing poorly due to the thick acrid smoke, and bleeding and burnt, Ardin collapsed unconscious, deep in the forest. When he awoke, he discovered this cloak hanging from a nearby tree. The cloak healed him, and allowed him to clear the smoke from the area.\n\nSTATISTICS:\n\nSpecial: 3x/day Goodberries\nSpecial: 3x/day Zone of Sweet Air\nArmor Class Bonus: 1\nWeight: 3",
+          {
+            "ac": 1,
+            "saves": 1,
+            "special": [
+              {
+                "type": "ability",
+                "desc": "Cast Spell"
+              }
+            ]
+          }
+        ],
+        [
+          "I1CK003",
+          "cloak",
+          "Cloak of Protection: Mirrored Action",
+          "Wreadi was a very, very cowardly man. Although his profession was not one many would say was particularly dangerous, being a baker by trade, Wreadi was indeed very cowardly. He amassed a horde of magical items to protect himself (from \"them\" he explained to anyone who listened, though he never explained who \"they\" were - though many have speculated he meant the armed gang who killed him for his horde of magical items), including Rings of Protection, Boots of Speed and even a few scrolls of Protection.\n\nDespiste all this, Wreadi felt naked - an enemy could still strike directly at him, even if he would survive the attack. Wreadi found this rather disconcerting, and so he had this cloak specially made. The cloak has an in-built Mirror Image spell, which creates two identical images of the wearer. These images can be disrupted, as in the standard Mirror Image spell, however they will reappear every 5 rounds.\n\nSTATISTICS:\n\nSpecial: Constant 2 Mirror Images\nArmor Class: 8\nWeight: 3",
+          {
+            "ac": 8
+          }
+        ],
+        [
+          "I1LT002",
+          "armor",
+          "Anti-Imprisonment Armor",
+          "Heroes are rarely stupid, even if they appear so. Iudre-Th was a prime example. After a heavy night drinking with fellow adventurers found himself agreeing to a rather suicidal dare; to tap Rtholiag the Demi-lich on his skull-like head with a piece of limp celery.\n\nNow, most intelligent, sane people would back out of this dare, however even after the hangover wore off, Iudre-Th still agreed to follow through on the dare, where-upon everyone considered him one of those stupid, more brawn than brains adventurers.\n\nUnknown to the local populace though, was Iudre-Th vast array of magical equipment, which was potent enough to render him almost immune to even the most powerful spells of a Demi-lich. Chief among his possessions was this armor, which made him immune to the feared Imprisonment spell. Wearing this armor, and several other magical items, and carrying a limp piece of celery, Iudre-Th set off to the lair of Rtholiag.\n\nIudre-Th was never seen again, though there are several legends and stories from all over Faerun, of a man appearing during pitched battles, and gently tapping everyone present on the head with limp piece of celery.\n \nSTATISTICS:\n\nSpecial: Immune to Imprisonment\nArmor Class: 6\nMove Silently: -20\nLock Picking: -10\nFind/Remove Traps: -10\nPick Pockets: -10\nWeight: 40\nRequires: 6 Strength\nNot Usable By:\n Mage",
+          {
+            "ac": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "I1BR001",
+          "bracers",
+          "Bracers of Defence AC 1: Refound Glory",
+          "These bracers were recently found in a dusty attic, by a shy retiring old woman. She knew nothing of their history, though excited by the possibility of a good selling price due to the obvious high quality of workmanship, she took them to a local merchant.\n\nThe merchant had them magically identified, and discovered that the bracers belonged to none other than Freha, the Naked Highway Woman. Freha preyed on caravans and wagons around Luiren and was famous for three things; her remarkable ability to dodge melee attacks, throwing daggers and arrows, her extreme beauty and the fact that she always fought almost nude.\n\nThese magical bracers worn by Freha explain her first ability, though it seems her other abilities are left to your imagination.\n\nSTATISTICS:\n\nArmor Class: 1\nWeight: 2",
+          {
+            "ac": 1
+          }
+        ],
+        [
+          "I1BR002",
+          "bracers",
+          "Bracers of Non-archery",
+          "The Bracers of Non-archery were originally intended as a purely defensive item. Hearing tales of archers of incredible prowess, able to place arrow after arrow along the same path, and capable of hitting the smallest of targets at the farthest of ranges, Gruguth the Mighty asked the mages of his court to create a discrete item to protect him from such archers.\n\nOnly after seeing their effectiveness during a failed assassination attempt did Gruguth think to use the Bracers for attacking. The magical power of the Bracers made Gruguth all but impervious to arrows, allowing him to charge archers across great distances, closing to melee range and fighting in hand to hand combat.\n \nSTATISTICS:\n\nSpecial: Bounce arrows\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1BR003",
+          "bracers",
+          "Bracers of Improved Health",
+          "This appears to be a severed hand, crudely hacked of from its host body with a not-so-sharp object. The blood covered the hand seems to be recent, although on closer appearance the hand continually produces new blood and never seems to decay, making the age of the hand impossible to determine.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "I1BR004",
+          "bracers",
+          "Severed Hand",
+          "Even the most powerful identification spell can reveal nothing about the previous owner of this hand, though they all confirm it is an actual severed human hand. Identification of the hand does indicate that it protects from the Disintegration spell, though the exact method as to how it accomplishes this is unknown.\n\nTo 'wear' the hand, you must cut off one of your own hands, and attach the severed one in its place. This is an extreme cause of action, and could cause serious health issues while the hand is attached, though indications show that your own hand will miraculously 're-grow' if the severed hand is removed.\n\nSTATISTICS:\n\nSpecial: Cursed item\nSpecial: Immune to Disintegration spell\nSpecial: 1pt DEX penalty while equipped\nSpecial: 1pt CON penalty while equipped\nWeight: 2",
+          {
+            "con": -2,
+            "dex": -1
+          }
+        ],
+        [
+          "I1BR005",
+          "bracers",
+          "Yuanti Devourer",
+          "Upon donning these gauntlets, the wearer discovers they are almost sentient. The gauntlets bear an extreme hatred for Yuanti, and almost seem to speak to the wearer, persuading them to wage unceasing war against the Yuanti.\n\nWhen given a chance, in hand to hand combat, the gauntlets physically attack Yuanti, seeming to bite and chew at their flesh.\n\nSTATISTICS:\n\nSpecial:  +5 damage bonus vs Yuanti\nWeight:  1\nUseable By:\n Fighters\n Paladins\n Rangers",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "I1BR006",
+          "bracers",
+          "Sure Grip Gloves",
+          "Sure Grip Gloves rely on a special type of glue, created by the smith Olynpon in Shadowdale. Treated correctly, and with a few simple cantrips during construction, the glue can be activated and deactivated at will, with a simple thought.\n\nOlynpon tried to market the glue for many purposes, including a replacement for door locks, nails, string and even soap, however combining the glue with gloves provided his best success; eager adventurers, tired of dropping their weapons in a panic caused by an approaching flight of dragons, coven of Lichs or horde of gibberlings bought the gloves in droves.\n\nSTATISTICS:\n\nSpecial:  Will never drop weapons\nWeight:  1",
+          {}
+        ],
+        [
+          "I1BL001",
+          "belt",
+          "Girdle of Clarity",
+          "Though constructed of simple materials, and of a basic design, the Girdle of Clarity is sought by mages throughout the Realms.\n\nCreated little over a hundred years ago by the mage Yugun Boldstar, as part of a series of experiments concerned with the nature of magic, the Girdle of Clarity allows the wearer to perceive the magical Weave more strongly. This allows the Weave to be manipulated faster and easier, which in turn, allows spells to be cast faster.\n\nSTATISTICS:\n\nSpecial:  1pt casting speed bonus\nWeight:  2",
+          {}
+        ],
+        [
+          "I1BL002",
+          "belt",
+          "Belt of Life",
+          "The Belt of Life seems to hum with an internal magic as the beat of life pulses through the fibres. Though no-one knows where this belt originally came from, or the name of the craftsman who created it, the power it possesses is well known; the Belt somehow acts on undead creatures, confusing even mindless zombies, slowing their attacks and decreasing the accuracy of their strikes.\n\nSTATISTICS:\n\nSpecial:  2pt AC bonus vs. Undead\nWeight:  2",
+          {}
+        ],
+        [
+          "I1BL003",
+          "belt",
+          "Second Sense Belt",
+          "Having eyes in the back of your head is a useful skill for anyone, and especially so for a thief. Knowing when someone is sneaking up on you, whether it be the long arm of the law or a rival thief is a useful can literally be a life saver.\n\nWhen worn, this belt increases the perceptiveness and 'second sense' of the wearer, effectively making them immune to sneak attacks, and allowing them to spot illusions easier.\n\nSTATISTICS:\n\nSpecial:  Immune to backstab\nSpecial:  10pt Detect Illusion bonus\nWeight:  2",
+          {}
+        ],
+        [
+          "I1BL004",
+          "belt",
+          "Belt of Self",
+          "The Charm spell can be very useful in drawing out small tidbits of vital information, or for receiving a hefty discount, or for simply walking into a guarded compound. This makes the Charm spell very useful, and helpful - unless you happen to know vital information, run a store or live in a guarded compound!\n\nBaron Akthid had several dozen belts specially enchanted, and distributed to his personal guard, so that none of them could be charmed into betraying him.\n\nSTATISTICS:\n\nSpecial:  Immune to Charm spell\nWeight:  2",
+          {}
+        ],
+        [
+          "I1BL005",
+          "belt",
+          "Belt of Concentration",
+          "The only visible noteworthy feature of this belt is the buckle. Once a large, smooth pearl, the buckle is now black and pitted. The uneven bumps seem to catch the light and sparkle, giving the buckle a pleasing appearance despite its old, worn look.\n\nUpon closer inspection, it can be seen that the rough bumps are remains of small insects; it is their wings that catch and reflect the light. The insects have been tightly crushed against the surface of the buckle, almost hiding the original surface. When near the belt, insects are distracted from their purpose, and attracted to the belt. This identifies the belt as Sha-bane, the belt crafted to resist the insect swarm spells of the mad mage Shanudd.\n\nSTATISTICS:\n\nSpecial:  Immune to Insect Plague spell\nWeight:  1",
+          {}
+        ],
+        [
+          "I1AM001",
+          "amulet",
+          "Amulet of Firm Standing",
+          "'The Rocking Hand' was an adventuring group, consisting of 6 people, that travelled near Calimshan. It was a long running joke within the party that Rasimm, the thief, would almost always miss every significant battle (through no fault of his own, he always insisted). Rasimm was Imprisoned, Mazed or blown away by dragon wings again and again.\n\nAfter a particularly close battle against a powerful Lich, during which Rasimm had again be mazed, the party decided to solve the issue once and for all - they commissed this amulet for Rasimm to wear.\n\nSTATISTICS:\n\nSpecial:  Immune to Imprisonment spell\nSpecial:  Immune to Maze spell\nSpecial:  Immune to Wing Buffet",
+          {}
+        ],
+        [
+          "I1AM002",
+          "amulet",
+          "Amulet of Knowledge",
+          "Saii was a mage, at least in name. She spent much of her time identifies magical trinkets people bought to her. One day, just after identifying a Kettle of Rapid Heating, she decided to magically store her knowledge in an amulet, which she could then give to an apprentice, freeing her time up to do more important things.\n\nThis amulet appears to be the one Saii crafted. How it came to be where you found it is unknown, for Saii is still practicing her magic in Waterdeep. No doubt she would be happy to have this amulet back. \n\nSTATISTICS:\n\nSpecial:  10pt Lore bonus",
+          {}
+        ],
+        [
+          "I1AM003",
+          "amulet",
+          "Tymora's Curse",
+          "This appears to be a human skull, with runes engraved upon it. Although the skull should be much too small to fit upon your heard, you somehow sense that it would fit.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "saves": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AM004",
+          "amulet",
+          "Arachnid Defence",
+          "Many people have an innate fear of spiders - lots of legs, lots of eyes, not to mention those webs! Supfi The Brave was one such person, he really really hated spiders. However, his fear of spiders and his (relatively) well deserved name didn't go well together.\n\nFor this reason Supfi The Brave had this amulet fashion and enchanted. The amulet acts like a second set of armor against attacks by spiders. This gave Supfi The Brave the resolve to jump straight into the nearest spider den, with the intention of killing all the spiders. Supfi The Brave hadn't bargained on a Drow raiding party exiting the Underdark via the spider den though. Though his body has never been found, it is thought unlikely that he survived.\n\nSTATISTICS:\n\nSpecial:  3pt AC bonus vs. spiders",
+          {}
+        ],
+        [
+          "I1HM001",
+          "helmet",
+          "Skull of Theolon",
+          "Theolon was a particularly devout priest of an ancient god, who adventured across the realms with a few friends, defeating evil wherever they found it. In reward for his devotion, Theolon was granted special protection by his patron god. Though this protection centred on Theolon, in recognition for the help and support Theolon had received from his adventuring colleages over the years, the protection also extended to those who travelled with him.\n\nTheolon disappeared a few years ago, while exploring the Nether Mountains. Since you hold his vilely enchanted skull it your hands, it appears he met a rather gruesome end. Despite his death, the skull seems to continue to bear his special protection.\n\nSTATISTICS:\n\nSpecial: 2pt AC bonus for all party members\nWeight: 1",
+          {}
+        ],
+        [
+          "I1HM002",
+          "helmet",
+          "Helm of Absorption",
+          "Enchanting an item to provide immunity to a specific spell is a long, arduous and complex tasks, often taking several weeks. Unfortunately for him, the young mage Ambldun did not take this into account when issuing his Great Challenge.\n\nThe Great Challenge (as Ambldun referred to it) was sent to all mages for several leagues around, and was along the lines of \"I bet you harm kill me using magic\". After sending the Challenge, Ambldun set to work enacting his plan - enchanting a helmet with immunity to every single magic spell he knew. Ambldun, was dismayed at the unexpected time required, he had just managed to finish the first enchantment and was considering rescinding the Great Challenge, just for a short while, until his work was finished when his entire dwelling disintegrated in a puff of smoke - the handiwork of the very first mage to receive word of his Challenge.\n\nSTATISTICS:\n\nSpecial: Immune to Magic Missile spell\nArmor Class Bonus:  None\nSpecial:  Protects Against Critical Hits\nWeight: 2\nNot Usable By:\nMage\nBard\nThief",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "I1HM003",
+          "helmet",
+          "Thieves Helmet",
+          "Thieves Helmet\n\nRanij was a skilled young man who lived in Athkatla several decades ago. Ranij was also a brilliant thief, indeed Ranij was one of the most successful thieves who ever lived. Or at least he would have been, if he'd been able to pass the entrance tests for the Thieves Guild.\n\nWhile Ranij could pick-pocket even the most suspicious noble without breaking a sweat, or walk down a street in broad daylight and avoid being seen or even spot a trap from 10 paces away, and disarm it without seconds, he could not set a trap of his own.\n\nRanij was barred from the Thieves Guild due this gap in his skill set, and to make up for his short-comings he had this Helm commissioned. While worn, the Helm implants knowledge on setting traps directly into the wearer.\n\nThe Helm was a complete success, and Ranij re-applied for Guild entrance while wearing it. Ranij easily passed all the tests the Guildmasters could devise, even the trap setting test. Upon successful completion of the tests, Ranij was eagerly looking forward to being accepted into the Guild. Unfortunately, and some would say strangely, the Thieves Guild frowns upon cheating, especially on their entrance test.\n\nRanij's body was never found...\n\nSTATISTICS:\n\nSpecial:  25pt Set Traps bonus\nSpecial:  Protects Against Critical Hits\nWeight: 2\nUsable By:\nThief",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1HM004",
+          "helmet",
+          "Cursed Helm of Twilight",
+          "Cursed Helm of Twilight\n\nThe oldest records of the Cursed Helm of Twilight mention its origin; the Helm was looted from the body of an Illithid, deep inside one of their lairs. However, even these old tales do not know the purpose of the Helm. To deny a mage the ability to learn new magic is surely a punishment of some kind, but then why the blessing of increased speed?\n\n\nSTATISTICS:\n\nSpecial:  Cannot learn new spells\nSpecial:  Movement rate increased\nWeight: 0\nNot Usable By:\nBard\nThief",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "I1HM005",
+          "helmet",
+          "Might of Magic",
+          "Might of Magic\n\nThis helmet almost appears to be carved from a single sold crystal; and if it were it would surely be worth a fortune! Though, in truth, the helmet is not made from crystal, it is just as valuable in the right hands.\n\nThe helmet, or some enchantment laid upon it in ages past, subtlely alters the way magic works in the immediate vicinity. Modern scholars guess that the helm somehow 'bends magic around reality' or that it 'causes a micro-point temporal discharge', or even that it 'directly transforms thought to action using the weave as an intermediate'. However the helmet works, the result is simple; magic resistance is lowered for all creatures nearby. The effect is centred on the wearer, whose resistance is eliminated entirely.\n\n\nSTATISTICS:\n\nSpecial:  Magic resistance set to 0\nSpecial:  -20 magic resistance to all creatures within 30ft\nWeight: 1\nNot Usable By:\nMage\nBard\nThief",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "I1DG001",
+          "dagger",
+          "Razoredge Dagger +1",
+          "There are no records of this weapon's creator. Nevertheless, its existence can be traced back among thieves and murderers to before Dalereckoning. Its blackened blade was apparently forged from the arcane metals of an iron golem, giving the weapon an appearance as dark as its history.\n\nSTATISTICS:\n\nTHAC0: +2\nDamage: 1d4+2 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 1,
+            "dmg": "1d9",
+            "dmgBonus": 1,
+            "magicResist": 10,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "I1DG002",
+          "dagger",
+          "Flicker +1",
+          "Only being able to do one thing at once had always been a problem for Shuune. An assassin by trade, Shuune had to pass up several lucrative contracts due to already being hired on a mission. As time went on, this troubled Shuune more and more, as the amount of money he could have earned grew higher and higher (for Shuune was a very successful assassin).\n\nTo solve his problem, Shuune engaged the services of a mage and a blacksmith. The mage and blacksmith worked together for many months, researching and testing, eventually producing equipment that would solve the problem they had been tasked with. The equipment was a stunning success; wearing the full set of items would allow the wearer to literally be several places at once. Shuune was ecstatic and immediately set about using his new items, and creating several legends in the process. The ultimate fate of the items is unknown, as is the fate of Shuune himself.\n\nThis dagger appears to be one of the items commissioned by Shuune, and it retains some of the abilities of the full item set. The dagger can be thrown at a target, upon striking the target the dagger will inflict damage and return to the thrower - while also staying embedded in the target! The dagger remains for several seconds before disappearing.\n\n\nSTATISTICS:\n\nSpecial: Dagger returns to hand of thrower\nSpecial: 1d4 damage per round, for 4 rounds\nSpecial: Bleeding damage\nTHACO:  +1 bonus\nDamage:  1D6+1\nDamage type:  piercing\nWeight: 1\nSpeed Factor: 2 \nProficiency Type: Dagger\nType:  1-handed\nRequires:3 Strength\nNot Usable By:\n Cleric",
+          {
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "I1HR001",
+          "hammer",
+          "Icehammer +1",
+          "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.\n\nSTATISTICS:\n\nDamage: 1d4+1 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d5",
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "I1HR002",
+          "hammer",
+          "Hammer of Magical Might +2",
+          "This hammer is of standard style and design, except for the fact that the metal is a deep red colour. Something about the hammer feels right, and while holding it, you somehow feel as if everything will turn out ok. Whether this is a glimpse of the future, or a delusion bought about by magic or poison you cannot tell.\n\n\nSTATISTICS:\n\nSpecial: 2pt Luck penalty\nTHACO:  +2 bonus\nDamage:  1D5\nDamage type:  crushing\nWeight: 6\nSpeed Factor: 4\nProficiency Type: War Hammer\nType:  1-handed\nRequires: 9 Strength\nNot Usable By:\n Druid\n Mage \n Thief",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d5",
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "I1QS001",
+          "staff",
+          "Staff of Knocking",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "I1QS002",
+          "staff",
+          "Dream of a Man +2",
+          "Dream of a Man +2\n\nOtunga is one of the few mortals to have gained immortality, making him a remarkable man. That he gained his immortality by accident makes hi all the more remarkable. Otunga was a simple farmer in a rural region of Amn when the accident happened. Many powerful mages took immediate interest in Otunga, and sought to gain his secret, through means fair and foul. Since the process was accidental, Otunga himself could not remember, let alone tell others. \n\nEventually the mages grew tired of Otunga, seeing him as a reminder of their failures and shortcomings. Not being able to kill him, they imprisoned him deep underground. Otunga was set free some time later and was content to get on with his long, long life. Mages learned of his freedom and once again they captured and interrogated him. Frustrated by his inability to answer thier questions they petrified Otunga and left him as a roadside statue. Freed once more, Otunga sought out a friendly mage to fashion this staff for him. The staff protects the bearer from several types of disabling magic.\n\nThe fate of Otunga, obviously parted from his staff, is unlikely to be a happy one.\n\nSTATISTICS:\n\nSpecial: Immune to Maze spell\nSpecial: Immune to Imprisonment\nSpecial: Immune to Wing Buffet\nSpecial: Immune to Petrification\nDamage:  1D6+2\nDamage type:  crushing\nWeight: 4\nSpeed Factor: 4\nProficiency Type: Staff\nType:  2-handed\nRequires: 5 Strength",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "I1CL001",
+          "mace",
+          "Empty Bottle",
+          "",
+          {
+            "speed": 4,
+            "dmg": "1d5",
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1CL002",
+          "mace",
+          "Broken Bottle",
+          "This is the remains of an empty bottle. There is no trance of the contents. The bottle may make a handy weapon in a fight.\n\n\nSTATISTICS:\n\nDamage:  1D5\nDamage type:  crushing\nWeight: 1\nSpeed Factor: 4\nProficiency Type: Club\nType:  1-handed\nNot Usable By:\n Mage",
+          {
+            "speed": 4,
+            "dmg": "1d5",
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "I1AX001",
+          "axe",
+          "Weightless Axe: The Wonder +1",
+          "Weightless Axe: The Wonder +1\n\nThe first thing that strikes you about this axe is its unusual deep red colour. The second, and more surprising thing is the weight - the axe appears utterly weightless! You can easily life the axe and heave it around rapidly. The weight of the axe could be of use in combat, though it is somewhat disconcerting to drop a weightless axe and still see it fall to the floor with a heavy thud.\n\n\nSTATISTICS:\n\nSpecial: 1pt THAC0 bonus\nDamage:  1D8 +1\nDamage type:  slashing\nWeight: 0\nSpeed Factor: 1\nProficiency Type: Axe\nType:  1-handed\nNot Usable By:\n Druid\n Cleric\n Mage \n Thief",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "I1SH001",
+          "shield",
+          "Bouncing Shield +1",
+          "Bouncing Shield +1\n\nThis shield, made from hardy darkwood, looks and feels completely normal. The shield only shows its ability in a certain circumstance - when a dagger has been thrown directly at the wearer. In such instances the dagger inexplicably changes direction and flies towards the original thrower, with deadly intent.\n\nSuch abilities are rare but not unusual, however this is the only enchantment of its type known to be tied into a shield - the original owner is bound to be looking for it, or perhaps, to have commissioned a twin.\n\n\nSTATISTICS:\n\nArmor Class Bonus: 1\nWeight: 7\nRequires: 12 Strength\nNot Usable By:\n Bard\n Druid\n Mage\n Thief",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "I1HP001",
+          "misc",
+          "Healing Harp",
+          "Healing Harp\n\nThis harp is obviously magical; not only does the harp appear to have been carved from a giant, solid leaf, but the instrument can be played normally even though it lacks strings! Though these points alone are enough to make the harp sought after by bards all over Faerun, there is another ability. Certain songs, when played on this harp, have the ability to heal those who hear them. How this is achieved is unknown, though some musical talent is required, only bards can activate this magic.\n\n\nSTATISTICS:\n\nWeight: 0\nUsable By:\n Bard",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/btigi/iiItem",
+  "au": "igi",
+  "co": [
+    {
+      "n": "View readme file now",
+      "cn": 900,
+      "wf": "iiItemMod",
+      "wp": "iiItemMod\\Setup-iiItemMod.tp2",
+      "wq": "verified",
+      "tp2n": "View readme file now",
+      "scn": "View Readme"
+    },
+    {
+      "n": "View readme file after installation",
+      "cn": 1000,
+      "wf": "iiItemMod",
+      "wp": "iiItemMod\\Setup-iiItemMod.tp2",
+      "wq": "verified",
+      "tp2n": "View readme file after installation",
+      "scn": "View Readme"
+    },
+    {
+      "n": "Do not view readme file",
+      "cn": 2000,
+      "wf": "iiItemMod",
+      "wp": "iiItemMod\\Setup-iiItemMod.tp2",
+      "wq": "verified",
+      "tp2n": "Do not view readme file",
+      "scn": "View Readme"
+    },
+    {
+      "n": "Items [version 5]",
+      "cn": 1,
+      "wf": "iiItemMod",
+      "wp": "iiItemMod\\Setup-iiItemMod.tp2",
+      "wc": 1,
+      "wq": "guessed",
+      "it": 59,
+      "itC": {
+        "potion": 11,
+        "arrow": 9,
+        "armor": 6,
+        "cloak": 2,
+        "bracers": 6,
+        "belt": 5,
+        "amulet": 4,
+        "helmet": 5,
+        "dagger": 2,
+        "hammer": 2,
+        "staff": 2,
+        "mace": 2,
+        "axe": 1,
+        "shield": 1,
+        "misc": 1
+      },
+      "tp2n": "Items [version 5]"
+    }
+  ]
+}

@@ -1,0 +1,1488 @@
+{
+  "i": 899,
+  "t": "Derats_Powerkits",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 395,
+  "c": "KIT & CLASS MODS",
+  "n": "CrossClass Powerkits",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "u": "https://github.com/Deratiseur/CrossClass/",
+  "a": "Deratiseur",
+  "sum": "Vanilla kit combinations for cheated results.|Some examples: Dragon Disciple Kensai, Swashbuckler Cleric, Monk sorcerer...",
+  "tags": [
+    "kit"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Deratiseur",
+  "dl": "https://github.com/Deratiseur/CrossClass",
+  "no": "Cross-class kit combinations creating powerful hybrid kits. 29 unique kits mixing vanilla class abilities: Dragon Disciple Kensai, Monk Assassin, Swashbuckler Cleric, Shapeshifter Berserker, Sorcerer Monk, and more. French and English.",
+  "kitAbilities": {
+    "0": {
+      "pxKENSDRAG": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Kensai/Dragon variant: enhanced unarmored combat with draconic abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+3 AC, +1 hit/dmg per 3 levels, -1 speed factor per 4 levels. Fire resist scales 25/50/75/100% at lv4/8/12/16. d12 HD. Non-chaotic. No armor/missiles."
+        }
+      }
+    },
+    "1": {
+      "pxDEFBARB": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Defensive Barbarian: defensive stance + rage hybrid."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+2 movement, immune to backstab, 10% phys resist per 5 levels (max 40%). d12 HD. Mastery axes/warhammers. Three-slot Two-Weapon. Splint mail max."
+        }
+      }
+    },
+    "2": {
+      "pxTRAQPRIME": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. Stalker/Prime: enhanced tracking and stealth."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger spells + Set Special Snare innate. Backstab x2/x3/x4."
+        },
+        "statBonus": {
+          "note": "+15% Stealth and Set Traps. Set Trap equals Stealth. Studded leather max."
+        }
+      }
+    },
+    "3": {
+      "pxTRAQASSAS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. Stalker/Assassin: ranger with poison and backstab."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "May not cast spells. Poison Weapon innate (scaling 1-13)."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg, +20% Move Silently/Hide. Backstab progression up to x7."
+        }
+      }
+    },
+    "4": {
+      "pxARCHINQUI": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. Archer/Inquisitor: ranged combat + spell disruption."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spells. Innate: Dispel Magic (speed 1, 2x level), True Sight, Called Shot."
+        },
+        "statBonus": {
+          "note": "Immune to hold/charm. +1 hit/dmg missile per 3 levels. Grand Mastery in bows/crossbows. No hide in shadows. Studded leather max. Melee weapons max 1 pip."
+        }
+      }
+    },
+    "5": {
+      "pxCAVALMV": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Cavalier/Movement: enhanced mounted combat and speed."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells. Innate Remove Fear 1/day per level."
+        },
+        "statBonus": {
+          "note": "+3 hit/dmg vs fiends/dragons/undead. Immune to hold/level drain/charm/fear/poison/morale. 20% fire and acid resist. No missiles. No Lay On Hands."
+        }
+      }
+    },
+    "6": {
+      "pxCLERCSWASH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Cleric/Swashbuckler: melee combat cleric with AC/THAC0 bonuses."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard cleric spells. May not Turn Undead."
+        },
+        "statBonus": {
+          "note": "+1 AC at lv1 plus +1 per 5 levels. +1 hit/dmg per 5 levels. Specialization (2 slots) in any cleric melee weapon. 3 slots Two-Weapon Style."
+        }
+      }
+    },
+    "7": {
+      "pxSHAPERAGE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Shapeshifter/Rage: werewolf form combined with berserker rage."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard druid spells. Werewolf shapeshift + Greater Werewolf at lv13. Berserker Rage with winded penalty after."
+        },
+        "statBonus": {
+          "note": "No missiles. No armor. No other shapeshifts."
+        }
+      }
+    },
+    "8": {
+      "pxMONKASSA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Assassin Monk: backstab and poison with monk abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg. Backstab x6/x7 at lv17-20/21+. Non-good. No Lay On Hands or Stunning Blow."
+        }
+      }
+    },
+    "9": {
+      "pxMONKKILL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Killer Monk: enhanced lethal strikes."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+4% MR per level starting lv10 (max 100% at lv25). No magic items except weapons and boots."
+        }
+      }
+    },
+    "10": {
+      "pxMONKBLADES": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Blade Monk: weapon-focused monk with blade specialization."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "2 slots in Two-Weapon and One-Weapon Styles. AC improves only every 3 levels."
+        }
+      }
+    },
+    "11": {
+      "pxMONKINQUI": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Inquisitor Monk: anti-magic monk with spell disruption."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "Immune to hold/charm. No Lay On Hands, Stunning Blow, or Quivering Palm."
+        }
+      }
+    },
+    "12": {
+      "pxMONKSTALK": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Stalker Monk: stealth-focused monk with backstab."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+20% Move Silently/Hide. Backstab x2/x3/x4. Lawful Evil only. No Detect Illusion, no Lay On Hands or Stunning Blow."
+        }
+      }
+    },
+    "13": {
+      "pxVOLMORPH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Shapeshifter Thief: transformation abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "True Neutral only. No armor even with Use Any Item."
+        }
+      }
+    },
+    "14": {
+      "pxVOLTYR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Thief of Tyr: justice-themed thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "Priest weapons + bastard/longswords only. NG/LN only."
+        }
+      }
+    },
+    "15": {
+      "pxVOLTEMPUS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Thief of Tempus: war-themed thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "20 skill points/level. Chaotic/True Neutral only."
+        }
+      }
+    },
+    "16": {
+      "pxVOLKEN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Kensai Thief: unarmored combat thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "+2 AC, +1 hit/dmg per 3 levels, -1 speed factor per 4 levels. No missiles, no armor/gauntlets/bracers. 20 skill points/level. Non-chaotic."
+        }
+      }
+    },
+    "17": {
+      "pxVOLBLADE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Blade Thief: weapon specialist thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). Derats Powerkits."
+        },
+        "statBonus": {
+          "note": "3 slots Two-Weapon Style. 20 skill points/level."
+        }
+      }
+    },
+    "18": {
+      "pxBARDSHAMAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Bard/Shaman: spirit summoning bard."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Access to Shaman-specific spells (Spirit Ward, Writhing Fog, Spiritual Clarity, Spirit Fire, Recall Spirit, Spiritual Lock, Ether Gate). Shamanic Song at will (replicates dance without movement/AC penalty)."
+        },
+        "statBonus": {
+          "note": "Limited weapons (dagger/club/spear/axe/staff/dart/sling/shortbow). NG/TN/NE only."
+        }
+      }
+    },
+    "19": {
+      "pxSKALDTOTEM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Skald/Totemic: totemic animal spirits with war songs."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard bard spells. Skald-style scaling song (+2 hit/dmg/AC at lv1; +4 plus fear immunity at lv15; plus stun/confusion immunity at lv20). Summon Spirit Animal 1/day (+1 per 5 levels)."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg. 1/4 Pick Pockets. True Neutral. Druid-usable weapons only."
+        }
+      }
+    },
+    "20": {
+      "pxBLADELATHAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Blade of Lathander: sun-themed blade dancer."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard bard spells. Innate Offensive Spin, Defensive Spin, Hold Undead (per 5 levels), Boon of Lathander (per 10 levels)."
+        },
+        "statBonus": {
+          "note": "3 slots Two-Weapon Style. Cleric-usable weapons only. 1/2 Lore. 1/2 Pick Pockets. Good or True Neutral."
+        }
+      }
+    },
+    "21": {
+      "pxMAGETALOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. Mage of Talos: storm magic specialist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "bannedSchools": [
+            "Enchantment"
+          ],
+          "note": "+1 spell per level. +15% scribing Invocation. +2 save vs Invocation. -2 save penalty for enemies vs his Invocations. -15% scribing other schools. Innate Lightning Bolt and Storm Shield."
+        },
+        "statBonus": {
+          "con": -4,
+          "note": "-4 Constitution. Staffs and slings only. NE/CE/CN only."
+        }
+      }
+    },
+    "22": {
+      "pxSORCENTROP": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Entropic Sorcerer: chaos/entropy themed."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "+1 spell per level. Auto-learns Nahal's Reckless Dweomer/Chaos Shield/Improved Chaos Shield. Caster level fluctuates +/-5 randomly. 5% wild surge per cast."
+        },
+        "statBonus": {
+          "note": "See passive description (Derats Powerkits). Research pending for specific modifiers."
+        }
+      }
+    },
+    "23": {
+      "pxSORCEMOINE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Monk Sorcerer: martial arts + sorcery hybrid."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "-2 spells per level per day. No missile weapons. No Stunning Blow/Quivering Palm."
+        },
+        "statBonus": {
+          "note": "Fighting style progression. +2 movement plus +1 per 5 levels. +1/2 APR per 3 levels (max +3). +1 dmg/THAC0 per 3 levels (max +7). 3% MR per level from lv14. d6 HD. Lawful alignment."
+        }
+      }
+    },
+    "24": {
+      "pxSHAMBELU": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Beluga Shaman: water/ice spirit summoner."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard shaman spells. Innate Find Familiar; level-gated Animal Summoning I/II/III at lv8/10/12."
+        },
+        "statBonus": {
+          "note": "Clubs, quarterstaffs, and shortbows only."
+        }
+      }
+    },
+    "25": {
+      "pxSHAMJUST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Justice Shaman: law-enforcing shaman."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Six arcane spells added: Chromatic Orb, Web, Lightning Bolt, Improved Invisibility, Chaos, Chain Lightning. Shapeshift into wolf/black bear/brown bear at lv7, sword spider/baby wyvern/fire salamander at lv10."
+        },
+        "statBonus": {
+          "str": -2,
+          "con": -2,
+          "note": "-2 STR/-2 CON. Leather armor max. True Neutral."
+        }
+      }
+    },
+    "26": {
+      "pxSHAMARCH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Archer Shaman: ranged combat shaman."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard shaman spells. Innate Called Shot."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg missile per 3 levels. Grand Mastery in bows/crossbows. d6 HD."
+        }
+      }
+    },
+    "27": {
+      "pxSHAMSKALD": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Skald Shaman: war song + spirit magic."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard shaman spells. Skald-style dance (scaling +2 at lv1, +4 plus fear immunity at lv15, plus stun/confusion immunity at lv20). Dance doesn't prevent movement or impose AC penalty."
+        },
+        "statBonus": {
+          "note": "+1 hit/dmg. Dance doesn't summon spirits."
+        }
+      }
+    },
+    "28": {
+      "pxSHAMTOTEM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Totemic Shaman: animal spirit summoner."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (Derats Powerkits cross-class kit)."
+        },
+        "spellRestrictions": {
+          "note": "Standard shaman spells. Innate Summon Spirit Animal 1/day (+1 per 5 levels). Cannot dance."
+        },
+        "statBonus": {
+          "note": "See passive description (Derats Powerkits). Research pending for specific modifiers."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "pxKENSDRAG",
+          "fighter",
+          "Dragon Disciple Kensai",
+          "Fighter with Dragon Disciple fire resistance and Kensai combat focus."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "pxDEFBARB",
+          "fighter",
+          "Barbarian Defender",
+          "Barbarian rage combined with Defender damage resistance."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "pxTRAQPRIME",
+          "ranger",
+          "Bounty Hunter Stalker",
+          "Stalker stealth with Bounty Hunter traps."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "pxTRAQASSAS",
+          "ranger",
+          "Assassin Stalker",
+          "Stalker with Assassin poison and backstab bonuses."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "pxARCHINQUI",
+          "ranger",
+          "Inquisitor Archer",
+          "Archer ranged combat with Inquisitor dispel and True Sight."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "pxCAVALMV",
+          "paladin",
+          "Undead Hunter Cavalier",
+          "Cavalier resistances with Undead Hunter immunities."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "pxCLERCSWASH",
+          "cleric",
+          "Swashbuckler Cleric",
+          "Cleric healing with Swashbuckler combat finesse."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "pxSHAPERAGE",
+          "druid",
+          "Berserker Shapeshifter",
+          "Shapeshifter forms with Berserker rage."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "pxMONKASSA",
+          "monk",
+          "Assassin Monk",
+          "Monk martial arts with Assassin poison and backstab."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "pxMONKKILL",
+          "monk",
+          "Wizard Slayer Monk",
+          "Monk with Wizard Slayer magic resistance and spell failure."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "pxMONKBLADES",
+          "monk",
+          "Master-Shi Monk",
+          "Monk with Blade offensive and defensive spin."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "pxMONKINQUI",
+          "monk",
+          "Inquisitor Monk",
+          "Monk with Inquisitor dispel and True Sight."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "pxMONKSTALK",
+          "monk",
+          "Stalker Dark Moon Monk",
+          "Dark Moon monk with Stalker backstab and stealth."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "pxVOLMORPH",
+          "thief",
+          "Shapeshifter Thief",
+          "Thief skills with Shapeshifter werewolf form."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "pxVOLTYR",
+          "thief",
+          "Tyrran Thief",
+          "Thief with Priest of Tyr divine justice abilities."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "pxVOLTEMPUS",
+          "thief",
+          "Tempuran Thief",
+          "Thief with Priest of Tempus war abilities."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "pxVOLKEN",
+          "thief",
+          "Kensai Thief",
+          "Thief with Kensai combat focus and bonuses."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "pxVOLBLADE",
+          "thief",
+          "Blades Thief",
+          "Thief with Blade offensive and defensive spin."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "pxBARDSHAMAN",
+          "bard",
+          "Shaman Bard",
+          "Bard with Shaman spirit summoning."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "pxSKALDTOTEM",
+          "bard",
+          "Totemic Skald",
+          "Skald war chant with Totemic Druid spirit animals."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "pxBLADELATHAN",
+          "bard",
+          "Lathanderian Blades",
+          "Blade with Priest of Lathander boon abilities."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "pxMAGETALOS",
+          "mage",
+          "Talassan Invoker",
+          "Invoker with Priest of Talos storm abilities."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "pxSORCENTROP",
+          "sorcerer",
+          "Wild Sorcerer",
+          "Sorcerer with Wild Mage surge and chaos abilities."
+        ]
+      ]
+    },
+    "23": {
+      "new": [
+        [
+          "pxSORCEMOINE",
+          "sorcerer",
+          "Monk Sorcerer",
+          "Sorcerer with Monk martial arts and movement."
+        ]
+      ]
+    },
+    "24": {
+      "new": [
+        [
+          "pxSHAMBELU",
+          "shaman",
+          "Beast Master Shaman",
+          "Shaman with Beast Master animal summoning."
+        ]
+      ]
+    },
+    "25": {
+      "new": [
+        [
+          "pxSHAMJUST",
+          "shaman",
+          "Avenger Shaman",
+          "Shaman with Avenger shapeshifting."
+        ]
+      ]
+    },
+    "26": {
+      "new": [
+        [
+          "pxSHAMARCH",
+          "shaman",
+          "Archer Shaman",
+          "Shaman with Archer ranged bonuses and Called Shot."
+        ]
+      ]
+    },
+    "27": {
+      "new": [
+        [
+          "pxSHAMSKALD",
+          "shaman",
+          "Skald Shaman",
+          "Shaman with Skald war chant."
+        ]
+      ]
+    },
+    "28": {
+      "new": [
+        [
+          "pxSHAMTOTEM",
+          "shaman",
+          "Totemic Shaman",
+          "Shaman with Totemic Druid spirit animals."
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Dragon Disciple Kensai",
+      "cn": 99,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 99,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Kensai_Dragon",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Barbarian Defender",
+      "cn": 109,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 109,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Defenseur_Barbare",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Bounty hunter Stalker",
+      "cn": 179,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 179,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Traqueur_Primes",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Assassin stalker",
+      "cn": 199,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 199,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Traqueur_Assassin",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Inquisitor Archer",
+      "cn": 129,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 129,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Inquisiteur_Archer",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Undead hunter Cavalier",
+      "cn": 139,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 139,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Cavalier_Chasseur_MV",
+      "kC": {
+        "paladin": 1
+      }
+    },
+    {
+      "n": "Swashbuckler Cleric",
+      "cn": 119,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 119,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Clerc_Bretteur",
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "n": "Berserker shapeshifter",
+      "cn": 269,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 269,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Metamorphe_Berserker",
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "n": "Assassin Monk",
+      "cn": 59,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 59,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Moine_Assassin",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Wizard slayer Monk",
+      "cn": 69,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 69,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Moine_Magekiller",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Master-Shi Monk",
+      "cn": 39,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 39,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Moine_Lames",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Inquisitor Monk",
+      "cn": 209,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 209,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Moine_Inquisiteur",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Stalker Dark Moon monk",
+      "cn": 239,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 239,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Lune_Noire_traqueur",
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Shapeshifter Thief",
+      "cn": 19,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 19,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Voleur_Metamorphe",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Tyrran Thief",
+      "cn": 29,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 29,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Voleur_Tyr",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Tempuran Thief",
+      "cn": 149,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 149,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Voleur_Tempus",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Kensai thief",
+      "cn": 189,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 189,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Voleur_Kensai",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Blades thief",
+      "cn": 219,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 219,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Voleur_Lames",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Shaman bard",
+      "cn": 289,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 289,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Barde_Chaman",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Totemic Skald",
+      "cn": 49,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 49,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Scalde_Totem",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Lathanderian blades",
+      "cn": 229,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 229,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Lames_Lathandre",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Talassan invoker",
+      "cn": 249,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 249,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Mage_Talos",
+      "kC": {
+        "mage": 1
+      }
+    },
+    {
+      "n": "Wild Sorcerer",
+      "cn": 159,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 159,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Sorcier_Entropiste",
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "n": "Monk Sorcerer",
+      "cn": 169,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 169,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Sorcier_Moine",
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "n": "Beast master Shaman",
+      "cn": 79,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 79,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Chaman_Belluaire",
+      "kC": {
+        "shaman": 1
+      }
+    },
+    {
+      "n": "Avenger Shaman",
+      "cn": 89,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 89,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Chaman_Justicier",
+      "kC": {
+        "shaman": 1
+      }
+    },
+    {
+      "n": "Archer shaman",
+      "cn": 259,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 259,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Chaman_Archer",
+      "kC": {
+        "shaman": 1
+      }
+    },
+    {
+      "n": "Skald shaman",
+      "cn": 279,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 279,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Chaman_Skalde",
+      "kC": {
+        "shaman": 1
+      }
+    },
+    {
+      "n": "Totemic shaman",
+      "cn": 299,
+      "wf": "Derats_Powerkits",
+      "wp": "Derats_Powerkits\\Derats_Powerkits.tp2",
+      "wc": 299,
+      "wq": "verified",
+      "pi": "Px_Powerkits_Chaman_Totem",
+      "kC": {
+        "shaman": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "CrossClass"
+  }
+}

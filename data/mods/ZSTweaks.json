@@ -1,0 +1,2319 @@
+{
+  "i": 352,
+  "t": "ZSTweaks",
+  "sv": 1,
+  "pfx": "ZS",
+  "ord": 110,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "ZS Tweaks",
+  "cats": [
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "ZSTweaks Holy number of tweaks, Batman. Adviced to be installed as the first tweak mod. Details are a bit more complicated. ZSTweaks - General Item & Spell Tweaks The components changing the basic weapon qualities tread the same ground as Item Revisions, Forgotten Armaments, and some of SubtleD's Item Tweaks and Made in Heaven Item Pack Overwriting FA with these should keep FA's added crit threat to weapons without problem in some cases. In others you may want to set a given update_nwn_X value t",
+  "_legacy_ids": [
+    399
+  ],
+  "conflicts": [
+    {
+      "with": "SubtleD_Spell_Tweaks",
+      "withId": 305,
+      "severity": "soft",
+      "reason": "Both modify overlapping spells (Slow Poison, Sunray, Luck, Goodberry, Wondrous Recall, Black Blade of Disaster). Use one or the other for each.",
+      "myComps": "#1537 #467 #145 #240 #464 #181",
+      "theirComps": "#1212 #1707 #2209 #1207 #1611 #2915"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks Luke feats overlap with ZSTweaks equivalents. Use one set or the other",
+      "theirComps": "#6050 Dual-Wield Rangers #6040 Weapon Finesse Thieves #6110 Sneak Attack Blackguards"
+    },
+    {
+      "with": "SubtleD_Item_Tweaks",
+      "withId": 349,
+      "severity": "soft",
+      "reason": "Both modify the same items. Choose one version",
+      "theirComps": "#1010 Backstab Immunity Ring #1020 Missile Deflection Gloves"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "TnT Limited stock removes items from stores that ZSTweaks modifies",
+      "theirComps": "#62 Limited stock"
+    }
+  ],
+  "spl": {
+    "1": {
+      "spells": [
+        [
+          "SPWI516",
+          "tweak",
+          "Conjured wielded magical weapons gain +1 APR"
+        ]
+      ]
+    },
+    "15": {
+      "spells": [
+        [
+          "SPWI301",
+          "tweak",
+          "Divination spells and select others ignore magic resistance"
+        ]
+      ]
+    },
+    "20": {
+      "spells": [
+        [
+          "SPPR414",
+          "tweak",
+          "Poison-curing spells now cast instantly"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.nexusmods.com/baldursgate/mods/78",
+  "a": "Kaelyn",
+  "sum": "Massive tweak collection with 254 individually selectable changes to game rules, items, spells, and mechanics. The largest single tweak mod.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.nexusmods.com/baldursgate/mods/78",
+  "au": "Zed Nocear",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install all tweaks in the general tweaks group (except the ones that require a choice)",
+      "cn": 103,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "no": "Meta-component: installs all general tweaks at once (except subcomponent choices). Convenience shortcut."
+    },
+    {
+      "n": "Make conjured wielded magical weapons add 1 extra APR (Flame Blade, Phantom Blade...)",
+      "cn": 120,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 120,
+      "wq": "verified",
+      "no": "Adds +1 APR to conjured wielded weapons (Flame Blade, Phantom Blade, Black Blade, Spell Weapon, etc.)."
+    },
+    {
+      "n": "Make some weapon categories incur in backstab penalties for balance",
+      "no": "ToF/SCS, SubtleD Spells Tweaks, and MiH Spell Pack seem compatible. SubtleD Item Tweaks can do the same",
+      "cn": 1120,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1120,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Flails and Morningstars always inflict a small amount of piercing damage",
+      "no": "Note that it gives penalties, but doesn't forbid. Redundant with Item Revisions' component",
+      "cn": 1121,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1121,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Spears do a baseline damage of 1d8, not 1d6",
+      "no": "probably fine with FA, as this only seems to add a new effect, not change what's already there",
+      "cn": 1150,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1150,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Warhammers do a baseline damage 1d5+1, not 1d4+1 (except hammers outside that range)",
+      "no": "FA and MiH Fixpack already do the same. Probably safe to overwrite. SD's IT give them 1d10.",
+      "cn": 1160,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1160,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wakizashis and Ninja-Tos deal 2d4 instead of 1d8",
+      "no": "FA already brings all hammers to the standard of those \"outside that range\", that is 1d8. MiH Fixpack fixes hammers so that the stronger ones do 2d4+2 instead of 2d4, the same way weaker hammers do 1d",
+      "cn": 1350,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1350,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wakizashis a piercing/slashing weapon",
+      "no": "FA makes them do 1d6",
+      "cn": 1352,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1352,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Light Crossbows get +1/2 more APR",
+      "cn": 1360,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1360,
+      "wq": "verified",
+      "no": "Light crossbows gain +1/2 APR bonus. Modifies weapon headers."
+    },
+    {
+      "n": "Make Katanas deal 2d5 instead of 1d10",
+      "cn": 1370,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1370,
+      "wq": "verified",
+      "no": "Changes katana damage from 1d10 to 2d5 (same average, less variance)."
+    },
+    {
+      "n": "Make Bastard Swords deal 1d8+1 by default",
+      "no": "FA retains teh 1d10. Depends on the average damage you prefer.",
+      "cn": 1400,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1400,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Two-handed swords deal 1d9+1 by default, and 2d6 where it applies",
+      "no": "FA makes them do 1d10. But I kinda like this +1 safety for minimal damage.",
+      "cn": 1430,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1430,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Daggers have general extra features to compensate the low damage",
+      "no": "FA slaps a 2d6 dice to all 2hs across the board. This seems more interesting.",
+      "cn": 1440,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1440,
+      "wq": "verified"
+    },
+    {
+      "n": "Make some rogue weapons have the chance of doing more damage if wielded by pure thieves (Finesse)",
+      "no": "yo Imma let ya finish but I heardz you like crits so I put crits so you crit while you crit no seriously if you like backstabbing with daggers you may love this",
+      "cn": 1450,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1450,
+      "wq": "verified"
+    },
+    {
+      "n": "Moderate the inexplicably double damage magical throwing daggers do, to not make them the obvious choice all the time",
+      "no": "Tweaks Anthology's Finesse component is straight from 3E (thief uses DEX when wielding small melee weapons), but uses EEeex (so no go for Mac users) ZSTweaks' Finesse gives % proc of extra damage depe",
+      "cn": 1530,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1530,
+      "wq": "verified"
+    },
+    {
+      "n": "Make all divination spells and a few spells ignore magic resistance, where it makes sense",
+      "cn": 1531,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1531,
+      "wq": "verified",
+      "no": "Removes MR check from divination spells and select utility spells. Affects many spell files."
+    },
+    {
+      "n": "Make unenchanted bracers, belts and boots grant +1 HP, so they're not just garbage used only for RP purposes",
+      "cn": 1532,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1532,
+      "wq": "verified",
+      "no": "Unenchanted bracers, belts, and boots grant +1 HP. Makes vendor trash useful for early game."
+    },
+    {
+      "n": "Rebalance wands (currently only the Wand of Missiles is affected)",
+      "no": "clashes with Tweaks and Tricks - Cleanup stores as it removes them from stores",
+      "cn": 1533,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1533,
+      "wq": "verified"
+    },
+    {
+      "n": "Rebalance some potions",
+      "cn": 1534,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1534,
+      "wq": "verified",
+      "no": "Rebalances several potion effects and durations."
+    },
+    {
+      "n": "Make all potions usable by all classes",
+      "no": "It may overwrite MiH Item Pack's P&P Healing Potions making potion of healing do 2d4+2 (4-10) hp) with straight 12 hp.",
+      "cn": 1535,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1535,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Poison-curing spells an instant cast so attempting to cure poison is less likely to be interrupted",
+      "cn": 1537,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1537,
+      "wq": "verified",
+      "no": "Poison-curing spells become instant cast (casting time 0). Prevents cure interruption."
+    },
+    {
+      "n": "Make potions and food items universally incapable of stacking with themselves",
+      "no": "Could SubtleD's Spell Tweaks' \"Change Neutralize Poison into 'Remove Afflictions\" cause inconsistencies?",
+      "cn": 1601,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1601,
+      "wq": "verified"
+    },
+    {
+      "n": "1.25x",
+      "no": "Several mods do similar (ie: RR). Choose one and stick with it. Tresset's Allow Stacking Potions will do the inverse. v Make jewelry and other items meant to be sold more valuable Similar to Random Gr",
+      "cn": 15380,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15380,
+      "wq": "verified",
+      "g": "zs_jewelry_value"
+    },
+    {
+      "n": "1.5x",
+      "cn": 15381,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15381,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "1.75x",
+      "cn": 15382,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15382,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "2x",
+      "cn": 15383,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15383,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "2.25x",
+      "cn": 15384,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15384,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "2.5x",
+      "cn": 15385,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15385,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "2.75x",
+      "cn": 15386,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15386,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "3x",
+      "cn": 15387,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 15387,
+      "wq": "verified",
+      "g": "zs_jewelry_value",
+      "no": ""
+    },
+    {
+      "n": "Install all tweaks in the gear tweaks group (except the ones that require a choice)",
+      "no": "ZSTweaks - Armor/Gear Tweaks",
+      "cn": 1001,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1001,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shadow Dragon Scale behave less like a Black Dragon Scale",
+      "cn": 1170,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1170,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Silver Dragon Scale also grant 40% cold resistance as you would expect",
+      "no": "MiH Item Pack and FA gives level drain immunity instead of neg plane protection (so same?). FA also to death magic. ZSTweaks' novelty is nondetect and illusion & necromancy school spell saves. Possibl",
+      "cn": 1171,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1171,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Rings of Elemental control more likely to charm the elementals and add missing resistances",
+      "no": "FA does the same. Probably harmless to install together",
+      "cn": 1172,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1172,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ring of Gaxx's improved haste last 2 full rounds, and not 10 seconds",
+      "no": "IR does different things. May be compatible?",
+      "cn": 1173,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1173,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Heartwood Ring add 1 spell slot per level, as well as 1 HP/round regen",
+      "no": "Incompatible with IR, it changes the imp haste for other effects. Redundant with FA, increases to 5 rounds.",
+      "cn": 1174,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1174,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ring of Danger sense defensively better and protect against backstabs",
+      "no": "Incompatible with IR",
+      "cn": 1180,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1180,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Mercykiller Ring more useful for rogues that like killing",
+      "no": "Does the same as IR and SubtleD Item Tweaks together. Choose one of the three.",
+      "cn": 1316,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1316,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the basic robes and Archmage robes slightly more remarkable",
+      "cn": 1317,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1317,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Belt of Skillful Blade also increase piercing damage by 10%",
+      "no": "overall its upgrades go further than IR or FA, but would have to go after those.",
+      "cn": 1560,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1560,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Cloak of the Stars create 30 darts, instead of six, and add passive effects",
+      "cn": 1561,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1561,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Eyes of the Beholder's skills mirror the power of the spells they're based on",
+      "no": "Incompatible with IR, it changes it for a different item. MiH Fixes adds +1 to saving throws, compatible?",
+      "cn": 1570,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1570,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Robe of Invocation also improve all elemental damage by 5% and add a +2 bonus against Invocation",
+      "cn": 1610,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1610,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Vicross' Thayan Circlet more interesting for Wild Mages",
+      "cn": 1620,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1620,
+      "wq": "verified"
+    },
+    {
+      "n": "Make mage robes without cloak (like Robe of Vecna) take on the appearance of a robe with cloak",
+      "cn": 1650,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1650,
+      "wq": "verified",
+      "no": "Cosmetic: robes without cloaks (like Robe of Vecna) display with cloak appearance."
+    },
+    {
+      "n": "Make Studded Leather of Thorns add some piercing damage too",
+      "cn": 1651,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1651,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Grandmaster's Armor's movement bonus not affected by Free Action",
+      "cn": 1652,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1652,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Thieves' Hood protect against critical hits and slightly more advantageous for single-classed thieves",
+      "cn": 1653,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1653,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Star-Strewn Boots slightly better and favor Inquisitors too (SoD)",
+      "cn": 1654,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1654,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Crown of Lies more consequential when used",
+      "cn": 1655,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1655,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Helmet of Dumathoin very slightly more powerful",
+      "cn": 1656,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1656,
+      "wq": "verified"
+    },
+    {
+      "n": "Make The Visage add the capacity to cast Aura of Despair once per day and improve powers slightly",
+      "cn": 1657,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1657,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Dragon Helm add protection against acid too, as well as +2 saves against Breath",
+      "cn": 1658,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1658,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Helm of the Rock a bit more protective and commanding",
+      "cn": 1659,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1659,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Cloak of the Sewers also protect against poison",
+      "cn": 1661,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1661,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Montolio's Cloak grant a damage and thac0 bonus to rangers",
+      "cn": 1662,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1662,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Sandthief ring in BGEE work as in BG2EE (one use per day)",
+      "cn": 1663,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1663,
+      "wq": "verified"
+    },
+    {
+      "n": "Affect all",
+      "no": "overlaps with Tresset's similar minimod v Make all ioun stones and circlets protect against critical hits",
+      "cn": 16640,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 16640,
+      "wq": "verified",
+      "g": "zs_ioun_crit"
+    },
+    {
+      "n": "Only affect selected items",
+      "cn": 16641,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 16641,
+      "wq": "verified",
+      "g": "zs_ioun_crit",
+      "no": "Circlet/ioun stone invisibility fix: only affects selected items."
+    },
+    {
+      "n": "Only affect ioun stones",
+      "cn": 16642,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 16642,
+      "wq": "verified",
+      "g": "zs_ioun_crit",
+      "no": "Circlet/ioun stone invisibility fix: only affects ioun stones."
+    },
+    {
+      "n": "Only affect circlets",
+      "cn": 16643,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 16643,
+      "wq": "verified",
+      "g": "zs_ioun_crit",
+      "no": "Circlet/ioun stone invisibility fix: only affects circlets."
+    },
+    {
+      "n": "Make several basic ioun stones and circlets a bit more interesting or powerful",
+      "cn": 1665,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1665,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Bracers of Blinding's Improved Haste effect last 1 turn and improve speed passively",
+      "cn": 1666,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1666,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Xarrnous's Second Sword Arm (and SoD's version) also add +1 damage (lesser Legacy of the Masters)",
+      "no": "Same as FA, but ZSTwaks adds movement speed as well. Choose one or the other.",
+      "cn": 1667,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1667,
+      "wq": "verified"
+    },
+    {
+      "n": "Make The Dale's Protector slightly more powerful and open to all classes",
+      "cn": 1668,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1668,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Gauntlets of Extraordinary Specialization improve THAC0 by 2 and open to all classes",
+      "cn": 1669,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1669,
+      "wq": "verified"
+    },
+    {
+      "n": "Make The Eyes of Truth add a bonus to Detect Illusions and Find Traps",
+      "cn": 1671,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1671,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Stalker Gauntlets also benefit Bounty Hunters and Shadowdancers",
+      "cn": 1672,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1672,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Blessed Bracers more powerful",
+      "cn": 1673,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1673,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Whispers of Silence protect against detection spells except for True Sight, and improve Move Silently",
+      "cn": 1674,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1674,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Cloak of Displacement add +5% damage resistance",
+      "cn": 1675,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1675,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Skull of Death allows casting Finger of Death, and protect against Necromantic instant-death effects",
+      "cn": 1676,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1676,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wondrous Gloves Wondrous",
+      "cn": 1677,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1677,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Senses of the Cat imbue the user of more cat-like features",
+      "cn": 1678,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1678,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the Horn of Kazgaroth more useful and the self- damage more unique",
+      "cn": 1679,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1679,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the dagger tweaks group",
+      "no": "ZSTweaks - Dagger Tweaks",
+      "cn": 999,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 999,
+      "wq": "verified"
+    },
+    {
+      "n": "Make throwing poisoned daggers slightly more likely to poison enemies",
+      "cn": 1000,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1000,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Bone Blade dagger more special and not just a plain +4 dagger",
+      "cn": 1130,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1130,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Dagger of the Star slightly more powerful",
+      "cn": 1140,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1140,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Neb's Nasty Cutter have an unlimited amount of poison",
+      "cn": 1490,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1490,
+      "wq": "verified"
+    },
+    {
+      "n": "Make The Jade's Fang slightly more powerful and improve the lifesteal effect",
+      "no": "IR does its own changes on these two (Star and Neb's)",
+      "cn": 1630,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1630,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Heart of the Golem +2 get a couple more magic- based features, inspired by the description",
+      "cn": 1660,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1660,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Werebane +1 a bit more effective towards Lycanthropes",
+      "cn": 1670,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1670,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Stiletto of Demarchess +2 a bit more powerful and bleed every hit",
+      "no": "might clash with some of the options for TA's Karoug component?",
+      "cn": 1680,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1680,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Elements' Fury +2 slightly more powerful",
+      "no": "another IR rebel",
+      "cn": 1681,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1681,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Acid-Etched Dagger +2 generally more powerful and act as +3",
+      "cn": 1682,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1682,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Gemblade +2 more powerful and more worth hanging onto for wizards",
+      "cn": 1683,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1683,
+      "wq": "verified"
+    },
+    {
+      "n": "Make basic throwing daggers usable as melee weapons",
+      "cn": 1684,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1684,
+      "wq": "verified",
+      "no": "Throwing daggers can also be used in melee combat. Dual-purpose weapons."
+    },
+    {
+      "n": "Install all tweaks in the two-handed weapons tweaks group",
+      "no": "ZSTweaks - Two-handed Melee Weapon Tweaks",
+      "cn": 1199,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1199,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ixil's Spike allow Haste and Improved Haste",
+      "cn": 1200,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1200,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Lilarcor +3 have a chance of causing confusion on hit",
+      "no": "FA removes free action, also 10% to pin target + 1d6+5 piercing damage per round. As FA changes more opcodes than ZStweaks, it would need to go after and restore the needed opcodes",
+      "cn": 1201,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1201,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Warblade +4 slightly more unique, and more potent when wielded by barbarians",
+      "no": "Unsure on IR compatibility",
+      "cn": 1202,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1202,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Carsomyr affect any kind of evil and not just Chaotic Evil",
+      "cn": 1280,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1280,
+      "wq": "verified",
+      "no": "Carsomyr's dispel affects all evil alignments, not just Chaotic Evil."
+    },
+    {
+      "n": "Make Carsomyr's Dispel Magic force a saving throw",
+      "no": "redundant with IR, probably compatible with FA",
+      "cn": 1290,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1290,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Silver Sword act as a +4 weapon to determine what it can hit to extend usability",
+      "no": "IR and FA both do it. FA's though bypasses protections if EEex is installed. Pick stick blah blah",
+      "cn": 1300,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1300,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Flame of the North +2 affect all evil, not just chaotic evil",
+      "no": "IR something something",
+      "cn": 1318,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1318,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Flame of the North inflict +2 fire damage against trolls",
+      "cn": 1322,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1322,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Staff of the Magi force a saving throw to dispel effects on hits",
+      "no": "IR does Flame of the North differently",
+      "cn": 1390,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1390,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ir'revrykal Dispel Magic effect not depend on probabilities, but allow a saving throw",
+      "no": "IR also allow a save. FA makes it a % proc. Maybe compatible with Stuff of the Magi?",
+      "cn": 1410,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1410,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ir'revrykal base damage equal to Carsomyr",
+      "no": "probably clashes with FA",
+      "cn": 1420,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1420,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Spear of Withering able to poison on contact if save is failed",
+      "cn": 1460,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1460,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wave slightly more powerful",
+      "no": "IR different. FA similar.",
+      "cn": 1540,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1540,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Rod of Terror inspire less Terror by how awful it is and more by how effective it is",
+      "no": "IR does it different. FA only changes the draining chance, possibly compatible?",
+      "cn": 1587,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1587,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Blackmist more powerfully blinding and grant immunity to blindness",
+      "no": "Tresset's Improved Rods does similar, plus the Rod of Lordly Might. Use one mod only",
+      "cn": 1590,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1590,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Soul Reaver slightly more balanced",
+      "no": "similar to IR",
+      "cn": 1591,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1591,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Soul Reaver deal 1d12 damage",
+      "cn": 1592,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1592,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Sword of Ruin +2 slightly more powerful",
+      "no": "Incompatible with IR's Soul Reaver. Uncertain on Item Upgrades' +6 upgrade (1d12 +6, +1d6 magic, 50% MR, dispel on hit, target -2 THAC0 for 120 seconds), and FA depends on IU's",
+      "cn": 1593,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1593,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Cleric's staff more unique and actually benefit clerics",
+      "cn": 1594,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1594,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Halcyon +1 a bit more powerful",
+      "no": "FA adds +2 WIS. Prob compatible, but choose one.",
+      "cn": 1595,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1595,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Staff of Rhynn not just unique in name and description, but in function",
+      "cn": 1597,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1597,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Psion's Blade more offensively powerful against Illithids",
+      "cn": 1599,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1599,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Dragon's Bane +3 better and act as a +6 weapon in every sense against dragons and wyverns",
+      "cn": 1602,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1602,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Dragon's Breath +4 act damage-wise as a +4 weapon",
+      "cn": 1603,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1603,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Duskblade +2 more imbued with the essence of necromancy",
+      "cn": 1604,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1604,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the one-handed swords tweaks group",
+      "no": "ZSTweaks - One-handed Swords Tweaks",
+      "cn": 1124,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1124,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ninjato of the Scarlet Brothehood +3 available for other classes and alignments",
+      "cn": 1125,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1125,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Blackrazor able to hit targets immune to +3",
+      "cn": 1126,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1126,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Peridan more powerful against dragons and less misleading in the description",
+      "no": "FA only adds a +4 upgrade, original +3 untouched. Probably harmless to install together, if somewhat redundant.",
+      "cn": 1127,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1127,
+      "wq": "verified"
+    },
+    {
+      "n": "Make The Equalizer slightly more powerful",
+      "cn": 1210,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1210,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ras slightly better and the Dancing Blade last for 1 turn, instead of 4 rounds",
+      "cn": 1220,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1220,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Short Sword of Mask +5 slightly more powerful",
+      "no": "Similar to IR, but goes further. Conceptually incompatible with bart tweaks's Quick Slot Ras.",
+      "cn": 1230,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1230,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Purifier's damage bonus affect all evil, not just Chaotic Evil",
+      "no": "similar/different to IR & FA (IR paralyzes and poisons vs entangle and lv drain, FA nondetect and & proc Assassination)",
+      "cn": 1240,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1240,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Purifier's Dispel Magic level 30, like Staff of the Magi and Carsomyr",
+      "no": "redundant with IR. FA removes the vs evil damage; could be compatible, but just pick one.",
+      "cn": 1241,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1241,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Yamato's passive abilities more substantial",
+      "no": "Incompatible with IR. FA removes the dispel. Pick one.",
+      "cn": 1250,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1250,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Usuno's Blade slightly more electrically powerful",
+      "no": "nice, but IR incompatible, FA too maybe (IR gives thorns and downgrades to +3, FA gives crit hit protection, this makes it DoE like)",
+      "cn": 1260,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1260,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Spectral Brand last for 1 turn, instead of 4 rounds",
+      "no": "similar/different to IR & FA. Can probably install on top of FA's without issue",
+      "cn": 1270,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1270,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Dak'kon's Zerth Blade behave as a +3 weapon",
+      "no": "similar/different to IR & FA. Can probably install on top of FA's without issue",
+      "cn": 1315,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1315,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Holy Sword of Tyr +3 affect all evil, not just chaotic evil",
+      "no": "probably safe with IR and FA?",
+      "cn": 1319,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1319,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Hindo's Doom a +3 and +4 weapon",
+      "cn": 1341,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1341,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Adjatha the Drinker thirstier",
+      "no": "probably safe with IR and FA? They change the effects but not the enchant lv",
+      "cn": 1470,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1470,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Drizzt's weapons slightly more worth stealing in BG2",
+      "no": "clashes with IR",
+      "cn": 1550,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1550,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Hawksight improve your senses, reflexes, and accuracy more keenly",
+      "no": "clashes with IR and Cdtwinkle - Make Twinkle a True 'Defender' Weapon if you want CDTwinkle's mechanics, probably better to install after this",
+      "cn": 1580,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1580,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Hawksight's description unique and add a minor power to it",
+      "cn": 1581,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1581,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Vexation +2 more powerful",
+      "cn": 1582,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1582,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Kachiko's Wakizashi substantially more unique in description and improve it",
+      "cn": 1583,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1583,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   The Brass Blade +5 cast better fireball spells",
+      "cn": 1584,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1584,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   Arbane's Sword of Agility's Haste last 1 turn, not 2 rounds",
+      "cn": 1585,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1585,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   Blade of Searing more Searing",
+      "cn": 1586,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1586,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   Water's Edge not just unique in name and description, but in function",
+      "cn": 1588,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1588,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   Rashad's Talon not just unique in name and description, but in function",
+      "cn": 1589,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1589,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   The Shadow Blade +3 not just unique in name and description, but in function",
+      "cn": 1596,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1596,
+      "wq": "verified"
+    },
+    {
+      "n": "Make   Cutthroat +4 not just unique in name and description, but in function",
+      "cn": 1598,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1598,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the axes/blunt tweaks group",
+      "no": "ZSTweaks - Axes and Blunt Weapons",
+      "cn": 1301,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1301,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Defender of Eastheaven damage reduction a little more moderate",
+      "cn": 1310,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1310,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Krotan's Skullcrusher +2 slightly less generic",
+      "no": "SubtleD's Item Tweaks' YARAS does similar",
+      "cn": 1311,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1311,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Skullcrusher +3 slightly more crushy",
+      "cn": 1312,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1312,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Gnasher +2 slightly more painful",
+      "no": "FA also change these two. But each mod add different effects, so probably fine? IR too different/similar",
+      "cn": 1313,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1313,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Jerrod's Mace +2 behave as a +3 weapon",
+      "no": "IR may revert it?",
+      "cn": 1314,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1314,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Flail of Ages +5 allow Haste and Improved Haste",
+      "cn": 1320,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1320,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Bone Club +2, +3 against undead's effect reflect the description better and improve it slightly",
+      "no": "FA removes Magic Resistance and Free Action. ZSTweaks would only change the description if going after. Pick one.",
+      "cn": 1321,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1321,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Azuredge act properly as a +3 weapon",
+      "no": "similar to IR and FA",
+      "cn": 1323,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1323,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wyvern's Tail +2 cause poison damage on hit and have a chance of poisoning",
+      "no": "FA removes alignment restriction. Probs compatible?",
+      "cn": 1324,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1324,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Borok's Fist +2 different so it's not identical to Ashideena +2 (only reason this component exists)",
+      "cn": 1325,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1325,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the ranged tweaks group",
+      "no": "ZSTweaks - Ranged Weapon Tweaks",
+      "cn": 1009,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1009,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Asp's Nest darts much more likely to poison, to compensate for the rarity and cost",
+      "cn": 1010,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1010,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Darkfire Bow slightly more remarkable",
+      "no": "maybe reverted by IR?",
+      "cn": 1330,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1330,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Taralash slightly more remarkable",
+      "no": "possibly redundant with IR",
+      "cn": 1340,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1340,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Protector of the Dryads deal +2 damage to orcs, ogres, bugbears, gnolls, and goblinoids",
+      "no": "IR and FA do different things",
+      "cn": 1342,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1342,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Mana bow more magical and more deadly against arcane casters",
+      "no": "FA gives it +10% to Detect Illusions and Find Traps. Probs compatible?",
+      "cn": 1343,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1343,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Arrows of Biting apply poison faster and improve the misleading description",
+      "cn": 1344,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1344,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Arrows of Fire cause fire damage always, same as Arrows of Ice",
+      "cn": 1345,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1345,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Arrows of Piercing always cause at least half of the extra piercing damage",
+      "cn": 1346,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1346,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the NPC tweaks group",
+      "no": "ZSTweaks - NPC Tweaks",
+      "cn": 1379,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1379,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Chaos and Entropy grant 1/2 APR each and improve them slightly",
+      "cn": 1380,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1380,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Yoshimo's Katana more unique and powerful",
+      "no": "Make sure it installs after Improved Haer'Dalis' swords for compatibility",
+      "cn": 1480,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1480,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Mazzy's weapons more powerful",
+      "no": "different to IR. Some other mod also changes it?",
+      "cn": 1500,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1500,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Delryn's family shield become a +2 shield",
+      "no": "different to IR",
+      "cn": 1510,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1510,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Hallowed Redeemer able to hit enemies immune to +2 weapons",
+      "no": "IR goes further",
+      "cn": 1520,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1520,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Keldorn's armor allow Haste and Improved Haste",
+      "no": "different to IR",
+      "cn": 1521,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1521,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Abyssal Blades more powerful (Dorn's Quest)",
+      "no": "FA removes Magic Resistance and Free Action. ZSTweaks would only change the description if going after. Pick one.",
+      "cn": 1640,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1640,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the item creation abilities of vanilla NPCs slightly better",
+      "cn": 1641,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1641,
+      "wq": "verified",
+      "no": "Improves items created by vanilla NPC special abilities (Nalia, Cernd, etc.)."
+    },
+    {
+      "n": "Make Nalia's ring more powerful",
+      "cn": 1642,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1642,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Corthala family blade more powerful and more effective against wizards",
+      "cn": 1643,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1643,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove unnecessary stat restrictions in NPC gear",
+      "cn": 1644,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1644,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Make Cernd's cloak more powerful",
+      "cn": 1645,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1645,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Rod of Lordly Might usable by any class and more powerful",
+      "no": "This assumes that Cern retains his vanilla shapeshifter kit ZSTweaks - Misc Items",
+      "cn": 1190,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1190,
+      "wq": "verified"
+    },
+    {
+      "n": "Make CHARNAME's Tankard heal as much as a Potion of Extra Healing (Neera's quest)",
+      "no": "Tresset's Improved Rods does similar, plus the Rod of Terror. Use one mod only",
+      "cn": 1600,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 1600,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the wizard spells tweaks group",
+      "no": "ZSTweaks - Wizard Spell Tweaks",
+      "cn": 139,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 139,
+      "wq": "verified"
+    },
+    {
+      "n": "Standardize Finger of Death magical damage on a successful save",
+      "cn": 140,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 140,
+      "wq": "verified",
+      "no": "Standardizes Finger of Death to deal consistent magical damage on successful save."
+    },
+    {
+      "n": "Make Luck last for 1 turn to make it more usable",
+      "cn": 145,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 145,
+      "wq": "verified",
+      "no": "Luck duration extended to 1 turn (10 rounds) from default."
+    },
+    {
+      "n": "Make Luck also add 5% critical hit chances, 2 AC, 5% more to thieving",
+      "cn": 147,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 147,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Make Black Blade of Disaster unsuitable for backstabs",
+      "no": "use these or Tresset's improved Luck (2x effects, 1 turn) but not both",
+      "cn": 160,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 160,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Iron Golem weapon unsuitable for backstabs",
+      "no": "I just like having Imoen BBoDstabbing",
+      "cn": 163,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 163,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Phantom Blade scale in duration up to level 20, instead of to level 18",
+      "cn": 161,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 161,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wail of the Banshee inflict some magical damage and deafness on a successful save",
+      "no": "probably clashes with Spell-50's scaling, avoid mixing",
+      "cn": 170,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 170,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Meteor Swarm more likely to do more damage, and bypass magic resistance like Fire Storm",
+      "cn": 180,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 180,
+      "wq": "verified",
+      "no": "Meteor Swarm: increased damage reliability and bypasses magic resistance like Fire Storm."
+    },
+    {
+      "n": "Make Horror an Enchantment spell",
+      "no": "no MR Fire Storm like. Avoid with Olvyn Spells (4 smaller hits). Ppppppossibly compatible with MiH Spell Pack (experimental, renames vanilla Meteor Swarm and adds the 2E PnP Melf's like Meteor Swarm)",
+      "cn": 210,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 210,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Ice Storm do more damage, including piercing damage",
+      "cn": 220,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 220,
+      "wq": "verified",
+      "no": "Ice Storm: additional piercing damage component added."
+    },
+    {
+      "n": "Make Ray of Enfeeblement a Necromancy spell",
+      "no": "Incompatible with Olvyn Spell. Similar to SCS/ToF's spell tweaks, but with the added piercing damage. Should be installed after",
+      "cn": 370,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 370,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Contagion cause 4 points of Strength and Dexterity damage",
+      "cn": 380,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 380,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Make Death Fog inflict 1d8+8 acid damage per round instead of flat 8 damage",
+      "no": "These two probs compatible with Olvyn Spells",
+      "cn": 390,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 390,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Energy Drain drain 6 levels instead of 2",
+      "no": "proooobably compatible with SCS/ToF's change? (it just disables the automatic kill)",
+      "cn": 400,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 400,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Maze bypass Magic Resistance, like Imprisonment, and make Minotaurs immune to it",
+      "no": "probably compatible with SubtleD Spell Tweaks. Incompatible with Olvyn Spells. SCS/ToF changes do similar (5 instead of 6)",
+      "cn": 405,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 405,
+      "wq": "verified"
+    },
+    {
+      "n": "Make base Imp Familiars have 12/24 HP like the other familiars",
+      "cn": 407,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 407,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Horrid Wilting actually be more effective against plants and Water Elementals and increase minimum damage",
+      "no": "Other familiar mods might change the imp creature file's name",
+      "cn": 410,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 410,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Grease bypass Magic Resistance, as it is as conjured substance, and apply a Fire Resistance debuff to affected characters, and reduce movement speed regardless, as per the description",
+      "no": "proooobably compatible with SCS/ToF's change? (undead constructs and non water eles are unnafected)",
+      "cn": 430,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 430,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Comet bypass magic resistance and apply a mix of cold, fire and crushing damage",
+      "cn": 440,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 440,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Make Tenser's Transformation grant a THAC0 of 0 at max level",
+      "no": "Incompatible with Olvyn Spells.",
+      "cn": 441,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 441,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Tenser's Transformation gain extra APR like a Fighter at the appropriate levels",
+      "no": "clashes with Spell-50's scaling, avoid mixing",
+      "cn": 442,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 442,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Symbol of Death work with Save bonus if above the 60 HP threshold",
+      "cn": 443,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 443,
+      "wq": "verified",
+      "no": "Symbol of Death: allows saving throw bonus even above the 60 HP threshold."
+    },
+    {
+      "n": "Make Flesh to Stone use Petrification saves",
+      "cn": 444,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 444,
+      "wq": "verified",
+      "no": "Flesh to Stone uses Petrification saving throws instead of Spell."
+    },
+    {
+      "n": "Make Bigby's spells more powerful",
+      "cn": 445,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 445,
+      "wq": "verified",
+      "no": "Bigby's hand spells deal more damage and have improved effects."
+    },
+    {
+      "n": "Make Fireball, Sunfire, and Delayed Blast Fireball slightly scale more up to level 20",
+      "cn": 446,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 446,
+      "wq": "verified",
+      "no": "Fireball, Sunfire, and Delayed Blast Fireball scale slightly to level 20 instead of capping earlier."
+    },
+    {
+      "n": "Install all tweaks in the cleric/druid spells tweaks group",
+      "no": "SubtleD's Spell Tweaks's Change Sunfire will change it for a different spell, making this component moot. Don't mix. Made in Heaven: Fixes & Restorations's Revised Spell Damage Caps does the same with",
+      "cn": 99,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 99,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Glyph of Warding do damage on a failed save and extend damage up to level 20, instead of just to 18",
+      "cn": 100,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "no": "Glyph of Warding: damage only on failed save, scales to level 20 instead of 18."
+    },
+    {
+      "n": "Make Flame Blade do 4 more points of Fire Damage to undead and act as a +2 weapon against them",
+      "cn": 101,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 101,
+      "wq": "verified",
+      "no": "Flame Blade: +4 fire damage vs undead, acts as +2 weapon against them."
+    },
+    {
+      "n": "Make BG's version of Flame Blade scale duration-wise like in IWDEE",
+      "no": "Similar to MiH Spell Tweaks's Spell Improvements, though that makes it a bit more powerful. Probably fine to overwrite. Both options are stronger than SCS/ToF's change.",
+      "cn": 102,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 102,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Bless last longer",
+      "no": "probably clashes with Spell-50's scaling, avoid mixing",
+      "cn": 110,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 110,
+      "wq": "verified"
+    },
+    {
+      "n": "Standardize Hold Person saving throw penalties",
+      "no": "Incompatible with Olvyn Spell",
+      "cn": 130,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 130,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Holy Power grant a THAC0 of 0 at max level",
+      "cn": 190,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 190,
+      "wq": "verified",
+      "no": "Holy Power: THAC0 reaches 0 at maximum level."
+    },
+    {
+      "n": "Make Cloak of Fear work as a temporary aura of fear, like in IWDEE",
+      "cn": 230,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 230,
+      "wq": "verified",
+      "no": "Cloak of Fear: temporary fear aura effect, IWDEE-style."
+    },
+    {
+      "n": "Make Goodberries generate six berries, each healing 2d4 instead of 1 point of damage, and granting very slow regeneration for 8 hours",
+      "no": "Incompatible with Olvyn Spell",
+      "cn": 240,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 240,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Earthquake party friendly",
+      "no": "Incompatible with SubtleD Spell Tweaks",
+      "cn": 250,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 250,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Earthquake not shake the screen",
+      "cn": 350,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 350,
+      "wq": "verified",
+      "no": "Earthquake: removes screen shake effect."
+    },
+    {
+      "n": "Make Negative Plane Protection's duration increase somewhat as you level up",
+      "cn": 260,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 260,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Entangle's saving throws improve slightly at higher levels so it remains relevant for druids",
+      "cn": 270,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 270,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Poison (cleric spell) do half damage on a failed save (without poisoning them)",
+      "no": "Incompatible with Olvyn Spell",
+      "cn": 280,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 280,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Holy Power grant extra APR like a Fighter at the appropriate levels",
+      "no": "probably clashes with Spell-50's scaling, avoid mixing",
+      "cn": 290,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 290,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Iron Skins cast as fast a Stoneskin",
+      "cn": 300,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 300,
+      "wq": "verified",
+      "no": "Iron Skins: casting time reduced to match Stoneskin."
+    },
+    {
+      "n": "Make Fire Seeds create more seeds that do slightly more damage, with an enchantment of 2",
+      "no": "probably fine along SubtleD Spell Tweaks' Tweak Mantle",
+      "cn": 310,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 310,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Nature's Beauty a bit more likely to kill humanoid enemies, and make blinded enemies immune",
+      "cn": 320,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 320,
+      "wq": "verified",
+      "no": "Nature's Beauty: more lethal vs humanoids, blinded creatures become immune to further blindness."
+    },
+    {
+      "n": "Make Cleric's level 7 version of confusion act like Chaos (-4 saving throw penalty)",
+      "cn": 330,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 330,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Symbol of Death work with Save bonus if above the 60 HP threshold",
+      "cn": 340,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 340,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Armor of Faith also add a +2 AC bonus to make it useful at low levels",
+      "no": "will be skipped if you install the one in the arcane section",
+      "cn": 420,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 420,
+      "wq": "verified"
+    },
+    {
+      "n": "Make single-target healing spells other than Heal worth using",
+      "no": "SubtleD's Item Tweaks' YARAS might stomp it?",
+      "cn": 450,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 450,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Mass Cure faster to cast to improve it as a combat spell and heal a bit more",
+      "no": "This and ToF/SCS' component to improve certain spell intend the same, though this makes these spells stronger. You can disable ToF/SCS' by opening dw_talents.ini or stratagems.ini (depending on what m",
+      "cn": 460,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 460,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Bolt of Glory slightly better",
+      "cn": 461,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 461,
+      "wq": "verified",
+      "no": "Bolt of Glory: slightly improved damage values."
+    },
+    {
+      "n": "Make Magical Stone bypass Magic Resistance and deal both magic and missile damage",
+      "cn": 462,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 462,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Make Dolorous Decay more powerful",
+      "no": "SCS/ToF makes it 3d4 damage (6d4 vs undead). Compatibility untested",
+      "cn": 463,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 463,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Wondrous Recall also recall wizard spells, and a higher number of them",
+      "cn": 464,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 464,
+      "wq": "verified",
+      "no": "Wondrous Recall: also restores wizard spells, increased number recalled."
+    },
+    {
+      "n": "Make Nature's Beauty blocked by True Sight",
+      "cn": 465,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 465,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shield of Archons absorb more spell levels (equivalent to cleric level)",
+      "cn": 466,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 466,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Sunray be able to kill undead regadless of their magic damage resistance",
+      "cn": 467,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 467,
+      "wq": "verified",
+      "no": ""
+    },
+    {
+      "n": "Rebalance Call Lightning's damage and scaling",
+      "no": "Does the same and more than SubtleD's Spell Tweaks' Make Sunray Bypass Magic Resistance. Use one or the other",
+      "cn": 468,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 468,
+      "wq": "verified"
+    },
+    {
+      "n": "Install all tweaks in the class/kit tweaks group",
+      "no": "ZSTweaks - Class and Kit-related tweaks",
+      "cn": 359,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 359,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Sun Soul Ray from Sun Soul Monks scale further and do more damage to undead",
+      "cn": 2100,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2100,
+      "wq": "verified",
+      "no": "Sun Soul Ray: scales further at higher levels, increased undead damage."
+    },
+    {
+      "n": "Make Sun Soulbeam do more damage to undead: 12d6 instead of just 3 more damage than baseline",
+      "cn": 2110,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2110,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shaman's Etheral Retribution do more damage per round: 6d6 per round instead of 3d8",
+      "no": "irrelevant with AK's monk overhaul, as it changes these two skills for others",
+      "cn": 360,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 360,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shaman's Writhing Fog slightly more powerful",
+      "cn": 2111,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2111,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shaman's Spirit Fire slightly more powerful",
+      "cn": 2112,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2112,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shaman's Spiritual Clarity induce more clarity (removes berserk and intoxication too)",
+      "cn": 2113,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2113,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Shaman's Favored of the Spirits lasts for 24 hours (2 in-game hours), not 1 (5 in-game minutes)",
+      "cn": 2114,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2114,
+      "wq": "verified"
+    },
+    {
+      "n": "Make War Cry inflict fear with a -2 Saving Throw penalty",
+      "cn": 2120,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2120,
+      "wq": "verified",
+      "no": "War Cry: fear effect uses -2 saving throw penalty."
+    },
+    {
+      "n": "Make Set Spike Trap do piercing damage instead of magic damage",
+      "no": "compatible but bit redundant with Refinements or ToF (adds a Greater WC with same penalty and a party bonus), incompatible with Passive Warrior HLAs",
+      "cn": 2130,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2130,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Exploding Trap do slightly more damage: 15d6 as opposed to 10d6",
+      "cn": 2140,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2140,
+      "wq": "verified",
+      "no": "Exploding Trap: 15d6 damage instead of 10d6."
+    },
+    {
+      "n": "Make selected kit HLAS unable to be breached",
+      "no": "these two are redundant with RR's Thief High Level Ability revisions; ToF stomps that with Refinements' versions, so then you may want them. Could they be compatible with Epic Thieving's Epic Trap Set",
+      "cn": 2150,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2150,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Quivering Palm slightly more powerful at high levels",
+      "no": "Jtweaks and S&A also do this. No need to repeat similar components, but probably safe",
+      "cn": 2160,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2160,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the THAC0 progression of Thieves better and more streamlined, so they improve up to 6, like clerics",
+      "no": "Skip if using AK's monk overhaul, as QP scales by WIS above 16 there",
+      "cn": 2170,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2170,
+      "wq": "verified"
+    },
+    {
+      "n": "Make the THAC0 progression of Bards better and more streamlined, so they improve up to 6, like clerics",
+      "cn": 2180,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2180,
+      "wq": "verified",
+      "no": "Bard THAC0 progression improved to reach 6 (like clerics) instead of stopping earlier."
+    },
+    {
+      "n": "Make Poison Weapon improve couple of times more every 4 levels (level 17, and 21)",
+      "no": "there are many mods that do the same as these two (MnG, ToF, TA...), with difference in the details. Pick one method and stick with it.",
+      "cn": 2190,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2190,
+      "wq": "verified"
+    },
+    {
+      "n": "Allow Blackguards to perform backstabs as if they had a 2x backstab multiplier",
+      "no": "again, many options: AK, Nostalgia Pack, Tresset's Rebalanced Poison Weapon... Choose one.",
+      "cn": 2200,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2200,
+      "wq": "verified"
+    },
+    {
+      "n": "Light proficienciy overhaul",
+      "no": "Also done by TA's Sneak Attack class feat for Blackguards (for EEex, melee and ranged) and Artisan's Kitpack's Blackguard overhaul (x2 backstab at lv11). Avoid installing together",
+      "cn": 2210,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 2210,
+      "wq": "verified"
+    },
+    {
+      "n": "Make inappropriately aligned creatures in BG2 more correct",
+      "no": "Compatible with TA's Change Grandmastery Bonuses, and All The Things Revised's Worthwhile Proficiency Points: Buff 1st and 4th proficiency point in a weapon ZSTweaks - Creature Tweaks",
+      "cn": 3010,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 3010,
+      "wq": "verified"
+    },
+    {
+      "n": "Make summoned demons grant XP to the party when they kill something",
+      "cn": 3020,
+      "wf": "ZSTweaks",
+      "wp": "ZSTweaks\\ZSTweaks.tp2",
+      "wc": 3020,
+      "wq": "verified",
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": ""
+    }
+  ],
+  "advisories": [
+    {
+      "with": "IMPROVEDRODS",
+      "withId": 286,
+      "severity": "soft",
+      "reason": "Both modify Rod of Terror (RODS05.itm) and Rod of Lordly Might (RODS02.itm). Last installed wins",
+      "myComps": "#1587 Rod of Terror / #1190 Rod of Lordly Might",
+      "theirComps": "#0 Improve Rods",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "i": 33,
+  "t": "c#endlessbg1",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 10,
+  "c": "QUEST MODS BG1",
+  "n": "Endless BG1 Mod",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "pl": 3,
+    "fr": 4,
+    "it": 5,
+    "es": 6,
+    "pt-br": 7,
+    "zh-cn": 8
+  },
+  "no": "Most of Jastey's mods that deal with reworking the games' pace basically ask to go first among quests. So we bunch them up together here. Endless BG1 Don’t install the component “Eltan is in the Palace” due to bugs! EndlessBG1 & Transitions are better ways to stay in the BG1 world longer!Install EndlessBG1 before Transitions if you install them together. Transitions seemingly does most of what EndlessBG1 does and more!Install EndlessBG1 before Jarl’s Adventure Pack, Brage’s Redemption, and Romantic Encounters for BG1.",
+  "_legacy_ids": [
+    38
+  ],
+  "conflicts": [
+    {
+      "with": "transitions",
+      "withId": 589,
+      "severity": "hard",
+      "reason": "Transitions tp2 explicitly uninstalls EndlessBG1 cn:14 (Korlasz' Dungeon is in BG1) because it supersedes that functionality. If both are installed, WeiDU must temporarily uninstall ~100 mods between them (ord:10 vs ord:490) to remove cn:14, then reinstall everything. Remove cn:14 from selection when using Transitions.",
+      "myComps": "#14 Korlasz' Dungeon is in BG1",
+      "theirComps": "#0 Main component",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Reflections",
+      "withId": 41,
+      "severity": "hard",
+      "reason": "Reflections of Destiny cn:100 ('The Future is Now') has FORBID_COMPONENT for EndlessBG1 cn:14. Both restructure post-Sarevok BG1 content — cannot coexist. TP2-enforced.",
+      "myComps": "#14",
+      "theirComps": "#100 The Future is Now",
+      "source": "TP2 FORBID_COMPONENT, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/EndlessBG1/releases",
+  "a": "jastey",
+  "v": "20.2",
+  "sum": "Adds events and encounters to the BG1 post-Sarevok period, letting you continue exploring the Sword Coast after the final battle instead of immediately jumping to SoD.",
+  "tags": [
+    "story",
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "rec": {
+    "goes_with": [
+      "BG1 NPC Project",
+      "SoD Tweaks",
+      "Boareskyr Bridge Acknowledgement"
+    ],
+    "tip": "Lets you explore after the final fight. Korlasz Dungeon in BG1 component is great for EET continuity."
+  },
+  "eet_compat": {
+    "ver": "v1",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "EndlessBG1"
+  },
+  "dl": "https://github.com/Gibberlings3/EndlessBG1/releases",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Endless BG1: Main Component (Required)",
+      "pi": "EBG1_MainComponent",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 0,
+      "wq": "manual_prefix",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 0,
+      "no": "Core: allows continued play in BG after defeating Sarevok. Required for other components.",
+      "tp2n": "Endless BG1: Main Component (Required)"
+    },
+    {
+      "n": "More Flavor to Hero of Baldur's Gate (Includes PC's Residence Inside Palace)",
+      "pi": "EBG1_MoreFlavor",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 1,
+      "no": "Adds celebrations, NPC reactions, and a residence in the Ducal Palace.",
+      "rd": 0,
+      "tp2n": "More Flavor to Hero of Baldur's Gate (Includes PC's Residence Inside Palace)"
+    },
+    {
+      "n": "Short Public Hero Tribute",
+      "pi": "EBG1_HeroCutscene",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "no": "Short public ceremony recognizing the hero's deeds.",
+      "rd": 0,
+      "tp2n": "Short Public Hero Tribute"
+    },
+    {
+      "n": "Sarevok's Unique Items",
+      "pi": "EBG1_SarevokItems",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 3,
+      "no": "Sarevok drops his unique equipment instead of generic loot.",
+      "rd": 0,
+      "tp2n": "Sarevok's Unique Items"
+    },
+    {
+      "n": "Sarevok's Sword",
+      "pi": "EBG1_SarevokSword",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 4,
+      "no": "Sarevok's sword becomes a lootable unique item.",
+      "rd": 0,
+      "tp2n": "Sarevok's Sword"
+    },
+    {
+      "n": "Imoen and Duke Jannath (Imoen Gets Residence Inside Palace)",
+      "pi": "EBG1_ImoenJannath",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 5,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 5,
+      "no": "Imoen receives a residence inside the palace from Duke Jannath.",
+      "rd": 0,
+      "tp2n": "Imoen and Duke Jannath (Imoen Gets Residence Inside Palace)"
+    },
+    {
+      "n": "Duke Eltan Is in the Palace",
+      "pi": "EBG1_EltanInPalace",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 6,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 6,
+      "no": "Duke Eltan returns to the palace after being rescued.",
+      "rd": 0,
+      "tp2n": "Duke Eltan Is in the Palace"
+    },
+    {
+      "n": "Flaming Fist After Final Fight",
+      "pi": "EBG1_FFHealerInBhaalTemple",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 7,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 7,
+      "no": "Flaming Fist soldiers react to Sarevok's defeat.",
+      "rd": 0,
+      "tp2n": "Flaming Fist After Final Fight"
+    },
+    {
+      "n": "jastey's Version",
+      "no": "v Elminster makes an appareance",
+      "pi": "EBG1_ElminsterAppearance_jastey",
+      "scn": "Elminster Makes an Appearance",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 8,
+      "wq": "manual_prefix",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 8,
+      "g": "elminster",
+      "rd": 0,
+      "tp2n": "jastey's Version"
+    },
+    {
+      "n": "Restored BG1 Text",
+      "pi": "EBG1_ElminsterAppearance_restored",
+      "scn": "Elminster Makes an Appearance",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 9,
+      "wq": "manual_prefix",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 9,
+      "g": "elminster",
+      "no": "Restores original BG1 text cut or modified in the Enhanced Edition.",
+      "rd": 0,
+      "tp2n": "Restored BG1 Text"
+    },
+    {
+      "n": "First Refugees Come to Baldur's Gate",
+      "pi": "EBG1_RefugeesInBGCity",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "cn": 10,
+      "no": "Refugees from the iron crisis begin arriving in Baldur's Gate.",
+      "rd": 0,
+      "tp2n": "First Refugees Come to Baldur's Gate"
+    },
+    {
+      "n": "Ophyllis the Treasurer is Inside Palace Dungeon",
+      "pi": "EBG1_TreasurerInPalaceDungeon",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 11,
+      "wq": "name_match",
+      "cn": 11,
+      "no": "",
+      "rd": 0,
+      "tp2n": "Ophyllis the Treasurer is Inside Palace Dungeon"
+    },
+    {
+      "n": "Denkod in Thieves' Guild Comments on Sarevok's Death",
+      "pi": "EBG1_DenkodCommentsOnSarevoksDeath",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 12,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 12,
+      "no": "Denkod in the Thieves' Guild has dialogue about Sarevok's death.",
+      "rd": 0,
+      "tp2n": "Denkod in Thieves' Guild Comments on Sarevok's Death"
+    },
+    {
+      "n": "Skip Thieves' Maze Once After Sarevok's Death",
+      "pi": "EBG1_SkipThievesMazeOnce",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 13,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 13,
+      "no": "Allows skipping the Thieves' Maze once after Sarevok is defeated.",
+      "rd": 0,
+      "tp2n": "Skip Thieves' Maze Once After Sarevok's Death"
+    },
+    {
+      "n": "Korlasz' Dungeon is in BG1",
+      "pi": "EBG1_KorlaszDungeonBG1",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 14,
+      "wq": "name_match",
+      "cn": 14,
+      "no": "DO NOT select with Transitions mod — Transitions tp2 explicitly uninstalls this component, triggering a massive WeiDU reinstall chain (~100 mods). Transitions supersedes Korlasz dungeon functionality.",
+      "rd": 0,
+      "tp2n": "Korlasz' Dungeon is in BG1"
+    },
+    {
+      "n": "Fenster the Palace Healer Is in the Palace",
+      "no": "Incompatible with Reflections of Destiny's Back to the Future component",
+      "pi": "EBG1_FensterInPalace",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 15,
+      "wq": "name_match",
+      "cn": 15,
+      "rd": 0,
+      "tp2n": "Fenster the Palace Healer Is in the Palace"
+    },
+    {
+      "n": "Captain Corwin Is in the Palace",
+      "pi": "EBG1_CorwinInPalace",
+      "wf": "c#endlessbg1",
+      "wp": "c#endlessbg1\\C#ENDLESSBG1.TP2",
+      "wc": 16,
+      "wq": "manual_prefix",
+      "cn": 16,
+      "no": "Captain Corwin from SoD appears in the palace. Requires SoD.",
+      "rd": 0,
+      "tp2n": "Captain Corwin Is in the Palace"
+    }
+  ]
+}

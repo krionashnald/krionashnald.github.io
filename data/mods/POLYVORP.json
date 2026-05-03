@@ -1,0 +1,69 @@
+{
+  "i": 407,
+  "t": "polyvorp",
+  "sv": 1,
+  "ord": 90,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Polyvorp",
+  "no": "Polyvorp by Polytope. Rebalances vorpal weapons for both enemies and players. Install after SCS, aTweaks, Rogue Rebalancing (detects and patches their items). Conflicts with Item Revisions main component (both modify the same weapon items). Ascension Five weapon handled if present.",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "Both mods modify the same vorpal weapon items (Silver Sword, Axe of the Unyielding, Ravager). Polyvorp replaces vorpal effects with its own spell-based system; IR reworks the items entirely. Results are unpredictable.",
+      "theirComps": "#0 Item Revisions main",
+      "source": "tp2 analysis + mod readme, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/forums/topic/31688-rebalancing-vorpal-effects/",
+  "a": "temnix",
+  "sum": "Rebalances and standardizes vorpal weapon effects across BG2, modifying both player-usable and enemy vorpal weapons for more consistent and fair gameplay.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/forums/topic/31688-rebalancing-vorpal-effects/",
+  "au": "Polytope",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Rebalanced Vorpal Weapons (affects enemies and players)",
+      "tp2n": "Rebalanced Vorpal Weapons (affects enemies and players)",
+      "cn": 10,
+      "wf": "POLYVORP",
+      "wp": "POLYVORP\\POLYVORP.TP2",
+      "wc": 10,
+      "wq": "guessed",
+      "no": "Replaces instant-kill vorpal with HP-threshold system: decapitation only triggers when target is below half HP, with per-weapon % chances (Silver Sword 10%, Axe of Unyielding 5%, Ravager 15%). Affects player AND enemy vorpal weapons (Balor, Planetar, Fallen Solar). Patches SCS and aTweaks vorpal effects if present. Handles RR items and Ascension Five if installed."
+    },
+    {
+      "n": "Make all Dragons immune to Vorpal hits (previously some were, with default rebalancing none are)",
+      "tp2n": "Make all Dragons immune to Vorpal hits (previously some were, with default rebalancing none are)",
+      "cn": 20,
+      "wf": "POLYVORP",
+      "wp": "POLYVORP\\POLYVORP.TP2",
+      "wc": 20,
+      "wq": "guessed",
+      "rd": 0,
+      "no": "Grants all dragons immunity to the rebalanced vorpal effect. In vanilla, some dragons had vorpal immunity and some didn't — cn:10 removes all immunity as side effect. This restores universal dragon immunity."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "ForgottenArmament",
+      "withId": 252,
+      "severity": "soft",
+      "reason": "Both may modify overlapping weapon items. FA Update Existing Items (cn:21) patches weapon stats; Polyvorp replaces vorpal effects. Install Polyvorp after FA.",
+      "theirComps": "#21 Update Existing In-Game Items",
+      "source": "mod readme mention, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

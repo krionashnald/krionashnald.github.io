@@ -1,0 +1,174 @@
+{
+  "i": 453,
+  "t": "AllThingsMazzy",
+  "sv": 1,
+  "ord": 480,
+  "c": "NPC EXPANSIONS",
+  "n": "All Things Mazzy",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Installed (4 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "Artisans_MazzyRom",
+      "withId": 454,
+      "severity": "hard",
+      "reason": "Both add a romance for Mazzy. Install only one Mazzy romance mod.",
+      "myComps": "#0 All Things Mazzy",
+      "theirComps": "#0 Mazzy Romance",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both provide a Mazzy portrait. Cosmetic conflict, last installed wins.",
+      "myComps": "#5 Hi-Res Portrait for Mazzy",
+      "theirComps": "#40 Mazzy",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both provide a Mazzy portrait. Cosmetic conflict, last installed wins.",
+      "myComps": "#5 Hi-Res Portrait for Mazzy",
+      "theirComps": "#110, #111",
+      "orderOnly": true
+    },
+    {
+      "with": "LivingClara",
+      "withId": 715,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1286 vs 1806)",
+      "source": "lcc-docs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "mazzy",
+          "portraits/all_things_mazzy2/nmazzy.png",
+          "bg2"
+        ],
+        [
+          "mazzy",
+          "portraits/mazzy_paladin/mazzy.png",
+          "bg2"
+        ],
+        [
+          "mazzy",
+          "portraits/mazzy_paladin/tb_mazp.png",
+          "bg2"
+        ],
+        [
+          "atm_bboelf",
+          "portraits/all_things_mazzy2/_bboelf.png",
+          "bg2"
+        ]
+      ],
+      "5": [
+        [
+          "mazzy",
+          "portraits/all_things_mazzy/mazzy.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Ratatoskr589/All-Things-Mazzy",
+  "a": "Ratatoskr, BCaesar",
+  "v": "Version 3.16",
+  "sum": "Our massive Megamod for Baldur's Gate 2, including a Mazzy friendship, a romance, a new NPC and far too much other stuff to list.  This version follows the more traditional GitHub format thanks to JohnBob.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "RattatoskrAndBCaesar",
+    "r": "AllThingsMazzy"
+  },
+  "au": "BCaesar and Ratatoskr (Briana). E-mail at",
+  "dl": "https://github.com/Ratatoskr589/All-Things-Mazzy",
+  "co": [
+    {
+      "n": "All Things Mazzy",
+      "cn": 0,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": ""
+    },
+    {
+      "n": "For the Evil",
+      "no": "Adds Bodhi as a joinable NPC and additional evil-aligned content. May disturb a truly good player.",
+      "cn": 1,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": ""
+    },
+    {
+      "n": "For the Good",
+      "no": "Adds Sheriff Mazzy reactions — Mazzy comments on evil actions and party behavior. May annoy a truly evil player.",
+      "cn": 2,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": ""
+    },
+    {
+      "n": "Do NOT allow multiple ToB epilogues",
+      "no": "ATM epilogues override existing game and most mod epilogues. Without this, multiple NPC epilogues play.",
+      "cn": 3,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": ""
+    },
+    {
+      "n": "Optional Soundset for Clara NPC",
+      "cn": 4,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": "Optional Soundset for Clara NPC"
+    },
+    {
+      "n": "Optional Hi-Res Portrait for Mazzy by Edvin",
+      "cn": 5,
+      "wf": "AllThingsMazzy",
+      "wp": "AllThingsMazzy\\SETUP-ALLTHINGSMAZZY.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": "Optional Hi-Res Portrait for Mazzy created by Edvin."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "Both may modify Mazzy's kit. ATM includes its own Mazzy changes.",
+      "myComps": "#0 All Things Mazzy",
+      "theirComps": "#2200 Give Mazzy a Proper Truesword of Arvoreen Kit",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

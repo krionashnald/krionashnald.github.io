@@ -1,0 +1,73 @@
+{
+  "i": 143,
+  "t": "yeslicknpc",
+  "sv": 1,
+  "ord": 220,
+  "c": "NEW NPC MODS",
+  "n": "Yeslick NPC",
+  "no": "Yeslick for BG2 SoA-ToB If using a cleric mod with an appropiate (ie: Clangeddin) kit and a releveler, probably better to leave him as regular F/C and assign him the kit later.",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Yeslick in BG2. BG1NPCinSoA auto-skips its Yeslick if standalone detected.",
+      "theirComps": "#4 Yeslick",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME lk#yesl.cre. Fixed stale comp_b (removed unrelated Water Gardens reference), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/Yeslick_NPC/releases",
+  "a": "Pixel Kaiser, K'aeloree, ArtemiusI, Lava Del'Vortel; Gwendolyne",
+  "v": "v5.0",
+  "sum": "This mod brings Yeslick from Baldur's Gate to BGII: SoA and ToB, with an extensive variety of banters and interjections, a new kit (Alaghor of Clangeddin) as well as a number of PC dialogues throughout the game.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Yeslick_NPC"
+  },
+  "au": "Pixel Kaiser, K'aeloree and Lava Del'Vortel",
+  "dl": "https://github.com/SpellholdStudios/Yeslick_NPC",
+  "langs": {
+    "en": 0
+  },
+  "pt": false,
+  "co": [
+    {
+      "n": "Yeslick is a regular Fighter-Cleric",
+      "cn": 0,
+      "wf": "yeslicknpc",
+      "wp": "yeslicknpc\\yeslicknpc.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "yeslick_class",
+      "scn": "Yeslick NPC for BGII: SoA & ToB",
+      "tp2n": "Yeslick is a regular Fighter-Cleric"
+    },
+    {
+      "n": "Yeslick is a Fighter-Alaghor of Clangeddin (cleric kit)",
+      "cn": 1,
+      "wf": "yeslicknpc",
+      "wp": "yeslicknpc\\yeslicknpc.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "yeslick_class",
+      "scn": "Yeslick NPC for BGII: SoA & ToB",
+      "no": "Makes Yeslick a Fighter/Alaghor of Clangeddin (cleric kit). Dwarven war-priest of the Father of Battle.",
+      "tp2n": "Yeslick is a Fighter-Alaghor of Clangeddin (cleric kit)"
+    }
+  ]
+}

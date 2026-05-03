@@ -1,0 +1,56 @@
+{
+  "i": 541,
+  "t": "FR_ROV",
+  "sv": 1,
+  "ord": 600,
+  "c": "QUEST MODS BG2",
+  "n": "Freedom's Reign",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "it": 2
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both add bonus merchants, but cdtweaks #1170 has REQUIRE_PREDICATE GAME_IS soa/tob/bgt — it CANNOT install on EE/EET. This conflict is impossible on EET installs. On non-EE installs, choose one.",
+      "myComps": "#0 Freedom's Reign",
+      "theirComps": "#1170 Bonus Merchants (non-EE only)",
+      "source": "cdtweaks tp2 #1170 has REQUIRE_PREDICATE GAME_IS ~soa tob bgt~; cannot install on bgee/bg2ee/eet, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.shsforums.net/files/file/121-freedoms-reign-reign-of-virtue/",
+  "a": "Deano",
+  "v": "v8",
+  "sum": "BG2 quest mod about breaking free from captivity. Adds a storyline with new areas and freedom-themed encounters.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.shsforums.net/files/file/121-freedoms-reign-reign-of-virtue/",
+  "au": "Deano",
+  "no": "BG2 quest mod about breaking free from captivity. Adds a storyline with new areas and freedom-themed encounters.",
+  "co": [
+    {
+      "n": "Freedom's Reign (SoA or ToB)",
+      "tp2n": "Freedom's Reign (SoA or ToB)",
+      "cn": 0,
+      "wf": "FR_ROV",
+      "wp": "FR_ROV\\SETUP-FR_ROV.TP2",
+      "wc": 0,
+      "no": "AT_INTERACTIVE_EXIT — opens readme after install, may freeze automated install"
+    }
+  ]
+}

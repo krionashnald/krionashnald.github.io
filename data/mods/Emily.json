@@ -1,0 +1,92 @@
+{
+  "i": 131,
+  "t": "Emily",
+  "sv": 1,
+  "ord": 100,
+  "c": "NEW NPC MODS",
+  "n": "Emily",
+  "no": "Skitia Lava and Artemius npcs in any order but together and after older ones waiting for the big update Emily BG1 Ranger, archer",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "emily",
+          "portraits/emily/emily.png",
+          "bg1"
+        ],
+        [
+          "emily",
+          "portraits/emily/old.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Skitia/Emily-BG1",
+  "a": "Skitia",
+  "v": "1.65",
+  "sum": "Adds Emily as a joinable NPC in BG1 with dialogue and character development.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Skitia",
+    "r": "Emily-BG1"
+  },
+  "au": "Coutelier",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/Skitia/Emily-BG1",
+  "co": [
+    {
+      "n": "Emily NPC for BG1EE",
+      "cn": 0,
+      "wf": "Emily",
+      "wp": "Emily\\Emily.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Emily NPC for BG1EE"
+    },
+    {
+      "n": "Arcane Archer (Fighter Kit)",
+      "cn": 1,
+      "wf": "Emily",
+      "wp": "Emily\\Emily.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "no": "COMMENTED OUT in v1.65 tp2 - do not use. Requires Artisan's Kitpack.",
+      "tp2n": "Arcane Archer (Fighter Kit)",
+      "scn": "Choose an alternate class for Emily?"
+    },
+    {
+      "n": "Arcane Archer/Mage (Fighter/Mage Kit)",
+      "cn": 2,
+      "wf": "Emily",
+      "wp": "Emily\\Emily.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "no": "COMMENTED OUT in v1.65 tp2 - do not use. Requires Artisan's Kitpack.",
+      "tp2n": "Arcane Archer/Mage (Fighter/Mage Kit)",
+      "scn": "Choose an alternate class for Emily?"
+    },
+    {
+      "n": "Emily's Music",
+      "cn": 3,
+      "wf": "Emily",
+      "wp": "Emily\\Emily.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "no": "Custom soundtrack for timed talks. cn:3 is the real music component.",
+      "tp2n": "Emily's Music",
+      "scn": "Choose whether or not to have Emily's custom soundtrack play during timed talks."
+    }
+  ]
+}

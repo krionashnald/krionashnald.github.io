@@ -1,0 +1,795 @@
+{
+  "i": 309,
+  "t": "WW_SPELL-50",
+  "sv": 1,
+  "pfx": "WW",
+  "ord": 140,
+  "c": "SPELL MODS",
+  "n": "Spell-50",
+  "no": "Spell-50 by Weimer (PPG). Extends priest/druid/mage spell scaling to higher levels. Affects damage, duration, number of targets — everything that scales with caster level. Applies equally to PCs and enemies. Install AFTER all spell-adding mods (IWDification, MiH SP, TotLM) so it patches their spells too. CONFLICTS: Incompatible with Spell Revisions main component (SR rebalances spells differently). Clashes with MiH Fixes cn:18 (Revised Spell Damage Caps). SCS spell tweaks may override some scaling. Not .",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify saving throw penalties for spells. Don't mix — use one or the other",
+      "theirComps": "#2310 #2311 #2312 Save Penalties for high-level casters"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    },
+    "1": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    },
+    "2": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    },
+    "3": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    },
+    "4": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    },
+    "5": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "modify",
+          "Fireball damage scales to selected cap level"
+        ],
+        [
+          "SPWI308",
+          "modify",
+          "Lightning Bolt damage scales to selected cap level"
+        ],
+        [
+          "SPWI112",
+          "modify",
+          "Magic Missile count scales to selected cap level"
+        ],
+        [
+          "SPWI503",
+          "modify",
+          "Cone of Cold damage scales to selected cap level"
+        ],
+        [
+          "SPWI502",
+          "modify",
+          "Cloudkill poison scales to selected cap level"
+        ],
+        [
+          "SPWI605",
+          "modify",
+          "Chain Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPWI704",
+          "modify",
+          "Delayed Blast Fireball scales to selected cap level"
+        ],
+        [
+          "SPWI801",
+          "modify",
+          "Horrid Wilting damage scales to selected cap level"
+        ],
+        [
+          "SPWI901",
+          "modify",
+          "Meteor Swarm damage scales to selected cap level"
+        ],
+        [
+          "SPWI305",
+          "modify",
+          "Haste duration scales to selected cap level"
+        ],
+        [
+          "SPWI201",
+          "modify",
+          "Blur duration scales to selected cap level"
+        ],
+        [
+          "SPWI408",
+          "modify",
+          "Stoneskin skin count scales to selected cap level"
+        ],
+        [
+          "SPWI515",
+          "modify",
+          "Lower Resistance reduction scales to selected cap level"
+        ],
+        [
+          "SPWI313",
+          "modify",
+          "Skull Trap damage scales to selected cap level"
+        ],
+        [
+          "SPWI519",
+          "modify",
+          "Sunfire damage scales to selected cap level"
+        ],
+        [
+          "SPWI303",
+          "modify",
+          "Flame Arrow count scales to selected cap level"
+        ],
+        [
+          "SPPR104",
+          "modify",
+          "Cure Light Wounds healing scales to selected cap level"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Flame Strike damage scales to selected cap level"
+        ],
+        [
+          "SPPR302",
+          "modify",
+          "Call Lightning damage scales to selected cap level"
+        ],
+        [
+          "SPPR506",
+          "modify",
+          "Insect Plague duration scales to selected cap level"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Creeping Doom damage scales to selected cap level"
+        ],
+        [
+          "SPPR705",
+          "modify",
+          "Fire Storm damage scales to selected cap level"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Pocket-Plane-Group/spell50",
+  "a": "Weimer",
+  "sum": "Adjusts spell power for level 50+ characters, addressing balance issues at extremely high levels where vanilla spells become trivial.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "spell50"
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/spell50",
+  "au": "The Bigg",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "50",
+      "pi": "ww_spell-50",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wc": 0,
+      "wq": "known_folder_uninstalled",
+      "cn": 0,
+      "g": "spell_cap",
+      "no": "Extends all spell scaling to level 50. Fireball at L50 = 50d6 damage, Blur lasts 150 rounds. Maximum scaling — most powerful. Choose one cap level."
+    },
+    {
+      "n": "40",
+      "pi": "ww_spell-40",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 10,
+      "g": "spell_cap",
+      "no": "Extends spell scaling to level 40. High but slightly less extreme than 50. Choose one cap level."
+    },
+    {
+      "n": "30 [IWD default]",
+      "pi": "ww_spell-30",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 20,
+      "g": "spell_cap",
+      "no": "Extends spell scaling to level 30. IWD's default cap. Moderate power increase. Choose one cap level."
+    },
+    {
+      "n": "20 [BG/BG2 default]",
+      "pi": "ww_spell-20",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 30,
+      "g": "spell_cap",
+      "no": "Level 20 cap — BG/BG2 vanilla default. No change from base game. Only useful if another mod changed the cap and you want to reset. Choose one cap level."
+    },
+    {
+      "n": "1",
+      "pi": "ww_spell-1",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 40,
+      "g": "spell_cap",
+      "no": "Level 1 cap — spells never scale. All spells cast at minimum power. Extreme challenge mode. Choose one cap level."
+    },
+    {
+      "n": "Use Custom Spell Cap",
+      "pi": "ww_spell-custom",
+      "wf": "WW_SPELL-50",
+      "wp": "WW_SPELL-50\\WW_SPELL-50.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 50,
+      "g": "spell_cap",
+      "no": "Use a custom cap defined in spell50.ini. For fine-tuning. Choose one cap level."
+    }
+  ]
+}

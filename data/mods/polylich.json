@@ -1,0 +1,96 @@
+{
+  "i": 676,
+  "t": "polylich",
+  "sv": 1,
+  "ord": 460,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Purist Demiliches (Polylich)",
+  "no": "Berserk characters are immune as in an unmodded game.Install Purist Demiliches after SCS.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "LICHDOM",
+      "withId": 674,
+      "severity": "soft",
+      "reason": "Both modify demilich.cre and hldemi.cre. Polylich overhauls abilities/stats. Lichdom adds Lich Dust item. Compatible — patch different parts of the same files.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/forums/topic/34370-purist-demiliches/",
+  "a": "temnix",
+  "v": "v1.00",
+  "sum": "Overhauls demiliches to be more faithful to PnP rules, restoring abilities like soul trapping and cursing while adding proper vulnerabilities to specific spells.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/forums/topic/34370-purist-demiliches/",
+  "au": "Polytope",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Trap the Soul: Preventable by MR, ignores berserk (recommended)",
+      "tp2n": "Demilich Trap the Soul is preventable by magic resistance, ignores berserk (recommended)",
+      "cn": 11,
+      "wf": "polylich",
+      "wp": "polylich\\POLYLICH.TP2",
+      "wc": 11,
+      "g": "trap_soul",
+      "scn": "Purist Demiliches"
+    },
+    {
+      "n": "Trap the Soul: Bypasses MR, berserk immune (vanilla)",
+      "tp2n": "Demilich Trap the Soul bypasses magic resistance, berserk characters are immune (as in the unmodded game)",
+      "cn": 12,
+      "wf": "polylich",
+      "wp": "polylich\\POLYLICH.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "g": "trap_soul",
+      "scn": "Purist Demiliches"
+    },
+    {
+      "n": "Resilient: Yes, HLA parties kill them too fast",
+      "tp2n": "Yes, they die far too quickly to parties using High Level Abilities",
+      "cn": 16,
+      "wf": "polylich",
+      "wp": "polylich\\POLYLICH.TP2",
+      "wc": 16,
+      "wq": "exact",
+      "g": "resilient",
+      "scn": "Do you want more resilient Demiliches?"
+    },
+    {
+      "n": "Resilient: Max HP per hit die only (no power creep)",
+      "tp2n": "Just give them maximum hp per hit die (like most monsters), anything else is power creep",
+      "cn": 17,
+      "wf": "polylich",
+      "wp": "polylich\\POLYLICH.TP2",
+      "wc": 17,
+      "g": "resilient",
+      "scn": "Do you want more resilient Demiliches?"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Both overhaul demilich behavior. May produce unexpected interactions",
+      "myComps": "#0 Purist Demiliches core",
+      "theirComps": "#8020 Spellcasting Demiliches",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

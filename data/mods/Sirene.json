@@ -1,0 +1,181 @@
+{
+  "i": 7,
+  "t": "Sirene",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 10,
+  "c": "NEW NPC MODS",
+  "n": "Sirene NPC",
+  "no": "LG Female Tiefling Paladin (Martyr). As of Feb 2025, should be installed after EET Start on BG2EE — not pre-EET. See: k4thos EET Compatibility List.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "sirene",
+          "portraits/sirene_bg2/sirene.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "SIRENE_NPC_FOR_BALDURS_GATE_ENHANCED_EDI",
+          "npc",
+          "Martyr: Sirene",
+          "Paladin of Ilmater. Protects allies through self-sacrifice, Martyrdom stance, and healing."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Sirene-BG1",
+  "a": "Artemius_I",
+  "sum": "Adds Sirene, a tiefling paladin, as a joinable NPC in BG1 with full voice acting, banters, a personal quest, and romance option.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "au": "AionZ",
+  "dl": "https://github.com/ArtemiusI/Sirene-NPC",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "SIRENE_NPC_FOR_BALDURS_GATE_ENHANCED_EDI": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Paladin of Ilmater. Protects allies through self-sacrifice, Martyrdom stance, an"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "co": [
+    {
+      "n": "Sirene NPC for Baldur's Gate: Enhanced Edition",
+      "cn": 0,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Sirene NPC for Baldur's Gate: Enhanced Edition"
+    },
+    {
+      "n": "BG2 Default (Isandir)",
+      "no": "v Choose a portrait for Sirene",
+      "cn": 1,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "BG2 Default (Isandir)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Original BG1 Default (sporeboy)",
+      "cn": 2,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "tp2n": "Original BG1 Default (sporeboy)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 1 (Sirick, Light Armor)",
+      "cn": 3,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "tp2n": "Alternate 1 (Sirick, Light Armor)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 1 (Sirick/Lava, Heavy Armor)",
+      "cn": 4,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "tp2n": "Alternate 1 (Sirick/Lava, Heavy Armor)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 2 (Lodaligae)",
+      "cn": 5,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "tp2n": "Alternate 2 (Lodaligae)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "True Paladin",
+      "no": "v Choose a class for Sirene",
+      "cn": 6,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "tp2n": "True Paladin",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Cavalier",
+      "cn": 7,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "tp2n": "Cavalier",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Inquisitor",
+      "cn": 8,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "tp2n": "Inquisitor",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Undead Hunter",
+      "cn": 9,
+      "wf": "Sirene",
+      "wp": "Sirene\\Setup-Sirene.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "tp2n": "Undead Hunter",
+      "scn": "Choose an alternate class for Sirene?"
+    }
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Sirene-BG1"
+  }
+}

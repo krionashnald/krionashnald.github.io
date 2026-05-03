@@ -1,0 +1,137 @@
+{
+  "i": 278,
+  "t": "Item_Pack",
+  "sv": 1,
+  "ord": 240,
+  "c": "ITEM ADDITION MODS",
+  "n": "Unofficial Item Pack",
+  "langs": {
+    "cs": 0,
+    "en": 1
+  },
+  "no": "8 item additions by Edvin. Positive community reception. No EET-specific code but works on EET (uses standard BG2 CRE names). Install BEFORE Item Revisions. Last updated July 2021",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "Item Revisions conflict with Item Tweaks",
+      "myComps": "#2, #3",
+      "theirComps": "#0",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Rolles",
+      "withId": 475,
+      "severity": "hard",
+      "reason": "Choose one Bag of Holding",
+      "myComps": "#1",
+      "theirComps": "#1",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify Free Action item behavior. Install one or the other",
+      "myComps": "#7 Reworked Free Action",
+      "theirComps": "#2070 Free Action does not prevent Haste"
+    },
+    {
+      "with": "CowledMenace",
+      "withId": 244,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1166 vs 1061)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/56567/mod-bgii-ee-unofficial-item-pack",
+  "a": "Edvin",
+  "sum": "Adds 9 sets of new items to BG2, each themed around different play styles and power levels.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/56567/mod-bgii-ee-unofficial-item-pack",
+  "au": "Edvin",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Unofficial Item Pack",
+      "tp2n": "Neoficialni balik pro upravu predmetu",
+      "no": "24 reworked items: soul stones, armor, weapons, jewelry with enhanced abilities",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 1,
+      "n": "Scarlet Katana",
+      "tp2n": "Sarlatova Katana",
+      "no": "Converts Scarlet Ninja-To into a Katana. Better utility for monks, bards, thieves — Niche",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 2,
+      "n": "Gourmet from Underdark",
+      "tp2n": "Gurman z Temnych risi",
+      "no": "Gourmet ingredients with special crafting uses — niche",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 3,
+      "n": "Holy Symbols",
+      "tp2n": "Svate symboly",
+      "no": "Grants AC +1 to all six holy symbols — Skip if satisfied with vanilla holy symbols",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 4,
+      "n": "New Items",
+      "tp2n": "Nove predmety",
+      "no": "5 original items available at Adventure Mart",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 5,
+      "n": "SoD Items",
+      "tp2n": "SoD predmety",
+      "no": "Transfers 16 items from Siege of Dragonspear into BG2EE via Adventure Mart",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 6,
+      "n": "Better Archery Shop",
+      "tp2n": "Vylepseny obchod pro lukostrelce",
+      "no": "Expands archer merchant with enhanced ammunition including elemental variants",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    },
+    {
+      "cn": 7,
+      "n": "Reworked Free Action",
+      "tp2n": "Predelana volna akce",
+      "no": "Removes haste-prevention from Firecam Plate, Ixil Spike +6, Flail of Ages +5, Ring of Free Action — Overlaps with cdtweaks free action tweaks. Not",
+      "wf": "Unofficial Item Pack",
+      "wp": "Unofficial Item Pack\\Setup-Unofficial Item Pack.tp2",
+      "wq": "exact"
+    }
+  ]
+}

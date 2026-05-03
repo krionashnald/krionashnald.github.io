@@ -1,0 +1,514 @@
+{
+  "i": 889,
+  "t": "g3cip",
+  "sv": 1,
+  "ord": 910,
+  "c": "ITEM ADDITION MODS",
+  "n": "G3 Community Item Pack",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/Gibberlings3/G3_Community_Item_Pack",
+  "a": "Gibberlings3",
+  "sum": "A mod to train budding modders. A recommended thing to do first is an item pack.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "G3CCOURT",
+          "boots",
+          "Slippery Court",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. \n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "G3CBRUSH",
+          "halberd",
+          "The Realmshaper's Brush",
+          "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.\n\nSTATISTICS:\n\nDamage: 1d10 (piercing or slashing)\nSpeed Factor: 9\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 5,
+            "thac0": 4,
+            "dmg": "1d10",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "G3CREST",
+          "cloak",
+          "Cloak of Sound Rest",
+          "This cloak is light and travels well, but has a soft, downy appearance. It was created for a Duke Jeffa of Sembia, who enacted cruel policies and feared assassination. Once it is attuned to the wearer, which takes one hour, its protective nature will activate. From that moment, if the wearer is struck by a weapon, the cloak will immediately begin healing any wounds. At the same time, it will issue a small explosion of glowing motes, similar to a Glitterdust spell, to disorient the attacker, illuminate invisible assailants, and importantly, wake the wearer. Only one attack will be blocked; the magic will reactivate one hour later.\n\nSadly for Duke Jeffa, the cloak could not protect him from poison administered by his own cook.\n\nSTATISTICS:\n\nEquipped abilities:\n– Up to once per hour, being hit in melee will cast Glitterdust near the wearer and start 1 hp/round regeneration for an hour.\n\nWeight: 3",
+          {}
+        ],
+        [
+          "G3CAKK",
+          "ring",
+          "Akkabar's Battleblade",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 2,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CCGSD",
+          "misc",
+          "A Caster's Guide to Self-Defense",
+          "This book contains helpful advice to any spellcaster who finds themself in combat. Such tips include \"run away really fast\" and \"don't get hit\". While these would be unhelpful platitudes in any other book, the author has helpfully included a guide on using magic to follow the advice.\n\nSTATISTICS:\n\nSpecial Abilities: \n Haste once per day\n Special: All creatures affected function at double their normal movement rate\n Duration: 13 rounds\n Mirror Image once per day\n Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being\n Duration: 13 rounds",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CCSM",
+          "misc",
+          "Countability in Summoning Matrices",
+          "This esoteric and advanced tome of arcane theory would be beyond those without magical training. While most of the book is focused on the theoretical nature of summoning rituals in regards to the countable Elemental Planes and the uncountable, infinite layers of the Abyss, it does provide a few practical examples that any spellcaster would find useful.\n\nSTATISTICS:\n\nSpecial Abilities: \n Summon Fire Elemental once per day\n Special: A fire elemental is summoned in the vicinity of the caster\n Duration: 10 turns\n Summon Air Elemental once per day\n Special: An air elemental is summoned in the vicinity of the caster\n Duration: 10 turns",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CPRC",
+          "misc",
+          "The Power of Real Change",
+          "The majority of this book is self-help advice, but in the very last chapter contains arcane methodologies for the truly desperate.\n\nSTATISTICS:\n\nSpecial Abilities: \n Polymorph Self once per day\n Special: The caster is able to assume the form of another creature\n Duration: 4 turns",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CVINE",
+          "shield",
+          "Vine Shield",
+          "This extraordinary shield is woven from living vines that twist and writhe as if imbued with a life of their own. Over four centuries ago, it was purchased in Sigil, the City of Doors, by a merchant who dealt with an unknown giant race from a distant realm. The shield made its way to Faerûn, where it was acquired by the ranger Elric of the High Forest. Elric used the shield to protect his village from a band of gnoll raiders, the vines ensnaring his foes and turning the tide of battle.\n\nAfter years of vigilant service, Elric gifted the shield to his apprentice, a young druid named Sylvana. She carried it into the depths of the Cormanthor, where she defended the sacred glades for many years. Sylvana was later ambushed by drow scouts; though she fought valiantly, she was slain, and the shield was taken into the Underdark. There, the shield was sold to a duergar merchant, who traded it to a surface dwarf named Thrain in exchange for rare gemstones.\n\nThrain brought the shield back to Mithral Hall, where it was wielded by his brother Balin during skirmishes with goblin tribes. In one fierce encounter, Balin fell, and the shield was lost in the chaos. Years later, it resurfaced in the hands of a human mercenary, Katarina of Amn, who claimed to have won it in a game of Dragon Dice. Katarina utilized the shield's entangling vines to capture bounties alive, increasing her notoriety.\n\nHer luck ran out when she was defeated in combat by the paladin Sir Reginald of Athkatla, who took the shield as a prize but found its wild nature incompatible with his disciplined fighting style. He sold it to a Calishite trader, who in turn lost it to pirates off the Sword Coast. The pirate captain, Redbeard Rufus, used the shield during boarding actions until his ship was sunk by a storm, and the shield was believed lost at sea.\n\nDecades later, the Vine Shield washed ashore near Baldur's Gate and was found by a young adventurer. Its journey continues, the living vines ever eager to ensnare new foes, its history etched in the legends of those who have wielded it.\n\nSTATISTICS:\n\nEquipped Abilities: Entangles any who damage the wielder for two rounds, save vs. spell at -2 to negate\n\nArmor Class Bonus: 2\nSpecial: No Missile Weapon Protection\nWeight: 2\nRequires: 4 Strength\nNot Usable By:\n Bard\n Druid\n Mage\n Thief",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "G3CGRAZE",
+          "dagger",
+          "Graze",
+          "Once wielded by a duelist of minor note that sought utmost efficiency in combat. The Graze possesses no destructive enchantments and acts as a normal dagger in training. When used in live combat, the dagger reacts to attacks made against the wielder, moving on its own to deflect minor attacks.\n\nSTATISTICS:\n\nEquipped abilities:\nArmor Class:  +1\nArmor Class:  +1 vs. slashing and piercing weapons\n\nDamage:  1d4 \nDamage type:  piercing\nWeight: 1\nSpeed Factor: 2 \nProficiency Type: Dagger\nType:  1-handed\nRequires: 3 Strength\nNot Usable By:\n Cleric",
+          {
+            "speed": 2,
+            "dmg": "1d4",
+            "ac": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "G3CLUNAR",
+          "dagger",
+          "Lunar Shards",
+          "Legend tells of a humble shepherd whose life was transformed by praying to Selûne bathed by the full moon. After the prayer, a ball of fire fell from the skies, striking the barn, and killing most of his livestock. The man refused to believe that the Moonmaiden would cause such misfortune, so he looked in the debris to see a sign from the goddess. A meteorite was found to be the cause of the impact, and on it scraps of a metal that he believed to be silver, which he related instantly to Selûne. He brought the metal to the temple, where the monks could bless it. Impressed by the shepherd's unwavering faith, they took him in, and taught him the ways of the servants of Selûne. Over time, the new recruit was able to raise enough wealth for the monastery to commission a holy weapon made from the blessed metal. A blacksmith, combining the meteorite's celestial metal with pure silver, forged seven flawless daggers, each representing one of the seven stars in Selûnes holy symbol.\n\nSTATISTICS:\n\nCombat Abilities: Can harm all lycanthropes\nCombat Abilities: dagger returns to the thrower\nTHAC0:  +1 bonus\nDamage:  1D4 + 1\nDamage type:   missile (piercing)\nWeight: 0\nSpeed Factor: 2\nProficiency Type: Dagger\nType:  1-handed\nRequires: 3 Strength\nNot Usable By:\n Cleric",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "G3CNEVER",
+          "helmet",
+          "Never Alone",
+          "This cowl is made of fur and has the color of a gibberling. There is strength in numbers and whenever you are in trouble, you can call for help.\n\nSTATISTICS:\n\nSpecial:  Protects Against all forms of fear and panic\nSpecial Abilities: \n Mirror Image three times per day\n Special: Caster causes from 2 to 8 exact duplicates of <PRO_HIMHER>self to come into being\n Duration: 6 rounds",
+          {
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CTINKR",
+          "helmet",
+          "Tinkerer's Spectacles",
+          "Jansen-Brand Micro-Macro Spectroscopes—(Official Spectroscopes of the Purple Brotherhood)\nAnother one of Jan Jansen's inventions, these glasses allow Jan to detect invisibility once per day. They also give Jan an additional 25% to his detect and disarm traps abilities. Various lenses on the contraption increase Jan's ability to detect illusions by 20%. The style of the Spectroscopes is so obvious it hardly needs to be mentioned.\n\nSTATISTICS:\n\nEquipped abilities:\n– Find Traps: +25%\n– Detect Illusion: +20%\n– Immunity to blindness\n\nCharge abilities:\n– Detect Invisibility once per day\n  Area of Effect: 15-ft. radius\n\nRequires:\n 17 Dexterity\n\nWeight: 0",
+          {
+            "usability": {
+              "minDex": 17
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CURD",
+          "belt",
+          "Belt of Urdunnir",
+          "The Urdunnirin were created by Dumathoin from the shield dwarves of Shanatar. Being a generally a non-aggressive race they retreated from other races into the depths of the Underdark the became know for there abilities to walk through stone and shape it with ease. they are now treated as legend as they are rarely seen by other races of the Underdark and almost unheard of by those on the surface.\n\nThis griddle harnesses their strength and endurance providing a strength and constitution bonus to who ever wears. the bonus is more pronounced with the Urdunnirin's dwarven kin.\n\nThe girdle itself looks very plain but robust, made of thick sturdy but ashen gray leather it seems quite unremarkable until worn where it provides surprising strength and vigor. It is also noticeably heavy to carry but not wear.\n\nSTATISTICS:\n\nSTATISTICS:\n   +2 to Strength when equipped\n   +3 to Constitution when equipped\n\nUsable By:\n Dwarves",
+          {
+            "str": 1,
+            "con": 1
+          }
+        ],
+        [
+          "G3CPERIL",
+          "helmet",
+          "Peril-Sensitive Goggles",
+          "Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies within a 15-foot radius for 10 rounds.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ],
+              "minDex": 17
+            }
+          }
+        ],
+        [
+          "G3CEXEC",
+          "misc",
+          "Executioner Putty",
+          "This unusual blob of pitch black clay is freezing cold to the touch and resembles an executioner's hood. It can be stretched and shaped into a variety of forms for one's own amusement, but always reverts to its original, eerie shape.\n\nSTATISTICS:\n\nSpecial Abilities: \n Executioner's Eyes once per day\n Special: Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies\n Area of Effect: 15 ft. radius\n Duration: 10 rounds",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CJAST",
+          "armor",
+          "Robe of the Archmage Jasteya",
+          "This very powerful mage robe provides excellent protection by increasing saving throws, reducing casting time, regenerating wounds in battle, and immunizing against Necromantic magic, making it particularly useful. This robe was made some time ago by the legendary archmage Jasteya, Chosen of Mystra renowned in all the Realms and loved by all.\n\nSTATISTICS:\n\nEquipped Abilities: Wearer regenerates 1 hit point every 6 seconds \nEquipped Abilities:Special: Immunity to Necromantic spells\nArmor Class:  0\nSaving Throw:  +2 bonus\nImproves casting speed by 2\nWeight:  6\nOnly usable by:\n Mage",
+          {
+            "ac": 0,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "G3CEMER",
+          "helmet",
+          "Emerald Ioun Stone",
+          "This beautiful and finely polished dark green ioun stone, created by a talented enchanter, immunizes not only its bearer against the Negative Plane but increases significantly too the chances in case of confrontations; it's usable moreover by everyone, which can to make it most useful for many professions.\n\nSTATISTICS:\n\nWhile Equipped:\n Saving Throws: +1\n Immunity to Level Drain",
+          {
+            "saves": 1
+          }
+        ],
+        [
+          "G3CLUCK0",
+          "cloak",
+          "The Lucky Sweater",
+          "Favored by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.\n\nSTATISTICS:\n\nWhile Equipped: While enraged, any opponent within 5-ft. that successfully hits the wearer suffers 1d4 points of piercing damage.\nArmor Class: 3\nWeight: 65\nRequires: 12 Strength\nNot Usable By:\n Non-Dwarves\n Bard \n Druid\n Mage\n Thief",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "G3CLUCK1",
+          "cloak",
+          "The Lucky Sweater",
+          "Favored by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.\n\nSTATISTICS:\n\nWhile Equipped: While enraged, any opponent within 5-ft. that successfully hits the wearer suffers 1d4 points of piercing damage.\nArmor Class: 3\nWeight: 65\nRequires: 12 Strength\nNot Usable By:\n Non-Dwarves\n Bard \n Druid\n Mage\n Thief",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "G3CSPIKE",
+          "armor",
+          "Spiked Armor",
+          "Favored by dwarven berserkers known as battleragers, this non-magical plate mail armor is covered in heavy metal spikes. As a result, any opponent that successfully hits the wearer suffers immediate retribution. Due to its stout size, this suit of armor is only usable by dwarves.\n\nSTATISTICS:\n\nWhile Equipped: While enraged, any opponent within 5-ft. that successfully hits the wearer suffers 1d4 points of piercing damage.\nArmor Class: 3\nWeight: 65\nRequires: 12 Strength\nNot Usable By:\n Non-Dwarves\n Bard \n Druid\n Mage\n Thief",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "G3CLSOUL",
+          "dart",
+          "Dart of the Lethargic Soul",
+          "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n\nSTATISTICS:\n\nDamage: 1d3 (missile)\nSpeed Factor: 2\nProficiency Type: Dart\nType: One-handed\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d3",
+            "dmgBonus": 3,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "G3CVAMP",
+          "dart",
+          "Vampiric Dart of Eternal Hunger",
+          "Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies within a 15-foot radius for 10 rounds.",
+          {
+            "thac0": 4,
+            "dmg": "1d3",
+            "dmgBonus": 4,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "G3CACID",
+          "dart",
+          "Dart of the Severing Mist",
+          "Enhances the vision of allies, allowing them to see the hidden weaknesses of all creatures. The divination grants a +4 attack bonus and a +4 bonus to critical hits (if you critical hit on a natural roll of 20, you now critically hit on any roll from 16-20) to all allies within a 15-foot radius for 10 rounds.",
+          {
+            "thac0": 5,
+            "dmg": "1d3",
+            "dmgBonus": 5,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              }
+            ],
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "G3CBDB",
+          "belt",
+          "Black Dragon Belt",
+          "When worn, this belt creates a dense curtain of air around the wearer. This curtain or barrier provides superior protection against breath attacks as well as magic. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.\n\nSTATISTICS:\n\nEquipped abilities:\n– Save vs. Breath: +5\n– Resistance to Missile Damage: +25%\n– Resistance to Magic Damage: +50%\n\nWeight: 2",
+          {
+            "saveBreath": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Gibberlings3/G3_Community_Item_Pack",
+  "no": "A mod to train budding modders. A recommended thing to do first is an item pack.",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "G3 Community Item Pack",
+      "tp2n": "Items can summon Cowled Wizards",
+      "cn": 1,
+      "wf": "g3cip",
+      "wp": "g3cip\\g3cip.tp2",
+      "wc": 1,
+      "wq": "lcc-github",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "it": 24,
+      "itC": {
+        "boots": 1,
+        "halberd": 1,
+        "cloak": 3,
+        "ring": 1,
+        "misc": 4,
+        "shield": 1,
+        "dagger": 2,
+        "helmet": 4,
+        "belt": 2,
+        "armor": 2,
+        "dart": 3
+      },
+      "scn": "G3 Community Item Pack"
+    },
+    {
+      "n": "This mod is not available for your game. It requires BG2 content.",
+      "tp2n": "Items do not summon Cowled Wizards",
+      "cn": 2,
+      "wf": "g3cip",
+      "wp": "g3cip\\g3cip.tp2",
+      "wc": 2,
+      "wq": "lcc-github",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "scn": "G3 Community Item Pack"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "G3_Community_Item_Pack"
+  }
+}

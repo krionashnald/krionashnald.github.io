@@ -1,0 +1,1040 @@
+{
+  "i": 542,
+  "t": "BGeeArWe",
+  "sv": 1,
+  "ord": 610,
+  "c": "ITEM ADDITION MODS",
+  "n": "TeamBG's Armours for EET",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/13314/mod-teambgs-armor-pack-for-bg-ee-bg2ee-bgt-amp-tutu",
+  "a": "CoM_Solaufein",
+  "v": "3.2",
+  "sum": "Adds a merchant named Kurtz Goldenaxe who sells color variations and new magical and non-magical armor pieces throughout the Baldur's Gate games.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "CMTBT01",
+          "boots",
+          "Boots of Evasion",
+          "These boots were made for an assassin named Anagar the Quick. He was well known for leaving the scene of his assassinations quickly and undetected. He met his end when he slipped upon a grease trap on his last assassination attempt and slid into a wall of spikes.\n\nSTATISTICS:\n\nArmor Class Bonus:  +1\nSpecial:  Increased speed",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "CMTBT02",
+          "boots",
+          "Boots of Quickness",
+          "Boots are normally hand-made by cobblers.  Common boots are made by using a form, but good boots are designed for the foot of an individual.\n\nSTATISTICS:\n\nSpecial: Increased Speed\n+5 Versus Missile Weapons",
+          {}
+        ],
+        [
+          "CMTCH01",
+          "armor",
+          "Chain Mail +2",
+          "A chain mail tunic fashioned from some sort of bright metal. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.\n\nSTATISTICS:\n\nArmor Class: 3\nWeight: 18\nRequires: 8 Strength",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTCH02",
+          "armor",
+          "Elven Chain +2",
+          "This mail feels more akin to cloth than to metal, and may be worn by thieves with few penalties and by fighter-mages without removing their spell casting ability. This variety of mail is woven by masters in almost exactly the same form by both elves and the Drow; it has changed little since the Drow's elven past and is used for surface forays where Adamantine Drow chain would decay.\n\nThe light-colored Elven variety of this armor has no restrictions other than class-inherent, but the dark Drow variety is magically attuned to its owner, and thus may only be worn by those of evil alignments.\n\nSTATISTICS:\n\nArmor Class: 3\nWeight: 8\nRequires: 5 Strength",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CMTCH03",
+          "armor",
+          "Elven Chainmail of the Hand +3",
+          "The delicate yet sturdy craftsmanship of the Elven races allows them to design many beautiful yet utilitarian goods. Among these is Elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allow it to be worn by thieves and fighter/mages with few restrictions.\n\nSTATISTICS:\n\nArmor Class: 5\nWeight: 7\nRequires: 5 Strength",
+          {
+            "ac": 2,
+            "coldResist": 20,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTCH04",
+          "armor",
+          "Ashen Scales +2",
+          "Instead of metal strips, this armor uses wyvern scales bound to a chain backing by means of a magical fire.  The resulting armor is ash grey in color and more flexible than standard splint mail.  A ranger, Usher Skacan. made this armor after slaying several wyverns that were killing all the deer and elk in his forest.\n\nSTATISTICS:\n\nArmor Class: 2\nWeight: 18\nRequires: 8 Strength",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTCH05",
+          "armor",
+          "Elven Chain Mail +3",
+          "The lore of this suit is difficult to determine, either due to the exotic circumstances from which it sprang, or the wish of its previous owner to conceal its location.  Secrecy would certainly be desirable, as even rumors of such a mail as this could provoke deadly interest.  It is the pinnacle of elven craft, and a truly blessed item.\n\nSTATISTICS:\n\nArmor Class: 2\nWeight: 15\nRequires: 5 Strength",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CMTCH06",
+          "armor",
+          "Chain Mail Armor",
+          "A chain mail tunic fashioned from some sort of bright metal.  It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.\n\nSTATISTICS:\n\nArmor Class: 5\nWeight: 7\nRequires: 8 Strength",
+          {
+            "ac": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTPL01",
+          "armor",
+          "Elemental Plate Mail Armor",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. \n\nSTATISTICS:\n\nArmor Class: 3\nWeight: 50\nRequires: 12 Strength",
+          {
+            "ac": 1,
+            "fireResist": 5,
+            "coldResist": 5,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 5
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "CMTPL02",
+          "armor",
+          "Dwarven Mithral Field Plate Armor +2",
+          "Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  \n\nSTATISTICS:\n\nArmor Class: 0\nWeight: 35\n+1 Dexterity\n+1 Constitution\nRequires: 15 Strength",
+          {
+            "ac": 0,
+            "dex": 1,
+            "con": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "CMTPL03",
+          "armor",
+          "Wyvern Plate Mail",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. \n\nSTATISTICS:\n\nArmor Class: 3\nWeight: 50\nRequires: 12 Strength",
+          {
+            "ac": 1,
+            "fireResist": 15,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTPL04",
+          "armor",
+          "Durlag's Full Plate +2",
+          "This is the plate armor that belonged to Durlag the famous dwarf who built a tower full of treasure and traps. Some how some body survived those traps since this armor no longer rests in Durlag's Tower.\n\nSTATISTICS:\n\n+1 to constitution\nProtection from:Confusion/Rigid Thinking/Fear\nArmor Class: -1\nWeight: 50\nRequires: 15 Strength",
+          {
+            "ac": -1,
+            "con": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "CMTPL05",
+          "armor",
+          "Full Plate Mail",
+          "Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail. \n\nSTATISTICS:\n\nArmor Class: 1\nWeight: 20\nRequires: 15 Strength",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "CMTPL06",
+          "armor",
+          "Full Plate Mail",
+          "Full plate armor is the best armor a warrior can buy, both in appearance and protection.  The perfectly fitted interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.  \n\nSTATISTICS:\n\nArmor Class: 1\nWeight: 50\nRequires: 15 Strength",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "CMTPL07",
+          "armor",
+          "Plate Mail Armor +1",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather.\n\nSTATISTICS:\n\nArmor Class: 2\nWeight: 27\nRequires: 12 Strength",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "CMTPL08",
+          "armor",
+          "Plate Mail Armor",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen and groin.  Similar in construction to bronze plate mail, true plate mail comprises of chain and leather. \n\nSTATISTICS:\n\nArmor Class: 3\nWeight: 50\nRequires: 12 Strength",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "CMT2SW01",
+          "large sword",
+          "Clawhammer Sword of Fire +3",
+          "The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. \n\nSTATISTICS:\n\nDamage:  1D10\nDamage type:  slashing\nWeight: 15\nSpeed Factor: 10\nProficiency Type: Two Handed sword\nType:  2-handed\nRequires: 14 Strength",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CMT2SW02",
+          "large sword",
+          "Warblade of the North",
+          "This large sword is an enchanted version of the barbaric swords of the Northern tribes. Forged during battle and dipped in the blood of the brave fallen, the enchantment granted to the blade by the barbarian gods is incredible. \n\nSTATISTICS\n\nTHAC0: +2 bonus\nDamage:  1D12 +2\nBonus +3 cold damage\nDamage type:  slashing\nWeight:  11\nSpeed Factor: 6\nProficiency Type: Two handed sword \nType:  2-handed\nRequires: 14 Strength",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d12",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CMTAX01",
+          "axe",
+          "Beran's Battle Axe +3",
+          "This is the personal weapon of Beran Clawhammer, a well known weapon smith and enchanter of the extinct Clawhammer Clan dwarves. Much of the Clawhammer's history is lost and how this weapon came to the surface is unknown. \n\nSTATISTICS\n\nEquipped Abilities: \n  Improves AC by 1\n  \nTHAC0: +3 bonus \nDamage: 1D8 +3\nBonus +3 electrical damage\nDamage type: slashing\nWeight: 7\nSpeed Factor: 4\nProficiency Type: Axe\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "ac": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTAX02",
+          "axe",
+          "Throwing Axe +2 \"Death's Bane\"",
+          "This axe belonged to Duncan \"Death's Bane\" McClellen an adventurer who hated the undead. He met his demise when a vampire lord caught his throwing axe which left him defenseless to the undead who swarmed him.\n\nSTATISTICS\n\nCombat Ability: 1-6 +4 extra damage to undead, plus they must make a saving throw vs. death (-4 penalty) or be utterly destroyed\nDamage: 1D6 +2\nDamage type (melee):  slashing\nDamage type (thrown):  missile (piercing)\nSpecial:  Returns to user's hand once thrown\nWeight: 2\nSpeed Factor: 1\nProficiency Type: Axe\nType:  1-handed\nRequires: 4 Strength",
+          {
+            "speed": 1,
+            "dmg": "3d6",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "CMTAX03",
+          "axe",
+          "Battle Axe +3, Frostreaver",
+          "Frostreaver, Battle Axe +3\nThis was the axe of Illgarth, a Frost Giant that terrorized northern communities long ago.  It is not known where he acquired the weapon, but he took a perverse pleasure in unleashing it upon small folk, particularly halflings.  Ice and acid maimed those not killed, and the giant would laugh coldly if he recognized his handiwork from a previous visit.  Ultimately a group did manage to kill him, and at the request of his victims Frostreaver was buried with him.   \n\nSTATISTICS\n\nCombat Ability: \n + 1 point cold damage to target\n + 1 point acid damage to target\nTHAC0: +3 bonus \nDamage: 1D8 +3\nDamage type:  slashing\nWeight: 7\nSpeed Factor: 4\nProficiency Type: Axe\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTAX04",
+          "axe",
+          "Battle Axe +3, Stonefire",
+          "Stonefire, Battle Axe +3\nThe Stonefires were an old lineage of dwarves, and the eldest male of the line carried this axe, an heirloom of utmost importance.  Unfortunately they were decimated in 1150DR, falling in a mere two years to a mysterious plague.  Ulgan, keeper of the axe, fled in the hopes of escaping the inevitable, but he died several weeks later.  His body was found in the Cloakwood Forest, but the axe was missing.\n\nSTATISTICS\n\nTHAC0: +3 bonus \nDamage: 1D8 +3, +2 points fire damage to target\nDamage type (melee):  slashing\nWeight: 7\nSpeed Factor: 4\nProficiency Type: Axe\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTBL01",
+          "morning star",
+          "Morning Star of Ice +2",
+          "The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath.  Morning stars have an overall length of about four feet.  Some such weapons have a round, oval, or cylindrical shaped head studded with spikes.  Extending from most morning star heads, regardless of design, is a long point for thrusting.  \n\nSTATISTICS:\n\nDamage:  2D4\nDamage type:  crushing\nWeight: 12\nSpeed Factor: 7\nProficiency Type: Flail/Morningstar\nType:  1-handed\nRequires: 11 Strength",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "fireResist": 20,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CMTBL02",
+          "mace",
+          "Mace of Disruption +2",
+          "Mace of Disruption +2\nThis heavy mace was created for a very specific purpose: to slay undead.  Any such creature hit by it not only feels the sting of weapon, but also has a chance of being simply blasted from existence.  There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.\nNow that the mace has been coated with illithium, it is even more potent, conferring to its user immunity to the life-draining powers of the more powerful undead.\n\nSTATISTICS:\n\nCombat Abilities: \n2-12 +4 damage to Undead, plus they must make a saving throw vs. death (-4 penalty) or be utterly destroyed\nImmunity to Level Drain\nTHACO:  +2\nDamage:  1D6 +3\nDamage type:  crushing\nWeight: 8\nSpeed Factor: 6\nProficiency Type: Mace\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTBL03",
+          "mace",
+          "Mace +2",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end.  The shaft of this magical mace seems to guide the wielder, becoming an extension of his hand.\n\nSTATISTICS:\n\nTHACO:  +2 bonus\nDamage:  1D6 +3\nDamage type:  crushing\nWeight: 7\nSpeed Factor: 5\nProficiency Type: Mace\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTBL04",
+          "morning star",
+          "Wyvern's Tail +2",
+          "Morningstar +2: Wyvern's Tail\nThe large spike at the head of this morningstar is actually the lethal stinger of a wyvern.  The mage-fighter Sedej created this weapon, using his magical abilities to keep the stinger capable of producing poison.  The magic he used has actually made the Wyvern's Tail a living weapon, that pulses with life in the hands of its wielder.\n\nSTATISTICS\n\nCombat Abilities: Victims must make a saving throw vs. poison or take 5 hit points of poison damage\nTHACO:  +2\nDamage:  2D4 +2\nDamage type:  crushing\nWeight: 9\nSpeed Factor: 5\nProficiency Type: Flail/Morningstar\nType:  1-handed\nRequires: 11 Strength",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CMTBL05",
+          "mace",
+          "Mace of Disruption +1",
+          "Mace of Disruption +1\nThis heavy mace was created for a very specific purpose: to slay undead.  Any such creature hit by it not only feels the sting of weapon, but also has a chance of being simply blasted from existence.  There are legends that speak of a priest so holy a single glancing touch could send a vampire to oblivion, but whether the weapon empowered her or she empowered it is a topic for theologians.\n\nSTATISTICS:\n\nCombat Abilities: 2-12 +4 damage to Undead, plus they must make a saving throw vs. death (-4 penalty) or be utterly destroyed\nTHACO:  +1\nDamage:  1D6 +2\nDamage type:  crushing\nWeight: 8\nSpeed Factor: 6\nProficiency Type: Mace\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTHA01",
+          "hammer",
+          "War Hammer +3",
+          "Mounted knights cannot effectively use pole arms while on horseback, and as a result, many weapons have been altered so they may be used one-handed.  The horseman's war hammer is made entirely of steel, and has a shaft about 18 inches long.  Powerful magical energy flows through this weapon, though its origins are nondescript.\n\nSTATISTICS:\n\nTHACO:  +3 bonus\nDamage:  1D4 +4\nDamage type:  crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType:  1-handed\nRequires: 9 Strength",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CMTHA02",
+          "hammer",
+          "War Hammer +2",
+          "Mounted knights cannot effectively use pole arms while on horseback, and as a result, many weapons have been altered so they may be used one-handed.  The horseman's war hammer is made entirely of steel, and has a shaft about 18 inches long.  Powerful magical energy flows through this weapon, though its origins are nondescript.\n\nSTATISTICS:\n\nTHACO:  +2 bonus\nDamage:  1D4 +3\nDamage type:  crushing\nWeight: 5\nSpeed Factor: 2\nProficiency Type: War Hammer\nType:  1-handed\nRequires: 9 Strength",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CMTHA03",
+          "hammer",
+          "Dwarven Thrower +2",
+          "Dwarven Thrower, War Hammer +2,\nThis hammer -- not to be confused with the elven made Dwarf Thrower -- is only usable by dwarves.  In the capable hands of a dwarven warrior the hammer may be thrown at an opponent.  The magic in the hammer draws it back to the hand of its wielder.  If it hits an opponent it does double the normal damage that a hammer would normally do.  Against giants and ogres the hammer does an additional +8 damage, due to the special hatred that dwarves hold against these races.\n\nSTATISTICS:\n\nCombat Abilities: Returns to thrower\nTHAC0: +3 bonus\nDamage:  2D4 +2, +8 damage to giants and ogres\nDamage type:  crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType:  1-handed\nRequires: 9 Strength",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Half-Orc"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CMTSW01",
+          "large sword",
+          "Long Sword +2",
+          "These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting. \n\nSTATISTICS:\n\nDamage:  1D8\nDamage type:  slashing\nWeight: 4\nSpeed Factor: 5\nProficiency Type: Long Sword\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 9,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW02",
+          "large sword",
+          "Scimitar +3",
+          "The scimitar, or \"shamshir\" as it was originally called, has a single-edged blade with a significant curve, and is tapered to an elongated, sharp point.  It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of.  This particular weapon has been enhanced magically to compliment the skill of the wielder.\n\nSTATISTICS:\n\nTHACO:  +3 bonus\nDamage:  1D8 +3\nDamage type:  slashing\nWeight: 1\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninja-To\nType:  1-handed\nRequires: 10 Strength",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CMTSW03",
+          "large sword",
+          "Katana +3",
+          "Katana +3\nTo enchant a katana is no simple process.  Unlike conventional weapons, the katana is already a near-perfect fighting sword.  To improve it usually requires a sacrifice, perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana.  The wielder of an enchanted katana, such as this one, must respect the customs of Kara-Tur and of the samurai who once carried this blade into battle.  Not doing so could drastically change one's luck for the worse.\n\nSTATISTICS:\n\nTHAC0: +3 bonus\nDamage:  1D10 +3\nDamage type:  slashing\nWeight:  3\nSpeed Factor: 1\nProficiency Type: Katana\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW04",
+          "large sword",
+          "Bastard Sword +3",
+          "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. This is a magical bastard sword.\n\nSTATISTICS:\n\nTHACO:  +3 bonus\nDamage:  2D4 + 3\nDamage type:  slashing\nWeight:  7\nSpeed Factor: 5\nProficiency Type: Bastard Sword\nType:  1-handed\nRequires: 11 Strength",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CMTSW05",
+          "large sword",
+          "Scimitar +2: 'Icing Death'",
+          "The Scimitar is closely related to the saber, a single edged curved sword with protective hilt.  A Scimitar has a greater curve and is tapered to an elongated, sharp point. The origins of the scimitar are largely unknown, though they have proven popular in the southern region of the Forgotten Realms.\n\nSTATISTICS:\n\nDamage:  1D8\nDamage type:  Slashing\nWeight:  4\nProficiency type: Scimitar/Wakizashi/Ninja-To\nSpeed Factor:  5\nType:  1-handed\nRequires: 8 Strength",
+          {
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "CMTSW06",
+          "large sword",
+          "Long Sword +3 'Purifier'",
+          "This fine sword with it's excellent craftsmanship reveals it to be of elven make but little else of its history is known.\n\nSTATISTICS:\n\nTHAC0: +3 bonus\nDamage:  1D8 +3, +2 fire damage\nDamage type:  slashing\nWeight: 2\nSpeed Factor: 0\nProficiency Type: Long Sword\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW07",
+          "large sword",
+          "Ninja-To +2",
+          "Ninja-To +2\nSaito Kagizu or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerun.  They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself.  When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.\n\nSTATISTICS\n\nTHAC0: +2 bonus\nDamage:  1D8 +2\nDamage type:  slashing\nWeight:  4\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakishashi/Ninja-To\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW08",
+          "short sword",
+          "Wakizashi +2",
+          "Wakizashi +2\nThe wakizashi, or companion sword, is extremely important to the samurai.  It is worn at all times, even indoors, and is near the samurai when he sleeps at night.  Wu Jen masters have concealed within this wakishashi great power, unleashed only when the wielder is in the thick of battle.  How or why this wakizashi made it to Faerun is unknown, but if the samurai who owned it still lives, he will certainly be looking for it.\n\nSTATISTICS\n\nTHAC0: +2 bonus\nDamage:  1D8 +2\nDamage type:  piercing\nWeight:  2\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninja-To\nType:  1-handed\nRequires: 5 Strength",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CMTSW09",
+          "short sword",
+          "Wakizashi +1",
+          "Wakizashi +1\nThe wakizashi, or companion sword is extremely important to samurai.  It is worn at all times, even indoors, and is near the samurai when he sleeps at night.  As finely made as the katana, the wakizashi, a shorter sword with a length between 12 and 24 inches, is a dangerous weapon in the hands of a skilled user.\n\nSTATISTICS\n\nTHAC0: +1\nDamage:  1D8 +1\nDamage type:  piercing\nWeight:  3\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninja-To\nType:  1-handed\nRequires: 5 Strength",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CMTSW10",
+          "large sword",
+          "Blade of Roses +3",
+          "Blade of Roses, Long Sword +3\nThis blade possesses an unearthly splendor, and it is likely that Sune, the goddess of beauty and passion, had a hand in its creation.  The effect it has on the wielder is immediate, and more than once in its history has this sword has been the secret behind a lackluster soldier's sudden elevation at court.\n\nSTATISTICS:\n\nEquipped Abilities: \n Charisma: +2 bonus\nTHACO:  +3 bonus\nDamage:  2D4 + 3\nDamage type:  slashing\nWeight: 3\nSpeed Factor: 2\nProficiency Type: Long sword\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "cha": 2,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW11",
+          "large sword",
+          "Long Sword +2 'Courage'",
+          "Long sword +2: 'Courage'\nThese swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nEquipped Abilities: \n Immunity to Fear\n \nTHACO:  +2 bonus\nDamage:  1D8 +2\nDamage type:  slashing\nWeight: 3\nSpeed Factor: 3\nProficiency Type: Long sword\nType:  1-handed\nRequires: 6 Strength",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CMTSW12",
+          "short sword",
+          "Short Sword +2",
+          "Short Sword +2\nThe term \"short sword\" does not exist in sword classifications, but has come describe the earliest type of sword, a double-edged blade about two feet in length.  There are etched runes on the surface of this weapon that glow during combat, indicating it has undergone some form of enchantment, but no identifying marks can be recognized.\n\nSTATISTICS:\n\nDamage:  1D6 +2\nTHACO:  +2 bonus\nDamage type:  piercing\nWeight: 2\nSpeed Factor: 1\nProficiency Type: Short Sword\nType:  1-handed\nRequires: 5 Strength",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://forums.beamdog.com/discussion/13314/mod-teambgs-armor-pack-for-bg-ee-bg2ee-bgt-amp-tutu",
+  "au": "CoM_Solaufein",
+  "no": "Adds a merchant named Kurtz Goldenaxe who sells color variations and new magical and non-magical armor pieces throughout the Baldur's Gate games.",
+  "co": [
+    {
+      "n": "TeamBG's Armours for EET",
+      "tp2n": "TeamBG's Armours for EET",
+      "cn": 0,
+      "wf": "BGeeARWe",
+      "wp": "BGeeARWe\\SETUP-BGEEARWE.TP2",
+      "wc": 0,
+      "no": "TeamBG armor collection for EET.",
+      "it": 42,
+      "itC": {
+        "boots": 2,
+        "armor": 14,
+        "large sword": 11,
+        "axe": 4,
+        "morning star": 2,
+        "mace": 3,
+        "hammer": 3,
+        "short sword": 3
+      },
+      "games": [
+        "eet"
+      ]
+    },
+    {
+      "n": "TeamBG's Weapons for EET",
+      "tp2n": "TeamBG's Weapons for EET",
+      "cn": 1,
+      "wf": "BGeeARWe",
+      "wp": "BGeeARWe\\SETUP-BGEEARWE.TP2",
+      "wc": 1,
+      "no": "TeamBG weapon collection for EET.",
+      "games": [
+        "eet"
+      ]
+    }
+  ]
+}

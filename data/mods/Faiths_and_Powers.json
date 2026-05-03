@@ -1,0 +1,4514 @@
+{
+  "i": 339,
+  "t": "Faiths_and_Powers",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 220,
+  "c": "KIT & CLASS MODS",
+  "n": "Faiths and Powers",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Deep overhaul of priest classes via sphere system. Too much complexity if mixed with ToF — avoid combining them. Sphere systems 1-2 are more restrictive, 3-4 are closer to vanilla.",
+  "rq": "EE 2.0+",
+  "ic": "Deities of Faerun, Divine Remix Sphere system,",
+  "conflicts": [
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "hard",
+      "reason": "Both implement divine sphere systems. Mutually exclusive — use one or the other.",
+      "myComps": "#80 Sphere System #31 Cleric Kits #33 Druid Kits",
+      "theirComps": "#1000 Sphere System",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "FnP Multiclass Druids conflicts with IR's weapon restriction removal for clerics",
+      "myComps": "#91",
+      "theirComps": "#1090 #1091 #1092 #1093",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "partial",
+      "reason": "Both revise Beastmaster kit. F&P #33 (Install Druid kits) includes beast_lord as one of many druid kits — fits sphere system. M&G #235 (Revised Beastmaster) is a standalone ranger revision. M&G tp2 auto-skips #235 if F&P's beast_lord marker file exists. All other components of both mods are compatible.",
+      "myComps": "#33 Install Druid kits (includes beast_lord)",
+      "theirComps": "#235 Revised Beastmaster",
+      "source": "M&G tp2 REQUIRE_PREDICATE !(FILE_EXISTS_IN_GAME d5__beastmaster.d5) on #235. Both mods by subtledoctor — mutual exclusion is intentional. Use F&P beast_lord if using sphere system, M&G #235 otherwise, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Deep architectural overlap on divine class systems. FnP cn:80 (Sphere System) reassigns ALL priest spells by deity spheres via lub_*.2da and class ability tables. ToF cn:40650 (Speciality Priests) and cn:50400 (New priest gods) create their own priest systems. FnP cn:31/33 (Cleric/Druid Kits) and ToF cn:40600/40610 (Druid shapeshift/tables) both rewrite druid class architecture. Neither detects the other. FnP documentation warns against mixing with ToF divine components. Install FnP before ToF to minimize conflicts.",
+      "myComps": "#80 Sphere Systems #31 Cleric Kits #33 Druid Kits #35 #36 Paladin Kits #75 Weapon/Armor Usability",
+      "theirComps": "#1500 #1510 IWD spells #2040 Shapeshift spells #40100 Alignment rules #40600 Druid shapeshift #40610 Druid cleric tables #40650 Speciality priests #50400 New priest gods",
+      "source": "FnP uses lub_*.2da/clabpr*.2da for sphere access; ToF uses kit.edit for speciality priests; both rewrite druid CLAB/spell tables; no cross-detection, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "FnP's Alter Priests' Weapon/Armor Usability overlaps with IWDification's priest spell additions, but can be installed on top",
+      "orderOnly": true,
+      "myComps": "#75 Alter Priests Weapon/Armor Usability",
+      "theirComps": "#100 #130 IWD divine spells"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Complementary, not conflicting. cdtweaks modifies HOW MANY spell slots (mxsplprs/mxspldru/mxsplwis.2da). FnP modifies WHICH SPELLS are available (sphere-based restriction via lub_*.2da and class ability tables). FnP does NOT modify spell progression 2DAs. FnP cn:30 (spontaneous casting) works on whatever progression tables exist. WIS bonus spells still function under sphere system. Install cdtweaks before FnP.",
+      "myComps": "#30 Cast Like Sorcerers #80 Apply Sphere System",
+      "theirComps": "#2281 Cleric Spell Prog #2290 #2291 Druid Spell Prog #2580 #2581 WIS bonus spells",
+      "orderOnly": true,
+      "source": "FnP uses lub_*.2da for sphere access; cdtweaks COPY mxsplprs/mxspldru; different 2DA files, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "Both mods modify divine spell lists. FnP sphere system reassigns spells by deity; SR revises spell effects. FnP should be installed after SR.",
+      "myComps": "#80 Sphere Systems #31 Cleric Kits #33 Druid Kits",
+      "theirComps": "#0 Spell Revisions"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 383,
+      "severity": "soft",
+      "reason": "Both modify cleric and druid spell tables",
+      "myComps": "#12 #13 Cleric spell tables",
+      "theirComps": "#24 Druid #26 Cleric spell progression"
+    },
+    {
+      "with": "DeitiesOfFaerun",
+      "withId": 688,
+      "severity": "hard",
+      "reason": "Both implement sphere systems for divine casters. Mutually exclusive sphere assignments.",
+      "myComps": "#80 Sphere System",
+      "theirComps": "#2 Sphere System",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-MultiKits",
+      "withId": 678,
+      "severity": "soft",
+      "reason": "Both provide multiclass kit options for divine casters. Install A7 after FnP so it can generate combinations from FnP kits.",
+      "orderOnly": true,
+      "myComps": "#91 Multiclass Druids #92 Multiclass Shamans #31 Multiclass Cleric Kits"
+    },
+    {
+      "with": "Will_to_Power",
+      "withId": 334,
+      "severity": "hard",
+      "reason": "FORBID_COMPONENT in tp2: Will to Power cn:950 cannot install if F&P #75 is present",
+      "myComps": "#75 Alter Priests Weapon/Armor Usability",
+      "theirComps": "#950 Allow Multiclass Clerics to Use More Weapons",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR301",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR401",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR501",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR601",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ]
+      ],
+      "new": [
+        [
+          "D5P1201",
+          "priest",
+          1,
+          "Necromancy",
+          "Aid",
+          "The recipient gains +1 to attack, damage, saves plus 1d8+1/level HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "D5BTSWM",
+          "priest",
+          2,
+          "Conjuration",
+          "Beetle Swarm",
+          "Summons 3d2 beetles to attack enemies.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1218",
+          "priest",
+          3,
+          "Abjuration",
+          "Fire Trap",
+          "Powerful trap harms those who enter or open the selected area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "D5P1301",
+          "priest",
+          4,
+          "Necromancy",
+          "Animate Dead",
+          "Summons animated skeletons to serve the priest.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1405",
+          "priest",
+          5,
+          "Enchantment",
+          "Mental Domination",
+          "Target must save vs. Spell or fall under caster's control.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "1": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR301",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR401",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR501",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR601",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ]
+      ],
+      "new": [
+        [
+          "D5P1201",
+          "priest",
+          1,
+          "Necromancy",
+          "Aid",
+          "The recipient gains +1 to attack, damage, saves plus 1d8+1/level HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "D5BTSWM",
+          "priest",
+          2,
+          "Conjuration",
+          "Beetle Swarm",
+          "Summons 3d2 beetles to attack enemies.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1218",
+          "priest",
+          3,
+          "Abjuration",
+          "Fire Trap",
+          "Powerful trap harms those who enter or open the selected area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "D5P1301",
+          "priest",
+          4,
+          "Necromancy",
+          "Animate Dead",
+          "Summons animated skeletons to serve the priest.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1405",
+          "priest",
+          5,
+          "Enchantment",
+          "Mental Domination",
+          "Target must save vs. Spell or fall under caster's control.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "2": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR301",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR401",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR501",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR601",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ]
+      ],
+      "new": [
+        [
+          "D5P1201",
+          "priest",
+          1,
+          "Necromancy",
+          "Aid",
+          "The recipient gains +1 to attack, damage, saves plus 1d8+1/level HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "D5BTSWM",
+          "priest",
+          2,
+          "Conjuration",
+          "Beetle Swarm",
+          "Summons 3d2 beetles to attack enemies.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1218",
+          "priest",
+          3,
+          "Abjuration",
+          "Fire Trap",
+          "Powerful trap harms those who enter or open the selected area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "D5P1301",
+          "priest",
+          4,
+          "Necromancy",
+          "Animate Dead",
+          "Summons animated skeletons to serve the priest.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1405",
+          "priest",
+          5,
+          "Enchantment",
+          "Mental Domination",
+          "Target must save vs. Spell or fall under caster's control.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "3": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR301",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR401",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR501",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR601",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ]
+      ],
+      "new": [
+        [
+          "D5P1201",
+          "priest",
+          1,
+          "Necromancy",
+          "Aid",
+          "The recipient gains +1 to attack, damage, saves plus 1d8+1/level HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "D5BTSWM",
+          "priest",
+          2,
+          "Conjuration",
+          "Beetle Swarm",
+          "Summons 3d2 beetles to attack enemies.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1218",
+          "priest",
+          3,
+          "Abjuration",
+          "Fire Trap",
+          "Powerful trap harms those who enter or open the selected area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "D5P1301",
+          "priest",
+          4,
+          "Necromancy",
+          "Animate Dead",
+          "Summons animated skeletons to serve the priest.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1405",
+          "priest",
+          5,
+          "Enchantment",
+          "Mental Domination",
+          "Target must save vs. Spell or fall under caster's control.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "4": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR301",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR401",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR501",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR601",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR703",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Reassigned to deity-specific sphere"
+        ]
+      ],
+      "new": [
+        [
+          "D5P1201",
+          "priest",
+          1,
+          "Necromancy",
+          "Aid",
+          "The recipient gains +1 to attack, damage, saves plus 1d8+1/level HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "D5BTSWM",
+          "priest",
+          2,
+          "Conjuration",
+          "Beetle Swarm",
+          "Summons 3d2 beetles to attack enemies.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1218",
+          "priest",
+          3,
+          "Abjuration",
+          "Fire Trap",
+          "Powerful trap harms those who enter or open the selected area.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "D5P1301",
+          "priest",
+          4,
+          "Necromancy",
+          "Animate Dead",
+          "Summons animated skeletons to serve the priest.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "D5P1405",
+          "priest",
+          5,
+          "Enchantment",
+          "Mental Domination",
+          "Target must save vs. Spell or fall under caster's control.",
+          [
+            "charm"
+          ]
+        ]
+      ]
+    },
+    "12": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR102",
+          "modify",
+          "Sphere system applied to all divine spell access"
+        ],
+        [
+          "SPPR305",
+          "modify",
+          "Sphere system applied to Dispel Magic access"
+        ],
+        [
+          "SPPR406",
+          "modify",
+          "Sphere system applied to Death Ward access"
+        ],
+        [
+          "SPPR502",
+          "modify",
+          "Sphere system applied to Chaotic Commands access"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Sphere system applied to Heal access"
+        ],
+        [
+          "SPPR707",
+          "modify",
+          "Sphere system applied to Greater Restoration access"
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "6": {
+      "FNP_LATHANDER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Lathander: anti-undead, Hold Undead, False Dawn. LG/LN/NG/CG."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Lathander",
+          "note": "F&P sphere system. Anti-undead; Hold Undead, False Dawn. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TORM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Torm: loyal defender. LG/LN/NG."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Torm",
+          "note": "F&P sphere system. Loyalty and good; steadfast defensive priest. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TYMORA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Tymora: luck goddess, Tymora's Luck. NG/TN/CG/CN."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Tymora",
+          "note": "F&P sphere system. Luck goddess; Tymora's Luck, reckless combat. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_HELM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Helm: vigilant protector, Helm's Eye. LG/LN/TN."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Helm",
+          "note": "F&P sphere system. Vigilant protector; Helm's Eye. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_KELEMVOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Kelemvor: undead destroyer. LG/LN/NG/TN."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Kelemvor",
+          "note": "F&P sphere system. Death god; undead destroyer. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TEMPUS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Tempus: war god, Incite Rage. Any alignment."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Tempus",
+          "note": "F&P sphere system. War god; Incite Rage. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_LEIRA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Leira: illusion/deception, Leira's Double."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Leira",
+          "note": "F&P sphere system. Illusion/deception; Leira's Double. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_LOVIATAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Loviatar: pain goddess."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Loviatar",
+          "note": "F&P sphere system. Pain goddess; inflicts suffering. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TALOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Talos: storm/destruction. LE/NE/CN/CE."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Talos",
+          "note": "F&P sphere system. Storm/destruction god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_CYRIC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Cyric: mad god of lies. LE/NE/CN/CE."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Cyric",
+          "note": "F&P sphere system. Mad god of lies; chaotic. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_UMBERLEE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Umberlee: sea goddess. LE/NE/CN/CE."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Umberlee",
+          "note": "F&P sphere system. Sea goddess; fickle patron. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_OGHMA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Oghma: knowledge god, lore focus."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Oghma",
+          "note": "F&P sphere system. Knowledge god; lore and wisdom. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_ILMATER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Ilmater: suffering god, healer/protector."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Ilmater",
+          "note": "F&P sphere system. Suffering god; healer/protector. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_DENEIR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Deneir: writing/knowledge, Use Magical Devices."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Deneir",
+          "note": "F&P sphere system. Writing/knowledge; Use Magical Devices. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_SUNE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Sune: love/beauty goddess."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Sune",
+          "note": "F&P sphere system. Love/beauty goddess. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TEMPUS_BG": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Tempus: Battleguard/healer variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Tempus",
+          "note": "F&P sphere system. War god healer variant. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_AZUTH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Azuth: arcane familiarity, Use Magical Devices."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Azuth",
+          "note": "F&P sphere system. Magic sub-deity; arcane familiarity. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_SHAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Shar: darkness goddess."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Shar",
+          "note": "F&P sphere system. Darkness goddess. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_MOANDER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Moander: dead rot god, spreads decay."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Moander",
+          "note": "F&P sphere system. Dead rot god; spreads decay. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_BESHABA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Beshaba: misfortune goddess."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Beshaba",
+          "note": "F&P sphere system. Misfortune goddess. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_CORELLON": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Corellon: elf chief god. Elf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf/Half-elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Corellon Larethian",
+          "note": "F&P sphere system. Elf chief god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_SEHANINE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Sehanine Moonbow: elven moon goddess. Elf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf/Half-elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Sehanine Moonbow",
+          "note": "F&P sphere system. Elven moon goddess. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_EREVAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Erevan Ilesere: elven trickster god. Elf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf/Half-elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Erevan Ilesere",
+          "note": "F&P sphere system. Elven trickster. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_HANALI": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Hanali Celanil: elven love goddess. Elf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf/Half-elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Hanali Celanil",
+          "note": "F&P sphere system. Elven love goddess. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_MORADIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Moradin: dwarf chief god, forge/leadership. Dwarf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Moradin",
+          "note": "F&P sphere system. Dwarf chief god; forge. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_CLANGEDDIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Clangeddin: dwarf war god. Dwarf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Clangeddin",
+          "note": "F&P sphere system. Dwarf war god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_MARTHAMMOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Marthammor Duin: dwarf exploration god. Dwarf only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Marthammor Duin",
+          "note": "F&P sphere system. Dwarf exploration. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_GARL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Garl Glittergold: gnome chief god. Gnome only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Garl Glittergold",
+          "note": "F&P sphere system. Gnome chief god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_BAERVAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Baervan: gnome nature god. Gnome only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Baervan Wildwanderer",
+          "note": "F&P sphere system. Gnome nature god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_BARAVAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Baravar Cloakshadow: gnome deception god. Gnome only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Baravar Cloakshadow",
+          "note": "F&P sphere system. Gnome deception. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_GAERDAL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Gaerdal Ironhand: gnome war god. Gnome only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Gaerdal Ironhand",
+          "note": "F&P sphere system. Gnome war god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_URDLEN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Urdlen: evil gnome god. Gnome only."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "Urdlen",
+          "note": "F&P sphere system. Evil gnome god. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_URPRIEST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Ur-Priest: steals divine power via forbidden rituals. Sap the Spirit ability."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "deity": "None (Ur-Priest)",
+          "note": "F&P sphere system. Steals divine power via forbidden rituals. See passive description for sphere list."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "7": {
+      "FNP_FOREST_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Forest: classic protector."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_MOUNTAIN_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Mountain: highland terrain."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_JUNGLE_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Jungle: tropical."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_DESERT_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Desert: arid wasteland."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_ARCTIC_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Arctic: cold/tundra."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_CAVE_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Cave: underground nature."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_BEAST_LORD": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Beast Lord: lycanthropy, animal summoning."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_ELEMENTALIST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Elementalist: inner plane energies."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_HIVEKEEPER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Hivekeeper: insect/arachnid affinity."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_SHADOW_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Shadow: militant anti-civilization."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_LOST_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Lost: death-obsessed, reanimates animal corpses."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_TOTEMIC_DRUID": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Totemic: spirit animal summoner."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_CHAOS_PRIEST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. Chaos Priest: primal chaos."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P druid/mystic kit. See passive description for spell access."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "8": {
+      "FNP_PAL_TYR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Tyr: holy champion of justice. LG."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LG"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_KELEMVOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Kelemvor: enforces natural death cycle."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_TEMPUS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Tempus: war god champion. Any alignment."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_BANE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Bane: dark anti-paladin, fear-spreading. Evil."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_HELM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Helm: elite shock troops."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_TALOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Talos: chaos/destruction guard. Evil."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_MORADIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Moradin: dwarf military order. Dwarf. LG/LN."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_AZUTH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Azuth: anti-destructive magic enforcer."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_REDKNIGHT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Red Knight: tactics/strategy deity."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_GRUUMSH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Gruumsh: orc god, plucks out own eye. Half-orc."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Half-orc"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_KOSSUTH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Kossuth: fire lord devotee. Any alignment."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_ILMATER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Ilmater: defender of weak. LG/LN/NG/CG."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_GARAGOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Garagos: battle frenzy zealot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_CORELLON": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Corellon: elven values defender. Elf."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_TORM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Torm: loyal defender. LG."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LG"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_LATHANDER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Lathander: renewal/sun champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_GARL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Garl: gnome chief god champion. Gnome."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_CLANGEDDIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Clangeddin: dwarf battle champion. Dwarf."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_HANALI": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Hanali: elven love champion. Elf."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_SEHANINE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Sehanine: elven moon champion. Elf."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "9": {
+      "FNP_PAL_SUNE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Sune: passionate generosity."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_MYSTRA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Mystra: protects Weave users."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_EILISTRAEE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Eilistraee: drow protector, beauty/moonlight."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_CORELLON2": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Elven Champion variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_MORADIN2": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Dwarven Champion variant."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_CYRIC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Cyric: chaos champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_SHAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Shar: darkness champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_TALONA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Talona: poison/disease champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_LOVIATAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Loviatar: pain champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_MASK": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Mask: shadow/intrigue champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_UMBERLEE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Umberlee: sea champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_LEIRA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Leira: deception champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_OGHMA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Oghma: knowledge champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_DENEIR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Deneir: writing champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "FNP_PAL_BESHABA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Beshaba: misfortune champion."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "note": "F&P paladin champion with deity-specific abilities."
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "13": {
+      "FNP_MD_FD": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Druid."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Druid",
+          "note": "F/D multi with F&P sphere access."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "multiclass": true,
+          "note": "Fighter/Druid multi uses druid HLA pool."
+        }
+      },
+      "FNP_MD_FD2": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Druid (Avenger variant)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Druid",
+          "variant": "Avenger",
+          "note": "F/D Avenger variant."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "multiclass": true,
+          "variant": "Avenger",
+          "note": "F/D Avenger multi; uses druid HLA pool."
+        }
+      },
+      "FNP_MD_FD3": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Druid (Totemic variant)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Druid",
+          "variant": "Totemic",
+          "note": "F/D Totemic variant."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "multiclass": true,
+          "variant": "Totemic",
+          "note": "F/D Totemic multi; uses druid HLA pool."
+        }
+      },
+      "FNP_MD_DR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Druid/Ranger."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Druid/Ranger",
+          "note": "Druid+Ranger dual nature."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "multiclass": true,
+          "note": "Druid/Ranger multi; uses druid HLA pool."
+        }
+      },
+      "FNP_MD_DT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Druid/Thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Druid/Thief",
+          "note": "Druid with thief skills."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "multiclass": true,
+          "note": "Druid/Thief multi; uses druid HLA pool + thief HLAs."
+        }
+      }
+    },
+    "14": {
+      "FNP_MS_FS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Shaman."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P Shaman",
+          "multiclass": "Fighter/Shaman",
+          "note": "Warrior with shaman spirit magic."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "SHAMAN",
+          "multiclass": true,
+          "note": "Fighter/Shaman multi; uses shaman HLA pool."
+        }
+      },
+      "FNP_MS_FS2": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Shaman (Totemic variant)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P Shaman",
+          "multiclass": "Fighter/Shaman",
+          "variant": "Totemic",
+          "note": "F/S Totemic variant."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "SHAMAN",
+          "multiclass": true,
+          "variant": "Totemic",
+          "note": "F/S Totemic multi."
+        }
+      },
+      "FNP_MS_SM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Shaman/Mage."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P Shaman",
+          "multiclass": "Shaman/Mage",
+          "note": "Spirit magic + arcane."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "MAGE",
+          "multiclass": true,
+          "note": "Shaman/Mage multi; uses mage HLA pool + shaman spirits."
+        }
+      },
+      "FNP_MS_ST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Shaman/Thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P Shaman",
+          "multiclass": "Shaman/Thief",
+          "note": "Spirit magic + rogue skills."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "multiclass": true,
+          "note": "Shaman/Thief multi; uses thief HLA pool + shaman spirits."
+        }
+      }
+    },
+    "15": {
+      "FNP_MC_FC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Cleric."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Cleric",
+          "note": "F/C multi with F&P sphere access."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "note": "Fighter/Cleric multi; uses cleric HLA pool."
+        }
+      },
+      "FNP_MC_CR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Cleric/Ranger."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Cleric/Ranger",
+          "note": "C/R multi with sphere + ranger abilities."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "note": "Cleric/Ranger multi; uses cleric HLA pool."
+        }
+      },
+      "FNP_MC_CT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Cleric/Thief."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Cleric/Thief",
+          "note": "C/T multi: cleric sphere + thief skills/backstab."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "note": "Cleric/Thief multi; uses cleric HLA pool + thief HLAs."
+        }
+      },
+      "FNP_MC_CM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Cleric/Mage."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Cleric/Mage",
+          "note": "C/M multi: cleric sphere + mage school."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "note": "Cleric/Mage multi; uses mage/cleric HLA pools."
+        }
+      },
+      "FNP_MC_FMC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Mage/Cleric."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Mage/Cleric",
+          "note": "Triple-class with kensai/specialist/priest combo."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "note": "Fighter/Mage/Cleric triple; uses cleric HLA pool."
+        }
+      },
+      "FNP_MC_FC2": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Multi. Fighter/Cleric (Dwarf variant)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "F&P",
+          "multiclass": "Fighter/Cleric",
+          "race": "Dwarf",
+          "note": "Dwarven F/C variant."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "multiclass": true,
+          "race": "Dwarf",
+          "note": "F/C Dwarf multi; uses cleric HLA pool."
+        }
+      }
+    }
+  },
+  "kits": {
+    "2": {
+      "modify": [
+        [
+          "TOTEMIC_DRUID",
+          "tweak",
+          "Druid uses cleric spell/XP tables"
+        ],
+        [
+          "SHAPESHIFTER",
+          "tweak",
+          "Druid uses cleric spell/XP tables"
+        ],
+        [
+          "AVENGER",
+          "tweak",
+          "Druid uses cleric spell/XP tables"
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "FNP_LATHANDER",
+          "cleric",
+          "Cleric of Lathander",
+          "Priest of the Morninglord, god of renewal. Dawn-themed healing and anti-undead powers."
+        ],
+        [
+          "FNP_TORM",
+          "cleric",
+          "Cleric of Torm",
+          "Priest of the True God, patron of paladins. Martial divine caster with honor-bound powers."
+        ],
+        [
+          "FNP_TYMORA",
+          "cleric",
+          "Cleric of Tymora",
+          "Priest of Lady Luck. Fortune-based divine magic and luck manipulation."
+        ],
+        [
+          "FNP_HELM",
+          "cleric",
+          "Cleric of Helm",
+          "Priest of the Vigilant One. Protection and warding divine abilities."
+        ],
+        [
+          "FNP_KELEMVOR",
+          "cleric",
+          "Cleric of Kelemvor",
+          "Priest of the Lord of the Dead. Anti-undead powers and death domain magic."
+        ],
+        [
+          "FNP_TEMPUS",
+          "cleric",
+          "Cleric of Tempus",
+          "Priest of the Lord of Battles. War domain with combat divine magic."
+        ],
+        [
+          "FNP_LEIRA",
+          "cleric",
+          "Cleric of Leira",
+          "Priest of the goddess of illusion. Deception and illusion divine magic."
+        ],
+        [
+          "FNP_LOVIATAR",
+          "cleric",
+          "Cleric of Loviatar",
+          "Priest of the Maiden of Pain. Pain-inflicting divine magic."
+        ],
+        [
+          "FNP_TALOS",
+          "cleric",
+          "Stormbringer of Talos",
+          "Priest of the Destroyer. Storm and lightning divine magic."
+        ],
+        [
+          "FNP_CYRIC",
+          "cleric",
+          "Sworn of Cyric",
+          "Priest of the Prince of Lies. Deception and strife divine magic."
+        ],
+        [
+          "FNP_UMBERLEE",
+          "cleric",
+          "Waveservant of Umberlee",
+          "Priest of the Bitch Queen. Water and storm divine magic."
+        ],
+        [
+          "FNP_OGHMA",
+          "cleric",
+          "Priest of Oghma",
+          "Priest of the Binder of Knowledge. Lore and divination divine magic."
+        ],
+        [
+          "FNP_ILMATER",
+          "cleric",
+          "Priest of Ilmater",
+          "Priest of the Crying God. Healing and endurance divine magic."
+        ],
+        [
+          "FNP_DENEIR",
+          "cleric",
+          "Priest of Deneir",
+          "Priest of the Scribe of Oghma. Knowledge and glyph divine magic."
+        ],
+        [
+          "FNP_SUNE",
+          "cleric",
+          "Priest of Sune",
+          "Priest of Firehair. Beauty and charm divine magic."
+        ],
+        [
+          "FNP_TEMPUS_BG",
+          "cleric",
+          "Battleguard of Tempus",
+          "Elite warrior-priest of the war god. Enhanced combat and war domain magic."
+        ],
+        [
+          "FNP_AZUTH",
+          "cleric",
+          "Priest of Azuth",
+          "Priest of the High One. Magic domain combining arcane and divine."
+        ],
+        [
+          "FNP_SHAR",
+          "cleric",
+          "Priest of Shar",
+          "Priest of the Mistress of the Night. Darkness and loss divine magic."
+        ],
+        [
+          "FNP_MOANDER",
+          "cleric",
+          "Priest of Moander",
+          "Priest of the Darkbringer. Corruption and decay divine magic."
+        ],
+        [
+          "FNP_BESHABA",
+          "cleric",
+          "Priest of Beshaba",
+          "Priest of the Maid of Misfortune. Bad luck and misfortune divine magic."
+        ],
+        [
+          "FNP_CORELLON",
+          "cleric",
+          "Cleric of Corellon Larethian",
+          "Elven priest of the Creator of the Elves. Swordplay and arcane-divine magic."
+        ],
+        [
+          "FNP_SEHANINE",
+          "cleric",
+          "Cleric of Sehanine Moonbow",
+          "Elven priest of the moon goddess. Dreams, death, and moonlight divine magic."
+        ],
+        [
+          "FNP_EREVAN",
+          "cleric",
+          "Cleric of Erevan Ilesere",
+          "Elven priest of the Trickster. Mischief, illusion, and change divine magic."
+        ],
+        [
+          "FNP_HANALI",
+          "cleric",
+          "Cleric of Hanali Celanil",
+          "Elven priest of love and beauty. Charm and enchantment divine magic."
+        ],
+        [
+          "FNP_MORADIN",
+          "cleric",
+          "Cleric of Moradin",
+          "Dwarven priest of the Soul Forger. Forge-blessed weapons and protective divine magic."
+        ],
+        [
+          "FNP_CLANGEDDIN",
+          "cleric",
+          "Cleric of Clangeddin",
+          "Dwarven priest of the Father of Battle. War domain with dwarven martial prowess."
+        ],
+        [
+          "FNP_MARTHAMMOR",
+          "cleric",
+          "Cleric of Marthammor Duin",
+          "Dwarven priest of the Watcher over Wanderers. Travel and protection divine magic."
+        ],
+        [
+          "FNP_GARL",
+          "cleric",
+          "Cleric of Garl Glittergold",
+          "Gnome priest of the Watchful Protector. Trickery and protection divine magic."
+        ],
+        [
+          "FNP_BAERVAN",
+          "cleric",
+          "Fastpaws of Baervan",
+          "Gnome priest of the forest gnome god. Nature magic combined with gnome trickery."
+        ],
+        [
+          "FNP_BARAVAR",
+          "cleric",
+          "Cleric of Baravar Cloakshadow",
+          "Gnome priest of illusion and deception. Stealth and illusion divine magic."
+        ],
+        [
+          "FNP_GAERDAL",
+          "cleric",
+          "Cleric of Gaerdal Ironhand",
+          "Gnome priest of vigilance and combat. Martial divine caster defending gnome communities."
+        ],
+        [
+          "FNP_URDLEN",
+          "cleric",
+          "Cleric of Urdlen",
+          "Gnome priest of the Crawler Below. Dark earth magic and destruction."
+        ],
+        [
+          "FNP_URPRIEST",
+          "cleric",
+          "Ur-Priest",
+          "Heretical priest who steals divine power. No deity allegiance, raw divine energy."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "FNP_FOREST_DRUID",
+          "druid",
+          "Forest Druid",
+          "Druid attuned to temperate woodlands. Enhanced plant and animal magic in forests."
+        ],
+        [
+          "FNP_MOUNTAIN_DRUID",
+          "druid",
+          "Mountain Druid",
+          "Druid of highland realms. Stone and storm nature magic, cold resistance."
+        ],
+        [
+          "FNP_JUNGLE_DRUID",
+          "druid",
+          "Jungle Druid",
+          "Druid of tropical wilds. Poison resistance, insect and plant magic."
+        ],
+        [
+          "FNP_DESERT_DRUID",
+          "druid",
+          "Desert Druid",
+          "Druid of arid wastes. Heat resistance, sand and sun nature magic."
+        ],
+        [
+          "FNP_ARCTIC_DRUID",
+          "druid",
+          "Arctic Druid",
+          "Druid of frozen tundra. Cold resistance, ice and snow nature magic."
+        ],
+        [
+          "FNP_CAVE_DRUID",
+          "druid",
+          "Cave Druid",
+          "Druid of the Underdark. Darkvision, stone and fungal nature magic."
+        ],
+        [
+          "FNP_BEAST_LORD",
+          "druid",
+          "Beast Lord",
+          "Druid focused on animal companionship. Enhanced summoning and animal empathy."
+        ],
+        [
+          "FNP_ELEMENTALIST",
+          "druid",
+          "Elementalist",
+          "Druid channeling elemental forces. Access to elemental spells across domains."
+        ],
+        [
+          "FNP_HIVEKEEPER",
+          "druid",
+          "Hivekeeper",
+          "Druid who tends insect colonies. Insect summoning and swarm abilities."
+        ],
+        [
+          "FNP_SHADOW_DRUID",
+          "druid",
+          "Shadow Druid",
+          "Militant druid extremist. Aggressive nature magic, hostility to civilization."
+        ],
+        [
+          "FNP_LOST_DRUID",
+          "druid",
+          "Lost Druid",
+          "Druid displaced from their grove. Wandering nature magic, adaptable abilities."
+        ],
+        [
+          "FNP_TOTEMIC_DRUID",
+          "druid",
+          "Totemic Druid",
+          "Druid attuned to animal totems. Enhanced animal summoning replacing shapeshifting."
+        ],
+        [
+          "FNP_CHAOS_PRIEST",
+          "druid",
+          "Chaos Priest",
+          "Chaotic divine caster. Unpredictable wild magic effects on spells."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "FNP_PAL_TYR",
+          "paladin",
+          "Champion of Tyr",
+          "Holy champion of the god of justice. Smite evil, detect injustice."
+        ],
+        [
+          "FNP_PAL_KELEMVOR",
+          "paladin",
+          "Champion of Kelemvor",
+          "Holy champion of the Lord of the Dead. Anti-undead crusader."
+        ],
+        [
+          "FNP_PAL_TEMPUS",
+          "paladin",
+          "Champion of Tempus",
+          "Holy champion of the war god. Battle prowess and war domain abilities."
+        ],
+        [
+          "FNP_PAL_BANE",
+          "paladin",
+          "Champion of Bane",
+          "Dark champion of the god of tyranny. Fear aura and domination powers."
+        ],
+        [
+          "FNP_PAL_HELM",
+          "paladin",
+          "Champion of Helm",
+          "Holy champion of the Watcher. Protection aura and vigilant defense."
+        ],
+        [
+          "FNP_PAL_TALOS",
+          "paladin",
+          "Champion of Talos",
+          "Dark champion of the storm god. Lightning and destructive storm powers."
+        ],
+        [
+          "FNP_PAL_MORADIN",
+          "paladin",
+          "Champion of Moradin",
+          "Dwarven holy champion of the Soul Forger. Forge-blessed weapons and armor."
+        ],
+        [
+          "FNP_PAL_AZUTH",
+          "paladin",
+          "Champion of Azuth",
+          "Holy champion of the High One. Spell resistance and anti-magic crusader."
+        ],
+        [
+          "FNP_PAL_REDKNIGHT",
+          "paladin",
+          "Champion of the Red Knight",
+          "Holy champion of the goddess of strategy. Tactical combat bonuses."
+        ],
+        [
+          "FNP_PAL_GRUUMSH",
+          "paladin",
+          "Champion of Gruumsh",
+          "Orcish champion of the One-Eyed God. Berserker rage with dark divine power."
+        ],
+        [
+          "FNP_PAL_KOSSUTH",
+          "paladin",
+          "Champion of Kossuth",
+          "Holy champion of the Firelord. Fire abilities and elemental divine power."
+        ],
+        [
+          "FNP_PAL_ILMATER",
+          "paladin",
+          "Champion of Ilmater",
+          "Holy champion of the Crying God. Damage absorption and healing powers."
+        ],
+        [
+          "FNP_PAL_GARAGOS",
+          "paladin",
+          "Champion of Garagos",
+          "Dark champion of the god of war and destruction. Berserker fury."
+        ],
+        [
+          "FNP_PAL_CORELLON",
+          "paladin",
+          "Champion of Corellon",
+          "Elven holy champion of the Creator. Elven grace with divine power."
+        ],
+        [
+          "FNP_PAL_TORM",
+          "paladin",
+          "Champion of Torm",
+          "Holy champion of the True God. Honor-bound divine combat."
+        ],
+        [
+          "FNP_PAL_LATHANDER",
+          "paladin",
+          "Champion of Lathander",
+          "Holy champion of the Morninglord. Radiant divine combat."
+        ],
+        [
+          "FNP_PAL_GARL",
+          "paladin",
+          "Champion of Garl Glittergold",
+          "Gnome holy champion of the Watchful Protector."
+        ],
+        [
+          "FNP_PAL_CLANGEDDIN",
+          "paladin",
+          "Champion of Clangeddin",
+          "Dwarven holy champion of the Father of Battle."
+        ],
+        [
+          "FNP_PAL_HANALI",
+          "paladin",
+          "Champion of Hanali Celanil",
+          "Elven holy champion of love and beauty."
+        ],
+        [
+          "FNP_PAL_SEHANINE",
+          "paladin",
+          "Champion of Sehanine Moonbow",
+          "Elven holy champion of the moon goddess."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "FNP_PAL_SUNE",
+          "paladin",
+          "Champion of Sune",
+          "Holy champion of Firehair. Beauty and charm divine combat."
+        ],
+        [
+          "FNP_PAL_MYSTRA",
+          "paladin",
+          "Champion of Mystra",
+          "Holy champion of the goddess of magic. Arcane-divine warrior."
+        ],
+        [
+          "FNP_PAL_EILISTRAEE",
+          "paladin",
+          "Champion of Eilistraee",
+          "Holy champion of the drow goddess of dance. Sword-dancing warrior."
+        ],
+        [
+          "FNP_PAL_CORELLON2",
+          "paladin",
+          "Elven Champion",
+          "Elven holy champion serving the Seldarine pantheon."
+        ],
+        [
+          "FNP_PAL_MORADIN2",
+          "paladin",
+          "Dwarven Champion",
+          "Dwarven holy champion defending clan and forge."
+        ],
+        [
+          "FNP_PAL_CYRIC",
+          "paladin",
+          "Champion of Cyric",
+          "Dark champion of the Prince of Lies. Deception and strife."
+        ],
+        [
+          "FNP_PAL_SHAR",
+          "paladin",
+          "Champion of Shar",
+          "Dark champion of the Mistress of Night. Shadow and loss."
+        ],
+        [
+          "FNP_PAL_TALONA",
+          "paladin",
+          "Champion of Talona",
+          "Dark champion of the Lady of Poison. Disease and plague."
+        ],
+        [
+          "FNP_PAL_LOVIATAR",
+          "paladin",
+          "Champion of Loviatar",
+          "Dark champion of the Maiden of Pain. Suffering and torment."
+        ],
+        [
+          "FNP_PAL_MASK",
+          "paladin",
+          "Champion of Mask",
+          "Dark champion of the Lord of Shadows. Stealth and shadows."
+        ],
+        [
+          "FNP_PAL_UMBERLEE",
+          "paladin",
+          "Champion of Umberlee",
+          "Dark champion of the Bitch Queen. Storm and sea wrath."
+        ],
+        [
+          "FNP_PAL_LEIRA",
+          "paladin",
+          "Champion of Leira",
+          "Champion of the goddess of illusion. Deception in battle."
+        ],
+        [
+          "FNP_PAL_OGHMA",
+          "paladin",
+          "Champion of Oghma",
+          "Champion of the god of knowledge. Lore-enhanced combat."
+        ],
+        [
+          "FNP_PAL_DENEIR",
+          "paladin",
+          "Champion of Deneir",
+          "Champion of the Scribe. Glyph magic and knowledge."
+        ],
+        [
+          "FNP_PAL_BESHABA",
+          "paladin",
+          "Champion of Beshaba",
+          "Dark champion of the Maid of Misfortune. Bad luck warfare."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "FNP_MD_FD",
+          "multi",
+          "Fighter/Druid Kit",
+          "Multiclass fighter/druid with nature sphere access."
+        ],
+        [
+          "FNP_MD_FD2",
+          "multi",
+          "Fighter/Druid (Avenger)",
+          "Fighter/Druid Avenger with nature and offensive magic."
+        ],
+        [
+          "FNP_MD_FD3",
+          "multi",
+          "Fighter/Druid (Totemic)",
+          "Fighter/Druid Totemic with animal summoning."
+        ],
+        [
+          "FNP_MD_DR",
+          "multi",
+          "Druid/Ranger Kit",
+          "Multiclass druid/ranger combining nature magic with wilderness skills."
+        ],
+        [
+          "FNP_MD_DT",
+          "multi",
+          "Druid/Thief Kit",
+          "Multiclass druid/thief combining nature magic with stealth."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "FNP_MS_FS",
+          "multi",
+          "Fighter/Shaman Kit",
+          "Multiclass fighter/shaman with spirit dance and combat."
+        ],
+        [
+          "FNP_MS_FS2",
+          "multi",
+          "Fighter/Shaman (Totemic)",
+          "Fighter/Shaman with totemic spirit abilities."
+        ],
+        [
+          "FNP_MS_SM",
+          "multi",
+          "Shaman/Mage Kit",
+          "Multiclass shaman/mage combining spirit magic with arcane."
+        ],
+        [
+          "FNP_MS_ST",
+          "multi",
+          "Shaman/Thief Kit",
+          "Multiclass shaman/thief combining spirit magic with stealth."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "FNP_MC_FC",
+          "multi",
+          "Fighter/Cleric Kit",
+          "Multiclass fighter/cleric with deity-specific sphere access."
+        ],
+        [
+          "FNP_MC_CR",
+          "multi",
+          "Cleric/Ranger Kit",
+          "Multiclass cleric/ranger with deity-specific sphere access."
+        ],
+        [
+          "FNP_MC_CT",
+          "multi",
+          "Cleric/Thief Kit",
+          "Multiclass cleric/thief with deity-specific sphere access."
+        ],
+        [
+          "FNP_MC_CM",
+          "multi",
+          "Cleric/Mage Kit",
+          "Multiclass cleric/mage with deity-specific sphere access."
+        ],
+        [
+          "FNP_MC_FMC",
+          "multi",
+          "Fighter/Mage/Cleric Kit",
+          "Triple-class with deity-specific sphere access."
+        ],
+        [
+          "FNP_MC_FC2",
+          "multi",
+          "Fighter/Cleric (Dwarf)",
+          "Dwarven fighter/cleric with deity-specific sphere access."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/UnearthedArcana/Faiths_and_Powers",
+  "a": "Subtledoctor",
+  "v": "0.91.4",
+  "sum": "Deep overhaul of priest and paladin classes with 17 components. Assigns spells by deity sphere, adds new kits, and makes divine casting more strategic.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v0.74g",
+    "place": "post"
+  },
+  "gh": {
+    "o": "subtledoctor",
+    "r": "Faiths_and_Powers"
+  },
+  "dl": "https://github.com/UnearthedArcana/Faiths_and_Powers",
+  "au": "SubtleD and Grammarsalad",
+  "co": [
+    {
+      "n": "Cleric Spell Table: Revised",
+      "cn": 12,
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\Faiths_and_Powers.tp2",
+      "wq": "verified",
+      "tp2n": "Faiths & Powers Table",
+      "pi": "D5_FNP_CLERIC_SPELL_TABLE",
+      "scn": "Revised Cleric Spell Table",
+      "g": "fnp_cleric_spell_table"
+    },
+    {
+      "n": "Cleric Spell Table: Un-nerfed",
+      "cn": 13,
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\Faiths_and_Powers.tp2",
+      "wq": "verified",
+      "tp2n": "'Un-nerfed' Table",
+      "pi": "D5_UNNERFED_CLERIC_SPELL_TABLE",
+      "scn": "Revised Cleric Spell Table",
+      "g": "fnp_cleric_spell_table"
+    },
+    {
+      "n": "Druids Use Cleric Spell Table and XP Table",
+      "cn": 15,
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\Faiths_and_Powers.tp2",
+      "wq": "verified",
+      "tp2n": "Druids Use Cleric Spell Table and XP Table",
+      "pi": "D5_DRUID_ON_CLERIC_TABLES"
+    },
+    {
+      "n": "Sphere System: oFnP (original Faiths & Powers)",
+      "pi": "D5_FNP_SPHERE_SYSTEM",
+      "scn": "Choose a Sphere System",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wq": "fuzzy_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 21,
+      "g": "sphere_system",
+      "sp": 60,
+      "spLv": {
+        "p1": 8,
+        "p2": 7,
+        "p3": 9,
+        "p4": 2,
+        "p5": 7,
+        "p6": 4,
+        "p7": 2,
+        "w1": 4,
+        "w2": 2,
+        "w3": 1,
+        "w4": 2,
+        "w5": 4,
+        "w6": 2,
+        "w7": 2,
+        "w8": 3,
+        "w9": 1
+      },
+      "no": "HARD FAIL: 'Invalid spell number: -1' — CLERIC spell slots exhausted. Too many divine spells from SR, IWDification, MiH SP consumed all SPPR slots. CLERIC_GREATER_SHIELD_OF_LATHANDER cannot be added. Cascades to cn:31 (Cleric kits warning). WORKAROUND: (1) Try cn:22 (AD&D/DR sphere system) which may use fewer new spells. (2) Remove IWDification divine spells if also using MiH SP divine (redundant coverage). (3) If ToF is fixed and installed, ToF's own spell system may consume slots that FnP needs — test with and without ToF IWD spells. WARNING: Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and check SCS auto-skip components.",
+      "tp2n": "oFnP: the original Faiths & Powers sphere system"
+    },
+    {
+      "n": "Sphere System: AD&D/DR (inspired by PnP and Divine Remix)",
+      "pi": "D5_PNP_SPHERE_SYSTEM",
+      "scn": "Choose a Sphere System",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 22,
+      "wq": "norm_match",
+      "cn": 22,
+      "g": "sphere_system",
+      "sp": 60,
+      "spLv": {
+        "p1": 8,
+        "p2": 7,
+        "p3": 9,
+        "p4": 2,
+        "p5": 7,
+        "p6": 4,
+        "p7": 2,
+        "w1": 4,
+        "w2": 2,
+        "w3": 1,
+        "w4": 2,
+        "w5": 4,
+        "w6": 2,
+        "w7": 2,
+        "w8": 3,
+        "w9": 1
+      },
+      "no": "WARNING: Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and check SCS auto-skip components.",
+      "tp2n": "AD&D/DR: inspired by PnP and Divine Remix"
+    },
+    {
+      "n": "Sphere System: Vanilla (traditional lists, kits cross cleric/druid divide)",
+      "pi": "D5_VANILLA_SPHERE_SYSTEM",
+      "scn": "Choose a Sphere System",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 23,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 23,
+      "g": "sphere_system",
+      "sp": 60,
+      "spLv": {
+        "p1": 8,
+        "p2": 7,
+        "p3": 9,
+        "p4": 2,
+        "p5": 7,
+        "p6": 4,
+        "p7": 2,
+        "w1": 4,
+        "w2": 2,
+        "w3": 1,
+        "w4": 2,
+        "w5": 4,
+        "w6": 2,
+        "w7": 2,
+        "w8": 3,
+        "w9": 1
+      },
+      "no": "WARNING: Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and check SCS auto-skip components.",
+      "tp2n": "Vanilla: traditional spell lists, kits can cross the cleric/druid divide"
+    },
+    {
+      "n": "Sphere System: VPlus (traditional lists, kits get focus on two FnP spheres)",
+      "pi": "D5_VPLUS_SPHERE_SYSTEM",
+      "scn": "Choose a Sphere System",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 24,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 24,
+      "g": "sphere_system",
+      "sp": 60,
+      "spLv": {
+        "p1": 8,
+        "p2": 7,
+        "p3": 9,
+        "p4": 2,
+        "p5": 7,
+        "p6": 4,
+        "p7": 2,
+        "w1": 4,
+        "w2": 2,
+        "w3": 1,
+        "w4": 2,
+        "w5": 4,
+        "w6": 2,
+        "w7": 2,
+        "w8": 3,
+        "w9": 1
+      },
+      "no": "WARNING: Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and check SCS auto-skip components.",
+      "tp2n": "VPlus: traditional spell lists, kits get focus access to two FnP spheres"
+    },
+    {
+      "n": "Sphere System: nuFnP (fewer spheres, more balanced, closer to PnP)",
+      "pi": "D5_NU_FNP_SPHERE_SYSTEM",
+      "scn": "Choose a Sphere System",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wq": "fuzzy_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 25,
+      "g": "sphere_system",
+      "sp": 5,
+      "no": "ALSO FAILS with spell slot exhaustion — same CLERIC_GREATER_SHIELD_OF_LATHANDER issue as cn:21 (oFnP). All sphere systems need this L7 spell. FIX: remove MiH SP cn:2 (Divine Spellpack) . WARNING: Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and check SCS auto-skip components.",
+      "spLv": {
+        "p7": 3
+      },
+      "tp2n": "nuFnP: a new sphere system (fewer spheres, more balanced, closer to PnP)"
+    },
+    {
+      "n": "Give Option to Cast Like Sorcerers",
+      "pi": "D5_FNP_SPONTANEOUS_CASTING_OPTION",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 30,
+      "wq": "norm_match",
+      "cn": 30,
+      "no": "Do not install if planning to use 5E casting",
+      "tp2n": "Give Option to Cast Like Sorcerers (do not install if planning to use 5E casting)"
+    },
+    {
+      "n": "Install Cleric kits",
+      "no": "33 deity-specific cleric kits (Ur-Priest, Azuth, Beshaba, Cyric, Deneir, Helm, Ilmater, Kelemvor, Lathander, Leira, Loviatar, Malar, Moander, Mystra, Oghma, Shar, Sune, Talos, Tempus, Torm, Tymora, Umberlee, Moradin, Clangeddin, Marthammor, Haela, Baravar, Baervan, Urdlen, Yondalla, Arvoreen). 16 deities overlap with ToF cn:50400 (22 kits). 15 deities unique to FnP (Beshaba, Deneir, Kelemvor, Leira, Loviatar, Moander, Torm, Marthammor, Haela, Baravar, Urdlen, Yondalla, Arvoreen, Ur-Priest). Avoid if using TA's Spontaneous Casting for Clerics. INSTALLS WITH WARNINGS: No visible warning text in debug log — may inherit warning state from preceding sphere system component. Cosmetic.",
+      "pi": "D5_FNP_CLERIC_KITS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 31,
+      "wq": "name_match",
+      "cn": 31,
+      "k": 33,
+      "kC": {
+        "cleric": 33
+      },
+      "tp2n": "Install Cleric kits"
+    },
+    {
+      "n": "Install Druid kits",
+      "pi": "D5_FNP_DRUID_KITS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 33,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 33,
+      "k": 13,
+      "no": "REMOVED . boring_beetle_animation variable undefined — FnP's kits_new_druids.tpa (lines 1510-1515) looks for BEETLE_BLACK or BEETLE_BORING in ANIMATE.IDS via ACTION_IF FILE_CONTAINS_EVALUATED. Neither entry exists in vanilla BG2EE. They come from Infinity Animations (component #500) which is not installed. FnP has no fallback — variable stays unset and the install aborts. TO FIX: Either (a) install Infinity Animations component #500 before FnP, or (b) append '0xE220 BEETLE_BLACK' to ANIMATE.IDS before FnP druid kits install (the SOS mod provides IC_BEETLE_BLACK at 0xE220 but under a different name FnP doesn't recognize). A one-line APPEND to ANIMATE.IDS in the game directory would resolve this.",
+      "kC": {
+        "druid": 13
+      },
+      "tp2n": "Install Druid kits"
+    },
+    {
+      "n": "Paladin Kits: Tyr, Torm, Helm, Ilmater, Kelemvor, Sune",
+      "no": "d5_fnp_settings.ini can limit to one NPC-relevant kit (e.g. Arvoreen's pally for Mazzy)",
+      "pi": "D5_FNP_PALADIN_KITS",
+      "scn": "Install Paladin kits",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 35,
+      "wq": "fuzzy_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 35,
+      "g": "paladin_kits",
+      "k": 20,
+      "kC": {
+        "paladin": 20
+      },
+      "tp2n": "...for Tyr, Torm, Helm, Ilmater, Kelemvor, Sune"
+    },
+    {
+      "n": "Paladin Kits: All above PLUS Neutral/Evil/demihuman deities",
+      "pi": "D5_FNP_BAD_PALADINS",
+      "scn": "Install Paladin kits",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 36,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 36,
+      "g": "paladin_kits",
+      "k": 15,
+      "kC": {
+        "paladin": 15
+      },
+      "tp2n": "...for all those, PLUS Neutral/Evil/demihuman deities"
+    },
+    {
+      "n": "Revised Paladin Spell Table",
+      "pi": "D5_PALADIN_SPELL_TABLE",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 45,
+      "wq": "name_match",
+      "cn": 45,
+      "tp2n": "Revised Paladin Spell Table"
+    },
+    {
+      "n": "Alter Priests' Weapon/Armor Usability",
+      "no": "Overlaps with similar components from IWDification, TA, ToF, AK, and MiH, but can be installed on top",
+      "pi": "D5_FNP_WEAPON_USABILITY",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 75,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 75,
+      "tp2n": "Alter Priests' Weapon/Armor Usability"
+    },
+    {
+      "n": "Apply Sphere System (REQUIRED for the sphere system to work)",
+      "no": "REQUIRED for sphere system. Adds 3 L7 priest spells (GREATER_SHIELD_OF_LATHANDER, WITHER, IMPERVIOUS_SANCTITY_OF_MIND). Vanilla EET uses 33/50 L7 priest slots. Fails if other mods consume 15+ L7 slots before FnP. Known L7 contributors: ToF IWD divine (+8), SR (+4), TotLM (+3), SoD2BG2 (+3). Remove DSotSC Priest Spells and Hephernaan NPC to free slots.",
+      "pi": "D5_APPLY_SPHERE_SYSTEM",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 80,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 80,
+      "ss": 1,
+      "spLv": {
+        "p7": 3
+      },
+      "sp": 3,
+      "splstates": 4,
+      "tp2n": "Apply Sphere System (REQUIRED for the sphere system to work)"
+    },
+    {
+      "n": "Multiclass Druids",
+      "pi": "D5_FNP_MULTI_DRUID_KITS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 91,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 91,
+      "k": 5,
+      "no": "Adds 5 multiclass druid kits: Fighter/Druid, Mage/Druid, Ranger/Druid, Thief/Druid, Druid/Monk. Also adds Druid/Sorcerer and Forest Druid variant. Uses F&P sphere system for spell access. Adds 5 kit slots. Install after all druid kit mods.",
+      "rd": 12,
+      "kC": {
+        "multi": 5
+      },
+      "tp2n": "Multiclass Druids"
+    },
+    {
+      "n": "Multiclass Shamans",
+      "pi": "D5_FNP_MULTI_SHAMAN_KITS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wc": 92,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 92,
+      "k": 4,
+      "no": "Adds 4 multiclass shaman kits: Shaman/Mage, Shaman/Monk, Shaman/Ranger, Shaman/Thief. Also adds Barbarian Shaman variant. Uses F&P sphere system. Adds 4 kit slots. Install after all shaman kit mods (Will of the Wisp, Improved Shamanic Dance).",
+      "rd": 12,
+      "kC": {
+        "multi": 4
+      },
+      "tp2n": "Multiclass Shamans"
+    },
+    {
+      "n": "Multiclass Cleric Kits (install AFTER all other kit mods)",
+      "no": "6 bespoke multiclass kits (2 C/M: Mystra, Azuth; 2 C/R: Mielikki, Shaundakul; 2 C/T: Mask, Brandobaris) PLUS auto-clone system that creates multiclass variants of all single-class FnP cleric kits via 2da table manipulation (no extra kit slots!). Auto-clones ~17 C/M, ~17 F/C, ~8 C/T kits at 0 extra kit cost. Overlaps with ToF cn:55100 (F/C) and cn:55500 (C/M) which are richer per-kit but cost 14+25 kit slots. INSTALLS WITH WARNINGS (cosmetic): 'Internal ability name too long [CDHLYSYM]' (25x) — WeiDU auto-remaps Holy Symbol ability to SGAB0001. Functional.",
+      "pi": "D5_FNP_MULTI_CLERIC_KITS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wq": "fuzzy_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 95,
+      "k": 6,
+      "kC": {
+        "multi": 6
+      },
+      "tp2n": "Multiclass Cleric kits (install AFTER all other kit mods!!)"
+    },
+    {
+      "n": "Apply FnP Multiclass Kits to NPCs",
+      "pi": "D5_FNP_KITS_TO_NPCS",
+      "wf": "Faiths_and_Powers",
+      "wp": "Faiths_and_Powers\\FAITHS_AND_POWERS.TP2",
+      "wq": "fuzzy_match",
+      "cn": 99,
+      "no": "Assigns F&P multiclass kits to NPCs. Scans installed NPC mods and applies appropriate deity/multiclass kits. Requires F&P multiclass components installed. No kit slots added.",
+      "tp2n": "Apply FnP Multiclass Kits to NPCs"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "S&A inquisitor and turn undead changes may conflict with F&P's sphere system and class redesigns",
+      "myComps": "#80 Sphere System #31 Cleric Kits #35 #36 Paladin Kits",
+      "theirComps": "#60 Inquisitor Detect Illusion #100 Inquisitor Divine Spells #120 Turn Undead Overhaul",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "soft",
+      "reason": "FnP cleric/druid/paladin kits may interact with Refinements' revised HLAs for those classes",
+      "myComps": "#31 Cleric Kits #33 Druid Kits #35 #36 Paladin Kits",
+      "theirComps": "#10 #104 #105 #106",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "FnP paladin kits overlap with AK's paladin overhauls; druid kit assignments may conflict with AK's Hivemaster/Elementalist",
+      "myComps": "#35 #36 Paladin Kits #33 Druid Kits",
+      "theirComps": "#3000 #3001 #3002 #3003 #3004 #3005 #3010 #3011 Paladin Overhauls #5001 #5002 Druid Kits",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "SCS spell changes may interact with FnP sphere system. Compatible with correct install order (FnP before SCS). FnP provides ToF sphere data.",
+      "orderOnly": true,
+      "myComps": "#80 Sphere System #31 Cleric Kits #33 Druid Kits #35 #36 Paladin Kits",
+      "theirComps": "#1500 #1510 #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 #4030 Improved shapeshifting",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "FnP cleric/paladin kit changes may conflict with NPC Kit's kit assignments for Anomen and others.",
+      "myComps": "#31 Cleric Kits #35 #36 Paladin Kits",
+      "theirComps": "#0 NPC Kit assignments",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

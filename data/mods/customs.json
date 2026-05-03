@@ -1,0 +1,4234 @@
+{
+  "i": 263,
+  "t": "customs",
+  "sv": 1,
+  "ord": 110,
+  "c": "ITEM ADDITION MODS",
+  "n": "Customs",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "should be installed after after Northern Tales of the Sword Coast, Endless BG1, BG1 Mini Quests and Encounters, Ascalon's Questpack, Balduran's Seatower, BG1NPC Project, BG1 Romantic Encounters, BG1 Unfinished Business, Finch, Thalantyr Item Upgrade Sword Coast Customs MiH Item Pack already moves Ashideena and Varscona (not documented in the readme, but it's in bg1_item_pack.tpa)",
+  "u": "https://github.com/cgordon/customs",
+  "a": "Charles and Henry",
+  "v": "v0.1b",
+  "sum": "Sword Coast Customs",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "cgordon",
+    "r": "customs"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "CU#SC001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1 (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1 (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS001",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1 (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ001",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG001",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+1 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH001",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+2 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL001",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1 (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC001",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2 (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS001",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1 (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL001",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2 (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX001",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB001",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1 (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS001",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1 (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT001",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1 (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP001",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1 (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 cold damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 cold damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 cold damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS002",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 cold damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 cold damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ002",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 cold damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG002",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+1, +1 cold damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH002",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+2, +1 cold damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL002",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 cold damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC002",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS002",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL002",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX002",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 cold damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB002",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 cold damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS002",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 cold damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 cold damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT002",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 cold damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP002",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to freeze anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 cold damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 acid damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 acid damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 acid damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS003",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 acid damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 acid damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ003",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 acid damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG003",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+1, +1 acid damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH003",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+2, +1 acid damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL003",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 acid damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC003",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS003",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL003",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX003",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 acid damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB003",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 acid damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS003",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 acid damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 acid damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT003",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 acid damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP003",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to corrode anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 acid damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 shock damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 shock damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 shock damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS004",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 shock damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 shock damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ004",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 shock damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG004",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+1, +1 shock damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH004",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+2, +1 shock damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL004",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 shock damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC004",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS004",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL004",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX004",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 shock damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB004",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 shock damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS004",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 shock damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 shock damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT004",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 shock damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP004",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to shock anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 shock damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 fire damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 fire damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 fire damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS005",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 fire damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 fire damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ005",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 fire damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG005",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+1, +1 fire damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH005",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d4+2, +1 fire damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL005",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 fire damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC005",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 fire damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS005",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 2d4+1, +1 fire damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL005",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+2, +1 fire damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX005",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 fire damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB005",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 fire damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS005",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 fire damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1, +1 fire damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT005",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d10+1, +1 fire damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP005",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to burn anything it strikes.\n\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d6+1, +1 fire damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 cold damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 cold damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 cold damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS006",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 cold damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 cold damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ006",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 cold damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG006",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+2, +2 cold damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH006",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+3, +2 cold damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL006",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 cold damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC006",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS006",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL006",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 cold damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX006",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 cold damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB006",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 cold damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS006",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 cold damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 cold damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT006",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 cold damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP006",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 cold damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 acid damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 acid damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 acid damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS007",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 acid damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 acid damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ007",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 acid damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG007",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+2, +2 acid damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH007",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+3, +2 acid damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL007",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 acid damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC007",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS007",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL007",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 acid damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX007",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 acid damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB007",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 acid damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS007",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 acid damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 acid damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT007",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 acid damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP007",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 acid damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 shock damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted bastard sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this bastard sword with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 shock damage (slashing)\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted two-handed sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this two-handed sword with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 shock damage (slashing)\nSpeed Factor: 9\nProficiency Type: Two-Handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS008",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted short sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this short sword with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 shock damage (piercing)\nSpeed Factor: 2\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted ninjato was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this ninjato with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 shock damage (slashing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ008",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted wakizashi was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this wakizashi with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 shock damage (piercing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG008",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted dagger was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this dagger with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+2, +2 shock damage (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH008",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted war hammer was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this war hammer with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d4+3, +2 shock damage (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL008",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted club was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this club with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 shock damage (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC008",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted mace was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this mace with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS008",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted morning star was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this morning star with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 2d4+2, +2 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL008",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted flail was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this flail with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+3, +2 shock damage (crushing)\nSpeed Factor: 6\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX008",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted battle axe was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this battle axe with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 shock damage (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB008",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted halberd was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this halberd with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 shock damage (piercing/slashing)\nSpeed Factor: 8\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS008",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted quarterstaff was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this quarterstaff with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 shock damage (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted long sword was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this long sword with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 shock damage (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT008",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted katana was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this katana with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d10+2, +2 shock damage (slashing)\nSpeed Factor: 3\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP008",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted spear was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this spear with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d6+2, +2 shock damage (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#SC009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nThe hedge mage Thalantyr imbued this scimitar with the power to burn anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.\n\n\nSTATISTICS:\n\nTHACO: +2\nDamage: 1d8+2, +2 fire damage (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#BS009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#2H009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "CU#SS009",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#NT009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#WZ009",
+          "short sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#DG009",
+          "dagger",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "CU#WH009",
+          "hammer",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "CU#CL009",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#MC009",
+          "mace",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#MS009",
+          "morning star",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "CU#FL009",
+          "flail",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#AX009",
+          "axe",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "CU#HB009",
+          "halberd",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "CU#QS009",
+          "staff",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#LS009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "CU#KT009",
+          "large sword",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "CU#SP009",
+          "spear",
+          "<CHARNAME>'s Resolve",
+          "This masterfully crafted scimitar was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use.\n\nSTATISTICS:\n\nTHACO: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjato\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/cgordon/customs",
+  "au": "Charles and Henry",
+  "co": [
+    {
+      "n": "Sword Coast Customs Core Component",
+      "tp2n": "Sword Coast Customs Core Component",
+      "cn": 0,
+      "wf": "customs",
+      "wp": "customs\\setup-customs.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "it": 162,
+      "itC": {
+        "large sword": 54,
+        "short sword": 18,
+        "dagger": 9,
+        "hammer": 9,
+        "mace": 18,
+        "morning star": 9,
+        "flail": 9,
+        "axe": 9,
+        "halberd": 9,
+        "staff": 9,
+        "spear": 9
+      }
+    },
+    {
+      "n": "Ashideena: Remove from the game",
+      "tp2n": "Remove Ashideena from the game",
+      "cn": 1,
+      "wf": "customs",
+      "wp": "customs\\setup-customs.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "ashideena",
+      "scn": "Remove or relocate Ashideena"
+    },
+    {
+      "n": "Ashideena: Relocate to later in the game",
+      "tp2n": "Relocate Ashideena to later in the game",
+      "cn": 2,
+      "wf": "customs",
+      "wp": "customs\\setup-customs.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "ashideena",
+      "scn": "Remove or relocate Ashideena"
+    },
+    {
+      "n": "Varscona: Remove from the game",
+      "tp2n": "Remove Varscona from the game",
+      "cn": 3,
+      "wf": "customs",
+      "wp": "customs\\setup-customs.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "varscona",
+      "scn": "Remove or relocate Varscona"
+    },
+    {
+      "n": "Varscona: Relocate to later in the game",
+      "tp2n": "Relocate Varscona to later in the game",
+      "cn": 4,
+      "wf": "customs",
+      "wp": "customs\\setup-customs.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "varscona",
+      "scn": "Remove or relocate Varscona"
+    }
+  ]
+}

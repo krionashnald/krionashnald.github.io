@@ -1,0 +1,342 @@
+{
+  "i": 190,
+  "t": "willowisp",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 660,
+  "c": "NEW NPC MODS",
+  "n": "Will of the Wisp",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "cats": [
+    "NEW NPC MODS",
+    "KIT & CLASS MODS",
+    "ITEM ADDITION MODS",
+    "CREATURE MODS"
+  ],
+  "no": "Adds shamanic improvements including new shaman kits, a stronghold, an undead NPC companion named Will, and additional items and enemies.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "willowisp",
+          "portraits/willowisp/l0will.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "2": {
+      "WITCHLIGHT_SHAMAN_STANDALONE": {
+        "passive": [
+          {
+            "n": "Save vs Death",
+            "type": "desc",
+            "desc": "+2 bonus to saving throws vs. death"
+          },
+          {
+            "n": "Save vs Spells",
+            "type": "desc",
+            "desc": "-2 penalty to saving throws vs. spells"
+          },
+          {
+            "n": "Reputation",
+            "type": "desc",
+            "desc": "-1 party reputation (permanent)"
+          },
+          {
+            "n": "Stat Penalties",
+            "type": "desc",
+            "desc": "-2 to maximum DEX and CHA"
+          },
+          {
+            "n": "Necrotic Dance",
+            "type": "desc",
+            "desc": "Shamanic Dance summons undead spirits instead of nature spirits: Necrotic Fireflies (lv1), Will-o'-Wisps (lv6), Spectres (lv12), Greater Will-o'-Wisps (lv18)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Larloch's Minor Drain",
+            "freq": "innate",
+            "effects": "Necromantic spell gained as divine.",
+            "level": 3
+          },
+          {
+            "n": "Horror",
+            "freq": "innate",
+            "effects": "Necromantic spell gained as divine.",
+            "level": 5
+          },
+          {
+            "n": "Vampiric Touch",
+            "freq": "innate",
+            "effects": "Necromantic spell gained as divine.",
+            "level": 7
+          },
+          {
+            "n": "Control Undead",
+            "freq": "1/day",
+            "effects": "Dominates single undead, 1 round/level.",
+            "level": 6
+          },
+          {
+            "n": "Boneblade",
+            "freq": "1/day",
+            "effects": "Conjures bone dagger: 2d4+2, chance to poison or drain levels.",
+            "level": 8
+          },
+          {
+            "n": "Animate Dead",
+            "freq": "innate",
+            "effects": "Necromantic spell gained as divine.",
+            "level": 9
+          },
+          {
+            "n": "Spirit Treant",
+            "freq": "1/day",
+            "effects": "Shapeshift: high STR/resistances, can still dance and cast at reduced speed. 2 min.",
+            "level": 14
+          }
+        ],
+        "restrictions": {
+          "alignment": "True Neutral only",
+          "items": "Weapons: daggers, spears, axes, quarterstaves, shortbows only. Detect Illusions starts at 10% (vs 20%)."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Gains necromancy spells as divine: Larloch Minor Drain (lv3), Horror (lv5), Vampiric Touch (lv7), Animate Dead (lv9), Exploding Skull (lv11), Death Spell (lv13)."
+        },
+        "statBonus": {
+          "dex": -2,
+          "cha": -2,
+          "note": "-2 DEX, -2 CHA (per research)"
+        }
+      }
+    },
+    "3": {
+      "TOWN_MEDIUM": {
+        "passive": [
+          {
+            "n": "Stat Penalty",
+            "type": "desc",
+            "desc": "-2 to maximum Strength"
+          },
+          {
+            "n": "Urban Recognition",
+            "type": "desc",
+            "desc": "+1 CHA, +2 AC and saves vs. humanoids (lv9)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Know Alignment",
+            "freq": "1/day",
+            "effects": "Detects alignment of target.",
+            "level": 1
+          },
+          {
+            "n": "Detect Invisibility",
+            "freq": "1/day",
+            "effects": "Reveals invisible creatures.",
+            "level": 1
+          },
+          {
+            "n": "Long Left Possession",
+            "freq": "1/day",
+            "effects": "Communicates with location ghosts for random item rewards.",
+            "level": 2
+          },
+          {
+            "n": "Protect from the Lost Ones",
+            "freq": "1/day",
+            "effects": "15' radius, +2 AC/saves vs undead, pushes away hostile undead (2d4 crushing).",
+            "level": 4
+          },
+          {
+            "n": "Calm the Dead",
+            "freq": "1/day",
+            "effects": "Charms/debuffs 1d4+ undead.",
+            "level": 6
+          },
+          {
+            "n": "Oracle",
+            "freq": "1/day",
+            "effects": "Divination ability.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Weapons: daggers, quarterstaves, darts, shortbows only."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": 1,
+          "note": "Innate stat modifiers: +1 CHA"
+        },
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard shaman spellcasting + urban-specific innates (Know Alignment, Oracle, etc.)"
+        }
+      }
+    }
+  },
+  "kits": {
+    "2": {
+      "new": [
+        [
+          "WITCHLIGHT_SHAMAN_STANDALONE",
+          "shaman",
+          "Witchlight",
+          "Shaman wielding will-o-wisp-like spirit lights. Illumination and spirit fire magic."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "TOWN_MEDIUM",
+          "shaman",
+          "Town Medium",
+          "Urban shaman serving as intermediary between townsfolk and spirits."
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/will-of-the-wisps/",
+  "a": "Lava Del'Vortel",
+  "v": "v3.5",
+  "sum": "Adds shamanic improvements including new shaman kits, a stronghold, an undead NPC companion named Will, and additional items and enemies.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/will-of-the-wisps/",
+  "co": [
+    {
+      "n": "Will NPC, shaman stronghold and new shaman kit for BG2EE",
+      "tp2n": "Will NPC, shaman stronghold and new shaman kit for BG2EE",
+      "pi": "L#-WILLOFTHEWISP-MAIN",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 0,
+      "no": "Bundles Will NPC (undead witchlight shaman), shaman stronghold (after Shade Lord quest), and Witchlight Shaman kit. Installs the kit via ADD_KIT. INSTALLED WITH WARNINGS: 'SPWI904.spl is missing, aborting struct_copy' — Meteor Swarm spell file missing from override (possibly consumed by SR). One shapeshift struct_copy skipped. Also 'no effects altered on SPPR120.spl' in shapeshift changes. 'Add 9 new arcane spells' and 'Add 6 divine spells' also install with warnings. All non-fatal."
+    },
+    {
+      "n": "Change shaman .tlk string to remove \"Ineligible for any stronghold\" line",
+      "pi": "L#-WILLOFTHEWISP-CLASSDESC",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "x": 0,
+      "no": "Simple string edit removing \"Ineligible for any stronghold\" from shaman class description. Only useful with the stronghold from cn:0.",
+      "tp2n": "Change shaman .tlk string to remove \"Ineligible for any stronghold\" line"
+    },
+    {
+      "n": "Witchlight Shaman Standalone Kit",
+      "pi": "L#-WILLOFTHEWISP-KITSTANDALONE",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 2,
+      "wq": "manual_final",
+      "cn": 2,
+      "k": 1,
+      "cat": "KIT & CLASS MODS",
+      "no": "Standalone Witchlight Shaman kit without the NPC or stronghold. SKIPPED by WeiDU if cn:0 is installed ('Will NPC is already installed') — cn:0 already includes this kit. Only use without cn:0.",
+      "kC": {
+        "shaman": 1
+      },
+      "tp2n": "Witchlight Shaman Standalone Kit"
+    },
+    {
+      "n": "Town Medium (Shaman) Kit",
+      "pi": "L#-WILLOFTHEWISP-TM",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "cn": 3,
+      "k": 1,
+      "cat": "KIT & CLASS MODS",
+      "no": "Standalone Town Medium shaman kit by morpheus562 and Lava. No dependencies. Also included in Bethany IWDEE NPC — cannot install both. Works on BGEE/BG2EE/IWDEE/EET.",
+      "kC": {
+        "shaman": 1
+      },
+      "tp2n": "Town Medium (Shaman) Kit"
+    },
+    {
+      "n": "New items for shamans and undead NPCs",
+      "pi": "L#-WILLOFTHEWISP-ITEMS",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 4,
+      "cat": "ITEM ADDITION MODS",
+      "no": "Adds new shamanic items and items for undead NPCs (Will, Hexxat, etc.). Fully standalone — does not require cn:0.",
+      "tp2n": "New items for shamans and undead NPCs"
+    },
+    {
+      "n": "Optional: Drider, Dark Treant, Will-o'- wisp Enemies",
+      "tp2n": "Optional: Drider, Dark Treant, Will-o'-wisp Enemies",
+      "pi": "L#-WILLOFTHEWISP-ENEMIES",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 5,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 5,
+      "cat": "CREATURE MODS",
+      "no": "Adds Driders, Dark Treants, and hostile Will-o-wisps to existing BG2/IWDEE areas. Fully standalone — does not require cn:0."
+    },
+    {
+      "n": "[CHEAT] Enable shaman stronghold for all classes",
+      "tp2n": "[CHEAT] Enable shaman stronghold for all classes",
+      "pi": "L#-WILLOFTHEWISP-CHEAT",
+      "wf": "willowisp",
+      "wp": "willowisp\\WILLOWISP.TP2",
+      "wc": 6,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 6,
+      "x": 0,
+      "no": "Cheat: allows non-shaman PCs to access the shaman stronghold.",
+      "rd": 0
+    }
+  ]
+}

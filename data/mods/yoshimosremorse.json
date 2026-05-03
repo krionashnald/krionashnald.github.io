@@ -1,0 +1,106 @@
+{
+  "i": 224,
+  "t": "yoshimosremorse",
+  "sv": 1,
+  "ord": 300,
+  "c": "NPC EXPANSIONS",
+  "n": "Yoshimo's Remorse",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "pl": 2,
+    "zh-cn": 3
+  },
+  "no": "Expands Yoshimo's storyline in BG2 with additional scenes exploring his guilt, conflict, and the consequences of his choices.",
+  "conflicts": [
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "partial",
+      "reason": "Sarevok's Remorse conflicts with Yoshimo",
+      "myComps": "#0 Yoshimo's Remorse",
+      "theirComps": "#24 Sarevok's Remorse",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "YoshimoRomance",
+      "withId": 223,
+      "severity": "soft",
+      "reason": "Both can be installed together. Romancing Yoshimo means his Remorse arc won't trigger — player chooses path in-game via dialogue. No tp2 FORBID or MOD_IS_INSTALLED checks between them.",
+      "myComps": "#0 Yoshimo's Remorse",
+      "theirComps": "#0 Yoshimo Romance",
+      "source": "mod readme",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "yoshimo",
+          "portraits/yoshimos_remorse/yyosh.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/yoshimos-remorse/",
+  "a": "Lava Del'Vortel, jmaeq",
+  "v": "v3.2",
+  "sum": "Expands Yoshimo's storyline in BG2 with additional scenes exploring his guilt, conflict, and the consequences of his choices.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel and jmaeq",
+  "dl": "https://github.com/Gibberlings3/Yoshimos_Remorse",
+  "co": [
+    {
+      "n": "Yoshimo's Remorse",
+      "cn": 0,
+      "wf": "yoshimosremorse",
+      "wp": "yoshimosremorse\\YOSHIMOSREMORSE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Yoshimo's Remorse"
+    },
+    {
+      "n": "Bounty Hunter 10 / Fighter",
+      "no": "v Dual Class",
+      "cn": 1,
+      "wf": "yoshimosremorse",
+      "wp": "yoshimosremorse\\YOSHIMOSREMORSE.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "x": 0,
+      "g": "dc",
+      "scn": "Yoshimo's Remorse: Fighter/Thief Dual-Class (Only if Yoshimo was never recruited before)",
+      "tp2n": "Bounty Hunter 10 / Fighter"
+    },
+    {
+      "n": "Bounty Hunter 13 / Fighter",
+      "cn": 2,
+      "wf": "yoshimosremorse",
+      "wp": "yoshimosremorse\\YOSHIMOSREMORSE.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "x": 0,
+      "g": "dc",
+      "scn": "Yoshimo's Remorse: Fighter/Thief Dual-Class (Only if Yoshimo was never recruited before)",
+      "tp2n": "Bounty Hunter 13 / Fighter"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Yoshimos_Remorse"
+  }
+}

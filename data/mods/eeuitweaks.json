@@ -1,0 +1,821 @@
+{
+  "i": 18,
+  "t": "EEUITweaks",
+  "sv": 1,
+  "ord": 50,
+  "c": "INTERFACE",
+  "n": "EE UI Tweaks",
+  "no": "EE UI Tweaks v2.2 by AncientCowboy, Lefreut, and contributors. Modular collection of 59 UI tweaks — pick and choose. Many lefreut-branded components are incompatible with LeUI skins (they FORBID LeUI if detected). Also incompatible with Infinity UI for most components. Can install pre-EET or post-EET. cn:1020 uses ACTION_READLN which blocks automated installation.",
+  "ic": "https://forums.beamdog.com/discussion/60717/mod-eeuitweaks-mod-collection-all-ee-v2-2-platforms/p1",
+  "conflicts": [
+    {
+      "with": "LEUI-BG1EE",
+      "withId": 14,
+      "severity": "partial",
+      "reason": "Lefreut's skin conflicts with EEUITweaks Main Component; utility tweaks are compatible",
+      "myComps": "#1080 Portrait Picker #1090 #1091 CharGen #2020 Message Box #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store #5000 Tooltip #5030 Scroll #5040 #5041 Fonts",
+      "theirComps": "#0 Core component"
+    },
+    {
+      "with": "LeUI-SoD",
+      "withId": 15,
+      "severity": "soft",
+      "reason": "These specific EEUITweaks components FORBID LeUI-SoD (LeUI already includes their features). Other EEUITweaks components are compatible. WeiDU auto-skips the incompatible components if LeUI-SoD is detected. Safe to have both in preset — conflicting components simply won't install.",
+      "myComps": "#1080 Portrait Picker #1090 #1091 CharGen Screens #2020 Message Box Resize #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify Items #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store Tweaks #5000 Tooltip Scroll #5030 Scroll Bar #5040 #5041 Fonts",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "LeUI",
+      "withId": 16,
+      "severity": "partial",
+      "reason": "Lefreut's skin conflicts with EEUITweaks lefreut-branded components; utility tweaks are compatible. WeiDU auto-skips incompatible components.",
+      "myComps": "#1080 Portrait Picker #1090 #1091 CharGen #2020 Message Box #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store #5000 Tooltip #5030 Scroll #5040 #5041 Fonts",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "infinity_ui",
+      "withId": 17,
+      "severity": "hard",
+      "reason": "Most EEUITweaks lefreut-branded components are incompatible with Infinity UI. Utility tweaks (Mods Options, Quick Loot, etc.) are compatible.",
+      "myComps": "#1090 #1091 CharGen #2020 Message Box #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store #5000 Tooltip #5030 Scroll #5040 #5041 Fonts",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_gui",
+      "withId": 684,
+      "severity": "hard",
+      "reason": "EET GUI conflicts with these EEUITweaks components",
+      "myComps": "#1080 Portrait Picker #1090 #1091 CharGen #4005 #4006 Store Tweaks",
+      "theirComps": "#0 SoD GUI",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "a7-hiddengameplayoptions",
+      "withId": 374,
+      "severity": "hard",
+      "reason": "Both expose hidden engine options. EEUITweaks #1010 is redundant if A7 Hidden Gameplay Options is installed.",
+      "myComps": "#1010 Hidden Game Options",
+      "theirComps": "#0 Install all Hidden Gameplay Options",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "EET_gui",
+      "requiresId": 684,
+      "type": "soft",
+      "reason": "Some chargen and store components require EET GUI's SoD-style menus"
+    }
+  ],
+  "u": "https://github.com/r-e-d/EEUITweaks/releases",
+  "a": "AncientCowboy, Lefreut",
+  "v": "4.0.7",
+  "sum": "Collection of 58 individual UI tweaks you can pick and choose from: hidden tooltip options, dialog tweaks, inventory changes, and quality-of-life improvements.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "eet_compat": {
+    "ver": "v1.5",
+    "place": "post",
+    "notes": "Can install after EET_end"
+  },
+  "gh": {
+    "o": "r-e-d",
+    "r": "EEUITweaks"
+  },
+  "dl": "https://github.com/r-e-d/EEUITweaks/releases",
+  "langs": {
+    "en": 0
+  },
+  "au": "AstroBryGuy",
+  "co": [
+    {
+      "n": "Mods Options",
+      "cn": 1000,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Adds a 'Mods' button to the options screen for configuring mod settings in-game. Incompatible with LeUI-SoD.",
+      "tp2n": "Mods Options",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Hidden Game Options",
+      "cn": 1010,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Exposes hidden engine options (debug mode, extra combat info, etc.) in the gameplay options menu. Redundant if using A7 Hidden Gameplay Options — prefer that mod instead.",
+      "tp2n": "Hidden Game Options",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Default Button Position",
+      "cn": 1090,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_chargen",
+      "scn": "lefreut's Character Creation Screens",
+      "grn": "Startup/Options/Character Gen",
+      "no": "v Lefreut's Chargen Button Layout — Default button positioning in character creation screens. Incompatible with LeUI, Infinity UI, and EET GUI.",
+      "tp2n": "Default Button Position"
+    },
+    {
+      "n": "Reversed Button Position",
+      "cn": 1091,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_chargen",
+      "scn": "lefreut's Character Creation Screens",
+      "grn": "Startup/Options/Character Gen",
+      "no": "Reversed (swapped) button positioning in character creation screens. Incompatible with LeUI, Infinity UI, and EET GUI.",
+      "tp2n": "Reversed Button Position"
+    },
+    {
+      "n": "Mr2150's Random PC Generator",
+      "cn": 1020,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "WARNING: Uses ACTION_READLN for portrait picker input — blocks automated (unattended) installation. Generates random player characters at chargen.",
+      "tp2n": "Mr2150's Random PC Generator",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "BillyYank's Multi-Portrait Mod",
+      "cn": 1030,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "v Portrait Selectors — Allows selecting from multiple portrait sets during character creation. Works out of the box. Incompatible with full UI overhauls.",
+      "tp2n": "BillyYank's Multi-Portrait Mod",
+      "scn": "Portrait Selectors",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Mr2150's Portrait Picker (Scaleable)",
+      "cn": 1040,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Portrait picker that auto-scales portraits to fit. Requires Mr2150's portrait setup files.",
+      "tp2n": "Mr2150's Portrait Picker (Scaleable UI)",
+      "scn": "Portrait Selectors",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Mr2150's Portrait Picker (Non-Scaleable)",
+      "cn": 1041,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Portrait picker without auto-scaling — portraits must be pre-sized. Requires Mr2150's portrait setup files.",
+      "tp2n": "Mr2150's Portrait Picker (Non-Scaleable UI)",
+      "scn": "Portrait Selectors",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "lefreut's Portrait Picker",
+      "cn": 1080,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Lefreut's portrait selection UI for character creation. Incompatible with LeUI skins and EET GUI.",
+      "tp2n": "lefreut's Portrait Picker",
+      "scn": "Portrait Selectors",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Mr2150's Backup M_BG.lua",
+      "cn": 1042,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Creates a backup of M_BG.lua before portrait picker modifications. Safety net for Mr2150's portrait tools.",
+      "tp2n": "Mr2150's Backup M_BG.lua",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Mr2150's Update Portraits",
+      "cn": 1044,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Updates portrait references in Mr2150's portrait picker system.",
+      "tp2n": "Mr2150's Update Portraits",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Adul's Unhide Chargen Options",
+      "cn": 1050,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Reveals hidden character generation options (races, classes, alignments) that the engine supports but the UI hides. Incompatible with full UI overhauls.",
+      "tp2n": "Adul's Unhide Chargen Options",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Faydark's Abilities Auto-Roller",
+      "cn": 1070,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Automatically rerolls ability scores until a configurable minimum total is reached. QoL for players who would manually reroll hundreds of times anyway. Incompatible with Talents of Faerun ability score components.",
+      "tp2n": "Faydark's Abilities Auto-Roller/GrimLefourbe's BG2 UI",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Mr2150's Roll First",
+      "cn": 1060,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Moves ability score rolling to the beginning of character creation instead of the end. Speeds up rerolling — you see stats before committing to class/race. Incompatible with Talents of Faerun ability score components.",
+      "tp2n": "Mr2150's Roll First",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Display max proficiency limits",
+      "cn": 1100,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Shows maximum proficiency point limits in the proficiency selection screen. May display oddly with Talents of Faerun's proficiency system. Incompatible with LeUI-SoD.",
+      "tp2n": "Display max proficiency limits",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "Transparent Sidebars",
+      "cn": 2000,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Makes the game world sidebars (left/right panels) transparent. Incompatible with LeUI-SoD.",
+      "tp2n": "Transparent Sidebars",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "LavaDelVortel's Sculpted Transparent Sidebars",
+      "cn": 2090,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "LavaDelVortel's Sculpted Transparent Sidebars",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Feedback Message Box Buttons Hack",
+      "cn": 2010,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "v Feedback Message Box Resizers — Adds resize buttons to the combat feedback message box.",
+      "tp2n": "Feedback Message Box Buttons Hack",
+      "scn": "Feedback Message Box Re-sizers",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Adul's Message Box Resize Button",
+      "cn": 2020,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Adds a resize button to the feedback message box (Adul's implementation). Incompatible with LeUI skins.",
+      "tp2n": "Adul's Message Box Resize Button",
+      "scn": "Feedback Message Box Re-sizers",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Adul's Better Quick Loot",
+      "cn": 2030,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Improved quick loot panel — easier item pickup from containers and corpses. Incompatible with LeUI-SoD.",
+      "tp2n": "Adul's Better Quick Loot",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "lefreut's Level Up Glow with no Click",
+      "cn": 2040,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_levelup",
+      "scn": "lefreut's Better Level Up Indicators",
+      "grn": "Game World/Maps/Travel",
+      "no": "v Level Up Indicators — Portrait glow effect when a character can level up, no click needed. May appear under mouse cursor when pressing E key. Incompatible with LeUI and Dragonspear UI++.",
+      "tp2n": "lefreut's Level Up Glow no Click"
+    },
+    {
+      "n": "lefreut's Level Up Glow with Click",
+      "cn": 2042,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_levelup",
+      "scn": "lefreut's Better Level Up Indicators",
+      "grn": "Game World/Maps/Travel",
+      "no": "Portrait glow effect when a character can level up, requires click to dismiss.",
+      "tp2n": "lefreut's Level Up Glow with Click"
+    },
+    {
+      "n": "lefreut's Level Up Buttons",
+      "cn": 2044,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_levelup",
+      "scn": "lefreut's Better Level Up Indicators",
+      "grn": "Game World/Maps/Travel",
+      "no": "Adds dedicated level-up buttons to character portraits instead of glow effects.",
+      "tp2n": "lefreut's Level Up Buttons"
+    },
+    {
+      "n": "lefreut's 1.3-ish Dialog Box",
+      "cn": 2060,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Restores the dialog box style from EE patch 1.3. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's 1.3-ish Dialog Box",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Simple Centered Dialog",
+      "cn": 2050,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Centers the dialog box on screen with a simple layout.",
+      "tp2n": "Simple Centered Dialog",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Dee's Permanent Thieving Button",
+      "cn": 2070,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Adds a permanent thieving mode toggle button to the action bar — no need to keep re-selecting thieving abilities.",
+      "tp2n": "Dee's Permanent Thieving Button",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "elminster's Easier Area Cheats",
+      "cn": 2080,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Simplifies CLUA console area teleportation commands. Debug/cheat utility.",
+      "tp2n": "elminster's Easier Area Cheats",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "LavaDelVortel's Red Healthbar",
+      "cn": 2100,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "LavaDelVortel's Red Healthbar",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "lefreut's Keep Dialog Box active after death",
+      "cn": 2110,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Keeps the dialog box visible even after party leader dies mid-conversation. A7 Hidden Gameplay Options has a similar but broader option — prefer that if installed.",
+      "tp2n": "lefreut's Keep Dialog Box active after death",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "CLUAConsole for mobile",
+      "cn": 2120,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Enables the CLUA debug console on mobile/tablet platforms. Not relevant for desktop installs.",
+      "tp2n": "CLUAConsole for mobile",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Clickable dialog box",
+      "cn": 2130,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Makes the dialog box respond to mouse clicks for easier interaction.",
+      "tp2n": "Clickable dialog box",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "Replace the dragon button",
+      "cn": 2140,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Replace the dragon button",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "lefreut's Improved Record Screen",
+      "cn": 2900,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Enhanced character record screen layout. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Improved Record Screen",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "Leveling Progress Bars Tweaks",
+      "cn": 3000,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Modifies the XP progress bars shown on character portraits to be more informative.",
+      "tp2n": "Leveling Progress Bars Tweaks",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "Leveling Progress Bars Options",
+      "cn": 3010,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Additional configuration options for the leveling progress bars display.",
+      "tp2n": "Leveling Progress Bars Options",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "Mr2150's Journal Fixes",
+      "cn": 3020,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "v Journal Fixes — Fixes journal display bugs and layout issues (Mr2150's version). Compatible with lefreut's journal fixes.",
+      "tp2n": "Mr2150's Journal Fixes",
+      "scn": "Journal Fixes and Tweaks",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "lefreut's Journal (quests expanded by default)",
+      "cn": 3023,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_journal",
+      "scn": "Journal Fixes and Tweaks",
+      "grn": "Record/Inventory/Journal",
+      "no": "Improved journal with quest entries expanded by default. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Journal (quests expanded by default)"
+    },
+    {
+      "n": "lefreut's Journal (quests collapsed by default)",
+      "cn": 3024,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_journal",
+      "scn": "Journal Fixes and Tweaks",
+      "grn": "Record/Inventory/Journal",
+      "no": "Improved journal with quest entries collapsed by default. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Journal (quests collapsed by default)"
+    },
+    {
+      "n": "lefreut's Simple Journal Fixes",
+      "cn": 3070,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Lightweight journal bug fixes without full journal overhaul. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Simple Journal Fixes",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "lefreut's Customize Screens Tweaks",
+      "cn": 3028,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Improved character customization screens (colors, sounds, scripts). Compatible with Mr2150's journal fixes. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Customize Screens Tweaks",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "lefreut's Customize All Characters",
+      "cn": 3030,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Allows customizing ALL party members (not just your own characters). Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Customize All Characters",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "No charge to identify items",
+      "cn": 3040,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "no": "v Auto-Identify Cost — Free item identification. Choose one cost option.",
+      "tp2n": "No charge to identify items"
+    },
+    {
+      "n": "Pay 10gp to identify items",
+      "cn": 3041,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "tp2n": "Pay  10gp to identify items"
+    },
+    {
+      "n": "Pay 25gp to identify items",
+      "cn": 3042,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "tp2n": "Pay  25gp to identify items"
+    },
+    {
+      "n": "Pay 50gp to identify items",
+      "cn": 3043,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "tp2n": "Pay  50gp to identify items"
+    },
+    {
+      "n": "Pay 100gp to identify items",
+      "cn": 3044,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "tp2n": "Pay 100gp to identify items"
+    },
+    {
+      "n": "Pay 200gp to identify items",
+      "cn": 3045,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_identify",
+      "scn": "Mr2150's Auto-Identify Items",
+      "grn": "Record/Inventory/Journal",
+      "tp2n": "Pay 200gp to identify items"
+    },
+    {
+      "n": "With Item Comparison",
+      "cn": 3050,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_inventory",
+      "scn": "lefreut's Improved Inventory Screen",
+      "grn": "Record/Inventory/Journal",
+      "no": "v Lefreut's Improved Inventory — Enhanced inventory screen with item stat comparison tooltip when hovering equipped items. Incompatible with LeUI skins.",
+      "tp2n": "With Item Comparison"
+    },
+    {
+      "n": "Without Item Comparison",
+      "cn": 3051,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_inventory",
+      "scn": "lefreut's Improved Inventory Screen",
+      "grn": "Record/Inventory/Journal",
+      "no": "Enhanced inventory screen without the item comparison tooltip.",
+      "tp2n": "Without Item Comparison"
+    },
+    {
+      "n": "Default Button Position",
+      "cn": 4005,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_store",
+      "scn": "lefreut's Store Screen Tweaks",
+      "grn": "Stores/Dialogs/Spell Books",
+      "no": "v Lefreut's Store Button Layout — Default store button positioning. Incompatible with LeUI, Infinity UI, and EET GUI.",
+      "tp2n": "Default Button Position"
+    },
+    {
+      "n": "Reversed Button Position",
+      "cn": 4006,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_store",
+      "scn": "lefreut's Store Screen Tweaks",
+      "grn": "Stores/Dialogs/Spell Books",
+      "no": "Reversed store button positioning. Incompatible with LeUI, Infinity UI, and EET GUI.",
+      "tp2n": "Reversed Button Position"
+    },
+    {
+      "n": "lefreut's Store Screen Tweaks: Default",
+      "cn": 4000,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Default store screen improvements. Incompatible with Infinity UI and LeUI skins.",
+      "tp2n": "Joined Store Panels Using lefreut's Solution",
+      "grn": "Stores/Dialogs/Spell Books"
+    },
+    {
+      "n": "lefreut's Steal Multiple Items",
+      "cn": 4010,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Allows stealing multiple items in a single thieving attempt instead of one at a time. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Steal Multiple Items",
+      "grn": "Stores/Dialogs/Spell Books"
+    },
+    {
+      "n": "Adul's Smooth Selling",
+      "cn": 4020,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Streamlines the selling process at stores — faster item sales with fewer clicks. Incompatible with LeUI skins.",
+      "tp2n": "Adul's Smooth Selling",
+      "grn": "Stores/Dialogs/Spell Books"
+    },
+    {
+      "n": "Bubb's Store Extension",
+      "cn": 4025,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Extends store menu item lists to fill the full screen height. Incompatible with LeUI and LeUI-SoD.",
+      "tp2n": "Bubb's Store Extension",
+      "grn": "Stores/Dialogs/Spell Books"
+    },
+    {
+      "n": "lefreut's Inscribed Arcana",
+      "cn": 4030,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_spellbook",
+      "scn": "Spell Books",
+      "grn": "Stores/Dialogs/Spell Books",
+      "no": "v Spellbook Overhaul — Redesigned spellbook interface. Incompatible with LeUI skins and SubtleD's Improved Identify. May conflict with Talents of Faerun.",
+      "tp2n": "lefreut's Inscribed Arcana"
+    },
+    {
+      "n": "Kilivitz's Classic Spellbooks",
+      "cn": 4040,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_spellbook",
+      "scn": "Spell Books",
+      "grn": "Stores/Dialogs/Spell Books",
+      "no": "Restores classic-style spellbook layout. Incompatible with SubtleD's Improved Identify. May conflict with Talents of Faerun.",
+      "tp2n": "Kilivitz's Classic Spellbooks"
+    },
+    {
+      "n": "lefreut's Tooltip Scroll",
+      "cn": 5000,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Adds scrolling to tooltips that overflow the screen. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Tooltip Scroll",
+      "grn": "Multiplayer/General/Other"
+    },
+    {
+      "n": "lefreut's Box 5 (Dialog Box) Override",
+      "cn": 5020,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Overrides the dialog box (Box 5) rendering with lefreut's custom layout.",
+      "tp2n": "lefreut's Box 5 (Dialog Box) Override",
+      "grn": "Multiplayer/General/Other"
+    },
+    {
+      "n": "lefreut's Scroll Bar Override",
+      "cn": 5030,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "no": "Replaces scroll bar styling throughout the UI. Incompatible with LeUI skins.",
+      "tp2n": "lefreut's Scroll Bar Override",
+      "grn": "Multiplayer/General/Other"
+    },
+    {
+      "n": "Non-Italicized fonts for descriptions",
+      "cn": 5040,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_fonts",
+      "scn": "lefreut's Improved Fonts",
+      "grn": "Multiplayer/General/Other",
+      "no": "v Lefreut's Improved Fonts — Changes item/spell description text from italicized to non-italicized for readability.",
+      "tp2n": "Non-Italicized fonts for descriptions"
+    },
+    {
+      "n": "BG2 vanilla fonts for descriptions",
+      "cn": 5041,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "exact",
+      "g": "eeui_fonts",
+      "scn": "lefreut's Improved Fonts",
+      "grn": "Multiplayer/General/Other",
+      "no": "Restores the original BG2 font style for item/spell descriptions.",
+      "tp2n": "BG2 vanilla fonts for descriptions"
+    },
+    {
+      "n": "dummy",
+      "cn": 62,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "dummy"
+    },
+    {
+      "n": "dummy",
+      "cn": 63,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "dummy",
+      "grn": "Startup/Options/Character Gen"
+    },
+    {
+      "n": "dummy",
+      "cn": 64,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "dummy",
+      "grn": "Game World/Maps/Travel"
+    },
+    {
+      "n": "dummy",
+      "cn": 65,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "dummy",
+      "grn": "Record/Inventory/Journal"
+    },
+    {
+      "n": "dummy",
+      "cn": 66,
+      "wf": "eeuitweaks",
+      "wp": "eeuitweaks\\EEUITWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "dummy",
+      "grn": "Stores/Dialogs/Spell Books"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "EEUITweaks cn:1060 (Roll First) and cn:1070 (Auto-Roller) modify chargen ability score UI which may conflict with ToF cn:80000/80001 (Ability Score Modifiers) and cn:80100 (Point-Buy Stats) that replace the score system with Lua. EEUITweaks cn:1100 (Display max proficiency limits) may display oddly with ToF cn:81100 (Revised Weapon Proficiency) which externalizes proficiencies to Lua. All are soft conflicts — they may coexist but UI may look wrong. None of these EEUITweaks components are in the Ultimate preset.",
+      "myComps": "#1060 Roll First #1070 Auto-Roller #1100 Display max proficiency limits",
+      "theirComps": "#80000 #80001 Ability Score Modifiers #80100 Point-Buy Stats #81100 Revised Weapon Proficiency",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

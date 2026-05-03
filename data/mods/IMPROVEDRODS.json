@@ -1,0 +1,180 @@
+{
+  "i": 286,
+  "t": "ImprovedRods",
+  "sv": 1,
+  "ord": 300,
+  "c": "ITEM ADDITION MODS",
+  "n": "Improved Rods",
+  "no": "Only a few items, and each can be disabled in an .ini. Let this go after IR or FA' changes Improved Rods of Lordly Might and Terror overlaps with ZSTweaks' similar components for the rods of Terror and Lordly Might",
+  "conflicts": [],
+  "u": "https://forums.beamdog.com/discussion/comment/1170437/#Comment_1170437",
+  "a": "Tresset",
+  "sum": "Rebalances the Rod of Terror by limiting its charisma drain to 8 hours, and strengthens the three Lordly weapons with boosted enchantment bonuses and special combat effects.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "RODMACE",
+          "mace",
+          "Lordly Mace +3",
+          "This mace has been created via the Rod of Lordly Might. Use this item's special use to change it back into the Rod to choose another weapon.\n\nSTATISTICS:\n\nCombat abilities:\nâ€“ Target must save vs. Spell at +2 or panic for 4 rounds\n\nTHAC0: +3\nDamage: 1d6+4 +2 acid\nDamage type: Crushing\nSpeed Factor: 5\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "RODSPEAR",
+          "spear",
+          "Lordly Spear +3",
+          "This spear has been created via the Rod of Lordly Might. Use this item's special use to change it back into the Rod to choose another weapon.\n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d6+3, +2d4 magical damage\nDamage type: Piercing\nSpeed Factor: 3\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "RODSWORD",
+          "large sword",
+          "Lordly Flaming Long Sword +3",
+          "This sword has been created via the Rod of Lordly Might. Use this item's special use to change it back into the Rod to choose another weapon.\n\nSTATISTICS:\n\nCombat abilities:\nâ€“ Target must save vs. Death at +3 or be held for 5 rounds\n\nTHAC0: +3\nDamage: 1d8+3 +2 fire damage\nDamage type: Slashing\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "RODS05",
+          "staff",
+          "Rod of Terror",
+          "When activated, this rod may be used as a staff +3. Any creature hit by the rod must make a Saving Throw vs. Spell or flee in terror, fearing the wielder as if he or she were a flesh-eating demon from the Abyss. There is a drawback to using this rod, however: Each time the rod is used, there is a 20% chance that the wielder loses one point of Charisma permanently.\n\nSTATISTICS:\n\nCombat abilities:\n– Target must save vs. Spell at +4 or flee in terror for 4 rounds\n– 20% chance per use of the wielder losing 1 point of Charisma permanently\n\nTHAC0: +3\nDamage: 1d6+3 (crushing)\nSpeed Factor: 1\nProficiency Type: Quarterstaff\nType: Two-handed\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://forums.beamdog.com/discussion/comment/1170437/#Comment_1170437",
+  "au": "Tresset",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Improve Rods",
+      "tp2n": "Improve Rods",
+      "cn": 0,
+      "wf": "IMPROVEDRODS",
+      "wp": "IMPROVEDRODS\\SETUP-IMPROVEDRODS.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "it": 4,
+      "itC": {
+        "mace": 1,
+        "spear": 1,
+        "large sword": 1,
+        "staff": 1
+      }
+    }
+  ],
+  "advisories": [
+    {
+      "with": "ZSTweaks",
+      "withId": 352,
+      "severity": "soft",
+      "reason": "Both modify Rod of Terror (RODS05.itm) and Rod of Lordly Might (RODS02.itm). Last installed wins",
+      "myComps": "#0 Improve Rods",
+      "theirComps": "#1587 Rod of Terror / #1190 Rod of Lordly Might",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

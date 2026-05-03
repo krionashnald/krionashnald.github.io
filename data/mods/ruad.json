@@ -1,0 +1,1586 @@
+{
+  "i": 477,
+  "t": "ruad",
+  "sv": 1,
+  "ord": 370,
+  "c": "ITEM ADDITION MODS",
+  "n": "Ruad Ro'fhessa",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "es": 3,
+    "ru": 4,
+    "it": 5,
+    "zh-cn": 6
+  },
+  "no": "Item upgrade mod",
+  "u": "https://github.com/Spellhold-Studios/Ruad-Rofhessa-Item-Upgrade",
+  "a": "Various",
+  "v": "v29.4.0",
+  "sum": "A mod for Baldur's Gate II that introduces Ruad, a smith who forges and improves items, found in Waukeen's Promenade.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "RuadRofhessa"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "U#SW1H01",
+          "large sword",
+          "Blade of the Red Rose",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "cha": 3,
+            "magicResist": 10,
+            "ac": 1,
+            "saves": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 8
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#SW1H02",
+          "large sword",
+          "Dancing Couple's Sword",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#SW1H03",
+          "large sword",
+          "Vampire's Revenge +2",
+          "This ornate weapon has \"Vampiric Sword\" written in bold Common text along the entire length of its blade.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "U#SW1H04",
+          "large sword",
+          "Black Sword of Undeath",
+          "This ornate weapon has \"Vampiric Sword\" written in bold Common text along the entire length of its blade.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "str": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 15
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#SW1H05",
+          "large sword",
+          "Yoshimo's Poisoned Katana",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Thief"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Good",
+                "Lawful Evil",
+                "Lawful Good"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#MISC01",
+          "misc",
+          "Spirit of Yoshimo",
+          "",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#S1H05A",
+          "large sword",
+          "Yoshimo's Poisoned Katana",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Thief"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Good",
+                "Lawful Evil",
+                "Lawful Good"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#BOOT01",
+          "boots",
+          "Dragon Slippers",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. \n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "fireResist": 25,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "U#RING01",
+          "ring",
+          "Ring of Abjuration",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING02",
+          "ring",
+          "Ring of Alteration",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING03",
+          "ring",
+          "Ring of Conjuration",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING04",
+          "ring",
+          "Ring of Divination",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING05",
+          "ring",
+          "Ring of Enchantment",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING06",
+          "ring",
+          "Ring of Evocation",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING07",
+          "ring",
+          "Ring of Illusion",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#RING08",
+          "ring",
+          "Ring of Necromancy",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#CHAN01",
+          "armor",
+          "Adamantine Chain",
+          "This drow armor's lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions.\n\nThis item, like most drow equipment, is created using adamantine, an alloy of adamantite that quickly turns to dust if removed from the Underdark.\n\nSTATISTICS:\n\nArmor Class: 5\nRequires:\n 5 Strength\n\nWeight: 7",
+          {
+            "ac": 0,
+            "magicResist": 10,
+            "cha": -2,
+            "fireResist": 15,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 15
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "races": [
+                "Elf",
+                "Half-Elf",
+                "Human"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#BELT01",
+          "belt",
+          "Warlord's Girdle",
+          "",
+          {
+            "dex": 2,
+            "str": 2,
+            "con": 2
+          }
+        ],
+        [
+          "U#AMUL01",
+          "amulet",
+          "Kaligun's Amulet of Greater Resistance",
+          "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "magicResist": 10,
+            "ac": 2,
+            "saves": 2
+          }
+        ],
+        [
+          "U#AMUL02",
+          "amulet",
+          "Jaheira's Harper Pin",
+          "",
+          {
+            "saveSpell": 5,
+            "magicResist": 5,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 100
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian"
+              ],
+              "races": [
+                "Half-Elf"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Good",
+                "Lawful Evil",
+                "Lawful Good"
+              ],
+              "minStr": 15,
+              "minDex": 17,
+              "minCon": 17,
+              "minInt": 10,
+              "minWis": 14,
+              "minCha": 15
+            }
+          }
+        ],
+        [
+          "U#AX1H01",
+          "axe",
+          "Frostfury",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. \n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 7\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "coldResist": 40,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "U#WAND01",
+          "wand",
+          "Wand of Hard Knocks",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 100,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "U#AX2H01",
+          "halberd",
+          "Messerschmitt Stone Reaver Axe",
+          "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.\n\nSTATISTICS:\n\nDamage: 1d10 (piercing or slashing)\nSpeed Factor: 9\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 3,
+            "dmg": "2d6",
+            "dmgBonus": 3,
+            "ac": 1,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Elf",
+                "Half-Elf",
+                "Half-Orc",
+                "Human"
+              ],
+              "minStr": 17
+            }
+          }
+        ],
+        [
+          "U#STAF01",
+          "staff",
+          "Blade of the Red Rose",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 8,
+            "thac0": 4,
+            "dex": -2,
+            "cha": -4,
+            "ac": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 13
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#PLAT01",
+          "armor",
+          "Adamantine Plate",
+          "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.\n\nSTATISTICS:\n\nArmor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)\nRequires:\n 15 Strength\n\nWeight: 70",
+          {
+            "ac": -3,
+            "fireResist": 15,
+            "cha": -2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 15
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 19
+            }
+          }
+        ],
+        [
+          "U#CLCK01",
+          "cloak",
+          "Cloak of the Elemental Star",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.\n\nSTATISTICS:\n\nWeight: 3",
+          {
+            "ac": 2,
+            "saves": 2,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#CLK01A",
+          "dart",
+          "Elemental Star Dart",
+          "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n\nSTATISTICS:\n\nDamage: 1d3 (missile)\nSpeed Factor: 2\nProficiency Type: Dart\nType: One-handed\n\nWeight: 0",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 5,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#CLCK02",
+          "cloak",
+          "Cloak of the Shadow",
+          "",
+          {
+            "ac": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#LEAT01",
+          "armor",
+          "Pikim's Armor",
+          "",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#DAGG01",
+          "dagger",
+          "Neb's Nasty Cutter +4",
+          "",
+          {
+            "thac0": 4,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#SW1H08",
+          "short sword",
+          "Shadow Thief's Blade",
+          "",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#BOW01",
+          "bow",
+          "Enchanted Bow of Arvoreen",
+          "",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "short bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Thief"
+              ],
+              "races": [
+                "Halfling"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#ROBE01",
+          "armor",
+          "Robe of Resistance",
+          "",
+          {
+            "saveBreath": 1,
+            "ac": 5,
+            "savePoly": 1,
+            "fireResist": 20,
+            "coldResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#HALB01",
+          "halberd",
+          "Dragon's Tooth",
+          "",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "fireResist": 90,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "U#CLCK03",
+          "cloak",
+          "Cloak of Thay",
+          "",
+          {
+            "ac": 2,
+            "saves": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#CLCK04",
+          "cloak",
+          "Nature's Cloak",
+          "",
+          {
+            "ac": 1,
+            "coldResist": 25,
+            "fireResist": 25,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 25
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "minStr": 13,
+              "minDex": 9,
+              "minCon": 13,
+              "minInt": 12,
+              "minWis": 18,
+              "minCha": 15
+            }
+          }
+        ],
+        [
+          "U#STAF02",
+          "staff",
+          "Nature's Staff",
+          "",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "minStr": 13,
+              "minDex": 9,
+              "minCon": 13,
+              "minInt": 12,
+              "minWis": 18,
+              "minCha": 15
+            }
+          }
+        ],
+        [
+          "U#STAF03",
+          "staff",
+          "Staff of Many Magics",
+          "",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "ac": 2,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#BLUN01",
+          "morning star",
+          "The Drowsy Wyvern",
+          "",
+          {
+            "speed": 5,
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "U#CLCK05",
+          "cloak",
+          "Cloak of the Shark Father",
+          "",
+          {
+            "ac": 1,
+            "saves": 1,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#BRAC02",
+          "bracers",
+          "Fluent Fingers",
+          "",
+          {
+            "ac": 4
+          }
+        ],
+        [
+          "U#RING09",
+          "ring",
+          "Ring of the Thief",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#BRAC03",
+          "bracers",
+          "Gauntlets of Assassination",
+          "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "dex": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "U#SW1H09",
+          "short sword",
+          "Kiss of Death",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#LEAT02",
+          "armor",
+          "Hide of Shades",
+          "Studded leather armor has little in common with normal leather armor. Instead of a hardened shell, studded leather offers hundreds of metal rivets affixed to a supple backing. The numerous studs form a flexible coat of metal that helps to turn aside slashing and cutting attacks, while the leather is little more than a means of securing the rivets in place. \n\nSTATISTICS:\n\nArmor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)\nRequires:\n 6 Strength\n\nWeight: 25",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "U#SW2H02",
+          "large sword",
+          "Lava's Bane",
+          "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 10\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 8,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "magicResist": 10,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "U#BLUN03",
+          "mace",
+          "Wooden Stake",
+          "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "U#BOW02",
+          "bow",
+          "Bow of Uden",
+          "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: +1 (missile)\nSpeed Factor: 7\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 18 Strength\n\nWeight: 10",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "U#STAF04",
+          "staff",
+          "Staff of Resurrection",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#RING10",
+          "ring",
+          "Ring of Time Control",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Mage",
+                "Shaman",
+                "Sorcerer"
+              ],
+              "minInt": 16
+            }
+          }
+        ],
+        [
+          "U#HELM01",
+          "helmet",
+          "Incandescent Ioun Stone",
+          "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "int": 1,
+            "wis": 1,
+            "con": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "U#SW1H06",
+          "large sword",
+          "Corthala Family Blade +3",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger",
+                "Thief"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Lawful Evil",
+                "Lawful Neutral"
+              ],
+              "minStr": 17,
+              "minDex": 18,
+              "minCon": 16,
+              "minWis": 14
+            }
+          }
+        ],
+        [
+          "U#SW1H07",
+          "large sword",
+          "Corthala Family Blade +4",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d10",
+            "dmgBonus": 4,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger",
+                "Thief"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Lawful Evil",
+                "Lawful Neutral"
+              ],
+              "minStr": 17,
+              "minDex": 18,
+              "minCon": 16,
+              "minWis": 14
+            }
+          }
+        ],
+        [
+          "U#DART01",
+          "dart",
+          "Crimson Flame Dart",
+          "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n\nSTATISTICS:\n\nDamage: 1d3 (missile)\nSpeed Factor: 2\nProficiency Type: Dart\nType: One-handed\n\nWeight: 0",
+          {
+            "thac0": 5,
+            "dmg": "1d5",
+            "dmgBonus": 5,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minDex": 10
+            }
+          }
+        ],
+        [
+          "U#HELM02",
+          "helmet",
+          "Chaos Stone",
+          "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saveDeath": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#HELM03",
+          "helmet",
+          "Improved Chaos Stone",
+          "This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saveDeath": 3,
+            "fireResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "U#SW2H01",
+          "large sword",
+          "Undead Bane",
+          "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 10\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "races": [
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ],
+              "minStr": 14
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#PLAT02",
+          "armor",
+          "Plate of Many Dragons",
+          "",
+          {
+            "ac": -2,
+            "coldResist": 50,
+            "fireResist": 50,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 90
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "U#HELM04",
+          "helmet",
+          "Helm of Many Dragons",
+          "",
+          {
+            "fireResist": 70,
+            "coldResist": 25,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 70
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "U#SHLD01",
+          "shield",
+          "Shield of Many Dragons",
+          "",
+          {
+            "ac": 3,
+            "coldResist": 25,
+            "fireResist": 70,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 70
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "U#BRAC01",
+          "bracers",
+          "Mits of Shaiman",
+          "",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+15 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            }
+          }
+        ],
+        [
+          "U#BLUN02",
+          "morning star",
+          "Cold Shoulder",
+          "",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "2d5",
+            "dmgBonus": 5,
+            "fireResist": 50,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Ruad-Rofhessa-Item-Upgrade",
+  "au": "Isewein",
+  "co": [
+    {
+      "n": "Ruad Ro'fhessa (SoA)",
+      "tp2n": "Ruad Ro'fhessa (SoA)",
+      "cn": 0,
+      "wf": "ruad",
+      "wp": "ruad\\RUAD.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "it": 62,
+      "itC": {
+        "large sword": 10,
+        "misc": 1,
+        "boots": 1,
+        "ring": 10,
+        "armor": 6,
+        "belt": 1,
+        "amulet": 2,
+        "axe": 1,
+        "wand": 1,
+        "halberd": 2,
+        "staff": 4,
+        "cloak": 5,
+        "dart": 2,
+        "dagger": 1,
+        "short sword": 2,
+        "bow": 2,
+        "morning star": 2,
+        "bracers": 3,
+        "mace": 1,
+        "helmet": 4,
+        "shield": 1
+      }
+    },
+    {
+      "n": "Ruad Ro'fhessa (ToB)",
+      "tp2n": "Ruad Ro'fhessa (ToB)",
+      "cn": 10,
+      "wf": "ruad",
+      "wp": "ruad\\RUAD.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    }
+  ]
+}

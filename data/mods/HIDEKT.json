@@ -1,0 +1,539 @@
+{
+  "i": 691,
+  "t": "hidekt",
+  "sv": 1,
+  "ord": 615,
+  "c": "KIT & CLASS MODS",
+  "n": "Hidden Kits",
+  "no": "Beta v0.95 (mid-2000s). Uses wholesale CRE replacement (COPY not COPY_EXISTING) — destroys ALL prior mod changes to NPC creature files. No EE/EET awareness. Fundamentally incompatible with SCS, ToF, npc_ee NPC customization in modded installs.",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Hidden Kits replaces NPC CRE files wholesale, destroying SCS NPC customization changes. Fundamentally incompatible.",
+      "myComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "theirComps": "#4100 Improved NPC customization",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "Hidden Kits replaces NPC CRE files wholesale, destroying ToF NPC customization changes.",
+      "myComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "theirComps": "#60300 NPC customisation",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Both modify NPC kits. Hidden Kits replaces CRE files wholesale, overwriting npc_ee changes.",
+      "myComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "theirComps": "#2000 NPC class/stat/kit choices",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "hard",
+      "reason": "Both assign kits to NPCs. Hidden Kits replaces CRE files wholesale.",
+      "myComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "S9BGEENPCTWEAKS",
+      "withId": 510,
+      "severity": "hard",
+      "reason": "Both assign kits to NPCs. Hidden Kits replaces CRE files wholesale.",
+      "myComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify xplevel.2da Druid row. Last installed wins.",
+      "myComps": "#1 Druid XP modification",
+      "theirComps": "#2290 #2291 #2292 #2293 #2294 #2295 #2296 #2297 Druid Spell Progression",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "Z_SPSTEL": {
+        "passive": [
+          {
+            "n": "Fighter Level Trails",
+            "type": "desc",
+            "desc": "Fighter level trails Mage by 1 after activation. -2 AC and -3 THAC0 when ability inactive."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Arcane Armor",
+            "freq": "1/day (more at 19/25/31)",
+            "effects": "12 hrs, undispellable. AC set to 1 (+1 at 16/20/25/31). Struck targets drain 1d4 HP. Lv20+: -1 casting speed.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Fighter→Mage dual at lv12. Loses 75K XP per level gained."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE"
+        ],
+        "note": "Accelerated Fighter→Mage dual (active at lv12)",
+        "spellRestrictions": {
+          "note": "Fighter→Mage dual. Mage spellcasting available after class activation."
+        },
+        "statBonus": {
+          "note": "Permanent -2 AC, -3 THAC0 when Arcane Armor inactive."
+        },
+        "hlaPool": {
+          "class": "MAGE",
+          "dualClass": "Fighter->Mage",
+          "note": "Fighter→Mage dual. Custom Arcane Armor ability."
+        }
+      },
+      "Z_SYLWRD": {
+        "passive": [
+          {
+            "n": "Fighter Level Trails",
+            "type": "desc",
+            "desc": "Fighter level trails Druid by 1. Choose: Melee (+2 THAC0, +7 dmg melee; -10 THAC0 missiles) or Druidic Magic (-3 casting speed, permanent Improved Alacrity; -7 THAC0 physical)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Fighter→Druid dual at lv12. Loses all shapeshifting. Loses 75K XP per level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/DRUID"
+        ],
+        "note": "Accelerated Fighter→Druid dual",
+        "spellRestrictions": {
+          "note": "Fighter→Druid dual. Druid spellcasting available after class activation. Loses all shapeshifting."
+        },
+        "statBonus": {
+          "note": "Melee specialization path (+2 THAC0, +7 melee dmg) or Druidic Magic path (-3 casting speed)."
+        },
+        "hlaPool": {
+          "class": "DRUID",
+          "dualClass": "Fighter->Druid",
+          "note": "Fighter→Druid dual. Melee or Druidic Magic specialization."
+        }
+      },
+      "Z_SHDBLD": {
+        "passive": [
+          {
+            "n": "Fighter Level Trails",
+            "type": "desc",
+            "desc": "Fighter level trails Thief by 1. Lv18+: -7 THAC0 missiles, -15 trap setting/pickpocketing."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Fighter→Thief dual at lv12. Loses all snare traps. HLA: +1 backstab multiplier (2x selectable)."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/THIEF"
+        ],
+        "note": "Accelerated Fighter→Thief dual",
+        "hlaPool": {
+          "class": "THIEF",
+          "include": [
+            "Increase Backstab Multiplier (HLA, 2x selectable)"
+          ],
+          "note": "Fighter→Thief dual. Custom HLA: +1 backstab multiplier (2x selectable)"
+        },
+        "spellRestrictions": {
+          "note": "Fighter→Thief dual. No spellcasting. Loses all snare traps."
+        },
+        "statBonus": {
+          "note": "Lv18+: -7 THAC0 missiles, -15 trap setting/pickpocketing."
+        }
+      },
+      "Z_ELDRPH": {
+        "passive": [
+          {
+            "n": "Mage Level Trails",
+            "type": "desc",
+            "desc": "Mage level trails Thief by 1. Takes 30% extra missile damage (except during Obfuscation)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Obfuscation",
+            "freq": "1/day (more at 20/25/32)",
+            "effects": "6 hrs: Improved Invisibility, MR 10%+10%/tier, Non-Detection at 24+.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Mage→Thief dual at lv12. No snare traps. Loses 112.5K XP per level (highest penalty)."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/THIEF"
+        ],
+        "note": "Accelerated Mage→Thief dual",
+        "spellRestrictions": {
+          "note": "Mage→Thief dual. Mage spellcasting retained. No snare traps."
+        },
+        "statBonus": {
+          "note": "Takes 30% extra missile damage (except during Obfuscation)."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "dualClass": "Mage->Thief",
+          "note": "Mage→Thief dual. Obfuscation ability (Improved Invisibility + MR)."
+        }
+      },
+      "Z_PRELTE": {
+        "passive": [
+          {
+            "n": "Fighter Level Trails",
+            "type": "desc",
+            "desc": "Fighter level trails Cleric by 1. Permanent -5 THAC0 missiles."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Channel Holy Might",
+            "freq": "1/day (more at 17/22/28/35)",
+            "effects": "6 hrs: +1 STR/DEX/CON per 4 caster levels (max +5). Lv24+: STR set to 25. While active: -16 THAC0 missiles.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Fighter→Cleric dual at lv12. Loses 75K XP per level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/CLERIC"
+        ],
+        "note": "Accelerated Fighter→Cleric dual",
+        "spellRestrictions": {
+          "note": "Fighter→Cleric dual. Cleric spellcasting available after class activation."
+        },
+        "statBonus": {
+          "note": "Permanent -5 THAC0 missiles."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "dualClass": "Fighter->Cleric",
+          "note": "Fighter→Cleric dual. Channel Holy Might innate."
+        }
+      },
+      "Z_ARCHMG": {
+        "passive": [
+          {
+            "n": "Cleric Level Trails",
+            "type": "desc",
+            "desc": "Cleric level trails Mage by 1. Permanent -4 AC except during Arcane Sanctuary."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Arcane Sanctuary",
+            "freq": "1/day (more at 19/25/31)",
+            "effects": "12 hrs: AC set to 3 (+1/tier). Lv20+: backstab immunity. HLA Conduit: -1 casting time, costs lv8 slot.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Cleric→Mage dual at lv12. Loses 67.5K XP per level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MAGE"
+        ],
+        "note": "Accelerated Cleric→Mage dual",
+        "hlaPool": {
+          "class": "MAGE",
+          "include": [
+            "Conduit"
+          ],
+          "note": "Cleric→Mage dual. Custom HLA: Conduit (-1 casting time, costs lv8 slot)"
+        },
+        "spellRestrictions": {
+          "note": "Cleric→Mage dual. Both cleric and mage spellcasting after activation."
+        },
+        "statBonus": {
+          "note": "Permanent -4 AC except during Arcane Sanctuary."
+        }
+      },
+      "Z_DVRANG": {
+        "passive": [
+          {
+            "n": "Cleric Level Trails",
+            "type": "desc",
+            "desc": "Cleric level trails Ranger by 1. Receives Divine Bow +3 and Divine Blades +3 (arrows as +5 enchantment)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cleric→Ranger dual at lv12. Cannot cast cleric spells while wielding divine weapons. -3 THAC0 without divine weapons. -30 stealth."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/RANGER"
+        ],
+        "note": "Accelerated Cleric→Ranger dual",
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Cleric→Ranger dual"
+        },
+        "spellRestrictions": {
+          "note": "Cleric→Ranger dual. Cannot cast cleric spells while wielding divine weapons."
+        },
+        "statBonus": {
+          "note": "Permanent -3 THAC0 without divine weapons. -30 stealth."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "Z_SYLWRD",
+          "druid",
+          "Sylvan Warden",
+          "Druid guardian of ancient forests. Enhanced plant magic and woodland defense."
+        ],
+        [
+          "Z_SHDBLD",
+          "thief",
+          "Shadow Blade",
+          "Thief wielding shadow-forged weapons. Enhanced stealth and shadow strikes."
+        ],
+        [
+          "Z_SPSTEL",
+          "mage",
+          "Spell Steel",
+          "Mage who channels magic through steel. Armored caster with blade skills."
+        ],
+        [
+          "Z_ELDRPH",
+          "thief",
+          "Eldritch Phantom",
+          "Thief using eldritch magic to phase through barriers. Ghostly abilities."
+        ],
+        [
+          "Z_PRELTE",
+          "cleric",
+          "Prelate",
+          "High-ranking cleric with enhanced divine authority and leadership powers."
+        ],
+        [
+          "Z_ARCHMG",
+          "mage",
+          "Archmage",
+          "Master wizard with enhanced spell power and arcane mastery abilities."
+        ],
+        [
+          "Z_DVRANG",
+          "ranger",
+          "Sylvan Justicar",
+          "Ranger enforcing natural law. Combines tracking with nature-based justice."
+        ]
+      ]
+    }
+  },
+  "u": "http://www.spellholdstudios.net/ie/hiddenkit",
+  "a": "Zyraen",
+  "sum": "Introduces hidden dual-class kits obtained at level 12 with accelerated inactive class leveling and unique abilities. Optionally applies kits to Bioware NPCs.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "http://www.spellholdstudios.net/ie/hiddenkit",
+  "au": "zyraen",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 0,
+      "n": "Hidden Kits (core)",
+      "tp2n": "Hidden Kits",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 0,
+      "no": "Adds hidden dual-class kit system triggered at level 12. Extends DPLAYER3.BCS.",
+      "k": 7,
+      "kC": {
+        "druid": 1,
+        "thief": 2,
+        "mage": 2,
+        "cleric": 1,
+        "ranger": 1
+      }
+    },
+    {
+      "cn": 1,
+      "n": "Druid XP set to Mage XP for levels 14-20",
+      "tp2n": "Druid XP Req set to Mage XP Req for levels 14-20",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 1,
+      "no": "Modifies xplevel.2da Druid row. Conflicts with cdtweaks and other XP table mods."
+    },
+    {
+      "cn": 2,
+      "n": "Aerie the Archmage",
+      "tp2n": "Aerie the Archmage",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 2,
+      "x": 0,
+      "no": "Replaces Aerie CRE files. Cleric→Mage dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 3,
+      "n": "Anomen the Prelate",
+      "tp2n": "Anomen the Prelate",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 3,
+      "x": 0,
+      "no": "Fighter→Cleric dual-class kit. Script-based.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 4,
+      "n": "Imoen the Eldritch Phantom",
+      "tp2n": "Imoen the Eldritch Phantom",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 4,
+      "x": 0,
+      "no": "Replaces Imoen CRE files. Mage→Thief dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 5,
+      "n": "Jaheira the Sylvan Warden",
+      "tp2n": "Jaheira the Sylvan Warden",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 5,
+      "x": 0,
+      "no": "Replaces Jaheira CRE files. Fighter→Druid dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 6,
+      "n": "Jan the Eldritch Phantom",
+      "tp2n": "Jan the Eldritch Phantom",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 6,
+      "x": 0,
+      "no": "Replaces Jan CRE files. Mage→Thief dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 7,
+      "n": "Korgan the Shadow Blade",
+      "tp2n": "Korgan the Shadow Blade",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 7,
+      "x": 0,
+      "no": "Replaces Korgan CRE files. Fighter→Thief dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 8,
+      "n": "Mazzy the Prelate",
+      "tp2n": "Mazzy the Prelate, w/ Modified Items",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 8,
+      "x": 0,
+      "no": "Replaces Mazzy CRE files. Fighter→Cleric dual-class kit. Adds modified items.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 9,
+      "n": "Minsc the Sylvan Justicar",
+      "tp2n": "Minsc the Sylvan Justicar",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 9,
+      "x": 0,
+      "no": "Replaces Minsc CRE files. Cleric→Ranger dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 10,
+      "n": "Sarevok the Spell Steel",
+      "tp2n": "Sarevok the Spell Steel",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 10,
+      "x": 0,
+      "no": "Replaces Sarevok CRE. Fighter→Mage dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 11,
+      "n": "Valygar the Sylvan Justicar",
+      "tp2n": "Valygar the Sylvan Justicar, w/ Modified Item",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 11,
+      "x": 0,
+      "no": "Replaces Valygar CRE files. Cleric→Ranger dual-class kit. Adds modified item.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 12,
+      "n": "Viconia the Prelate",
+      "tp2n": "Viconia the Prelate",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 12,
+      "x": 0,
+      "no": "Replaces Viconia CRE files. Fighter→Cleric dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    },
+    {
+      "cn": 13,
+      "n": "Yoshimo the Shadow Blade",
+      "tp2n": "Yoshimo the Shadow Blade",
+      "wf": "HIDEKT",
+      "wp": "HIDEKT\\setup-hidekt.tp2",
+      "wq": "exact",
+      "wc": 13,
+      "x": 0,
+      "no": "Replaces Yoshimo CRE files. Fighter→Thief dual-class kit.",
+      "grn": "Bioware NPC Hidden Kits"
+    }
+  ]
+}

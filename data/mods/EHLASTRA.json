@@ -1,0 +1,51 @@
+{
+  "i": 575,
+  "t": "Ehlastra",
+  "sv": 1,
+  "ord": 130,
+  "c": "QUEST MODS ToB",
+  "n": "Ehlastra ToB",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Free Yaga-Shura's chained concubine Ehlastra and recruit her as a powerful ToB companion. Install after Ascension.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/Ehlastra",
+  "a": "Roxanne",
+  "v": "v0.6",
+  "sum": "Free Yaga-Shura's chained concubine and she can join you and become a powerful ally in ToB",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "au": "Roxanne",
+  "dl": "https://github.com/RoxanneSHS/Ehlastra",
+  "co": [
+    {
+      "n": "Ehlastra ToB",
+      "tp2n": "Ehlastra ToB",
+      "cn": 0,
+      "wf": "EHLASTRA",
+      "wp": "EHLASTRA\\EHLASTRA.TP2",
+      "wc": 0,
+      "no": "LOCAL FIX APPLIED: STATE_WHICH_SAYS path was wrong. Ehlastra.tp2 line 80 referenced ~wheels/tra/%s/balthadd.tra~ but the correct path is ~wheels/lang/%s/balthadd.tra~. wheels/tra/ only contains schinese/; English tra is at wheels/lang/english/. Patched to use wheels/lang/%s/balthadd.tra. Automated fix: eet-mod-forge-patches component #15.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Ehlastra"
+  }
+}

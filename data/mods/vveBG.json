@@ -1,0 +1,49 @@
+{
+  "i": 731,
+  "t": "vveBG",
+  "sv": 1,
+  "ord": 90,
+  "c": "MUSIC & AUDIO",
+  "n": "Voices Voices Extravaganza (BG1)",
+  "no": "AI-generated English voiceovers for all BG1 characters by ColossusChang. Covers base game and TotSC. Does not cover Black Pits, Tutorial, or SoD.",
+  "conflicts": [],
+  "dl": "https://github.com/ColossusChang/VoicesVoicesExtravaganza",
+  "u": "https://github.com/ColossusChang/VoicesVoicesExtravaganza",
+  "a": "ColossusChang",
+  "langs": {
+    "en": 0
+  },
+  "tags": [
+    "audio"
+  ],
+  "sum": "AI-generated English voiceovers for all characters in Baldur's Gate 1 and Tales of the Sword Coast.",
+  "ph": [
+    "BG1"
+  ],
+  "au": "lh98",
+  "co": [
+    {
+      "n": "Voices Voices Extravaganza (BG1)",
+      "cn": 0,
+      "wf": "vveBG",
+      "wp": "vveBG\\vveBG.tp2",
+      "wq": "exact",
+      "no": "Adds AI-generated English voiceovers to all BG1 and TotSC dialogue. Large download.",
+      "wc": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "zg_bg_voices",
+      "withId": 429,
+      "severity": "soft",
+      "reason": "Both add voice content to BG1 characters. VVE provides full AI voiceover for all dialogue; ZG provides curated voice packs. May cause audio inconsistencies if both installed.",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "ColossusChang",
+    "r": "VoicesVoicesExtravaganza"
+  }
+}

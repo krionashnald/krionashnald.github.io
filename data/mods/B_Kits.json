@@ -1,0 +1,370 @@
+{
+  "i": 893,
+  "t": "B_Kits",
+  "sv": 1,
+  "pfx": "B_",
+  "ord": 370,
+  "c": "KIT & CLASS MODS",
+  "n": "B_Kits",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/Grammarsalad/B_Kits",
+  "a": "Grammarsalad",
+  "sum": "The aim of this mod is to rebalance the basic kits and classes in the manner of Kit Revisions.",
+  "tags": [
+    "kit"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Grammarsalad",
+  "dl": "https://github.com/Grammarsalad/B_Kits",
+  "no": "Class and kit rebalancing mod aiming for a Kit Revisions-like overhaul. Conservative and radical options for each class (Bard, Cleric, Ranger, Thief, Fighter, Paladin, Druid, Mage, Sorcerer, Shaman, Monk). Also includes HP revision, spell power by attributes, weapon proficiency changes, fatigue system, class skills (EEex required for some), and spontaneous casting. EE games only. By same author as Proficiencies mod — shares some components.",
+  "co": [
+    {
+      "n": "Install ALL Revised Classes and Kits: Conservative Versions",
+      "cn": 1,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Install ALL Revised Classes and Kits: Radical Versions",
+      "cn": 2,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "no": "Note: tp2 has duplicate DESIGNATED 0002 (Radical and INI-based). WeiDU uses the last one (INI-based install)."
+    },
+    {
+      "n": "install Sphere System alone",
+      "cn": 1001,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1001,
+      "wq": "verified"
+    },
+    {
+      "n": "Magical Defense Adjustment for high wis",
+      "cn": 1011,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1011,
+      "wq": "verified"
+    },
+    {
+      "n": "Abilities:",
+      "cn": 1021,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1021,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high int for mages and sorcerers only",
+      "cn": 1022,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1022,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high int for mages and bards only",
+      "cn": 1023,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1023,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high int for mages only",
+      "cn": 1024,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1024,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all arcane and divine classes",
+      "cn": 1031,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1031,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all arcane classes",
+      "cn": 1032,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1032,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all divine classes",
+      "cn": 1033,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1033,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all primary casters",
+      "cn": 1034,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1034,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all sorcerers and bards",
+      "cn": 1035,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1035,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high cha for all sorcerers, enchanters and bards",
+      "cn": 1036,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1036,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high wis for all divine classes",
+      "cn": 1041,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1041,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high wis for all divine classes and necromancers",
+      "cn": 1042,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1042,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high wis for all primary divine classes",
+      "cn": 1043,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1043,
+      "wq": "verified"
+    },
+    {
+      "n": "Spell Power for high wis for all primary divine classes and necromancers",
+      "cn": 1044,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1044,
+      "wq": "verified"
+    },
+    {
+      "n": "Double Hit Points at first level",
+      "cn": 7001,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7001,
+      "wq": "verified"
+    },
+    {
+      "n": "Radical Hit Point Revision",
+      "cn": 7002,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7002,
+      "wq": "verified"
+    },
+    {
+      "n": "Increased Hit Die (mages and rogues)",
+      "cn": 7003,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7003,
+      "wq": "verified"
+    },
+    {
+      "n": "Double Hit Points at first level and Increased Hit Die (mages and rogues)",
+      "cn": 7004,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7004,
+      "wq": "verified"
+    },
+    {
+      "n": "Radical Hit Point Revision and Increased Hit Die (mages and rogues)",
+      "cn": 7005,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7005,
+      "wq": "verified"
+    },
+    {
+      "n": "Fighter Con Bonus for all classes",
+      "cn": 7006,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7006,
+      "wq": "verified"
+    },
+    {
+      "n": "Expanded Weapon Proficiency Table",
+      "cn": 7010,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7010,
+      "wq": "verified"
+    },
+    {
+      "n": "Revised Weapon Proficiency Table",
+      "cn": 7020,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 7020,
+      "wq": "verified"
+    },
+    {
+      "n": "Everybody gets Fatigued",
+      "cn": 1217,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1217,
+      "wq": "verified"
+    },
+    {
+      "n": "Unique Arcane Spell Selection",
+      "cn": 1301,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1301,
+      "wq": "verified"
+    },
+    {
+      "n": "All Priests and Paladins: Turn bonus by charisma",
+      "cn": 1401,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1401,
+      "wq": "verified"
+    },
+    {
+      "n": "Clerics only: Turn bonus by charisma",
+      "cn": 1402,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1402,
+      "wq": "verified"
+    },
+    {
+      "n": "Paladins only: Turn bonus by charisma",
+      "cn": 1403,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1403,
+      "wq": "verified"
+    },
+    {
+      "n": "Add Spontaneous Casting for clerics and druids",
+      "cn": 1501,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1501,
+      "wq": "verified"
+    },
+    {
+      "n": "Appraisal (requires EEex)",
+      "cn": 1601,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1601,
+      "wq": "verified"
+    },
+    {
+      "n": "Performance - Bard only (requires EEex)",
+      "cn": 1701,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1701,
+      "wq": "verified"
+    },
+    {
+      "n": "Performance - Rogues only (requires EEex)",
+      "cn": 1702,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1702,
+      "wq": "verified"
+    },
+    {
+      "n": "Barter (requires EEex)",
+      "cn": 1801,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1801,
+      "wq": "verified"
+    },
+    {
+      "n": "Use Scroll - 10th level (requires EEex)",
+      "cn": 1901,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1901,
+      "wq": "verified"
+    },
+    {
+      "n": "Use Scroll - No Restrictions (requires EEex)",
+      "cn": 1902,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1902,
+      "wq": "verified"
+    },
+    {
+      "n": "Use Scroll - Pseudo-skill",
+      "cn": 1903,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 1903,
+      "wq": "verified"
+    },
+    {
+      "n": "Set Natural Snares",
+      "cn": 2001,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 2001,
+      "wq": "verified"
+    },
+    {
+      "n": "Everybody Can Search (requires EEex)",
+      "cn": 2101,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 2101,
+      "wq": "verified"
+    },
+    {
+      "n": "Variant Attribute Bonuses for base skills",
+      "cn": 2201,
+      "wf": "B_Kits",
+      "wp": "B_Kits\\B_Kits.tp2",
+      "wc": 2201,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "Grammarsalad",
+    "r": "B_Kits"
+  }
+}

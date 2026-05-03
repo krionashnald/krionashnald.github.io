@@ -1,0 +1,171 @@
+{
+  "i": 41,
+  "t": "Reflections",
+  "sv": 1,
+  "ord": 80,
+  "c": "QUEST MODS BG1",
+  "n": "Reflections of Destiny",
+  "no": "Reflections of Destiny v0.9 by subtledoctor. 8 components spanning BG1/SoD/BG2. cn:100 FORBIDs EndlessBG1 cn:14, Imoen4Ever cn:10, and EET_end. cn:330 is EET-only. Conceptual conflicts with Transitions, Road to Discovery, AFH #2. Beta — not recommended for preset",
+  "u": "https://github.com/subtledoctor/Reflections-of-Destiny",
+  "a": "subtledoctor",
+  "v": "0.9",
+  "sum": "Major plot restructuring mod spanning BG1/SoD/BG2. Reshuffles content, rewrites Caelar backstory, adds SoD areas to BG2. Beta v0.9",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "Reflections-of-Destiny"
+  },
+  "ki": [
+    {
+      "pattern": "D5Daustonquest|Dauston.*stuck|quest.*stuck.*Reflections",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Quest involving Dauston can get stuck. The D5Daustonquest global variable may not advance properly, blocking progression.",
+      "workaround": "Use console: C:SetGlobal(\"D5Daustonquest\",\"GLOBAL\",13) to trigger the attack scene, or 15 to get the journal update for the next quest stage.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/38225-subtlemods-reflections-of-destiny/",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "c#endlessbg1",
+      "withId": 33,
+      "severity": "hard",
+      "reason": "RoD cn:100 ('The Future is Now') has FORBID_COMPONENT for EndlessBG1 cn:14. Both mods restructure post-Sarevok BG1 content — cannot coexist. TP2-enforced incompatibility.",
+      "myComps": "#100 The Future is Now",
+      "theirComps": "#14",
+      "source": "TP2 FORBID_COMPONENT, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "c#anotherfinehell",
+      "withId": 34,
+      "severity": "partial",
+      "reason": "RoD cn:200 ('Rewriting History') rewrites the SoD Caelar backstory and narrative. Another Fine Hell also modifies the BG1-to-SoD transition. Users report dialogue inconsistencies when both installed. shaigan (G3, Feb 2026): 'I don't recommend mixing Reflections of Destiny with jastey's BG/SOD transition and SOD mods.'",
+      "myComps": "#200 Rewriting History",
+      "theirComps": "#0",
+      "source": "User report shaigan G3 topic 38225, Feb 2026",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "sodrtd",
+      "withId": 233,
+      "severity": "partial",
+      "reason": "RoD cn:200 ('Rewriting History') and Road to Discovery both modify SoD narrative and transitions. Users report logical inconsistencies in dialogues when both installed.",
+      "myComps": "#200 Rewriting History",
+      "theirComps": "#0",
+      "source": "User report shaigan G3 topic 38225, Feb 2026",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dl": "https://github.com/subtledoctor/Reflections-of-Destiny",
+  "au": "SubtleD",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 100,
+      "n": "The Future is Now",
+      "tp2n": "Reflections of Destiny BG1: The Future is Now",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "BG1 reshuffling: Korlasz in BG1, post-Sarevok content. FORBIDs EndlessBG1 cn:14 and Imoen4Ever cn:10. Must install before EET_end"
+    },
+    {
+      "cn": 110,
+      "n": "The Mirror Shard",
+      "tp2n": "Reflections of Destiny BG1: The Mirror Shard",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Magic item quest in Durlag Tower + Irenicus Dungeon"
+    },
+    {
+      "cn": 200,
+      "n": "Rewriting History",
+      "tp2n": "Reflections of Destiny SoD: Rewriting History",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "SoD: rewrites Caelar backstory. Conceptual conflict with Road to Discovery and AFH"
+    },
+    {
+      "cn": 220,
+      "n": "Magical Realism",
+      "tp2n": "Reflections of Destiny SoD: Magical Realism",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "SoD: verisimilitude tweaks to SoD content"
+    },
+    {
+      "cn": 230,
+      "n": "Nothing to Feyr but Feyr Itself",
+      "tp2n": "Reflections of Destiny SoD: Nothing to Fear but Feyr Itself",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "SoD: Elandro encounter tweak"
+    },
+    {
+      "cn": 240,
+      "n": "At the Precipice of Death",
+      "tp2n": "Reflections of Destiny SoD: The Precipice of Death",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "SoD: Kanaglym undead control changes"
+    },
+    {
+      "cn": 320,
+      "n": "Imoen Can Die",
+      "tp2n": "Reflections of Destiny BG2: Imoen Can Die, by Jastey",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "BG2: optional Imoen death in Spellhold. Major plot change"
+    },
+    {
+      "cn": 330,
+      "n": "Wherever You Go There You Are",
+      "tp2n": "Reflections of Destiny BG2: Wherever You Go There You Are",
+      "wf": "Reflections",
+      "wp": "Reflections\\Reflections.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "BG2: adds SoD areas to BG2. EET only"
+    }
+  ]
+}

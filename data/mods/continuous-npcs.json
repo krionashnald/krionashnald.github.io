@@ -1,0 +1,121 @@
+{
+  "i": 503,
+  "t": "continuous-npcs",
+  "sv": 1,
+  "ord": 780,
+  "c": "NEW NPC MODS",
+  "n": "Continuous NPCs",
+  "no": "Makes BG1 NPCs (Kivan, Xan) continuous across SoD and BG2 in EET. By morpheus562. v1.0. EET only (REQUIRE_PREDICATE). Kivan has Archer kit option and optional timed quest removal",
+  "conflicts": [
+    {
+      "with": "Kivan",
+      "withId": 591,
+      "severity": "hard",
+      "reason": "Both add Kivan to BG2 via pdialog.2da/interdia.2da APPEND. Cannot have two Kivan entries. Choose one: Continuous NPCs (lightweight continuation) or Kivan of Shilmista (full NPC with romance/quests)",
+      "myComps": "#701 Add Kivan Archer / #702 Add Kivan No Kit",
+      "theirComps": "#100 Kivan of Shilmista",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Xan",
+      "withId": 142,
+      "severity": "hard",
+      "reason": "Both add Xan to BG2 via pdialog.2da/interdia.2da APPEND. Cannot have two Xan entries. Choose one: Continuous NPCs (lightweight continuation) or Xan NPC (full NPC with dialogue/quests)",
+      "myComps": "#900 Add Xan to SoD and BG2",
+      "theirComps": "#0 Xan NPC",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.morpheus-mart.com/continuous-npcs",
+  "a": "morpheus562",
+  "v": "v1.0",
+  "sum": "Allows NPC companions who only appear in Baldur's Gate 1 to continue into Siege of Dragonspear and Baldur's Gate 2 with their developed stats and abilities intact.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "morpheus562",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://www.morpheus-mart.com/continuous-npcs",
+  "pt": false,
+  "co": [
+    {
+      "cn": 701,
+      "n": "Add Kivan: Assign Archer Kit",
+      "g": "kivan_add",
+      "scn": "Add Kivan to SoD and BG2",
+      "grn": "Kivan",
+      "wf": "continuous-npcs",
+      "wp": "continuous-npcs\\continuous-npcs.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Adds Kivan to SoD and BG2 with Archer kit. EET only. Requires BG1 Kivan to have been in party.",
+      "tp2n": "Assign Archer kit to Kivan"
+    },
+    {
+      "cn": 702,
+      "n": "Add Kivan: No Kit Changes",
+      "g": "kivan_add",
+      "scn": "Add Kivan to SoD and BG2",
+      "grn": "Kivan",
+      "wf": "continuous-npcs",
+      "wp": "continuous-npcs\\continuous-npcs.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Adds Kivan to SoD and BG2 keeping his original class. EET only.",
+      "tp2n": "No kit changes"
+    },
+    {
+      "cn": 710,
+      "n": "Remove Kivan's Timed Quest",
+      "wf": "continuous-npcs",
+      "wp": "continuous-npcs\\continuous-npcs.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Removes the time limit on Kivan's revenge quest. Requires Kivan added (cn:701 or cn:702).",
+      "x": 701,
+      "tp2n": "Removed Kivan's timed quest",
+      "grn": "Kivan"
+    },
+    {
+      "cn": 720,
+      "n": "Boost Kivan's Ability Scores",
+      "wf": "continuous-npcs",
+      "wp": "continuous-npcs\\continuous-npcs.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Increases Kivan's stats for BG2 competitiveness. Requires Kivan added (cn:701 or cn:702).",
+      "x": 701,
+      "tp2n": "Slightly Boost Kivan's Ability Scores",
+      "grn": "Kivan"
+    },
+    {
+      "cn": 900,
+      "n": "Add Xan to SoD and BG2",
+      "wf": "continuous-npcs",
+      "wp": "continuous-npcs\\continuous-npcs.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "no": "Adds Xan as continuous NPC across SoD and BG2. EET only. Independent of Kivan components.",
+      "tp2n": "Add Xan to SoD and BG2",
+      "grn": "Xan"
+    }
+  ]
+}

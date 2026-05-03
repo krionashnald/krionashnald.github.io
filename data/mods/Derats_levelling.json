@@ -1,0 +1,745 @@
+{
+  "i": 809,
+  "t": "Derats_levelling",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 640,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Levelling Changer",
+  "langs": {
+    "fr": 0,
+    "en": 1,
+    "zh-cn": 2
+  },
+  "u": "https://github.com/Deratiseur/Levelling/",
+  "a": "Deratiseur",
+  "sum": "This mod lets you change the class xp table. You can grant the same xp table to all classes (your choice) AND/OR grant the xp table you want to the class you want.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Deratiseur",
+  "dl": "https://github.com/Deratiseur/Levelling",
+  "no": "XP table modification mod. Choose a single XP table for all classes, or assign specific XP tables to individual classes. 6 progression speeds: Thief/Bard (very fast), Cleric/Monk (fast), Fighter (medium), Paladin/Ranger (slow), Mage (very slow), Druid (slowest). French, English, Simplified Chinese.",
+  "co": [
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 2,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Thief_All"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 3,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Cleric_All"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 4,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Fighter_All"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 5,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Paladin_All"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 6,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Mage_All"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 7,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "g": "Same xp table for all classes:",
+      "pi": "Px_levelling_Druid_All"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 152,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 152,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 153,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 153,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 154,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 154,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 155,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 155,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 156,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 156,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 157,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 157,
+      "wq": "verified",
+      "g": "Change the thief xp table",
+      "pi": "Px_levelling_Thief_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 162,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 162,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Bard"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 163,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 163,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 164,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 164,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 165,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 165,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 166,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 166,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 167,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 167,
+      "wq": "verified",
+      "g": "Change the bard xp table",
+      "pi": "Px_levelling_Bard_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 92,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 92,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 93,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 93,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 94,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 94,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 95,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 95,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 96,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 96,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 97,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 97,
+      "wq": "verified",
+      "g": "Change the warrior xp table",
+      "pi": "Px_levelling_Fighter_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 102,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 102,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 103,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 104,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 104,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 105,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 105,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Ranger"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 106,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 106,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 107,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 107,
+      "wq": "verified",
+      "g": "Change the ranger xp table",
+      "pi": "Px_levelling_Ranger_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 112,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 112,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 113,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 113,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 114,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 114,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 115,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 115,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 116,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 116,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 117,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 117,
+      "wq": "verified",
+      "g": "Change the paladin xp table",
+      "pi": "Px_levelling_Paladin_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 182,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 182,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 183,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 183,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Monk"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 184,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 184,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 185,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 185,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 186,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 186,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 187,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 187,
+      "wq": "verified",
+      "g": "Change the monk xp table",
+      "pi": "Px_levelling_Monk_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 122,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 122,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Cleric_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 123,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 123,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Druid_Paladin"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 124,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 124,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Cleric_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 125,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 125,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Cleric_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 126,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 126,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Cleric_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 127,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 127,
+      "wq": "verified",
+      "g": "Change the cleric xp table",
+      "pi": "Px_levelling_Cleric_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 132,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 132,
+      "wq": "verified",
+      "g": "Change the druid xp table",
+      "pi": "Px_levelling_Druid_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 133,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 133,
+      "wq": "verified",
+      "g": "Change the druid xp table",
+      "pi": "Px_levelling_Druid_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 134,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 134,
+      "wq": "verified",
+      "g": "Change the druid xp table",
+      "pi": "Px_levelling_Druid_Fighter"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 136,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 136,
+      "wq": "verified",
+      "g": "Change the druid xp table",
+      "pi": "Px_levelling_Druid_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 137,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 137,
+      "wq": "verified",
+      "g": "Change the druid xp table",
+      "pi": "Px_levelling_Druid_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 192,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 192,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 193,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 193,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 194,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 194,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 195,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 195,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 196,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 196,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Shaman"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 197,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 197,
+      "wq": "verified",
+      "g": "Change the chaman xp table",
+      "pi": "Px_levelling_Shaman_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 142,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 142,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 143,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 143,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 144,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 144,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 145,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 145,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 146,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 146,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Mage"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 147,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 147,
+      "wq": "verified",
+      "g": "Change the mage xp table",
+      "pi": "Px_levelling_Mage_Druid"
+    },
+    {
+      "n": "Xp of thief/bard xp table(very fast, max level: 46)",
+      "cn": 172,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 172,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Thief"
+    },
+    {
+      "n": "Xp of cleric/monk (fast, max level: 43)",
+      "cn": 173,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 173,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Cleric"
+    },
+    {
+      "n": "Xp of fighter (medium, max level: 40)",
+      "cn": 174,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 174,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Fighter"
+    },
+    {
+      "n": "Xp of ranger/paladin (slow, max level: 34)",
+      "cn": 175,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 175,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Paladin"
+    },
+    {
+      "n": "Xp of mage/sorcerer/shaman (very slow, max level: 31)",
+      "cn": 176,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 176,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Sorcerer"
+    },
+    {
+      "n": "Xp of druid (medium until level 14, 1.5M for level 15 then very slow, maximum level: 31)",
+      "cn": 177,
+      "wf": "Derats_Levelling",
+      "wp": "Derats_Levelling\\Setup-Derats_levelling.tp2",
+      "wc": 177,
+      "wq": "verified",
+      "g": "Change the sorcerer xp table",
+      "pi": "Px_levelling_Sorcerer_Druid"
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "Levelling"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "i": 792,
+  "t": "EET_achievements",
+  "sv": 1,
+  "ord": 120,
+  "c": "POST EET",
+  "n": "Steam Achievements for EET",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/Xarlith/EET_Achievements/",
+  "a": "Xarlith",
+  "sum": "This mod allows Steam achievements from BG1EE, SoD, and BG2EE to unlock properly during an EET playthrough.",
+  "tags": [
+    "tool"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Xarlith/EET_Achievements/",
+  "no": "This mod allows Steam achievements from BG1EE, SoD, and BG2EE to unlock properly during an EET playthrough.",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Extended achievements handler",
+      "cn": 0,
+      "wf": "eet_achievements",
+      "wp": "eet_achievements\\EET_achievements.tp2",
+      "wc": 0,
+      "wq": "lcc-github",
+      "g": "Select Steam App ID"
+    },
+    {
+      "n": "Set Steam AppID to BG:EE",
+      "cn": 10,
+      "wf": "eet_achievements",
+      "wp": "eet_achievements\\EET_achievements.tp2",
+      "wc": 10,
+      "wq": "lcc-github",
+      "g": "Select Steam App ID"
+    },
+    {
+      "n": "Set Steam AppID to BG2:EE",
+      "cn": 11,
+      "wf": "eet_achievements",
+      "wp": "eet_achievements\\EET_achievements.tp2",
+      "wc": 11,
+      "wq": "lcc-github",
+      "g": "Select Steam App ID"
+    }
+  ],
+  "gh": {
+    "o": "Xarlith",
+    "r": "EET_Achievements"
+  }
+}

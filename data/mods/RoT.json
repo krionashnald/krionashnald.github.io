@@ -1,0 +1,248 @@
+{
+  "i": 476,
+  "t": "RoT",
+  "sv": 1,
+  "ord": 490,
+  "c": "QUEST MODS BG2",
+  "n": "Region of Terror",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "es": 3,
+    "zh-cn": 4
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan. Install IWD in EET and IWD2 in EET before Region of Terror! Install IWD_EET_End after Region of Terror!",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify xplevel.2da. RoT replaces the file entirely; install cdtweaks druid progression after RoT",
+      "myComps": "#0 Region of Terror",
+      "theirComps": "#2290 #2291 #2292 #2293 #2294 #2295 #2296 #2297 Druid Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "rot_drizzt",
+          "portraits/rot/drizzt.png",
+          "bg2"
+        ],
+        [
+          "rot_artemis",
+          "portraits/rot/artemis.png",
+          "bg2"
+        ],
+        [
+          "rot_bruenor",
+          "portraits/rot/bruen.png",
+          "bg2"
+        ],
+        [
+          "rot_cattibrie",
+          "portraits/rot/catt.png",
+          "bg2"
+        ],
+        [
+          "rot_wulfgar",
+          "portraits/rot/wulfgar.png",
+          "bg2"
+        ],
+        [
+          "rot_regis",
+          "portraits/rot/regis.png",
+          "bg2"
+        ],
+        [
+          "rot_alissa",
+          "portraits/rot/alissa.png",
+          "bg2"
+        ],
+        [
+          "rot_olmar",
+          "portraits/rot/olmar.png",
+          "bg2"
+        ],
+        [
+          "rot_randall",
+          "portraits/rot/randall.png",
+          "bg2"
+        ],
+        [
+          "rot_talavan",
+          "portraits/rot/talavan.png",
+          "bg2"
+        ],
+        [
+          "rot_tapio",
+          "portraits/rot/tapio.png",
+          "bg2"
+        ],
+        [
+          "rot_mordragon",
+          "portraits/rot/mordrg.png",
+          "bg2"
+        ],
+        [
+          "rot_evi",
+          "portraits/rot/evi.png",
+          "bg2"
+        ],
+        [
+          "rot_gir",
+          "portraits/rot/gir.png",
+          "bg2"
+        ],
+        [
+          "rot_jarlx",
+          "portraits/rot/jarlx.png",
+          "bg2"
+        ],
+        [
+          "rot_wulde",
+          "portraits/rot/wulde.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "ROT_DARK_PALADIN",
+          "npc",
+          "Dark Paladin",
+          "Evil paladin variant used by Region of Terror NPCs. Dark divine combat abilities."
+        ],
+        [
+          "ROT_DENEIR",
+          "npc",
+          "Priest of Deneir",
+          "Cleric of Deneir used by Region of Terror NPCs. Knowledge and glyph divine magic."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Region-of-Terror",
+  "a": "Gilgamesh",
+  "v": "v5.0",
+  "sum": "Large BG2 quest mod adding a dangerous new region with extensive dungeon crawling, new creatures, and a multi-part storyline.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "RegionOfTerror"
+  },
+  "kitAbilities": {
+    "0": {
+      "ROT_DARK_PALADIN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Evil paladin variant used by Region of Terror NPCs. Dark divine combat abilities"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "ROT_DENEIR": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Cleric of Deneir used by Region of Terror NPCs. Knowledge and glyph divine magic"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Region-of-Terror",
+  "au": "Wilbur",
+  "co": [
+    {
+      "n": "Region Of Terror",
+      "cn": 0,
+      "wf": "RoT",
+      "wp": "RoT\\SETUP-ROT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "k": 2,
+      "no": "Region of Terror: massive quest mod with new regions and storylines.",
+      "kC": {
+        "npc": 2
+      },
+      "tp2n": "Region Of Terror"
+    },
+    {
+      "n": "Alternative Maribur area (by Cuttooth)",
+      "cn": 3,
+      "wf": "RoT",
+      "wp": "RoT\\SETUP-ROT.TP2",
+      "wq": "verified",
+      "tp2n": "Alternative Maribur area (by Cuttooth)",
+      "pi": "rot-alternative-maribur"
+    },
+    {
+      "n": "Region of Terror Biffing",
+      "cn": 2,
+      "wf": "RoT",
+      "wp": "RoT\\SETUP-ROT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bgt",
+        "tob"
+      ],
+      "tp2n": "Region of Terror Biffing",
+      "pi": "rot_biffing"
+    },
+    {
+      "n": "Region Of Terror Kit Pack",
+      "cn": 1,
+      "wf": "RoT",
+      "wp": "RoT\\SETUP-ROT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Region Of Terror Kit Pack",
+      "pi": "rot_kits"
+    }
+  ]
+}

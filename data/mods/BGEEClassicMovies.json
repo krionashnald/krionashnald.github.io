@@ -1,0 +1,133 @@
+{
+  "i": 24,
+  "t": "BGEEClassicMovies",
+  "sv": 1,
+  "ord": 10,
+  "c": "GRAPHICS",
+  "n": "BG:EE Classic Movies",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "de": 3
+  },
+  "no": "Installing graphical mods early here, for the sake of map mods (BGGO), which will be modified by quests and NPCs BG:EE Classic Movies Some may like the newer animated movies. At the very least the older fans prefer the original ones. Check each version of the BG1 intro movie, then decide which style you prefer: Original: EE: v Restore BG1 movies to BG:EE",
+  "u": "https://github.com/Sampsca/BGEE-Classic-Movies/releases",
+  "a": "Sam",
+  "v": "v2.4.0",
+  "sum": "This is a WeiDU mod that restores the 'classic' movies from the original Baldur's Gate and select movies from Baldur's Gate II to BGEE/SoD/EET.  There is a new component that restores the vanilla BG1 chapter and dream screens to BGEE/SoD/EET (using the appropriate theme).",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1",
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v2.3.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Sampsca",
+    "r": "BGEE-Classic-Movies"
+  },
+  "dl": "https://github.com/Sampsca/BGEE-Classic-Movies/releases",
+  "au": "Sam.",
+  "co": [
+    {
+      "n": "Replace all movies",
+      "tp2n": "Replace all movies",
+      "pi": "PS_BGEEClassicMovies_ReplaceMovies",
+      "scn": "Restore BG1 movies to BG:EE",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wc": 0,
+      "wq": "manual_prefix",
+      "cn": 0,
+      "g": "classicmovies_restore",
+      "no": "Replaces ALL EE movies with original BG1 movies. Choose one restore option. FORBID with BGEE Polish localization."
+    },
+    {
+      "n": "Add missing movies",
+      "tp2n": "Add missing movies",
+      "pi": "PS_BGEEClassicMovies_AddMissingMovies",
+      "scn": "Restore BG1 movies to BG:EE",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wq": "manual_prefix",
+      "cn": 1,
+      "g": "classicmovies_restore",
+      "no": "Adds only the missing original BG1 movies without replacing existing ones. Choose one restore option. Not available in Polish."
+    },
+    {
+      "n": "Show all movies in options without need to unlock them in game",
+      "tp2n": "Show all movies in options without need to unlock them in game",
+      "pi": "PS_BGEEClassicMovies_AddMoviesToInGameMenu",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "no": "Unlocks all movies in the options menu without needing to discover them in-game."
+    },
+    {
+      "n": "Restore BG1 Chapter and Dream Screens",
+      "tp2n": "Restore BG1 Chapter and Dream Screens",
+      "pi": "PS_BGEEClassicMovies_RestoreChapterDreamScreens",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "cn": 3,
+      "no": "Restores the original BG1 chapter screens and dream sequences."
+    },
+    {
+      "n": "Startup: Disable logo and intro movies",
+      "tp2n": "Disable startup logo and intro movies",
+      "no": "Disables both the startup logo and intro movies entirely.",
+      "pi": "PS_BGEEClassicMovies_DisableLogoAndIntroMovies",
+      "scn": "Modify startup movies",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wq": "manual_prefix",
+      "cn": 4,
+      "g": "startup"
+    },
+    {
+      "n": "Startup: Disable logo movie only",
+      "tp2n": "Disable startup logo movie",
+      "pi": "PS_BGEEClassicMovies_DisableLogoMovie",
+      "scn": "Modify startup movies",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wq": "manual_prefix",
+      "cn": 5,
+      "g": "startup",
+      "no": "Disables only the startup logo movie, keeps intro."
+    },
+    {
+      "n": "Startup: Replace with classic BG1 logos",
+      "tp2n": "Replace logo movie with classic BG1 logos",
+      "pi": "PS_BGEEClassicMovies_ReplaceLogo",
+      "scn": "Modify startup movies",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wq": "manual_prefix",
+      "cn": 6,
+      "g": "startup",
+      "no": "Replaces Beamdog logo movie with classic BG1 logos."
+    },
+    {
+      "n": "Startup: Play BG1 logos before Beamdog logo",
+      "tp2n": "Play classic BG1 logos before Beamdog's logo movie",
+      "pi": "PS_BGEEClassicMovies_PrependClassicLogos",
+      "scn": "Modify startup movies",
+      "wf": "BGEEClassicMovies",
+      "wp": "BGEEClassicMovies\\BGEECLASSICMOVIES.TP2",
+      "wq": "manual_prefix",
+      "cn": 7,
+      "g": "startup",
+      "no": "Plays classic BG1 logos before the Beamdog logo movie."
+    }
+  ]
+}

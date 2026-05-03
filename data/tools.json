@@ -1,0 +1,224 @@
+[
+  {
+    "id": "weidu",
+    "n": "WeiDU",
+    "desc": "The standard mod installer for Infinity Engine games. Required to install virtually all IE mods.",
+    "a": "WeiDU Team",
+    "u": "https://github.com/WeiDUorg/weidu/releases",
+    "cat": "installer",
+    "essential": true
+  },
+  {
+    "id": "nearinfinity",
+    "n": "Near Infinity",
+    "desc": "Comprehensive resource browser and editor for Infinity Engine games. View and edit game files, scripts, dialogues, and more.",
+    "a": "Jon Olav Hauglid, Argent77",
+    "u": "https://github.com/Argent77/NearInfinity/releases",
+    "cat": "editor",
+    "essential": true
+  },
+  {
+    "id": "eekeeper",
+    "n": "EE Keeper",
+    "desc": "Save game editor for Enhanced Edition games. Edit characters, stats, items, spells, and more.",
+    "a": "troodon80",
+    "u": "https://github.com/Argent77/EEKeeper/releases",
+    "cat": "editor",
+    "essential": true
+  },
+  {
+    "id": "dltcep",
+    "n": "DLTCEP",
+    "desc": "Dragonlance Total Conversion Editor Pro. Advanced modding tool for creating and editing IE game resources.",
+    "a": "Avenger",
+    "u": "https://www.gibberlings3.net/files/file/900-dltcep/",
+    "cat": "editor"
+  },
+  {
+    "id": "infinity_auto_packager",
+    "n": "Infinity Auto Packager",
+    "desc": "Automates packaging of WeiDU mods for distribution. Creates standardized mod archives.",
+    "a": "ALIENQuake",
+    "u": "https://github.com/InfinityTools/InfinityAutoPackager",
+    "cat": "dev"
+  },
+  {
+    "id": "ielib",
+    "n": "IE Mod Setup Tool",
+    "desc": "Graphical batch installer for WeiDU mods. Queue and install multiple mods with a GUI.",
+    "a": "ALIENQuake",
+    "u": "https://github.com/ALIENQuake/ModSetupTool",
+    "cat": "installer"
+  },
+  {
+    "id": "projectinfinity",
+    "n": "Project Infinity",
+    "desc": "Mod manager with install-order awareness and conflict detection. Manages large mod setups with dependency tracking.",
+    "a": "ALIENQuake",
+    "u": "https://github.com/ALIENQuake/ProjectInfinity/releases",
+    "cat": "installer",
+    "essential": true
+  },
+  {
+    "id": "bws_ng",
+    "n": "Big World Setup NG",
+    "desc": "Modern Python-based GUI for automating mod installation. Cross-platform (Windows/Linux), multi-language, syncs with the Infinity Engine Mod List database.",
+    "a": "Selphira",
+    "u": "https://github.com/Selphira/BigWorldSetup-Next-Generation",
+    "cat": "installer"
+  },
+  {
+    "id": "gideon_install",
+    "n": "Gideon's Install Tool",
+    "desc": "Automated EET installation framework. Project has been discontinued; GitHub repo removed.",
+    "a": "Gideon",
+    "u": "",
+    "cat": "installer",
+    "defunct": true
+  },
+  {
+    "id": "generalized_biffing",
+    "n": "Generalized Biffing",
+    "desc": "Compresses game override files into BIFF archives, greatly reducing load times for heavily-modded installs.",
+    "a": "the bigg",
+    "u": "https://github.com/Spellhold-Studios/Generalized-Biffing/releases",
+    "cat": "utility",
+    "essential": true
+  },
+  {
+    "id": "infinityexplorer",
+    "n": "Infinity Explorer",
+    "desc": "Lightweight resource viewer for Infinity Engine games. Quick browsing of game files without full editing capabilities.",
+    "a": "Dmitry Jemerov",
+    "u": "https://github.com/InfinityExplorer/InfinityExplorer",
+    "cat": "editor"
+  },
+  {
+    "id": "bamworkshop",
+    "n": "BAM Workshop",
+    "desc": "Editor for BAM (animation) files used in Infinity Engine games. Create and modify sprite animations, icons, and cursors.",
+    "a": "Sam.",
+    "u": "https://forums.beamdog.com/discussion/50441",
+    "cat": "editor"
+  },
+  {
+    "id": "tisunpack",
+    "n": "TIS Unpack",
+    "desc": "Tool for unpacking and repacking TIS (tileset) files. Essential for area visual modding.",
+    "a": "Per Olofsson",
+    "u": "https://www.pocketplane.net/modding-tools/",
+    "cat": "dev"
+  },
+  {
+    "id": "weidu_mod_packager",
+    "n": "WeiDU Mod Packager",
+    "desc": "Flexible mod packaging tool with many customization options. Creates distributable mod archives from WeiDU mod source files.",
+    "a": "InfinityTools",
+    "u": "https://github.com/InfinityTools/WeiduModPackager",
+    "cat": "dev"
+  },
+  {
+    "id": "mod_installer",
+    "n": "Mod Installer",
+    "desc": "Cross-platform command-line WeiDU mod installer. Automates mod installation from a weidu.log file.",
+    "a": "dark0dave",
+    "u": "https://github.com/dark0dave/mod_installer",
+    "cat": "installer"
+  },
+  {
+    "id": "iesdp",
+    "n": "IESDP",
+    "desc": "Infinity Engine Structures Description Project. The reference documentation for all IE file formats.",
+    "a": "Community",
+    "u": "https://gibberlings3.github.io/iesdp/",
+    "cat": "reference"
+  },
+  {
+    "id": "a7_textureconvert",
+    "n": "A7-TextureConvert",
+    "desc": "Automates conversion of PVRZ textures between different compression types for Infinity Engine Enhanced Edition games.",
+    "a": "Argent77",
+    "u": "https://github.com/Argent77/A7-TextureConvert",
+    "cat": "utility"
+  },
+  {
+    "id": "dlc_builder",
+    "n": "DLC Builder",
+    "desc": "Creates DLC packages for Enhanced Edition games. Packages mod content as installable DLC extensions.",
+    "a": "Argent77",
+    "u": "https://github.com/Argent77/A7-DlcBuilder",
+    "cat": "dev"
+  },
+  {
+    "id": "mirror_maps",
+    "n": "Mirror Game Maps",
+    "desc": "Horizontally mirrors any given map from Infinity Engine games. Useful for creating mirrored area variants.",
+    "a": "Argent77",
+    "u": "https://github.com/Argent77/Mirror-Game-Maps/",
+    "cat": "dev"
+  },
+  {
+    "id": "stutter_debug",
+    "n": "Stutter Debug Tool",
+    "desc": "Helps debug malfunctioning scripts causing game stutter. Identifies problematic script blocks and actions.",
+    "a": "Lauriel, CamDawg",
+    "u": "https://github.com/Spellhold-Studios/Stutter-Debug-Tool",
+    "cat": "utility"
+  },
+  {
+    "id": "bg2_radar",
+    "n": "BG2 Radar Overlay",
+    "desc": "Real-time radar overlay for BG2:EE showing creature positions, fog of war, and pathfinding data.",
+    "a": "tapahob",
+    "u": "https://github.com/tapahob/BG2RadarOverlay",
+    "cat": "utility"
+  },
+  {
+    "id": "moebius_toolkit",
+    "n": "Moebius Toolkit",
+    "desc": "Modding toolkit for Infinity Engine games. Provides utilities for mod development and resource management.",
+    "a": "moebiusproject",
+    "u": "https://github.com/moebiusproject/moebiustoolkit",
+    "cat": "dev"
+  },
+  {
+    "id": "portrait_grabber",
+    "n": "Portrait Grabber",
+    "desc": "Extracts and converts NPC portraits from Infinity Engine games for use as custom character portraits.",
+    "a": "abrahamwl",
+    "u": "https://github.com/abrahamwl/portrait-grabber/",
+    "cat": "utility"
+  },
+  {
+    "id": "ie_ee_config",
+    "n": "IE-EE Configuration",
+    "desc": "Configuration tool for Infinity Engine Enhanced Edition game settings and ini file management.",
+    "a": "MephistoSatanDevil",
+    "u": "https://github.com/MephistoSatanDevil/IE-EE-Config/",
+    "cat": "utility"
+  },
+  {
+    "id": "post_infinity",
+    "n": "Post Infinity",
+    "desc": "Post-processing tool for Infinity Engine mod installations. Handles cleanup and optimization after mod installation.",
+    "a": "dark0dave",
+    "u": "https://github.com/dark0dave/post_infinity",
+    "cat": "utility"
+  },
+  {
+    "id": "derats_thingies",
+    "n": "Bidules pour moddeurs (Modder Thingies)",
+    "desc": "WeiDU mod that adds cheat/test items for mod development. Maximizes attack, HP, and various stats for testing.",
+    "a": "Deratiseur",
+    "u": "https://github.com/Deratiseur/Thingies",
+    "cat": "dev"
+  },
+  {
+    "id": "eetlauncher",
+    "n": "EETLauncher",
+    "desc": "Custom game launcher for Enhanced Edition Trilogy. Manages game startup with proper configuration for the merged trilogy.",
+    "a": "Gibberlings3",
+    "u": "https://github.com/Gibberlings3/EETLauncher/",
+    "cat": "utility"
+  }
+]

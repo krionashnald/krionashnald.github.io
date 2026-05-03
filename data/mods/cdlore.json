@@ -1,0 +1,138 @@
+{
+  "i": 369,
+  "t": "cdlore",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 190,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Lore From Learning",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2,
+    "zh-cn": 3,
+    "es": 4
+  },
+  "no": "In short, do stuff like read books and your Lore stat increases.Install Lore from Learning after all mods that add or change kits or items.",
+  "u": "https://github.com/Gibberlings3/Lore_From_Learning",
+  "a": "CamDawg",
+  "v": "v10",
+  "sum": "The Lore From Learning mod is a small WeiDU mod that adds lore bonuses to your main character as you learn and adventure throughout the game. The bonuses (and the stimuli that provide them) are, by design, meant to be minor and enhance the role-playing aspect of the game. ",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Lore_From_Learning"
+  },
+  "dl": "https://github.com/Gibberlings3/Lore_From_Learning",
+  "au": "CamDawg",
+  "co": [
+    {
+      "n": "Books Provide Lore Bonuses",
+      "tp2n": "Books Provide Lore Bonuses",
+      "pi": "cd_lore_from_learning_books",
+      "wf": "cdlore",
+      "wp": "cdlore\\CDLORE.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10
+    },
+    {
+      "n": "Weapon Knowledge Provides Lore Bonuses",
+      "tp2n": "Weapon Knowledge Provides Lore Bonuses",
+      "pi": "cd_lore_from_learning_martial",
+      "wf": "cdlore",
+      "wp": "cdlore\\CDLORE.TP2",
+      "wc": 20,
+      "wq": "name_match",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 20
+    },
+    {
+      "n": "Party Members Provide Lore Bonuses",
+      "tp2n": "Party Members Provide Lore Bonuses",
+      "pi": "cd_lore_from_learning_party",
+      "wf": "cdlore",
+      "wp": "cdlore\\CDLORE.TP2",
+      "wc": 30,
+      "wq": "name_match",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 30
+    },
+    {
+      "n": "Defeating Monsters Provides Lore Bonuses",
+      "tp2n": "Defeating Monsters Provides Lore Bonuses",
+      "pi": "cd_lore_from_learning_monster",
+      "wf": "cdlore",
+      "wp": "cdlore\\CDLORE.TP2",
+      "wc": 40,
+      "wq": "name_match",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 40
+    },
+    {
+      "n": "Exploring Areas Provides Lore Bonuses",
+      "tp2n": "Exploring Areas Provides Lore Bonuses",
+      "pi": "cd_lore_from_learning_area",
+      "wf": "cdlore",
+      "wp": "cdlore\\CDLORE.TP2",
+      "wc": 50,
+      "wq": "name_match",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 50
+    }
+  ]
+}

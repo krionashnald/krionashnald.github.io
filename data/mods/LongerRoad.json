@@ -1,0 +1,185 @@
+{
+  "i": 111,
+  "t": "LongerRoad",
+  "sv": 1,
+  "ord": 30,
+  "c": "QUEST MODS ToB",
+  "n": "The Longer Road",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "fr": 2,
+    "pl": 3,
+    "ru": 4
+  },
+  "no": "Extends Ascension with a quest to redeem Jon Irenicus. Installs with warnings — REPLACE_BCS_BLOCK for JAH_NO_JON.BAF may fail if Jaheira Recast modifies JAHE25.BCS (harmless). Requires Ascension to be installed first. Fix applied: eet-mod-forge-patches component #17. If install fails with 'iconv could not be found', ensure a clean game directory — an incomplete mod folder from a previous install can prevent the full mod from being copied.",
+  "conflicts": [
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "soft",
+      "reason": "Both modify FINSOL01 states 27-32 but use additive EXTEND_BOTTOM/I_C_T with independent conditions. Install Longer Road before Kelsey.",
+      "myComps": "#0 Longer Road",
+      "theirComps": "#4 Ascension-specific dialogue",
+      "source": "PPG/Kelsey tp2 uses EXTEND_BOTTOM/I_C_T on FINSOL01 27-32, LR uses same; additive ops, different guards, 2026-03"
+    },
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "hard",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "myComps": "#0 Longer Road",
+      "theirComps": "#0 Imoen Romance",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Watcher's Keep access conflict",
+      "myComps": "#0 Longer Road",
+      "theirComps": "#4190",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "m7tweaks",
+      "withId": 668,
+      "severity": "hard",
+      "reason": "Lum machine conflicts",
+      "myComps": "#0 Longer Road",
+      "theirComps": "Convenient/Cheating Machine of Lum the Mad -> Convenient: You can simply select the desired result, #21",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Restore Irenicus Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Restore Irenicus Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Restore Irenicus Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Restore Irenicus Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Restore Irenicus Portrait",
+      "theirComps": "#0 Core component",
+      "orderOnly": true
+    },
+    {
+      "with": "LICHDOM",
+      "withId": 674,
+      "severity": "soft",
+      "reason": "Install Lichdom BEFORE The Longer Road. Users reported installation errors when installed after.",
+      "orderOnly": true,
+      "source": "Beamdog forums user reports"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "hard",
+      "reason": "Longer Road EET needs Ascension"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "lr_irenicus",
+          "portraits/longer_road/lrjon.png",
+          "tob"
+        ],
+        [
+          "lr_irenicus",
+          "portraits/longer_road/lrejon.png",
+          "tob"
+        ],
+        [
+          "lr_irenicus",
+          "portraits/longer_road/newjon.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "in": [
+    {
+      "t": "LongerRoad.tp2 line 313, change REPLACE_BCS_BLOCK to EXTEND_TOP (Jaheira Recast compatibility). Or use eet-mod-forge-patches #17.",
+      "type": "file"
+    }
+  ],
+  "u": "https://github.com/InfinityMods/LongerRoadEE",
+  "a": "ladydorotea",
+  "v": "2.0.7",
+  "sum": "Expands Irenicus's storyline into ToB, offering a quest to resurrect and redeem (or re-destroy) him. Adds several hours of new content with moral weight.",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "gh": {
+    "o": "InfinityMods",
+    "r": "LongerRoadEE"
+  },
+  "au": "ladydorotea",
+  "dl": "https://github.com/InfinityMods/LongerRoadEE/releases",
+  "co": [
+    {
+      "n": "Longer Road",
+      "tp2n": "Longer Road",
+      "pi": "LongerRoad-Main",
+      "wf": "LongerRoad",
+      "wp": "LongerRoad\\LONGERROAD.TP2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "no": "INSTALLS WITH WARNINGS: 'cannot find block matching JAH_NO_JON.BAF' in JAHE25.BCS. Not caused by another mod — file is unmodified (12659 bytes throughout). The JAH_NO_JON.BAF pattern targets vanilla BG2's Jaheira romance script, which differs in EET. EET compatibility gap. Jaheira-Irenicus interaction in ToB may not trigger correctly."
+    },
+    {
+      "n": "Restore Irenicus's original portrait from SoA.",
+      "tp2n": "Restore Irenicus's original portrait from SoA.",
+      "pi": "LongerRoad-RestoreIrenicusSoAPortrait",
+      "wf": "LongerRoad",
+      "wp": "LongerRoad\\LONGERROAD.TP2",
+      "wq": "manual_final",
+      "cn": 1,
+      "no": "Restores Irenicus's SoA portrait instead of ToB version."
+    }
+  ]
+}

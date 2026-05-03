@@ -1,0 +1,73 @@
+{
+  "i": 527,
+  "t": "BonehillEET",
+  "sv": 1,
+  "ord": 360,
+  "c": "QUEST MODS BG1",
+  "n": "Secret of Bonehill",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "it": 2,
+    "ru": 3,
+    "es": 4,
+    "fr": 5,
+    "zh-cn": 6
+  },
+  "no": "Adapts the Isle of Lendore tabletop modules (L1 & L2) for BG1. Roxanne's EET update. May have issues on game version 2.6.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "bh_fabio",
+          "portraits/bone_hill/bhfabio.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/RoxanneSHS/BoneHill",
+  "a": "SirBillyBob, erebusant",
+  "v": "v34",
+  "sum": "Adapts the classic AD&D module 'Secret of Bonehill' as a BG1 quest. A self-contained adventure with new areas and encounters.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/RoxanneSHS/BoneHill",
+  "au": "Roxanne (EET port; original by CBisson)",
+  "co": [
+    {
+      "n": "Secret of BoneHill (EET)",
+      "tp2n": "Secret of BoneHill (EET)",
+      "cn": 0,
+      "wf": "BONEHILLEET",
+      "wp": "BONEHILLEET\\SETUP-BONEHILLEET.TP2",
+      "wc": 0,
+      "no": "Classic Secret of Bone Hill adventure adapted for EET.",
+      "games": [
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "BoneHill"
+  }
+}

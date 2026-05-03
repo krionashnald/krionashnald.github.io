@@ -1,0 +1,233 @@
+{
+  "i": 383,
+  "t": "SELPHIRATWEAKS",
+  "sv": 1,
+  "ord": 280,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Selphira Tweaks",
+  "cats": [
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "French-language mod. Most components overlap with cdtweaks and other tweak mods. Translations provided in component notes",
+  "_legacy_ids": [
+    445
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify store pricing mechanics",
+      "myComps": "#10 Charisma on prices #11 Reputation on prices",
+      "theirComps": "#3070 #3071 #3072 #3073 Store Prices"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify spell progression tables. Last installed wins",
+      "myComps": "#20 Mage spells #21 Sorcerer spells #22 Paladin spells #23 Ranger spells #24 Druid spells #25 Bard spells #26 Cleric spells",
+      "theirComps": "#2250 Sorcerer #2260 #2261 Mage #2280 #2271 Bard #2240 #2281 Cleric #2290 Druid #2390 #2391 Paladin #2400 #2401 Ranger Spell Progression",
+      "orderOnly": true
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both modify spell progression tables. Last installed wins",
+      "myComps": "#20 Mage #21 Sorcerer #22 Paladin #23 Ranger #24 Druid #25 Bard #26 Cleric spell progression",
+      "theirComps": "#1500 #1510 #1520 IWD spells #40400 Ranger spells #40610 Druid/cleric tables",
+      "orderOnly": true
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "Both modify paladin and ranger spell tables",
+      "myComps": "#22 Paladin #23 Ranger spell progression",
+      "theirComps": "#2390 Paladin #2400 Ranger spell tables"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "soft",
+      "reason": "Both modify mage and sorcerer spell tables",
+      "myComps": "#20 Mage #21 Sorcerer spell progression",
+      "theirComps": "#11 #12 Mage #16 #17 Sorcerer spell tables"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "Both modify cleric and druid spell tables",
+      "myComps": "#24 Druid #26 Cleric spell progression",
+      "theirComps": "#12 #13 Cleric spell tables"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify scroll casting level. Redundant — use one or the other",
+      "myComps": "#40 Cast scrolls at character level",
+      "theirComps": "#2170 Cast Spells from Scrolls at Character Level"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "soft",
+      "reason": "Both modify store pricing mechanics",
+      "myComps": "#10 Charisma on prices #11 Reputation on prices",
+      "theirComps": "#2180 Store prices"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "Both modify store pricing mechanics",
+      "myComps": "#10 Charisma on prices #11 Reputation on prices",
+      "theirComps": "#2180 Store prices"
+    },
+    {
+      "with": "Bart_Tweaks",
+      "withId": 405,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplsrc.2da/splsrckn.2da. Last installed wins.",
+      "myComps": "#21 Sorcerer Spell Progression",
+      "theirComps": "#3010 Alternative Sorcerer Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Selphira/SelphiraTweaks",
+  "a": "Selphira",
+  "sum": "12 selectable tweaks covering minor gameplay adjustments and quality-of-life improvements.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Selphira",
+    "r": "SelphiraTweaks"
+  },
+  "dl": "https://github.com/Selphira/SelphiraTweaks",
+  "au": "Selphira",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Effet du charisme sur les prix",
+      "cn": 10,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 10,
+      "wq": "guessed",
+      "no": "Effect of Charisma on store prices"
+    },
+    {
+      "n": "Effet de la reputation sur les prix",
+      "cn": 11,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 11,
+      "wq": "guessed",
+      "no": "Effect of Reputation on store prices"
+    },
+    {
+      "n": "Progression des sorts des mages",
+      "cn": 20,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 20,
+      "wq": "guessed",
+      "no": "Mage spell progression"
+    },
+    {
+      "n": "Progression des sorts des sorciers",
+      "cn": 21,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 21,
+      "wq": "guessed",
+      "no": "Sorcerer spell progression"
+    },
+    {
+      "n": "Progression des sorts des paladins",
+      "cn": 22,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 22,
+      "wq": "guessed",
+      "no": "Paladin spell progression"
+    },
+    {
+      "n": "Progression des sorts des rodeurs",
+      "cn": 23,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 23,
+      "wq": "guessed",
+      "no": "Ranger spell progression"
+    },
+    {
+      "n": "Progression des sorts des druides",
+      "cn": 24,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 24,
+      "wq": "guessed",
+      "no": "Druid spell progression"
+    },
+    {
+      "n": "Progression des sorts des bardes",
+      "cn": 25,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 25,
+      "wq": "guessed",
+      "no": "Bard spell progression"
+    },
+    {
+      "n": "Progression des sorts des pretres",
+      "cn": 26,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 26,
+      "wq": "guessed",
+      "no": "Cleric spell progression"
+    },
+    {
+      "n": "Erudition des classes",
+      "cn": 30,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 30,
+      "wq": "guessed",
+      "no": "Class lore/identification"
+    },
+    {
+      "n": "Lancement des sorts depuis les parchemins au niveau (de mage) du personnage",
+      "cn": 40,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 40,
+      "wq": "guessed",
+      "no": "Cast spells from scrolls at character (mage) level"
+    },
+    {
+      "n": "Adaptation des bonus d'experience des pièges",
+      "cn": 50,
+      "wf": "SELPHIRATWEAKS",
+      "wp": "SELPHIRATWEAKS\\SELPHIRATWEAKS.TP2",
+      "wc": 50,
+      "wq": "guessed",
+      "no": "Adjust XP bonuses from traps",
+      "cat": "POST-TACTICAL TWEAKS"
+    }
+  ]
+}

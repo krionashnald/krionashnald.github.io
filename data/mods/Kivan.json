@@ -1,0 +1,146 @@
+{
+  "i": 591,
+  "t": "kivan",
+  "sv": 1,
+  "ord": 1020,
+  "c": "NEW NPC MODS",
+  "n": "Kivan of Shilmista",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Kivan is a CG Male Elf Ranger (Archer) and Deheriana is a ‘secret’ NPC, a NG Female Elf Fighter/Mage/Cleric (default) OR Mage (Diviner) OR Mage (Enchanter) OR Mage (Wild Mage).",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Kivan in BG2. Standalone Kivan of Shilmista is more feature-rich. BG1NPCinSoA auto-skips its Kivan if standalone detected.",
+      "theirComps": "#70 Kivan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME p#kivan.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SMILINGIMPCROSSBANTERMOD",
+      "withId": 632,
+      "severity": "partial",
+      "reason": "Both provide an alternative Kivan portrait. Cosmetic 'last installed wins' — no crashes or script breaks.",
+      "myComps": "#0 Alternative Portrait for Kivan",
+      "theirComps": "#225",
+      "source": "Portrait BMP overwrite only, no gameplay impact. Neither component selected",
+      "orderOnly": true
+    },
+    {
+      "with": "continuous-npcs",
+      "withId": 503,
+      "severity": "hard",
+      "reason": "Both add Kivan to BG2 via pdialog.2da/interdia.2da APPEND. Cannot have two Kivan entries. Choose one: Continuous NPCs (lightweight continuation) or Kivan of Shilmista (full NPC with romance/quests)",
+      "myComps": "#100 Kivan of Shilmista",
+      "theirComps": "#701 Add Kivan Archer / #702 Add Kivan No Kit",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "kivan_bg2",
+          "portraits/kivan_bg2/p_ki1.png",
+          "bg2"
+        ],
+        [
+          "kivan_bg2",
+          "portraits/kivan_bg2/p_ki2.png",
+          "bg2"
+        ],
+        [
+          "kivan_deheriana",
+          "portraits/kivan_bg2/deher.png",
+          "bg2"
+        ],
+        [
+          "kivan_neil",
+          "portraits/kivan_bg2/p_nei.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Kivan_and_Deheriana",
+  "a": "Domi",
+  "v": "v19",
+  "sum": "Continues Kivan's story into BG2/ToB as a joinable NPC with ranger-themed quests, revenge storyline, and romance option.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Domi",
+  "dl": "https://github.com/Gibberlings3/Kivan_and_Deheriana",
+  "co": [
+    {
+      "n": "Kivan of Shilmista",
+      "cn": 100,
+      "wf": "Kivan",
+      "wp": "Kivan\\SETUP-KIVAN.TP2",
+      "wc": 100,
+      "tp2n": "Kivan of Shilmista",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Change Deheriana's Class from Fighter/Mage/Cleric to: -> Wild Mage",
+      "cn": 200,
+      "wf": "Kivan",
+      "wp": "Kivan\\SETUP-KIVAN.TP2",
+      "wc": 200,
+      "tp2n": "Wild Mage",
+      "scn": "Change Deheriana's Class from Fighter/Mage/Cleric to:"
+    },
+    {
+      "n": "Specialist-Mage, Enchanter",
+      "cn": 201,
+      "wf": "Kivan",
+      "wp": "Kivan\\SETUP-KIVAN.TP2",
+      "wq": "verified",
+      "tp2n": "Specialist-Mage, Enchanter",
+      "pi": "p#_kivan_deheriana_enchanter",
+      "scn": "Change Deheriana's Class from Fighter/Mage/Cleric to:"
+    },
+    {
+      "n": "Specialist-Mage, Diviner",
+      "cn": 202,
+      "wf": "Kivan",
+      "wp": "Kivan\\SETUP-KIVAN.TP2",
+      "wq": "verified",
+      "tp2n": "Specialist-Mage, Diviner",
+      "pi": "p#_kivan_deheriana_diviner",
+      "scn": "Change Deheriana's Class from Fighter/Mage/Cleric to:"
+    },
+    {
+      "n": "Install Herd's Alternative Portrait for Kivan.",
+      "cn": 300,
+      "wf": "Kivan",
+      "wp": "Kivan\\SETUP-KIVAN.TP2",
+      "wc": 300,
+      "tp2n": "Install Herd's Alternative Portrait for Kivan."
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Kivan_and_Deheriana"
+  }
+}

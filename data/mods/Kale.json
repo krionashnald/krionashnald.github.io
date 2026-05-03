@@ -1,0 +1,81 @@
+{
+  "i": 132,
+  "t": "Kale",
+  "sv": 1,
+  "ord": 110,
+  "c": "NEW NPC MODS",
+  "n": "Kale",
+  "no": "Kale BG1 Fighter, optional Warden kit Requires wb:1 to install during BG1 phase — references BG1 DLG resources (HALFGU.DLG and other BG1 NPCs) not available in BG2EE. Patched Emily.d: removed Isaac (X3ISAACB) crossmod blocks - Isaac is commented out in Skitia NPCs. WARNING: EXTEND_TOP #position 4 out of range (×9) patching BDIMOEN.DLG. Off-by-one in SoD Imoen dialog patching. Cosmetic. Automated fix: eet-mod-forge-patches component #16.",
+  "notes": "Kale mod bug: CrossMod/Emily.d references X3ISAACB.DLG (Isaac NPC) which is commented out in Skitia NPCs tp2 and never compiled. Patched extracted copy to remove Isaac banter blocks. No FILE_EXISTS_IN_GAME guard in Kale tp2 for Isaac.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "kale",
+          "portraits/kale/kale.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Skitia/Kale-BG1",
+  "a": "Skitia",
+  "v": "1.73",
+  "sum": "Adds Kale as a joinable NPC in BG1 with dialogue and personal storyline.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "gh": {
+    "o": "Skitia",
+    "r": "Kale-BG1"
+  },
+  "au": "Coutelier",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/Skitia/Kale-BG1",
+  "co": [
+    {
+      "n": "Kale NPC for BG1EE and SoD",
+      "cn": 0,
+      "wf": "Kale",
+      "wp": "Kale\\Kale.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "LOCAL FIX APPLIED: Kale crossmod file (dialogue/CrossMod/Emily.d) includes banters for Isaac NPC, which is an unreleased NPC bundled in the dev branch of Emily BG1 (Skitia/Emily-BG1). Isaac is NOT in any Emily release (latest: v1.65). Without Isaac installed, WeiDU fails with X3ISAACB.DLG not found. Fix: removed Isaac chains from Emily.d (kept Emily-only banters, lines 1-78). Backup at Emily.d.bak. Automated fix: eet-mod-forge-patches component #16.",
+      "tp2n": "Kale NPC for BG1EE and SoD"
+    },
+    {
+      "n": "Warden(Fighter Kit)",
+      "cn": 1,
+      "wf": "Kale",
+      "wp": "Kale\\Kale.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "kale_bg1_class",
+      "scn": "Select Kale's Kit (Warden Recommended)",
+      "tp2n": "Warden(Fighter Kit)"
+    },
+    {
+      "n": "3 Foot-Tall-Fury Kit",
+      "cn": 2,
+      "g": "kale_bg1_class",
+      "wf": "Kale",
+      "wp": "Kale\\Kale.tp2",
+      "tp2n": "3 Foot-Tall-Fury Kit (Requires Lava's Of Paths and Ways)"
+    },
+    {
+      "n": "Barbarian",
+      "cn": 3,
+      "g": "kale_bg1_class",
+      "scn": "Select Kale's Kit (Warden Recommended)",
+      "wf": "Kale",
+      "wp": "Kale\\Kale.tp2",
+      "tp2n": "Barbarian"
+    }
+  ]
+}

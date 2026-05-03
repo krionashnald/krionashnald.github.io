@@ -1,0 +1,294 @@
+{
+  "i": 854,
+  "t": "gaEnemyRando",
+  "sv": 1,
+  "ord": 1010,
+  "c": "TACTICAL MODS",
+  "n": "Enemy Randomizer",
+  "u": "https://github.com/GuardianAnubite/bg_enemy_randomizer",
+  "a": "GuardianAnubite",
+  "sum": "Tired of fighting the same badgers every time you play Baldur's Gate? This mod randomizes the appearance of unimportant enemies (enemies without quests, dialogs) to offer a new experience every tim...",
+  "tags": [
+    "combat",
+    "difficulty"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "GuardianAnubite",
+  "dl": "https://github.com/GuardianAnubite/bg_enemy_randomizer",
+  "no": "Randomizes unimportant enemy appearances (no quest/dialogue enemies). Three systems: spawn point randomizer, rest encounter randomizer, and set creature randomizer. Separate components for BG1, BG2, and EET. Options for SoD creatures, Chateau Irenicus inclusion, and partial vs complete randomization. English only.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "BG creatures only",
+      "cn": 0,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "g": "BG1 Spawn Point Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher)",
+      "cn": 1,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "BG1 Spawn Point Randomizer"
+    },
+    {
+      "n": "BG2 Spawn Point Randomizer",
+      "cn": 2,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "EET Spawn Point Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher)",
+      "cn": 3,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "g": "EET Spawn Point Randomizer"
+    },
+    {
+      "n": "Without SoD creatures",
+      "cn": 4,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "g": "EET Spawn Point Randomizer"
+    },
+    {
+      "n": "BG creatures only",
+      "cn": 5,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "g": "BG1 Rest Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher)",
+      "cn": 6,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "g": "BG1 Rest Encounter Randomizer"
+    },
+    {
+      "n": "Include starting dungeon",
+      "cn": 7,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "g": "BG2 Rest Encounter Randomizer"
+    },
+    {
+      "n": "Exclude starting dungeon",
+      "cn": 8,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "g": "BG2 Rest Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Exclude Chateau Irenicus",
+      "cn": 9,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "g": "EET Rest Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Exclude Chateau Irenicus",
+      "cn": 10,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "g": "EET Rest Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Include Chateau Irenicus",
+      "cn": 11,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "g": "EET Rest Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Include Chateau Irenicus",
+      "cn": 12,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "g": "EET Rest Encounter Randomizer"
+    },
+    {
+      "n": "BG creatures only - Keep enemies roughly similar in power",
+      "cn": 13,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "g": "BG1 Set Creature Randomizer"
+    },
+    {
+      "n": "BG creatures only - Completely random",
+      "cn": 14,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "g": "BG1 Set Creature Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Keep enemies roughly similar in power",
+      "cn": 15,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "g": "BG1 Set Creature Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Completely random",
+      "cn": 16,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "g": "BG1 Set Creature Randomizer"
+    },
+    {
+      "n": "Include starting dungeon - Keep enemies roughly similar in power",
+      "cn": 17,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 17,
+      "wq": "verified",
+      "g": "BG2 Set Creature Randomizer"
+    },
+    {
+      "n": "Include starting dungeon - Completely random",
+      "cn": 18,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 18,
+      "wq": "verified",
+      "g": "BG2 Set Creature Randomizer"
+    },
+    {
+      "n": "Exclude starting dungeon - Keep enemies roughly similar in power",
+      "cn": 19,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 19,
+      "wq": "verified",
+      "g": "BG2 Set Creature Randomizer"
+    },
+    {
+      "n": "Exclude starting dungeon - Completely random",
+      "cn": 20,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "BG2 Set Creature Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Exclude Chateau Irenicus - Keep enemies roughly similar in power",
+      "cn": 21,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Exclude Chateau Irenicus - Completely random",
+      "cn": 22,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Exclude Chateau Irenicus - Keep enemies roughly similar in power",
+      "cn": 23,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 23,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Exclude Chateau Irenicus - Completely random",
+      "cn": 24,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 24,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Include Chateau Irenicus - Keep enemies roughly similar in power",
+      "cn": 25,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 25,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "With SoD creatures (Makes BG1 slightly tougher) - Include Chateau Irenicus - Completely random",
+      "cn": 26,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 26,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Include Chateau Irenicus - Keep enemies roughly similar in power",
+      "cn": 27,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 27,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    },
+    {
+      "n": "Without SoD creatures - Include Chateau Irenicus - Completely random",
+      "cn": 28,
+      "wf": "gaEnemyRando",
+      "wp": "gaEnemyRando\\gaEnemyRando.tp2",
+      "wc": 28,
+      "wq": "verified",
+      "g": "EET Set Encounter Randomizer"
+    }
+  ],
+  "gh": {
+    "o": "GuardianAnubite",
+    "r": "bg_enemy_randomizer"
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "i": 42,
+  "t": "bgqe",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 90,
+  "c": "QUEST MODS BG1",
+  "n": "Baldur's Gate Mini Quests and Encounters Modification",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "it": 3,
+    "ru": 4,
+    "pl": 5,
+    "es": 6,
+    "zh-cn": 7,
+    "tr": 8
+  },
+  "no": "Anything that introduce quests or encounters, small or big Baldur's Gate Mini Quests and Encounters goes before BG1NPC BGQE adds a bunch of minor quests - just as the name says - such as helping Noober find a home, handling some slimes, helping an ugly Half-Orc with his lover, adding minor content to the Candlekeep In...",
+  "u": "https://github.com/Gibberlings3/BG_Quests_And_Encounters",
+  "a": "jastey",
+  "v": "31",
+  "sum": "Adds 17 small quests and encounters scattered across BG1 areas. Each is bite-sized (15-30 min) and integrates with existing locations.",
+  "tags": [
+    "story",
+    "combat"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v15",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "BG_Quests_And_Encounters"
+  },
+  "dl": "https://github.com/Gibberlings3/BG_Quests_And_Encounters",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Slime Quest",
+      "pi": "bgqe_slimequest",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "no": "Investigate a slime infestation in Beregost.",
+      "tp2n": "Slime Quest"
+    },
+    {
+      "n": "Beregost Family Quest",
+      "pi": "bgqe_familyquest",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1,
+      "no": "Help a family in Beregost deal with personal troubles.",
+      "tp2n": "Beregost Family Quest"
+    },
+    {
+      "n": "Babysitting Quest, including the Carnival Encounter...",
+      "pi": "bgqe_babysitting",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2,
+      "no": "Babysit a child at the Nashkel Carnival with an unexpected encounter.",
+      "tp2n": "Babysitting Quest, including the Carnival Encounter..."
+    },
+    {
+      "n": "Nashkel Monster Quest",
+      "pi": "bgqe_nashkelmonster",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3,
+      "no": "Track down a monster terrorizing Nashkel.",
+      "tp2n": "Nashkel Monster Quest"
+    },
+    {
+      "n": "Fallen Paladin Quest",
+      "pi": "bgqe_fallenpaladin",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 4,
+      "no": "Encounter a fallen paladin struggling with his faith.",
+      "tp2n": "Fallen Paladin Quest"
+    },
+    {
+      "n": "Undying Love Quest",
+      "pi": "bgqe_undyinglove",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 5,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 5,
+      "no": "A love story with a dark twist near the Nashkel mines.",
+      "tp2n": "Undying Love Quest"
+    },
+    {
+      "n": "Lovesick Half-Orc",
+      "pi": "bgqe_orclover",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 6,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 6,
+      "no": "Help a lovesick half-orc in the Friendly Arm Inn area.",
+      "tp2n": "Lovesick Half-Orc"
+    },
+    {
+      "n": "Unexpected Help Quest",
+      "pi": "bgqe_unexpectedhelp",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 7,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 7,
+      "no": "Receive unexpected help from a stranger in the wilderness.",
+      "tp2n": "Unexpected Help Quest"
+    },
+    {
+      "n": "Many Little Paws",
+      "tp2n": "Many Little Paws",
+      "pi": "bgqe_manypaws",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 8,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 8,
+      "no": "v18 (component not present in tp2; legacy entry — may have been removed or renumbered). Investigate suspicious animal activity near a farm.",
+      "gone": true
+    },
+    {
+      "n": "Drunk near Beregost Temple",
+      "pi": "bgqe_drunk",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 9,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 9,
+      "no": "Encounter a drunk near the Beregost temple.",
+      "tp2n": "Drunk Near Beregost Temple"
+    },
+    {
+      "n": "A Warm Place for Noober",
+      "pi": "bgqe_noober",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10,
+      "no": "Find a warm place for Noober to stay.",
+      "tp2n": "A Warm Place for Noober"
+    },
+    {
+      "n": "Brage's Sword",
+      "pi": "bgqe_bragesword",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 11,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 11,
+      "no": "Investigate the history of Brage's cursed sword.",
+      "tp2n": "Brage's Sword"
+    },
+    {
+      "n": "Legal Sea Charts Sources",
+      "no": "Obtain legal sea charts through legitimate sources. Install before Brage's Redemption if using both.",
+      "pi": "bgqe_seacharts",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 12,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 12,
+      "tp2n": "Legal Sea Charts Sources"
+    },
+    {
+      "n": "Additions to the Lady's Hall and the Bitch Queen's Temple",
+      "pi": "bgqe_waterqueentemple",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 13,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 13,
+      "no": "Adds content to the Lady's Hall and Bitch Queen's Temple in Baldur's Gate city.",
+      "tp2n": "Additions to the Lady's Hall and the Bitch Queen's Temple"
+    },
+    {
+      "n": "A Worried Farmer",
+      "pi": "bgqe_worriedfarmer",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 14,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 14,
+      "no": "Help a worried farmer with a problem on his land.",
+      "tp2n": "A Worried Farmer"
+    },
+    {
+      "n": "Bodies for a Good Cause",
+      "pi": "bgqe_bodiesforgoodcause",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 15,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 15,
+      "no": "A quest involving bodies needed for a questionable cause.",
+      "tp2n": "Bodies for a Good Cause"
+    },
+    {
+      "n": "Finish Cordyr's Quest without killing Sil",
+      "pi": "bgqe_cordyrnokillingsil",
+      "wf": "bgqe",
+      "wp": "bgqe\\SETUP-BGQE.TP2",
+      "wc": 16,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 16,
+      "no": "Allows completing Cordyr's quest without killing Sil.",
+      "tp2n": "Finish Cordyr's Quest without killing Sil"
+    },
+    {
+      "n": "Improved Borda",
+      "cn": 17,
+      "wf": "bgqe",
+      "wp": "bgqe\\setup-bgqe.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "tp2n": "Improved Borda",
+      "pi": "bgqe_improved_borda"
+    }
+  ]
+}

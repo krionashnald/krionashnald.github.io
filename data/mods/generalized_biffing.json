@@ -1,0 +1,60 @@
+{
+  "i": 685,
+  "t": "generalized_biffing",
+  "sv": 1,
+  "pfx": "TB#",
+  "ord": 40,
+  "c": "POST EET",
+  "n": "Generalized Biffing",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "it": 2,
+    "pl": 3,
+    "pt-br": 4
+  },
+  "no": "Packs loose files from the override folder into BIF archives. Originally needed for the classic BG2 engine which had significant performance issues with large override directories. NOT NEEDED for Enhanced Edition games — the EE engine handles override files natively without performance degradation. Community consensus (Beamdog Forums, EET documentation) confirms biffing provides no benefit on EE/EET.\nBiffing can cause issues in heavily modded installs: Lua files (.lua) lose their override load order priority when biffed, causing nil reference errors at game startup. Menu files (.menu) can have corruption frozen into the biff with no way to override. If you still want to use biffing, remove all .lua and .menu files from override BEFORE running Generalized Biffing, then restore them to override afterward.",
+  "u": "https://github.com/Spellhold-Studios/Generalized-Biffing",
+  "a": "the bigg",
+  "v": "v2.9",
+  "sum": "Compresses loose game files into BIF archives for faster loading times. Install last; purely a performance optimization that affects no gameplay.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Spellhold-Studios/Generalized-Biffing",
+  "au": "wisp",
+  "co": [
+    {
+      "n": "Biff only WAV, TIS and BAM files",
+      "tp2n": "Biff only WAV, TIS, and BAM files (recommended by The Bigg and Small World Dudes)",
+      "cn": 0,
+      "wf": "generalized_biffing",
+      "wp": "generalized_biffing\\GENERALIZED_BIFFING.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "g": "biff_mode",
+      "scn": "Generalized Biffing"
+    },
+    {
+      "n": "Biff all files (recommended)",
+      "tp2n": "Biff all files (recommended by the Big World Dudes)",
+      "cn": 1,
+      "wf": "generalized_biffing",
+      "wp": "generalized_biffing\\GENERALIZED_BIFFING.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "g": "biff_mode",
+      "scn": "Generalized Biffing"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Generalized-Biffing"
+  }
+}

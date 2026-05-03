@@ -1,0 +1,84 @@
+{
+  "i": 619,
+  "t": "mur'neth",
+  "sv": 1,
+  "ord": 1180,
+  "c": "NEW NPC MODS",
+  "n": "Mur'Neth NPC",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "es": 3,
+    "de": 4,
+    "it": 5,
+    "ru": 6
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "murneth",
+          "portraits/murneth/a_murn.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[The Mur.Neth NPC Mod\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Mur'Neth's tp2 uses GAME_IS checks that fail when installed pre-EET. The mod must detect 'eet' in GAME_IS to include EET transition support.",
+      "workaround": "Install after EET core (EET_Start) on the BG2EE executable, not before. DLC Merger must also have run first.",
+      "user_action": "check-docs",
+      "components": [
+        0
+      ]
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Murneth",
+  "a": "Andyr",
+  "v": "v14",
+  "sum": "Adds Mur'Neth, a ghaunadan (ooze shapechanger), as a joinable BG1 NPC. A truly unusual companion with alien perspective dialogue.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Andyr",
+  "dl": "https://github.com/Gibberlings3/Murneth",
+  "no": "This mod contains two components. The first is the joinable NPC Mur'Neth for BG1. Though it was planned as a One - Day NPC inspired by the Pocket Plane Group, since the initial version a lot more content has been added and it has as much as, or more than, any other NPC in BG.",
+  "co": [
+    {
+      "n": "The Mur'Neth NPC Mod",
+      "cn": 0,
+      "wf": "mur'neth",
+      "wp": "mur'neth\\MUR'NETH.TP2",
+      "wc": 0,
+      "no": "mod_installer: game detection fails when installed pre-EET. tp2 correctly lists eet in GAME_IS check (line 10: NOT GAME_IS tutu tutu_totsc bgt bgee eet => FAIL). Post-EET install will detect GAME_IS eet and include EET/other/EET_functions.tph (line 536) for NPC transition support. Fix: install after EET_Start on BG2EE executable. DLC Merger check at line 12 also requires sod-dlc.zip to already be merged before install.",
+      "tp2n": "The Mur'Neth NPC Mod"
+    },
+    {
+      "n": "Remove Rare selection sounds",
+      "cn": 1,
+      "wf": "mur'neth",
+      "wp": "mur'neth\\MUR'NETH.TP2",
+      "wq": "verified",
+      "tp2n": "Remove Rare selection sounds",
+      "pi": "murneth_rare_select_sounds"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Murneth"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "i": 165,
+  "t": "nephele",
+  "sv": 1,
+  "ord": 440,
+  "c": "NEW NPC MODS",
+  "n": "Nephele NPC",
+  "cats": [
+    "NEW NPC MODS",
+    "NPC CROSSMOD"
+  ],
+  "no": "conflicts with the Oversight component [Iylos placeholder] Nephele",
+  "_legacy_ids": [
+    202
+  ],
+  "dependencies": [
+    {
+      "requires": "haerdalisromance",
+      "requiresId": 201,
+      "type": "soft",
+      "reason": "Nephele/Haer'Dalis Romance"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "nephele",
+          "portraits/nephele/lk_nep.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Nephele_NPC",
+  "a": "K'aeloree; jastey",
+  "v": "v2.7",
+  "sum": "A mod for Baldur's Gate II that introduces Nephele, a cheerful and motherly halfling cleric of Yondalla, as a joinable NPC.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Nephele_NPC"
+  },
+  "au": "Kaeloree",
+  "dl": "https://github.com/SpellholdStudios/Nephele_NPC",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Nephele NPC Mod for BGII: SoA & ToB",
+      "cn": 0,
+      "wf": "NEPHELE",
+      "wp": "NEPHELE\\NEPHELE.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Nephele NPC Mod for BGII: SoA & ToB"
+    },
+    {
+      "n": "Install Haer'Dalis Romance crossmod content",
+      "cn": 1,
+      "wf": "NEPHELE",
+      "wp": "NEPHELE\\NEPHELE.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Install Haer'Dalis Romance crossmod content"
+    }
+  ]
+}

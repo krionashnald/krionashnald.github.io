@@ -1,0 +1,311 @@
+{
+  "i": 867,
+  "t": "drunkshaders",
+  "sv": 1,
+  "ord": 180,
+  "c": "GRAPHICS",
+  "n": "Sharpening Filter",
+  "u": "https://github.com/dtiefling/dshaders",
+  "a": "Drunktiefling",
+  "sum": "This mod aims to use more consistent color operations, alternative sharpening and scaling filters via the shader files introduced in BG(2)EE.",
+  "tags": [
+    "cosmetic"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Drunktiefling",
+  "dl": "https://github.com/dtiefling/dshaders",
+  "no": "Shader-based visual tweaks: scaling filters (Catmull-Rom), sprite outline changes, color adjustments (gamma/contrast/brightness), sharpening/blur, gamma controls, saturation, and selection circle tweaks. All optional components require main component (cn:1000). Many choose-one subcomponent groups. English only.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Adjustable shaders coded by a drunk tiefling [Main component]",
+      "cn": 1000,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1000,
+      "wq": "verified",
+      "no": "Required by all other components."
+    },
+    {
+      "n": "Use Catmull-Rom interpolation for sprites only",
+      "cn": 1105,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1105,
+      "wq": "verified",
+      "g": "Scaling filter"
+    },
+    {
+      "n": "Use Catmull-Rom interpolation in all shaders",
+      "cn": 1125,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1125,
+      "wq": "verified",
+      "g": "Scaling filter"
+    },
+    {
+      "n": "Disable sprite outlines in non-selected sprites",
+      "cn": 1205,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1205,
+      "wq": "verified",
+      "g": "Outline changes via shaders"
+    },
+    {
+      "n": "Disable sprite outlines in non-selected sprites, make them thinner for selected ones",
+      "cn": 1215,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1215,
+      "wq": "verified",
+      "g": "Outline changes via shaders"
+    },
+    {
+      "n": "Disable sprite outlines in all sprites",
+      "cn": 1225,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1225,
+      "wq": "verified",
+      "g": "Outline changes via shaders"
+    },
+    {
+      "n": "Use moderate color adjustments (gamma +2%, contrast +10%, brightness +5%), sprites only",
+      "cn": 1304,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1304,
+      "wq": "verified",
+      "g": "Color adjustments"
+    },
+    {
+      "n": "Use moderate color adjustments (gamma +2%, contrast +10%, brightness +5%), all shaders",
+      "cn": 1314,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1314,
+      "wq": "verified",
+      "g": "Color adjustments"
+    },
+    {
+      "n": "Use intense color adjustments (gamma +2%, contrast +20%, brightness +10%), sprites only",
+      "cn": 1305,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1305,
+      "wq": "verified",
+      "g": "Color adjustments"
+    },
+    {
+      "n": "Use intense color adjustments (gamma +2%, contrast +20%, brightness +10%), all shaders",
+      "cn": 1315,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1315,
+      "wq": "verified",
+      "g": "Color adjustments"
+    },
+    {
+      "n": "Sharpen slightly (+0.25), sprites only",
+      "cn": 1405,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1405,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Sharpen slightly (+0.25), all shaders",
+      "cn": 1415,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1415,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Sharpen more (+0.50), sprites only",
+      "cn": 1425,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1425,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Sharpen more (+0.50), all shaders",
+      "cn": 1435,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1435,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Blur slightly (-0.25 sharpen), sprites only",
+      "cn": 1445,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1445,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Blur slightly (-0.25 sharpen), all shaders",
+      "cn": 1455,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1455,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Blur more (-0.50 sharpen), sprites only",
+      "cn": 1465,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1465,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Blur more (-0.50 sharpen), all shaders",
+      "cn": 1475,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1475,
+      "wq": "verified",
+      "g": "Sharpening / blur"
+    },
+    {
+      "n": "Lower gamma for fonts shader only (set to 0.8)",
+      "cn": 1505,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1505,
+      "wq": "verified",
+      "g": "Font fixes"
+    },
+    {
+      "n": "Lower gamma for fonts shader (set to 0.8) + use color-based hack to lower fonts gamma in some UIs (Dragonspear UI++, Infinity UI++)",
+      "cn": 1515,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1515,
+      "wq": "verified",
+      "g": "Font fixes"
+    },
+    {
+      "n": "Make colors warmer (hue +3.0 deg), sprites only",
+      "cn": 1605,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1605,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors warmer (hue +3.0 deg), all shaders",
+      "cn": 1615,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1615,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors remarkably warmer (hue +5.0 deg), sprites only",
+      "cn": 1625,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1625,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors remarkably warmer (hue +5.0 deg), all shaders",
+      "cn": 1635,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1635,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors colder (hue -3.0 deg), sprites only",
+      "cn": 1645,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1645,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors colder (hue -3.0 deg), all shaders",
+      "cn": 1655,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1655,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors remarkably colder (hue -5.0 deg), sprites only",
+      "cn": 1665,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1665,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make colors remarkably colder (hue -5.0 deg), all shaders",
+      "cn": 1675,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1675,
+      "wq": "verified",
+      "g": "Hue change"
+    },
+    {
+      "n": "Make sprite selection circles thinner and object selection highlight more transparent",
+      "cn": 1705,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1705,
+      "wq": "verified",
+      "g": "Selection gamma"
+    },
+    {
+      "n": "[Experimental] Disable anti-glitch methods (makes advanced interpolation more consistent inside objects and animations, but causes visible line-shaped glitches at the edges of their tiles)",
+      "cn": 1805,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 1805,
+      "wq": "verified",
+      "g": "Change anti-glitch settings"
+    },
+    {
+      "n": "Process shaders with GLSL Optimizer [WARINIG: manual editing won't be possible after this step]",
+      "cn": 9005,
+      "wf": "drunkshaders",
+      "wp": "drunkshaders\\drunkshaders.tp2",
+      "wc": 9005,
+      "wq": "verified",
+      "g": "GLSL Optimization"
+    }
+  ],
+  "gh": {
+    "o": "dtiefling",
+    "r": "dshaders"
+  }
+}

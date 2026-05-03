@@ -1,0 +1,113 @@
+{
+  "i": 726,
+  "t": "Spiritwalker",
+  "sv": 1,
+  "ord": 50,
+  "c": "KIT & CLASS MODS",
+  "n": "Spiritwalker Kit",
+  "no": "Spiritwalker shaman kit by Ulb. Three spirit animal forms (Yak, Tiger, Crane) with unique mechanics. Requires BGEE/BG2EE/EET.",
+  "conflicts": [
+    {
+      "with": "a7-improved_shamanic_dance",
+      "withId": 337,
+      "severity": "soft",
+      "reason": "A7 Improved Shamanic Dance scans kitlist.2da and patches all shaman kits. Install Spiritwalker BEFORE A7 Shamanic Dance.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "SPIRITWALKER_SHAMAN": {
+        "passive": [
+          {
+            "n": "Spirit Shift (Dance)",
+            "type": "desc",
+            "desc": "Shamanic Dance triggers 1-round shapeshift into attuned Spirit Animal instead of summoning spirits. -4 AC during dance. Does NOT summon spirits."
+          },
+          {
+            "n": "All Spirit Forms",
+            "type": "desc",
+            "desc": "20% physical damage resistance in all forms. Cannot benefit from Iron Skins while shifted."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Spirit Attunement",
+            "freq": "innate (choose once)",
+            "effects": "Choose spirit animal at creation: Yak (tank: +AC, +HP%, +STR/CON, Booming Roar), Tiger (DPS: +THAC0, +STR, +10% crit, -30% HP, Ravenous Pounce), Crane (caster: retains spells, +saves, +MR, -70% HP, Mystic Wisdom). All scale every 6 levels.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "Leather, studded leather, hide only. Bucklers only.",
+          "items": "Cannot summon spirits. Cannot benefit from Iron Skins while shifted. Animal Mind (Yak/Tiger): no spellcasting in form. Requires WIS 12, CHA 12."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "include": [
+            "Endless Fortitude",
+            "Savage Predator",
+            "Mystic Insight",
+            "Spirit Vessel"
+          ],
+          "note": "Custom HLA chain: HP → crit → MR → instant shift"
+        },
+        "spellRestrictions": {
+          "note": "Cannot summon spirits (replaced by shapeshift). Yak/Tiger forms: no spellcasting. Crane form: retains spells at +2 casting speed."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "SPIRITWALKER_SHAMAN",
+          "shaman",
+          "Spiritwalker",
+          "Shaman walking between the mortal and spirit worlds. Enhanced spirit communication."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/thisisulb/SpiritwalkerKit",
+  "a": "Ulb",
+  "sum": "A shaman kit with three spirit animal transformations: Yak (tank), Tiger (damage), and Crane (utility).",
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/thisisulb/SpiritwalkerKit",
+  "au": "Lava Del'Vortel",
+  "langs": {
+    "en": 0
+  },
+  "tags": [
+    "kit"
+  ],
+  "co": [
+    {
+      "n": "Spiritwalker Shaman Kit",
+      "cn": 0,
+      "wf": "Spiritwalker",
+      "wp": "Spiritwalker\\SETUP-Spiritwalker.tp2",
+      "wq": "exact",
+      "k": 1,
+      "sp": 1,
+      "no": "Adds the Spiritwalker shaman kit with three spirit animal transformations (Yak, Tiger, Crane).",
+      "wc": 0,
+      "kC": {
+        "shaman": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "thisisulb",
+    "r": "SpiritwalkerKit"
+  }
+}

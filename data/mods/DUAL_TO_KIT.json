@@ -1,0 +1,73 @@
+{
+  "i": 459,
+  "t": "DUAL_TO_KIT",
+  "sv": 1,
+  "ord": 20,
+  "c": "POST EET",
+  "n": "Dual to Kit",
+  "no": "Must install after EET_End and NPC EE. Reads KITLIST.2da at install time to detect all available kits.",
+  "u": "https://github.com/mleduque/kjeron_DUAL_TO_KIT",
+  "a": "subtledoctor",
+  "v": "0.35",
+  "sum": "Allows dual-classing into a specific kit rather than only the base class, with optional components for specialist mage bonus slots and kit-specific proficiency enforcement.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "Dual_to_Kit"
+  },
+  "dl": "https://github.com/mleduque/kjeron_DUAL_TO_KIT",
+  "au": "morpheus562",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Enable Dualclassing into Kits",
+      "cn": 0,
+      "wf": "DUAL_TO_KIT",
+      "wp": "DUAL_TO_KIT\\SETUP-DUAL_TO_KIT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Enable Dualclassing into Kits",
+      "scn": "DUAL_TO_KIT_MENU"
+    },
+    {
+      "n": "Grant second-class Specialists their Bonus Spell Slots",
+      "cn": 1,
+      "wf": "DUAL_TO_KIT",
+      "wp": "DUAL_TO_KIT\\SETUP-DUAL_TO_KIT.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": "Enable Dualing Kit to Kit(*)",
+      "scn": "DUAL_TO_KIT_MENU"
+    },
+    {
+      "n": "Grant second-class Kits their Proper Proficiency Selection",
+      "cn": 2,
+      "wf": "DUAL_TO_KIT",
+      "wp": "DUAL_TO_KIT\\SETUP-DUAL_TO_KIT.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "x": 0,
+      "tp2n": "Grant second-class Specialists their Bonus Spell Slots"
+    },
+    {
+      "n": "Grant second-class Kits their Proper Proficiency Selection",
+      "cn": 3,
+      "wf": "DUAL_TO_KIT",
+      "wp": "DUAL_TO_KIT\\SETUP-DUAL_TO_KIT.TP2",
+      "wq": "verified",
+      "tp2n": "Grant second-class Kits their Proper Proficiency Selection",
+      "pi": "DUAL_TO_KIT_SECOND_CLASS_PROFICIENCY"
+    }
+  ]
+}

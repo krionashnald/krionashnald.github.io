@@ -1,0 +1,79 @@
+{
+  "i": 162,
+  "t": "Keto",
+  "sv": 1,
+  "pfx": "PG",
+  "ord": 410,
+  "c": "NEW NPC MODS",
+  "n": "Keto NPC",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Keto",
+  "dependencies": [
+    {
+      "requires": "kelsey",
+      "requiresId": 161,
+      "type": "soft",
+      "reason": "Keto/Kelsey"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "keto",
+          "portraits/keto/keto.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Pocket-Plane-Group/Keto/releases",
+  "a": "Blue, Bons, Jason Compton; K4thos",
+  "v": "V6",
+  "sum": "Keto is an NPC mod for Baldur's Gate 2.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Keto"
+  },
+  "au": "multiple",
+  "dl": "https://github.com/Pocket-Plane-Group/Keto",
+  "co": [
+    {
+      "n": "Keto-SOA NPC",
+      "cn": 0,
+      "wf": "keto",
+      "wp": "keto\\Setup-Keto.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Keto-SOA NPC"
+    },
+    {
+      "n": "Keto/Kelsey Interaction (Requires Kelsey-SOA)",
+      "cn": 1,
+      "wf": "keto",
+      "wp": "keto\\Setup-Keto.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "x": 0,
+      "tp2n": "Keto/Kelsey Interaction (Requires Kelsey-SOA)"
+    },
+    {
+      "n": "Banter Accelerator",
+      "cn": 2,
+      "wf": "keto",
+      "wp": "keto\\Setup-Keto.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "tp2n": "Banter Accelerator"
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "i": 371,
+  "t": "d0tweak",
+  "sv": 1,
+  "pfx": "D0",
+  "ord": 210,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "D0 Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "pl": 3,
+    "de": 4,
+    "ja": 5
+  },
+  "no": "D0 Tweak v26 by SimDing0. Classic BG2 tweak mod with 28 components. ABANDONED. Most components superseded by Tweaks Anthology (cdtweaks), SCS, or EE updates. Two components (cn:9, cn:27) are EET-incompatible (ENGINE_IS bg2 tob). Useful as a reference for what tweaks are available, but modern alternatives exist for nearly everything.",
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "Visual Ioun Stones. IR main (cn:0) — cn:1060/1070 tweaks selected. No conflict.",
+      "myComps": "#11; #18",
+      "theirComps": "#0 #18 #19 #20",
+      "source": "eemodsetup",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "D0 Tweak components #0 (BG1-Style Summoning Spells) and #23 overlap with SR's revised summoning. PnP Celestial Fury (#7) does not conflict. Only relevant if summoning components are installed.",
+      "myComps": "#0 BG1-Style Summoning, #23",
+      "theirComps": "#0",
+      "source": "tp2 analysis — d0tweak #7 (PnP Celestial Fury) is unrelated to SR spell changes, 2026-03"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/D0Tweak",
+  "a": "SimDing0",
+  "v": "v26",
+  "sum": "D0's classic tweak mod for BG2. Predates the Tweaks Anthology and offers classic rule adjustments.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "D0Tweak"
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/D0Tweak",
+  "au": "angel",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Enhanced Goodberries",
+      "wc": 0,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Scales Goodberry healing with caster level (1hp at L3, up to 13hp at L21). Superseded by cdtweaks and other tweak mods.",
+      "tp2n": "Enhanced Goodberries"
+    },
+    {
+      "cn": 1,
+      "n": "Enhanced Goodberries (Subcomponent)",
+      "wc": 1,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Alternative Goodberry option. Subcomponent of cn:0.",
+      "tp2n": "Corrected Summoned Demon Behaviour"
+    },
+    {
+      "cn": 2,
+      "n": "Corrected Summoned Demon Behaviour",
+      "wc": 2,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Fixes AI for summoned demons so they behave more logically. Largely superseded by SCS creature AI.",
+      "tp2n": "Corrected Demon Animations"
+    },
+    {
+      "cn": 3,
+      "n": "Corrected Demon Animations",
+      "wc": 3,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Fixes visual animations for demon creatures. Mostly fixed in EE already.",
+      "tp2n": "Reintroduce Dimension Door"
+    },
+    {
+      "cn": 4,
+      "n": "Reintroduce Dimension Door",
+      "wc": 4,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adds Dimension Door spell back to the game. Done by other mods (MiH Tweaks, Teleport mod).",
+      "tp2n": "Tweaked Weapon Enchantments"
+    },
+    {
+      "cn": 5,
+      "n": "Reintroduce Dimension Door (Subcomponent)",
+      "wc": 5,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Alternative Dimension Door option.",
+      "tp2n": "Additional Racial Enemies"
+    },
+    {
+      "cn": 6,
+      "n": "Tweaked Weapon Enchantments",
+      "wc": 6,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adjusts weapon enchantment values for PnP accuracy. Superseded by cdtweaks weapon components.",
+      "tp2n": "Summoning Cap Removal"
+    },
+    {
+      "cn": 7,
+      "n": "Tweaked Weapon Enchantments (Subcomponent)",
+      "wc": 7,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Alternative weapon enchantment option.",
+      "tp2n": "PnP Celestial Fury"
+    },
+    {
+      "cn": 8,
+      "n": "Additional Racial Enemies",
+      "wc": 8,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adds more racial enemy choices for Rangers (Giants, Githyanki, Ankhegs, Orcs, Wyverns, Yuan-Ti). Superseded by cdtweaks #3121.",
+      "tp2n": "Ghrey's Holy Symbol Fix"
+    },
+    {
+      "cn": 9,
+      "n": "Summoning Cap Removal",
+      "wc": 9,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Removes the 5-creature summoning limit. EET INCOMPATIBLE: uses ENGINE_IS bg2 tob which fails on EET. Superseded by cdtweaks.",
+      "tp2n": "Kill Cespenar"
+    },
+    {
+      "cn": 10,
+      "n": "PnP Celestial Fury",
+      "wc": 10,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Makes Celestial Fury work closer to PnP rules. Adjusts the weapon's stats and abilities. Minor item tweak.",
+      "tp2n": "Smarter Illusionary Clones"
+    },
+    {
+      "cn": 11,
+      "n": "Ghrey's Holy Symbol Fix",
+      "wc": 11,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Fixes holy symbols to work correctly. Covered by EE Fixpack in most cases.",
+      "tp2n": "Visual Ioun Stones"
+    },
+    {
+      "cn": 12,
+      "n": "Kill Cespenar",
+      "wc": 12,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Removes Cespenar (the imp merchant in ToB Pocket Plane). Niche preference for players who find him annoying.",
+      "tp2n": "Dual Class Wild Mages"
+    },
+    {
+      "cn": 13,
+      "n": "Smarter Illusionary Clones",
+      "wc": 13,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Improves AI for Mislead/Project Image/Simulacrum clones. Superseded by SCS and SubtleD Spell Tweaks cn:40.",
+      "tp2n": "Kensai Ryu's Restored Drow Innate Abilities"
+    },
+    {
+      "cn": 14,
+      "n": "Visual Ioun Stones",
+      "wc": 14,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adds orbiting stone visual effects when Ioun Stones are equipped. Cosmetic only.",
+      "tp2n": "Jaysyn's Displacer Beasts"
+    },
+    {
+      "cn": 15,
+      "n": "Dual Class Wild Mages",
+      "wc": 15,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Allows dual-classing into/from Wild Mage. Niche class option.",
+      "tp2n": "Remove Quayle Portrait"
+    },
+    {
+      "cn": 16,
+      "n": "Kensai Ryu's Restored Drow Innate Abilities",
+      "wc": 16,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Restores racial innate abilities for Drow characters. Done by other mods and EE updates.",
+      "tp2n": "Dream Flag"
+    },
+    {
+      "cn": 17,
+      "n": "Jaysyn's Displacer Beasts",
+      "wc": 17,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adds Displacer Beast creatures to random encounters. Creature content addition.",
+      "tp2n": "Sensible Lore Table"
+    },
+    {
+      "cn": 18,
+      "n": "Remove Quayle Portrait",
+      "wc": 18,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Removes Quayle's portrait. Very niche cosmetic tweak.",
+      "tp2n": "Improved Backstabbing",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ]
+    },
+    {
+      "cn": 19,
+      "n": "Dream Flag",
+      "wc": 19,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Fixes dream sequence trigger flags. Bug fix.",
+      "tp2n": "Everyone can set off traps (excluding illusions, etc.)"
+    },
+    {
+      "cn": 20,
+      "n": "Sensible Lore Table",
+      "wc": 20,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Adjusts Lore skill progression to scale more sensibly. Done by Bart Tweaks cn:3000 and cdtweaks.",
+      "tp2n": "Green and blue circles, and enemy summons can set off traps"
+    },
+    {
+      "cn": 21,
+      "n": "Improved Backstabbing",
+      "wc": 21,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Changes backstab mechanics. Superseded by Rogue Rebalancing and Might & Guile backstab components.",
+      "tp2n": "Only green-circles and enemy summons can set off traps"
+    },
+    {
+      "cn": 22,
+      "n": "Improved Backstabbing (Internal)",
+      "wc": 22,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Internal subcomponent for backstab processing.",
+      "tp2n": "Slower Walking Speeds"
+    },
+    {
+      "cn": 23,
+      "n": "Additional Tweaks 1",
+      "wc": 23,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Misc tweaks. Check readme for details.",
+      "tp2n": "BG1-Style Summoning Spells"
+    },
+    {
+      "cn": 24,
+      "n": "Additional Tweaks 2",
+      "wc": 24,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Misc tweaks. Check readme for details.",
+      "gone": true
+    },
+    {
+      "cn": 25,
+      "n": "Additional Tweaks 3",
+      "wc": 25,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Misc tweaks. Check readme for details.",
+      "gone": true
+    },
+    {
+      "cn": 26,
+      "n": "Slower Walking Speeds",
+      "wc": 26,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Reduces character movement speed. Preference tweak for more deliberate gameplay.",
+      "gone": true
+    },
+    {
+      "cn": 27,
+      "n": "BG1-Style Summoning Spells",
+      "wc": 27,
+      "wf": "d0tweak",
+      "wp": "d0tweak\\setup-d0tweak.tp2",
+      "no": "Reverts summoning spells to BG1 behavior. EET INCOMPATIBLE: uses ENGINE_IS bg2 tob which fails on EET.",
+      "gone": true,
+      "scn": "NPCs/Summons Set Off Traps"
+    }
+  ]
+}

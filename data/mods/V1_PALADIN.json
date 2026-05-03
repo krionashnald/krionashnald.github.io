@@ -1,0 +1,448 @@
+{
+  "i": 355,
+  "t": "V1_PALADIN",
+  "sv": 1,
+  "pfx": "V1",
+  "ord": 190,
+  "c": "KIT & CLASS MODS",
+  "n": "Dualadins",
+  "langs": {
+    "en": 0,
+    "de": 1
+  },
+  "no": "Dualadins by AvA (DataForInfinity). Enables paladin dual-classing to cleric by implementing the Paladin as a Ranger kit internally. Includes item access fixes, alignment adjustments, and NPC support (Keldorn). tp2 renamed to SCI-Dualadins in v2.1. Install after class/kit mods and item overhauls (ZSTweaks, etc.) since it patches item usability flags. Install before proficiency overhauls.",
+  "kitAbilities": {
+    "0": {
+      "V1_PSEUDOPALADIN": {
+        "passive": [
+          {
+            "n": "Lay on Hands",
+            "type": "desc",
+            "desc": "Heals 2 HP/level once per day"
+          },
+          {
+            "n": "Protection from Evil",
+            "type": "desc",
+            "desc": "Aura of Protection from Evil 10' radius"
+          },
+          {
+            "n": "Detect Evil",
+            "type": "desc",
+            "desc": "Innate Detect Evil"
+          },
+          {
+            "n": "Turn Undead",
+            "type": "desc",
+            "desc": "Turn Undead as a cleric 2 levels lower"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Lawful Good only",
+          "items": "Implemented as ranger kit internally to enable dual-classing to Cleric. Same abilities as vanilla Paladin."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "note": "Dualadins enables paladin-to-cleric dual-class",
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (implemented as ranger kit internally)"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spellcasting. Enables dual-class to Cleric."
+        },
+        "statBonus": {
+          "note": "Standard paladin requirements. LG only."
+        }
+      }
+    },
+    "1": {
+      "V1_PSEUDOCAVALIER": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "fear",
+              "charm",
+              "poison"
+            ],
+            "desc": "Immune to fear, charm, and poison"
+          },
+          {
+            "n": "Bonus Damage",
+            "type": "desc",
+            "desc": "+3 damage vs. fiends and dragons"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Remove Fear",
+            "freq": "1/day per level",
+            "effects": "Removes fear from allies in area.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "ranged": false,
+          "alignment": "Lawful Good only",
+          "items": "Cavalier abilities via ranger base class. Enables dual-class to Cleric."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard cavalier. No ranged weapons."
+        },
+        "statBonus": {
+          "note": "LG only. Cavalier bonuses vs fiends/dragons."
+        }
+      },
+      "V1_PSEUDOINQUISITOR": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "charm",
+              "hold"
+            ],
+            "desc": "Immune to charm and hold"
+          },
+          {
+            "n": "Dispel Magic",
+            "type": "desc",
+            "desc": "Dispel Magic cast at 2x character level"
+          }
+        ],
+        "activated": [
+          {
+            "n": "True Seeing",
+            "freq": "1/day per 4 levels",
+            "effects": "See through invisibility and illusions for 1 round/level.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noLayOnHands": true,
+          "noSpells": true,
+          "alignment": "Lawful Good only",
+          "items": "Inquisitor abilities via ranger base class. Enables dual-class to Cleric."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "noPriestSpells": true,
+          "note": "Inquisitors cannot cast priest spells at all."
+        },
+        "statBonus": {
+          "note": "LG only. No Lay on Hands."
+        }
+      },
+      "V1_PSEUDOUNDEADHUNTER": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "hold",
+              "level drain"
+            ],
+            "desc": "Immune to hold and level drain"
+          },
+          {
+            "n": "Bonus vs Undead",
+            "type": "desc",
+            "desc": "+3 THAC0 and +3 damage vs. undead"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "noLayOnHands": true,
+          "alignment": "Lawful Good only",
+          "items": "Undead Hunter abilities via ranger base class. Enables dual-class to Cleric."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard undead hunter spellcasting."
+        },
+        "statBonus": {
+          "note": "LG only. No Lay on Hands. +3 vs undead."
+        }
+      },
+      "V1_PSEUDOBLACKGUARD": {
+        "passive": [
+          {
+            "n": "Aura of Despair",
+            "type": "desc",
+            "desc": "-2 to enemy morale in area"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Absorb Health",
+            "freq": "1/day per 5 levels",
+            "effects": "Drain 2 HP/level from target, heal self.",
+            "level": 1
+          },
+          {
+            "n": "Poison Weapon",
+            "freq": "1/day per 5 levels",
+            "effects": "Next hit poisons target.",
+            "level": 3
+          }
+        ],
+        "restrictions": {
+          "alignment": "evil",
+          "items": "Blackguard abilities via ranger base class. Enables dual-class to Cleric."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin/blackguard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Blackguard spellcasting (evil)."
+        },
+        "statBonus": {
+          "note": "Evil alignment only."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "V1_PSEUDOPALADIN",
+          "paladin",
+          "Paladin (Dual-class)",
+          "Paladin variant enabling dual-classing to Cleric while retaining paladin abilities."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "V1_PSEUDOCAVALIER",
+          "paladin",
+          "Cavalier (Dual-class)",
+          "Cavalier variant enabling dual-classing to Cleric."
+        ],
+        [
+          "V1_PSEUDOINQUISITOR",
+          "paladin",
+          "Inquisitor (Dual-class)",
+          "Inquisitor variant enabling dual-classing to Cleric."
+        ],
+        [
+          "V1_PSEUDOUNDEADHUNTER",
+          "paladin",
+          "Undead Hunter (Dual-class)",
+          "Undead Hunter variant enabling dual-classing to Cleric."
+        ],
+        [
+          "V1_PSEUDOBLACKGUARD",
+          "paladin",
+          "Blackguard (Dual-class)",
+          "Blackguard variant enabling dual-classing to Cleric."
+        ]
+      ]
+    }
+  },
+  "u": "https://www.nexusmods.com/baldursgate/mods/75",
+  "a": "AvA",
+  "sum": "Enables paladin dual-classing to cleric by implementing the Paladin as a Ranger kit internally. Includes Blackguard, Keldorn support, item access fixes, and alignment adjustments.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "AvA (DataForInfinity)",
+  "dl": "https://www.nexusmods.com/baldursgate/mods/75",
+  "co": [
+    {
+      "n": "Base-class Paladin can dual-class to Cleric",
+      "cn": 100,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Core component. Adds a level 2 ability for base Paladin to dual-class to Cleric. Implemented as a Ranger kit internally — the Paladin/Cleric is technically a kitted Ranger/Cleric. Required by most other components.",
+      "k": 1,
+      "kC": {
+        "paladin": 1
+      },
+      "pi": "V1_PALADIN_CAN_DUAL",
+      "tp2n": "Base-class Paladin can dual-class to Cleric"
+    },
+    {
+      "n": "All standard Paladin kits can dual-class to Cleric",
+      "cn": 150,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 0,
+      "no": "Extends dual-class ability to Cavalier, Inquisitor, and Undead Hunter kits. Generates warnings about kit installations — safe to ignore per author.",
+      "k": 4,
+      "kC": {
+        "paladin": 4
+      },
+      "pi": "V1_PALADIN_KIT_CAN_DUAL",
+      "tp2n": "All standard Paladin kits can dual-class to Cleric"
+    },
+    {
+      "n": "The EE Blackguard can dual-class to Cleric",
+      "cn": 200,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "rd": 1,
+      "no": "Enables Blackguard to dual-class to Cleric. Try with Helmet of Opposite Alignment for interesting dialogue.",
+      "pi": "V1_BLACKGUARD_CAN_DUAL",
+      "tp2n": "The EE Blackguard can dual-class to Cleric"
+    },
+    {
+      "n": "Enable NPC Paladin to acquire 17 Wisdom for dual-classing: Keldorn",
+      "cn": 250,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "rd": 1,
+      "no": "Keldorn gains 17 WIS via personal quest resolution, enabling dual-class to Cleric. Inquisitor/Cleric can cast level 7 spells and turn undead.",
+      "k": 0,
+      "pi": "V1_KELDORN_CAN_DUAL",
+      "tp2n": "Enable NPC Paladin to acquire 17 Wisdom for dual-classing: Keldorn"
+    },
+    {
+      "n": "Enable Paladin/Cleric to use all Paladin items",
+      "cn": 300,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 0,
+      "no": "After Paladin class reactivation, allows equipping all Paladin-specific items and weapons. Scans all .itm files. May be considered unbalanced since Clerics normally can't use swords.",
+      "k": 0,
+      "pi": "V1_PALDIN_DUAL_USE_CLASS_ITEMS",
+      "tp2n": "Enable Paladin/Cleric to use all Paladin items"
+    },
+    {
+      "n": "Limit Paladin/Cleric to only use Paladin weapons not restricted by the Cleric multiclass proficiencies",
+      "cn": 350,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 4,
+      "no": "Refinement of cn:300. Re-bans Paladin weapons that Ranger/Clerics can't use by proficiency rules (e.g. Carsomyr). Detects current proficiency ruleset.",
+      "k": 0,
+      "pi": "V1_PALDIN_DUAL_RESTRICT_CLASS_ITEMS",
+      "tp2n": "Limit Paladin/Cleric to only use Paladin weapons not restricted by the Cleric multiclass proficiencies"
+    },
+    {
+      "n": "Restrict Ranger/Cleric to use Paladin items by enforcing lawful good alignment on good Paladin items",
+      "cn": 400,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 4,
+      "no": "Adds lawful good alignment requirement to Paladin holy items. Prevents evil-aligned characters from using items like Carsomyr.",
+      "k": 0,
+      "pi": "V1_PALDIN_LAWFUL_CLASS_ITEMS",
+      "tp2n": "Restrict Ranger/Cleric to use Paladin items by enforcing lawful good alignment on good Paladin items"
+    },
+    {
+      "n": "Prevent Paladin/Cleric and Ranger/Cleric to use opposite class items by banning lawful alignment for all Rangers and their items",
+      "cn": 450,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 6,
+      "no": "CONTROVERSIAL: Removes lawful good alignment option for ALL Rangers. Prevents cross-class item abuse but affects all Ranger characters, not just Paladin duals.",
+      "k": 0,
+      "pi": "V1_RANGER_BAN_LAWFUL_GOOD",
+      "tp2n": "Prevent Paladin/Cleric and Ranger/Cleric to use opposite class items by banning lawful as well as evil alignment for all Rangers and their items"
+    },
+    {
+      "n": "Allow true neutral alignment for all Rangers to compensate loss of lawful good alignment",
+      "cn": 500,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 7,
+      "no": "Compensates cn:450's alignment restriction by adding True Neutral as a valid Ranger alignment. Fits the grim Beastmaster/Stalker archetype.",
+      "pi": "V1_RANGER_ALLOW_TRUE_NEUTRAL",
+      "tp2n": "Allow true neutral alignment for all Rangers to compensate loss of lawful good alignment"
+    },
+    {
+      "n": "Prevent Paladin/Cleric to get recognized as a Ranger after Paladin class reactivation",
+      "cn": 550,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 0,
+      "no": "Recommended. Stops NPCs from addressing your Paladin/Cleric as a Ranger (e.g. Umar Hills cabin offer). Detects which dual-class kits are installed.",
+      "k": 0,
+      "pi": "V1_PALADIN_IS_NO_RANGER",
+      "tp2n": "Prevent Paladin/Cleric to get recognized as a Ranger after Paladin class reactivation"
+    },
+    {
+      "n": "Allow Paladin/Cleric to get recognized as a Paladin after dual-class reactivation",
+      "cn": 600,
+      "wf": "SCI-Dualadins",
+      "wp": "SCI-Dualadins\\setup-SCI-Dualadins.tp2",
+      "wq": "exact",
+      "rd": 0,
+      "no": "Upon Paladin class reactivation, the character is recognized as both Cleric and Paladin by the game world. Author notes this is technically unnecessary but more immersive.",
+      "k": 0,
+      "pi": "V1_PALADIN_IS_PALADIN",
+      "gone": true
+    }
+  ]
+}

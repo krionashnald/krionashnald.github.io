@@ -1,0 +1,146 @@
+{
+  "i": 721,
+  "t": "d2nec",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Necromancer Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Necromancer kit for Cleric class. Summon, poison/bone, and curse skill trees. Summoned creatures follow through areas (optional). Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both include Remove Summoning Cap for Regular Summons — installing both is redundant but not harmful",
+      "myComps": "#3",
+      "theirComps": "#2339"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_NECROMANCER": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Curses",
+            "freq": "D2 skill point system",
+            "effects": "Debuffing enemy curse spells.",
+            "level": 1
+          },
+          {
+            "n": "Summoning",
+            "freq": "D2 skill point system",
+            "effects": "Raise skeletons, corpse explosion, undead army control.",
+            "level": 1
+          },
+          {
+            "n": "Bone/Poison",
+            "freq": "D2 skill point system",
+            "effects": "Bone Armor, Bone Spear, Bone Spirit, poison/life drain.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noSpells": true,
+          "items": "Loses standard Cleric spells/Turn Undead. D2 necromancy replaces divine casting. No dual-class. Based on Cleric class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "D2-style necromancy replaces standard Cleric spells/Turn Undead"
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "D2 necromancer uses cleric chassis; skill point system replaces HLAs."
+        },
+        "statBonus": {
+          "note": "D2 skill tree progression (Curses, Summoning, Bone/Poison trees)."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_NECROMANCER",
+          "mage",
+          "Diablo2 Necromancer",
+          "Diablo 2-inspired death mage. Skeleton summoning, curses, and bone/poison magic."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "0.9",
+  "sum": "Diablo 2-inspired Necromancer kit for the Cleric class. Summon, poison/bone, and curse skill trees with optional area-persistent minions.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Necromancer Kit",
+      "tp2n": "Diablo2 Necromancer Kit",
+      "wf": "d2nec",
+      "wp": "d2nec\\SETUP-d2nec.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      }
+    },
+    {
+      "n": "Extend level limits of Revive, Corpse Explosion, Poison Explosion and Attract to LV32",
+      "tp2n": "Extend level limits of Revive, Corpse Explosion, Poison Explosion and Attract to LV32",
+      "no": "Requires main kit component installed first",
+      "wf": "d2nec",
+      "wp": "d2nec\\SETUP-d2nec.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    },
+    {
+      "n": "Survived monsters follow the Necromancer through different areas",
+      "tp2n": "Remove Summoning Cap for Regular Summons (From cdtweaks)",
+      "no": "Requires main kit component. May cause lag and bigger save data, especially in non-EE games.",
+      "wf": "d2nec",
+      "wp": "d2nec\\SETUP-d2nec.tp2",
+      "wc": 2,
+      "wq": "unverified",
+      "cn": 2
+    },
+    {
+      "n": "Remove Summoning Cap for Regular Summons (From cdtweaks)",
+      "tp2n": "Survived monsters follow the Necromancer through different areas (NOTE: may cause lag and bigger savedata, Especially in no EE games)",
+      "no": "Requires ToB",
+      "wf": "d2nec",
+      "wp": "d2nec\\SETUP-d2nec.tp2",
+      "wc": 3,
+      "wq": "unverified",
+      "cn": 3
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

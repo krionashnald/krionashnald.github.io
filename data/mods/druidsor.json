@@ -1,0 +1,944 @@
+{
+  "i": 316,
+  "t": "druidsor",
+  "sv": 1,
+  "ord": 40,
+  "c": "KIT & CLASS MODS",
+  "n": "Geomantic Sorcerer",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "zh-cn": 3
+  },
+  "no": "Geomantic Sorcerer kit by hlidskialf. Combines sorcerer spellcasting with druid spells and shapeshifting. 50 components: 1 core kit + 49 portrait options for shapeshift forms (bear, cat, dog, leopard, moose, panther, rat, snake, wolf). Only cn:0 is needed for gameplay; portraits are cosmetic",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURGEO01",
+          "innate",
+          0,
+          "Alteration",
+          "Geomantic Casting",
+          "Sorcerer uses druid spell list."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "0": {
+      "CA_DSORC": {
+        "passive": [
+          {
+            "n": "Stat Penalties",
+            "type": "desc",
+            "desc": "-2 STR, -2 DEX, -2 CON"
+          },
+          {
+            "n": "XP Penalty",
+            "type": "desc",
+            "desc": "15% XP penalty (receives only 85% of earned XP)"
+          },
+          {
+            "n": "Casting Speed Penalty",
+            "type": "desc",
+            "desc": "+1 casting speed on all spells"
+          },
+          {
+            "n": "Druid Spells",
+            "type": "desc",
+            "desc": "Learns druid spells as arcane: CLW/Entangle/Shillelagh (lv1), Barkskin/Flame Blade (lv3), Call Lightning/Summon Insects (lv5), Free Action/Poison (lv7), Iron Skins/Insect Plague (lv8), Heal/Creeping Doom/Earthquake (lv11-13). Custom: Wave Spray (lv1), Tornado/Shambling Mound (lv15)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Druidic Shapeshift",
+            "freq": "1/day at lv8, +1 per 3 levels",
+            "effects": "Shift into 9 animal forms (Bear, Cat, Dog, Leopard, Moose, Panther, Rat, Snake, Wolf). Each has unique abilities.",
+            "level": 8
+          }
+        ],
+        "restrictions": {
+          "alignment": "Any Neutral only (LN, TN, CN, NG, NE)",
+          "items": "Requires WIS 13, CHA 9. Same weapons as base sorcerer. No dual-classing."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Learns druid spells as arcane plus standard wizard spells"
+        },
+        "statBonus": {
+          "str": -2,
+          "dex": -2,
+          "con": -2,
+          "note": "Innate stat modifiers: -2 STR, -2 DEX, -2 CON"
+        },
+        "hlaPool": {
+          "class": "SORCERER",
+          "include": [
+            "Clarity",
+            "Vocal Lucidity",
+            "Spellcasting Mastery",
+            "Union of Magic",
+            "Bonus Spell Memorization",
+            "Bonus Spell Knowledge",
+            "Spell Enhancement",
+            "Essence of the Planes",
+            "Druid Immunities",
+            "Elemental Transformation",
+            "Earthly Planeswalking",
+            "Torrential Cacophony",
+            "Fiery Cataclysm"
+          ],
+          "note": "Unique Quintessence HLA tree with 5 chains per research"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "CA_DSORC",
+          "sorcerer",
+          "Geomantic Sorcerer",
+          "Sorcerer drawing power from the natural world. Druid-like spontaneous casting with nature spells."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Geomantic_Sorcerer",
+  "a": "hlidskialf",
+  "v": "v9",
+  "sum": "Sorcerer/Druid hybrid kit with unique shapeshifting and custom HLAs. Includes 49 optional portraits for each shapeshift animal form.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Geomantic_Sorcerer"
+  },
+  "dl": "https://github.com/Gibberlings3/Geomantic_Sorcerer",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "Geomantic Sorcerer Kit",
+      "cn": 0,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wc": 0,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Core Geomantic Sorcerer kit. Sorcerer casting with druid spells, shapeshifting abilities, custom HLA progression",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "tp2n": "Geomantic Sorcerer Kit"
+    },
+    {
+      "cn": 1,
+      "n": "Portraits for Druidic Shapeshifting",
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Enables custom portraits for shapeshift forms. Requires core kit (cn:0). Choose Male or Female below",
+      "tp2n": "Portraits for Druidic Shapeshifting\nDO NOT INSTALL THIS IF YOU ARE GOING TO GIVE THE KIT TO A NPC"
+    },
+    {
+      "cn": 2,
+      "n": "Shapeshift Portraits: Male PCs",
+      "g": "geo_gender",
+      "scn": "Portraits for Druidic Shapeshifting\nDO NOT INSTALL THIS IF YOU ARE GOING TO GIVE THE KIT TO A NPC",
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Male PC portrait set for shapeshifting. Then pick individual animal portraits during install",
+      "x": 1,
+      "tp2n": "Male PCs"
+    },
+    {
+      "cn": 3,
+      "n": "Shapeshift Portraits: Female PCs",
+      "g": "geo_gender",
+      "scn": "Portraits for Druidic Shapeshifting\nDO NOT INSTALL THIS IF YOU ARE GOING TO GIVE THE KIT TO A NPC",
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Female PC portrait set for shapeshifting. Then pick individual animal portraits during install",
+      "x": 1,
+      "tp2n": "Female PCs"
+    },
+    {
+      "n": "mCast2 (Lightning Caster)",
+      "cn": 4,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mCast2 (Lightning Caster)",
+      "pi": "ca#_geomantic_sorcerer_portraits_4",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mCast5 (Blond Hooded Caster)",
+      "cn": 5,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mCast5 (Blond Hooded Caster)",
+      "pi": "ca#_geomantic_sorcerer_portraits_5",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mDruid2 (Druid with face paint) - By Amaurea",
+      "cn": 6,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mDruid2 (Druid with face paint) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_6",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mDruid (Druid in Vegetation)",
+      "cn": 7,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mDruid (Druid in Vegetation)",
+      "pi": "ca#_geomantic_sorcerer_portraits_7",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mElf1 (Slightly dark skinned elf)",
+      "cn": 8,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mElf1 (Slightly dark skinned elf)",
+      "pi": "ca#_geomantic_sorcerer_portraits_8",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mElf2 (Elf caster type, open collar) - By Amaurea",
+      "cn": 9,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mElf2 (Elf caster type, open collar) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_9",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mElf3 (Elf caster type, closeup) - By Amaurea",
+      "cn": 10,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mElf3 (Elf caster type, closeup) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_10",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "mGeo01 (Caster with sigils and runes) - By Amedyr",
+      "cn": 11,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "mGeo01 (Caster with sigils and runes) - By Amedyr",
+      "pi": "ca#_geomantic_sorcerer_portraits_11",
+      "scn": "Male Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fCast02 (Green Hooded, possibly elven/half-elven)",
+      "cn": 12,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fCast02 (Green Hooded, possibly elven/half-elven)",
+      "pi": "ca#_geomantic_sorcerer_portraits_12",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fCast15 (Tatooed caster)",
+      "cn": 13,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fCast15 (Tatooed caster)",
+      "pi": "ca#_geomantic_sorcerer_portraits_13",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fCast16 (With metal ornamentation)",
+      "cn": 14,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fCast16 (With metal ornamentation)",
+      "pi": "ca#_geomantic_sorcerer_portraits_14",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fCast18 (Brown Hair human/half-elf)",
+      "cn": 15,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fCast18 (Brown Hair human/half-elf)",
+      "pi": "ca#_geomantic_sorcerer_portraits_15",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fDruid7 (Druid with headdress)",
+      "cn": 16,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fDruid7 (Druid with headdress)",
+      "pi": "ca#_geomantic_sorcerer_portraits_16",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fDruid9 (Red headed druid type in brown robe)",
+      "cn": 17,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fDruid9 (Red headed druid type in brown robe)",
+      "pi": "ca#_geomantic_sorcerer_portraits_17",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fHaEl1 (Elf/Half-Elf caster type) - By Amaurea",
+      "cn": 18,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fHaEl1 (Elf/Half-Elf caster type) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_18",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "fHaEl2 (White robed half-elf/elf) - By Amaurea",
+      "cn": 19,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "fHaEl2 (White robed half-elf/elf) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_19",
+      "scn": "Female Humanoid Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oBear1 (Dark Brown looking over shoulder) - By Amaurea",
+      "cn": 20,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oBear1 (Dark Brown looking over shoulder) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_20",
+      "scn": "Bear Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oBear2 (Lighter Brown with partially open smiling mouth) - By Amaurea",
+      "cn": 21,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oBear2 (Lighter Brown with partially open smiling mouth) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_21",
+      "scn": "Bear Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oBear3 (Serious looking bear) - By Amaurea",
+      "cn": 22,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oBear3 (Serious looking bear) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_22",
+      "scn": "Bear Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oCat1 (Yellow and orange mottled with white bib) - By Amaurea",
+      "cn": 23,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oCat1 (Yellow and orange mottled with white bib) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_23",
+      "scn": "Cat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oCat2 (Grey with black bands around neck) - By Amaurea",
+      "cn": 24,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oCat2 (Grey with black bands around neck) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_24",
+      "scn": "Cat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oCat3 (Grey) - By Amaurea",
+      "cn": 25,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oCat3 (Grey) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_25",
+      "scn": "Cat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oDog1 (Grey Hound) - By Amaurea",
+      "cn": 26,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oDog1 (Grey Hound) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_26",
+      "scn": "Dog Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oDog2 (Beige shaggy haired dog) - By Amaurea",
+      "cn": 27,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oDog2 (Beige shaggy haired dog) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_27",
+      "scn": "Dog Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oDog3 (Border Collie) - By Amaurea, picture of Skye by Caedwyr",
+      "cn": 28,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oDog3 (Border Collie) - By Amaurea, picture of Skye by Caedwyr",
+      "pi": "ca#_geomantic_sorcerer_portraits_28",
+      "scn": "Dog Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oLeop1 (Leopard) - By Amaurea",
+      "cn": 29,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oLeop1 (Leopard) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_29",
+      "scn": "Leopard Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oLeop2 (Leopard with snow) - By Amaurea",
+      "cn": 30,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oLeop2 (Leopard with snow) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_30",
+      "scn": "Leopard Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oLeop3 (Leopard with tongue) - By Amaurea",
+      "cn": 31,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oLeop3 (Leopard with tongue) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_31",
+      "scn": "Leopard Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "omMoo1 (Moose with head down) - By Amaurea",
+      "cn": 32,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "omMoo1 (Moose with head down) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_32",
+      "scn": "Male Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "omMoo2 (Moose with head in profile) - By Amaurea",
+      "cn": 33,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "omMoo2 (Moose with head in profile) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_33",
+      "scn": "Male Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "omMoo3 (Chestnut coloured moose) - By Amaurea",
+      "cn": 34,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "omMoo3 (Chestnut coloured moose) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_34",
+      "scn": "Male Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "ofMoo1 (Semi-profile perspective) - By Amaurea",
+      "cn": 35,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "ofMoo1 (Semi-profile perspective) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_35",
+      "scn": "Female Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "ofMoo2 (Chestnut coloured moose with head down) - By Amaurea",
+      "cn": 36,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "ofMoo2 (Chestnut coloured moose with head down) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_36",
+      "scn": "Female Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "ofMoo3 (Chestnut coloured moose with head up) - By Amaurea",
+      "cn": 37,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "ofMoo3 (Chestnut coloured moose with head up) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_37",
+      "scn": "Female Moose Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oPan1 (Shiny black panther) - By Amaurea",
+      "cn": 38,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oPan1 (Shiny black panther) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_38",
+      "scn": "Panther Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oPan2 (Panther with head cocked to one side) - By Amaurea",
+      "cn": 39,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oPan2 (Panther with head cocked to one side) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_39",
+      "scn": "Panther Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oPan3 (Panther with mouth partially open) - By Amaurea",
+      "cn": 40,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oPan3 (Panther with mouth partially open) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_40",
+      "scn": "Panther Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oRat1 (Beige Rat) - By Amaurea",
+      "cn": 41,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oRat1 (Beige Rat) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_41",
+      "scn": "Rat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oRat2 (Rat sticking head out of hole) - By Amaurea",
+      "cn": 42,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oRat2 (Rat sticking head out of hole) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_42",
+      "scn": "Rat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oRat3 (Light rat with food) - By Amaurea",
+      "cn": 43,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oRat3 (Light rat with food) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_43",
+      "scn": "Rat Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oSnak1 (Snake raising head off grass) - By Amaurea",
+      "cn": 44,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oSnak1 (Snake raising head off grass) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_44",
+      "scn": "Snake Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oSnak2 (Cobra smelling its surroundings) - By Amaurea",
+      "cn": 45,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oSnak2 (Cobra smelling its surroundings) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_45",
+      "scn": "Snake Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oSnak3 (Cobra with hood partially extended) - By Amaurea",
+      "cn": 46,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oSnak3 (Cobra with hood partially extended) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_46",
+      "scn": "Snake Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oWolf1 (White wolf) - By Amaurea",
+      "cn": 47,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oWolf1 (White wolf) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_47",
+      "scn": "Wolf Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oWolf2 (Grey and white wolf) - By Amaurea",
+      "cn": 48,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oWolf2 (Grey and white wolf) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_48",
+      "scn": "Wolf Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    },
+    {
+      "n": "oWolf3 (Black Wolf) - By Amaurea",
+      "cn": 49,
+      "wf": "druidsor",
+      "wp": "druidsor\\setup-druidsor.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "oWolf3 (Black Wolf) - By Amaurea",
+      "pi": "ca#_geomantic_sorcerer_portraits_49",
+      "scn": "Wolf Form Portrait\n(Refer to the Readme's Portrait section to view the portraits)"
+    }
+  ]
+}

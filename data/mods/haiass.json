@@ -1,0 +1,73 @@
+{
+  "i": 936,
+  "t": "haiass",
+  "sv": 1,
+  "ord": 1270,
+  "n": "Haiass the Wolf",
+  "c": "NEW NPC MODS",
+  "au": "Auda",
+  "dl": "https://github.com/Endarire/Haiass-el-Lobo-for-EET",
+  "no": "Adds Haiass, a wolf companion and extra (7th) party member. Found at Candlekeep Inn, travels through BG1 (Lion's Way, Friendly Arm, Nashkel, Wyrm's Crossing) into SoA (Irenicus's Dungeon, Waukeen's Promenade) and ToB (Spirit Heads, Pocket Plane). Supports BGEE, BG2EE, EET, BGT, Tutu. Optional resurrection system with two penalty levels.",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "de": 2,
+    "fr": 3,
+    "ru": 4
+  },
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "sum": "Haiass the Wolf — joinable animal companion NPC.",
+  "tags": [
+    "npc"
+  ],
+  "u": "https://github.com/Endarire/Haiass-el-Lobo",
+  "pt": false,
+  "co": [
+    {
+      "n": "Haiass the Wolf",
+      "cn": 0,
+      "wf": "haiass",
+      "wp": "haiass\\setup-haiass.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Main component. Adds wolf companion across BG1, SoA, and ToB areas.",
+      "tp2n": ""
+    },
+    {
+      "n": "Haiass can be resurrected: Moderate penalty (Constitution -4 temporarily)",
+      "g": "resurrect",
+      "cn": 10,
+      "wf": "haiass",
+      "wp": "haiass\\setup-haiass.tp2",
+      "wq": "verified",
+      "no": "Requires main component. Con -4 penalty when resurrected.",
+      "tp2n": ""
+    },
+    {
+      "n": "Haiass can be resurrected: Tougher penalty (Constitution -4 and level drain temporarily)",
+      "g": "resurrect",
+      "cn": 15,
+      "wf": "haiass",
+      "wp": "haiass\\setup-haiass.tp2",
+      "wq": "verified",
+      "no": "Requires main component. Con -4 + level drain when resurrected.",
+      "tp2n": ""
+    }
+  ],
+  "gh": {
+    "o": "Endarire",
+    "r": "Haiass-el-Lobo"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "i": 48,
+  "t": "bg1npcmusic",
+  "sv": 1,
+  "ord": 150,
+  "c": "QUEST MODS BG1",
+  "n": "BG1 NPC Music",
+  "no": "Optional music pack for BG1 NPC Project banters. All 6 options are mutually exclusive (pick one). Full versions have longer tracks. cn:0 = all audio (regular+romance), cn:1 = regular only, cn:2 = romance only. cn:3-5 are short versions of the same.",
+  "rq": "bg1npc",
+  "dependencies": [
+    {
+      "requires": "BG1NPC",
+      "requiresId": 47,
+      "type": "hard",
+      "reason": "Music pack for BG1 NPC Project"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/bg1npcmusic/releases",
+  "a": "Blucher, Kish, Andyr, Domi, cmorgan,",
+  "v": "v6",
+  "sum": "As we were unable to get the original character voice actors to voice all the new lines, we instead sought out music appropriate to each NPC to be played whenever they initiate banter. This musical package is a separate, optional package.",
+  "tags": [
+    "npc",
+    "audio"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "bg1npcmusic"
+  },
+  "dl": "https://github.com/Gibberlings3/bg1npcmusic/releases",
+  "au": "The BG1 NPC Project Team",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install All Audio",
+      "tp2n": "Install All Audio",
+      "cn": 0,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": "All BG1 NPC Project audio (regular + romance)."
+    },
+    {
+      "n": "Install Regular Audio Only",
+      "tp2n": "Install Regular Audio Only",
+      "cn": 1,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": ""
+    },
+    {
+      "n": "Install Romance Audio Only",
+      "tp2n": "Install Romance Audio Only",
+      "cn": 2,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": ""
+    },
+    {
+      "n": "Install All Audio - Short versions",
+      "tp2n": "Install All Audio - Short versions",
+      "cn": 3,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": ""
+    },
+    {
+      "n": "Install Regular Audio Only - Short versions",
+      "tp2n": "Install Regular Audio Only - Short versions",
+      "cn": 4,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": "Regular audio only, short."
+    },
+    {
+      "n": "Install Romance Audio Only - Short versions",
+      "tp2n": "Install Romance Audio Only - Short versions",
+      "cn": 5,
+      "wf": "bg1npcmusic",
+      "wp": "bg1npcmusic\\SETUP-BG1NPCMUSIC.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "g": "bg1npc_music",
+      "scn": "The BG1 NPC Project Music Pack",
+      "no": "Romance audio only, short."
+    }
+  ]
+}

@@ -1,0 +1,838 @@
+{
+  "i": 656,
+  "t": "MonasticOrders",
+  "sv": 1,
+  "ord": 290,
+  "c": "KIT & CLASS MODS",
+  "n": "Monastic Orders",
+  "no": "Total Monk class conversion — disables vanilla Monk/Sun Soul/Dark Moon and recreates them as Thief kits. Fundamentally incompatible with ALL other monk-modifying mods (cdtweaks, M&G, ToF, Refinements, AK). v0.4 beta.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "MO disables vanilla Monk class. cdtweaks monk components target vanilla Monk which no longer exists.",
+      "theirComps": "#2560 Allow Monks to Wear Helmets #6150 Circle Kick for Monks",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "hard",
+      "reason": "MO replaces fist system with custom QDMFIST item. M&G modifies vanilla fist tables which MO monks never use.",
+      "theirComps": "#265 Revised Monk Fists",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "MO blocks staves via custom item restriction spell. ToF patches vanilla Monk class restrictions which MO monks (Thief kits) bypass.",
+      "theirComps": "#40700 Allow monks to use staffs",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "MO monks use Thief HLAs, not Monk HLAs. Refinements monk HLA changes affect only disabled vanilla Monk.",
+      "theirComps": "#107 Class HLAs: Monk",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "hard",
+      "reason": "AK monk kits assume vanilla Monk class. MO disables vanilla Monk entirely, breaking AK monk kits.",
+      "theirComps": "#10001 Monk Revisions #10002 Brawler #10003 Sacred Fist #10004 Ninja",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "QDMONKFM": {
+        "passive": [
+          {
+            "n": "Monk Overhaul",
+            "type": "desc",
+            "desc": "Reimplemented as thief-base. Fighter THAC0, d8 HD, WIS mod to AC, unarmed 1d6/2 APR/+5 magical."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Fighting Styles",
+            "freq": "toggle (pick 1)",
+            "effects": "Flurry of Blows (+1/+2 APR), Ki Strike (+1-5 hit/dmg), Stunning Blows (25% stun).",
+            "level": 1
+          },
+          {
+            "n": "Defensive Styles",
+            "freq": "toggle (pick 1)",
+            "effects": "Stillness (immune charm/fear), Purity (immune poison/disease), Lightning Reflexes (immune backstab, Evasion), Deflect Missiles (+4 AC vs ranged).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "items": "No helmets/shields/2H melee. Thief skills limited to Find Traps/Hide/Move Silently. No backstab."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "CLERIC",
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKCM": {
+        "passive": [
+          {
+            "n": "Sun Soul Monk",
+            "type": "desc",
+            "desc": "As Monk but Purifying Strike (double dmg vs Evil), Unbroken Soul (+2 AC vs evil, immune level drain)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Sun Soul Styles",
+            "freq": "toggle",
+            "effects": "Purifying Strike replaces Ki Strike. Unbroken Soul replaces Lightning Reflexes.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-evil only",
+          "items": "No stealth. No dual to Mage."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKMM": {
+        "passive": [
+          {
+            "n": "Dark Moon Monk",
+            "type": "desc",
+            "desc": "As Monk but Hands of Shadow (25% blind), Dark Mirror (mirror images on hit)."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dark Moon Styles",
+            "freq": "toggle",
+            "effects": "Hands of Shadow replaces Stunning Blows. Dark Mirror replaces Deflect Missiles.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Evil only",
+          "items": "Detect Illusions instead of Detect Traps. Dual to Mage only."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      }
+    },
+    "3": {
+      "QDMONKFMSS": {
+        "passive": [
+          {
+            "n": "Fighter/Monk",
+            "type": "desc",
+            "desc": "Multiclass Fighter + Monk. May Specialize in 1H/ranged weapons."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MONK"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class with monk abilities; inherits fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKHF": {
+        "passive": [
+          {
+            "n": "Hin Fist Monk",
+            "type": "desc",
+            "desc": "Precise Strike (crit range expansion). Gets Pick Pockets + Remove Traps via Thievery."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-evil",
+          "race": "Halfling/Dwarf/Gnome"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKSH": {
+        "passive": [
+          {
+            "n": "Shining Hand Monk",
+            "type": "desc",
+            "desc": "Nullifying Blows (25% dispel on hit). Deflect Magic (absorb 1st targeted spell/round)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "No stealth. Dual to Mage only.",
+          "race": "Human/Elf/Half-Elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKLD": {
+        "passive": [
+          {
+            "n": "Long Death Monk",
+            "type": "desc",
+            "desc": "Assassin's Strike (+1-5 hit and backstab multiplier)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-Good",
+          "items": "No Detect Traps. Dual to Fighter only."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKBO": {
+        "passive": [
+          {
+            "n": "Broken One Monk",
+            "type": "desc",
+            "desc": "Unbreakable Resolve (absorb 1st attack/round). d10 HD (warrior HP)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only",
+          "items": "No stealth. Dual to Fighter or Cleric.",
+          "race": "Human/Halfling/Half-Orc"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Custom monk HLAs with fighting/defensive style picks"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (monk-based kit)"
+        },
+        "statBonus": {
+          "note": "Thief-base internally. Fighter THAC0, d8 HD, WIS to AC."
+        }
+      },
+      "QDMONKFMHF": {
+        "passive": [
+          {
+            "n": "Fighter/Hin Fist",
+            "type": "desc",
+            "desc": "Multiclass Fighter + Hin Fist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MONK"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class with monk abilities; inherits fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKMMSH": {
+        "passive": [
+          {
+            "n": "Mage/Shining Hand",
+            "type": "desc",
+            "desc": "Multiclass Mage + Shining Hand."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/MONK"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Multi-class with monk abilities; inherits mage HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKFMLD": {
+        "passive": [
+          {
+            "n": "Fighter/Long Death",
+            "type": "desc",
+            "desc": "Multiclass Fighter + Long Death."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-Good"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MONK"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class with monk abilities; inherits fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKCMBO": {
+        "passive": [
+          {
+            "n": "Cleric/Broken One",
+            "type": "desc",
+            "desc": "Multiclass Cleric + Broken One."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MONK"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Multi-class with monk abilities; inherits cleric HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKFMBO": {
+        "passive": [
+          {
+            "n": "Fighter/Broken One",
+            "type": "desc",
+            "desc": "Multiclass Fighter + Broken One."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MONK"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class with monk abilities; inherits fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKCMHF": {
+        "passive": [
+          {
+            "n": "Cleric/Hin Fist",
+            "type": "desc",
+            "desc": "Multiclass Cleric + Hin Fist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MONK"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Multi-class with monk abilities; inherits cleric HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKCMLD": {
+        "passive": [
+          {
+            "n": "Cleric/Long Death",
+            "type": "desc",
+            "desc": "Multiclass Cleric + Long Death."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-Good"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MONK"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Multi-class with monk abilities; inherits cleric HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKMMHF": {
+        "passive": [
+          {
+            "n": "Mage/Hin Fist",
+            "type": "desc",
+            "desc": "Multiclass Mage + Hin Fist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/MONK"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Multi-class with monk abilities; inherits mage HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKMMLD": {
+        "passive": [
+          {
+            "n": "Mage/Long Death",
+            "type": "desc",
+            "desc": "Multiclass Mage + Long Death."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Non-Good"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/MONK"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Multi-class with monk abilities; inherits mage HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKMMBO": {
+        "passive": [
+          {
+            "n": "Mage/Broken One",
+            "type": "desc",
+            "desc": "Multiclass Mage + Broken One."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/MONK"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Multi-class with monk abilities; inherits mage HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      },
+      "QDMONKCMSH": {
+        "passive": [
+          {
+            "n": "Cleric/Shining Hand",
+            "type": "desc",
+            "desc": "Multiclass Cleric + Shining Hand."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MONK"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Multi-class with monk abilities; inherits cleric HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit: cleric/mage spellcasting if applicable; monk features retained."
+        },
+        "statBonus": {
+          "note": "Multi-class HP table."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "QDMONKFM",
+          "multi",
+          "Fighter/Monk",
+          "Multiclass monk combining fighter THAC0 and weapon access with monk abilities."
+        ],
+        [
+          "QDMONKCM",
+          "multi",
+          "Cleric/Monk",
+          "Multiclass monk combining divine spellcasting with monk martial arts."
+        ],
+        [
+          "QDMONKMM",
+          "multi",
+          "Mage/Monk",
+          "Multiclass monk combining arcane spellcasting with monk martial arts."
+        ],
+        [
+          "QDMONKFMSS",
+          "multi",
+          "Fighter/Monk (Sun Soul)",
+          "Multiclass Sun Soul monk with fighter combat training and radiant abilities."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "QDMONKHF",
+          "monk",
+          "Hin Fist Monk",
+          "Halfling monks seeing body and mind as gifts from Yondalla. Defensive focus."
+        ],
+        [
+          "QDMONKSH",
+          "monk",
+          "Shining Hand Monk",
+          "Ancient order devoted to Azuth. Combines martial arts with arcane understanding."
+        ],
+        [
+          "QDMONKLD",
+          "monk",
+          "Long Death Monk",
+          "Monks searching for secrets of life through studying death. Dark contemplation."
+        ],
+        [
+          "QDMONKBO",
+          "monk",
+          "Broken One Monk",
+          "Order devoted to Ilmater. Endures suffering to heal others through compassion."
+        ],
+        [
+          "QDMONKFMHF",
+          "multi",
+          "Fighter/Monk (Hin Fist)",
+          "Multiclass Hin Fist monk with fighter combat training."
+        ],
+        [
+          "QDMONKMMSH",
+          "multi",
+          "Mage/Monk (Shining Hand)",
+          "Multiclass Shining Hand monk with arcane spellcasting."
+        ],
+        [
+          "QDMONKFMLD",
+          "multi",
+          "Fighter/Monk (Long Death)",
+          "Multiclass Long Death monk with fighter combat training."
+        ],
+        [
+          "QDMONKCMBO",
+          "multi",
+          "Cleric/Monk (Broken One)",
+          "Multiclass Broken One monk with divine healing magic."
+        ],
+        [
+          "QDMONKFMBO",
+          "multi",
+          "Fighter/Monk (Broken One)",
+          "Multiclass Broken One monk with fighter combat training."
+        ],
+        [
+          "QDMONKCMHF",
+          "multi",
+          "Cleric/Monk (Hin Fist)",
+          "Multiclass Hin Fist monk with divine spellcasting."
+        ],
+        [
+          "QDMONKCMLD",
+          "multi",
+          "Cleric/Monk (Long Death)",
+          "Multiclass Long Death monk with divine spellcasting."
+        ],
+        [
+          "QDMONKMMHF",
+          "multi",
+          "Mage/Monk (Hin Fist)",
+          "Multiclass Hin Fist monk with arcane spellcasting."
+        ],
+        [
+          "QDMONKMMLD",
+          "multi",
+          "Mage/Monk (Long Death)",
+          "Multiclass Long Death monk with arcane spellcasting."
+        ],
+        [
+          "QDMONKMMBO",
+          "multi",
+          "Mage/Monk (Broken One)",
+          "Multiclass Broken One monk with arcane spellcasting."
+        ],
+        [
+          "QDMONKCMSH",
+          "multi",
+          "Cleric/Monk (Shining Hand)",
+          "Multiclass Shining Hand monk with divine spellcasting."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/aquadrizzt/MonasticOrders",
+  "a": "aquadrizzt",
+  "v": "0.0",
+  "sum": "Adds 5 new monk kits based on different monastic traditions. Each order has unique abilities and fighting styles.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/aquadrizzt/MonasticOrders",
+  "au": "aquadrizzt",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Core Revisions",
+      "tp2n": "Core Revisions",
+      "cn": 0,
+      "wf": "MonasticOrders",
+      "wp": "MonasticOrders\\SETUP-MONASTICORDERS.TP2",
+      "wc": 0,
+      "no": "Disables vanilla Monk in clsrcreq.2da. Creates 3 Thief-based monk kits with custom fists, fighting styles, and item restrictions. Patches Rasaad.",
+      "k": 4,
+      "kC": {
+        "multi": 4
+      }
+    },
+    {
+      "n": "Expanded Races for Monks",
+      "tp2n": "Expanded Races for Monks",
+      "cn": 1,
+      "wf": "MonasticOrders",
+      "wp": "MonasticOrders\\SETUP-MONASTICORDERS.TP2",
+      "wc": 1,
+      "no": "Opens racial availability for revised monk kits. Requires Core.",
+      "x": 0
+    },
+    {
+      "n": "Multiclassing for Monks",
+      "tp2n": "Multiclassing for Monks",
+      "cn": 2,
+      "wf": "MonasticOrders",
+      "wp": "MonasticOrders\\SETUP-MONASTICORDERS.TP2",
+      "wc": 2,
+      "no": "Creates 8 multiclass monk combinations as Thief kits (Fighter/Monk, Cleric/Monk, etc.). Requires Core.",
+      "x": 0
+    },
+    {
+      "n": "New Kits for Monks",
+      "tp2n": "New Kits for Monks",
+      "cn": 3,
+      "wf": "MonasticOrders",
+      "wp": "MonasticOrders\\SETUP-MONASTICORDERS.TP2",
+      "wc": 3,
+      "no": "Adds 4 new monk kits (Hin Fist, Shining Hand, Long Death, Broken One) as Thief kits. Requires Core.",
+      "x": 0,
+      "k": 15,
+      "kC": {
+        "monk": 4,
+        "multi": 11
+      }
+    },
+    {
+      "n": "Item Restriction Patch",
+      "tp2n": "Item Restriction Patch",
+      "cn": 4,
+      "wf": "MonasticOrders",
+      "wp": "MonasticOrders\\SETUP-MONASTICORDERS.TP2",
+      "wc": 4,
+      "no": "Rebuilds item restriction spell. Install LAST after all item mods. Requires Core.",
+      "x": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS AI expects vanilla Monk class for enemy monks. MO monks as Thief kits may confuse SCS creature scripts.",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "aquadrizzt",
+    "r": "MonasticOrders"
+  }
+}

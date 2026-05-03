@@ -1,0 +1,127 @@
+{
+  "i": 291,
+  "t": "hammers",
+  "sv": 1,
+  "ord": 170,
+  "c": "SPELL MODS",
+  "n": "Hammers",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "es": 3,
+    "it": 4,
+    "ru": 5,
+    "pl": 6
+  },
+  "no": "Thrown Hammers mod by Sam/Miloch. Adds thrown hammer weapon type with animations and items. cn:15 (Spiritual Hammers) conflicts with aTweaks cn:102 — choose one. All components except cn:0 require main component.",
+  "ic": "Spritual hammer component is incompatible with Spell Revisions",
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "Component 15 (Thrown Spiritual Hammers) is incompatible with SR — SR completely redesigns Spiritual Hammer and the thrown patch causes damage to glitch to 0. Components 0, 25, 35, 50 are unaffected.",
+      "myComps": "#15 Thrown Spiritual Hammers",
+      "theirComps": "#0",
+      "source": "Mod ic field, SHS forum thread, tp2 analysis. Only comp 15 conflicts; other 4 components (0, 25, 35, 50) work fine with SR. 2026-03"
+    }
+  ],
+  "spl": {
+    "0": {
+      "spells": [
+        [
+          "SPPR214",
+          "modify",
+          "Spiritual Hammer gains returning throw ability"
+        ]
+      ]
+    },
+    "1": {
+      "spells": [
+        [
+          "SPPR214",
+          "modify",
+          "Spiritual Hammer gains thrown weapon behavior"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Sampsca/ThrownHammers/releases",
+  "a": "Sam, Miloch, K4thos",
+  "v": "v6.1.2",
+  "sum": "Adds thrown hammer animations and a few items to most IE games.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "Sampsca",
+    "r": "ThrownHammers"
+  },
+  "dl": "https://github.com/Sampsca/ThrownHammers/releases",
+  "au": "The Bigg",
+  "co": [
+    {
+      "n": "Thrown Hammers",
+      "tp2n": "Thrown Hammers",
+      "cn": 0,
+      "wf": "hammers",
+      "wp": "hammers\\SETUP-HAMMERS.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Core thrown hammer system. Adds returning thrown hammers as a new weapon type with animations. Required by all other components. Install in SPELL MODS — must be BEFORE aTweaks (PRE-TACTICAL, ord:210) if using Thrown Spiritual Hammers."
+    },
+    {
+      "n": "Thrown Spiritual Hammers",
+      "tp2n": "Thrown Spiritual Hammers",
+      "cn": 15,
+      "wf": "hammers",
+      "wp": "hammers\\SETUP-HAMMERS.TP2",
+      "wc": 15,
+      "wq": "exact",
+      "x": 0,
+      "no": "Converts Spiritual Hammer spell to create throwable hammers. CONFLICT with aTweaks cn:102 (ranged force weapon) — both modify shamme*.itm files. Hammers installs first (SPELL MODS ord:170), aTweaks overwrites after (PRE-TACTICAL ord:210). If using both, aTweaks wins. Choose one approach. Not ."
+    },
+    {
+      "n": "Normal throwing hammers",
+      "tp2n": "Normal throwing hammers",
+      "cn": 25,
+      "wf": "hammers",
+      "wp": "hammers\\SETUP-HAMMERS.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "x": 0,
+      "no": "Adds mundane throwing hammers to shops and creature inventories.",
+      "rd": 0
+    },
+    {
+      "n": "+1 throwing weapons",
+      "tp2n": "+1 throwing weapons",
+      "cn": 35,
+      "wf": "hammers",
+      "wp": "hammers\\SETUP-HAMMERS.TP2",
+      "wc": 35,
+      "wq": "exact",
+      "x": 0,
+      "no": "Adds +1 throwing daggers, axes, and hammers to shops and creature inventories.",
+      "rd": 0
+    },
+    {
+      "n": "Additional magic items",
+      "tp2n": "Additional magic items",
+      "cn": 50,
+      "wf": "hammers",
+      "wp": "hammers\\SETUP-HAMMERS.TP2",
+      "wc": 50,
+      "wq": "exact",
+      "x": 0,
+      "no": "Adds several magic throwing hammers as unique items.",
+      "rd": 0
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "i": 145,
+  "t": "l#hephernaanbg2",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 240,
+  "c": "NEW NPC MODS",
+  "n": "Hephernaan",
+  "no": "Hephernaan BG2EE has crossmod content with Call of the Lost Goddess",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURHEP01",
+          "innate",
+          0,
+          "Evocation",
+          "Hephernaan's Fire",
+          "NPC-specific fire attack ability."
+        ],
+        [
+          "YOURHEP02",
+          "innate",
+          0,
+          "Abjuration",
+          "Hephernaan's Ward",
+          "NPC-specific protective ability."
+        ],
+        [
+          "YOURHEP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Hephernaan's Command",
+          "NPC-specific command ability."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "hephernaan",
+          "portraits/l_hephernaanbg2/l_hph.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/hephernaan-bg2/",
+  "a": "Lava Del'Vortel",
+  "v": "v3.2",
+  "sum": "Recruitable evil NPC returning from the Siege of Dragonspear campaign, featuring friendship talks, new areas, items, and encounters bridging SoD with BG2.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/hephernaan-bg2/",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "The Return of Hephernaan - a Baldur's Gate 2: EE NPC mod",
+      "pi": "L#-HEPHERNAANBG2",
+      "wf": "HephernaanBG2",
+      "wp": "HephernaanBG2\\hephernaanbg2.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "sp": 4,
+      "spLv": {
+        "p7": 1
+      },
+      "no": "Adds CLERIC_DESTRUCTION (L7 priest) via ADD_SPELL — consumes 1 L7 priest slot.",
+      "tp2n": "The Return of Hephernaan - a Baldur's Gate 2: EE NPC mod"
+    },
+    {
+      "n": "Player-Initiated Dialogues for Hephernaan",
+      "pi": "L#-HEPHERNAANBG2-PIDS",
+      "wf": "HephernaanBG2",
+      "wp": "HephernaanBG2\\hephernaanbg2.tp2",
+      "wq": "manual_final",
+      "cn": 1,
+      "x": 0,
+      "no": "Player-initiated dialogues. Requires main component",
+      "tp2n": "Player-Initiated Dialogues for Hephernaan"
+    }
+  ]
+}

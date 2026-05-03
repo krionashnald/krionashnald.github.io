@@ -1,0 +1,148 @@
+{
+  "i": 140,
+  "t": "ajantisbg2",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 190,
+  "c": "NEW NPC MODS",
+  "n": "Sir Ajantis NPC",
+  "langs": {
+    "de": 0,
+    "en": 1
+  },
+  "no": "Sir Ajantis for BG2 bgii-npc.9/",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Ajantis in BG2. Standalone Sir Ajantis (by jastey) is more feature-rich with full romance and quests. BG1NPCinSoA auto-skips its Ajantis if standalone detected.",
+      "theirComps": "#60 Ajantis",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME c#ajan08.cre. Fixed stale comp_b (was 'Dynaheir' — wrong NPC, should be #60 Ajantis), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ajantis",
+          "portraits/ajantis_pp/c_ajan.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/ajantis-bg2/",
+  "a": "jastey",
+  "v": "21",
+  "sum": "Continues Ajantis's story into BG2/ToB as a joinable NPC with new quests, romance continuation, and extensive dialogue.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "jastey",
+  "dl": "http://baldurs-gate.de/download_latest_version.php?id=9",
+  "co": [
+    {
+      "n": "Sir Ajantis NPC for BGII",
+      "cn": 0,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Sir Ajantis NPC fuer BGII"
+    },
+    {
+      "n": "Install the unique BG(II):EE BAM for Ajantis' Family Shield",
+      "cn": 1,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Installiere das spezielle BG(II):EE BAM fuer Ajantis' Familienschild"
+    },
+    {
+      "n": "Installation of adult romance content",
+      "cn": 3,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "tp2n": "AEndern der Romanzenfreigabe: Romanze mit Intimszenen installieren."
+    },
+    {
+      "n": "1 Stunde Realzeit zwischen Dialogen (Standard).",
+      "cn": 40,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wq": "verified",
+      "tp2n": "1 Stunde Realzeit zwischen Dialogen (Standard).",
+      "pi": "c#ajantisbg2-timer_60min",
+      "scn": "Zeitabstaende zwischen den Freundschaftsdialogen und Lovetalks mit Ajantis:"
+    },
+    {
+      "n": "Speed: 45 minutes real time minimum between Dialogues",
+      "no": "v Friendship Dialogues and Romance speed",
+      "cn": 41,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 41,
+      "wq": "verified",
+      "tp2n": "45 Minuten Realzeit zwischen Dialogen.",
+      "scn": "Zeitabstaende zwischen den Freundschaftsdialogen und Lovetalks mit Ajantis:"
+    },
+    {
+      "n": "Speed: 30 minutes real time minimum between Dialogues",
+      "cn": 42,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 42,
+      "wq": "verified",
+      "tp2n": "30 Minuten Realzeit zwischen Dialogen.",
+      "scn": "Zeitabstaende zwischen den Freundschaftsdialogen und Lovetalks mit Ajantis:"
+    },
+    {
+      "n": "Speed: 15 minutes real time minimum between Dialogues",
+      "cn": 43,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 43,
+      "wq": "verified",
+      "tp2n": "15 Minuten Realzeit zwischen Dialogen.",
+      "scn": "Zeitabstaende zwischen den Freundschaftsdialogen und Lovetalks mit Ajantis:"
+    },
+    {
+      "n": "Speed: 1 hour 30 minutes (extended) real time minimum between Dialogues",
+      "cn": 44,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 44,
+      "wq": "verified",
+      "tp2n": "1 Stunde und 30 Minuten Realzeit zwischen Dialogen.",
+      "scn": "Zeitabstaende zwischen den Freundschaftsdialogen und Lovetalks mit Ajantis:"
+    },
+    {
+      "n": "Ajantis kit choice: make Ajantis Cavalier",
+      "cn": 5,
+      "wf": "ajantisbg2",
+      "wp": "ajantisbg2\\ajantisbg2.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "tp2n": "Wahl des Kits fuer Ajantis: Ritter"
+    }
+  ]
+}

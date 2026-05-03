@@ -1,0 +1,586 @@
+{
+  "i": 458,
+  "t": "DSotSC",
+  "sv": 1,
+  "ord": 280,
+  "c": "QUEST MODS BG1",
+  "n": "Dark Side of the Sword Coast",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "it": 2,
+    "ru": 3,
+    "pl": 4,
+    "de": 5
+  },
+  "cats": [
+    "QUEST MODS BG1",
+    "SPELL MODS"
+  ],
+  "no": "Large BG1 quest expansion (8-12 hours) starting after Cloakwood Mines. 5 major quest chains, 10+ new areas, 6 joinable NPCs. Install AFTER Dark Horizons, BEFORE NTotSC/worldmap mods. v4.2 spell components have IDS_OF_SYMBOL detection for SR/IWDification compatibility Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly.",
+  "conflicts": [],
+  "dependencies": [
+    {
+      "requires": "eet",
+      "requiresId": 12,
+      "type": "hard",
+      "reason": "Worldmap or EET required"
+    },
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap or EET required"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dsotsc_jenna",
+          "portraits/dsotsc/jenna.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_cuchoin",
+          "portraits/dsotsc/cuchoin.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_jetlaya",
+          "portraits/dsotsc/jetlaya.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_bardo",
+          "portraits/dsotsc/bardo.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_concho",
+          "portraits/dsotsc/concho.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_ferthg",
+          "portraits/dsotsc/ferthg.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_dsbub",
+          "portraits/dsotsc/dsbub.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_juoda",
+          "portraits/dsotsc/juoda.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_keiria",
+          "portraits/dsotsc/keiria.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_morik",
+          "portraits/dsotsc/morik.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_skeezr",
+          "portraits/dsotsc/skeezr.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_thorf",
+          "portraits/dsotsc/thorf.png",
+          "bg1"
+        ],
+        [
+          "dsotsc_vihane",
+          "portraits/dsotsc/vihane.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "spl": {
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDS01",
+          "wizard",
+          1,
+          "Evocation",
+          "Orb of Air",
+          "Hurls an orb of compressed air dealing 1d6+1/level."
+        ],
+        [
+          "YOURDS02",
+          "wizard",
+          1,
+          "Evocation",
+          "Thunderslap",
+          "Thunder clap stuns and damages nearby enemies."
+        ],
+        [
+          "YOURDS03",
+          "wizard",
+          2,
+          "Evocation",
+          "Ice Bolt",
+          "Bolt of ice deals 2d6 cold + slows target."
+        ],
+        [
+          "YOURDS04",
+          "wizard",
+          2,
+          "Illusion",
+          "Darkness 15'",
+          "Creates a 15ft radius of magical darkness."
+        ],
+        [
+          "YOURDS05",
+          "wizard",
+          2,
+          "Evocation",
+          "Ray of Frost",
+          "Cold ray deals 1d4/level cold damage."
+        ],
+        [
+          "YOURDS06",
+          "wizard",
+          3,
+          "Alteration",
+          "Army of One",
+          "Caster gains extra attacks and combat bonuses."
+        ],
+        [
+          "YOURDS07",
+          "wizard",
+          4,
+          "Necromancy",
+          "Ettin's Healing",
+          "Regenerates HP over time, stronger than normal healing."
+        ],
+        [
+          "YOURDS08",
+          "wizard",
+          5,
+          "Evocation",
+          "Melf's Explosive Meteors",
+          "Launches explosive meteors dealing fire damage."
+        ],
+        [
+          "YOURDS09",
+          "wizard",
+          6,
+          "Abjuration",
+          "Antimagic Shell",
+          "Caster immune to magic, cannot cast spells."
+        ],
+        [
+          "YOURDS10",
+          "wizard",
+          6,
+          "Enchantment",
+          "Mass Charm",
+          "Charms all enemies in area."
+        ],
+        [
+          "YOURDS11",
+          "wizard",
+          7,
+          "Evocation",
+          "Ball Lightning",
+          "Creates ball lightning dealing electrical damage."
+        ],
+        [
+          "YOURDS12",
+          "wizard",
+          8,
+          "Evocation",
+          "Stygian Ice Storm",
+          "Devastating ice storm from the River Styx."
+        ],
+        [
+          "YOURDS13",
+          "wizard",
+          8,
+          "Evocation",
+          "Isaac's Greater Missile Storm",
+          "Barrages area with force missiles."
+        ]
+      ]
+    },
+    "4": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDSP01",
+          "priest",
+          1,
+          "Alteration",
+          "Faerie Fire",
+          "Outlines targets, reducing AC by 2.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDSP02",
+          "priest",
+          1,
+          "Evocation",
+          "Fire Bolt",
+          "Ranged fire bolt dealing 1d6+1/level.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDSP03",
+          "priest",
+          2,
+          "Necromancy",
+          "Cause Disease",
+          "Afflicts target with wasting disease.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "YOURDSP04",
+          "priest",
+          2,
+          "Evocation",
+          "Poison Spray",
+          "Sprays poison dealing damage over time.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURDSP05",
+          "priest",
+          3,
+          "Alteration",
+          "Spike Growth",
+          "Area deals piercing damage, slows movement.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "YOURDSP06",
+          "priest",
+          3,
+          "Necromancy",
+          "Negative Energy Ray",
+          "Ray of negative energy drains HP.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "YOURDSP07",
+          "priest",
+          4,
+          "Alteration",
+          "Transport via Plants",
+          "Teleports through plant life.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "YOURDSP08",
+          "priest",
+          4,
+          "Evocation",
+          "Produce Flame",
+          "Creates flame for melee/ranged attacks.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDSP09",
+          "priest",
+          5,
+          "Necromancy",
+          "Life Steal",
+          "Drains life force from target.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "YOURDSP10",
+          "priest",
+          5,
+          "Conjuration",
+          "Wall of Fire",
+          "Creates a wall of flames.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURDSP11",
+          "priest",
+          5,
+          "Evocation",
+          "Flame Blade (Greater)",
+          "Enhanced flame blade dealing extra damage.",
+          [
+            "elemental",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDSP12",
+          "priest",
+          6,
+          "Necromancy",
+          "Dark Ritual",
+          "Powerful necromantic ritual with various effects.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "YOURDSP13",
+          "priest",
+          6,
+          "Conjuration",
+          "Summon Woodland Spirits",
+          "Summons powerful forest creatures.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURDSP14",
+          "priest",
+          7,
+          "Evocation",
+          "Holy Wrath",
+          "Divine wrath damages all evil in area.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDSP15",
+          "priest",
+          7,
+          "Necromancy",
+          "Undead Control",
+          "Dominates multiple undead creatures.",
+          [
+            "charm"
+          ]
+        ],
+        [
+          "YOURDSP16",
+          "priest",
+          1,
+          "Abjuration",
+          "Bless Water",
+          "Creates holy water for use against undead.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURDSP17",
+          "priest",
+          2,
+          "Divination",
+          "Augury",
+          "Divines whether an action will bring good or ill.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURDSP18",
+          "priest",
+          3,
+          "Conjuration",
+          "Create Food and Water",
+          "Conjures sustenance for the party.",
+          [
+            "summoning",
+            "creation"
+          ]
+        ],
+        [
+          "YOURDSP19",
+          "priest",
+          4,
+          "Abjuration",
+          "Aura of Protection",
+          "Shields allies from negative effects.",
+          [
+            "protection"
+          ]
+        ],
+        [
+          "YOURDSP20",
+          "priest",
+          6,
+          "Evocation",
+          "Sunbeam",
+          "Beam of sunlight damages undead heavily.",
+          [
+            "sun"
+          ]
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/DSotSC",
+  "a": "Various",
+  "v": "v4.2",
+  "sum": "Large BG1 expansion adding quests, areas, and encounters on the darker side of the Sword Coast. 8-12 hours of content with morally ambiguous storylines.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "rec": {
+    "goes_with": [
+      "Northern Tales of the Sword Coast",
+      "BG Quest Exchange"
+    ],
+    "avoid": [
+      "Can make BG1 very long if combined with all quest mods"
+    ],
+    "tip": "Classic BG1 mega-expansion. The EET version is different from the BG:EE standalone version."
+  },
+  "eet_compat": {
+    "ver": "vBETA",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "DSotSC"
+  },
+  "dl": "https://github.com/Spellhold-Studios/DSotSC",
+  "au": "Roxanne (BWP EET port); originally by The Legendary",
+  "co": [
+    {
+      "n": "Dark Side of the Sword Coast (DSotSC)",
+      "tp2n": "Dark Side of the Sword Coast (DSotSC)",
+      "cn": 0,
+      "wf": "DSotSC",
+      "wp": "DSotSC\\DSOTSC.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "Core content: 5 quest chains (Jet'laya, Dark One, dragon, Citadel vampires, Otho drow dungeon), 10+ areas, 6 NPCs. Install before worldmap mods (FORBID bp-bgt-worldmap)"
+    },
+    {
+      "n": "DSotSC Wizard spells",
+      "tp2n": "DSotSC Wizard spells",
+      "cn": 1,
+      "wf": "DSotSC",
+      "wp": "DSotSC\\DSOTSC.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "13 wizard spells (levels 1-8): Orb of Air, Thunderslap, Ice Bolt, Darkness 15', Ray of Frost, Army of One, Ettin's Healing, Melf's Explosive Meteors, Antimagic Shell, Mass Charm, and more. v4.2 IDS_OF_SYMBOL prevents duplicates with SR/IWDification — install those first",
+      "sp": 14,
+      "spLv": {
+        "w1": 2,
+        "w2": 3,
+        "w3": 1,
+        "w4": 1,
+        "w5": 1,
+        "w6": 2,
+        "w7": 1,
+        "w8": 2
+      },
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "DSotSC Priest spells",
+      "tp2n": "DSotSC Priest spells",
+      "cn": 2,
+      "wf": "DSotSC",
+      "wp": "DSotSC\\DSOTSC.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "20 priest spells (levels 1-7): Faerie Fire, Cause Disease, Fire Bolt, Poison Spray, Transport via Plants, Life Steal, Dark Ritual, and more. Same IDS_OF_SYMBOL detection — install SR/IWDification first DSotSC main mod (cn:0) works without priest spells. One druid NPC (dsarchdr) references THUNDER_BOLT but fails silently.",
+      "sp": 22,
+      "spLv": {
+        "p1": 3,
+        "p2": 3,
+        "p3": 3,
+        "p4": 3,
+        "p5": 3,
+        "p6": 3,
+        "p7": 2
+      },
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "More common encounters in vanilla areas",
+      "tp2n": "More common encounters in vanilla areas",
+      "cn": 3,
+      "wf": "DSotSC",
+      "wp": "DSotSC\\DSOTSC.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "Adds extra spawns in 6 vanilla areas (Firewine, Xvart Village, Nashkel Mines, Lion's Way). Uses EXTEND so no hard SCS conflict, but combined difficulty could be harsh"
+    },
+    {
+      "n": "Distribute DSotSC items also in vanilla content",
+      "tp2n": "Distribute DSotSC items also in vanilla content",
+      "cn": 4,
+      "wf": "DSotSC",
+      "wp": "DSotSC\\DSOTSC.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "Places DSotSC items on ~20 vanilla creatures with hard-coded stat overwrites. Most conflict-prone component — install BEFORE SCS so SCS can overwrite stats back"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "CtB",
+      "withId": 505,
+      "severity": "partial",
+      "reason": "Both mods may modify some shared spell files. Install order dependent — install DSotSC before CtB",
+      "orderOnly": true,
+      "myComps": "#0 DSotSC",
+      "theirComps": "#0 Check the Bodies",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

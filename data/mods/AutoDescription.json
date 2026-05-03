@@ -1,0 +1,84 @@
+{
+  "i": 448,
+  "t": "AutoDescription",
+  "sv": 1,
+  "ord": 340,
+  "c": "EET FINALIZATION",
+  "n": "Auto Description",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "no": "AutoDescription v0.9.37 by Selphira. Scans ALL items and spells and regenerates their technical descriptions to match actual in-game stats. Adapts to all installed mods. MUST install after ALL content mods — the very last mod before EET_End. Warning: uses ~10GB RAM on large installs. cn:20/25 use ACTION_READLN (manual input required).\nREMOVED FROM ULTIMATE PRESET — takes 60+ min on a full install (processes thousands of ITM/SPL files with 8+ GC cycles at 2GB+). Can be installed manually post-install at leisure. Recommended as an overnight manual install for large mod lists.",
+  "u": "https://github.com/Selphira/AutoDescription",
+  "a": "Selphira",
+  "v": "0.9.37",
+  "sum": "Automatically generates item and spell descriptions with standardized technical text reflecting actual in-game stats, adapting to any installed mods.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Selphira",
+    "r": "AutoDescription"
+  },
+  "dl": "https://github.com/Selphira/AutoDescription",
+  "au": "Selphira",
+  "co": [
+    {
+      "n": "Standardize item descriptions",
+      "tp2n": "Uniformisation des descriptions des objets",
+      "cn": 10,
+      "wf": "AutoDescription",
+      "wp": "AutoDescription\\AutoDescription.tp2",
+      "wc": 10,
+      "wq": "guessed"
+    },
+    {
+      "n": "Standardize spell descriptions",
+      "tp2n": "Uniformisation des descriptions des sortilèges",
+      "cn": 15,
+      "wf": "AutoDescription",
+      "wp": "AutoDescription\\AutoDescription.tp2",
+      "wc": 15,
+      "wq": "guessed"
+    },
+    {
+      "n": "Standardize item descriptions of a mod",
+      "tp2n": "Uniformisation des descriptions des objets d'un mod",
+      "cn": 20,
+      "wf": "AutoDescription",
+      "wp": "AutoDescription\\AutoDescription.tp2",
+      "wc": 20,
+      "wq": "guessed",
+      "no": "ACTION_READLN: prompts for mod folder name. Not suitable for automated install",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for mod folder name. Requires manual input.",
+          "type": "manual"
+        }
+      ]
+    },
+    {
+      "n": "Uniformisation des descriptions des sortilèges d'un mod",
+      "tp2n": "Uniformisation des descriptions des sortilèges d'un mod",
+      "cn": 25,
+      "wf": "AutoDescription",
+      "wp": "AutoDescription\\AutoDescription.tp2",
+      "wc": 25,
+      "wq": "guessed",
+      "no": "ACTION_READLN: prompts for mod folder name. Not suitable for automated install",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for mod folder name. Requires manual input.",
+          "type": "manual"
+        }
+      ]
+    }
+  ]
+}

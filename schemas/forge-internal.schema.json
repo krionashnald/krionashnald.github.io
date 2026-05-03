@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Anprionsa/infinity-mod-forge/schemas/forge-internal.schema.json",
+  "title": "Infinity Mod Forge — Internal Mod Data",
+  "description": "Schema for Forge-internal per-mod JSON files under `data/mods/*.json`. Distinct from the author-facing `mod-forge.schema.json` (which authors include in their own repositories with verbose field names) — this schema governs the compact-named curated data served to the Forge UI and the runner. Not all fields are required; the goal is to validate the fields we DO use. For the evidence-grading model on conflicts/advisories/ki entries, see docs/EVIDENCE_GRADING.md.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "i":   { "type": "integer", "description": "Numeric Forge mod ID, stable across releases." },
+    "t":   { "type": "string",  "description": "TP2 folder name, lowercase." },
+    "n":   { "type": "string",  "description": "Display name." },
+    "au":  { "type": "string",  "description": "Primary author handle (used for same-author conflict detection)." },
+    "a":   { "type": "string",  "description": "Full author attribution." },
+    "sv":  { "type": "integer", "description": "Schema version of this record." },
+    "pfx": { "type": "string",  "description": "Forge prefix registry code." },
+    "ord": { "type": "integer", "description": "Relative install-order rank within the mod's category." },
+    "c":   { "type": "string",  "description": "Primary category label." },
+    "cats":{ "type": "array", "items": { "type": "string" }, "description": "All categories this mod appears under." },
+    "no":  { "type": "string",  "description": "Author/curator notes." },
+    "sum": { "type": "string",  "description": "One-line summary for browse cards." },
+    "v":   { "type": "string",  "description": "Version string." },
+    "u":   { "type": "string",  "description": "Homepage/forum URL." },
+    "dl":  { "type": "string",  "description": "Download URL." },
+    "tags":{ "type": "array", "items": { "type": "string" } },
+    "ph":  { "type": "array", "items": { "type": "string" } },
+    "langs": { "type": "object", "additionalProperties": { "type": "integer" } },
+    "rq":  { "type": "string",  "description": "Requirements free-text (e.g. \"EEex\")." },
+    "ic":  { "type": "string",  "description": "Incompatibilities free-text." },
+    "ios": { "type": "boolean" },
+    "gh":  { "type": "object", "properties": { "o": { "type": "string" }, "r": { "type": "string" } } },
+    "eet_compat": { "type": "object" },
+    "co":  { "type": "array", "items": { "$ref": "#/$defs/component" } },
+    "conflicts":  { "type": "array", "items": { "$ref": "#/$defs/conflict" } },
+    "advisories": { "type": "array", "items": { "$ref": "#/$defs/conflict" } },
+    "dependencies": { "type": "array", "items": { "$ref": "#/$defs/dependency" } },
+    "ki":  { "type": "array", "items": { "$ref": "#/$defs/knownIssue" } }
+  },
+  "$defs": {
+    "component": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "cn":  { "type": "integer", "description": "Component number (DESIGNATED value)." },
+        "n":   { "type": "string" },
+        "tp2n":{ "type": "string" },
+        "wf":  { "type": "string" },
+        "wp":  { "type": "string" },
+        "wq":  { "type": "string" },
+        "wc":  { "type": "integer" },
+        "g":   { "type": "string" },
+        "scn": { "type": "string" },
+        "x":   { "type": "integer" },
+        "no":  { "type": "string" },
+        "cat": { "type": "string" },
+        "games": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "required": ["with", "severity"],
+      "additionalProperties": false,
+      "properties": {
+        "with": {
+          "type": "string",
+          "description": "TP2 folder name of the other mod (lowercase)."
+        },
+        "withId": {
+          "type": "integer",
+          "description": "Forge numeric ID of the other mod — lets the UI resolve the target without a name lookup."
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["hard", "partial", "soft"],
+          "description": "hard = mutually exclusive, partial = specific components conflict, soft = possible issues."
+        },
+        "evidenceLevel": {
+          "type": "string",
+          "enum": ["observed", "mechanism-verified", "speculative"],
+          "description": "How strongly this conflict is supported by evidence. `observed` = an actual install produced the failure (session ID / log excerpt must be cited). `mechanism-verified` = code paths in both mods have been traced and the failure mode is mechanically plausible, but not yet seen in practice. `speculative` = plausible but unverified — belongs in `advisories[]`, not `conflicts[]`. Three tiers get different UI styling. Added 2026-04 after the Stormlord\u2194EPS audit revealed 1163 entries with only 8 carrying actual session evidence."
+        },
+        "sessionId": {
+          "type": "string",
+          "description": "Required when `evidenceLevel = \"observed\"`. 8+ hex char session ID from `gui.log` or the `Test #N` tag. Lets reviewers pull the preserved WSETUP.DEBUG to verify the claim."
+        },
+        "source": {
+          "type": "string",
+          "description": "Provenance note — upstream README/advisory, forum thread URL, code-trace rationale, curator note. Distinct from `sessionId`."
+        },
+        "orderOnly": {
+          "type": "boolean",
+          "description": "True when recommended install order resolves the conflict. UI can demote order-only entries from the top-severity view."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why these mods conflict. Prefer concrete mechanism (`Mod A calls COPY_EXISTING X; Mod B\u2019s cleanup removes X from override before A runs`) over vague phrasing (`may interact with`). If reason uses `may`/`might`/`could`/`likely`/`probably`, `evidenceLevel` should be `speculative`."
+        },
+        "myComps": {
+          "type": "string",
+          "description": "Which of YOUR component numbers are involved (e.g. \"#0 #10\" or \"#15 Pre-Buffing\")."
+        },
+        "theirComps": {
+          "type": "string",
+          "description": "Which of THEIR component numbers are involved."
+        }
+      }
+    },
+    "dependency": {
+      "type": "object",
+      "required": ["requires"],
+      "additionalProperties": true,
+      "properties": {
+        "requires": { "type": "string" },
+        "requiresId": { "type": "integer" },
+        "type": {
+          "type": "string",
+          "enum": ["hard", "soft"]
+        },
+        "reason": { "type": "string" },
+        "myComps": { "type": "string" },
+        "theirComps": { "type": "string" }
+      }
+    },
+    "knownIssue": {
+      "type": "object",
+      "required": ["description", "severity"],
+      "additionalProperties": false,
+      "properties": {
+        "pattern": {
+          "type": "string",
+          "description": "Regex pattern matched against preserved WSETUP.DEBUG / install.log by the runner. Used for both diagnostic display (DebugPanel) and future evidence upgrades (when a `speculative` conflict's pattern fires in the wild, it can be promoted to `observed`)."
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "error", "warning", "info"]
+        },
+        "category": {
+          "type": "string",
+          "description": "Classifier chip shown in the UI (e.g. `cosmetic`, `likely-benign`, `caution`, `concerning`, `unknown`)."
+        },
+        "description": { "type": "string" },
+        "workaround":  { "type": "string" },
+        "user_action": { "type": "string" },
+        "evidenceLevel": {
+          "type": "string",
+          "enum": ["observed", "mechanism-verified", "speculative"],
+          "description": "Same semantics as on `conflict`. A `speculative` ki pattern is still useful (runner still scans for it) but the UI should mark it as \"unverified detector\" until at least one session matches it."
+        },
+        "components": {
+          "type": "array",
+          "items": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

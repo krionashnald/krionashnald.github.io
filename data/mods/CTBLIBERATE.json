@@ -1,0 +1,51 @@
+{
+  "i": 530,
+  "t": "CTBLIBERATE",
+  "sv": 1,
+  "ord": 560,
+  "c": "QUEST MODS BG2",
+  "n": "Liberation of Hlondeth",
+  "no": "[LEGACY] Separate BGT-era sub-mod. In CtB v3.0+ this is consolidated into the main ctb.tp2. Use main CtB mod for EET installs. Check the Bodies sub-module. BG2 quest content.. Removed from Mod Forge Ultimate: CtB incompatible with WeiDU 251 (DELETE_EXISTING_ANIMATIONS macro)",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/Hlondeth",
+  "a": "CBisson, Roxanne",
+  "sum": "Adds a BG2 quest line involving the city of Hlondeth. New areas, NPCs, and a storyline about freeing an occupied city.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/SpellholdStudios/Check_the_Bodies/releases",
+  "au": "CBisson, King Diamond (SHS)",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Liberation of Hlondeth",
+      "cn": 0,
+      "wf": "CTBLIBERATE",
+      "wp": "CTBLIBERATE\\CTBLIBERATE.TP2",
+      "wc": 0,
+      "no": "Liberation of Hlondeth: a major quest with a new city."
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Hlondeth"
+  }
+}

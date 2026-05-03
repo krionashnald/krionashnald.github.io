@@ -1,0 +1,76 @@
+{
+  "i": 525,
+  "t": "Vaulteet",
+  "sv": 1,
+  "ord": 340,
+  "c": "QUEST MODS BG1",
+  "n": "The Vault",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "it": 2,
+    "es": 3,
+    "ru": 4,
+    "pl": 5,
+    "zh-cn": 6
+  },
+  "no": "Adds items and tactical challenges to BG1. Find the vault on Bear River (north of Gnoll Stronghold) island. Roxanne's EET update. Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly. INSTALLED WITH WARNINGS — DDGAME03.BAF PARSE ERROR (SUMMON_SKELETON_WARRIOR3 not in spell.ids at compile time). Local fix applied: replaced with CLERIC_ANIMATE_DEAD in TDDz BAF files.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "BG1NPC",
+      "withId": 26,
+      "severity": "soft",
+      "reason": "BG1NPC EXTEND_TOPs CENTEOL.BCS, changing its structure so VaultEET's REPLACE_BCS_BLOCK for ocenteol-ee.baf no longer matches. VaultEET's Centeol dialog trigger patch is silently skipped. Non-fatal — vault quest still works.",
+      "myComps": "#0 The Vault",
+      "theirComps": "#10 Phase Two (BG1NPC extends Centeol script)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/VaultEE",
+  "a": "beleg33",
+  "v": "v8.3",
+  "sum": "Adds a new underground dungeon complex accessible from BG1, with traps, puzzles, and treasure. A classic dungeon-crawl experience.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/RoxanneSHS/VaultEE",
+  "au": "Roxanne",
+  "co": [
+    {
+      "n": "The Vault (Ikki's rework for EET compatibility)",
+      "tp2n": "The Vault (Ikki's rework for EET compatibility)",
+      "cn": 0,
+      "wf": "VAULTEET",
+      "wp": "VAULTEET\\SETUP-VAULTEET.TP2",
+      "wc": 0,
+      "no": "Main quest component. INSTALLS WITH WARNINGS: REPLACE_BCS_BLOCK cannot find ocenteol-ee.baf pattern in CENTEOL.BCS. Cause: BG1 NPC Project EXTEND_TOPs CENTEOL.BCS first (953→2180 bytes), breaking VaultEET's expected block match. Centeol's vault-related script patch doesn't apply. Non-fatal; mod quest works, only Centeol's dialog trigger is unpatched.",
+      "games": [
+        "eet"
+      ]
+    },
+    {
+      "n": "The Vault's item upgrades - Compatibility with Item Revisions. Recommended for consistency if you plan to install IR main component later",
+      "tp2n": "The Vault's item upgrades - Compatibility with Item Revisions. Recommended for consistency if you plan to install IR main component later",
+      "cn": 1,
+      "wf": "VAULTEET",
+      "wp": "VAULTEET\\SETUP-VAULTEET.TP2",
+      "wc": 1,
+      "no": "Item Revisions compatibility patch. Install if planning to use IR main component later. Installs cleanly.",
+      "x": 0
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "VaultEE"
+  }
+}

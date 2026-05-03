@@ -1,0 +1,87 @@
+{
+  "i": 603,
+  "t": "Neh'taniel",
+  "sv": 1,
+  "ord": 1100,
+  "c": "NEW NPC MODS",
+  "n": "Neh'taniel NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "(Not to be confused with the recruitable NPC Nathaniel.)Install Neh’taniel NPC for BG2 after The Undying and Beyond the Law.Install Neh’taniel NPC for BG2 before Calin Romance for BG2. Get friendly or romantically intimate with the Tiefling Bard Haer’Dalis.Install Haer’Dalis Romance for BG2 before Nephele.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "nehtaniel",
+          "portraits/nehtaniel/sk_neh.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.nexusmods.com/baldursgate2ee/mods/60",
+  "a": "Kitanna",
+  "v": "v7.4",
+  "sum": "Adds Neh'taniel as a joinable NPC companion in Baldur's Gate II: Enhanced Edition with his own storyline, dialogue, and character development.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Kitannadk",
+  "dl": "https://www.nexusmods.com/baldursgate2ee/mods/60",
+  "co": [
+    {
+      "n": "Neh'taniel NPC Mod",
+      "cn": 0,
+      "wf": "Neh'taniel",
+      "wp": "Neh'taniel\\Neh'taniel.tp2",
+      "wc": 0,
+      "no": "Fixed: added missing @123 tra string (Wraith Touch) to English setup.tra PARSE ERRORS (non-fatal): SK#Nehtb.baf lines 280/285 reference CLERIC_RESIST_COLD (HaveSpell + ForceSpell) which doesn't exist in EE Spell.IDS. Same EE merged-spell issue as Imnesvale. Neh'taniel won't cast/check Resist Cold — CLERIC_RESIST_FIRE already covers both. Minor AI gap.",
+      "tp2n": "Neh'taniel NPC Mod"
+    },
+    {
+      "n": "Neh'taniel's alternative portraits -> Neh'taniel's portrait, Default edited by Amazor'dra and Sidhe?",
+      "cn": 1,
+      "wf": "Neh'taniel",
+      "wp": "Neh'taniel\\Neh'taniel.tp2",
+      "wc": 1,
+      "g": "nehtaniel_portrait",
+      "tp2n": "Neh'taniel's portrait, Default edited by Amazor'dra and Sidhe?"
+    },
+    {
+      "n": "by Rabain?",
+      "cn": 2,
+      "g": "nehtaniel_portrait",
+      "wf": "Neh'taniel",
+      "wp": "Neh'taniel\\Neh'taniel.tp2",
+      "tp2n": "Neh'taniel's portrait,  by Rabain?"
+    },
+    {
+      "n": "by Amazor'dra?",
+      "cn": 3,
+      "g": "nehtaniel_portrait",
+      "wf": "Neh'taniel",
+      "wp": "Neh'taniel\\Neh'taniel.tp2",
+      "tp2n": "Neh'taniel's portrait, by Amazor'dra?"
+    },
+    {
+      "n": "old default?",
+      "cn": 4,
+      "g": "nehtaniel_portrait",
+      "scn": "Neh'taniel's alternative portraits",
+      "wf": "Neh'taniel",
+      "wp": "Neh'taniel\\Neh'taniel.tp2",
+      "tp2n": "Neh'taniel's portrait, old default?"
+    }
+  ]
+}

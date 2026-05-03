@@ -1,0 +1,107 @@
+{
+  "i": 664,
+  "t": "kitmule",
+  "sv": 1,
+  "ord": 340,
+  "c": "KIT & CLASS MODS",
+  "n": "Kit Mule",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "MULE_USE_DEFAULT_SETTINGS",
+          "fighter",
+          "Kit Mule",
+          "Utility kit that enables kit-related functionality for other mods."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/D2-mods/Kit-Mule-kit-for-IE-games-",
+  "a": "Dan_P",
+  "v": "1.2",
+  "sum": "Adds a kit that has every special ability (including HLAs and mod-added ones). Compatible with EEs and classic BG2.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/D2-mods/Kit-Mule-kit-for-IE-games-",
+  "au": "Dan_P",
+  "no": "Adds a kit that has every special ability (including HLAs and mod-added ones). Compatible with EEs and classic BG2.",
+  "co": [
+    {
+      "n": "Recreate abilities table",
+      "cn": 99,
+      "wf": "KITMULE",
+      "wp": "KITMULE\\KITMULE.TP2",
+      "wq": "verified",
+      "tp2n": "Recreate abilities table",
+      "pi": "D2_KIT_MULE_RECREATE"
+    },
+    {
+      "n": "Use config file",
+      "cn": 9999,
+      "wf": "KITMULE",
+      "wp": "KITMULE\\KITMULE.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Use config file",
+      "pi": "D2_KIT_MULE",
+      "scn": "Kit Mule kit"
+    },
+    {
+      "n": "Use default settings",
+      "cn": 2,
+      "wf": "KITMULE",
+      "wp": "KITMULE\\KITMULE.TP2",
+      "wq": "verified",
+      "tp2n": "Use default settings",
+      "pi": "D2_KIT_MULE_DEFAULT",
+      "scn": "Kit Mule kit",
+      "no": "Kit Mule with default settings. Utility mod that provides kit infrastructure for other mods."
+    },
+    {
+      "n": "Kit Mule kit -> Use default settings",
+      "cn": 10000,
+      "wf": "KITMULE",
+      "wp": "KITMULE\\KITMULE.TP2",
+      "wc": 10000,
+      "k": 1,
+      "no": "v18 moved to cn:2 (was cn:10000 in older version)",
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "D2-mods",
+    "r": "Kit-Mule-kit-for-IE-games-"
+  }
+}

@@ -1,0 +1,5139 @@
+{
+  "i": 254,
+  "t": "Derats_Todd",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 40,
+  "c": "ITEM ADDITION MODS",
+  "n": "Derat's Todd",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "no": "Todd the super tester guy A truckload of expensive OP broken lore unfriendly items",
+  "u": "https://github.com/Deratiseur/Todd",
+  "a": "Deratiseur",
+  "v": "v9.1",
+  "sum": "Morrowind / Arcanum items. Badass or trash, they're all there.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "Todd"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "PXPMMAGN",
+          "staff",
+          "Staff of Magnus",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMHAZE",
+          "staff",
+          "Staff of Hasedoki",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMTREB",
+          "staff",
+          "Trebonius' Staff",
+          "Your youth was shaped by two major influences: your foster father Gorion and a group of monks in the service of Bahamut who spent several years within Candlekeep. While Gorion worked to grow your intelligence and kindness, these seemingly strange monks fostered your wisdom and discipline. After they left, you adopted their ways as your own and can now rightfully call yourself a monk. While you treasure the years spent in Candlekeep, you now feel the urge to pursue spiritual wisdom.",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPMARGE",
+          "staff",
+          "Silver Staff of War",
+          "Aye, ye're Baeloth's latest twerps, are ye? Well, I hope ye at least spit in his eye before ye die, unlike the last few that came through here. Useless lot!",
+          {
+            "speed": 4,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPMMOLA",
+          "mace",
+          "Mace of Molag Bal",
+          "play",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMAEVA",
+          "mace",
+          "Mace of Aevar Stone-Singer",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. In this case, the head is pyramidal and seems to glow with an inner blue light as it sits atop a polished oak shaft. \n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d6+4 (crushing)\nSpeed Factor: 4\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 6,
+            "dmg": "1d6",
+            "dmgBonus": 7,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMCHAT",
+          "morning star",
+          "Scourge",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. In this case, the head is pyramidal and seems to glow with an inner blue light as it sits atop a polished oak shaft.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d6+2 (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 8",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMBRIS",
+          "hammer",
+          "Skull Crusher",
+          "A tale not worth telling, little one. Suffice it to say, I have my suspicions about some of the occupants of my freehold, but they are suspicions and nothing more. Let us instead discuss the matter at hand: You need weapons. And I imagine you have needs related to them?",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 6,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMBROY",
+          "hammer",
+          "Sunder",
+          "Perhaps. And perhaps you could fashion a blade that would cut Baeloth down.",
+          {
+            "thac0": 11,
+            "dmg": "1d8",
+            "dmgBonus": 6,
+            "con": 4,
+            "str": 4,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMLAME",
+          "dagger",
+          "Keening",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 10,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "dex": 6,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+15 Max HP"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMCROC",
+          "dagger",
+          "Fang of Haynekhtnamet",
+          "This seemingly simple dagger, steel blade and bone handle, is an incredibly powerful weapon. Forged by an unfortunate duergar smith centuries earlier, the handle was carved from a tooth of a black dragon and the blade was tempered in the blood of its creator. How it has made its way to you is anyone's guess.\n\nSTATISTICS:\n\nTHAC0: +4\nDamage: 1d4+4 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 5,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMRASO",
+          "dagger",
+          "Mehrunes' Razor",
+          "Yes, we are both forced to act against our wills.",
+          {
+            "thac0": 4,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMSYMM",
+          "dagger",
+          "Dagger of Symmachus",
+          "And if we refuse?",
+          {
+            "thac0": 6,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "con": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMMAIN",
+          "dagger",
+          "Black Hands Dagger",
+          "If I were to die, who would look after my guests? Who would oversee the djinn? Who would summon more combatants for the arena? Really now, you're just being ridiculous. Now then—are you ready to hear what you'll be battling against?",
+          {
+            "thac0": 4,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMANCI",
+          "dagger",
+          "Ancient Silver Dagger",
+          "Were I not bound by this geas, I would take up arms beside you in the arena! We would slaughter all who assailed us, and then drag Baeloth down from his viewing chamber to face us in battle!",
+          {
+            "speed": 2,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMEGID",
+          "dagger",
+          "Steel Jinkblade of the Aegis",
+          "Indeed, I can see the hope burning within your mighty heart. Keep winning, mortal, and perhaps Baeloth will run out of patience.",
+          {
+            "speed": 3,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMFEND",
+          "short sword",
+          "Frostgore",
+          "You keep telling yourself that, Dorn. I'm sure it helps you sleep at night.",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPMSTAL",
+          "large sword",
+          "Stalhrim Longsword of Flame",
+          "It has been my experience that most of your kind share that wish. But when presented with a situation where continuing to live would result in further torment, why persist?",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMVIVE",
+          "large sword",
+          "Trueflame",
+          "The scimitar, or \"shamshir\" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. This particular weapon has been enhanced magically to complement the skill of the wielder.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 3",
+          {
+            "thac0": 6,
+            "dmg": "1d8",
+            "dmgBonus": 6,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMVIFE",
+          "large sword",
+          "Hopesfire",
+          "The scimitar, or \"shamshir\" as it was originally called, has a single-edged blade with a significant curve and is tapered to an elongated, sharp point. It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of. This particular weapon has been enhanced magically to complement the skill of the wielder.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 3",
+          {
+            "thac0": 6,
+            "dmg": "1d8",
+            "dmgBonus": 6,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMLDOR",
+          "large sword",
+          "Goldbrand",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "thac0": 4,
+            "dmg": "1d10",
+            "dmgBonus": 4,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMMONA",
+          "large sword",
+          "Ice Blade of the Monarch",
+          "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations. This one is particularly good at its job as it has been enchanted with a few magical properties.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d10+1 (slashing)\nSpeed Factor: 9\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 12",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPMCHRY",
+          "large sword",
+          "Chrysamere",
+          "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 10\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 6,
+            "thac0": 4,
+            "dmg": "1d10",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSERM",
+          "large sword",
+          "King's Oath",
+          "Let's go put the fear of us in this Everwatch Knight.",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPMHACH",
+          "axe",
+          "Nordic Silver Battleaxe",
+          "More playthings for Baeloth? I have seen felines with longer attention spans than that drow. I suppose you've come here because you've wisely decided that being light on your feet is the only way to prolong your life?",
+          {
+            "speed": 7,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMCRUE",
+          "spear",
+          "Spear of Bitter Mercy",
+          "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 6\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMLANC",
+          "spear",
+          "Blessed Spear",
+          "If you are not under a geas, you must help us escape! We could find some way to repay you for your help once we are free.",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "ac": 2,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPMOMBR",
+          "bow",
+          "Bow of Shadows",
+          "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor. The smooth staff of this bow is warm to the touch, just a hint of the energy that surges through the wood.\n\nSTATISTICS:\n\nTHAC0: +3\nSpeed Factor: 5\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 6 Strength\n\nWeight: 3",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMCUIR",
+          "armor",
+          "Cuirass of the Savior's Hide",
+          "Hide armor is made from the thick hide of a very large animal (an elephant for example) or from many layers of normal leather from common animals, like cows. Hide armor is far too bulky, inflexible and heavy to be used much in advanced human cultures. However, among the barbaric humanoid masses throughout the dark forests and misty jungles of the world, hide armor is common. Even though it does offer more protection than leather armor, one must get by the offensive odor and shoddy appearance in order to wear it effectively. Even though Thieves can wear this armor, it has a negative effect on their abilities.\n\nSTATISTICS:\n\nEquipped abilities:\n– Open Locks: -10%\n– Find Traps: -10%\n– Pick Pockets: -10%\n– Move Silently: -20%\n\nArmor Class: 6 (8 vs. piercing and missile)\nRequires:\n 6 Strength\n\nWeight: 40",
+          {
+            "ac": 0,
+            "magicResist": 60,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMEBEN",
+          "armor",
+          "Ebony Mail",
+          "Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows. \n\nSTATISTICS:\n\nArmor Class: 5 (3 vs. slashing, 7 vs. crushing)\nRequires:\n 8 Strength\n\nWeight: 40",
+          {
+            "ac": -2,
+            "fireResist": 75,
+            "magicResist": 20,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "PXPMDRAG",
+          "armor",
+          "Dragonbone cuirass",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.\n\nSTATISTICS:\n\nArmor Class: 3 (0 vs. slashing)\nRequires:\n 12 Strength\n\nWeight: 50",
+          {
+            "ac": -2,
+            "fireResist": 100,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPMSEIG",
+          "armor",
+          "Lord's Mail",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.\n\nSTATISTICS:\n\nArmor Class: 3 (0 vs. slashing)\nRequires:\n 12 Strength\n\nWeight: 50",
+          {
+            "ac": -2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSOSC",
+          "armor",
+          "Soscean's Cuirass",
+          "Your prowess in battle has become well known, <RACE>. I have seen few other mortals with your... knack, as it were. Perhaps it was my blades that aided you?",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+25 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPMAURI",
+          "shield",
+          "Auriel's Shield",
+          "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nRequires:\n 12 Strength\n\nWeight: 7",
+          {
+            "ac": 4,
+            "magicResist": 60,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMELEI",
+          "shield",
+          "Eleidon's Ward",
+          "A large shield inlaid with a golden griffin. This shield, also known as the kite or tower shield, is a massive metal shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place. Strangely enough, this shield feels unusually light for its size.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1, an extra +1 vs. missile attacks\n\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "ac": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMGOBE",
+          "shield",
+          "Goblin Buckler",
+          "Fist +1",
+          {
+            "ac": 1,
+            "cha": -10,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "PXPMCLAV",
+          "helmet",
+          "Masque of Clavicus Vile",
+          "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. \n\nSTATISTICS:\n\nEquipped abilities:\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "cha": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMOREY",
+          "helmet",
+          "Helm of Oreyn Bearclaw",
+          "This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose. \n\nSTATISTICS:\n\nEquipped abilities:\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "ac": 1,
+            "con": 8,
+            "dex": 8,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMVERS",
+          "helmet",
+          "Bloodworm Helm",
+          "COPY",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMRAND",
+          "bracers",
+          "Fists of Randagulf",
+          "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "ac": 1,
+            "str": 4,
+            "dex": 4
+          }
+        ],
+        [
+          "PXPMGARD",
+          "bracers",
+          "Staff of Magnus",
+          "Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "ac": 1,
+            "coldResist": 10,
+            "fireResist": 10,
+            "magicResist": 10,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 10
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 10
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMBOTT",
+          "boots",
+          "Boots of Blinding Speed",
+          "That's your choice, Dorn. No one's making you carry the burden alone.",
+          {}
+        ],
+        [
+          "PXPMCEIN",
+          "belt",
+          "Belt of the Armor of God",
+          "There is always the chance of escape!",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMHORT",
+          "belt",
+          "Belt of the Hortator",
+          "I am Laiq the Seer, and you... you are <CHARNAME>. Yes, I can see you have led quite a life... hmm... never mind. Perhaps I was seeing someone else.",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMROBE",
+          "armor",
+          "Robe of the Lich",
+          "Can you see the future, or merely the past?",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "+1 Max HP"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMROYA",
+          "ring",
+          "Royal Signet Ring",
+          "So then... how is that any different from guessing?",
+          {
+            "magicResist": 100,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              },
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMVENT",
+          "ring",
+          "Ring of the Wind",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "dex": 6
+          }
+        ],
+        [
+          "PXPMMENT",
+          "ring",
+          "Mentor's Ring",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "int": 2,
+            "wis": 2
+          }
+        ],
+        [
+          "PXPMDENS",
+          "ring",
+          "Denstagmer's Ring",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "fireResist": 30,
+            "coldResist": 30,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 30
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 30
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMPHYN",
+          "ring",
+          "Ring of Phynaster",
+          "How many individuals has Baeloth summoned here?",
+          {
+            "magicResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMKHAJ",
+          "ring",
+          "Ring of Khajiit",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSORC",
+          "ring",
+          "Warlock's Ring",
+          "Ah, the ones who have stymied Baeloth. He may act one way, but I have come to detect when he masks his displeasure. You should have died long ago, mortal. And yet you remain.",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSHEO",
+          "ring",
+          "Sheogorath's Signet Ring",
+          "I as well. Few have stood for as long as you have, and fewer still with such stoic courage. You are different, mortal. Do not let Baeloth defeat you.",
+          {
+            "cha": 2,
+            "wis": -2
+          }
+        ],
+        [
+          "PXPMLUNE",
+          "ring",
+          "Moon-and-Star",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "cha": 2
+          }
+        ],
+        [
+          "PXPMHIRC",
+          "ring",
+          "Hircine's Ring",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "apr": 0.5,
+            "ac": 1,
+            "magicResist": 20,
+            "str": 19,
+            "dex": 16,
+            "con": 15
+          }
+        ],
+        [
+          "PXPMAESL",
+          "ring",
+          "Aesliip's Ring",
+          "You have been summoned to this island fortress by Baeloth. We are in a complex known as the Black Pits, dug by duergar slaves. You are to fight in the battle pits until you die, for the amusement of Baeloth's guests. I have answered your questions; now do as I say. Prepare for battle!",
+          {
+            "wis": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 4,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 6,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 7,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 8,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMSHAS",
+          "ring",
+          "Shashev's Ring",
+          "I would not have expected the likes of you.",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMBARI",
+          "ring",
+          "Barilzar's Mazed Band",
+          "Baeloth said you were a slave! Rise up and we shall defeat him!",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMNECR",
+          "amulet",
+          "Necromancer's Amulet",
+          "And you, Dorn Il-Khan? Are you pleased?",
+          {
+            "int": 5,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 10
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 10
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 10
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 10
+              },
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMASHA",
+          "amulet",
+          "Amulet of Ashamanu",
+          "Is there nothing you can do to help us escape?",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMAOMB",
+          "amulet",
+          "Amulet of Shadows",
+          "Sun Soulray",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMCHAI",
+          "amulet",
+          "Amulet of Flesh Made Whole",
+          "You overestimate your abilities, <RACE>. Baeloth has tasked me with giving you this reward for your outstanding performance. Take it, and prepare for your next battle.",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMCHAS",
+          "amulet",
+          "Hunter's Amulet of Strength",
+          "Greater Sun",
+          {
+            "str": 2
+          }
+        ],
+        [
+          "PXPMCHAV",
+          "amulet",
+          "Hunter's Amulet of Speed",
+          "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "dex": 2
+          }
+        ],
+        [
+          "PXPMPASS",
+          "wand",
+          "The Skeleton Key",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 50,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPMHERO",
+          "potion",
+          "Potion of Heroism",
+          "Investigate and destroy the cult of the eyeless",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPMTOHA",
+          "helmet",
+          "Adamantium Helm of Tohan",
+          "Helm of Defense: Gift of Peace\nPrized for its noble origin as much as for its benefits to the wearer, this helm was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just have easily been a good book or bottle of wine, but adventurers are eminently more practical in their gift giving. The helm has seen many great battles since its creation, but the simple virtue at its core is what has always been remembered.\n\nSTATISTICS:\n\nEquipped abilities:\n– Saving Throws: +1\n– Cold Resistance: +20%\n– Fire Resistance: +20%\n– Electrical Resistance: +20%\n– Protects against critical hits\n\nWeight: 3",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMCALO",
+          "helmet",
+          "The Icecap",
+          "Investigate and destroy the cult of the eyeless",
+          {
+            "coldResist": 30,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMHAAK",
+          "staff",
+          "Haakon's Lucky Break",
+          "While your foster father did his best to guide you toward virtue, you have always been fascinated by the power that can be attained through evil. Uninterested in spellbooks or knowledge of the divine, you would plead with the Watchers to teach you the deadly art of martial combat. Each teacher, increasingly uneasy about your growing darkness, eventually refused to teach you more. But you would simply move on to the next, casually casting your former tutors away. Your lust for power eventually led you to a forbidden tome deep within Candlekeep, a tome that put you into contact with an evil outsider. In exchange for dark power, you agreed for that outsider to become your patron. Now you seek nothing more than an excuse to leave Candlekeep and exercise your new abilities upon an unsuspecting world.",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSTEN",
+          "hammer",
+          "Stendarr's Hammer",
+          "Defensive Stance",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmg": "2d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "PXPMDAED",
+          "dagger",
+          "Daedric Dagger",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. This particular dagger is magical, having special bonuses to its speed, accuracy, and damage. Also, since it is magical, it is capable of striking opponents that are immune to normal weapons, such as vampires, elementals, and mummies.\n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d4+3 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMFOSS",
+          "large sword",
+          "Gravedigger",
+          "Greater Sun",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "2d6",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "PXPMAIRA",
+          "axe",
+          "War Axe of Airan Ammu",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. Magical battle axes are normally crafted by dwarves to help defend their warriors against their harsher neighbors. This magical axe has seen many battles, but its enchantments and craftsmanship make it a very capable weapon still.\n\nSTATISTICS:\n\nTHAC0: +2\nDamage: 1d8+2 (slashing)\nSpeed Factor: 5\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMAAUR",
+          "bow",
+          "Auriel's Bow",
+          "Do you truly find a wedding so very terrible?",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMAKAV",
+          "shield",
+          "Ward of Akavir",
+          "Neither terrible nor transcendent, my fallen raven. Merely a distraction.",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPMLEUR",
+          "bracers",
+          "Deceit and Treachery",
+          "A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.\n\nSTATISTICS:\n\nEquipped abilities:\n– Pick Pockets: +20%\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMARYO",
+          "bracers",
+          "Aryon's Dominator and Helper",
+          "A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.\n\nSTATISTICS:\n\nEquipped abilities:\n– Pick Pockets: +20%\n\nWeight: 2",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMZENI",
+          "bracers",
+          "Left and Right Hands of Zenithar",
+          "I cannot allow such villainy to befall a house of worship.",
+          {
+            "con": 1,
+            "cha": 1
+          }
+        ],
+        [
+          "PXPMRILM",
+          "boots",
+          "Shoes of St. Rilms",
+          "Boots of the North: The Frost's Embrace\nStranded by his company for a sack of gold, Daviol the Frozen was left for dead in the midst of the Great Glacier. His dying curse echoed across the barren wastelands to the ear of Auril, goddess of winter. She smiled upon him, and his bare body was protected and preserved by his newly enchanted Boots of the North. With them, he crossed the ice land in pursuit of his would-be murderers. Driven by rage, Daviol took his revenge upon his previous friends as they warmed themselves in a tavern of the closest city. After his thirst for blood was quenched, he continued to travel the frozen land, never to be seen again.\n\nSTATISTICS:\n\nEquipped abilities:\n– Cold Resistance: +50%\n\nWeight: 4",
+          {
+            "cha": 1,
+            "con": 1
+          }
+        ],
+        [
+          "PXPMMALI",
+          "belt",
+          "Malipu-Ataman's Belt",
+          "We're not dead yet.",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMFIER",
+          "armor",
+          "Robe of the Drake's Pride",
+          "Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.\n\nSTATISTICS:\n\nWeight: 3",
+          {
+            "int": 2,
+            "fireResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMREFF",
+          "armor",
+          "Flamemirror Robe",
+          "While seen with less frequency than some other mage robes, those of Electrical Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm, but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, a Mage Robe of Electrical Resistance can only be worn by those of the wizardly profession.\n\nSTATISTICS:\n\nEquipped abilities:\n– Electrical Resistance: +20%\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMREFE",
+          "armor",
+          "Shockmirror Robe",
+          "While seen with less frequency than some other mage robes, those of Electrical Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm, but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, a Mage Robe of Electrical Resistance can only be worn by those of the wizardly profession.\n\nSTATISTICS:\n\nEquipped abilities:\n– Electrical Resistance: +20%\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMREFI",
+          "armor",
+          "Frostmirror Robe",
+          "While seen with less frequency than some other mage robes, those of Electrical Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm, but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, a Mage Robe of Electrical Resistance can only be worn by those of the wizardly profession.\n\nSTATISTICS:\n\nEquipped abilities:\n– Electrical Resistance: +20%\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMEQUI",
+          "ring",
+          "Ring of Equity",
+          "Sun Soul Monk",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMCAIU",
+          "ring",
+          "Caius' Ring",
+          "Sun Soul Monk",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMVAMP",
+          "ring",
+          "Vampiric Ring",
+          "Sun Soul Monk",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMHELS",
+          "amulet",
+          "Helseth's Collar",
+          "Enough talk. Surrender the blackguard!",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "PXPMGAEN",
+          "amulet",
+          "Gaenor's Amulet",
+          "I'm sorry, Dorn. You've been a great help to me, but not so great I'm willing to sacrifice my life for you. A medium-level help, if you will.",
+          {
+            "saves": 1
+          }
+        ],
+        [
+          "PXPMDARD",
+          "dart",
+          "Fine Spring Dart",
+          "The de'Arnise keep has been invaded",
+          {
+            "speed": 1,
+            "thac0": 6,
+            "dmg": "3d8",
+            "dmgBonus": 6,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMFLEN",
+          "dart",
+          "Black Dart",
+          "That's hardly a polite thing to say about your sister. If it weren't her special day, I'd let her know what you said.",
+          {
+            "speed": 1,
+            "dmg": "1d3",
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMFLEE",
+          "arrow",
+          "Ebony Arrow of Slaying",
+          "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d6 (missile)\nLauncher: Bow\n\nWeight: 0",
+          {
+            "thac0": 10,
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMFLEP",
+          "arrow",
+          "PoisonGrip Arrow",
+          "This arrow has a particularly debilitating effect on its victims as, upon impact, it explodes into a huge ball of fire and shrapnel affecting all within the area.\n\nSTATISTICS:\n\nDamage: 6d6 explosion upon impact (Save vs. Spell for half)\nDamage type: Missile\nLauncher: Bow\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPMBRI2",
+          "shield",
+          "Spell Breaker",
+          "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nRequires:\n 12 Strength\n\nWeight: 7",
+          {
+            "speed": 1,
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMSONC",
+          "large sword",
+          "Her Ebony Scimitar",
+          "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The \"shamshir,\" as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPMARGP",
+          "staff",
+          "Silver Staff of Paralysis",
+          "Aye, ye're Baeloth's latest twerps, are ye? Well, I hope ye at least spit in his eye before ye die, unlike the last few that came through here. Useless lot!",
+          {
+            "thac0": 5,
+            "dmg": "2d8",
+            "dmgBonus": 6,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPMIMPA",
+          "potion",
+          "Elixir of the Imperfect",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPMSANG",
+          "large sword",
+          "Bloodskaal",
+          "Right! Terpfen. I'd almost forgot. Start talking, knight.",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMCORB",
+          "ring",
+          "Ring of Raven Eye",
+          "Don't stress about it, Dorn. I'm sure you'll find a way to get out from under his thumb. Now, we were talking about something before we ran into those guys... oh yeah! So that w—",
+          {}
+        ],
+        [
+          "PXPMJUGE",
+          "hammer",
+          "Veloth's Judgement",
+          "",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "PXPMLDAZ",
+          "large sword",
+          "Eltonbrand",
+          "The future, the past, the present... I see many things. I do not always choose what I see, and if you wish to see what your future holds, I cannot guarantee it with any accuracy.",
+          {
+            "thac0": 4,
+            "dmg": "1d12",
+            "dmgBonus": 4,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMRONG",
+          "dagger",
+          "Winterwound Dagger",
+          "This seemingly simple dagger, steel blade and bone handle, is an incredibly powerful weapon. Forged by an unfortunate duergar smith centuries earlier, the handle was carved from a tooth of a black dragon and the blade was tempered in the blood of its creator. How it has made its way to you is anyone's guess.\n\nSTATISTICS:\n\nTHAC0: +4\nDamage: 1d4+4 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 4,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPMMIME",
+          "ring",
+          "Ring of Surroundings",
+          "<DAMAGEE> was immune to my damage.",
+          {
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPMEARG",
+          "large sword",
+          "Silver Sword of Paralysis",
+          "Pray to whatever god still hears your voice I don't lose patience before it does. Guardian Telwyn, I believe you were telling us where to find your colleague, Terpfen?",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPMLCHA",
+          "spear",
+          "Spear of the Hunter",
+          "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 6\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPAKANE",
+          "amulet",
+          "Amulet of K'an-el",
+          "Help Korgan recover the Book of Kaza",
+          {
+            "con": 4
+          }
+        ],
+        [
+          "PXPANTAL",
+          "amulet",
+          "Amulet of N'tala",
+          "Investigate the deaths in the Umar Hills",
+          {
+            "con": 1,
+            "str": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "PXPADORI",
+          "amulet",
+          "Dorian Amulet",
+          "Solve the riddle in the sewers",
+          {
+            "magicResist": 40
+          }
+        ],
+        [
+          "PXPABEAU",
+          "amulet",
+          "Medallion of Beauty",
+          "Last night, I had a dream",
+          {
+            "cha": 2
+          }
+        ],
+        [
+          "PXPASILE",
+          "amulet",
+          "Medallion of Silence",
+          "A friend of Quayle's needs help",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPASERP",
+          "amulet",
+          "Serpentine Necklace",
+          "Getting inside the asylum",
+          {
+            "cha": -1
+          }
+        ],
+        [
+          "PXPAARAN",
+          "ring",
+          "Arcane Ring",
+          "The final battle with Bodhi",
+          {
+            "coldResist": 20,
+            "fireResist": 20,
+            "magicResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        [
+          "PXPADEST",
+          "ring",
+          "Fated Ring",
+          "The hunt for Valygar is over",
+          {}
+        ],
+        [
+          "PXPAINFL",
+          "ring",
+          "Ring of Influence",
+          "Freeing Queen Ellesime",
+          {
+            "cha": 4
+          }
+        ],
+        [
+          "PXPAGDEX",
+          "bracers",
+          "Gloves of Dexterity",
+          "Retrieve Mekrath's stolen mirror from his imp",
+          {
+            "dex": 2
+          }
+        ],
+        [
+          "PXPAARGA",
+          "bracers",
+          "Arcane Gauntlets",
+          "Rescue Raelis and Haer'Dalis from the planar prison",
+          {
+            "ac": 1
+          }
+        ],
+        [
+          "PXPABOTT",
+          "boots",
+          "Enchanted War Boots",
+          "Who are you?",
+          {
+            "apr": 6
+          }
+        ],
+        [
+          "PXPAARCU",
+          "armor",
+          "Arcane Leather Armor",
+          "I'll be fine, no thanks to that traitor Rasaad.",
+          {
+            "ac": 2,
+            "coldResist": 20,
+            "fireResist": 20,
+            "magicResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "PXPAHARD",
+          "armor",
+          "Red Barbarian Clothes",
+          "Chapter Seven",
+          {
+            "ac": 8,
+            "coldResist": 40,
+            "fireResist": 40,
+            "magicResist": 50,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 40
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 40
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "PXPAPEAU",
+          "armor",
+          "Dragon Skin Leather",
+          "The drow summoning ritual",
+          {
+            "ac": 8,
+            "fireResist": 50,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "PXPACROI",
+          "armor",
+          "Caladon Crusading Chain",
+          "Samia's plan foiled",
+          {
+            "ac": 4,
+            "con": 1,
+            "dex": 1,
+            "cha": 1,
+            "str": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "PXPAARCO",
+          "armor",
+          "Arcane Chainmail",
+          "Lavok is dead, the sphere returned",
+          {
+            "ac": 0,
+            "coldResist": 20,
+            "fireResist": 20,
+            "magicResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "PXPAARAR",
+          "armor",
+          "Arcane Platemail",
+          "There's a WHAT in their chicken?",
+          {
+            "ac": 1,
+            "coldResist": 10,
+            "fireResist": 10,
+            "magicResist": 10,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 10
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 10
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAVETE",
+          "armor",
+          "Venom-Shielded Garment",
+          "Journey to the Windspear Hills",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ]
+          }
+        ],
+        [
+          "PXPACEND",
+          "armor",
+          "Arcane Traveler's Cloak",
+          "Madulf and the village make an arrangement",
+          {
+            "ac": 8,
+            "coldResist": 20,
+            "fireResist": 20,
+            "magicResist": 10,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPAARRO",
+          "armor",
+          "Arcane Robes",
+          "The hunt for Valygar Corthala",
+          {
+            "coldResist": 50,
+            "fireResist": 50,
+            "magicResist": 50,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPAARBO",
+          "shield",
+          "Arcane Shield",
+          "Recover the silver dragon's eggs",
+          {
+            "ac": 2,
+            "fireResist": 15,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "PXPAFORC",
+          "shield",
+          "Shield of Strengh",
+          "Riddle of the imps",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAGIVR",
+          "shield",
+          "Chill Shield",
+          "Garren's child dead",
+          {
+            "ac": 1,
+            "coldResist": 20,
+            "fireResist": 20,
+            "magicResist": 20,
+            "str": -3,
+            "dex": -3,
+            "con": -3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAARDA",
+          "dagger",
+          "Arcane Dagger",
+          "Tell me more of this Selûne.",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPADELE",
+          "dagger",
+          "Shocking Dagger",
+          "Rasaad yn Bashir. A great monk once. I would never have believed he could turn on the order had I not fallen victim to his wrath.",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPADSOR",
+          "dagger",
+          "Witch's Dagger",
+          "Nalia's father's funeral",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPADXER",
+          "dagger",
+          "Blade of Xerxes",
+          "A concussion is pretty damning evidence.",
+          {
+            "thac0": 1,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPAAREP",
+          "large sword",
+          "Arcane Sword",
+          "Anomen takes vengeance for his sister's murder",
+          {
+            "speed": 5,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEAIR",
+          "large sword",
+          "Sword of Air",
+          "The juggernaut golem activated",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEROC",
+          "large sword",
+          "Black Stone Blade",
+          "Garren's child rescued",
+          {
+            "speed": 6,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "dex": -3,
+            "apr": -3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEEAU",
+          "large sword",
+          "Stillwater Blade",
+          "Meet with Tolgerias the Cowled Wizard",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEGAR",
+          "large sword",
+          "Sword of Defense",
+          "Inside the asylum",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "ac": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEFIL",
+          "large sword",
+          "Filament Sword",
+          "The murders in the Umar Hills have been stopped",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEFEU",
+          "large sword",
+          "Blade of Unholy Fire",
+          "Help Kamir the paladin",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEANC",
+          "large sword",
+          "Torian Kel's Ancestral Sword",
+          "Why would this Rasaad turn on his own order?",
+          {
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 6,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAETER",
+          "large sword",
+          "The Bangellian Scourge",
+          "There's a valuable lesson for you in all this. I hope you've learned it. Fare thee well.",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 6,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "PXPAEHUR",
+          "large sword",
+          "Screaming Scimitar",
+          "Rasaad has been absent from services these past few weeks. At first, we feared he'd fallen victim to the Dark Moon order. Then rumors began to swirl...",
+          {
+            "speed": 5,
+            "dmg": "1d8",
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPAARGR",
+          "large sword",
+          "Arcane Great Sword",
+          "Jaheira renounces her Harper status",
+          {
+            "speed": 8,
+            "dmg": "1d10",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPAEPES",
+          "large sword",
+          "Sword of Sickness",
+          "Free Rielev from his life support",
+          {
+            "speed": 8,
+            "dmg": "1d10",
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPAETEM",
+          "large sword",
+          "Blade of the Malevolent Storm",
+          "It was more than rumors that led brother to raise hand to brother.",
+          {
+            "speed": 8,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 7,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPAEBAL",
+          "large sword",
+          "Sword of Baltar",
+          "Bodhi keeps her side of the bargain",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "2d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "PXPAARMS",
+          "mace",
+          "Arcane Mace",
+          "Oh well. Go on.",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 7,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              }
+            ],
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAMBRO",
+          "hammer",
+          "Crushing Hammer",
+          "Mazzy Fentan rescued from the Shade Lord",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "PXPAMINF",
+          "hammer",
+          "Inferno Hammer",
+          "Sir Keldorn returns to the Radiant Heart",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "PXPAARHA",
+          "axe",
+          "Arcane Axe",
+          "Recently, a new cult has formed, led by a man named Collus Darathon. He preaches the Dark Moon heresy: that our mistress Selûne and Shar of the Dark Moon are two aspects of the same goddess.",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 6,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHFOR",
+          "axe",
+          "Axe of Strength",
+          "Get the golem to open the dungeon doors",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 1,
+            "str": 1,
+            "con": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHTEM",
+          "axe",
+          "Axe of Lost Time",
+          "Investigate the circus tent",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 13,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHFOU",
+          "axe",
+          "Axe of Dark electrical",
+          "Free Hendak and the slaves",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHMOR",
+          "axe",
+          "Axe of Creeping Death",
+          "Find proof of Mae'Var's treachery",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAABIC",
+          "bow",
+          "Fawn's Bow",
+          "Solve the \"skinner\" murders in the Bridge District",
+          {
+            "speed": 6,
+            "twoHanded": true,
+            "profType": "short bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 3
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPAAFAU",
+          "bow",
+          "Bow of the Chill Reaper",
+          "Recover Dennis's mother's gong",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "con": -6,
+            "wis": -6,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAADOU",
+          "bow",
+          "Bow of Damage",
+          "Put the spirit of the child Wellyn to rest",
+          {
+            "speed": 7,
+            "thac0": 5,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAABEN",
+          "bow",
+          "Blessed Bow",
+          "Help Kamir the paladin",
+          {
+            "speed": 7,
+            "thac0": 4,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPAAELL",
+          "bow",
+          "Ellumyn's Bow",
+          "Jan returns home to help his former love, Lissa",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAARAC",
+          "bow",
+          "Arcane Bow",
+          "Save Mazzy's sister, Pala",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAAECC",
+          "bow",
+          "Bow of Ecclesiastes",
+          "Thieves' guild stronghold",
+          {
+            "speed": 7,
+            "thac0": 7,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAATER",
+          "bow",
+          "Bow of Terror",
+          "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: +1 (missile)\nSpeed Factor: 7\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 18 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "PXPAANUI",
+          "bow",
+          "Hurtful Long Bow",
+          "Free Rielev from his life support",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "PXPAARBA",
+          "staff",
+          "Arcane Staff",
+          "Aran's tasks to receive the Shadow Thieves' aid",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 8,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "priest"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPABRES",
+          "staff",
+          "Staff of Restoration",
+          "I can see how that's a major concern for Shar and Selûne, but not for me. Farewell.",
+          {
+            "speed": 4,
+            "dmg": "1d6",
+            "str": 1,
+            "con": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPABKAN",
+          "staff",
+          "Staff of K'an T'au",
+          "Many will choose a comfortable lie to an unpleasant truth—but the truth remains unchanged.",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dex": 2,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPABSHA",
+          "staff",
+          "Shaman's Staff",
+          "That might satisfy one who believes they have all the answers. It's a different story for one who has only questions.",
+          {
+            "speed": 4,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 9,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPABXOR",
+          "staff",
+          "Staff of Xoranth",
+          "Sir Keldorn returns to the Radiant Heart",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPAETOI",
+          "dart",
+          "Azram's Star",
+          "Assault on the enclaves",
+          {
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 6,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPALARM",
+          "potion",
+          "Morgana's Tears",
+          "Retrieving the deed for the Windspear Hills",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAMALA",
+          "gem",
+          "Malachi Rench's gem",
+          "Island concerns: Ginia's tale",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PXPAHEBE",
+          "amulet",
+          "Jewel of Hebe",
+          "I can tell you enjoy discussing philosophy. If your goddess smiles upon you, you may find someone who shares your passions soon. I'm not that person. Good evening.",
+          {
+            "cha": 3
+          }
+        ],
+        [
+          "PXPADOIG",
+          "amulet",
+          "The Finger of Mannox",
+          "This periapt is a large gemstone hanging on a thick golden chain. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to poison\n\nCharge abilities:\n– Cure Poison once per day\n  Range: Touch\n  Area of Effect: 1 creature\n\nWeight: 1",
+          {
+            "wis": 1
+          }
+        ],
+        [
+          "PXPAVIRI",
+          "ring",
+          "Ring of Virility",
+          "Ring of Infravision: Topsider's Crutch\n\nMerchants that dare the risks of trading with the drow of the Great Rift are often given these items to aid in their movements underground. \n\nSTATISTICS:\n\nEquipped abilities:\n– Infravision up to 120 ft.\n\nWeight: 0",
+          {
+            "con": 2
+          }
+        ],
+        [
+          "PXPACAMO",
+          "ring",
+          "Ring of Concealment",
+          "A mage imprisoned?",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPALUNE",
+          "helmet",
+          "Trapmaker Spectacles",
+          "Helm of Defense: Gift of Peace\nPrized for its noble origin as much as for its benefits to the wearer, this helm was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just have easily been a good book or bottle of wine, but adventurers are eminently more practical in their gift giving. The helm has seen many great battles since its creation, but the simple virtue at its core is what has always been remembered.\n\nSTATISTICS:\n\nEquipped abilities:\n– Saving Throws: +1\n– Cold Resistance: +20%\n– Fire Resistance: +20%\n– Electrical Resistance: +20%\n– Protects against critical hits\n\nWeight: 3",
+          {
+            "dex": 2
+          }
+        ],
+        [
+          "PXPAEACI",
+          "large sword",
+          "Tempered Sword",
+          "Victims of imprisonment: Svirfneblin son",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d8",
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPASABR",
+          "large sword",
+          "Kryggird's Falchion",
+          "The blade of this weapon seems to shimmer, revealing a fluid, razor edge. Truly there was great skill involved in its construction, as well as a blessing or two from some well-meaning eye above, even though the hilt is comparatively almost clumsily adorned. \n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d8+3 (slashing)\nSpeed Factor: 2\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 8 Strength\n\nWeight: 3",
+          {
+            "thac0": 6,
+            "dmg": "3d4",
+            "dmgBonus": 6,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "PXPAMLLO",
+          "hammer",
+          "Lloyd's Hammer",
+          "Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an eighteen inch shaft. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d4+2 (crushing)\nSpeed Factor: 3\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "apr": 0.5,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "PXPAHMAN",
+          "axe",
+          "Almstead's Axe",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. This is a magical axe.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPATRAN",
+          "dart",
+          "Aerial Decapitator",
+          "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 2,
+            "thac0": 5,
+            "dmg": "2d6",
+            "dmgBonus": 5,
+            "apr": 0.5,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "PXPASOIN",
+          "potion",
+          "Miracle Cure",
+          "When consumed, this potion restores 40 Hit Points to the imbiber. The effect is instantaneous, and the potion is destroyed in the process.\n\nSTATISTICS:\n\nSpecial: Restores 40 Hit Points\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAREVI",
+          "potion",
+          "Revitalizer",
+          "Ransom collected for Lady Elgea",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPASTIC",
+          "potion",
+          "Brain Builder",
+          "The Blood War",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPASTIM",
+          "potion",
+          "Muscle maker",
+          "Gather the four scepter keys",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAVIVI",
+          "potion",
+          "Vivifier",
+          "Unlocking the final seal",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAFORT",
+          "potion",
+          "Fortifier",
+          "Saradush under siege",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPANECR",
+          "wand",
+          "Necromizer",
+          "This rod enables anyone to resurrect the dead as if they were of high enough level to cast the resurrection spell and if they were a priest. No rest is required, as the rod bestows the life-giving effects. Each use of the rod expends one charge.\n\nSTATISTICS:\n\nCharge abilities:\n– Resurrection\n  Special: Raised target is fully healed\n  Range: Unlimited\n  Area of Effect: 1 creature\n\nWeight: 3",
+          {
+            "charges": {
+              "count": 10,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAMURM",
+          "misc",
+          "Whysper's Gem",
+          "Defeating Yaga-Shura",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAHARI",
+          "misc",
+          "Magic bean",
+          "Assault on the enclaves",
+          {
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAMYST",
+          "misc",
+          "Mysterious Gem",
+          "Assault on the enclaves",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAAELE",
+          "ring",
+          "Charged Ring",
+          "So be it—the prospect of your soul has always excited my patron!",
+          {
+            "dex": 2
+          }
+        ],
+        [
+          "PXPAHEAU",
+          "helmet",
+          "Goggled Helmet",
+          "Whatever this villain has planned for my god's temple, I can't permit it.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPACHAP",
+          "helmet",
+          "Chapeau of Magnetic Inversion",
+          "I try. And the truth is, I've got to go.",
+          {
+            "coldResist": 20,
+            "fireResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        [
+          "PXPAGMYS",
+          "bracers",
+          "Mysterious Dwarven Gauntlets",
+          "You sure there's no way I can talk you out of this? No? All right. Sorry, Dorn. I guess we've got to fight you now.",
+          {
+            "dex": 2,
+            "str": 1,
+            "con": 1,
+            "usability": {
+              "races": [
+                "Dwarf"
+              ]
+            }
+          }
+        ],
+        [
+          "PXPAGOUV",
+          "bracers",
+          "Machined Gauntlets",
+          "I'd like to see you stop it. Seriously. I haven't seen a good fight in ages.",
+          {}
+        ],
+        [
+          "PXPADFIN",
+          "dagger",
+          "Finely Crafted Dagger",
+          "No, pay attention. I. Can't. Hear. You.",
+          {
+            "speed": 2,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPADMEC",
+          "dagger",
+          "Mechanical Dagger",
+          "Slay the blackguard!",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "PXPAEVEN",
+          "large sword",
+          "Envenomed Sword",
+          "You plan to attack a temple of the Radiant Heart, <CHARNAME>? You know I cannot let that stand.",
+          {
+            "speed": 5,
+            "dmg": "1d8",
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEEQU",
+          "large sword",
+          "Balanced Sword",
+          "Oh, for pity's sake, it was a joke, you twit. I can't abide those with no sense of humor. Begone.",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAEELE",
+          "large sword",
+          "Charged Sword",
+          "Keldorn, my friend, you need to lighten up. Don't you know a joke when you hear one?",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPAMCLA",
+          "hammer",
+          "Iron Clan Hammer",
+          "Relax, Keldorn. It was a plan, barely that... 'twas but the first tiny inkling of a scheme, if not less, the barest sketch of the notion of the vague possibility of a plot. So this one doesn't come to fruition. I'll live. I've got others.",
+          {
+            "thac0": 4,
+            "dmg": "2d6",
+            "dmgBonus": 4,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "PXPAHCHA",
+          "axe",
+          "Charged Axe",
+          "I don't think so. You've got the sort of face that's hard to forget.",
+          {
+            "speed": 7,
+            "dmg": "1d8",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHVEN",
+          "axe",
+          "Envenomed Axe",
+          "I fear you've been in one too many battles, with one helmet less than required. We know each other well, Dorn Il-Khan.",
+          {
+            "speed": 7,
+            "dmg": "1d8",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHPYR",
+          "axe",
+          "Pyrotechnic Axe",
+          "My name is <CHARNAME>. And you still haven't answered my question.",
+          {
+            "speed": 7,
+            "dmg": "1d8",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAHPUI",
+          "axe",
+          "Power Axe",
+          "Deal with my blade, foolish <PRO_RACE>!",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "PXPAAPYR",
+          "bow",
+          "Pyrotechnic Bow",
+          "Do I know you, <PRO_RACE>? You seem familiar...",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "PXPABELE",
+          "staff",
+          "Shocking Staff",
+          "I fear you've been in one too many battles, with one helmet less than required. We know each other well, Dorn Il-Khan.",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXPABRON",
+          "armor",
+          "Bronzed Plate",
+          "I fear you've been in one too many battles, with one helmet less than required. We know each other well, Dorn Il-Khan.",
+          {
+            "ac": 3,
+            "fireResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPACUIN",
+          "armor",
+          "Dwarven Platemail",
+          "You'll find my face my most pleasing aspect if you don't mind your tongue.",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAELIT",
+          "armor",
+          "Elite Plate",
+          "My name is <CHARNAME>. And you still haven't answered my question.",
+          {
+            "ac": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "PXPAELEC",
+          "armor",
+          "Electro-armor",
+          "Dorn Il-Khan. And you still haven't told me what business that is of yours.",
+          {
+            "ac": 2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 60
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAOUVR",
+          "armor",
+          "Machined Platemail",
+          "I just want to avoid trouble.",
+          {
+            "ac": 0,
+            "str": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "PXPACLAN",
+          "armor",
+          "Iron Clan Armor",
+          "Don't play coy, half-orc. I smell an opportunity here.",
+          {
+            "ac": -2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPADISR",
+          "shield",
+          "Flow Disruptor",
+          "And what opportunity would that be?",
+          {
+            "ac": 1,
+            "magicResist": 30,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "PXPAINHI",
+          "potion",
+          "Mental Inhibitor",
+          "Once exposed to air, this oil will immediately burst into flame, inflicting 5d6 points of damage (Save vs. Breath for half) to all within the immediate area around the potion. It can be hurled up to around 40 ft., at which point it hits the ground and immediately explodes into a ball of fire.\n\nSTATISTICS:\n\nDamage: 5d6 (Save vs. Breath for half)\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGSOM",
+          "misc",
+          "Knock Out Gas",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGAVE",
+          "misc",
+          "Flash Grenade",
+          "With pleasure. The Order of the Sun Soul was founded in the time of ancient Netheril. Then it was called the Brotherhood of the Sun.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGPAR",
+          "misc",
+          "Paralysis Grenade",
+          "I've made a terrible mistake. I don't know what possessed me to ask a monk about his goddess, but it'll not keep me around to listen to it. Farewell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGETO",
+          "misc",
+          "Paralysis Grenade",
+          "I gather you worship Selûne.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGOFF",
+          "misc",
+          "Knock Out Gas",
+          "I wish I could see things that way, <CHARNAME>, I truly do. But given my current course, all I've left to me is revenge for my brother.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGHAL",
+          "misc",
+          "Hallucination Grenade",
+          "Now I and my brothers are under attack, not just from our traditional enemies but a new cult led by a man named Collus Darathon. He preaches the Dark Moon heresy—that Selûne and Shar, the Lady of Loss, are aspects of a single deity.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAGMOU",
+          "misc",
+          "Knock Out Gas",
+          "Excuse me. I am Rasaad yn Bashir. You seem familiar to me. Have we met?",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXPAHULT",
+          "axe",
+          "Feather-Weight Axe",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. \n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 7\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 5,
+            "dmg": "1d10",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "PXPABTES",
+          "staff",
+          "Tesla Rod",
+          "Oh. Well, in that case, I'm convinced. Where do I sign up?",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Deratiseur/Todd",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "Todd the super tester guy",
+      "tp2n": "Todd le super gars testeur",
+      "cn": 0,
+      "wf": "Derats_Todd",
+      "wp": "Derats_Todd\\Setup-Derats_Todd.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob"
+      ],
+      "it": 226,
+      "itC": {
+        "staff": 13,
+        "mace": 3,
+        "morning star": 1,
+        "hammer": 8,
+        "dagger": 15,
+        "short sword": 1,
+        "large sword": 31,
+        "axe": 13,
+        "spear": 3,
+        "bow": 12,
+        "armor": 25,
+        "shield": 9,
+        "helmet": 8,
+        "bracers": 9,
+        "boots": 3,
+        "belt": 3,
+        "ring": 24,
+        "amulet": 16,
+        "wand": 2,
+        "potion": 10,
+        "dart": 4,
+        "arrow": 2,
+        "gem": 1,
+        "misc": 10
+      }
+    }
+  ]
+}

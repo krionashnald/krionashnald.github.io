@@ -1,0 +1,63 @@
+{
+  "i": 454,
+  "t": "Artisans_MazzyRom",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 490,
+  "c": "NPC EXPANSIONS",
+  "n": "Mazzy Romance",
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "AllThingsMazzy",
+      "withId": 453,
+      "severity": "hard",
+      "reason": "Both add a romance for Mazzy. Install only one Mazzy romance mod.",
+      "myComps": "#0 Mazzy Romance",
+      "theirComps": "#0 All Things Mazzy",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ARTISANS_MAZZYROM.*not found",
+      "severity": "warning",
+      "category": "cosmetic",
+      "description": "Translation file missing. The mod may have been installed from an incomplete download or the file structure changed between versions.",
+      "workaround": "Re-download the mod from artisans-corner.com. If the mod works in-game, this can be ignored.",
+      "user_action": "none",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "u": "https://artisans-corner.com/",
+  "a": "Artisan",
+  "sum": "Adds a full romantic storyline with the halfling paladin Mazzy in Baldur's Gate II, featuring 20 timer-based conversations in Shadows of Amn, 8 talks in Throne of Bhaal, and a romantic epilogue.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://artisans-corner.com/",
+  "co": [
+    {
+      "n": "Mazzy Romance for Baldur's Gate II by The Artisan",
+      "cn": 0,
+      "wf": "Artisans_MazzyRom",
+      "wp": "Artisans_MazzyRom\\SETUP-ARTISANS_MAZZYROM.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mazzy Romance for Baldur's Gate II by The Artisan"
+    }
+  ]
+}

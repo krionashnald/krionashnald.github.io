@@ -1,0 +1,448 @@
+{
+  "i": 509,
+  "t": "1pp",
+  "sv": 1,
+  "ord": 100,
+  "c": "GRAPHICS",
+  "n": "One Pixel Productions",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2
+  },
+  "no": "Classic BG2 mod. Most 1PP content is already incorporated into the Enhanced Editions. NOT compatible with EET/EE installs. Use for original BG2+ToB only.",
+  "ee": false,
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "Change avatar depending on equipped armor",
+      "myComps": "#113; #104",
+      "theirComps": "#120; #80",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "16": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI304",
+          "tweak",
+          "Fireball visual effects updated by 1pp"
+        ],
+        [
+          "SPWI308",
+          "tweak",
+          "Lightning Bolt visual effects updated by 1pp"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/1pp",
+  "a": "Erephine",
+  "v": "v4.2.1",
+  "sum": "Redrawn weapon, armor, and item icons in a consistent, higher-quality art style. Purely cosmetic inventory improvement.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/SpellholdStudios/1pp",
+  "au": "CamDawg, Mike1072, Cuv",
+  "co": [
+    {
+      "n": "1ppv4: Core paperdolls (main component)",
+      "tp2n": "1ppv4: Core paperdolls (main component)",
+      "cn": 101,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 101,
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Extended palette entries: Compatibility install only",
+      "tp2n": "Compatibility install only",
+      "cn": 102,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 102,
+      "g": "ext_palette",
+      "scn": "1ppv4: Extended palette entries",
+      "no": "Compatibility-only palette. Use cn:103 (Full) instead unless you have a specific reason.",
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Extended palette entries: Full install (recommended)",
+      "tp2n": "Full install (recommended)",
+      "cn": 103,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 103,
+      "g": "ext_palette",
+      "scn": "1ppv4: Extended palette entries",
+      "no": "Recommended. Full extended palette entries.",
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: GUI additions for BGII",
+      "tp2n": "1ppv4: GUI additions for BGII",
+      "cn": 104,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 104,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Avatar fixes",
+      "tp2n": "1ppv4: Avatar fixes",
+      "cn": 105,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 105
+    },
+    {
+      "n": "Female Dwarves: Baldur's Gate II",
+      "tp2n": "Separate Avatars for Female Dwarves - Baldur's Gate II",
+      "cn": 106,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 106,
+      "g": "female_dwarves",
+      "scn": "1ppv4: Female Dwarves",
+      "no": "Requires cn:101 (Core paperdolls). BG2/EET only. Choose this one for EET."
+    },
+    {
+      "n": "Female Dwarves: Icewind Dale II",
+      "tp2n": "Separate Avatars for Female Dwarves - Icewind Dale II",
+      "cn": 107,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 107,
+      "g": "female_dwarves",
+      "scn": "1ppv4: Female Dwarves",
+      "x": 3,
+      "no": "IWD-only component. GAME_IS check excludes BG2EE/EET. Will be auto-SKIPped."
+    },
+    {
+      "n": "Female Dwarves: Icewind Dale II EU",
+      "tp2n": "Separate Avatars for Female Dwarves - Icewind Dale II EU",
+      "cn": 108,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 108,
+      "g": "female_dwarves",
+      "scn": "1ppv4: Female Dwarves",
+      "x": 3,
+      "no": "IWD-only component. GAME_IS check excludes BG2EE/EET. Will be auto-SKIPped."
+    },
+    {
+      "n": "Female Dwarves: Icewind Dale I HoW",
+      "tp2n": "Separate Avatars for Female Dwarves - Icewind Dale I HoW",
+      "cn": 109,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 109,
+      "g": "female_dwarves",
+      "scn": "1ppv4: Female Dwarves",
+      "x": 3,
+      "no": "IWD-only component. GAME_IS check excludes BG2EE/EET. Will be auto-SKIPped."
+    },
+    {
+      "n": "Thieves Galore: IWD HoW/TotLM",
+      "tp2n": "IWD HoW/TotLM - Unique Thief Avatars",
+      "cn": 110,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 110,
+      "g": "thieves_galore",
+      "scn": "1ppv4: Thieves Galore",
+      "x": 3,
+      "no": "Not EET-compatible. IWD HoW/TotLM only — GAME_IS check excludes BG2EE/EET."
+    },
+    {
+      "n": "Thieves Galore: BGII",
+      "tp2n": "BGII - Unique Thief Avatars",
+      "cn": 111,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 111,
+      "g": "thieves_galore",
+      "scn": "1ppv4: Thieves Galore",
+      "no": "Not EET-compatible. Tries to load bgmain.exe which does not exist in Enhanced Edition.",
+      "x": 3
+    },
+    {
+      "n": "Thieves Galore: IWDII",
+      "tp2n": "IWDII - Unique Thief Avatars",
+      "cn": 112,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 112,
+      "g": "thieves_galore",
+      "scn": "1ppv4: Thieves Galore",
+      "x": 3,
+      "no": "Not EET-compatible. IWD II only — GAME_IS check excludes BG2EE/EET."
+    },
+    {
+      "n": "1ppv4: Smart Avatar & Armour Switching",
+      "tp2n": "1ppv4: Smart Avatar & Armour Switching",
+      "cn": 113,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 113,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Softer Spell Effects",
+      "tp2n": "1ppv4: Softer Spell Effects",
+      "cn": 114,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 114,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Core content patches",
+      "tp2n": "1ppv4: Core content patches",
+      "cn": 200,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 200,
+      "wq": "exact"
+    },
+    {
+      "n": "1ppv4: Consistent spell and scroll icons",
+      "tp2n": "1ppv4: Consistent spell and scroll icons",
+      "cn": 201,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 201,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Spell tweaks",
+      "tp2n": "1ppv4: Spell tweaks",
+      "cn": 202,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 202,
+      "sp": 0,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Restored flame sword animations",
+      "tp2n": "1ppv4: Restored flame sword animations",
+      "cn": 203,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 203
+    },
+    {
+      "n": "1ppv4: Colourable Quarterstaves",
+      "tp2n": "1ppv4: Colourable Quarterstaves",
+      "cn": 204,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 204
+    },
+    {
+      "n": "1ppv4: Legacy Shields",
+      "tp2n": "1ppv4: Legacy Shields",
+      "cn": 205,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 205
+    },
+    {
+      "n": "1ppv4: Additional Shield Animations (core)",
+      "tp2n": "1ppv4: Additional Shield Animations (core)",
+      "cn": 206,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 206
+    },
+    {
+      "n": "1ppv4: Wizards' Staves (core)",
+      "tp2n": "1ppv4: Wizards' Staves (core)",
+      "cn": 207,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 207
+    },
+    {
+      "n": "1ppv4: Additional Helmet Animations (core)",
+      "tp2n": "1ppv4: Additional Helmet Animations (core)",
+      "cn": 208,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 208
+    },
+    {
+      "n": "1ppv4: Attachable wings (core)",
+      "tp2n": "1ppv4: Attachable wings (core)",
+      "cn": 209,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 209
+    },
+    {
+      "n": "1ppv4: Increased paperdoll object variety (core)",
+      "tp2n": "1ppv4: Increased paperdoll object variety (core)",
+      "cn": 210,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 210,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Core updates and item patches",
+      "tp2n": "1ppv4: Core updates and item patches",
+      "cn": 400,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 400
+    },
+    {
+      "n": "1ppv4: Improved projectile effects",
+      "tp2n": "1ppv4: Improved projectile effects",
+      "cn": 401,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 401,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Fixed animations for solars and elementals",
+      "tp2n": "1ppv4: Fixed animations for solars and elementals",
+      "cn": 300,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 300,
+      "games": [
+        "bgt",
+        "ca",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "1ppv4: Miscellaneous content fixes",
+      "tp2n": "1ppv4: Miscellaneous content fixes",
+      "cn": 301,
+      "wf": "1pp",
+      "wp": "1pp\\1pp.tp2",
+      "wc": 301,
+      "games": [
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd2",
+        "tob",
+        "totlm",
+        "tutu",
+        "tutu_totsc"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "1pp"
+  }
+}

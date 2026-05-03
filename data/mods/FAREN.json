@@ -1,0 +1,634 @@
+{
+  "i": 557,
+  "t": "faren",
+  "sv": 1,
+  "ord": 910,
+  "c": "NEW NPC MODS",
+  "n": "Faren NPC",
+  "cats": [
+    "NEW NPC MODS",
+    "NPC CROSSMOD"
+  ],
+  "no": "TN Male Human Fighter >> Thief.Install Faren before Mazzy Megamod.Install Faren’s crossmod components in the crossmod section after the relevant NPCs. REINSTALL BUG: @132 translation missing during reinstall cycle — TRA file not reloaded. Harmless, first install fine.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "Adrian",
+      "requiresId": 167,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #1"
+    },
+    {
+      "requires": "ajantisbg2",
+      "requiresId": 140,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #2"
+    },
+    {
+      "requires": "Angelo",
+      "requiresId": 592,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #4"
+    },
+    {
+      "requires": "aurenaseph",
+      "requiresId": 151,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #6"
+    },
+    {
+      "requires": "branwen",
+      "requiresId": 456,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #8"
+    },
+    {
+      "requires": "chloe",
+      "requiresId": 556,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #9"
+    },
+    {
+      "requires": "coran",
+      "requiresId": 141,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #10"
+    },
+    {
+      "requires": "Dace",
+      "requiresId": 159,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #11"
+    },
+    {
+      "requires": "deArnise",
+      "requiresId": 216,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #13"
+    },
+    {
+      "requires": "edwinromance",
+      "requiresId": 205,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #14"
+    },
+    {
+      "requires": "Fade",
+      "requiresId": 166,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #15"
+    },
+    {
+      "requires": "haldamir",
+      "requiresId": 156,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #16"
+    },
+    {
+      "requires": "isra_bg2",
+      "requiresId": 168,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #17"
+    },
+    {
+      "requires": "iylos",
+      "requiresId": 576,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #18"
+    },
+    {
+      "requires": "kelsey",
+      "requiresId": 161,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #19"
+    },
+    {
+      "requires": "keto",
+      "requiresId": 162,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #20"
+    },
+    {
+      "requires": "Nathaniel",
+      "requiresId": 549,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #22"
+    },
+    {
+      "requires": "NEPHELE",
+      "requiresId": 165,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #23"
+    },
+    {
+      "requires": "ninde",
+      "requiresId": 155,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #24"
+    },
+    {
+      "requires": "RE",
+      "requiresId": 86,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #25"
+    },
+    {
+      "requires": "Saerileth",
+      "requiresId": 563,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #26"
+    },
+    {
+      "requires": "sarahtob",
+      "requiresId": 152,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #27"
+    },
+    {
+      "requires": "jasteys_solaufein",
+      "requiresId": 138,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #28 (updated: jastey version)"
+    },
+    {
+      "requires": "tashia",
+      "requiresId": 500,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #29"
+    },
+    {
+      "requires": "Tiax",
+      "requiresId": 481,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #30"
+    },
+    {
+      "requires": "Tsujatha",
+      "requiresId": 543,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #31"
+    },
+    {
+      "requires": "Xan",
+      "requiresId": 142,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #32"
+    },
+    {
+      "requires": "xulaye_eet",
+      "requiresId": 547,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #33"
+    },
+    {
+      "requires": "YASRAENA",
+      "requiresId": 548,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #34"
+    },
+    {
+      "requires": "yeslicknpc",
+      "requiresId": 143,
+      "type": "soft",
+      "reason": "Faren crossmod dependencies #35"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "faren",
+          "portraits/faren/fhf.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Faren-NPC",
+  "a": "Feuille, Miss Sakaki",
+  "v": "@132",
+  "sum": "Adds Faren, a joinable True Neutral dual-classed Fighter/Thief NPC found in the Trademeet jail, featuring banters, player-initiated dialogue, encounters, and new items.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Spellhold Studios",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/Spellhold-Studios/Faren-NPC",
+  "co": [
+    {
+      "n": "Faren NPC for Baldur's Gate II",
+      "cn": 0,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 0,
+      "tp2n": "Faren NPC for Baldur's Gate II"
+    },
+    {
+      "n": "Martial configuration",
+      "cn": 1,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wq": "verified",
+      "tp2n": "Martial configuration"
+    },
+    {
+      "n": "Choose Faren's weapon proficiency skillset -> Rogue configuration",
+      "cn": 2,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 2,
+      "x": 0,
+      "no": "Alternative weapon proficiency setup for Faren. Requires cn:0.",
+      "tp2n": "Rogue configuration",
+      "scn": "Choose Faren's weapon proficiency skillset"
+    },
+    {
+      "n": "Adrian Content",
+      "cn": 3,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wq": "verified",
+      "tp2n": "Adrian Content",
+      "scn": "Choose Faren's weapon proficiency skillset"
+    },
+    {
+      "n": "Ajantis Content",
+      "cn": 4,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wq": "verified",
+      "tp2n": "Ajantis Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Amber Content (Shadows of Amn content only)",
+      "cn": 5,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 5,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Amber Content (Shadows of Amn content only)"
+    },
+    {
+      "n": "Angelo Content",
+      "cn": 6,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 6,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "no": "Requires Angelo NPC mod to be installed.",
+      "tp2n": "Angelo Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Arath Content",
+      "cn": 7,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 7,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Arath Content"
+    },
+    {
+      "n": "Auren Aseph Content",
+      "cn": 8,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 8,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Auren Aseph Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Beyond the Law Content",
+      "cn": 9,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 9,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Beyond the Law Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Branwen Content",
+      "cn": 10,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 10,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Branwen Content"
+    },
+    {
+      "n": "Chloe Content (Shadows of Amn content only)",
+      "cn": 11,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 11,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Chloe Content (Shadows of Amn content only)",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Coran Content",
+      "cn": 12,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 12,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Coran Content"
+    },
+    {
+      "n": "Dace Linton Content",
+      "cn": 13,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 13,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Dace Linton Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Darian Content",
+      "cn": 14,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wq": "verified",
+      "tp2n": "Darian Content"
+    },
+    {
+      "n": "de'Arnise Romance Content (Shadows of Amn content only)",
+      "cn": 15,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 15,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "de'Arnise Romance Content (Shadows of Amn content only)",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Edwin Romance Content (Shadows of Amn content only)",
+      "cn": 16,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 16,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Edwin Romance Content (Shadows of Amn content only)",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Fade Content",
+      "cn": 17,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 17,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Fade Content"
+    },
+    {
+      "n": "Haldamir Content",
+      "cn": 18,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 18,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Haldamir Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Isra Content",
+      "cn": 19,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 19,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Isra Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Iylos Content",
+      "cn": 20,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 20,
+      "no": "Requires Iylos NPC mod",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Iylos Content"
+    },
+    {
+      "n": "Kelsey Content",
+      "cn": 21,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 21,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Kelsey Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Keto Content (Shadows of Amn content only)",
+      "cn": 22,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 22,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Keto Content (Shadows of Amn content only)"
+    },
+    {
+      "n": "Luxley Family Content (Shadows of Amn content only)",
+      "cn": 23,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 23,
+      "no": "Requires Luxley Family NPC mod",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Luxley Family Content (Shadows of Amn content only)",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Nathaniel Content",
+      "cn": 24,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 24,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Nathaniel Content"
+    },
+    {
+      "n": "Nephele Content",
+      "cn": 25,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 25,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Nephele Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Ninde Content",
+      "cn": 26,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 26,
+      "no": "Requires Ninde NPC mod",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Ninde Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Romantic Encounters Content (can be installed before or after Romantic Encounters)",
+      "cn": 27,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 27,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Romantic Encounters Content (can be installed before or after Romantic Encounters)",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Saerileth Content",
+      "cn": 28,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 28,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Saerileth Content"
+    },
+    {
+      "n": "Sarah Content",
+      "cn": 29,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 29,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Sarah Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Solaufein Content",
+      "cn": 30,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 30,
+      "no": "Requires Solaufein NPC mod",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Solaufein Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Tashia Content",
+      "cn": 31,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 31,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Tashia Content"
+    },
+    {
+      "n": "Tiax Content",
+      "cn": 32,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 32,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Tiax Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Tsujatha Content",
+      "cn": 33,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 33,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Tsujatha Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Xan Content",
+      "cn": 34,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 34,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Xan Content"
+    },
+    {
+      "n": "Xulaye Content",
+      "cn": 35,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 35,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if Xulaye is not installed. Requires Xulaye NPC mod.",
+      "tp2n": "Xulaye Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Yasraena Content",
+      "cn": 36,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 36,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Yasraena Content",
+      "grn": "Crossmod Content"
+    },
+    {
+      "n": "Yeslick Content (Shadows of Amn content only)",
+      "cn": 37,
+      "wf": "FAREN",
+      "wp": "FAREN\\SETUP-FAREN.TP2",
+      "wc": 37,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Yeslick Content (Shadows of Amn content only)",
+      "grn": "Crossmod Content"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Faren-NPC"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "i": 794,
+  "t": "ahungry_tweaks",
+  "sv": 1,
+  "ord": 490,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Ahungry's Tweaks",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/ahungry/ahungry_tweaks",
+  "a": "ahungry",
+  "sum": "Various improvements I'd like to make to my own configuration that might be useful to yours.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Ahungry",
+  "dl": "https://github.com/ahungry/ahungry_tweaks",
+  "no": "Tweaks covering APR balancing, creature immunity removal (backstab, timestop), item usability changes, Oversight HQ door fix, Taerom dialog fix, minhp NPC fix, mine key fix. English only.",
+  "co": [
+    {
+      "n": "Ahungry's Tweaks",
+      "cn": 1,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "no": "Main component - required for other tweaks",
+      "pi": "ahungry_tweaks_prelude"
+    },
+    {
+      "n": "Balance Item +APR (cap +APR at 1 APR per item, replace w/ thac0 + dmg bonuses)",
+      "cn": 1000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 1000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_apr"
+    },
+    {
+      "n": "Creatures: Remove backstab immunity?",
+      "cn": 2000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 2000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_cre_backstab"
+    },
+    {
+      "n": "Creatures: Remove timestop immunity?",
+      "cn": 3000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 3000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_cre_timestop"
+    },
+    {
+      "n": "Creatures: Apply adjustments?",
+      "cn": 4000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 4000,
+      "wq": "verified",
+      "no": "Applies creature stat adjustments from readme",
+      "pi": "ahungry_tweaks_creatures"
+    },
+    {
+      "n": "Mods: Fix missing Oversight HQ door in Dark Horizons on EET?",
+      "cn": 5000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 5000,
+      "wq": "verified",
+      "no": "Fixes missing door in Dark Horizons EET",
+      "pi": "ahungry_tweaks_mods_oversight_hq"
+    },
+    {
+      "n": "Items: Allow +stat tomes to be usable by all (aka Wizard Slayer)?",
+      "cn": 6000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 6000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_items_tomes"
+    },
+    {
+      "n": "Items: Allow potions to be usable by all?",
+      "cn": 7000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 7000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_items_potions"
+    },
+    {
+      "n": "Items: Remove minhp1/monhp1 items from trolls?",
+      "cn": 8000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 8000,
+      "wq": "verified",
+      "no": "Prevents trolls from being unkillable via items",
+      "pi": "ahungry_tweaks_items_hp"
+    },
+    {
+      "n": "Add diamond to crossroads tree for Imoen banter",
+      "cn": 9000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 9000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_items_diamond"
+    },
+    {
+      "n": "Items: Give backstab bonuses based on type (smaller the weapon, bigger the bonus)",
+      "cn": 10000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 10000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_items_ir_bs"
+    },
+    {
+      "n": "Fix: Taerom Ankheg armor weight adjustments",
+      "cn": 11000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 11000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_fix_taerom_ankheg"
+    },
+    {
+      "n": "Fix: Remove leftover opcode 208 (min hp/invincible) from NPCs",
+      "cn": 12000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 12000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_fix_minhp_npcs"
+    },
+    {
+      "n": "Fix: Add river plug (MISC83) to Davaeron",
+      "cn": 13000,
+      "wf": "ahungry_tweaks",
+      "wp": "ahungry_tweaks.tp2",
+      "wc": 13000,
+      "wq": "verified",
+      "pi": "ahungry_tweaks_fix_missing_mine_key"
+    }
+  ],
+  "gh": {
+    "o": "ahungry",
+    "r": "ahungry_tweaks"
+  }
+}

@@ -1,0 +1,1014 @@
+{
+  "i": 296,
+  "t": "mih_sp",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 40,
+  "c": "SPELL MODS",
+  "n": "Made in Heaven: Spell Pack",
+  "cats": [
+    "SPELL MODS",
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "Made in Heaven Spell Pack v7 by Angel. 22 components: spell packs (arcane, divine, IWD, PS:T), class power revisions (paladin, ranger, monk, bard), and spell tweaks. Some components are EXPERIMENTAL/WIP. Install before SCS CONFIRMED CONFLICT with RR (breaks RR cn=5,6,7,8): mih_sp Arcane Spellpack (cn=0) arcane_postproc.tpa uses COPY_EXISTING_REGEXP on all level 6+ SPL files and inserts a global opcode 221 (Remove Secondary / Alacrity dispel) effect into spwi705.spl (Symbol: Fear), growing it from 826 to 874 bytes. This inserts the effect as a global effect (ef_index 0), shifting the ability header's ef_ind from 0 to 1 but leaving ef_num=14 unchanged. RR's ds.tph fix_khelben macro checks SOURCE_SIZE != ef_off + sum(ef_num)*0x30 — ignores global effects, finds 874 != 826, triggers repair. Repair calculates correct effect count (15) but then checks the first ability effect opcode (opcode 139 = Display String, not 233/282), sets fubar=1. Falls back to COPY rr/lib/ds/spwi705.spl (730-byte vanilla). Main detectable_spells loop then reads past end of the 730-byte file ('illegal 2-byte read from offset 730 of 730-byte file spwi705.spl'). Install order in this log WAS correct (mih_sp line 5467764 before RR line 5893492) — the conflict is structural, not ordering. FIX: use Camdawg's or Totor115's RR fork (updated DS library handles global effects in fix_khelben). Do NOT use stock aVENGER RR v4.92 with mih_sp Arcane Spellpack.",
+  "ic": "Overwrites spell_rev, iwdification",
+  "_legacy_ids": [
+    342,
+    446
+  ],
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "MiH Spell Pack modifies spells also changed by SR. Install MiH SP after SR; overlapping changes use MiH SP's versions.",
+      "myComps": "#1 Arcane Spellpack #2 Divine Spellpack #13 Spell Improvements #16 Spell Improvements",
+      "theirComps": "#0 #10",
+      "source": "tp2 analysis (v4.20 G3 SpellRevisions), 2026-03"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "MiH SP cn:1 (IWD Arcane) overlaps with IWDification cn:30. MiH SP cn:2 (IWD Divine) overlaps with IWDification cn:40. Both share CamDawg/DavidW codebase. IWDification cn:30/40/50 No conflict.",
+      "myComps": "#1 Arcane Spellpack #2 Divine Spellpack #7 Revised Bard Powers #16 Spell Improvements",
+      "theirComps": "#30 IWD Arcane #40 IWD Divine #50 Bard Songs (none in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "MESpells",
+      "withId": 358,
+      "severity": "soft",
+      "reason": "MiH spell additions overlap with Olvyn Spells; install MiH after Olvyn",
+      "orderOnly": true,
+      "myComps": "#1 Arcane Spellpack #2 Divine Spellpack #13 Spell Improvements"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "NOT a conflict. EET_Tweaks has no temple services or spell learning XP components. EET cn:2042 (XP for Traps/Spells/Lockpicking) is about XP rewards for actions, completely different from MiH SP cn:18 (scribing XP) and cn:19 (temple cure costs).",
+      "myComps": "#14 Expanded Temple Services #8 Revised Spell Learning XP #17 Revised Spell Learning XP",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_fr",
+      "withId": 29,
+      "severity": "soft",
+      "reason": "Same author (Angel). MiH SP spell components supersede MiH FR spell restorations where they overlap. FR cn:5 (Spell Restorations) and SP cn:0 (Arcane Spellpack) add similar spells. Install FR before SP — SP versions take priority. Non-spell FR components (cn:13 d'Arnise Text, cn:16 Prepared Allies) are independent.",
+      "myComps": "#1 Arcane Spellpack #2 Divine Spellpack #13 #16 Spell Improvements",
+      "theirComps": "#5 Spell Restorations / #13 Restored Bhaalspawn Powers / #16 Revised Spell Damage Caps",
+      "orderOnly": true,
+      "source": "Same author; SP is newer/more comprehensive version of overlapping spell content, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "MiH SP bard components overlap with IWDification bard components. IWDification cn:50/150 No conflict.",
+      "myComps": "#7 #16",
+      "theirComps": "#50 IWD Bard Songs #150 Bard Spell Progression (neither in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURMIH01",
+          "wizard",
+          1,
+          "Abjuration",
+          "Barrier",
+          "Magical force absorbs a percentage of damage taken."
+        ],
+        [
+          "YOURMIH02",
+          "wizard",
+          1,
+          "Alteration",
+          "Frost Fingers",
+          "Cone of cold dealing ice damage to a single target."
+        ],
+        [
+          "YOURMIH03",
+          "wizard",
+          2,
+          "Enchantment",
+          "Seeking",
+          "Grants projectiles +4 bonus to ranged attacks."
+        ],
+        [
+          "YOURMIH04",
+          "wizard",
+          2,
+          "Evocation",
+          "Spark Shower",
+          "Shower of electricity in 15ft radius dealing 4d4+ damage."
+        ],
+        [
+          "YOURMIH05",
+          "wizard",
+          2,
+          "Conjuration",
+          "Summon Cats",
+          "Conjures magical felines to fight for the caster."
+        ],
+        [
+          "YOURMIH06",
+          "wizard",
+          2,
+          "Alteration",
+          "Threestones",
+          "Three magical projectiles dealing 2d4 damage each."
+        ],
+        [
+          "YOURMIH07",
+          "wizard",
+          3,
+          "Alteration",
+          "Alacrity",
+          "Speeds up casting of lower-level spells."
+        ],
+        [
+          "YOURMIH08",
+          "wizard",
+          3,
+          "Alteration",
+          "Blink",
+          "Caster blinks in and out of existence for evasion."
+        ],
+        [
+          "YOURMIH09",
+          "wizard",
+          3,
+          "Evocation",
+          "Gust of Wind",
+          "Powerful wind blast knocks enemies prone."
+        ],
+        [
+          "YOURMIH10",
+          "wizard",
+          3,
+          "Alteration",
+          "Heroism",
+          "Boosts THAC0 and HP by 10%."
+        ],
+        [
+          "YOURMIH11",
+          "wizard",
+          3,
+          "Evocation",
+          "Improved Magic Missile",
+          "Up to 11 magic missiles dealing 1d4+1 each."
+        ],
+        [
+          "YOURMIH12",
+          "wizard",
+          3,
+          "Enchantment",
+          "Minor Malison",
+          "Reduces saves of all enemies in 30ft by -2."
+        ],
+        [
+          "YOURMIH13",
+          "wizard",
+          3,
+          "Evocation",
+          "Scintillating Sphere",
+          "Electrical burst dealing 1d6/level damage."
+        ],
+        [
+          "YOURMIH14",
+          "wizard",
+          4,
+          "Conjuration",
+          "Evard's Black Tentacles",
+          "Tentacles grab and damage enemies in 40ft radius."
+        ],
+        [
+          "YOURMIH15",
+          "wizard",
+          4,
+          "Evocation",
+          "Iron Maiden",
+          "Conjures animated armor to fight for caster."
+        ],
+        [
+          "YOURMIH16",
+          "wizard",
+          4,
+          "Alteration",
+          "Rary's Mnemonic Enhancer",
+          "Restores 3 previously cast spells to memory."
+        ],
+        [
+          "YOURMIH17",
+          "wizard",
+          4,
+          "Enchantment",
+          "Slumber",
+          "Deep sleep on multiple enemies in 15ft radius."
+        ],
+        [
+          "YOURMIH18",
+          "wizard",
+          5,
+          "Conjuration",
+          "Ramazith's Slime Summons",
+          "Summons an ooze creature."
+        ],
+        [
+          "YOURMIH19",
+          "wizard",
+          5,
+          "Evocation",
+          "Simbul's Spell Matrix",
+          "Stores 2 spells for instant simultaneous release."
+        ],
+        [
+          "YOURMIH20",
+          "wizard",
+          5,
+          "Evocation",
+          "Snilloc's Major Missile",
+          "Single missile dealing 10d4+10 damage."
+        ],
+        [
+          "YOURMIH21",
+          "wizard",
+          5,
+          "Alteration",
+          "Superheroism",
+          "THAC0/HP +20%, immune to fear."
+        ],
+        [
+          "YOURMIH22",
+          "wizard",
+          6,
+          "Illusion",
+          "Mirage Arcana",
+          "2-8 duplicate images of party members."
+        ],
+        [
+          "YOURMIH23",
+          "wizard",
+          6,
+          "Alteration",
+          "Mordenkainen's Lucubration",
+          "Restores 3 spells up to L5/L4/L3."
+        ],
+        [
+          "YOURMIH24",
+          "wizard",
+          7,
+          "Necromancy",
+          "Doom Legion",
+          "Animates skeleton warriors from remains."
+        ],
+        [
+          "YOURMIH25",
+          "wizard",
+          7,
+          "Evocation",
+          "Faerie Sword",
+          "Magical blade with variable damage effects."
+        ],
+        [
+          "YOURMIH26",
+          "wizard",
+          7,
+          "Alteration",
+          "Mordenkainen's Mansion",
+          "Transports party to extradimensional rest area."
+        ],
+        [
+          "YOURMIH27",
+          "wizard",
+          7,
+          "Conjuration",
+          "Summon Dao",
+          "Summons a powerful earth genie."
+        ],
+        [
+          "YOURMIH28",
+          "wizard",
+          7,
+          "Conjuration",
+          "Summon Marid",
+          "Summons a powerful water genie."
+        ],
+        [
+          "YOURMIH29",
+          "wizard",
+          8,
+          "Alteration",
+          "Avissar's Flaming Weapon",
+          "Imbues weapons with 2d8 fire damage."
+        ],
+        [
+          "YOURMIH30",
+          "wizard",
+          8,
+          "Alteration",
+          "Devastate",
+          "Weakens enemy saves and resistances."
+        ],
+        [
+          "YOURMIH31",
+          "wizard",
+          8,
+          "Abjuration",
+          "Major Globe of Invulnerability",
+          "Blocks L1-5 spells in 5ft radius."
+        ],
+        [
+          "YOURMIH32",
+          "wizard",
+          8,
+          "Enchantment",
+          "Mass Charm",
+          "Charms enemies into regarding caster as ally."
+        ],
+        [
+          "YOURMIH33",
+          "wizard",
+          8,
+          "Evocation",
+          "Polar Ray",
+          "Intense cold ray: 1d6/level cold damage."
+        ],
+        [
+          "YOURMIH34",
+          "wizard",
+          8,
+          "Evocation",
+          "Shooting Stars",
+          "Three explosive missiles: 6d6+4 fire each."
+        ],
+        [
+          "YOURMIH35",
+          "wizard",
+          8,
+          "Evocation",
+          "Web of Lightning",
+          "Six simultaneous lightning bolts: 7d6 each."
+        ],
+        [
+          "YOURMIH36",
+          "wizard",
+          9,
+          "Divination",
+          "Foresight",
+          "Instinctive combat awareness, +4 AC bonus."
+        ],
+        [
+          "YOURMIH37",
+          "wizard",
+          9,
+          "Abjuration",
+          "Khelben's Dweomerdoom",
+          "Drains wizard spells from target caster."
+        ],
+        [
+          "YOURMIH38",
+          "wizard",
+          9,
+          "Illusion",
+          "Weird",
+          "Shadow creatures deal 2d8+4 damage with fear."
+        ]
+      ]
+    },
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURMIHD01",
+          "priest",
+          1,
+          "Alteration",
+          "Striking",
+          "Grants +4 melee damage bonus.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURMIHD02",
+          "priest",
+          2,
+          "Enchantment",
+          "Seeking",
+          "Provides +4 ranged attack bonus.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURMIHD03",
+          "priest",
+          3,
+          "Alteration",
+          "Magic Vestment",
+          "Vestment provides chain mail AC.",
+          [
+            "protection",
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURMIHD04",
+          "priest",
+          3,
+          "Alteration",
+          "Oxen Strength",
+          "STR and AC bonuses scaling with level.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURMIHD05",
+          "priest",
+          3,
+          "Abjuration",
+          "Protection From Cold",
+          "Immune normal cold, 80% magical cold resist.",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "YOURMIHD06",
+          "priest",
+          4,
+          "Alteration",
+          "Heroism",
+          "+10% THAC0 and HP.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURMIHD07",
+          "priest",
+          4,
+          "Evocation",
+          "Ice Storm",
+          "2d8 cold/round for 4 rounds in 30ft.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURMIHD08",
+          "priest",
+          4,
+          "Abjuration",
+          "Repel Insects",
+          "Keeps insects/arachnids away.",
+          [
+            "protection"
+          ]
+        ],
+        [
+          "YOURMIHD09",
+          "priest",
+          4,
+          "Alteration",
+          "Sticks to Snakes",
+          "1-5 giant snakes based on level.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURMIHD10",
+          "priest",
+          5,
+          "Abjuration",
+          "Break Enchantment",
+          "Removes curses, petrification, blindness.",
+          [
+            "protection"
+          ]
+        ],
+        [
+          "YOURMIHD11",
+          "priest",
+          5,
+          "Conjuration",
+          "Hallow",
+          "+2 attack/morale, penalizes evil, blocks fiends.",
+          [
+            "charm",
+            "guardian"
+          ]
+        ],
+        [
+          "YOURMIHD12",
+          "priest",
+          5,
+          "Evocation",
+          "Inferno",
+          "6d6 fire, decreasing 1d6/round for 6 rounds.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURMIHD13",
+          "priest",
+          5,
+          "Evocation",
+          "Lightning Storm",
+          "6d12 electrical to all hostiles in range.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURMIHD14",
+          "priest",
+          5,
+          "Conjuration",
+          "Murderous Mist",
+          "Summons 1-4 poison mists.",
+          [
+            "summoning",
+            "elemental",
+            "combat"
+          ]
+        ],
+        [
+          "YOURMIHD15",
+          "priest",
+          5,
+          "Conjuration",
+          "Unhallow",
+          "+2 attack/morale, penalizes good, protects undead.",
+          [
+            "charm",
+            "guardian"
+          ]
+        ],
+        [
+          "YOURMIHD16",
+          "priest",
+          6,
+          "Abjuration",
+          "Celestial Protection",
+          "50% acid/cold/electricity resist + immunities.",
+          [
+            "elemental",
+            "protection"
+          ]
+        ],
+        [
+          "YOURMIHD17",
+          "priest",
+          6,
+          "Alteration",
+          "Superheroism",
+          "+20% THAC0/HP, immune fear/drain.",
+          [
+            "charm",
+            "protection"
+          ]
+        ],
+        [
+          "YOURMIHD18",
+          "priest",
+          7,
+          "Alteration",
+          "Aura of Vitality",
+          "+4 STR/DEX/CON for all in 15ft.",
+          [
+            "healing"
+          ]
+        ],
+        [
+          "YOURMIHD19",
+          "priest",
+          7,
+          "Evocation",
+          "Exalted Triad",
+          "Stores and activates 3 spells simultaneously.",
+          [
+            "combat",
+            "war"
+          ]
+        ],
+        [
+          "YOURMIHD20",
+          "priest",
+          7,
+          "Alteration",
+          "Holly Dart",
+          "Deadly missile: save or die.",
+          [
+            "destruction"
+          ]
+        ],
+        [
+          "YOURMIHD21",
+          "priest",
+          7,
+          "Abjuration",
+          "Mass Negative Plane Protection",
+          "Party immune to level drain in 30ft.",
+          [
+            "guardian",
+            "protection"
+          ]
+        ]
+      ]
+    },
+    "12": {
+      "spells": [
+        [
+          "SPWI116",
+          "tweak",
+          "Sleep duration reduced to 5 rounds"
+        ]
+      ]
+    },
+    "13": {
+      "spells": [
+        [
+          "SPWI210",
+          "modify",
+          "Remove Fear no longer grants fear immunity"
+        ],
+        [
+          "SPWI205",
+          "modify",
+          "Horror reworked with deeper fear mechanics"
+        ]
+      ]
+    },
+    "14": {
+      "spells": [
+        [
+          "SPWI901",
+          "replace",
+          "True PnP Meteor Swarm: multiple impact points"
+        ]
+      ]
+    },
+    "15": {
+      "spells": [
+        [
+          "SPWI907",
+          "modify",
+          "Damage effects prevented during Time Stop"
+        ]
+      ]
+    },
+    "22": {
+      "spells": [
+        [
+          "SPWI907",
+          "modify",
+          "Time Stop immunity removed from all creatures"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Fourth level Animate Dead for Wizards\\]|Unknown function: struct_read",
+      "severity": "error",
+      "category": "concerning",
+      "description": "SFO struct_read syntax bug in animate_dead_scrolls.tpa. LAUNCH_PATCH_FUNCTION with spaced 'RET_ARRAY m = struct' causes 'Unknown function: struct_read' on BERNARD3.STO.",
+      "workaround": "Apply eet-mod-forge-patches, or manually change 'LAUNCH_PATCH_FUNCTION struct_read RET_ARRAY m = struct END' to 'LPF struct_read RET_ARRAY m=struct END' in mih_sp/animate_dead/animate_dead_scrolls.tpa.",
+      "user_action": "apply-patches",
+      "components": [
+        12
+      ],
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "pattern": "[MIH_SP/THIRD_PARTY/SFO2E/ALTER_SCRIPT.TPH] PARSE ERROR at line 548",
+      "severity": "critical",
+      "description": "mih_sp bundles SFO2E whose ALTER_SCRIPT.TPH fails GLR-parsing at line 548 col 1-25 under WeiDU 25201+. Blocks most spell-pack components. Same root cause as iwdification/mih_fr. Distinct from the existing 'animate_dead_scrolls.tpa' ki entry.",
+      "workaround": "Use WeiDU <= 25200, or wait for mih_sp to ship an updated SFO2E.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/AngelGryph/MadeInHeaven_SpellPack/releases",
+  "a": "Angel",
+  "sum": "Made in Heaven's spell pack: 36 new spells and spell tweaks across arcane and divine schools. Individually selectable additions.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "AngelGryph",
+    "r": "MadeInHeaven_SpellPack"
+  },
+  "dl": "https://github.com/AngelGryph/MadeInHeaven_SpellPack/releases",
+  "langs": {
+    "en": 0
+  },
+  "au": "Mulan",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Made in Heaven: Arcane Spellpack",
+      "tp2n": "Made in Heaven: Arcane Spellpack",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "MiH original arcane spells. Install before SCS IWD spells. INSTALLS WITH WARNINGS (non-fatal): SFO skips WIZARD_MASS_CHARM if already present at wrong level/type (another spell mod owns it); deolvynize UI patches are no-ops if Olvyn Spells not installed. INSTALLED WITH WARNINGS — WIZARD_MASS_CHARM already present at wrong level/type (SR moved it). One spell copy aborted. Also UI edit to mage spellbook had no effect. Non-fatal.",
+      "sp": 38,
+      "spLv": {
+        "w1": 2,
+        "w2": 4,
+        "w3": 7,
+        "w4": 4,
+        "w5": 4,
+        "w6": 2,
+        "w7": 5,
+        "w8": 7,
+        "w9": 3
+      }
+    },
+    {
+      "cn": 1,
+      "n": "Icewind Dale: Arcane Spellpack (CamDawg&DavidW)",
+      "tp2n": "Icewind Dale: Arcane Spellpack (CamDawg&DavidW)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "CamDawg/DavidW IWD arcane spell port. Alternative to IWDification/SCS IWD spells",
+      "sp": 36,
+      "spLv": {
+        "w1": 1,
+        "w2": 3,
+        "w3": 2,
+        "w4": 8,
+        "w5": 4,
+        "w6": 7,
+        "w7": 6,
+        "w8": 4,
+        "w9": 1
+      }
+    },
+    {
+      "cn": 2,
+      "n": "Made in Heaven: Divine Spellpack",
+      "tp2n": "Made in Heaven: Divine Spellpack",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "REMOVED . This blocks F&P sphere system (CLERIC_GREATER_SHIELD_OF_LATHANDER can't be added). Overlaps with SR + IWDification divine content. Removing frees enough slots for F&P.",
+      "sp": 20,
+      "spLv": {
+        "p1": 1,
+        "p2": 1,
+        "p3": 3,
+        "p4": 4,
+        "p5": 6,
+        "p6": 2,
+        "p7": 3
+      }
+    },
+    {
+      "cn": 3,
+      "n": "Icewind Dale: Divine Spellpack (CamDawg&DavidW)",
+      "tp2n": "Icewind Dale: Divine Spellpack (CamDawg&DavidW)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "CamDawg/DavidW IWD divine spell port",
+      "sp": 48,
+      "spLv": {
+        "p1": 3,
+        "p2": 4,
+        "p3": 11,
+        "p4": 12,
+        "p5": 7,
+        "p6": 3,
+        "p7": 8
+      }
+    },
+    {
+      "cn": 4,
+      "n": "Planescape Torment: Spellpack",
+      "tp2n": "Planescape Torment: Spellpack",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Ports Planescape Torment spells to BG2",
+      "sp": 5,
+      "spLv": {
+        "w3": 1,
+        "w7": 1,
+        "w8": 2,
+        "w9": 1
+      }
+    },
+    {
+      "cn": 5,
+      "n": "Revised Paladin Powers",
+      "tp2n": "Revised Paladin Powers",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "NOT INSTALLED CLABclass_clab_SKYEHL01.2da not found — mih_sp iterates all CLAB files from kitlist.2da but can't find CLABs for custom kits added by other mods (SKYEHL01 = Skye Harper kit). Upstream bug. Same issue affects cn:8. Crashes installer with pipe error."
+    },
+    {
+      "cn": 6,
+      "n": "Revised Ranger Powers",
+      "tp2n": "Revised Ranger Powers",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Revised ranger abilities. Proficiency changes overlap with ToF grandmastery"
+    },
+    {
+      "cn": 7,
+      "n": "Revised Monk Powers",
+      "tp2n": "Revised Monk Powers",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Revised monk abilities and progression"
+    },
+    {
+      "cn": 8,
+      "n": "Revised Bard Powers",
+      "tp2n": "Revised Bard Powers",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "NOT INSTALLED Same CLABclass_clab issue as cn:5 — iterates kitlist.2da bard CLABs, crashes on custom kit CLABs from other mods. Upstream bug."
+    },
+    {
+      "cn": 9,
+      "n": "Revised Bhaalspawn Powers (EXPERIMENTAL)",
+      "tp2n": "Revised Bhaalspawn Powers (EXPERIMENTAL)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "EXPERIMENTAL. May conflict with Slayer Revisions"
+    },
+    {
+      "cn": 10,
+      "n": "Specialist Perks (WIP)",
+      "tp2n": "Specialist Perks (WIP)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "WIP: only betatesting, BG1 only, good powers only. Incompatible with T&B Revised Specialists"
+    },
+    {
+      "cn": 11,
+      "n": "Made in Heaven: Epic Spellpack (BETA)",
+      "tp2n": "Made in Heaven: Epic Spellpack (BETA)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "BETA: epic-level spells. Incompatible with T&B Revised Specialists"
+    },
+    {
+      "cn": 12,
+      "n": "Reduce Sleep duration to five rounds",
+      "tp2n": "Reduce Sleep duration to five rounds",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Simple spell tweak — nerfs Sleep duration",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 13,
+      "n": "Deeper Fear (EXPERIMENTAL)",
+      "tp2n": "Deeper Fear (EXPERIMENTAL)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "EXPERIMENTAL: removes fear immunity from Remove Fear, adds new counter-fear spells",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 14,
+      "n": "True Meteor Swarm (EXPERIMENTAL)",
+      "tp2n": "True Meteor Swarm (EXPERIMENTAL)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "EXPERIMENTAL: true PnP Meteor Swarm",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 15,
+      "n": "Prevent damage during Timestop",
+      "tp2n": "Prevent damage during Timestop",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 16,
+      "n": "Remove All Time Stop Immunity",
+      "tp2n": "Remove All Time Stop Immunity",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Removes Time Stop immunity from all creatures",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 17,
+      "n": "Spell Improvements (see readme)",
+      "tp2n": "Spell Improvements (see readme)",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Various spell balance improvements. See readme for details. Installs with warnings (non-fatal): struct_edit for WIZARD_WYVERN_CALL_SCROLL.itm is skipped if IWDification's Wyvern Call scroll is not present.",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "n": "Spell Improvements (see readme)",
+      "tp2n": "Spell Improvements (see readme)",
+      "cn": 17,
+      "wf": "mih_sp",
+      "wp": "mih_sp\\SETUP-MIH_SP.TP2",
+      "wc": 16,
+      "wq": "exact",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "grn": "Spell Effect Tweaks"
+    },
+    {
+      "cn": 18,
+      "n": "Revised Spell Learning XP",
+      "tp2n": "Revised Spell Learning XP",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Adjusts XP from learning spells. Install after ToF/SCS",
+      "grn": "Spell Availability Tweaks"
+    },
+    {
+      "n": "Revised Spell Learning XP",
+      "tp2n": "Revised Spell Learning XP",
+      "cn": 18,
+      "wf": "mih_sp",
+      "wp": "mih_sp\\SETUP-MIH_SP.TP2",
+      "wc": 17,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "grn": "Spell Availability Tweaks"
+    },
+    {
+      "cn": 19,
+      "n": "Expanded Temple Services",
+      "tp2n": "Expanded Temple Services",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "More temple healing/curing options. Install after EET Tweaks XP mods",
+      "grn": "Spell Availability Tweaks"
+    },
+    {
+      "cn": 20,
+      "n": "Sixth level spell scrolls in SoD",
+      "tp2n": "Sixth level spell scrolls in Siege of Dragonspear",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Adds 6th level spell scrolls to Siege of Dragonspear",
+      "grn": "Spell Availability Tweaks"
+    },
+    {
+      "cn": 21,
+      "n": "Fourth level Animate Dead for Wizards",
+      "tp2n": "Fourth level Animate Dead for Wizards",
+      "wf": "mih_sp",
+      "wp": "mih_sp\\setup-mih_sp.tp2",
+      "wq": "exact",
+      "no": "Allows wizards to cast Animate Dead at 4th spell level. INSTALL FIX APPLIED: animate_dead_scrolls.tpa line 6 — LAUNCH_PATCH_FUNCTION replaced with LPF. The full form with spaced 'RET_ARRAY m = struct' causes 'Unknown function: struct_read' on BERNARD3.STO (Bernard's Copper Coronet store). Without fix, store doesn't get the 4th-level Animate Dead scroll. Users: change 'LAUNCH_PATCH_FUNCTION struct_read RET_ARRAY m = struct END' to 'LPF struct_read RET_ARRAY m=struct END' in mih_sp/animate_dead/animate_dead_scrolls.tpa.",
+      "grn": "Spell Availability Tweaks"
+    }
+  ]
+}

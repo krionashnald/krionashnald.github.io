@@ -1,0 +1,66 @@
+{
+  "i": 667,
+  "t": "bgeespawn",
+  "sv": 1,
+  "ord": 50,
+  "c": "CREATURE MODS",
+  "n": "BGEE Leveling Spawns",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "it": 2,
+    "fr": 3,
+    "ru": 4,
+    "es": 5,
+    "zh-cn": 6,
+    "zh-tw": 7
+  },
+  "no": "Content mod by Angel (MiH author). Adds level-scaled spawns to BG1 areas. MUST install BEFORE Tweaks and Tricks (TR) generic components — blows up if installed after. Also has known interactions with SCS that the author has fixed. Install before both TR and SCS.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks encounter difficulty overlaps with BGEE Leveled Spawns",
+      "myComps": "#101 BGEE Leveling Spawns Mod",
+      "theirComps": "#3590 Increase Encounter Difficulty"
+    }
+  ],
+  "u": "https://github.com/GraionDilach/BGEESpawn",
+  "a": "GraionDilach",
+  "v": "1.3.3",
+  "sum": "BGEE Leveled Spawns Mod",
+  "tags": [
+    "tactical"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/GraionDilach/BGEESpawn",
+  "au": "wisp",
+  "co": [
+    {
+      "n": "BGEE Leveling Spawns Mod",
+      "tp2n": "BGEE Leveling Spawns Mod",
+      "cn": 101,
+      "wf": "bgeespawn",
+      "wp": "bgeespawn\\bgeespawn.tp2",
+      "wc": 101,
+      "no": "Level-scaled spawn tables for BG1 areas. Hard conflict with TR generic components if installed after. Install in CREATURE MODS category (before tactical mods) to ensure correct order.",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "GraionDilach",
+    "r": "BGEESpawn"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "i": 449,
+  "t": "EET_end",
+  "sv": 1,
+  "ord": 300,
+  "c": "EET FINALIZATION",
+  "n": "Enhanced Edition Trilogy (End)",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "fr": 3,
+    "cs": 4,
+    "ru": 5,
+    "de": 6,
+    "zh-cn": 7
+  },
+  "no": "Must be installed after all content mods but before late-stage scripts and tools. Finalizes the EET installation.",
+  "rq": "EET",
+  "ki": [
+    {
+      "pattern": "BDABISHA\\.BCS|fatal.*pars.*BDABISHA",
+      "severity": "error",
+      "category": "concerning",
+      "description": "EET_End may fail with a fatal parsing error on BDABISHA.BCS.BAF. Root cause identified by argent77: Rogue Rebalancing v4.92 corrupts STATS.IDS with duplicate nonsense entries via outdated ds.tpa (Detectable Spells). WeiDU chokes on CheckStat() lookups against the corrupted IDS. Similar pattern to MiH Meta-Mod IDS corruption.",
+      "workaround": "Use Angel's Rogue Rebalancing fork instead of the original v4.92. If error persists without RR, check other mods with outdated ds.tpa libraries.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/41159-eet-end-install-error/",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "mih_metamod",
+      "withId": 54,
+      "severity": "hard",
+      "reason": "mih_metamod cleanup (cn:4) MAKE_BIFF of 139K files into 7.2GB bif corrupts IDS files (TRIGGER.IDS, AREATYPE.IDS). EET_end cannot parse the biffed IDS files and fails.",
+      "myComps": "#0 Standard installation",
+      "theirComps": "#4 Install mod convenience tweaks",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/K4thos/EET/releases",
+  "a": "K4thos",
+  "v": "v14.0",
+  "sum": "Finalizes the EET installation after all other mods are installed. Must be the very last mod in your install order.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/K4thos/EET/releases",
+  "au": "K4thos (swit)",
+  "co": [
+    {
+      "n": "Standard installation",
+      "cn": 0,
+      "wf": "eet",
+      "wp": "eet\\EET_end\\EET_end.tp2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "EET core (resource importation)"
+    },
+    {
+      "n": "Create desktop shortcut",
+      "cn": 100,
+      "wf": "eet",
+      "wp": "eet\\EET_end\\EET_end.tp2",
+      "wq": "verified",
+      "tp2n": "Create desktop shortcut"
+    }
+  ],
+  "gh": {
+    "o": "K4thos",
+    "r": "EET"
+  }
+}

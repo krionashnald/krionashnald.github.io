@@ -1,0 +1,80 @@
+{
+  "i": 686,
+  "t": "BG_Travel",
+  "sv": 1,
+  "ord": 50,
+  "c": "POST EET",
+  "n": "New Travel System Between BG City Areas",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "de": 2
+  },
+  "no": "Adds a new travel system between Baldur\"s Gate city areas. Install after EET_End.",
+  "in": [
+    {
+      "t": "Rename the extracted folder from BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET-2.1 to BG_TRAVEL before installing.",
+      "type": "folder"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[New travel system between Baldur.s Gate City\\]|BG_Travel.*not found",
+      "severity": "error",
+      "category": "concerning",
+      "description": "BG_Travel archive extracts to a folder named 'BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET-2.1' but WeiDU expects the folder to be named 'BG_TRAVEL'.",
+      "workaround": "Rename the extracted folder to BG_TRAVEL before installing.",
+      "user_action": "check-docs"
+    },
+    {
+      "pattern": "bg_travel.*0 ok.*1 skip|SKIPPING.*bg_travel",
+      "severity": "info",
+      "category": "likely-benign",
+      "description": "BG_Travel cn:66 (Full version) may silently skip when installed in the POST EET phase. The component has game-state conditions that can fail after eet_end finalizes the install. Observed in session 88733aac (2026-04-16): batch 512 — 0 ok, 1 skip. The minimalistic version (cn:661) was not in this install and may behave differently.",
+      "workaround": "Known limitation. If the component skips, the travel system simply isn't installed — no corruption or side effects. Check WSETUP.DEBUG for the specific REQUIRE that failed if you want to troubleshoot.",
+      "user_action": "none",
+      "evidenceLevel": "observed",
+      "source": "Session references extracted from description on 2026-04-21 during Phase 2.3 validator rollout: session 88733aac"
+    }
+  ],
+  "u": "https://github.com/zed-nocear/BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET",
+  "a": "Zed Nocear",
+  "v": "v2.1",
+  "sum": "Adds a new travel system for moving between Baldur's Gate city areas, replacing the standard area transitions with a faster navigation method.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/zed-nocear/BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET",
+  "au": "zed_nocear",
+  "co": [
+    {
+      "n": "New Travel System - Full version",
+      "tp2n": "Full version of component",
+      "cn": 66,
+      "wf": "BG_Travel",
+      "wp": "BG_Travel\\Setup-BG_Travel.TP2",
+      "no": "Archive extracts to flat folder 'BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET-2.1' — needs manual rename to BG_TRAVEL before install",
+      "wc": 66,
+      "wq": "exact",
+      "scn": "New travel system between Baldur's Gate City areas"
+    },
+    {
+      "n": "New Travel System - Minimalistic version",
+      "tp2n": "Minimalistic version, allow entering two originally inaccesible small regions of BG city",
+      "cn": 661,
+      "wf": "BG_Travel",
+      "wp": "BG_Travel\\Setup-BG_Travel.TP2",
+      "no": "Archive extracts to flat folder 'BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET-2.1' — needs manual rename to BG_TRAVEL before install",
+      "wc": 661,
+      "wq": "exact",
+      "scn": "New travel system between Baldur's Gate City areas"
+    }
+  ],
+  "gh": {
+    "o": "zed-nocear",
+    "r": "BG_Travel-MOD-for-BG1-BGEE-BGT-Tutu-EET"
+  }
+}

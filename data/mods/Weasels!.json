@@ -1,0 +1,75 @@
+{
+  "i": 299,
+  "t": "Weasels!",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 30,
+  "c": "CREATURE MODS",
+  "n": "Weasels!",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "it": 2,
+    "ru": 3,
+    "zh-cn": 4,
+    "fr": 5
+  },
+  "no": "Adds weasel creatures across BG and IWD series. Duplicate entry exists at i=653 (CREATURE MODS) from actual WeiDU logs — both use folder WEASELS!.",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWEAS1",
+          "innate",
+          0,
+          "Conjuration",
+          "Summon Weasels",
+          "Summons a pack of weasels."
+        ],
+        [
+          "YOURWEAS2",
+          "innate",
+          0,
+          "Conjuration",
+          "Giant Weasel Form",
+          "Transform into a giant weasel."
+        ],
+        [
+          "YOURWEAS3",
+          "innate",
+          0,
+          "Conjuration",
+          "Weasel Swarm",
+          "Summons a devastating weasel swarm."
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/weasels/",
+  "a": "Lava Del'Vortel",
+  "v": "3.4",
+  "sum": "Adds weasel-themed creatures, items, and spells across Baldur's Gate and Icewind Dale games.",
+  "tags": [
+    "combat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/weasels/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Weasels! Because the IE games needed more weasels!",
+      "tp2n": "Weasels! Because the IE games needed more weasels!",
+      "wf": "Weasels!",
+      "wp": "Weasels!\\WEASELS!.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "sp": 0
+    }
+  ]
+}

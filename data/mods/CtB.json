@@ -1,0 +1,161 @@
+{
+  "i": 505,
+  "t": "ctb",
+  "sv": 1,
+  "ord": 520,
+  "c": "QUEST MODS BG2",
+  "n": "Check the Bodies",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "it": 3,
+    "de": 4,
+    "es": 5,
+    "zh-cn": 6
+  },
+  "no": "EET compatible since v2.2. Murder mystery quest with multiple outcomes.. mod_installer: Fails with WeiDU 251 (Unknown macro: DELETE_EXISTING_ANIMATIONS). Needs updated mod version or older WeiDU.. Removed from Mod Forge Ultimate: CtB incompatible with WeiDU 251 (DELETE_EXISTING_ANIMATIONS macro)",
+  "conflicts": [
+    {
+      "with": "DeadGardens",
+      "withId": 106,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 226 vs 1354)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "tethyrforestpatch",
+      "withId": 853,
+      "severity": "soft",
+      "orderOnly": true,
+      "before": true,
+      "reason": "Tethyr Forest Patch installs after CtB and restores a separate entrance to AR2602 (which CtB redirects to AR3530). Together they let TS-BP/TS Lite and Tashia work alongside CtB.",
+      "source": "Tethyr Forest Patch readme (v3b, 2009-11-26)"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/Check_the_Bodies",
+  "a": "CBisson, King Diamond",
+  "v": "3.1",
+  "sum": "BG2 quest mod adding an investigation storyline. You examine bodies and clues to solve a mystery in Athkatla.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/SpellholdStudios/Check_the_Bodies/releases",
+  "au": "CBisson, King Diamond (SHS)",
+  "co": [
+    {
+      "n": "Check the Bodies",
+      "cn": 0,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "sp": 14,
+      "spLv": {
+        "w1": 1,
+        "w2": 2,
+        "w3": 2,
+        "w4": 1,
+        "w5": 2,
+        "w6": 4,
+        "w8": 2
+      },
+      "no": "Check the Bodies: detective-style investigation in BG2.",
+      "tp2n": "Check The Bodies"
+    },
+    {
+      "n": "Check the Bodies: Altered Encounters",
+      "cn": 1,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wc": 1,
+      "no": "Altered encounters with different enemy configurations.",
+      "tp2n": "Candlekeep Chores"
+    },
+    {
+      "n": "Candlekeep Chores Fast Forward (for CtB v2.2 or later)",
+      "cn": 2,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wq": "verified",
+      "tp2n": "Candlekeep Chores Fast Forward (for CtB v2.2 or later)",
+      "pi": "ctb_candlekeep_fast_forward"
+    },
+    {
+      "n": "Other Improvements",
+      "cn": 3,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wq": "verified",
+      "tp2n": "Other Improvements",
+      "pi": "ctb_other_improvements"
+    },
+    {
+      "n": "Check The Bodies Resource biffing",
+      "cn": 4,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Check The Bodies Resource biffing",
+      "pi": "ctb_resource_biffing"
+    },
+    {
+      "n": "CtB Wizard Spells",
+      "cn": 5,
+      "wf": "CtB",
+      "wp": "CtB\\CTB.TP2",
+      "wq": "verified",
+      "tp2n": "CtB Wizard Spells",
+      "pi": "ctb_wizard_spells"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "DSotSC",
+      "withId": 458,
+      "severity": "partial",
+      "reason": "Both mods may modify some shared spell files. Install order dependent — install DSotSC before CtB",
+      "orderOnly": true,
+      "myComps": "#0 Check the Bodies",
+      "theirComps": "#0 DSotSC",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Check_the_Bodies"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "i": 257,
+  "t": "d2-weapon",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 70,
+  "c": "ITEM ADDITION MODS",
+  "n": "D2 Weapon",
+  "u": "https://github.com/D2-mods/D2-Weapon",
+  "a": "Dan_P",
+  "v": "3.2",
+  "sum": "Souls-inspired weapon pack for IE games. Currently has 15 weapons + an optional merchant component. Compatible with BG:EE, BG2:EE, IWD:EE, PST:EE, and EET.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "D2-mods",
+    "r": "D2-Weapon"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "D2RAKST2",
+          "misc",
+          "",
+          ""
+        ],
+        [
+          "D2#WBAG",
+          "container",
+          "",
+          "WEAPON SACK\nWeight: 5\n\nThis magical sack was prepared for <CHARNAME> and <PRO_HISHER> allies. The label on the bag reads, \"FOR TESTING PURPOSES ONLY\". Items within can be removed, but strangely, a magical force prevents the party from placing items into the bag."
+        ],
+        [
+          "D2HAM02",
+          "bow",
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/D2-mods/D2-Weapon",
+  "au": "Dan_P",
+  "langs": {
+    "en": 0
+  },
+  "no": "Souls-inspired weapon pack for IE games. Currently has 15 weapons + an optional merchant component. Compatible with BG:EE, BG2:EE, IWD:EE, PST:EE, and EET.",
+  "co": [
+    {
+      "n": "Standard Install",
+      "tp2n": "Standard Install",
+      "cn": 0,
+      "g": "main_install",
+      "scn": "Main component (install items)",
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-SOULS",
+      "it": 3,
+      "itC": {
+        "misc": 1,
+        "container": 1,
+        "bow": 1
+      },
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ]
+    },
+    {
+      "n": "Higher prices (I have too much gold)",
+      "tp2n": "Higher prices. I have too much gold.",
+      "cn": 1,
+      "g": "main_install",
+      "scn": "Main component (install items)",
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-SOULS80"
+    },
+    {
+      "n": "Lower prices (I want to buy everything)",
+      "tp2n": "Lower prices. I want to buy everything.",
+      "cn": 2,
+      "g": "main_install",
+      "scn": "Main component (install items)",
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-SOULS50"
+    },
+    {
+      "n": "Dev mode (start with Weapon Sack)",
+      "tp2n": "Dev mode (start with Weapon Sack)",
+      "cn": 3,
+      "g": "main_install",
+      "scn": "Main component (install items)",
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-DEVMODE"
+    },
+    {
+      "n": "Add damage to bows (recommended for IWD:EE)",
+      "tp2n": "Add damage to bows (recommended for IWD:EE)",
+      "cn": 20,
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-BOWDAMAGE"
+    },
+    {
+      "n": "NPC merchant (does not require main component)",
+      "tp2n": "NPC merchant (does not require main component)",
+      "cn": 50,
+      "wf": "D2-WEAPON",
+      "wp": "D2-WEAPON\\D2-WEAPON.TP2",
+      "pi": "D2-WEAPON-NPCSTORE",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee",
+        "pstee"
+      ]
+    }
+  ]
+}

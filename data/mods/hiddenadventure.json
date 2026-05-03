@@ -1,0 +1,186 @@
+{
+  "i": 66,
+  "t": "hiddenadventure",
+  "sv": 1,
+  "pfx": "WA",
+  "ord": 40,
+  "c": "QUEST MODS BG2",
+  "n": "Hidden Adventures",
+  "langs": {
+    "de": 0,
+    "en": 1,
+    "ru": 2,
+    "pl": 3,
+    "es": 4
+  },
+  "cats": [
+    "QUEST MODS BG2",
+    "ITEM ADDITION MODS"
+  ],
+  "no": "Known issue: cn values in database may be off by +1 (tp2 has no DESIGNATED, auto-numbers from 0). Needs verification. Hidden Adventures WhiteAgnus' original: Jastey's updated fork:",
+  "ic": "https://www.gibberlings3.net/forums/topic/31799-hidden-adventures-questtweak-mod-for-bg2-kerzenburgforum/page/3/",
+  "_legacy_ids": [
+    274
+  ],
+  "conflicts": [],
+  "u": "https://github.com/Gitjas/hiddenadventure/releases",
+  "a": "Lumorous, White Agnus, jastey",
+  "v": "Beta_9",
+  "sum": "Adds 10 hidden quest chains to BG2 that trigger naturally through exploration. New dungeons, NPCs, and storylines woven into existing areas.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "vBeta4",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gitjas",
+    "r": "hiddenadventure"
+  },
+  "dl": "https://github.com/Gitjas/hiddenadventure/releases",
+  "au": "Hendryk",
+  "co": [
+    {
+      "n": "Lady Elgea's extended plot",
+      "tp2n": "Erweiterte Handlung um Lady Elgea",
+      "pi": "hidden_adventures-ladyelgea",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "no": "Extends Lady Elgea ransom quest with new dialogue options and outcomes"
+    },
+    {
+      "n": "Anomen's extended plot",
+      "tp2n": "Erweiterte Anomenhandlung",
+      "pi": "hidden_adventures-anomenplot",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\HIDDENADVENTURE.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "no": "Installs SEPARATELY from other HA components — after Ajantis BG2, NPC Tweak, ItemUpgrade. EET guide specifies 'everything but Anomen' in the first batch, Anomen in a later position. The cat override ensures it exports at the correct later position. CRITICAL: cn:1 must NOT appear in the first batch's --force-install list, or WeiDU triggers a reinstall chain that wipes Ascension (FORBID_COMPONENT spell_rev blocks re-install). The first batch should be cn:0,2,3,4,5,6,7,8,9,10 only.",
+      "cat": "ITEM ADDITION MODS"
+    },
+    {
+      "n": "Jerlia's Ore Shop",
+      "tp2n": "Jerlias Erzladen",
+      "pi": "hidden_adventures-jerliashop",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "cn": 2,
+      "no": "Adds ore shop in Waukeen Promenade for buying smithing materials"
+    },
+    {
+      "n": "Elven holy water in the Temple of Lathander",
+      "tp2n": "Elfisches heiliges Wasser im Lathander Tempel",
+      "no": "must go after A77's Golem Construction",
+      "pi": "hidden_adventures-holywater_lathandertemple",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "cn": 3
+    },
+    {
+      "n": "Wave Blade in Treasury",
+      "tp2n": "Wellenklinge in Schatzkammer",
+      "pi": "hidden_adventures-waveblade_treasury",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "cn": 4,
+      "no": "Restores Wave Blade in the De'Arnise Treasury. Safe"
+    },
+    {
+      "n": "Silver Dagger in Irenicus Dungeon",
+      "tp2n": "Silberdolch in Irenicus Dungeon",
+      "pi": "hidden_adventures-silverdagger_ID",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "cn": 5,
+      "no": "Adds Silver Dagger findable in Irenicus Dungeon. Useful for early vampires"
+    },
+    {
+      "n": "Bards can spend the night at their stronghold (Five Flagons)",
+      "pi": "hidden_adventures-bard_stronghold_resting",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "cn": 6,
+      "no": "Lets bards rest at Five Flagons stronghold. QoL for bard players"
+    },
+    {
+      "n": "A bard for the bard stronghold",
+      "tp2n": "Ein Barde fuer die Bardenfestung",
+      "pi": "hidden_adventures-bard_stronghold_bard",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "cn": 7,
+      "no": "Adds a joinable bard NPC to the Five Flagons. Minor content addition"
+    },
+    {
+      "n": "Silver Sword",
+      "tp2n": "Silberschwert gegen Gedankenschinder und Lykanthropen",
+      "no": "not compatible witht NPC Strongholds",
+      "pi": "hidden_adventures-silversword",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "cn": 8
+    },
+    {
+      "n": "A Tunnel for Saradush",
+      "tp2n": "Ein Tunnel fuer Saradush",
+      "no": "Should go after item revision mods?",
+      "pi": "hidden_adventures-tunnel_saradush",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "cn": 9
+    },
+    {
+      "n": "Temple of Mask in Docks District",
+      "tp2n": "Tempel des Mask im Hafenviertel",
+      "pi": "hidden_adventures-masktemple_docks",
+      "wf": "hiddenadventure",
+      "wp": "hiddenadventure\\hiddenadventure.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "cn": 10,
+      "no": "Restores Temple of Mask in Docks. Adds thief-flavored temple services"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "HA cn:9 (Tunnel for Saradush) uses EXTEND_TOP on SPSEQ12A.bcs (gives scroll to yssold14). SCS cn:6030 (Smarter Mages) may rewrite SPSEQ12A.bcs entirely as part of mage AI overhaul, wiping HA's addition. Quest dialog (25SPELL/SARTEM01) unaffected. Scroll may not auto-spawn but quest still completable. Original conflict listing (SCS 1500/1510/2000/2010/2050) was WRONG — spell components don't touch this script.",
+      "myComps": "#9 A Tunnel for Saradush",
+      "theirComps": "#6030 Smarter Mages",
+      "source": "tp2 analysis: HA extends SPSEQ12A.bcs; SCS 6030 rewrites mage AI scripts including SPSEQ12A",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

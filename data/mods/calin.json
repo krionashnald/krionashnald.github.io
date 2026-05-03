@@ -1,0 +1,98 @@
+{
+  "i": 604,
+  "t": "calin",
+  "sv": 1,
+  "ord": 1110,
+  "c": "NEW NPC MODS",
+  "n": "Calin NPC",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "calin",
+          "portraits/calin/kkcalin.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/calin/",
+  "a": "Kitanna",
+  "v": "v1.3",
+  "sum": "Adds Calin, a Neutral Good human Blade Master NPC to BG2 with a romance for non-evil females, banters with all Bioware NPCs, and content for both SoA and ToB.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Kitanna",
+  "dl": "https://www.gibberlings3.net/files/file/1010-Calin/",
+  "no": "This mod introduces Calin, a human Blade Master to BG II. Calin is neutral good and will romance a female who is Elf, Half-elf, Human and of non-evil alignment.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Calin for BG2",
+      "cn": 0,
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "wc": 0,
+      "tp2n": "Calin for BG2"
+    },
+    {
+      "n": "15 minutes",
+      "cn": 102,
+      "g": "calin_timer",
+      "scn": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this)",
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "tp2n": "15 minutes real time minimum between dialogues"
+    },
+    {
+      "n": "30 minutes",
+      "cn": 103,
+      "g": "calin_timer",
+      "scn": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this)",
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "tp2n": "30 minutes real time minimum between dialogues"
+    },
+    {
+      "n": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this) -> 45 minutes real time minimum between dialogues",
+      "cn": 104,
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "wc": 104,
+      "g": "calin_timer",
+      "scn": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this)",
+      "tp2n": "45 minutes real time minimum between dialogues"
+    },
+    {
+      "n": "1 hour 30 minutes",
+      "cn": 105,
+      "g": "calin_timer",
+      "scn": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this)",
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "tp2n": "1 hour 30 minutes real time minimum between dialogues"
+    },
+    {
+      "n": "2 hours",
+      "cn": 106,
+      "g": "calin_timer",
+      "scn": "Select Calin's dialogue timer: (default is one hour; please note that only timered talks are affected by this)",
+      "wf": "calin",
+      "wp": "calin\\calin.tp2",
+      "tp2n": "2 hours real time between dialogues"
+    }
+  ]
+}

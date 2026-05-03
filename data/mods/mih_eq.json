@@ -1,0 +1,762 @@
+{
+  "i": 243,
+  "t": "mih_eq",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 10,
+  "c": "CREATURE MODS",
+  "n": "Made in Heaven: Encounters & Quests",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "cats": [
+    "CREATURE MODS",
+    "PRE-TACTICAL TWEAKS",
+    "TACTICAL MODS"
+  ],
+  "no": "v5.3 by Angel (G3). Readme explicitly states 'made to be compatible with SCS' — MiH modifies creature STATS (HP/AC/resistances) while SCS modifies AI SCRIPTS. Install MiH before SCS. Uses SFO framework but has zero cross-mod detection. 48 individually togglable components. WARNING: 'No rule to identify SOD' (×10, one per creature revision component) — SFO's game-phase detection cannot identify SoD in EET. Non-fatal; SFO falls back to default behavior. SoD-specific creature patches may not apply.",
+  "ic": "Some parts have issues with SCS - https://www.gibberlings3.net/forums/topic/37186-avoiding-major-v343-bugs/#comment-329771",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Complementary, not conflicting. MiH readme explicitly states 'made to be compatible with SCS.' MiH modifies creature STATS (HP, AC, resistances, ability scores) while SCS modifies creature AI SCRIPTS and tactics. Install MiH before SCS so SCS script assignments apply on top of MiH stat changes. Only real overlap: SCS cn:2520 (Revised Elementals) also modifies elemental HP/AC — SCS wins for elementals since it installs later. IWD spell/spell tweak components (cn:1500-2060) don't touch creatures at all.",
+      "myComps": "#0 Revised Corporal Undead, #1 Revised Dragons, #2 Revised Golems, #3 Revised Liches, #4 Revised Lycanthropes, #5 Revised Magical Beasts, #6 Revised Monstrous Spiders, #7 Revised Oozes, #8 Revised Vampires",
+      "theirComps": "#2520 Revised elementals",
+      "source": "MiH readme: 'explicitly made to be compatible with SCS'; MiH uses edit_creature for stats, SCS uses m_script_class for AI; SCS 1500-2060 are spell-only, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "Real overlap for undead only. aTweaks cn:160 (PnP Undead) and MiH cn:0 (Revised Corporeal Undead) both modify skeleton/zombie/ghoul/ghast/wight/wraith/shadow/spectre/mummy creatures. Neither detects the other — no MOD_IS_INSTALLED checks in either direction. MiH uses COPY_EXISTING_REGEXP on all CRE files filtering by race/class; aTweaks patches specific named creatures. Both modify same stat fields (resistances, HP, AC). Last installed wins for overlapping fields. Install MiH before aTweaks (aTweaks PnP values are more authoritative for PnP accuracy). MiH has NO mephit or elemental revisions — aTweaks cn:180/190 are unique with zero overlap.",
+      "myComps": "#0 Revised Corporal Undead",
+      "theirComps": "#160 PnP Undead #180 PnP Mephits #190 PnP Elementals",
+      "source": "aTweaks c160.tpa patches named undead CREs; MiH corporal_undead_revisions.tpa uses COPY_EXISTING_REGEXP on all CREs by race; no cross-detection in either tp2; MiH has no mephit/elemental folders, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "candlekeep_revisited",
+      "withId": 58,
+      "severity": "partial",
+      "reason": "Arkanis and Deder handling in Candlekeep Catacombs overlaps with Candlekeep Revisited",
+      "myComps": "#10 Enhanced Battles: Candlekeep Catacombs"
+    },
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "soft",
+      "reason": "Both modify ar5203. Ascension raises EXTRACOUNT 35→60 and increases dynamic spawn limits (~16 max). MiH adds 20 static creatures. Combined is within Ascension's raised cap of 60. Coexists but makes a hard fight. Author warns of possible untested conflict.",
+      "myComps": "#46 Enhanced Battles: Yaga-Shura's Army",
+      "theirComps": "#1500 Tougher Yaga-Shura",
+      "orderOnly": true
+    },
+    {
+      "with": "butchery",
+      "withId": 242,
+      "severity": "soft",
+      "reason": "Both add creatures to ar5203. MiH adds 20 static, Butchery adds 15 scripted, Ascension adds ~16 dynamic — total ~51 in a 35-creature area. Resolution: keep MiH cn:46 (static diverse placement works well with Ascension's dynamic scaling), removed Butchery cn:51 .",
+      "myComps": "#46 Enhanced Battles: Yaga-Shura's Army",
+      "theirComps": "#51 Butchery of Yaga-Shura Revisited",
+      "source": "Creature count analysis: Butchery d9yanew.baf 5+5+5; MiH expand_yagas_army.tpa 20 actors; Ascension EXTRACOUNT 35→60, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "transitions",
+      "withId": 589,
+      "severity": "soft",
+      "reason": "Complementary, different files. MiH cn:21 removes LeaveAreaLUA/AdvanceTime from DELTAN dialogue (Elminster post-Sarevok). Transitions cn:0 replaces StartMovie('ENDMOVIE') script block in AR0125 (Undercity Temple of Bhaal) with post-Sarevok continuation content via REPLACE_SCRIPT_BLOCK. No same-file overlap. Install Transitions before MiH cn:21 — Transitions replaces the transition logic, then MiH's teleport removal from Deltan is harmless/redundant but safe. Neither detects the other.",
+      "myComps": "#21 Prevent Ch6 Cutscene from Moving Party",
+      "theirComps": "#0 Main component",
+      "source": "MiH setup_no_ch6_teleport.tpa patches DELTAN dialog; Transitions main_bg1.tpa patches AR0125 script; no shared files, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "crucible",
+      "withId": 390,
+      "severity": "hard",
+      "reason": "Crucible REQUIRE_PREDICATE checks !FILE_EXISTS mih_eq/setup-mih_eq.tp2. Crucible will not install if MiH EQ is present. Mutually exclusive.",
+      "myComps": "All (file existence check)",
+      "theirComps": "#0 The Crucible",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "hard",
+      "reason": "Tactics Remix auto-skips all components when Made in Heaven mods are detected.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "mih_blah",
+          "portraits/mih_eq/mh_blah.png",
+          "bg1"
+        ],
+        [
+          "mih_ooba",
+          "portraits/mih_eq/mh_ooba.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Revised Corporal Undead\\]|cannot convert debug_variable to an integer",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Revised Corporal Undead fails with 'cannot convert debug_variable to an integer' when patching SUSPYIM.CRE — undefined tp2 variable. Bug in mih_eq tp2. All other CRE patches succeed before this point.",
+      "workaround": "Add 'SET debug_variable = 0' before the WRITE_BYTE in the tp2, or skip this component. Only SUSPYIM.CRE (Imoen spy variant) is affected.",
+      "user_action": "check-docs",
+      "components": [
+        0
+      ],
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/AngelGryph/MadeInHeaven_EncountersAndQuests/releases",
+  "a": "Angel",
+  "sum": "Made in Heaven's encounter package: 62 individually togglable encounters, small quests, and creature additions scattered across BG1 and BG2.",
+  "tags": [
+    "story",
+    "combat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "AngelGryph",
+    "r": "MadeInHeaven_EncountersAndQuests"
+  },
+  "dl": "https://github.com/AngelGryph/MadeInHeaven_EncountersAndQuests/releases",
+  "au": "angel",
+  "co": [
+    {
+      "n": "Revised Corporal Undead",
+      "tp2n": "Revised Corporal Undead",
+      "cn": 0,
+      "ss": 1,
+      "no": "Revised undead stats/resistances. Overlaps with aTweaks PnP Undead (cn:160). Install BEFORE SCS and aTweaks. HARD FAIL: 'cannot convert debug_variable to an integer' when patching SUSPYIM.CRE — undefined tp2 variable. Bug in mih_eq. WORKAROUND: Report to Angel (MiH author). Only affects SUSPYIM.CRE (Imoen spy variant); all other CRE patches succeed before this point. A patched tp2 adding 'SET debug_variable = 0' before the WRITE_BYTE would fix it.",
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Dragons",
+      "tp2n": "Revised Dragons",
+      "cn": 1,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "no": "Revised dragon stats. Works alongside SCS Smarter Dragons. Install BEFORE SCS. Requires SoD or BG2.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Golems",
+      "tp2n": "Revised Golems",
+      "cn": 2,
+      "no": "Revised golem stats. May interact with Golem Construction (Argent77). Install BEFORE SCS.",
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 2,
+      "wq": "verified",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Liches",
+      "tp2n": "Revised Liches",
+      "cn": 3,
+      "no": "Revised lich immunities. SCS removes lich spell immunity; install MiH BEFORE SCS to partially restore. Requires SoD or BG2.",
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 3,
+      "wq": "verified",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Lycanthropes (EXPERIMENTAL)",
+      "tp2n": "Revised Lycanthropes (EXPERIMENTAL)",
+      "cn": 4,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 4,
+      "wq": "verified",
+      "no": "EXPERIMENTAL. Revised lycanthrope stats. Install BEFORE SCS.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Magical Beasts",
+      "tp2n": "Revised Magical Beasts",
+      "cn": 5,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 5,
+      "wq": "verified",
+      "no": "Revised magical beast stats. Install BEFORE SCS.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Monstrous Spiders",
+      "tp2n": "Revised Monstrous Spiders",
+      "cn": 6,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 6,
+      "wq": "verified",
+      "no": "Revised spider stats. Install BEFORE SCS.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Oozes, Slimes & Jellies",
+      "tp2n": "Revised Oozes, Slimes & Jellies",
+      "cn": 7,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 7,
+      "wq": "verified",
+      "no": "Revised ooze/slime/jelly stats. Overlaps with aTweaks PnP Oozes (cn:180). Install BEFORE SCS.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Revised Vampires",
+      "tp2n": "Revised Vampires",
+      "cn": 8,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 8,
+      "wq": "verified",
+      "no": "Revised vampire stats. Works alongside SCS Smarter Vampires. Install BEFORE SCS. Requires SoD or BG2.",
+      "grn": "Monster Enhancements"
+    },
+    {
+      "n": "Enhanced Battles: Ankheg Pit",
+      "tp2n": "Enhanced Battles: Ankheg Pit",
+      "cn": 9,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 9,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Adds tougher encounters and revised creatures to the Ankheg Pit area.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Candlekeep Catacombs",
+      "tp2n": "Enhanced Battles: Candlekeep Catacombs",
+      "cn": 10,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 10,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced Candlekeep Catacombs encounters. Conflicts with Candlekeep Revisited.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Mutamins Garden",
+      "tp2n": "Enhanced Battles: Mutamin's Garden",
+      "cn": 11,
+      "no": "Enhanced basilisk encounters in Mutamin's Garden.",
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 11,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Ramazith's Tower",
+      "tp2n": "Enhanced Battles: Ramazith's Tower",
+      "cn": 12,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 12,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters throughout Ramazith's Tower.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: The Spider Plague",
+      "tp2n": "Enhanced Battles: The Spider Plague",
+      "cn": 13,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 13,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher spider encounters in the Spider Plague questline.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Thieves' Maze & Undercity",
+      "tp2n": "Enhanced Battles: Thieves' Maze & Undercity",
+      "cn": 14,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 14,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters in the Thieves' Maze and Undercity areas.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Ulcaster Ruins",
+      "tp2n": "Enhanced Battles: Ulcaster Ruins",
+      "cn": 15,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 15,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher undead encounters in Ulcaster Ruins.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Xvart Village",
+      "tp2n": "Enhanced Battles: Xvart Village",
+      "cn": 16,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 16,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced xvart encounters with better tactics.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Zombie Farm",
+      "tp2n": "Enhanced Battles: Zombie Farm",
+      "cn": 17,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 17,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher zombie encounters at the Zombie Farm area.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Durlag's Tower",
+      "tp2n": "Enhanced Battles: Durlag's Tower",
+      "cn": 18,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 18,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters throughout Durlag's Tower. Requires TotSC content.",
+      "grn": "Tactical Challenges: Original Saga"
+    },
+    {
+      "n": "The Surgeon's Plight",
+      "tp2n": "The Surgeon's Plight",
+      "cn": 19,
+      "no": "Removes the Alignment helm from the demon knight in BG1.",
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 19,
+      "wq": "verified",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "grn": "Encounters & Quests: Original Saga"
+    },
+    {
+      "n": "Sarevok's Assassins",
+      "tp2n": "Sarevok's Assassins",
+      "cn": 20,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 20,
+      "wq": "verified",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "no": "Improves Sarevok's assassin encounters with better equipment and tactics.",
+      "grn": "Encounters & Quests: Original Saga"
+    },
+    {
+      "n": "Prevent Chapter 6 Cutscene from Moving Party to Candlekeep",
+      "tp2n": "Prevent chapter 6 cutscene from moving party to Candlekeep",
+      "cn": 21,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 21,
+      "wq": "verified",
+      "no": "Prevents Ch6 cutscene from force-teleporting party to Candlekeep. May conflict with BG1NPC/Transitions chapter 6 changes.",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "grn": "Encounters & Quests: Original Saga"
+    },
+    {
+      "n": "Minor Quest Tweaks (BG1)",
+      "tp2n": "Minor Quest Tweaks (BG1)",
+      "cn": 22,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 22,
+      "wq": "verified",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "no": "Various minor BG1 quest fixes and improvements.",
+      "grn": "Encounters & Quests: Original Saga"
+    },
+    {
+      "n": "Enhanced Battles: Bridgefort",
+      "tp2n": "Enhanced Battles: Bridgefort",
+      "cn": 23,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 23,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters at Bridgefort during SoD.",
+      "grn": "Tactical Challenges: Siege of Dragonspear"
+    },
+    {
+      "n": "Enhanced Battles: Cyric's Temple",
+      "tp2n": "Enhanced Battles: Cyric's Temple",
+      "cn": 24,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 24,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in Cyric's Temple during SoD.",
+      "grn": "Tactical Challenges: Siege of Dragonspear"
+    },
+    {
+      "n": "Enhanced Battles: Dwarven Dig Site",
+      "tp2n": "Enhanced Battles: Dwarven Dig Site",
+      "cn": 25,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 25,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters at the Dwarven Dig Site during SoD.",
+      "grn": "Tactical Challenges: Siege of Dragonspear"
+    },
+    {
+      "n": "Enhanced Battles: Korlasz' Tomb",
+      "tp2n": "Enhanced Battles: Korlasz' Tomb",
+      "cn": 26,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 26,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in Korlasz' Tomb during SoD.",
+      "grn": "Tactical Challenges: Siege of Dragonspear"
+    },
+    {
+      "n": "Enhanced Battles: Vampire Encounters",
+      "tp2n": "Enhanced Battles: Vampire Encounters",
+      "cn": 27,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 27,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced vampire encounters during SoD.",
+      "grn": "Tactical Challenges: Siege of Dragonspear"
+    },
+    {
+      "n": "Complete More/All Vision Quest Encounters",
+      "tp2n": "Complete more/all Vision Quest encounters",
+      "cn": 28,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 28,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Ensures more vision quest encounters trigger during SoD. Requires SoD.",
+      "grn": "Encounters & Quests: Siege of Dragonspear"
+    },
+    {
+      "n": "Increase Enemy Group Size",
+      "tp2n": "Increase Enemy Group Size",
+      "cn": 29,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 29,
+      "wq": "verified",
+      "no": "Modifies SoD difficulty scripts. No SCS conflict (SCS has limited SoD support).",
+      "cat": "TACTICAL MODS",
+      "grn": "Encounters & Quests: Siege of Dragonspear"
+    },
+    {
+      "n": "Enhanced Battles: Athkatla Liches",
+      "tp2n": "Enhanced Battles: Athkatla Liches",
+      "cn": 30,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 30,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher lich encounters in Athkatla (Elemental Lich, Kangaxx, etc.).",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Firkraag's Lair",
+      "tp2n": "Enhanced Battles: Firkraag's Lair",
+      "cn": 31,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 31,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters in Firkraag's Lair with dragon-themed creatures.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Graveyard Catacombs",
+      "tp2n": "Enhanced Battles: Graveyard Catacombs",
+      "cn": 32,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 32,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in the Graveyard District catacombs.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Lower Reaches",
+      "tp2n": "Enhanced Battles: Lower Reaches",
+      "cn": 33,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 33,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters in the Lower Reaches dungeon.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Slum Sewers",
+      "tp2n": "Enhanced Battles: Slum Sewers",
+      "cn": 34,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 34,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in the Slum Sewers.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Spellhold",
+      "tp2n": "Enhanced Battles: Spellhold",
+      "cn": 35,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 35,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters throughout Spellhold.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Suldanessenar",
+      "tp2n": "Enhanced Battles: Suldanessenar",
+      "cn": 36,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 36,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in Suldanesselar elven city.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Temple Ruins",
+      "tp2n": "Enhanced Battles: Temple Ruins",
+      "cn": 37,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 37,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters in the Temple Ruins area.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Trademeet",
+      "tp2n": "Enhanced Battles: Trademeet",
+      "cn": 38,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 38,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters around Trademeet.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Underdark",
+      "tp2n": "Enhanced Battles: Underdark",
+      "cn": 39,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 39,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters throughout the Underdark.",
+      "grn": "Tactical Challenges: Shadows of Amn"
+    },
+    {
+      "n": "Enhanced Battles: Amkethran",
+      "tp2n": "Enhanced Battles: Amkethran",
+      "cn": 40,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 40,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in and around Amkethran.",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Forest of Mir",
+      "tp2n": "Enhanced Battles: Forest of Mir",
+      "cn": 41,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 41,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters in the Forest of Mir.",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Pocket Plane",
+      "tp2n": "Enhanced Battles: Pocket Plane",
+      "cn": 42,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 42,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in the Pocket Plane challenges.",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Saradush",
+      "tp2n": "Enhanced Battles: Saradush",
+      "cn": 43,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 43,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced Saradush encounters. May conflict with Throne of Bhaal Revisited and BuTcHeRy (both modify Saradush areas).",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Sendai's Enclave",
+      "tp2n": "Enhanced Battles: Sendai's Enclave",
+      "cn": 44,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 44,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Enhanced encounters throughout Sendai's Enclave.",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Watcher's Keep",
+      "tp2n": "Enhanced Battles: Watcher's Keep",
+      "cn": 45,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 45,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Tougher encounters in Watcher's Keep across all levels.",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Enhanced Battles: Yaga-Shura's Army",
+      "tp2n": "Enhanced Battles: Yaga-Shura's Army",
+      "cn": 46,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 46,
+      "wq": "verified",
+      "no": "Adds spawn waves to Yaga-Shura battle. Author notes possible untested conflict with Ascension. May produce very crowded encounters with BuTcHeRy.",
+      "cat": "TACTICAL MODS",
+      "grn": "Tactical Challenges: Throne of Bhaal"
+    },
+    {
+      "n": "Minor Quest Tweaks (ToB)",
+      "tp2n": "Minor Quest Tweaks (ToB)",
+      "cn": 47,
+      "wf": "mih_eq",
+      "wp": "mih_eq\\SETUP-MIH_EQ.TP2",
+      "wc": 47,
+      "wq": "verified",
+      "cat": "TACTICAL MODS",
+      "no": "Various minor ToB quest fixes and improvements.",
+      "grn": "Encounters & Quests: Throne of Bhaal"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "tobr",
+      "withId": 578,
+      "severity": "soft",
+      "reason": "Overlap in ar5013 (Saradush Sewers). MiH cn:43 extends ar5013.bcs with EXTEND_BOTTOM (shadow spawns) and modifies sewsha03.cre. ToBR cn:5/11 (Pocket Plane/Sewers) replaces ar5013.are creatures by direct byte patching and modifies door locks. MiH's script references sewsha03 which ToBR may replace with shadow variants. No conflict with ToBR cn:0 (Gromnir) or cn:10 (Saradush main areas ar5000/5003/5004) — different areas from MiH's ar5006/5013. Install MiH before ToBR so ToBR's creature replacements apply to MiH-extended area. ToBR does NOT detect MiH. ToBR cn:0 Gromnir uses fragile DECOMPILE+REPLACE on YAGA01.bcs but MiH doesn't touch that file.",
+      "orderOnly": true,
+      "myComps": "#43 Enhanced Battles: Saradush",
+      "theirComps": "#0 Gromnir #5 Pocket Plane #10 Saradush #11 Saradush Sewers",
+      "source": "MiH sewer_shadows.tpa EXTEND_BOTTOM ar5013.bcs; ToBR sewers.tph direct ARE patching ar5013; no cross-detection, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "A7-GolemConstruction",
+      "withId": 122,
+      "severity": "soft",
+      "reason": "Both mods revise golem types. May produce unexpected golem stats.",
+      "myComps": "#2 Revised Golems",
+      "theirComps": "#0 Golem Construction #25 Greater variety #35 Vulnerable to spells #40 Reduced immunities",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "NOT a real conflict. TnT cn:15 (trap fixes) modifies Davaeorn's Battle Horror TRAP properties in CloakwoodMines_L4.are (detection/removal difficulty). MiH cn:2 (Revised Golems) modifies golem creature STATS (HP/AC/resistances). Different aspects of same creatures — complementary. TnT cn:63/64 (Fair Fights) removes unfair undroppable items from specific named enemies (Arkanis, Malchor, Drizzt, etc.) — no overlap with any MiH component which targets creature types, not named individuals.",
+      "myComps": "#2 Revised Golems",
+      "theirComps": "#15 Davaeorn Battle Horrors #63 #64 Fair Fights",
+      "source": "TnT trap_fixes/main.tpa modifies ARE trap properties; MiH golem_revisions.tpa modifies CRE stats; TnT fair_fights modifies named-NPC items, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "shadowadept",
+      "withId": 295,
+      "severity": "soft",
+      "reason": "NOT a real conflict. Shadow Magic cn:0 is an empty prerequisite component — contains no installation code, only BEGIN/END markers. Shadow Magic's actual creature modifications (Shade Lord in later components) target shadel.cre which is not in any MiH creature revision scope (undead/dragons/golems/liches/lycanthropes/beasts/spiders/oozes/vampires).",
+      "myComps": "#0 Revised Corporal Undead, #1 Revised Dragons, #2 Revised Golems, #3 Revised Liches, #4 Revised Lycanthropes, #5 Revised Magical Beasts, #6 Revised Monstrous Spiders, #7 Revised Oozes, #8 Revised Vampires",
+      "theirComps": "#0",
+      "source": "shadowadept.tp2 cn:0 is empty (lines 41-42); Shadow Magic modifies shadel.cre/L#Fou.cre only, not in MiH scope, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "i": 452,
+  "t": "alchemy",
+  "sv": 1,
+  "ord": 320,
+  "c": "ITEM ADDITION MODS",
+  "n": "Jan's Alchemy",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "ru": 3,
+    "it": 4
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan. Adds Jan’s Book of Brewing to the game to allow Jan Jansen in BG2 to make 8 types of potions via specific recipes.Install Jan’s Alchemy before Gilbertus.",
+  "u": "https://github.com/SpellholdStudios/JansAlchemy",
+  "a": "Badgert",
+  "v": "v8.1.0",
+  "sum": "Jan's Book of Brewing is a magical tome that will allow Jan to create 8 potions following specific recipes.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "JansAlchemy"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "JANTOME",
+          "misc",
+          "Jan's Book of Brewing",
+          "This is a collection of Jan's recipes of soups, juices, sauces and potions. Despite the in-numerous mentions to turnips and family stories, you find eight useful potion brewing recipes.\n\nFrom his own notes, you realize each potion has specific ingredients that must be used exactly in the amounts described, a bit more or a bit less may have disastrous results, except for the gold which is used to buy common materials and you can have more than indicated.\n\nRecipe 1: Potion of Battlefield Lust\n- 2 Bloodstone gems\n- 1 Black Opal\n- 1 Oil of Speed\n- 300 gold in assorted materials\n\nRecipe 2: Mage's Draught Potion\n- 1 Moonbar Gem\n- 1 Garnet Gem\n- 1 scroll of Chaos\n- 700 gold in assorted materials\n\nRecipe 3: Assassin's Gift\n- 1 Moonstone Gem\n- 3 Horn Coral Gems\n- 1 Potion of Master Thievery\n- 700 gold\n\nRecipe 4: Potion of Ogre Power\n- 1 Aquamarine Gem\n- 2 Star Diopside Gems\n- 1 Potion of Frost Giant Strength\n- 300 gold\n\nRecipe 5: Mind Shield\n- 1 Chrysoberyl Gem\n- 3 Jasper Gems\n- 2 Potions of Clarity\n- 1 scroll of Dire Charm\n- 1 scroll of Clairvoyance\n- 2000 gold\n\nRecipe 6: Magic Ward\n- 1 Star Sapphire\n- 1 Potion of Defense\n- 1 scroll of Luck\n- 1000 gold\n\nRecipe 7: Gatekeeper\n- 1 Water Opal\n- 1 Waterstar Gem\n- 3 Potions of Freedom\n- 1 scroll of Imprisonment\n- 3000 gold\n\nRecipe 8: Heal\n- 3 Potions of Healing\n- 3 Potions of Extra Healing\n- 300 gold",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian"
+              ],
+              "races": [
+                "Gnome"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "POTX01",
+          "potion",
+          "Potion of Battlefield Lust",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX02",
+          "potion",
+          "Mage's Draught Potion",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX03",
+          "potion",
+          "Assassin's Gift",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX04",
+          "potion",
+          "Potion of Ogre Power",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX05",
+          "potion",
+          "Potion of Mind Shield",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX06",
+          "potion",
+          "Magic Ward",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX07",
+          "potion",
+          "Gatekeeper",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "POTX08",
+          "potion",
+          "Heal",
+          "Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/SpellholdStudios/JansAlchemy",
+  "au": "Gwendolyne",
+  "co": [
+    {
+      "n": "Jan's Alchemy",
+      "tp2n": "Jan's Alchemy",
+      "cn": 0,
+      "wf": "alchemy",
+      "wp": "alchemy\\ALCHEMY.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "it": 9,
+      "itC": {
+        "misc": 1,
+        "potion": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "i": 203,
+  "t": "Wings",
+  "sv": 1,
+  "pfx": "X3",
+  "ord": 90,
+  "c": "NPC EXPANSIONS",
+  "n": "Wings",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "es": 2,
+    "zh-cn": 3
+  },
+  "no": "Wings - Aerie expansion",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "aerie",
+          "portraits/wings/aerie.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Skitia/Wings/releases",
+  "a": "Coutelier (Insomniator), Skitia",
+  "sum": "Original Idea, Writing, and Coding by Coutelier. All 2020 and later updates by Skitia",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Skitia",
+    "r": "Wings"
+  },
+  "au": "Coutelier, Skitia",
+  "dl": "https://github.com/Skitia/Wings/releases",
+  "co": [
+    {
+      "n": "Wings for BG2:EE",
+      "cn": 0,
+      "wf": "Wings",
+      "wp": "Wings\\SETUP-WINGS.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Wings for BG2:EE"
+    },
+    {
+      "n": "Restore missing banters?",
+      "cn": 1,
+      "wf": "Wings",
+      "wp": "Wings\\SETUP-WINGS.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "no": "DLG WEIGHT warnings (×4): REPLACE specifies no WEIGHT for states 0/44/76/469 but DLG uses non-trivial weights. WeiDU uses existing DLG weights. Cosmetic — dialog works, response ordering may differ slightly from author's intent.",
+      "tp2n": "Restore missing banters?"
+    },
+    {
+      "n": "Remove conflict with Hexxat?",
+      "cn": 2,
+      "wf": "Wings",
+      "wp": "Wings\\SETUP-WINGS.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "tp2n": "Remove conflict with Hexxat?"
+    }
+  ]
+}

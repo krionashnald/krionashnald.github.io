@@ -1,0 +1,117 @@
+{
+  "i": 592,
+  "t": "angelo",
+  "sv": 1,
+  "ord": 1030,
+  "c": "NEW NPC MODS",
+  "n": "Angelo NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Angelo NPC mod for BG2. ALWAYS block guard uses sv_angelo_always to avoid conflicts with other mods sharing bg2_chapter. Portrait library (cd_portrait_npc) is bundled with the mod. Fix applied: eet-mod-forge-patches component #11. If install fails with 'No translation provided for @0', ensure a clean game directory — an incomplete mod folder from a previous install can leave only the tp2 without tra files.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "butchery",
+      "withId": 242,
+      "severity": "partial",
+      "reason": "Butchery cn:30 spawns wraith Angelo (d9angelo.cre) as enemy in Abyss. Content-incompatible with Angelo as joinable NPC. Butchery tp2 has REQUIRE_PREDICATE NOT MOD_IS_INSTALLED — auto-blocked when Angelo NPC present. Different death variables (D9ANGELO vs adangel) so no technical breakage.",
+      "myComps": "#0 Angelo NPC",
+      "theirComps": "#30 Revisited fight against Wraith Sarevok in the Abyss",
+      "source": "Butchery tp2 line 125 REQUIRE_PREDICATE; auto-blocked, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "angelo_npc",
+          "portraits/angelo_npc/adangel.png",
+          "bg1"
+        ],
+        [
+          "angelo_amaurea",
+          "portraits/angelo_npc/amaurea.png",
+          "bg1"
+        ],
+        [
+          "angelo_cassinus",
+          "portraits/angelo_npc/cassinus.png",
+          "bg1"
+        ],
+        [
+          "angelo_sisterv",
+          "portraits/angelo_npc/sisterv.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Angelo",
+  "a": "Sister Vigilante",
+  "v": "v9",
+  "sum": "Makes Angelo a joinable NPC in BG2, turning the BG1 antagonist into a complex companion with redemption themes.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v6",
+    "place": "post"
+  },
+  "au": "Sister Vigilante, Kulyok",
+  "dl": "https://github.com/Gibberlings3/Angelo",
+  "co": [
+    {
+      "n": "Angelo NPC MOD for Baldur's Gate II",
+      "cn": 0,
+      "wf": "Angelo",
+      "wp": "Angelo\\SETUP-ANGELO.TP2",
+      "wc": 0,
+      "tp2n": "Angelo NPC MOD for Baldur's Gate II"
+    },
+    {
+      "n": "Angelo's portrait, edited by SisterVigilante",
+      "cn": 1,
+      "wf": "Angelo",
+      "wp": "Angelo\\SETUP-ANGELO.TP2",
+      "wq": "verified",
+      "tp2n": "Angelo's portrait, edited by SisterVigilante",
+      "pi": "SisterVigilantes_Angelo-Portrait_SisterVigilante",
+      "scn": "Angelo's alternative portraits"
+    },
+    {
+      "n": "Angelo's alternative portrait by Amaurea",
+      "cn": 2,
+      "wf": "Angelo",
+      "wp": "Angelo\\SETUP-ANGELO.TP2",
+      "wq": "verified",
+      "tp2n": "Angelo's alternative portrait by Amaurea",
+      "pi": "SisterVigilantes_Angelo-Portrait_Amaurea",
+      "scn": "Angelo's alternative portraits"
+    },
+    {
+      "n": "Angelo's alternative portraits -> Angelo's alternative portrait from http://cassinus.free.fr",
+      "cn": 3,
+      "wf": "Angelo",
+      "wp": "Angelo\\SETUP-ANGELO.TP2",
+      "wc": 3,
+      "tp2n": "Angelo's alternative portrait from http://cassinus.free.fr",
+      "scn": "Angelo's alternative portraits"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Angelo"
+  }
+}

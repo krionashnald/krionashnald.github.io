@@ -1,0 +1,164 @@
+{
+  "i": 553,
+  "t": "toa",
+  "sv": 1,
+  "ord": 650,
+  "c": "QUEST MODS BG2",
+  "n": "Tales of Anegh",
+  "langs": {
+    "de": 0,
+    "en": 1,
+    "it": 2,
+    "pl": 3,
+    "zh-cn": 4
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "no": "PARSE ERROR (non-fatal): Z_TANDOS.baf line 65 references WIZARD_DELETED which doesn't exist in EE Spell.IDS — literally a deleted spell. The ForceSpell call silently fails. One NPC loses one pre-buff spell in their script. No gameplay impact.",
+  "u": "https://github.com/Gitjas/ToA",
+  "a": "whiteagnus",
+  "v": "v2.6",
+  "sum": "BG2 quest series with 6 episodes following the Tales of Anegh storyline. Multiple hours of narrative-driven content.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/Gitjas/ToA",
+  "au": "whiteagnus",
+  "co": [
+    {
+      "n": "Tales of Anegh (Weidu)",
+      "cn": 1,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 1,
+      "no": "Main Tales of Anegh quest content.",
+      "tp2n": "Tales of Anegh (WeiDU)",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Entferne Sounds",
+      "cn": 2,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wq": "verified",
+      "tp2n": "Entferne Sounds",
+      "grn": "Extras"
+    },
+    {
+      "n": "Waukeens Promenade (Kapitel 6)",
+      "cn": 3,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wq": "verified",
+      "tp2n": "Waukeens Promenade (Kapitel 6)",
+      "scn": "Entferne Nomoran aus folgendem Gebiet",
+      "grn": "Extras"
+    },
+    {
+      "n": "Amkethran (ToB)",
+      "cn": 4,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wq": "verified",
+      "tp2n": "Amkethran (ToB)",
+      "scn": "Entferne Nomoran aus folgendem Gebiet",
+      "grn": "Extras"
+    },
+    {
+      "n": "Erweitere Quickinfo Schriftrolle (von Taimon)",
+      "cn": 5,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Erweitere Quickinfo Schriftrolle (von Taimon)",
+      "grn": "Extras"
+    },
+    {
+      "n": "Creature Balancing",
+      "cn": 10,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 10,
+      "no": "Creature rebalancing for ToA areas.",
+      "tp2n": "Creature Balancing",
+      "grn": "Balancing"
+    },
+    {
+      "n": "AREA Balancing",
+      "cn": 20,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 20,
+      "no": "Area encounter rebalancing.",
+      "tp2n": "AREA Balancing",
+      "grn": "Balancing"
+    },
+    {
+      "n": "Dialog & Script Balancing",
+      "cn": 30,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 30,
+      "no": "Dialogue and script improvements.",
+      "tp2n": "Dialog & Script Balancing",
+      "grn": "Balancing"
+    },
+    {
+      "n": "Stores Balancing",
+      "cn": 40,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 40,
+      "no": "Store inventory rebalancing.",
+      "tp2n": "Stores Balancing",
+      "grn": "Balancing"
+    },
+    {
+      "n": "Item Balancing",
+      "cn": 50,
+      "wf": "TOA",
+      "wp": "TOA\\SETUP-TOA.TP2",
+      "wc": 50,
+      "no": "Item stat rebalancing.",
+      "tp2n": "Item Balancing",
+      "grn": "Balancing"
+    }
+  ],
+  "gh": {
+    "o": "Gitjas",
+    "r": "ToA"
+  }
+}

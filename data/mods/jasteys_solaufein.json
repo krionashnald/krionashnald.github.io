@@ -1,0 +1,109 @@
+{
+  "i": 138,
+  "t": "jasteys_solaufein",
+  "sv": 1,
+  "ord": 170,
+  "c": "NEW NPC MODS",
+  "n": "Solaufein's Rescue",
+  "langs": {
+    "de": 0,
+    "en": 1,
+    "ru": 2,
+    "it": 3
+  },
+  "no": "Solaufein both mods are compatible. Read Jastey's documentation for more info [Weimer's Solaufein placeholder] Jastey's Solaufein's Rescue It may look like a quest mod with an NPC, but author said it's actually an NPC mod with a quest :_P Can be used as a 7th party member",
+  "conflicts": [
+    {
+      "with": "Solaufein",
+      "withId": 546,
+      "severity": "hard",
+      "reason": "Both add Solaufein as a joinable NPC. Choose one. Jastey's is actively maintained; Roxanne's is older but has romance content",
+      "myComps": "#0 Solaufein's Rescue",
+      "theirComps": "#0 Solaufein Romance",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "solaufein",
+          "portraits/jasteys_solaufein/c_solau.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.baldurs-gate.de/index.php?resources/jasteys-solaufein-npc-mod-for-bgii-solaufeins-rescue.13/",
+  "a": "jastey",
+  "v": "5.0",
+  "sum": "Transforms Solaufein into a recruitable NPC companion for Baldur's Gate II by adding a quest to rescue him from the drider chambers before he can join the party.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "jastey",
+  "dl": "https://github.com/Gitjas/Solaufeins_Rescue_NPC",
+  "co": [
+    {
+      "n": "jastey's Solaufein NPC mod for BGII - Solaufein's Rescue: Jastey's Solaufein NPC for BGII",
+      "pi": "JasteysSolaufeinRescue-Main",
+      "wf": "c#solaufein",
+      "wp": "c#solaufein\\c#solaufein.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "tp2n": "Solaufeins Rettung: Jasteys Solaufein NPC fuer BGII"
+    },
+    {
+      "n": "jastey's Solaufein NPC mod for BGII - Give Solaufein in Ust Natha the Mod's Portrait",
+      "pi": "JasteysSolaufeinRescue-Give_Ust_Natha_Solaufein_Portrait",
+      "wf": "c#solaufein",
+      "wp": "c#solaufein\\c#solaufein.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "tp2n": "Solaufein in Ust Natha das Mod-Portrait geben"
+    },
+    {
+      "n": "Drinnen-Animationen fuer diese Mod verwenden",
+      "cn": 2,
+      "wf": "c#solaufein",
+      "wp": "c#solaufein\\c#solaufein.tp2",
+      "wq": "verified",
+      "tp2n": "Drinnen-Animationen fuer diese Mod verwenden",
+      "pi": "JasteysSolaufeinRescue-Drider_Animations"
+    },
+    {
+      "n": "jastey's Solaufein NPC mod for BGII - Install alternative portrait #2 from Chinasky",
+      "pi": "JasteysSolaufeinRescue-Alternative_Portrait",
+      "wf": "c#solaufein",
+      "wp": "c#solaufein\\c#solaufein.tp2",
+      "wq": "manual_final",
+      "cn": 3,
+      "tp2n": "Alternatives Portrait #2 von Chinasky"
+    },
+    {
+      "n": "jastey's Solaufein NPC mod for BGII - Install Detection for Drow PC",
+      "pi": "JasteysSolaufeinRescue-Detection_for_Drow_PC",
+      "wf": "c#solaufein",
+      "wp": "c#solaufein\\c#solaufein.tp2",
+      "wc": 4,
+      "wq": "manual_final",
+      "cn": 4,
+      "tp2n": "Detektion fuer Drow HC"
+    }
+  ],
+  "gh": {
+    "o": "Gitjas",
+    "r": "Solaufeins_Rescue_NPC"
+  }
+}

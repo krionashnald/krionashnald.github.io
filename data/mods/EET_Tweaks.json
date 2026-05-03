@@ -1,0 +1,1531 @@
+{
+  "i": 246,
+  "t": "EET_Tweaks",
+  "sv": 1,
+  "ord": 20,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Baldur's Gate: Enhanced Edition Trilogy Tweaks (EET Tweaks)",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "cs": 2,
+    "ru": 3,
+    "zh-cn": 4,
+    "de": 5,
+    "fr": 6
+  },
+  "cats": [
+    "EXPERIENCE TWEAKS",
+    "SPELL MODS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "EET Tweaks - XP adjustments 1 v Total XP cap Use one of these, or the xp cap removal from TA just below if you also want TA's Triple-Class HLA Tables (incompatible with here EET Tweaks's cap removal)",
+  "rq": "EET",
+  "_legacy_ids": [
+    306,
+    444
+  ],
+  "conflicts": [
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "partial",
+      "reason": "Jaheira Recast portrait component overlaps with EET Tweaks Jaheira appearance settings",
+      "myComps": "#1020 Jaheira appearance (BG1) / #1021 Jaheira appearance (BG2)",
+      "theirComps": "#3 Give Jaheira her BG2 Portrait"
+    },
+    {
+      "with": "A7-TestYourMettle",
+      "withId": 79,
+      "severity": "soft",
+      "reason": "Both modify creature kill XP handling; choose one approach to XP reduction",
+      "myComps": "#2080 Party XP for killing creatures distributed individually",
+      "theirComps": "#11 / #12 / #13 / #14 Reduced XP for killing monsters"
+    },
+    {
+      "with": "ELDRITCH_MAGIC",
+      "withId": 640,
+      "severity": "soft",
+      "reason": "Eldritch Magic's starting XP and XP cap removal overlap with EET Tweaks' XP cap components.",
+      "myComps": "#2000 #2001 #2002 #2003",
+      "theirComps": "#2 #3"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "EET Tweaks rest and container components overlap with cdtweaks",
+      "myComps": "#4060 Wand Case",
+      "theirComps": "#3070 #3071 #3072 #3073 Rest tweaks"
+    },
+    {
+      "with": "msfm",
+      "withId": 282,
+      "severity": "soft",
+      "reason": "Both add a Wand Case",
+      "myComps": "#4060",
+      "theirComps": "#13"
+    },
+    {
+      "with": "c#sodtweaks",
+      "withId": 35,
+      "severity": "soft",
+      "reason": "Jastey's Imoen SoD portrait component overlaps with EET Tweaks Imoen appearance setting",
+      "myComps": "#1012 Imoen appearance (SoD)",
+      "theirComps": "#6 Use Imoen's SoD Portrait for BGII"
+    },
+    {
+      "with": "sod2bg2_iu",
+      "withId": 480,
+      "severity": "partial",
+      "reason": "EET Tweaks 'Import party items to SoA' and SOD2BG2_IU's forced SoD item imports cause item duplication. Choose one import method.",
+      "myComps": "#4040 Import party items to SoA",
+      "theirComps": "#6 #7 #8",
+      "source": "Both mods place SoD items into BG2 via different mechanisms, 2026-03"
+    },
+    {
+      "with": "DrizztSaga",
+      "withId": 513,
+      "severity": "partial",
+      "reason": "Both modify XPCAP.2DA. Drizzt Saga #2 raises cap to 3.75M — too low for an EET mega-install. EET Tweaks per-campaign caps are far more flexible. Drizzt Saga #2 is not in the database or any preset.",
+      "myComps": "#2000-#2003 Total XP cap",
+      "theirComps": "#2 Raise XP cap to 3,750,000",
+      "source": "Drizzt Saga tp2 comp #2 sets XPCAP to 3750000; not in mods.json DB, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "partial",
+      "reason": "Replace Baseline XP Table for Picking Locks, Disarming Traps and Learning Spells",
+      "myComps": "#0 XP rewards",
+      "theirComps": "#261, #262; #212",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "partial",
+      "reason": "Choose one \"add Priest (or Battleguard) of Tempus kit\"",
+      "myComps": "#4000",
+      "theirComps": "#109",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "partial",
+      "reason": "Familiar penalty conflict",
+      "myComps": "#3020, #3021, #3022",
+      "theirComps": "#69",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "partial",
+      "reason": "Patch joinable NPCs to use the same portrait filenames for BG1 and BG2",
+      "myComps": "#0 BG1 portrait patches",
+      "theirComps": "#150, #155",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "wtpfamiliars",
+      "withId": 304,
+      "severity": "soft",
+      "reason": "EET Tweaks' familiar death components are redundant with WTP Familiars. Use one or the other.",
+      "myComps": "#3020 #3021 #3022",
+      "theirComps": "#0 WTP Familiars (Requires ToB, BGT, BGEE, BG2EE, IWDEE, or EET"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Scroll casting overlap only. EET cn:3010 (PnP scroll caster levels) uses granular spell-level matching. cdtweaks cn:2170 blanks all caster level parameters. Choose one — EET cn:3010 has REQUIRE_PREDICATE that auto-skips if cdtweaks cn:2170 is installed first. Storekeeper ID (cdtweaks cn:2190-2192) has no EET equivalent. cdtweaks cn:2170 IS selected, EET cn:3010 No conflict.",
+      "myComps": "#3010 PnP spell scroll caster levels (NOT in Ultimate preset)",
+      "theirComps": "#2170 Cast Spells from Scrolls at Character Level",
+      "source": "EET_Tweaks.tp2 line 1613: REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME cdt02170.g3; auto-skip resolved, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-TotLM-BG2EE",
+      "withId": 297,
+      "severity": "soft",
+      "reason": "NOT a conflict. EET cn:4040 imports player inventory to Irenicus Dungeon. TotLM adds new IWD quest content in separate areas. Different items, different locations, no overlap.",
+      "myComps": "#4040",
+      "theirComps": "#0",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_sp",
+      "withId": 296,
+      "severity": "soft",
+      "reason": "NOT a conflict. EET_Tweaks has no temple services or spell learning XP components. Different functionality with no overlap.",
+      "theirComps": "#14 Expanded Temple Services #8 Revised Spell Learning XP #17 Revised Spell Learning XP",
+      "orderOnly": true
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks EET Tweaks item-patching components.",
+      "theirComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "eet",
+      "requiresId": 12,
+      "type": "hard",
+      "reason": "Requires EET"
+    }
+  ],
+  "u": "https://github.com/K4thos/EET_Tweaks/releases",
+  "a": "K4thos",
+  "v": "1.12",
+  "sum": "EET-specific tweaks for the combined game: XP adjustments, chapter transitions, journal management, and fixes for EET edge cases across all campaigns.",
+  "tags": [
+    "tweak",
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "eet_compat": {
+    "ver": "v1.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "K4thos",
+    "r": "EET_Tweaks"
+  },
+  "dl": "https://github.com/K4thos/EET_Tweaks/releases",
+  "au": "K4thos (swit)",
+  "co": [
+    {
+      "n": "Edwin Appearance: BG1",
+      "tp2n": "BG1",
+      "cn": 1000,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1000,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "edwin_app",
+      "scn": "Edwin appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Edwin Appearance: BG2",
+      "tp2n": "BG2",
+      "cn": 1001,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1001,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "edwin_app",
+      "scn": "Edwin appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Imoen Appearance: BG1",
+      "tp2n": "BG1",
+      "no": "v Imoen appearance",
+      "cn": 1010,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1010,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "imoen_app",
+      "scn": "Imoen appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Imoen Appearance: BG2",
+      "tp2n": "BG2",
+      "cn": 1011,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1011,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "imoen_app",
+      "scn": "Imoen appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Imoen Appearance: SoD",
+      "tp2n": "SoD",
+      "cn": 1012,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1012,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "imoen_app",
+      "scn": "Imoen appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Jaheira Appearance: BG1",
+      "tp2n": "BG1",
+      "no": "v Jaheira appearance",
+      "cn": 1020,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1020,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "jaheira_app",
+      "scn": "Jaheira appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Jaheira Appearance: BG2",
+      "tp2n": "BG2",
+      "cn": 1021,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1021,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "jaheira_app",
+      "scn": "Jaheira appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Minsc Appearance: BG1",
+      "tp2n": "BG1",
+      "no": "v Minsc appearance",
+      "cn": 1030,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1030,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "minsc_app",
+      "scn": "Minsc appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Minsc Appearance: BG2",
+      "tp2n": "BG2",
+      "cn": 1031,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1031,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "minsc_app",
+      "scn": "Minsc appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Viconia Appearance: BG1",
+      "tp2n": "BG1",
+      "no": "v Viconia appearance",
+      "cn": 1040,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1040,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "viconia_app",
+      "scn": "Viconia appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Viconia Appearance: BG2",
+      "tp2n": "BG2",
+      "cn": 1041,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1041,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "viconia_app",
+      "scn": "Viconia appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Viconia Appearance: SoD",
+      "tp2n": "SoD",
+      "cn": 1042,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1042,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "viconia_app",
+      "scn": "Viconia appearance",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Cameo NPCs appearance",
+      "tp2n": "Cameo NPCs appearance",
+      "cn": 1050,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1050,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "no": "NPCs who appear as cameos in different campaigns use consistent appearance.",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "NPC voices",
+      "tp2n": "NPC voices",
+      "cn": 1060,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 1060,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "no": "NPCs use consistent voice sets across BG1/SoD/BG2 campaigns.",
+      "grn": "Consistent NPCs"
+    },
+    {
+      "n": "Total XP Cap: 2,950,000",
+      "tp2n": "2,950,000",
+      "cn": 2000,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2000,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_cap",
+      "scn": "Total XP CAP",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Total XP Cap: 8,000,000",
+      "tp2n": "8,000,000",
+      "cn": 2001,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2001,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_cap",
+      "scn": "Total XP CAP",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Total XP Cap: Disabled",
+      "tp2n": "Disabled",
+      "cn": 2002,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2002,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_cap",
+      "scn": "Total XP CAP",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Total XP Cap: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2003,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2003,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_cap",
+      "scn": "Total XP CAP",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for BG1: 89,000",
+      "tp2n": "89,000",
+      "cn": 2010,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2010,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_bg1",
+      "scn": "Additional XP CAP for BG1",
+      "grn": "XP adjustments",
+      "no": "Prevents over-levelling before SoD",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for BG1: 161,000",
+      "tp2n": "161,000",
+      "cn": 2011,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2011,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_bg1",
+      "scn": "Additional XP CAP for BG1",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for BG1: 500,000",
+      "tp2n": "500,000",
+      "cn": 2012,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2012,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_bg1",
+      "scn": "Additional XP CAP for BG1",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for BG1: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2013,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2013,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_bg1",
+      "scn": "Additional XP CAP for BG1",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoD: 89,000",
+      "tp2n": "89,000",
+      "cn": 2020,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2020,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_sod",
+      "scn": "Additional XP CAP for SoD",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoD: 161,000",
+      "tp2n": "161,000",
+      "cn": 2021,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2021,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_sod",
+      "scn": "Additional XP CAP for SoD",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoD: 500,000",
+      "tp2n": "500,000",
+      "cn": 2022,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2022,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_sod",
+      "scn": "Additional XP CAP for SoD",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoD: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2023,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2023,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_sod",
+      "scn": "Additional XP CAP for SoD",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoA: 2,500,000",
+      "tp2n": "2,500,000",
+      "cn": 2030,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2030,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_soa",
+      "scn": "Additional XP CAP for SoA",
+      "grn": "XP adjustments",
+      "no": "If high enough to reach HLAs (intended for ToB), they can break balance",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoA: 2,950,000",
+      "tp2n": "2,950,000",
+      "cn": 2031,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2031,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_soa",
+      "scn": "Additional XP CAP for SoA",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoA: 8,000,000",
+      "tp2n": "8,000,000",
+      "cn": 2032,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2032,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_soa",
+      "scn": "Additional XP CAP for SoA",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Additional XP Cap for SoA: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2033,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2033,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "xp_soa",
+      "scn": "Additional XP CAP for SoA",
+      "grn": "XP adjustments",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "XP for Traps, Spells & Lockpicking: BG1 values (default)",
+      "tp2n": "BG1 values (default)",
+      "no": "Only useful for Polish versions of the game Use these judiciously depending on how many mods rewarding xp (ie: quests and some NPCs) you install. Or crank up the difficulty settings.",
+      "cn": 2040,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2040,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_traps",
+      "scn": "XP for Traps, Spells and Lockpicking",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Traps, Spells & Lockpicking: BG2 values",
+      "tp2n": "BG2 values",
+      "cn": 2041,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2041,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_traps",
+      "scn": "XP for Traps, Spells and Lockpicking",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Traps, Spells & Lockpicking: Vanilla friendly progressive",
+      "tp2n": "Vanilla friendly progressive",
+      "no": "INSTALL ISSUE: segfaults in batch installs",
+      "cn": 2042,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2042,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_traps",
+      "scn": "XP for Traps, Spells and Lockpicking",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Traps, Spells & Lockpicking: Disabled",
+      "tp2n": "Disabled",
+      "cn": 2043,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2043,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_traps",
+      "scn": "XP for Traps, Spells and Lockpicking",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Traps, Spells & Lockpicking: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2044,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2044,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_traps",
+      "scn": "XP for Traps, Spells and Lockpicking",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "no": "v XP for killing creatures",
+      "cn": 2050,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Decrease to 75%",
+      "tp2n": "Decrease to 75%",
+      "cn": 2051,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2051,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "no": "INSTALL ISSUE: segfaults in batch installs",
+      "cn": 2052,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2052,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Decrease to 25%",
+      "tp2n": "Decrease to 25%",
+      "cn": 2053,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2053,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Decrease to 10%",
+      "tp2n": "Decrease to 10%",
+      "cn": 2054,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2054,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Disable",
+      "tp2n": "Disable",
+      "cn": 2055,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2055,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Killing Creatures: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2056,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2056,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_kill",
+      "scn": "XP for killing creatures",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "no": "v XP for quests",
+      "cn": 2060,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2060,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Decrease to 75%",
+      "tp2n": "Decrease to 75%",
+      "cn": 2061,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2061,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "no": "INSTALL ISSUE: segfaults in batch installs AND corrupts BD0120.BCS via DECOMPILE_AND_PATCH",
+      "cn": 2062,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2062,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Decrease to 25%",
+      "tp2n": "Decrease to 25%",
+      "cn": 2063,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2063,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Decrease to 10%",
+      "tp2n": "Decrease to 10%",
+      "cn": 2064,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2064,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Disable",
+      "tp2n": "Disable",
+      "cn": 2065,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2065,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "XP for Quests: Custom value",
+      "tp2n": "Custom value",
+      "cn": 2066,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2066,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "xp_quest",
+      "scn": "XP for quests",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "Party XP for quests distributed individually",
+      "tp2n": "Party XP for quests distributed individually",
+      "cn": 2070,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2070,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Quest XP divided among party members instead of each member getting full XP.",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "Party XP for killing creatures distributed individually",
+      "tp2n": "Party XP for killing creatures distributed individually",
+      "no": "use this or Olvyn Tweaks'",
+      "cn": 2080,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 2080,
+      "wq": "verified",
+      "grn": "XP adjustments"
+    },
+    {
+      "n": "Disable hostile reaction after charm",
+      "tp2n": "Disable hostile reaction after charm",
+      "no": "Effectively a xp reduction for small parties and solo players. Requires EEex. EET Tweaks - Gameplay",
+      "cn": 3000,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3000,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pl": "win",
+      "grn": "Gameplay"
+    },
+    {
+      "n": "PnP spell scroll caster levels",
+      "tp2n": "PnP spell scroll caster levels",
+      "cn": 3010,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3010,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Spell scrolls cast at PnP-specified caster levels instead of fixed levels.",
+      "grn": "Gameplay"
+    },
+    {
+      "n": "Familiar Death: Constitution loss & blocked summoning for 1 week",
+      "tp2n": "Constitution loss & blocked summoning for 1 week",
+      "cn": 3020,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3020,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "familiar",
+      "scn": "Familiar death consequences",
+      "grn": "Gameplay",
+      "no": "Vanilla BG2 behavior: permanent CON loss + can't summon for a week.",
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "Familiar Death: Constitution loss for 1 week",
+      "tp2n": "Constitution loss for 1 week",
+      "cn": 3021,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3021,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "familiar",
+      "scn": "Familiar death consequences",
+      "grn": "Gameplay",
+      "no": "Lighter penalty: CON loss recovers after 1 week, can resummon after.",
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "Familiar Death: Disabled",
+      "tp2n": "Disabled",
+      "cn": 3022,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3022,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "familiar",
+      "scn": "Familiar death consequences",
+      "grn": "Gameplay",
+      "no": "No familiar death penalty. Familiar can be resummoned immediately.",
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "Ironman Mode",
+      "tp2n": "Ironman Mode",
+      "cn": 3040,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3040,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Permadeath - game over on party wipe",
+      "cat": "SPELL MODS",
+      "grn": "Gameplay"
+    },
+    {
+      "n": "One time area spawn points (no respawning)",
+      "tp2n": "One time area spawn points (no respawning)",
+      "no": "use this (minimum caster level for the spell + 1, only vanilla spells) or Tweaks Anthology's (character's caster level)",
+      "cn": 3050,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 3050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "grn": "Gameplay"
+    },
+    {
+      "n": "Higher framerates support",
+      "tp2n": "Higher framerates support",
+      "no": "EET Tweaks - Miscellaneous",
+      "cn": 4020,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4020,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "ki": [
+        {
+          "pattern": "[!SAR1D2.BCS.BAF] PARSE ERROR at line 25|ERROR Installing [Higher framerates support]",
+          "severity": "error",
+          "description": "'Higher framerates support' fails parsing !SAR1D2.BCS at line 25 col 1-41. Usually caused by an earlier mod (quest/NPC) rewriting !SAR1D2 with syntax the BCS->BAF decompiler can't round-trip.",
+          "workaround": "Install 'Higher framerates support' earlier in the order (before mods that patch !SAR1D2.BCS), or skip this component."
+        }
+      ],
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Import party items to SoA",
+      "tp2n": "Import party items to SoA",
+      "cn": 4040,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4040,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "no": "Imports party equipment from BG1/SoD into the start of SoA.",
+      "ki": [
+        {
+          "pattern": "[AR0602.BCS.BAF] PARSE ERROR at line 695|ERROR Installing [Import party items to SoA]",
+          "severity": "error",
+          "description": "'Import party items to SoA' fails parsing AR0602.BCS at line 695 col 1-24. Caused by an earlier mod rewriting AR0602 (Chapter 6 import area) with incompatible BCS syntax.",
+          "workaround": "Install earlier in the order, or skip this component and perform import manually."
+        }
+      ],
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Books/Scrolls categorization",
+      "tp2n": "Books/Scrolls categorization",
+      "no": "For EET. If playing BG2EE, use www.urstuff2athkatla.com",
+      "cn": 4050,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Wand Case",
+      "tp2n": "Wand Case",
+      "no": "after CDtweaks' sellable items? It may be causing scrolls to not being able to enter book/scroll bags? Investigate",
+      "cn": 4060,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4060,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Key Ring",
+      "tp2n": "Key Ring",
+      "cn": 4070,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4070,
+      "wq": "verified",
+      "no": "Adds a Key Ring container to reduce key clutter in inventory.",
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Replace Classic BG1 Movies: Replace movies",
+      "tp2n": "Replace movies",
+      "no": "v Replace classic BG1 movies with BG:EE ones If you're installing BG:EE Classic Movies (its videos have better quality), then this is redundant",
+      "cn": 4080,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4080,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "movies",
+      "scn": "Replace classic BG1 movies with BG:EE ones",
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Replace Classic BG1 Movies: Also disable BG1 movies that don't have BG:EE variants",
+      "tp2n": "Also disable BG1 movies that don't have BG:EE variants",
+      "cn": 4081,
+      "wf": "EET_Tweaks",
+      "wp": "EET_Tweaks\\EET_TWEAKS.TP2",
+      "wc": 4081,
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "g": "movies",
+      "scn": "Replace classic BG1 movies with BG:EE ones",
+      "grn": "Miscellaneous",
+      "no": "Replaces classic BG1 movies and also disables movies that lack EE equivalents."
+    }
+  ]
+}

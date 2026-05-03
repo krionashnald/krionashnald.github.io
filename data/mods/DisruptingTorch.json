@@ -1,0 +1,74 @@
+{
+  "i": 264,
+  "t": "DisruptingTorch",
+  "sv": 1,
+  "ord": 120,
+  "c": "ITEM ADDITION MODS",
+  "n": "Disrupting Torch",
+  "no": "Akun's Gear !_-AkunsGear-Main;Akun's Gear - \"Akun's Gear\" Mod Disrupting Torch",
+  "u": "https://forums.beamdog.com/discussion/comment/1156843/#Comment_1156843",
+  "a": "Tresset",
+  "sum": "Adds a magical club that deals fire damage and has a 10% chance to cast Burning Hands on hit, with a chance to disarm targets who fail a save vs. spell.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "TORCH",
+          "mace",
+          "Disrupting Torch +2",
+          "You cretins must apologize for your rudeness, or we shall be forced to defend the honor of this virtuous young maid with all our might!",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://forums.beamdog.com/discussion/comment/1156843/#Comment_1156843",
+  "au": "Tresset",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Disrupting Torch",
+      "tp2n": "Disrupting Torch",
+      "cn": 0,
+      "wf": "DisruptingTorch",
+      "wp": "DisruptingTorch\\setup-DisruptingTorch.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "INSTALL ISSUE: COPY_EXISTING ~Tem4003.sto~ fails. Tem4003.sto is a vanilla BG2 Temple store file. This file may not be in override at install time — COPY_EXISTING requires the resource to exist in the chitin.key biff files or in override. Possible cause: Tem4003.sto is not accessible in the EET game data, or it was renamed/relocated. Verify that TEM4003 area store exists in the EET installation before running this mod.",
+      "it": 1,
+      "itC": {
+        "mace": 1
+      }
+    }
+  ]
+}

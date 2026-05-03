@@ -1,0 +1,147 @@
+{
+  "i": 718,
+  "t": "d2asn",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Assassin Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Assassin kit for Thief class. Human, Half-elf only. Charge-up martial arts with finishing moves, trap-laying, shadow companion. Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_ASSASSIN": {
+        "passive": [
+          {
+            "n": "Skill Bonus",
+            "type": "desc",
+            "desc": "+25% Open Locks and Hide in Shadows"
+          },
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "fear",
+              "charm",
+              "domination"
+            ],
+            "desc": "Immune to fear, charm, domination"
+          },
+          {
+            "n": "APR Bonus",
+            "type": "desc",
+            "desc": "+0.5 APR at levels 1 and 15"
+          },
+          {
+            "n": "Two Weapon",
+            "type": "desc",
+            "desc": "Auto 2 slots Two Weapon Style. Can specialize in thief melee weapons."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Martial Arts",
+            "freq": "D2 skill point system",
+            "effects": "Tiger Strike, Dragon Talon/Flight, Cobra Strike, Fists of Fire, Claws of Thunder, Blades of Ice, Phoenix Strike.",
+            "level": 1
+          },
+          {
+            "n": "Traps/Shadows",
+            "freq": "D2 skill point system",
+            "effects": "Fire Blast, Shock Web, Blade Sentinel, Death Sentry, Shadow Warrior/Master summons, Burst of Speed, Cloak of Shadows.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": true,
+          "race": "Human/Half-elf only",
+          "items": "No backstab. No standard Thief HLAs except Use Any Item. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "D2-style assassin uses martial arts and traps, no spellcasting."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool. No standard Thief HLAs except Use Any Item per research."
+        },
+        "statBonus": {
+          "note": "+0.5 APR at lv1 and lv15. +25% Open Locks and Hide. Auto 2 slots Two Weapon Style."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_ASSASSIN",
+          "thief",
+          "Diablo2 Assassin",
+          "Diablo 2-inspired martial artist. Trap-laying, martial arts, and shadow disciplines."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "0.5",
+  "sum": "Diablo 2-inspired Assassin kit for the Thief class. Human, Half-elf only. Charge-up martial arts with finishing moves, trap-laying, and shadow companion.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Assassin Kit",
+      "tp2n": "Diablo2 Assassin Kit",
+      "wf": "d2asn",
+      "wp": "d2asn\\SETUP-d2asn.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Extend the enemy level limit of Corpse Explosion casted by Death Sentry to LV32",
+      "tp2n": "Extend the enemy level limit of Corpse Explosion casted by Death Sentry to LV32",
+      "no": "Requires main kit component installed first",
+      "wf": "d2asn",
+      "wp": "d2asn\\SETUP-d2asn.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    },
+    {
+      "n": "Turns off the white wiffle ball animation of Weapon Block",
+      "tp2n": "Turns off the white wiffle ball animation of Weapon Block",
+      "wf": "d2asn",
+      "wp": "d2asn\\SETUP-d2asn.tp2",
+      "wc": 2,
+      "wq": "unverified",
+      "cn": 2
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "i": 337,
+  "t": "A7#ImprovedShamanicDance",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 595,
+  "c": "KIT & CLASS MODS",
+  "n": "Improved Shamanic Dance",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "pl": 4,
+    "ru": 5
+  },
+  "no": "Argent77's shaman class overhaul. Install AFTER all shaman kit mods (F&P, Will of the Wisps, etc.) so cn:30 can detect and patch them. Component 30 dynamically scans kitlist.2da — no hardcoded kit names.",
+  "conflicts": [
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "METweaks' shamanic dance tweak is redundant with A7's Improved Shamanic Dance",
+      "theirComps": "#600 Allow Shamans to move while dancing"
+    },
+    {
+      "with": "Spiritwalker",
+      "withId": 726,
+      "severity": "soft",
+      "reason": "A7 Improved Shamanic Dance scans kitlist.2da and patches all shaman kits. Install Spiritwalker BEFORE A7 Shamanic Dance.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "StormCaller",
+      "withId": 725,
+      "severity": "soft",
+      "reason": "A7 Improved Shamanic Dance scans kitlist.2da and patches all shaman kits. Install StormCaller BEFORE A7 Shamanic Dance.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURISD01",
+          "innate",
+          0,
+          "Conjuration",
+          "Shamanic Pact",
+          "Negotiate with spirits for enhanced summoning."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Argent77/A7-ImprovedShamanicDance/releases",
+  "a": "Argent77",
+  "v": "4.6",
+  "sum": "A mod for BG:EE, BG2:EE and EET to make the Shaman class more useful.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-ImprovedShamanicDance"
+  },
+  "dl": "https://github.com/Argent77/A7-ImprovedShamanicDance/releases",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Improved Shamanic Dance",
+      "tp2n": "Improved Shamanic Dance",
+      "pi": "A7-IMPROVED_SHAMANIC_DANCE-MAIN",
+      "wf": "A7#ImprovedShamanicDance",
+      "wp": "A7#ImprovedShamanicDance\\A7#ImprovedShamanicDance.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 0,
+      "no": "Core shamanic dance improvements. Makes Shaman class more viable with better dance mechanics. Required by cn:10 and cn:30."
+    },
+    {
+      "n": "Expanded Shamanic Dance for high level characters",
+      "tp2n": "Expanded Shamanic Dance for high level characters",
+      "pi": "A7-IMPROVED_SHAMANIC_DANCE-EXPANDED_DANCE",
+      "wf": "A7#ImprovedShamanicDance",
+      "wp": "A7#ImprovedShamanicDance\\A7#ImprovedShamanicDance.tp2",
+      "wc": 10,
+      "wq": "manual_final",
+      "cn": 10,
+      "x": 0,
+      "no": "Expanded dance abilities at high levels. Adds more powerful spirit summons at higher character levels.",
+      "rd": 0
+    },
+    {
+      "n": "Add spell \"Shamanic Pact\"",
+      "tp2n": "Add spell \"Shamanic Pact\"",
+      "pi": "A7-IMPROVED_SHAMANIC_DANCE-SHAMANIC_PACT",
+      "wf": "A7#ImprovedShamanicDance",
+      "wp": "A7#ImprovedShamanicDance\\A7#ImprovedShamanicDance.tp2",
+      "wc": 20,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 20,
+      "no": "Adds Shamanic Pact spell — independent of cn:0. Allows shaman to sacrifice HP to empower spirits. Standalone component."
+    },
+    {
+      "n": "Apply Shamanic Dance improvements to Shaman kits",
+      "tp2n": "Apply Shamanic Dance improvements to Shaman kits",
+      "no": "Dynamically patches ALL shaman kits found in kitlist.2da at install time. Works with any mod-added shaman kits (F&P, Will of the Wisps' Witchlight, Spiritwalker, Dreadful Witch, etc.) as long as they are installed BEFORE this component.",
+      "pi": "A7-IMPROVED_SHAMANIC_DANCE-APPLY_TO_KITS",
+      "wf": "A7#ImprovedShamanicDance",
+      "wp": "A7#ImprovedShamanicDance\\A7#ImprovedShamanicDance.tp2",
+      "wc": 30,
+      "wq": "manual_final",
+      "cn": 30,
+      "x": 0,
+      "rd": 0
+    },
+    {
+      "n": "Shaman-specific items",
+      "tp2n": "Shaman-specific items",
+      "no": "Adds shaman-specific items: Soulherder's Staff +2 (Troll Mound), Dancing Shoes (Raelis Shai reward), Shroud of Souls (Kuo-toa priest). Usable by any shaman class/kit. Independent of cn:0.",
+      "pi": "A7-IMPROVED_SHAMANIC_DANCE-ITEMS",
+      "wf": "A7#ImprovedShamanicDance",
+      "wp": "A7#ImprovedShamanicDance\\A7#ImprovedShamanicDance.tp2",
+      "wc": 40,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 40,
+      "ss": 1,
+      "splstates": 1
+    }
+  ]
+}

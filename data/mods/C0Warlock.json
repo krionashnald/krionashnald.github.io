@@ -1,0 +1,278 @@
+{
+  "i": 323,
+  "t": "C0Warlock",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 90,
+  "c": "KIT & CLASS MODS",
+  "n": "Warlock Kit",
+  "no": "Adds Warlock as a new sorcerer-subclass with invocation-based casting. Detects EEex for enhanced actionbar and Bubb's Spell Menu for spell UI. Has Candlekeep Revisited crossmod. Single component with ini configuration.",
+  "conflicts": [],
+  "in": [
+    {
+      "t": "Fix DEMNABSU.bcs before installing: decompile, replace all 'CheckStatLT(LastSeenBy(Myself),1,)' with 'CheckStatLT(LastSeenBy(Myself),1,RESISTMAGIC)', recompile to override. EET's BG1 import creates invalid stat references that crash the Warlock mod's DECOMPILE_AND_PATCH.",
+      "type": "file"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWLK1",
+          "innate",
+          0,
+          "Evocation",
+          "Eldritch Blast",
+          "Base warlock attack dealing 1d6+1/2 levels."
+        ],
+        [
+          "YOURWLK2",
+          "innate",
+          0,
+          "Evocation",
+          "Hellfire Blast",
+          "Enhanced blast dealing fire damage."
+        ],
+        [
+          "YOURWLK3",
+          "innate",
+          0,
+          "Enchantment",
+          "Beguiling Influence",
+          "Charm and persuasion abilities."
+        ],
+        [
+          "YOURWLK4",
+          "innate",
+          0,
+          "Alteration",
+          "Dark One's Own Luck",
+          "Grants luck bonuses to saves."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "0": {
+      "WARLOCK1": {
+        "passive": [
+          {
+            "n": "Eldritch Blast",
+            "type": "desc",
+            "desc": "Ranged attack: 1d6 magic damage at lv1, +1d6 per 3 levels (max 14d6 at lv40). +4 to hit, can crit, no save (MR applies)."
+          },
+          {
+            "n": "Physical Resistance",
+            "type": "desc",
+            "desc": "+10% at lv5, +5% at lv15/25/35 (max 25% crush/slash/pierce/missile)"
+          },
+          {
+            "n": "Elemental Resistance",
+            "type": "desc",
+            "desc": "+10% at lv10/20/30/40 (max 40% acid/cold/electrical/fire/magical)"
+          },
+          {
+            "n": "Regeneration",
+            "type": "desc",
+            "desc": "1 HP/3 rounds (lv8), 1 HP/2 rounds (lv16), 1 HP/round (lv24)"
+          },
+          {
+            "n": "Deceive Item",
+            "type": "desc",
+            "desc": "Can use Mage scrolls at level 12"
+          },
+          {
+            "n": "Weapon Immunity",
+            "type": "desc",
+            "desc": "Immune to non-magical weapons at level 22"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Blast Shapes",
+            "freq": "at-will selection",
+            "effects": "Lv1: Eldritch Blast. Lv3: Hideous Blow (melee). Lv7: Spear (line). Lv9: Glaive (cone melee). Lv11: Chain (bounces). Lv15: Cone (AoE). Lv19: Doom (PBAoE).",
+            "level": 1
+          },
+          {
+            "n": "Invocations",
+            "freq": "learned via picks every 2 levels",
+            "effects": "4 tiers: Least (11 choices), Lesser (11), Greater (10), Dark (8). Mix of essences (modify blast) and utility (charm, summon, dispel, etc.).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "chain mail or lighter, bucklers only",
+          "alignment": "CG, CN, LE, NE, CE",
+          "items": "Max 1 proficiency slot in any weapon/style. Pick Pockets only (no other thief skills). Requires DEX 12, CON 12, CHA 16. Hit Die: d6."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "include": [
+            "Eldritch Pact",
+            "Eldritch Focus",
+            "Eldritch Paragon",
+            "Hellfire Pact",
+            "Hellfire Shield",
+            "Hellfire Blast",
+            "Extra Invocation I-IV",
+            "Call Fiend"
+          ],
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "Custom warlock HLA tree (Eldritch Pact path or Hellfire Pact path)"
+        },
+        "spellRestrictions": {
+          "note": "Cannot cast mage spells normally. Uses invocation system instead: Least/Lesser/Greater/Dark tier invocations learned via picks every 2 levels. Cannot learn from scrolls."
+        }
+      },
+      "WARLOCK2": {
+        "passive": [
+          {
+            "n": "Eldritch Blast",
+            "type": "desc",
+            "desc": "Ranged attack: 1d6 magic damage at lv1, +1d6 per 3 levels (max 14d6 at lv40). +4 to hit, can crit, no save (MR applies)."
+          },
+          {
+            "n": "Physical Resistance",
+            "type": "desc",
+            "desc": "+10% at lv5, +5% at lv15/25/35 (max 25% crush/slash/pierce/missile)"
+          },
+          {
+            "n": "Elemental Resistance",
+            "type": "desc",
+            "desc": "+10% at lv10/20/30/40 (max 40% acid/cold/electrical/fire/magical)"
+          },
+          {
+            "n": "Regeneration",
+            "type": "desc",
+            "desc": "1 HP/3 rounds (lv8), 1 HP/2 rounds (lv16), 1 HP/round (lv24)"
+          },
+          {
+            "n": "Deceive Item",
+            "type": "desc",
+            "desc": "Can use Mage scrolls at level 12"
+          },
+          {
+            "n": "Weapon Immunity",
+            "type": "desc",
+            "desc": "Immune to non-magical weapons at level 22"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Blast Shapes",
+            "freq": "at-will selection",
+            "effects": "Lv1: Eldritch Blast. Lv3: Hideous Blow (melee). Lv7: Spear (line). Lv9: Glaive (cone melee). Lv11: Chain (bounces). Lv15: Cone (AoE). Lv19: Doom (PBAoE).",
+            "level": 1
+          },
+          {
+            "n": "Invocations",
+            "freq": "learned via picks every 2 levels",
+            "effects": "4 tiers: Least (11 choices), Lesser (11), Greater (10), Dark (8). Mix of essences (modify blast) and utility (charm, summon, dispel, etc.).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "chain mail or lighter, bucklers only",
+          "alignment": "CG, CN, LE, NE, CE",
+          "items": "Max 1 proficiency slot in any weapon/style. Pick Pockets only (no other thief skills). Requires DEX 12, CON 12, CHA 16. Hit Die: d6."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "include": [
+            "Eldritch Pact",
+            "Eldritch Focus",
+            "Eldritch Paragon",
+            "Hellfire Pact",
+            "Hellfire Shield",
+            "Hellfire Blast",
+            "Extra Invocation I-IV",
+            "Call Fiend"
+          ],
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "Custom warlock HLA tree"
+        },
+        "spellRestrictions": {
+          "note": "Cannot cast mage spells normally. Uses invocation system instead: Least/Lesser/Greater/Dark tier invocations learned via picks every 2 levels. Cannot learn from scrolls."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "WARLOCK1",
+          "mage",
+          "Warlock #1",
+          "Arcane caster drawing power from pacts with otherworldly entities. Eldritch blast and invocations."
+        ],
+        [
+          "WARLOCK2",
+          "mage",
+          "Warlock #2",
+          "Warlock variant with different pact focus and invocation selection."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Warlock",
+  "a": "AionZ (Artemius_I)",
+  "v": "3.0",
+  "sum": "Adds the Warlock as a new class with its own invocation-based spellcasting system and multiple configuration options for spell progression.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Warlock"
+  },
+  "dl": "https://github.com/ArtemiusI/Warlock",
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Warlock Kit",
+      "tp2n": "Warlock Kit",
+      "cn": 0,
+      "wf": "C0Warlock",
+      "wp": "C0Warlock\\C0WARLOCK.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "INSTALL FAILURE RESOLVED: The DECOMPILE_AND_PATCH errors on demon scripts (DEMNABSU, DEMPITSU) and A7!GXRU were caused by Golem Construction installing BEFORE Spell Revisions. GC compiled BCS scripts with Detectable Spells stats (WIZARD_SPELL_IMMUNITY etc), then SR modified stats.ids removing those entries, leaving orphaned stat numbers. Moving GC to POST-TACTICAL TWEAKS fixes this. The Warlock mod itself is EET compatible — the issue was install order of other mods.",
+      "k": 2,
+      "sp": 4,
+      "kC": {
+        "mage": 2
+      }
+    }
+  ],
+  "advisories": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both add sorcerer variants. Should coexist as separate kits but ToF's sorcerer revisions may interact with Warlock's casting system.",
+      "myComps": "#0 Warlock Kit",
+      "theirComps": "#40925 Bloodlines for sorcerers #40950 Dragon Disciples",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

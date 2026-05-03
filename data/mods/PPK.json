@@ -1,0 +1,1112 @@
+{
+  "i": 915,
+  "t": "PPK",
+  "sv": 1,
+  "ord": 455,
+  "c": "KIT & CLASS MODS",
+  "n": "Prestige Kitpack",
+  "langs": {
+    "ko": 0,
+    "en": 1,
+    "fr": 2,
+    "ru": 3
+  },
+  "u": "https://github.com/Plutonium-X/KIT_Prestige",
+  "a": "Inesius",
+  "sum": "This mod adds a host of profiles (17 in all!) for all the classes in the game (which have them, of course):|- 3 fighter profiles: Legendary Dreadnought, Black Knight and Ssaulabi.|- 2 paladin profi...",
+  "tags": [
+    "kit"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Inesius",
+  "dl": "https://github.com/Plutonium-X/KIT_Prestige",
+  "no": "Prestige kitpack adding 17 kits across all classes: 3 fighter (Dreadnought, Blackguard, Ssaulabi), 2 cleric (Tempus, Ohgma), 1 paladin (Champion), 1 paladin/ranger (Mystic Fire), 1 ranger (Duelist with thief abilities), 1 ranger (Tempest), 1 thief (Trickster), 1 bard (Shadowdancer), 4 bard (Dragon Disciples by color), 1 druid (Elementalist), 1 druid (Shadowdruid). Korean, English, French, Russian.",
+  "kitAbilities": {
+    "1": {
+      "DREADNAU": {
+        "passive": [
+          {
+            "n": "Damage Bonus",
+            "type": "dmgPerLevel",
+            "rate": 5,
+            "value": 1,
+            "desc": "+1 damage per 5 levels"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Unmovable",
+            "freq": "innate",
+            "effects": "AC bonus + wing buffet immunity.",
+            "level": 1
+          },
+          {
+            "n": "Unstoppable",
+            "freq": "innate",
+            "effects": "Free action + bonus damage.",
+            "level": 1
+          },
+          {
+            "n": "Armor Skin",
+            "freq": "HLA, stackable 5x",
+            "effects": "Permanent physical resistance.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "ranged": false,
+          "items": "-2 DEX/INT/WIS/CHA. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "note": "No dual-class per research",
+        "statBonus": {
+          "dex": -2,
+          "note": "Innate stat modifiers: -2 DEX"
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "include": [
+            "Armor Skin (permanent physical resistance, stackable 5x)"
+          ],
+          "note": "Adds Armor Skin HLA to fighter pool"
+        }
+      }
+    },
+    "2": {
+      "BLACKGUA": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv6, x3 at lv14"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Summon Undead",
+            "freq": "1/day per 5 levels",
+            "effects": "Summons undead servant.",
+            "level": 1
+          },
+          {
+            "n": "Invisibility",
+            "freq": "innate",
+            "effects": "Self-invisibility.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Evil only",
+          "items": "Loses 1 reputation/level. Max 4 proficiency points."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "include": [
+            "Summon Fallen Deva"
+          ],
+          "note": "Adds Summon Fallen Deva HLA"
+        }
+      }
+    },
+    "3": {
+      "SSAULABI": {
+        "passive": [
+          {
+            "n": "Ranged Bonus",
+            "type": "desc",
+            "desc": "+1 ranged THAC0/dmg per 4 levels. Speed bonuses at 2/9/16."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Inward Eyes",
+            "freq": "innate",
+            "effects": "True Sight.",
+            "level": 1
+          },
+          {
+            "n": "Tracking",
+            "freq": "innate",
+            "effects": "Ranger Tracking.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "no plate",
+          "items": "No two-handed except bows. Max 3 prof (except bows)."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "No plate armor. Max 3 prof except bows."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "4": {
+      "TEMPPRST": {
+        "passive": [
+          {
+            "n": "Weapon Specialization",
+            "type": "desc",
+            "desc": "Can specialize (2 pips) in weapons"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Encouragement",
+            "freq": "innate",
+            "effects": "Party +2 THAC0/dmg/saves.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-lawful only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard cleric spellcasting."
+        },
+        "statBonus": {
+          "note": "Non-lawful only. Weapon specialization allowed."
+        }
+      }
+    },
+    "5": {
+      "OHGMPRST": {
+        "passive": [
+          {
+            "n": "Lore",
+            "type": "desc",
+            "desc": "+2 lore/level. Use Any Item at lv20."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Alchemy",
+            "freq": "innate",
+            "effects": "Potion creation.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-chaotic only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "include": [
+            "Alchemy"
+          ],
+          "note": "Adds Alchemy to cleric pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard cleric spellcasting. Use Any Item at lv20."
+        },
+        "statBonus": {
+          "note": "Non-chaotic only."
+        }
+      }
+    },
+    "6": {
+      "CHAMPION": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Smite Evil",
+            "freq": "innate",
+            "effects": "5 + 1/level bonus damage vs evil.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "ranged": false,
+          "noSpells": true,
+          "items": "3 prof points in weapons."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No paladin spellcasting. No ranged weapons."
+        },
+        "statBonus": {
+          "note": "Paladin requirements."
+        }
+      }
+    },
+    "7": {
+      "PYROMNCR": {
+        "passive": [
+          {
+            "n": "Magic Resistance",
+            "type": "mrPerLevel",
+            "value": 1,
+            "desc": "1% MR/level (cap 20%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Arcane Spells",
+            "freq": "innate",
+            "effects": "Gains Shield, Mirror Image, Lightning Bolt, Sunfire, Cone of Cold, Lower Resistance, True Sight, Contingency.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No standard paladin abilities except spells. No weapon style prof."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Arcane spells replace normal paladin abilities"
+        },
+        "hlaPool": {
+          "class": "PALADIN",
+          "include": [
+            "Use Any Item",
+            "Scribe Scroll",
+            "Alchemy"
+          ],
+          "note": "Adds Use Any Item/Scribe Scroll/Alchemy HLAs. Restricted standard paladin HLAs."
+        }
+      }
+    },
+    "8": {
+      "DUALISTS": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "desc",
+            "desc": "2 + 1 per 5 levels. +1 damage per 4 levels."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Acrobatic Attack",
+            "freq": "innate",
+            "effects": "THAC0/AC/save bonus.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "items": "No ranger abilities. Restricted weapon types."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "exclude": [
+            "Favored Enemy"
+          ],
+          "note": "Ranger HLA pool; no ranger abilities"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No ranger abilities or spells. Restricted weapon types."
+        },
+        "statBonus": {
+          "note": "No armor. Acrobatic combat style."
+        }
+      }
+    },
+    "9": {
+      "TEMPESTS": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "desc",
+            "desc": "+1 AC at 7/14/23. +0.5 APR at lv5. Removes dual-wield penalty at lv16."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Tempest",
+            "freq": "innate",
+            "effects": "AC, speed, double APR.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "no metallic",
+          "items": "Two-weapon style only. No Charm Animal, no ranger spells."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No Charm Animal, no ranger spells."
+        },
+        "statBonus": {
+          "note": "Two-weapon style only. No metallic armor."
+        }
+      }
+    },
+    "10": {
+      "TRICKSTE": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Blindness",
+            "freq": "1/day per 4 levels",
+            "effects": "Blinds target.",
+            "level": 1
+          },
+          {
+            "n": "Knock",
+            "freq": "1/day per 5 levels",
+            "effects": "Opens locks.",
+            "level": 1
+          },
+          {
+            "n": "Impromptu Backstab",
+            "freq": "1/day per 6 levels",
+            "effects": "Next attack counts as backstab.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": false,
+          "alignment": "Non-lawful",
+          "items": "-15 lockpicking/find traps. Backstab capped at x3."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "-15 lockpicking/find traps. Backstab capped at x3."
+        }
+      }
+    },
+    "11": {
+      "SHADOWDC": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Hide in Plain Sight",
+            "freq": "1/day per 5 levels",
+            "effects": "Hide while observed.",
+            "level": 1
+          },
+          {
+            "n": "Summon Shadows",
+            "freq": "1/day per 6 levels",
+            "effects": "Scaling shadow summons.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-lawful/good",
+          "items": "-1 CHA or CON per 5 levels."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": -1,
+          "note": "Innate stat modifiers: -1 CHA"
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Bard-based kit (non-standard Shadowdancer)"
+        },
+        "spellRestrictions": {
+          "note": "Bard-style kit with shadow abilities."
+        }
+      }
+    },
+    "12": {
+      "RDRAGOND": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 3,
+            "value": 1,
+            "desc": "+1 AC per 3 levels"
+          },
+          {
+            "n": "Fire Resistance",
+            "type": "desc",
+            "desc": "+6% fire resist/level (cap 100%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dragon Breath",
+            "freq": "1/day",
+            "effects": "6d10 fire at lv20.",
+            "level": 20
+          }
+        ],
+        "restrictions": {
+          "items": "No bard HLAs. Half lore. -1 spell slot/level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "resistBonus": {
+          "fire": "scales +6% per level, max 100%",
+          "note": "+6% fire resistance per level (cap 100%)"
+        },
+        "spellRestrictions": {
+          "note": "Bard kit gains: Burning Hands, Agannazar's Scorcher, Fireball. Half lore. -1 spell slot/level."
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "No bard HLAs per research"
+        }
+      }
+    },
+    "13": {
+      "BDRAGOND": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 3,
+            "value": 1,
+            "desc": "+1 AC per 3 levels"
+          },
+          {
+            "n": "Lightning Resistance",
+            "type": "desc",
+            "desc": "+6% lightning resist/level (cap 100%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dragon Breath",
+            "freq": "1/day",
+            "effects": "6d10 lightning at lv20.",
+            "level": 20
+          }
+        ],
+        "restrictions": {
+          "items": "No bard HLAs. Half lore. -1 spell slot/level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "resistBonus": {
+          "electricity": "scales +6% per level, max 100%",
+          "note": "+6% electricity resistance per level (cap 100%)"
+        },
+        "spellRestrictions": {
+          "note": "Bard kit gains: Shocking Grasp, Lightning Bolt, Call Lightning. Half lore. -1 spell slot/level."
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "No bard HLAs per research"
+        }
+      }
+    },
+    "14": {
+      "GDRAGOND": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 3,
+            "value": 1,
+            "desc": "+1 AC per 3 levels"
+          },
+          {
+            "n": "Acid Resistance",
+            "type": "desc",
+            "desc": "+6% acid resist/level (cap 100%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dragon Breath",
+            "freq": "1/day",
+            "effects": "6d10 acid at lv20.",
+            "level": 20
+          }
+        ],
+        "restrictions": {
+          "items": "No bard HLAs. Half lore. -1 spell slot/level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "resistBonus": {
+          "acid": "scales +6% per level, max 100%",
+          "note": "+6% acid resistance per level (cap 100%)"
+        },
+        "spellRestrictions": {
+          "note": "Bard kit gains: Chromatic Orb, Melf's Acid Arrow, Contagion. Half lore. -1 spell slot/level."
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "No bard HLAs per research"
+        }
+      }
+    },
+    "15": {
+      "WDRAGOND": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 3,
+            "value": 1,
+            "desc": "+1 AC per 3 levels"
+          },
+          {
+            "n": "Cold Resistance",
+            "type": "desc",
+            "desc": "+6% cold resist/level (cap 100%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dragon Breath",
+            "freq": "1/day",
+            "effects": "6d10 cold at lv20.",
+            "level": 20
+          }
+        ],
+        "restrictions": {
+          "items": "No bard HLAs. Half lore. -1 spell slot/level."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "resistBonus": {
+          "cold": "scales +6% per level, max 100%",
+          "note": "+6% cold resistance per level (cap 100%)"
+        },
+        "spellRestrictions": {
+          "note": "Bard kit gains: Chill Touch, Slow, Ice Storm. Half lore. -1 spell slot/level."
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "exclude": [
+            "Enhanced Bard Song"
+          ],
+          "note": "No bard HLAs per research"
+        }
+      }
+    },
+    "16": {
+      "ELEMLIST": {
+        "passive": [
+          {
+            "n": "Elemental Resistance",
+            "type": "desc",
+            "desc": "+10% all elemental resist at lv8 and lv13"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Conjure Elementals",
+            "freq": "innate",
+            "effects": "Lesser elemental summons. Elemental Assimilation forms.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No druidic shapechange. Reduced max HP."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Druid spellcasting + bonus elemental summons. No standard druidic shapechange."
+        },
+        "statBonus": {
+          "note": "Reduced max HP."
+        }
+      }
+    },
+    "17": {
+      "SHDWDRUD": {
+        "passive": [
+          {
+            "n": "Combat Progression",
+            "type": "desc",
+            "desc": "Weapon specialization. Progressive dmg/THAC0/stat bonuses. +5% phys resist/7 levels. +0.5 APR at 8 and 16."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ascension",
+            "freq": "innate",
+            "effects": "3-round invulnerability, extends at higher levels.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather max",
+          "items": "No metallic weapons. No magic items except weapons/armor. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "note": "No dual-class per research",
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Druid spellcasting."
+        },
+        "statBonus": {
+          "note": "Weapon specialization. Leather max. No magic items except weapons/armor."
+        }
+      }
+    }
+  },
+  "kits": {
+    "1": {
+      "new": [
+        [
+          "DREADNAU",
+          "fighter",
+          "Dreadnought",
+          "Ultimate foot soldier focused on sheer combat prowess and destruction."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "BLACKGUA",
+          "fighter",
+          "Blackguard",
+          "Evil black knight consorting with demons and dark deities."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "SSAULABI",
+          "fighter",
+          "Ssaulabi",
+          "Bow specialist with traditional meditation abilities."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "TEMPPRST",
+          "cleric",
+          "Priest of Tempus",
+          "War priest with no fear of battle, true warrior and reliable healer."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "OHGMPRST",
+          "cleric",
+          "Priest of Ohgma",
+          "Knowledge priest with wide-ranging support abilities."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "CHAMPION",
+          "paladin",
+          "Champion",
+          "Holy warrior serving any deity regardless of alignment."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "PYROMNCR",
+          "paladin",
+          "Mystic Fire",
+          "Servant of Mystra with natural arcane magic disposition."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "DUALISTS",
+          "ranger",
+          "Duelist",
+          "Nimble fighter using light weapons and reflexes over armor."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "TEMPESTS",
+          "ranger",
+          "Tempest",
+          "Two-weapon fighting specialist focused on destruction."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "TRICKSTE",
+          "thief",
+          "Trickster",
+          "Spell-using rogue focused on stealth and mobility."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "SHADOWDC",
+          "bard",
+          "Shadowdancer",
+          "Shadow-wielding performer with teleportation and hiding abilities."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "RDRAGOND",
+          "bard",
+          "Red Dragon Disciple",
+          "Sorcerer/bard channeling red dragon blood."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "BDRAGOND",
+          "bard",
+          "Blue Dragon Disciple",
+          "Sorcerer/bard channeling blue dragon blood."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "GDRAGOND",
+          "bard",
+          "Green Dragon Disciple",
+          "Sorcerer/bard channeling green dragon blood."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "WDRAGOND",
+          "bard",
+          "White Dragon Disciple",
+          "Sorcerer/bard channeling white dragon blood."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "ELEMLIST",
+          "druid",
+          "Elementalist",
+          "Druid skilled in manipulating natural elements and spirits."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "SHDWDRUD",
+          "druid",
+          "Shadowdruid",
+          "Extremist druid plotting to naturalize civilization."
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Prestige Kit Pack Basic",
+      "cn": 0,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Dreadnought",
+      "cn": 1,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Blackguard",
+      "cn": 2,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Ssaulabi",
+      "cn": 3,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Priest of Tempus",
+      "cn": 4,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "n": "Priest of Ohgma",
+      "cn": 5,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "n": "Champion",
+      "cn": 6,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "kC": {
+        "paladin": 1
+      }
+    },
+    {
+      "n": "Mystic Fire",
+      "cn": 7,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "kC": {
+        "paladin": 1
+      }
+    },
+    {
+      "n": "Duelist",
+      "cn": 8,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Tempest",
+      "cn": 9,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Trickster",
+      "cn": 10,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Shadowdancer",
+      "cn": 11,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Red Dragon Disciple",
+      "cn": 12,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Blue Dragon Disciple",
+      "cn": 13,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Green Dragon Disciple",
+      "cn": 14,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "White Dragon Disciple",
+      "cn": 15,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Elementalist",
+      "cn": 16,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "n": "Shadowdruid",
+      "cn": 17,
+      "wf": "PPK",
+      "wp": "PPK\\Setup-PPK.tp2",
+      "wc": 17,
+      "wq": "verified",
+      "kC": {
+        "druid": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "Plutonium-X",
+    "r": "KIT_Prestige"
+  }
+}

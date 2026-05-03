@@ -1,0 +1,183 @@
+{
+  "i": 294,
+  "t": "zgmagic",
+  "sv": 1,
+  "pfx": "ZG",
+  "ord": 200,
+  "c": "SPELL MODS",
+  "n": "Random Graion Magic",
+  "no": "Random Graion Magic by GraionDilach. SR companion mod — all components require Spell Revisions. Restores SR-removed spells and tweaks SR spell behavior. Uses ClassSpellTool for cn:100/115 (install after kit mods). Active mod (v0.12, Dec 2025). Not extracted — needs downloading.",
+  "spl": {
+    "0": {
+      "spells": [
+        [
+          "SPWI510",
+          "modify",
+          "Restores Spell Immunity as separate purchasable spell (SR fix)"
+        ]
+      ]
+    },
+    "1": {
+      "spells": [
+        [
+          "SPWI606",
+          "modify",
+          "Restores unnerfed True Sight as level 6 True Vision (SR fix)"
+        ]
+      ]
+    },
+    "2": {
+      "spells": [
+        [
+          "SPPR104",
+          "tweak",
+          "Cure Light Wounds always heals maximum dice"
+        ],
+        [
+          "SPPR304",
+          "tweak",
+          "Cure Medium Wounds always heals maximum dice"
+        ],
+        [
+          "SPPR405",
+          "tweak",
+          "Cure Serious Wounds always heals maximum dice"
+        ],
+        [
+          "SPPR503",
+          "tweak",
+          "Cure Critical Wounds always heals maximum dice"
+        ]
+      ]
+    },
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURZG01",
+          "wizard",
+          6,
+          "Conjuration",
+          "Conjure Water Elemental",
+          "Fixes missing Conjure Water Elemental when SR installed before IWD spells."
+        ]
+      ]
+    },
+    "4": {
+      "spells": [
+        [
+          "SPPR213",
+          "modify",
+          "Restores Slow Poison's poison-curing effect (SR changes it)"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/GraionDilach/RandomGraionMagic",
+  "a": "GraionDilach",
+  "v": "0.12",
+  "sum": "Random magic/spell (tweaks) by Graion Dilach for the Infinity Engine.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "GraionDilach",
+    "r": "RandomGraionMagic"
+  },
+  "dl": "https://github.com/GraionDilach/RandomGraionMagic",
+  "au": "Graion Dilach",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Add back Spell Immunity against Spell Revisions [ClassSpellTool]",
+      "tp2n": "Add back Spell Immunity against Spell Revisions [ClassSpellTool]",
+      "pi": "ZG-MAGIC-SI4SPELLREV",
+      "wf": "zgmagic",
+      "wp": "zgmagic\\zgmagic.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 100,
+      "wc": 100,
+      "no": "Restores Spell Immunity as a separate purchasable spell when using Spell Revisions. REQUIRES SR cn:0. HARD FAIL: 'MEWI5.TXT not found in KEY file' — same ClassSpellTool cascade issue as Shadow Magic cn:3. Transitions cn:0 triggers cascade that kills MEWI files. WORKAROUND: manually copy MEWI*.txt and MEPR*.txt from any ClassSpellTool mod's no_overwrite/ into override before this component runs."
+    },
+    {
+      "n": "Add back vanilla True Sight as a level higher spell against Spell Revisions [ClassSpellTool]",
+      "tp2n": "Add back vanilla True Sight as a level higher spell against Spell Revisions [ClassSpellTool]",
+      "pi": "ZG-MAGIC-TRUESIGHT4SPELLREV",
+      "wf": "zgmagic",
+      "wp": "zgmagic\\zgmagic.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 115,
+      "wc": 115,
+      "no": "Restores unnerfed True Sight as level 6 'True Vision' alongside SR's nerfed version. REQUIRES SR cn:0. HARD FAIL: same MEWI5.TXT ClassSpellTool cascade issue as cn:100. Same workaround applies."
+    },
+    {
+      "n": "Maximize Cure Wounds' effect in Spell Revisions",
+      "tp2n": "Maximize Cure Wounds' effect in Spell Revisions",
+      "pi": "ZG-MAGIC-SR-MAXIMIZE-CURE-WOUNDS",
+      "wf": "zgmagic",
+      "wp": "zgmagic\\zgmagic.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 120,
+      "wc": 120,
+      "no": "Cure Wounds spells always heal maximum dice (e.g. Cure Light Wounds always heals 8+bonus instead of 1d8+bonus). REQUIRES SR cn:0. Significant power boost to healing — removes RNG from curing."
+    },
+    {
+      "n": "Install Spell Revisions standard Conjure Water Elemental when IWD spells from IWDification/SCS are installed",
+      "tp2n": "Install Spell Revisions standard Conjure Water Elemental when IWD spells from IWDification/SCS are installed",
+      "pi": "ZG-CWE-4-SRnIWD-SCS",
+      "wf": "zgmagic",
+      "wp": "zgmagic\\zgmagic.tp2",
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 125,
+      "wc": 125,
+      "no": "Fixes missing Conjure Water Elemental (level 6) when SR is installed before IWD spells. OBSOLETE: This bug was fixed in SCS v35, Talents of Faerun, and IWDification v6. Not needed with current versions.",
+      "sp": 1
+    },
+    {
+      "cn": 131,
+      "n": "Restore Slow Poison's Poison-Curing Effect",
+      "tp2n": "Restore older functionality to Slow Poison so that it cures poison instead of slowing it down",
+      "wc": 131,
+      "wf": "zgmagic",
+      "wp": "zgmagic\\zgmagic.tp2",
+      "no": "Restores Slow Poison to cure poison instead of just slowing it (SR changes it to only slow). Requires EE Fixpack. REQUIRES SR cn:0.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "i": 845,
+  "t": "CluAreas",
+  "sv": 1,
+  "ord": 140,
+  "c": "POST EET",
+  "n": "CluAreas",
+  "langs": {
+    "fr": 0,
+    "zh-cn": 1
+  },
+  "u": "https://github.com/The-Gate-Project/CluAreas/",
+  "a": "JohnBob",
+  "sum": "This mod translates the CheatsAreas available via the CLUA console, including those added by other mods.",
+  "tags": [
+    "fix"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/The-Gate-Project/CluAreas/",
+  "no": "This mod translates the CheatsAreas available via the CLUA console, including those added by other mods.",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Voulez-vous simplement traduire les cartes initialement accessibles dans la CLUAConsole ?",
+      "cn": 12,
+      "wf": "CluAreas",
+      "wp": "CluAreas\\CluAreas.tp2",
+      "wc": 12,
+      "wq": "lcc-github",
+      "g": "Area Access Mode",
+      "no": "Only translate vanilla CLUAConsole areas"
+    },
+    {
+      "n": "Voulez-vous acceder a toutes les cartes du jeu ainsi qu'aux extensions pendant la campagne principale ?",
+      "cn": 13,
+      "wf": "CluAreas",
+      "wp": "CluAreas\\CluAreas.tp2",
+      "wc": 13,
+      "wq": "lcc-github",
+      "g": "Area Access Mode",
+      "no": "Access all game and expansion areas during campaign"
+    },
+    {
+      "n": "\"AREAS CHEATS\" pour les cartes ajoutees par des mods",
+      "cn": 11,
+      "wf": "CluAreas",
+      "wp": "CluAreas\\CluAreas.tp2",
+      "wc": 11,
+      "wq": "lcc-github",
+      "no": "Add CLUAConsole entries for mod-added areas"
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "CluAreas"
+  }
+}

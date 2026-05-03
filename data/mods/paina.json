@@ -1,0 +1,97 @@
+{
+  "i": 177,
+  "t": "Paina",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 540,
+  "c": "NEW NPC MODS",
+  "n": "Pai'Na NPC",
+  "no": "Pai'Na TN Female Half-Elf (Half-Drow) Druid (Hivemaster).Install Pai'Na after Unfinished Business for BG2, Sirene for BG2 and Will of the Wisps.Install Pai'Na before Mazzy Megamod.",
+  "conflicts": [
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "partial",
+      "reason": "Select one spider hive mod",
+      "myComps": "#0 Pai'Na NPC",
+      "theirComps": "#5 The Pai'Na/Spider's Bane Quest",
+      "source": "eemodsetup"
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "PAINA_NPC_FOR_BGEE",
+          "npc",
+          "Spider Priestess: Pai'Na",
+          "Chitine cleric/thief companion with spider summoning and web abilities."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "paina",
+          "portraits/paina/paina.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Pai-Na-NPC-mod-for-BG2-EE",
+  "a": "Artemius_I",
+  "sum": "Makes Pai'Na, the spider-loving drow from the graveyard, into a joinable BG2 NPC with dialogue and banters.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Pai-Na-NPC-mod-for-BG2-EE"
+  },
+  "au": "AionZ",
+  "dl": "https://github.com/ArtemiusI/Pai-Na-NPC-mod-for-BG2-EE",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "PAINA_NPC_FOR_BGEE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Chitine cleric/thief companion with spider summoning and web abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "co": [
+    {
+      "n": "Pai'Na NPC for BG:EE",
+      "cn": 0,
+      "wf": "paina",
+      "wp": "paina\\Paina.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Pai'Na NPC for BG2:EE"
+    }
+  ]
+}

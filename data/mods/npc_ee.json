@@ -1,0 +1,310 @@
+{
+  "i": 447,
+  "t": "npc_ee",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 330,
+  "c": "NPC CUSTOMIZATION",
+  "n": "NPC Enhanced Edition Adjustments",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Seems a more sane progression than EETTweaks', and must be installed after. Can overwrite Selphira Tweaks' Subtledoctor's NPC EE don't mix with SCS/ToF's Improved NPC customisation and management. Pick one or the other (The customization item - a book - also works on any character that can join the party!)Install NPC EE after EET_End!Install NPC EE before Dual to Kit!NPC EE is incompatible with the Improved NPC Cust...",
+  "ic": "Level 1 NPCs, stratagems:4100:Improved NPC customisation",
+  "conflicts": [
+    {
+      "with": "S9BGEENPCTWEAKS",
+      "withId": 510,
+      "severity": "soft",
+      "reason": "Functionality provided by NPC EE (per II install notes)",
+      "myComps": "#2000 NPC class/stat/kit choices",
+      "theirComps": "#3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments #14 Dual-class stats"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS NPC customization overlaps with NPC EE; pick one",
+      "myComps": "#1010 #1020 #1030 #1200 Remove dual-class flags #2000 NPC choices",
+      "theirComps": "#4100 Improved NPC customization #4115 Thief skill multiples of five"
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "hard",
+      "reason": "Both change Viconia's class/kit. Choose one method.",
+      "myComps": "#583",
+      "theirComps": "#0, #1, #2, #3, #4, #10, #11, #12, #13, #14, #15",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "hard",
+      "reason": "Both change Neera's class/kit. Choose one method.",
+      "myComps": "#621",
+      "theirComps": "#540, #541, #542, #543, #544, #545 Neera class changes",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "hard",
+      "reason": "Choose class/kit for Branwen",
+      "myComps": "#242",
+      "theirComps": "#600",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "hard",
+      "reason": "Choose class/kit for Imoen",
+      "myComps": "#102, #104; #761, #762; #161; #722, #723, #724",
+      "theirComps": "#1400, #1410, #1411, #1412, #1413, #1414, #1415, #1416, #1417, #2200, #2300, #2500, #2510, #2511, #2512, #2513, #2514, #2515, #2516, #2517",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Choose one Montaron kit change. NPC_EE #321 (within #2000) provides in-game class/kit choices. cdtweaks #4090 (Make Montaron an Assassin) hard-codes at install time. Use NPC_EE for flexibility.",
+      "myComps": "#321 (Montaron kit, part of #2000)",
+      "theirComps": "#4090 Make Montaron an Assassin",
+      "source": "Component-level conflict. NPC_EE provides runtime choice via in-game item; cdtweaks forces at install. Not both simultaneously, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Xan",
+      "withId": 142,
+      "severity": "partial",
+      "reason": "Choose one Xan class change. NPC_EE #482-484 provides in-game class choices. Standalone Xan mod has install-time class components (F/M, Mage, Sorcerer, Wild Mage). Use standalone Xan's class choices for the dedicated Xan experience — much richer content.",
+      "myComps": "#482, #483, #484 (Xan kit, part of #2000)",
+      "theirComps": "#1 Fighter/Mage / #2 Mage / #3 Sorcerer / #4 Wild Mage",
+      "source": "Component-level conflict. NPC_EE provides runtime choice; Xan standalone provides install-time with integrated content. Use standalone Xan for full experience, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "l#khalidbg2ee",
+      "withId": 146,
+      "severity": "hard",
+      "reason": "Choose class/kit for Jaheira",
+      "myComps": "#121; #141, #143",
+      "theirComps": "Khalid for BG2EE, #3, #4; Khalid for BG2EE, #2, #3, #4",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "NPC_EE cn:2000 adds a customization tome (d5_ckit) to NPC inventory for runtime kit/class/stat changes via dialogue. ToF cn:60300 uses the SFO leveller to zero NPC levels/XP/skills at install time but does NOT remove inventory items — the tome persists and works after level reset. NPC_EE cn:1010-1200 (Remove dual-class flags) modify CRE dual-class bytes which ToF does not touch. Coexist safely. Install NPC_EE before ToF.",
+      "myComps": "#2000 NPC class/stat/kit choices #1010 #1020 #1030 #1200 Remove dual-class flags",
+      "theirComps": "#60300 NPC customisation (leveller)",
+      "orderOnly": true,
+      "source": "NPC_EE adds item to inventory; ToF zeros level/XP/skills but not inventory; CRE offset 0x280+ items persist, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HIDEKT",
+      "withId": 691,
+      "severity": "hard",
+      "reason": "Both modify NPC kits. Hidden Kits replaces CRE files wholesale, overwriting npc_ee changes.",
+      "myComps": "#2000 NPC class/stat/kit choices",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "eet",
+      "requiresId": 12,
+      "type": "hard",
+      "reason": "Alora class/kit customization requires Alora in game — auto-satisfied by EET (Alora is a BG1 NPC merged into EET)",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "branwen",
+      "requiresId": 456,
+      "type": "soft",
+      "reason": "Branwen class/kit for BG1 or BG2",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "coran",
+      "requiresId": 141,
+      "type": "hard",
+      "reason": "Coran class/kit for BG1 or BG2",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "Xan",
+      "requiresId": 142,
+      "type": "hard",
+      "reason": "Xan class/kit for BG1 or BG2",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "Fade",
+      "requiresId": 166,
+      "type": "soft",
+      "reason": "Kit Tweak needs NPC mod",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "Alora",
+      "requiresId": 139,
+      "type": "soft",
+      "reason": "Alora class/kit for BG1 or BG2",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "requires": "l#khalidbg2ee",
+      "requiresId": 146,
+      "type": "soft",
+      "reason": "Khalid class/kit for BG1 or BG2",
+      "myComps": "#2000 NPC class/stat/kit choices"
+    }
+  ],
+  "u": "https://github.com/UnearthedArcana/NPC_EE/releases",
+  "a": "Subtledoctor",
+  "v": "6.5.5",
+  "sum": "Adjusts original NPCs with 5 enhancement options: stat corrections, equipment changes, and ability improvements for Bioware companions.",
+  "tags": [
+    "tweak",
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "NPC_EE"
+  },
+  "ki": [
+    {
+      "pattern": "SCS.*UI.*level.up|level.up.*book.*SCS|kit.book.*not.work",
+      "severity": "warning",
+      "category": "caution",
+      "description": "NPC_EE level-up books may stop working when SCS UI components are installed. maurvir (G3, Jan 2026) confirmed removing SCS UI mods fixed the issue. Also reported: every creature in game gets an NPC kit book in megamod installs (keturidu, Jan 2026) — suspected interaction with EEFP v3 or large mod lists.",
+      "workaround": "If level-up books don't work, try removing SCS UI-related components. For kit books appearing on all creatures, check install order and mod count.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/27526-subtlemods-npc_ee-in-game-customization-for-npcs/page/27/",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "pattern": "shaman.*druid.*kit|druid.*kit.*shaman|class.*switch.*shaman",
+      "severity": "warning",
+      "category": "caution",
+      "description": "When using NPC_EE to switch a character to Shaman class, it displays druid kits instead of installed mod shaman kits (Witchlight Shaman, Dreadful Witch, Warhorn Shaman, etc.). Bug reported in 2023 by moggadeet, confirmed still present by docbeard (Feb 2026).",
+      "workaround": "No fix available. Use Near Infinity to manually edit the save game if needed.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/27526-subtlemods-npc_ee-in-game-customization-for-npcs/page/27/"
+    }
+  ],
+  "au": "Subtledoctor",
+  "dl": "https://github.com/UnearthedArcana/NPC_EE/releases",
+  "co": [
+    {
+      "n": "Remove dual-class flag from Imoen (warning, see Readme)",
+      "pi": "D5_IMOEN_NOT_DUAL",
+      "wf": "npc_ee",
+      "wp": "npc_ee\\NPC_EE.TP2",
+      "wc": 1010,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 1010,
+      "tp2n": "Remove dual-class flag from Imoen (warning, see Readme)"
+    },
+    {
+      "n": "Remove dual-class flag from Nalia (warning, see Readme)",
+      "pi": "D5_NALIA_NOT_DUAL",
+      "wf": "npc_ee",
+      "wp": "npc_ee\\NPC_EE.TP2",
+      "wc": 1020,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 1020,
+      "tp2n": "Remove dual-class flag from Nalia (warning, see Readme)"
+    },
+    {
+      "n": "Remove dual-class flag from Anomen (warning, see Readme)",
+      "pi": "D5_ANOMEN_NOT_DUAL",
+      "wf": "npc_ee",
+      "wp": "npc_ee\\NPC_EE.TP2",
+      "wc": 1030,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 1030,
+      "tp2n": "Remove dual-class flag from Anomen (warning, see Readme)"
+    },
+    {
+      "n": "Remove dual-class flag from all other NPCs (warning, see Readme)",
+      "pi": "D5_OTHER_NPCS_NOT_DUAL",
+      "wf": "npc_ee",
+      "wp": "npc_ee\\NPC_EE.TP2",
+      "wc": 1200,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 1200,
+      "tp2n": "Remove dual-class flag from all other NPCs (warning, see Readme)"
+    },
+    {
+      "n": "NPC class/stat/kit choices",
+      "no": "only useful when installing a NPC mod with dual class that you'll want to relevel",
+      "pi": "D5_NPC_CUSTOMIZATION",
+      "wf": "npc_ee",
+      "wp": "npc_ee\\NPC_EE.TP2",
+      "wc": 2000,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 2000,
+      "tp2n": "NPC class/stat/kit choices"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "partial",
+      "reason": "T&B Revised Dragon Disciples (#20) rewrites the DD kit. NPC_EE components #181, #724, #102, #484, #621 assign kits to specific NPCs. If both are installed, NPC_EE may assign the unrevised DD kit version. Install T&B before NPC_EE.",
+      "myComps": "#181, #724, #102, #484, #621 (NPC-specific kit assignments)",
+      "theirComps": "#20 Revised Dragon Disciples",
+      "source": "Component-level conflict. T&B modifies kit definition; NPC_EE assigns kits to NPCs. Load order resolves, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

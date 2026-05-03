@@ -1,0 +1,61 @@
+{
+  "i": 301,
+  "t": "dsr",
+  "sv": 1,
+  "ord": 80,
+  "c": "SPELL MODS",
+  "n": "Demon Summoning Ritual",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "it": 3,
+    "de": 4,
+    "zh-cn": 5
+  },
+  "no": "Unnecesary with other spell revisions Demon-summoning ritual",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDEMON1",
+          "wizard",
+          8,
+          "Conjuration",
+          "Demon Summoning Ritual",
+          "Elaborate ritual summons a powerful demon ally."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/DemonSummoningRitual/releases",
+  "a": "Tin, GwendolyneFreddy",
+  "v": "v8.0.0",
+  "sum": "This is a demon summoning ritual book, which is in possession of the master wizard Tolgerias (Planar sphere/Slums).",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "DemonSummoningRitual"
+  },
+  "dl": "https://github.com/SpellholdStudios/DemonSummoningRitual/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Demon-summoning ritual (WeiDU)",
+      "tp2n": "Demon-summoning ritual (WeiDU)",
+      "cn": 0,
+      "wf": "dsr",
+      "wp": "dsr\\DSR.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Adds a demon summoning ritual spell. Simple spell addition, low conflict risk",
+      "sp": 1
+    }
+  ]
+}

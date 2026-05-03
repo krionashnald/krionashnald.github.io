@@ -1,0 +1,146 @@
+{
+  "i": 660,
+  "t": "SeducerKit",
+  "sv": 1,
+  "ord": 320,
+  "c": "KIT & CLASS MODS",
+  "n": "Seducer Kit",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "SEDUCER_FOR_THIEVES": {
+        "passive": [
+          {
+            "n": "Charisma",
+            "type": "desc",
+            "desc": "+1 Charisma"
+          },
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "charm",
+              "domination"
+            ],
+            "desc": "Immune to charm and domination"
+          },
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+1 save vs. spells at lv1, then every 5 levels"
+          },
+          {
+            "n": "AC Bonus",
+            "type": "desc",
+            "desc": "+1 AC vs. melee at lv1, then every 6 levels"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Domination",
+            "freq": "at-will",
+            "effects": "Single target, 1d3 rounds. Save penalty scales from +4 (lv1) to -10 (lv45). Caster takes -3 AC and -25% movement for 1 round.",
+            "level": 1
+          },
+          {
+            "n": "Charm",
+            "freq": "at-will",
+            "effects": "Multi-target (2 at lv1, +1 per 10 levels). Save from +7 (lv1) to -5 (lv49).",
+            "level": 1
+          },
+          {
+            "n": "Seduction",
+            "freq": "at-will",
+            "effects": "Recruits a charmed/dominated target to the party. Target max half caster level.",
+            "level": 1
+          },
+          {
+            "n": "Betrayal",
+            "freq": "at-will",
+            "effects": "Backstab enhancement: instant death on failed save vs death (-2, -1 per 4 levels). Min 2d6 scaling damage.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "noBackstab": false,
+          "items": "Only 15 skill pts/level. Cannot detect or set traps. Backstab capped at x2. d4 HP/level. No Use Any Item HLA. Requires INT 13, WIS 15, CHA 17 for dual-class."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "include": [
+            "Psionic Lock",
+            "Psionic Invisibility",
+            "Psionic Breach",
+            "Psionic Teleportation",
+            "Psionic Time Stop",
+            "Psionic Foresight"
+          ],
+          "exclude": [
+            "Use Any Item"
+          ],
+          "note": "Psionic HLAs replace standard thief HLAs per research"
+        },
+        "statBonus": {
+          "cha": 1,
+          "note": "+1 Charisma (per research)"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "SEDUCER_FOR_THIEVES",
+          "thief",
+          "Seducer",
+          "Charming thief using beauty and persuasion. Enhanced charm and deception abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://forums.beamdog.com/discussion/63566/seducer-kit-for-thieves-v1-21",
+  "a": "semiticgoddess",
+  "sum": "Adds a Seducer thief kit focused on charm and domination abilities to control enemies, balanced by severe combat vulnerabilities and loss of standard thief skills.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/63566/seducer-kit-for-thieves-v1-21",
+  "langs": {
+    "en": 0
+  },
+  "no": "Adds a Seducer thief kit focused on charm and domination abilities to control enemies, balanced by severe combat vulnerabilities and loss of standard thief skills.",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Seducer Kit for Thieves",
+      "tp2n": "Seducer Kit for Thieves",
+      "cn": 0,
+      "wf": "SEDUCERKIT",
+      "wp": "SEDUCERKIT\\SEDUCERKIT.TP2",
+      "wc": 0,
+      "k": 1,
+      "no": "Seducer thief kit. Mind-controlling infiltrator who casts charm, domination, and seduction spells instead of backstabbing. Cannot use armor or traps effectively.",
+      "kC": {
+        "thief": 1
+      }
+    }
+  ]
+}

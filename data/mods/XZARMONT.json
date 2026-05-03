@@ -1,0 +1,93 @@
+{
+  "i": 487,
+  "t": "XZARMONT",
+  "sv": 1,
+  "ord": 720,
+  "c": "NEW NPC MODS",
+  "n": "Return of Xzar and Montaron",
+  "langs": {
+    "en": 0,
+    "pt": 1
+  },
+  "no": "Bring back Xzar and Montaron as companions",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Xzar/Montaron in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "myComps": "#0 Return of Xzar and Montaron (main)",
+      "theirComps": "#45 Xzar and Monty Murder Mysteries",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "RETURN_OF_XZAR_AND_MONTARON",
+          "npc",
+          "Zhentarim Agent: Xzar & Montaron",
+          "Custom kit for the returned Zhentarim pair. Necromancer and assassin duo."
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/the-return-of-xzar-and-montaron/",
+  "a": "Lava Del'Vortel",
+  "v": "v1.5",
+  "sum": "Quest mod allowing players to resurrect Xzar and Montaron as full companions, featuring new quests, banters, and a non-traditional romance path for Montaron.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/",
+  "kitAbilities": {
+    "0": {
+      "RETURN_OF_XZAR_AND_MONTARON": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Custom kit for the returned Zhentarim pair. Necromancer and assassin duo."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "pt": false,
+  "co": [
+    {
+      "n": "Return of Xzar and Montaron (main)",
+      "no": "Discovered from web. Component details need verification.",
+      "wf": "XzarAndMontaron",
+      "wp": "XzarAndMontaron\\XzarAndMontaron.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "The Return of Xzar and Montaron"
+    },
+    {
+      "n": "Player-Initiated Dialogues",
+      "cn": 1,
+      "x": 0,
+      "pi": "L#-XzarAndMontaron-PIDs",
+      "wf": "XzarAndMontaron",
+      "wp": "XzarAndMontaron\\XzarAndMontaron.tp2",
+      "tp2n": "The Return of Xzar and Montaron - Player-Initiated Dialoges"
+    }
+  ]
+}

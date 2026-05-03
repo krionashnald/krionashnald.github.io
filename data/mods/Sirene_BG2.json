@@ -1,0 +1,205 @@
+{
+  "i": 175,
+  "t": "Sirene_BG2",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 530,
+  "c": "NEW NPC MODS",
+  "n": "Sirene NPC",
+  "no": "Skitia Lava and Artemius npcs in any order but together and after older ones waiting for the big update Sirene and Pai'na have custom kits (Martyr and Hivemaster) that Artisan's Kitpack can expand later Sirene BG2 Paladin, custom Martyr kit. It fits her and works well enough for tanking (as much as you can tank in BG). Go ahead if you want to change it but .",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "CDTweaks romance cheats create stutter for mod NPCs",
+      "myComps": "#0 Sirene NPC for BG2:EE",
+      "theirComps": "#3183",
+      "source": "eemodsetup"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "RE",
+      "requiresId": 86,
+      "type": "soft",
+      "reason": "Sirene NPC for BG2:EE crossmod needs Romantic Encounters"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "sirene",
+          "portraits/sirene_bg2/sirene.png",
+          "bg2"
+        ],
+        [
+          "sirene",
+          "portraits/sirene_bg2/sirene2.png",
+          "bg2"
+        ],
+        [
+          "sirene",
+          "portraits/sirene_bg2/sirene3.png",
+          "bg2"
+        ],
+        [
+          "sirene",
+          "portraits/sirene_bg2/sirene4.png",
+          "bg2"
+        ],
+        [
+          "sirene_daeron",
+          "portraits/sirene_bg2/daeron.png",
+          "bg2"
+        ],
+        [
+          "sirene_fgirl",
+          "portraits/sirene_bg2/fgirl.png",
+          "bg2"
+        ],
+        [
+          "sirene_tsamon",
+          "portraits/sirene_bg2/tsamon.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "SIRENE_NPC_FOR_BG2EE",
+          "npc",
+          "Martyr: Sirene",
+          "Paladin of Ilmater. Protects allies through self-sacrifice, Martyrdom stance, and healing."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Sirene-NPC-for-BG2-EE",
+  "a": "Artemius_I",
+  "sum": "Continues Sirene's story into BG2/ToB as a joinable NPC with romance continuation and new personal quests.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Sirene-NPC"
+  },
+  "au": "AionZ",
+  "dl": "https://github.com/ArtemiusI/Sirene-NPC-for-BG2-EE",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "SIRENE_NPC_FOR_BG2EE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Paladin of Ilmater. Protects allies through self-sacrifice, Martyrdom stance, an"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "co": [
+    {
+      "n": "Sirene NPC for BG2:EE",
+      "cn": 0,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Sirene NPC for BG2:EE"
+    },
+    {
+      "n": "BG1 Default (sporeboy)",
+      "cn": 1,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "BG1 Default (sporeboy)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 1 (Sirick, Light Armor)",
+      "cn": 2,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 1 (Sirick, Light Armor)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 1 (Sirick/Lava, Heavy Armor)",
+      "cn": 3,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 1 (Sirick/Lava, Heavy Armor)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "Alternate 2 (Lodaligae)",
+      "cn": 4,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 2 (Lodaligae)",
+      "scn": "Choose an alternate portrait for Sirene?"
+    },
+    {
+      "n": "True Paladin",
+      "cn": 5,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "True Paladin",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Cavalier",
+      "cn": 6,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Cavalier",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Inquisitor",
+      "cn": 7,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Inquisitor",
+      "scn": "Choose an alternate class for Sirene?"
+    },
+    {
+      "n": "Undead Hunter",
+      "cn": 8,
+      "wf": "Sirene_BG2",
+      "wp": "Sirene_BG2\\Sirene_BG2.tp2",
+      "wq": "verified",
+      "tp2n": "Undead Hunter",
+      "scn": "Choose an alternate class for Sirene?"
+    }
+  ]
+}

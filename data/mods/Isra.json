@@ -1,0 +1,100 @@
+{
+  "i": 126,
+  "t": "isra",
+  "sv": 1,
+  "ord": 50,
+  "c": "NEW NPC MODS",
+  "n": "Isra NPC for BG",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "it": 2
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "mod_installer: I_C_T variable %BGTEDWINState1% not resolved — ALWAYS block variables not persisted across separate WeiDU invocations. Works with PI or manual install. Tool-specific issue, not a mod bug FIXED: tp2 bug — line 23 has broken ternary: (GAME_IS ~tutu tutu_totsc~ ? 1 : 0) should be (GAME_IS ~tutu tutu_totsc~) ? 1 : 0. Same bug as Valerie (shared codebase). Crashes on reinstall with 'cannot convert is_bgt to integer'. Patched in Extracted and game dir.",
+  "dependencies": [
+    {
+      "requires": "valerie",
+      "requiresId": 125,
+      "type": "soft",
+      "reason": "Isra/Valerie"
+    },
+    {
+      "requires": "Gavin",
+      "requiresId": 114,
+      "type": "soft",
+      "reason": "Isra/Gavin"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "isra_npc",
+          "portraits/isra/rh_isra.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Isra_NPC",
+  "a": "Rhaella",
+  "v": "v3.5",
+  "sum": "Adds Isra, a cavalier paladin, as a joinable NPC in BG1 with thoughtful dialogue, banters, and a romance for male PCs.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Isra_NPC"
+  },
+  "au": "Rhaella",
+  "dl": "https://github.com/SpellholdStudios/Isra_NPC",
+  "co": [
+    {
+      "n": "Isra NPC Mod for BG:EE, EET, BGT and TuTu",
+      "pi": "isra_npc_for_bg",
+      "wf": "Isra",
+      "wp": "Isra\\ISRA.TP2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "tp2n": "Isra NPC Mod for BG:EE, EET, BGT and TuTu"
+    },
+    {
+      "n": "Valerie/Isra crossmod content",
+      "pi": "isra_valerie_crossmod_content",
+      "wf": "Isra",
+      "wp": "Isra\\ISRA.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Valerie/Isra crossmod content"
+    },
+    {
+      "n": "Gavin/Isra crossmod content",
+      "wf": "Isra",
+      "wp": "Isra\\ISRA.TP2",
+      "wc": 2,
+      "wq": "verified",
+      "cn": 2,
+      "cat": "NPC CROSSMOD",
+      "no": "SKIPPED by WeiDU (exits 0, no log entry) if Gavin is not installed. Requires Gavin NPC mod.",
+      "tp2n": "Gavin/Isra crossmod content"
+    }
+  ]
+}

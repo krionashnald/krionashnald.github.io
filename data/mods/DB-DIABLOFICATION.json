@@ -1,0 +1,144 @@
+{
+  "i": 346,
+  "t": "DB-DIABLOFICATION",
+  "sv": 1,
+  "pfx": "DB",
+  "ord": 40,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Diablofication",
+  "cats": [
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "Not intended for the vanilla system, incompatible with TA's analogue.",
+  "_legacy_ids": [
+    419
+  ],
+  "spl": {
+    "7": {
+      "spells": [
+        [
+          "SPPR710",
+          "tweak",
+          "Regeneration mechanics modified for Diablo-style"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/m-architek/Diablofication/",
+  "a": "m-architek",
+  "sum": "Converts BG2 loot and combat to a Diablo-style system with randomized item drops and more frequent combat encounters.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "m-architek",
+    "r": "Diablofication"
+  },
+  "dl": "https://github.com/m-architek/Diablofication/",
+  "au": "DavideB",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "More Proficiency Points",
+      "pi": "db-diablofication-proficiency",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wc": 0,
+      "wq": "known_folder_uninstalled",
+      "cn": 0,
+      "cat": "PRE-TACTICAL TWEAKS"
+    },
+    {
+      "n": "Town Portal (Beta)",
+      "pi": "db-diablofication-town_portal",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wc": 0,
+      "wq": "known_folder_uninstalled",
+      "cn": 0
+    },
+    {
+      "n": "Identification For All",
+      "pi": "db-diablofication-identification",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 1
+    },
+    {
+      "n": "Party Revive After Combat (Beta)",
+      "pi": "db-diablofication-party_revive",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 2
+    },
+    {
+      "n": "Character Respawn (Beta)",
+      "pi": "db-diablofication-character_respawn",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 3
+    },
+    {
+      "n": "Remove Non-Combat Experience",
+      "no": "Incompatible with TA's Death Cam",
+      "pi": "db-diablofication-noncombat_xp",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 4
+    },
+    {
+      "n": "Scale Enemies With Party Size (Beta)",
+      "pi": "db-diablofication-scale_enemies",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 5
+    },
+    {
+      "n": "Spells Regeneration",
+      "pi": "db-diablofication-spells_regen",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 6
+    },
+    {
+      "n": "More HP on Level One",
+      "pi": "db-diablofication-level1_hp",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 7
+    },
+    {
+      "n": "Camera Lock (Beta)",
+      "pi": "db-diablofication-camera_lock",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 8
+    },
+    {
+      "n": "More Proficiency Points",
+      "no": "must go after UI overhauls",
+      "pi": "db-diablofication-proficiency",
+      "wf": "DB-DIABLOFICATION",
+      "wp": "DB-DIABLOFICATION\\DB-DIABLOFICATION.TP2",
+      "wq": "known_folder_uninstalled",
+      "cn": 9
+    }
+  ]
+}

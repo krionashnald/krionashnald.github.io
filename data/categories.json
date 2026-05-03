@@ -1,0 +1,136 @@
+{
+  "postEet": "POST EET",
+  "eetFinal": "EET FINALIZATION",
+  "categories": {
+    "PRE EET BGEE MODS": {
+      "label": "Pre-EET (BG1)",
+      "desc": "Mods installed on BG1:EE before the EET merge. Must go on your BG1 game folder first.",
+      "why": "These mods patch the BG1:EE game directly before EET merges it into BG2:EE. They must install on your BG1 game folder first because EET copies this modified BG1 data into the combined game."
+    },
+    "EET STARTS HERE": {
+      "label": "EET Core",
+      "desc": "The EET core mod that merges BG1 into BG2. Everything after this installs on the merged game.",
+      "why": "EET is the foundation \u2014 it copies your modded BG1 into BG2 to create one continuous game. Every mod after this point installs on the merged game."
+    },
+    "ENGINE": {
+      "label": "Engine",
+      "desc": "Engine-level modifications (EEex). These extend what other mods can do.",
+      "why": "EEex extends the game engine itself, adding new functions that other mods rely on. It must load before mods that use its features."
+    },
+    "INTERFACE": {
+      "label": "Interface / UI",
+      "desc": "UI overhauls and tweaks. Only pick ONE major UI overhaul.",
+      "why": "UI mods replace menu screens and inventory layouts for the combined game. Pick only ONE major overhaul (LeUI or dragonspear_ui++) since they\u2019re mutually exclusive."
+    },
+    "GRAPHICS": {
+      "label": "Graphics",
+      "desc": "Visual replacements. Higher quality textures, area graphics, and paperdoll overhauls.",
+      "why": "These overwrite visual game assets globally. Installing them early ensures all later mods see the updated graphics. Audio mods are in the Music & Audio category later in the install order."
+    },
+    "RESTORATIONS": {
+      "label": "Restorations",
+      "desc": "Content cut from the original games, restored by modders.",
+      "why": "Restored content should go in before new content so that new quests and NPCs can reference the restored material."
+    },
+    "QUEST MODS BG1": {
+      "label": "Quests \u2014 BG1",
+      "desc": "New quests and content for the Baldur's Gate 1 portion.",
+      "why": "Quest mods install before NPC mods so that new companions can detect and react to new areas, events, and quest triggers."
+    },
+    "QUEST MODS BG2": {
+      "label": "Quests \u2014 BG2",
+      "desc": "New quests and content for Shadows of Amn.",
+      "why": "Same principle as BG1 quests \u2014 NPC mods installed later can integrate with these new quest areas and encounters."
+    },
+    "QUEST MODS ToB": {
+      "label": "Quests \u2014 ToB",
+      "desc": "New quests and content for Throne of Bhaal.",
+      "why": "ToB quest mods follow SoA quests. Later tactical mods will patch the enemies in these new encounters."
+    },
+    "NEW NPC MODS": {
+      "label": "New NPCs",
+      "desc": "New companion characters with their own stories and dialogue.",
+      "why": "NPC mods go after quest mods so companions can have dialogue about new quest content. They go before tweaks so that rule changes apply to new NPCs too."
+    },
+    "NPC EXPANSIONS": {
+      "label": "NPC Expansions",
+      "desc": "Mods that expand existing or new NPCs. Install after NPC mods.",
+      "why": "These expand existing or newly-added NPCs with crossmod content, extra banters, or quest tie-ins. The base NPC mods must be in place first."
+    },
+    "NPC CROSSMOD": {
+      "label": "NPC Crossmod",
+      "desc": "Cross-mod banter and romance packs between NPCs from different mods.",
+      "why": "Cross-mod banter and romance packs that add interactions between NPCs from different mods. Both base NPC mods must be installed first so the crossmod can reference their dialogue files and variables."
+    },
+    "CREATURE MODS": {
+      "label": "Creature Mods",
+      "desc": "Changes to enemy creatures and encounters. Install before tactical mods.",
+      "why": "Creature changes go before tactical mods so that SCS can apply its AI improvements to the modified creatures."
+    },
+    "EXPERIENCE TWEAKS": {
+      "label": "XP Tweaks",
+      "desc": "XP gain adjustments and level scaling modifications.",
+      "why": "XP and leveling changes go before tactical mods to establish the difficulty baseline."
+    },
+    "ITEM ADDITION MODS": {
+      "label": "Items",
+      "desc": "New items, weapons, armor, and equipment.",
+      "why": "New items install here so tactical mods and later tweaks can account for them in loot tables and enemy equipment."
+    },
+    "SPELL MODS": {
+      "label": "Spells",
+      "desc": "New spells, spell changes, and magic system modifications.",
+      "why": "Spell changes before tactical mods ensures SCS\u2019s AI knows about modified or new spells when scripting enemy casters."
+    },
+    "KIT & CLASS MODS": {
+      "label": "Kits & Classes",
+      "desc": "New character kits, classes, and class modifications.",
+      "why": "Kit mods go after spell mods (since kits may use modified spells) and before tactical mods (so SCS can equip enemies with new kits)."
+    },
+    "PRE-TACTICAL TWEAKS": {
+      "label": "Pre-Tactical Tweaks",
+      "desc": "General tweaks that should be installed before SCS and other tactical mods. Proficiency changes, item tweaks, PnP fixes.",
+      "why": "General rule changes (proficiencies, stats, item tweaks) that establish the game\u2019s baseline before SCS\u2019s tactical AI layer is applied."
+    },
+    "TACTICAL MODS": {
+      "label": "Tactical",
+      "desc": "Sword Coast Stratagems, Tactics Remix, The Crucible, and other AI/encounter overhauls. The tactical challenge layer.",
+      "why": "SCS and other AI mods install near the end because they patch every creature in the game. All content must be in place first so nothing is missed."
+    },
+    "POST-TACTICAL TWEAKS": {
+      "label": "Post-Tactical Tweaks",
+      "desc": "Final tweaks, scripts, and patches. Install after tactical mods.",
+      "why": "Final tweaks that must override or complement tactical mod changes. Scripts and minor patches that go on top."
+    },
+    "NPC CUSTOMIZATION": {
+      "label": "NPC Customization",
+      "desc": "NPC stat, class, kit, and appearance customization. Install after all rule changes are finalized.",
+      "why": "NPC customization mods go here because they need all rule changes (proficiencies, stats, kits) finalized first. Customizing an NPC\u2019s class or stats before the proficiency tables are set would give them wrong values."
+    },
+    "POST-TACTICAL QUESTS": {
+      "label": "Post-Tactical Quests",
+      "desc": "Large quest and campaign mods that patch spells or need all other content in place first.",
+      "why": "These large quest/campaign mods add new spells, patch existing content, or need to detect what\u2019s already installed. They go after tactical mods so SCS and other AI mods have already processed the base game, and after spell/kit mods so these quests can detect and avoid duplicating existing content."
+    },
+    "MUSIC & AUDIO": {
+      "label": "Music & Audio",
+      "desc": "Voice packs, soundsets, and music mods. Install late so they overwrite any earlier sound changes.",
+      "why": "Voice packs, soundsets, and music replacements install here so they overwrite any sound changes made by earlier mods. Purely cosmetic \u2014 no gameplay impact."
+    },
+    "PORTRAITS": {
+      "label": "Portraits",
+      "desc": "Portrait packs. The last portrait mod installed wins for any given NPC.",
+      "why": "Portrait packs install last because they overwrite NPC portrait files. The last portrait mod installed wins for any given NPC, so install your preferred pack last. These are purely cosmetic and cannot break gameplay."
+    },
+    "EET FINALIZATION": {
+      "label": "EET Finalization",
+      "desc": "EET End \u2014 the final step. Must be installed after ALL other mods to finalize the EET merge.",
+      "why": "EET_End finalizes the trilogy merge after all mods are installed. It must be absolutely last to process everything correctly."
+    },
+    "POST EET": {
+      "label": "Post-EET",
+      "desc": "Mods installed after EET_End. GUI replacements, engine-level scripts, biffing, and other tools that must come last.",
+      "why": "Special mods that operate outside the normal mod framework \u2014 GUI replacements, biffing tools, and engine scripts that must come after finalization."
+    }
+  }
+}

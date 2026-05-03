@@ -1,0 +1,214 @@
+{
+  "i": 378,
+  "t": "mih_tweaks",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 250,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Made in Heaven: Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Made in Heaven Tweaks v2 by Angel. 10 components: spell tweaks, challenge tweaks, and stat table revisions. Stat tables (cn:7-9) incompatible with ToF Revised Ability Scores and SubtleD Stat Overhauls",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks save penalties and MiH Tweaks Spell Level affects Saving Throws both modify save calculations. Don't mix",
+      "theirComps": "#2310 #2311 #2312 Save Penalties for high-level casters"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 248,
+      "severity": "soft",
+      "reason": "Both modify ability score modifiers (STR, DEX, CON). Use one or the other",
+      "theirComps": "#100 Ability Score Overhaul"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "MiH cn:7/8/9 rewrite strmod/dexmod/hpconbon.2da. ToF cn:80000 also rewrites these files. Last installed wins.",
+      "myComps": "#7 Revised Strength #8 Revised Dexterity #9 Revised Constitution",
+      "theirComps": "#80000 Ability Score Modifiers",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Both modify Protection from Evil spell. MiH cn:3 dynamically scans all domination spells; TnT cn:54 is a simpler PnP-style fix. Use one.",
+      "myComps": "#3 Protection from Evil blocks Domination",
+      "theirComps": "#54 PnP Protection from Evil",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "soft",
+      "reason": "Both increase creature HP. MiH cn:6 adds bonus HP per HD by creature type (configurable). TR cn:25-30 apply blanket multipliers. Stacking makes enemies extremely tanky.",
+      "myComps": "#6 Give Monsters Bonus HP",
+      "theirComps": "#25 #26 #27 #28 #30 HP multipliers",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tb#tweaks",
+      "withId": 381,
+      "severity": "soft",
+      "reason": "Both rewrite stat modifier 2DA files. Last installed wins.",
+      "myComps": "#7 Revised Strength #8 Revised Dexterity #9 Revised Constitution",
+      "theirComps": "#4000 3E Strength #4500 3E Dexterity #5000 3E Constitution"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "hard",
+      "reason": "Tactics Remix auto-skips all components when Made in Heaven mods are detected.",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks MiH Tweaks weapon-patching components.",
+      "theirComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Alternative Damage on Large Creatures\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Alternative Damage on Large Creatures has REQUIRE: not IWD — component fails if IWD1_EET is detected in the install. Also patches ALL weapon items, which can fail if an earlier mod left a corrupted item in override.",
+      "workaround": "Skip this component if IWD1_EET is installed. If IWD1_EET is not installed and it still fails, check for corrupted .ITM files in override from earlier mod failures.",
+      "user_action": "check-docs",
+      "components": [
+        0
+      ]
+    }
+  ],
+  "u": "https://github.com/AngelGryph/MadeInHeaven_Tweaks/releases",
+  "a": "Angel",
+  "sum": "Made in Heaven's tweak package: 10 quality-of-life and balance adjustments for the combined EET game.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "AngelGryph",
+    "r": "MadeInHeaven_Tweaks"
+  },
+  "dl": "https://github.com/AngelGryph/MadeInHeaven_Tweaks/releases",
+  "au": "angel",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Alternative Damage on Large Creatures",
+      "tp2n": "Alternative Damage on Large Creatures",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "PnP-inspired alternative damage dice against large creatures (e.g. longsword 1d12 vs large instead of 1d8). Patches all weapon items. REQUIRE: not IWD.",
+      "grn": "Item Tweaks"
+    },
+    {
+      "cn": 1,
+      "n": "Cap charges of Wands and Staves",
+      "tp2n": "Cap charges of Wands and Staves",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Caps wand/staff charges. Can be slow (patches many items). Forgotten Armament cn:33-35 offers wand uses-per-day as alternative.",
+      "grn": "Item Tweaks"
+    },
+    {
+      "cn": 2,
+      "n": "Spell Level affects Saving Throws",
+      "tp2n": "Spell Level affects Saving Throws",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Higher-level spells impose save penalties. Scans all spell files. Don't combine with cdtweaks cn:2310-2312 (Save Penalties) — overlapping mechanics cause double penalties.",
+      "grn": "Spell Tweaks"
+    },
+    {
+      "cn": 3,
+      "n": "Protection from Evil blocks Domination",
+      "tp2n": "Protection from Evil blocks Domination",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Scans ALL spells/items for domination effects, then adds Protection from Spell to every Protection from Evil spell/item. More comprehensive than TnT cn:54 (PnP ProtEvil) which is a simpler static fix. Use one or the other.",
+      "grn": "Spell Tweaks"
+    },
+    {
+      "cn": 4,
+      "n": "Dismissable Spells (BETA)",
+      "tp2n": "Dismissable Spells (BETA)",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "BETA: Adds ability to dismiss active spell buffs. Experimental — may cause issues with some spell interactions.",
+      "grn": "Spell Tweaks"
+    },
+    {
+      "cn": 5,
+      "n": "IWD-style Spell Icons",
+      "tp2n": "IWD-style Spell Icons",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "DEPRECATED by mod author — 'Not ready yet.' IWD-style spell icons. Do not use.",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "grn": "Spell Tweaks"
+    },
+    {
+      "cn": 6,
+      "n": "Give Monsters Bonus HP",
+      "tp2n": "Give Monsters Bonus HP",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Adds bonus HP per hit die to creatures by type (animals, undead, giant humanoids, monsters). Configurable via ini. More granular than Tactics Remix HP multiplier (blanket x2). Use one approach or the other.",
+      "grn": "Challenge Tweaks"
+    },
+    {
+      "cn": 7,
+      "n": "Revised Strength Table",
+      "tp2n": "Revised Strength Table",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Rewrites strmod.2da. OVERWRITTEN by ToF cn:80000 (Ability Score Modifiers) if installed after. Also conflicts with tb#tweaks cn:4000 and SubtleD cn:100.",
+      "grn": "Game Rule Tweaks"
+    },
+    {
+      "cn": 8,
+      "n": "Revised Dexterity Table",
+      "tp2n": "Revised Dexterity Table",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Rewrites dexmod.2da. OVERWRITTEN by ToF cn:80000 if installed after. Also conflicts with tb#tweaks cn:4500 and SubtleD cn:100.",
+      "grn": "Game Rule Tweaks"
+    },
+    {
+      "cn": 9,
+      "n": "Revised Constitution Table",
+      "tp2n": "Revised Constitution Table",
+      "wf": "mih_tweaks",
+      "wp": "mih_tweaks\\setup-mih_tweaks.tp2",
+      "wq": "exact",
+      "no": "Rewrites hpconbon.2da. OVERWRITTEN by ToF cn:80000 if installed after. Also conflicts with tb#tweaks cn:5000, Bart_Tweaks cn:3040, and SubtleD cn:100.",
+      "grn": "Game Rule Tweaks"
+    }
+  ]
+}

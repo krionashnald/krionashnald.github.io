@@ -1,0 +1,97 @@
+{
+  "i": 501,
+  "t": "darian",
+  "sv": 1,
+  "ord": 760,
+  "c": "NEW NPC MODS",
+  "n": "Darian NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Joinable tiefling fighter/thief with friendship path. LG Male Elf (Avariel) Ranger.Install Darian after Sarah.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "darian",
+          "portraits/darian/t1dar.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Darian-NPC",
+  "a": "Tempest",
+  "v": "v2.5",
+  "sum": "A mod for Baldur's Gate II that introduces Darian, an aloof warrior from the enigmatic Avariel elves, as a joinable NPC.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Tempest",
+  "dl": "https://github.com/Spellhold-Studios/Darian-NPC",
+  "co": [
+    {
+      "n": "Darian NPC for BG2",
+      "cn": 0,
+      "wf": "Darian",
+      "wp": "Darian\\DARIAN.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "KNOWN WARNING: EET_NPC_TRANSITION reports T1DARS.bcs doesn't exist. BG2-only NPC — no BG1 transition script. Cosmetic only.",
+      "tp2n": "Darian NPC Mod for BGII: SoA & ToB"
+    },
+    {
+      "n": "Change to Trueclass Ranger",
+      "cn": 1,
+      "g": "darian_class",
+      "scn": "Install alternate class for Darian?",
+      "wf": "Darian",
+      "wp": "Darian\\DARIAN.TP2",
+      "tp2n": "Change Darian's class to Trueclass Ranger"
+    },
+    {
+      "n": "Change to Ranger/Cleric",
+      "cn": 2,
+      "g": "darian_class",
+      "scn": "Install alternate class for Darian?",
+      "wf": "Darian",
+      "wp": "Darian\\DARIAN.TP2",
+      "tp2n": "Change Darian's class to Ranger/Cleric"
+    },
+    {
+      "n": "Change to Stalker",
+      "cn": 3,
+      "g": "darian_class",
+      "scn": "Install alternate class for Darian?",
+      "wf": "Darian",
+      "wp": "Darian\\DARIAN.TP2",
+      "tp2n": "Change Darian's class to Stalker"
+    },
+    {
+      "n": "Sarah NPC Crossmod",
+      "cn": 4,
+      "wf": "Darian",
+      "wp": "Darian\\DARIAN.TP2",
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Sarah NPC Crossmod"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Darian-NPC"
+  }
+}

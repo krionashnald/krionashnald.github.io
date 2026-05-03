@@ -1,0 +1,152 @@
+{
+  "i": 408,
+  "t": "ArtisansKitpack_tweak",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 100,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Artisans Kitpack Tweak",
+  "no": "Artisan's Kitpack - tweaks submod Adds a variety of kits for single-classed Druids, Fighters, Paladins, Rangers, Thieves, Shamans, and Sors.Install Artisan’s Kitpack before Emily and Skills and Abilities.",
+  "u": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "a": "Artemius_I",
+  "v": "6.0",
+  "sum": "Assigns custom kits from the Artisan's Kitpack to existing NPCs like Khalid, Minsc, and others, with options for different kit assignments.",
+  "tags": [
+    "tweak",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Artisan's Kitpack: Archer - Apply Manyshot to mod-added items (install this after any mods that add mod bows and crossbows)",
+      "cn": 20101,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Archer - Apply Manyshot to mod-added items (install this after any mods that add mod bows and crossbows)"
+    },
+    {
+      "n": "Artisan's Kitpack: Beastmaster - Modify Restrictions for Mod Items (install this after any mods that add mod axes, daggers, spears, armor, etc.",
+      "no": "Technically it only needs to go at the end of AK's main components and after Shadow Magic, but let's keep the whole of the tweak submod together",
+      "cn": 12012,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wc": 12012,
+      "wq": "guessed",
+      "tp2n": "Artisan's Kitpack: Beastmaster - Modify Restrictions for Mod Items (install this after any mods that add mod axes, daggers, spears, armor, etc.)"
+    },
+    {
+      "n": "Artisan's Kitpack: Cavalier - Rename Kit to Chevalier",
+      "cn": 3210,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Cavalier - Rename Kit to Chevalier"
+    },
+    {
+      "n": "Artisan's Kitpack: Dreadnought - Set Dreadnought to 1 APR (install this if the Dreadnought is getting bonus APR from other mods)",
+      "no": "known mods to preempt: new kits, TNT, Olvyn Tweaks \"monks deflect missiles\", ToF's revised weapon proficiency",
+      "cn": 1209,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wc": 1209,
+      "wq": "guessed",
+      "tp2n": "Artisan's Kitpack: Dreadnought - Set Dreadnought and Siegemaster to 1 APR (install this if the Dreadnought or Siegemaster is getting bonus APR from other mods)"
+    },
+    {
+      "n": "Artisan's Kitpack: Samurai - Add important effects to mod-added items installed after the kit",
+      "cn": 1110,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Samurai - Add important effects to mod-added items installed after the kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Mystic Fire - Allow Wands and Mage Scrolls",
+      "cn": 3202,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Mystic Fire - Allow Wands and Mage Scrolls"
+    },
+    {
+      "n": "Artisan's Kitpack: Mystic Fire - Add spells from HLAs directly to spellbook up to maximum paladin casting level",
+      "cn": 3302,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Mystic Fire - Add spells from HLAs directly to spellbook up to maximum paladin casting level"
+    },
+    {
+      "n": "Artisan's Kitpack: Trickster - Mimic Mod Kit Abilities (install this after other kits!)",
+      "cn": 7203,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wc": 7203,
+      "wq": "guessed",
+      "tp2n": "Artisan's Kitpack: Trickster - Mimic Mod Kit Abilities (install this after other kits!)"
+    },
+    {
+      "n": "Artisan's Kitpack: Arcane Trickster (Sorcerer) - Enable Thief Equipment",
+      "cn": 8204,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Arcane Trickster (Sorcerer) - Enable Thief Equipment"
+    },
+    {
+      "n": "Artisan's Kitpack: Adjust kit THAC0 progression to match tweaked THAC0 tables",
+      "cn": 110000,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Adjust kit THAC0 progression to match tweaked THAC0 tables"
+    },
+    {
+      "n": "Artisan's Kitpack: Mage - Rename to Wizard",
+      "cn": 1,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Mage - Rename to Wizard"
+    },
+    {
+      "n": "Artisan's Kitpack: Thief - Rename to Rogue",
+      "cn": 2,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Thief - Rename to Rogue"
+    },
+    {
+      "n": "Artisan's Kitpack: Favored Soul - Patch Cleric-exclusive spells from mods",
+      "cn": 300010,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Favored Soul - Patch Cleric-exclusive spells from mods"
+    },
+    {
+      "n": "Artisan's Kitpack: Update EEex-based Weapon Usability Changes",
+      "cn": 1010000,
+      "wf": "ArtisansKitpack_tweak",
+      "wp": "ArtisansKitpack_tweak\\ARTISANSKITPACK_TWEAK.TP2",
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Update EEex-based Weapon Usability Changes"
+    }
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "The-Artisan-s-Kitpack"
+  }
+}

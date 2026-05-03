@@ -1,0 +1,513 @@
+{
+  "i": 842,
+  "t": "bg2fixpack",
+  "sv": 1,
+  "ord": 60,
+  "c": "RESTORATIONS",
+  "n": "BG2 FixPack",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "de": 3,
+    "fr": 4,
+    "ko": 5,
+    "it": 6,
+    "ru": 7,
+    "ja": 8,
+    "zh-tw": 9,
+    "zh-cn": 10
+  },
+  "u": "https://github.com/Gibberlings3/BG2-Fixpack",
+  "a": "Multiple",
+  "sum": "The BG2 FixPack is the most complete fixpack to date. It fixes all the bugs fixed by Baldurdash (by Kevin Dorner) plus a million more, ensuring a perfectly clean game.",
+  "tags": [
+    "fix"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "CamDawg (Gibberlings Three)",
+  "dl": "https://github.com/Gibberlings3/BG2-Fixpack",
+  "no": "Comprehensive bugfix compilation for classic BG2/ToB. Core fixes, optional \"but correct\" fixes, game text updates (4 variants including EE-style by Salk), and modder pack. For classic BG2/ToB and BGT — EE users should use EE Fixpack instead. 11 languages.",
+  "co": [
+    {
+      "n": "BG2 Fixpack - Core Fixes",
+      "tp2n": "BG2 Fixpack - Core Fixes",
+      "cn": 0,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_core"
+    },
+    {
+      "n": "BETA Core Fixes (please check the readme!)",
+      "tp2n": "BETA Core Fixes (please check the readme!)",
+      "cn": 3,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "pi": "cd_bg2fp_core_beta"
+    },
+    {
+      "n": "Super Happy Fun Lucky Modder Pack",
+      "tp2n": "Super Happy Fun Lucky Modder Pack",
+      "cn": 2,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "pi": "cd_bg2fp_modder"
+    },
+    {
+      "n": "GTU Light (by Wisp)",
+      "tp2n": "GTU Light (by Wisp)",
+      "cn": 1000,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 1000,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "BG2 Fixpack - Game Text Update",
+      "scn": "BG2 Fixpack - Game Text Update",
+      "pi": "cd_bg2fp_gtul"
+    },
+    {
+      "n": "GTU Classic (from Baldurdash, by Kevin Dorner)",
+      "tp2n": "GTU Classic (from Baldurdash, by Kevin Dorner)",
+      "cn": 1001,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 1001,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "BG2 Fixpack - Game Text Update",
+      "scn": "BG2 Fixpack - Game Text Update",
+      "pi": "cd_bg2fp_gtu"
+    },
+    {
+      "n": "EE-Style Game Text Update, Without Audio (by Salk)",
+      "tp2n": "EE-Style Game Text Update, Without Audio (by Salk)",
+      "cn": 1002,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 1002,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "BG2 Fixpack - Game Text Update",
+      "scn": "BG2 Fixpack - Game Text Update",
+      "pi": "cd_bg2fp_gtu_ee_without_sound"
+    },
+    {
+      "n": "EE-Style Game Text Update, With Audio (by Salk)",
+      "tp2n": "EE-Style Game Text Update, With Audio (by Salk)",
+      "cn": 1003,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 1003,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "BG2 Fixpack - Game Text Update",
+      "scn": "BG2 Fixpack - Game Text Update",
+      "pi": "cd_bg2fp_gtu_ee_with_sound"
+    },
+    {
+      "n": "Party Gets XP for Sending Keldorn to Reconcile With Maria",
+      "tp2n": "Party Gets XP for Sending Keldorn to Reconcile With Maria",
+      "cn": 100,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_keldorn",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Improved Spell Animations",
+      "tp2n": "Improved Spell Animations",
+      "cn": 101,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 101,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_animations",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "A day lasts 24 hours",
+      "tp2n": "A day lasts 24 hours",
+      "cn": 102,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 102,
+      "wq": "verified",
+      "g": "Cromwell's Forging Actually Takes a Day",
+      "scn": "Cromwell's Forging Actually Takes a Day",
+      "grn": "Optional, But Cool",
+      "pi": "cd_bg2fp_obc_forge_24"
+    },
+    {
+      "n": "Mixed-Use Dagger Fixes",
+      "tp2n": "Mixed-Use Dagger Fixes",
+      "cn": 103,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_dagger",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Ghreyfain's Holy Symbol Fixes",
+      "tp2n": "Ghreyfain's Holy Symbol Fixes",
+      "cn": 104,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 104,
+      "wq": "verified",
+      "pi": "cd_bg2fp_obc_holysymbol",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Additional Hero Quests in Trademeet Wait Until Hero is Officially Named",
+      "tp2n": "Additional Hero Quests in Trademeet Wait Until Hero is Officially Named",
+      "cn": 105,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 105,
+      "wq": "verified",
+      "pi": "cd_bg2fp_obc_jenia"
+    },
+    {
+      "n": "Giants Receive Penalties When Attacking Halflings, Dwarves, and Gnomes",
+      "tp2n": "Giants Receive Penalties When Attacking Halflings, Dwarves, and Gnomes",
+      "cn": 106,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 106,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_giant_penalties",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Remove Dual-Classing Restriction from Archers and Stalkers",
+      "tp2n": "Remove Dual-Classing Restriction from Archers and Stalkers",
+      "cn": 107,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 107,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_ranger_dual",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Remove Second Attribute Bonus for Evil Path in Wrath Hell Trial",
+      "tp2n": "Remove Second Attribute Bonus for Evil Path in Wrath Hell Trial",
+      "cn": 108,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 108,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_wrath_bonus",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Corrected Summoned Demon Behavior",
+      "tp2n": "Corrected Summoned Demon Behavior",
+      "cn": 109,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 109,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_demon_behavior",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Additional Script Fixes",
+      "tp2n": "Additional Script Fixes",
+      "cn": 110,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 110,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_script_fixes",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Bard Song Fixes",
+      "tp2n": "Bard Song Fixes",
+      "cn": 111,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 111,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_bardsong",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Wizard Slayers Cause Miscast Magic on Ranged Attacks",
+      "tp2n": "Wizard Slayers Cause Miscast Magic on Ranged Attacks",
+      "cn": 112,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 112,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_wizslayer",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Additional Alignment Fixes",
+      "tp2n": "Additional Alignment Fixes",
+      "cn": 113,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 113,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_alignment",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Change Free Action to Protect Against Stun",
+      "tp2n": "Change Free Action to Protect Against Stun",
+      "cn": 114,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 114,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_fa_stun",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Paws from Shapeshifting Can Not Be Dispelled",
+      "tp2n": "Paws from Shapeshifting Can Not Be Dispelled",
+      "cn": 115,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 115,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "ca",
+        "iwd_in_bg2",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_shapeshifter_paw",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "Remove Thieving Start Bonuses from Bard and Ranger Skills",
+      "tp2n": "Remove Thieving Start Bonuses from Bard and Ranger Skills",
+      "cn": 116,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 116,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "pi": "cd_bg2fp_obc_thief_ranger_bard",
+      "grn": "Optional, But Cool"
+    },
+    {
+      "n": "A day is a work day, 8 hours",
+      "tp2n": "A day is a work day, 8 hours",
+      "cn": 117,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 117,
+      "wq": "verified",
+      "g": "Cromwell's Forging Actually Takes a Day",
+      "scn": "Cromwell's Forging Actually Takes a Day",
+      "grn": "Optional, But Cool",
+      "pi": "cd_bg2fp_obc_forge_8"
+    },
+    {
+      "n": "SUPER SECRET COMPONENT",
+      "tp2n": "SUPER SECRET COMPONENT",
+      "cn": 10000,
+      "wf": "bg2fixpack",
+      "wp": "bg2fixpack\\setup-bg2fixpack.tp2",
+      "wc": 10000,
+      "wq": "verified",
+      "pi": "cd_bg2fp_SECRET_TUNNEL"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "BG2-Fixpack"
+  }
+}

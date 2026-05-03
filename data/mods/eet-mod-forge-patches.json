@@ -1,0 +1,348 @@
+{
+  "i": 724,
+  "t": "eet-mod-forge-patches",
+  "sv": 1,
+  "ord": 5,
+  "c": "RESTORATIONS",
+  "n": "EET Mod Forge Patches",
+  "cats": [
+    "RESTORATIONS",
+    "POST EET"
+  ],
+  "no": "WeiDU compatibility patches for the Infinity Mod Forge Ultimate preset. Fixes install failures across 29 mods. No content changes — strictly installability fixes. Must install BEFORE all mods it patches. Install all components for the Ultimate preset. Source: https://github.com/Anprionsa/eet-mod-forge-patches",
+  "au": "Infinity Mod Forge",
+  "hm": "https://github.com/Anprionsa/eet-mod-forge-patches",
+  "sum": "WeiDU compatibility patches for the Infinity Mod Forge preset. Fixes install failures across multiple mods. No content changes — only technical fixes.",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/Anprionsa/infinity-mod-forge",
+  "dl": "https://github.com/Anprionsa/infinity-mod-forge",
+  "tags": [
+    "fix",
+    "compat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "cn": 1,
+      "n": "Talents of Faerun — SFO Library Fixes",
+      "tp2n": "Talents of Faerun — SFO Library Fixes",
+      "no": "Patches ToF SFO library files (disjunctive_substitution.tph, lib_spl.tph, reroute_stats.tph, alter_script.tph) to exclude A7!GXRU resources that cause installation failures.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 1,
+      "wq": "exact"
+    },
+    {
+      "cn": 2,
+      "n": "Talents of Faerun — IWD Spell Fixes",
+      "tp2n": "Talents of Faerun — IWD Spell Fixes (idpro313.pro)",
+      "no": "Pre-copies 768-byte idpro313.pro before ToF cd_arcane_post.tpa attempts COPY_EXISTING on it.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 2,
+      "wq": "exact"
+    },
+    {
+      "cn": 3,
+      "n": "Talents of Faerun — UI Fixes",
+      "tp2n": "Talents of Faerun — UI Fixes (HLAs and Subraces)",
+      "no": "Adds IS_AN_INT guards to ToF subraces UI code and narrows HLA regex for vanilla/LeUI/InfinityUI compatibility.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 3,
+      "wq": "exact"
+    },
+    {
+      "cn": 4,
+      "n": "Sword Coast Stratagems — SFO Library Fixes",
+      "tp2n": "Sword Coast Stratagems — SFO Library Fixes",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 4,
+      "wq": "exact",
+      "no": "Patches SCS SFO library (sfo2e + lua directories) with A7!GXRU exclusion and UI fixes."
+    },
+    {
+      "cn": 5,
+      "n": "Sword Coast Stratagems — IWD Spell Fixes",
+      "tp2n": "Sword Coast Stratagems — IWD Spell Fixes (idpro313.pro)",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 5,
+      "wq": "exact",
+      "no": "Pre-copies idpro313.pro for SCS IWD spell component (same fix as ToF cn:2 but in SCS paths)."
+    },
+    {
+      "cn": 6,
+      "n": "IWDification — SFO Library Fixes",
+      "tp2n": "IWDification — SFO Library Fixes",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 6,
+      "wq": "exact",
+      "no": "Patches IWDification SFO library with A7!GXRU exclusion, UI fixes, and IWD spell prereqs."
+    },
+    {
+      "cn": 7,
+      "n": "Made in Heaven Fixes — SFO Library Fixes",
+      "tp2n": "Made in Heaven Fixes — SFO Library Fixes",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 7,
+      "wq": "exact",
+      "no": "Patches MiH Fixes third_party/sfo2e with A7!GXRU exclusion and UI compatibility fixes."
+    },
+    {
+      "cn": 8,
+      "n": "Made in Heaven Spell Pack — SFO Library Fixes",
+      "tp2n": "Made in Heaven Spell Pack — SFO Library Fixes",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 8,
+      "wq": "exact",
+      "no": "Patches MiH Spell Pack third_party SFO library with A7!GXRU exclusion, UI, and IWD spell fixes."
+    },
+    {
+      "cn": 9,
+      "n": "Made in Heaven Meta-Mod — SFO Library Fixes",
+      "tp2n": "Made in Heaven Meta-Mod — SFO Library Fixes",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 9,
+      "wq": "exact",
+      "no": "Patches MiH Meta-Mod third_party/sfo2e with A7!GXRU exclusion and UI fixes."
+    },
+    {
+      "cn": 10,
+      "n": "Akun's Gear — EET Compatibility Fix",
+      "tp2n": "Akun's Gear — EET Compatibility Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 10,
+      "wq": "exact",
+      "no": "Removes bg2ee from Akun Gear incompatible games list so it installs on BG2EE/EET."
+    },
+    {
+      "cn": 11,
+      "n": "Angelo — ALWAYS Block Guard Fix",
+      "tp2n": "Angelo — ALWAYS Block Guard Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 11,
+      "wq": "exact",
+      "no": "Fixes Angelo ALWAYS block running on every component by using a unique guard variable."
+    },
+    {
+      "cn": 12,
+      "n": "Bardic Wonders — BCS Decompile Guard",
+      "tp2n": "Bardic Wonders — BCS Decompile Guard",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 12,
+      "wq": "exact",
+      "no": "Adds BDAERIEC exclusion to Bardic Wonders BCS decompile to prevent parse errors on SoD scripts."
+    },
+    {
+      "cn": 13,
+      "n": "Boards of Magick — CRE Filename Case Fix",
+      "tp2n": "Boards of Magick — CRE Filename Case Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 13,
+      "wq": "exact",
+      "no": "Fixes case-sensitive filename mismatch: copies O!Tal.cre to O!TAL.cre for Boards of Magick."
+    },
+    {
+      "cn": 14,
+      "n": "BuTcHeRy — ALWAYS Block Guard Fix",
+      "tp2n": "BuTcHeRy — ALWAYS Block Guard Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 14,
+      "wq": "exact",
+      "no": "Fixes BuTcHeRy ALWAYS block running on every component by using a unique guard variable."
+    },
+    {
+      "cn": 15,
+      "n": "Ehlastra — Translation Path Fix",
+      "tp2n": "Ehlastra — Translation Path Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 15,
+      "wq": "exact",
+      "no": "Fixes Ehlastra translation path (wheels/tra -> wheels/lang) for balthadd.tra."
+    },
+    {
+      "cn": 16,
+      "n": "Kale — Isaac Crossmod Removal",
+      "tp2n": "Kale — Isaac Crossmod Removal",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 16,
+      "wq": "exact",
+      "no": "Removes X3Isaac crossmod references from Kale Emily.d to prevent missing dialogue errors."
+    },
+    {
+      "cn": 17,
+      "n": "Longer Road — Jaheira Script Fix",
+      "tp2n": "Longer Road — Jaheira Script Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 17,
+      "wq": "exact",
+      "no": "Removes JAH_NO_JON from Longer Road REPLACE_BCS_BLOCK to fix Jaheira script compilation."
+    },
+    {
+      "cn": 18,
+      "n": "The Darkest Day — Spell Reference Fix",
+      "tp2n": "The Darkest Day — Spell Reference Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 18,
+      "wq": "exact",
+      "no": "Replaces invalid SUMMON_SKELETON_WARRIOR3 spell reference with CLERIC_ANIMATE_DEAD in Darkest Day."
+    },
+    {
+      "cn": 19,
+      "n": "Shades of the Sword Coast — CRE Filename Fix",
+      "tp2n": "Shades of the Sword Coast — CRE Filename Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 19,
+      "wq": "exact",
+      "no": "Renames spidsm01.cre to SPIDSM0_.cre to fix filename collision in Shades of the Sword Coast."
+    },
+    {
+      "cn": 20,
+      "n": "Shadow Magic — Pre-copy Resource Files",
+      "tp2n": "Shadow Magic — Pre-copy Resource Files",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 20,
+      "wq": "exact",
+      "no": "Pre-copies MEWI1-9.txt resource files to override before Shadow Magic installation needs them."
+    },
+    {
+      "cn": 21,
+      "n": "Breagar (ACBre) — EET English Language Fix",
+      "tp2n": "Breagar (ACBre) — EET English Language Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 21,
+      "wq": "exact",
+      "no": "Hardcodes dialogue state numbers instead of STATE_WHICH_SAYS for Breagar EET English compatibility."
+    },
+    {
+      "cn": 22,
+      "n": "Made in Heaven Spell Pack — Animate Dead Scrolls Fix",
+      "tp2n": "Made in Heaven Spell Pack — Animate Dead Scrolls Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 22,
+      "wq": "exact",
+      "no": "Replaces broken LAUNCH_PATCH_FUNCTION with LPF in MiH Spell Pack animate_dead_scrolls.tpa."
+    },
+    {
+      "cn": 23,
+      "n": "Trials of the Luremaster — Container Bounds Fix",
+      "tp2n": "Trials of the Luremaster — Container Bounds Fix",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 23,
+      "wq": "exact",
+      "no": "Adds are_container_count bounds check to Trials of the Luremaster spells_player.tph to prevent overflow."
+    },
+    {
+      "cn": 24,
+      "n": "Portraits Directory — Create Missing Directory",
+      "tp2n": "Portraits Directory — Create Missing Directory",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 24,
+      "wq": "exact",
+      "no": "Creates the portraits/ directory if missing. Prevents mods that COPY to portraits/ from failing."
+    },
+    {
+      "cn": 25,
+      "n": "Talents of Faerun — Weapon Proficiency Kit Fix",
+      "tp2n": "Talents of Faerun — Weapon Proficiency Kit Fix (ohtempus)",
+      "no": "Adds vanilla specialty priest kits (ohtempus, ohtyr, etc.) to ToF kitweapons.ini so they get proper weapon restrictions.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 25,
+      "wq": "exact"
+    },
+    {
+      "cn": 26,
+      "n": "TB#Tweaks — BCS Decompile Guard",
+      "tp2n": "TB#Tweaks — BCS Decompile Guard",
+      "no": "Excludes A7/BD/C#AJAN scripts from TB#Tweaks impdiff.tpa to prevent PARSE ERROR cascade on SoD scripts.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 26,
+      "wq": "exact"
+    },
+    {
+      "cn": 27,
+      "n": "Bart_Tweaks — SPL File Size Guard",
+      "tp2n": "Bart_Tweaks — SPL File Size Guard",
+      "no": "Raises SOURCE_SIZE guard from 0x72 to 0x82 in Bart_Tweaks display_range.tpa to prevent crashes on small SPL files.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 27,
+      "wq": "exact"
+    },
+    {
+      "cn": 28,
+      "n": "Cliffette's History — Portraits Directory Fix",
+      "tp2n": "Cliffette's History — Portraits Directory Fix",
+      "no": "Fixes Cliffette History using MKDIR + explicit filenames instead of COPY to portraits/ which creates a file instead of directory.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 28,
+      "wq": "exact"
+    },
+    {
+      "cn": 29,
+      "n": "MiH Meta-Mod — Preserve EET.flag During Cleanup",
+      "tp2n": "MiH Meta-Mod — Preserve EET.flag During Cleanup",
+      "no": "CRITICAL: Prevents MiH Meta-Mod cleanup_override.tpa from deleting EET.flag, which would break EET_end and all post-EET mods.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 29,
+      "wq": "exact"
+    },
+    {
+      "cn": 30,
+      "n": "5E Spellcasting — BCS Script Guard",
+      "tp2n": "5E Spellcasting — BCS Script Guard",
+      "no": "Skips corrupted NPC scripts (C#AJAN, BD*, A7*) in EXTEND_TOP loop of semi_spontaneous.tpa.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 30,
+      "wq": "exact"
+    },
+    {
+      "cn": 31,
+      "n": "Fix Save Slot Names (TLK Strref Collision)",
+      "tp2n": "Fix Save Slot Names (TLK Strref Collision)",
+      "no": "Fixes quicksave/autosave slot names corrupted by multi-session TLK rebuilds. When mods install across multiple WeiDU sessions, spell 'Casting X...' strings can overwrite save name strrefs in dialog.tlk. This component verifies savename.2da strrefs and rebuilds any corrupted ones. MUST install late — after all TLK modifications are done.",
+      "wf": "eet-mod-forge-patches",
+      "wp": "eet-mod-forge-patches\\setup-eet-mod-forge-patches.tp2",
+      "wc": 31,
+      "wq": "exact",
+      "cat": "POST EET"
+    }
+  ],
+  "gh": {
+    "o": "Anprionsa",
+    "r": "infinity-mod-forge"
+  }
+}

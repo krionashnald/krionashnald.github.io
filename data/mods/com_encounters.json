@@ -1,0 +1,78 @@
+{
+  "i": 76,
+  "t": "com_encounters",
+  "sv": 1,
+  "pfx": "COM",
+  "ord": 140,
+  "c": "QUEST MODS BG2",
+  "n": "CoM Encounters",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "ru": 4,
+    "pl": 5,
+    "es": 6,
+    "zh-cn": 7
+  },
+  "no": "Chosen of Mystra's Encounters The Gate Project fork:",
+  "u": "https://github.com/The-Gate-Project/Com_encounters/blob/main/Readme.md",
+  "a": "Dark Raven, Magnus Thorenson, CoM Solaufein",
+  "v": "v1.22",
+  "sum": "Adds new encounters and improvements to BG2, including improved Druid Grove druids, Underdark drow encounters, and an enhanced Shagbag encounter.",
+  "tags": [
+    "story",
+    "combat"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "Com_encounters"
+  },
+  "dl": "https://github.com/The-Gate-Project/Com_encounters/blob/main/Readme.md",
+  "au": "Raven, Magnus Thorenson and CoM Solaufein",
+  "co": [
+    {
+      "n": "Chosen of Mystra's Encounters (Requires Throne of Bhaal)",
+      "tp2n": "Chosen of Mystra's Encounters (Requires Throne of Bhaal)",
+      "pi": "CoM_Solaufein-Com_encounters",
+      "wf": "com_encounters",
+      "wp": "com_encounters\\SETUP-com_encounters.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "no": "New ToB encounters with Chosen of Mystra theme."
+    },
+    {
+      "n": "Would you like to install improved druid encounters?",
+      "tp2n": "Would you like to install improved druid encounters?",
+      "pi": "CoM_Solaufein-improved_druids",
+      "wf": "com_encounters",
+      "wp": "com_encounters\\SETUP-com_encounters.tp2",
+      "wc": 1,
+      "wq": "manual_final",
+      "cn": 1,
+      "no": "Improved druid encounters."
+    },
+    {
+      "n": "Would you like to install improved Shagbag encounters?",
+      "tp2n": "Would you like to install improved Shagbag encounters?",
+      "pi": "CoM_Solaufein-improved_shagbag",
+      "wf": "com_encounters",
+      "wp": "com_encounters\\SETUP-com_encounters.tp2",
+      "wc": 2,
+      "wq": "manual_final",
+      "cn": 2,
+      "no": "Improved Shagbag encounters."
+    }
+  ]
+}

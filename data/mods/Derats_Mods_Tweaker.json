@@ -1,0 +1,261 @@
+{
+  "i": 810,
+  "t": "Derats_Mods_Tweaker",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 650,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Mods Tweaker",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "u": "https://github.com/Deratiseur/Mods_Tweaker/",
+  "a": "Deratiseur",
+  "sum": "This mod slightly revisits old mods, giving them more coherence. All components are optional and mods must be installed before this one.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Deratiseur",
+  "dl": "https://github.com/Deratiseur/Mods_Tweaker",
+  "no": "Post-install tweaker for other mods by Deratiseur and community. Each component requires its target mod to be installed first (Horace, Chiara, FoxMonster, TTSQ, Nina, Thael, DNT, Sub-Zero, Banana, Yikari, Mawgul, UoT, Jamella, Interplanetary, Zulu, Jelly mutant, Sigil). Must install AFTER all target mods. French and English.",
+  "co": [
+    {
+      "n": "Give to the Horace npc the immunities of a skeleton",
+      "cn": 1,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "pi": "Px_MTWK_Horace1"
+    },
+    {
+      "n": "Move the Horace npc to the Athktla cemetery",
+      "cn": 2,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "pi": "Px_MTWK_Horace2"
+    },
+    {
+      "n": "Give to the Chiarra npc in human form the immunities of a vampire and set her race to vampire",
+      "cn": 3,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "pi": "Px_MTWK_Chiara"
+    },
+    {
+      "n": "Give to the Moddie npc an adequate portrait",
+      "cn": 4,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "pi": "Px_MTWK_Moddie1"
+    },
+    {
+      "n": "Turn the Moddie npc into a pet (who follows you as a 7th companion)",
+      "cn": 5,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "pi": "Px_MTWK_Moddie2"
+    },
+    {
+      "n": "Give the to Baenwuld NPC (mod The Tortured Soul Quest) a portrait",
+      "cn": 22,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "pi": "Px_MTWK_TTSQ2"
+    },
+    {
+      "n": "Match the recruitable Baenwuld with his summonable version",
+      "cn": 23,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 23,
+      "wq": "verified",
+      "pi": "Px_MTWK_TTSQ3"
+    },
+    {
+      "n": "Freeing Baenwuld from slavery (The Tortured Soul Quest mod) earns xp.",
+      "cn": 19,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 19,
+      "wq": "verified",
+      "pi": "Px_MTWK_TTSQ"
+    },
+    {
+      "n": "Give to the Ninafer npc an alternative portrait",
+      "cn": 6,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "pi": "Px_MTWK_Nina1"
+    },
+    {
+      "n": "Change the class of the Ninafer npc class to Wizardslayer/Mage (she keeps her family equipment)",
+      "cn": 7,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "pi": "Px_MTWK_Nina2"
+    },
+    {
+      "n": "Change the class of the Thael npc to Swashbuckler/Mage",
+      "cn": 12,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "pi": "Px_MTWK_Thael"
+    },
+    {
+      "n": "Change the class of the Tomoyo Sakagaki npc to Kensa�. (Tomoyo and the underground city mod).",
+      "cn": 17,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 17,
+      "wq": "verified",
+      "pi": "Px_MTWK_Tomoyo"
+    },
+    {
+      "n": "Give to the Sub_Zero npc decent characteristics",
+      "cn": 8,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "pi": "Px_MTWK_Sub_Zero"
+    },
+    {
+      "n": "Give to the Banana npc decent characteristics",
+      "cn": 20,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "pi": "Px_MTWK_Banana"
+    },
+    {
+      "n": "Give to the Yikari npc some extra charisma when he regains his speech",
+      "cn": 9,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "pi": "Px_MTWK_Yikari"
+    },
+    {
+      "n": "Delay the arrival of the pnj Mawgul.",
+      "cn": 18,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 18,
+      "wq": "verified",
+      "pi": "Px_MTWK_Mawgul"
+    },
+    {
+      "n": "Delay the arrival of the Umbra of T.R.O.W. Ring",
+      "cn": 10,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "pi": "Px_MTWK_TROW1"
+    },
+    {
+      "n": "Major demons summonable in Umbra of T.R.O.W drop their hearts",
+      "cn": 13,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "pi": "Px_MTWK_TROW2"
+    },
+    {
+      "n": "Allow another merchant to sell items from Jamella's Diablo2 Item Store (unlimited)",
+      "cn": 11,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "pi": "Px_MTWK_Jamella"
+    },
+    {
+      "n": "Allow a merchant in TOB to sell all items found by the Interplan Seeker Chest",
+      "cn": 15,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "pi": "Px_MTWK_Interplan"
+    },
+    {
+      "n": "A competing shop is selling the book �The Secrets of The Interplan�",
+      "cn": 16,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "pi": "Px_MTWK_Interplan2"
+    },
+    {
+      "n": "Make the Lion Warrior kit's shapeshifter semi-permanent (like the shapeshifters modified by Tweak_Anthology or SCS)",
+      "cn": 14,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "pi": "Px_MTWK_Zulu"
+    },
+    {
+      "n": "Make sure the Jelly mutant Kit no longer changes gender to androgynous.",
+      "cn": 21,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "pi": "Px_MTWK_Gelee"
+    },
+    {
+      "n": "Make the amulet of the Sigil's birthday mod much easier to use",
+      "cn": 24,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 24,
+      "wq": "verified",
+      "no": "Simplifies Sigil amulet quest",
+      "pi": "Px_MTWK_Sigil"
+    },
+    {
+      "n": "Make the amulet of the Sigil's birthday mod truly unlimited",
+      "cn": 25,
+      "wf": "Derats_Mods_Tweaker",
+      "wp": "Derats_Mods_Tweaker\\Setup-Derats_Mods_Tweaker.tp2",
+      "wc": 25,
+      "wq": "verified",
+      "no": "Removes Sigil amulet usage limits",
+      "pi": "Px_MTWK_Sigil2"
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "Mods_Tweaker"
+  }
+}

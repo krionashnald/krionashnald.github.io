@@ -1,0 +1,301 @@
+{
+  "i": 228,
+  "t": "polytweak",
+  "sv": 1,
+  "ord": 340,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Polytweak",
+  "cats": [
+    "CREATURE MODS",
+    "NPC CUSTOMIZATION",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "Polytweak by Polytope (temnix). Creature rebalancing (mind flayers, trolls, umber hulks, yuan-ti, minotaurs, vampires) installs in CREATURE MODS. NPC class/proficiency changes (Anomen, Cernd, Jaheira, Keldorn, Minsc, Nalia, Valygar, Viconia) install in NPC CUSTOMIZATION. Related weapon proficiencies and item tweaks install in PRE-TACTICAL TWEAKS. Creature components require ToB. Install before SCS — creature stat changes may be overwritten by SCS creature AI. Same author as Polyvorp.",
+  "conflicts": [
+    {
+      "with": "npc_tweak",
+      "withId": 227,
+      "severity": "partial",
+      "reason": "Both modify Cernd's class/kit/stats. Choose one.",
+      "myComps": "#150 Cernd",
+      "theirComps": "#1 Cernd",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npc_tweak",
+      "withId": 227,
+      "severity": "partial",
+      "reason": "Both modify Nalia's class/kit. Choose one.",
+      "myComps": "#500 Nalia",
+      "theirComps": "#2 Nalia",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "Both change Minsc's class. Choose one approach.",
+      "myComps": "#401 #402 #403 Minsc",
+      "theirComps": "#2300",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "Both modify Nalia's class/kit. Choose one.",
+      "myComps": "#500 Nalia",
+      "theirComps": "#2500-#2517",
+      "source": "eemodsetup"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/forums/topic/25724-polytweak-initial-release",
+  "a": "temnix",
+  "sum": "NPC class/kit/proficiency changes for BG2 companions (Anomen, Cernd, Jaheira, Keldorn, Minsc, Nalia, Valygar, Viconia), plus item tweaks (Blackrazor icons, PnP Mace of Disruption).",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/forums/topic/25724-polytweak-initial-release",
+  "au": "Polytope",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "PnP mind flayer attacks",
+      "tp2n": "PnP mind flayer attacks",
+      "cn": 50,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Comprehensive mind flayer rebalance to PnP stats. Rewrites HP, saves, stats, and resistances for all mind flayer variants. Removes elemental resistances (inertial barrier covers missiles). Ulitharids get custom weapon, distinct coloring, and higher stats. Vampiric illithids get fire/cold resistance 50%. Alhoon retains magic immunity."
+    },
+    {
+      "n": "Improved (less buggy) trolls",
+      "tp2n": "Improved (less buggy) trolls",
+      "cn": 60,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Requires ToB. Troll overhaul: fixes bugs, adds PnP-style variants (Giant Troll, Spirit Troll with strength drain). Patches regular, ice, spectral, and giant troll .cre files with corrected stats, HD, saves, and abilities."
+    },
+    {
+      "n": "Improved Umber Hulks",
+      "tp2n": "Improved Umberhulks",
+      "cn": 70,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Umber hulk rebalance to PnP stats. Adds Disorienting Gaze ability, custom weapon, and proper HD (8+8). Elder Umber Hulks get 5 extra HD, improved stats, and no elemental resistances. Fixes former minotaur spawn point to spawn umber hulk instead."
+    },
+    {
+      "n": "Improved Yuan-Ti",
+      "tp2n": "Improved Yuan-Ti",
+      "cn": 80,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Yuan-Ti creature rebalance. Adds Darkness 15' Radius and Cause Fear abilities. Adjusts stats and scripts for all yuan-ti variants."
+    },
+    {
+      "n": "Improved Minotaurs",
+      "tp2n": "Improved Minotaurs",
+      "cn": 83,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Minotaur rebalance to PnP stats (9 HD, 18 STR). Adds custom Charge ability and custom axe weapon. Updates Maferan (the unique minotaur) to match. Replaces a troll spawn in AR0405 with a minotaur. Also patches Rock creatures to use minotaur animations."
+    },
+    {
+      "n": "Corrected Vampire Stats",
+      "tp2n": "Corrected Vampire Stats",
+      "cn": 85,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "CREATURE MODS",
+      "no": "Vampire stat correction based on age/power. Creates a hierarchy: Fledgling (8HD) → Old (10HD) → Venerable (11HD) → Ancient (12HD, MR 20) → Eminent (13HD, MR 25) → Matriarch (14HD, MR 30). Named vampires (Bodhi, Lassal, Sarevok) get appropriate tier stats and upgraded weapons."
+    },
+    {
+      "n": "Related Weapon Proficiencies except clubs",
+      "tp2n": "Related Weapon Proficiencies except clubs (see readme)",
+      "cn": 95,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "g": "pt_relprof",
+      "scn": "Related Weapon Proficiencies",
+      "no": "v Related Weapon Proficiencies — Requires ToB. Adds a system where proficiency in one weapon grants partial bonus with related weapons. Excludes clubs from the system. Patches chargen and levelup scripts."
+    },
+    {
+      "n": "Related Weapon Proficiencies including clubs",
+      "tp2n": "Related Weapon Proficiencies including clubs",
+      "cn": 97,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "g": "pt_relprof",
+      "scn": "Related Weapon Proficiencies",
+      "no": "Same as cn:95 but includes clubs in the related proficiency system."
+    },
+    {
+      "n": "Anomen",
+      "tp2n": "Anomen",
+      "cn": 100,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Reworks Anomen's proficiencies and spell picks. Removes quarterstaff/spear, adds warhammer 2 + flail 2 + sword & shield 1. Replaces generic spell memorization with thematic picks (Sunscorch, Armor of Faith, Holy Smite, etc.)."
+    },
+    {
+      "n": "Cernd",
+      "tp2n": "Cernd",
+      "cn": 150,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Adjusts Cernd's kit flags and stats (12 STR, 16 CON, 9 DEX, 10 INT). Also modifies NPC Cloak and NPC Staff item stat requirements to match."
+    },
+    {
+      "n": "two handed weapons",
+      "tp2n": "two handed weapons",
+      "no": "v Jaheira — Shifts Jaheira to quarterstaff 2, sling 2, spear 1, two-handed style 1. Removes scimitar and sword & shield proficiency. Replaces spells with nature-themed picks (Shillelagh, Iron Skins, etc.).",
+      "cn": 201,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "g": "pt_jaheira",
+      "scn": "Jaheira"
+    },
+    {
+      "n": "dual wielding",
+      "tp2n": "dual wielding",
+      "cn": 202,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "g": "pt_jaheira",
+      "scn": "Jaheira",
+      "no": "Alternative Jaheira build focused on dual wielding instead of two-handed weapons."
+    },
+    {
+      "n": "Keldorn",
+      "tp2n": "Keldorn",
+      "cn": 300,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Adjusts Keldorn's proficiencies and spell memorization for a more focused Inquisitor build."
+    },
+    {
+      "n": "Keep Minsc as ranger",
+      "tp2n": "Keep Minsc as ranger",
+      "no": "v Minsc — Keeps Minsc as ranger but adjusts proficiencies. Adds two-weapon style 3 and adjusts HP scaling per level.",
+      "cn": 401,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "g": "pt_minsc",
+      "scn": "Minsc"
+    },
+    {
+      "n": "Make Minsc a barbarian (with original proficiencies)",
+      "tp2n": "Make Minsc a barbarian (with original proficiencies)",
+      "cn": 402,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "g": "pt_minsc",
+      "scn": "Minsc",
+      "no": "Changes Minsc to Barbarian class while keeping his original proficiency spread. Adjusts HP for barbarian HD."
+    },
+    {
+      "n": "Make Minsc a barbarian (dual wielding)",
+      "tp2n": "Make Minsc a barbarian (dual wielding)",
+      "cn": 403,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "g": "pt_minsc",
+      "scn": "Minsc",
+      "no": "Changes Minsc to Barbarian with dual-wield focused proficiencies (two-weapon style 3). Adjusts HP for barbarian HD."
+    },
+    {
+      "n": "Nalia",
+      "tp2n": "Nalia",
+      "cn": 500,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Reworks Nalia as a pure Thief (class 5, Swashbuckler kit). Changes proficiencies to short sword 2, dagger 2, crossbow 1. Replaces spells with thief-appropriate picks (Find Traps, Haste, Stoneskin). Removes bow, adds crossbow + bolts. Adjusts thieving skills."
+    },
+    {
+      "n": "Valygar",
+      "tp2n": "Valygar",
+      "cn": 600,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Changes Valygar's kit (Stalker variant 154) and proficiencies. Removes spear/dagger/longbow, adds shortbow 2, two-weapon style 3, longsword. Replaces his longbow with a shortbow."
+    },
+    {
+      "n": "Viconia",
+      "tp2n": "Viconia",
+      "cn": 700,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "cat": "NPC CUSTOMIZATION",
+      "no": "Improves Viconia's spell memorization across level variants. Adds Silence 15', Free Action, Holy Power, Chaotic Commands, Flame Strike, Heal, and other thematic drow priestess spells."
+    },
+    {
+      "n": "Distinctive Icons for Blackrazor and Flametongue",
+      "tp2n": "Distinctive Icons for Blackrazor and Flametongue",
+      "cn": 800,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "no": "Replaces inventory icons for Blackrazor (miscbc.itm) and Flametongue (sw1h24.itm) with unique custom BAMs instead of sharing generic sword icons."
+    },
+    {
+      "n": "PnP mace of disruption",
+      "tp2n": "PnP mace of disruption",
+      "cn": 900,
+      "wf": "polytweak",
+      "wp": "polytweak\\polytweak.tp2",
+      "wq": "exact",
+      "no": "Reworks both Mace of Disruption variants (blun12, blun25) to PnP stats. +1 enchantment (treated as +3), 1d6+2 damage, +1d6 magic vs undead/evil extraplanar. Destruction chance scales by HD: 95% for 6HD, down to 5% for other evil creatures. Evil wielders take 5d4 damage."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS Smarter Mind Flayers and Rebalanced Troll Regeneration may overwrite Polytweak's creature stat changes. Install Polytweak before SCS.",
+      "myComps": "#50 PnP mind flayers #60 Improved trolls",
+      "theirComps": "#8060 Smarter mind flayers #8070 Rebalanced troll regeneration",
+      "source": "tp2 analysis, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

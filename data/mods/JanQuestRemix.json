@@ -1,0 +1,45 @@
+{
+  "i": 938,
+  "t": "JanQuestRemix",
+  "sv": 1,
+  "ord": 990,
+  "n": "Jan's Quest Remix",
+  "c": "QUEST MODS BG2",
+  "au": "Akadis, Kasumi",
+  "dl": "https://akadis.baldursgateworld.fr/Jan/JansQuestEn.html",
+  "no": "French-only v2.0.5 beta expansion of Jan's Extended Quest (JanQuest). Shares creature files (E_JLissa, E_Jaella, E_JPGond, E_JVaela, E_JBilly) and areas (Baervan Temple, Gond Temple, Oghma Temple, PalVolOm cutscene, Vaelag's House) with JanQuest. HARD CONFLICT — cannot install both. Adds travel triggers from Slums (AR0400), Waukeen's Promenade (AR0700), and Bridge District (AR0500). Extends AR0300, AR0406, AR0513, AR0702. Quest involves Jan, his former girlfriend Lissa, her husband Vaelag, Priest of Gondar, Temple of Oghma Shadow Thieves, and a Lens/Heart-of-Manipulation storyline. English, German, and Russian tra files exist but are commented out in the tp2.",
+  "conflicts": [
+    {
+      "with": "JanQuest",
+      "withId": 210,
+      "severity": "hard",
+      "reason": "JanQuestRemix is an expanded rewrite of Jan's Extended Quest (JanQuest). Both write to identical override files (E_JLissa.cre, E_Jaella.cre, E_JPGond.cre, E_JVaela.cre, E_JBilly.cre, etc.) and use the same custom areas (Baervan, Gond, Oghma, PalVolOm, VaelagHome). Install one OR the other, never both.",
+      "myComps": "#0 Jan's Quest Remix",
+      "theirComps": "#0 Jan's Extended Quest",
+      "source": "Identical creature/area/script filenames in both tp2s, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "langs": {
+    "fr": 0
+  },
+  "ph": [
+    "SoA"
+  ],
+  "u": "https://akadis.baldursgateworld.fr/Jan/JansQuestEn.html",
+  "sum": "French-only v2.0.5 beta expansion of Jan's Extended Quest with remixed quest content. Hard conflict with JanQuest — shares creature/area files.",
+  "tags": [
+    "quest"
+  ],
+  "co": [
+    {
+      "n": "Jan's Quest Remix",
+      "tp2n": "",
+      "cn": 0,
+      "wf": "JanQuestRemix",
+      "wp": "JanQuestRemix\\Setup-JanQuestRemix.tp2",
+      "wq": "verified",
+      "no": "Adds remixed Jan Jansen quest content. Extends Slums, Waukeen's Promenade, and Bridge District areas with travel triggers to new custom areas. Uses Jan.bcs EXTEND_BOTTOM for quest initialization."
+    }
+  ]
+}

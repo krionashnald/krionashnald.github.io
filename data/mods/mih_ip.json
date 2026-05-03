@@ -1,0 +1,265 @@
+{
+  "i": 251,
+  "t": "mih_ip",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 20,
+  "c": "ITEM ADDITION MODS",
+  "n": "Made in Heaven: Item Pack",
+  "no": "MiH Item Pack by Angel. Adds items from IWD/PST, revises item mechanics, and tweaks shop inventories. Install BEFORE Full Alchemy (FA) and armor overhauls. Some components overlap with Wares of the Planes, Golem Construction, and Tweaks and Tricks. Uses heavy COPY_EXISTING_REGEXP — each component should run in its own WeiDU process to avoid memory exhaustion (mod_installer handles this automatically via FORCE_SINGLE). In rare cases, dialog.tlk can be truncated during installation due to filesystem interference — TLK backup rotation in mod_installer guards against this.",
+  "conflicts": [
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Minimal overlap. MiH cn:13 (Tome of Golems) modifies tome02/04.itm — no TnT equivalent. MiH cn:14 (Misc Item Improvements) modifies clck20.itm (Shield Cloak), potn11.itm, and 12+ other items. TnT cn:29 modifies clck26.itm (Cloak of Mirroring, different item from MiH's clck20). TnT cn:37 modifies sw1h54.itm (Equalizer, not touched by MiH). TnT cn:24 (ammo) and cn:25-27 (thrown weapons) don't overlap with MiH items. Only real overlap: potn11.itm — MiH adds effects/creates potn11.spl; TnT unstacking creates g_potn11.spl. Install MiH before TnT. Both safe to keep.",
+      "orderOnly": true,
+      "myComps": "#13 #14",
+      "theirComps": "#24 Hassle-free ammo #25 #26 #27 Thrown weapons #29 Cloak of Mirroring #37 Equalizer",
+      "source": "MiH item_improvements.tpa lines 135-177 patches potn11; TnT potions_no_stack creates g_potn11.spl; clck20 vs clck26 are different items, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "TacticsRemix",
+      "withId": 386,
+      "severity": "hard",
+      "reason": "Tactics Remix auto-skips all components when Made in Heaven mods are detected. Incompatible — choose one.",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-GolemConstruction",
+      "withId": 122,
+      "severity": "soft",
+      "reason": "Both modify the Tome of Golems item; Golem Construction replaces the manual entirely while MiH improves it",
+      "myComps": "#13 Improved Tome of Golems",
+      "theirComps": "#10 Replace original Golem Manual"
+    }
+  ],
+  "u": "https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases",
+  "a": "Angel",
+  "v": "v7",
+  "sum": "Adds new lore-friendly items scattered across BG1 locations. Integrates naturally with existing shops and treasure.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "AngelGryph",
+    "r": "MadeInHeaven_ItemPack"
+  },
+  "dl": "https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases",
+  "langs": {
+    "en": 0
+  },
+  "au": "Mulan",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Made in Heaven: Item Pack",
+      "tp2n": "Made in Heaven: Item Pack",
+      "wc": 0,
+      "no": "Core item pack. Adds new lore-friendly items across BG1 and BG2 locations.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 1,
+      "n": "Personal Items for NPCs",
+      "tp2n": "Personal Items for NPCs",
+      "wc": 1,
+      "no": "DEPRECATED — marked NOT READY in tp2. Do not select.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 2,
+      "n": "Icewind Dale items for Baldur's Gate 1 & 2",
+      "tp2n": "Icewind Dale items for Baldur's Gate 1 & 2",
+      "wc": 2,
+      "no": "Adds IWD items to BG1/BG2 shops and treasure. Similar to IWDification item components but different items.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 3,
+      "n": "Planescape Torment items for Baldur's Gate 1 & 2",
+      "tp2n": "Planescape Torment items for Baldur's Gate 1 & 2",
+      "wc": 3,
+      "no": "Adds Planescape Torment items to BG1/BG2. Unique content not covered by other mods.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 4,
+      "n": "BG1-style Wands of Frost & -Lightning",
+      "tp2n": "BG1-style Wands of Frost & -Lightning",
+      "wc": 4,
+      "no": "Reverts EE wand changes to classic BG1 behavior. SKIPPED by WeiDU (exits 0, no log entry) on BG:EE standalone — REQUIRE_PREDICATE NOT GAME_IS bgee.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 5,
+      "n": "Healing potions work as in Pen & Paper",
+      "tp2n": "Healing potions work as in Pen & Paper",
+      "wc": 5,
+      "g": "mih_healing",
+      "scn": "Alternative Healing Potions",
+      "grn": "Item Functionality Tweaks",
+      "no": "PnP healing potion values. Choose one healing potion style.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 6,
+      "n": "Healing Potions work as in Icewind Dale",
+      "tp2n": "Healing Potions work as in Icewind Dale",
+      "wc": 6,
+      "g": "mih_healing",
+      "scn": "Alternative Healing Potions",
+      "grn": "Item Functionality Tweaks",
+      "no": "IWD healing potion values. Choose one healing potion style.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 7,
+      "n": "Healing Potions work as in Baldur's Gate",
+      "tp2n": "Healing Potions work as in Baldur's Gate",
+      "wc": 7,
+      "g": "mih_healing",
+      "scn": "Alternative Healing Potions",
+      "grn": "Item Functionality Tweaks",
+      "no": "Classic BG healing potion values. Choose one healing potion style.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 8,
+      "n": "Holy Symbols are Amulets",
+      "tp2n": "Holy Symbols are Amulets",
+      "wc": 8,
+      "g": "mih_holy",
+      "scn": "Change item type of Holy Symbols",
+      "grn": "Item Functionality Tweaks",
+      "no": "Changes holy symbol item type to amulet. SKIPPED by WeiDU (exits 0, no log entry) if ToB not present — REQUIRE_PREDICATE GAME_INCLUDES tob. Choose one holy symbol type.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 9,
+      "n": "Holy Symbols are Belts",
+      "tp2n": "Holy Symbols are Belts",
+      "wc": 9,
+      "g": "mih_holy",
+      "scn": "Change item type of Holy Symbols",
+      "grn": "Item Functionality Tweaks",
+      "no": "Changes holy symbol item type to belt. SKIPPED by WeiDU (exits 0, no log entry) if ToB not present — REQUIRE_PREDICATE GAME_INCLUDES tob. Choose one holy symbol type.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified"
+    },
+    {
+      "cn": 10,
+      "n": "Turn generic Full Plate into Field Plate",
+      "tp2n": "Turn generic Full Plate into Field Plate",
+      "wc": 10,
+      "no": "Renames/retypes generic full plate to field plate. May conflict with armor overhauls (FA, YARAS). Install MiH IP first.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 11,
+      "n": "Turn all Dragon Scale Armor into Scale Mail",
+      "tp2n": "Turn all Dragon Scale Armor into Scale Mail",
+      "wc": 11,
+      "no": "Changes dragon scale armor type to scale mail. Item type tweak.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 12,
+      "n": "P&P Mace of Disruption (and similar items)",
+      "tp2n": "P&P Mace of Disruption (and similar items)",
+      "wc": 12,
+      "no": "Adjusts Mace of Disruption and similar items to PnP values. Also done by Tweaks Anthology.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 13,
+      "n": "Improved Tome of Golems",
+      "tp2n": "Improved Tome of Golems",
+      "wc": 13,
+      "no": "Enhances the Tome of Golems. Golem Construction (Argent77) is a more complex alternative that replaces the manual entirely. Uses items that Golem Construction removes.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 14,
+      "n": "Miscellaneous Item Improvements (see readme)",
+      "tp2n": "Miscellaneous Item Improvements (see readme)",
+      "wc": 14,
+      "no": "Various item balance changes. Conflicts with Tweaks and Tricks #24 Hassle-free ammo, #25-27 Thrown weapons, #29 Cloak of Mirroring, #37 Equalizer. Uses items removed by Golem Construction.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Functionality Tweaks"
+    },
+    {
+      "cn": 15,
+      "n": "Add Potions of Extra Healing in BG1",
+      "tp2n": "Add Potions of Extra Healing in BG1",
+      "wc": 15,
+      "no": "Adds Extra Healing potions to BG1 shops. Already covered by Wares of the Planes if installed. BG1 only.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Availability Tweaks"
+    },
+    {
+      "cn": 16,
+      "n": "Nerf BG1 easter egg items",
+      "tp2n": "Nerf BG1 easter egg items",
+      "wc": 16,
+      "no": "Reduces power of BG1 easter egg items (Golden Pantaloons etc). BG1 only.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Availability Tweaks"
+    },
+    {
+      "cn": 17,
+      "n": "Sensible Shops (see readme)",
+      "tp2n": "Sensible Shops (see readme)",
+      "wc": 17,
+      "no": "Adjusts shop inventories for better balance and consistency across the game.",
+      "wf": "mih_ip",
+      "wp": "mih_ip\\SETUP-MIH_IP.TP2",
+      "wq": "verified",
+      "grn": "Item Availability Tweaks"
+    }
+  ]
+}

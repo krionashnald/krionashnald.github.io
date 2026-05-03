@@ -1,0 +1,778 @@
+{
+  "i": 330,
+  "t": "IHateUndead",
+  "sv": 1,
+  "ord": 140,
+  "c": "KIT & CLASS MODS",
+  "n": "I Hate Undead",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2
+  },
+  "no": "Reminder: DoF DR FnP and ToF are incompatible, except when exchanging kits Why does it need to go before T&B? Use Kits' Colors -> redundant with CDTweaks Character Colors Instead of Item Colors Spheres System (by Kjeron) -> apparently MiH FR & SP and IWD spells bring too many lv7 cleric spells Install kit: Pain of Loviatar -> ERROR locating resource for 'COPY' Resource [%spell_res%.spl] not found in",
+  "spl": {
+    "7": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURIHU01",
+          "innate",
+          0,
+          "Abjuration",
+          "Circle of Protection",
+          "Druid circle that repels undead."
+        ],
+        [
+          "YOURIHU02",
+          "innate",
+          0,
+          "Evocation",
+          "Purifying Flame",
+          "Druid flame that damages undead."
+        ],
+        [
+          "YOURIHU03",
+          "innate",
+          0,
+          "Necromancy",
+          "Turn Corruption",
+          "Removes undead taint from area."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "0": {
+      "RAHUUP": {
+        "passive": [
+          {
+            "n": "Undead Hunter",
+            "type": "desc",
+            "desc": "+2 AC/THAC0/damage vs undead. Scaling save vs Death (+1 at 1/5/10/15/20). At lv20: immune to fear/disease/level drain/paralysis."
+          },
+          {
+            "n": "CHA Penalty",
+            "type": "desc",
+            "desc": "-2 Charisma"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Blessings",
+            "freq": "replaces ranger spells",
+            "effects": "Minor (Bless, Detect Evil, PfE, Remove Fear), Modest (Cure Disease, Remove Paralysis, Slow Poison), Major (Death Ward, Negative Plane Protection).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max",
+          "alignment": "NG only",
+          "noSpells": true,
+          "items": "No Charm Animal. Limited weapons. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Blessings replace all ranger spells. Minor (Bless, Detect Evil, PfE, Remove Fear), Modest (Cure Disease, Remove Paralysis, Slow Poison), Major (Death Ward, Negative Plane Protection)."
+        },
+        "statBonus": {
+          "cha": -2,
+          "note": "-2 CHA. Scaling +1 save vs Death at lv1/5/10/15/20. At lv20: immune to fear/disease/level drain/paralysis."
+        }
+      }
+    },
+    "1": {
+      "RAHUHR": {
+        "passive": [
+          {
+            "n": "Undead/Fiend Hunter",
+            "type": "desc",
+            "desc": "+3 THAC0/damage vs undead and fiends. Turn Undead as priest 2 levels higher."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Redeem",
+            "freq": "1/day, +1 per 5 levels",
+            "effects": "Touch: 1d8/3 levels vs undead (save vs Death -4 or destroyed), 1d6/3 levels vs fiends (banish), 1d4/3 levels vs evil (feeblemind).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "LG/LN only",
+          "items": "Cannot create undead, resurrect, or summon fiends. Cannot be resurrected. Dual to Fighter."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Cannot create undead, resurrect, or summon fiends. Cannot be resurrected. Loses standard necromancy and summoning."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLAs. Redeem innate replaces most offensive priest casting."
+        }
+      }
+    },
+    "2": {
+      "RAHUDS": {
+        "passive": [
+          {
+            "n": "Necromancer",
+            "type": "desc",
+            "desc": "No 15% penalty scribing other schools. d6 hit die."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Soul Sacrifice",
+            "freq": "1/day, +1 per 6 levels",
+            "effects": "Lose 25% max HP, gain +3 caster level, -2 casting time, -2 save vs Spell/Death. Can kill self.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Good only",
+          "items": "Necromancer school. Enemies don't get -2 save vs Necromancy. Dual to Fighter."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Necromancer school specialist. No 15% scribe penalty for other schools. Enemies do NOT get -2 save vs Necromancy."
+        },
+        "hlaPool": {
+          "class": "MAGE",
+          "specialist": "Necromancer",
+          "note": "Necromancer specialist; standard mage HLA pool."
+        }
+      }
+    },
+    "4": {
+      "RAHUDT": {
+        "passive": [
+          {
+            "n": "Stun Backstab",
+            "type": "desc",
+            "desc": "Backstab stuns undead 1 round (save vs Death -2). +10% Find Traps and Move Silently."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Trick Death",
+            "freq": "1/day, +1 per 10 levels",
+            "effects": "Undead ignore you for 1 turn (cannot act during).",
+            "level": 1
+          },
+          {
+            "n": "Holy Trap",
+            "freq": "1/day at lv2, +1 per 6 levels",
+            "effects": "3d8 acid + 3d8 magic vs undead, no save.",
+            "level": 2
+          }
+        ],
+        "restrictions": {
+          "alignment": "NG/CG/TN/CN only",
+          "items": "20 skill pts/level. No Pick Pockets. Dual to Mage."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "No Pick Pockets."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool. Backstab can stun undead."
+        }
+      }
+    },
+    "5": {
+      "RAHUBD": {
+        "passive": [
+          {
+            "n": "Undead Slayer",
+            "type": "desc",
+            "desc": "+5 THAC0/damage vs undead. +2 movement speed. -2 speed factor. Immune to disease and fear. d12 hit die."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ancient Wrath",
+            "freq": "1/day per 4 levels",
+            "effects": "5 rounds: +5 STR, +3 save vs Spells/Death, +1 APR. 5% berserk risk.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max, no shields",
+          "alignment": "LG/NG/TN only",
+          "items": "Only proficient in ranged. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Only proficient in ranged weapons. No dual-class."
+        },
+        "statBonus": {
+          "note": "+2 movement speed. -2 speed factor. Immune to disease/fear. d12 HD."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool. Ancient Wrath rage innate."
+        }
+      }
+    },
+    "6": {
+      "RAHUGM": {
+        "passive": [
+          {
+            "n": "Requiem Song",
+            "type": "desc",
+            "desc": "Bard song: enemies -1 Luck (scaling to -3 at lv20), no save."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Anti-Undead Songs",
+            "freq": "1/day each at tiers",
+            "effects": "Dreadful Deeds (lv1, deafen), Beloved One (lv6, berserk), Gods' Wrath (lv11, fear), Warm Memories (lv16, dominate), Dying Conscience (lv21, stun).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "none",
+          "alignment": "NG/TN/CN/CG only",
+          "items": "No Enhanced Bard Song or Use Any Item HLA. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "exclude": [
+            "Enhanced Bard Song",
+            "Use Any Item"
+          ],
+          "note": "No Enhanced Bard Song or Use Any Item HLA (per research)"
+        },
+        "spellRestrictions": {
+          "note": "No other bard songs (only custom Requiem song)."
+        }
+      }
+    },
+    "7": {
+      "RAHUCE": {
+        "passive": [
+          {
+            "n": "Multi-Enemy Hunter",
+            "type": "desc",
+            "desc": "+2 AC/THAC0/damage vs constructs, fiends, lycanthropes, and undead."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Nature's Wrath",
+            "freq": "tiered from lv5/7/9/11",
+            "effects": "Extra offensive spells per tier: I) Fireball, Icelance, Lightning Bolt; II) Ice Storm, Smashing Wave; III) Cone of Cold, Sunfire; IV) Chain Lightning, Whirlwind.",
+            "level": 5
+          }
+        ],
+        "restrictions": {
+          "alignment": "TN only",
+          "items": "No animal summoning. No Shapeshift. Dual to Fighter."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "npcOnly": true,
+        "spellRestrictions": {
+          "note": "No animal summoning. No Shapeshift."
+        }
+      }
+    },
+    "8": {
+      "RAHUCE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Circle Enforcer kit to Jaheira."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "No animal summoning. No Shapeshift."
+        }
+      }
+    },
+    "9": {
+      "RAHUPM": {
+        "passive": [
+          {
+            "n": "Combat Bonus",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs wizards, priests, and undead."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Undead Control",
+            "freq": "tiered",
+            "effects": "Hold Undead (lv5), Repulse Undead (lv11), Control Undead (lv15).",
+            "level": 5
+          },
+          {
+            "n": "Disrupt Heretic",
+            "freq": "1/day at lv7, +1 at 9/13",
+            "effects": "Melee hits reduce target casting by 10%/hit for 5 rounds. Undead: save vs Death or destroyed.",
+            "level": 7
+          }
+        ],
+        "restrictions": {
+          "alignment": "LN only",
+          "items": "Stunning Blow every 6 levels (not 4). No Quivering Palm. No Lay on Hands. No Find Traps. Cannot be resurrected."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Stunning Blow scales slower (every 6 levels vs 4). No Quivering Palm."
+        },
+        "spellRestrictions": {
+          "note": "No Find Traps. No Quivering Palm. No Lay on Hands. Cannot be resurrected."
+        },
+        "statBonus": {
+          "note": "+2 THAC0/dmg vs wizards/priests/undead."
+        }
+      }
+    },
+    "10": {
+      "RAHUDW": {
+        "passive": [
+          {
+            "n": "Curse Dance",
+            "type": "desc",
+            "desc": "Shamanic Dance replaced with self-damaging Curses (1-3 HP/round). One fewer spell per level per day. d6 hit die."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Curses",
+            "freq": "via dance, tiered",
+            "effects": "Misfortune (lv1), Rage (lv3), Terror (lv5), Madness (lv7), Emptiness (lv11), Agony (lv13), Servitude (lv15). Save vs Death, scaling penalty.",
+            "level": 1
+          },
+          {
+            "n": "Animate Dead",
+            "freq": "1/day",
+            "effects": "Raises undead.",
+            "level": 5
+          },
+          {
+            "n": "Cacofiend",
+            "freq": "1/day",
+            "effects": "Summons a fiend.",
+            "level": 15
+          }
+        ],
+        "restrictions": {
+          "alignment": "NE only",
+          "race": "Female only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "Curses replace spirit summoning via dance. Self-damaging (1-3 HP/round).",
+          "noSpells": false
+        },
+        "statBonus": {
+          "note": "d6 HD. One fewer spell per level. Female only."
+        }
+      }
+    },
+    "11": {
+      "RAHUIS": {
+        "passive": [
+          {
+            "n": "Cold Immunity",
+            "type": "desc",
+            "desc": "Immune to cold damage and level drain"
+          },
+          {
+            "n": "Magic Vulnerability",
+            "type": "desc",
+            "desc": "100% vulnerability to magic damage. -2 save vs Necromancy. One fewer spell per level."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Devour Essence",
+            "freq": "innate",
+            "effects": "1d4/2 levels magic to undead, heals 4 HP on kill.",
+            "level": 3
+          },
+          {
+            "n": "Death Touch",
+            "freq": "innate",
+            "effects": "Random undead touch effect.",
+            "level": 7
+          },
+          {
+            "n": "Empty Vessel",
+            "freq": "innate",
+            "effects": "Immune to charm/fear/feeblemind/berserk/confusion, -50% movement.",
+            "level": 11
+          },
+          {
+            "n": "Beyond the Veil",
+            "freq": "innate",
+            "effects": "Immune to non-magical weapons + undead attacks, +3 caster level, extra magic vulnerability.",
+            "level": 15
+          }
+        ],
+        "restrictions": {
+          "alignment": "Neutral only",
+          "race": "Human only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "note": "One fewer spell per level per day. 100% vulnerability to magic damage."
+        },
+        "statBonus": {
+          "note": "One fewer spell per level. Immune to cold/level drain. 100% magic damage vulnerability."
+        },
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool. Unique undead-themed innates."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "RAHUUP",
+          "ranger",
+          "Undead Predator",
+          "Ranger devoted to hunting and destroying undead. Anti-undead tracking and combat."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "RAHUHR",
+          "cleric",
+          "Holy Redeemer",
+          "Paladin devoted to redeeming lost souls. Goes beyond simple church ordination."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "RAHUDS",
+          "mage",
+          "Deathslayer",
+          "Necromancer devoted to destroying undead rather than creating them."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "RAHUDT",
+          "thief",
+          "Death Tricker",
+          "Thief making a living by tricking and outsmarting the undead."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "RAHUBD",
+          "fighter",
+          "Burial Defender",
+          "Barbarian appointed by tribal shamans to guard burial grounds from undead."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "RAHUGM",
+          "bard",
+          "Grave Mourner",
+          "Bard whose appearance heralds tragedy. Songs of sorrow that ward off undead."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "RAHUCE",
+          "druid",
+          "Circle Enforcer",
+          "Druid appointed to enforce the natural order against undead corruption."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "RAHUCE",
+          "npc",
+          "Circle Enforcer: Jaheira",
+          "Assigns the Circle Enforcer kit to Jaheira."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "RAHUPM",
+          "monk",
+          "Pallid Mask",
+          "Monk of the Order of the Pallid Mask, servants of Jergal hunting undead."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "RAHUDW",
+          "shaman",
+          "Dreadful Witch",
+          "Reclusive woman wielding dark nature magic against undead threats."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "RAHUIS",
+          "sorcerer",
+          "Imprisoned Soul",
+          "Someone meant to die but whose soul was trapped. Undead-touched sorcery."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Raduziel/I-Hate-Undead-Kitpack/releases",
+  "a": "Raduziel",
+  "v": "3.8.3",
+  "sum": "Adds anti-undead themed kits across multiple classes (Undead Predator, Holy Redeemer, Deathslayer, and more) for characters specializing in fighting undead.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v2.4",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Raduziel",
+    "r": "I-Hate-Undead-Kitpack"
+  },
+  "dl": "https://github.com/Raduziel/I-Hate-Undead-Kitpack/releases",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Undead Predator (Ranger Kit)",
+      "tp2n": "Undead Predator (Ranger Kit)",
+      "pi": "IHateUndead-UndeadPredator",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "no": "Undead Predator ranger kit. Specialized anti-undead warrior with bonuses against undead creatures and resistances to undead abilities.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Holy Redeemer (Cleric Kit)",
+      "tp2n": "Holy Redeemer (Cleric Kit)",
+      "pi": "IHateUndead-HolyRedeemer",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "no": "Holy Redeemer cleric kit. Divine champion dedicated to destroying undead and protecting the living.",
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "n": "Deathslayer (Wizard Kit)",
+      "tp2n": "Deathslayer (Wizard Kit)",
+      "no": "potential incompatible with ToF's cleric components?",
+      "pi": "IHateUndead-Deathslayer",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      }
+    },
+    {
+      "n": "Undead Hunter Revision (Paladin Kit)",
+      "tp2n": "Undead Hunter Revision (Paladin Kit)",
+      "no": "If installing Deathslayer and TnB's \"Revised Specialists\": \"Enable the Console Commands, create a Good-alignment Necromancer with at least 16 CON\" \"While in the game, select only the Necromancer, leav",
+      "pi": "IHateUndead-UndeadHunterRevision",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "cn": 3
+    },
+    {
+      "n": "Death Tricker (Thief Kit)",
+      "tp2n": "Death Tricker (Thief Kit)",
+      "no": "Incompatible with other revisions like AK's, FnP's, or ToF's",
+      "pi": "IHateUndead-Deathtricker",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "cn": 4,
+      "k": 1,
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Burial Defender (Fighter Kit)",
+      "tp2n": "Burial Defender (Fighter Kit)",
+      "pi": "IHateUndead-BurialDefender",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 5,
+      "wq": "name_match",
+      "cn": 5,
+      "no": "Burial Defender fighter kit. Guardian of graves and crypts with defensive abilities against undead.",
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Grave Mourner (Bard Kit)",
+      "tp2n": "Grave Mourner (Bard Kit)",
+      "no": "probably incompatible with ToF's barbarian overhaul",
+      "pi": "IHateUndead-GraveMourner",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 6,
+      "wq": "name_match",
+      "cn": 6,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Circle Enforcer (Druid Kit)",
+      "tp2n": "Circle Enforcer (Druid Kit)",
+      "no": "possible overlap with Bardic Wonders",
+      "pi": "IHateUndead-CircleEnforcer",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 7,
+      "wq": "name_match",
+      "cn": 7,
+      "sp": 0,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "n": "Jaheira, the Circle Enforcer",
+      "tp2n": "Jaheira, the Circle Enforcer",
+      "pi": "DeitiesOfFaerun-CircleOfEnforcer-Jaheira",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wq": "fuzzy_match",
+      "cn": 8,
+      "x": 7,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      }
+    },
+    {
+      "n": "Pallid Mask (Monk Kit)",
+      "tp2n": "Pallid Mask (Monk Kit)",
+      "pi": "IHateUndead-PallidMask",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 9,
+      "wq": "name_match",
+      "cn": 9,
+      "no": "Pallid Mask monk kit. Undead-themed martial artist who channels necrotic energy in combat.",
+      "k": 1,
+      "kC": {
+        "monk": 1
+      }
+    },
+    {
+      "n": "Dreadful Witch (Shaman Kit)",
+      "tp2n": "Dreadful Witch (Shaman Kit)",
+      "no": "compatibility wiht monk overhauls?",
+      "pi": "IHateUndead-DreadfulWitch",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "cn": 10,
+      "k": 1,
+      "kC": {
+        "shaman": 1
+      }
+    },
+    {
+      "n": "Imprisoned Soul (Sorcerer Kit)",
+      "tp2n": "Imprisoned Soul (Sorcerer Kit)",
+      "pi": "IHateUndead-ImprisonedSoul",
+      "wf": "IHateUndead",
+      "wp": "IHateUndead\\IHATEUNDEAD.TP2",
+      "wc": 11,
+      "wq": "name_match",
+      "cn": 11,
+      "no": "Imprisoned Soul sorcerer kit. Sorcerer touched by undeath gaining necrotic spellcasting abilities.",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    }
+  ]
+}

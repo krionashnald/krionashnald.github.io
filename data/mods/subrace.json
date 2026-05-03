@@ -1,0 +1,102 @@
+{
+  "i": 680,
+  "t": "subrace",
+  "sv": 1,
+  "ord": 480,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Subrace Mod",
+  "langs": {
+    "ru": 0,
+    "en": 1,
+    "fr": 2
+  },
+  "no": "Adds 9 IWD2 subraces. HARD CONFLICT with Talents of Faerun cn:20000 (which adds 20+ subraces including all of these plus genasi). Choose one or the other. ToF is more comprehensive and integrates with its other systems. Assigns subraces to companions (Viconia=Drow, Haer'Dalis=Tiefling, Caelar=Aasimar, Baeloth=Drow).",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "hard",
+      "reason": "Subrace Mod has FORBID_COMPONENT for many Talents of Faerun components (40310, 55100-55300, etc). Also forbids Spell Revisions #0. One-directional: ToF does not check for Subrace.",
+      "theirComps": "#20000 Subraces",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Reverse of LCC-docs incompatibility (lcc id 999 vs 1011)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/tipun81/Subrace-mod",
+  "a": "Tipun",
+  "v": "0.3.1",
+  "sum": "Subrace mod for Enhanced Edition games.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/tipun81/Subrace-mod",
+  "au": "tipun",
+  "co": [
+    {
+      "n": "Subrace Colors: Change hair and skin",
+      "tp2n": "Change subrace colors (Hair and Skin)",
+      "cn": 100,
+      "wf": "subrace",
+      "wp": "subrace\\SUBRACE.TP2",
+      "wc": 100,
+      "g": "subrace_colors",
+      "scn": "Subrace mod for Baldur's Gate Enhanced Edition (BG1, BG:SoD, BG2, EET)",
+      "no": "Subrace selection with hair/skin color changes. Incompatible with ToF cn:20000 — both rewrite the race selection UI.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Subrace Colors: No changes",
+      "tp2n": "No change subrace colors (Hair and Skin)",
+      "cn": 200,
+      "wf": "subrace",
+      "wp": "subrace\\SUBRACE.TP2",
+      "wc": 200,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "g": "subrace_colors",
+      "scn": "Subrace mod for Baldur's Gate Enhanced Edition (BG1, BG:SoD, BG2, EET)"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Both modify racial features. Subrace drow changes may conflict with jtweaks drow MR overhaul",
+      "theirComps": "#463 Variable drow MR #465 #467 #469 #471 #472 #473 #474 #475 Drow MR options",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "tipun81",
+    "r": "Subrace-mod"
+  }
+}

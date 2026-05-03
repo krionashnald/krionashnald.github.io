@@ -1,0 +1,43 @@
+{
+  "i": 13,
+  "t": "bubb_revert_pathfinding",
+  "sv": 1,
+  "ord": 10,
+  "c": "ENGINE",
+  "n": "Revert Pathfinding",
+  "no": "These are mods that don't deal with the game itself, but how it works as a program. They can technically be installed anywhere as long as they go before the mods that need them, but it's better to just install at start and forget about them. Bubb's Pathfinding Revert Beamdog, for the v2.5 of the Enhanced Editions, tried to improve the pathfinding system for creatures. This was considered a bad idea. This mods reverts the game to using the pathfinding system from before. Use the v2.5 version of t",
+  "u": "https://forums.beamdog.com/discussion/72639/comments-on-new-v2-5-pathfinding-it-is-bad-news/p2",
+  "a": "Bubb",
+  "sum": "Reverts the Enhanced Edition pathfinding algorithm to the original BG2 behavior. Fixes issues where characters take bizarre routes around obstacles.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/72639/comments-on-new-v2-5-pathfinding-it-is-bad-news/p2",
+  "au": "Bubb",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Bubb's v2.6.6.0+ Pathfinding Revert",
+      "tp2n": "Bubb's v2.6.6.0+ Pathfinding Revert",
+      "cn": 0,
+      "wf": "bubb_revert_pathfinding",
+      "wp": "bubb_revert_pathfinding\\BUBB_REVERT_PATHFINDING.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    }
+  ]
+}

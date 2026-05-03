@@ -1,0 +1,80 @@
+{
+  "i": 563,
+  "t": "Saerileth",
+  "sv": 1,
+  "ord": 970,
+  "c": "NEW NPC MODS",
+  "n": "Saerileth NPC",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "es": 3,
+    "ru": 4,
+    "cs": 5,
+    "zh-cn": 6
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "saerileth",
+          "portraits/saerileth/saerile.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/PaulaMigrate/Saerileth",
+  "a": "gilalion",
+  "v": "v23",
+  "sum": "Adds Saerileth, a romanceable paladin of Tyr NPC for BG2, an outer-planar human sent to Toril on a mission, with extensive lovetalks, banters, and reputation-sensitive behavior.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "gilalion",
+  "dl": "https://github.com/PaulaMigrate/Saerileth",
+  "no": "Adds Saerileth, a romanceable paladin of Tyr NPC for BG2, an outer-planar human sent to Toril on a mission, with extensive lovetalks, banters, and reputation-sensitive behavior.",
+  "co": [
+    {
+      "n": "Saerileth mod",
+      "cn": 0,
+      "wf": "Saerileth",
+      "wp": "Saerileth\\SETUP-SAERILETH.TP2",
+      "wc": 0,
+      "tp2n": "Saerileth mod",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "with": "d0questpack",
+      "withId": 64,
+      "severity": "soft",
+      "reason": "Minor narrative note. Saerileth's alternate Spellhold path bypasses Shadow Thieves — D0QP chapter 6 Aran assault auto-trigger may fire on this path (minor narrative oddity). No shared file modifications. No technical conflict.",
+      "myComps": "#0 Saerileth",
+      "theirComps": "#5 Additional Shadow Thieves Content",
+      "source": "No shared files; narrative auto-trigger only, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "PaulaMigrate",
+    "r": "Saerileth"
+  }
+}

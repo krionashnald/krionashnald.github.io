@@ -1,0 +1,110 @@
+{
+  "i": 236,
+  "t": "banterpack",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 420,
+  "c": "NPC CROSSMOD",
+  "n": "Banter Packs",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "de": 2,
+    "fr": 3,
+    "pl": 4,
+    "it": 5,
+    "ru": 6,
+    "ko": 7,
+    "zh-cn": 8
+  },
+  "no": "Pocket Plane Banter Pack",
+  "conflicts": [
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "partial",
+      "reason": "Choose one Shadows of Amn Banter Accelerator",
+      "myComps": "#1",
+      "theirComps": "#100 Jason Compton's Accelerated Banter Script",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "partial",
+      "reason": "Both install identical bantergoose banter accelerator script. Kelsey #3 is DEPRECATED by its own authors. Use Banter Pack #1 instead and skip Kelsey #3. All other Kelsey components (#0, #1, #4) are fully compatible with Banter Pack.",
+      "myComps": "#1 SoA Banter Accelerator",
+      "theirComps": "#3 Banter Accelerator (DEPRECATED)",
+      "source": "Kelsey tp2 DESIGNATED 3 marked DEPRECATED. Banter Pack has FORBID_FILE bantergoose.xxx check. Identical scripts, 2026-03"
+    },
+    {
+      "with": "A7-BANTERACCELERATOR",
+      "withId": 241,
+      "severity": "soft",
+      "reason": "Both modify banter timing. Use one banter accelerator method — A7 or Banter Pack's built-in.",
+      "myComps": "#1 SoA Banter Accelerator"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/Banter_Pack/releases",
+  "a": "Jason Compton, Kish Moore, Blue, Ghreyfain, Kirwond, Bons, jastey",
+  "v": "v18",
+  "sum": "Adds inter-party banters between Bioware NPCs who rarely talk to each other in vanilla. Makes the party feel more alive during travel.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v15",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Banter_Pack"
+  },
+  "au": "A Pocket Plane Group Project",
+  "dl": "https://github.com/Pocket-Plane-Group/Banter_Pack",
+  "co": [
+    {
+      "n": "Pocket Plane Banter Pack for BG2: Throne of Bhaal",
+      "pi": "PPGBanterPacks-tob",
+      "wf": "banterpack",
+      "wp": "banterpack\\Setup-banterpack.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "tp2n": "Pocket Plane Banter Pack for BG2: Shadows of Amn"
+    },
+    {
+      "n": "Install SOA Banter Accelerator script?(Increases the frequency of interparty banter)",
+      "pi": "PPGBanterPacks-soa_banteraccelerator",
+      "wf": "banterpack",
+      "wp": "banterpack\\Setup-banterpack.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "tp2n": "Install SOA Banter Accelerator script?\n(Increases the frequency of interparty banter)"
+    },
+    {
+      "n": "Pocket Plane Banter Pack for BG2: Shadows of Amn",
+      "pi": "PPGBanterPacks-soa",
+      "wf": "banterpack",
+      "wp": "banterpack\\Setup-banterpack.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "cn": 2,
+      "tp2n": "Pocket Plane Banter Pack for BG2: Throne of Bhaal"
+    },
+    {
+      "n": "Install TOB Banter Accelerator script?(Increases the frequency of interparty banter)",
+      "pi": "PPGBanterPacks-tob_banteraccelerator",
+      "wf": "banterpack",
+      "wp": "banterpack\\Setup-banterpack.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "cn": 3,
+      "tp2n": "Install TOB Banter Accelerator script?\n(Increases the frequency of interparty banter)"
+    }
+  ]
+}

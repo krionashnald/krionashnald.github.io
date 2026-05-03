@@ -1,0 +1,90 @@
+{
+  "i": 465,
+  "t": "garrick_flirt",
+  "sv": 1,
+  "ord": 500,
+  "c": "NPC EXPANSIONS",
+  "n": "Garrick's Infatuation",
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "garrick-tt",
+      "withId": 197,
+      "severity": "hard",
+      "reason": "Direct incompatibility",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/mods/npcs/garrick/",
+  "a": "Domi",
+  "v": "Beta 4",
+  "sum": "Adds a flirtation and romance path for Garrick the bard in Baldur's Gate, allowing a female PC to explore 25 conversations with him during the BG1 portion of the saga.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Domi",
+  "dl": "https://github.com/Gibberlings3/Garricks_Infatuation",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Garrick's Infatuation -> Speed",
+      "cn": 0,
+      "wf": "garrick_flirt",
+      "wp": "garrick_flirt\\SETUP-GARRICK_FLIRT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "mod_installer: game detection fails when installed pre-EET — GAME_IS eet (line 36) evaluates false before EET_Start, and eet/other/cpmvars/eet_cpmvars.tpa does not exist yet. tp2 does correctly handle EET; FAIL @104 only triggers if no supported game detected. Also: DLC Merger check at line 27 causes FAIL @116 if sod-dlc.zip present but unmerged. Fix: install after EET_Start on BG2EE executable (EET phase). BG1 content installed via EET merge.",
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "scn": "Garrick's Infatuation"
+    },
+    {
+      "n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "cn": 1,
+      "wf": "garrick_flirt",
+      "wp": "garrick_flirt\\SETUP-GARRICK_FLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "pi": "p#_garrick_infatuation_45_minutes",
+      "scn": "Garrick's Infatuation"
+    },
+    {
+      "n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "cn": 2,
+      "wf": "garrick_flirt",
+      "wp": "garrick_flirt\\SETUP-GARRICK_FLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "pi": "p#_garrick_infatuation_30_minutes",
+      "scn": "Garrick's Infatuation"
+    },
+    {
+      "n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "cn": 3,
+      "wf": "garrick_flirt",
+      "wp": "garrick_flirt\\SETUP-GARRICK_FLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "pi": "p#_garrick_infatuation_15_minutes",
+      "scn": "Garrick's Infatuation"
+    },
+    {
+      "n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "cn": 4,
+      "wf": "garrick_flirt",
+      "wp": "garrick_flirt\\SETUP-GARRICK_FLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "pi": "p#_garrick_infatuation_90_minutes",
+      "scn": "Garrick's Infatuation"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Garricks_Infatuation"
+  }
+}

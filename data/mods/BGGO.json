@@ -1,0 +1,127 @@
+{
+  "i": 25,
+  "t": "bggo",
+  "sv": 1,
+  "ord": 20,
+  "c": "GRAPHICS",
+  "n": "Baldur's Gate Graphics Overhaul",
+  "no": "Replaces area TIS/PVRZ files via a custom macro (COPY_TIS_PVRZ_BGGO) that remaps PVRZ indices to avoid collisions, then COPYs to override. Covers 58 BG1 areas (BG0xxx/BG1xxx EET names = AR0xxx BGEE names) and 6 BG2 areas (AR1102, AR1700, AR1900, AR5000, AR5200, AR6100). CONFLICT with BGEE_AI_Denoised_Areas (i=519): all 58 BGGO BG1 areas are also covered by AI Denoised (329 TIS total) — whichever installs later wins. CONFLICT with BG2EE_AI_Denoised_Areas (i=520): all 6 BGGO BG2 areas are also covered — whichever installs later wins. In infinity-insanity preset, BGGO installs at position 52 and AI Denoised at 1607/1608, so AI Denoised overwrites BGGO for all overlapping areas. Do not use BGGO and AI Denoised together. NO conflict with SotSC/DSotSC/NToSC/1PP (different area codes or file types). BUG: door_functions.tpa has ext mismatch — CreateDoorScriptPatchAnimation always creates .baf in workspace, but Door_trigger_script_patch sets ext=bcs when Door0157.bcs already exists in game (e.g. from a prior install attempt). EXTEND_BOTTOM then looks for .bcs in workspace and fails. Reproducible after any partial install leaves Door0157.bcs in override. Filed: Spellhold Studios GitHub.",
+  "rq": "EET (non-eet version available)",
+  "ic": "BG2EE_AI_Denoised_Areas (i=520), BGEE_AI_Denoised_Areas (i=519) - both replace the same TIS/PVRZ area files; last installer wins, use one or the other",
+  "ki": [
+    {
+      "pattern": "0xc0000005.*BGGO|BGGO.*0xc0000005",
+      "severity": "warning",
+      "category": "caution",
+      "description": "BGGO may crash (0xc0000005) during installation due to heavy file operations on area graphics. Transient — usually succeeds on retry.",
+      "workaround": "Retry the install. If persistent, ensure no antivirus is scanning the game directory.",
+      "user_action": "retry",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "BG2EE_AI_DENOISED_AREAS",
+      "withId": 520,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 146 vs 123)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "BGEE_AI_DENOISED_AREAS",
+      "withId": 519,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 146 vs 126)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Spellhold-Studios/Baldurs-Gate-Graphical-Overhaul",
+  "a": "Yovaneth, White Agnus",
+  "v": "v3.6",
+  "sum": "AI-upscaled area backgrounds and character sprites that sharpen the game's visuals at higher resolutions. Large download but purely cosmetic.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v2.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "BGGOEET"
+  },
+  "dl": "https://github.com/Spellhold-Studios/Baldurs-Gate-Graphical-Overhaul",
+  "au": "Yovaneth, White Agnus, Weigo",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Baldurs Gate Graphical Overhaul for Windows",
+      "cn": 1,
+      "wf": "BGGO",
+      "wp": "BGGO\\BGGO.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu_totsc"
+      ],
+      "tp2n": "Baldurs Gate Graphical Overhaul for Windows",
+      "pi": "baldurs_gate_graphical_overhaul_windows",
+      "scn": "BGGO for EET, BGT, BGEE, BG2EE, ToB and Tutu"
+    },
+    {
+      "n": "Baldurs Gate Graphical Overhaul for Android",
+      "cn": 2,
+      "wf": "BGGO",
+      "wp": "BGGO\\BGGO.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Baldurs Gate Graphical Overhaul for Android",
+      "pi": "baldurs_gate_graphical_overhaul_android",
+      "scn": "BGGO for EET, BGT, BGEE, BG2EE, ToB and Tutu"
+    },
+    {
+      "n": "BGGO for EET, BGT, BGEE, BG2EE, ToB and Tutu",
+      "pi": "baldurs_gate_graphical_overhaul",
+      "wf": "BGGO",
+      "wp": "BGGO\\BGGO.TP2",
+      "wc": 0,
+      "wq": "manual_prefix",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "fn": "BGGO Door0157.bcs ext mismatch bug in door_functions.tpa — fails on reinstall/retry when Door0157.bcs exists in override from prior attempt",
+      "tp2n": "Baldurs Gate Graphical Overhaul Core"
+    },
+    {
+      "n": "Baldurs Gate Graphical Overhaul Alternate Graphics",
+      "cn": 4,
+      "wf": "BGGO",
+      "wp": "BGGO\\BGGO.TP2",
+      "wq": "verified",
+      "tp2n": "Baldurs Gate Graphical Overhaul Alternate Graphics",
+      "pi": "baldurs_gate_graphical_overhaul_alternate"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "i": 937,
+  "t": "greyguard",
+  "sv": 1,
+  "ord": 400,
+  "n": "Grey Guard",
+  "c": "KIT & CLASS MODS",
+  "au": "Allbrother",
+  "no": "Paladin kit: Grey Guards follow a looser code, using unorthodox methods (backstab, invisibility) to protect the innocent. Cannot turn undead, -4 Charisma penalty. Gains Backstab (as Stalker), Stalk (invisibility + AC penalty), and Blade of Justice (scaling smite). Adds to FALLEN, BACKSTAB, CRIPPSTR, and SNEAKATT tables. English only.",
+  "kitAbilities": {
+    "0": {
+      "gguard": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "Same multiplier as Stalker"
+          },
+          {
+            "n": "CHA Penalty",
+            "type": "desc",
+            "desc": "-4 Charisma"
+          },
+          {
+            "n": "Unbound Justice",
+            "type": "desc",
+            "desc": "No paladin code; never risks falling"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Stalk",
+            "freq": "1 round/day",
+            "effects": "Invisibility for positioning. -5 AC for 5 rounds after.",
+            "level": 2
+          },
+          {
+            "n": "Blade of Justice",
+            "freq": "1/day at lv5, scales to 4/day",
+            "effects": "Main-hand strikes as +2 enchantment with +2 THAC0/damage for 4 rounds. Scales to +5 enchantment by lv20.",
+            "level": 5
+          }
+        ],
+        "restrictions": {
+          "items": "Cannot Turn Undead."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (no Turn Undead related HLAs)"
+        },
+        "spellRestrictions": {
+          "note": "Cannot Turn Undead. Standard paladin spellcasting retained."
+        },
+        "statBonus": {
+          "cha": -4,
+          "note": "-4 Charisma (per research)"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "gguard",
+          "paladin",
+          "Grey Guard",
+          "Paladin with looser code. Gains backstab (as Stalker), Stalk (invisibility + AC penalty), and Blade of Justice (scaling smite). Cannot turn undead, -4 Charisma."
+        ]
+      ]
+    }
+  },
+  "langs": {
+    "en": 0
+  },
+  "u": "https://forums.beamdog.com/discussion/78800/mod-grey-guard",
+  "dl": "https://forums.beamdog.com/discussion/78800/mod-grey-guard",
+  "sum": "Adds the Grey Guard paladin kit — unorthodox tactics allowed (backstab, invisibility).",
+  "tags": [
+    "kit"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Grey Guard",
+      "tp2n": "Grey Guard",
+      "cn": 0,
+      "wf": "greyguard",
+      "wp": "greyguard\\setup-greyguard.tp2",
+      "wq": "verified",
+      "kC": {
+        "paladin": 1
+      },
+      "no": "Adds Grey Guard paladin kit with backstab, Stalk, and Blade of Justice."
+    }
+  ]
+}

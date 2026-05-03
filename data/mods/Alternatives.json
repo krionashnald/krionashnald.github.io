@@ -1,0 +1,63 @@
+{
+  "i": 69,
+  "t": "alternatives",
+  "sv": 1,
+  "ord": 70,
+  "c": "QUEST MODS BG2",
+  "n": "Alternatives",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "de": 3,
+    "zh-cn": 4,
+    "it": 5,
+    "pl": 6
+  },
+  "no": "Alternatives feels like a thematic copout to me, but eh Because sometimes the vanilla 2 options in BG2 on how to reach Spellhold aren’t enough.Install Alternatives after SimDing0’s Quest Pack.",
+  "conflicts": [],
+  "u": "https://github.com/Gibberlings3/Alternatives/releases",
+  "a": "Berelinde, jastey",
+  "v": "v15",
+  "sum": "Adds alternative solutions to key BG2 plot points, letting you resolve major quests in new ways you couldn't before.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v12",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Alternatives"
+  },
+  "dl": "https://github.com/Gibberlings3/Alternatives/releases",
+  "au": "CamDawg, Wisp",
+  "co": [
+    {
+      "n": "Alternatives",
+      "tp2n": "Alternatives",
+      "cn": 0,
+      "wf": "Alternatives",
+      "wp": "Alternatives\\SETUP-ALTERNATIVES.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Alternative solutions to BG2 quests."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "d0questpack",
+      "withId": 64,
+      "severity": "partial",
+      "reason": "Both modify Shadow Thieves/Aran Linvail content, but Alternatives readme says 'tested with Quest Pack — install Quest Pack first.' Both use safe EXTEND/APPEND on shared area scripts (AR0300, AR0328, AR0329). Narrative overlap only (D0QP chapter 6 Aran assault may trigger on Alternatives path).",
+      "myComps": "#0 Alternatives",
+      "theirComps": "#5 Additional Shadow Thieves Content",
+      "source": "Alternatives readme: 'tested on installations that included Quest Pack'; both use EXTEND_TOP/EXTEND_BOTTOM; consistent with Fade partial rating, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

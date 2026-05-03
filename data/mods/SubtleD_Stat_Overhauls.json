@@ -1,0 +1,447 @@
+{
+  "i": 248,
+  "t": "SubtleD_Stat_Overhauls",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 30,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "SubtleD's Stat Overhauls",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "fr": 2
+  },
+  "cats": [
+    "EXPERIENCE TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "3xClass HLAs should go before HLA mods, and requires TA's Remove experience cap (disabling the cap with EET Tweaks isn't recognized) DavidW: \"Arguably [TA's triple HLAs] shouldn't prevent [ToF's HLAs], Cam and I may have been a bit overenthusiastic in the mutual compatibility code.\" SubtleD's Stat Overhauls - Experience components These are for starting a game with a given XP amount v Adjust SoD starting XP Jastey's SoD Tweaks already has the same thing",
+  "_legacy_ids": [
+    411
+  ],
+  "conflicts": [
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "Both modify xplevel.2da XP tables. Last installed wins for overlapping rows.",
+      "myComps": "#200 Slower Standardized XP Tables",
+      "theirComps": "#800, #805, #810",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify mxsplwis.2da. Last installed wins",
+      "myComps": "#110 #122 WIS bonus spell table #151 #152 #153 Hit Dice Overhaul #160 Saving Throws #180 Dual-Class Reqs",
+      "theirComps": "#2580 #2581 WIS Bonus Spells",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tb#tweaks",
+      "withId": 381,
+      "severity": "soft",
+      "reason": "CRITICAL overlap on stat modifier 2DAs if cn:100 used with 3E stats — both COPY strmod.2da/strmodex.2da/dexmod.2da, last installed wins completely. SubtleD cn:100 copies from its data/ directory; TB cn:4000/4500 recalculate using 3E formulas. SubtleD cn:100/110 ABSENT, cn:130 (2H Strength) present. TB cn:4000-6500 (all 3E stats) present. No conflict in current preset — cn:130 modifies item effects via opcode 44 (independent of stat tables), cn:160/180 don't touch stat 2DAs. TB cn:7000 (druids metal) modifies item class restrictions (orthogonal to everything). If ever adding SubtleD cn:100: CHOOSE SubtleD OR TB 3E stats, never both. Neither mod detects the other.",
+      "myComps": "#100 Ability Score #110 Bonus Spell Slots #130 2H Strength #200 XP Tables",
+      "theirComps": "#4000 #4500 #5000 #6000 #6500 3E Stats #7000 Druids wear metal",
+      "source": "SubtleD revised_stats.tpa COPY strmod/dexmod from data/; TB 3rd_ed_str.tpa recalculates strmod with 3E formulas; cn:130 uses opcode 44 item effects; cn:7000 modifies item class restriction bits, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Both modify racial stat bonuses. Avoid mixing",
+      "myComps": "#100 Ability Score #110 Bonus Spell Slots #121 #122 5E Caster Bonus",
+      "theirComps": "#3 Expanded Racial Bonuses"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Two overlaps resolved by removal. (1) SD cn:160 (Saving Throw Overhaul) and ToF cn:80000 (Ability Score Modifiers) both modify saveprs/saverog/savewar/savewiz.2da — last installed wins, ToF overwrites SD. (2) SD cn:180 (Lower Dual-Class Reqs) and ToF cn:40000 (Class/race restrictions) both modify abdcscrq/abdcdsrq.2da — ToF overwrites SD. Removed SD cn:160 and cn:180 . SD cn:100/110/121/122/200/251/252 were already absent. Remaining SD cn:130 (2H Strength, item effects) and cn:140/222 (unrelated to ToF).",
+      "myComps": "#100 Ability Score Overhaul #110 Bonus Spell Slots #121 #122 5E Casters #160 Saving Throws #180 Dual-Class Reqs #200 XP Tables #251 #252 MR Overhaul",
+      "theirComps": "#40000 Class/race restrictions #40610 Druid tables #80000 Ability scores #80150 THAC0",
+      "source": "SD cn:160 modifies save*.2da; ToF cn:80000 also modifies save*.2da; SD cn:180 modifies abdcscrq/abdcdsrq; ToF cn:40000 also modifies those; last-installed-wins, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_tweaks",
+      "withId": 378,
+      "severity": "soft",
+      "reason": "Both modify ability score modifiers (STR, DEX, CON). Use one or the other",
+      "myComps": "#100 Ability Score Overhaul"
+    },
+    {
+      "with": "zgtweaks",
+      "withId": 420,
+      "severity": "soft",
+      "reason": "Both modify bonus spell slot tables",
+      "myComps": "#110 Stat-based Bonus Spell Slots #121 #122 5E Caster Bonus",
+      "theirComps": "#100 Mixed PnP-BG WIS bonus spells"
+    },
+    {
+      "with": "Bart_Tweaks",
+      "withId": 405,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#110 Stat-based Bonus Spell Slots #121 #122 5E Caster Bonus",
+      "theirComps": "#3030 Alternative Wisdom Bonus Spells",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "9": {
+      "spells": [
+        [
+          "SPPR104",
+          "tweak",
+          "Stat-based bonus spell slots for divine casters"
+        ]
+      ]
+    },
+    "23": {
+      "spells": [
+        [
+          "SPWI510",
+          "modify",
+          "Magic Resistance replaced with Spell Resistance system"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Plinkification\\]|cannot convert new_bonus to integer",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Plinkification fails on !SHAMAN2.ITM (from Will-o-Wisp/Shaman mod) with 'cannot convert new_bonus to integer'. The item has a non-standard structure that Plinkification's item patching doesn't expect.",
+      "workaround": "Skip this component. It is cosmetic-only and has been removed from the Ultimate preset.",
+      "user_action": "check-docs",
+      "components": [
+        13
+      ],
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/subtledoctor/SubtleD_Stat_Overhauls/releases",
+  "a": "Subtledoctor",
+  "v": "v1.8",
+  "sum": "Modular collection of tweaks to ability scores and related game rules including saving throws, racial bonuses, experience points, and magic resistance.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "SubtleD_Stat_Overhauls"
+  },
+  "dl": "https://github.com/subtledoctor/SubtleD_Stat_Overhauls/releases",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "Ability Score Overhaul",
+      "tp2n": "Ability Score Overhaul",
+      "pi": "D5_REVISED_ABILITY_SCORES",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 100,
+      "wq": "verified",
+      "cn": 100
+    },
+    {
+      "n": "Stat-based Bonus Spell Slots",
+      "tp2n": "Stat-based Bonus Spell Slots",
+      "no": "Incompatible with ToF Revised Ability Score Modifiers and HouseTweaks CON changes",
+      "pi": "D5_ABILITY_SCORE_SPELL_SLOTS",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 110,
+      "wq": "verified",
+      "cn": 110
+    },
+    {
+      "n": "Stat-based Bonus Spells for 5E Casters: bonuses for memorization slots AND casting slots",
+      "tp2n": "bonuses for memorization slots AND casting slots",
+      "no": "Incompatible with ToF Revised Ability Scores and HouseTweaks INT/WIS/CHA Bonus Spell Slots",
+      "pi": "D5_SBO_5E_MEM_PLUS_CASTING_SLOTS",
+      "scn": "Stat-based Bonus Spells for 5E Casters",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 121,
+      "wq": "verified",
+      "cn": 121,
+      "g": "5e_caster"
+    },
+    {
+      "n": "Stat-based Bonus Spells for 5E Casters: bonuses only for casting slots",
+      "tp2n": "bonuses only for casting slots",
+      "pi": "D5_SBO_5E_CASTING_SLOTS_ONLY_",
+      "scn": "Stat-based Bonus Spells for 5E Casters",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 122,
+      "wq": "verified",
+      "cn": 122,
+      "g": "5e_caster"
+    },
+    {
+      "n": "Full Strength for 2-Hand Weapons Only",
+      "tp2n": "Full Strength for 2-Hand Weapons Only",
+      "no": "Intended for SD 5E Spellcasting. Choose these OR the 5E bonus spells, don't mix",
+      "pi": "D5_1_HAND_STR_PENALTY",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 130,
+      "wq": "verified",
+      "cn": 130
+    },
+    {
+      "n": "Plinkification",
+      "tp2n": "Plinkification",
+      "cn": 140,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 140,
+      "wq": "verified",
+      "no": "Makes low-damage attacks less effective against high-AC targets. INSTALL ISSUE: fails on !SHAMAN2.ITM (from Will-o-Wisp/Shaman mod) with 'cannot convert new_bonus to integer'. The item has a non-standard structure that Plinkification's item patching doesn't expect. Cosmetic-only component."
+    },
+    {
+      "n": "Hit Dice Overhaul: Generous (above-average) hit points",
+      "tp2n": "Generous (above-average) hit points",
+      "pi": "D5_REVISED_HD",
+      "scn": "Hit Dice Overhaul",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 151,
+      "wq": "verified",
+      "cn": 151,
+      "g": "hit_dice"
+    },
+    {
+      "n": "Hit Dice Overhaul: Closer to average hit points",
+      "tp2n": "Closer to average hit points",
+      "pi": "D5_HARDCORE_HD",
+      "scn": "Hit Dice Overhaul",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 152,
+      "wq": "verified",
+      "cn": 152,
+      "g": "hit_dice"
+    },
+    {
+      "n": "Hit Dice Overhaul: Reduced hit points",
+      "tp2n": "Reduced hit points",
+      "pi": "D5_REDUCED_HD",
+      "scn": "Hit Dice Overhaul",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 153,
+      "wq": "verified",
+      "cn": 153,
+      "g": "hit_dice"
+    },
+    {
+      "n": "Saving Throw Overhaul",
+      "tp2n": "Saving Throw Overhaul",
+      "no": "Don't mix with other hit point mods (cdtweaks HP on Level Up)",
+      "pi": "D5_REVISED_SAVING_THROW_TABLES",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 160,
+      "wq": "verified",
+      "cn": 160
+    },
+    {
+      "n": "Lower Dual-Class Requirements",
+      "tp2n": "Lower Dual-Class Requirements",
+      "no": "Incompatible with ToF Revised Ability Scores",
+      "pi": "D5_REVISED_DUAL_CLASS_REQS",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 180,
+      "wq": "verified",
+      "cn": 180
+    },
+    {
+      "n": "Slower, standardized XP Tables",
+      "tp2n": "Slower, Standardized XP Tables",
+      "no": "Overlaps with ToF class/race restriction removal. Also matches druid/priest spell tables",
+      "pi": "D5_UNIFORM_XP_TABLES",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 200,
+      "wq": "verified",
+      "cn": 200
+    },
+    {
+      "n": "No Murder XP: kills give 1/8th XP",
+      "tp2n": "kills give 1/8th XP",
+      "no": "Affects leveling speed. Also matches druid/priest spellcasting tables",
+      "pi": "D5_EIGHTH_CREATURE_XP",
+      "scn": "No Murder XP",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 211,
+      "wq": "verified",
+      "cn": 211,
+      "g": "murder_xp"
+    },
+    {
+      "n": "No Murder XP: kills give 1/4th XP",
+      "tp2n": "kills give 1/4th XP",
+      "pi": "D5_QUARTER_CREATURE_XP",
+      "scn": "No Murder XP",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 212,
+      "wq": "verified",
+      "cn": 212,
+      "g": "murder_xp"
+    },
+    {
+      "n": "No Murder XP: kills give half XP",
+      "tp2n": "kills give half XP",
+      "pi": "D5_HALF_CREATURE_XP",
+      "scn": "No Murder XP",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 213,
+      "wq": "verified",
+      "cn": 213,
+      "g": "murder_xp"
+    },
+    {
+      "n": "Choose SoD Starting XP: 65,000",
+      "tp2n": "65,000",
+      "cn": 221,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 221,
+      "wq": "verified",
+      "g": "sod_start_xp",
+      "scn": "Choose SoD Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Choose SoD Starting XP: 90,000",
+      "tp2n": "90,000",
+      "cn": 222,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 222,
+      "wq": "verified",
+      "g": "sod_start_xp",
+      "scn": "Choose SoD Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Choose SoD Starting XP: 125,000",
+      "tp2n": "125,000",
+      "cn": 223,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 223,
+      "wq": "verified",
+      "g": "sod_start_xp",
+      "scn": "Choose SoD Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Choose SoD Starting XP: 161,000",
+      "tp2n": "161,000",
+      "cn": 224,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 224,
+      "wq": "verified",
+      "g": "sod_start_xp",
+      "scn": "Choose SoD Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Adjust SoA Starting XP: 90,000",
+      "tp2n": "90,000",
+      "cn": 231,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 231,
+      "wq": "verified",
+      "g": "soa_start_xp",
+      "scn": "Choose SoA Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Adjust SoA Starting XP: 161,000",
+      "tp2n": "161,000",
+      "cn": 232,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 232,
+      "wq": "verified",
+      "g": "soa_start_xp",
+      "scn": "Choose SoA Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Adjust SoA Starting XP: 240,000",
+      "tp2n": "240,000",
+      "cn": 233,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 233,
+      "wq": "verified",
+      "g": "soa_start_xp",
+      "scn": "Choose SoA Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Adjust SoA Starting XP: 400,000",
+      "tp2n": "400,000",
+      "cn": 234,
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 234,
+      "wq": "verified",
+      "g": "soa_start_xp",
+      "scn": "Choose SoA Starting XP",
+      "cat": "EXPERIENCE TWEAKS"
+    },
+    {
+      "n": "Magic Resistance Overhaul: Replace Magic Resistance with Other Effects",
+      "tp2n": "Replace Magic Resistance with Other Effects",
+      "no": "Choose one MR option",
+      "pi": "D5_REVISED_MR",
+      "scn": "Magic Resistance Overhaul",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 251,
+      "wq": "verified",
+      "cn": 251,
+      "g": "mr"
+    },
+    {
+      "n": "Magic Resistance Overhaul: Reduce Magic Resistance",
+      "tp2n": "Reduce Magic Resistance",
+      "pi": "D5_REDUCED_MR",
+      "scn": "Magic Resistance Overhaul",
+      "wf": "SubtleD_Stat_Overhauls",
+      "wp": "SubtleD_Stat_Overhauls\\SUBTLED_STAT_OVERHAULS.TP2",
+      "wc": 252,
+      "wq": "verified",
+      "cn": 252,
+      "g": "mr"
+    }
+  ]
+}

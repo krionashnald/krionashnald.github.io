@@ -1,0 +1,56 @@
+{
+  "i": 546,
+  "t": "Solaufein",
+  "sv": 1,
+  "ord": 850,
+  "c": "NEW NPC MODS",
+  "n": "Solaufein Romance",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "jasteys_solaufein",
+      "withId": 138,
+      "severity": "hard",
+      "reason": "Both add Solaufein as a joinable NPC. Choose one. Jastey's is actively maintained; Roxanne's is older but has romance content",
+      "myComps": "#0 Solaufein Romance",
+      "theirComps": "#0 Solaufein's Rescue",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/Solaufein",
+  "a": "Weimer",
+  "sum": "Adds Solaufein, the drow from Ust Natha, as a permanent joinable NPC in BG2/ToB with romance and extensive dialogue.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.pocketplane.net/mambo/index.php?option=com_remository&Itemid=54&func=selectfolder&filecatid=18",
+  "au": "Weimer",
+  "no": "Adds Solaufein, the drow from Ust Natha, as a permanent joinable NPC in BG2/ToB with romance and extensive dialogue.",
+  "langs": {
+    "en": 0
+  },
+  "pt": false,
+  "co": [
+    {
+      "n": "Solaufein Romance for BG2EE or EET",
+      "cn": 0,
+      "wf": "Solaufein",
+      "wp": "Solaufein\\SETUP-SOLAUFEIN.TP2",
+      "wc": 0
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Solaufein"
+  }
+}

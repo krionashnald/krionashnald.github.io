@@ -1,0 +1,471 @@
+{
+  "i": 385,
+  "t": "randomiser",
+  "sv": 1,
+  "ord": 300,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Randomiser",
+  "no": "Item randomizer by Wisp. Randomizes item placement, stores, scrolls, and treasure. Mode 1 uses in-game scripts, Mode 2 uses WeiDU patching. Creature \"no items\" components require a randomise mode installed first. cn:550 excluded (non-EE only)",
+  "ic": "Mode 1 clashes with Dungeon-be-Gone & Skip Candlekeep, Systematic changes to the BG2 proficiency, like using IWD or BG1 style, will cause (at least) Mode 2 randomization to break on v7.",
+  "conflicts": [
+    {
+      "with": "candlekeep_revisited",
+      "withId": 58,
+      "severity": "partial",
+      "reason": "Randomiser Mode 1 (in-game scripts) clashes with Skip Candlekeep — needs time in starting area",
+      "myComps": "#1100 #1200 Mode 1 randomisation"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Choose one \"Cespenar can forge Shadows of Amn items\" tweak",
+      "myComps": "#9000 Cespenar can forge SoA items",
+      "theirComps": "#1230",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "Item Randomiser Mode 1 needs time in starting area",
+      "myComps": "#1100 #1200 Mode 1 randomisation",
+      "theirComps": "#4146",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "partial",
+      "reason": "Make Gromnir a proper Barbarian is redundant if Ascension is installed",
+      "myComps": "#9050 Make Gromnir a proper Barbarian",
+      "theirComps": "#0 Rewritten Final Chapter / #11 Tougher Gromnir",
+      "source": "eemodsetup"
+    }
+  ],
+  "u": "https://github.com/FredrikLindgren/randomiser/releases",
+  "a": "Wisp",
+  "sum": "Randomizes item placement, store inventories, and treasure across the game. Makes each playthrough's loot different.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Tactics-Remix"
+  },
+  "dl": "https://github.com/FredrikLindgren/randomiser/releases",
+  "au": "Wisp",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Randomly replace the WIS tome normally found in TotSC with one of the 6 available types",
+      "tp2n": "Randomly replace the WIS tome normally found in TotSC with one of the 6 available types",
+      "cn": 500,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 500,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu_totsc"
+      ],
+      "no": "Randomly replaces the WIS tome in TotSC area with one of 6 stat tomes",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Randomly not randomise items",
+      "tp2n": "Randomly not randomise items",
+      "cn": 510,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 510,
+      "wq": "verified",
+      "no": "Meta-randomizer: randomly skips randomization of some items for unpredictability",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Kangaxx further sealed away",
+      "tp2n": "Kangaxx further sealed away",
+      "cn": 520,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 520,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Adds extra protection to Kangaxx's tomb, requiring more effort to reach him",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Randomise scrolls",
+      "tp2n": "Randomise scrolls",
+      "cn": 530,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 530,
+      "wq": "verified",
+      "no": "Randomizes scroll placement throughout the game",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Randomise the heads of the Flail of Ages",
+      "tp2n": "Randomise the heads of the Flail of Ages",
+      "cn": 540,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 540,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Randomizes which Flail of Ages heads you find",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "More Spell Shield scrolls",
+      "tp2n": "More Spell Shield scrolls",
+      "cn": 560,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 560,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Adds more Spell Shield scrolls to the game",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Randomise the appearance of cursed items",
+      "tp2n": "Randomise the appearance of cursed items",
+      "cn": 570,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 570,
+      "wq": "verified",
+      "no": "Randomizes the appearance of cursed items so they look like normal items. FORBID with Cursed Items mod",
+      "grn": "Randomisation options"
+    },
+    {
+      "n": "Randomise Items: Mode 1 scripts, no loss",
+      "tp2n": "Mode 1: Randomise with in-game scripts. No items are lost",
+      "no": "May be incompatible with Tactics Remix (checks for tactics.tp2 but not tactics-remix.tp2)",
+      "cn": 1100,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 1100,
+      "wq": "verified",
+      "g": "rand_mode",
+      "scn": "Randomise items"
+    },
+    {
+      "n": "Randomise Items: Mode 1 scripts, some loss",
+      "tp2n": "Mode 1: Randomise with in-game scripts. Some items are lost",
+      "cn": 1200,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 1200,
+      "wq": "verified",
+      "g": "rand_mode",
+      "scn": "Randomise items"
+    },
+    {
+      "n": "Randomise Items: Mode 2 WeiDU, no loss",
+      "tp2n": "Mode 2: Randomise with WeiDU. No items are lost",
+      "cn": 1300,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 1300,
+      "wq": "verified",
+      "g": "rand_mode",
+      "scn": "Randomise items"
+    },
+    {
+      "n": "Randomise Items: Mode 2 WeiDU, some loss",
+      "tp2n": "Mode 2: Randomise with WeiDU. Some items are lost",
+      "cn": 1400,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 1400,
+      "wq": "verified",
+      "g": "rand_mode",
+      "scn": "Randomise items"
+    },
+    {
+      "n": "Beholders have no items equipped",
+      "tp2n": "Beholders have no items equipped",
+      "cn": 5005,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5005,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Demi-liches have no items equipped",
+      "tp2n": "Demi-liches have no items equipped",
+      "cn": 5015,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5015,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Dragons have no items equipped",
+      "tp2n": "Dragons have no items equipped",
+      "cn": 5025,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5025,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Elementals have no items equipped",
+      "tp2n": "Elementals have no items equipped",
+      "cn": 5035,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5035,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Fiends have no items equipped",
+      "tp2n": "Fiends have no items equipped",
+      "cn": 5045,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5045,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Golems have no items equipped",
+      "tp2n": "Golems have no items equipped",
+      "cn": 5055,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5055,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Master Brains have no items equipped",
+      "tp2n": "Master Brains have no items equipped",
+      "cn": 5065,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5065,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Slimes have no items equipped",
+      "tp2n": "Slimes have no items equipped",
+      "cn": 5075,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5075,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Trolls have no items equipped",
+      "tp2n": "Trolls have no items equipped",
+      "cn": 5085,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 5085,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Requires one of the Randomise Items modes (cn:1100-1400) installed first",
+      "grn": "Components for unequipping items from creature groups"
+    },
+    {
+      "n": "Cespenar can forge SoA items",
+      "tp2n": "Cespenar can forge SoA items",
+      "cn": 9000,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 9000,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Lets Cespenar forge SoA-era items in ToB. QoL convenience"
+    },
+    {
+      "n": "Make Gromnir a proper Barbarian",
+      "tp2n": "Make Gromnir a proper Barbarian",
+      "cn": 9050,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 9050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Changes Gromnir to use Barbarian class properly"
+    },
+    {
+      "n": "Remove Prot from Undead Scrolls: All stores",
+      "tp2n": "All scrolls from all stores",
+      "no": "SCS also removes some Protection from Undead scrolls",
+      "cn": 10100,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 10100,
+      "wq": "verified",
+      "g": "prot_undead",
+      "scn": "Remove Protection from Undead scrolls from stores"
+    },
+    {
+      "n": "Remove Prot from Undead Scrolls: 9 out of 10 stores",
+      "tp2n": "All scrolls from 9 out of 10 stores",
+      "cn": 10200,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 10200,
+      "wq": "verified",
+      "g": "prot_undead",
+      "scn": "Remove Protection from Undead scrolls from stores"
+    },
+    {
+      "n": "Duergar merchants",
+      "tp2n": "Duergar merchants",
+      "cn": 10210,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 10210,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "no": "Adds items to Duergar merchant inventories"
+    },
+    {
+      "n": "Prevent Watcher's Keep statues from disappearing",
+      "tp2n": "Prevent Watcher's Keep statues from disappearing",
+      "cn": 10300,
+      "wf": "randomiser",
+      "wp": "randomiser\\randomiser.tp2",
+      "wc": 10300,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Prevents Watcher's Keep statues from vanishing after use"
+    }
+  ]
+}

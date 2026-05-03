@@ -1,0 +1,287 @@
+{
+  "i": 29,
+  "t": "mih_fr",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 10,
+  "c": "RESTORATIONS",
+  "n": "Made in Heaven: Fixes & Restorations",
+  "no": "Sort of a faceless mixed bag. Mostly things that go better early before quests. Made in Heaven: Fixes & Restorations (UNRELEASED!!) Unreleased, but functional. Retreads some of the same ground as the Unfinished Business mods and Almateria's Restoration. That doesn’t necessarily make it bad, but we have other plans!Install Made in Heaven Fixes and Restorations after EE Fixpack and Spell Revisions.",
+  "conflicts": [
+    {
+      "with": "infinitysounds",
+      "withId": 470,
+      "severity": "soft",
+      "reason": "MiH Sound Volume Fixes overlaps with Infinity Sounds volume tweaks; install one or the other",
+      "myComps": "#2 Sound Volume Fixes",
+      "theirComps": "#180 Tweak Sound Channel Volume Levels"
+    },
+    {
+      "with": "mih_sp",
+      "withId": 296,
+      "severity": "soft",
+      "reason": "Same author (Angel). FR cn:7 (Spell Restorations) restores cut vanilla spells, SP cn:0 (Arcane Spellpack) adds new MiH spells — zero file overlap, complementary. FR cn:15 (Bhaalspawn Powers) has no SP equivalent. FR cn:18 (Damage Caps) would overlap with SP cn:17 (Spell Improvements) if both selected — SP supersedes. No actual conflict with typical selections.",
+      "myComps": "#7 Spell Restorations / #15 Restored Bhaalspawn Powers / #18 Revised Spell Damage Caps",
+      "theirComps": "#0 Arcane Spellpack #2 Divine Spellpack #17 Spell Improvements",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/AngelGryph/MadeInHeaven_FixesAndRestorations",
+  "a": "AngelGryph",
+  "sum": "Fixes and restores cut content across both BG1 and BG2 in one package. Includes creature corrections, dialogue restorations, and item fixes.",
+  "tags": [
+    "restore",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "AngelGryph",
+    "r": "MadeInHeaven_FixesAndRestorations"
+  },
+  "dl": "https://github.com/AngelGryph/MadeInHeaven_FixesAndRestorations",
+  "langs": {
+    "en": 0
+  },
+  "au": "Mulan",
+  "ki": [
+    {
+      "pattern": "[MIH_FR/THIRD_PARTY/SFO2E/ALTER_SCRIPT.TPH] PARSE ERROR at line 548",
+      "severity": "critical",
+      "description": "mih_fr bundles SFO2E whose ALTER_SCRIPT.TPH fails GLR-parsing at line 548 col 1-25 under WeiDU 25201+. Blocks every mih_fr component that uses ALTER_SCRIPT (most of them). Same root cause as iwdification/mih_sp.",
+      "workaround": "Use WeiDU <= 25200, or wait for mih_fr to ship an updated SFO2E.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "co": [
+    {
+      "n": "MiH P&P-based Fixpack",
+      "tp2n": "MiH P&P-based Fixpack",
+      "cn": 0,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "PnP-accuracy fixes for spells, creatures, items, proficiencies. Requires EE Fixpack. Install before SCS.",
+      "rq": "eefixpack",
+      "sp": 6,
+      "spLv": {
+        "w7": 1,
+        "w8": 1,
+        "w9": 4
+      }
+    },
+    {
+      "n": "Intelligence 19 Rule",
+      "tp2n": "Intelligence 19 Rule",
+      "no": "INT 19 grants 24 max spells/level, INT 20 grants 30. Requires EE Fixpack.",
+      "cn": 1,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "grn": "Optional Fixes"
+    },
+    {
+      "n": "Sound Volume Fixes",
+      "tp2n": "Sound Volume Fixes",
+      "cn": 2,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "no": "Corrects volume levels for BG2 sound effects that are too loud or quiet.",
+      "grn": "Optional Fixes"
+    },
+    {
+      "n": "Lore-Friendly Spell Names",
+      "tp2n": "Lore-Friendly Spell Names",
+      "cn": 3,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "no": "Renames spells to Forgotten Realms lore names (e.g. Spell Thrust → Storm's Spell Thrust). English only, cosmetic.",
+      "grn": "Optional Fixes"
+    },
+    {
+      "n": "Protection Scroll Fixes",
+      "tp2n": "Protection Scroll Fixes",
+      "cn": 4,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 4,
+      "no": "Protection scrolls target caster only (no offensive use) and get casting time 8. Closes exploit.",
+      "grn": "Optional Fixes"
+    },
+    {
+      "n": "Move Shadow Armor from Mae'var",
+      "tp2n": "Move Shadow Armor from Mae'var",
+      "cn": 5,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 5,
+      "no": "Fixes Mae'var wearing armor he can't use as mage. Moves Shadow Armor to a flunky.",
+      "grn": "Optional Fixes"
+    },
+    {
+      "n": "Item Restorations",
+      "tp2n": "Item Restorations",
+      "cn": 6,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "no": "Restores unused items (boots, bracers, bags, journals). Overlaps with UB and Almateria's — may create duplicate items.",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Spell Restorations",
+      "tp2n": "Spell Restorations",
+      "no": "Restores 16+ cut spells (Fog Cloud, Wall of Fire, Monster Summoning 5-7, etc.) and 30+ priest scrolls. Overlaps with Almateria's.",
+      "cn": 7,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Store Restorations (BG1)",
+      "tp2n": "Store Restorations (BG1)",
+      "cn": 8,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "no": "Restores unused store inventories and temple services in BG1 areas. Minor UB overlap.",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Quest Restorations (BG1)",
+      "tp2n": "Quest Restorations (BG1)",
+      "cn": 9,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "no": "Restores 6 cut BG1 quests (Brun/Wilton, Llindellyn, Pilar, Quoningar, Shilo Chen). Major overlap with BG1 UB — use ini to toggle individual quests.",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Minor Restorations (BG1)",
+      "tp2n": "Minor Restorations (BG1)",
+      "cn": 10,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "no": "Restores minor BG1 encounters: Baneguards in Undercity, petrified Corianna, doppelganger Erik, serving wenches.",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Minor Restorations (BG2)",
+      "tp2n": "Minor Restorations (BG2)",
+      "cn": 11,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "no": "Restores BG2 content: Crooked Crane gamblers, Firkraag taunts, Hell Hounds, Xzar's creations, Deirex dialog fix.",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Volo's Travels",
+      "tp2n": "Volo's Travels",
+      "cn": 12,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "no": "Restores Volo the bard to BG1 taverns. Requires EE Fixpack. INSTALLS WITH WARNINGS (non-fatal): WeiDU false positive — 'POSSIBLE ERROR: file TAVERN.wbm is not found in action 167'. File actually exists in movies/TAVERN.WBM (5.5MB); WeiDU only checks override, not movies/. Game engine finds it at runtime. Cutscene plays fine.",
+      "rq": "eefixpack",
+      "grn": "Restorations"
+    },
+    {
+      "n": "d'Arnise Keep Text Screens",
+      "tp2n": "d'Arnise Keep Text Screens",
+      "no": "Restores narrative text screens for d'Arnise Keep quest outcomes.",
+      "cn": 13,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Artemis Entreri Encounter",
+      "tp2n": "Artemis Entreri Encounter",
+      "no": "Restores cut Artemis Entreri vs Drizzt encounter. Also in Almateria's.",
+      "cn": 14,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Restored Bhaalspawn Powers",
+      "tp2n": "Restored Bhaalspawn Powers",
+      "no": "Fixes broken Bhaalspawn power progression: missing spell headers, wrong effects, missing feedback messages.",
+      "cn": 15,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "grn": "Restorations"
+    },
+    {
+      "n": "Better Prepared Allies",
+      "tp2n": "Better Prepared Allies",
+      "no": "Gives allied NPCs level-appropriate equipment (Drizzt's party, Radiant Heart, Shadow Thieves). SCS may override.",
+      "cn": 16,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "Obtain Obscure Items",
+      "tp2n": "Obtain Obscure Items",
+      "cn": 17,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 17,
+      "wq": "verified",
+      "no": "Provides alternate ways to obtain unique items lost by choosing peaceful quest resolutions.",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "Revised Spell Damage Caps",
+      "tp2n": "Revised Spell Damage Caps",
+      "cn": 18,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 18,
+      "wq": "verified",
+      "no": "PnP-style damage caps by spell level: L1-3 cap at 10, L4-5 at 15, L6-7 at 20, L8-9 at 25. Significant balance impact.",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "Revert Harbinger to The World's Edge",
+      "tp2n": "Revert Harbinger to The World's Edge",
+      "cn": 19,
+      "wf": "mih_fr",
+      "wp": "mih_fr\\setup-mih_fr.tp2",
+      "wc": 19,
+      "no": "Reverts EE-added Harbinger back to original BG2 sword The World's Edge.",
+      "grn": "Tweaks"
+    }
+  ]
+}

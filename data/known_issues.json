@@ -1,0 +1,375 @@
+[
+  {
+    "pattern": "DELETE_BYTES out of bounds",
+    "mod": "*",
+    "severity": "critical",
+    "category": "concerning",
+    "known": true,
+    "description": "A mod tried to modify a file that was a different size than expected, usually because another mod already changed it. Common with item-modifying mods installed in wrong order.",
+    "workaround": "Check install order. The mod that errored needs to be installed before the mod that changed the target file. Klatu components 2080/2090 are especially prone to this.",
+    "user_action": "check-docs",
+    "forum": "https://forums.beamdog.com/discussion/74335/"
+  },
+  {
+    "pattern": "internal label.*not found in processed DLG",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "A dialog state reference is broken. Another mod may have modified the dialog file and removed the state this mod expects. Can cause missing dialog options or broken conversations in-game.",
+    "workaround": "Check if the referenced DLG file is modified by multiple mods. Install order matters — the mod adding dialog states should go before mods that reference them.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "INFINITY_UI/INFINITY_UI.TP2",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "Infinity UI++ writes forward slashes in WeiDU.log after its first component. This is a known quirk of the mod and does not affect gameplay.",
+    "workaround": "No action needed. mod_installer and WeiDU handle both path separators. Other tools may need the paths normalized to backslashes.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WeiDU version 247|WeiDU version 248|WeiDU version 249",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "WeiDU versions 247-249 have a character codepage bug that can cause crashes with mods containing non-ASCII characters (especially Infinity Animations). Version 246 or 250+ is recommended.",
+    "workaround": "Use WeiDU 250+ (from The-Mod-Elephant/weidu) or downgrade to 246.",
+    "user_action": "check-docs",
+    "forum": "https://www.shsforums.net/topic/61556-crashes-in-mega-mod-games-installed-with-weidu-247-248-and-249/"
+  },
+  {
+    "pattern": "NOT_INSTALLED",
+    "mod": "*",
+    "severity": "error",
+    "category": "concerning",
+    "known": true,
+    "description": "A component that WeiDU expected to find installed is not present. This can happen if the mod was partially uninstalled, or if the install order caused a prerequisite to be missing.",
+    "workaround": "Check if the mod depends on another mod that was removed or failed to install. A clean reinstall may be needed.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "cannot be decompiled and recompiled \\(round-trip failure\\)",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "SFO's DECOMPILE_AND_PATCH cannot round-trip a BCS file that was modified by another mod. The original BCS is returned unchanged. Harmless — affects SCS, ToF, IWDification, and other SFO-based mods.",
+    "workaround": "Can be ignored safely. The patched SFO copies in eet-mod-forge-patches include a fix that recovers gracefully instead of aborting.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "no effects (altered|added) on .+\\.(spl|itm)",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A mod tried to alter or add effects on a spell/item file but found nothing to change. The file already had the expected state, or the target effects were removed by another mod. Harmless.",
+    "workaround": "Can be ignored safely.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "REPLACE (ignoring specified|specifies no) WEIGHT",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A REPLACE in a D file specifies dialog state weights that differ from the compiled DLG. WeiDU falls back to the DLG weights. Cosmetic — dialog works correctly, some response ordering may differ slightly.",
+    "workaround": "Can be ignored safely. Use SET_WEIGHT in the D file if specific ordering is needed.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "EET_NPC_TRANSITION:.*doesn.t exist in game",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "EET NPC transition macro reports that a CRE, BCS, or DLG file doesn't exist yet. Common for NPC mods where BG1-to-BG2 transition resources aren't created until later. BG2/ToB NPC functionality is unaffected.",
+    "workaround": "Can be ignored safely. BG1-to-BG2 transitions for these specific NPCs may not trigger, but the NPC works normally in BG2.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "No rule to identify SOD",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "SFO's game-phase detection cannot identify SoD in EET. Non-fatal — SFO falls back to default behavior. SoD-specific creature patches may not apply. Affects MiH E&Q and other SFO-based mods.",
+    "workaround": "Can be ignored safely. Creature stats are still modified; only SoD-specific adjustments are skipped.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "container index.*\\+.*>=.*count.*skipping ADD_AREA_ITEM",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A mod tried to add an item to an area container but the container index is out of bounds, likely because another mod changed the container layout. The item placement is safely skipped.",
+    "workaround": "Can be ignored safely. The item was not placed in this container but may be available elsewhere.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "Cannot uninstall STRING_SET.*out of range",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "During rollback of a failed component, WeiDU cannot restore string references because dialog.tlk has fewer entries than expected. Indicates TLK corruption or that an earlier mod truncated the TLK file. The failed component's strings are orphaned but the TLK itself is intact for existing entries.",
+    "workaround": "Check for TLK truncation earlier in the log. If many mods show this, the install may need to be restarted from scratch.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "Patching skipped due to Invalid_argument.*String\\.sub|Invalid_argument.*Bytes\\.sub",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "SFO BCS patching crashed on a corrupted or malformed BCS file in override. The original file is returned unchanged. Often cascading from an earlier mod (e.g. ArtisansKitpack) that left a corrupted BCS in override.",
+    "workaround": "Apply eet-mod-forge-patches SFO fixes. Check for corrupted BCS files in override from earlier mod failures.",
+    "user_action": "apply-patches"
+  },
+  {
+    "pattern": "EXTEND_(TOP|BOTTOM) #position \\d+ out of range",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A dialog EXTEND_TOP or EXTEND_BOTTOM references a state position that doesn't exist in the DLG. Usually an off-by-one error in the mod's D file. The extension is skipped for that state.",
+    "workaround": "Can be ignored safely. Some dialog options may be missing but the game won't crash.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "supposed in-game object.*is missing.*aborting struct_edit",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "A mod referenced a game object (item/spell scroll) via a variable that didn't resolve to a real file. The struct_edit operation is safely aborted. Common with IWD spell scrolls that weren't imported.",
+    "workaround": "Check if IWD spell imports (IWDification, SCS) are installed. The missing scroll may need those mods first.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "POSSIBLE ERROR: file .+ is not found in action",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU reports a resource file referenced in a script action wasn't found in override. This is often a false positive — WeiDU only checks override, not the game's movies/, sounds/, or data/ folders where the file may actually exist.",
+    "workaround": "Can be ignored safely if the file exists in movies/ or sounds/. Check override only if in-game content is actually missing.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "is a 0 byte file",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A marker or warning file is empty. SFO mods create sfo_warnings.txt and .mrk marker files as zero-byte flags to track installation state. This is expected behavior, not an error.",
+    "workaround": "Can be ignored safely.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "Not including.*unknown resource type",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU encountered a file with an unrecognized extension (commonly .MRK marker files) in override. The file is skipped during packaging but remains functional for the mod that created it.",
+    "workaround": "Can be ignored safely.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "cannot find block matching",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A BAF script block referenced in a DECOMPILE_AND_PATCH or REPLACE operation was not found in the target BCS file. Usually means another mod restructured the script. The patch is skipped for that block.",
+    "workaround": "Can be ignored safely. The specific script modification is skipped but the mod continues installing.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "Internal ability name too long.*Making copy as",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A spell or item ability has an internal name exceeding 8 characters. WeiDU auto-shortens it to a generated name (e.g. SGAB0000). Common with kit mods like ArtisansKitpack (C0ARC03Z) and cdtweaks (CDHLYSYM). Harmless — the ability works correctly under the shortened name.",
+    "workaround": "Can be ignored safely.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "UNDEFINED STRING:.*@\\d+",
+    "mod": "*",
+    "severity": "error",
+    "category": "concerning",
+    "known": true,
+    "description": "A mod is referencing a string index (@N) that doesn't exist in its .tra translation file. The component name displays as 'UNDEFINED STRING' and installation fails. Common causes: missing or outdated .tra file, wrong language folder, or the mod was downloaded incomplete.",
+    "workaround": "Re-download the mod. If using a non-English language, check that the translation .tra file exists for your language. Fall back to the English folder if needed.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "does not have a component \\d+",
+    "mod": "*",
+    "severity": "warning",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU.log references a component number that doesn't exist in the mod's tp2 file. The mod was likely updated and removed or renumbered that component. The orphaned entry is ignored.",
+    "workaround": "Can be ignored safely. Remove the stale entry from WeiDU.log if it causes repeated warnings.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "cannot verify trigger",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU cannot verify a BCS trigger because it references an incomplete or invalid stat/action. Often a cosmetic issue where the trigger works at runtime but WeiDU's static analysis can't confirm it.",
+    "workaround": "Can be ignored safely unless the affected script actually malfunctions in-game.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "cannot be decompiled \\(BCS to BAF failure\\)",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU cannot decompile a BCS file to BAF format. Similar to round-trip failure but the decompile step itself fails. The original BCS is returned unchanged. Common with heavily modded scripts.",
+    "workaround": "Can be ignored safely. The original script is preserved.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "parsing log.*Sys_error.*No such file",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU tried to parse a log file (usually WeiDU.log) that doesn't exist yet. Normal on first mod install or when starting from a clean game directory.",
+    "workaround": "Can be ignored safely. WeiDU creates the log file automatically.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "is no longer needed",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A BAF fix or patch is no longer needed because the target script was already updated by another mod or by the game itself. The fix is skipped. Common with EET and Fixpack patches.",
+    "workaround": "Can be ignored safely.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "could not find .+ in .+\\.BCS",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A pattern, sound reference, or creature spawn was not found in a BCS script file. Another mod may have restructured the script, or the reference was removed in an EE patch. The specific modification is skipped.",
+    "workaround": "Can be ignored safely unless the affected in-game behavior is actually broken.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WARNING: no translation provided for @\\d+",
+    "mod": "*",
+    "severity": "warning",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A mod references a translation string that doesn't exist in its .tra file for the selected language. WeiDU falls back to the string index number or an empty string. Visible only if you're playing in a non-English locale and the mod didn't ship a translation for that locale.",
+    "workaround": "Install with language=en_US (the default). If the issue persists in-game, the mod author should provide translations.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WARNING: \\[.+\\.tra\\] (?:no|missing).*(?:tra|string|translation)",
+    "mod": "*",
+    "severity": "warning",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A mod's translation file is missing a string the install expects, or the .tra itself couldn't be loaded for the current language. WeiDU falls back to English or a default.",
+    "workaround": "None needed for English installs. If playing in another locale, contact the mod author or use the English translation.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "kit index (?:out of range|\\d+ already used)|assigning kit to .+slot \\d+",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "Two mods tried to claim the same kit ID (KITLIST.2DA index). WeiDU auto-shuffles the newer kit to the next free slot. The kit itself works fully — only its internal ID number changed. Common in large kit-heavy installs.",
+    "workaround": "None needed. If you export a character and import elsewhere, the kit ID may differ between installs, but saved games are unaffected.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WARNING: resource \\[[A-Z0-9]+\\.(BAM|MOS|TIS|PVRZ|WAV)\\] not found",
+    "mod": "*",
+    "severity": "warning",
+    "category": "likely-benign",
+    "known": true,
+    "description": "A mod references a graphic or audio asset that isn't in override. Usually the mod gracefully falls back to a default (generic item icon, silent), but rarely a visible asset like a portrait or animation is missing. Check the affected file type: .BAM/.MOS/.PVRZ/.TIS are graphics (often fine), .WAV is audio (usually silent fallback).",
+    "workaround": "If something looks wrong in-game for the referenced asset, check the mod's archive was downloaded completely. Otherwise safe to ignore.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WARNING: resource \\[[A-Z0-9]+\\.(DLG|BCS|CRE)\\] not found",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "A mod references a dialog, script, or creature file that doesn't exist. Unlike missing graphics, this CAN cause gameplay issues — missing dialogs mean conversations break, missing scripts mean NPCs don't behave correctly, missing CREs mean encounters don't spawn.",
+    "workaround": "Check that all the mod's required prerequisites are installed. If the reference is to another mod's file, that mod may have failed to install or been installed out of order.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "WARNING:? already has .+\\.IDS entry|APPEND.*(?:no-op|skipped).*IDS",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "A mod tried to APPEND an entry to an IDS file (STATS.IDS, ACTION.IDS, etc.) that was already added by another mod or in a previous run. WeiDU's APPEND is idempotent — it skips the duplicate. This is expected in any install that includes multiple mods using the same IDS slot.",
+    "workaround": "None needed. This is how APPEND is supposed to work.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "Sprintf:.+of wrong type|Sprintf.+converted",
+    "mod": "*",
+    "severity": "info",
+    "category": "cosmetic",
+    "known": true,
+    "description": "WeiDU's SPRINT/OUTER_SPRINT converted an argument to a different type (usually int → string or vice versa). The conversion is correct; WeiDU just notes it happened. Common in older mods that didn't declare their variable types strictly.",
+    "workaround": "None needed.",
+    "user_action": "none"
+  },
+  {
+    "pattern": "WARNING: REPLACE_TEXTUALLY did not match|TEXT_REPLACE.+zero matches",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "A REPLACE_TEXTUALLY or similar text-patch operation found zero matches in the target file — usually because another mod already changed it, or the match pattern has a typo. The target file is unchanged.",
+    "workaround": "Usually cosmetic, but if the affected feature is missing in-game, check install order — an earlier mod may have clobbered the target text.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "WARNING: item .+(?:ability|effect).+(?:offset|length|count) mismatch",
+    "mod": "*",
+    "severity": "warning",
+    "category": "caution",
+    "known": true,
+    "description": "An item file has internal structure inconsistencies (ability headers at wrong offsets, effect counts not matching declarations). Could indicate genuine data corruption, or could be legitimate edge-case content that WeiDU flags overcautiously. The item will usually still install but may misbehave in-game.",
+    "workaround": "If you notice odd behavior on the affected item (wrong effects on use, crash on equip), report to the mod author. Otherwise safe.",
+    "user_action": "check-docs"
+  },
+  {
+    "pattern": "ALTER_SCRIPT.TPH] PARSE ERROR at line 548 column 1-25",
+    "mod": "*",
+    "severity": "critical",
+    "category": "concerning",
+    "known": true,
+    "description": "WeiDU 25201+ changed its GLR parser grammar, which broke the SFO/SFO2E libraries bundled by several mods (iwdification, mih_fr, mih_sp, and likely others). Any mod carrying a pre-2026 SFO copy will fail ALTER_SCRIPT.TPH parsing at line 548, blocking most of its components.",
+    "workaround": "Downgrade WeiDU to <= 25200 until the affected mods ship updated SFO/SFO2E libraries. Or skip the affected components entirely.",
+    "user_action": "downgrade-weidu",
+    "forum": ""
+  }
+]

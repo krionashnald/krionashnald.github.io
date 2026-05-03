@@ -1,0 +1,279 @@
+{
+  "i": 473,
+  "t": "ntotsc",
+  "sv": 1,
+  "ord": 290,
+  "c": "QUEST MODS BG1",
+  "n": "Northern Tales of the Sword Coast",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "it": 2,
+    "pl": 3,
+    "ru": 4,
+    "es": 5,
+    "zh-cn": 6
+  },
+  "no": "Large BG1 expansion by jastey (v5.0.0). 8+ new areas, 10-15 hours. Install BEFORE bp-bgt-worldmap (enforced by FORBID). NTotSC #4/#6 mutually exclusive with BG1UB #30/#32 Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly.",
+  "conflicts": [
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "hard",
+      "reason": "BG1UB tp2 uses FORBID_FILE for Northern Tales. Components restore the same NPCs — mutually exclusive",
+      "myComps": "#30 Nim Furlwing #32 Svlast's Torment",
+      "theirComps": "#13 Shilo Chen (FORBID NTotSC) #30 Nim Furlwing (FORBID NTotSC) #32 Svlast (FORBID NTotSC)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "glamnpcpack",
+      "withId": 127,
+      "severity": "soft",
+      "reason": "Idol of Kozah item contention: NTotSC's spirit quest uses the idol (traded for Vampiric Sword), while Dave's Toppling Taranis quest also wants it. Both quests have alternative completion paths (spirits can be freed by fighting). RPG choice, not a bug.",
+      "myComps": "#0 NTotSC main (spirit quest / Idol of Kozah)",
+      "theirComps": "#0 Glam NPC Pack (Dave's Toppling Taranis quest)",
+      "source": "jastey (NTotSC maintainer) DSotSC GitHub issue #16: 'this is less of a mod conflict than an ingame RPG problem... Not to mention that the three spirits can also be freed by killing them', 2026-03"
+    },
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "hard",
+      "reason": "Both restore Nim Furlwing. Enforced by FORBID_FILE in both tp2s — only one can install",
+      "myComps": "#4 Nim Furlwing Hunting Hounds",
+      "theirComps": "#30 Nim Furlwing Encounter",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "bg1ub",
+      "withId": 5,
+      "severity": "hard",
+      "reason": "Both restore Svlast the fallen paladin. Enforced by FORBID_FILE in both tp2s — only one can install",
+      "myComps": "#6 Svlast Torment",
+      "theirComps": "#32 Svlast the Fallen Paladin",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ntsc_willy",
+          "portraits/ntsc/willy.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/NTotSC",
+  "a": "Various",
+  "v": "5.0.0",
+  "sum": "Large BG1 expansion adding multiple new areas, quests, NPCs, and a storyline in the northern Sword Coast. 10-15 hours of new content.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "NTotSC"
+  },
+  "dl": "https://github.com/Spellhold-Studios/NTotSC",
+  "au": "Roxanne (BWP EET port)",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Northern Tales of the Sword Coast (main)",
+      "tp2n": "Northern Tales of the Sword Coast (NTotSC) for BGT-Weidu, BG:EE, and EET",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "wc": 0,
+      "no": "Core mod: 8+ new areas, Northern Citadel quest, Field of the Dead, Cult of the Black Hand, Isle of Sirines. Install BEFORE bp-bgt-worldmap. Soft conflict with Glam NPC Pack (Idol of Kozah item contention). Harmless skip: DSPOTN01.ITM (potion) already in 6 temple stores when ADD_STORE_ITEM runs — WeiDU detects duplicates and skips. No gameplay impact."
+    },
+    {
+      "cn": 1,
+      "n": "Spawn less Monsters depending on Game Difficulty",
+      "tp2n": "Spawn less Monsters depending on Game Difficulty",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 1,
+      "no": "Scales mod dungeon monster counts with difficulty setting. Recommended for balance",
+      "grn": "Nerfs"
+    },
+    {
+      "cn": 2,
+      "n": "Keelor the Dwarf",
+      "tp2n": "Keelor the Dwarf",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 2,
+      "no": "Adds Keelor the dwarf in Wood of the Dead. Heal quest with sister Nasha in Temple of Umberlee. Mutually exclusive with JAP",
+      "grn": "Quests and Encounters"
+    },
+    {
+      "cn": 3,
+      "n": "Llindellyn's Lucky Arrow",
+      "tp2n": "Llindellyn's Lucky Arrow",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 3,
+      "no": "Adds Llindellyn in Northern Wood. Lucky arrow fetch quest. Mutually exclusive with JAP",
+      "grn": "Quests and Encounters"
+    },
+    {
+      "cn": 4,
+      "n": "Nim Furlwing's Hunting Hounds",
+      "tp2n": "Nim Furlwing's Hunting Hounds",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 4,
+      "no": "Adds Nim and hunting hounds in Temple of Black Hand area. FORBID with BG1UB #30 — pick one version",
+      "grn": "Quests and Encounters"
+    },
+    {
+      "cn": 5,
+      "n": "Pilar and Gheldehar",
+      "tp2n": "Pilar and Gheldehar",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 5,
+      "no": "Adds Pilar and Gheldehar item swap quest in Baldur's Gate. Requires pickpocket. Mutually exclusive with JAP",
+      "grn": "Quests and Encounters"
+    },
+    {
+      "cn": 6,
+      "n": "Svlast's Torment",
+      "tp2n": "Svlast's Torment",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 6,
+      "no": "Adds fallen paladin Svlast in Firewine Bridge. FORBID with BG1UB #32 — pick one version",
+      "grn": "Quests and Encounters"
+    },
+    {
+      "cn": 7,
+      "n": "Will O'Hara NPC",
+      "tp2n": "Will O'Hara NPC",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 7,
+      "no": "Adds joinable NPC in Beregost. Limited dialogue — mostly a stat block with some interjections",
+      "grn": "NPC"
+    },
+    {
+      "cn": 8,
+      "n": "Will O'Hara Soundset",
+      "tp2n": "Will O'Hara: Install English Soundset",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 8,
+      "x": 7,
+      "no": "English audio soundset for Will O'Hara. Known issue: some lines in wrong order",
+      "grn": "NPC"
+    },
+    {
+      "cn": 9,
+      "n": "Fighting Encounters",
+      "tp2n": "Fighting Encounters",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 9,
+      "no": "Adds combat encounters in existing areas: extra fighters with Lamalha, ogres in Beregost, Six Sisters, Black Talon Elites in Cloakwood",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "cn": 10,
+      "n": "Improved Lesser Fiends",
+      "tp2n": "Improved Lesser Fiends",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 10,
+      "no": "Turns lesser fiends in Fireleaf dungeon into succubus and maurezi. Significantly harder",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "cn": 11,
+      "n": "Improved Haeball",
+      "tp2n": "Improved Haeball",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 11,
+      "no": "Upgrades Haeball to vampire mage with wolf summoning and vampiric powers",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "cn": 12,
+      "n": "Improved General Ghotal",
+      "tp2n": "Improved Ghotal",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 12,
+      "no": "Turns General Ghotal into ghost with ghostly minions. Stone golems replace death knights. Very tough for BG1",
+      "grn": "Tactical Challenges"
+    },
+    {
+      "cn": 13,
+      "n": "Shaman Cloaks: Remove from generic Orc Priests",
+      "tp2n": "Remove Cloaks from generic Orc Priests",
+      "g": "shaman_cloaks",
+      "scn": "Reduce Number of Shaman Cloaks",
+      "grn": "Nerfs",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 13,
+      "no": "Removes Shaman Cloaks from Orc Priests entirely. Pure nerf — easier fights"
+    },
+    {
+      "cn": 14,
+      "n": "Shaman Cloaks: Make Undroppable",
+      "tp2n": "Make Cloaks Undroppable",
+      "g": "shaman_cloaks",
+      "scn": "Reduce Number of Shaman Cloaks",
+      "grn": "Nerfs",
+      "wf": "ntotsc",
+      "wp": "ntotsc\\NTOTSC.TP2",
+      "wq": "exact",
+      "wc": 14,
+      "no": "Makes Shaman Cloaks undroppable. Priests keep buffs but no player loot"
+    },
+    {
+      "wf": "ntotsc",
+      "wp": "ntotsc\\ntotsc.tp2",
+      "wq": "exact",
+      "cn": 30,
+      "n": "Nim Furlwing Encounter",
+      "wc": 30,
+      "gone": true,
+      "no": "REMOVED from current version. Restored by BG1UB instead."
+    },
+    {
+      "wf": "ntotsc",
+      "wp": "ntotsc\\ntotsc.tp2",
+      "wq": "exact",
+      "cn": 32,
+      "n": "Svlast's Torment",
+      "wc": 32,
+      "gone": true,
+      "no": "REMOVED from current version. Restored by BG1UB instead."
+    }
+  ]
+}

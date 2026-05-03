@@ -1,0 +1,56 @@
+{
+  "i": 210,
+  "t": "JanQuest",
+  "sv": 1,
+  "ord": 160,
+  "c": "NPC EXPANSIONS",
+  "n": "Jan's Extended Quest",
+  "langs": {
+    "fr": 0,
+    "en": 1,
+    "de": 2,
+    "ru": 3
+  },
+  "au": "Akadis, Kasumi",
+  "dl": "https://akadis.baldursgateworld.fr/Jan/JansQuestEn.html",
+  "no": "Jan's Extended Quest v1.5.0 — extends Jan Jansen's personal BG2 quest with two short follow-up missions exploring Jan's former girlfriend Lissa and her husband Vaelag. Adds custom areas (Baervan Temple, Gond Temple, Oghma Temple, PalVolOm cutscene, Vaelag's House, Tiz) and characters. HARD CONFLICT with Jan's Quest Remix (JanQuestRemix) — shares creature/area files.",
+  "conflicts": [
+    {
+      "with": "JanQuestRemix",
+      "withId": 938,
+      "severity": "hard",
+      "reason": "Jan's Quest Remix is an expanded rewrite of this mod. Both write to identical override files (E_JLissa.cre, E_Jaella.cre, E_JPGond.cre, E_JVaela.cre, E_JBilly.cre, etc.) and use the same custom areas. Install one OR the other, never both.",
+      "myComps": "#0 Jan's Extended Quest",
+      "theirComps": "#0 Jan's Quest Remix",
+      "source": "Identical creature/area/script filenames in both tp2s, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://akadis.baldursgateworld.fr/Jan/JansQuestEn.html",
+  "a": "Akadis, Kasumi",
+  "sum": "Extends Jan Jansen's original quest in Baldur's Gate II with two short follow-up missions featuring new dialogues, supporting characters, and further exploration of Jan's relationship with his former girlfriend.",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Jan's Extended Quest",
+      "cn": 0,
+      "wf": "JanQuest",
+      "wp": "JanQuest\\Setup-JanQuest.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "AT_INTERACTIVE_EXIT — may open readme after install",
+      "tp2n": "Extension de la quete de Jan"
+    }
+  ]
+}

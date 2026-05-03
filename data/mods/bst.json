@@ -1,0 +1,51 @@
+{
+  "i": 56,
+  "t": "bst",
+  "sv": 1,
+  "ord": 220,
+  "c": "QUEST MODS BG1",
+  "n": "Balduran's Seatower",
+  "langs": {
+    "en": 0,
+    "de": 1
+  },
+  "no": "Similar to quest packs, but more involved in adding to, using, or altering vanilla content Balduran's Seatower We aren’t using Roxanne’s unofficial version that released sooner.Install Balduran's Seatower before Brage’s Redemption, Brandock the Mage, Breagar, and Grey the Dog.",
+  "u": "https://github.com/Gibberlings3/BS_Baldurans_Seatower",
+  "a": "jastey",
+  "v": "vEAOB.9",
+  "sum": "Quest mod that adds a new district and lots of quests to the city of Badur's Gate! ",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "vEAOB",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "BS_Baldurans_Seatower"
+  },
+  "dl": "https://github.com/Gibberlings3/BS_Baldurans_Seatower",
+  "au": "The Artisan",
+  "co": [
+    {
+      "n": "The BS Company presents Balduran's Seatower",
+      "tp2n": "The BS Company presents Balduran's Seatower",
+      "pi": "BS_BalduransSeatower-main",
+      "wf": "bst",
+      "wp": "bst\\SETUP-BST.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 0,
+      "no": "INSTALLS WITH WARNINGS. During WeiDU temporary uninstall/reinstall cycles, backup restore produces ~30 'ERROR: error copying' messages for STO/WED/ARE files. Cause: backup manifest has duplicate entries with './' path prefix — first copy succeeds, second is redundant on Windows (case-insensitive FS). Harmless; all files restore correctly on first pass."
+    }
+  ]
+}

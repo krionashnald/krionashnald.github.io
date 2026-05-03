@@ -1,0 +1,169 @@
+{
+  "i": 300,
+  "t": "wildmage",
+  "sv": 1,
+  "ord": 70,
+  "c": "SPELL MODS",
+  "n": "Wild Mage Additions",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "pl": 3,
+    "pt": 4,
+    "ru": 5,
+    "sv": 6,
+    "zh-cn": 7
+  },
+  "no": "Isaac's Missile Storm for BGEE series Isaac's_Missile_Storm:0;Isaac's_Missile_Storm - Isaac's Missile Storm for BGEE series Wild Mage Additions v Wild Mage Additions BG1: Rhialto is supposed to not be beatable, but some people find unbeatable creatures to be frustrating. \"Haughty pansy\" option helps not get stomped unprepared just because potato. Unless you don't care, so go for \"Ironman\", but don't complain BG2 and IWD: only \"Ironman\" can be installed",
+  "conflicts": [
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "Spell Revisions conflict with Wild Mage Additions misc spell tweaks",
+      "myComps": "#3",
+      "theirComps": "#0",
+      "source": "eemodsetup"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWM01",
+          "wizard",
+          7,
+          "Evocation",
+          "Isaac's Missile Storm",
+          "Barrages target with force missiles dealing massive damage."
+        ],
+        [
+          "YOURWM02",
+          "wizard",
+          9,
+          "Evocation",
+          "Isaac's Greater Missile Storm",
+          "Improved version striking all enemies in area."
+        ]
+      ]
+    },
+    "1": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWM01",
+          "wizard",
+          7,
+          "Evocation",
+          "Isaac's Missile Storm",
+          "Barrages target with force missiles dealing massive damage."
+        ],
+        [
+          "YOURWM02",
+          "wizard",
+          9,
+          "Evocation",
+          "Isaac's Greater Missile Storm",
+          "Improved version striking all enemies in area."
+        ]
+      ]
+    },
+    "3": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI121",
+          "modify",
+          "Nahal's Reckless Dweomer surge table tweaked"
+        ],
+        [
+          "SPWI221",
+          "modify",
+          "Chaos Shield surge bonus adjusted"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/BGforgeNet/bg2-wildmage",
+  "a": "Ilya Ivanov",
+  "v": "v2.5",
+  "sum": "Adds new wild magic spells and effects for wild mages. Expands the chaos with more unpredictable outcomes and wild surge options.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "BGforgeNet",
+    "r": "bg2-wildmage"
+  },
+  "dl": "https://github.com/BGforgeNet/bg2-wildmage",
+  "au": "BGForge",
+  "co": [
+    {
+      "n": "Ironman",
+      "cn": 0,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "sp": 2,
+      "tp2n": "Ironman",
+      "scn": "New Wild Magic Spells"
+    },
+    {
+      "n": "Haughty pansy",
+      "cn": 1,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "sp": 2,
+      "tp2n": "Haugthy pansy",
+      "scn": "New Wild Magic Spells"
+    },
+    {
+      "n": "Retain Rhialto's items",
+      "cn": 2,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "tp2n": "Retain Rhialto's items"
+    },
+    {
+      "n": "Original avatar",
+      "cn": 3,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wq": "verified",
+      "tp2n": "Original avatar",
+      "scn": "Spellshaper Kit"
+    },
+    {
+      "n": "Changed avatar",
+      "cn": 4,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wq": "verified",
+      "tp2n": "Changed avatar",
+      "scn": "Spellshaper Kit"
+    },
+    {
+      "n": "Misc spell modifications",
+      "no": "to import the items in BGT and EET",
+      "cn": 5,
+      "wf": "wildmage",
+      "wp": "wildmage\\WILDMAGE.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "tp2n": "Misc spell modifications"
+    }
+  ]
+}

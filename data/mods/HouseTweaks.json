@@ -1,0 +1,755 @@
+{
+  "i": 287,
+  "t": "HouseTweaks",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 40,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "AionZ's House   Rules",
+  "cats": [
+    "ITEM ADDITION MODS",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "The Artisan's House Tweaks - Item Changes",
+  "_legacy_ids": [
+    344,
+    379
+  ],
+  "conflicts": [
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "HT cn:2 (Expanded Shapeshifting) and IWDification cn:70 (IWD Shapeshifting) both overhaul druid wild shape — modify CLABDR01/04 and shapeshifting spells. Choose one. HT cn:2 IS selected, IWDification cn:70 No conflict. Note: original entry incorrectly listed IWDification cn:130 (Damage Animations) which is unrelated.",
+      "myComps": "#2 Expanded Shapeshifting",
+      "theirComps": "#70 IWD Shapeshifting (NOT in Ultimate preset)",
+      "source": "Both modify CLABDR01/04 + shapeshifting spells; cn:130 is damage animations (corrected), 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "Only shapeshifting overlaps. HT cn:2 (Expanded Shapeshifting) and AK cn:5100 (Shapeshifter Overhaul) both modify CLABDR04.2DA — install HT before AK. HT cn:4 (Rebalanced Proficiencies) HT cn:5 (Rebalanced Weapon Styles) modifies WEAPPROF rows 28-31; AK fighter kits use ADD_KIT_EX which writes kit-specific columns only — no overlap, safe.",
+      "myComps": "#2 Expanded Shapeshifting #5 Rebalanced Weapon Styles",
+      "theirComps": "#5100 Shapeshifter Overhaul",
+      "source": "HT wildshape.tpa line 83 COPY_EXISTING CLABDR04; AK Shapeshifter.tpa modifies CLABDR04 via kit creation; AK fighter kits use ADD_KIT_EX (different columns), 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "Both mods revise weapon fighting styles. Use one or the other.",
+      "myComps": "#5 Rebalanced Weapon Styles",
+      "theirComps": "#4000 Modify Fighting Styles"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Install order dependent — install HT before ToF. (1) HT cn:2 (Expanded Shapeshifting) directly edits CLABDR01/04.2DA; ToF cn:40600 uses abstract kit.edit on druid shapeshifting. ToF applies on top of HT if installed after. (2) HT cn:5 (Weapon Styles) copies STYLBONU.2DA and modifies WEAPPROF rows 28-31; ToF cn:81200 also copies STYLBONU.2DA (last wins) and ToF cn:81100 wipes WEAPPROF to Lua (captures HT values first if HT installed before). (3) HT cn:3 (Racial Bonuses) modifies ABRACEAD.2DA; ToF cn:20000 does NOT touch this file — no overlap. (4) HT cn:4 (Proficiencies) modifies WEAPPROF globally — same ToF cn:81100 Lua externalization issue. HT cn:3/4",
+      "myComps": "#2 Expanded Shapeshifting (IN) #5 Rebalanced Weapon Styles (IN) #3 Racial Bonuses (NOT) #4 Proficiencies (NOT)",
+      "theirComps": "#40600 Druid shapeshift #81100 Weapon Proficiency #81200 Weapon Styles #20000 Subraces (no overlap) #80000 Ability Scores (no overlap)",
+      "orderOnly": true,
+      "source": "HT wildshape.tpa edits CLABDR01/04; ToF uses kit.edit; HT stylebonus copies STYLBONU; ToF style copies same; HT WEAPPROF rows captured by ToF Lua if HT first, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "HT's proficiency and weapon style components overlap with cdtweaks' weapon proficiency system",
+      "myComps": "#4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles #6 Racial Weapon Proficiency #7 Rebalanced APR",
+      "theirComps": "#2060 Weapon Styles for All #2160 #2161 #2162 #2163 #2164 Weapon Proficiency #2440 Bonus APR"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Install order note. HT cn:2 (Expanded Shapeshifting) replaces druid shapeshifting spells in CLABDR01/04. SCS cn:2040/4030 (Improved Shapeshifting) applies AI script improvements to shapeshift forms. SCS installs after HT and applies on top. Install HT before SCS.",
+      "myComps": "#2 Expanded Shapeshifting",
+      "theirComps": "#2040 Shapeshift spell changes #4030 Improved Shapeshifting",
+      "orderOnly": true,
+      "source": "HT replaces shapeshift spells in CLABs; SCS adds AI scripts to forms; SCS installs after in TACTICAL category, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "HT's Expanded Shapeshifting overlaps with jtweaks' Shapeshift corrections",
+      "myComps": "#2 Expanded Shapeshifting",
+      "theirComps": "#81 #82 #83 Shapeshift corrections"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify mxsplwis.2da WIS bonus spell table. Use one or the other",
+      "myComps": "#7 Revised WIS Spell Bonus",
+      "theirComps": "#2580 #2581 WIS Bonus Spells",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 248,
+      "severity": "soft",
+      "reason": "Both modify racial stat bonuses. Avoid mixing",
+      "myComps": "#3 Expanded Racial Bonuses",
+      "theirComps": "#100 Ability Score #110 Bonus Spell Slots #121 #122 5E Caster Bonus"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "soft",
+      "reason": "HT cn:4/5/7 proficiency and style components overlap with M&G kits. M&G only has cn:105/110 (mage/thief kits) and cn:210 (movement) — no fighter/ranger overlap with HT.",
+      "myComps": "#4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles #7 Rebalanced APR",
+      "theirComps": "#50-#165 Kit components #220 Ranger Spell Table (mostly NOT in preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "Both modify proficiencies, weapon styles, and HLAs",
+      "myComps": "#4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles #7 Rebalanced APR",
+      "theirComps": "#710 #720 HLAs #300 Weapon Styles #311 #312 #313 Proficiency"
+    },
+    {
+      "with": "EpicThieving",
+      "withId": 414,
+      "severity": "soft",
+      "reason": "HT cn:34 changes trap detection probability to 100% (check once per round). ET cn:100 modifies trap detection/removal difficulty VALUES in specific areas. ET cn:200 adds new settable trap spells. Different aspects — HT changes the detection formula, ET changes the area difficulty numbers and adds new traps. Can coexist. Install HT before ET.",
+      "myComps": "#34 100% trap detection chance",
+      "theirComps": "#100 Epic Traps #200 Epic Trap Setting",
+      "orderOnly": true,
+      "source": "HT modifies detection formula; ET modifies .ARE trap values and adds new .SPL traps; different mechanisms, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "zgtweaks",
+      "withId": 420,
+      "severity": "soft",
+      "reason": "Both modify mxsplwis.2da (WIS bonus spell table). HT cn:12 adds INT/WIS/CHA-based bonus slots. ZG cn:100 uses a mixed PnP-BG table. Last installed wins. Install HT before ZG if using both.",
+      "myComps": "#12 INT/WIS/CHA-based Bonus Spell Slots",
+      "theirComps": "#100 Mixed PnP-BG WIS bonus spells",
+      "orderOnly": true,
+      "source": "Both COPY to mxsplwis.2da; original note had wrong cn:7 (APR, unrelated), 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Bart_Tweaks",
+      "withId": 405,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#12 INT/WIS/CHA-based Bonus Spell Slots",
+      "theirComps": "#3030 Alternative Wisdom Bonus Spells",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "13": {
+      "spells": [
+        [
+          "SPPR104",
+          "tweak",
+          "INT/WIS/CHA-based bonus spell slots"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/House-Rule-Tweaks/releases",
+  "a": "Artemius_I",
+  "sum": "Collection of house-rule tweaks covering expanded racial enemies, improved druid shapeshifting, revised racial bonuses, and other gameplay changes.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "1.91",
+    "place": "post"
+  },
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "House-Rule-Tweaks"
+  },
+  "prof": {
+    "4": {
+      "flags": {
+        "profRebalanced": true
+      },
+      "desc": "Rebalanced weapon proficiencies (WEAPPROF.2DA rewrite)"
+    },
+    "5": {
+      "flags": {
+        "stylesRebalanced": true
+      },
+      "desc": "Rebalanced weapon style bonuses (STYLBONU.2DA)"
+    },
+    "6": {
+      "flags": {
+        "racialProfBonus": true
+      },
+      "desc": "Racial weapon proficiency bonuses"
+    },
+    "7": {
+      "flags": {
+        "aprRebalanced": true
+      },
+      "desc": "Rebalanced APR progression from weapon proficiency"
+    }
+  },
+  "dl": "https://github.com/ArtemiusI/House-Rule-Tweaks/releases",
+  "au": "Artemius_I",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "House Tweaks: Expanded Racial Enemies",
+      "tp2n": "House Tweaks: Expanded Racial Enemies",
+      "cn": 1,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "no": "Expands the list of available racial enemies for rangers."
+    },
+    {
+      "n": "House Tweaks: Expanded Shapeshifting",
+      "tp2n": "House Tweaks: Expanded Shapeshifting",
+      "no": "Complements AK's Shapeshifter. Don't mix with ToF, SCS, or jtweaks' shapeshifting changes",
+      "cn": 2,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "House Tweaks: Expanded Racial Bonuses",
+      "tp2n": "House Tweaks: Expanded Racial Bonuses",
+      "no": "Avoid mixing with mods touching races and stats (ToF's subraces, SD Stat Overhauls)",
+      "cn": 3,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "House Tweaks: Rebalanced Proficiencies",
+      "tp2n": "House Tweaks: Rebalanced Proficiencies",
+      "no": "Generally incompatible with other proficiency changes (cdtweaks, ToF, M&G)",
+      "cn": 4,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 4,
+      "wq": "verified"
+    },
+    {
+      "n": "House Tweaks: Rebalanced Weapon Styles",
+      "tp2n": "House Tweaks: Rebalanced Weapon Styles",
+      "cn": 5,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 5,
+      "wq": "verified",
+      "no": "Rebalances weapon fighting style bonuses (two-handed, sword-and-shield, etc.)."
+    },
+    {
+      "n": "House Tweaks: Racial Weapon Proficiency",
+      "tp2n": "House Tweaks: Racial Weapon Proficiency",
+      "no": "Should go after cdtweaks' Styles for All. Check interaction with ToF's subraces",
+      "cn": 6,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 6,
+      "wq": "verified"
+    },
+    {
+      "n": "House Tweaks: Rebalanced Attacks Per Round Progression",
+      "tp2n": "House Tweaks: Rebalanced Attacks Per Round Progression",
+      "cn": 7,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 7,
+      "wq": "verified",
+      "no": "Rebalances APR progression from weapon proficiency levels."
+    },
+    {
+      "n": "Backstab Tweaks: Standard",
+      "tp2n": "Backstab from any direction",
+      "cn": 8,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 8,
+      "wq": "verified",
+      "tg": "adv",
+      "no": "Backstab tweaks variant. Part of Monk/Backstab subcomponent group.",
+      "g": "backstab_tweaks",
+      "scn": "House Tweaks: Backstab Tweaks"
+    },
+    {
+      "n": "House Tweaks: Good-Aligned Roleplay Rewards (BG2:EE)",
+      "tp2n": "Backstab from any direction + Backstab from out of stealth at -2 modifier when attacking from behind",
+      "cn": 108,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "verified",
+      "tg": "qol",
+      "g": "backstab_tweaks",
+      "scn": "House Tweaks: Backstab Tweaks"
+    },
+    {
+      "n": "Constitution Bonuses for All Classes + Regeneration Changes",
+      "tp2n": "Constitution Bonuses for All Classes + Regeneration Changes",
+      "no": "ToF also does it. Artemius warns from using this due to animation wonkyness v Increased CON bonuses bonus increase every 1 CON point until 18, then every 2, until +7 for warrior (faster) and others (s",
+      "cn": 9,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 9,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "con_regen",
+      "scn": "House Tweaks: Increased Constitution Bonuses"
+    },
+    {
+      "n": "Regeneration Changes Only",
+      "tp2n": "Regeneration Changes Only",
+      "cn": 10,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 10,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "con_regen",
+      "scn": "House Tweaks: Increased Constitution Bonuses"
+    },
+    {
+      "n": "Constitution Bonuses for All Classes Only",
+      "tp2n": "Constitution Bonuses for All Classes Only",
+      "cn": 11,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 11,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "con_regen",
+      "scn": "House Tweaks: Increased Constitution Bonuses"
+    },
+    {
+      "n": "House Tweaks: INT/WIS/CHA-based Bonus Spell Slots",
+      "tp2n": "House Tweaks: INT/WIS/CHA-based Bonus Spell Slots",
+      "cn": 12,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 12,
+      "wq": "verified",
+      "tg": "pnp",
+      "no": "Bonus spell slots based on INT (arcane), WIS (divine), and CHA (bard/sorcerer). Overwrites mxsplwis.2da."
+    },
+    {
+      "n": "House Tweaks: Warrior HLAs",
+      "tp2n": "House Tweaks: Warrior HLAs",
+      "no": "Arcane casters and shaman start at lv17 (wizard INT, sorc/bard/shaman CHA), divine casters (Ranger/paladin) start at lv14 (WIS) Incompatible with ToF's Revised ability score modifiers and SubtleD's St",
+      "cn": 13,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 13,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "n": "House Tweaks: Improved Dialogues (BG:EE)",
+      "tp2n": "House Tweaks: Improved Dialogues (BG:EE)",
+      "cn": 14,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 14,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tg": "qol",
+      "no": "Adds improved dialogue options for BG1 NPCs and quests. BGEE/EET only."
+    },
+    {
+      "n": "House Tweaks: Not-So-Indestructible Rats",
+      "tp2n": "House Tweaks: Not-So-Indestructible Rats",
+      "cn": 15,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 15,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tg": "qol",
+      "no": "Rats in Candlekeep and other areas can actually be killed."
+    },
+    {
+      "n": "House Tweaks: Hoodless Thief Avatars",
+      "tp2n": "House Tweaks: Good-Aligned Roleplay Rewards (BG2:EE)",
+      "cn": 16,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tg": "cos",
+      "no": ". mod_installer: ACTION_READLN prompt asks about Female Dwarves — requires manual input (1=Yes, 2=No)",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for Female Dwarves choice (1=Yes, 2=No). Requires manual input.",
+          "type": "manual"
+        }
+      ]
+    },
+    {
+      "n": "House Tweaks: Cloak of Dragomir only decreases stats in daylight",
+      "tp2n": "House Tweaks: Cloak of Dragomir only decreases stats in daylight",
+      "cn": 17,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 17,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cat": "ITEM ADDITION MODS"
+    },
+    {
+      "n": "House Tweaks: Give Stat Bonuses to EENPCs in BG2 (except Hexxat)",
+      "tp2n": "House Tweaks: Give Stat Bonuses to EENPCs in BG2 (except Hexxat)",
+      "no": "BG2EE ONLY — REQUIRE_PREDICATE GAME_IS ~bg2ee~ (NOT eet). Will fail on EET.",
+      "cn": 18,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 18,
+      "wq": "verified",
+      "games": [
+        "bg2ee"
+      ],
+      "tg": "qol"
+    },
+    {
+      "n": "House Tweaks: Useful Plot Items",
+      "tp2n": "House Tweaks: Useful Plot Items",
+      "cn": 19,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 19,
+      "wq": "verified",
+      "games": [
+        "bg2ee"
+      ],
+      "cat": "ITEM ADDITION MODS",
+      "no": "BG2EE ONLY — REQUIRE_PREDICATE GAME_IS ~bg2ee~ (NOT eet). Will fail on EET."
+    },
+    {
+      "n": "House Tweaks: Faster Troll Unconsciousness",
+      "tp2n": "House Tweaks: Faster Troll Unconsciousness",
+      "no": "already installed earlier among item mods",
+      "cn": 20,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 20,
+      "wq": "verified",
+      "tg": "qol"
+    },
+    {
+      "n": "House Tweaks: Restore Reputation Increase Sound Effect for BG2",
+      "tp2n": "House Tweaks: Restore Reputation Increase Sound Effect for BG2",
+      "cn": 21,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 21,
+      "wq": "verified",
+      "games": [
+        "bg2ee"
+      ],
+      "tg": "cos",
+      "no": "BG2EE ONLY — REQUIRE_PREDICATE GAME_IS ~bg2ee~ (NOT eet). Will fail on EET. Restores reputation increase sound."
+    },
+    {
+      "n": "House Tweaks: Race Text Patch",
+      "tp2n": "House Tweaks: Race Text Patch",
+      "cn": 22,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 22,
+      "wq": "verified",
+      "tg": "cos"
+    },
+    {
+      "n": "House Tweaks: Hoodless Thief Avatars",
+      "tp2n": "House Tweaks: Hoodless Thief Avatars",
+      "no": "to achieve its goal, it adds a lot of races to racetext.2da so you can see them referenced in the character info page this seems to cause a lot more work for ToF's subraces if installed before it?. mod_installer: ACTION_READLN prompt asks about Female Dwarves — requires manual input (1=Yes, 2=No)",
+      "cn": 23,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 23,
+      "wq": "verified",
+      "tg": "cos",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for Female Dwarves choice (1=Yes, 2=No). Requires manual input.",
+          "type": "manual"
+        }
+      ]
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "cn": 24,
+      "n": "IWD Soundsets",
+      "tp2n": "House Tweaks: NPC Soundsets for Icewind Dale",
+      "no": "IWDEE ONLY — REQUIRE_PREDICATE GAME_IS ~iwdee~. Will not install on EET."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "cn": 25,
+      "n": "IWD Reputation",
+      "tp2n": "House Tweaks: Reputation Bonuses for Icewind Dale",
+      "no": "IWDEE ONLY — REQUIRE_PREDICATE GAME_IS ~iwdee~. Will not install on EET."
+    },
+    {
+      "n": "House Tweaks: Soundset Tweaks for Anomen and Sarevok (BG2:EE)",
+      "tp2n": "House Tweaks: Soundset Tweaks for Anomen and Sarevok (BG2:EE)",
+      "cn": 26,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 26,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tg": "cos"
+    },
+    {
+      "n": "House Tweaks: Experience Books",
+      "tp2n": "House Tweaks: Experience Books",
+      "cn": 27,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 27,
+      "wq": "verified",
+      "tg": "adv"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "cn": 28,
+      "n": "IWD Hosttower Sword: One-handed variant",
+      "tp2n": "Bastard Sword",
+      "no": "IWDEE ONLY. Modifies JHOSWD2/JHOSWD3.",
+      "g": "hosttower_sword",
+      "scn": "House Tweaks: Restored Blade of Aihonen Tweak"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "cn": 29,
+      "n": "IWD Hosttower Sword: Two-handed variant",
+      "tp2n": "Two-Handed Sword",
+      "no": "IWDEE ONLY. Modifies JHOSWD2/JHOSWD3.",
+      "g": "hosttower_sword",
+      "scn": "House Tweaks: Restored Blade of Aihonen Tweak"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 30,
+      "n": "Frozen/Stone Death Effects",
+      "tp2n": "House Tweaks: Frozen, Disintegrated and Petrified Creatures Drop Items when Shattered",
+      "no": ""
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 31,
+      "n": "Skinless Skeleton Item Patch",
+      "tp2n": "House Tweaks: Low-level Charm spells e.g. Charm Person (or Mammal) no longer turn targets hostile after expiring",
+      "no": "Patches skeleton items. Uses COPY_EXISTING_REGEXP on all ITM/SPL files."
+    },
+    {
+      "n": "2% chance per 5 points in Detect Traps, check once per round",
+      "tp2n": "2% chance per 5 points in Detect Traps, check once per second",
+      "no": "Artemius: \"Note that using them to skip dual-classing won't work. When it checks for experience, it includes whatever your inactive class has as well. The best you can do is temporarily ditch Imoen un",
+      "cn": 32,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 32,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "ht_detect_traps",
+      "scn": "House Tweaks: Passive Trap Detection"
+    },
+    {
+      "n": "5% chance per 5 points in Detect Traps, check once per round",
+      "tp2n": "5% chance per 5 points in Detect Traps, check once per second",
+      "cn": 33,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 33,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "ht_detect_traps",
+      "scn": "House Tweaks: Passive Trap Detection"
+    },
+    {
+      "n": "100% chance of trap detection, check once per round",
+      "tp2n": "100% chance of trap detection, check once per second",
+      "cn": 34,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 34,
+      "wq": "verified",
+      "tg": "pnp",
+      "g": "ht_detect_traps",
+      "scn": "House Tweaks: Passive Trap Detection",
+      "no": "Trap detection: 100% success chance, checked once per round."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 341,
+      "n": "Trap Detection: 5% per 5 points above 100, check once per second",
+      "tp2n": "5% chance per 5 points in Detect Traps above 100, check once per second",
+      "no": "Trap detection variant for high-skill thieves.",
+      "g": "ht_detect_traps",
+      "scn": "House Tweaks: Passive Trap Detection"
+    },
+    {
+      "n": "House Tweaks: Remove all 'Hide in Shadows' Voice Cues",
+      "tp2n": "House Tweaks: Remove all 'Hide in Shadows' Voice Cues",
+      "cn": 35,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 35,
+      "wq": "verified",
+      "tg": "cos"
+    },
+    {
+      "n": "House Tweaks: Remove all 'Set Traps' Voice Cues",
+      "tp2n": "House Tweaks: Remove all 'Set Traps' Voice Cues",
+      "cn": 36,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 36,
+      "wq": "verified",
+      "tg": "cos"
+    },
+    {
+      "n": "House Tweaks: Make Helmets Invisible on Mage Avatars",
+      "tp2n": "House Tweaks: Make Helmets Invisible on Mage Avatars",
+      "no": "these two are similar to Tweaks and Tricks' No talking when hiding in shadows",
+      "cn": 37,
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wc": 37,
+      "wq": "verified",
+      "tg": "cos"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 38,
+      "n": "Thief Weapons",
+      "tp2n": "House Tweaks: Backstab With Any Weapon",
+      "no": "Adjusts thief weapon proficiencies."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 39,
+      "n": "Non-Metal Armors Tweaks",
+      "tp2n": "House Tweaks: Ankheg and Dragonscale Armor Count as Medium Armor",
+      "no": "Makes non-metal armors usable by bards and barbarians."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 40,
+      "n": "Turn Undead Tweaks",
+      "tp2n": "House Tweaks: Charisma Bonus to Turn Undead Levels",
+      "no": "Modifies Turn Undead mechanics."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 41,
+      "n": "Trap Activation Tweaks",
+      "tp2n": "House Tweaks: Trap Activation Tweaks",
+      "no": "Changes trap activation behavior."
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 42,
+      "n": "Set Traps in Enemy Range: No restrictions",
+      "tp2n": "No restrictions",
+      "no": "Allows setting traps in enemy range with no restrictions.",
+      "g": "traps_enemy_range",
+      "scn": "House Tweaks: Set Traps in Enemy Range"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 43,
+      "n": "Set Traps in Enemy Range: If invisible, no stealth break",
+      "tp2n": "Set Traps in enemy range if invisible, does not break stealth",
+      "no": "Allows trap setting in enemy range only while invisible, doesn't break stealth.",
+      "g": "traps_enemy_range",
+      "scn": "House Tweaks: Set Traps in Enemy Range"
+    },
+    {
+      "wf": "HouseTweaks",
+      "wp": "HouseTweaks\\HouseTweaks.TP2",
+      "wq": "exact",
+      "cn": 44,
+      "n": "Thief Stronghold Tweak: Ask Jariel to pay quota",
+      "tp2n": "Thief Stronghold Tweak: Ask Jariel to pay your quota in your stead",
+      "no": "Adds dialogue option for Jariel to pay thief stronghold quota."
+    }
+  ]
+}

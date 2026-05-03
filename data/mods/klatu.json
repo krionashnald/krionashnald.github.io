@@ -1,0 +1,1454 @@
+{
+  "i": 310,
+  "t": "klatu",
+  "sv": 1,
+  "ord": 180,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Klatu Tweaks and Fixes",
+  "langs": {
+    "en": 0,
+    "de": 1
+  },
+  "cats": [
+    "SPELL MODS",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "Install before Tome and Blood. MiH Fixes may handle wizard spell progression better",
+  "_legacy_ids": [
+    380
+  ],
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS IWD spell imports and spell tweaks overlap with Klatu tweaks",
+      "myComps": "#2040 Wild Mage fixes #2050 Wish spells #2070 Free Action/Haste #2120 Non-Magical abilities #2140 Spellcasting in Armor",
+      "theirComps": "#1500 #1510 IWD spells #2000 #2010 #2050 #2060 #2070 Spell tweaks"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "KLATU proficiency bonuses and spell table replacements overlap with cdtweaks weapon proficiency and spell progression tweaks",
+      "myComps": "#1020 Prepared Wishes #2000 Mage spell table #2010 Sorcerer spell table",
+      "theirComps": "#2160 #2161 #2162 #2163 #2164 Weapon proficiency #2250 Sorcerer Spell Prog #2260 #2261 Mage Spell Prog #300 Slightly improved party AI"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "KLATU spell tweaks overlap with Spell Revisions. The three Non-Magical ability components (#2120) are redundant if SR is installed",
+      "myComps": "#2040 Wild Mage #2050 Wish spells #2070 Free Action/Haste #2120 Non-Magical abilities",
+      "theirComps": "#0",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "enhanced-powergaming-scripts",
+      "withId": 443,
+      "severity": "soft",
+      "reason": "KLATU's Modal Buff AI Script overlaps with Enhanced Powergaming Scripts' buff automation",
+      "myComps": "#2190 Modal Buff AI Script",
+      "theirComps": "#14 #15 Pre-Buffing"
+    },
+    {
+      "with": "msfm",
+      "withId": 282,
+      "severity": "soft",
+      "reason": "Both modify familiar functionality",
+      "myComps": "#2200",
+      "theirComps": "#18 #22 #24"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "CHA store price changes. IR main (cn:0) No conflict.",
+      "myComps": "#2180 Store prices #2140 Spellcasting in Armor #2150 Thievery in Armor",
+      "theirComps": "#1030 #2 #3 #9 #1101",
+      "source": "eemodsetup",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "thecalling",
+      "withId": 39,
+      "severity": "partial",
+      "reason": "Both EXTEND_BOTTOM THALAN state 1 but with independent triggers (Klatu: kla#book01, Calling: CDBracerQuest). Compatible since Calling Beta 2.",
+      "myComps": "#1010",
+      "theirComps": "#0 The Calling",
+      "source": "tp2 analysis of both mods, independent variable namespaces, 2026-03"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "partial",
+      "reason": "Choose one tweak for allowing arcane casting with armor",
+      "myComps": "#2140",
+      "theirComps": "#110, #30, Revised Dragon Disciples",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 383,
+      "severity": "soft",
+      "reason": "Both modify store pricing mechanics",
+      "myComps": "#2180 Store prices",
+      "theirComps": "#10 Charisma on prices #11 Reputation on prices"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "ToF proficiency system overlaps with KLATU proficiency bonuses",
+      "myComps": "#1020 Prepared Wishes",
+      "theirComps": "#81100 Weapon Proficiency #81200 Weapon Styles"
+    },
+    {
+      "with": "Bart_Tweaks",
+      "withId": 405,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplsrc.2da/splsrckn.2da. Last installed wins.",
+      "myComps": "#2010 Streamlined Sorcerer Spell Progression",
+      "theirComps": "#3010 Alternative Sorcerer Spell Progression",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "Adrian",
+      "requiresId": 167,
+      "type": "soft",
+      "reason": "Klatu disable romance music tweak needs Adrian"
+    },
+    {
+      "requires": "kelsey",
+      "requiresId": 161,
+      "type": "soft",
+      "reason": "Klatu disable romance music tweak needs Kelsey"
+    },
+    {
+      "requires": "isra_bg2",
+      "requiresId": 168,
+      "type": "soft",
+      "reason": "Klatu disable romance music tweak needs Isra"
+    },
+    {
+      "requires": "Kivan",
+      "requiresId": 591,
+      "type": "soft",
+      "reason": "Klatu disable romance music tweak needs Kivan"
+    },
+    {
+      "requires": "Xan",
+      "requiresId": 142,
+      "type": "soft",
+      "reason": "Klatu disable romance music tweak needs Xan"
+    }
+  ],
+  "spl": {
+    "10": {
+      "spells": [
+        [
+          "SPWI121",
+          "tweak",
+          "Wild Mage items and spells fixed"
+        ]
+      ]
+    },
+    "11": {
+      "spells": [
+        [
+          "SPWI910",
+          "tweak",
+          "Wish spells no longer interrupt caster"
+        ]
+      ]
+    },
+    "13": {
+      "spells": [
+        [
+          "SPPR409",
+          "modify",
+          "Free Action no longer prevents Haste or movement bonuses"
+        ]
+      ]
+    },
+    "22": {
+      "spells": [
+        [
+          "SPWI609",
+          "tweak",
+          "Delay removed from Improved Haste"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/klatu-tweaks-and-fixes",
+  "a": "klatu",
+  "v": "1.7.4",
+  "sum": "This mod consists of a collection of minor and major tweaks that touch on many different aspects of the game.",
+  "tags": [
+    "class",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "klatu-tweaks-and-fixes"
+  },
+  "dl": "https://github.com/The-Gate-Project/klatu-tweaks-and-fixes",
+  "au": "klatu",
+  "co": [
+    {
+      "n": "The Gloves of Goodman Hayes",
+      "tp2n": "The Gloves of Goodman Hayes",
+      "pi": "KLATU-GLOVES-OF-GOODMAN-HAYES",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1000,
+      "wq": "label_prefix",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1000,
+      "cat": "SPELL MODS",
+      "no": "Adds the Gloves of Goodman Hayes to the game.",
+      "ord": 15
+    },
+    {
+      "n": "The Manual of War",
+      "tp2n": "The Manual of War",
+      "pi": "KLATU-MANUAL-OF-WAR",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1010,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1010,
+      "no": "Adds proficiency-teaching tome. Soft conflict with Refinements HLA tables and The Calling (both EXTEND_BOTTOM THALAN.dlg)",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "n": "Prepared Wishes",
+      "tp2n": "Prepared Wishes",
+      "no": "Replaces random Wish with 17 prepared wishes. Proficiency bonuses incompatible with proficiency overhaul mods (cdtweaks, ToF)",
+      "pi": "KLATU-PREPARED-WISHES",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1020,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1020,
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "n": "Romance Cheat: Isra will Romance Neutral Characters",
+      "tp2n": "Romance Cheat: Isra will Romance Neutral Characters",
+      "pi": "KLATU-ISRA-ROMANCE-NEUTRALS",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1030,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1030,
+      "no": "Romance tweak: Isra will romance neutral-aligned PCs.",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "n": "Give Hexxat an Inactive Fighter Class",
+      "tp2n": "Give Hexxat an Inactive Fighter Class",
+      "pi": "KLATU-HEXXAT-INACTIVE-FIGHTER",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1040,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1040,
+      "no": "Gives Hexxat an inactive fighter class for dual-class potential.",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "n": "Appropriate XP Rewards for Cowled Enforcers",
+      "tp2n": "Appropriate XP Rewards for Cowled Enforcers",
+      "pi": "KLATU-APPROPRIATE-XP-FOR-COWLED-ENCOUNTERS",
+      "grn": "Content Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 1050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1050,
+      "no": "Safe QoL: sets Cowled Enforcer XP to 6000 (was 0 or very low)",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1060,
+      "n": "Skip Candlekeep Chores and CtB intro cutscenes",
+      "tp2n": "CtB: Skip Candlekeep Chores and intro cutscenes",
+      "no": "Requires Call to Battle (CtB) mod. Skips Candlekeep tutorial chores.",
+      "grn": "Content Changes",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1070,
+      "n": "CtB: Remove Venereal Disease",
+      "tp2n": "CtB: Remove Venereal Disease",
+      "no": "Requires Call to Battle (CtB) mod.",
+      "grn": "Content Changes",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1080,
+      "n": "CtB: Fixed Harp of Myth Drannor",
+      "tp2n": "CtB: Fixed Harp of Myth Drannor",
+      "no": "Requires Call to Battle (CtB) mod.",
+      "grn": "Content Changes",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1090,
+      "n": "RoT: Remove Chateau Cutscenes",
+      "tp2n": "RoT: Remove cutscenes from Chateau Irenicus",
+      "no": "Requires Region of Terror (RoT) mod.",
+      "grn": "Content Changes",
+      "cat": "SPELL MODS",
+      "ord": 15
+    },
+    {
+      "n": "Streamlined Wizard Spell Progression",
+      "tp2n": "Streamlined Wizard Spell Progression",
+      "no": "should go before Bardic Wonder's item restriction tweaks",
+      "pi": "KLATU-STREAMLINE-WIZARD-PROGRESSION",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "label_prefix",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2000,
+      "cat": "SPELL MODS"
+    },
+    {
+      "n": "Streamlined Sorcerer Spell Progression",
+      "tp2n": "Streamlined Sorcerer Spell Progression",
+      "pi": "KLATU-STREAMLINE-SORCERER-PROGRESSION",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "label_prefix",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2010,
+      "cat": "SPELL MODS",
+      "no": "Streamlined sorcerer spell progression. Overwrites mxsplsrc.2da."
+    },
+    {
+      "n": "No Item Deprecation",
+      "tp2n": "No Item Deprecation",
+      "pi": "KLATU-NO-DEPRECIATION",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2020,
+      "no": "QoL: removes store item depreciation. Items maintain full value"
+    },
+    {
+      "n": "Identify all store items",
+      "tp2n": "Identify all store items",
+      "pi": "KLATU-IDENTIFY-ALL",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2030,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2030,
+      "no": "QoL: all store items pre-identified. Saves identify spell slots"
+    },
+    {
+      "n": "Fix Wild Mage Items and Spells",
+      "tp2n": "Fix Wild Mage Items and Spells",
+      "pi": "KLATU-FIX-WILD-MAGE-ITEMS-AND-SPELLS",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2040,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2040,
+      "no": "Fixes wild surge interactions on 9 items and 2 spells. Soft conflict with SCS and Spell Revisions"
+    },
+    {
+      "n": "Prevent Wish Spells from Interrupting Caster",
+      "tp2n": "Prevent Wish Spells from Interrupting Caster",
+      "pi": "KLATU-PREVENT-WISH-INTERRUPT",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2050,
+      "no": "Prevents Wish caster from being interrupted. Soft conflict with SCS Wish tweaks"
+    },
+    {
+      "n": "Standardize Poison Immunity",
+      "tp2n": "Standardize Poison Immunity",
+      "pi": "KLATU-STANDARDIZE-POISON-IMMUNITY",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2060,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2060,
+      "no": "Standardizes how poison immunity works across items/spells/creatures"
+    },
+    {
+      "n": "Free Action does not prevent Haste or Movement Rate Bonus",
+      "tp2n": "Free Action does not prevent Haste or Movement Rate Bonus",
+      "no": "Allows Free Action to coexist with Haste. ZSTweaks does this for gear only; this also covers spells. Soft conflict with SCS/SR",
+      "pi": "KLATU-FREE-ACTION-DOESNT-PREVENT-HASTE",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2070,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2070
+    },
+    {
+      "n": "Drop Equipment on Disintegration",
+      "tp2n": "Drop Equipment on Disintegration",
+      "pi": "KLATU-DROP-EQUIPMENT-ON-DISINTEGRATION",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2080,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2080,
+      "no": "QoL: creatures drop equipment before being disintegrated"
+    },
+    {
+      "n": "Drop Equipment on Petrification",
+      "tp2n": "Drop Equipment on Petrification",
+      "pi": "KLATU-DROP-EQUIPMENT-ON-PETRIFICATION",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2090,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2090,
+      "no": "QoL: creatures drop equipment before being petrified"
+    },
+    {
+      "n": "Drop Equipment on Imprisonment",
+      "tp2n": "Drop Equipment on Imprisonment",
+      "pi": "KLATU-DROP-EQUIPMENT-ON-IMPRISONMENT",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2100,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2100,
+      "no": "QoL: creatures drop equipment before being imprisoned"
+    },
+    {
+      "n": "Treat all Innate Abilities as Non-Magical (Unaffected by Wild/Dead Magic and Silence)",
+      "tp2n": "Treat all Innate Abilities as Non-Magical (Unaffected by Wild/Dead Magic and Silence)",
+      "no": "Makes all innate abilities work in Wild/Dead Magic zones and Silence. Redundant if Spell Revisions installed",
+      "pi": "KLATU-TREAT-INNATES-NONMAGICAL",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2110
+    },
+    {
+      "n": "Treat all Psionic Abilities as Non-Magical (Unaffected by Wild/Dead Magic and Silence)",
+      "tp2n": "Treat all Psionic Abilities as Non-Magical (Unaffected by Wild/Dead Magic and Silence)",
+      "pi": "KLATU-TREAT-PSIONICS-NONMAGICAL",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 2120,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2120,
+      "no": "Makes all psionic abilities work in Wild/Dead Magic zones and Silence. Redundant if Spell Revisions installed"
+    },
+    {
+      "n": "Treat all Bardsong Effects as Non-Magical (Unaffected by Wild/Dead Magic)",
+      "tp2n": "Treat all Bardsong Effects as Non-Magical (Unaffected by Wild/Dead Magic)",
+      "pi": "KLATU-TREAT-BARDSONGS-NONMAGICAL",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2130,
+      "no": "Makes bardsong effects work in Wild/Dead Magic zones (but NOT Silence)"
+    },
+    {
+      "n": "Allow Arcane Spellcasting in Armor",
+      "tp2n": "Allow Arcane Spellcasting in Armor",
+      "no": "Removes arcane casting failure from ALL armor. May overwrite ToF, SCS, or Tome and Blood armor changes",
+      "pi": "KLATU-CAST-SPELLS-IN-ARMOR",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2140
+    },
+    {
+      "n": "Allow Thievery in Armor",
+      "tp2n": "Allow Thievery in Armor",
+      "pi": "KLATU-THIEVERY-IN-ARMOR",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2150,
+      "no": "Removes thieving skill penalties from ALL armor"
+    },
+    {
+      "n": "Remove Delay from Improved Haste Spells",
+      "tp2n": "Remove Delay from Improved Haste Spells",
+      "pi": "KLATU-REMOVE-DELAY-FROM-IMPROVED-HASTE",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2160,
+      "no": ""
+    },
+    {
+      "n": "Store Prices: Reputation has no effect",
+      "tp2n": "Reputation has no Effect on Store Prices",
+      "pi": "KLATU-DISABLE-REPUTATION-ON-PRICES",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2170,
+      "no": "Reputation no longer affects store prices. HARD conflict with Item Revisions store price changes"
+    },
+    {
+      "n": "Store Prices: Charisma has stronger effect",
+      "tp2n": "Charisma has a stronger Effect on Store Prices",
+      "pi": "KLATU-BUFF-CHARISMA-ON-PRICES",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2180,
+      "no": "Charisma has stronger effect on store prices. HARD conflict with Item Revisions. Can install alongside cn:2170 (different 2da files)"
+    },
+    {
+      "n": "Modal Buff AI Script",
+      "tp2n": "Modal Buff AI Script",
+      "pi": "KLATU-MODAL-AI-BUFF-SCRIPT",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2190,
+      "no": "Comprehensive AI script with hotkey buff cycles. Overlaps with Enhanced Powergaming Scripts pre-buffing"
+    },
+    {
+      "n": "Familiars can sort magical scrolls",
+      "tp2n": "Familiars can sort magical scrolls",
+      "pi": "KLATU-FAMILIAR-SCROLL-SORT",
+      "grn": "Gameplay Tweaks and Fixes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 2200,
+      "no": "Familiars gain ability to sort magical scrolls by school"
+    },
+    {
+      "n": "Mute Kelsey's Romance Music",
+      "tp2n": "Mute Kelsey's Romance Music",
+      "pi": "KLATU-MUTE-KELSEY-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 3000,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3000
+    },
+    {
+      "n": "Mute Xan's Romance Music",
+      "tp2n": "Mute Xan's Romance Music",
+      "pi": "KLATU-MUTE-XAN-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 3010,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3010
+    },
+    {
+      "n": "Mute Adrian's Romance Music",
+      "tp2n": "Mute Adrian's Romance Music",
+      "pi": "KLATU-MUTE-ADRIAN-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 3020,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3020
+    },
+    {
+      "n": "Mute Isra's Romance Music",
+      "tp2n": "Mute Isra's Romance Music",
+      "pi": "KLATU-MUTE-ISRA-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 3030,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3030
+    },
+    {
+      "n": "Mute Kivan's BG2 music tracks",
+      "tp2n": "Mute Kivan's BG2 music tracks",
+      "pi": "KLATU-MUTE-KIVAN-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3040
+    },
+    {
+      "n": "Mute BG1 NPC Project music tracks",
+      "tp2n": "Mute BG1 NPC Project music tracks",
+      "pi": "KLATU-MUTE-BG1NPC-ROMANCE-SONG",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wc": 3050,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3050
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3060,
+      "n": "CtB: Mute the Cowled Wizard",
+      "tp2n": "CtB: Mute the Cowled Wizard",
+      "no": "Requires Call to Battle (CtB) mod. REQUIRE_PREDICATE MOD_IS_INSTALLED CTB cn:0.",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "n": "Remove Chaos Shield icons from all items",
+      "tp2n": "Remove Chaos Shield icons from all items",
+      "pi": "KLATU-REMOVE-CHAOS-SHIELD-ICON",
+      "grn": "Cosmetic Changes",
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3070,
+      "no": "Removes Chaos Shield portrait icons from all items that incorrectly display them."
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3080,
+      "n": "Robe of Good Archmagi: Appearance 2W",
+      "tp2n": "Lesser Mage Robe appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3081,
+      "n": "Robe of Good Archmagi: Appearance 3W",
+      "tp2n": "Caped Mage Robe appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3082,
+      "n": "Robe of Good Archmagi: Appearance 4W",
+      "tp2n": "Hooded Mage Robe appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3083,
+      "n": "Robe of Good Archmagi: Appearance 2A",
+      "tp2n": "Leather Armor appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3084,
+      "n": "Robe of Good Archmagi: Appearance 3A",
+      "tp2n": "Chain Mail appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3085,
+      "n": "Robe of Good Archmagi: Appearance 4A",
+      "tp2n": "Plate Mail appearance for Robe of Good Archmagi",
+      "g": "robe_good",
+      "scn": "Change Appearance of Robe of Good Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3090,
+      "n": "Robe of Neutral Archmagi: Appearance 2W",
+      "tp2n": "Lesser Mage Robe appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3091,
+      "n": "Robe of Neutral Archmagi: Appearance 3W",
+      "tp2n": "Caped Mage Robe appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3092,
+      "n": "Robe of Neutral Archmagi: Appearance 4W",
+      "tp2n": "Hooded Mage Robe appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3093,
+      "n": "Robe of Neutral Archmagi: Appearance 2A",
+      "tp2n": "Leather Armor appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3094,
+      "n": "Robe of Neutral Archmagi: Appearance 3A",
+      "tp2n": "Chain Mail appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3095,
+      "n": "Robe of Neutral Archmagi: Appearance 4A",
+      "tp2n": "Plate Mail appearance for Robe of Neutral Archmagi",
+      "g": "robe_neutral",
+      "scn": "Change Appearance of Robe of Neutral Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3100,
+      "n": "Robe of Evil Archmagi: Appearance 2W",
+      "tp2n": "Lesser Mage Robe appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3101,
+      "n": "Robe of Evil Archmagi: Appearance 3W",
+      "tp2n": "Caped Mage Robe appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3102,
+      "n": "Robe of Evil Archmagi: Appearance 4W",
+      "tp2n": "Hooded Mage Robe appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3103,
+      "n": "Robe of Evil Archmagi: Appearance 2A",
+      "tp2n": "Leather Armor appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3104,
+      "n": "Robe of Evil Archmagi: Appearance 3A",
+      "tp2n": "Chain Mail appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3105,
+      "n": "Robe of Evil Archmagi: Appearance 4A",
+      "tp2n": "Plate Mail appearance for Robe of Evil Archmagi",
+      "g": "robe_evil",
+      "scn": "Change Appearance of Robe of Evil Archmagi",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3110,
+      "n": "Robe of Vecna: Appearance 2W",
+      "tp2n": "Lesser Mage Robe appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3111,
+      "n": "Robe of Vecna: Appearance 3W",
+      "tp2n": "Caped Mage Robe appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3112,
+      "n": "Robe of Vecna: Appearance 4W",
+      "tp2n": "Hooded Mage Robe appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3113,
+      "n": "Robe of Vecna: Appearance 2A",
+      "tp2n": "Leather Armor appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3114,
+      "n": "Robe of Vecna: Appearance 3A",
+      "tp2n": "Chain Mail appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "wf": "klatu",
+      "wp": "klatu\\SETUP-KLATU.TP2",
+      "wq": "exact",
+      "cn": 3115,
+      "n": "Robe of Vecna: Appearance 4A",
+      "tp2n": "Plate Mail appearance for Robe of Vecna",
+      "g": "robe_vecna",
+      "scn": "Change Appearance of Robe of Vecna",
+      "grn": "Cosmetic Changes"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "soft",
+      "reason": "KLATU item tweaks may overlap with Refinements' revised HLA tables",
+      "myComps": "#1010 Manual of War #1020 Prepared Wishes",
+      "theirComps": "#10 #11 #101 #102 #103 #104 #105 #106 #107 #108 #109 #110",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

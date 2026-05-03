@@ -1,0 +1,110 @@
+{
+  "i": 725,
+  "t": "StormCaller",
+  "sv": 1,
+  "ord": 50,
+  "c": "KIT & CLASS MODS",
+  "n": "Storm Caller Kit",
+  "no": "Storm Caller shaman kit by Ulb. Summons lightning storms through ritualistic dance. Single-class shaman kit with unique spells and abilities.",
+  "conflicts": [
+    {
+      "with": "a7-improved_shamanic_dance",
+      "withId": 337,
+      "severity": "soft",
+      "reason": "A7 Improved Shamanic Dance scans kitlist.2da and patches all shaman kits. Install StormCaller BEFORE A7 Shamanic Dance.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "STORM_CALLER": {
+        "passive": [
+          {
+            "n": "Lightning Dance",
+            "type": "desc",
+            "desc": "Shamanic Dance calls lightning instead of summoning spirits. Enemies in 30' have 12%+2%/lvl chance (max 50%) to be struck each round. Damage: 2d6 (lv1), 4d6 (lv6), 6d6 (lv12), 8d6 (lv18), 10d6 (lv24) electrical."
+          },
+          {
+            "n": "Detect Illusion",
+            "type": "desc",
+            "desc": "20% base +4%/level, max 100% at level 20"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Storm Aura",
+            "freq": "toggle",
+            "effects": "30' radius aura: enemies have 5%/round chance of 10d6 electrical strike.",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "armor": "Leather, studded leather, hide only. Bucklers only.",
+          "alignment": "No Lawful",
+          "noSpells": true,
+          "items": "Cannot cast: Spirit Ward, Spiritual Clarity, Spirit Fire, Recall Spirit, Spiritual Lock, Ether Gate. Gains Writhing Fog at lv3."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "include": [
+            "Lightning Mastery",
+            "Improved Storm Aura"
+          ],
+          "note": "Adds Lightning Mastery (5x stackable) and Improved Storm Aura HLAs"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "STORM_CALLER",
+          "shaman",
+          "Storm Caller",
+          "Shaman channeling storm spirits. Lightning and thunder shamanic abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/thisisulb/StormCallerKit",
+  "a": "Ulb",
+  "sum": "A shaman kit that summons lightning storms from the elemental plane of air through ritualistic dance.",
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/thisisulb/StormCallerKit",
+  "au": "Lava Del'Vortel",
+  "langs": {
+    "en": 0
+  },
+  "tags": [
+    "kit"
+  ],
+  "co": [
+    {
+      "n": "Storm Caller Shaman Kit",
+      "cn": 0,
+      "wf": "StormCaller",
+      "wp": "StormCaller\\Setup-StormCaller.tp2",
+      "wq": "exact",
+      "k": 1,
+      "sp": 1,
+      "no": "Adds the Storm Caller shaman kit with lightning-themed abilities and Shamanic Dance variants.",
+      "wc": 0,
+      "kC": {
+        "shaman": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "thisisulb",
+    "r": "StormCallerKit"
+  }
+}

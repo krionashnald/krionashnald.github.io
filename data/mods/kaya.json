@@ -1,0 +1,64 @@
+{
+  "i": 269,
+  "t": "Kaya",
+  "sv": 1,
+  "ord": 160,
+  "c": "ITEM ADDITION MODS",
+  "n": "Kaya",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Adds Kaya, a merchant NPC with items tailored for Edwin and mage characters. Minimal dialogue — primarily a vendor. Component 1 makes Edwin's Amulet of Power droppable",
+  "u": "https://www.gibberlings3.net/forums/topic/32392-i-need-a-help-for-my-mod-kaya/",
+  "a": "Prof Errata",
+  "v": "v3EE",
+  "sum": "Adds Kaya, a joinable NPC companion to BG2 and IWDEE, with items tailored for Edwin and mage characters.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "PEAMMYST",
+          "amulet",
+          "Amulet of Mystra",
+          "This sparkling amulet quickly reveals its remarkable abilities : among others, not only it immunizes against levels drain but also increases too notably the luck and the lore of its bearer; what is more, almost everyone may wear it. It might well be that this artefact had to be enchanted by a priest of Mystra, which it's very likely.\n\nSTATISTICS :\n\nEquipped abilities :\nVocalize\nImmunity to Levels Drain\nLuck\nLore : +20\nWeight : 1\nNot usable by :\n Wizard Slayer"
+        ]
+      ]
+    }
+  },
+  "dl": "https://www.gibberlings3.net/forums/topic/32392-i-need-a-help-for-my-mod-kaya/",
+  "au": "Prof Errata",
+  "co": [
+    {
+      "n": "Mod Kaya (Requires BG2EE / IWDEE / EET)",
+      "tp2n": "Mod Kaya (Requires BG2EE or IWDEE)",
+      "cn": 0,
+      "wf": "kaya",
+      "wp": "kaya\\kaya.tp2",
+      "wc": 0,
+      "wq": "manual_guess",
+      "no": "Adds Kaya merchant NPC and her store to the game world. Mage-focused items",
+      "it": 1,
+      "itC": {
+        "amulet": 1
+      }
+    },
+    {
+      "n": "Make Edwin's Amulet Droppable",
+      "tp2n": "Make the Edwin s amulet droppable (pour BG2EE)?",
+      "cn": 1,
+      "wf": "Kaya",
+      "wp": "Kaya\\setup-kaya.tp2",
+      "wq": "exact",
+      "no": "Makes Edwin's Amulet of Power (MISC89) droppable. Modifies item_use.2da"
+    }
+  ]
+}

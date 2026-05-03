@@ -1,0 +1,100 @@
+{
+  "i": 544,
+  "t": "Valen",
+  "sv": 1,
+  "ord": 840,
+  "c": "NEW NPC MODS",
+  "n": "Valen NPC",
+  "langs": {
+    "en": 5,
+    "fr": 1,
+    "es": 2,
+    "de": 3,
+    "pl": 4,
+    "ru": 6,
+    "zh-cn": 7,
+    "ja": 8
+  },
+  "no": "Requires portraits/ directory to exist (not a file). May conflict with Portrait Gender Separator.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "in": [
+    {
+      "t": "Create portraits/ directory in BG2EE game folder if it does not exist. A stale file named portraits (no extension) may block directory creation — rename or delete it first.",
+      "type": "folder"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "valen_npc",
+          "portraits/valen_npc/valen.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Valen\\]|cannot open target.*portraits",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Valen COPYs valenL.bmp to a portraits/ directory that doesn't exist. WeiDU fails with 'cannot open target' and rolls back.",
+      "workaround": "Create a portraits/ directory in the game folder before installing. A stale file named 'portraits' (no extension) may also block — rename or delete it.",
+      "user_action": "check-docs",
+      "components": [
+        0
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "VampireWorld",
+      "withId": 702,
+      "severity": "soft",
+      "reason": "VampireWorld cn:9 adds Valen to Bodhi Stronghold. Skip if using the Valen EET mod instead.",
+      "myComps": "#0 Valen NPC",
+      "theirComps": "#9 Valen in Bodhi Stronghold",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/ValenEE",
+  "a": "Weimer",
+  "v": "v55",
+  "sum": "Adds Valen, a vampire fighter, as a joinable BG2 NPC with romance option and a storyline about undeath and redemption.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Weimer",
+  "dl": "https://github.com/RoxanneSHS/ValenEE",
+  "co": [
+    {
+      "n": "Valen",
+      "cn": 0,
+      "wf": "valen",
+      "wp": "valen\\SETUP-VALEN.TP2",
+      "wc": 0,
+      "no": "NOT INSTALLED Setup-Valen.tp2 COPYs valenL.bmp to portraits/ which doesn't exist. WeiDU fails with 'cannot open target', rolls back. Workaround: create portraits/ directory in game folder before installing. Install script must ensure this directory exists.",
+      "in": [
+        {
+          "t": "Create a portraits/ directory in the game folder if it does not already exist.",
+          "type": "folder"
+        }
+      ],
+      "tp2n": "Valen"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "ValenEE"
+  }
+}

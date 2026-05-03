@@ -1,0 +1,3762 @@
+{
+  "i": 654,
+  "t": "Derats_dawap",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 280,
+  "c": "KIT & CLASS MODS",
+  "n": "Derat's Absolute Wacky Adventurers Pack",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDER01",
+          "innate",
+          0,
+          "Necromancy",
+          "Scourge Strike",
+          "Mage kit: necromantic melee ability."
+        ],
+        [
+          "YOURDER02",
+          "innate",
+          0,
+          "Necromancy",
+          "Scourge Drain",
+          "Mage kit: life-draining ability."
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "SCOURGE",
+          "mage",
+          "Scourge",
+          "this arcanist from another dark reality is a plague on our reality."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "ENRAGED",
+          "mage",
+          "Enraged",
+          "This magician never lets go of the animal rage that inhabits him."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "SPELL_STEALER",
+          "mage",
+          "Spell Stealer",
+          "this magician has strange magical abilities."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "MANGACIAN",
+          "mage",
+          "Mangacian",
+          "This mage probably comes from a manga: he knows only one spell."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "LEGENDARY_SINGULARITY",
+          "bard",
+          "Legendary Singularity",
+          "A once-in-a-millennium exception."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "MASTER_COMBINER",
+          "mage",
+          "Master Combiner",
+          "This mage studies the power of fusions more than any other."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "SPHEROMANIAC",
+          "mage",
+          "Spheromaniac",
+          "This mage swears by spherical things."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "ARTILLERIST",
+          "mage",
+          "Artillerist",
+          "This arcanist has two passions: making little burnt holes and slicing grilled heads."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "SPELL_MODELER",
+          "mage",
+          "Spell Modeler",
+          "This mage was born with a unique gift: an innate knowledge of universal magic."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "UNWISE",
+          "mage",
+          "Unwise",
+          "this magician sought to gain power by making a pact with a demon lord, without measuring the consequences."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "VAMPIRIC_ARCANOLOGIST_MAGE_WITH_ANIMATIO",
+          "mage",
+          "Vampiric Arcanologist (mage): With animation",
+          "This being from another reality knows how to extract vital energy from the beings around him, turning it..."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "VAMPIRIC_ARCANOLOGIST_MAGE_WITHOUT_ANIMA",
+          "mage",
+          "Vampiric Arcanologist (mage): Without animation",
+          "This being from another reality knows how to extract vital energy from the beings around him, turning it..."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "EORATIAN",
+          "sorcerer",
+          "Eoratian",
+          "this sorcerer has a very strange way of using magic."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "ANOMALY_SORCERER_WITH_ANIMATION",
+          "sorcerer",
+          "Anomaly (sorcerer): With animation",
+          "this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known..."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "ANOMALY_SORCERER_WITHOUT_ANIMATION",
+          "sorcerer",
+          "Anomaly (sorcerer): Without animation",
+          "this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known..."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "MAGIC_MINUIMS_SORCERER_WITH_ANIMATION",
+          "sorcerer",
+          "Magic Minuims (sorcerer): With animation",
+          "This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "MAGIC_MINUIMS_SORCERER_WITHOUT_ANIMATION",
+          "sorcerer",
+          "Magic Minuims (sorcerer): Without animation",
+          "This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "INCANTATOR",
+          "sorcerer",
+          "Incantator",
+          "this very strange sorcerer practices magic differently."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "SPIRIT_OF_THE_MIRROR",
+          "sorcerer",
+          "Spirit of the Mirror",
+          "Sorcerer wielding mirror and reflection magic from another reality."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "SORCELERER",
+          "sorcerer",
+          "Sorcelerer",
+          "This arcanist loves fighting so much that he spends more time doing it than mastering magic."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "ZAP",
+          "sorcerer",
+          "Zap",
+          "This arcanist comes from another reality and survives with difficulty in the known reality."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "PSYCHO_ABSORBER",
+          "sorcerer",
+          "Psycho Absorber",
+          "This very strange arcanist draws his magic from every possible source, using only his conscience to cast..."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "OVERFLOWER",
+          "sorcerer",
+          "Overflower",
+          "This sorcerer is literally bursting with magical energy."
+        ]
+      ]
+    },
+    "23": {
+      "new": [
+        [
+          "DWEOMERIST",
+          "cleric",
+          "Dweomerist",
+          "this cleric comes from elsewhere and knows only magic, which he uses in a very unusual way."
+        ]
+      ]
+    },
+    "24": {
+      "new": [
+        [
+          "CHAOS_EORATIAN",
+          "cleric",
+          "Chaos Eoratian",
+          "This cleric from another reality is subject to other rules."
+        ]
+      ]
+    },
+    "25": {
+      "new": [
+        [
+          "MIRACLE_MAKER",
+          "cleric",
+          "Miracle Maker",
+          "This priest from another reality defies the laws of our own."
+        ]
+      ]
+    },
+    "26": {
+      "new": [
+        [
+          "FURY",
+          "cleric",
+          "Fury",
+          "this priest from another reality behaves strangely."
+        ]
+      ]
+    },
+    "27": {
+      "new": [
+        [
+          "NECROPHORUS",
+          "cleric",
+          "Necrophorus",
+          "This evil being comes from another reality."
+        ]
+      ]
+    },
+    "28": {
+      "new": [
+        [
+          "SCION_OF_LIFE_CLERIC_WITH_ANIMATION",
+          "cleric",
+          "Scion of Life (cleric): With animation",
+          "This beneficent being comes from another reality."
+        ]
+      ]
+    },
+    "29": {
+      "new": [
+        [
+          "SCION_OF_LIFE_CLERIC_WITHOUT_ANIMATION",
+          "cleric",
+          "Scion of Life (cleric): Without animation",
+          "This beneficent being comes from another reality."
+        ]
+      ]
+    },
+    "30": {
+      "new": [
+        [
+          "BLESSED_HEALER",
+          "cleric",
+          "Blessed Healer",
+          "This cleric from another reality follows other divine rules."
+        ]
+      ]
+    },
+    "31": {
+      "new": [
+        [
+          "DIVINE_CHOSEN",
+          "cleric",
+          "Divine Chosen",
+          "This mortal worships his god in a different way and receives a different kind of divine help."
+        ]
+      ]
+    },
+    "32": {
+      "new": [
+        [
+          "UNIVERSAL_DIVINE_DWEOMERIST",
+          "cleric",
+          "Universal Divine Dweomerist",
+          "This arcanist from another reality knows how to use the energy released by gods and nature."
+        ]
+      ]
+    },
+    "33": {
+      "new": [
+        [
+          "PYROCLASM_DRUID_WITH_ANIMATION",
+          "druid",
+          "Pyroclasm (druid): With animation",
+          "This druid is an outsider from an elemental plane."
+        ]
+      ]
+    },
+    "34": {
+      "new": [
+        [
+          "PYROCLASM_DRUID_WITHOUT_ANIMATION",
+          "druid",
+          "Pyroclasm (druid): Without animation",
+          "This druid is an outsider from an elemental plane."
+        ]
+      ]
+    },
+    "35": {
+      "new": [
+        [
+          "INSTABLE_MUTANT_MONSTRUOSITY",
+          "druid",
+          "Instable Mutant Monstruosity",
+          "This druid is a large, ever-growing blister from another universe."
+        ]
+      ]
+    },
+    "36": {
+      "new": [
+        [
+          "HORDE_SPIRIT",
+          "druid",
+          "Horde Spirit",
+          "This druid is so obsessed with minions that he forgets everything else."
+        ]
+      ]
+    },
+    "37": {
+      "new": [
+        [
+          "RAVAGER",
+          "druid",
+          "Ravager",
+          "This elementalist has no planar connection and doesn't need one."
+        ]
+      ]
+    },
+    "38": {
+      "new": [
+        [
+          "POLYMORPH",
+          "druid",
+          "Polymorph",
+          "This protoplasmic vase assembly can simulate all forms of life."
+        ]
+      ]
+    },
+    "39": {
+      "new": [
+        [
+          "SPELLSINGER",
+          "bard",
+          "Spellsinger",
+          "Bard whose songs directly channel and shape arcane spell energy."
+        ]
+      ]
+    },
+    "40": {
+      "new": [
+        [
+          "TEMPUS_FUGIUM",
+          "bard",
+          "Tempus Fugium",
+          "Bard manipulating time through song. Haste, slow, and temporal abilities."
+        ]
+      ]
+    },
+    "41": {
+      "new": [
+        [
+          "NISHRUUNOAM",
+          "bard",
+          "Nishruunoam",
+          "this bard has some really funny imaginary friends."
+        ]
+      ]
+    },
+    "42": {
+      "new": [
+        [
+          "DISCIPLE_OF_RATATOSKR",
+          "bard",
+          "Disciple of Ratatoskr",
+          "Bard following the chaos squirrel. Unpredictable chaos and mischief magic."
+        ]
+      ]
+    },
+    "43": {
+      "new": [
+        [
+          "ANTIMAGINUM",
+          "bard",
+          "Antimaginum",
+          "this singer comes from a reality where magic is abhorred."
+        ]
+      ]
+    },
+    "44": {
+      "new": [
+        [
+          "MAGIVORE",
+          "bard",
+          "Magivore",
+          "this unusual bard is a dangerous blessing."
+        ]
+      ]
+    },
+    "45": {
+      "new": [
+        [
+          "CRUW_OF_CHAOS",
+          "bard",
+          "Cruw of Chaos",
+          "this bard is the embodiment of elemental chaos."
+        ]
+      ]
+    },
+    "46": {
+      "new": [
+        [
+          "LIFESINGER",
+          "bard",
+          "Lifesinger",
+          "Bard whose songs channel life force. Healing and resurrection melodies."
+        ]
+      ]
+    },
+    "47": {
+      "new": [
+        [
+          "IMPERIOSA",
+          "bard",
+          "Imperiosa",
+          "this \"bard\" isn't really a bard: he doesn't sing or cast spells."
+        ]
+      ]
+    },
+    "48": {
+      "new": [
+        [
+          "DEATHRAISER",
+          "bard",
+          "Deathraiser",
+          "This bard knows a family secret that it's best not to tell too much to the defenders of good."
+        ]
+      ]
+    },
+    "49": {
+      "new": [
+        [
+          "FIRESINGER",
+          "bard",
+          "Firesinger",
+          "This bard comes from a world where magic does not exist."
+        ]
+      ]
+    },
+    "50": {
+      "new": [
+        [
+          "CLAN_CHAMPION",
+          "shaman",
+          "Clan Champion",
+          "This shaman doesn't need to call spirits: they're with him all the time."
+        ]
+      ]
+    },
+    "51": {
+      "new": [
+        [
+          "NIGHTMARE_STORYTELLER",
+          "shaman",
+          "Nightmare Storyteller",
+          "This shaman doesn't call spirits but nightmares, and they don't like it."
+        ]
+      ]
+    },
+    "52": {
+      "new": [
+        [
+          "SAIYAN_HEALER",
+          "shaman",
+          "Saiyan Healer",
+          "Shaman who grows stronger through combat damage. Heals through fighting spirit."
+        ]
+      ]
+    },
+    "53": {
+      "new": [
+        [
+          "4TR4ND0M",
+          "fighter",
+          "4T-R4ND0M",
+          "Chaotic fighter with completely random abilities. Unpredictable combat effects."
+        ]
+      ]
+    },
+    "54": {
+      "new": [
+        [
+          "FRENZIED",
+          "fighter",
+          "Frenzied",
+          "Quick, quick, quick...."
+        ]
+      ]
+    },
+    "55": {
+      "new": [
+        [
+          "LAZY",
+          "fighter",
+          "Lazy",
+          "This warrior doesn't intend to learn anything, he just relies on his luck."
+        ]
+      ]
+    },
+    "56": {
+      "new": [
+        [
+          "BUTCHER",
+          "fighter",
+          "Butcher",
+          "This warrior loves killing so much it drives him mad."
+        ]
+      ]
+    },
+    "57": {
+      "new": [
+        [
+          "PARAMANDER",
+          "paladin",
+          "Paramander",
+          "This paladin uses unorthodox resources to preserve the balance."
+        ]
+      ]
+    },
+    "58": {
+      "new": [
+        [
+          "ATHRAN",
+          "paladin",
+          "Athran",
+          "This paladin comes from a faraway land where the rules are different."
+        ]
+      ]
+    },
+    "59": {
+      "new": [
+        [
+          "MASTER_OF_THE_WIT",
+          "ranger",
+          "Master of the Wit",
+          "This druid's link with nature is very strong, but it doesn't manifest itself in the same way as that of..."
+        ]
+      ]
+    },
+    "60": {
+      "new": [
+        [
+          "INITIATE_OF_THE_WHITE_FLAME",
+          "monk",
+          "Initiate of the White Flame",
+          "This order of monks undergo rigorous training to become God's hammers."
+        ]
+      ]
+    },
+    "61": {
+      "new": [
+        [
+          "INFUSER",
+          "fighter",
+          "Infuser",
+          "This arcanist infuses the magic he doesn't need into his weapon."
+        ]
+      ]
+    },
+    "62": {
+      "new": [
+        [
+          "MAGISTERIUM",
+          "cleric",
+          "Magisterium",
+          "This arcanist seeks by all means to know all forms of magic, and better still, to draw new power from..."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Deratiseur/DAWAP",
+  "a": "Deratiseur",
+  "v": "v11",
+  "sum": "63 wacky kits across all classes: mages, sorcerers, clerics, druids, bards, shamans, warriors, paladins, monks. Each individually selectable, some with animation variants.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "kitAbilities": {
+    "0": {
+      "SCOURGE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. this arcanist from another dark reality is a plague on our reality."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "allowedSchools": [
+            "Evocation",
+            "Necromancy"
+          ],
+          "note": "Limited to Evocation+Necromancy. All spells/abilities restore every round. Evil required."
+        },
+        "statBonus": {
+          "note": "Evil alignment required."
+        }
+      }
+    },
+    "1": {
+      "ENRAGED": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This magician never lets go of the animal rage that inhabits him."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Abjuration",
+            "Divination",
+            "Illusion"
+          ],
+          "note": "Improved Alacrity on each kill, +15% damage. Berserk below 25% HP."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (ENRAGED). See passive description for stat modifiers."
+        }
+      }
+    },
+    "2": {
+      "SPELL_STEALER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. this magician has strange magical abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Steals memorized spells from enemy arcanists at will. Fewer spell slots and delayed level access."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (SPELL_STEALER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "3": {
+      "MANGACIAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This mage probably comes from a manga: he knows only one spell."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "allowedSpells": [
+            "Magic Missile only"
+          ],
+          "note": "Knows ONLY Magic Missile (cast at will, scaling missiles up to 11). Cannot learn any other spells."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (MANGACIAN). See passive description for stat modifiers."
+        }
+      }
+    },
+    "4": {
+      "LEGENDARY_SINGULARITY": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. A once-in-a-millennium exception."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Damage tripled. Fixed 1 HP/level, -50% all resistances, -4 saves."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (LEGENDARY_SINGULARITY). See passive description for stat modifiers."
+        }
+      }
+    },
+    "5": {
+      "MASTER_COMBINER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This mage studies the power of fusions more than any other."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "specialist": "Transmuter+Invoker",
+          "note": "Combines 2-3 spells for +35% damage/duration."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (MASTER_COMBINER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "6": {
+      "SPHEROMANIAC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This mage swears by spherical things."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Two orb/sphere spells per level castable infinitely. Cannot learn other spells or use scrolls."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (SPHEROMANIAC). See passive description for stat modifiers."
+        }
+      }
+    },
+    "7": {
+      "ARTILLERIST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This arcanist has two passions: making little burnt holes and slicing grilled heads."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Creates 20-50 Melf's Meteors and 30-50 Energy Blades. +1 THAC0/5 levels with projectiles."
+        },
+        "statBonus": {
+          "note": "Cannot be Good aligned."
+        }
+      }
+    },
+    "8": {
+      "SPELL_MODELER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This mage was born with a unique gift: an innate knowledge of universal magic."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Models any spell of corresponding level instead of learning. Casts HLAs as L9 from level 23. Loses 1 HP per spell modeled."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky mage kit (SPELL_MODELER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "9": {
+      "UNWISE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. this magician sought to gain power by making a pact with a demon lord, without measuring t"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "+3 spells per level, max casting time 6, D6 HD. Each kill deals 1d4 non-lethal to entire party."
+        },
+        "statBonus": {
+          "wis": -3,
+          "note": "-3 WIS, D6 HD."
+        }
+      }
+    },
+    "10": {
+      "VAMPIRIC_ARCANOLOGIST_MAGE_WITH_ANIMATIO": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This being from another reality knows how to extract vital energy from the beings around h"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Models arcane+divine+quest spells. +2 slots/level. Spell modeling drains HP from nearby creatures."
+        },
+        "statBonus": {
+          "note": "Evil alignment required."
+        }
+      }
+    },
+    "11": {
+      "VAMPIRIC_ARCANOLOGIST_MAGE_WITHOUT_ANIMA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage. This being from another reality knows how to extract vital energy from the beings around h"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Models arcane+divine+quest spells. +2 slots/level. Spell modeling drains HP from nearby creatures."
+        },
+        "statBonus": {
+          "note": "Evil alignment required."
+        }
+      }
+    },
+    "12": {
+      "EORATIAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. this sorcerer has a very strange way of using magic."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "All spells restore after combat ends. 3 fewer slots/level, delayed access, unaffected by spell storage."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (EORATIAN). See passive description for stat modifiers."
+        }
+      }
+    },
+    "13": {
+      "ANOMALY_SORCERER_WITH_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. this amalgam of incarneted magic comes from another reality and reacts strangely to the la"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "100% magic resistance. Immune to poison/disease/level drain. +2 HP per cast. Uses wild magic, no conventional spells."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (ANOMALY_SORCERER_WITH_ANIMATION). See passive description for stat modifiers."
+        }
+      }
+    },
+    "14": {
+      "ANOMALY_SORCERER_WITHOUT_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. this amalgam of incarneted magic comes from another reality and reacts strangely to the la"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "100% magic resistance. Immune to poison/disease/level drain. +2 HP per cast. Uses wild magic."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (ANOMALY_SORCERER_WITHOUT_ANIMATION). See passive description for stat modifiers."
+        }
+      }
+    },
+    "15": {
+      "MAGIC_MINUIMS_SORCERER_WITH_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This agglomeration of tiny fairies comes from another reality and can accomplish great thi"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Doubled spell slots. +2 AC, Protection from Normal Weapons. Cannot carry items or take physical form."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (MAGIC_MINUIMS_SORCERER_WITH_ANIMATION). See passive description for stat modifiers."
+        }
+      }
+    },
+    "16": {
+      "MAGIC_MINUIMS_SORCERER_WITHOUT_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This agglomeration of tiny fairies comes from another reality and can accomplish great thi"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Doubled spell slots. +2 AC, Protection from Normal Weapons. Cannot carry items."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (MAGIC_MINUIMS_SORCERER_WITHOUT_ANIMATION). See passive description for stat modifiers."
+        }
+      }
+    },
+    "17": {
+      "INCANTATOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. this very strange sorcerer practices magic differently."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "+50% spell duration, +50% elemental/magic damage, +4 caster level. Casting time +3."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (INCANTATOR). See passive description for stat modifiers."
+        }
+      }
+    },
+    "18": {
+      "SPIRIT_OF_THE_MIRROR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. Sorcerer wielding mirror and reflection magic from another reality."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Unlimited Spell Turning. +3 AC via light reflection. Unlimited Reflected Image. -50% HP, -100% crushing resist."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (SPIRIT_OF_THE_MIRROR). See passive description for stat modifiers."
+        }
+      }
+    },
+    "19": {
+      "SORCELERER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This arcanist loves fighting so much that he spends more time doing it than mastering magi"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Fighter/mage hybrid sorcerer with weapon proficiencies, half-attack bonuses."
+        },
+        "statBonus": {
+          "note": "D6 HD, -15% XP, no ranged weapons."
+        }
+      }
+    },
+    "20": {
+      "ZAP": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This arcanist comes from another reality and survives with difficulty in the known reality"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "+10 movement, +1 APR, -4 casting time, Improved Alacrity, +3 saves vs wands/breath. Loses 1 HP/3 sec when idle."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (ZAP). See passive description for stat modifiers."
+        }
+      }
+    },
+    "21": {
+      "PSYCHO_ABSORBER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This very strange arcanist draws his magic from every possible source, using only his cons"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Rememorizes spells every 3 rounds. Permanent Spell Trap. Recalls spells on kills. Fixed cast time 1. Loses all spells if unconscious."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (PSYCHO_ABSORBER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "22": {
+      "OVERFLOWER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer. This sorcerer is literally bursting with magical energy."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "All attacks add 1d4 magic damage with scaling effects (Slow/Stun/Hold/Disintegrate). +15% spell duration/damage. 15% miscast chance."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky sorcerer kit (OVERFLOWER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "23": {
+      "DWEOMERIST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. this cleric comes from elsewhere and knows only magic, which he uses in a very unusual way"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Doubled spell slots. Improved Alacrity. Max casting time 5. Uses mage THAC0 and hit dice."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky cleric kit (DWEOMERIST). See passive description for stat modifiers."
+        }
+      }
+    },
+    "24": {
+      "CHAOS_EORATIAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This cleric from another reality is subject to other rules."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Spells restore after combat. Max 5 slots/level. 5% Wild Surge chance per spell."
+        },
+        "statBonus": {
+          "note": "Chaotic alignment required."
+        }
+      }
+    },
+    "25": {
+      "MIRACLE_MAKER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This priest from another reality defies the laws of our own."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "allowedSpells": [
+            "Limited Wish (lv9)",
+            "Wish (lv18)"
+          ],
+          "note": "Casts Limited Wish at will (L9), Wish at will (L18). No L6-7 spells, no HLAs."
+        },
+        "statBonus": {
+          "wis": -2,
+          "note": "-2 WIS. BG2EE/EET only."
+        }
+      }
+    },
+    "26": {
+      "FURY": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. this priest from another reality behaves strangely."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Gains half-attack per 4 levels (max +4 APR bonus)."
+        },
+        "statBonus": {
+          "note": "D4 hit die."
+        }
+      }
+    },
+    "27": {
+      "NECROPHORUS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This evil being comes from another reality."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Instant-kill spells memorized at lower levels. +5 HP per kill. 2% chance to kill on hit. No resurrection/healing."
+        },
+        "statBonus": {
+          "note": "Evil alignment required."
+        }
+      }
+    },
+    "28": {
+      "SCION_OF_LIFE_CLERIC_WITH_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This beneficent being comes from another reality."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Doubled HP and Turn Undead levels. Healing spells at lower level with cast time 1. No summons/wound spells."
+        },
+        "statBonus": {
+          "note": "Good alignment required."
+        }
+      }
+    },
+    "29": {
+      "SCION_OF_LIFE_CLERIC_WITHOUT_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This beneficent being comes from another reality."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Doubled HP and Turn Undead levels. Healing spells at lower level with cast time 1. No summons/wound spells."
+        },
+        "statBonus": {
+          "note": "Good alignment required."
+        }
+      }
+    },
+    "30": {
+      "BLESSED_HEALER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This cleric from another reality follows other divine rules."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Healing spells automatically recast on self. Uses mage THAC0."
+        },
+        "statBonus": {
+          "note": "Good alignment required."
+        }
+      }
+    },
+    "31": {
+      "DIVINE_CHOSEN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This mortal worships his god in a different way and receives a different kind of divine he"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Cannot cast spells. Aid/Bless/DUHM bonuses scale every 6 levels. Warrior HLAs."
+        },
+        "statBonus": {
+          "cha": 2,
+          "note": "+2 CHA."
+        }
+      }
+    },
+    "32": {
+      "UNIVERSAL_DIVINE_DWEOMERIST": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This arcanist from another reality knows how to use the energy released by gods and nature"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Models any divine spell (including druidic) per level. Casts HLAs as L7 from level 22. +1 cast time."
+        },
+        "statBonus": {
+          "note": "-3 slots/level, D6 HD."
+        }
+      }
+    },
+    "33": {
+      "PYROCLASM_DRUID_WITH_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This druid is an outsider from an elemental plane."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "125% fire resist. Immune to normal/+1 weapons. Extra fire spells. +5% fire damage/level."
+        },
+        "statBonus": {
+          "note": "Cannot carry objects. Cold vulnerable."
+        }
+      }
+    },
+    "34": {
+      "PYROCLASM_DRUID_WITHOUT_ANIMATION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This druid is an outsider from an elemental plane."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "125% fire resist. Immune to normal/+1 weapons. Extra fire spells."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky druid kit (PYROCLASM_DRUID_WITHOUT_ANIMATION). See passive description for stat modifiers."
+        }
+      }
+    },
+    "35": {
+      "INSTABLE_MUTANT_MONSTRUOSITY": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This druid is a large, ever-growing blister from another universe."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "DAWAP wacky druid kit. See passive description for unique mechanic."
+        },
+        "statBonus": {
+          "note": "+1 STR/DEX/CON and -1 INT/WIS/CHA every 5 levels. 5% chance per round when damaged to self-destruct for 10d10."
+        }
+      }
+    },
+    "36": {
+      "HORDE_SPIRIT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This druid is so obsessed with minions that he forgets everything else."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Animal and elemental summons doubled in effect. Cannot learn healing/regeneration spells."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky druid kit (HORDE_SPIRIT). See passive description for stat modifiers."
+        }
+      }
+    },
+    "37": {
+      "RAVAGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This elementalist has no planar connection and doesn't need one."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Knows 20 elemental spells (clerical+arcane). Doubled elemental resistance. No summons."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky druid kit (RAVAGER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "38": {
+      "POLYMORPH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Druid. This protoplasmic vase assembly can simulate all forms of life."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Standard druid HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Cannot cast spells. 25% crushing resist. All Polymorph/Shapechange forms at will (level-gated)."
+        },
+        "statBonus": {
+          "note": "No HLAs. D12 HD."
+        }
+      }
+    },
+    "39": {
+      "SPELLSINGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Bard whose songs directly channel and shape arcane spell energy."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song lets allies recall spells (L1 + 1 per 4 levels). Song costs 1-3 HP depending on spell levels recalled."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (SPELLSINGER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "40": {
+      "TEMPUS_FUGIUM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Bard manipulating time through song. Haste, slow, and temporal abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song imposes Slow on enemies and Haste on allies. +1 fatigue per round of singing."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (TEMPUS_FUGIUM). See passive description for stat modifiers."
+        }
+      }
+    },
+    "41": {
+      "NISHRUUNOAM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. this bard has some really funny imaginary friends."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song has 15% chance to invoke nishruu. 10% cast chance and 1% song chance to spawn hostile nishruu."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (NISHRUUNOAM). See passive description for stat modifiers."
+        }
+      }
+    },
+    "42": {
+      "DISCIPLE_OF_RATATOSKR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Bard following the chaos squirrel. Unpredictable chaos and mischief magic."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song turns failed-save enemies into squirrels. Singer also risks squirrel transformation on failed save."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (DISCIPLE_OF_RATATOSKR). See passive description for stat modifiers."
+        }
+      }
+    },
+    "43": {
+      "ANTIMAGINUM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. this singer comes from a reality where magic is abhorred."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song dispels magic (100%), 15% spell failure, -10% MR on targets, 40% own MR. Affects allies too. -30% own spell power."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (ANTIMAGINUM). See passive description for stat modifiers."
+        }
+      }
+    },
+    "44": {
+      "MAGIVORE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. this unusual bard is a dangerous blessing."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song grants allies Improved Alacrity and +15% MR while singing. 20% chance spells explode for 10d10 damage."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (MAGIVORE). See passive description for stat modifiers."
+        }
+      }
+    },
+    "45": {
+      "CRUW_OF_CHAOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. this bard is the embodiment of elemental chaos."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Song applies Sphere of Chaos effects to enemies. Crits trigger Sphere effects. Immune to confusion. Spells cause Wild Surges."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (CRUW_OF_CHAOS). See passive description for stat modifiers."
+        }
+      }
+    },
+    "46": {
+      "LIFESINGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Bard whose songs channel life force. Healing and resurrection melodies."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Necromancy",
+            "Evocation",
+            "Summoning"
+          ],
+          "note": "Song heals 1-3 HP/round. 1%/level chance to cure poison/disease."
+        },
+        "statBonus": {
+          "note": "Good only. BG2EE/EET only."
+        }
+      }
+    },
+    "47": {
+      "IMPERIOSA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. this \"bard\" isn't really a bard: he doesn't sing or cast spells."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Cannot cast spells. Song stacks Power Word effects (Sleep L1 through Destruction L30)."
+        },
+        "statBonus": {
+          "cha": 2,
+          "note": "+2 CHA. Cannot be Chaotic/Good."
+        }
+      }
+    },
+    "48": {
+      "DEATHRAISER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. This bard knows a family secret that it's best not to tell too much to the defenders of go"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "specialist": "Necromancer+Enchanter",
+          "note": "Song raises dead as zombies (20%+1%/level). Zombies scale with HD."
+        },
+        "statBonus": {
+          "note": "Evil only. BG2EE/EET only."
+        }
+      }
+    },
+    "49": {
+      "FIRESINGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. This bard comes from a world where magic does not exist."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Cannot cast spells. Song creates Sunfire (1d4/level fire, max 20d4). Melee adds 1d4-5d4 fire/5 levels. Fire resist scales."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky bard kit (FIRESINGER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "50": {
+      "CLAN_CHAMPION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. This shaman doesn't need to call spirits: they're with him all the time."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "DAWAP wacky shaman kit. See passive description for unique mechanic."
+        },
+        "statBonus": {
+          "note": "+1 AC/saves, +2 HP, +5% MR per 6 levels. +1 all stats/10 levels. Dance creates Bless/Chant/Defensive Harmony."
+        }
+      }
+    },
+    "51": {
+      "NIGHTMARE_STORYTELLER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. This shaman doesn't call spirits but nightmares, and they don't like it."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Knows Sleep/Horror/Phantasmal Killer. Dance creates Phantasmal Killers (20%+2%/level). 1%/level chance of nightmare attack after rest."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky shaman kit (NIGHTMARE_STORYTELLER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "52": {
+      "SAIYAN_HEALER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Shaman. Shaman who grows stronger through combat damage. Heals through fighting spirit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SHAMAN",
+          "note": "Standard shaman HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Knows destruction spells (MM through Energy Blades). Dance grants +15% damage/-1 cast time cumulative. Fist scales 1d6-2d12 (1.5-5 APR)."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky shaman kit (SAIYAN_HEALER). See passive description for stat modifiers."
+        }
+      }
+    },
+    "53": {
+      "4TR4ND0M": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Chaotic fighter with completely random abilities. Unpredictable combat effects."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky fighter kit (4TR4ND0M). See passive description for stat modifiers."
+        }
+      }
+    },
+    "54": {
+      "FRENZIED": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Quick, quick, quick...."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "DAWAP wacky fighter kit (FRENZIED). See passive description for stat modifiers."
+        }
+      }
+    },
+    "55": {
+      "LAZY": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. This warrior doesn't intend to learn anything, he just relies on his luck."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "Thief THAC0. No HLAs."
+        }
+      }
+    },
+    "56": {
+      "BUTCHER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. This warrior loves killing so much it drives him mad."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "Evil only."
+        }
+      }
+    },
+    "57": {
+      "PARAMANDER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. This paladin uses unorthodox resources to preserve the balance."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "+2 spells/level. Knows profane spells from Evo/Trans/Ench."
+        },
+        "statBonus": {
+          "note": "Neutral alignment. Studded leather only. No ranged."
+        }
+      }
+    },
+    "58": {
+      "ATHRAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. This paladin comes from a faraway land where the rules are different."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Higher-level spells in place of lower. Doubled slots. -2 cast time. Staff mastery."
+        },
+        "statBonus": {
+          "note": "Limited weapons. No Turn Undead."
+        }
+      }
+    },
+    "59": {
+      "MASTER_OF_THE_WIT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. This druid's link with nature is very strong, but it doesn't manifest itself in the same w"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spells. Charm wild animals permanently at will (woodland L10, exotic L20)."
+        },
+        "statBonus": {
+          "note": "Studded leather only. No dual-class."
+        }
+      }
+    },
+    "60": {
+      "INITIATE_OF_THE_WHITE_FLAME": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. This order of monks undergo rigorous training to become God's hammers."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "LG only. No MR/movement bonuses. No Quivering Palm."
+        }
+      }
+    },
+    "61": {
+      "INFUSER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. This arcanist infuses the magic he doesn't need into his weapon."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default). DAWAP wacky kits."
+        },
+        "statBonus": {
+          "note": "No ranged weapons. BG2EE/EET only."
+        }
+      }
+    },
+    "62": {
+      "MAGISTERIUM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. This arcanist seeks by all means to know all forms of magic, and better still, to draw new"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool (DAWAP wacky kits often have unique mechanics; see passive)."
+        },
+        "spellRestrictions": {
+          "note": "Auto-becomes C/M. Shared spells at lower level. Druidic equivalents. 10% \"Arcanic Luck\" per cast."
+        },
+        "statBonus": {
+          "note": "-25% XP. No armor."
+        }
+      }
+    }
+  },
+  "dl": "https://github.com/Deratiseur/DAWAP",
+  "au": "Deratiseur",
+  "no": "63 wacky kits across all classes: mages, sorcerers, clerics, druids, bards, shamans, warriors, paladins, monks. Each individually selectable, some with animation variants.",
+  "co": [
+    {
+      "cn": 19,
+      "n": "Scourge (mage)",
+      "tp2n": "Fleau (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 19,
+      "k": 1,
+      "sp": 2,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 109,
+      "n": "Enraged (mage)",
+      "tp2n": "Enrage (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 109,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 39,
+      "n": "Spell Stealer (mage)",
+      "tp2n": "Voleur de sorts (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 39,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 339,
+      "n": "Mangacian (mage)",
+      "tp2n": "Mangacien (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 339,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 279,
+      "n": "Legendary Singularity (bard/mage)",
+      "tp2n": "Singularite legendaire (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 279,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 389,
+      "n": "Master Combiner (mage)",
+      "tp2n": "Maitre combineur (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 389,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 40,
+      "n": "Spheromaniac (mage)",
+      "tp2n": "Spheromaniaque (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 40,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 419,
+      "n": "Artillerist (mage)",
+      "tp2n": "Artilleur (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 419,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 479,
+      "n": "Spell Modeler (mage)",
+      "tp2n": "Modeleur de sorts (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 479,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 529,
+      "n": "Unwise (mage)",
+      "tp2n": "Malavise (mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 529,
+      "k": 1,
+      "kC": {
+        "mage": 1
+      },
+      "grn": "Kits de mage"
+    },
+    {
+      "cn": 5391,
+      "n": "Vampiric Arcanologist (mage): With animation",
+      "tp2n": "Avec animation changee : doppelganger recolore",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 5391,
+      "g": "arcanologist",
+      "scn": "Arcanologue vampirique (mage)",
+      "grn": "Kits de mage",
+      "k": 1,
+      "kC": {
+        "mage": 1
+      }
+    },
+    {
+      "cn": 5392,
+      "n": "Vampiric Arcanologist (mage): Without animation",
+      "tp2n": "Sans animation changee (non-rp)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 5392,
+      "g": "arcanologist",
+      "scn": "Arcanologue vampirique (mage)",
+      "grn": "Kits de mage",
+      "k": 1,
+      "kC": {
+        "mage": 1
+      }
+    },
+    {
+      "cn": 49,
+      "n": "Eoratian (sorcerer)",
+      "tp2n": "Eoratien (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 49,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 591,
+      "n": "Anomaly (sorcerer): With animation",
+      "tp2n": "Avec animation changee : elementaire de magie",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 591,
+      "g": "anomaly",
+      "scn": "Anomalie (ensorceleur)",
+      "grn": "Kits d'ensorceleur",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "cn": 592,
+      "n": "Anomaly (sorcerer): Without animation",
+      "tp2n": "Sans animation changee (non-rp)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 592,
+      "g": "anomaly",
+      "scn": "Anomalie (ensorceleur)",
+      "grn": "Kits d'ensorceleur",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "cn": 691,
+      "n": "Magic Minuims (sorcerer): With animation",
+      "tp2n": "Avec animation changee : particules en mouvement",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 691,
+      "g": "minuims",
+      "scn": "Minuims magiques (ensorceleur)",
+      "grn": "Kits d'ensorceleur",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "cn": 692,
+      "n": "Magic Minuims (sorcerer): Without animation",
+      "tp2n": "Sans animation changee (non-rp)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 692,
+      "g": "minuims",
+      "scn": "Minuims magiques (ensorceleur)",
+      "grn": "Kits d'ensorceleur",
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      }
+    },
+    {
+      "cn": 79,
+      "n": "Incantator (sorcerer)",
+      "tp2n": "Incantateur (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 79,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 89,
+      "n": "Spirit of the Mirror (sorcerer)",
+      "tp2n": "Esprit du miroir (ensorceleur)(animation : couleurs changeant constamment)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 89,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 1299,
+      "n": "Sorcelerer (sorcerer)",
+      "tp2n": "Sorcelier (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 1299,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 1199,
+      "n": "Zap (sorcerer)",
+      "tp2n": "Zap (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 1199,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 29,
+      "n": "Psycho Absorber (sorcerer)",
+      "tp2n": "Psycho absorbeur (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 29,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 509,
+      "n": "Overflower (sorcerer)",
+      "tp2n": "Debordeur (ensorceleur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 509,
+      "k": 1,
+      "kC": {
+        "sorcerer": 1
+      },
+      "grn": "Kits d'ensorceleur"
+    },
+    {
+      "cn": 149,
+      "n": "Dweomerist (cleric)",
+      "tp2n": "Dweomeriste (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 149,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 159,
+      "n": "Chaos Eoratian (cleric)",
+      "tp2n": "Eoration du chaos (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 159,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 99,
+      "n": "Miracle Maker (cleric)",
+      "tp2n": "Faiseur de miracles : (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 99,
+      "no": "BG2EE/EET only",
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 169,
+      "n": "Fury (cleric)",
+      "tp2n": "Furie (Clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 169,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 209,
+      "n": "Necrophorus (cleric)",
+      "tp2n": "Necrophore (clerc)(animation : peau noire pure)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 209,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 2191,
+      "n": "Scion of Life (cleric): With animation",
+      "tp2n": "Avec animation changee : creature de brume blanche",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 2191,
+      "g": "scion_life",
+      "scn": "Scion de la Vie (clerc)",
+      "grn": "Kits de clerc",
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "cn": 2192,
+      "n": "Scion of Life (cleric): Without animation",
+      "tp2n": "Sans animation changee (non-rp)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 2192,
+      "g": "scion_life",
+      "scn": "Scion de la Vie (clerc)",
+      "grn": "Kits de clerc",
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      }
+    },
+    {
+      "cn": 249,
+      "n": "Blessed Healer (cleric)",
+      "tp2n": "Soigneur beni (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 249,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 349,
+      "n": "Divine Chosen (cleric)",
+      "tp2n": "Elu divin (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 349,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 519,
+      "n": "Universal Divine Dweomerist (cleric)",
+      "tp2n": "Dweomeriste divin universel (clerc)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 519,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de clerc"
+    },
+    {
+      "cn": 1791,
+      "n": "Pyroclasm (druid): With animation",
+      "tp2n": "Avec animation changee : elemental de feu",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 1791,
+      "g": "pyroclasm",
+      "scn": "Pyroclasme (druide)",
+      "grn": "Kits de druide",
+      "k": 1,
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "cn": 1792,
+      "n": "Pyroclasm (druid): Without animation",
+      "tp2n": "Sans animation changee (non-rp)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 1792,
+      "g": "pyroclasm",
+      "scn": "Pyroclasme (druide)",
+      "grn": "Kits de druide",
+      "k": 1,
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "cn": 189,
+      "n": "Instable Mutant Monstruosity (druid)",
+      "tp2n": "Monstruosite mutante instable (druide)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 189,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      },
+      "grn": "Kits de druide"
+    },
+    {
+      "cn": 199,
+      "n": "Horde Spirit (druid)",
+      "tp2n": "Esprit de horde (druide)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 199,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      },
+      "grn": "Kits de druide"
+    },
+    {
+      "cn": 229,
+      "n": "Ravager (druid)",
+      "tp2n": "Ravageur (druide)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 229,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      },
+      "grn": "Kits de druide"
+    },
+    {
+      "cn": 239,
+      "n": "Polymorph (druid)",
+      "tp2n": "Polymorphe (druide)(animation : peau verdatre)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 239,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      },
+      "grn": "Kits de druide"
+    },
+    {
+      "cn": 259,
+      "n": "Spellsinger (bard)",
+      "tp2n": "Chantesorts (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 259,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 269,
+      "n": "Tempus Fugium (bard)",
+      "tp2n": "Tempus fugiom (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 269,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 289,
+      "n": "Nishruunoam (bard)",
+      "tp2n": "Nishruunoam (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 289,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 299,
+      "n": "Disciple of Ratatoskr (bard)",
+      "tp2n": "Disciple de Ratatoskr (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 299,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 309,
+      "n": "Antimaginum (bard)",
+      "tp2n": "Antimaginum (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 309,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 319,
+      "n": "Magivore (bard)",
+      "tp2n": "Magivore (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 319,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 329,
+      "n": "Cruw of Chaos (bard)",
+      "tp2n": "Engeance du chaos (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 329,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 139,
+      "n": "Lifesinger (bard)",
+      "tp2n": "Chantevie (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 139,
+      "no": "BG2EE/EET only",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 429,
+      "n": "Imperiosa (bard)",
+      "tp2n": "Imperiosa (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 429,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 499,
+      "n": "Deathraiser (bard)",
+      "tp2n": "Levemort (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 499,
+      "no": "BG2EE/EET only",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 589,
+      "n": "Firesinger (bard)",
+      "tp2n": "Chantefeu (barde)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 589,
+      "no": "BG2EE/EET only",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "grn": "Kits de barde"
+    },
+    {
+      "cn": 399,
+      "n": "Clan Champion (shaman)",
+      "tp2n": "Champion du clan (shaman)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 399,
+      "k": 1,
+      "kC": {
+        "shaman": 1
+      },
+      "grn": "Kits de shaman"
+    },
+    {
+      "cn": 379,
+      "n": "Nightmare Storyteller (shaman)",
+      "tp2n": "Conteur de cauchemars (shaman)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 379,
+      "k": 1,
+      "kC": {
+        "shaman": 1
+      },
+      "grn": "Kits de shaman"
+    },
+    {
+      "cn": 459,
+      "n": "Saiyan Healer (shaman)",
+      "tp2n": "Guerisseur Saiyen (shaman)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 459,
+      "k": 1,
+      "kC": {
+        "shaman": 1
+      },
+      "grn": "Kits de shaman"
+    },
+    {
+      "cn": 549,
+      "n": "4T-R4ND0M (warrior)",
+      "tp2n": "4U-H4S4RD (guerrier)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 549,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 559,
+      "n": "Frenzied (warrior)",
+      "tp2n": "Frenetique (guerrier)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 559,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 569,
+      "n": "Lazy (warrior)",
+      "tp2n": "Flemmard (guerrier)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 569,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 579,
+      "n": "Butcher (warrior)",
+      "tp2n": "Boucher (guerrier)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 579,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 439,
+      "n": "Paramander (paladin)",
+      "tp2n": "Paramandeur (paladin)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 439,
+      "k": 1,
+      "kC": {
+        "paladin": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 449,
+      "n": "Athran (paladin)",
+      "tp2n": "Athran (paladin)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 449,
+      "k": 1,
+      "kC": {
+        "paladin": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 489,
+      "n": "Master of the Wit (ranger)",
+      "tp2n": "Maitre du Vif (rodeur)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 489,
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 469,
+      "n": "Initiate of the White Flame (monk)",
+      "tp2n": "Initie de la Flamme Blanche (moine)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 469,
+      "k": 1,
+      "kC": {
+        "monk": 1
+      },
+      "grn": "Kits de combattants"
+    },
+    {
+      "cn": 359,
+      "n": "Infuser (warrior→warrior/mage)",
+      "tp2n": "Infuseur (guerrier -> guerrier/mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 359,
+      "no": "BG2EE/EET only",
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "grn": "Kits de multiclasses"
+    },
+    {
+      "cn": 369,
+      "n": "Magisterium (mage→cleric/mage)",
+      "tp2n": "Magisterium (mage -> clerc/mage)",
+      "wf": "Derats_Dawap",
+      "wp": "Derats_Dawap\\Setup-Derats_dawap.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 369,
+      "k": 1,
+      "kC": {
+        "cleric": 1
+      },
+      "grn": "Kits de multiclasses"
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "DAWAP"
+  }
+}

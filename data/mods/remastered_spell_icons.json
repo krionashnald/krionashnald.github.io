@@ -1,0 +1,64 @@
+{
+  "i": 293,
+  "t": "remastered_spell_icons",
+  "sv": 1,
+  "ord": 60,
+  "c": "GRAPHICS",
+  "n": "Remastered Spell Icons",
+  "no": "HD remastered spell icons by Renegade0. Detects and supports LeUI, InfinityUI, PocketPlayUI, MSFM, and Spontaneous Casting. Install after UI mods. IWD:EE colors option adds green icons for summoning spells",
+  "u": "https://github.com/Renegade0/RemasteredSpellIcons",
+  "a": "Renegade0",
+  "v": "v1.0",
+  "sum": "Remastered HD spell icons for IE:EE games",
+  "tags": [
+    "cosmetic"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Renegade0",
+    "r": "RemasteredSpellIcons"
+  },
+  "dl": "https://github.com/Renegade0/RemasteredSpellIcons",
+  "au": "Pecca",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install Remastered Spell Icons Core Component",
+      "tp2n": "Install Remastered Spell Icons Core Component",
+      "cn": 0,
+      "wf": "remastered_spell_icons",
+      "wp": "remastered_spell_icons\\remastered_spell_icons.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Core HD spell icons. Detects installed UI mods (LeUI, InfinityUI, PocketPlay) and applies compatible icon set"
+    },
+    {
+      "n": "Use IWD:EE Colors (Green icons for summoning spells)",
+      "tp2n": "Use IWD:EE Colors (Green icons for summoning spells)",
+      "cn": 1,
+      "wf": "remastered_spell_icons",
+      "wp": "remastered_spell_icons\\remastered_spell_icons.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Optional: uses IWD:EE color scheme (green for summoning). BG1EE/BG2EE/EET only (not for IWDEE which already has these)"
+    }
+  ]
+}

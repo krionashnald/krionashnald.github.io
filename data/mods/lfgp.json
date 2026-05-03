@@ -1,0 +1,52 @@
+{
+  "i": 829,
+  "t": "lfgp",
+  "sv": 1,
+  "ord": 840,
+  "c": "QUEST MODS BG2",
+  "n": "Lunia for Good Parties",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "zh-cn": 2
+  },
+  "au": "bucketfulofsunshine",
+  "dl": "https://github.com/bucketfulofsunshine/Lunia-For-Good-Parties",
+  "no": "Allows non-evil parties with rep 14+ to travel to Lunia (the first layer of Mount Celestia). Patches OH5xxx (Olvenauk's Haven) area scripts. V1.9 (April 2026): any non-evil char with rep 14+ can start the quest (Dorn excluded), added bounty quest from Mercy Whitedove. V1.9 breaks existing translations — non-English users should use V1.3.2 until V2.0.",
+  "conflicts": [],
+  "u": "https://github.com/bucketfulofsunshine/Lunia-For-Good-Parties/",
+  "a": "bucketfulofsunshine",
+  "sum": "Lunia's map is a refreshing contrast to the many hellish locales present in Baldur's Gate II.",
+  "tags": [
+    "story",
+    "quest"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "co": [
+    {
+      "n": "Lunia for Good Parties",
+      "cn": 0,
+      "wf": "lfgp",
+      "wp": "lfgp\\setup-lfgp.tp2",
+      "wq": "verified"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "TPoJ",
+      "withId": 859,
+      "severity": "soft",
+      "reason": "Both mods extensively patch OH5xxx area scripts (Resurrection Gorge / Olvenauk's Haven). May conflict if both installed.",
+      "myComps": "#0 Lunia for Good Parties",
+      "theirComps": "#0 The Pursuit of Justice",
+      "source": "Both tp2s patch OH5xxx scripts, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "bucketfulofsunshine",
+    "r": "Lunia-For-Good-Parties"
+  }
+}

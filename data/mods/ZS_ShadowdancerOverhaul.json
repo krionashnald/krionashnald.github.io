@@ -1,0 +1,247 @@
+{
+  "i": 314,
+  "t": "ZS_ShadowdancerOverhaul",
+  "sv": 1,
+  "pfx": "ZS",
+  "ord": 20,
+  "c": "KIT & CLASS MODS",
+  "n": "Shadowdancer Overhaul",
+  "no": "Shadowdancer Overhaul by Kaelyn (szaumoor). Redesigns the Shadowdancer kit with new abilities. v1.2.4 (Jan 2026) has only 3 components: cn:100, 5000, 5001. Components 300, 400, 410, 5002, 5003 were planned or existed in earlier versions but are absent from v1.2.4 tp2.",
+  "kitAbilities": {
+    "0": {
+      "SHADOWDANCER": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+20 Hide/Move Silently at lv1, +5 every 3 levels"
+          },
+          {
+            "n": "Natural Evasion",
+            "type": "desc",
+            "desc": "+2 AC (+4 vs missile), bonus movement speed, bonus saves vs Breath"
+          },
+          {
+            "n": "Slippery Mind",
+            "type": "desc",
+            "desc": "+1 saves vs Spells/Wands/Enchantment/Illusion at lv10, +1 per 12 levels"
+          },
+          {
+            "n": "Shadow Haven",
+            "type": "desc",
+            "desc": "While invisible: regenerate 1 HP/round, protected from detection except True Sight (lv10)"
+          },
+          {
+            "n": "Darkness Immunity",
+            "type": "immunities",
+            "values": [
+              "darkness"
+            ],
+            "desc": "Immune to magical Darkness spells. Permanent infravision."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Shadowstep",
+            "freq": "1 use per 2 levels",
+            "effects": "Planeshift (enter Shadow Plane ~7 sec, 2x speed, immune to all) or Blink (teleport). On return: backstab from any angle, +THAC0 scaling +1/3 levels, +crit chance.",
+            "level": 1
+          },
+          {
+            "n": "Hide in Plain Sight",
+            "freq": "cooldown (1 turn, -1 round/5 levels, min 2 rounds)",
+            "effects": "Hide even while observed.",
+            "level": 1
+          },
+          {
+            "n": "Shadow Illusion",
+            "freq": "3 uses (lv3,12,20)",
+            "effects": "Shadow illusion ability.",
+            "level": 3
+          },
+          {
+            "n": "Summon Shade",
+            "freq": "1/day",
+            "effects": "Summons scaling shade: Shadow (lv4), Greater Shadow (lv12), Shadowlord (lv20), Greater Shadowlord (lv28), Nighthaunt (lv36). HD = level-1.",
+            "level": 4
+          },
+          {
+            "n": "Shadow Evade",
+            "freq": "3 uses (lv5,10,15)",
+            "effects": "Defensive shadow ability. Upgradeable to Shadow Form via HLA.",
+            "level": 5
+          },
+          {
+            "n": "Shadow Conjuration",
+            "freq": "3 uses (lv6,9,12)",
+            "effects": "Cast at half level: Darkness, Invisibility, Shield, Magic Missile, Sleep.",
+            "level": 6
+          },
+          {
+            "n": "Greater Shadow Conjuration",
+            "freq": "3 uses (lv12,15,18)",
+            "effects": "Cast at half level: Acid Arrow, Web, Minor Globe, Blindness.",
+            "level": 12
+          },
+          {
+            "n": "Shades",
+            "freq": "3 uses (lv18,21,24)",
+            "effects": "Cast at half level: Cone of Cold, Shadow Fireball, Stoneskin, Shadow Door.",
+            "level": 18
+          },
+          {
+            "n": "Shadow Leap",
+            "freq": "every 3 rounds",
+            "effects": "Teleport + 1 round of +1 THAC0/AC/saves/speed.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": false,
+          "alignment": "Non-lawful only",
+          "items": "Backstab capped at x4. Only 15 skill points/level. Max 3 weapon pips. No Set Snare. No trap HLAs."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "exclude": [
+            "Alchemy",
+            "Improved Evasion",
+            "Set Exploding Trap",
+            "Assassination"
+          ],
+          "include": [
+            "Self-Concealment",
+            "Shadow Weaver",
+            "Shadowstrike",
+            "Shadow Form",
+            "Shadow Dance",
+            "Deep Shades"
+          ],
+          "note": "Custom ZS Shadowdancer HLA table"
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "modify": [
+        [
+          "SHADOWDANCER",
+          "replace",
+          "Complete Shadowdancer overhaul with revised abilities and progression"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/szaumoor/ZS_ShadowdancerOverhaul",
+  "a": "Kaelyn",
+  "sum": "Redesigns the Shadowdancer kit with 8 components. Makes shadow abilities more useful and thematically consistent.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "szaumoor",
+    "r": "ZS_ShadowdancerOverhaul"
+  },
+  "dl": "https://github.com/szaumoor/ZS_ShadowdancerOverhaul",
+  "langs": {
+    "en": 0
+  },
+  "au": "Zed Nocear",
+  "co": [
+    {
+      "n": "Install the overhauled Shadowdancer Kit",
+      "cn": 100,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "no": "Core Shadowdancer overhaul. Replaces vanilla kit with new passives, shadow skills, and HLAs. Thief-based kit. Compatible with anything that doesn't modify shadowdancer kit directly. Adds 1 kit slot (replaces existing).",
+      "tp2n": "Install the overhauled Shadowdancer Kit"
+    },
+    {
+      "n": "Make Shaman Spirit Form mirror the benefits of Shadow Form",
+      "cn": 5000,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 5000,
+      "wq": "verified",
+      "no": "Makes Shaman Spirit Form mirror Shadow Form benefits (damage resistance, undispellable invisibility, instant casting). Standalone — doesn't require cn:100. Consistency patch for shamans.",
+      "tp2n": "Make Shaman Spirit Form mirror the benefits of Shadow Form"
+    },
+    {
+      "n": "Allow vanilla Shadowdancers to take advantage of Rogue Rebalancing's HLA",
+      "cn": 5001,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 5001,
+      "wq": "verified",
+      "no": "Allows VANILLA Shadowdancers to use Rogue Rebalancing's thief HLAs. REQUIRES RR installed first. Only for vanilla Shadowdancer — the overhaul (cn:100) has its own HLAs.",
+      "tp2n": "Allow vanilla shadowdancers to take advantage of Rogue Rebalancing's HLA overhaul"
+    },
+    {
+      "n": "Make thief THAC0 progression streamlined, and improve up to 6, like clerics",
+      "cn": 300,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 300,
+      "wq": "unresolved",
+      "no": "NOT PRESENT in v1.2.4 tp2 — confirmed by mod_installer. Was present in earlier versions. Do not select.",
+      "gone": true
+    },
+    {
+      "n": "Improve the THAC0 of Bards too to match the changes to Thieves",
+      "cn": 400,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 400,
+      "wq": "unresolved",
+      "no": "NOT PRESENT in v1.2.4 tp2 — confirmed by mod_installer. Was present in earlier versions. Do not select.",
+      "gone": true
+    },
+    {
+      "n": "Give a selection of items extra hidden traits if wielded/worn by Shadowdancers",
+      "cn": 410,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 410,
+      "wq": "unresolved",
+      "no": "NOT PRESENT in v1.2.4 tp2 — confirmed by mod_installer (exit code 6). Was present in earlier versions. Do not select.",
+      "x": 0,
+      "gone": true
+    },
+    {
+      "n": "Fix vanilla shadowdancer bugs (wrong non-proficient penalty, wrong Shadow Twin duration)",
+      "cn": 5002,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 5002,
+      "wq": "unresolved",
+      "no": "NOT PRESENT in v1.2.4 tp2 — confirmed by mod_installer. Was present in earlier versions. Do not select.",
+      "gone": true
+    },
+    {
+      "n": "Fix bugged Simulacrum effect in BG v.2.6.6 (can't detect traps or hide)",
+      "cn": 5003,
+      "wf": "ZS_ShadowdancerOverhaul",
+      "wp": "ZS_ShadowdancerOverhaul\\ZS_ShadowdancerOverhaul.tp2",
+      "wc": 5003,
+      "wq": "unresolved",
+      "no": "NOT PRESENT in v1.2.4 tp2 — confirmed by mod_installer. Was present in earlier versions. Do not select.",
+      "gone": true
+    }
+  ]
+}

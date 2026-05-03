@@ -1,0 +1,1327 @@
+{
+  "i": 358,
+  "t": "MESpells",
+  "sv": 1,
+  "ord": 140,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Olvyn Spells",
+  "cats": [
+    "SPELL MODS"
+  ],
+  "no": "Olvyn Spells by Olvyn Churu. 49 active components. Most do NOT require EEex (only 6 of 49 do). Adds 150+ new spells including spell revisions and new mechanics. Only cn:980/990 (ranger/paladin progression) — these don't touch spell content, only class tables.",
+  "rq": "EEex",
+  "conflicts": [
+    {
+      "with": "mih_sp",
+      "withId": 296,
+      "severity": "soft",
+      "reason": "MiH spell additions overlap with Olvyn's spell modification components. Does NOT apply to cn:980/990 (ranger/paladin progression). Install MiH after Olvyn.",
+      "orderOnly": true,
+      "theirComps": "#1 Arcane Spellpack #2 Divine Spellpack #13 Spell Improvements",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "Olvyn has 7+ components with FORBID_COMPONENT spell_rev cn:0 (cn:11051, 14021, 15071, 17261, 21111, 23011, 25011). These auto-block when SR is installed. cn:980/990 (ranger/paladin progression, the only Olvyn components ) do NOT forbid SR and coexist safely.",
+      "myComps": "#11051 #14021 #15071 #17261 #21111 #23011 #25011 (all FORBID SR)",
+      "theirComps": "#0",
+      "source": "MESpells.tp2 lines 2405/2637/2664/2755/2784/2850/3659: FORBID_COMPONENT spell_rev; cn:980/990 have no SR FORBID, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Mod-level conflict from install guide. Olvyn's spell components cover similar ground to TnT's spell-related tweaks (spider form, true sight, non-detection, grease). Does NOT apply to cn:980/990 (ranger/paladin progression, the only Olvyn components ). Neither detects the other.",
+      "myComps": "Spell modification components (not cn:980/990)",
+      "theirComps": "#42 Spider form #46 True Sight #49 Non-Detection #55 Non-hostile Grease",
+      "source": "Mod-level note from II install guide; cn:980/990 only modify class progression 2DAs, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "Olvyn cn:980 FORBID_COMPONENT METweaks cn:900 (same ranger/paladin progression). If METweaks cn:900 installed first, Olvyn cn:980 will not install. Choose one.",
+      "myComps": "#980 Ranger/Paladin spell progression",
+      "theirComps": "#900 Ranger/Paladin caster level #1000 Monk Deflect Missiles #1600 Wizard Slayer MR",
+      "source": "MESpells.tp2 line 3668: FORBID_COMPONENT METweaks.tp2 900, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "eeex",
+      "requiresId": 20,
+      "type": "hard",
+      "reason": "Requires EEex engine extensions"
+    }
+  ],
+  "spl": {
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURME01",
+          "wizard",
+          1,
+          "Evocation",
+          "Shocking Bolt",
+          "Ranged electrical bolt dealing 1d6+1/level."
+        ],
+        [
+          "YOURME02",
+          "wizard",
+          1,
+          "Abjuration",
+          "Minor Ward",
+          "Absorbs next 1d4 damage."
+        ],
+        [
+          "YOURME03",
+          "wizard",
+          2,
+          "Evocation",
+          "Flame Burst",
+          "Burst of flame in 10ft radius."
+        ],
+        [
+          "YOURME04",
+          "wizard",
+          2,
+          "Conjuration",
+          "Summon Swarm",
+          "Summons insect swarm to harass enemies."
+        ],
+        [
+          "YOURME05",
+          "wizard",
+          2,
+          "Alteration",
+          "Bull's Strength",
+          "+1d4+1 STR for 1 hour."
+        ],
+        [
+          "YOURME06",
+          "wizard",
+          3,
+          "Evocation",
+          "Lightning Strike",
+          "Single-target lightning dealing 1d6/level."
+        ],
+        [
+          "YOURME07",
+          "wizard",
+          3,
+          "Conjuration",
+          "Stinking Fog",
+          "Nauseating fog persists for 1 turn."
+        ],
+        [
+          "YOURME08",
+          "wizard",
+          3,
+          "Necromancy",
+          "Vampiric Mist",
+          "Draining mist heals caster."
+        ],
+        [
+          "YOURME09",
+          "wizard",
+          4,
+          "Evocation",
+          "Fire Trap",
+          "Invisible trap explodes for 1d4+5 fire."
+        ],
+        [
+          "YOURME10",
+          "wizard",
+          4,
+          "Conjuration",
+          "Lesser Planar Binding",
+          "Summons lesser extraplanar creature."
+        ],
+        [
+          "YOURME11",
+          "wizard",
+          4,
+          "Alteration",
+          "Wraithform",
+          "Caster becomes incorporeal, immune to physical."
+        ],
+        [
+          "YOURME12",
+          "wizard",
+          5,
+          "Evocation",
+          "Arc Lightning",
+          "Chain of lightning arcing between enemies."
+        ],
+        [
+          "YOURME13",
+          "wizard",
+          5,
+          "Necromancy",
+          "Enervation",
+          "Drains 1d4 levels temporarily."
+        ],
+        [
+          "YOURME14",
+          "wizard",
+          5,
+          "Conjuration",
+          "Planar Binding",
+          "Summons extraplanar creature."
+        ],
+        [
+          "YOURME15",
+          "wizard",
+          6,
+          "Evocation",
+          "Delayed Fireball",
+          "Fireball with delayed detonation."
+        ],
+        [
+          "YOURME16",
+          "wizard",
+          6,
+          "Necromancy",
+          "Undead Summoning",
+          "Summons powerful undead."
+        ],
+        [
+          "YOURME17",
+          "wizard",
+          6,
+          "Conjuration",
+          "Greater Planar Binding",
+          "Summons powerful outsider."
+        ],
+        [
+          "YOURME18",
+          "wizard",
+          7,
+          "Evocation",
+          "Stygian Ice Storm",
+          "Devastating cold from the River Styx."
+        ],
+        [
+          "YOURME19",
+          "wizard",
+          7,
+          "Conjuration",
+          "Greater Elemental",
+          "Summons a greater elemental."
+        ],
+        [
+          "YOURME20",
+          "wizard",
+          7,
+          "Necromancy",
+          "Finger of Decay",
+          "Touch withers target for massive damage."
+        ],
+        [
+          "YOURME21",
+          "wizard",
+          8,
+          "Evocation",
+          "Prismatic Wall",
+          "Wall of prismatic energy with random effects."
+        ],
+        [
+          "YOURME22",
+          "wizard",
+          8,
+          "Conjuration",
+          "Binding",
+          "Traps extraplanar creature permanently."
+        ],
+        [
+          "YOURME23",
+          "wizard",
+          8,
+          "Evocation",
+          "Sunburst",
+          "Explosion of sunlight devastating to undead."
+        ],
+        [
+          "YOURME24",
+          "wizard",
+          9,
+          "Evocation",
+          "Elemental Storm",
+          "Rains fire/ice/lightning on large area."
+        ],
+        [
+          "YOURME25",
+          "wizard",
+          9,
+          "Necromancy",
+          "Soul Bind",
+          "Traps target's soul. Save vs death or die."
+        ],
+        [
+          "YOURME30",
+          "priest",
+          1,
+          "Evocation",
+          "Sacred Flame",
+          "Divine flame deals 1d6+1 to undead.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURME31",
+          "priest",
+          2,
+          "Abjuration",
+          "Shield of Faith",
+          "+2 AC scaling with level.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "YOURME32",
+          "priest",
+          3,
+          "Evocation",
+          "Searing Light",
+          "Beam of light deals 1d8/2 levels to undead.",
+          [
+            "sun"
+          ]
+        ],
+        [
+          "YOURME33",
+          "priest",
+          3,
+          "Conjuration",
+          "Spiritual Ally",
+          "Creates a spiritual warrior to fight.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURME34",
+          "priest",
+          4,
+          "Evocation",
+          "Holy Smite (Greater)",
+          "Enhanced holy smite.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURME35",
+          "priest",
+          4,
+          "Necromancy",
+          "Death Watch",
+          "Reveals HP of all creatures in range.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURME36",
+          "priest",
+          5,
+          "Conjuration",
+          "Wall of Thorns",
+          "Thorny wall damages and slows.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "YOURME37",
+          "priest",
+          5,
+          "Evocation",
+          "Slay Undead",
+          "Destroys undead outright. Save negates.",
+          [
+            "destruction",
+            "combat"
+          ]
+        ],
+        [
+          "YOURME38",
+          "priest",
+          6,
+          "Evocation",
+          "Word of Recall",
+          "Teleports party to temple.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURME39",
+          "priest",
+          6,
+          "Abjuration",
+          "Antilife Shell",
+          "Barrier blocks living creatures.",
+          [
+            "destruction",
+            "guardian"
+          ]
+        ],
+        [
+          "YOURME40",
+          "priest",
+          7,
+          "Evocation",
+          "Divine Word",
+          "Deity's word slays/banishes enemies by HD.",
+          [
+            "summoning",
+            "destruction",
+            "combat"
+          ]
+        ],
+        [
+          "YOURME41",
+          "priest",
+          7,
+          "Conjuration",
+          "Summon Celestial",
+          "Summons a celestial being.",
+          [
+            "summoning"
+          ]
+        ]
+      ]
+    },
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURME01",
+          "wizard",
+          1,
+          "Evocation",
+          "Shocking Bolt",
+          "Ranged electrical bolt dealing 1d6+1/level."
+        ],
+        [
+          "YOURME02",
+          "wizard",
+          1,
+          "Abjuration",
+          "Minor Ward",
+          "Absorbs next 1d4 damage."
+        ],
+        [
+          "YOURME03",
+          "wizard",
+          2,
+          "Evocation",
+          "Flame Burst",
+          "Burst of flame in 10ft radius."
+        ],
+        [
+          "YOURME04",
+          "wizard",
+          2,
+          "Conjuration",
+          "Summon Swarm",
+          "Summons insect swarm to harass enemies."
+        ],
+        [
+          "YOURME05",
+          "wizard",
+          2,
+          "Alteration",
+          "Bull's Strength",
+          "+1d4+1 STR for 1 hour."
+        ],
+        [
+          "YOURME06",
+          "wizard",
+          3,
+          "Evocation",
+          "Lightning Strike",
+          "Single-target lightning dealing 1d6/level."
+        ],
+        [
+          "YOURME07",
+          "wizard",
+          3,
+          "Conjuration",
+          "Stinking Fog",
+          "Nauseating fog persists for 1 turn."
+        ],
+        [
+          "YOURME08",
+          "wizard",
+          3,
+          "Necromancy",
+          "Vampiric Mist",
+          "Draining mist heals caster."
+        ],
+        [
+          "YOURME09",
+          "wizard",
+          4,
+          "Evocation",
+          "Fire Trap",
+          "Invisible trap explodes for 1d4+5 fire."
+        ],
+        [
+          "YOURME10",
+          "wizard",
+          4,
+          "Conjuration",
+          "Lesser Planar Binding",
+          "Summons lesser extraplanar creature."
+        ],
+        [
+          "YOURME11",
+          "wizard",
+          4,
+          "Alteration",
+          "Wraithform",
+          "Caster becomes incorporeal, immune to physical."
+        ],
+        [
+          "YOURME12",
+          "wizard",
+          5,
+          "Evocation",
+          "Arc Lightning",
+          "Chain of lightning arcing between enemies."
+        ],
+        [
+          "YOURME13",
+          "wizard",
+          5,
+          "Necromancy",
+          "Enervation",
+          "Drains 1d4 levels temporarily."
+        ],
+        [
+          "YOURME14",
+          "wizard",
+          5,
+          "Conjuration",
+          "Planar Binding",
+          "Summons extraplanar creature."
+        ],
+        [
+          "YOURME15",
+          "wizard",
+          6,
+          "Evocation",
+          "Delayed Fireball",
+          "Fireball with delayed detonation."
+        ],
+        [
+          "YOURME16",
+          "wizard",
+          6,
+          "Necromancy",
+          "Undead Summoning",
+          "Summons powerful undead."
+        ],
+        [
+          "YOURME17",
+          "wizard",
+          6,
+          "Conjuration",
+          "Greater Planar Binding",
+          "Summons powerful outsider."
+        ],
+        [
+          "YOURME18",
+          "wizard",
+          7,
+          "Evocation",
+          "Stygian Ice Storm",
+          "Devastating cold from the River Styx."
+        ],
+        [
+          "YOURME19",
+          "wizard",
+          7,
+          "Conjuration",
+          "Greater Elemental",
+          "Summons a greater elemental."
+        ],
+        [
+          "YOURME20",
+          "wizard",
+          7,
+          "Necromancy",
+          "Finger of Decay",
+          "Touch withers target for massive damage."
+        ],
+        [
+          "YOURME21",
+          "wizard",
+          8,
+          "Evocation",
+          "Prismatic Wall",
+          "Wall of prismatic energy with random effects."
+        ],
+        [
+          "YOURME22",
+          "wizard",
+          8,
+          "Conjuration",
+          "Binding",
+          "Traps extraplanar creature permanently."
+        ],
+        [
+          "YOURME23",
+          "wizard",
+          8,
+          "Evocation",
+          "Sunburst",
+          "Explosion of sunlight devastating to undead."
+        ],
+        [
+          "YOURME24",
+          "wizard",
+          9,
+          "Evocation",
+          "Elemental Storm",
+          "Rains fire/ice/lightning on large area."
+        ],
+        [
+          "YOURME25",
+          "wizard",
+          9,
+          "Necromancy",
+          "Soul Bind",
+          "Traps target's soul. Save vs death or die."
+        ],
+        [
+          "YOURME30",
+          "priest",
+          1,
+          "Evocation",
+          "Sacred Flame",
+          "Divine flame deals 1d6+1 to undead.",
+          [
+            "elemental"
+          ]
+        ],
+        [
+          "YOURME31",
+          "priest",
+          2,
+          "Abjuration",
+          "Shield of Faith",
+          "+2 AC scaling with level.",
+          [
+            "guardian"
+          ]
+        ],
+        [
+          "YOURME32",
+          "priest",
+          3,
+          "Evocation",
+          "Searing Light",
+          "Beam of light deals 1d8/2 levels to undead.",
+          [
+            "sun"
+          ]
+        ],
+        [
+          "YOURME33",
+          "priest",
+          3,
+          "Conjuration",
+          "Spiritual Ally",
+          "Creates a spiritual warrior to fight.",
+          [
+            "summoning"
+          ]
+        ],
+        [
+          "YOURME34",
+          "priest",
+          4,
+          "Evocation",
+          "Holy Smite (Greater)",
+          "Enhanced holy smite.",
+          [
+            "combat"
+          ]
+        ],
+        [
+          "YOURME35",
+          "priest",
+          4,
+          "Necromancy",
+          "Death Watch",
+          "Reveals HP of all creatures in range.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURME36",
+          "priest",
+          5,
+          "Conjuration",
+          "Wall of Thorns",
+          "Thorny wall damages and slows.",
+          [
+            "creation"
+          ]
+        ],
+        [
+          "YOURME37",
+          "priest",
+          5,
+          "Evocation",
+          "Slay Undead",
+          "Destroys undead outright. Save negates.",
+          [
+            "destruction",
+            "combat"
+          ]
+        ],
+        [
+          "YOURME38",
+          "priest",
+          6,
+          "Evocation",
+          "Word of Recall",
+          "Teleports party to temple.",
+          [
+            "divination"
+          ]
+        ],
+        [
+          "YOURME39",
+          "priest",
+          6,
+          "Abjuration",
+          "Antilife Shell",
+          "Barrier blocks living creatures.",
+          [
+            "destruction",
+            "guardian"
+          ]
+        ]
+      ]
+    },
+    "4": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURME50",
+          "wizard",
+          1,
+          "Divination",
+          "Detect Magic",
+          "View magical effects on creatures and items."
+        ]
+      ]
+    },
+    "5": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURME60",
+          "innate",
+          0,
+          "Alteration",
+          "Empower Spell",
+          "Metamagic: +50% damage."
+        ],
+        [
+          "YOURME61",
+          "innate",
+          0,
+          "Alteration",
+          "Maximize Spell",
+          "Metamagic: max damage dice."
+        ],
+        [
+          "YOURME62",
+          "innate",
+          0,
+          "Alteration",
+          "Quicken Spell",
+          "Metamagic: instant cast."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/OlvynChuru/OlvynSpells",
+  "a": "Olvyn Churu",
+  "v": "2.6.0",
+  "sum": "Adds over 150 new spells including spells for flying and moving through walls. Many spells require EEex.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "gh": {
+    "o": "OlvynChuru",
+    "r": "OlvynSpells"
+  },
+  "dl": "https://github.com/OlvynChuru/OlvynSpells",
+  "au": "OlvynChuru",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Change duration of Bless and Curse to 1 turn",
+      "tp2n": "A: Change duration of Bless and Curse to 1 turn",
+      "cn": 11011,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Bless/Curse duration tweak",
+      "sg": "os_bless",
+      "scn": "Improve Bless and (if in-game) Curse"
+    },
+    {
+      "n": "Change casting time of Bless and Curse to 1",
+      "tp2n": "B: Change casting time of Bless and Curse to 1",
+      "cn": 11012,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Bless/Curse casting time tweak",
+      "sg": "os_bless",
+      "scn": "Improve Bless and (if in-game) Curse"
+    },
+    {
+      "n": "A and B (Bless/Curse)",
+      "tp2n": "A and B",
+      "cn": 11013,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Both duration and casting time tweaks for Bless/Curse",
+      "sg": "os_bless",
+      "scn": "Improve Bless and (if in-game) Curse"
+    },
+    {
+      "n": "Make it so that Command takes control of the target for 1 round instead of putting them to sleep",
+      "tp2n": "Make it so that Command takes control of the target for 1 round instead of putting them to sleep",
+      "cn": 11021,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Command spell revision"
+    },
+    {
+      "n": "Original BG1-style Entangle",
+      "tp2n": "A: Original BG1-style Entangle",
+      "cn": 11051,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG1-style Entangle restoration",
+      "sg": "os_entangle",
+      "scn": "Improve Entangle"
+    },
+    {
+      "n": "Remove the saving throw bonus from Entangle",
+      "tp2n": "B: Remove the saving throw bonus from Entangle",
+      "cn": 11052,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Entangle without save bonus",
+      "sg": "os_entangle",
+      "scn": "Improve Entangle"
+    },
+    {
+      "n": "A and B (Entangle)",
+      "tp2n": "A and B",
+      "cn": 11053,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG1-style Entangle and no save bonus",
+      "sg": "os_entangle",
+      "scn": "Improve Entangle"
+    },
+    {
+      "n": "Improve Magical Stone",
+      "tp2n": "Improve Magical Stone",
+      "cn": 11061,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Magical Stone spell improvement"
+    },
+    {
+      "n": "Turn Know Alignment into Identify Creature, which reveals info about the target (e.g. HP, stats, resistances)",
+      "tp2n": "Turn Know Alignment into Identify Creature, which reveals info about the target (e.g. HP, stats, resistances)",
+      "cn": 12091,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Replaces Know Alignment with Identify Creature. Requires EEex"
+    },
+    {
+      "n": "Increase the duration of Negative Plane Protection to 8 hours",
+      "tp2n": "Increase the duration of Negative Plane Protection to 8 hours",
+      "cn": 14131,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Negative Plane Protection duration increase"
+    },
+    {
+      "n": "Improve Cloak of Fear",
+      "tp2n": "Improve Cloak of Fear",
+      "cn": 14161,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Cloak of Fear spell improvement"
+    },
+    {
+      "n": "3E-like Flame Strike and Fire Storm",
+      "tp2n": "3E-like Flame Strike and Fire Storm",
+      "cn": 15031,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Replaces Flame Strike and Fire Storm with 3E versions"
+    },
+    {
+      "n": "Make it so Champion's Strength sets the target's Strength to 25",
+      "tp2n": "Make it so Champion's Strength sets the target's Strength to 25 (but it still prevents the caster from casting any more spells for the duration)",
+      "cn": 15071,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Champion's Strength revision"
+    },
+    {
+      "n": "Make it so Nature's Beauty charms enemies rather than blinding or killing them",
+      "tp2n": "Make it so Nature's Beauty charms enemies rather than blinding or killing them",
+      "cn": 17041,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Nature's Beauty charm revision"
+    },
+    {
+      "n": "Original BG1-style Monster Summoning and Animal Summoning spells",
+      "tp2n": "Original BG1-style Monster Summoning and Animal Summoning spells",
+      "cn": 14021,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Restores BG1-style summoning spells"
+    },
+    {
+      "n": "Restore original Animate Dead for both priests and wizards",
+      "tp2n": "Restore original Animate Dead for both priests and wizards",
+      "cn": 25011,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG1-style Animate Dead for all casters",
+      "sg": "os_animate_dead",
+      "scn": "Restore original BG1 Animate Dead (one skeleton per level, which ignore the summoning limit)"
+    },
+    {
+      "n": "Restore original Animate Dead for only wizards",
+      "tp2n": "Restore original Animate Dead for only wizards",
+      "cn": 25012,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG1-style Animate Dead for wizards only",
+      "sg": "os_animate_dead",
+      "scn": "Restore original BG1 Animate Dead (one skeleton per level, which ignore the summoning limit)"
+    },
+    {
+      "n": "Weaken devas but allow more than one to be summoned at once",
+      "tp2n": "Weaken devas but allow more than one to be summoned at once",
+      "cn": 17261,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Deva summoning revision"
+    },
+    {
+      "n": "Turn Infravision into True Strike, which grants a large THAC0 bonus for a short duration",
+      "tp2n": "Turn Infravision into True Strike, which grants a large THAC0 bonus for a short duration",
+      "cn": 21111,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Replaces Infravision with True Strike"
+    },
+    {
+      "n": "Revise Sleep (no Hit Dice limit, but lasts shorter and creatures will wake up when damaged)",
+      "tp2n": "Revise Sleep (no Hit Dice limit, but lasts shorter and creatures will wake up when damaged)",
+      "cn": 21161,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Sleep spell revision"
+    },
+    {
+      "n": "Revise Power Word, Sleep (no HP limit, but lasts shorter and the creature will wake up when damaged)",
+      "tp2n": "Revise Power Word, Sleep (no HP limit, but lasts shorter and the creature will wake up when damaged)",
+      "cn": 22201,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Power Word Sleep revision"
+    },
+    {
+      "n": "Improve Shocking Grasp, Chill Touch and Ghoul Touch",
+      "tp2n": "Improve Shocking Grasp, Chill Touch and Ghoul Touch",
+      "cn": 21151,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Touch spell improvements"
+    },
+    {
+      "n": "Improve Larloch's Minor Drain and Vampiric Touch",
+      "tp2n": "Improve Larloch's Minor Drain and Vampiric Touch",
+      "cn": 21191,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Life drain spell improvements"
+    },
+    {
+      "n": "Allow familiars to deliver the wizard's touch spells",
+      "tp2n": "Allow familiars to deliver the wizard's touch spells",
+      "cn": 21231,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Familiar touch spell delivery. Requires EEex"
+    },
+    {
+      "n": "Improve low-level spells that detect illusions",
+      "tp2n": "Improve low-level spells that detect illusions",
+      "cn": 22031,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Illusion detection spell improvements"
+    },
+    {
+      "n": "Improve spells that merely weaken enemies rather than disable them (e.g. Deafness, Ray of Enfeeblement, Contagion)",
+      "tp2n": "Improve spells that merely weaken enemies rather than disable them (e.g. Deafness, Ray of Enfeeblement, Contagion)",
+      "cn": 22211,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Weakening spell improvements"
+    },
+    {
+      "n": "Have Skull Trap cap at 10d6 damage",
+      "tp2n": "Have Skull Trap cap at 10d6 damage",
+      "cn": 23131,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Skull Trap damage cap"
+    },
+    {
+      "n": "BG2-style improved Ice Storm: 2d10 damage per round for 4 rounds",
+      "tp2n": "BG2-style improved Ice Storm: 2d10 damage per round for 4 rounds",
+      "cn": 24041,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG2-style Ice Storm (damage over time)",
+      "sg": "os_ice_storm",
+      "scn": "Improve Ice Storm"
+    },
+    {
+      "n": "IWD-style improved Ice Storm: 6d10 damage all at once",
+      "tp2n": "IWD-style improved Ice Storm: 6d10 damage all at once",
+      "cn": 24042,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "IWD-style Ice Storm (instant damage)",
+      "sg": "os_ice_storm",
+      "scn": "Improve Ice Storm"
+    },
+    {
+      "n": "Prevent Stoneskin from making characters grey (should be installed after AI mods like SCS)",
+      "tp2n": "Prevent Stoneskin from making characters grey (should be installed after AI mods like SCS)",
+      "cn": 24081,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Stoneskin visual fix. Requires EEex"
+    },
+    {
+      "n": "Restore original BG1 Otiluke's Resilient Sphere (no saving throw)",
+      "tp2n": "Restore original BG1 Otiluke's Resilient Sphere (no saving throw)",
+      "cn": 24131,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Otiluke's Resilient Sphere restoration"
+    },
+    {
+      "n": "Restore original BG1 Cone of Cold",
+      "tp2n": "Restore original BG1 Cone of Cold (the cone is larger the farther away the target is; the spell's maximum range increases based on caster level)",
+      "cn": 25031,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "BG1-style Cone of Cold with scaling range"
+    },
+    {
+      "n": "Make it so the spell Oracle lets you foresee what spells enemies are going to cast",
+      "tp2n": "Make it so the spell Oracle lets you foresee what spells enemies are going to cast (like Spellcraft in 3rd-edition games)",
+      "cn": 25151,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Oracle spell revision (Spellcraft-like). Requires EEex"
+    },
+    {
+      "n": "Make it so Mislead's invisibility becomes partial invisibility when you attack or cast a spell",
+      "tp2n": "Make it so Mislead's invisibility becomes partial invisibility when you attack or cast a spell, just like Improved Invisibility (regardless of whether the image is still alive)",
+      "cn": 26071,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Mislead partial invisibility revision"
+    },
+    {
+      "n": "Make it so Protection from Magical Weapons only lasts 3 rounds but Absolute Immunity lasts 5 rounds",
+      "tp2n": "Make it so Protection from Magical Weapons only lasts 3 rounds but Absolute Immunity lasts 5 rounds",
+      "cn": 26111,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "PfMW/Absolute Immunity duration rebalance"
+    },
+    {
+      "n": "Improve Chain Lightning",
+      "tp2n": "Improve Chain Lightning",
+      "cn": 26151,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Chain Lightning improvement"
+    },
+    {
+      "n": "Improve Delayed Blast Fireball (1d6 per level, up to 20d6)",
+      "tp2n": "Improve Delayed Blast Fireball (1d6 per level, up to 20d6)",
+      "cn": 27121,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Delayed Blast Fireball damage scaling improvement"
+    },
+    {
+      "n": "Make Meteor Swarm bombard the area randomly with small meteors rather than a single area of effect",
+      "tp2n": "Make Meteor Swarm bombard the area randomly with small meteors rather than a single area of effect",
+      "cn": 29111,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Meteor Swarm area bombardment revision"
+    },
+    {
+      "n": "Improve Energy Drain",
+      "tp2n": "Improve Energy Drain",
+      "cn": 29141,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Energy Drain improvement"
+    },
+    {
+      "n": "Revise Comet and Dragon's Breath",
+      "tp2n": "Revise Comet and Dragon's Breath",
+      "cn": 29221,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Comet and Dragon's Breath revision"
+    },
+    {
+      "n": "Let Contingency and Chain Contingency be cast as a free action",
+      "tp2n": "Let Contingency and Chain Contingency be cast as a free action",
+      "cn": 26171,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Contingency free action casting"
+    },
+    {
+      "n": "Let Farsight be cast as a free action",
+      "tp2n": "Let Farsight be cast as a free action",
+      "cn": 14151,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Farsight free action casting"
+    },
+    {
+      "n": "Let Clairvoyance be cast indoors",
+      "tp2n": "Let Clairvoyance be cast indoors",
+      "cn": 23011,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Clairvoyance indoor casting"
+    },
+    {
+      "n": "Let Rangers and Paladins gain spells quicker and up to 6th-level spells",
+      "tp2n": "Let Rangers and Paladins gain spells quicker and up to 6th-level spells",
+      "cn": 980,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wc": 980,
+      "wq": "verified"
+    },
+    {
+      "n": "Let Rangers and Paladins cast spells at their full caster level",
+      "tp2n": "Let Rangers and Paladins cast spells at their full caster level",
+      "cn": 990,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wc": 990,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Add all the new spells to the game, including the really powerful spells",
+      "tp2n": "Add all the new spells to the game, including the really powerful spells",
+      "cn": 1000,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Adds 150+ new spells including powerful ones. Uses ~49 SPELL.IDS slots (32 wizard, 17 priest). Heavy on wizard L7 (6), L8 (7). Choose one: this or cn:1001 (without powerful spells).",
+      "sg": "os_all_spells",
+      "sp": 49,
+      "spLv": {
+        "w2": 2,
+        "w3": 5,
+        "w4": 1,
+        "w5": 4,
+        "w6": 3,
+        "w7": 6,
+        "w8": 7,
+        "w9": 4,
+        "p1": 1,
+        "p2": 1,
+        "p3": 3,
+        "p4": 4,
+        "p5": 2,
+        "p6": 1,
+        "p7": 5
+      },
+      "g": "olvyn_spells_main",
+      "scn": "New spells"
+    },
+    {
+      "n": "Add all the new spells to the game, excluding the really powerful spells",
+      "tp2n": "Add all the new spells to the game, excluding the really powerful spells",
+      "cn": 1001,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Adds new spells excluding the most powerful ones. Uses ~40 SPELL.IDS slots. Safer for IDS slot budget. Choose one: this or cn:1000 (with powerful spells).",
+      "sg": "os_all_spells",
+      "sp": 41,
+      "spLv": {
+        "w2": 2,
+        "w3": 5,
+        "w4": 1,
+        "w5": 4,
+        "w6": 3,
+        "w7": 4,
+        "w8": 5,
+        "w9": 2,
+        "p1": 1,
+        "p2": 1,
+        "p3": 3,
+        "p4": 4,
+        "p5": 2,
+        "p6": 1,
+        "p7": 3
+      },
+      "g": "olvyn_spells_main",
+      "scn": "New spells"
+    },
+    {
+      "n": "Add the Detect Magic spell, which lets you view the magical effects on any creature by hovering the cursor over them and pressing Left Shift",
+      "tp2n": "Add the Detect Magic spell, which lets you view the magical effects on any creature by hovering the cursor over them and pressing Left Shift (this component removes the ability to do this unless a party member has Detect Magic active)",
+      "cn": 1050,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Adds Detect Magic spell — view magical effects on creatures. Uses 1 wizard L1 IDS slot.",
+      "sp": 1,
+      "spLv": {
+        "w1": 1
+      }
+    },
+    {
+      "n": "Add 3E-like Metamagic abilities to the game",
+      "tp2n": "Add 3E-like Metamagic abilities to the game",
+      "cn": 1100,
+      "wf": "MESpells",
+      "wp": "MESpells\\MESpells.tp2",
+      "wq": "exact",
+      "no": "Adds metamagic feats (Empower, Maximize, Quicken, etc.). Requires EEex"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Mod-level conflict from install guide. Olvyn's spell modification components may overlap with JTweaks spell fixes on shared spell files. Does NOT apply to cn:980/990 (ranger/paladin progression, the only Olvyn components ). Neither detects the other.",
+      "myComps": "Spell modification components (not cn:980/990)",
+      "theirComps": "#40 Enchant Weapon #140 True Sight #170 Celestial spells #200 Elemental protection",
+      "source": "Mod-level note from II install guide; cn:980/990 only modify class progression 2DAs, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "enhanced-powergaming-scripts",
+      "withId": 443,
+      "severity": "soft",
+      "reason": "Mod-level conflict from install guide. Olvyn's celestial/simulacrum spell modifications may affect EPS cn:9/10 AI scripts that reference specific spell resources. Does NOT apply to cn:980/990 (ranger/paladin progression, the only Olvyn components ). Neither mod detects the other.",
+      "myComps": "Celestial/Simulacrum spell components (not cn:980/990)",
+      "theirComps": "#9 Celestials #10 Simulacrum",
+      "source": "Mod-level note from II install guide; cn:980/990 modify MXSPLPAL/MXSPLRAN/CLAB files only, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

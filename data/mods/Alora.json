@@ -1,0 +1,46 @@
+{
+  "i": 139,
+  "t": "alora",
+  "sv": 1,
+  "ord": 180,
+  "c": "NEW NPC MODS",
+  "n": "Alora NPC",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "fr": 3,
+    "pl": 4
+  },
+  "no": "place the Detection component after your subrace mod. Not needed with ToF though Returning Bioware characters none of these recognize returning characters by Lava, like Khalid [Branwen BG2 placeholder] Mainly written as a tutorial for modders REINSTALL BUG: %EDWIN30%.wav unresolved variable on reinstall. ALWAYS block variable not preserved. First install succeeds.",
+  "u": "https://github.com/GwendolyneFreddy/Alora-NPC-for-BG2/releases",
+  "a": "Raven, gwendolynefreddy",
+  "v": "2.1",
+  "sum": "Expands Alora with new dialogue and interactions beyond her brief vanilla BG1 appearance.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "GwendolyneFreddy",
+    "r": "Alora-NPC-for-BG2"
+  },
+  "au": "Raven",
+  "dl": "https://github.com/The-Gate-Project/Alora-NPC-for-BG2",
+  "pt": false,
+  "co": [
+    {
+      "n": "Chosen of Mystra's Alora NPC Mod (Requires Throne of Bhaal)",
+      "pi": "alora_npc_for_bg2",
+      "wf": "Alora",
+      "wp": "Alora\\ALORA.TP2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "no": "UPSTREAM BUG: fatesp.d parse error. gw_dlg_functions.tpa searches FATESP.DLG for the string matching fatesp_string (@65010, Aerie line). If that string is not found (e.g. Aerie not in this EET phase), variables fatesp_state_alora and fatesp_transition_alora remain -99, causing a parse error when EVALUATE_BUFFER compiles fatesp.d. Install after Chosen of Mystra or ensure the Aerie fatesp line exists in FATESP.DLG.",
+      "tp2n": "Chosen of Mystra's Alora NPC Mod (Requires Throne of Bhaal)"
+    }
+  ]
+}

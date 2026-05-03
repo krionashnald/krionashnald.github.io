@@ -1,0 +1,162 @@
+{
+  "i": 414,
+  "t": "EpicThieving",
+  "sv": 1,
+  "ord": 140,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Epic Thieving",
+  "no": "Compatible with TA's Change Grandmastery Bonuses, and ZSTweaks' Light proficienciy overhaul Epic Thieving Otherwise, EEex is optional!Install Epic Thieving before Trap Detection/Recovery/Evasion.",
+  "conflicts": [
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Functionality provided by Tweaks and Tricks (per II install notes)",
+      "myComps": "#0 Epic Locks #100 Epic Traps #200 Epic Trap Setting #400 Epic Detect Illusions",
+      "theirComps": "#2 #3 #14 Trap detection #56 Tracking"
+    },
+    {
+      "with": "xulaye_eet",
+      "withId": 547,
+      "severity": "soft",
+      "reason": "Epic Locks modifies doors in Spellhold/Brynnlaw areas. However, Epic Locks explicitly preserves all existing unlock methods (keys, plot events) — it only adds picklock as an alternative. Xulaye quest should still function.",
+      "myComps": "Epic Locks, #1",
+      "theirComps": "#0 Xulaye NPC Mod for EET",
+      "source": "Epic Thieving README: 'you can still unlock an epic lock through any way it could previously be unlocked', 2026-03"
+    },
+    {
+      "with": "RR",
+      "withId": 311,
+      "severity": "soft",
+      "reason": "Safe — different aspects. ET cn:300 modifies store steal-difficulty flags. ET cn:400 appends CLAB rows for Detect Illusions scaling. ET cn:600 uses EEex extended skill system. RR cn:1 modifies existing CLAB rows. Install RR before ET — ET appends safely after RR.",
+      "orderOnly": true,
+      "myComps": "#300 Epic Pickpocketing #400 Epic Detect Illusions #600 Use Poison",
+      "theirComps": "#1 Kit Revisions #3 Racial Skills",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "HT cn:34 changes trap detection probability. ET cn:100 changes area trap difficulty values. ET cn:200 adds new trap spells. Different mechanisms — can coexist.",
+      "myComps": "#100 Epic Traps #200 Epic Trap Setting",
+      "theirComps": "#34 100% trap detection chance",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/OlvynChuru/Epic-Thieving",
+  "a": "Olvyn Churu",
+  "sum": "A mod for Infinity Engine games that gives special opportunities for thieves with especially high thieving skills.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "OlvynChuru",
+    "r": "Epic-Thieving"
+  },
+  "dl": "https://github.com/OlvynChuru/Epic-Thieving",
+  "au": "OlvynChuru",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Epic Locks",
+      "cn": 0,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Locks require higher Open Locks skill at epic levels.",
+      "tp2n": "Epic Locks"
+    },
+    {
+      "n": "Epic Traps",
+      "cn": 100,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "no": "Traps require higher Find/Disarm Traps skill at epic levels.",
+      "tp2n": "Epic Traps"
+    },
+    {
+      "n": "Epic Trap Setting",
+      "cn": 200,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 200,
+      "wq": "exact",
+      "no": "Incompatible with other mods changing the Set Trap skill",
+      "tp2n": "Epic Trap Setting"
+    },
+    {
+      "n": "Epic Pickpocketing",
+      "cn": 300,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 300,
+      "wq": "exact",
+      "no": "Pickpocketing requires higher skill at epic levels.",
+      "tp2n": "Epic Pickpocketing"
+    },
+    {
+      "n": "Epic Detect Illusions",
+      "cn": 400,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 400,
+      "wq": "exact",
+      "no": "Detect Illusions requires higher skill at epic levels.",
+      "tp2n": "Epic Detect Illusions"
+    },
+    {
+      "n": "Prevent multiple Potions of Perception or Master Thievery from stacking",
+      "cn": 500,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wq": "verified",
+      "tp2n": "Prevent multiple Potions of Perception or Master Thievery from stacking"
+    },
+    {
+      "n": "New Skill: Use Poison",
+      "cn": 600,
+      "wf": "EpicThieving",
+      "wp": "EpicThieving\\EPICTHIEVING.TP2",
+      "wc": 600,
+      "wq": "exact",
+      "no": "Adds Use Poison thief skill for applying poisons to weapons.",
+      "tp2n": "New Skill: Use Poison"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Trap_Overhaul",
+      "withId": 415,
+      "severity": "soft",
+      "reason": "Partial overlap on cn:100 only. Epic Thieving cn:100 (Epic Traps) modifies .ARE trap detect/remove values — overlaps with Trap Overhaul's area rewrites (Trap Overhaul may override these values). Epic Thieving cn:200 (Epic Trap Setting) adds 5 NEW settable trap spells (spcl412/414/910/911/912) that are unique content Trap Overhaul doesn't touch. Neither detects the other. Install Epic Thieving before Trap Overhaul. cn:200 is safe to keep; cn:100 area changes may be overwritten by Trap Overhaul but won't crash.",
+      "orderOnly": true,
+      "myComps": "#100 Epic Traps #200 Epic Trap Setting",
+      "theirComps": "#111 and other Trap Overhaul variants",
+      "source": "ET EpicTraps/ modifies .ARE trap values; ET EpicTrapSetting/ creates new spcl*.spl files; Trap Overhaul rewrites .ARE structures but not trap spell files, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "BackBrynnlaw",
+      "withId": 82,
+      "severity": "soft",
+      "reason": "Back to Brynnlaw copies area files to new names rather than reusing originals, so Epic Locks changes to AR15xx doors likely do not affect B2B's copied areas. Additionally, Epic Locks preserves existing unlock methods.",
+      "myComps": "Epic Locks, #1",
+      "theirComps": "#0 Back to Brynnlaw mod for Baldur's Gate II",
+      "source": "B2B readme: 'all area files have been copied and given new names'; Epic Thieving preserves key/script unlocks, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

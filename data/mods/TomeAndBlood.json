@@ -1,0 +1,1734 @@
+{
+  "i": 331,
+  "t": "TomeAndBlood",
+  "sv": 1,
+  "pfx": "QD",
+  "ord": 150,
+  "c": "KIT & CLASS MODS",
+  "n": "Tome and Blood",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "potential incompatible with sorcerer variants of TnB and ToF Subtledoctor's non-cleric kit mods These can do modifications to previous kit mods, so here they go Includes Tome And Blood, Will to Power, Might and Guile. Also his mantained fork of Spellhold Studios' Refinements Tome And Blood Overlaps with Artisan's Kitpack and Talents of Faerun. The smaller components may be fine but don't go mixing the kits and more complex changes. Familiars can be made a non-liability by removing the master’s CON penalty if a familiar dies!Install Tweaks Anthology’s revised spell tables for arcane casters (PnP Sorcerer Tables and PnP Mage table...",
+  "ic": "tnt [smarter familiars]",
+  "conflicts": [
+    {
+      "with": "msfm",
+      "withId": 282,
+      "severity": "partial",
+      "reason": "Familiar components conflict with Innate Find Familiar",
+      "myComps": "#66",
+      "theirComps": "#18 #19 #20 #21 #22 #24"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "partial",
+      "reason": "Smarter familiars components conflict",
+      "myComps": "Smarter familiars, #0",
+      "theirComps": "Innate Find Familiar, #66",
+      "source": "Both modify familiar behavior/files with qdtnb_ prefix. Other components compatible, 2026-03"
+    },
+    {
+      "with": "d5_5e_casting",
+      "withId": 372,
+      "severity": "soft",
+      "reason": "TnB cn:40 (Revised Specialists) and cn:82 (Arcanist) have potential overlap with 5E spellcasting — TnB cn:82 even warns \"do not install if you plan to use 5E casting.\" Both TnB cn:51 (Metamagic innate) adds metamagic abilities on top of existing casting — independent of 5E's casting mechanics. TnB cn:66 (Innate Familiar) modifies CLABs/hidespl, unrelated to spellcasting system. Selected components are safe with 5E.",
+      "myComps": "#40 Revised Specialists (NOT in preset) #82 Arcanist (NOT, warns against 5E) #51 Metamagic (IN, safe) #66 Innate Familiar (IN, safe)",
+      "orderOnly": true,
+      "source": "TnB cn:82 description says do not install with 5E; cn:51 adds innate abilities independent of casting system; cn:66 is CLAB/hidespl only, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "TnB cn:40 (Revised Specialists) — would conflict with SCS spell school changes. TnB cn:51 (Metamagic innate) adds metamagic abilities (Empower, Maximize, etc.) that apply on top of whatever spell versions exist — independent of SCS spell tweaks. SCS modifies spell effects; metamagic modifies how they're cast. Install TnB before SCS.",
+      "myComps": "#40 Revised Specialists (NOT in preset) #51 Metamagic (IN, safe)",
+      "theirComps": "#1500 #1510 IWD spells #2000 #2010 #2040 #2050 #2060 #2070 Spell tweaks",
+      "orderOnly": true,
+      "source": "Metamagic adds innate abilities independent of spell file contents; cn:40 NOT selected, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "partial",
+      "reason": "Mage specialist kit tweaks conflict",
+      "myComps": "#5",
+      "theirComps": "#30",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "partial",
+      "reason": "Choose one tweak for allowing arcane casting with armor",
+      "myComps": "#110, #30, Revised Dragon Disciples",
+      "theirComps": "#2140",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Familiar penalty conflict",
+      "myComps": "#69",
+      "theirComps": "#3020, #3021, #3022",
+      "source": "eemodsetup",
+      "orderOnly": true
+    },
+    {
+      "with": "EET_gui",
+      "withId": 684,
+      "severity": "hard",
+      "reason": "EET Gui does not display all functions",
+      "myComps": "#16",
+      "theirComps": "#0 SoD GUI",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "One HIGH overlap, rest safe. TnB cn:20 (Revised Dragon Disciples) vs ToF cn:40950 (Chromatic Dragon Disciples): both modify CLABSO01.2da, SPDD02/SPDD03.spl, and the base Dragon Disciple kit. TnB adds elemental variant kits (acid/electric/cold/fire via ADD_KIT); ToF creates chromatic variants (black/green/white/blue via kit.copy). Both rewrite the base DD and create competing variants — install TnB before ToF. TnB cn:33/35 (Sylvan/Revenant Sorcerer) vs ToF cn:40925 (Bloodlines): safe — both ADD new independent kits, no shared CLAB files. TnB cn:40 (Revised Specialists) ToF cn:40750/40900 (Opposition Schools/Multi Specialist) modify kit availability, not spell mechanics — no overlap with selected TnB. Neither detects the other.",
+      "myComps": "#20 Revised Dragon Disciples (HIGH overlap) #33 #35 Sorcerer kits (safe) #40 Revised Specialists (NOT in preset)",
+      "theirComps": "#40950 Dragon Disciples (HIGH overlap) #40925 Sorcerer Bloodlines (safe) #40750 Opposition Schools #40900 Multi Specialist #1500 IWD arcane #2000 #2060 Spell tweaks",
+      "source": "Both modify CLABSO01.2da/SPDD02/SPDD03; TnB uses ADD_KIT, ToF uses kit.copy/edit; sorcerer kits are independent ADD_KITs, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify mxsplwiz.2da and mxsplsrc.2da. Last installed wins",
+      "myComps": "#11 #12 Revised Mage Spell Table #16 #17 Revised Sorcerer Spell Table",
+      "theirComps": "#2250 Sorcerer Spell Prog #2260 #2261 Mage Spell Prog",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SELPHIRATWEAKS",
+      "withId": 383,
+      "severity": "soft",
+      "reason": "Both modify mage and sorcerer spell tables",
+      "myComps": "#11 #12 Mage #16 #17 Sorcerer spell tables",
+      "theirComps": "#20 Mage #21 Sorcerer spell progression"
+    },
+    {
+      "with": "A7-MultiKits",
+      "withId": 678,
+      "severity": "soft",
+      "reason": "Both provide multiclass arcane options. Install A7 after TnB so it can generate combinations from TnB kits.",
+      "orderOnly": true,
+      "myComps": "#80 Multiclass Sorcerers #95 Multiclass Specialists"
+    }
+  ],
+  "spl": {
+    "6": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI510",
+          "modify",
+          "Spell Immunity reworked for revised specialist system"
+        ]
+      ]
+    },
+    "7": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTB01",
+          "innate",
+          0,
+          "Alteration",
+          "Empower Spell",
+          "Metamagic: increases spell damage by 50%."
+        ],
+        [
+          "YOURTB02",
+          "innate",
+          0,
+          "Alteration",
+          "Maximize Spell",
+          "Metamagic: maximizes all spell damage dice."
+        ],
+        [
+          "YOURTB03",
+          "innate",
+          0,
+          "Alteration",
+          "Quicken Spell",
+          "Metamagic: reduces casting time to 1."
+        ],
+        [
+          "YOURTB04",
+          "innate",
+          0,
+          "Alteration",
+          "Silent Spell",
+          "Metamagic: cast without verbal components."
+        ]
+      ]
+    },
+    "8": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTB01",
+          "innate",
+          0,
+          "Alteration",
+          "Empower Spell",
+          "Metamagic: increases spell damage by 50%."
+        ],
+        [
+          "YOURTB02",
+          "innate",
+          0,
+          "Alteration",
+          "Maximize Spell",
+          "Metamagic: maximizes all spell damage dice."
+        ],
+        [
+          "YOURTB03",
+          "innate",
+          0,
+          "Alteration",
+          "Quicken Spell",
+          "Metamagic: reduces casting time to 1."
+        ],
+        [
+          "YOURTB04",
+          "innate",
+          0,
+          "Alteration",
+          "Silent Spell",
+          "Metamagic: cast without verbal components."
+        ]
+      ]
+    },
+    "9": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTB01",
+          "innate",
+          0,
+          "Alteration",
+          "Empower Spell",
+          "Metamagic: increases spell damage by 50%."
+        ],
+        [
+          "YOURTB02",
+          "innate",
+          0,
+          "Alteration",
+          "Maximize Spell",
+          "Metamagic: maximizes all spell damage dice."
+        ],
+        [
+          "YOURTB03",
+          "innate",
+          0,
+          "Alteration",
+          "Quicken Spell",
+          "Metamagic: reduces casting time to 1."
+        ],
+        [
+          "YOURTB04",
+          "innate",
+          0,
+          "Alteration",
+          "Silent Spell",
+          "Metamagic: cast without verbal components."
+        ]
+      ]
+    },
+    "10": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTB01",
+          "innate",
+          0,
+          "Alteration",
+          "Empower Spell",
+          "Metamagic: increases spell damage by 50%."
+        ],
+        [
+          "YOURTB02",
+          "innate",
+          0,
+          "Alteration",
+          "Maximize Spell",
+          "Metamagic: maximizes all spell damage dice."
+        ],
+        [
+          "YOURTB03",
+          "innate",
+          0,
+          "Alteration",
+          "Quicken Spell",
+          "Metamagic: reduces casting time to 1."
+        ],
+        [
+          "YOURTB04",
+          "innate",
+          0,
+          "Alteration",
+          "Silent Spell",
+          "Metamagic: cast without verbal components."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "4": {
+      "SORCERER_SYLVAN_DISCIPLE": {
+        "passive": [
+          {
+            "n": "Nondetection",
+            "type": "desc",
+            "desc": "Permanent Nondetection"
+          },
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+4 save vs Spells"
+          },
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "charm"
+            ],
+            "desc": "Immune to charm"
+          },
+          {
+            "n": "Fey Aura",
+            "type": "desc",
+            "desc": "Melee attackers save vs spells or suffer -2 attack for 1 round"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "One fewer spell per level per day."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Sorcerer spell system. One fewer spell per level per day."
+        },
+        "statBonus": {
+          "note": "Sorcerer stat requirements."
+        }
+      }
+    },
+    "5": {
+      "SORCERER_REVENANT_DISCIPLE": {
+        "passive": [
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+4 save vs Death"
+          },
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "sleep",
+              "death magic"
+            ],
+            "desc": "Immune to sleep and death magic"
+          },
+          {
+            "n": "HP Bonus",
+            "type": "desc",
+            "desc": "d6 hit die (vs sorcerer d4)"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "One fewer spell per level per day."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Sorcerer spell system. One fewer spell per level per day."
+        },
+        "statBonus": {
+          "note": "Sorcerer stat requirements."
+        }
+      }
+    },
+    "15": {
+      "D5_FS": {
+        "passive": [
+          {
+            "n": "Semi-Spontaneous Casting",
+            "type": "desc",
+            "desc": "Fighter/Sorcerer multiclass. Arcane side uses sorcerer-style casting (learn few spells, cast without memorization)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cannot learn from scrolls. No Identify/Sequencer/Contingency."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/Sorcerer multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_SC": {
+        "passive": [
+          {
+            "n": "Semi-Spontaneous Casting",
+            "type": "desc",
+            "desc": "Sorcerer/Cleric multiclass. Same semi-spontaneous system."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cannot learn from scrolls. No Identify/Sequencer/Contingency."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Sorcerer/Cleric multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_ST": {
+        "passive": [
+          {
+            "n": "Semi-Spontaneous Casting",
+            "type": "desc",
+            "desc": "Sorcerer/Thief multiclass. Same semi-spontaneous system."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cannot learn from scrolls. No Identify/Sequencer/Contingency."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Sorcerer/Thief multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Mage/Thief multi-class HP."
+        }
+      }
+    },
+    "19": {
+      "D5_ABJF": {
+        "passive": [
+          {
+            "n": "Abjurer/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Abjuration spell slot, -15% scribe penalty for opposition school."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Abjuration",
+          "oppositionSchools": [
+            "Alteration"
+          ],
+          "note": "Abjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_CONF": {
+        "passive": [
+          {
+            "n": "Conjurer/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Conjuration slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Conjuration",
+          "oppositionSchools": [
+            "Divination"
+          ],
+          "note": "Conjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_DIVF": {
+        "passive": [
+          {
+            "n": "Diviner/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Divination slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Divination",
+          "oppositionSchools": [
+            "Conjuration"
+          ],
+          "note": "Divination specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_ENCF": {
+        "passive": [
+          {
+            "n": "Enchanter/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Enchantment slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Enchantment",
+          "oppositionSchools": [
+            "Invocation"
+          ],
+          "note": "Enchantment specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_ILLF": {
+        "passive": [
+          {
+            "n": "Illusionist/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Illusion slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Illusion",
+          "oppositionSchools": [
+            "Necromancy"
+          ],
+          "note": "Illusion specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_INVF": {
+        "passive": [
+          {
+            "n": "Invoker/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Invocation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "oppositionSchools": [
+            "Enchantment"
+          ],
+          "note": "Invocation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_NECF": {
+        "passive": [
+          {
+            "n": "Necromancer/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Necromancy slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Necromancy",
+          "oppositionSchools": [
+            "Illusion"
+          ],
+          "note": "Necromancy specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_TRAF": {
+        "passive": [
+          {
+            "n": "Transmuter/Fighter",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Transmutation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Transmutation",
+          "oppositionSchools": [
+            "Abjuration"
+          ],
+          "note": "Transmutation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/specialist mage multi; uses fighter HLAs"
+        },
+        "statBonus": {
+          "note": "Fighter/Mage multi-class HP."
+        }
+      },
+      "D5_ABJC": {
+        "passive": [
+          {
+            "n": "Abjurer/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Abjuration slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Abjuration",
+          "oppositionSchools": [
+            "Alteration"
+          ],
+          "note": "Abjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_CONC": {
+        "passive": [
+          {
+            "n": "Conjurer/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Conjuration slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Conjuration",
+          "oppositionSchools": [
+            "Divination"
+          ],
+          "note": "Conjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_DIVC": {
+        "passive": [
+          {
+            "n": "Diviner/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Divination slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Divination",
+          "oppositionSchools": [
+            "Conjuration"
+          ],
+          "note": "Divination specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_ENCC": {
+        "passive": [
+          {
+            "n": "Enchanter/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Enchantment slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Enchantment",
+          "oppositionSchools": [
+            "Invocation"
+          ],
+          "note": "Enchantment specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_ILLC": {
+        "passive": [
+          {
+            "n": "Illusionist/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Illusion slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Illusion",
+          "oppositionSchools": [
+            "Necromancy"
+          ],
+          "note": "Illusion specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_INVC": {
+        "passive": [
+          {
+            "n": "Invoker/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Invocation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "oppositionSchools": [
+            "Enchantment"
+          ],
+          "note": "Invocation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_NECC": {
+        "passive": [
+          {
+            "n": "Necromancer/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Necromancy slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Necromancy",
+          "oppositionSchools": [
+            "Illusion"
+          ],
+          "note": "Necromancy specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_TRAC": {
+        "passive": [
+          {
+            "n": "Transmuter/Cleric",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Transmutation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Transmutation",
+          "oppositionSchools": [
+            "Abjuration"
+          ],
+          "note": "Transmutation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/specialist mage multi; uses cleric HLAs"
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi-class HP."
+        }
+      },
+      "D5_ABJT": {
+        "passive": [
+          {
+            "n": "Abjurer/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Abjuration slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Abjuration",
+          "oppositionSchools": [
+            "Alteration"
+          ],
+          "note": "Abjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_CONT": {
+        "passive": [
+          {
+            "n": "Conjurer/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Conjuration slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Conjuration",
+          "oppositionSchools": [
+            "Divination"
+          ],
+          "note": "Conjuration specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_DIVT": {
+        "passive": [
+          {
+            "n": "Diviner/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Divination slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Divination",
+          "oppositionSchools": [
+            "Conjuration"
+          ],
+          "note": "Divination specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_ENCT": {
+        "passive": [
+          {
+            "n": "Enchanter/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Enchantment slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Enchantment",
+          "oppositionSchools": [
+            "Invocation"
+          ],
+          "note": "Enchantment specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_ILLT": {
+        "passive": [
+          {
+            "n": "Illusionist/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Illusion slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Illusion",
+          "oppositionSchools": [
+            "Necromancy"
+          ],
+          "note": "Illusion specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_INVT": {
+        "passive": [
+          {
+            "n": "Invoker/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Invocation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Invocation",
+          "oppositionSchools": [
+            "Enchantment"
+          ],
+          "note": "Invocation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_NECT": {
+        "passive": [
+          {
+            "n": "Necromancer/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Necromancy slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Necromancy",
+          "oppositionSchools": [
+            "Illusion"
+          ],
+          "note": "Necromancy specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      },
+      "D5_TRAT": {
+        "passive": [
+          {
+            "n": "Transmuter/Thief",
+            "type": "bonusSlot",
+            "spellType": "wizard",
+            "value": 1,
+            "desc": "Multiclass specialist: +1 Transmutation slot."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "specialist": "Transmutation",
+          "oppositionSchools": [
+            "Abjuration"
+          ],
+          "note": "Transmutation specialist mage. See chargen.oppositionSchools."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Thief/specialist mage multi; uses thief HLAs"
+        },
+        "statBonus": {
+          "note": "Thief/Mage multi-class HP."
+        }
+      }
+    }
+  },
+  "kits": {
+    "4": {
+      "new": [
+        [
+          "SORCERER_SYLVAN_DISCIPLE",
+          "sorcerer",
+          "Sylvan Disciple",
+          "Sorcerer attuned to nature spirits. Druidic spell access with spontaneous casting."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "SORCERER_REVENANT_DISCIPLE",
+          "sorcerer",
+          "Revenant Disciple",
+          "Sorcerer touched by undeath. Necromantic sorcery and deathless resilience."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "D5_FS",
+          "multi",
+          "Fighter/Sorcerer",
+          "Multiclass combining fighter combat with sorcerer spontaneous casting."
+        ],
+        [
+          "D5_SC",
+          "multi",
+          "Sorcerer/Cleric",
+          "Multiclass combining sorcerer spontaneous casting with divine magic."
+        ],
+        [
+          "D5_ST",
+          "multi",
+          "Sorcerer/Thief",
+          "Multiclass combining sorcerer spontaneous casting with thief skills."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "D5_ABJF",
+          "multi",
+          "Fighter/Abjurer",
+          "Multiclass combining fighter abilities with abjurer specialist magic."
+        ],
+        [
+          "D5_CONF",
+          "multi",
+          "Fighter/Conjurer",
+          "Multiclass combining fighter abilities with conjurer specialist magic."
+        ],
+        [
+          "D5_DIVF",
+          "multi",
+          "Fighter/Diviner",
+          "Multiclass combining fighter abilities with diviner specialist magic."
+        ],
+        [
+          "D5_ENCF",
+          "multi",
+          "Fighter/Enchanter",
+          "Multiclass combining fighter abilities with enchanter specialist magic."
+        ],
+        [
+          "D5_ILLF",
+          "multi",
+          "Fighter/Illusionist",
+          "Multiclass combining fighter abilities with illusionist specialist magic."
+        ],
+        [
+          "D5_INVF",
+          "multi",
+          "Fighter/Invoker",
+          "Multiclass combining fighter abilities with invoker specialist magic."
+        ],
+        [
+          "D5_NECF",
+          "multi",
+          "Fighter/Necromancer",
+          "Multiclass combining fighter abilities with necromancer specialist magic."
+        ],
+        [
+          "D5_TRAF",
+          "multi",
+          "Fighter/Transmuter",
+          "Multiclass combining fighter abilities with transmuter specialist magic."
+        ],
+        [
+          "D5_ABJC",
+          "multi",
+          "Cleric/Abjurer",
+          "Multiclass combining cleric abilities with abjurer specialist magic."
+        ],
+        [
+          "D5_CONC",
+          "multi",
+          "Cleric/Conjurer",
+          "Multiclass combining cleric abilities with conjurer specialist magic."
+        ],
+        [
+          "D5_DIVC",
+          "multi",
+          "Cleric/Diviner",
+          "Multiclass combining cleric abilities with diviner specialist magic."
+        ],
+        [
+          "D5_ENCC",
+          "multi",
+          "Cleric/Enchanter",
+          "Multiclass combining cleric abilities with enchanter specialist magic."
+        ],
+        [
+          "D5_ILLC",
+          "multi",
+          "Cleric/Illusionist",
+          "Multiclass combining cleric abilities with illusionist specialist magic."
+        ],
+        [
+          "D5_INVC",
+          "multi",
+          "Cleric/Invoker",
+          "Multiclass combining cleric abilities with invoker specialist magic."
+        ],
+        [
+          "D5_NECC",
+          "multi",
+          "Cleric/Necromancer",
+          "Multiclass combining cleric abilities with necromancer specialist magic."
+        ],
+        [
+          "D5_TRAC",
+          "multi",
+          "Cleric/Transmuter",
+          "Multiclass combining cleric abilities with transmuter specialist magic."
+        ],
+        [
+          "D5_ABJT",
+          "multi",
+          "Thief/Abjurer",
+          "Multiclass combining thief abilities with abjurer specialist magic."
+        ],
+        [
+          "D5_CONT",
+          "multi",
+          "Thief/Conjurer",
+          "Multiclass combining thief abilities with conjurer specialist magic."
+        ],
+        [
+          "D5_DIVT",
+          "multi",
+          "Thief/Diviner",
+          "Multiclass combining thief abilities with diviner specialist magic."
+        ],
+        [
+          "D5_ENCT",
+          "multi",
+          "Thief/Enchanter",
+          "Multiclass combining thief abilities with enchanter specialist magic."
+        ],
+        [
+          "D5_ILLT",
+          "multi",
+          "Thief/Illusionist",
+          "Multiclass combining thief abilities with illusionist specialist magic."
+        ],
+        [
+          "D5_INVT",
+          "multi",
+          "Thief/Invoker",
+          "Multiclass combining thief abilities with invoker specialist magic."
+        ],
+        [
+          "D5_NECT",
+          "multi",
+          "Thief/Necromancer",
+          "Multiclass combining thief abilities with necromancer specialist magic."
+        ],
+        [
+          "D5_TRAT",
+          "multi",
+          "Thief/Transmuter",
+          "Multiclass combining thief abilities with transmuter specialist magic."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/UnearthedArcana/TomeAndBlood",
+  "a": "Aquadrizzt, Grammarsalad, Subtledoctor",
+  "v": "1.4",
+  "sum": "Sorcerer and wizard overhaul with 19 components: new kits, metamagic, spell schools, and spellcasting mechanics for arcane casters.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "rec": {
+    "goes_with": [
+      "Faiths & Powers",
+      "Might & Guile"
+    ],
+    "avoid": [
+      "Too many sorcerer kits can be overwhelming",
+      "Multiclass specialists + SCS can cause edge cases"
+    ],
+    "tip": "Pick a focused subset. Revised Metamagic and Spell Switching are the most impactful components."
+  },
+  "gh": {
+    "o": "subtledoctor",
+    "r": "TomeAndBlood"
+  },
+  "dl": "https://github.com/UnearthedArcana/TomeAndBlood",
+  "au": "aquadrizzt",
+  "ki": [
+    {
+      "pattern": "setup_mana_sorcerer\\.tpa|Mana Sorcerer",
+      "severity": "warning",
+      "category": "caution",
+      "description": "TomeAndBlood cn:85 (Sorcerer Kit: Mana Sorcerer) is author-DEPRECATED in v18. The INCLUDE file comp/setup_mana_sorcerer.tpa is missing from the mod archive, so the component may error or silently fail if selected.",
+      "workaround": "Do not select cn:85. If the preset has it, remove. Consider using one of the other T&B sorcerer kits (cn:25 Magus, cn:31 Favored Soul, cn:33 Sylvan Disciple, cn:35 Revenant Disciple, cn:37 Amorphous Disciple) instead.",
+      "user_action": "check-docs",
+      "components": [
+        85
+      ],
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "co": [
+    {
+      "n": "Revised Mage Spell Table: Tome & Blood Table",
+      "cn": 11,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "verified",
+      "tp2n": "Tome & Blood Table",
+      "g": "tnb_mage_spell_table",
+      "scn": "Revised Mage Spell Table"
+    },
+    {
+      "n": "Revised Mage Spell Table: 'Un-nerfed' Table",
+      "cn": 12,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "verified",
+      "tp2n": "'Un-nerfed' Table",
+      "g": "tnb_mage_spell_table",
+      "scn": "Revised Mage Spell Table"
+    },
+    {
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "exact",
+      "cn": 16,
+      "n": "Revised Sorcerer Spell Table: Tome & Blood Table",
+      "wc": 16,
+      "no": "REMOVED from current version. Caused UI conflicts with EET GUI.",
+      "tp2n": "Tome & Blood Table",
+      "g": "tnb_sorcerer_spell_table",
+      "scn": "Revised Sorcerer Spell Table"
+    },
+    {
+      "n": "Revised Sorcerer Spell Table: 'Un-nerfed' Table",
+      "cn": 17,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "verified",
+      "tp2n": "'Un-nerfed' Table",
+      "g": "tnb_sorcerer_spell_table",
+      "scn": "Revised Sorcerer Spell Table"
+    },
+    {
+      "n": "Revised Dragon Disciples",
+      "cn": 20,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "k": 0,
+      "no": "Revised Dragon Disciple kit. Rebalanced draconic sorcerer with scaled bonuses and breath weapon.",
+      "tp2n": "Revised Dragon Disciples"
+    },
+    {
+      "n": "Sorcerer: Magus",
+      "cn": 25,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Sorcerer: Magus"
+    },
+    {
+      "n": "Sorcerer: Favored Soul",
+      "cn": 31,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 31,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Sorcerer: Favored Soul"
+    },
+    {
+      "n": "Sorcerer: Sylvan Disciple",
+      "cn": 33,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 33,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "k": 1,
+      "no": "Sylvan Disciple sorcerer kit. Fey-blooded caster with innate non-detection, charm immunity, and enhanced spell saves. Fewer spell slots.",
+      "kC": {
+        "sorcerer": 1
+      },
+      "tp2n": "Sorcerer: Sylvan Disciple"
+    },
+    {
+      "n": "Sorcerer: Revenant Disciple",
+      "cn": 35,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 35,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "k": 1,
+      "no": "Revenant Disciple sorcerer kit. Undead-touched sorcerer gaining necrotic resistances and death magic.",
+      "kC": {
+        "sorcerer": 1
+      },
+      "tp2n": "Sorcerer: Revenant Disciple"
+    },
+    {
+      "n": "Sorcerer: Amorphous Disciple",
+      "cn": 37,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 37,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Sorcerer: Amorphous Disciple"
+    },
+    {
+      "n": "Revised Specialists",
+      "cn": 40,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 40,
+      "wq": "exact",
+      "sp": 0,
+      "tp2n": "Revised Specialists"
+    },
+    {
+      "n": "Metamagic: Innate, learned automatically by everyone",
+      "no": "Incompatible with ToF's and MiH Spellpack's Specialist components. SCS Spell School Changes merely reassigns schools, doesn't conflict",
+      "cn": 51,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 51,
+      "wq": "exact",
+      "g": "metamagic",
+      "scn": "Revised Metamagic",
+      "sp": 1,
+      "spLv": {
+        "w6": 1
+      },
+      "tp2n": "Innate metamagic, learned automatically by everyone"
+    },
+    {
+      "n": "Metamagic: Innate, learned automatically but NOT by sorcerers",
+      "cn": 52,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 52,
+      "wq": "exact",
+      "g": "metamagic",
+      "scn": "Revised Metamagic",
+      "sp": 1,
+      "spLv": {
+        "w6": 1
+      },
+      "tp2n": "Innate metamagic, learned automatically but NOT by sorcerers"
+    },
+    {
+      "n": "Metamagic: Innate, learned from scrolls or character generation",
+      "cn": 53,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 53,
+      "wq": "exact",
+      "g": "metamagic",
+      "scn": "Revised Metamagic",
+      "sp": 1,
+      "spLv": {
+        "w6": 1
+      },
+      "tp2n": "Innate metamagic, learned from scrolls or character generation"
+    },
+    {
+      "n": "Metamagic: Innate, learned from scrolls ONLY (none for sorcerers)",
+      "cn": 54,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 54,
+      "wq": "exact",
+      "g": "metamagic",
+      "scn": "Revised Metamagic",
+      "sp": 1,
+      "spLv": {
+        "w6": 1
+      },
+      "tp2n": "Innate metamagic, learned from scrolls ONLY (none for sorcerers)"
+    },
+    {
+      "n": "Metamagic: Fill sequencers for free",
+      "cn": 56,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "tp2n": "Metamagic: fill sequencers for free",
+      "tg": "qol"
+    },
+    {
+      "n": "Innate Find Familiar",
+      "cn": 66,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 66,
+      "wq": "exact",
+      "no": "Makes Find Familiar an innate ability instead of a spell. Hides the spell from spellbooks.",
+      "tp2n": "Innate Find Familiar"
+    },
+    {
+      "n": "Spell Switching: Change spells every level",
+      "cn": 71,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 71,
+      "wq": "exact",
+      "g": "spell_switching",
+      "scn": "Sorcerer Spell Switching",
+      "tp2n": "Change spells every level"
+    },
+    {
+      "n": "Spell Switching: Change spells once every three levels",
+      "cn": 72,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 72,
+      "wq": "exact",
+      "g": "spell_switching",
+      "scn": "Sorcerer Spell Switching",
+      "no": "Spell Switching: change memorized spells once every 3 levels without resting. QoL for prepared casters.",
+      "tp2n": "Change spells once every three levels"
+    },
+    {
+      "n": "Multiclass Sorcerers",
+      "cn": 80,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 80,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "k": 3,
+      "no": "Adds 3 multiclass sorcerer kits: Fighter/Sorcerer, Sorcerer/Cleric, Sorcerer/Thief. Uses semi-spontaneous casting system. Fixed 3 kit slots. Does not need late install order — creates new kits via ADD_KIT, does not patch existing ones.",
+      "kC": {
+        "multi": 3
+      },
+      "tp2n": "Multiclass Sorcerers"
+    },
+    {
+      "n": "Mage Kit: Arcanist (do not install if you plan to use 5E spellcasting for everyone)",
+      "cn": 82,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 82,
+      "wq": "exact",
+      "tp2n": "Mage Kit: Arcanist (do not install if you plan to use 5E spellcasting for everyone)"
+    },
+    {
+      "n": "Sorcerer Kit: Mana Sorcerer",
+      "cn": 85,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TomeAndBlood.tp2",
+      "wq": "verified",
+      "tp2n": "Sorcerer Kit: Mana Sorcerer",
+      "dep": "v18 author-marked DEPRECATED (still installable but discouraged)"
+    },
+    {
+      "n": "Spell Slot Items: Bonuses for both memorization and casting slots",
+      "no": "Intended for use with Multiclass Sorcerers and Arcanist components",
+      "cn": 92,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 92,
+      "wq": "exact",
+      "g": "spell_slot_items",
+      "scn": "Make +Spell Slot Items work with MultiSorcerers/Arcanists",
+      "x": 14,
+      "tp2n": "Bonuses for both memorization and casting slots"
+    },
+    {
+      "n": "Spell Slot Items: Bonuses for casting slots only",
+      "cn": 93,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 93,
+      "wq": "exact",
+      "g": "spell_slot_items",
+      "scn": "Make +Spell Slot Items work with MultiSorcerers/Arcanists",
+      "x": 14,
+      "tp2n": "Bonuses for casting slots only"
+    },
+    {
+      "n": "Multiclass Specialists",
+      "cn": 95,
+      "wf": "TomeAndBlood",
+      "wp": "TomeAndBlood\\TOMEANDBLOOD.TP2",
+      "wc": 95,
+      "wq": "exact",
+      "k": 24,
+      "no": "Adds 24 multiclass specialist mage kits: 8 schools (Abjurer, Conjurer, Diviner, Enchanter, Illusionist, Invoker, Necromancer, Transmuter) × 3 multiclass combos (Fighter/Mage, Cleric/Mage, Mage/Thief). MASSIVE kit cap impact — 24 slots. Uses ADD_KIT_EX, does not patch existing kits. Fixed kit count, not variable.",
+      "kC": {
+        "multi": 24
+      },
+      "tp2n": "Multiclass Specialists"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "partial",
+      "reason": "T&B Revised Dragon Disciples (#20) rewrites the DD kit. NPC_EE components #181, #724, #102, #484, #621 assign kits to specific NPCs. If both are installed, NPC_EE may assign the unrevised DD kit version. Install T&B before NPC_EE.",
+      "myComps": "#20 Revised Dragon Disciples",
+      "theirComps": "#181, #724, #102, #484, #621 (NPC-specific kit assignments)",
+      "source": "Component-level conflict. T&B modifies kit definition; NPC_EE assigns kits to NPCs. Load order resolves, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

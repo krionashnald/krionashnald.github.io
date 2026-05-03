@@ -1,0 +1,87 @@
+{
+  "i": 179,
+  "t": "l#coi-yvette",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 560,
+  "c": "NEW NPC MODS",
+  "n": "Colours of Infinity: Yvette Romance",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Yvette Romance Uses READLN for dialogue style selection during install. Choose 1 for original dialogues. Requires manual input. WARNING: EET_NPC_TRANSITION reports 7XCRE2/4/5/6.cre don't exist. Yvette CRE variants for BG1 transitions not found. Cosmetic — NPC works in BG2/ToB. ACTION_READLN stall — mod prompts for dialogue style choice (1 or 2) during install. Mod_installer now auto-responds with 1 in automated mode.",
+  "u": "https://downloads.weaselmods.net/download/yvette-romance/",
+  "a": "Lava Del'Vortel",
+  "v": "5.1",
+  "sum": "Romance mod adding Yvette as a joinable NPC for male protagonists, with content spanning both Shadows of Amn and Throne of Bhaal.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/yvette-romance/",
+  "pt": false,
+  "co": [
+    {
+      "n": "Yvette Romance - BG2 Romance Character",
+      "pi": "L#-COI-YVETTE",
+      "wf": "Yvette",
+      "wp": "Yvette\\Setup-Yvette.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "no": "mod_installer: ACTION_READLN for dialogue style choice. Uses READLN for dialogue style selection during install. Choose 1 for original dialogues, 2 for no action text. Requires manual input - cannot be fully automated.",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for dialogue style choice (1=original, 2=no action text). Requires manual input.",
+          "type": "manual"
+        }
+      ],
+      "tp2n": "Yvette Romance - BG2 Romance Character"
+    },
+    {
+      "n": "Yvette Romance - alternative class (Pure Heartwarder)",
+      "pi": "L#-COI-YVETTE-ALTCLASS",
+      "wf": "Yvette",
+      "wp": "Yvette\\Setup-Yvette.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1,
+      "tp2n": "Yvette Romance - alternative class (Pure Heartwarder)"
+    },
+    {
+      "n": "Alternative portrait based on MichelO's art",
+      "cn": 2,
+      "wf": "Yvette",
+      "wp": "Yvette\\Setup-Yvette.tp2",
+      "wc": 2,
+      "wq": "single_comp",
+      "no": "COMMENTED OUT in v5.1 tp2 — do not use.",
+      "gone": true
+    }
+  ]
+}

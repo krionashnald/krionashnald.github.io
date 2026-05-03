@@ -1,0 +1,437 @@
+{
+  "i": 349,
+  "t": "SubtleD_Item_Tweaks",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 90,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "SubtleD's Item Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "SubtleD's Item Tweaks by Subtledoctor. Item rebalancing, QoL tweaks, and specific item fixes. Some components require Item Revisions or Spell Revisions.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks armor/DEX tweaks are redundant with SubtleD's YARAS which provides its own configurable armor system",
+      "myComps": "#100 YARAS (Yet Another Revised Armor System)",
+      "theirComps": "#2100 Allow Thieving in Heavy Armor #2120 Allow Arcane Spellcasting in Heavy Armor #6060 NWN-ish Armor vs Dexterity #6070 Defensive Roll Thieves"
+    },
+    {
+      "with": "ZSTweaks",
+      "withId": 352,
+      "severity": "soft",
+      "reason": "Both modify the same items. Choose one version",
+      "myComps": "#1010 Backstab Immunity Ring #1020 Missile Deflection Gloves"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "SD IT components modify items that IR main (cn:0) also rewrites. YARAS (cn:100) conflicts with IR armor overhaul. Aesthetic (cn:111/112) and Weapons (cn:120) modify enchantment/damage on items IR also changes. Missile Deflection (cn:1020) and Rod of Absorption (cn:1051/1052) modify specific items. IR main (cn:0) — cn:1060 (Kensai Bracers) and cn:1070 (Thieves Wands). These are narrow standalone tweaks with no overlap to SD IT selected components (cn:111 standardizes enchantment naming, cn:120 weapon balance, cn:1020 gloves, cn:1051 rod). No conflict in current preset.",
+      "myComps": "#100 YARAS #111 #112 Aesthetic #120 Weapons #1020 Missile Deflection #1051 #1052 Rod of Absorption",
+      "theirComps": "#0 Item Revisions main (NOT in preset) #1060 Kensai Bracers #1070 Thieves Wands",
+      "orderOnly": true,
+      "source": "IR cn:0 rewrites item files wholesale; SD IT patches specific items; IR cn:1060/1070 are standalone CLAB/usability tweaks with no shared files, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify bard/mage armor casting restrictions",
+      "myComps": "#170 Armored Spellcasting for Bards",
+      "theirComps": "#2120 Allow Arcane Spellcasting in Heavy Armor"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "Only relevant if AK Red Wizard kit is installed (in ArtisansKitpack_npc, Both modify misc89.itm (Edwin amulet). AK Red Wizard, SD IT cn:1092 safely nerfs amulet without interference.",
+      "myComps": "#1091 #1092 #1093 Edwin Amulet nerf",
+      "orderOnly": true,
+      "theirComps": "Red Wizard kit (NOT in preset)",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "5": {
+      "spells": [
+        [
+          "SPWI102",
+          "tweak",
+          "Armored spellcasting enabled for bards"
+        ]
+      ]
+    },
+    "6": {
+      "spells": [
+        [
+          "SPWI516",
+          "tweak",
+          "Spell weapon APR set to 2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/subtledoctor/SubtleD_Item_Tweaks/releases",
+  "a": "Subtledoctor",
+  "v": "v1.5",
+  "sum": "Optional item tweaks including YARAS armor system, weapon tweaks, and individual item modifications.",
+  "tags": [
+    "tweak",
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "SubtleD_Item_Tweaks"
+  },
+  "dl": "https://github.com/subtledoctor/SubtleD_Item_Tweaks/releases",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "YARAS Yet Another Revised Armor System",
+      "tp2n": "YARAS Yet Another Revised Armor System",
+      "pi": "D5_YARAS",
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 100,
+      "wq": "known_folder",
+      "cn": 100
+    },
+    {
+      "n": "Aesthetic: Standardize Enchanted Equipment",
+      "tp2n": "Standardize Enchanted Equipment",
+      "no": "Standardizes enchanted equipment naming/descriptions. NOT for IWDEE. Pick one aesthetic option.",
+      "pi": "D5_LOW_MAGIC_ITEMS_BASIC",
+      "scn": "Aesthetic & Enchantment Tweaks",
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 111,
+      "wq": "known_folder",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 111,
+      "g": "aesthetic"
+    },
+    {
+      "n": "Aesthetic: Replace with Mastercraft",
+      "tp2n": "Replace Enchanted Equipment with Mastercraft",
+      "pi": "D5_LOW_MAGIC_ITEMS_HARDCORE",
+      "scn": "Aesthetic & Enchantment Tweaks",
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 112,
+      "wq": "known_folder",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 112,
+      "g": "aesthetic"
+    },
+    {
+      "n": "Functional Weapon Tweaks",
+      "tp2n": "Functional Weapon Tweaks",
+      "pi": "D5_FUNCTIONAL_WEAPON_TWEAKS",
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 120,
+      "wq": "known_folder",
+      "cn": 120
+    },
+    {
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "cn": 140,
+      "n": "IWDEE Item Tweaks",
+      "tp2n": "IWD Item Tweaks",
+      "pi": "D5_IWDEE_ITEM_TWEAKS",
+      "no": "IWDEE ONLY or requires IWD-in-EET. REQUIRE_PREDICATE GAME_IS ~iwdee~ OR MOD_IS_INSTALLED IWD1_EET cn:1."
+    },
+    {
+      "n": "All Potions Usable by Any Class",
+      "tp2n": "All Potions Usable by Any Class",
+      "no": "Removes class restrictions from all potions.",
+      "pi": "D5_UNIVERSAL_POTIONS",
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 160,
+      "wq": "name_match",
+      "cn": 160
+    },
+    {
+      "n": "Armored Spellcasting for Bards",
+      "tp2n": "Armored Spellcasting for Bards",
+      "cn": 170,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 170,
+      "wq": "exact"
+    },
+    {
+      "n": "Set Spell Weapon APR to 2",
+      "tp2n": "Set Spell Weapon APR to 2",
+      "no": "Also done by Bardic Wonders and cdtweaks",
+      "cn": 1000,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1000,
+      "wq": "exact"
+    },
+    {
+      "n": "Add Backstab Immunity to the Ring of Danger Sense",
+      "tp2n": "Add Backstab Immunity to the Ring of Danger Sense",
+      "no": "Adds backstab immunity to Ring of Danger Sense. Similar to ZSTweaks.",
+      "cn": 1010,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1010,
+      "wq": "exact"
+    },
+    {
+      "n": "Proper Missile Deflection for the Gloves of Missile Snaring",
+      "tp2n": "Proper Missile Deflection for the Gloves of Missile Snaring",
+      "no": "Fixes Gloves of Missile Snaring to properly deflect missiles. Similar to ZSTweaks.",
+      "cn": 1020,
+      "ss": 1,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1020,
+      "wq": "exact",
+      "splstates": 1
+    },
+    {
+      "n": "Improve Detonating Weapons",
+      "tp2n": "Improve Detonating Weapons",
+      "cn": 1030,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1030,
+      "wq": "exact"
+    },
+    {
+      "n": "Add Revised Barkskin to 'Skin of the Forest' Armor",
+      "tp2n": "Add Revised Barkskin to 'Skin of the Forest' Armor",
+      "cn": 1040,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1040,
+      "wq": "exact"
+    },
+    {
+      "n": "Rod of Absorption: Instantaneous Use",
+      "tp2n": "...Instantaneous Use",
+      "no": "Requires Item Revisions cn:0. Makes Rod of Absorption instantaneous. Will fail if IR main not installed.",
+      "cn": 1051,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1051,
+      "wq": "exact",
+      "g": "rod_absorption",
+      "scn": "Change IR's Rod of Absorption"
+    },
+    {
+      "n": "Rod of Absorption: Longer Protection",
+      "tp2n": "...Longer Protection",
+      "cn": 1052,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1052,
+      "wq": "exact",
+      "g": "rod_absorption",
+      "scn": "Change IR's Rod of Absorption",
+      "no": "Requires Item Revisions cn:0. Extends Rod of Absorption protection duration."
+    },
+    {
+      "n": "Permanent Fear Protection for the Badge of the Brave",
+      "tp2n": "Permanent Fear Protection for the Badge of the Brave",
+      "cn": 1055,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1055,
+      "wq": "exact",
+      "no": "Requires Badge of the Brave (amulbra.itm) from SoD content. May not be available if SoD items haven't been imported yet."
+    },
+    {
+      "n": "Make the Gargoyle Cloak Apply Stoneskin Instead of an AC Bonus",
+      "tp2n": "Make the Gargoyle Cloak Apply Stoneskin Instead of an AC Bonus",
+      "cn": 1060,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1060,
+      "wq": "exact"
+    },
+    {
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wq": "exact",
+      "cn": 1065,
+      "n": "Ring of Air Control Tweaks",
+      "tp2n": "Let the Ring or Air Control Cast Gust of Wind",
+      "no": "Requires ring28.itm and Item Revisions cn:0. Will fail if IR main not installed."
+    },
+    {
+      "n": "Make the Dwarven Thrower Hammer Usable by Non-Dwarves",
+      "tp2n": "Make the Dwarven Thrower Hammer Usable by Non-Dwarves",
+      "cn": 1070,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1070,
+      "wq": "exact"
+    },
+    {
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wq": "exact",
+      "cn": 1075,
+      "n": "Martial Staff Tweaks",
+      "tp2n": "Make the Martial Staff Grant +APR",
+      "no": "Requires staf08.itm. Modifies Staff of Striking."
+    },
+    {
+      "n": "Improve Azlaer's Harp and Methild's Harp",
+      "tp2n": "Improve Azlaer's Harp and Methild's Harp",
+      "no": "Doesn't cover Thrown Hammers' IWD copy",
+      "cn": 1080,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1080,
+      "wq": "exact"
+    },
+    {
+      "n": "Edwin Amulet: Only +1 bonus per level",
+      "tp2n": "Only +1 Bonus Slot per Spell Level",
+      "no": "Overlaps with AK red wizard kit but can coexist",
+      "cn": 1091,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1091,
+      "wq": "exact",
+      "g": "edwin_amulet",
+      "scn": "Nerf Edwin's Amulet"
+    },
+    {
+      "n": "Edwin Amulet: Limited to 7th level",
+      "tp2n": "Limit Bonus Slots to 7th Level Spells",
+      "cn": 1092,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1092,
+      "wq": "exact",
+      "g": "edwin_amulet",
+      "scn": "Nerf Edwin's Amulet"
+    },
+    {
+      "n": "Edwin Amulet: +1 bonus AND limited to 7th",
+      "tp2n": "Only +1 Bonus Slots AND Limited to 7th Level",
+      "cn": 1093,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1093,
+      "wq": "exact",
+      "g": "edwin_amulet",
+      "scn": "Nerf Edwin's Amulet"
+    },
+    {
+      "n": "Metamagic Instead of MR for Cloak of the Weave",
+      "tp2n": "Metamagic Instead of MR for Cloak of the Weave",
+      "cn": 1100,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1100,
+      "wq": "exact",
+      "no": "Requires Item Revisions cn:0. Replaces magic resistance with metamagic on Cloak of the Weave. Will fail if IR main not installed."
+    },
+    {
+      "n": "Free 1st-level Spellcasting for Some Items",
+      "tp2n": "Free 1st-level Spellcasting for Some Items",
+      "no": "Requires d5zclons.2da (from SubtleD Spell Tweaks). Grants free 1st-level casting to select items.",
+      "cn": 1109,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1109,
+      "wq": "exact"
+    },
+    {
+      "n": "Rings of Wizardry: Replace Evermemory with Ring of Acuity",
+      "tp2n": "Replace Evermemory with a Ring of Acuity",
+      "no": "Known bug: Failure(\"Unknown function: tweak_casting_items\")",
+      "cn": 1113,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1113,
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "g": "rings_wizardry",
+      "scn": "Change Rings of Wizardry"
+    },
+    {
+      "n": "Rings of Wizardry: Replace Ring of Acuity with Evermemory",
+      "tp2n": "Replace the Ring of Acuity with Evermemory",
+      "cn": 1114,
+      "wf": "SubtleD_Item_Tweaks",
+      "wp": "SubtleD_Item_Tweaks\\SUBTLED_ITEM_TWEAKS.TP2",
+      "wc": 1114,
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "g": "rings_wizardry",
+      "scn": "Change Rings of Wizardry"
+    }
+  ]
+}

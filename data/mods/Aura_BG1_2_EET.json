@@ -1,0 +1,214 @@
+{
+  "i": 729,
+  "t": "Aura_BG1_2_EET",
+  "sv": 1,
+  "lang": 1,
+  "pfx": "C0",
+  "ord": 50,
+  "c": "NEW NPC MODS",
+  "n": "Aura NPC",
+  "v": "3.4",
+  "no": "Aura NPC by TheArtisan. Joinable companion across BG1, SoD, and BG2. Multiple class options (Thief, Mage/Thief, Cleric/Thief, Bard). Recruitable in Beregost (BG1), Coast Way (SoD), Slums (BG2).",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "aura",
+          "portraits/aura_bg1_2_eet/c0aura.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/TheArtisanBG/Aura_BG1_BG2_EET/",
+  "a": "AionZ",
+  "eet_compat": {
+    "ver": "v3.2",
+    "place": "post"
+  },
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/TheArtisanBG/Aura_BG1_BG2_EET/",
+  "sum": "Joinable Aura NPC across BG1, SoD, and BG2. Recruitable in Beregost (BG1), Coast Way (SoD), Slums (BG2). Multiple class options including Thief, Mage/Thief, Cleric/Thief, and Bard.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "co": [
+    {
+      "n": "Aura NPC for Baldur's Gate: Enhanced Edition",
+      "cn": 0,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee"
+      ],
+      "g": "aura_game",
+      "no": "Installs Aura for BG1:EE standalone.",
+      "wc": 0,
+      "tp2n": "Aura NPC for Baldur's Gate: Enhanced Edition"
+    },
+    {
+      "n": "Aura NPC for Baldur's Gate 2: Enhanced Edition",
+      "cn": 1,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee"
+      ],
+      "g": "aura_game",
+      "no": "Installs Aura for BG2:EE standalone.",
+      "wc": 1,
+      "tp2n": "Aura NPC for Baldur's Gate 2: Enhanced Edition"
+    },
+    {
+      "n": "Aura NPC for Enhanced Edition Trilogy",
+      "cn": 2,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "g": "aura_game",
+      "no": "Installs Aura for EET (covers BG1 through ToB).",
+      "wc": 2,
+      "tp2n": "Aura NPC for Baldur's Gate: Enhanced Edition Trilogy"
+    },
+    {
+      "n": "Class: Artificer (Thief)",
+      "cn": 3,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "g": "aura_class",
+      "scn": "Choose a class for Aura:",
+      "no": "Aura as a pure Thief (Artificer kit).",
+      "wc": 3,
+      "tp2n": "Artificer (Thief)"
+    },
+    {
+      "n": "Class: Illusionist/Artificer (Mage/Thief)",
+      "cn": 4,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "g": "aura_class",
+      "scn": "Choose a class for Aura:",
+      "no": "Aura as a Mage/Thief multiclass.",
+      "wc": 4,
+      "tp2n": "Illusionist / Artificer (Mage / Thief)"
+    },
+    {
+      "n": "Class: Priestess/Artificer (Cleric/Thief)",
+      "cn": 5,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "g": "aura_class",
+      "scn": "Choose a class for Aura:",
+      "no": "Aura as a Cleric/Thief multiclass.",
+      "wc": 5,
+      "tp2n": "Priestess / Artificer (Cleric / Thief)"
+    },
+    {
+      "n": "Class: Artificer (Bard, EEex required)",
+      "cn": 6,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "g": "aura_class",
+      "scn": "Choose a class for Aura:",
+      "no": "Aura as a Bard (Artificer). Requires EEex.",
+      "wc": 6,
+      "tp2n": "Artificer (Bard, EEex required)"
+    },
+    {
+      "n": "NPC Portraits",
+      "cn": 7,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "no": "Adds portraits for NPCs that appear in Aura's questline.",
+      "wc": 7,
+      "tp2n": "Aura NPC for Baldur's Gate 2: Enhanced Edition-NPC Portraits"
+    },
+    {
+      "n": "Alternate 1 (Omar Diaz)",
+      "cn": 8,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 1 (Omar Diaz)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Alternate 2 (Pantalion)",
+      "cn": 9,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 2 (Pantalion)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Alternate 3 (The Artisan, edited from Neverwinter Nights)",
+      "cn": 10,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Alternate 3 (The Artisan, edited from Neverwinter Nights)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Original BG1 Default (Lava Del'Vortel)",
+      "cn": 11,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Original BG1 Default (Lava Del'Vortel)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Second BG1 Default (Lava Del'Vortel)",
+      "cn": 12,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Second BG1 Default (Lava Del'Vortel)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Original BG2 Default (The Artisan)",
+      "cn": 13,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "verified",
+      "tp2n": "Original BG2 Default (The Artisan)",
+      "scn": "Choose an alternate portrait for Aura:"
+    },
+    {
+      "n": "Import BG1 upgrades into BG2",
+      "cn": 14,
+      "wf": "Aura_BG1_2_EET",
+      "wp": "Aura_BG1_2_EET\\Setup-Aura_BG1_2_EET.tp2",
+      "wq": "exact",
+      "no": "Carries over upgraded items from Aura's BG1 content into BG2.",
+      "wc": 14,
+      "tp2n": "Aura NPC for Baldur's Gate 2: Enhanced Edition-Import BG1 upgrades into BG2"
+    }
+  ],
+  "gh": {
+    "o": "TheArtisanBG",
+    "r": "Aura_BG1_BG2_EET"
+  }
+}

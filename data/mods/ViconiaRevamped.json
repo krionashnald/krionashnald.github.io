@@ -1,0 +1,565 @@
+{
+  "i": 225,
+  "t": "ViconiaRevamped",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 310,
+  "c": "NPC EXPANSIONS",
+  "n": "Viconia Revamped",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2
+  },
+  "no": "Viconia Revamped v Class choice You can do the same with other NPC class customization mods, but this cuts the chase a bit Note: The Darkcloak options for F&P won't work for the updated versions of F&P (the installer IDs were changed, they can easily be corrected)",
+  "conflicts": [
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Both change Viconia's class/kit. Choose one method.",
+      "myComps": "#0, #1, #2, #3, #4, #10, #11, #12, #13, #14, #15",
+      "theirComps": "#2000 NPC Customization",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "hard",
+      "reason": "Both change Viconia's class/kit. Choose one method.",
+      "myComps": "#0, #1, #2, #3, #4, #10, #11, #12, #13, #14, #15",
+      "theirComps": "#610",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "myComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "myComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "myComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "myComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "myComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "6": [
+        [
+          "viconia",
+          "portraits/default_bg1/viconia.png",
+          "bg1"
+        ]
+      ],
+      "7": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "bg2"
+        ]
+      ],
+      "8": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "sod"
+        ]
+      ],
+      "9": [
+        [
+          "viconia",
+          "portraits/viconia_revamped/viconia.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/viconia-revamped/",
+  "a": "Lava Del'Vortel, Argent77",
+  "v": "v7.3",
+  "sum": "Major overhaul of Viconia with 21 components: rewritten dialogue, expanded romance, new quests, and deeper character development across BG2/ToB.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Argent77 & Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/viconia-revamped/",
+  "co": [
+    {
+      "n": "Dual-class: Thief/Cleric",
+      "pi": "L#-VIC-REV-D-TH-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "g": "k",
+      "tp2n": "Dual-class: Thief/Cleric"
+    },
+    {
+      "n": "Dual-class: Assassin/Cleric",
+      "pi": "L#-VIC-REV-D-A-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1,
+      "g": "k",
+      "tp2n": "Dual-class: Assassin/Cleric"
+    },
+    {
+      "n": "Dual-class: Shadowdancer/Cleric",
+      "pi": "L#-VIC-REV-D-SH-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 2,
+      "g": "k",
+      "tp2n": "Dual-class: Shadowdancer/Cleric"
+    },
+    {
+      "n": "Dual-class: Nightcloak of Shar",
+      "pi": "L#-VIC-REV-D-NI-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 3,
+      "g": "k",
+      "tp2n": "Dual-class: Nightcloak of Shar"
+    },
+    {
+      "n": "Dual-class: Darkcloak of Shar",
+      "pi": "L#-VIC-REV-D-DA-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 4,
+      "g": "k",
+      "tp2n": "Dual-class: Darkcloak of Shar"
+    },
+    {
+      "n": "Multi-class: Thief/Cleric",
+      "pi": "L#-VIC-REV-M-TH-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10,
+      "g": "k",
+      "tp2n": "Multi-class: Thief/Cleric"
+    },
+    {
+      "n": "Multi-class: Assassin/Cleric",
+      "pi": "L#-VIC-REV-M-A-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 11,
+      "g": "k",
+      "tp2n": "Multi-class: Assassin/Cleric"
+    },
+    {
+      "n": "Multi-class: Shadowdancer/Cleric",
+      "pi": "L#-VIC-REV-M-SH-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 12,
+      "g": "k",
+      "tp2n": "Multi-class: Shadowdancer/Cleric"
+    },
+    {
+      "n": "Multi-class: Nightcloak of Shar",
+      "pi": "L#-VIC-REV-M-NI-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 13,
+      "g": "k",
+      "tp2n": "Multi-class: Nightcloak of Shar"
+    },
+    {
+      "n": "Multi-class: Darkcloak of Shar",
+      "pi": "L#-VIC-REV-M-DA-C",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 14,
+      "g": "k",
+      "tp2n": "Multi-class: Darkcloak of Shar"
+    },
+    {
+      "n": "Multi-class: Cleric/Mage",
+      "pi": "L#-VIC-REV-M-C-M",
+      "scn": "Viconia Revamped",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 15,
+      "g": "k",
+      "tp2n": "Multi-class: Cleric/Mage"
+    },
+    {
+      "n": "Use Baldur's Gate portrait",
+      "no": "v Portraits",
+      "pi": "L#-VIC-REV-POR-1",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 50,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 50,
+      "g": "p",
+      "tp2n": "Use Baldur's Gate portrait"
+    },
+    {
+      "n": "Use Baldur's Gate 2 portrait",
+      "pi": "L#-VIC-REV-POR-2",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 51,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 51,
+      "g": "p",
+      "tp2n": "Use Baldur's Gate 2 portrait"
+    },
+    {
+      "n": "Use Siege of Dragonspear portrait",
+      "pi": "L#-VIC-REV-POR-3",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 52,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 52,
+      "g": "p",
+      "tp2n": "Use Siege of Dragonspear portrait"
+    },
+    {
+      "n": "Use recolored Baldur's Gate portrait (drow skin and hair)",
+      "pi": "L#-VIC-REV-POR-4",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 53,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 53,
+      "g": "p",
+      "tp2n": "Use recolored Baldur's Gate portrait (drow skin and hair)"
+    },
+    {
+      "n": "Use recolored Baldur's Gate 2 portrait (partially blue clothing)",
+      "pi": "L#-VIC-REV-POR-5",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 54,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 54,
+      "g": "p",
+      "tp2n": "Use recolored Baldur's Gate 2 portrait (partially blue clothing)"
+    },
+    {
+      "n": "Use restored Baldur's Gate 2 Demo portrait (BG1 style)",
+      "pi": "L#-VIC-REV-POR-6",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 55,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 55,
+      "g": "p",
+      "tp2n": "Use restored Baldur's Gate 2 Demo portrait (BG1 style)"
+    },
+    {
+      "n": "Use restored Baldur's Gate 2 Demo portrait (BG2 style)",
+      "pi": "L#-VIC-REV-POR-7",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 56,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 56,
+      "g": "p",
+      "tp2n": "Use restored Baldur's Gate 2 Demo portrait (BG2 style)"
+    },
+    {
+      "n": "Use improved Siege of Dragonspear portrait",
+      "pi": "L#-VIC-REV-POR-8",
+      "scn": "Portraits for Viconia",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 57,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 57,
+      "g": "p",
+      "tp2n": "Use improved Siege of Dragonspear portrait"
+    },
+    {
+      "n": "Add special ability: Embrace of Shar",
+      "pi": "L#-VIC-REV-ABI",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 60,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 60,
+      "tp2n": "Add special ability: Embrace of Shar"
+    },
+    {
+      "n": "Apply drow penalty: Day Blindness",
+      "pi": "L#-VIC-REV-DPENA",
+      "wf": "ViconiaRevamped",
+      "wp": "ViconiaRevamped\\setup-ViconiaRevamped.tp2",
+      "wc": 70,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 70,
+      "tp2n": "Apply drow penalty: Day Blindness"
+    }
+  ]
+}

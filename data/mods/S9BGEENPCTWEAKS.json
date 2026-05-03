@@ -1,0 +1,306 @@
+{
+  "i": 510,
+  "t": "S9BGEENPCTWEAKS",
+  "sv": 1,
+  "ord": 350,
+  "c": "NPC CUSTOMIZATION",
+  "n": "S9 BG:EE NPC Tweaks",
+  "no": "Abandoned — author (Smeagolheart) inactive, no GitHub mirror. GitHub repo deleted by author. Tweaks NPC stats and alignments for BG:EE. Install in post-tactical tweaks section.",
+  "conflicts": [
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "soft",
+      "reason": "Functionality provided by NPC EE (per II install notes)",
+      "myComps": "#3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments #14 Dual-class stats",
+      "theirComps": "#2000 NPC class/stat/kit choices"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks NPC kit/class tweaks overlap with S9 NPC Tweaks",
+      "myComps": "#9 Khalid Fighter/Mage #12 Shar-Teel Barbarian",
+      "theirComps": "#4090 #4080 NPC tweaks"
+    },
+    {
+      "with": "HIDEKT",
+      "withId": 691,
+      "severity": "hard",
+      "reason": "Both assign kits to NPCs. Hidden Kits replaces CRE files wholesale.",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 NPC kits",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/58941/mod-bgeenpc-tweaks-for-bgee-sod-bg2ee-eet",
+  "a": "Smeagolheart",
+  "sum": "15 tweaks specifically for BG1 NPCs: stat adjustments, kit assignments, and class fixes for original Baldur's Gate companions.",
+  "tags": [
+    "tweak",
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD"
+  ],
+  "au": "Smeagolheart",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://forums.beamdog.com/discussion/58941/mod-bgeenpc-tweaks-for-bgee-sod-bg2ee-eet",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "s9_schae",
+          "portraits/s9bgeenpctweaks/schae.png",
+          "bg1"
+        ],
+        [
+          "s9_sharte",
+          "portraits/s9bgeenpctweaks/sharte.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Make Kivan an Archer",
+      "cn": 10,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 48,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Kivan an Archer",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Add Priest of Tempus kit",
+      "cn": 20,
+      "wf": "S9BGEENPCTWEAKS",
+      "wp": "S9BGEENPCTWEAKS\\S9BGEENPCTWEAKS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Add Priest of Tempus kit"
+    },
+    {
+      "n": "Convenient NPCs",
+      "cn": 30,
+      "wf": "S9BGEENPCTWEAKS",
+      "wp": "S9BGEENPCTWEAKS\\S9BGEENPCTWEAKS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Convenient NPCs"
+    },
+    {
+      "n": "Make Branwen a Priest of Tempus",
+      "cn": 41,
+      "wf": "S9BGEENPCTWEAKS",
+      "wp": "S9BGEENPCTWEAKS\\S9BGEENPCTWEAKS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Branwen a Priest of Tempus"
+    },
+    {
+      "n": "Make Dynaheir a Sorcerer",
+      "cn": 4,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 42,
+      "wq": "log",
+      "tp2n": "Make Dynaheir a Sorcerer"
+    },
+    {
+      "n": "Make Eldoth a Jester",
+      "cn": 5,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 43,
+      "wq": "log",
+      "tp2n": "Make Eldoth a Jester"
+    },
+    {
+      "n": "Make Faldorn an Avenger",
+      "cn": 6,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 44,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Faldorn an Avenger",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Garrick a Skald",
+      "cn": 7,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 45,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Garrick a Skald",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Kagain a Dwarven Defender",
+      "cn": 8,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 46,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Kagain a Dwarven Defender",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Khalid a Fighter/Mage",
+      "cn": 9,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 47,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Khalid a Fighter/Mage",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Safana a Swashbuckler",
+      "cn": 11,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 49,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Safana a Swashbuckler",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Shar-Teel a Barbarian",
+      "cn": 12,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 51,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Shar-Teel a Berserker",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Make Skie a Shadowdancer",
+      "cn": 13,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 52,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Shar-Teel a Barbarian",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Dual Class Friendly Stats for Branwen, Dynaheir, Safana and Xzar",
+      "cn": 14,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 60,
+      "wq": "log",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Make Skie a Shadowdancer",
+      "scn": "Shar-Teel's Class",
+      "grn": "Adjust NPC Classes"
+    },
+    {
+      "n": "Dual Class Friendly Stats for Branwen, Dynaheir, Safana and Xzar",
+      "cn": 60,
+      "wf": "S9BGEENPCTWEAKS",
+      "wp": "S9BGEENPCTWEAKS\\S9BGEENPCTWEAKS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Dual Class Friendly Stats for Branwen, Dynaheir, Safana and Xzar"
+    },
+    {
+      "n": "S9 BG:EE NPC Tweaks",
+      "cn": 0,
+      "wf": "S9BGEENPCTWEAKS",
+      "wp": "S9BGEENPCTWEAKS\\S9BGEENPCTWEAKS.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "gone": true
+    },
+    {
+      "n": "NPC Portraits",
+      "cn": 1,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 10,
+      "wq": "log",
+      "gone": true
+    },
+    {
+      "n": "Convenient NPCs",
+      "cn": 2,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 30,
+      "wq": "log",
+      "gone": true
+    },
+    {
+      "n": "Make Branwen a Priest of Tempus",
+      "cn": 3,
+      "wf": "S9BGEENPCTWEAKS",
+      "wc": 41,
+      "wq": "log",
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS NPC customization may override s9 kit assignments",
+      "orderOnly": true,
+      "myComps": "#3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments",
+      "theirComps": "#4100 Improved NPC customization",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify BG1 NPC kits and convenience features. May conflict on overlapping NPCs",
+      "myComps": "#2 Convenient NPCs #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

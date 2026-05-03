@@ -1,0 +1,79 @@
+{
+  "i": 141,
+  "t": "Coran",
+  "sv": 1,
+  "ord": 200,
+  "c": "NEW NPC MODS",
+  "n": "Coran NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2,
+    "de": 3
+  },
+  "no": "Coran BG2 Adds Coran the CG Male Elf Fighter/Thief to BG2 as a recruitable companion.Install Coran for BG2 before Mazzy Megamod and Detective’s Guild of Athkatla.",
+  "conflicts": [
+    {
+      "with": "RE",
+      "withId": 86,
+      "severity": "partial",
+      "reason": "RE's Coran encounter extends C6CORAN dialogue (vanilla Ch6 cameo). Coran NPC mod replaces C6CORAN entirely, making the extension point invalid",
+      "myComps": "#0 Main Component",
+      "theirComps": "#10 A Night with Coran"
+    },
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Coran in BG2. Standalone Coran (by Domi/PPG) is more feature-rich with full romance and quest content. BG1NPCinSoA auto-skips its Coran if standalone detected.",
+      "myComps": "#0 Coran NPC",
+      "theirComps": "#20 Coran & Safana",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME O#Coran.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/Coran_for_BGII",
+  "a": "Domi",
+  "v": "v9",
+  "sum": "Continues Coran's story into BG2/ToB as a joinable NPC with new quests, banters, and romance content.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v6",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Coran_for_BGII"
+  },
+  "au": "Kulyok",
+  "dl": "https://github.com/Pocket-Plane-Group/Coran_for_BGII",
+  "pt": false,
+  "co": [
+    {
+      "n": "Coran NPC MOD for Baldur's Gate II",
+      "pi": "O#CoranBGII-main",
+      "wf": "coran",
+      "wp": "coran\\CORAN.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "tp2n": "Coran NPC MOD for Baldur's Gate II"
+    },
+    {
+      "n": "Delete old Coran from the Forest of Tethyr (RECOMMENDED)",
+      "pi": "O#CoranBGII-Delete_original_Coran",
+      "wf": "coran",
+      "wp": "coran\\CORAN.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "tp2n": "Delete old Coran from the Forest of Tethyr (RECOMMENDED)"
+    }
+  ]
+}

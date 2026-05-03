@@ -1,0 +1,213 @@
+{
+  "i": 192,
+  "t": "a7-djinnicompanion",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 680,
+  "c": "NEW NPC MODS",
+  "n": "Afaaq, the Djinni Companion",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "zh-cn": 3
+  },
+  "no": "Afaaq, the Djinni Companion by Argent77. Joinable djinni NPC for BG2/ToB. Install after Ajantis BG1, Ajantis BG2, Alternatives, Brage Redemption, Brandock, Expanded Thief Stronghold, Imoen4Ever. Install before Grey the Dog.",
+  "dependencies": [
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "soft",
+      "reason": "Recommended: install Ascension before Afaaq for best experience, but not required"
+    },
+    {
+      "requires": "wheels",
+      "requiresId": 112,
+      "type": "soft",
+      "reason": "Recommended: install Wheels of Prophecy before Afaaq for best experience, but not required"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "afaaq",
+          "portraits/djinni/a7afaaq.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "http://www.shsforums.net/forum/651-djinni-companion/",
+  "a": "Argent77",
+  "v": "v2.11",
+  "sum": "Adds Afaaq, a djinni, as a joinable NPC companion in Baldur's Gate II with his own dialogue, quests, and interactions.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v2.2",
+    "place": "post"
+  },
+  "au": "Argent77",
+  "dl": "https://github.com/Argent77/DjinniCompanion",
+  "co": [
+    {
+      "n": "Full Version (includes quests, banters and more)",
+      "pi": "A7-DJINNICOMPANION-MAIN_FULL",
+      "scn": "Afaaq, the Djinni Companion",
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "g": "afaaq_version",
+      "tp2n": "Full Version (includes quests, banters and more)"
+    },
+    {
+      "n": "Light Version (the djinni only)",
+      "pi": "A7-DJINNICOMPANION-MAIN_LIGHT",
+      "scn": "Afaaq, the Djinni Companion",
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1,
+      "g": "afaaq_version",
+      "tp2n": "Light Version (the djinni only)"
+    },
+    {
+      "n": "Afaaq, the Djinni Companion (IWD:EE version)",
+      "cn": 2,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "Afaaq, the Djinni Companion (IWD:EE version)",
+      "pi": "A7-DJINNICOMPANION-MAIN_IWDEE"
+    },
+    {
+      "n": "15 Minutes",
+      "cn": 101,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "15 Minutes",
+      "pi": "A7-DJINNICOMPANION-BANTER_15",
+      "scn": "Change banter frequency (only affects the djinni, default: 60 Minutes)",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "30 Minutes",
+      "cn": 102,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "30 Minutes",
+      "pi": "A7-DJINNICOMPANION-BANTER_30",
+      "scn": "Change banter frequency (only affects the djinni, default: 60 Minutes)",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "45 Minutes",
+      "cn": 103,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "45 Minutes",
+      "pi": "A7-DJINNICOMPANION-BANTER_45",
+      "scn": "Change banter frequency (only affects the djinni, default: 60 Minutes)",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "90 Minutes",
+      "cn": 104,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "90 Minutes",
+      "pi": "A7-DJINNICOMPANION-BANTER_90",
+      "scn": "Change banter frequency (only affects the djinni, default: 60 Minutes)",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "120 Minutes",
+      "cn": 105,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "120 Minutes",
+      "pi": "A7-DJINNICOMPANION-BANTER_120",
+      "scn": "Change banter frequency (only affects the djinni, default: 60 Minutes)",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "Remove Afaaq's banter soundtrack?",
+      "pi": "A7-DJINNICOMPANION-REMOVE_SOUNDTRACK",
+      "grn": "Tweaks",
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wc": 200,
+      "wq": "manual_final",
+      "cn": 200,
+      "x": 0,
+      "no": "Removes ambient music that plays during Afaaq's banters.",
+      "rd": 0,
+      "tp2n": "Remove Afaaq's banter soundtrack?"
+    },
+    {
+      "n": "Alternate djinni portrait by Ulb",
+      "pi": "A7-DJINNICOMPANION-ALTERNATE_PORTRAIT",
+      "grn": "Tweaks",
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wc": 300,
+      "wq": "manual_final",
+      "cn": 300,
+      "x": 0,
+      "no": "Replaces default djinni portrait with alternate by Ulb.",
+      "rd": 0,
+      "tp2n": "Alternate djinni portrait by Ulb"
+    },
+    {
+      "n": "Disable IWD:EE Quest?",
+      "cn": 400,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "Disable IWD:EE Quest?",
+      "pi": "A7-DJINNICOMPANION-IWDEE_DISABLE_QUESTS",
+      "grn": "Tweaks"
+    },
+    {
+      "n": "Add Infinity Animation creatures?",
+      "cn": 900,
+      "wf": "DjinniCompanion",
+      "wp": "DjinniCompanion\\DjinniCompanion.tp2",
+      "wq": "verified",
+      "tp2n": "Add Infinity Animation creatures?",
+      "pi": "A7-DJINNICOMPANION-ADD_IA_CREATURES",
+      "grn": "Tweaks"
+    }
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "DjinniCompanion"
+  }
+}

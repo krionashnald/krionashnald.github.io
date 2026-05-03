@@ -1,0 +1,116 @@
+{
+  "i": 276,
+  "t": "swordap",
+  "sv": 1,
+  "ord": 220,
+  "c": "ITEM ADDITION MODS",
+  "n": "Improved HaerDalis Swords",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "pl": 3,
+    "fr": 4,
+    "it": 5
+  },
+  "no": "Improved Haer'Dalis' swords",
+  "u": "https://github.com/SpellholdStudios/HaerDalis_Swords/releases",
+  "a": "Badgert, Kania Blade",
+  "v": "v3.1.0",
+  "sum": "This mod allows you to upgrade Haer'Dalis' swords in the Underdark.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "HaerDalis_Swords"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "NEWS06",
+          "short sword",
+          "Chaos Blade",
+          "Chaos is a +2 short sword usable only by tieflings. Every time it strikes an opponent, he or she loses 2 points of Dexterity for 5 rounds. Haer'Dalis prefers using Chaos with its partner—Entropy. When dual wielding these two blades, Haer'Dalis is a dangerous opponent.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target loses 2 points of Dexterity per hit for 5 rounds\n\nTHAC0: +2\nDamage: 1d6+2 (piercing)\nSpeed Factor: 1\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "races": [
+                "Half-Orc"
+              ],
+              "minStr": 17,
+              "minDex": 17,
+              "minCon": 9,
+              "minInt": 15,
+              "minWis": 13,
+              "minCha": 16
+            }
+          }
+        ],
+        [
+          "NEWS05",
+          "short sword",
+          "Entropy +2",
+          "This +2 abyssal greensteel blade is one of Haer'Dalis's favorite weapons. This short sword is capable of inflicting an additional 3 points of poison damage if the target fails a Saving Throw. This blade may only be used by tieflings.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target must save vs. Poison or suffer 3 points of poison damage\n\nTHAC0: +2\nDamage: 1d6+2 (piercing)\nSpeed Factor: 1\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "races": [
+                "Half-Orc"
+              ],
+              "minStr": 17,
+              "minDex": 17,
+              "minCon": 9,
+              "minInt": 15,
+              "minWis": 13,
+              "minCha": 16
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/SpellholdStudios/HaerDalis_Swords/releases",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Improved Haer'Dalis' swords (special for Kania)",
+      "tp2n": "Improved Haer'Dalis' swords (special for Kania)",
+      "cn": 0,
+      "wf": "swordap",
+      "wp": "swordap\\SWORDAP.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "it": 2,
+      "itC": {
+        "short sword": 2
+      }
+    }
+  ]
+}

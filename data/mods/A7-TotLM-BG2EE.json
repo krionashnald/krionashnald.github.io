@@ -1,0 +1,233 @@
+{
+  "i": 297,
+  "t": "A7-TotLM-BG2EE",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 70,
+  "c": "SPELL MODS",
+  "n": "Trials of the Luremaster",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "ru": 4,
+    "es": 5,
+    "pl": 6,
+    "pt-br": 7,
+    "zh-cn": 8
+  },
+  "no": "Ports IWD's Trials of the Luremaster as a full dungeon crawl in BG2. In SPELL MODS category because it COPY's 52 IWD spell files (spwi/sppr) into hardcoded SPELL.IDS slots shared with IWDification, SCS IWD spells, and ToF. Install order relative to these mods matters — whichever installs last gets the final spell version. At ord:70, it installs after IWDification (30) and MiH SP (60) but before SCS spell components.",
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "NOT a conflict. EET cn:4040 imports player inventory to Irenicus Dungeon (AR0602). TotLM adds new IWD quest content in new areas (ID97xx). Different items, different locations, no overlap.",
+      "myComps": "#0",
+      "theirComps": "#4040",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "partial",
+      "reason": "Different sets of IWD spells cannot be installed together",
+      "myComps": "#10",
+      "theirComps": "#30, #40, #50",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "IWD1_EET",
+      "withId": 643,
+      "severity": "soft",
+      "reason": "If both installed, IWD1_EET must go FIRST. Some TotLM creature/scripting improvements not available with both. TotLM v3.1+ has explicit IWD-in-EET support",
+      "myComps": "#0 Trials of the Luremaster for Baldur's Gate"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURTOTLM1",
+          "wizard",
+          5,
+          "Conjuration",
+          "Conjure Water Elemental",
+          "Summons water elemental (TotLM content)."
+        ],
+        [
+          "YOURTOTLM2",
+          "wizard",
+          7,
+          "Evocation",
+          "Acid Storm",
+          "Acid rain 1d6/round for 5 rounds (TotLM content)."
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Trials of the Luremaster\\]|cannot convert value1 to an integer.*\\.are",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Container index out of bounds when placing IWD spell scrolls in modded area files. Other mods may have altered container layouts (e.g. ar1303.are De'Arnise Keep), causing ADD_AREA_ITEM to fail.",
+      "workaround": "Apply eet-mod-forge-patches, or manually add container count validation (READ_SHORT 0x74) before ADD_AREA_ITEM calls in A7-TotLM-BG2EE/lib/spells_player.tph.",
+      "user_action": "apply-patches",
+      "components": [
+        0
+      ],
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "u": "http://www.shsforums.net/files/file/1251-trials-of-the-luremaster-for-bg2ee/",
+  "a": "Argent77",
+  "v": "4.3",
+  "sum": "Ports the IWD Trials of the Luremaster spells and items into BG2. Adds unique IWD-exclusive magical content.",
+  "tags": [
+    "quest",
+    "item"
+  ],
+  "ph": [
+    "SoD",
+    "SoA"
+  ],
+  "dl": "http://www.shsforums.net/files/file/1251-trials-of-the-luremaster-for-bg2ee/",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Trials of the Luremaster for Baldur's Gate",
+      "tp2n": "Trials of the Luremaster for Baldur's Gate",
+      "pi": "A7-TOTLM-BG2EE-MAIN",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee"
+      ],
+      "cn": 0,
+      "no": "Ports the IWD:HoW expansion Trials of the Luremaster to BG2EE. Major dungeon crawl. INSTALL FIX APPLIED: spells_player.tph — added container count validation before ADD_AREA_ITEM. In modded EET installs, other mods may alter container layouts in area files (e.g. ar1303.are De'Arnise Keep), causing out-of-bounds container access ('cannot convert value1 to an integer'). Fix reads container count from offset 0x74 and skips if index exceeds bounds. Without fix, one or two IWD spell scrolls may not be placed in the De'Arnise Keep. Users: add READ_SHORT 0x74 are_container_count and bounds check before the ADD_AREA_ITEM call in A7-TotLM-BG2EE/lib/spells_player.tph.",
+      "sp": 36,
+      "spLv": {
+        "p2": 1,
+        "p3": 2,
+        "p4": 7,
+        "p5": 1,
+        "p6": 1,
+        "p7": 3,
+        "w2": 1,
+        "w3": 1,
+        "w4": 6,
+        "w5": 2,
+        "w6": 2,
+        "w7": 2
+      }
+    },
+    {
+      "n": "Rebalance weapons and equipment",
+      "tp2n": "Rebalance weapons and equipment",
+      "pi": "A7-TOTLM-BG2EE-REBALANCE_ITEMS",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 20,
+      "x": 0,
+      "no": "Adjusts TotLM items to fit BG2 power levels. Recommended"
+    },
+    {
+      "n": "Reduce XP: 25%",
+      "tp2n": "Reduce by 25 percent",
+      "no": "The XP unbalance is real. Consider installing one of these.",
+      "pi": "A7-TOTLM-BG2EE-REDUCE_XP_BY_25",
+      "scn": "Reduce experience from monsters and quests",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "cn": 30,
+      "g": "totlm_xp_reduce",
+      "x": 0
+    },
+    {
+      "n": "Reduce XP: 50%",
+      "tp2n": "Reduce by 50 percent",
+      "pi": "A7-TOTLM-BG2EE-REDUCE_XP_BY_50",
+      "scn": "Reduce experience from monsters and quests",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 31,
+      "wq": "verified",
+      "cn": 31,
+      "g": "totlm_xp_reduce",
+      "x": 0,
+      "no": "50% XP reduction — for balanced integration"
+    },
+    {
+      "n": "Reduce XP: 75%",
+      "tp2n": "Reduce by 75 percent",
+      "pi": "A7-TOTLM-BG2EE-REDUCE_XP_BY_75",
+      "scn": "Reduce experience from monsters and quests",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 32,
+      "wq": "verified",
+      "cn": 32,
+      "g": "totlm_xp_reduce",
+      "x": 0,
+      "no": "75% XP reduction — heavy nerf"
+    },
+    {
+      "n": "Reduce XP: No XP",
+      "tp2n": "Grant no experience",
+      "pi": "A7-TOTLM-BG2EE-REDUCE_XP_BY_100",
+      "scn": "Reduce experience from monsters and quests",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 33,
+      "wq": "verified",
+      "cn": 33,
+      "g": "totlm_xp_reduce",
+      "x": 0,
+      "no": "No XP from TotLM content"
+    },
+    {
+      "n": "Allow to trade with Hobart before starting the adventure",
+      "tp2n": "Allow to trade with Hobart before starting the adventure",
+      "pi": "A7-TOTLM-BG2EE-TRADE_WITH_HOBART",
+      "wf": "A7-TotLM-BG2EE",
+      "wp": "A7-TotLM-BG2EE\\A7-TotLM-BG2EE.tp2",
+      "wc": 40,
+      "wq": "verified",
+      "cn": 40,
+      "x": 0,
+      "no": "QoL: lets you buy supplies from Hobart before entering"
+    }
+  ]
+}

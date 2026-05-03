@@ -1,0 +1,259 @@
+{
+  "i": 578,
+  "t": "tobr",
+  "sv": 1,
+  "ord": 140,
+  "c": "QUEST MODS ToB",
+  "n": "Throne of Bhaal Revisited",
+  "no": "Permanently beta 4. Written for classic BG2 ~2009, partially adapted for EE by Austin87. NOT on EET compat list. Uses fragile binary .are patching and REPLACE_TEXTUALLY on scripts. Has Ascension and WoP detection but NO SCS detection. High conflict risk with SCS Smarter Gromnir/Yaga-Shura.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    },
+    {
+      "d": "2026-03-11",
+      "m": "Renamed from Gromnir; author corrected to WildGirl/Austin87"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "soft",
+      "reason": "ToBR has built-in Ascension detection for Gromnir and Yaga Shura. Should coexist but script changes are fragile.",
+      "myComps": "#0 Gromnir #3 Yaga Shura",
+      "theirComps": "#11 Tougher Gromnir #13 Tougher Yaga-Shura"
+    }
+  ],
+  "u": "https://github.com/Endarire/Throne-of-Bhaal-Revisited",
+  "a": "WildGirl (EE: Austin87)",
+  "v": "beta 4 BWP Fix",
+  "sum": "Overhauls Throne of Bhaal with 13 components: expanded encounters, restored content, rebalanced battles, and additional story branches throughout the campaign.",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "au": "WildGirl",
+  "dl": "https://github.com/Endarire/Throne-of-Bhaal-Revisited",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 0,
+      "n": "Gromnir",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 0,
+      "no": "HIGH RISK: No SCS detection. REPLACE_TEXTUALLY on GROMNIR.BCS fails if SCS Smarter Gromnir installed. Not .",
+      "sp": 1,
+      "spLv": {
+        "p1": 1
+      },
+      "tp2n": "Gromnir",
+      "grn": "Characters"
+    },
+    {
+      "cn": 1,
+      "n": "Melissan",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 1,
+      "no": "Only adds an amulet to mel01.cre. Low conflict risk with Ascension",
+      "tp2n": "Melissan",
+      "grn": "Characters"
+    },
+    {
+      "cn": 2,
+      "n": "Solar",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 2,
+      "no": "HIGH RISK: No WoP detection. Modifies itpplane.bcs which WoP also changes. Not .",
+      "tp2n": "Solar",
+      "grn": "Characters"
+    },
+    {
+      "cn": 3,
+      "n": "Yaga Shura",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 3,
+      "no": "HIGH RISK: No SCS detection. REPLACE_TEXTUALLY on YAGA01.bcs fails if SCS Smarter Yaga-Shura installed. Not .",
+      "tp2n": "Yaga Shura",
+      "grn": "Characters"
+    },
+    {
+      "cn": 4,
+      "n": "Grove of the Ancients",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 4,
+      "no": "Has WoP and Longer Road detection. Modifies Grove of Ancients area",
+      "tp2n": "Grove of the Ancients",
+      "grn": "Linearity"
+    },
+    {
+      "cn": 5,
+      "n": "Pocket Plane",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 5,
+      "no": "Core component for several others. Modifies worldmap and multiple areas. INSTALLS WITH WARNINGS: self-inflicted bug — EXTEND_TOPs ITPPLANE.bcs (5686→6703 bytes), then immediately tries REPLACE_BCS_BLOCK using ITPPLANE_old.baf on the now-modified file. Pattern no longer matches. Pocket Plane portal script patch doesn't apply. Mod still installs.",
+      "tp2n": "Pocket Plane",
+      "grn": "Linearity"
+    },
+    {
+      "cn": 6,
+      "n": "Fight Five in Any Order",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 6,
+      "no": "HIGH RISK: Uses REPLACE_BCS_BLOCK on romance scripts (aeri25/anom25/jahe25/vico25.bcs). Fails silently if romance mods change blocks first. Not .",
+      "tp2n": "Fight Five in Any Order"
+    },
+    {
+      "cn": 7,
+      "n": "Amkethran",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 7,
+      "no": "Rebalanced Amkethran encounters.",
+      "tp2n": "Amkethran"
+    },
+    {
+      "cn": 8,
+      "n": "Fire Temple",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 8,
+      "no": "Rebalanced Fire Temple encounters.",
+      "tp2n": "Fire Temple",
+      "grn": "Linearity"
+    },
+    {
+      "cn": 9,
+      "n": "Oasis",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 9,
+      "no": "Rebalanced Oasis encounters.",
+      "tp2n": "Oasis",
+      "grn": "Places"
+    },
+    {
+      "cn": 10,
+      "n": "Saradush",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 10,
+      "no": "Rebalanced Saradush encounters.",
+      "tp2n": "Saradush",
+      "grn": "Places"
+    },
+    {
+      "cn": 11,
+      "n": "Saradush Sewers",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 11,
+      "no": "Cannot install alongside cn:5 Pocket Plane (FORBID_COMPONENT). Pocket Plane includes sewer content.",
+      "tp2n": "Saradush Sewers",
+      "grn": "Places"
+    },
+    {
+      "cn": 12,
+      "n": "Cleansing the Temple",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 12,
+      "no": "Rebalanced Cleansing the Temple.",
+      "tp2n": "Cleansing the Temple",
+      "grn": "Places"
+    },
+    {
+      "cn": 13,
+      "n": "The Witch of the Wealdath",
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "exact",
+      "wc": 13,
+      "no": "",
+      "rd": 12,
+      "tp2n": "The Witch of the Wealdath",
+      "grn": "Places"
+    },
+    {
+      "n": "Cleansing the Temple",
+      "cn": 14,
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "verified",
+      "tp2n": "Cleansing the Temple",
+      "gone": true,
+      "grn": "Quests"
+    },
+    {
+      "n": "The Witch of the Wealdath",
+      "cn": 15,
+      "wf": "tobr",
+      "wp": "tobr\\SETUP-TOBR.TP2",
+      "wq": "verified",
+      "tp2n": "The Witch of the Wealdath",
+      "gone": true,
+      "grn": "Quests"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Both modify Saradush battle areas. ToBR uses fragile script patching that may interact with MiH's spawns.",
+      "orderOnly": true,
+      "myComps": "#0 Gromnir #10 Saradush",
+      "theirComps": "#43 Enhanced Battles: Saradush",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "wheels",
+      "withId": 112,
+      "severity": "soft",
+      "reason": "ToBR Solar component modifies itpplane.bcs without WoP detection. May interact with WoP challenge flow. Grove (cn:4) does detect WoP.",
+      "myComps": "#2 Solar",
+      "theirComps": "#0 Wheels of Prophecy",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "ToBR has no SCS detection. Script REPLACE_TEXTUALLY may fail if SCS rewrites GROMNIR.BCS/YAGA01.bcs first. Install ToBR before SCS.",
+      "orderOnly": true,
+      "myComps": "#0 Gromnir #3 Yaga Shura",
+      "theirComps": "#6810 Smarter Gromnir #6820 Smarter Yaga-Shura",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "Endarire",
+    "r": "Throne-of-Bhaal-Revisited"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "i": 412,
+  "t": "Magic_Battles_Revised",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 999,
+  "c": "TACTICAL MODS",
+  "n": "Magic Battles Revised (MBR)",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Magic Battles Revised v1.9.4 by Subtledoctor. Overhauls spell deflection, breach, dispel mechanics. Configurable via MBR_settings.ini. Detects and adapts to SCS (cn:6000), Spell Revisions, and Tome and Blood (cn:40). Installs LAST in Tactical — uses MOD_IS_INSTALLED checks to detect SCS/SR/TnB.",
+  "conflicts": [
+    {
+      "with": "enhanced-powergaming-scripts",
+      "withId": 443,
+      "severity": "soft",
+      "reason": "Real conflict — silent spell state failure. MBR cn:10 creates new spell resources (spwi318c, spwi618c, spwi522c) for deflection spells with modified protection levels. EPS cn:14/15 adds opcode 328 (spell state) to VANILLA spell resources (spwi318, spwi522, spwi701) for AI CheckSpellState() detection. MBR's new spell copies don't receive EPS's spell states. Result: EPS pre-buffing AI can't detect active deflections, wastes spell slots re-buffing protected allies. Neither detects the other. Both (MBR cn:10, EPS cn:15). Recommendation: remove MBR cn:10 .",
+      "myComps": "#10 Revised Magic Battles",
+      "theirComps": "#14 #15 Pre-Buffing",
+      "source": "MBR MBR.tpa lines 243/297/356 COPY to spwi*c.spl; EPS initialize.tpa lines 744-785 adds opcode 328 to vanilla resources; no cross-detection, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/UnearthedArcana/magic_battles_revised/releases",
+  "a": "Subtledoctor",
+  "v": "1.9.4",
+  "sum": "Streamlines mage spell battles by revising deflection, breach, and dispel mechanics. Configurable, with cross-mod detection for SR/SCS/TnB.",
+  "tags": [
+    "tweak",
+    "combat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "magic_battles_revised"
+  },
+  "dl": "https://github.com/UnearthedArcana/magic_battles_revised/releases",
+  "au": "subtledoc",
+  "co": [
+    {
+      "n": "Revised Magic Battles",
+      "tp2n": "Revised Magic Battles",
+      "cn": 10,
+      "wf": "Magic_Battles_Revised",
+      "wp": "Magic_Battles_Revised\\MAGIC_BATTLES_REVISED.TP2",
+      "wc": 10,
+      "wq": "guessed",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "no": "Revises spell deflection levels, breach behavior, dispel mechanics, and globe interactions. Has built-in SR, SCS, and TnB detection."
+    }
+  ]
+}

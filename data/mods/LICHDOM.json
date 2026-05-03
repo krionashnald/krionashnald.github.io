@@ -1,0 +1,115 @@
+{
+  "i": 674,
+  "t": "Lichdom",
+  "sv": 1,
+  "ord": 440,
+  "c": "QUEST MODS ToB",
+  "n": "Lichdom",
+  "langs": {
+    "en": 0,
+    "pt": 1,
+    "zh-cn": 2
+  },
+  "no": "Lichdom by Daniel Valle. Lich transformation questline via Gravetender Morris in Athkatla Graveyard (SoA) or Saradush (ToB). Adds Lich Dust to ALL liches/demiliches including mod-added ones. Install BEFORE Ascension and Longer Road. Compatible with SCS and Tweaks Anthology. Has crossmod content for Dusk, Sandrah, and other NPC mods. Do NOT install after EET_End.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "soft",
+      "reason": "Install Lichdom BEFORE Ascension to avoid bugs. Users reported installation errors when Lichdom installed after Ascension.",
+      "orderOnly": true,
+      "source": "Beamdog forums user reports, 2021-2023"
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Install Lichdom BEFORE The Longer Road. Users reported installation errors when installed after.",
+      "orderOnly": true,
+      "source": "Beamdog forums user reports"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Compatible with SCS per user reports. No specific install order requirement.",
+      "source": "Beamdog forums confirmation",
+      "orderOnly": true
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Compatible with Tweaks Anthology per user reports.",
+      "source": "Beamdog forums confirmation",
+      "orderOnly": true
+    },
+    {
+      "with": "polylich",
+      "withId": 676,
+      "severity": "soft",
+      "reason": "Both modify demilich.cre and hldemi.cre. Lichdom adds Lich Dust to inventory (ADD_CRE_ITEM). Polylich overwrites abilities and stats. Compatible — different aspects of same files. Install order does not matter.",
+      "myComps": "#0 Lichdom",
+      "theirComps": "#11 #12 Trap the Soul #16 #17 Resilient",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "lichdom_aldmor",
+          "portraits/lichdom/xaldmor.png",
+          "tob"
+        ],
+        [
+          "lichdom_aphy",
+          "portraits/lichdom/xaphy.png",
+          "tob"
+        ],
+        [
+          "lichdom_aplich",
+          "portraits/lichdom/xaplich.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/LCA-EET/Lichdom",
+  "a": "Daniel Valle",
+  "sum": "Allows party members to undergo lich transformation via Gravetender Morris questline. Grants undead immunities, paralyzing touch, phylactery system.",
+  "tags": [
+    "quest",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Daniel Valle",
+  "dl": "https://github.com/LCA-EET/Lichdom",
+  "co": [
+    {
+      "n": "Lichdom for the Baldur's Gate, Enhanced Edition Games.",
+      "tp2n": "Lichdom for the Baldur's Gate, Enhanced Edition Games.",
+      "cn": 0,
+      "wf": "LICHDOM",
+      "wp": "LICHDOM\\LICHDOM.TP2",
+      "wc": 0,
+      "no": "Lich transformation questline. Talk to Gravetender Morris in Athkatla Graveyard (SoA) or Saradush (ToB). Adds Lich Dust to ALL liches/demiliches including mod-added ones. ACTION_READLN with 7+ interactive prompts — has defaults mode (option 1 skips all)."
+    }
+  ],
+  "gh": {
+    "o": "LCA-EET",
+    "r": "Lichdom"
+  }
+}

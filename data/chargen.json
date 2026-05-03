@@ -1,0 +1,9278 @@
+{
+  "races": {
+    "human": {
+      "n": "Human",
+      "adj": {},
+      "min": {
+        "str": 3,
+        "dex": 3,
+        "con": 3,
+        "int": 3,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 18,
+        "dex": 18,
+        "con": 18,
+        "int": 18,
+        "wis": 18,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "RANGER",
+        "PALADIN",
+        "CLERIC",
+        "DRUID",
+        "THIEF",
+        "BARD",
+        "MAGE",
+        "SORCERER",
+        "MONK",
+        "SHAMAN",
+        "BARBARIAN"
+      ],
+      "multi": [],
+      "canDual": true,
+      "abilities": [
+        {
+          "n": "Dual-Class",
+          "type": "passive",
+          "desc": "Can dual-class to any class"
+        }
+      ]
+    },
+    "elf": {
+      "n": "Elf",
+      "adj": {
+        "dex": 1,
+        "con": -1
+      },
+      "min": {
+        "str": 3,
+        "dex": 6,
+        "con": 7,
+        "int": 8,
+        "wis": 3,
+        "cha": 8
+      },
+      "max": {
+        "str": 18,
+        "dex": 19,
+        "con": 17,
+        "int": 18,
+        "wis": 18,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "RANGER",
+        "CLERIC",
+        "THIEF",
+        "MAGE",
+        "SORCERER"
+      ],
+      "multi": [
+        "FIGHTER/MAGE",
+        "FIGHTER/THIEF",
+        "MAGE/THIEF",
+        "FIGHTER/MAGE/THIEF",
+        "CLERIC/RANGER"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Sleep/Charm Resistance",
+          "type": "resistance",
+          "desc": "90% resistance to sleep and charm"
+        },
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        },
+        {
+          "n": "Bonus THAC0",
+          "type": "thac0Weapon",
+          "weapons": [
+            "bow",
+            "crossbow",
+            "short sword",
+            "large sword"
+          ],
+          "profTypes": [
+            "LONG_SWORD",
+            "LONG_BOW",
+            "SHORT_BOW",
+            "CROSSBOW",
+            "SHORT_SWORD"
+          ],
+          "value": -1,
+          "desc": "+1 THAC0 with bows and long/short swords"
+        }
+      ]
+    },
+    "half_elf": {
+      "n": "Half-Elf",
+      "adj": {},
+      "min": {
+        "str": 3,
+        "dex": 6,
+        "con": 6,
+        "int": 4,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 18,
+        "dex": 18,
+        "con": 18,
+        "int": 18,
+        "wis": 18,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "RANGER",
+        "CLERIC",
+        "DRUID",
+        "THIEF",
+        "BARD",
+        "MAGE",
+        "SORCERER",
+        "SHAMAN"
+      ],
+      "multi": [
+        "FIGHTER/CLERIC",
+        "FIGHTER/DRUID",
+        "FIGHTER/MAGE",
+        "FIGHTER/THIEF",
+        "CLERIC/MAGE",
+        "CLERIC/RANGER",
+        "CLERIC/THIEF",
+        "DRUID/THIEF",
+        "THIEF/MAGE",
+        "FIGHTER/MAGE/CLERIC",
+        "FIGHTER/MAGE/THIEF"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Sleep/Charm Resistance",
+          "type": "resistance",
+          "desc": "30% resistance to sleep and charm"
+        },
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        }
+      ]
+    },
+    "dwarf": {
+      "n": "Dwarf",
+      "adj": {
+        "con": 1,
+        "cha": -1
+      },
+      "min": {
+        "str": 8,
+        "dex": 3,
+        "con": 11,
+        "int": 3,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 18,
+        "dex": 17,
+        "con": 19,
+        "int": 18,
+        "wis": 18,
+        "cha": 16
+      },
+      "classes": [
+        "FIGHTER",
+        "CLERIC",
+        "THIEF",
+        "BARBARIAN"
+      ],
+      "multi": [
+        "FIGHTER/CLERIC",
+        "FIGHTER/THIEF"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Shorty Save Bonus",
+          "type": "shortySaves",
+          "desc": "+1 save vs. death/wand/spell per 3.5 CON"
+        },
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        }
+      ]
+    },
+    "gnome": {
+      "n": "Gnome",
+      "adj": {
+        "int": 1,
+        "wis": -1
+      },
+      "min": {
+        "str": 6,
+        "dex": 3,
+        "con": 8,
+        "int": 6,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 18,
+        "dex": 18,
+        "con": 18,
+        "int": 19,
+        "wis": 17,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "CLERIC",
+        "THIEF",
+        "MAGE",
+        "SORCERER",
+        "BARBARIAN"
+      ],
+      "multi": [
+        "FIGHTER/CLERIC",
+        "FIGHTER/THIEF",
+        "FIGHTER/MAGE",
+        "CLERIC/THIEF",
+        "MAGE/THIEF",
+        "FIGHTER/MAGE/THIEF",
+        "CLERIC/ILLUSIONIST"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Shorty Save Bonus",
+          "type": "shortySaves",
+          "desc": "+1 save vs. death/wand/spell per 3.5 CON"
+        },
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        }
+      ]
+    },
+    "halfling": {
+      "n": "Halfling",
+      "adj": {
+        "dex": 1,
+        "str": -1
+      },
+      "min": {
+        "str": 7,
+        "dex": 7,
+        "con": 10,
+        "int": 6,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 17,
+        "dex": 19,
+        "con": 18,
+        "int": 18,
+        "wis": 18,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "CLERIC",
+        "THIEF",
+        "BARBARIAN",
+        "SHAMAN"
+      ],
+      "multi": [
+        "FIGHTER/THIEF"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Shorty Save Bonus",
+          "type": "shortySaves",
+          "desc": "+1 save vs. death/wand/spell per 3.5 CON"
+        },
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        }
+      ]
+    },
+    "half_orc": {
+      "n": "Half-Orc",
+      "adj": {
+        "str": 1,
+        "con": 1,
+        "int": -2
+      },
+      "min": {
+        "str": 4,
+        "dex": 3,
+        "con": 4,
+        "int": 3,
+        "wis": 3,
+        "cha": 3
+      },
+      "max": {
+        "str": 19,
+        "dex": 18,
+        "con": 19,
+        "int": 16,
+        "wis": 18,
+        "cha": 18
+      },
+      "classes": [
+        "FIGHTER",
+        "CLERIC",
+        "THIEF",
+        "BARBARIAN",
+        "SHAMAN"
+      ],
+      "multi": [
+        "FIGHTER/CLERIC",
+        "FIGHTER/THIEF",
+        "CLERIC/THIEF",
+        "FIGHTER/MAGE"
+      ],
+      "canDual": false,
+      "abilities": [
+        {
+          "n": "Infravision",
+          "type": "passive",
+          "desc": "Can see in the dark"
+        }
+      ]
+    }
+  },
+  "classInfo": {
+    "FIGHTER": {
+      "group": "warrior",
+      "die": 10,
+      "hpAfter": 9,
+      "hpFixed": 3
+    },
+    "RANGER": {
+      "group": "warrior",
+      "die": 10,
+      "hpAfter": 9,
+      "hpFixed": 3
+    },
+    "PALADIN": {
+      "group": "warrior",
+      "die": 10,
+      "hpAfter": 9,
+      "hpFixed": 3
+    },
+    "BARBARIAN": {
+      "group": "warrior",
+      "die": 12,
+      "hpAfter": 9,
+      "hpFixed": 3
+    },
+    "CLERIC": {
+      "group": "priest",
+      "die": 8,
+      "hpAfter": 9,
+      "hpFixed": 2
+    },
+    "DRUID": {
+      "group": "priest",
+      "die": 8,
+      "hpAfter": 9,
+      "hpFixed": 2
+    },
+    "SHAMAN": {
+      "group": "priest",
+      "die": 8,
+      "hpAfter": 9,
+      "hpFixed": 2
+    },
+    "THIEF": {
+      "group": "rogue",
+      "die": 6,
+      "hpAfter": 10,
+      "hpFixed": 2
+    },
+    "BARD": {
+      "group": "rogue",
+      "die": 6,
+      "hpAfter": 10,
+      "hpFixed": 2
+    },
+    "MAGE": {
+      "group": "arcane",
+      "die": 4,
+      "hpAfter": 10,
+      "hpFixed": 1
+    },
+    "SORCERER": {
+      "group": "arcane",
+      "die": 4,
+      "hpAfter": 10,
+      "hpFixed": 1
+    },
+    "MONK": {
+      "group": "monk",
+      "die": 8,
+      "hpAfter": 20,
+      "hpFixed": 2
+    }
+  },
+  "thac0": {
+    "warrior": [
+      20,
+      19,
+      18,
+      17,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "priest": [
+      20,
+      20,
+      18,
+      18,
+      16,
+      16,
+      14,
+      14,
+      12,
+      12,
+      10,
+      10,
+      8,
+      8,
+      6,
+      6,
+      4,
+      4,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rogue": [
+      20,
+      20,
+      19,
+      18,
+      18,
+      17,
+      16,
+      16,
+      15,
+      14,
+      14,
+      13,
+      12,
+      12,
+      11,
+      10,
+      10,
+      9,
+      8,
+      8,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "arcane": [
+      20,
+      20,
+      20,
+      19,
+      19,
+      19,
+      18,
+      18,
+      18,
+      17,
+      17,
+      17,
+      16,
+      16,
+      16,
+      15,
+      15,
+      15,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "monk": [
+      20,
+      20,
+      19,
+      18,
+      18,
+      17,
+      16,
+      16,
+      15,
+      14,
+      14,
+      13,
+      12,
+      12,
+      11,
+      10,
+      10,
+      9,
+      8,
+      8,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  "saves": {
+    "warrior": [
+      [
+        1,
+        2,
+        [
+          14,
+          16,
+          15,
+          17,
+          17
+        ]
+      ],
+      [
+        3,
+        4,
+        [
+          13,
+          15,
+          14,
+          16,
+          16
+        ]
+      ],
+      [
+        5,
+        6,
+        [
+          11,
+          13,
+          12,
+          13,
+          14
+        ]
+      ],
+      [
+        7,
+        8,
+        [
+          10,
+          12,
+          11,
+          12,
+          13
+        ]
+      ],
+      [
+        9,
+        10,
+        [
+          8,
+          10,
+          9,
+          9,
+          11
+        ]
+      ],
+      [
+        11,
+        12,
+        [
+          7,
+          9,
+          8,
+          8,
+          10
+        ]
+      ],
+      [
+        13,
+        14,
+        [
+          5,
+          7,
+          6,
+          5,
+          8
+        ]
+      ],
+      [
+        15,
+        16,
+        [
+          4,
+          6,
+          5,
+          4,
+          7
+        ]
+      ],
+      [
+        17,
+        18,
+        [
+          3,
+          5,
+          4,
+          4,
+          6
+        ]
+      ],
+      [
+        19,
+        20,
+        [
+          2,
+          4,
+          3,
+          3,
+          5
+        ]
+      ],
+      [
+        21,
+        40,
+        [
+          1,
+          3,
+          2,
+          2,
+          4
+        ]
+      ]
+    ],
+    "priest": [
+      [
+        1,
+        3,
+        [
+          10,
+          14,
+          13,
+          16,
+          15
+        ]
+      ],
+      [
+        4,
+        6,
+        [
+          9,
+          13,
+          12,
+          15,
+          14
+        ]
+      ],
+      [
+        7,
+        9,
+        [
+          7,
+          11,
+          10,
+          13,
+          12
+        ]
+      ],
+      [
+        10,
+        12,
+        [
+          6,
+          10,
+          9,
+          12,
+          11
+        ]
+      ],
+      [
+        13,
+        15,
+        [
+          5,
+          9,
+          8,
+          11,
+          10
+        ]
+      ],
+      [
+        16,
+        18,
+        [
+          4,
+          8,
+          7,
+          10,
+          9
+        ]
+      ],
+      [
+        19,
+        21,
+        [
+          2,
+          6,
+          5,
+          8,
+          7
+        ]
+      ],
+      [
+        22,
+        40,
+        [
+          1,
+          5,
+          4,
+          7,
+          6
+        ]
+      ]
+    ],
+    "rogue": [
+      [
+        1,
+        4,
+        [
+          13,
+          14,
+          12,
+          16,
+          15
+        ]
+      ],
+      [
+        5,
+        8,
+        [
+          12,
+          12,
+          11,
+          15,
+          13
+        ]
+      ],
+      [
+        9,
+        12,
+        [
+          11,
+          10,
+          10,
+          14,
+          11
+        ]
+      ],
+      [
+        13,
+        16,
+        [
+          10,
+          8,
+          9,
+          13,
+          9
+        ]
+      ],
+      [
+        17,
+        20,
+        [
+          9,
+          6,
+          8,
+          12,
+          7
+        ]
+      ],
+      [
+        21,
+        40,
+        [
+          8,
+          4,
+          7,
+          11,
+          5
+        ]
+      ]
+    ],
+    "arcane": [
+      [
+        1,
+        5,
+        [
+          14,
+          11,
+          13,
+          15,
+          12
+        ]
+      ],
+      [
+        6,
+        10,
+        [
+          13,
+          9,
+          11,
+          13,
+          10
+        ]
+      ],
+      [
+        11,
+        15,
+        [
+          11,
+          7,
+          9,
+          11,
+          8
+        ]
+      ],
+      [
+        16,
+        20,
+        [
+          10,
+          5,
+          7,
+          9,
+          6
+        ]
+      ],
+      [
+        21,
+        40,
+        [
+          8,
+          3,
+          5,
+          7,
+          4
+        ]
+      ]
+    ],
+    "monk": [
+      [
+        1,
+        4,
+        [
+          13,
+          14,
+          12,
+          16,
+          15
+        ]
+      ],
+      [
+        5,
+        8,
+        [
+          12,
+          12,
+          11,
+          15,
+          13
+        ]
+      ],
+      [
+        9,
+        12,
+        [
+          11,
+          10,
+          10,
+          14,
+          11
+        ]
+      ],
+      [
+        13,
+        16,
+        [
+          10,
+          8,
+          9,
+          13,
+          9
+        ]
+      ],
+      [
+        17,
+        20,
+        [
+          9,
+          6,
+          8,
+          12,
+          7
+        ]
+      ],
+      [
+        21,
+        40,
+        [
+          8,
+          4,
+          7,
+          11,
+          5
+        ]
+      ]
+    ]
+  },
+  "attacks": {
+    "warrior": [
+      [
+        1,
+        6,
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        7,
+        12,
+        [
+          3,
+          2
+        ]
+      ],
+      [
+        13,
+        99,
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "default": [
+      [
+        1,
+        99,
+        [
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "abilityEffects": {
+    "str": {
+      "1": {
+        "thac0": -5,
+        "dmg": -4,
+        "weight": 1,
+        "doors": 1
+      },
+      "2": {
+        "thac0": -3,
+        "dmg": -2,
+        "weight": 3,
+        "doors": 1
+      },
+      "3": {
+        "thac0": -3,
+        "dmg": -1,
+        "weight": 5,
+        "doors": 2
+      },
+      "4": {
+        "thac0": -2,
+        "dmg": -1,
+        "weight": 10,
+        "doors": 3
+      },
+      "5": {
+        "thac0": -2,
+        "dmg": -1,
+        "weight": 10,
+        "doors": 3
+      },
+      "6": {
+        "thac0": -1,
+        "dmg": 0,
+        "weight": 20,
+        "doors": 4
+      },
+      "7": {
+        "thac0": -1,
+        "dmg": 0,
+        "weight": 20,
+        "doors": 4
+      },
+      "8": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 35,
+        "doors": 5
+      },
+      "9": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 35,
+        "doors": 5
+      },
+      "10": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 40,
+        "doors": 6
+      },
+      "11": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 40,
+        "doors": 6
+      },
+      "12": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 45,
+        "doors": 7
+      },
+      "13": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 45,
+        "doors": 7
+      },
+      "14": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 55,
+        "doors": 7
+      },
+      "15": {
+        "thac0": 0,
+        "dmg": 0,
+        "weight": 55,
+        "doors": 8
+      },
+      "16": {
+        "thac0": 0,
+        "dmg": 1,
+        "weight": 70,
+        "doors": 9
+      },
+      "17": {
+        "thac0": 1,
+        "dmg": 1,
+        "weight": 85,
+        "doors": 10
+      },
+      "18": {
+        "thac0": 1,
+        "dmg": 2,
+        "weight": 110,
+        "doors": 11
+      },
+      "19": {
+        "thac0": 3,
+        "dmg": 7,
+        "weight": 485,
+        "doors": 16
+      },
+      "20": {
+        "thac0": 3,
+        "dmg": 8,
+        "weight": 535,
+        "doors": 17
+      },
+      "21": {
+        "thac0": 4,
+        "dmg": 9,
+        "weight": 635,
+        "doors": 17
+      },
+      "22": {
+        "thac0": 4,
+        "dmg": 10,
+        "weight": 785,
+        "doors": 18
+      },
+      "23": {
+        "thac0": 5,
+        "dmg": 11,
+        "weight": 935,
+        "doors": 18
+      },
+      "24": {
+        "thac0": 6,
+        "dmg": 12,
+        "weight": 1235,
+        "doors": 19
+      },
+      "25": {
+        "thac0": 7,
+        "dmg": 14,
+        "weight": 1535,
+        "doors": 19
+      }
+    },
+    "strExceptional": {
+      "01": {
+        "thac0": 1,
+        "dmg": 3,
+        "weight": 140,
+        "doors": 11
+      },
+      "50": {
+        "thac0": 1,
+        "dmg": 3,
+        "weight": 140,
+        "doors": 11
+      },
+      "51": {
+        "thac0": 2,
+        "dmg": 3,
+        "weight": 160,
+        "doors": 12
+      },
+      "75": {
+        "thac0": 2,
+        "dmg": 3,
+        "weight": 160,
+        "doors": 12
+      },
+      "76": {
+        "thac0": 2,
+        "dmg": 4,
+        "weight": 185,
+        "doors": 13
+      },
+      "90": {
+        "thac0": 2,
+        "dmg": 4,
+        "weight": 185,
+        "doors": 13
+      },
+      "91": {
+        "thac0": 2,
+        "dmg": 5,
+        "weight": 235,
+        "doors": 14
+      },
+      "99": {
+        "thac0": 2,
+        "dmg": 5,
+        "weight": 235,
+        "doors": 14
+      },
+      "100": {
+        "thac0": 3,
+        "dmg": 6,
+        "weight": 335,
+        "doors": 15
+      }
+    },
+    "strExceptionalRanges": [
+      [
+        1,
+        50,
+        "01"
+      ],
+      [
+        51,
+        75,
+        "51"
+      ],
+      [
+        76,
+        90,
+        "76"
+      ],
+      [
+        91,
+        99,
+        "91"
+      ],
+      [
+        100,
+        100,
+        "100"
+      ]
+    ],
+    "dex": {
+      "1": {
+        "ac": 5,
+        "missile": -6,
+        "reaction": -6
+      },
+      "2": {
+        "ac": 5,
+        "missile": -6,
+        "reaction": -4
+      },
+      "3": {
+        "ac": 4,
+        "missile": -5,
+        "reaction": -3
+      },
+      "4": {
+        "ac": 3,
+        "missile": -4,
+        "reaction": -2
+      },
+      "5": {
+        "ac": 2,
+        "missile": -3,
+        "reaction": -1
+      },
+      "6": {
+        "ac": 1,
+        "missile": -2,
+        "reaction": 0
+      },
+      "7": {
+        "ac": 0,
+        "missile": -1,
+        "reaction": 0
+      },
+      "8": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "9": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "10": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "11": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "12": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "13": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "14": {
+        "ac": 0,
+        "missile": 0,
+        "reaction": 0
+      },
+      "15": {
+        "ac": -1,
+        "missile": 0,
+        "reaction": 0
+      },
+      "16": {
+        "ac": -2,
+        "missile": 1,
+        "reaction": 1
+      },
+      "17": {
+        "ac": -3,
+        "missile": 2,
+        "reaction": 2
+      },
+      "18": {
+        "ac": -4,
+        "missile": 2,
+        "reaction": 2
+      },
+      "19": {
+        "ac": -4,
+        "missile": 3,
+        "reaction": 3
+      },
+      "20": {
+        "ac": -4,
+        "missile": 3,
+        "reaction": 3
+      },
+      "21": {
+        "ac": -5,
+        "missile": 4,
+        "reaction": 4
+      },
+      "22": {
+        "ac": -5,
+        "missile": 4,
+        "reaction": 4
+      },
+      "23": {
+        "ac": -5,
+        "missile": 4,
+        "reaction": 4
+      },
+      "24": {
+        "ac": -6,
+        "missile": 5,
+        "reaction": 5
+      },
+      "25": {
+        "ac": -6,
+        "missile": 5,
+        "reaction": 5
+      }
+    },
+    "con": {
+      "1": {
+        "hp": -3,
+        "hpWarrior": -3
+      },
+      "2": {
+        "hp": -2,
+        "hpWarrior": -2
+      },
+      "3": {
+        "hp": -2,
+        "hpWarrior": -2
+      },
+      "4": {
+        "hp": -1,
+        "hpWarrior": -1
+      },
+      "5": {
+        "hp": -1,
+        "hpWarrior": -1
+      },
+      "6": {
+        "hp": -1,
+        "hpWarrior": -1
+      },
+      "7": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "8": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "9": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "10": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "11": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "12": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "13": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "14": {
+        "hp": 0,
+        "hpWarrior": 0
+      },
+      "15": {
+        "hp": 1,
+        "hpWarrior": 1
+      },
+      "16": {
+        "hp": 2,
+        "hpWarrior": 2
+      },
+      "17": {
+        "hp": 2,
+        "hpWarrior": 3
+      },
+      "18": {
+        "hp": 2,
+        "hpWarrior": 4
+      },
+      "19": {
+        "hp": 2,
+        "hpWarrior": 5
+      },
+      "20": {
+        "hp": 2,
+        "hpWarrior": 5
+      },
+      "21": {
+        "hp": 2,
+        "hpWarrior": 6
+      },
+      "22": {
+        "hp": 2,
+        "hpWarrior": 6
+      },
+      "23": {
+        "hp": 2,
+        "hpWarrior": 6
+      },
+      "24": {
+        "hp": 2,
+        "hpWarrior": 7
+      },
+      "25": {
+        "hp": 2,
+        "hpWarrior": 7
+      }
+    },
+    "int": {
+      "1": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "2": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "3": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "4": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "5": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "6": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "7": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "8": {
+        "maxSpellLv": 0,
+        "learnChance": 0,
+        "maxPerLv": 0
+      },
+      "9": {
+        "maxSpellLv": 4,
+        "learnChance": 35,
+        "maxPerLv": 6
+      },
+      "10": {
+        "maxSpellLv": 5,
+        "learnChance": 40,
+        "maxPerLv": 7
+      },
+      "11": {
+        "maxSpellLv": 5,
+        "learnChance": 45,
+        "maxPerLv": 7
+      },
+      "12": {
+        "maxSpellLv": 6,
+        "learnChance": 50,
+        "maxPerLv": 7
+      },
+      "13": {
+        "maxSpellLv": 6,
+        "learnChance": 55,
+        "maxPerLv": 9
+      },
+      "14": {
+        "maxSpellLv": 7,
+        "learnChance": 60,
+        "maxPerLv": 9
+      },
+      "15": {
+        "maxSpellLv": 7,
+        "learnChance": 65,
+        "maxPerLv": 11
+      },
+      "16": {
+        "maxSpellLv": 8,
+        "learnChance": 70,
+        "maxPerLv": 11
+      },
+      "17": {
+        "maxSpellLv": 8,
+        "learnChance": 75,
+        "maxPerLv": 14
+      },
+      "18": {
+        "maxSpellLv": 9,
+        "learnChance": 85,
+        "maxPerLv": 18
+      },
+      "19": {
+        "maxSpellLv": 9,
+        "learnChance": 95,
+        "maxPerLv": 99
+      },
+      "20": {
+        "maxSpellLv": 9,
+        "learnChance": 96,
+        "maxPerLv": 99
+      },
+      "21": {
+        "maxSpellLv": 9,
+        "learnChance": 97,
+        "maxPerLv": 99
+      },
+      "22": {
+        "maxSpellLv": 9,
+        "learnChance": 98,
+        "maxPerLv": 99
+      },
+      "23": {
+        "maxSpellLv": 9,
+        "learnChance": 99,
+        "maxPerLv": 99
+      },
+      "24": {
+        "maxSpellLv": 9,
+        "learnChance": 100,
+        "maxPerLv": 99
+      },
+      "25": {
+        "maxSpellLv": 9,
+        "learnChance": 100,
+        "maxPerLv": 99
+      }
+    },
+    "wis": {
+      "1": {
+        "bonusSpells": [],
+        "spellFailure": 80
+      },
+      "2": {
+        "bonusSpells": [],
+        "spellFailure": 60
+      },
+      "3": {
+        "bonusSpells": [],
+        "spellFailure": 50
+      },
+      "4": {
+        "bonusSpells": [],
+        "spellFailure": 45
+      },
+      "5": {
+        "bonusSpells": [],
+        "spellFailure": 40
+      },
+      "6": {
+        "bonusSpells": [],
+        "spellFailure": 35
+      },
+      "7": {
+        "bonusSpells": [],
+        "spellFailure": 30
+      },
+      "8": {
+        "bonusSpells": [],
+        "spellFailure": 25
+      },
+      "9": {
+        "bonusSpells": [],
+        "spellFailure": 20
+      },
+      "10": {
+        "bonusSpells": [],
+        "spellFailure": 15
+      },
+      "11": {
+        "bonusSpells": [],
+        "spellFailure": 10
+      },
+      "12": {
+        "bonusSpells": [],
+        "spellFailure": 5
+      },
+      "13": {
+        "bonusSpells": [
+          1
+        ],
+        "spellFailure": 0
+      },
+      "14": {
+        "bonusSpells": [
+          1,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "15": {
+        "bonusSpells": [
+          2,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "16": {
+        "bonusSpells": [
+          2,
+          2
+        ],
+        "spellFailure": 0
+      },
+      "17": {
+        "bonusSpells": [
+          2,
+          2,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "18": {
+        "bonusSpells": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "19": {
+        "bonusSpells": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "20": {
+        "bonusSpells": [
+          3,
+          3,
+          1,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "21": {
+        "bonusSpells": [
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "22": {
+        "bonusSpells": [
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "23": {
+        "bonusSpells": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "spellFailure": 0
+      },
+      "24": {
+        "bonusSpells": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "spellFailure": 0
+      },
+      "25": {
+        "bonusSpells": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          1
+        ],
+        "spellFailure": 0
+      }
+    },
+    "cha": {
+      "1": {
+        "reaction": -7,
+        "henchmen": 0
+      },
+      "2": {
+        "reaction": -6,
+        "henchmen": 1
+      },
+      "3": {
+        "reaction": -5,
+        "henchmen": 1
+      },
+      "4": {
+        "reaction": -4,
+        "henchmen": 1
+      },
+      "5": {
+        "reaction": -3,
+        "henchmen": 2
+      },
+      "6": {
+        "reaction": -2,
+        "henchmen": 2
+      },
+      "7": {
+        "reaction": -1,
+        "henchmen": 3
+      },
+      "8": {
+        "reaction": 0,
+        "henchmen": 3
+      },
+      "9": {
+        "reaction": 0,
+        "henchmen": 4
+      },
+      "10": {
+        "reaction": 0,
+        "henchmen": 4
+      },
+      "11": {
+        "reaction": 0,
+        "henchmen": 4
+      },
+      "12": {
+        "reaction": 0,
+        "henchmen": 5
+      },
+      "13": {
+        "reaction": 1,
+        "henchmen": 5
+      },
+      "14": {
+        "reaction": 2,
+        "henchmen": 6
+      },
+      "15": {
+        "reaction": 3,
+        "henchmen": 7
+      },
+      "16": {
+        "reaction": 4,
+        "henchmen": 8
+      },
+      "17": {
+        "reaction": 4,
+        "henchmen": 10
+      },
+      "18": {
+        "reaction": 5,
+        "henchmen": 15
+      },
+      "19": {
+        "reaction": 8,
+        "henchmen": 20
+      },
+      "20": {
+        "reaction": 9,
+        "henchmen": 25
+      },
+      "21": {
+        "reaction": 10,
+        "henchmen": 30
+      },
+      "22": {
+        "reaction": 11,
+        "henchmen": 35
+      },
+      "23": {
+        "reaction": 12,
+        "henchmen": 40
+      },
+      "24": {
+        "reaction": 13,
+        "henchmen": 45
+      },
+      "25": {
+        "reaction": 14,
+        "henchmen": 50
+      }
+    }
+  },
+  "spellSlots": {
+    "MAGE": {
+      "1": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        4,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        4,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        4,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        4,
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        4,
+        4,
+        3,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "11": [
+        4,
+        4,
+        4,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "12": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        1,
+        0,
+        0,
+        0
+      ],
+      "13": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        2,
+        0,
+        0,
+        0
+      ],
+      "14": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        2,
+        1,
+        0,
+        0
+      ],
+      "15": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        2,
+        1,
+        0,
+        0
+      ],
+      "16": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        2,
+        1,
+        0
+      ],
+      "17": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        3,
+        2,
+        0
+      ],
+      "18": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        3,
+        2,
+        1
+      ],
+      "19": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        3,
+        3,
+        1
+      ],
+      "20": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3,
+        3,
+        2
+      ],
+      "21": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2
+      ],
+      "22": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3,
+        2
+      ],
+      "23": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3
+      ],
+      "24": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "25": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "26": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "27": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "28": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "29": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "30": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "31": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "32": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "33": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "34": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "35": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "SORCERER": {
+      "1": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        6,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        6,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        6,
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        6,
+        6,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        6,
+        6,
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        6,
+        6,
+        6,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        6,
+        6,
+        6,
+        5,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "11": [
+        6,
+        6,
+        6,
+        6,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "12": [
+        6,
+        6,
+        6,
+        6,
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "13": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        0,
+        0,
+        0
+      ],
+      "14": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        5,
+        3,
+        0,
+        0
+      ],
+      "15": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        0,
+        0
+      ],
+      "16": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        5,
+        3,
+        0
+      ],
+      "17": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        0
+      ],
+      "18": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        5,
+        3
+      ],
+      "19": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4
+      ],
+      "20": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "21": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "22": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "23": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "24": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "25": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "26": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "27": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "28": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "29": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "30": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "31": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "32": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "33": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "34": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "35": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "CLERIC": {
+      "1": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        3,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "10": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "11": [
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "12": [
+        6,
+        5,
+        5,
+        3,
+        2,
+        2,
+        0
+      ],
+      "13": [
+        6,
+        6,
+        6,
+        4,
+        2,
+        2,
+        0
+      ],
+      "14": [
+        6,
+        6,
+        6,
+        5,
+        3,
+        2,
+        1
+      ],
+      "15": [
+        6,
+        6,
+        6,
+        6,
+        3,
+        3,
+        1
+      ],
+      "16": [
+        7,
+        7,
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "17": [
+        7,
+        7,
+        7,
+        7,
+        5,
+        3,
+        2
+      ],
+      "18": [
+        8,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "19": [
+        9,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "20": [
+        9,
+        9,
+        8,
+        8,
+        7,
+        5,
+        3
+      ],
+      "21": [
+        9,
+        9,
+        9,
+        8,
+        7,
+        5,
+        3
+      ],
+      "22": [
+        9,
+        9,
+        9,
+        9,
+        8,
+        6,
+        4
+      ],
+      "23": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        7,
+        4
+      ],
+      "24": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        5
+      ],
+      "25": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        6
+      ],
+      "26": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        7
+      ],
+      "27": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        8
+      ],
+      "28": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "29": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "30": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "31": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "32": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "33": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "34": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "35": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "DRUID": {
+      "1": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        3,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "10": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "11": [
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "12": [
+        6,
+        5,
+        5,
+        3,
+        2,
+        2,
+        0
+      ],
+      "13": [
+        6,
+        6,
+        6,
+        4,
+        2,
+        2,
+        0
+      ],
+      "14": [
+        6,
+        6,
+        6,
+        5,
+        3,
+        2,
+        1
+      ],
+      "15": [
+        6,
+        6,
+        6,
+        6,
+        3,
+        3,
+        1
+      ],
+      "16": [
+        7,
+        7,
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "17": [
+        7,
+        7,
+        7,
+        7,
+        5,
+        3,
+        2
+      ],
+      "18": [
+        8,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "19": [
+        9,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "20": [
+        9,
+        9,
+        8,
+        8,
+        7,
+        5,
+        3
+      ],
+      "21": [
+        9,
+        9,
+        9,
+        8,
+        7,
+        5,
+        3
+      ],
+      "22": [
+        9,
+        9,
+        9,
+        9,
+        8,
+        6,
+        4
+      ],
+      "23": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        7,
+        4
+      ],
+      "24": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        5
+      ],
+      "25": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        6
+      ],
+      "26": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        7
+      ],
+      "27": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        8
+      ],
+      "28": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "29": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "30": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "31": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "32": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "33": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "34": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "35": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "BARD": {
+      "1": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "11": [
+        3,
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "12": [
+        3,
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "13": [
+        3,
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "14": [
+        4,
+        3,
+        3,
+        3,
+        1,
+        0
+      ],
+      "15": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        0
+      ],
+      "16": [
+        4,
+        4,
+        4,
+        3,
+        2,
+        0
+      ],
+      "17": [
+        4,
+        4,
+        4,
+        3,
+        3,
+        0
+      ],
+      "18": [
+        4,
+        4,
+        4,
+        4,
+        3,
+        0
+      ],
+      "19": [
+        4,
+        4,
+        4,
+        4,
+        3,
+        0
+      ],
+      "20": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        0
+      ],
+      "21": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        0
+      ],
+      "22": [
+        5,
+        5,
+        5,
+        5,
+        4,
+        0
+      ],
+      "23": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        0
+      ],
+      "24": [
+        6,
+        6,
+        6,
+        5,
+        5,
+        0
+      ],
+      "25": [
+        6,
+        6,
+        6,
+        6,
+        5,
+        0
+      ],
+      "26": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        0
+      ],
+      "27": [
+        7,
+        7,
+        7,
+        6,
+        6,
+        0
+      ],
+      "28": [
+        7,
+        7,
+        7,
+        7,
+        6,
+        0
+      ],
+      "29": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        0
+      ],
+      "30": [
+        8,
+        8,
+        8,
+        7,
+        7,
+        0
+      ],
+      "31": [
+        8,
+        8,
+        8,
+        8,
+        7,
+        0
+      ],
+      "32": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        0
+      ],
+      "33": [
+        9,
+        9,
+        9,
+        8,
+        8,
+        0
+      ],
+      "34": [
+        9,
+        9,
+        9,
+        9,
+        8,
+        0
+      ],
+      "35": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        0
+      ]
+    },
+    "RANGER": {
+      "1": [
+        0,
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0,
+        0
+      ],
+      "6": [
+        0,
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0,
+        0
+      ],
+      "8": [
+        1,
+        0,
+        0
+      ],
+      "9": [
+        1,
+        0,
+        0
+      ],
+      "10": [
+        2,
+        0,
+        0
+      ],
+      "11": [
+        2,
+        0,
+        0
+      ],
+      "12": [
+        2,
+        1,
+        0
+      ],
+      "13": [
+        2,
+        1,
+        0
+      ],
+      "14": [
+        2,
+        2,
+        0
+      ],
+      "15": [
+        2,
+        2,
+        0
+      ],
+      "16": [
+        3,
+        2,
+        1
+      ],
+      "17": [
+        3,
+        3,
+        1
+      ],
+      "18": [
+        3,
+        3,
+        2
+      ],
+      "19": [
+        3,
+        3,
+        2
+      ],
+      "20": [
+        3,
+        3,
+        3
+      ],
+      "21": [
+        3,
+        3,
+        3
+      ],
+      "22": [
+        3,
+        3,
+        3
+      ],
+      "23": [
+        3,
+        3,
+        3
+      ],
+      "24": [
+        3,
+        3,
+        3
+      ],
+      "25": [
+        3,
+        3,
+        3
+      ],
+      "26": [
+        3,
+        3,
+        3
+      ],
+      "27": [
+        3,
+        3,
+        3
+      ],
+      "28": [
+        3,
+        3,
+        3
+      ],
+      "29": [
+        3,
+        3,
+        3
+      ],
+      "30": [
+        3,
+        3,
+        3
+      ],
+      "31": [
+        3,
+        3,
+        3
+      ],
+      "32": [
+        3,
+        3,
+        3
+      ],
+      "33": [
+        3,
+        3,
+        3
+      ],
+      "34": [
+        3,
+        3,
+        3
+      ],
+      "35": [
+        3,
+        3,
+        3
+      ],
+      "36": [
+        3,
+        3,
+        3
+      ],
+      "37": [
+        3,
+        3,
+        3
+      ],
+      "38": [
+        3,
+        3,
+        3
+      ],
+      "39": [
+        3,
+        3,
+        3
+      ],
+      "40": [
+        3,
+        3,
+        3
+      ]
+    },
+    "PALADIN": {
+      "1": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "11": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "12": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "13": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "14": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "15": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "16": [
+        3,
+        3,
+        2,
+        0
+      ],
+      "17": [
+        3,
+        3,
+        2,
+        0
+      ],
+      "18": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "19": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "20": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "21": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "22": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "23": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "24": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "25": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "26": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "27": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "28": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "29": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "30": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "31": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "32": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "33": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "34": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "35": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "36": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "37": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "38": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "39": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "40": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "SHAMAN": {
+      "1": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        3,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        4,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "10": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "11": [
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "12": [
+        6,
+        5,
+        5,
+        3,
+        2,
+        2,
+        0
+      ],
+      "13": [
+        6,
+        6,
+        6,
+        4,
+        2,
+        2,
+        0
+      ],
+      "14": [
+        6,
+        6,
+        6,
+        5,
+        3,
+        2,
+        1
+      ],
+      "15": [
+        6,
+        6,
+        6,
+        6,
+        3,
+        3,
+        1
+      ],
+      "16": [
+        7,
+        7,
+        7,
+        6,
+        4,
+        3,
+        1
+      ],
+      "17": [
+        7,
+        7,
+        7,
+        7,
+        5,
+        3,
+        2
+      ],
+      "18": [
+        8,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "19": [
+        9,
+        8,
+        8,
+        7,
+        6,
+        4,
+        2
+      ],
+      "20": [
+        9,
+        9,
+        8,
+        8,
+        7,
+        5,
+        3
+      ],
+      "21": [
+        9,
+        9,
+        9,
+        8,
+        7,
+        5,
+        3
+      ],
+      "22": [
+        9,
+        9,
+        9,
+        9,
+        8,
+        6,
+        4
+      ],
+      "23": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        7,
+        4
+      ],
+      "24": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        5
+      ],
+      "25": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        8,
+        6
+      ],
+      "26": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        7
+      ],
+      "27": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        8
+      ],
+      "28": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "29": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "30": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "31": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "32": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "33": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "34": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "35": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "36": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "37": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "38": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "39": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "40": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    }
+  },
+  "spellsKnown": {
+    "SORCERER": {
+      "1": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "2": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "3": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "4": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "5": [
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "6": [
+        4,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "7": [
+        5,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "8": [
+        5,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "9": [
+        5,
+        4,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "10": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "11": [
+        6,
+        4,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "12": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "13": [
+        6,
+        5,
+        4,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "14": [
+        6,
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "15": [
+        6,
+        5,
+        5,
+        4,
+        3,
+        2,
+        2,
+        0,
+        0
+      ],
+      "16": [
+        6,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "17": [
+        6,
+        5,
+        5,
+        4,
+        4,
+        3,
+        2,
+        2,
+        0
+      ],
+      "18": [
+        6,
+        5,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1
+      ],
+      "19": [
+        6,
+        5,
+        5,
+        5,
+        4,
+        3,
+        3,
+        2,
+        2
+      ],
+      "20": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        4,
+        3,
+        3,
+        2
+      ],
+      "21": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "22": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        3
+      ],
+      "23": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4,
+        4
+      ],
+      "24": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "25": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "26": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "27": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "28": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "29": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "30": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "31": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "32": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "33": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "34": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "35": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "36": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "37": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "38": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "39": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "40": [
+        6,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  },
+  "spellType": {
+    "MAGE": "wizard",
+    "SORCERER": "wizard",
+    "BARD": "wizard",
+    "CLERIC": "priest",
+    "DRUID": "priest",
+    "RANGER": "priest",
+    "PALADIN": "priest",
+    "SHAMAN": "priest"
+  },
+  "thiefSkills": {
+    "skills": [
+      "openLocks",
+      "findTraps",
+      "pickPockets",
+      "moveSilently",
+      "hideInShadows",
+      "detectIllusion",
+      "setTraps"
+    ],
+    "labels": [
+      "Open Locks",
+      "Find Traps",
+      "Pick Pockets",
+      "Move Silently",
+      "Hide in Shadows",
+      "Detect Illusion",
+      "Set Traps"
+    ],
+    "base": [
+      25,
+      10,
+      15,
+      10,
+      5,
+      0,
+      0
+    ],
+    "maxPerSkill": 100,
+    "kitMods": {
+      "ASSASSIN": {
+        "pickPockets": -15
+      },
+      "BOUNTY_HUNTER": {
+        "setTraps": 15
+      },
+      "SHADOWDANCER": {
+        "hideInShadows": 20,
+        "moveSilently": 20
+      }
+    },
+    "pointsPerLevel": 25,
+    "initialBonus": 30,
+    "racialAdj": {
+      "human": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "elf": [
+        0,
+        0,
+        5,
+        5,
+        10,
+        0,
+        0
+      ],
+      "half_elf": [
+        0,
+        0,
+        10,
+        0,
+        5,
+        0,
+        0
+      ],
+      "dwarf": [
+        10,
+        15,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "gnome": [
+        5,
+        10,
+        0,
+        5,
+        5,
+        5,
+        0
+      ],
+      "halfling": [
+        5,
+        5,
+        5,
+        10,
+        15,
+        0,
+        0
+      ],
+      "half_orc": [
+        5,
+        0,
+        -5,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    "dexAdj": {
+      "9": [
+        -15,
+        -10,
+        -15,
+        -20,
+        -10,
+        0,
+        0
+      ],
+      "10": [
+        -10,
+        -5,
+        -10,
+        -15,
+        -5,
+        0,
+        0
+      ],
+      "11": [
+        -5,
+        0,
+        -5,
+        -10,
+        0,
+        0,
+        0
+      ],
+      "12": [
+        0,
+        0,
+        0,
+        -5,
+        0,
+        0,
+        0
+      ],
+      "13": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "14": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "15": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "16": [
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "17": [
+        5,
+        10,
+        0,
+        5,
+        5,
+        0,
+        0
+      ],
+      "18": [
+        10,
+        15,
+        5,
+        10,
+        10,
+        0,
+        0
+      ],
+      "19": [
+        15,
+        20,
+        10,
+        15,
+        15,
+        0,
+        0
+      ],
+      "20": [
+        18,
+        23,
+        13,
+        18,
+        18,
+        0,
+        0
+      ],
+      "21": [
+        20,
+        25,
+        15,
+        20,
+        20,
+        0,
+        0
+      ],
+      "22": [
+        22,
+        27,
+        17,
+        22,
+        22,
+        0,
+        0
+      ],
+      "23": [
+        24,
+        29,
+        19,
+        24,
+        24,
+        0,
+        0
+      ],
+      "24": [
+        26,
+        31,
+        21,
+        26,
+        26,
+        0,
+        0
+      ],
+      "25": [
+        28,
+        33,
+        23,
+        28,
+        28,
+        0,
+        0
+      ]
+    },
+    "applicableClasses": [
+      "THIEF",
+      "BARD"
+    ]
+  },
+  "profSlots": {
+    "warrior": {
+      "initial": 4,
+      "rate": 3,
+      "maxPips": 5,
+      "maxOther": 2
+    },
+    "priest": {
+      "initial": 2,
+      "rate": 4,
+      "maxPips": 3,
+      "maxOther": 1
+    },
+    "rogue": {
+      "initial": 2,
+      "rate": 4,
+      "maxPips": 3,
+      "maxOther": 1
+    },
+    "arcane": {
+      "initial": 1,
+      "rate": 6,
+      "maxPips": 1,
+      "maxOther": 1
+    },
+    "monk": {
+      "initial": 1,
+      "rate": 4,
+      "maxPips": 3,
+      "maxOther": 1
+    }
+  },
+  "multiclass": {
+    "combos": {
+      "FIGHTER/MAGE": [
+        "FIGHTER",
+        "MAGE"
+      ],
+      "FIGHTER/THIEF": [
+        "FIGHTER",
+        "THIEF"
+      ],
+      "FIGHTER/CLERIC": [
+        "FIGHTER",
+        "CLERIC"
+      ],
+      "FIGHTER/DRUID": [
+        "FIGHTER",
+        "DRUID"
+      ],
+      "FIGHTER/MAGE/THIEF": [
+        "FIGHTER",
+        "MAGE",
+        "THIEF"
+      ],
+      "FIGHTER/MAGE/CLERIC": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "CLERIC/MAGE": [
+        "CLERIC",
+        "MAGE"
+      ],
+      "CLERIC/THIEF": [
+        "CLERIC",
+        "THIEF"
+      ],
+      "CLERIC/RANGER": [
+        "CLERIC",
+        "RANGER"
+      ],
+      "DRUID/THIEF": [
+        "DRUID",
+        "THIEF"
+      ],
+      "MAGE/THIEF": [
+        "MAGE",
+        "THIEF"
+      ],
+      "CLERIC/ILLUSIONIST": [
+        "CLERIC",
+        "MAGE"
+      ]
+    }
+  },
+  "dualclass": {
+    "humanOnly": true,
+    "minOldPrime": 15,
+    "minNewPrime": 15,
+    "primeReqs": {
+      "FIGHTER": [
+        "str"
+      ],
+      "RANGER": [
+        "str",
+        "dex",
+        "wis"
+      ],
+      "PALADIN": [
+        "str",
+        "cha",
+        "wis"
+      ],
+      "CLERIC": [
+        "wis"
+      ],
+      "DRUID": [
+        "wis",
+        "cha"
+      ],
+      "THIEF": [
+        "dex"
+      ],
+      "BARD": [
+        "dex",
+        "cha"
+      ],
+      "MAGE": [
+        "int"
+      ]
+    },
+    "allowed": {
+      "FIGHTER": [
+        "MAGE",
+        "THIEF",
+        "CLERIC",
+        "DRUID"
+      ],
+      "RANGER": [
+        "CLERIC",
+        "MAGE",
+        "THIEF"
+      ],
+      "PALADIN": [],
+      "CLERIC": [
+        "FIGHTER",
+        "RANGER",
+        "MAGE",
+        "THIEF"
+      ],
+      "DRUID": [
+        "FIGHTER"
+      ],
+      "THIEF": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "BARD": [],
+      "MAGE": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ]
+    }
+  },
+  "xpTable": {
+    "FIGHTER": [
+      0,
+      2000,
+      4000,
+      8000,
+      16000,
+      32000,
+      64000,
+      125000,
+      250000,
+      500000,
+      750000,
+      1000000,
+      1250000,
+      1500000,
+      1750000,
+      2000000,
+      2250000,
+      2500000,
+      2750000,
+      3000000,
+      3250000,
+      3500000,
+      3750000,
+      4000000,
+      4250000,
+      4500000,
+      4750000,
+      5000000,
+      5250000,
+      5500000,
+      5750000,
+      6000000,
+      6250000,
+      6500000,
+      6750000,
+      7000000,
+      7250000,
+      7500000,
+      7750000,
+      8000000
+    ],
+    "RANGER": [
+      0,
+      2250,
+      4500,
+      9000,
+      18000,
+      36000,
+      75000,
+      150000,
+      300000,
+      600000,
+      900000,
+      1200000,
+      1500000,
+      1800000,
+      2100000,
+      2400000,
+      2700000,
+      3000000,
+      3300000,
+      3600000,
+      3900000,
+      4200000,
+      4500000,
+      4800000,
+      5100000,
+      5400000,
+      5700000,
+      6000000,
+      6300000,
+      6600000,
+      6900000,
+      7200000,
+      7500000,
+      7800000,
+      8100000,
+      8400000,
+      8700000,
+      9000000,
+      9300000,
+      9600000
+    ],
+    "PALADIN": [
+      0,
+      2250,
+      4500,
+      9000,
+      18000,
+      36000,
+      75000,
+      150000,
+      300000,
+      600000,
+      900000,
+      1200000,
+      1500000,
+      1800000,
+      2100000,
+      2400000,
+      2700000,
+      3000000,
+      3300000,
+      3600000,
+      3900000,
+      4200000,
+      4500000,
+      4800000,
+      5100000,
+      5400000,
+      5700000,
+      6000000,
+      6300000,
+      6600000,
+      6900000,
+      7200000,
+      7500000,
+      7800000,
+      8100000,
+      8400000,
+      8700000,
+      9000000,
+      9300000,
+      9600000
+    ],
+    "CLERIC": [
+      0,
+      1500,
+      3000,
+      6000,
+      13000,
+      27500,
+      55000,
+      110000,
+      225000,
+      450000,
+      675000,
+      900000,
+      1125000,
+      1350000,
+      1575000,
+      1800000,
+      2025000,
+      2250000,
+      2475000,
+      2700000,
+      2925000,
+      3150000,
+      3375000,
+      3600000,
+      3825000,
+      4050000,
+      4275000,
+      4500000,
+      4725000,
+      4950000,
+      5175000,
+      5400000,
+      5625000,
+      5850000,
+      6075000,
+      6300000,
+      6525000,
+      6750000,
+      6975000,
+      7200000
+    ],
+    "DRUID": [
+      0,
+      2000,
+      4000,
+      7500,
+      12500,
+      20000,
+      35000,
+      60000,
+      90000,
+      125000,
+      200000,
+      300000,
+      750000,
+      1500000,
+      3000000,
+      3150000,
+      3300000,
+      3450000,
+      3600000,
+      3750000,
+      3900000,
+      4050000,
+      4200000,
+      4350000,
+      4500000,
+      4650000,
+      4800000,
+      4950000,
+      5100000,
+      5250000,
+      5400000,
+      5550000,
+      5700000,
+      5850000,
+      6000000,
+      6150000,
+      6300000,
+      6450000,
+      6600000,
+      6750000
+    ],
+    "THIEF": [
+      0,
+      1250,
+      2500,
+      5000,
+      10000,
+      20000,
+      40000,
+      70000,
+      110000,
+      160000,
+      220000,
+      440000,
+      660000,
+      880000,
+      1100000,
+      1320000,
+      1540000,
+      1760000,
+      1980000,
+      2200000,
+      2420000,
+      2640000,
+      2860000,
+      3080000,
+      3300000,
+      3520000,
+      3740000,
+      3960000,
+      4180000,
+      4400000,
+      4620000,
+      4840000,
+      5060000,
+      5280000,
+      5500000,
+      5720000,
+      5940000,
+      6160000,
+      6380000,
+      6600000
+    ],
+    "BARD": [
+      0,
+      1250,
+      2500,
+      5000,
+      10000,
+      20000,
+      40000,
+      70000,
+      110000,
+      160000,
+      220000,
+      440000,
+      660000,
+      880000,
+      1100000,
+      1320000,
+      1540000,
+      1760000,
+      1980000,
+      2200000,
+      2420000,
+      2640000,
+      2860000,
+      3080000,
+      3300000,
+      3520000,
+      3740000,
+      3960000,
+      4180000,
+      4400000,
+      4620000,
+      4840000,
+      5060000,
+      5280000,
+      5500000,
+      5720000,
+      5940000,
+      6160000,
+      6380000,
+      6600000
+    ],
+    "MAGE": [
+      0,
+      2500,
+      5000,
+      10000,
+      20000,
+      40000,
+      60000,
+      90000,
+      135000,
+      250000,
+      375000,
+      750000,
+      1125000,
+      1500000,
+      1875000,
+      2250000,
+      2625000,
+      3000000,
+      3375000,
+      3750000,
+      4125000,
+      4500000,
+      4875000,
+      5250000,
+      5625000,
+      6000000,
+      6375000,
+      6750000,
+      7125000,
+      7500000,
+      7875000,
+      8250000,
+      8625000,
+      9000000,
+      9375000,
+      9750000,
+      10125000,
+      10500000,
+      10875000,
+      11250000
+    ],
+    "SORCERER": [
+      0,
+      2500,
+      5000,
+      10000,
+      20000,
+      40000,
+      60000,
+      90000,
+      135000,
+      250000,
+      375000,
+      750000,
+      1125000,
+      1500000,
+      1875000,
+      2250000,
+      2625000,
+      3000000,
+      3375000,
+      3750000,
+      4125000,
+      4500000,
+      4875000,
+      5250000,
+      5625000,
+      6000000,
+      6375000,
+      6750000,
+      7125000,
+      7500000,
+      7875000,
+      8250000,
+      8625000,
+      9000000,
+      9375000,
+      9750000,
+      10125000,
+      10500000,
+      10875000,
+      11250000
+    ],
+    "MONK": [
+      0,
+      1500,
+      3000,
+      6000,
+      13000,
+      27500,
+      55000,
+      110000,
+      225000,
+      450000,
+      675000,
+      900000,
+      1125000,
+      1350000,
+      1575000,
+      1800000,
+      2025000,
+      2250000,
+      2475000,
+      2700000,
+      2925000,
+      3150000,
+      3375000,
+      3600000,
+      3825000,
+      4050000,
+      4275000,
+      4500000,
+      4725000,
+      4950000,
+      5175000,
+      5400000,
+      5625000,
+      5850000,
+      6075000,
+      6300000,
+      6525000,
+      6750000,
+      6975000,
+      7200000
+    ],
+    "SHAMAN": [
+      0,
+      1500,
+      3000,
+      6000,
+      13000,
+      27500,
+      55000,
+      110000,
+      225000,
+      450000,
+      675000,
+      900000,
+      1125000,
+      1350000,
+      1575000,
+      1800000,
+      2025000,
+      2250000,
+      2475000,
+      2700000,
+      2925000,
+      3150000,
+      3375000,
+      3600000,
+      3825000,
+      4050000,
+      4275000,
+      4500000,
+      4725000,
+      4950000,
+      5175000,
+      5400000,
+      5625000,
+      5850000,
+      6075000,
+      6300000,
+      6525000,
+      6750000,
+      6975000,
+      7200000
+    ],
+    "BARBARIAN": [
+      0,
+      2000,
+      4000,
+      8000,
+      16000,
+      32000,
+      64000,
+      125000,
+      250000,
+      500000,
+      750000,
+      1000000,
+      1250000,
+      1500000,
+      1750000,
+      2000000,
+      2250000,
+      2500000,
+      2750000,
+      3000000,
+      3250000,
+      3500000,
+      3750000,
+      4000000,
+      4250000,
+      4500000,
+      4750000,
+      5000000,
+      5250000,
+      5500000,
+      5750000,
+      6000000,
+      6250000,
+      6500000,
+      6750000,
+      7000000,
+      7250000,
+      7500000,
+      7750000,
+      8000000
+    ]
+  },
+  "hlas": {
+    "FIGHTER": [
+      {
+        "n": "Greater Whirlwind Attack",
+        "desc": "10 attacks at -4 THAC0 bonus for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Whirlwind Attack",
+        "desc": "10 attacks for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Deathblow",
+        "desc": "Instantly slay enemies of 10 HD or less",
+        "max": 1
+      },
+      {
+        "n": "Greater Deathblow",
+        "desc": "Instantly slay enemies of 12 HD or less",
+        "max": 1
+      },
+      {
+        "n": "Critical Strike",
+        "desc": "All hits are critical hits for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Power Attack",
+        "desc": "+4 THAC0 and damage for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Hardiness",
+        "desc": "40% resistance to physical damage for 1 round/level",
+        "max": 5
+      },
+      {
+        "n": "Resist Magic",
+        "desc": "50% magic resistance for 4 rounds",
+        "max": 5
+      },
+      {
+        "n": "War Cry",
+        "desc": "All nearby enemies must save vs. spell or panic for 2 rounds",
+        "max": 5
+      }
+    ],
+    "RANGER": [
+      {
+        "n": "Greater Whirlwind Attack",
+        "desc": "10 attacks at -4 THAC0 bonus for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Whirlwind Attack",
+        "desc": "10 attacks for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Tracking",
+        "desc": "Detect all creatures in the current area",
+        "max": 1
+      },
+      {
+        "n": "Critical Strike",
+        "desc": "All hits are critical hits for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Power Attack",
+        "desc": "+4 THAC0 and damage for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Hardiness",
+        "desc": "40% resistance to physical damage for 1 round/level",
+        "max": 5
+      },
+      {
+        "n": "Resist Magic",
+        "desc": "50% magic resistance for 4 rounds",
+        "max": 5
+      }
+    ],
+    "PALADIN": [
+      {
+        "n": "Greater Whirlwind Attack",
+        "desc": "10 attacks at -4 THAC0 bonus for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Whirlwind Attack",
+        "desc": "10 attacks for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Critical Strike",
+        "desc": "All hits are critical hits for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Power Attack",
+        "desc": "+4 THAC0 and damage for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Hardiness",
+        "desc": "40% resistance to physical damage for 1 round/level",
+        "max": 5
+      },
+      {
+        "n": "Resist Magic",
+        "desc": "50% magic resistance for 4 rounds",
+        "max": 5
+      }
+    ],
+    "BARBARIAN": [
+      {
+        "n": "Greater Whirlwind Attack",
+        "desc": "10 attacks at -4 THAC0 bonus for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Whirlwind Attack",
+        "desc": "10 attacks for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Deathblow",
+        "desc": "Instantly slay enemies of 10 HD or less",
+        "max": 1
+      },
+      {
+        "n": "Greater Deathblow",
+        "desc": "Instantly slay enemies of 12 HD or less",
+        "max": 1
+      },
+      {
+        "n": "Critical Strike",
+        "desc": "All hits are critical hits for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Power Attack",
+        "desc": "+4 THAC0 and damage for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Hardiness",
+        "desc": "40% resistance to physical damage for 1 round/level",
+        "max": 5
+      },
+      {
+        "n": "Resist Magic",
+        "desc": "50% magic resistance for 4 rounds",
+        "max": 5
+      },
+      {
+        "n": "War Cry",
+        "desc": "All nearby enemies must save vs. spell or panic for 2 rounds",
+        "max": 5
+      }
+    ],
+    "CLERIC": [
+      {
+        "n": "Summon Deva",
+        "desc": "Summon a powerful celestial ally",
+        "max": 1
+      },
+      {
+        "n": "Summon Fallen Deva",
+        "desc": "Summon a fallen celestial (evil clerics)",
+        "max": 1
+      },
+      {
+        "n": "Globe of Blades",
+        "desc": "Spinning blades deal damage to nearby enemies",
+        "max": 5
+      },
+      {
+        "n": "Implosion",
+        "desc": "Target must save or be destroyed",
+        "max": 5
+      },
+      {
+        "n": "Energy Blades",
+        "desc": "Create energy blades to throw as ranged attacks",
+        "max": 5
+      },
+      {
+        "n": "Storm of Vengeance",
+        "desc": "Call lightning, acid rain, and ice on enemies",
+        "max": 5
+      },
+      {
+        "n": "Elemental Summoning",
+        "desc": "Summon a powerful elemental",
+        "max": 5
+      },
+      {
+        "n": "Mass Raise Dead",
+        "desc": "Raise all dead party members",
+        "max": 5
+      }
+    ],
+    "DRUID": [
+      {
+        "n": "Summon Fire Elemental",
+        "desc": "Summon a powerful fire elemental",
+        "max": 5
+      },
+      {
+        "n": "Globe of Blades",
+        "desc": "Spinning blades deal damage to nearby enemies",
+        "max": 5
+      },
+      {
+        "n": "Elemental Summoning",
+        "desc": "Summon a powerful elemental",
+        "max": 5
+      },
+      {
+        "n": "Energy Blades",
+        "desc": "Create energy blades to throw as ranged attacks",
+        "max": 5
+      },
+      {
+        "n": "Storm of Vengeance",
+        "desc": "Call lightning, acid rain, and ice on enemies",
+        "max": 5
+      },
+      {
+        "n": "Mass Raise Dead",
+        "desc": "Raise all dead party members",
+        "max": 5
+      },
+      {
+        "n": "Aura of Flaming Death",
+        "desc": "Surround caster in flames dealing fire damage",
+        "max": 5
+      }
+    ],
+    "THIEF": [
+      {
+        "n": "Use Any Item",
+        "desc": "Ignore all class and alignment restrictions on items",
+        "max": 1
+      },
+      {
+        "n": "Assassination",
+        "desc": "Next backstab automatically hits and is a critical",
+        "max": 5
+      },
+      {
+        "n": "Greater Evasion",
+        "desc": "+4 AC, +2 saves for 5 rounds",
+        "max": 5
+      },
+      {
+        "n": "Set Spike Trap",
+        "desc": "Set a trap dealing 20d6 damage",
+        "max": 5
+      },
+      {
+        "n": "Set Exploding Trap",
+        "desc": "Set a trap dealing 10d6 fire damage in area",
+        "max": 5
+      },
+      {
+        "n": "Set Time Trap",
+        "desc": "Set a trap that stops time for 3 rounds",
+        "max": 5
+      },
+      {
+        "n": "Alchemy",
+        "desc": "Create 5 potions of your choice",
+        "max": 5
+      },
+      {
+        "n": "Scribe Scrolls",
+        "desc": "Create a scroll of a 7th-level spell",
+        "max": 5
+      },
+      {
+        "n": "Avoid Death",
+        "desc": "Automatically survive a killing blow once",
+        "max": 5
+      }
+    ],
+    "BARD": [
+      {
+        "n": "Use Any Item",
+        "desc": "Ignore all class and alignment restrictions on items",
+        "max": 1
+      },
+      {
+        "n": "Enhanced Bard Song",
+        "desc": "Improved bard song with better bonuses",
+        "max": 1
+      },
+      {
+        "n": "Magic Flute",
+        "desc": "Play a tune that confuses and holds enemies",
+        "max": 5
+      },
+      {
+        "n": "Greater Evasion",
+        "desc": "+4 AC, +2 saves for 5 rounds",
+        "max": 5
+      },
+      {
+        "n": "Set Spike Trap",
+        "desc": "Set a trap dealing 20d6 damage",
+        "max": 5
+      },
+      {
+        "n": "Set Exploding Trap",
+        "desc": "Set a trap dealing 10d6 fire damage in area",
+        "max": 5
+      },
+      {
+        "n": "Set Time Trap",
+        "desc": "Set a trap that stops time for 3 rounds",
+        "max": 5
+      },
+      {
+        "n": "Alchemy",
+        "desc": "Create 5 potions of your choice",
+        "max": 5
+      },
+      {
+        "n": "Scribe Scrolls",
+        "desc": "Create a scroll of a 7th-level spell",
+        "max": 5
+      }
+    ],
+    "MAGE": [
+      {
+        "n": "Summon Planetar",
+        "desc": "Summon a powerful celestial warrior",
+        "max": 1
+      },
+      {
+        "n": "Summon Dark Planetar",
+        "desc": "Summon a fallen celestial (evil mages)",
+        "max": 1
+      },
+      {
+        "n": "Energy Blades",
+        "desc": "Create energy blades to throw as ranged attacks",
+        "max": 5
+      },
+      {
+        "n": "Dragon's Breath",
+        "desc": "Breathe a cone of fire dealing massive damage",
+        "max": 5
+      },
+      {
+        "n": "Comet",
+        "desc": "Call down a comet dealing massive damage to one target",
+        "max": 5
+      },
+      {
+        "n": "Improved Alacrity",
+        "desc": "Remove casting speed limits for 2 rounds",
+        "max": 5
+      },
+      {
+        "n": "Spell Trap",
+        "desc": "Absorb the next spell levels that target you",
+        "max": 5
+      }
+    ],
+    "SORCERER": [
+      {
+        "n": "Summon Planetar",
+        "desc": "Summon a powerful celestial warrior",
+        "max": 1
+      },
+      {
+        "n": "Summon Dark Planetar",
+        "desc": "Summon a fallen celestial (evil sorcerers)",
+        "max": 1
+      },
+      {
+        "n": "Energy Blades",
+        "desc": "Create energy blades to throw as ranged attacks",
+        "max": 5
+      },
+      {
+        "n": "Dragon's Breath",
+        "desc": "Breathe a cone of fire dealing massive damage",
+        "max": 5
+      },
+      {
+        "n": "Comet",
+        "desc": "Call down a comet dealing massive damage to one target",
+        "max": 5
+      },
+      {
+        "n": "Improved Alacrity",
+        "desc": "Remove casting speed limits for 2 rounds",
+        "max": 5
+      },
+      {
+        "n": "Spell Trap",
+        "desc": "Absorb the next spell levels that target you",
+        "max": 5
+      }
+    ],
+    "MONK": [
+      {
+        "n": "Greater Whirlwind Attack",
+        "desc": "10 attacks at -4 THAC0 bonus for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Whirlwind Attack",
+        "desc": "10 attacks for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Quivering Palm",
+        "desc": "Target must save vs. death or die",
+        "max": 1
+      },
+      {
+        "n": "Hardiness",
+        "desc": "40% resistance to physical damage for 1 round/level",
+        "max": 5
+      },
+      {
+        "n": "Resist Magic",
+        "desc": "50% magic resistance for 4 rounds",
+        "max": 5
+      },
+      {
+        "n": "Critical Strike",
+        "desc": "All hits are critical hits for 1 round",
+        "max": 5
+      },
+      {
+        "n": "Power Attack",
+        "desc": "+4 THAC0 and damage for 1 round",
+        "max": 5
+      }
+    ],
+    "SHAMAN": [
+      {
+        "n": "Summon Spirit Lion",
+        "desc": "Summon a powerful spirit lion",
+        "max": 5
+      },
+      {
+        "n": "Summon Spirit Snake",
+        "desc": "Summon a powerful spirit snake",
+        "max": 5
+      },
+      {
+        "n": "Globe of Blades",
+        "desc": "Spinning blades deal damage to nearby enemies",
+        "max": 5
+      },
+      {
+        "n": "Elemental Summoning",
+        "desc": "Summon a powerful elemental",
+        "max": 5
+      },
+      {
+        "n": "Storm of Vengeance",
+        "desc": "Call lightning, acid rain, and ice on enemies",
+        "max": 5
+      }
+    ]
+  },
+  "hlaThreshold": 3000000,
+  "saveLabels": [
+    "Death",
+    "Wand",
+    "Polymorph",
+    "Breath",
+    "Spell"
+  ],
+  "oppositionSchools": {
+    "ABJURER": [
+      "Alteration"
+    ],
+    "CONJURER": [
+      "Divination"
+    ],
+    "DIVINER": [
+      "Conjuration"
+    ],
+    "ENCHANTER": [
+      "Evocation"
+    ],
+    "ILLUSIONIST": [
+      "Necromancy"
+    ],
+    "INVOKER": [
+      "Enchantment"
+    ],
+    "NECROMANCER": [
+      "Illusion"
+    ],
+    "TRANSMUTER": [
+      "Abjuration"
+    ]
+  },
+  "proficiencies": [
+    {
+      "id": "BASTARD_SWORD",
+      "n": "Bastard Sword",
+      "cat": "melee"
+    },
+    {
+      "id": "LONG_SWORD",
+      "n": "Long Sword",
+      "cat": "melee"
+    },
+    {
+      "id": "SHORT_SWORD",
+      "n": "Short Sword",
+      "cat": "melee"
+    },
+    {
+      "id": "AXE",
+      "n": "Axe",
+      "cat": "melee"
+    },
+    {
+      "id": "TWO_HANDED_SWORD",
+      "n": "Two-Handed Sword",
+      "cat": "melee"
+    },
+    {
+      "id": "KATANA",
+      "n": "Katana",
+      "cat": "melee"
+    },
+    {
+      "id": "SCIMITAR",
+      "n": "Scimitar/Wakizashi/Ninjato",
+      "cat": "melee"
+    },
+    {
+      "id": "DAGGER",
+      "n": "Dagger",
+      "cat": "melee"
+    },
+    {
+      "id": "WAR_HAMMER",
+      "n": "War Hammer",
+      "cat": "melee"
+    },
+    {
+      "id": "CLUB",
+      "n": "Club",
+      "cat": "melee"
+    },
+    {
+      "id": "SPEAR",
+      "n": "Spear",
+      "cat": "melee"
+    },
+    {
+      "id": "HALBERD",
+      "n": "Halberd",
+      "cat": "melee"
+    },
+    {
+      "id": "FLAIL_MORNINGSTAR",
+      "n": "Flail/Morningstar",
+      "cat": "melee"
+    },
+    {
+      "id": "MACE",
+      "n": "Mace",
+      "cat": "melee"
+    },
+    {
+      "id": "QUARTERSTAFF",
+      "n": "Quarterstaff",
+      "cat": "melee"
+    },
+    {
+      "id": "CROSSBOW",
+      "n": "Crossbow",
+      "cat": "ranged"
+    },
+    {
+      "id": "LONGBOW",
+      "n": "Longbow",
+      "cat": "ranged"
+    },
+    {
+      "id": "SHORTBOW",
+      "n": "Shortbow",
+      "cat": "ranged"
+    },
+    {
+      "id": "DART",
+      "n": "Dart",
+      "cat": "ranged"
+    },
+    {
+      "id": "SLING",
+      "n": "Sling",
+      "cat": "ranged"
+    },
+    {
+      "id": "TWO_WEAPON",
+      "n": "Two-Weapon Style",
+      "cat": "style",
+      "maxPips": 3
+    },
+    {
+      "id": "SWORD_SHIELD",
+      "n": "Sword and Shield",
+      "cat": "style",
+      "maxPips": 2
+    },
+    {
+      "id": "SINGLE_WEAPON",
+      "n": "Single Weapon",
+      "cat": "style",
+      "maxPips": 2
+    },
+    {
+      "id": "TWO_HANDED",
+      "n": "Two-Handed Weapon",
+      "cat": "style",
+      "maxPips": 2
+    }
+  ],
+  "itemTypeToProf": {
+    "short sword": "SHORT_SWORD",
+    "dagger": "DAGGER",
+    "axe": "AXE",
+    "mace": "MACE",
+    "hammer": "WAR_HAMMER",
+    "flail": "FLAIL_MORNINGSTAR",
+    "morning star": "FLAIL_MORNINGSTAR",
+    "staff": "QUARTERSTAFF",
+    "spear": "SPEAR",
+    "halberd": "HALBERD",
+    "crossbow": "CROSSBOW",
+    "sling": "SLING",
+    "dart": "DART"
+  },
+  "profTypeMap": {
+    "bastard sword": "BASTARD_SWORD",
+    "long sword": "LONG_SWORD",
+    "two-handed sword": "TWO_HANDED_SWORD",
+    "short sword": "SHORT_SWORD",
+    "axe": "AXE",
+    "katana": "KATANA",
+    "scimitar/wakizashi/ninjato": "SCIMITAR",
+    "dagger": "DAGGER",
+    "war hammer": "WAR_HAMMER",
+    "club": "CLUB",
+    "spear": "SPEAR",
+    "halberd": "HALBERD",
+    "flail/morning star": "FLAIL_MORNINGSTAR",
+    "mace": "MACE",
+    "quarterstaff": "QUARTERSTAFF",
+    "crossbow": "CROSSBOW",
+    "long bow": "LONGBOW",
+    "short bow": "SHORTBOW",
+    "dart": "DART",
+    "sling": "SLING"
+  },
+  "profPipBonuses": [
+    {
+      "pips": 0,
+      "thac0": -1,
+      "dmg": 0,
+      "apr": 0,
+      "speed": 0,
+      "label": "Not Proficient"
+    },
+    {
+      "pips": 1,
+      "thac0": 0,
+      "dmg": 0,
+      "apr": 0,
+      "speed": 0,
+      "label": "Proficient"
+    },
+    {
+      "pips": 2,
+      "thac0": 1,
+      "dmg": 2,
+      "apr": 0.5,
+      "speed": 0,
+      "label": "Specialized"
+    },
+    {
+      "pips": 3,
+      "thac0": 1,
+      "dmg": 2,
+      "apr": 0.5,
+      "speed": 0,
+      "label": "Master"
+    },
+    {
+      "pips": 4,
+      "thac0": 1,
+      "dmg": 2,
+      "apr": 0.5,
+      "speed": 0,
+      "label": "High Master"
+    },
+    {
+      "pips": 5,
+      "thac0": 3,
+      "dmg": 5,
+      "apr": 0.5,
+      "speed": -1,
+      "label": "Grand Master"
+    }
+  ],
+  "classWeaponRestrictions": {
+    "CLERIC": [
+      "mace",
+      "flail",
+      "morning star",
+      "hammer",
+      "staff",
+      "club",
+      "sling"
+    ],
+    "DRUID": [
+      "club",
+      "dagger",
+      "dart",
+      "sling",
+      "spear",
+      "staff",
+      "scimitar"
+    ],
+    "MAGE": [
+      "dagger",
+      "staff",
+      "dart",
+      "sling",
+      "crossbow"
+    ],
+    "SORCERER": [
+      "dagger",
+      "staff",
+      "dart",
+      "sling",
+      "crossbow"
+    ],
+    "MONK": []
+  },
+  "classArmorRestrictions": {
+    "MAGE": "none",
+    "SORCERER": "none",
+    "THIEF": "leather",
+    "BARD": "chain",
+    "MONK": "none",
+    "DRUID": "leather"
+  },
+  "monkProgression": {
+    "ac": [
+      9,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0,
+      0,
+      -1,
+      -1,
+      -2,
+      -2,
+      -3,
+      -3,
+      -4,
+      -4,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5
+    ],
+    "mr": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36,
+      39,
+      42,
+      45,
+      48,
+      50,
+      52,
+      54,
+      56
+    ],
+    "speed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "backstabMultiplier": {
+    "THIEF": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "ASSASSIN": [
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "STALKER": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "SHADOWDANCER": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "kitAbilities": {
+    "BERSERKER": {
+      "passive": [],
+      "activated": [
+        {
+          "n": "Enrage",
+          "freq": "1/day per 4 levels",
+          "effects": "+2 THAC0, +2 damage, -2 AC, +15 HP. Immune to charm, fear, hold, level drain, maze, imprisonment, stun, sleep. Lasts 5 rounds.",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "statReq": {
+        "str": 15
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "MAGE",
+        "THIEF",
+        "CLERIC",
+        "DRUID"
+      ],
+      "hlaPool": {
+        "class": "FIGHTER",
+        "note": "Standard fighter HLA pool"
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Fighter kit, no spellcasting."
+      }
+    },
+    "WIZARDSLAYER": {
+      "passive": [
+        {
+          "n": "Magic Resistance",
+          "type": "mrPerLevel",
+          "value": 1,
+          "desc": "+1% magic resistance per level"
+        },
+        {
+          "n": "Spell Failure on Hit",
+          "type": "desc",
+          "desc": "Each hit applies cumulative 10% spell failure on target"
+        }
+      ],
+      "activated": [],
+      "restrictions": {
+        "items": "No magic items except weapons and armor"
+      },
+      "statReq": {
+        "str": 15,
+        "dex": 15
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "MAGE",
+        "THIEF",
+        "CLERIC",
+        "DRUID"
+      ],
+      "hlaPool": {
+        "class": "FIGHTER",
+        "note": "Standard fighter HLA pool"
+      }
+    },
+    "KENSAI": {
+      "passive": [
+        {
+          "n": "THAC0 Bonus",
+          "type": "thac0PerLevel",
+          "rate": 3,
+          "value": 1,
+          "desc": "+1 THAC0 per 3 levels"
+        },
+        {
+          "n": "Damage Bonus",
+          "type": "dmgPerLevel",
+          "rate": 3,
+          "value": 1,
+          "desc": "+1 damage per 3 levels"
+        },
+        {
+          "n": "AC Bonus",
+          "type": "acBonus",
+          "value": -2,
+          "desc": "-2 AC bonus"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Kai",
+          "freq": "1/day per 4 levels",
+          "effects": "All damage dice roll maximum for 1 round.",
+          "level": 1
+        }
+      ],
+      "restrictions": {
+        "armor": "none",
+        "ranged": false
+      },
+      "statReq": {
+        "str": 15,
+        "dex": 15,
+        "con": 15
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "MAGE",
+        "THIEF",
+        "CLERIC",
+        "DRUID"
+      ],
+      "hlaPool": {
+        "class": "FIGHTER",
+        "note": "Standard fighter HLA pool. Famously dual-classed to Mage."
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Fighter kit, no spellcasting."
+      }
+    },
+    "ARCHER": {
+      "passive": [
+        {
+          "n": "Ranged THAC0",
+          "type": "desc",
+          "desc": "+1 THAC0 with ranged weapons per 3 levels"
+        },
+        {
+          "n": "Ranged Damage",
+          "type": "desc",
+          "desc": "+1 damage with ranged weapons per 3 levels"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Called Shot",
+          "freq": "1/day per 4 levels",
+          "effects": "Next ranged attack applies -1 THAC0 penalty and -1 save penalty to target per 4 levels.",
+          "level": 1
+        }
+      ],
+      "restrictions": {
+        "armor": "no metal"
+      },
+      "statReq": {
+        "str": 13,
+        "dex": 17,
+        "con": 14,
+        "wis": 14
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "CLERIC",
+        "MAGE",
+        "THIEF"
+      ],
+      "hlaPool": {
+        "class": "RANGER",
+        "note": "Standard ranger HLA pool. Inherited Called Shot HLA."
+      },
+      "spellRestrictions": {
+        "note": "Standard ranger spellcasting. No Charm Animal at level 1."
+      }
+    },
+    "STALKER": {
+      "passive": [
+        {
+          "n": "Backstab",
+          "type": "backstab",
+          "desc": "Can backstab up to x3 multiplier"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Haste",
+          "freq": "innate",
+          "effects": "Can cast Haste once per day",
+          "level": 1
+        },
+        {
+          "n": "Minor Spell Deflection",
+          "freq": "innate",
+          "effects": "Can cast Minor Spell Deflection once per day",
+          "level": 12
+        }
+      ],
+      "restrictions": {
+        "armor": "studded leather or lighter"
+      },
+      "statReq": {
+        "str": 13,
+        "dex": 13,
+        "con": 14,
+        "int": 10,
+        "wis": 14
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "CLERIC",
+        "MAGE",
+        "THIEF"
+      ],
+      "hlaPool": {
+        "class": "RANGER",
+        "note": "Standard ranger HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard ranger spellcasting. Innate Haste/Minor Spell Deflection."
+      }
+    },
+    "CAVALIER": {
+      "passive": [
+        {
+          "n": "Immunities",
+          "type": "immunities",
+          "values": [
+            "fear",
+            "charm",
+            "poison"
+          ],
+          "desc": "Immune to fear, charm, and poison"
+        },
+        {
+          "n": "Bonus Damage",
+          "type": "desc",
+          "desc": "+3 damage vs. fiends and dragons"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Remove Fear",
+          "freq": "1/day per level",
+          "effects": "Removes fear from allies in area.",
+          "level": 1
+        }
+      ],
+      "restrictions": {
+        "ranged": false
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "PALADIN",
+        "note": "Standard paladin HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard paladin spellcasting."
+      }
+    },
+    "INQUISITOR": {
+      "passive": [
+        {
+          "n": "Immunities",
+          "type": "immunities",
+          "values": [
+            "charm",
+            "hold"
+          ],
+          "desc": "Immune to charm and hold"
+        },
+        {
+          "n": "Dispel Magic",
+          "type": "desc",
+          "desc": "Dispel Magic cast at 2x character level"
+        }
+      ],
+      "activated": [
+        {
+          "n": "True Seeing",
+          "freq": "1/day per 4 levels",
+          "effects": "See through invisibility and illusions for 1 round/level.",
+          "level": 1
+        }
+      ],
+      "restrictions": {
+        "noLayOnHands": true,
+        "noSpells": true
+      },
+      "spellRestrictions": {
+        "noPriestSpells": true,
+        "reason": "Inquisitors cannot cast priest spells at all"
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "PALADIN",
+        "note": "Standard paladin HLA pool"
+      }
+    },
+    "UNDEAD_HUNTER": {
+      "passive": [
+        {
+          "n": "Immunities",
+          "type": "immunities",
+          "values": [
+            "hold",
+            "level drain"
+          ],
+          "desc": "Immune to hold and level drain"
+        },
+        {
+          "n": "Bonus vs Undead",
+          "type": "desc",
+          "desc": "+3 THAC0 and +3 damage vs. undead"
+        }
+      ],
+      "activated": [],
+      "restrictions": {
+        "noLayOnHands": true
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "PALADIN",
+        "note": "Standard paladin HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard paladin spellcasting."
+      }
+    },
+    "ASSASSIN": {
+      "passive": [
+        {
+          "n": "Backstab",
+          "type": "backstab",
+          "desc": "Enhanced backstab multiplier (up to x7)"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Poison Weapon",
+          "freq": "1/day per 4 levels",
+          "effects": "Next hit poisons target for 6 rounds (1 dmg/sec, save vs. death for half).",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "hlaPool": {
+        "class": "THIEF",
+        "exclude": [],
+        "note": "Uses standard Thief HLA pool"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Thief kit, no spellcasting."
+      }
+    },
+    "BOUNTY_HUNTER": {
+      "passive": [
+        {
+          "n": "Set Traps Bonus",
+          "type": "desc",
+          "desc": "+15 bonus to Set Traps skill"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Special Snare",
+          "freq": "1/day per 5 levels",
+          "effects": "Set a special snare with bonus effects (slow, stun, hold) that improve with level.",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "THIEF",
+        "note": "Standard thief HLA pool. Specialized in Set Special Snare."
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Thief kit, no spellcasting."
+      }
+    },
+    "SWASHBUCKLER": {
+      "passive": [
+        {
+          "n": "AC Bonus",
+          "type": "acPerLevel",
+          "rate": 5,
+          "value": 1,
+          "desc": "+1 AC per 5 levels"
+        },
+        {
+          "n": "THAC0 Bonus",
+          "type": "thac0PerLevel",
+          "rate": 5,
+          "value": 1,
+          "desc": "+1 THAC0 per 5 levels"
+        },
+        {
+          "n": "Damage Bonus",
+          "type": "dmgPerLevel",
+          "rate": 5,
+          "value": 1,
+          "desc": "+1 damage per 5 levels"
+        }
+      ],
+      "activated": [],
+      "restrictions": {
+        "noBackstab": true
+      },
+      "hlaPool": {
+        "class": "THIEF",
+        "exclude": [
+          "Assassination"
+        ],
+        "note": "No Assassination (no backstab)"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Thief kit, no spellcasting."
+      }
+    },
+    "BLADE": {
+      "passive": [],
+      "activated": [
+        {
+          "n": "Offensive Spin",
+          "freq": "1/day per 4 levels",
+          "effects": "+2 THAC0, +2 damage, +1 APR, +2 AC for 4 rounds.",
+          "level": 1
+        },
+        {
+          "n": "Defensive Spin",
+          "freq": "1/day per 4 levels",
+          "effects": "+1 AC per level (max +10), rooted in place for 4 rounds.",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "BARD",
+        "note": "Standard bard HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard bard spellcasting."
+      }
+    },
+    "SKALD": {
+      "passive": [
+        {
+          "n": "Enhanced Bard Song",
+          "type": "desc",
+          "desc": "Bard Song gives allies +2 THAC0, +2 damage, +2 AC"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "BARD",
+        "note": "Standard bard HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard bard spellcasting + enhanced bard song."
+      }
+    },
+    "ABJURER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Alteration"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "CONJURER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Divination"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "DIVINER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Conjuration"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "ENCHANTER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Invocation"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "ILLUSIONIST": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Necromancy"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "INVOKER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Enchantment"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "NECROMANCER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Illusion"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "TRANSMUTER": {
+      "passive": [
+        {
+          "n": "Bonus Spell Slot",
+          "type": "bonusSlot",
+          "spellType": "wizard",
+          "value": 1,
+          "desc": "+1 spell slot per spell level"
+        }
+      ],
+      "activated": [],
+      "restrictions": {},
+      "spellRestrictions": {
+        "oppositionSchools": [
+          "Abjuration"
+        ],
+        "note": "See chargen.oppositionSchools"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "THIEF",
+        "CLERIC"
+      ],
+      "hlaPool": {
+        "class": "MAGE",
+        "note": "Standard mage HLA pool"
+      }
+    },
+    "BLACKGUARD": {
+      "passive": [
+        {
+          "n": "Aura of Despair",
+          "type": "desc",
+          "desc": "-2 to enemy morale in area"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Absorb Health",
+          "freq": "1/day per 5 levels",
+          "effects": "Drain 2 HP/level from target, heal self.",
+          "level": 1
+        },
+        {
+          "n": "Poison Weapon",
+          "freq": "1/day per 5 levels",
+          "effects": "Next hit poisons target.",
+          "level": 3
+        }
+      ],
+      "restrictions": {
+        "alignment": "evil"
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "PALADIN",
+        "note": "Standard paladin HLA pool with evil flavor"
+      },
+      "spellRestrictions": {
+        "note": "Standard paladin spellcasting (evil-tinged)."
+      }
+    },
+    "DWARVEN_DEFENDER": {
+      "passive": [],
+      "activated": [
+        {
+          "n": "Defensive Stance",
+          "freq": "1/day per 4 levels",
+          "effects": "50% physical damage resistance, +2 AC, rooted in place for 5 rounds.",
+          "level": 1
+        }
+      ],
+      "restrictions": {
+        "race": "dwarf",
+        "ranged": false
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "canDualTo": [],
+      "hlaPool": {
+        "class": "FIGHTER",
+        "note": "Standard fighter HLA pool"
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Fighter kit, no spellcasting."
+      }
+    },
+    "DRAGON_DISCIPLE": {
+      "passive": [
+        {
+          "n": "AC Bonus",
+          "type": "acBonus",
+          "value": -1,
+          "desc": "-1 AC bonus"
+        },
+        {
+          "n": "HP Bonus",
+          "type": "hpPerLevel",
+          "value": 1,
+          "desc": "+1 HP per level"
+        },
+        {
+          "n": "Fire Resistance",
+          "type": "fireResist",
+          "value": 50,
+          "desc": "50% fire resistance"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Breath Weapon",
+          "freq": "3/day",
+          "effects": "Cone of fire dealing 3d8 damage (increases with level).",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "statBonus": {
+        "str": {
+          "bonusAtLevel": {
+            "1": 1,
+            "6": 1,
+            "12": 1
+          },
+          "desc": "+1 STR at levels 1, 6, 12 (cumulative +3)"
+        },
+        "con": {
+          "bonusAtLevel": {
+            "1": 1,
+            "6": 1,
+            "12": 1
+          },
+          "desc": "+1 CON at levels 1, 6, 12 (cumulative +3)"
+        }
+      },
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "SORCERER",
+        "note": "Standard sorcerer HLA pool"
+      },
+      "spellRestrictions": {
+        "note": "Standard sorcerer spell system. Cannot summon or use familiar."
+      }
+    },
+    "SHADOWDANCER": {
+      "passive": [
+        {
+          "n": "Backstab",
+          "type": "backstab",
+          "desc": "Reduced backstab multiplier (x3 max)"
+        },
+        {
+          "n": "Hide in Plain Sight",
+          "type": "desc",
+          "desc": "Can hide even while observed"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Shadow Step",
+          "freq": "1/day per 5 levels",
+          "effects": "Teleport to target location within visual range.",
+          "level": 1
+        }
+      ],
+      "restrictions": {},
+      "hlaPool": {
+        "class": "THIEF",
+        "exclude": [
+          "Improved Evasion",
+          "Set Time Trap",
+          "Scribe Scrolls"
+        ],
+        "include": [
+          "Shadow Form",
+          "Shadow Twin"
+        ],
+        "note": "Shadowdancer-specific HLA table: gains Shadow Form and Shadow Twin, loses Improved Evasion, Set Time Trap, Scribe Scrolls"
+      },
+      "canDual": true,
+      "allowedMulticlass": [],
+      "canDualTo": [
+        "FIGHTER",
+        "MAGE",
+        "CLERIC"
+      ],
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Thief kit, no spellcasting."
+      }
+    },
+    "SUN_SOUL_MONK": {
+      "passive": [
+        {
+          "n": "Flaming Fists",
+          "type": "desc",
+          "desc": "Fists deal +2 fire damage"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Sun Soulray",
+          "freq": "1/day per 3 levels",
+          "effects": "Ranged fire attack dealing 1d8 damage per 2 levels.",
+          "level": 1
+        },
+        {
+          "n": "Sun Soulbeam",
+          "freq": "1/day",
+          "effects": "Massive radial fire/undead destruction.",
+          "level": 16
+        }
+      ],
+      "restrictions": {},
+      "canDual": false,
+      "allowedMulticlass": [],
+      "hlaPool": {
+        "class": "MONK",
+        "note": "Standard monk HLA pool"
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Monk kit, no spellcasting."
+      }
+    },
+    "DARK_MOON_MONK": {
+      "passive": [
+        {
+          "n": "Frozen Fists",
+          "type": "desc",
+          "desc": "Fists deal +2 cold damage"
+        }
+      ],
+      "activated": [
+        {
+          "n": "Blindness",
+          "freq": "1/day per 3 levels",
+          "effects": "Blinds target on failed save.",
+          "level": 1
+        },
+        {
+          "n": "Blur",
+          "freq": "innate",
+          "effects": "Can cast Blur once per day.",
+          "level": 5
+        },
+        {
+          "n": "Vampiric Touch",
+          "freq": "innate",
+          "effects": "Drain HP from target.",
+          "level": 11
+        }
+      ],
+      "canDual": false,
+      "allowedMulticlass": [],
+      "restrictions": {},
+      "hlaPool": {
+        "class": "MONK",
+        "note": "Standard monk HLA pool"
+      },
+      "spellRestrictions": {
+        "noSpells": true,
+        "note": "Monk kit, no spellcasting. Innate Blur/Vampiric Touch."
+      }
+    }
+  },
+  "classStatReq": {
+    "FIGHTER": {
+      "str": 9
+    },
+    "RANGER": {
+      "str": 13,
+      "dex": 13,
+      "con": 14,
+      "wis": 14
+    },
+    "PALADIN": {
+      "str": 12,
+      "con": 9,
+      "wis": 13,
+      "cha": 17
+    },
+    "CLERIC": {
+      "wis": 9
+    },
+    "DRUID": {
+      "wis": 12,
+      "cha": 15
+    },
+    "THIEF": {
+      "dex": 9
+    },
+    "BARD": {
+      "dex": 12,
+      "int": 13,
+      "cha": 15
+    },
+    "MAGE": {
+      "int": 9
+    },
+    "SORCERER": {
+      "cha": 8
+    },
+    "MONK": {
+      "str": 12,
+      "dex": 9,
+      "con": 11,
+      "wis": 15
+    },
+    "SHAMAN": {
+      "wis": 12
+    },
+    "BARBARIAN": {
+      "str": 11
+    }
+  },
+  "dualClassReq": {
+    "FIGHTER": {
+      "str": 17
+    },
+    "RANGER": {
+      "str": 17,
+      "dex": 17,
+      "con": 17,
+      "wis": 17
+    },
+    "PALADIN": {
+      "str": 17,
+      "con": 17,
+      "wis": 17,
+      "cha": 17
+    },
+    "CLERIC": {
+      "wis": 17
+    },
+    "DRUID": {
+      "wis": 17,
+      "cha": 17
+    },
+    "THIEF": {
+      "dex": 17
+    },
+    "MAGE": {
+      "int": 17
+    }
+  },
+  "alignments": [
+    "Lawful Good",
+    "Neutral Good",
+    "Chaotic Good",
+    "Lawful Neutral",
+    "True Neutral",
+    "Chaotic Neutral",
+    "Lawful Evil",
+    "Neutral Evil",
+    "Chaotic Evil"
+  ],
+  "classAlignments": {
+    "PALADIN": [
+      "Lawful Good"
+    ],
+    "RANGER": [
+      "Lawful Good",
+      "Neutral Good",
+      "Chaotic Good"
+    ],
+    "DRUID": [
+      "True Neutral"
+    ],
+    "BARD": [
+      "Lawful Neutral",
+      "True Neutral",
+      "Chaotic Neutral",
+      "Neutral Good",
+      "Neutral Evil",
+      "Chaotic Good"
+    ],
+    "MONK": [
+      "Lawful Good",
+      "Lawful Neutral",
+      "Lawful Evil"
+    ],
+    "BARBARIAN": [
+      "Neutral Good",
+      "Chaotic Good",
+      "True Neutral",
+      "Chaotic Neutral",
+      "Neutral Evil",
+      "Chaotic Evil"
+    ]
+  },
+  "kitAlignments": {
+    "BLACKGUARD": [
+      "Lawful Evil",
+      "Neutral Evil",
+      "Chaotic Evil"
+    ]
+  },
+  "lorePerLevel": {
+    "BARD": 10,
+    "THIEF": 3,
+    "MAGE": 3,
+    "SORCERER": 1,
+    "default": 1
+  },
+  "baseMovement": {
+    "default": 6,
+    "BARBARIAN": 8,
+    "MONK": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  "turnUndead": {
+    "labels": [
+      "Skeleton",
+      "Zombie",
+      "Ghoul",
+      "Shadow",
+      "Wight",
+      "Ghast",
+      "Wraith",
+      "Mummy",
+      "Spectre",
+      "Vampire",
+      "Lich"
+    ],
+    "classes": [
+      "CLERIC",
+      "PALADIN"
+    ],
+    "paladinOffset": -2,
+    "noTurnKits": [
+      "INQUISITOR"
+    ],
+    "table": [
+      [
+        10,
+        13,
+        16,
+        19,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      [
+        7,
+        10,
+        13,
+        16,
+        19,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      [
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20,
+        20,
+        20,
+        20
+      ],
+      [
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20,
+        20,
+        20
+      ],
+      [
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20,
+        20
+      ],
+      [
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        20
+      ],
+      [
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19
+      ],
+      [
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7,
+        10
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4,
+        7
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1,
+        4
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T",
+        1
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T",
+        "T"
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T",
+        "T"
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "T"
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ]
+    ]
+  },
+  "classTimeline": {
+    "FIGHTER": [
+      {
+        "lv": 1,
+        "d": "Weapon specialization (2+ pips)"
+      },
+      {
+        "lv": 7,
+        "d": "3/2 attacks per round"
+      },
+      {
+        "lv": 13,
+        "d": "2 attacks per round"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "RANGER": [
+      {
+        "lv": 1,
+        "d": "Racial enemy (+4 THAC0/dmg), Stealth, Dual-wield"
+      },
+      {
+        "lv": 7,
+        "d": "3/2 attacks per round"
+      },
+      {
+        "lv": 8,
+        "d": "Druid spells (level 1)"
+      },
+      {
+        "lv": 13,
+        "d": "2 attacks per round"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "PALADIN": [
+      {
+        "lv": 1,
+        "d": "Lay on Hands (2 HP/lv)",
+        "noKits": [
+          "INQUISITOR",
+          "BLACKGUARD",
+          "UNDEAD_HUNTER"
+        ]
+      },
+      {
+        "lv": 1,
+        "d": "Protection from Evil aura, Detect Evil"
+      },
+      {
+        "lv": 3,
+        "d": "Turn Undead",
+        "noKits": [
+          "INQUISITOR"
+        ]
+      },
+      {
+        "lv": 7,
+        "d": "3/2 attacks per round"
+      },
+      {
+        "lv": 9,
+        "d": "Priest spells (level 1)",
+        "noKits": [
+          "INQUISITOR"
+        ]
+      },
+      {
+        "lv": 13,
+        "d": "2 attacks per round"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "BARBARIAN": [
+      {
+        "lv": 1,
+        "d": "Rage, +2 movement speed, -2 AC at high levels"
+      },
+      {
+        "lv": 7,
+        "d": "3/2 attacks per round"
+      },
+      {
+        "lv": 11,
+        "d": "10% physical damage resistance"
+      },
+      {
+        "lv": 13,
+        "d": "2 attacks per round"
+      },
+      {
+        "lv": 15,
+        "d": "15% physical damage resistance"
+      },
+      {
+        "lv": 19,
+        "d": "20% physical damage resistance"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "CLERIC": [
+      {
+        "lv": 1,
+        "d": "Turn Undead, full priest spells, blunt weapons only"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "DRUID": [
+      {
+        "lv": 1,
+        "d": "Full priest spells, shapeshifting at high levels"
+      },
+      {
+        "lv": 15,
+        "d": "Elemental resistances (+10% fire/cold/electricity)"
+      },
+      {
+        "lv": 18,
+        "d": "Immunity to poison"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "THIEF": [
+      {
+        "lv": 1,
+        "d": "Backstab x2, 7 thief skills, 30 initial bonus points"
+      },
+      {
+        "lv": 5,
+        "d": "Backstab x3"
+      },
+      {
+        "lv": 9,
+        "d": "Backstab x3 (x4 Assassin)"
+      },
+      {
+        "lv": 13,
+        "d": "Backstab x4 (x5 Assassin)"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities (Use Any Item)"
+      }
+    ],
+    "BARD": [
+      {
+        "lv": 1,
+        "d": "Bard Song, Pick Pockets, limited arcane spells",
+        "noKits": [
+          "BLADE"
+        ]
+      },
+      {
+        "lv": 1,
+        "d": "Defensive Spin, Offensive Spin (1/day each at L1)",
+        "onlyKits": [
+          "BLADE"
+        ]
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities (Enhanced Bard Song)",
+        "noKits": [
+          "BLADE"
+        ]
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities",
+        "onlyKits": [
+          "BLADE"
+        ]
+      }
+    ],
+    "MAGE": [
+      {
+        "lv": 1,
+        "d": "Level 1 spells, scribe scrolls"
+      },
+      {
+        "lv": 3,
+        "d": "Level 2 spells"
+      },
+      {
+        "lv": 5,
+        "d": "Level 3 spells"
+      },
+      {
+        "lv": 7,
+        "d": "Level 4 spells"
+      },
+      {
+        "lv": 9,
+        "d": "Level 5 spells"
+      },
+      {
+        "lv": 12,
+        "d": "Level 6 spells"
+      },
+      {
+        "lv": 14,
+        "d": "Level 7 spells"
+      },
+      {
+        "lv": 16,
+        "d": "Level 8 spells"
+      },
+      {
+        "lv": 18,
+        "d": "Level 9 spells"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "SORCERER": [
+      {
+        "lv": 1,
+        "d": "Level 1 spells (innate, no spellbook)"
+      },
+      {
+        "lv": 4,
+        "d": "Level 2 spells"
+      },
+      {
+        "lv": 6,
+        "d": "Level 3 spells"
+      },
+      {
+        "lv": 8,
+        "d": "Level 4 spells"
+      },
+      {
+        "lv": 10,
+        "d": "Level 5 spells"
+      },
+      {
+        "lv": 12,
+        "d": "Level 6 spells"
+      },
+      {
+        "lv": 14,
+        "d": "Level 7 spells"
+      },
+      {
+        "lv": 16,
+        "d": "Level 8 spells"
+      },
+      {
+        "lv": 18,
+        "d": "Level 9 spells"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ],
+    "MONK": [
+      {
+        "lv": 1,
+        "d": "Unarmed combat, Stunning Blow"
+      },
+      {
+        "lv": 3,
+        "d": "Deflect Missiles"
+      },
+      {
+        "lv": 5,
+        "d": "Immunity to slow, haste"
+      },
+      {
+        "lv": 7,
+        "d": "Lay on Hands"
+      },
+      {
+        "lv": 8,
+        "d": "-1 speed bonus"
+      },
+      {
+        "lv": 9,
+        "d": "Improved unarmed damage, +1 AC"
+      },
+      {
+        "lv": 11,
+        "d": "Immunity to poison"
+      },
+      {
+        "lv": 12,
+        "d": "Diamond Body (disease immunity)"
+      },
+      {
+        "lv": 14,
+        "d": "+1 movement speed"
+      },
+      {
+        "lv": 20,
+        "d": "Quivering Palm, High Level Abilities"
+      }
+    ],
+    "SHAMAN": [
+      {
+        "lv": 1,
+        "d": "Shamanic Dance (summon spirits), priest spells"
+      },
+      {
+        "lv": 20,
+        "d": "High Level Abilities"
+      }
+    ]
+  },
+  "favoredEnemies": [
+    "Gnoll",
+    "Kobold",
+    "Ogre",
+    "Orc",
+    "Skeleton",
+    "Slime",
+    "Spider",
+    "Troll",
+    "Undead",
+    "Wolf",
+    "Xvart",
+    "Ankheg"
+  ],
+  "familiars": {
+    "Lawful Good": {
+      "n": "Pseudo Dragon",
+      "hp": 24,
+      "ac": 2,
+      "special": "Magic resistance 35%"
+    },
+    "Neutral Good": {
+      "n": "Pseudo Dragon",
+      "hp": 24,
+      "ac": 2,
+      "special": "Magic resistance 35%"
+    },
+    "Chaotic Good": {
+      "n": "Fairy Dragon",
+      "hp": 24,
+      "ac": 2,
+      "special": "Invisibility 10' radius"
+    },
+    "Lawful Neutral": {
+      "n": "Ferret",
+      "hp": 24,
+      "ac": 4,
+      "special": "+5% Pick Pockets"
+    },
+    "True Neutral": {
+      "n": "Rabbit",
+      "hp": 24,
+      "ac": 4,
+      "special": "+1 HP per level to caster"
+    },
+    "Chaotic Neutral": {
+      "n": "Cat",
+      "hp": 24,
+      "ac": 4,
+      "special": "+1 HP per level to caster"
+    },
+    "Lawful Evil": {
+      "n": "Imp",
+      "hp": 24,
+      "ac": 2,
+      "special": "Polymorph, regeneration"
+    },
+    "Neutral Evil": {
+      "n": "Dust Mephit",
+      "hp": 24,
+      "ac": 4,
+      "special": "Glass Dust breath"
+    },
+    "Chaotic Evil": {
+      "n": "Quasit",
+      "hp": 24,
+      "ac": 2,
+      "special": "Regeneration, Horror"
+    }
+  },
+  "layOnHands": {
+    "classes": [
+      "PALADIN"
+    ],
+    "noKits": [
+      "INQUISITOR",
+      "BLACKGUARD",
+      "UNDEAD_HUNTER"
+    ],
+    "hpPerLevel": 2
+  },
+  "bardSong": {
+    "BARD": {
+      "n": "The Ballad of Three Heroes",
+      "effects": "+1 THAC0, +1 damage, +1 saves to allies",
+      "radius": "30 ft"
+    },
+    "SKALD": {
+      "n": "War Chant of Sith",
+      "effects": "+2 THAC0, +2 damage, +2 AC to allies",
+      "radius": "30 ft"
+    },
+    "JESTER": {
+      "n": "Jester's Song",
+      "effects": "Enemies must save vs. spell or be confused",
+      "radius": "30 ft"
+    }
+  },
+  "deities": {
+    "GENERIC": {
+      "n": "Generic Cleric",
+      "kit": null,
+      "align": null,
+      "majorSpheres": [
+        "all"
+      ],
+      "minorSpheres": [],
+      "domain": "No specific deity — full priest sphere access"
+    },
+    "TALOS": {
+      "n": "Talos",
+      "kit": "PRIEST_OF_TALOS",
+      "align": [
+        "Chaotic Neutral",
+        "Neutral Evil",
+        "Chaotic Evil"
+      ],
+      "majorSpheres": [
+        "combat",
+        "elemental",
+        "destruction",
+        "chaos"
+      ],
+      "minorSpheres": [
+        "summoning",
+        "protection"
+      ],
+      "domain": "Storms, Destruction"
+    },
+    "HELM": {
+      "n": "Helm",
+      "kit": "PRIEST_OF_HELM",
+      "align": [
+        "Lawful Good",
+        "Lawful Neutral"
+      ],
+      "majorSpheres": [
+        "combat",
+        "guardian",
+        "law",
+        "protection"
+      ],
+      "minorSpheres": [
+        "divination",
+        "healing"
+      ],
+      "domain": "Guardians, Protection"
+    },
+    "LATHANDER": {
+      "n": "Lathander",
+      "kit": "PRIEST_OF_LATHANDER",
+      "align": [
+        "Lawful Good",
+        "Neutral Good",
+        "Chaotic Good"
+      ],
+      "majorSpheres": [
+        "sun",
+        "healing",
+        "protection",
+        "creation"
+      ],
+      "minorSpheres": [
+        "combat",
+        "charm"
+      ],
+      "domain": "Dawn, Renewal"
+    },
+    "TYR": {
+      "n": "Tyr",
+      "kit": "PRIEST_OF_TYR",
+      "align": [
+        "Lawful Good"
+      ],
+      "majorSpheres": [
+        "combat",
+        "law",
+        "guardian",
+        "protection"
+      ],
+      "minorSpheres": [
+        "divination",
+        "healing"
+      ],
+      "domain": "Justice"
+    },
+    "TEMPUS": {
+      "n": "Tempus",
+      "kit": "PRIEST_OF_TEMPUS",
+      "align": [
+        "Chaotic Good",
+        "True Neutral",
+        "Chaotic Neutral"
+      ],
+      "majorSpheres": [
+        "combat",
+        "war",
+        "healing"
+      ],
+      "minorSpheres": [
+        "protection",
+        "elemental"
+      ],
+      "domain": "War, Battle"
+    }
+  },
+  "spheres": {
+    "all": {
+      "n": "All",
+      "desc": "Universal sphere — all priest spells"
+    },
+    "combat": {
+      "n": "Combat",
+      "desc": "Attack/defense spells"
+    },
+    "healing": {
+      "n": "Healing",
+      "desc": "Cure wounds, resurrection"
+    },
+    "protection": {
+      "n": "Protection",
+      "desc": "Defensive wards"
+    },
+    "divination": {
+      "n": "Divination",
+      "desc": "Detect/know"
+    },
+    "elemental": {
+      "n": "Elemental",
+      "desc": "Fire, water, earth, air"
+    },
+    "summoning": {
+      "n": "Summoning",
+      "desc": "Summon creatures/allies"
+    },
+    "sun": {
+      "n": "Sun",
+      "desc": "Light, dawn, renewal"
+    },
+    "destruction": {
+      "n": "Destruction",
+      "desc": "Damage, decay"
+    },
+    "chaos": {
+      "n": "Chaos",
+      "desc": "Chaos, confusion"
+    },
+    "law": {
+      "n": "Law",
+      "desc": "Order, control"
+    },
+    "war": {
+      "n": "War",
+      "desc": "Combat escalation"
+    },
+    "guardian": {
+      "n": "Guardian",
+      "desc": "Ward, watch"
+    },
+    "creation": {
+      "n": "Creation",
+      "desc": "Create food/matter"
+    },
+    "charm": {
+      "n": "Charm",
+      "desc": "Influence minds"
+    }
+  },
+  "stylePipBonuses": {
+    "TWO_WEAPON": [
+      {
+        "pips": 0,
+        "offHandThac0": -8,
+        "mainThac0": -4,
+        "label": "Untrained"
+      },
+      {
+        "pips": 1,
+        "offHandThac0": -4,
+        "mainThac0": -2,
+        "label": "Proficient"
+      },
+      {
+        "pips": 2,
+        "offHandThac0": -4,
+        "mainThac0": 0,
+        "label": "Specialized (Ambidextrous)"
+      },
+      {
+        "pips": 3,
+        "offHandThac0": 0,
+        "mainThac0": 0,
+        "label": "High Mastery"
+      }
+    ],
+    "SWORD_SHIELD": [
+      {
+        "pips": 0,
+        "acMissile": 0,
+        "acAll": 0,
+        "label": "Untrained"
+      },
+      {
+        "pips": 1,
+        "acMissile": -2,
+        "acAll": 0,
+        "label": "Proficient"
+      },
+      {
+        "pips": 2,
+        "acMissile": -4,
+        "acAll": -2,
+        "label": "Specialized"
+      }
+    ],
+    "SINGLE_WEAPON": [
+      {
+        "pips": 0,
+        "critRange": 0,
+        "ac": 0,
+        "label": "Untrained"
+      },
+      {
+        "pips": 1,
+        "critRange": 1,
+        "ac": 0,
+        "label": "Proficient — crit on 19-20"
+      },
+      {
+        "pips": 2,
+        "critRange": 1,
+        "ac": -2,
+        "label": "Specialized — crit on 19-20, -2 AC"
+      }
+    ],
+    "TWO_HANDED": [
+      {
+        "pips": 0,
+        "critRange": 0,
+        "dmg": 0,
+        "speed": 0,
+        "label": "Untrained"
+      },
+      {
+        "pips": 1,
+        "critRange": 1,
+        "dmg": 0,
+        "speed": -1,
+        "label": "Proficient"
+      },
+      {
+        "pips": 2,
+        "critRange": 1,
+        "dmg": 1,
+        "speed": -3,
+        "label": "Specialized"
+      }
+    ]
+  },
+  "twoHandedProfTypes": [
+    "TWO_HANDED_SWORD",
+    "HALBERD",
+    "SPEAR",
+    "QUARTERSTAFF",
+    "LONGBOW",
+    "SHORTBOW",
+    "CROSSBOW",
+    "SLING"
+  ]
+}

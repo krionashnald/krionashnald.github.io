@@ -1,0 +1,130 @@
+{
+  "i": 348,
+  "t": "fullplate",
+  "sv": 1,
+  "ord": 80,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Full Plate and Packing Steel",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "FPPS tp2 FORBIDs OLD BG2_TWEAKS cn:2100/2110, NOT cdtweaks (Tweaks Anthology). No actual FORBID with cdtweaks. Functional overlap only with cdtweaks cn:2100 (Thieving in Armor) and cn:2120 (Arcane in Armor) — both modify armor item opcodes. cn:2140 (Expanded Dual-Class) has zero overlap.",
+      "myComps": "#1 Between You And Harm (alternate armour system)",
+      "theirComps": "#2100 Allow Thieving in Heavy Armor #2120 Allow Arcane Spellcasting in Heavy Armor",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify armor/DEX interaction. FPPS has its own armor revision system",
+      "myComps": "#1 Between You And Harm (alternate armour system)",
+      "theirComps": "#6060 NWN-ish Armor vs Dexterity"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "FPPS tp2 uses FORBID_COMPONENT for Refinements Revised Armors. Mutually exclusive",
+      "myComps": "#1 Between You And Harm (alternate armour system)",
+      "theirComps": "#5 #70 #71 #72 #73 #74 #75 Revised Armors and Shields",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "hard",
+      "reason": "FPPS tp2 uses FORBID_COMPONENT for Item Revisions armor components. Mutually exclusive",
+      "myComps": "#1 Between You And Harm (alternate armour system)",
+      "theirComps": "#6 #7 #8 Heavy Armor Encumbrance #9 Allow Thieving in Armor",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks aTweaks PnP creature components.",
+      "myComps": "#1 Between You And Harm",
+      "theirComps": "#160 #180 #185 #190 PnP creatures",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks jtweaks item-patching components.",
+      "myComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_tweaks",
+      "withId": 378,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks MiH Tweaks weapon-patching components.",
+      "myComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks EET Tweaks item-patching components.",
+      "myComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Full_Plate_And_Packing_Steel",
+  "a": "Ashes of Baldurs Gate",
+  "v": "v3",
+  "sum": "Alternate armor system that changes how armor interacts with casting, thieving, and combat mechanics.",
+  "tags": [
+    "tweak",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Gibberlings3/Full_Plate_And_Packing_Steel",
+  "au": "erik, gibberlings3",
+  "no": "Alternate armor system that changes how armor interacts with casting, thieving, and combat mechanics.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Between You And Harm (alternate armour system)",
+      "cn": 1,
+      "wf": "fullplate",
+      "wp": "fullplate\\setup-fullplate.tp2",
+      "wc": 1,
+      "wq": "exact",
+      "no": "HARD conflict with cdtweaks cn:2100 (Thieving in Armor) and cn:2120 (Arcane in Armor) - both modify same item opcodes. No conflict with cn:2140 (Dual-Class Options).",
+      "tp2n": "Full Plate And Packing Steel: Between You And Harm (alternate armour system)"
+    },
+    {
+      "n": "Full Plate And Packing Steel: Field Improvisation (convenience tweak, remove restrictions on combining protective items)",
+      "cn": 102,
+      "wf": "fullplate",
+      "wp": "fullplate\\setup-fullplate.tp2",
+      "wq": "verified",
+      "tp2n": "Full Plate And Packing Steel: Field Improvisation (convenience tweak, remove restrictions on combining protective items)"
+    },
+    {
+      "n": "Full Plate And Packing Steel: Little He Knows Where a Foe May Lurk (everyone can backstab at x2, thieves/assassins do better)",
+      "cn": 204,
+      "wf": "fullplate",
+      "wp": "fullplate\\setup-fullplate.tp2",
+      "wq": "verified",
+      "tp2n": "Full Plate And Packing Steel: Little He Knows Where a Foe May Lurk (everyone can backstab at x2, thieves/assassins do better)"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Full_Plate_And_Packing_Steel"
+  }
+}

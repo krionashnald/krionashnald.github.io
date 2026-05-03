@@ -1,0 +1,118 @@
+{
+  "i": 455,
+  "t": "bolsa",
+  "sv": 1,
+  "ord": 330,
+  "c": "ITEM ADDITION MODS",
+  "n": "Bolsa Merchant",
+  "langs": {
+    "es": 0,
+    "en": 1,
+    "fr": 2,
+    "it": 3
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "u": "https://github.com/Spellhold-Studios/Bolsa",
+  "a": "Alexa, Mhoram",
+  "v": "v6.0.0",
+  "sum": "This Baldur's Gate II mod adds Bolsa, a new merchant who sells several containers, bags, ammo belts, and other useful items at the Five Flagons Inn.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Bolsa"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "MHBAG05",
+          "container",
+          "Ammo Belt",
+          "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "MHBAG06",
+          "container",
+          "Potion Case",
+          "Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "MHCONTI",
+          "staff",
+          "Staff of Magus",
+          "This type of staff is thoroughly linked to the image of the spellcasting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantments and endless study. This particular example is good in melee, grants invisibility, and offers protection from charms and evil. It can also cast Spell Trap and Dispel Magic and launch a Fireball-Lightning Bolt combination. The quintessential Mage item.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– Saving Throws: +2\n– Invisibility\n– Immunity to charm\n– Protection From Evil\n\nCombat abilities:\n– Dispel Magic at level 30 on each hit\n\nCharge abilities:\n– Fireball-Lightning Bolt three times per day\n  Fireball: 10d6 fire damage to all in a 15-ft. radius (Save vs. Spell for half)\n  Lightning: 10d6 electrical damage to all in its path (Save vs. Spell for half)\n  Range: 150 ft.\n\n– Spell Trap once per day\n  Duration: 8 hours or until 30 spell levels have been trapped\n  Area of Effect: The user\n\nTHAC0: +1 (strikes as a +5 weapon)\nDamage: 1d6+1 (crushing)\nSpeed Factor: 1\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              },
+              {
+                "type": "other",
+                "desc": "Haste"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Bolsa",
+  "au": "Edvin",
+  "co": [
+    {
+      "n": "Bolsa",
+      "tp2n": "Bolsa",
+      "cn": 0,
+      "wf": "Bolsa",
+      "wp": "Bolsa\\BOLSA.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "it": 3,
+      "itC": {
+        "container": 2,
+        "staff": 1
+      }
+    }
+  ]
+}

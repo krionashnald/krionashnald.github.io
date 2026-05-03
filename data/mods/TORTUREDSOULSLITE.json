@@ -1,0 +1,145 @@
+{
+  "i": 579,
+  "t": "TorturedSoulsLite",
+  "sv": 1,
+  "ord": 700,
+  "c": "QUEST MODS BG2",
+  "n": "Tortured Souls Lite",
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Recommend moving Kachiko spawn to Athkatla Docks (cn:11). Install after Alternatives, before Sime.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/Black-Wyrm-Lair/TorturedSoulsLite",
+  "a": "Vlad Papper",
+  "v": "0.3",
+  "sum": "BG2 NPC quest mod. Adds Kachiko, a joinable NPC on a remote island with horror-themed encounters.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/Black-Wyrm-Lair/TorturedSoulsLite",
+  "au": "Vladislav Papper",
+  "langs": {
+    "en": 0
+  },
+  "conflicts": [
+    {
+      "with": "tethyrforestpatch",
+      "withId": 853,
+      "severity": "soft",
+      "orderOnly": true,
+      "before": true,
+      "reason": "Tethyr Forest Patch installs after TS Lite (and CtB) to finalize the AR2602 entrance so TS Lite's scripts/quests on the original cave still function.",
+      "source": "Tethyr Forest Patch readme (v3b, 2009-11-26)"
+    }
+  ],
+  "co": [
+    {
+      "n": "Tortured Souls Lite",
+      "tp2n": "Tortured Souls Lite",
+      "cn": 0,
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2",
+      "no": "Kachiko NPC with a questline on a mysterious island."
+    },
+    {
+      "n": "Kachiko Spawn Point: Irenicus Dungeon (Original)",
+      "tp2n": "Kachiko appears in Irenicus Dungeon (Original)",
+      "cn": 10,
+      "g": "spawn_point",
+      "scn": "Kachiko Spawn Point",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Spawn Point: After talking with Renal",
+      "tp2n": "Kachiko appears after talking with Renal",
+      "cn": 11,
+      "g": "spawn_point",
+      "scn": "Kachiko Spawn Point",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Portrait: Original (poemmaker2)",
+      "tp2n": "Kachiko Original Portrait (poemmaker2)",
+      "cn": 20,
+      "g": "portrait",
+      "scn": "Kachiko Portrait",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Portrait: Alternate 1 (Enkida)",
+      "tp2n": "Kachiko Alternate Portrait 1 (Enkida)",
+      "cn": 21,
+      "g": "portrait",
+      "scn": "Kachiko Portrait",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Portrait: Alternate 2",
+      "tp2n": "Kachiko Alternate Portrait 2",
+      "cn": 22,
+      "g": "portrait",
+      "scn": "Kachiko Portrait",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Soundset: Default",
+      "tp2n": "Kachiko Default Soundset",
+      "cn": 30,
+      "g": "soundset",
+      "scn": "Kachiko Soundset",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Soundset: Legacy",
+      "tp2n": "Kachiko Legacy Soundset",
+      "cn": 31,
+      "g": "soundset",
+      "scn": "Kachiko Soundset",
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Kachiko Legacy Voicelines",
+      "tp2n": "Kachiko Legacy Voicelines",
+      "cn": 40,
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Add Portraits to Island NPCs",
+      "tp2n": "Add Portraits to Island NPCs?",
+      "cn": 50,
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2"
+    },
+    {
+      "n": "Crossmod Content",
+      "tp2n": "Crossmod Content",
+      "cn": 60,
+      "wf": "TORTUREDSOULSLITE",
+      "wp": "TORTUREDSOULSLITE\\SETUP-TORTUREDSOULSLITE.TP2",
+      "cat": "NPC CROSSMOD",
+      "no": "Crossmod dialogue with other NPC mods."
+    }
+  ],
+  "gh": {
+    "o": "Black-Wyrm-Lair",
+    "r": "TorturedSoulsLite"
+  }
+}

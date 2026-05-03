@@ -1,0 +1,75 @@
+{
+  "i": 798,
+  "t": "SCI-Blades+Bolts",
+  "sv": 1,
+  "ord": 530,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Blades and Bolts",
+  "langs": {
+    "en": 0,
+    "de": 1
+  },
+  "u": "https://github.com/DataForInfinity/Sword-Coast-Infinity/",
+  "a": "AvA",
+  "sum": "Components to enable use of straigth swords for Clerics and Light Crossbows for Clerics and Mages.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/DataForInfinity/Sword-Coast-Infinity/",
+  "no": "Components to enable use of straigth swords for Clerics and Light Crossbows for Clerics and Mages.",
+  "au": "semiticgoddess",
+  "co": [
+    {
+      "n": "Universal ammunition - equippable by all classes",
+      "cn": 100,
+      "wf": "SCI-Blades+Bolts",
+      "wp": "SCI-Blades+Bolts\\setup-SCI-Blades+Bolts.tp2",
+      "wc": 100,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "One-handed light crossbows - usable with shields",
+      "cn": 200,
+      "wf": "SCI-Blades+Bolts",
+      "wp": "SCI-Blades+Bolts\\setup-SCI-Blades+Bolts.tp2",
+      "wc": 200,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "Enable Mages and all their kits to use and become proficient with light crossbows",
+      "cn": 300,
+      "wf": "SCI-Blades+Bolts",
+      "wp": "SCI-Blades+Bolts\\setup-SCI-Blades+Bolts.tp2",
+      "wc": 300,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "Enable Clerics and related kits to use and become proficient with light crossbows and darts -\n    Cleric multi classes may gain access to heavy crossbows",
+      "cn": 410,
+      "wf": "SCI-Blades+Bolts",
+      "wp": "SCI-Blades+Bolts\\setup-SCI-Blades+Bolts.tp2",
+      "wc": 410,
+      "wq": "lcc-github",
+      "g": "Cleric Light Crossbow Proficiency"
+    },
+    {
+      "n": "Enable Clerics and related kits to use and become proficient with light crossbows, darts and straight blades -\n    Cleric multi classes may gain access to heavy crossbows, bastard and two-handed swords",
+      "cn": 420,
+      "wf": "SCI-Blades+Bolts",
+      "wp": "SCI-Blades+Bolts\\setup-SCI-Blades+Bolts.tp2",
+      "wc": 420,
+      "wq": "lcc-github",
+      "g": "Cleric Light Crossbow Proficiency"
+    }
+  ],
+  "gh": {
+    "o": "DataForInfinity",
+    "r": "Sword-Coast-Infinity"
+  }
+}

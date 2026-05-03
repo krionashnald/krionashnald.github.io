@@ -1,0 +1,54 @@
+{
+  "i": 714,
+  "t": "ZS_Consumables",
+  "sv": 1,
+  "pfx": "ZS",
+  "ord": 480,
+  "c": "ITEM ADDITION MODS",
+  "n": "Consumables",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "no": "Adds 50+ consumable items: elixirs, potions, weapon oils, remedies, and throwables. Inspired by BG3, NWN, and The Witcher. Supersedes ZS_WeaponOils",
+  "conflicts": [
+    {
+      "with": "ZS_WeaponOils",
+      "withId": 270,
+      "severity": "hard",
+      "reason": "ZS_Consumables supersedes ZS_WeaponOils. The oils component is taken directly from the deprecated mod. Use one or the other",
+      "myComps": "#0 Install Consumables",
+      "theirComps": "#100 Install oils",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/szaumoor/ZS_Consumables",
+  "a": "Kaelyn",
+  "sum": "Adds 50+ consumable items inspired by BG3, NWN, and The Witcher: elixirs, potions, weapon oils, remedies, and throwables.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/szaumoor/ZS_Consumables",
+  "au": "Zed Nocear",
+  "co": [
+    {
+      "n": "Install Consumables",
+      "tp2n": "Install consumables and spread them all through the world",
+      "cn": 0,
+      "wf": "ZS_Consumables",
+      "wp": "ZS_Consumables\\ZS_Consumables.tp2",
+      "wq": "exact",
+      "no": "50+ consumable items distributed to stores and NPCs. Elixirs are powerful but only one active at a time. Oils coat weapons for 1 turn"
+    }
+  ],
+  "gh": {
+    "o": "szaumoor",
+    "r": "ZS_Consumables"
+  }
+}

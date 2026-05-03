@@ -1,0 +1,85 @@
+{
+  "i": 123,
+  "t": "IndiraNPC",
+  "sv": 1,
+  "ord": 20,
+  "c": "NEW NPC MODS",
+  "n": "Indira NPC",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "fr": 2,
+    "pl": 3,
+    "es": 4,
+    "de": 5,
+    "ru": 6
+  },
+  "no": "Anything that adds a completely new character, Indira NPC Fighter/Mage, naive half-elf, not a lot of content but pleasant enough",
+  "conflicts": [
+    {
+      "with": "SotSC",
+      "withId": 45,
+      "severity": "partial",
+      "reason": "Minor Firewine Ruins area script overlap. Install order dependent.",
+      "orderOnly": true,
+      "myComps": "#0 Indira NPC",
+      "theirComps": "#0 Shades of the Sword Coast",
+      "source": "tp2 analysis - only genuine technical overlap among SotSC conflicts. SotSC fj_are_structure sets offset 0x94 on AR1802, Indira may also assign area script, 2026-03"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "indira",
+          "portraits/indira/j_indi.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://forums.beamdog.com/discussion/comment/610198",
+  "a": "Erg",
+  "v": "v15.1",
+  "sum": "Adds Indira, a half-elf fighter/mage, as a joinable NPC in BG1 with personal quests and banters.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Ghreyfain",
+  "dl": "https://github.com/Pocket-Plane-Group/Indira_NPC",
+  "co": [
+    {
+      "n": "Indira NPC",
+      "pi": "IndiraNPC-main",
+      "wf": "IndiNPC",
+      "wp": "IndiNPC\\IndiNPC.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "tp2n": "Indira NPC"
+    },
+    {
+      "n": "Install Interjections for Indira (BETA)",
+      "pi": "IndiraNPC-interjections",
+      "wf": "IndiNPC",
+      "wp": "IndiNPC\\IndiNPC.tp2",
+      "wq": "manual_final",
+      "cn": 1,
+      "tp2n": "Install Interjections for Indira (BETA)"
+    }
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Indira_NPC"
+  }
+}

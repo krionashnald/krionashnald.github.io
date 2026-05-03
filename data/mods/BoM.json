@@ -1,0 +1,1574 @@
+{
+  "i": 545,
+  "t": "BoM",
+  "sv": 1,
+  "ord": 430,
+  "c": "ITEM ADDITION MODS",
+  "n": "Boards of Magick Item Pack",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://sorcerers.net/community/resources/boards-o-magick-item-pack.85/",
+  "a": "olimikrig",
+  "sum": "Introduces two new merchant characters who offer a curated selection of rebalanced and previously underutilized items in Baldur's Gate II.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "O!SCRL01",
+          "scroll",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "O!BOM058",
+          "hammer",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter"
+              ],
+              "minStr": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM042",
+          "large sword",
+          "Mageblade of Laiwethel +3",
+          "This blade is as mystical as it is unique. Not much is known of its true origin, but rumor has it that it was forged by the great sorcerer Taluntain during the Times Trouble, and presented as a gift to the fabled elven archeologist Laiwethel. With this weapon at hand she managed to uncover many an ancient ruin, breaching their magical defenses and unearthing evidence of civilizations long lost. Or so the story goes.\nDespite clearly being very old the weapon is still beaming with magical energy, and the runes adorning its sides look as if they were carved yesterday. This is indeed formidable weapon in the right hands.\n\nSTATISTICS:\n\n Equipped Abilities:\n+2 AC bonus\nSpells: Gives one extra fifth level spell, one extra sixth level spell and one extra seventh level spell.\n\nEnchantment: +3\nDamage: 1d8+2, +1d4 Cold Damage\nThac0: +3 Bonus\nDamage Type: Slashing\nWeight: 5\nSpeed Factor: 1\nProficiency Type: Scimitar\nType: One-Handed\nRequires: 10 Strength and 15 Intelligence",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "ac": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 10,
+              "minInt": 15
+            }
+          }
+        ],
+        [
+          "O!BOM043",
+          "spear",
+          "The Magpie's Spear of Flight +3",
+          "The Magpie was an adventurer from the northern reaches of Faerun, so named for his habit of meticulously searching the battlefield for any sign of valuable items to be parted from their recently deceased owners. In combat, he was known for his exceptional displays of cowardice, which he preferred to refer to as \"hit-and-run tactics\". This spear was commissioned by him, and bears his obvious hallmarks. It has been enchanted to ward against any spell that might restrict motion, whilst allowing the wielder to strike more quickly against a foe. Combined with the spear's naturally great reach, this allows a warrior to pick his battles with care. When holding this spear, however, one can't help but feel that one's place is not at the forefront of battle, and many of its wielders have sought to take flight at the most inopportune of moments.\n\nSTATISTICS:\n\n Equipped Abilities:\nFree Action while equipped\n+1 attack/round\nPenalty to morale\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Piercing\nWeight: 5\nSpeed Factor: 0\nProficiency: Spear\nType: Two-Handed",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "apr": 0.5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM068",
+          "halberd",
+          "Ofelix's Halberd of Patriotism +2",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "O!BOM035",
+          "large sword",
+          "Blade of Crimson Cat +3",
+          "I can no longer stand beside you. Farewell.",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d12",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "O!BOM047",
+          "dagger",
+          "Icicles +2",
+          "I could use a bloodbath!",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d4",
+            "apr": 3,
+            "profType": "dagger"
+          }
+        ],
+        [
+          "O!BOM060",
+          "hammer",
+          "Gnomish Kneecapper +3",
+          "I am a fair master, as long as my needs are served by being fair.",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM013",
+          "helmet",
+          "Helm of Flaming",
+          "Take them down!",
+          {
+            "fireResist": 50,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM073",
+          "spear",
+          "Felinoid's Choice +2",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "apr": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "O!BOM009",
+          "armor",
+          "Abdel's Mage Plate +2",
+          "[yelling]",
+          {
+            "ac": -1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Mage",
+                "Shaman",
+                "Sorcerer"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "O!BOM076",
+          "bow",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "O!BOM079",
+          "arrow",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM016",
+          "helmet",
+          "Malovae's Defence Orb",
+          "This tiny swirling orb flies around the head of the user, defending from attacks and other dangers that doers of evil may throw at them. Despite this it also has some other useful abilities, including amplifying their telepathic ability and defending from evocation spells. It is said to have been crafted by the great mage Malovae hundreds of years ago, but some modern scholars claim this to be myth, and that it's true origin is ancient Netheril. Despite this many still believe the 'myth', and continue to attribute it to the mage. Regardless of where it was made, this stone is a great asset for any mage who dabbles in adventuring. This item is unsuitable for mages who dabble in thievery. This is due to the colourful, glowing nature of the orb, which can lead to embarrassing accidents when performing a 'job'.\n\nSTATISTICS:\n\n  Special Abilities:\n Mind Wave:\nThe orb that floats around the user's head also has a mental link with the caster. When the caster wishes, he or she may unleash a wave of telekinetic energy and may possibly stun their opponents.\nDamage: 4d6 electrical damage. Surrounding enemies will be stunned for 1 round (save vs. spells at +2 to avoid effect) May cast 3 times per day\n  Energy Barrier:\nThe orb may also protect the user from harmful energy attacks from the school of evocation. This lasts for 5 rounds and negates the effects of all spells from that school, including area of effect. May cast once per day\n  Malovae's motto:\n\"Some things are better left unsaid\" - Target is silenced for 2 rounds (no save) May cast once per day\nNOTE: All thief skills are set to 0 except for Move Silently. The Dexterity and Racial bonus to skills still applies for basic skills.\n\nArmour Class: +2\nSaving Throws: +2\nWeight: 1\nRequirements: 16 Intelligence",
+          {
+            "speed": 1,
+            "ac": 2,
+            "saves": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 16
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM044",
+          "dagger",
+          "Starblade +3",
+          "For blood and battle!",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "8d1",
+            "dmgBonus": 3,
+            "magicResist": 10,
+            "ac": 1,
+            "fireResist": 50,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM024",
+          "bracers",
+          "Laiwethel's Gloves of Extraordinary Arcane Skills",
+          "At first glance you do not give these gloves much notice. Tucked away in the back of the shop between a pair of old boots and a dusty book, you almost mistake them for trash. The gloves are obviously old, perhaps even ancient.\n\nWhen you try them on, however, they immediately re-adjust to your hand and it feels almost as if they were made for you alone. You feel the powerful enchantments within them re-awakening.\n\nThese gloves are enchanted so as to quicken the motion of the hands when casting, but the enchantment was so successful as to speed the wearer's hand to block blows from blade, cudgel or even an arrow!\n\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Bonus to Armour Class\nCasting time reduced by 1",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM039",
+          "short sword",
+          "Warrior Blade +3: Mollusken's Bone Basher",
+          "Are we to stand around all day? There are better uses of my time.",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "ac": 3,
+            "apr": 6,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "O!BOM077",
+          "dart",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d3",
+            "dmgBonus": 1,
+            "profType": "dart",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM080",
+          "bullet",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "dmg": "1d4",
+            "dmgBonus": 1
+          }
+        ],
+        [
+          "O!BOM078",
+          "dart",
+          "Throwing Hammer +3, \"Stormbringer\"",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "profType": "sling",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM062",
+          "mace",
+          "Jaheira's Club of Good +3",
+          "Jaheira, warrior druid and protector of the wood, was often seen carrying this mighty club. After a while the club grew in power from the magical energies she cast to protect her friends and defeat their enemies in battle. As Jaheira travelled with her companions she slowly started to see why fighting for the cause of good would benefit nature and her once strictly neutral perceptive slowly softened. When her travelling party was attacked whilst resting one night she misplaced her club. It soon became apparent that a hobgoblin was running around wielding her favourite weapon, evidently experiencing the strange effect of feeling bad about killing things. In the confusion, the beast ran away with the club. Despite her best efforts to catch the lowly creature that evening, she soon lost his trail in the night mist. Chances are he got killed trying to make up for his wrong doing, or maybe he is still out there, pining for the 'club of good'. Since that night, Jaheira prefers to wield a scimitar or a quarterstaff due to the fact that she will never be able to hold a club like the old one that was forged with nature's magic by her own hand.\n\nSTATISTICS:\n\n Equipped Abilities:\nChanges Alignment to Neutral Good\n\n  Special Abilities:\nMass Cure 3/Day\nCall Lighting 1/Day\n\nEnchantment: +3\nDamage: 1d6+2\nThac0: +2\nDamage Type: Crushing\nWeight: 3\nSpeed Factor: 2\nProficiency Type: Club\nType: One-Handed\nRequires: 5 Strength",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM017",
+          "helmet",
+          "Orb of Intelligence",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Intelligence",
+          {
+            "int": 1
+          }
+        ],
+        [
+          "O!BOM018",
+          "helmet",
+          "Orb of Strength",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Strength",
+          {
+            "str": 1
+          }
+        ],
+        [
+          "O!BOM019",
+          "helmet",
+          "Orb of Dexterity",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Dexterity",
+          {
+            "dex": 1
+          }
+        ],
+        [
+          "O!BOM020",
+          "helmet",
+          "Orb of Wisdom",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Wisdom",
+          {
+            "wis": 1
+          }
+        ],
+        [
+          "O!BOM021",
+          "helmet",
+          "Orb of Constitution",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Constitution",
+          {
+            "con": 1
+          }
+        ],
+        [
+          "O!BOM022",
+          "helmet",
+          "Orb of Charisma",
+          "This is a small stone that floats in an orbit around the owner's head.  Simply equip the stone to set it in its orbit.  These obviously magical stones have different properties depending on their colour.\n\nSTATISTICS:\n\n Equipped Abilities:\n+1 Charisma",
+          {
+            "cha": 1
+          }
+        ],
+        [
+          "O!BOM067",
+          "axe",
+          "Divine Power Axe +4",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 6,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              }
+            ],
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "races": [
+                "Human"
+              ],
+              "minStr": 9,
+              "minCha": 18
+            }
+          }
+        ],
+        [
+          "O!BOM025",
+          "bracers",
+          "Gauntlets of the Silver Knight",
+          "Yes?",
+          {
+            "magicResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM003",
+          "armor",
+          "Tangor's Mystical Chain",
+          "What?",
+          {
+            "coldResist": 25,
+            "fireResist": 25,
+            "ac": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 25
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "O!BOM046",
+          "dagger",
+          "Dagger of the Order of the Scorpion +2",
+          "Ah, civilization. Good food, comfortable beds, heavily fortified walls...",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "apr": 0.5,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "O!BOM001",
+          "armor",
+          "Mother's Curse",
+          "Although no one really knows who forged this armour, the tales that surround this artefact claim that it was the mother of a famed hero named Firag, who created this cruelly useful full plate. The abilities the armour gives to its wearer, though mysterious, do come at a painful price. Once equipped, it cannot be removed from the body. This is mainly because the inside of the armour is covered with small spikes that dig into the wearer and eject small amounts of weak poison into them. Although unnoticeable, it does require a healthy person to endure such an effect. The poison also slightly discolours the wearer damaging their charisma.\n\n Legend has it that when leaving for the border realms Firag left his armour in the Temple of Helm. This story is given some merit, for that on the back side of the armour you can see the sign of Helm, which indicates that it was probably gifted at some point to a servant of that deity. Modern scholars argue that the armour was crafted by an unknown craftsman within the service of Helm, but this is largely discredited by the fact that the symbol was obviously added later as a consequence of its extensive use throughout the Order. \n\nThe armour has been used by many great adventurers over the years, including Theodora Manstapler, Igor 'the merciless groundhog killer' Smith, Dasios Noober and of course Firag. The great success of these adventurers speaks for itself and although cursed, this plate surely has more heroic days in it yet.\n\nSTATISTICS:\n\n*CURSED*\n\n Equipped Abilities:\nAll healing spells cast upon the wearer have no effect. This includes Cure Minor Wounds, Cure Medium Wounds, Cure Serious Wounds, Cure Critical Wounds, Mass Healing and Heal. The spell effects from regenerate still work as normal.\nCharisma: -2\nImmune to Charm\nImmune to Normal Weapons\n\nArmour Class: 0\nWeight: 40\nRequirements: 16 Strength, 14 Constitution",
+          {
+            "ac": 0,
+            "cha": -2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ],
+              "minStr": 16,
+              "minCon": 14
+            }
+          }
+        ],
+        [
+          "O!BOM034",
+          "large sword",
+          "Crystal Clear +2",
+          "This sword is a truly gorgeous weapon, with an intricate hilt made of an unidentifiable silvery metal and a long blade made of pure, clear crystal that glows a light blue colour from energy given off by the impossibly floating runes it contains.\n\nIt once belonged to the famed Ilyana, a ranger from the East who fought against large infestations of undead across the land, taking  Special Abilities attention to the whereabouts of liches, her favoured enemy. A sorcerer made this weapon to mimic her: delicate yet deadly. Its lighter than normal weight for a weapon of its size allows for noticeably quicker attacks, although it must be noted that it is no short sword, requiring both hands to wield correctly.\n\nIn spite of its delicate appearance, the crystal is very sharp and hard, and when the wielder wishes, may reflect magical attacks just like deflecting sword blows from enemies. Ilyana vanished from the historical records about thirty years ago, and the shopkeeper has no clue how her sword got to this country.\n\nSTATISTICS: \n\n  Special Abilities:\nCasts Minor Spell Turning once per day\n\nEnchantment: +2\nDamage: 1d10+2\nThac0: +2\nDamage Type: Slashing\nWeight: 6\nSpeed Factor: 5\nProficiency Type: Two-Handed Sword\nType: Two-Handed\nRequires: 8 Strength",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM029",
+          "boots",
+          "Yugoll's Boots of Escaping",
+          "Yugoll was once a name that many authorities regarded as a dirty word. Understanding why requires an understanding of the mind of the policing forces of Faerûn: they don't like being outsmarted or evaded for longer than a day or two. After a day the thrill of the chase becomes the drudgery of the search. Yugoll, a thief of some renown in Waterdeep, was once the most wanted man in that great city. Under orders to capture him alive, the guards were unable to simply use lethal force when they found him. Whole teams of war wizards were sent to stop him in his stride, but no matter what they threw at him he merely danced around as if nothing had happened. Before they formulate another plan he had always clicked his heels together and disappeared into the night.\n\nSo cocky was Yugoll, he began to operate during the day, in plain sight of guards and townspeople. This alarmed the most senior officials of the city, who feared such a blemish on their Guards' reputation would lead to damaging repercussions in the trade sector. In desperation, they hired some of the best bounty hunters in the land to get their man. The hunter that finally caught Yugoll was, however, a woman, named Theresa Vargu.  Cunning and more experienced than any other in her trade, she engineered a fake art show, where dozens of masterpieces would be shown to the public for a small fee. It was not long before Yugoll struck, unable to pass up the temptation. Vargu was waiting. As soon as he appeared, ten guards jumped out and surrounded him, which led to several moments of hysterical laughter as he belittled their meagre attempts to catch him. Then something Yugoll was not expecting happened; Vargu threw a trap at him. Not expecting that the authorities would try to hurt him, he recoiled in terror. But when it fired, nothing happened... at first. Then Yugoll saw the ethereal bars closing in on him, and realise his fate: he was to be mazed.\n\nBy the time Yugoll was released from the planar prison, the guards had erected a miniature prison in the mock art-gallery, around the very spot where he had disappeared. He was going nowhere. Soon, it was found that his extraordinary ability to avoid capture was mostly due to the boots he had worn rather than his skill.\n\nFrom that point on, over-confident thieves were called 'Yugolls'. He never saw his boots - or freedom - again.\n\nSTATISTICS:\n\n Equipped Abilities:\nFree Action while equipped\nMovement Speed increased by 4\nWearer is immune to movement imparing effects\n\n  Special Abilities:\nMay cast Invisibility once per day\n\nWeight: 2",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              },
+              {
+                "type": "ability",
+                "desc": "Haste"
+              }
+            ]
+          }
+        ],
+        [
+          "O!BOM038",
+          "large sword",
+          "Flame of Firey +3",
+          "Agreed.",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "fireResist": 10,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "O!BOM028",
+          "boots",
+          "Boots Of Idiot Removal +5",
+          "Who's a pretty kitty? Who's a pretty ki— *ahem*",
+          {
+            "speed": 1,
+            "int": 3,
+            "wis": 3,
+            "usability": {
+              "minInt": 12
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM045",
+          "dagger",
+          "Arabwel's Cut-throat +1",
+          "Arabwel was a Half-Elven Assassin hailing from the sordid slums of Luskan and it was there amongst the filth of civilization that she learnt the tricks of her trade. At just eleven years old she had made her first kill; by her fifteenth year she was known as one of the most notorious murderers to have ever walked the streets of Luskan.\n\nShe had soon outgrown the confinements of the city, and in one glorious barrage of blood, she bid it goodbye, murdering not fewer than 15 high-ranking officials in a single day.\n\nAt the apex of her infamy, she had a victim in every town along the Sword Coast; all the way from Luskan to Calimport. They said she was as if one with the shadows, striking swift and silent, leaving nothing behind save for a kitten as to why she would leave cats at every murder scene is anyone's guess.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to Backstabbing\nBackstabbing Modifier +1\n+10 magic resistance\n+30 to Hide\n\n  Special Abilities Abilities:\nSummon Kitty-Cat 5/day\n\nEnchantment: +1\nDamage: 1d4+5\nThac0: +2\nDamage Type: \nWeight: 2\nSpeed Factor: 1\nProficiency: Dagger\nType: One-Handed",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 5,
+            "magicResist": 10,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM061",
+          "flail",
+          "Chevalier's Divine Censer +3",
+          "This flail was the property of the Paladin chevalier, a Knight of the Everfull Chalice from the East. He sought to spread righteousness wherever he went, even in the unlikeliest of places. To this end, he was gifted this flail, which is imbued with divine magic and emits a constant stream of incense. This incense is beneficial to the wielder, but has a particularly devastating effect versus Undead and other evil creatures.\n\nSTATISTICS:\n\n  Equipped Abilities:\n+1 to saving throws while equipped\n\n  Special Abilities:\nCast Chant 3/day\nDivine Smite 1/day (+2 to hit, +2 to damage, +1 attack per round, all attacks do maximum damage)\n\nEnchantment: +3\nDamage: 1d6+1 Blunt, + 1d6 Damage Vs. Undead And Demons (+ 1d3 Damage Versus Evil Opponents)\nThac0: +3\nDamage Type: Crushing\nWeight: 10\nSpeed Factor: 6\nType: One-Handed\nProficiency: Flail",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "saves": 1,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM002",
+          "armor",
+          "Ranger Mail +5",
+          "This armour appears to be a mundane suit of chain mail at first glance, but closer scrutiny reveals the symbol of the goddess Mielikki carefully inscribed onto the buckles. The suit of chain mail is also much lighter than normal and less restrictive of motion. When worn the wearer seems to become one with the foliage around them, becoming undetectable even by scrying and able to move through dense undergrowth unhindered. Only rangers may use this item.\n\nSTATISTICS:\n\n Equipped Abilities:\nAllows Hide/Move Silently to be used unrestricted\nNon-Detection while worn\nImmune to spell \"Entangle\"\n\n  Special Abilities:\nBlur 1/day\n\nAC 0\nWeight: 10\nRequires: 6 strength",
+          {
+            "ac": 0,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM048",
+          "staff",
+          "Blackthorne's Staff of Mastery",
+          "This simple-looking staff was once the property of the great wizard Blackthorne, who desired mastery over all. He was paranoid, however, of his own mind being overthrown, and crafted this item to protect him from the eventuality of another controlling him. It's not known how this item ended up here, but it's speculated the Blackthorne grew bored of this plane and his minions' random babbling, and sought to escape to another realm of the multiverse, leaving this artifact behind.\n\nSTATISTICS:\n\n Equipped Abilities:\nChaotic Commands while equipped\n\n  Special Abilities:\nCast Domination 3/day\n\nEnchantment: +1\nDamage: 1d6+1\nThac0: +1\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 6\nType: Two-Handed\nProficiency Type: Staff",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM027",
+          "shield",
+          "Beren's Buckler of Baleful Woe",
+          "Beren was a traveller from Tethyr, the kingdom south of Amn. He travelled far and wide, in search of the love of a half-elven druid. This was the buckler he carried with him to ward off attacks from forest animals as he headed deeper into the woodlands, in the hope of finding his love. The shield protected him well, as it is said that this lovesick and lonely wanderer died of a broken heart, rather than attacks by wolves or bandits. Some of this sense tragedy seems to have been imbued in the item itself, and the sense of despair can overcome enemies when released.\n\nSTATISTICS:\n\n Equipped Abilities:\n +3 to AC\n +1 Dexterity\n -1 Constitution\n 1d6 cold damage to attacker\n\n  Special Abilities:\n Cast Emotion: Hopelessness 1/day\n No Missile or piercing attack protection\n\nWeight: 4",
+          {
+            "ac": 3,
+            "dex": 1,
+            "con": -1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM012",
+          "armor",
+          "Sorvo's Robe",
+          "Sorvo was a famous bard and adventurer who could almost always be seen at the Friendly Arm Inn, cheerfully knocking back mug after mug of ale and regaling visitors who would stop to listen with tales of his adventures. It was often remarked by other adventurers, however, that Sorvo was rarely seen outside of the Inn, and that the only thing heroic about him was his ale consumption! That said, he never seemed short of coin, always staying in the best rooms; the sort of luxury which only adventuring can provide. It was when the mage eventually passed away (perhaps unsurprisingly, from liver failure) that the truth became known. He had bequeathed this striking red robe to the Inn's owner, Bentley Mirrorshade, as a way of settling his tab, and the gnome didn't take long to divine its abilities. Aside from powerful protective spells (and what appear to be several enchantments that would permit him to drink even more of his favourite tipple), Sorvo had had his robe enchanted with illusory magics, which he would use to hide himself upon leaving the Arm. Why he did this is unclear; he may have been worried about thieves and bandits upon the roads, or he may just have preferred to lurk, invisible. The truth will probably never be known.\n\nSTATISTICS:\n\n Equipped Abilities:\nAC 3\n+1 to Constitution\n+3 to Save vs. Death\n\n  Special Abilities:\nInvisibility 3/day\n\nWeight: 4",
+          {
+            "ac": 3,
+            "con": 1,
+            "saveDeath": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM049",
+          "staff",
+          "Quarterstaff +3: Foresight",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Divination School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Conjuration spell school while equipped\n\nPrecognition: The user is granted limited telepathic abilities. This allows the wielder to 'see' what is around the next corner if they have previously explored the area. This can give the party your user is travelling with the edge in a critical battle.\n\n  Special Abilities:\nMay cast True Sight 3 times per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM050",
+          "staff",
+          "Quarterstaff +3: Reaper",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Necromancy School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Illusion spell school while equipped\n\n  Special Abilities:\nMay cast Finger of Death 3 times per day\nMay cast Mass Raise Dead once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM051",
+          "staff",
+          "Quarterstaff +3: The Caller",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Conjuration School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Divination spell school while equipped\n\n  Special Abilities:\nMay cast Power Word: Silence once per day\nMay cast Power Word: Blind once per day\nMay cast Power Word: Kill once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM052",
+          "staff",
+          "Quarterstaff +3: Deceiver",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Illusion School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Necromancy spell school while equipped\n\n  Special Abilities:\nMay cast Mislead 3 times per day\nMay cast Project Image once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM053",
+          "staff",
+          "Quarterstaff +3: Shifter",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Alteration School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Abjuration spell school while equipped\n\n  Special Abilities:\nMay cast Stoneskin 3 times per day\nMay cast Time Stop once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM054",
+          "staff",
+          "Quarterstaff +3: Defender",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Abjuration School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\nImmunity to the Alteration spell school while equipped\nImmunity to Time Stop while equipped\n\n  Special Abilities:\nMay cast Pierce Shield 3 times per day\nMay cast Spell Trap once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM055",
+          "staff",
+          "Quarterstaff +3: Bread and Butter",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Evocation School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Enchantment spell school while equipped\n\n  Special Abilities:\nMay cast Magic Missile 5 times per day\nMay cast Chain Contingency once per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM056",
+          "staff",
+          "Quarterstaff +3: Dominator",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Enchantment School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nImmunity to the Evocation spell school while equipped\n\n  Special Abilities:\nMay cast Domination 6 times per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM057",
+          "staff",
+          "Quarterstaff +3: Calm to the Chaos",
+          "When the Archmage Jaloon Neboam founded his school of wizardry near Waterdeep, he soon found that demand for his teachings outstripped his capacity to teach alone. He appointed no less than eight assistants, one to  Special Abilitiesise in each school of magic. This is the staff granted to the Master of the Enchantment School, and is imbued with power appropriate to their station.\n\nSTATISTICS:\n\n Equipped Abilities:\nPermanent Improved Chaos Shield while equipped\n\n  Special Abilities:\nMay cast Nahal's Reckless Dweomer 5 times per day\n\nEnchantment: +3\nDamage: 1d6+3\nThac0: +3\nDamage Type: Blunt\nWeight: 4\nSpeed Factor: 6\nProficiency Type: Quarterstaff\nType: Two-Handed",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM026",
+          "bracers",
+          "Colthrun's Blinding Gloves",
+          "It is said that these gloves once belonged to a man named Colthrun, a thief known across the realms as an expert in infiltration and escapology. He was also known for disliking killing people without a valid reason. Given the choice, he would rather flee than killing a guard in self-defence. One day he was commissioned a difficult task by his guild: he had to get back some evidence the local guardsmen had procured about the guild's headquarters location. The rogue didn't delude himself into thinking that his breach into the guard compound would go unnoticed by one or more of the many well-trained soldiers, so he requested a  Special Abilities pair of gloves from the guild weapon smith. These gloves contained several small sacs, which would release forth a burst of powder when pressed. Using this secret weapon to blind (and then render unconscious) the few guards who discovered him, Colthrun was able to retrieve the evidence without a single kill.\n\n\nSTATISTICS:\n\n  Special Abilities:\nCan cast Glitterdust 3 times a day.\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM030",
+          "belt",
+          "Rogue's Best Friend",
+          "This wide belt is full of poaches and pockets filled to the brim with lock picking tools, as well as a small collection of trap crafting material. The belt is a bit heavier than other of its ilk, but its usefulness is clear. It also includes a small vial with a concoction that, in contact with air, becomes a sticky substance covering a wide area to impede the movement of all who step on it, giving the thief time to escape should the need arise.\n\nSTATISTICS: \n\n Equipped Abilities:\nLock picking +10\nDisarm traps +10\nSet traps +10\n\n  Special Abilities:\nMay cast Web once a day\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM036",
+          "large sword",
+          "Blade of the Watch +3",
+          "I have need of this.",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "O!BOM040",
+          "short sword",
+          "Short Sword +4: Sticker in the Eye",
+          "I will be as a shadow.",
+          {
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Thief"
+              ],
+              "minDex": 16
+            }
+          }
+        ],
+        [
+          "O!BOM031",
+          "amulet",
+          "Little Friend Locket",
+          "Your initial reaction to this necklace is revulsion. Attached to a frayed, stinking string that looks as though it was woven from pond weed, is a broadly grinning goblin head carved from wood. The eyes are roughly hewn quartz crystals, and a message is crudely engraved on the back of the head (although \"chiselled\" might be a more accurate description): \"yoor spEchall frEnd, jErry\".\n\nSTATISTICS:\n\n  Special Abilities:\nMay summon Friendly Jerry once per day for 2 turns\n\n Jerry:\n\nLevel 12 Goblin Thief\nHit points: 100\nTHAC0: 9\nArmed with Tuigan Short Bow and Short Sword +1\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM032",
+          "amulet",
+          "Bion",
+          "Archmage Jaloon Neboam of Waterdeep created this item to aid him in his old age. Noticing that he was beginning to succumb to the onset of senility as his father had, he crafted this amulet to protect his memory from the ravages of time. The necklace worked perfectly, until Jaloon removed the amulet for a liaison with a pretty young apprentice. He immediately forgot what he was supposed to be doing and where he'd placed the amulet, and the girl was able to snatch it up and run away. She then sold it on for a healthy profit and the Archmage was left trying to work out what had happened.\n\nSTATISTICS:\n\n Equipped Abilities:\nWearer is immune to any memory loss, whether natural or magical (i.e. forget)\nThis prevents draining of spells except through use, and the draining of intelligence.\n\nWeight: 1",
+          {}
+        ],
+        [
+          "O!BOM033",
+          "amulet",
+          "Bion",
+          "This ornate gorget is engraved with the words \"Knowledge be with you\". Symbols of Oghma are prominent all over the piece; this is likely an item given to high-ranking Oghmanytes, to assist them in their investigations. It could be a boon to any treasure-hoarding adventurer, though.\n\nSTATISTICS:\n\n Equipped Abilities:\n+15 to Lore\n\n Special Abilities:\nMay create one scroll of Identify 5 times a day\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM041",
+          "short sword",
+          "Bion",
+          "We might want to watch our backs.",
+          {
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "cha": 1,
+            "magicResist": 10,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "O!BOM015",
+          "helmet",
+          "Bion",
+          "Nuhn was a small town that once stood approximately where the border between Tethyr and Amn now lies. This helm belonged to the town's Master, a much beloved Priest of the Morninglord, Lathander, whose wisdom and benevolence guided this once backwater hamlet into becoming a major seat of trade and prosperity. Sadly, when the Master of Nuhn passed away, the noble houses fell to squabbling amongst themselves as to who should take over: none of them had the backing of the people as he had. Eventually, bandits took root around the town, and Nuhn fell into ruin. This helm is all that remains as a memento to the glory days.\n\n Equipped Abilities:\n+1 to Saving Throws\n+1 Wisdom\n+1 Charisma\nProtects from Critical Hits\n\nWeight: 5",
+          {
+            "cha": 1,
+            "wis": 1,
+            "saves": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            }
+          }
+        ],
+        [
+          "O!BOM014",
+          "helmet",
+          "Bion",
+          "That treacherous Thayan stole my bit! I should sue!",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 100
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "O!BOM011",
+          "armor",
+          "Bion",
+          "As it's name implies, this suit of armour is made from the cured and treated hide of a Troll. Enchantments have been placed upon the armour that both stiffen it greatly to ward off attack, and permit the wearer to regenerate in a manner similar to a troll. Although not as tough as a suit of full plate, many warrior has had cause to be thankful upon seeing even grievous wounds close quickly, and chosen to wear the hide rather than heavier armour. Another disadvantage is the smell: the faint whiff of troll can still be smelt at close proximity, although this would only effect the most choosy of adventurers.\n\n Equipped Abilities:\nAC 2\nRegeneration 3HP/round\n\nWeight: 15",
+          {
+            "ac": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "O!BOM023",
+          "helmet",
+          "Bion",
+          "We will honor your sacrifice.",
+          {
+            "int": 1,
+            "dex": 1,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM065",
+          "axe",
+          "Bion",
+          "Adel yn Bilal el Fareed, a blacksmith from Calimport, was a devout follower of Talos. \nHe proudly displayed Talos' holy symbol over his forge, claiming that all his weapons were infused with the wrath of the Storm Lord himself.\n\nWhether or not this claim held any actual merit, his craftsmanship was without a doubt out of this world. During the years many a famous weapon was forged in the fires of his shop, most of them thematically enchanted to fit the ethos of the Storm Lord. \n\nOf all the weapons to leave his shop, his final piece, \"Stormbringer\", is by far considered his crowning achievement. Created in the blackest obsidian, this formidable weapon is made to strike the fear of the Storm Lord into anyone foolish enough to incur the wrath of his followers. \n\nSTATISTICS:\n\n Combat Abilities: \nReturns to wielder\n\n Special Abilities:\nFury of the Storm Lord once per day \n Damage: Enemies suffer \n  - 1d3 electrical and 1d3 acid damage for 3 rounds (Save vs. Spell for half damage)\n  - Save vs. Death or become poisoned\n  - Slays creatures of 6 HD or less\n Range: 270 ft.\n Area of Effect: 50 ft.\n\nStorm Avatar once per day\n Effect: \n  - Double your movement rate\n  - + 2 Attacks per round\n Duration: 5 rounds\n Area of Effect: The user\n\nEnchantment: +3\nDamage: 2d4+3, +1d4 electrical damage\nThac0: +3 Bonus\nDamage Type: Crushing\nWeight: 4\nSpeed Factor: 1\nProficiency Type: War Hammer\nType: One-Handed\nRequires: 9 Strength",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d12",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "O!BOM064",
+          "axe",
+          "Bion",
+          "No! No, no, wait—!",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d12",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "O!BOM063",
+          "axe",
+          "Bion",
+          "Aalin Firebeard was a Dwarven warrior who made his fortune as a part of the Crossed-Kukris mercenary company, who acted as guides for merchant caravans wishing to cross the great Anauroch desert. When Aalin first joined the company, he was pilloried every day for being slow, as he had joined at a time when the company happened to be predominantly made up of elves and halflings. He found himself unable to even sit down and enjoy a meal without one of the small folk pilfering his cutlery, forcing him to undignifiedly waddle after them shouting curses as he went. A human mage by the name of Niadh de la Merse eventually took pity upon the dwarf, having once been the butt of such jokes himself. He enchanted the dwarf's axe so as he could move and fight at supernatural speeds for short time each day. When the next battle came and the other members of the company saw the rate and ferocity with which the dwarf chased down and slew his foes, none dared mock the dwarf again. He travelled with the axe for the rest of his adventuring days, finally selling it on to pay for an early retirement with \"plenty of ale, and no blasted halflings fer a hundred miles!\"\n\nSTATISTICS:\n\n Special Abilities:\nMay haste the wielder for 30 seconds, 2/day.\n\nEnchantment: +4\nDamage: 1d12+4\nThac0: +4\nDamage Type: Slashing\nWeight: 10\nSpeed Factor: 4\nProficiency Type: Axe\nType: Two-Handed\nRequires: 14 Strength",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "1d12",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "O!BOM037",
+          "large sword",
+          "Bion",
+          "The power! THE POWER! Huhahahahahahahahahahaha!",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "2d4",
+            "dmgBonus": 5,
+            "cha": -1,
+            "con": -2,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://sorcerers.net/community/resources/boards-o-magick-item-pack.85/",
+  "au": "olimikrig",
+  "langs": {
+    "en": 0
+  },
+  "no": "Introduces two new merchant characters who offer a curated selection of rebalanced and previously underutilized items in Baldur's Gate II.",
+  "co": [
+    {
+      "n": "Boards of Magick item pack!",
+      "tp2n": "Boards of Magick item pack!",
+      "cn": 0,
+      "wf": "BoM",
+      "wp": "BoM\\Setup-BoM.tp2",
+      "wc": 0,
+      "no": "LOCAL FIX APPLIED: Renamed O!Tal.cre to O!TAL.cre to match tp2 COPY reference (case mismatch fails on Linux). ENGINE_IS ~bg2ee~ is fine for EET since EET runs on the bg2ee engine. @0 tra reference is correctly defined in Setup.tra. Automated fix: eet-mod-forge-patches component #13.",
+      "in": [
+        {
+          "t": "Rename O!Tal.cre to O!TAL.cre in the mod folder (case mismatch on Linux/macOS). Or use eet-mod-forge-patches #13.",
+          "type": "file"
+        }
+      ],
+      "it": 67,
+      "itC": {
+        "scroll": 1,
+        "hammer": 2,
+        "large sword": 6,
+        "spear": 2,
+        "halberd": 1,
+        "dagger": 4,
+        "helmet": 11,
+        "armor": 6,
+        "bow": 1,
+        "arrow": 1,
+        "bracers": 3,
+        "short sword": 3,
+        "dart": 2,
+        "bullet": 1,
+        "mace": 1,
+        "axe": 4,
+        "boots": 2,
+        "flail": 1,
+        "staff": 10,
+        "shield": 1,
+        "belt": 1,
+        "amulet": 3
+      }
+    },
+    {
+      "n": "Boards of Magick item pack! (ToB)",
+      "tp2n": "Boards of Magick item pack!",
+      "cn": 1,
+      "wf": "BoM",
+      "wp": "BoM\\Setup-BoM.tp2",
+      "no": "ENGINE_IS ~bg2ee~ works for EET (EET runs on bg2ee engine). No fix needed for this component."
+    }
+  ]
+}

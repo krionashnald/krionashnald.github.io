@@ -1,0 +1,62 @@
+parent_mod	parent_author	other_mod	other_author	severity	evidence	reason_excerpt
+ArtisansKitpack	artemius_i	HouseTweaks	artemius_i	soft	-	HT cn:2 (Expanded Shapeshifting) and AK cn:5100 (Shapeshifter Overhaul) both modify CLABDR04.2DA — pick one or install H
+DarkHorizons	kova (original), roxanne (eet port)	darkhorizonsbgee	kova (original), roxanne (eet port)	hard	-	Same mod content under two tp2 names (legacy vs EE packaging). Install only one version.
+HouseTweaks	artemius_i	ArtisansKitpack	artemius_i	soft	-	Only shapeshifting overlaps. HT cn:2 (Expanded Shapeshifting) and AK cn:5100 (Shapeshifter Overhaul) both modify CLABDR0
+Item_Pack	edvin	Rolles	edvin	hard	-	Choose one Bag of Holding
+JanQuest	akadis, kasumi	JanQuestRemix	akadis, kasumi	hard	-	Jan's Quest Remix is an expanded rewrite of this mod. Both write to identical override files (E_JLissa.cre, E_Jaella.cre
+JanQuestRemix	akadis, kasumi	JanQuest	akadis, kasumi	hard	-	JanQuestRemix is an expanded rewrite of Jan's Extended Quest (JanQuest). Both write to identical override files (E_JLiss
+LEUI-BG1EE	lefreut	LeUI-SoD	lefreut	hard	-	UI overhaul mods are mutually exclusive
+LEUI-BG1EE	lefreut	LeUI	lefreut	hard	-	UI overhaul mods are mutually exclusive
+LeUI-SoD	lefreut	LEUI-BG1EE	lefreut	hard	-	UI overhaul mods are mutually exclusive
+LeUI-SoD	lefreut	LeUI	lefreut	hard	-	UI overhaul mods are mutually exclusive
+LeUI	lefreut	LEUI-BG1EE	lefreut	hard	-	UI overhaul mods are mutually exclusive
+LeUI	lefreut	LeUI-SoD	lefreut	hard	-	UI overhaul mods are mutually exclusive
+MESpells	olvynchuru	METweaks	olvynchuru	soft	-	Olvyn cn:980 FORBID_COMPONENT METweaks cn:900 (same ranger/paladin progression). If METweaks cn:900 installed first, Olv
+METweaks	olvynchuru	MESpells	olvynchuru	soft	-	Olvyn cn:980 has FORBID_COMPONENT for METweaks cn:900 — same ranger/paladin progression. If METweaks cn:900 installed fi
+rr	wisp	tnt	wisp	soft	-	Functionality provided by Tweaks and Tricks (per II install notes)
+rolles	edvin	Item_Pack	edvin	hard	-	Choose one Bag of Holding
+TPoJ	bucketfulofsunshine	lfgp	bucketfulofsunshine	soft	-	Both mods extensively patch OH5xxx area scripts (Resurrection Gorge / Olvenauk's Haven). May conflict if both installed.
+ZS_Consumables	zed nocear	ZS_WeaponOils	zed nocear	hard	-	ZS_Consumables supersedes ZS_WeaponOils. The oils component is taken directly from the deprecated mod. Use one or the ot
+ZS_WeaponOils	zed nocear	ZS_Consumables	zed nocear	hard	-	ZS_Consumables supersedes ZS_WeaponOils. The oils component is taken directly from the deprecated mod. Use one or the ot
+atweaks	avenger, wisp	aTweaks	avenger, wisp	soft	-	cn:155 (Revised Fiend Summoning) and cn:156 (Fiendish Gating) require one of the PnP Fiends base components (cn:150, 152
+Ascension	davidw	wheels	davidw	partial	-	Managed conflict — both modify ToB endgame. Ascension has FORBID_COMPONENT for setup-wheels.tp2 (may not trigger due to 
+Ascension	davidw	stratagems	davidw	soft	-	Install order note. SCS Smarter Ascension components (cn:6590/6840/6850) are designed to install AFTER Ascension and sup
+c#anotherfinehell	jastey	c#sodtweaks	jastey	hard	-	SoD ending components are mutually exclusive; Another Fine Hell tp2 uses FORBID_COMPONENT for Jastey's ending variants (
+c#sodtweaks	jastey	c#anotherfinehell	jastey	hard	-	SoD ending components are mutually exclusive; Another Fine Hell tp2 uses FORBID_COMPONENT for Jastey's ending variants (
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify movement rates. Use one or the other
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify movement rates. Use one or the other
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify store pricing mechanics. May produce unexpected pricing
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify store pricing mechanics. May produce unexpected pricing
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Individual stronghold class unlocks are redundant if Multiple Strongholds: No Restrictions is installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Individual stronghold class unlocks are redundant if Multiple Strongholds: No Restrictions is installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Removing all racial restrictions may make the class restriction tweaks redundant or produce unexpected combinations
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Removing all racial restrictions may make the class restriction tweaks redundant or produce unexpected combinations
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify armor/spellcasting interaction. May conflict if both installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Both modify armor/spellcasting interaction. May conflict if both installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Shapeshifter Rebalancing modifies forms that may interact with armor permission changes
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Shapeshifter Rebalancing modifies forms that may interact with armor permission changes
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Romance Cheats is pointless if Disable Romances is installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Romance Cheats is pointless if Disable Romances is installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Identify All Items makes the Require Identification tweaks pointless
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Identify All Items makes the Require Identification tweaks pointless
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Storekeeper ID limitations are pointless if Identify All Items is installed
+cdtweaks	camdawg, the gibberlings three	cdtweaks	camdawg, the gibberlings three	soft	-	Storekeeper ID limitations are pointless if Identify All Items is installed
+darkhorizonsbgee	kova (original), roxanne (eet port)	DarkHorizons	kova (original), roxanne (eet port)	hard	-	Same mod content under two tp2 names (legacy vs EE packaging). Install only one version.
+dw_talents	davidw	stratagems	davidw	soft	-	Managed via mutual detection. SCS spell/IWD components auto-skip when ToF equivalents are installed. SCS cn:4030 (Shapes
+dw_talents	davidw	stratagems	davidw	hard	-	ToF Point-Buy Stats (cn:80100-80104) have FORBID_COMPONENT SCS cn:5900 (Initialise AI). Point-buy will silently auto-ski
+dw_talents	davidw	stratagems	davidw	hard	-	Install-order-dependent: if SCS #5900 (Initialise AI) installs BEFORE ToF, 20+ ToF components (#80150-#90100 incl. Point
+dw_talents	davidw	stratagems	davidw	hard	-	ToF #40600 (Revised Druid Shapeshifting) and #41000 (Rebalanced Kits: Default) block SCS #4030 (Improved shapeshifting) 
+imoen_forever	jastey	jtweaks	jastey	soft	-	Complementary. JTweaks cn:370 applies small bug fixes to Imoen scripts (XP sync, spell states). Imoen Forever adds major
+jtweaks	jastey	imoen_forever	jastey	soft	-	Complementary. JT cn:370 fixes Imoen script bugs (XP sync, spell states). Imoen Forever adds new SoD content. Both EXTEN
+k0_iskp	k4thos	sod2bg2_iu	k4thos	soft	-	Reported incompatible by LCC-docs database (lcc id 1587 vs 973)
+lfgp	bucketfulofsunshine	TPoJ	bucketfulofsunshine	soft	-	Both mods extensively patch OH5xxx area scripts (Resurrection Gorge / Olvenauk's Haven). May conflict if both installed.
+mih_fr	mulan	mih_sp	mulan	soft	-	Same author (Angel). FR cn:7 (Spell Restorations) restores cut vanilla spells, SP cn:0 (Arcane Spellpack) adds new MiH s
+mih_sp	mulan	mih_fr	mulan	soft	-	Same author (Angel). MiH SP spell components supersede MiH FR spell restorations where they overlap. FR cn:5 (Spell Rest
+sod2bg2_iu	k4thos	k0_iskp	k4thos	soft	-	Reported incompatible by LCC-docs database (lcc id 973 vs 1587)
+stratagems	davidw	ascension	davidw	soft	-	Install order note. SCS Smarter Ascension components (cn:6590/6840/6850) are designed to install AFTER Ascension and sup
+stratagems	davidw	dw_talents	davidw	hard	-	ToF Point-Buy Stats (cn:80100-80104) have FORBID_COMPONENT SCS cn:5900 (Initialise AI). Point-buy auto-skips if SCS is i
+stratagems	davidw	dw_talents	davidw	hard	-	Install-order-dependent: ToF's tp2 has 77× FORBID_COMPONENT ~stratagems~ #5900 — if SCS #5900 (Initialise AI) installs B
+stratagems	davidw	dw_talents	davidw	soft	-	SCS spell/IWD components (cn:1500-2080) auto-skip if ToF equivalents installed (REQUIRE_PREDICATE checks in tp2). Alread
+stratagems	davidw	dw_talents	davidw	hard	-	SCS #4030 (Improved shapeshifting) has !(MOD_IS_INSTALLED ~dw_talents~ 40600) and !(MOD_IS_INSTALLED ~dw_talents~ 41000)
+tnt	wisp	RR	wisp	soft	-	TnT cn:67 (True Grandmastery) and cn:68 (Multiclass restrictions) modify WEAPPROF.2DA. RR cn:0 (Dual-wielding) also modi
+wheels	davidw	ascension	davidw	partial	-	Both modify ToB endgame. WoP MUST install BEFORE Ascension — WoP detects Ascension absence and adjusts content. Balthaza

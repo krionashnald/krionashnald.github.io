@@ -1,0 +1,58 @@
+{
+  "i": 125,
+  "t": "valerie",
+  "sv": 1,
+  "ord": 40,
+  "c": "NEW NPC MODS",
+  "n": "Valerie NPC for BG",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Valerie sorcerer. Character and writing is fine, but it'll probably never get the BG2 continuation that was planned FIXED: tp2 bug — line 22 has broken ternary: (GAME_IS ~tutu tutu_totsc~ ? 1 : 0) should be (GAME_IS ~tutu tutu_totsc~) ? 1 : 0. Missing closing paren before ? causes OUTER_SET to crash, preventing is_bgt from being set. Fails on reinstall with 'cannot convert is_bgt to integer'. Same bug as Isra. Patched in Extracted and game dir.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "valerie_npc",
+          "portraits/valerie/t2val.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "http://www.shsforums.net/files/file/1041-valerie/",
+  "a": "Kaeloree",
+  "v": "v1.2",
+  "sum": "Adds Valerie as a joinable NPC companion in Baldur's Gate, a new character with her own personality, dialogue, and storyline.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "Tempest",
+  "dl": "https://github.com/SpellholdStudios/Valerie_NPC",
+  "co": [
+    {
+      "n": "Valerie NPC Mod for BG1 Tutu, BGT BG:EE and EET",
+      "cn": 0,
+      "wf": "valerie",
+      "wp": "valerie\\VALERIE.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Valerie NPC Mod for BG1 Tutu, BGT BG:EE and EET"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Valerie_NPC"
+  }
+}

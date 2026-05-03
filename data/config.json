@@ -1,0 +1,1087 @@
+{
+  "version": "4.1.0",
+  "limits": {
+    "SPELL_LEVEL_CAP": 50,
+    "KIT_CAP": 320,
+    "KIT_BASE": 37,
+    "SPLSTATE_CAP": 256,
+    "SPLSTATE_BASE": 128,
+    "SPLSTATE_WARN": 210,
+    "SPLSTATE_CRIT": 240,
+    "KIT_WARN": 250,
+    "KIT_CRIT": 300
+  },
+  "time": {
+    "NEW_RELEASE_DAYS": 90
+  },
+  "weidu": {
+    "CODEPAGE_BUG_MIN": 24700,
+    "CODEPAGE_BUG_MAX": 24900
+  },
+  "essentials": {
+    "tp2": {
+      "FIXPACK": "eefixpack",
+      "EET": "eet",
+      "EET_END": "eet_end",
+      "EET_TWEAKS": "eet_tweaks"
+    },
+    "list": [
+      {
+        "id": 3,
+        "label": "DLC Merger",
+        "target": ["eet", "bgee"]
+      },
+      {
+        "id": 4,
+        "label": "EE Fixpack",
+        "target": ["eet", "bgee", "bg2ee", "iwdee", "pstee"]
+      },
+      {
+        "id": 12,
+        "label": "EET",
+        "target": ["eet"]
+      },
+      {
+        "id": 449,
+        "label": "EET End",
+        "target": ["eet"]
+      }
+    ],
+    "dualInstall": [
+      "eefixpack"
+    ],
+    "eetModId": 12,
+    "eetEndId": 449,
+    "fixpackId": 4,
+    "dlcMergerId": 3
+  },
+  "modTypes": {
+    "icons": {
+      "story": "\ud83d\udcd6",
+      "combat": "\u2694\ufe0f",
+      "qol": "\u2728",
+      "romance": "\ud83d\udc95",
+      "visual": "\ud83c\udfa8",
+      "audio": "\ud83d\udd0a",
+      "class": "\ud83d\udee1\ufe0f",
+      "npc": "\ud83d\udc64",
+      "tweak": "\ud83d\udd27",
+      "tactical": "\ud83e\udde0",
+      "restore": "\ud83d\udce6",
+      "item": "\ud83d\udc8e",
+      "quest": "\ud83d\udcdc",
+      "banter": "\ud83d\udcac",
+      "spell": "\u2728",
+      "kit": "\ud83c\udfad",
+      "difficulty": "\ud83d\udcc8",
+      "fix": "\ud83d\udd28",
+      "cau": "\u26a0\ufe0f",
+      "ui": "\ud83d\udda5\ufe0f",
+      "cosmetic": "\ud83c\udf1f",
+      "portrait": "\ud83d\uddbc\ufe0f",
+      "mobile": "\ud83d\udcf1",
+      "tool": "\ud83e\uddf0"
+    },
+    "order": {
+      "story": 1,
+      "npc": 2,
+      "combat": 3,
+      "tactical": 4,
+      "qol": 5,
+      "tweak": 6,
+      "class": 7,
+      "item": 8,
+      "restore": 9,
+      "romance": 10,
+      "visual": 11,
+      "audio": 12
+    }
+  },
+  "badges": {
+    "rec": {
+      "l": "REC",
+      "bg": "#1e3a2f",
+      "fg": "var(--grn)",
+      "bd": "#2a4a3a"
+    },
+    "adv": {
+      "l": "ADV",
+      "bg": "#2a1e3a",
+      "fg": "var(--pur)",
+      "bd": "#3a2a5a"
+    },
+    "cos": {
+      "l": "COS",
+      "bg": "#1e2a3a",
+      "fg": "var(--blu)",
+      "bd": "#2a3a5a"
+    },
+    "cau": {
+      "l": "CAUTION",
+      "bg": "#3a1e1e",
+      "fg": "var(--red)",
+      "bd": "#4a2a2a"
+    },
+    "pnp": {
+      "l": "PnP",
+      "bg": "rgba(212,168,67,.12)",
+      "fg": "var(--goldd)",
+      "bd": "rgba(212,168,67,.3)"
+    },
+    "qol": {
+      "l": "QoL",
+      "bg": "rgba(56,189,248,.12)",
+      "fg": "#38bdf8",
+      "bd": "rgba(56,189,248,.3)"
+    }
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Fran\u00e7ais",
+    "de": "Deutsch",
+    "es": "Espa\u00f1ol",
+    "it": "Italiano",
+    "pl": "Polski",
+    "ru": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+    "cs": "\u010ce\u0161tina",
+    "ko": "\ud55c\uad6d\uc5b4",
+    "zh-cn": "\u7b80\u4f53\u4e2d\u6587",
+    "zh-tw": "\u7e41\u9ad4\u4e2d\u6587",
+    "pt": "Portugu\u00eas",
+    "pt-br": "Portugu\u00eas (BR)",
+    "ja": "\u65e5\u672c\u8a9e",
+    "sv": "Svenska",
+    "nl": "Nederlands",
+    "tr": "T\u00fcrk\u00e7e",
+    "hu": "Magyar"
+  },
+  "vanillaSpells": {
+    "w1": 22,
+    "w2": 21,
+    "w3": 21,
+    "w4": 24,
+    "w5": 18,
+    "w6": 20,
+    "w7": 20,
+    "w8": 12,
+    "w9": 18,
+    "p1": 13,
+    "p2": 14,
+    "p3": 16,
+    "p4": 17,
+    "p5": 16,
+    "p6": 14,
+    "p7": 20
+  },
+  "toolCategories": {
+    "installer": "Installers & Managers",
+    "editor": "Editors & Browsers",
+    "utility": "Utilities",
+    "dev": "Development",
+    "reference": "Reference"
+  },
+  "uiLanguages": [
+    [
+      "en",
+      "English"
+    ],
+    [
+      "de",
+      "Deutsch"
+    ],
+    [
+      "fr",
+      "Fran\u00e7ais"
+    ],
+    [
+      "pl",
+      "Polski"
+    ],
+    [
+      "ru",
+      "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"
+    ]
+  ],
+  "phases": {
+    "list": [
+      "bg1",
+      "sod",
+      "bg2",
+      "tob"
+    ],
+    "labels": {
+      "bg1": "BG1",
+      "sod": "SoD",
+      "bg2": "BG2",
+      "tob": "ToB"
+    },
+    "colors": {
+      "bg1": "var(--grn)",
+      "sod": "#38bdf8",
+      "bg2": "var(--gold)",
+      "tob": "var(--pur)"
+    },
+    "gamePhases": {
+      "bg1": [
+        "bg1"
+      ],
+      "bg2": [
+        "bg2",
+        "tob"
+      ],
+      "both": [
+        "bg1",
+        "sod",
+        "bg2",
+        "tob"
+      ],
+      "sod": [
+        "sod"
+      ],
+      "tob": [
+        "tob"
+      ]
+    }
+  },
+  "spellTabs": [
+    [
+      "wizard",
+      "Arcane"
+    ],
+    [
+      "priest",
+      "Divine"
+    ],
+    [
+      "innate",
+      "Innate"
+    ]
+  ],
+  "kitTabs": [
+    [
+      "fighter",
+      "Fighter"
+    ],
+    [
+      "ranger",
+      "Ranger"
+    ],
+    [
+      "paladin",
+      "Paladin"
+    ],
+    [
+      "cleric",
+      "Cleric"
+    ],
+    [
+      "druid",
+      "Druid"
+    ],
+    [
+      "thief",
+      "Thief"
+    ],
+    [
+      "bard",
+      "Bard"
+    ],
+    [
+      "mage",
+      "Mage"
+    ],
+    [
+      "sorcerer",
+      "Sorcerer"
+    ],
+    [
+      "monk",
+      "Monk"
+    ],
+    [
+      "shaman",
+      "Shaman"
+    ],
+    [
+      "multi",
+      "Multi-class"
+    ],
+    [
+      "npc",
+      "Non-Player"
+    ]
+  ],
+  "kitClassLabels": {
+    "fighter": "Fighter",
+    "ranger": "Ranger",
+    "paladin": "Paladin",
+    "cleric": "Cleric",
+    "druid": "Druid",
+    "thief": "Thief",
+    "bard": "Bard",
+    "mage": "Mage",
+    "sorcerer": "Sorcerer",
+    "monk": "Monk",
+    "shaman": "Shaman",
+    "barbarian": "Barbarian",
+    "multi": "Multi-class",
+    "npc": "Non-Player"
+  },
+  "kitClassColors": {
+    "fighter": "#c4a060",
+    "ranger": "#5a9e5a",
+    "paladin": "#d4a840",
+    "cleric": "#e8c840",
+    "druid": "#6abf6a",
+    "thief": "#999",
+    "bard": "#b090d0",
+    "mage": "#6b8aff",
+    "sorcerer": "#c06af0",
+    "monk": "#d09060",
+    "shaman": "#80c070",
+    "barbarian": "#cc6644",
+    "multi": "#a0a0a0",
+    "npc": "#8a6060"
+  },
+  "actionStyles": {
+    "modify": [
+      "MODIFIED",
+      "action-modify"
+    ],
+    "replace": [
+      "REPLACED",
+      "action-replace"
+    ],
+    "add": [
+      "ADDED",
+      "action-add"
+    ],
+    "tweak": [
+      "TWEAKED",
+      "action-tweak"
+    ],
+    "remove": [
+      "REMOVED",
+      "action-remove"
+    ],
+    "disable": [
+      "DISABLED",
+      "action-remove"
+    ]
+  },
+  "schoolsShort": {
+    "Abjuration": "Abj",
+    "Conjuration": "Con",
+    "Divination": "Div",
+    "Enchantment": "Enc",
+    "Evocation": "Evo",
+    "Illusion": "Ill",
+    "Necromancy": "Nec",
+    "Alteration": "Alt"
+  },
+  "helpTabs": [
+    [
+      "start",
+      "Quick Start"
+    ],
+    [
+      "install",
+      "Install Methods"
+    ],
+    [
+      "app",
+      "Using the App"
+    ],
+    [
+      "tabs",
+      "Tabs Guide"
+    ],
+    [
+      "badges",
+      "Badges & Status"
+    ],
+    [
+      "faq",
+      "Troubleshooting"
+    ],
+    [
+      "links",
+      "Links"
+    ],
+    [
+      "prefixes",
+      "Prefix Registry"
+    ]
+  ],
+  "resourcesTabs": [
+    [
+      "start",
+      "Quick Start"
+    ],
+    [
+      "install",
+      "Install Methods"
+    ],
+    [
+      "app",
+      "Using the App"
+    ],
+    [
+      "tabs",
+      "Tabs Guide"
+    ],
+    [
+      "badges",
+      "Badges & Status"
+    ],
+    [
+      "faq",
+      "Troubleshooting"
+    ],
+    [
+      "links",
+      "Links"
+    ],
+    [
+      "prefixes",
+      "Prefix Registry"
+    ],
+    [
+      "tools",
+      "Tools"
+    ],
+    [
+      "versions",
+      "Versions"
+    ],
+    [
+      "diagnostics",
+      "Diagnostics"
+    ]
+  ],
+  "tagMap": {
+    "quests": [
+      "QUEST MODS BG1",
+      "QUEST MODS BG2",
+      "QUEST MODS ToB",
+      "POST-TACTICAL QUESTS"
+    ],
+    "npcs": [
+      "NEW NPC MODS",
+      "NPC EXPANSIONS",
+      "NPC CUSTOMIZATION"
+    ],
+    "kits": [
+      "KIT & CLASS MODS"
+    ],
+    "items": [
+      "ITEM ADDITION MODS"
+    ],
+    "spells": [
+      "SPELL MODS"
+    ],
+    "tweaks": [
+      "PRE-TACTICAL TWEAKS",
+      "POST-TACTICAL TWEAKS",
+      "EXPERIENCE TWEAKS"
+    ],
+    "tactical": [
+      "TACTICAL MODS"
+    ]
+  },
+  "wizard": {
+    "experienceLevels": [
+      [
+        1,
+        "First time with Baldur's Gate",
+        "Never played or just starting out"
+      ],
+      [
+        2,
+        "Played vanilla, new to mods",
+        "Finished the games but haven't modded"
+      ],
+      [
+        3,
+        "Experienced modder",
+        "Used mods before, know the basics"
+      ],
+      [
+        4,
+        "EET veteran",
+        "You've done this dance many times"
+      ]
+    ],
+    "focusOpts": [
+      [
+        "story",
+        "Story & Quests"
+      ],
+      [
+        "npc",
+        "Companions & NPCs"
+      ],
+      [
+        "tactical",
+        "Smarter Enemies (SCS)"
+      ],
+      [
+        "visual",
+        "Visual & Audio"
+      ],
+      [
+        "qol",
+        "Quality of Life"
+      ],
+      [
+        "romance",
+        "Romance"
+      ],
+      [
+        "class",
+        "New Classes & Kits"
+      ]
+    ],
+    "publishFocusOpts": [
+      [
+        "story",
+        "Story & Quests"
+      ],
+      [
+        "npc",
+        "Companions & NPCs"
+      ],
+      [
+        "tactical",
+        "Tactical / SCS"
+      ],
+      [
+        "visual",
+        "Visual & Audio"
+      ],
+      [
+        "qol",
+        "Quality of Life"
+      ],
+      [
+        "romance",
+        "Romance"
+      ],
+      [
+        "class",
+        "Classes & Kits"
+      ],
+      [
+        "tweak",
+        "Tweaks"
+      ]
+    ],
+    "difficultyOpts": [
+      [
+        "easy",
+        "Keep it easy",
+        "Vanilla difficulty with quality-of-life improvements",
+        "var(--grn)"
+      ],
+      [
+        "moderate",
+        "Moderate challenge",
+        "Some AI improvements without full SCS",
+        "var(--blu)"
+      ],
+      [
+        "hard",
+        "Maximum difficulty",
+        "Sword Coast Stratagems with smarter enemies",
+        "var(--red)"
+      ]
+    ]
+  },
+  "installers": {
+    "runner": {
+      "name": "Infinity Mod Runner",
+      "urlKey": "modRunner",
+      "shortDesc": "Automated installer with patch system that resolves cross-mod conflicts during install. Recommended for complex builds."
+    }
+  },
+  "urls": {
+    "telemetryBase": "https://raw.githubusercontent.com/Anprionsa/infinity-mod-telemetry/main/data/",
+    "repo": "https://github.com/Anprionsa/infinity-mod-forge",
+    "issues": "https://github.com/Anprionsa/infinity-mod-forge/issues",
+    "telemetryRepo": "https://github.com/Anprionsa/infinity-mod-telemetry",
+    "modRunner": "https://github.com/Anprionsa/infinity-mod-runner",
+    "weiduMac": "https://weidu.org/Mac.html",
+    "linuxGuide": "https://www.gibberlings3.net/forums/topic/28516-the-linux-users-guide-to-installing-mods-on-the-enhanced-editions/",
+    "prefixThread": "https://www.gibberlings3.net/forums/topic/1649-community-filename-prefix-reservations/",
+    "iesdp": "https://gibberlings3.github.io/iesdp/site_info/links.htm",
+    "g3Forums": "https://www.gibberlings3.net/forums/",
+    "beamdogForums": "https://forums.beamdog.com/",
+    "shsForums": "https://www.shsforums.net/",
+    "projectInfinity": "https://forums.beamdog.com/discussion/74335",
+    "modInstaller": "https://github.com/dark0dave/mod_installer",
+    "bwsNg": "https://github.com/Selphira/BigWorldSetup-Next-Generation",
+    "weidu": "https://weidu.org"
+  },
+  "tabLabels": {
+    "mods": "Mods",
+    "portraits": "Portraits",
+    "spellkits": "Spells, Kits & Items",
+    "planner": "Character Planner",
+    "community": "Community",
+    "resources": "Resources"
+  },
+  "tabOrder": [
+    "mods",
+    "portraits",
+    "spellkits",
+    "planner",
+    "community",
+    "resources"
+  ],
+  "tagGroups": [
+    {
+      "label": "Content",
+      "tags": [
+        "story",
+        "npc",
+        "quest",
+        "romance",
+        "banter"
+      ]
+    },
+    {
+      "label": "Gameplay",
+      "tags": [
+        "combat",
+        "tactical",
+        "class",
+        "kit",
+        "spell",
+        "difficulty"
+      ]
+    },
+    {
+      "label": "Tweaks",
+      "tags": [
+        "qol",
+        "tweak",
+        "fix",
+        "restore",
+        "cau"
+      ]
+    },
+    {
+      "label": "Cosmetic",
+      "tags": [
+        "visual",
+        "audio",
+        "ui",
+        "cosmetic",
+        "portrait",
+        "mobile"
+      ]
+    },
+    {
+      "label": "Other",
+      "tags": [
+        "item",
+        "tool"
+      ]
+    }
+  ],
+  "itemCategories": [
+    [
+      "weapons",
+      "Weapons",
+      [
+        "large sword",
+        "short sword",
+        "dagger",
+        "axe",
+        "mace",
+        "hammer",
+        "flail",
+        "morning star",
+        "staff",
+        "spear",
+        "halberd"
+      ]
+    ],
+    [
+      "ranged",
+      "Ranged",
+      [
+        "bow",
+        "crossbow",
+        "sling",
+        "dart",
+        "arrow",
+        "bolt",
+        "bullet"
+      ]
+    ],
+    [
+      "armor",
+      "Armor",
+      [
+        "armor",
+        "shield",
+        "helmet",
+        "bracers",
+        "boots",
+        "belt",
+        "cloak",
+        "robe"
+      ]
+    ],
+    [
+      "accessories",
+      "Accessories",
+      [
+        "ring",
+        "amulet",
+        "gem",
+        "wand"
+      ]
+    ],
+    [
+      "consumables",
+      "Consumables",
+      [
+        "potion",
+        "scroll",
+        "food"
+      ]
+    ],
+    [
+      "misc",
+      "Miscellaneous",
+      [
+        "misc",
+        "tattoo"
+      ]
+    ],
+    [
+      "internal",
+      "Internal",
+      [
+        "fist",
+        "broken",
+        "familiar",
+        "coin",
+        "key",
+        "container"
+      ]
+    ]
+  ],
+  "equipSlots": [
+    [
+      "helmet",
+      "Helmet",
+      [
+        "helmet"
+      ]
+    ],
+    [
+      "armor",
+      "Armor",
+      [
+        "armor"
+      ]
+    ],
+    [
+      "shield",
+      "Shield",
+      [
+        "shield"
+      ]
+    ],
+    [
+      "amulet",
+      "Amulet",
+      [
+        "amulet"
+      ]
+    ],
+    [
+      "ring1",
+      "Ring 1",
+      [
+        "ring"
+      ]
+    ],
+    [
+      "ring2",
+      "Ring 2",
+      [
+        "ring"
+      ]
+    ],
+    [
+      "belt",
+      "Belt",
+      [
+        "belt"
+      ]
+    ],
+    [
+      "boots",
+      "Boots",
+      [
+        "boots"
+      ]
+    ],
+    [
+      "cloak",
+      "Cloak",
+      [
+        "cloak"
+      ]
+    ],
+    [
+      "gloves",
+      "Gloves",
+      [
+        "bracers"
+      ]
+    ],
+    [
+      "weapon",
+      "Weapon 1",
+      [
+        "large sword",
+        "short sword",
+        "dagger",
+        "axe",
+        "mace",
+        "hammer",
+        "flail",
+        "morning star",
+        "staff",
+        "spear",
+        "halberd",
+        "bow",
+        "crossbow",
+        "sling",
+        "dart"
+      ]
+    ],
+    [
+      "weapon2",
+      "Weapon 2",
+      [
+        "large sword",
+        "short sword",
+        "dagger",
+        "axe",
+        "mace",
+        "hammer",
+        "flail",
+        "morning star",
+        "staff",
+        "spear",
+        "halberd",
+        "bow",
+        "crossbow",
+        "sling",
+        "dart"
+      ]
+    ],
+    [
+      "weapon3",
+      "Weapon 3",
+      [
+        "large sword",
+        "short sword",
+        "dagger",
+        "axe",
+        "mace",
+        "hammer",
+        "flail",
+        "morning star",
+        "staff",
+        "spear",
+        "halberd",
+        "bow",
+        "crossbow",
+        "sling",
+        "dart"
+      ]
+    ],
+    [
+      "weapon4",
+      "Weapon 4",
+      [
+        "large sword",
+        "short sword",
+        "dagger",
+        "axe",
+        "mace",
+        "hammer",
+        "flail",
+        "morning star",
+        "staff",
+        "spear",
+        "halberd",
+        "bow",
+        "crossbow",
+        "sling",
+        "dart"
+      ]
+    ]
+  ],
+  "versionTracker": {
+    "statusFilters": [
+      {
+        "key": "outdated",
+        "label": "Updates Available",
+        "color": "var(--org)"
+      },
+      {
+        "key": "current",
+        "label": "Up to Date",
+        "color": "var(--grn)"
+      },
+      {
+        "key": "unknown",
+        "label": "No Release Data",
+        "color": "var(--txd)"
+      },
+      {
+        "key": "no-version",
+        "label": "No VERSION",
+        "color": "var(--txd)"
+      }
+    ],
+    "sortOptions": [
+      {
+        "key": "status",
+        "label": "Status"
+      },
+      {
+        "key": "name",
+        "label": "Name"
+      },
+      {
+        "key": "version",
+        "label": "Version"
+      }
+    ],
+    "cacheSortOptions": [
+      {
+        "key": "date",
+        "label": "Date"
+      },
+      {
+        "key": "name",
+        "label": "Name"
+      },
+      {
+        "key": "stars",
+        "label": "Stars"
+      }
+    ]
+  },
+  "itemColors": {
+    "large sword": "#c4a060",
+    "short sword": "#c4a060",
+    "dagger": "#b0a070",
+    "axe": "#cc6644",
+    "mace": "#999",
+    "hammer": "#b08040",
+    "flail": "#888",
+    "morning star": "#999",
+    "staff": "#8a6060",
+    "spear": "#a08050",
+    "halberd": "#a08050",
+    "fist": "#d09060",
+    "bow": "#5a9e5a",
+    "crossbow": "#5a9e5a",
+    "sling": "#5a9e5a",
+    "dart": "#6abf6a",
+    "arrow": "#6a9f6a",
+    "bolt": "#6a9f6a",
+    "bullet": "#6a9f6a",
+    "armor": "#6b8aff",
+    "shield": "#5577cc",
+    "leather armor": "#8a7a60",
+    "studded leather": "#8a7a60",
+    "chain mail": "#7788aa",
+    "splint mail": "#7788aa",
+    "plate mail": "#6b8aff",
+    "full plate": "#6b8aff",
+    "hide armor": "#8a7a60",
+    "robe": "#b090d0",
+    "scale mail": "#7788aa",
+    "helmet": "#7799bb",
+    "bracers": "#c06af0",
+    "boots": "#8a6060",
+    "belt": "#8a6060",
+    "cloak": "#b090d0",
+    "ring": "#e8c840",
+    "amulet": "#e8c840",
+    "gem": "#d4a840",
+    "wand": "#c06af0",
+    "potion": "#80c070",
+    "scroll": "#d0b080",
+    "food": "#6abf6a",
+    "misc": "#a0a0a0",
+    "key": "#a0a0a0",
+    "container": "#a0a0a0",
+    "coin": "#d4a840",
+    "broken": "#666",
+    "familiar": "#b090d0",
+    "tattoo": "#c06af0"
+  },
+  "itemGlyphs": {
+    "large sword": "\u2694",
+    "short sword": "\u2694",
+    "dagger": "\ud83d\udde1",
+    "axe": "\ud83e\ude93",
+    "mace": "\ud83d\udd28",
+    "hammer": "\ud83d\udd28",
+    "flail": "\u2694",
+    "morning star": "\u2694",
+    "staff": "\ud83e\udeac",
+    "spear": "\u2694",
+    "halberd": "\u2694",
+    "fist": "\u270a",
+    "bow": "\ud83c\udff9",
+    "crossbow": "\ud83c\udff9",
+    "sling": "\ud83c\udfaf",
+    "dart": "\ud83c\udfaf",
+    "arrow": "\u27a4",
+    "bolt": "\u27a4",
+    "bullet": "\u25cf",
+    "armor": "\ud83d\udee1",
+    "shield": "\ud83d\udee1",
+    "leather armor": "\ud83d\udee1",
+    "studded leather": "\ud83d\udee1",
+    "chain mail": "\ud83d\udee1",
+    "splint mail": "\ud83d\udee1",
+    "plate mail": "\ud83d\udee1",
+    "full plate": "\ud83d\udee1",
+    "hide armor": "\ud83d\udee1",
+    "robe": "\ud83e\udd8d",
+    "scale mail": "\ud83d\udee1",
+    "helmet": "\u26d1",
+    "bracers": "\ud83e\uddbe",
+    "boots": "\ud83d\udc62",
+    "belt": "\u25a2",
+    "cloak": "\ud83e\udde5",
+    "ring": "\ud83d\udc8d",
+    "amulet": "\ud83d\udcff",
+    "gem": "\ud83d\udc8e",
+    "wand": "\u2728",
+    "potion": "\ud83e\uddea",
+    "scroll": "\ud83d\udcdc",
+    "food": "\ud83c\udf5e",
+    "misc": "\u2753",
+    "key": "\ud83d\udd11",
+    "container": "\ud83d\udce6",
+    "coin": "\ud83e\ude99",
+    "broken": "\u26d2",
+    "familiar": "\ud83d\udc3e",
+    "tattoo": "\u2734"
+  }
+}

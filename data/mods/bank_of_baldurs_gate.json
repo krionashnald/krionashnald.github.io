@@ -1,0 +1,77 @@
+{
+  "i": 526,
+  "t": "bank_of_baldurs_gate",
+  "sv": 1,
+  "ord": 350,
+  "c": "QUEST MODS BG1",
+  "n": "Bank of Baldur's Gate",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "fr": 2,
+    "ru": 3
+  },
+  "no": "Deposit gold in BG1 and retrieve it in BG2. Requires EET and a way to return inside Baldur's Gate city. Normally requires EET and a means of returning inside Baldur’s Gate city to matter.Install Bank of Baldur’s Gate after EET Start.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "bank_bankdir",
+          "portraits/bank_bg/bankdir.png",
+          "bg1"
+        ],
+        [
+          "bank_bankgd1",
+          "portraits/bank_bg/bankgd1.png",
+          "bg1"
+        ],
+        [
+          "bank_bankgd2",
+          "portraits/bank_bg/bankgd2.png",
+          "bg1"
+        ],
+        [
+          "bank_bankman",
+          "portraits/bank_bg/bankman.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Bank_of_Baldurs_Gate",
+  "a": "Lassal",
+  "v": "v0.3",
+  "sum": "Adds a functional bank to Baldur's Gate city where you can store gold and earn interest. Quality-of-life for gold management.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/SpellholdStudios/Bank_of_Baldurs_Gate",
+  "au": "Lassal",
+  "co": [
+    {
+      "n": "Bank of Baldur's Gate",
+      "tp2n": "Bank of Baldur's Gate",
+      "cn": 0,
+      "wf": "bank_of_baldurs_gate",
+      "wp": "bank_of_baldurs_gate\\BANK_OF_BALDURS_GATE.TP2",
+      "wc": 0,
+      "no": "Bank with deposit, withdrawal, and loan mechanics.",
+      "games": [
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Bank_of_Baldurs_Gate"
+  }
+}

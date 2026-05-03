@@ -1,0 +1,78 @@
+{
+  "i": 351,
+  "t": "enchant",
+  "sv": 1,
+  "ord": 100,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Enchant",
+  "no": "Ranged weapon enchantment pass-through and ammo tweaks",
+  "u": "https://forums.beamdog.com/discussion/58374/enchant-the-missile-launchers-",
+  "a": "Dee",
+  "sum": "Makes enchanted ranged launchers pass enchantment to ammo, adds recoverable ammunition system, tweaks Eldoth/Jan, and fixes Fuller's quest.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/58374/enchant-the-missile-launchers-",
+  "au": "Dan_P",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Enchant the Missile Launchers",
+      "tp2n": "Enchant the Missile Launchers",
+      "no": "Makes enchanted bows/xbows/slings pass their enchantment to ammo for resistance bypass. Universally useful QoL",
+      "cn": 0,
+      "wf": "enchant",
+      "wp": "enchant\\enchant.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Ammunition Recovery",
+      "tp2n": "Ammunition Recovery",
+      "no": "Replaces ammo with charged/reusable versions (45 custom items). Changes ammo economy significantly",
+      "cn": 1,
+      "wf": "enchant",
+      "wp": "enchant\\enchant.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Custom Ammunition: Eldoth (BG:EE)",
+      "tp2n": "Custom Ammunition: Eldoth (BG:EE)",
+      "no": "Gives Eldoth Arrow of Detonation + composite longbow, removes Create Poison Arrows innate. NPCs don't switch spent ammo and stand idle — ammo management hassle",
+      "cn": 2,
+      "wf": "enchant",
+      "wp": "enchant\\enchant.tp2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "Custom Ammunition: Jan (BGII:EE)",
+      "tp2n": "Custom Ammunition: Jan (BGII:EE)",
+      "no": "Removes Jan's Create Special Snare innate ability. Very minimal change",
+      "cn": 3,
+      "wf": "enchant",
+      "wp": "enchant\\enchant.tp2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "Fix Fuller's Quest Bolts (BG:EE)",
+      "tp2n": "Fix Fuller's Quest Bolts (BG:EE)",
+      "no": "Adds basic bolts to FAI store so Fuller's quest can be completed by buying. Actually a nerf — makes the quest trivial",
+      "cn": 4,
+      "wf": "enchant",
+      "wp": "enchant\\enchant.tp2",
+      "wc": 4,
+      "wq": "verified"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "i": 461,
+  "t": "eseries",
+  "sv": 1,
+  "ord": 40,
+  "c": "CREATURE MODS",
+  "n": "E-Series",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "es": 3
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Choose one Party AI set",
+      "myComps": "#0 eSeries",
+      "theirComps": "#5000",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "Choose one shapeshifting feature",
+      "myComps": "#0 eSeries",
+      "theirComps": "#30, #31",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both provide AI automation. Use one or the other",
+      "myComps": "#0 eSeries",
+      "theirComps": "#300 Slightly improved party AI"
+    }
+  ],
+  "u": "https://www.gibberlings3.net/files/file/708-cirereks-ai-scripts/",
+  "a": "Cirerrek",
+  "v": "v3",
+  "sum": "A collection of party AI scripts for BG2 and ToB, providing intelligent automation for archers, fighters, mages, multiclass, priests, pure fighters, and thieves.",
+  "tags": [
+    "combat"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "eSeries"
+  },
+  "dl": "https://www.gibberlings3.net/files/file/708-cirereks-ai-scripts/",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "eSeries",
+      "tp2n": "eSeries",
+      "cn": 0,
+      "wf": "eseries",
+      "wp": "eseries\\SETUP-ESERIES.TP2",
+      "wc": 0,
+      "wq": "exact"
+    }
+  ]
+}

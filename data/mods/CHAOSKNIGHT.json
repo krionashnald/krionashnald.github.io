@@ -1,0 +1,153 @@
+{
+  "i": 611,
+  "t": "ChaosKnight",
+  "sv": 1,
+  "ord": 1130,
+  "c": "NEW NPC MODS",
+  "n": "Chaos Knight & Jacob NPC",
+  "langs": {
+    "ko": 0,
+    "en": 1,
+    "fr": 2
+  },
+  "no": "Lang 0=Korean, 1=English, 2=French. Use lang:1 for English.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "CHAOS_KNIGHT_FOR_BGT_BGEE_BG2EE_IWDEE_OR": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "horror",
+              "charm",
+              "confusion"
+            ],
+            "desc": "Immune to horror, charm, and confusion"
+          },
+          {
+            "n": "Stat Modifiers",
+            "type": "desc",
+            "desc": "-2 DEX, -2 INT"
+          },
+          {
+            "n": "Speed Bonus",
+            "type": "desc",
+            "desc": "+1 movement speed at levels 2, 4, 6, 8, 9 (stacking)"
+          },
+          {
+            "n": "Constitution",
+            "type": "desc",
+            "desc": "+1 CON at levels 11, 29, 38, 50"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Chaos Arrow",
+            "freq": "5 uses (lv1,3,5,7,9)",
+            "effects": "1d30 magic damage, 25% chance to sleep 12 sec.",
+            "level": 1
+          },
+          {
+            "n": "Reality Lift",
+            "freq": "3 uses (lv4,8,12)",
+            "effects": "+5 STR for 8 seconds.",
+            "level": 4
+          },
+          {
+            "n": "Illusion",
+            "freq": "3 uses (lv3,6,8)",
+            "effects": "Creates 1 mirror image.",
+            "level": 3
+          },
+          {
+            "n": "Phantasm",
+            "freq": "3 uses (lv10,20,33)",
+            "effects": "Creates a simulacrum of the Chaos Knight.",
+            "level": 10
+          }
+        ],
+        "restrictions": {
+          "armor": "no plate/full plate",
+          "alignment": "Chaotic only (CG, CN, CE)",
+          "ranged": false,
+          "items": "Human and Half-Elf only. No ranged weapons. No dual-classing."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "dex": -2,
+          "int": -2,
+          "con": 1,
+          "note": "Innate stat modifiers: -2 DEX, -2 INT, +1 CON"
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. Uses chaos energy innate abilities."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "CHAOS_KNIGHT_FOR_BGT_BGEE_BG2EE_IWDEE_OR",
+          "fighter",
+          "Chaos Knight",
+          "Warrior of chaos wielding unpredictable combat abilities. Random magical effects in battle."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/Askaria-Quest_ChaosKnight-kit",
+  "a": "drizztdd",
+  "v": "v2.0",
+  "sum": "Askaria Npc and Quest & ChaosKnight kit and Npc",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "au": "drizztdd",
+  "dl": "https://github.com/The-Gate-Project/Askaria-Quest_ChaosKnight-kit",
+  "pt": false,
+  "co": [
+    {
+      "n": "Install the Chaos Knight Kit for BGT, BGEE, BG2EE, IWDEE or EET and Jacob, Npc pour BGT, BGEE ou EET",
+      "cn": 0,
+      "wf": "CHAOSKNIGHT",
+      "wp": "CHAOSKNIGHT\\SETUP-CHAOSKNIGHT.TP2",
+      "wc": 0,
+      "k": 1,
+      "l": 1,
+      "no": "Chaos Knight fighter kit. Accumulates chaos energy for explosive damage, speed boosts, and avatar summoning. Immune to confusion/charm. Chaotic-only, no plate armor or ranged weapons.",
+      "kC": {
+        "fighter": 1
+      },
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "Askaria-Quest_ChaosKnight-kit"
+  }
+}

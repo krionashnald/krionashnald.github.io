@@ -1,0 +1,58 @@
+{
+  "i": 934,
+  "t": "DynaheirBG2EE",
+  "sv": 1,
+  "ord": 1580,
+  "c": "NEW NPC MODS",
+  "n": "Dynaheir for BG2",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://www.weaselmods.net/forumdisplay.php?fid=73",
+  "a": "Lava Del'Vortel",
+  "sum": "Adds Dynaheir as a recruitable NPC companion in Shadows of Amn and Throne of Bhaal.",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/dynaheir-BG2ee/",
+  "no": "Dynaheir BG2EE allows players to decide which of the Rashemaar companions should be available during the Shadows of Amn and Throne of Bhaal campaigns - Minsc or Dynaheir. The decision is made on a new area, to which you need to bring Minsc - there is a new door next to his cage. Free him and let him see what happened to his friend.",
+  "pt": false,
+  "v": "v1.1",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Dynaheir in BG2. WeiDU auto-skips bg1npcsoa version when standalone detected.",
+      "myComps": "#0 Dynaheir BG2EE (main)",
+      "theirComps": "#65 Dynaheir",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "co": [
+    {
+      "n": "Dynaheir BG2EE (main)",
+      "cn": 0,
+      "wf": "DynaheirBG2EE",
+      "wp": "DynaheirBG2EE\\DynaheirBG2EE.tp2",
+      "wc": 0,
+      "wq": "extracted",
+      "tp2n": "Dynaheir for Baldur's Gate 2: EE"
+    },
+    {
+      "n": "Player-Initiated Dialogues",
+      "cn": 1,
+      "wf": "DynaheirBG2EE",
+      "wp": "DynaheirBG2EE\\DynaheirBG2EE.tp2",
+      "wc": 1,
+      "wq": "extracted",
+      "tp2n": "Dynaheir for Baldur's Gate 2: EE - Player-Initiated Dialogues"
+    }
+  ]
+}

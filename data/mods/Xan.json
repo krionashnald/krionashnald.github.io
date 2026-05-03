@@ -1,0 +1,166 @@
+{
+  "i": 142,
+  "t": "xan",
+  "sv": 1,
+  "ord": 210,
+  "c": "NEW NPC MODS",
+  "n": "Xan NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "pl": 2,
+    "fr": 3
+  },
+  "no": "[Tiax for BG2 placeholder] Xan for BG2 More of the defeatist-sounding voiceovers from the LN Male Elf Mage (Enchanter).",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "CDTweaks romance cheats create stutter for mod NPCs",
+      "myComps": "#1 Fighter/Mage / #2 Mage / #3 Sorcerer / #4 Wild Mage",
+      "theirComps": "#3183; #4130",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Xan in BG2. Standalone Xan (by Kulyok) is vastly more feature-rich with full romance and personal quests. BG1NPCinSoA auto-skips its Xan if standalone detected.",
+      "theirComps": "#75 Xan",
+      "source": "BG1NPCinSoA tp2 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME O#Xan09.cre, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "partial",
+      "reason": "Choose one Xan class change. NPC_EE #482-484 provides in-game class choices. Standalone Xan mod has install-time class components (F/M, Mage, Sorcerer, Wild Mage). Use standalone Xan's class choices for the dedicated Xan experience — much richer content.",
+      "myComps": "#1 Fighter/Mage / #2 Mage / #3 Sorcerer / #4 Wild Mage",
+      "theirComps": "#482, #483, #484 (Xan kit, part of #2000)",
+      "source": "Component-level conflict. NPC_EE provides runtime choice; Xan standalone provides install-time with integrated content. Use standalone Xan for full experience, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "continuous-npcs",
+      "withId": 503,
+      "severity": "hard",
+      "reason": "Both add Xan to BG2 via pdialog.2da/interdia.2da APPEND. Cannot have two Xan entries. Choose one: Continuous NPCs (lightweight continuation) or Xan NPC (full NPC with dialogue/quests)",
+      "myComps": "#0 Xan NPC",
+      "theirComps": "#900 Add Xan to SoD and BG2",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/Xan_for_BGII/releases",
+  "a": "Kulyok, Sister Vigilante; jastey",
+  "v": "v19",
+  "sum": "Continues Xan's story into BG2/ToB as a joinable NPC with a full romance, extensive banters, and personal quests. One of the most popular NPC mods.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Xan_for_BGII"
+  },
+  "au": "Kulyok",
+  "dl": "https://github.com/Pocket-Plane-Group/Xan_for_BGII",
+  "pt": false,
+  "co": [
+    {
+      "n": "Xan NPC MOD for Baldur's Gate II",
+      "cn": 0,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Xan NPC MOD for Baldur's Gate II"
+    },
+    {
+      "n": "Change Xan's class to Fighter/Mage",
+      "no": "v Install alternate class for Xan",
+      "cn": 1,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "xan_class",
+      "scn": "Install alternate class for Xan?",
+      "tp2n": "Change Xan's class to Fighter/Mage"
+    },
+    {
+      "n": "Change Xan's class to Mage",
+      "cn": 2,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "xan_class",
+      "scn": "Install alternate class for Xan?",
+      "tp2n": "Change Xan's class to Mage"
+    },
+    {
+      "n": "Change Xan's class to Sorcerer",
+      "cn": 3,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "g": "xan_class",
+      "scn": "Install alternate class for Xan?",
+      "tp2n": "Change Xan's class to Sorcerer"
+    },
+    {
+      "n": "Change Xan's class to Wild Mage (ToB only)",
+      "cn": 4,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "g": "xan_class",
+      "scn": "Install alternate class for Xan?",
+      "tp2n": "Change Xan's class to Wild Mage (ToB only)"
+    },
+    {
+      "n": "BG1-style flaming swords",
+      "cn": 5,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "BG1-style flaming swords"
+    },
+    {
+      "n": "Xan's Alternate Voice by Joey Bracken",
+      "cn": 6,
+      "wf": "Xan",
+      "wp": "Xan\\xan.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "tp2n": "Xan's Alternate Voice by Joey Bracken"
+    }
+  ]
+}

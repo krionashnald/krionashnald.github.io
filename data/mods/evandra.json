@@ -1,0 +1,62 @@
+{
+  "i": 169,
+  "t": "evandra",
+  "sv": 1,
+  "ord": 480,
+  "c": "NEW NPC MODS",
+  "n": "Evandra",
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Evandra goes after adrian, Isra and xan TN Female Elf Mage",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "evandra",
+          "portraits/evandra/rh_eva.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/evandra/",
+  "a": "Rhaella",
+  "v": "v2.2",
+  "sum": "Adds Evandra, a True Neutral elven illusionist NPC to BG2, found in the Planar Sphere, with a friendship path, romance for elven males, and content for both SoA and ToB.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Rhaella",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://www.gibberlings3.net/mods/npcs/evandra/",
+  "co": [
+    {
+      "n": "Evandra NPC",
+      "cn": 0,
+      "wf": "evandra",
+      "wp": "evandra\\setup-evandra.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "FIXED: was 'Faldorn position not found within FATESP.DLG'. FaldornBG2 replaces vanilla Faldorn DV with l#fald via clean_ToB_DV. Fix: changed stringPosDV from \"Faldorn\" to \"Eldoth\" (stable vanilla DV) in tp2 line 148. Patched in Extracted and game dir. Verify on install.",
+      "tp2n": "Evandra NPC"
+    },
+    {
+      "n": "Crossmod Content",
+      "cn": 1,
+      "wf": "evandra",
+      "wp": "evandra\\setup-evandra.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Crossmod Content"
+    }
+  ]
+}

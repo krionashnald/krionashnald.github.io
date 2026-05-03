@@ -1,0 +1,56 @@
+{
+  "i": 570,
+  "t": "LensHunt",
+  "sv": 1,
+  "ord": 670,
+  "c": "QUEST MODS BG2",
+  "n": "The Broken Lanthorn",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "BG2 has unused files for a quest regarding the ‘broken lanthorn,’ and DavidW (author of SCS) and Roxanne (author of Shine on Caelar) each have separate versions of this quest. I recommend DavidW’s version since it’s likely less buggy.Install only ONE of these interpretations for Broken Lanthorn AKA Lens Hunt!",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "dw_lanthorn",
+      "withId": 67,
+      "severity": "hard",
+      "reason": "Both rework the Rhynn Lanthorn lens quest. Shared ar2401.bcs and c6lens items. Choose one.",
+      "source": "lcc-docs",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/LensHunt",
+  "a": "Roxanne",
+  "v": "V0.4",
+  "sum": "Repair the broken Lanthorn - Quest for the 3 Tethir areas in SoA.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/RoxanneSHS/LensHunt",
+  "au": "Roxanne",
+  "co": [
+    {
+      "n": "The Broken Lanthorn",
+      "tp2n": "The Broken Lanthorn",
+      "cn": 0,
+      "wf": "LENSHUNT",
+      "wp": "LENSHUNT\\LENSHUNT.TP2",
+      "wc": 0,
+      "no": "The Broken Lanthorn: recover and repair the Lanthorn artifact."
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "LensHunt"
+  }
+}

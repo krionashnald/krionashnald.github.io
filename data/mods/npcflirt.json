@@ -1,0 +1,228 @@
+{
+  "i": 235,
+  "t": "npcflirt",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 410,
+  "c": "NPC EXPANSIONS",
+  "n": "Bioware NPC Flirt Packs",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "de": 2,
+    "fr": 3,
+    "ru": 4
+  },
+  "no": "Bioware NPC Flirt Packs If you installed Weimer's Solaufein mod, use the conflict components as you will",
+  "dependencies": [
+    {
+      "requires": "jasteys_solaufein",
+      "requiresId": 138,
+      "type": "soft",
+      "reason": "Romance \"conflict\" reactions/Solaufein (updated: jastey version)"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/NPC_Flirt_Packs/releases",
+  "a": "Jason Compton, Wynne, Sorschana, Pirotess, Cybersquirt, Blue, Kismet, Perdita",
+  "v": "v1.07",
+  "sum": "Adds flirtatious dialogue options with Bioware's original romanceable NPCs. Short, repeatable interactions that add warmth between major talks.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "NPC_Flirt_Packs"
+  },
+  "au": "A Pocket Plane Group Project",
+  "dl": "https://github.com/Pocket-Plane-Group/NPC_Flirt_Packs",
+  "co": [
+    {
+      "n": "Aerie Flirt Pack For SOA",
+      "cn": 0,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Aerie Flirt Pack For SOA"
+    },
+    {
+      "n": "Aerie/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)",
+      "cn": 1,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Aerie/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Aerie Flirt Pack For TOB",
+      "cn": 2,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Aerie Flirt Pack For TOB"
+    },
+    {
+      "n": "Aerie/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)",
+      "cn": 3,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Aerie/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Jaheira Flirt Pack for SOA",
+      "cn": 4,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "tp2n": "Jaheira Flirt Pack for SOA"
+    },
+    {
+      "n": "Jaheira/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)",
+      "cn": 5,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Jaheira/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Jaheira Flirt Pack for TOB",
+      "cn": 6,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 6,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Jaheira Flirt Pack for TOB"
+    },
+    {
+      "n": "Jaheira/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)",
+      "cn": 7,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Jaheira/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Viconia Flirt Pack for SOA",
+      "cn": 8,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 8,
+      "wq": "exact",
+      "tp2n": "Viconia Flirt Pack for SOA"
+    },
+    {
+      "n": "Viconia/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)",
+      "cn": 9,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Viconia/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Viconia Flirt Pack for TOB",
+      "cn": 10,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Viconia Flirt Pack for TOB"
+    },
+    {
+      "n": "Viconia/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)",
+      "cn": 11,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Viconia/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Anomen Flirt Pack for SOA",
+      "cn": 12,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "tp2n": "Anomen Flirt Pack for SOA"
+    },
+    {
+      "n": "Anomen/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)",
+      "cn": 13,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "tp2n": "Anomen/Solaufein Romance Conflict For SOA (Solaufein V60 or greater recommended)"
+    },
+    {
+      "n": "Anomen Flirt Pack for TOB",
+      "cn": 14,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wc": 14,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Anomen Flirt Pack for TOB"
+    },
+    {
+      "n": "Anomen/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)",
+      "cn": 15,
+      "wf": "npcflirt",
+      "wp": "npcflirt\\SETUP-NPCFLIRT.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Anomen/Solaufein Romance Conflict For TOB (Solaufein V60 or greater recommended)"
+    }
+  ]
+}

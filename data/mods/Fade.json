@@ -1,0 +1,100 @@
+{
+  "i": 166,
+  "t": "Fade",
+  "sv": 1,
+  "ord": 450,
+  "c": "NEW NPC MODS",
+  "n": "Fade NPC",
+  "cats": [
+    "NEW NPC MODS",
+    "NPC CROSSMOD",
+    "KIT & CLASS MODS"
+  ],
+  "no": "Fade CN Female Fey’ri (Elven Tiefling Hybrid) Thief (Shadowdancer).",
+  "conflicts": [
+    {
+      "with": "d0questpack",
+      "withId": 64,
+      "severity": "partial",
+      "reason": "Aran story conflict",
+      "myComps": "#0 Fade NPC",
+      "theirComps": "#5 Additional Shadow Thieves Content",
+      "source": "eemodsetup"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "RE",
+      "requiresId": 86,
+      "type": "soft",
+      "reason": "Fade NPC/Romantic Encounters"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "fade_npc",
+          "portraits/fade/e3fade.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Fade_NPC",
+  "a": "Mistress Elysia, Kai of Candlekeep, Lava Del'Vortel",
+  "v": "5.6",
+  "sum": "Adds Fade, a shadow thief, as a joinable BG2 NPC with a romance and personal quest involving the Shadow Thieves.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Fade_NPC"
+  },
+  "au": "Mistress Elysia, Silmarien, Lava Del'Vortel, Kai",
+  "dl": "https://github.com/SpellholdStudios/Fade",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Fade: An NPC for Baldur's Gate II: SoA and ToB",
+      "cn": 0,
+      "wf": "Fade",
+      "wp": "Fade\\Setup-Fade.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Fade: An NPC for Baldur's Gate II: SoA and ToB"
+    },
+    {
+      "n": "Fade NPC: reactions to Romantic Encounters (RE may be installed before or after this component)",
+      "cn": 1,
+      "wf": "Fade",
+      "wp": "Fade\\Setup-Fade.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Fade NPC: reactions to Romantic Encounters (RE may be installed before or after this component)"
+    },
+    {
+      "n": "Fade EE: give Fade Shadowdancer kit",
+      "cn": 2,
+      "wf": "Fade",
+      "wp": "Fade\\Setup-Fade.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cat": "KIT & CLASS MODS",
+      "x": 0,
+      "tp2n": "Fade EE: give Fade Shadowdancer kit"
+    }
+  ]
+}

@@ -1,0 +1,1986 @@
+{
+  "i": 335,
+  "t": "might_and_guile",
+  "sv": 1,
+  "pfx": "MI",
+  "ord": 180,
+  "c": "KIT & CLASS MODS",
+  "n": "Might & Guile",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Might and Guile by subtledoctor. Warriors and rogues tweak/kit mod. All components optional. 18 new kits plus 9 tweak/revision components. CONFLICTS: Many components overlap with Artisan's Kitpack (AK), Rogue Rebalancing (RR), A7 Improved Archer, Shadowdancer Overhaul, and Talents of Faerun (ToF). Install order matters — M&G should install BEFORE AK and ToF so their overhauls take precedence. Active mod (v5.8, 329 commits).",
+  "conflicts": [
+    {
+      "with": "BardicWonders",
+      "withId": 325,
+      "severity": "soft",
+      "reason": "BW's Blade/Jester/Skald overhauls and bard mechanics overlap with M&G's Bard Overhaul.",
+      "myComps": "#400",
+      "theirComps": "#1001 #1 #2 #13 #14"
+    },
+    {
+      "with": "A7#ImprovedArcher",
+      "withId": 317,
+      "severity": "hard",
+      "reason": "M&G #225 rewrites Archer CLAB (hard conflict with A7 overhaul). M&G #151 reclasses Archer to Fighter, breaking A7's ranger-based kit. Choose one Archer approach.",
+      "myComps": "#225 Revised Archers #151 Move Archer to Fighter",
+      "theirComps": "#0 Improved Archer Kit",
+      "source": "Both strip SPCL121 Called Shot and rewrite clabrn02.2da. Other A7/M&G component combos are safe, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "Proficiency and ability tweaks overlap with M&G's revised combat mechanics",
+      "myComps": "#225 Revised Archers #280 Revised Backstabbing #290 Revised THAC0"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "METweaks proficiency rate, movement speed, and fighting style components overlap with M&G's revised mechanics",
+      "myComps": "#201 Improved Rangers #210 Revised Movement #225 Revised Archers #290 Revised THAC0",
+      "theirComps": "#500 #505 #510 Proficiency rate #3400 #3405 #3410 #3415 Movement speed #4000 Fighting Styles"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "partial",
+      "reason": "Both revise Beastmaster kit. F&P #33 (Install Druid kits) includes beast_lord as one of many druid kits — fits sphere system. M&G #235 (Revised Beastmaster) is a standalone ranger revision. M&G tp2 auto-skips #235 if F&P's beast_lord marker file exists. All other components of both mods are compatible.",
+      "myComps": "#235 Revised Beastmaster",
+      "theirComps": "#33 Install Druid kits (includes beast_lord)",
+      "source": "M&G tp2 REQUIRE_PREDICATE !(FILE_EXISTS_IN_GAME d5__beastmaster.d5) on #235. Both mods by subtledoctor — mutual exclusion is intentional. Use F&P beast_lord if using sphere system, M&G #235 otherwise, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "RR",
+      "withId": 311,
+      "severity": "partial",
+      "reason": "M&G cn:280 (Revised Backstabs) rewrites Assassin/BH CLABs, conflicting with RR cn:1 (Kit Revisions) which does the same. M&G cn:400 (Revised Bards) overlaps with RR cn:4 (Bard Kit Revisions). M&G cn:280 and cn:400 No conflict.",
+      "myComps": "#280 Revised Backstabs, #400 Revised Bards",
+      "theirComps": "#1 Thief Kit Revisions, #4 Bard Kit Revisions",
+      "source": "Both modify clabth02/03.2da and clabba01-04.2da with incompatible ability systems, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "HT proficiency, weapon style, and APR changes overlap with M&G revised mechanics",
+      "myComps": "#50 #55 #60 #65 Kit components #220 Revised Ranger Spell Table",
+      "theirComps": "#4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles #7 Rebalanced APR"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "TnT grandmastery and multiclass restriction changes overlap with M&G's revised mechanics",
+      "theirComps": "#67 True Grandmastery #68 Multiclass restrictions"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "No overlap for selected components. M&G only has cn:105 (Spellfilcher), cn:110 (Loremaster), cn:210 (Movement Bonuses) — all mage/thief kits with no ranger/fighter/proficiency modifications. The conflicting M&G components (cn:50-165 fighter/ranger/thief kits, cn:220 Ranger Spell Table, cn:280 Backstabs, cn:400 Bards) are ToF ranger/proficiency/style components modify different class files. If selecting M&G fighter/ranger kits alongside ToF, check per-component: M&G kits use ADD_KIT which writes kit-specific WEAPPROF columns, while ToF cn:81100 externalizes WEAPPROF to Lua.",
+      "theirComps": "#40400 Ranger spells #40500 Favored enemy #41000 Rebalanced kits #81100 Proficiency #81200 Styles",
+      "myComps": "#105 Spellfilcher (safe) #110 Loremaster (safe) #210 Movement (safe) — ranger/fighter kits NOT in preset",
+      "orderOnly": true,
+      "source": "M&G selected components are mage/thief kits with no ranger/fighter/prof file overlap; conflict only applies to unselected M&G fighter/ranger components, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "MonasticOrders",
+      "withId": 656,
+      "severity": "hard",
+      "reason": "MO replaces fist system with custom QDMFIST item. M&G modifies vanilla fist tables which MO monks never use.",
+      "myComps": "#265 Revised Monk Fists",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "23": {
+      "spells": [
+        [
+          "SPPR201",
+          "tweak",
+          "Revised ranger spell table progression"
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "1": {
+      "CORSAIR": {
+        "passive": [
+          {
+            "n": "AC Bonus",
+            "type": "acPerLevel",
+            "rate": 6,
+            "value": 1,
+            "desc": "+1 AC and save vs Breath per 6 levels"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Swashbuckling",
+            "freq": "toggle",
+            "effects": "+2 AC vs melee, -1 THAC0 and damage.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max",
+          "items": "Grandmastery only in light blades (scimitar, short sword, long sword, dagger). Max 2 pips in ranged."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "2": {
+      "SOHEI_WARRIOR": {
+        "passive": [
+          {
+            "n": "Weapon Mastery",
+            "type": "desc",
+            "desc": "At lv9, choose one weapon group for instant grandmastery"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ki Abilities",
+            "freq": "3 ki points at lv1, +1 per 3 levels (max 9)",
+            "effects": "Lay on Hands, Shield of Wind, Flurry of Blows (+1 APR), Tiger Strike (crit), Stunning Blow, Inner Gate Strike, War Cry.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Not chaotic",
+          "items": "Max 3 pips in non-Focus weapons. Requires STR 12, WIS 9, CHA 9."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "3": {
+      "IRONSMITH": {
+        "passive": [
+          {
+            "n": "Fire Resistance",
+            "type": "fireResist",
+            "value": 20,
+            "desc": "+20% fire resistance"
+          },
+          {
+            "n": "Deafness Immunity",
+            "type": "desc",
+            "desc": "Immune to deafness"
+          },
+          {
+            "n": "Lore",
+            "type": "desc",
+            "desc": "8 Lore per level"
+          },
+          {
+            "n": "Spell Evasion",
+            "type": "desc",
+            "desc": "50% chance to resist Command, Holy/Unholy Word, Power Word spells"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Spiritual Hammer",
+            "freq": "1/day per 4 levels",
+            "effects": "Conjures a magical warhammer.",
+            "level": 1
+          },
+          {
+            "n": "Resounding Strike",
+            "freq": "1/day per 3 levels",
+            "effects": "Next hit: 4d4 sonic AoE damage, chance to deafen.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "Grandmastery only in war hammers. No shield or two-handed weapon styles. Requires STR 14, CON 12."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "5": {
+      "BARBARIANTHIEF": {
+        "passive": [
+          {
+            "n": "Speed",
+            "type": "desc",
+            "desc": "+2 movement speed"
+          },
+          {
+            "n": "Backstab Immunity",
+            "type": "desc",
+            "desc": "Immune to backstab"
+          },
+          {
+            "n": "Damage Resistance",
+            "type": "desc",
+            "desc": "10% physical DR at lv11, +5% at 15 and 19"
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv2, x3 at lv10, x4 at lv19"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rage",
+            "freq": "1/day per 4 levels",
+            "effects": "+4 STR/CON, -2 AC, +2 save vs spell. Immune to charm/hold/fear/maze/stun/sleep/confusion/level drain. 5 rounds.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max",
+          "items": "No Pick Pockets or Open Locks. 20 skill pts/level. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/THIEF"
+        ],
+        "spellRestrictions": {
+          "multiclass": "Barbarian/Thief",
+          "noSpells": true,
+          "note": "No spellcasting. Rage + thief skills."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "multiclass": "Barbarian/Thief",
+          "note": "Multi-class F/T variant with barbarian rage."
+        }
+      }
+    },
+    "6": {
+      "TOMB_RUNNER": {
+        "passive": [
+          {
+            "n": "Skill Bonus",
+            "type": "desc",
+            "desc": "+15 Find Traps and Detect Illusions"
+          },
+          {
+            "n": "Lore",
+            "type": "desc",
+            "desc": "+5 Lore per level"
+          },
+          {
+            "n": "Undead Hunter",
+            "type": "desc",
+            "desc": "+3 THAC0 and damage vs undead"
+          },
+          {
+            "n": "Use Any Item",
+            "type": "desc",
+            "desc": "Use Any Item at level 12"
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv2, x3 at lv10, x4 at lv18"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "No Pick Pockets. 20 skill pts/level. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/THIEF"
+        ],
+        "spellRestrictions": {
+          "multiclass": "Fighter/Thief",
+          "noSpells": true,
+          "note": "No spellcasting. Undead hunter focus."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "THIEF",
+          "multiclass": "Fighter/Thief",
+          "note": "F/T multi. Use Any Item at lv12."
+        }
+      }
+    },
+    "7": {
+      "THUG": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 STR, -2 DEX"
+          },
+          {
+            "n": "Backstab Bonus",
+            "type": "desc",
+            "desc": "+1 backstab multiplier"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rage",
+            "freq": "1/day per 4 levels",
+            "effects": "Berserker Rage.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "TN, NE, CN, CE only",
+          "items": "No Open Locks or Set Traps. 20 skill pts/level. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/THIEF"
+        ],
+        "statBonus": {
+          "str": 1,
+          "dex": -2,
+          "note": "Innate stat modifiers: +1 STR, -2 DEX"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit; see passive description for details."
+        }
+      }
+    },
+    "8": {
+      "RAKE_THIEF_AND_REVISE_THE_SWASHBUCKLER": {
+        "passive": [
+          {
+            "n": "Combat Bonuses",
+            "type": "desc",
+            "desc": "+1 THAC0, +1 AC, +1 Luck"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "noBackstab": false,
+          "alignment": "Not Lawful",
+          "items": "Backstab capped at x2. 20 skill pts/level. May specialize (2 pips) in thief weapons, 3 pips Two-Weapon. Requires DEX 15, CHA 12."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    },
+    "9": {
+      "NINJA": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv2, x3 at lv9, x4 at lv20"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ki Abilities",
+            "freq": "1 point at lv1, +1 per odd level (max 10)",
+            "effects": "Blindness, Sleep, Reflected Image, Blur, Knock, Sanctuary, Shadowstep.",
+            "level": 1
+          },
+          {
+            "n": "Tracking",
+            "freq": "innate",
+            "effects": "Ranger Tracking ability.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No Pick Pockets. 20 skill pts/level. May specialize (2 pips) in thief weapons. Requires DEX 14, INT 9."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "10": {
+      "NINJA": {
+        "passive": [
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv2, x3 at lv9, x4 at lv20"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Ki Abilities",
+            "freq": "1 point at lv1, +1 per odd level (max 10)",
+            "effects": "Blindness, Sleep, Reflected Image, Blur, Knock, Sanctuary, Shadowstep.",
+            "level": 1
+          },
+          {
+            "n": "Tracking",
+            "freq": "innate",
+            "effects": "Ranger Tracking ability.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No Pick Pockets. 20 skill pts/level. F/T multiclass variant."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "11": {
+      "SPELLFILCHER": {
+        "passive": [
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+1 save vs spells every 4-5 levels"
+          },
+          {
+            "n": "Non-Detection",
+            "type": "desc",
+            "desc": "Permanent Non-Detection at lv9"
+          },
+          {
+            "n": "Spell Disruption",
+            "type": "desc",
+            "desc": "Melee hits on wizards: 33% miscast magic for 2 rounds (save vs rods)"
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "x2 at lv2, x3 at lv9, x4 at lv20"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Silence 15'",
+            "freq": "1/day",
+            "effects": "Silence 15' Radius (save vs spell at -1).",
+            "level": 1
+          },
+          {
+            "n": "Spell Turning",
+            "freq": "1/day",
+            "effects": "Turns single spell back at caster, 12 hrs.",
+            "level": 5
+          }
+        ],
+        "restrictions": {
+          "alignment": "Not LE or CE",
+          "items": "Requires DEX 12, INT 12."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/THIEF"
+        ],
+        "spellRestrictions": {
+          "multiclass": "Mage/Thief",
+          "note": "Standard mage spellcasting. Silence innate."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "MAGE",
+          "multiclass": "Mage/Thief",
+          "note": "M/T multi focused on stealing spells."
+        }
+      }
+    },
+    "12": {
+      "LOREMASTER": {
+        "passive": [
+          {
+            "n": "Use Any Item",
+            "type": "desc",
+            "desc": "Use Any Item at level 1"
+          },
+          {
+            "n": "Casting Level",
+            "type": "desc",
+            "desc": "Casts spells as if one level higher"
+          },
+          {
+            "n": "Lore",
+            "type": "desc",
+            "desc": "+5 Lore per level, +10 Detect Illusions"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Bonus Spells",
+            "freq": "innate",
+            "effects": "Gains: Identify (lv1), Knock (lv2), Clairvoyance (lv3), Minor Globe (lv4), Spell Immunity (lv5), Mislead (lv6).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": true,
+          "alignment": "Not chaotic",
+          "items": "No backstab. No Pick Pockets or Set Traps. 20 skill pts/level. Mage HLAs. Requires INT 15."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "MAGE/THIEF"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Uses mage HLAs instead of multi-class HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit; see passive description for details."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "13": {
+      "D5_RA_FOREST": {
+        "passive": [
+          {
+            "n": "Favored Enemy",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs mammals, gibberlings, lycanthropes"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Charm Animal",
+            "freq": "1/day per 5 levels",
+            "effects": "Charm Animal.",
+            "level": 1
+          },
+          {
+            "n": "Goodberry",
+            "freq": "1/day",
+            "effects": "Creates healing berries.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "D5_RA_MOUNTAIN": {
+        "passive": [
+          {
+            "n": "Favored Enemy",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs kobolds, beetles, myconids, trolls, umber hulks"
+          },
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+3 saves vs Death/Poison and Petrification/Polymorph"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "D5_RA_JUNGLE": {
+        "passive": [
+          {
+            "n": "Favored Enemy",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs lizardmen, spiders, ettercaps, wyverns"
+          },
+          {
+            "n": "Poison Resistance",
+            "type": "desc",
+            "desc": "50% poison resistance"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Poison Weapon",
+            "freq": "1/day",
+            "effects": "Next hit poisons target.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "D5_RA_DESERT": {
+        "passive": [
+          {
+            "n": "Favored Enemy",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs snakes, yuan-ti, basilisks, rakshasa, genies"
+          },
+          {
+            "n": "HP Bonus",
+            "type": "hpPerLevel",
+            "value": 1,
+            "desc": "+1 HP per level (lv1-9)"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      },
+      "D5_RA_ARCTIC": {
+        "passive": [
+          {
+            "n": "Favored Enemy",
+            "type": "desc",
+            "desc": "+2 THAC0/damage vs winter wolves, polar bears, yetis, salamanders"
+          },
+          {
+            "n": "Cold Resistance",
+            "type": "desc",
+            "desc": "25% cold resistance"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Good only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "14": {
+      "MAGE_HUNTER": {
+        "passive": [],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "15": {
+      "BARBARIAN_RANGER": {
+        "passive": [],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "18": {
+      "ELVEN_ARCHER": {
+        "passive": [],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Limited divine spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "19": {
+      "HALFLING_SLINGER": {
+        "passive": [],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting. Sling mastery."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "multiclass": "Fighter/Thief",
+          "race": "Halfling",
+          "note": "Halfling sling specialist F/T."
+        }
+      }
+    },
+    "20": {
+      "MARKSMAN": {
+        "passive": [],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting (class default)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "31": {
+      "JONGLEUR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Entertainer/acrobat with tumbling and evasion abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bard spellcasting (mix of arcane/song)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "33": {
+      "GALLANT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Charming courtier with enhanced social and defensive abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bard spellcasting (mix of arcane/song)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "34": {
+      "MEISTERSINGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Nature singer with druidic spell access and animal affinity."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bard spellcasting (mix of arcane/song)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "35": {
+      "LORESINGER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Lore-focused bard with enhanced identification and knowledge abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bard spellcasting (mix of arcane/song)."
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    }
+  },
+  "kits": {
+    "1": {
+      "new": [
+        [
+          "CORSAIR",
+          "fighter",
+          "Corsair",
+          "Dashing fighter-rogue hybrid. Part warrior, part charming sailor with roguish combat tricks."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "SOHEI_WARRIOR",
+          "fighter",
+          "Sohei Warrior",
+          "Fighter drawing on implacable fighting spirit. Monk-like focus with full fighter training."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "IRONSMITH",
+          "fighter",
+          "Ironsmith",
+          "Master weapon and armor forger. Crafting abilities and enhanced equipment maintenance."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "BARBARIANTHIEF",
+          "multi",
+          "Barbarian/Thief",
+          "Combines barbarian rage and toughness with thief stealth and skills."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "TOMB_RUNNER",
+          "multi",
+          "Tomb Runner",
+          "Adventurer specializing in dungeon exploration. Trap expertise and ancient lore."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "THUG",
+          "multi",
+          "Thug",
+          "Rogue who applies violence effectively. Enhanced combat abilities for a thief."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "RAKE_THIEF_AND_REVISE_THE_SWASHBUCKLER",
+          "thief",
+          "Rake",
+          "Roguish charmer combining thief skills with swashbuckling flair."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "NINJA",
+          "thief",
+          "Ninja",
+          "Eastern assassin with stealth mastery. Poison, disguise, and silent killing techniques."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "NINJA",
+          "thief",
+          "Ninja",
+          "Eastern assassin with stealth mastery. Poison, disguise, and silent killing techniques."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "SPELLFILCHER",
+          "multi",
+          "Spellfilcher",
+          "Mage/Thief who steals magical protections and spell effects from enemies."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "LOREMASTER",
+          "multi",
+          "Loremaster",
+          "Scholar combining arcane and roguish knowledge. Enhanced identification and lore."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "D5_RA_FOREST",
+          "ranger",
+          "Forest Ranger",
+          "Ranger specializing in temperate woodland environments. Enhanced forest tracking and stealth."
+        ],
+        [
+          "D5_RA_MOUNTAIN",
+          "ranger",
+          "Mountain Ranger",
+          "Ranger specializing in highland terrain. Cold resistance and climbing abilities."
+        ],
+        [
+          "D5_RA_JUNGLE",
+          "ranger",
+          "Jungle Ranger",
+          "Ranger specializing in tropical environments. Poison resistance and jungle stealth."
+        ],
+        [
+          "D5_RA_DESERT",
+          "ranger",
+          "Desert Ranger",
+          "Ranger specializing in arid wastelands. Heat resistance and sand navigation."
+        ],
+        [
+          "D5_RA_ARCTIC",
+          "ranger",
+          "Arctic Ranger",
+          "Ranger specializing in frozen tundra. Cold immunity and snow tracking."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "MAGE_HUNTER",
+          "ranger",
+          "Mage Hunter",
+          "Ranger specializing in tracking and countering arcane spellcasters. Spell disruption."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "BARBARIAN_RANGER",
+          "ranger",
+          "Barbarian Ranger",
+          "Combines barbarian fury with ranger wilderness skills and dual-wielding."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "ELVEN_ARCHER",
+          "ranger",
+          "Elven Archer",
+          "Elven ranger variant with superior archery. Enhanced ranged combat abilities."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "HALFLING_SLINGER",
+          "multi",
+          "Slinger",
+          "Halfling specialist in sling combat. Enhanced ranged damage with slings."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "MARKSMAN",
+          "thief",
+          "Marksman",
+          "Thief variant focused on ranged combat. Sniper-like precision with ranged weapons."
+        ]
+      ]
+    },
+    "24": {
+      "modify": [
+        [
+          "ARCHER",
+          "tweak",
+          "Revised Called Shot abilities and archery mechanics"
+        ]
+      ]
+    },
+    "25": {
+      "modify": [
+        [
+          "STALKER",
+          "tweak",
+          "Revised Stalker weapon proficiencies and abilities"
+        ]
+      ]
+    },
+    "26": {
+      "modify": [
+        [
+          "BEASTMASTER",
+          "tweak",
+          "Revised Beastmaster weapon compatibility (daggers, axes, spears)"
+        ]
+      ]
+    },
+    "27": {
+      "modify": [
+        [
+          "SUN_SOUL_MONK",
+          "tweak",
+          "Revised monk fist items and abilities"
+        ],
+        [
+          "DARK_MOON_MONK",
+          "tweak",
+          "Revised monk fist items and abilities"
+        ]
+      ]
+    },
+    "28": {
+      "modify": [
+        [
+          "ASSASSIN",
+          "tweak",
+          "Revised backstab multiplier mechanics"
+        ],
+        [
+          "BOUNTY_HUNTER",
+          "tweak",
+          "Revised backstab multiplier mechanics"
+        ]
+      ]
+    },
+    "31": {
+      "new": [
+        [
+          "JONGLEUR",
+          "bard",
+          "Jongleur",
+          "Acrobatic bard combining juggling, tumbling, and performance with light combat."
+        ]
+      ]
+    },
+    "32": {
+      "new": [
+        [
+          "LOREMASTER",
+          "multi",
+          "Loremaster",
+          "Scholar combining arcane and roguish knowledge. Enhanced identification and lore."
+        ]
+      ]
+    },
+    "33": {
+      "new": [
+        [
+          "GALLANT",
+          "bard",
+          "Gallant",
+          "Courtly bard skilled in diplomacy and noble combat. Charm and inspire abilities."
+        ]
+      ]
+    },
+    "34": {
+      "new": [
+        [
+          "MEISTERSINGER",
+          "bard",
+          "Meistersinger",
+          "Master vocalist whose songs carry enhanced magical power and duration."
+        ]
+      ]
+    },
+    "35": {
+      "new": [
+        [
+          "LORESINGER",
+          "bard",
+          "Loresinger",
+          "Scholarly bard preserving ancient knowledge through song. Enhanced lore abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/UnearthedArcana/Might_and_Guile",
+  "a": "subtledoctor",
+  "v": "5.8.9",
+  "sum": "Fighter, ranger, and thief overhaul with 35 components: revised proficiencies, new kits, and rebalanced combat abilities for martial classes.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "Might_and_Guile"
+  },
+  "dl": "https://github.com/UnearthedArcana/Might_and_Guile",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "Move the Cavalier to the Fighter Class",
+      "pi": "D5_FIGHTER_CAVALIER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 50,
+      "wq": "name_match",
+      "cn": 50,
+      "k": 0,
+      "no": "Moves Cavalier from Paladin to Fighter class. Conflicts with ToF class revisions. Conflicts with AK Cavalier Overhaul (cn:3010). Adds 1 kit slot.",
+      "tp2n": "Move the Cavalier to the Fighter Class"
+    },
+    {
+      "n": "Add the Corsair (fighter kit)",
+      "no": "Corsair — swashbuckling fighter with nautical flair. ToF treats as pure fighter. Adds 1 kit slot.",
+      "pi": "D5_CORSAIR_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 55,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 55,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Add the Corsair (fighter kit)"
+    },
+    {
+      "n": "Add the Sohei Warrior (fighter kit)",
+      "pi": "D5_SAMURAI_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 60,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 60,
+      "no": "Sohei Warrior — Japanese-inspired fighter with ki abilities. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Add the Sohei Warrior (fighter kit)"
+    },
+    {
+      "n": "Add the Ironsmith (fighter kit)",
+      "pi": "D5_IRONSMITH_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 65,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 65,
+      "no": "Ironsmith — smithing/crafting focused fighter. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Add the Ironsmith (fighter kit)"
+    },
+    {
+      "n": "Give Breagar the Ironsmith kit",
+      "pi": "D5_IRONSMITH_BREAGAR",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 66,
+      "wq": "name_match",
+      "cn": 66,
+      "x": 3,
+      "no": "Assigns Ironsmith kit to Breagar NPC. Requires cn:65 AND Breagar mod installed.",
+      "k": 0,
+      "tp2n": "Give Breagar the Ironsmith kit"
+    },
+    {
+      "n": "Add the Barbarian/Thief (fighter/thief kit)",
+      "pi": "D5_BARB_THIEF_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 75,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 75,
+      "no": "Barbarian/Thief multiclass kit. Fighter/Thief base class with barbarian abilities. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Barbarian/Thief (fighter/thief kit)"
+    },
+    {
+      "n": "Add the Tomb Runner (fighter/thief kit)",
+      "pi": "D5_TOMB_RUNNER_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 80,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 80,
+      "no": "Tomb Runner multiclass kit. Fighter/Thief dungeon specialist with trap/undead abilities. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Tomb Runner (fighter/thief kit)"
+    },
+    {
+      "n": "Add the Thug (fighter/thief kit)",
+      "pi": "D5_THUG_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 85,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 85,
+      "no": "Thug multiclass kit. Fighter/Thief bruiser with intimidation. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Thug (fighter/thief kit)"
+    },
+    {
+      "n": "Add the Rake (thief kit) and revise the Swashbuckler",
+      "pi": "D5_RAKE_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 90,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 90,
+      "no": "Rake (thief kit) + revises Swashbuckler. Swashbuckler revision conflicts with AK Swashbuckler Overhaul and Shadowdancer Overhaul's thief THAC0 changes. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Add the Rake (thief kit) and revise the Swashbuckler"
+    },
+    {
+      "n": "Add the Ninja (thief kit)",
+      "no": "Ninja as thief kit. Incompatible with other Swashbuckler revisions (also rewrites Swashbuckler CLAB). Adds 1 kit slot.",
+      "pi": "D5_NINJA_THIEF",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 96,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 96,
+      "k": 1,
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Add the Ninja (thief kit)"
+    },
+    {
+      "n": "Add the Ninja (fighter/thief kit)",
+      "pi": "D5_NINJA_FIGHTER_THIEF",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 97,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 97,
+      "no": "Ninja as fighter/thief kit. Independent of cn:96. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Add the Ninja (fighter/thief kit)"
+    },
+    {
+      "n": "Add the Spellfilcher (mage/thief kit)",
+      "pi": "D5_SPELLFILCHER_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 105,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 105,
+      "k": 1,
+      "no": "Spellfilcher multiclass kit. Mage/Thief with spell-stealing abilities. Adds 1 kit slot.",
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Spellfilcher (mage/thief kit)"
+    },
+    {
+      "n": "Add the Loremaster (mage/thief kit)",
+      "pi": "D5_LOREMASTER_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 110,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 110,
+      "k": 1,
+      "no": "Loremaster multiclass kit. Mage/Thief scholar with lore bonuses and divination. Adds 1 kit slot.",
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Loremaster (mage/thief kit)"
+    },
+    {
+      "n": "Add Regional Ranger kits",
+      "pi": "D5_REGIONAL_RANGERS",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 120,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 120,
+      "no": "Regional Ranger kits — Forest, Mountain, Jungle, Desert, Arctic. 5 terrain-themed ranger variants. Adds 5 kit slots total.",
+      "k": 5,
+      "kC": {
+        "ranger": 5
+      },
+      "tp2n": "Add Regional Ranger kits"
+    },
+    {
+      "n": "Add the Mage Hunter (ranger kit)",
+      "no": "Mage Hunter — ranger specialized in anti-magic combat. Incompatible with other ranger revisions (AK Ranger Overhaul, ToF ranger changes). Adds 1 kit slot.",
+      "pi": "D5_MAGE_HUNTER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 125,
+      "wq": "name_match",
+      "cn": 125,
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Add the Mage Hunter (ranger kit)"
+    },
+    {
+      "n": "Add the Barbarian Ranger (ranger kit)",
+      "pi": "D5_BARBARIAN_RANGER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 130,
+      "wq": "name_match",
+      "cn": 130,
+      "no": "Barbarian Ranger — wild ranger with barbarian abilities. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Add the Barbarian Ranger (ranger kit)"
+    },
+    {
+      "n": "Add the Fake Multiclass Rangers (DEPRECATED)",
+      "no": "DEPRECATED by mod author. Fake multiclass rangers using kit slots. Do not use. Author says 'these are bad'. Adds kit slots wastefully.",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 145,
+      "wq": "name_match",
+      "cn": 145,
+      "k": 0,
+      "tp2n": "Add the Fake Multiclass Rangers"
+    },
+    {
+      "n": "Move the Archer to the Fighter Class",
+      "no": "Moves Archer from Ranger to Fighter class. BREAKS A7 Improved Archer mod which expects Archer as Ranger kit. Conflicts with AK Archer Overhaul. Adds 1 kit slot.",
+      "pi": "D5_MARKSMAN",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 151,
+      "wq": "name_match",
+      "cn": 151,
+      "k": 0,
+      "tp2n": "Move the Archer to the Fighter Class"
+    },
+    {
+      "n": "Add the Elven Archer (ranger kit)",
+      "no": "Elven Archer — elf-only ranged ranger. Redundant with A7 Improved Archer (which also adds fighter/ranger/thief archer kits). Adds 1 kit slot.",
+      "pi": "D5_ELVEN_ARCHER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 155,
+      "wq": "name_match",
+      "cn": 155,
+      "k": 1,
+      "kC": {
+        "ranger": 1
+      },
+      "tp2n": "Add the Elven Archer (ranger kit)"
+    },
+    {
+      "n": "Add the Halfling Slinger (fighter/thief kit)",
+      "pi": "D5_HALFLING_SLINGER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 160,
+      "wq": "name_match",
+      "cn": 160,
+      "no": "Halfling Slinger multiclass kit. Fighter/Thief halfling ranged specialist. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Halfling Slinger (fighter/thief kit)"
+    },
+    {
+      "n": "Add the Marksman (thief kit)",
+      "pi": "D5_SNIPER_KIT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 165,
+      "wq": "name_match",
+      "cn": 165,
+      "no": "Marksman — ranged-focused thief kit. Similar to A7 Sharpshooter and Shadowdancer Overhaul's Thief THAC0. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "thief": 1
+      },
+      "tp2n": "Add the Marksman (thief kit)"
+    },
+    {
+      "n": "Improved Rangers",
+      "no": "Improved Rangers — gives rangers better innate abilities. Redundant with A7 Improved Archer's ranger changes and AK Ranger Overhaul. May overlap with ToF ranger revisions.",
+      "pi": "D5_IMPROVED_RANGERS",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 201,
+      "wq": "name_match",
+      "cn": 201,
+      "k": 0,
+      "tp2n": "Improved Rangers"
+    },
+    {
+      "n": "Revised Movement Bonuses (Quickstride)",
+      "no": "Quickstride — revised movement speed bonuses for rangers/monks. Incompatible with other ranger revisions that also modify movement (AK, ToF). Standalone tweak.",
+      "pi": "D5_QUICKSTRIDE",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 210,
+      "wq": "name_match",
+      "cn": 210,
+      "k": 0,
+      "tp2n": "Revised Movement Bonuses (Quickstride)"
+    },
+    {
+      "n": "Revised Ranger Spell Table",
+      "pi": "D5_RANGER_SPELL_TABLE",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 220,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 220,
+      "no": "Revised Ranger Spell Table — changes spell progression. Conflicts with IWDification cn:170 (Ranger Spell Progression) and ToF ranger spells.",
+      "k": 0,
+      "tp2n": "Revised Ranger Spell Table"
+    },
+    {
+      "n": "Revised Archers",
+      "pi": "D5_REVISED_ARCHERY",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 225,
+      "wq": "name_match",
+      "cn": 225,
+      "no": "Revised Archers — enhanced called shot abilities. Conflicts with A7 Improved Archer cn:0 (which also revises Archer). AK Archer Overhaul also touches this.",
+      "k": 0,
+      "tp2n": "Revised Archers"
+    },
+    {
+      "n": "Revised Stalkers",
+      "no": "Revised Stalkers — improved Stalker kit abilities. Conflicts with AK Stalker Overhaul (cn:2011). Both rewrite Stalker CLAB.",
+      "pi": "D5_REVISED_STALKER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 230,
+      "wq": "name_match",
+      "cn": 230,
+      "k": 0,
+      "tp2n": "Revised Stalker"
+    },
+    {
+      "n": "Revised Beastmaster",
+      "pi": "D5_REVISED_BEASTMASTER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 235,
+      "wq": "name_match",
+      "cn": 235,
+      "no": "Revised Beastmaster — improved Beastmaster kit. Conflicts with AK Beast Master Overhaul (cn:2012). Both rewrite Beastmaster CLAB.",
+      "k": 0,
+      "tp2n": "Revised Beastmaster"
+    },
+    {
+      "n": "Revised Monk Fists",
+      "pi": "D5_REVISED_MONK_FISTS",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 265,
+      "wq": "name_match",
+      "cn": 265,
+      "no": "Revised Monk Fists — rebalances monk unarmed damage progression. May conflict with ToF monk revisions.",
+      "k": 0,
+      "tp2n": "Revised Monk Fists"
+    },
+    {
+      "n": "Revised Backstabbing",
+      "no": "Revised Backstabbing — changes backstab mechanics globally. Incompatible with AK Stalker/Assassin overhauls and Shadowdancer Overhaul. Affects ALL thief classes.",
+      "pi": "D5_REVISED_BACKSTABS",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 280,
+      "wq": "name_match",
+      "cn": 280,
+      "k": 0,
+      "tp2n": "Revised Backstabbing"
+    },
+    {
+      "n": "Revised THAC0 Progression",
+      "no": "Revised Rogue THAC0 — improves thief/bard THAC0 progression. Similar to Shadowdancer Overhaul cn:300. Both modify global thief THAC0 tables. Choose one approach.",
+      "pi": "D5_REVISED_ROGUE_THAC0",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 290,
+      "wq": "name_match",
+      "cn": 290,
+      "k": 0,
+      "tp2n": "Revised THAC0 Progression"
+    },
+    {
+      "n": "Bard Overhaul: Multiclass Bards",
+      "no": "Bard Overhaul: Multiclass Bards — major bard class revision using qd_multiclass. Rewrites bard CLABs globally. CONFLICTS with RR Bard HLAs (cn:5), IWDification Bard Songs (cn:50), and any mod that modifies bard progression. Significant kit slot usage.",
+      "pi": "D5_REVISED_BARDS",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 400,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 400,
+      "k": 0,
+      "tp2n": "Bard Overhaul: Multiclass Bards"
+    },
+    {
+      "n": "Add the Jongleur (bard kit)",
+      "no": "Jongleur — acrobatic bard kit. Incompatible with Bardic Wonders mod. Adds 1 kit slot.",
+      "pi": "D5_2E_JONGLEUR",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 450,
+      "wq": "name_match",
+      "cn": 450,
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Add the Jongleur (bard kit)"
+    },
+    {
+      "n": "Add the Loremaster (bard kit)",
+      "pi": "D5_2E_LOREMASTER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 460,
+      "wq": "name_match",
+      "cn": 460,
+      "no": "Loremaster — knowledge-focused bard kit. Different from mage/thief Loremaster (cn:110). Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "multi": 1
+      },
+      "tp2n": "Add the Loremaster (bard kit)"
+    },
+    {
+      "n": "Add the Gallant (bard kit)",
+      "pi": "D5_2E_GALLANT",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 470,
+      "wq": "name_match",
+      "cn": 470,
+      "no": "Gallant — chivalric bard kit. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Add the Gallant (bard kit)"
+    },
+    {
+      "n": "Add the Meistersinger (bard kit)",
+      "pi": "D5_2E_MEISTERSINGER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 480,
+      "wq": "name_match",
+      "cn": 480,
+      "no": "Meistersinger — nature-themed bard kit. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Add the Meistersinger (bard kit)"
+    },
+    {
+      "n": "Add the Loresinger (bard kit)",
+      "pi": "D5_2E_LORESINGER",
+      "wf": "might_and_guile",
+      "wp": "might_and_guile\\MIGHT_AND_GUILE.TP2",
+      "wc": 490,
+      "wq": "name_match",
+      "cn": 490,
+      "no": "Loresinger — lore/history bard kit. Adds 1 kit slot.",
+      "k": 1,
+      "kC": {
+        "bard": 1
+      },
+      "tp2n": "Add the Loresinger (bard kit)"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks #2160 (Rebalanced weapon proficiencies) restructures weapprof.2da columns. M&G kit components write proficiency values using column indices that may be wrong after restructuring. Install cdtweaks before M&G. Old M&G #500 (Multiclass Kits) was removed in v5.8.9.",
+      "orderOnly": true,
+      "myComps": "#50 #55 #60 #65 #75 #80 #85 #90 #96 #97 #105 #110 #120 #125 #130 #145 #151 #155 #160 #165 Kit components #220 Revised Ranger Spell Table",
+      "theirComps": "#2160 Rebalanced weapon proficiencies; #2060 Weapon Styles for All; #2400 #2401 Ranger Spell Progression; #2240 Un-Nerfed THAC0 Table #2440 Bonus APR",
+      "source": "M&G v5.8.9 tp2 hardcodes weapprof column indices. cdtweaks 2160 changes column layout. Install order: cdtweaks first, 2026-03",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "IWD bard songs may conflict with M&G's Bard Overhaul.",
+      "myComps": "#400",
+      "theirComps": "#150 #160",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "i": 631,
+  "t": "Rjali",
+  "sv": 1,
+  "ord": 570,
+  "c": "NPC EXPANSIONS",
+  "n": "Rjali NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Romance NPC for BG2EE/EET. Has multi-romance integration patches for De'Arnise Romance, Branwen, Amber, Dace, Ninde. Install after those mods. Very clingy.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "deArnise",
+      "withId": 216,
+      "severity": "partial",
+      "reason": "Install order dependency, not incompatibility. Rjali explicitly detects De'Arnise Romance via MOD_IS_INSTALLED and patches it for multi-romance integration using DECOMPILE_AND_PATCH. Install Rjali AFTER De'Arnise Romance.",
+      "orderOnly": true,
+      "myComps": "#3 Rjali Romance Mod",
+      "theirComps": "#0 de'Arnise Romance for Baldur's Gate II",
+      "source": "Rjali multi.tpa has MOD_IS_INSTALLED check for deArnise, then patches its BCS/DLG files for multi-romance support. Designed to work together, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "branwen",
+      "withId": 456,
+      "severity": "partial",
+      "reason": "Install order dependency, not incompatibility. Rjali explicitly detects Branwen BG2 via MOD_IS_INSTALLED and patches it for multi-romance integration using DECOMPILE_AND_PATCH. Install Rjali AFTER Branwen.",
+      "orderOnly": true,
+      "myComps": "#3 Rjali Romance Mod",
+      "theirComps": "#0 Branwen BG2 NPC mod for players and modders",
+      "source": "Rjali multi.tpa has MOD_IS_INSTALLED check for BRANWEN, then patches its BCS/DLG files for multi-romance support. Designed to work together, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "amber",
+      "withId": 149,
+      "severity": "partial",
+      "reason": "Install Amber before Rjali. Rjali comp #3 detects Amber via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "myComps": "#3 Rjali Romance Mod",
+      "theirComps": "#0 Amber the NPC MOD",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED amber, patches M#Amber.bcs/dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Dace",
+      "withId": 159,
+      "severity": "partial",
+      "reason": "Install Dace before Rjali. Rjali comp #3 detects Dace via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "myComps": "#3 Rjali Romance Mod",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED dace, patches T#DACEJ.dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ninde",
+      "withId": 155,
+      "severity": "partial",
+      "reason": "Install Ninde before Rjali. Rjali comp #3 detects Ninde via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "myComps": "#3 Rjali Romance Mod",
+      "theirComps": "#0 Ninde NPC Mod for BGII",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED ninde, patches LK#NINDJ.dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "rjali",
+          "portraits/rjali/rjpstr.png",
+          "bg2"
+        ],
+        [
+          "rjali_doof",
+          "portraits/rjali/rjdoof.png",
+          "bg2"
+        ],
+        [
+          "rjali_ini",
+          "portraits/rjali/rjini.png",
+          "bg2"
+        ],
+        [
+          "rjali_mai",
+          "portraits/rjali/rjmai2.png",
+          "bg2"
+        ],
+        [
+          "rjali_psta",
+          "portraits/rjali/rjpsta.png",
+          "bg2"
+        ],
+        [
+          "rjali_pstg",
+          "portraits/rjali/rjpstg.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Black-Wyrm-Lair/Rjali-Romance",
+  "a": "nullset",
+  "v": "v12.5",
+  "sum": "Adds Rjali as a romanceable NPC companion in BG2 SoA and ToB with extensive dialogue, quests, and equipment.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "nullset",
+  "dl": "https://github.com/Black-Wyrm-Lair/Rjali-Romance",
+  "co": [
+    {
+      "n": "No Other Mod Timing Adjustments",
+      "cn": 0,
+      "wf": "RJALI",
+      "wp": "RJALI\\RJALI.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "g": "speed",
+      "scn": "Parking Expedite",
+      "tp2n": "No Other Mod Timing Adjustments"
+    },
+    {
+      "n": "Mod Timing A Little Faster",
+      "cn": 1,
+      "wf": "RJALI",
+      "wp": "RJALI\\RJALI.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "speed",
+      "scn": "Parking Expedite",
+      "tp2n": "Mod Timing A Little Faster"
+    },
+    {
+      "n": "Mod Timing A Lot Faster",
+      "cn": 2,
+      "wf": "RJALI",
+      "wp": "RJALI\\RJALI.TP2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "speed",
+      "scn": "Parking Expedite",
+      "tp2n": "Mod Timing A Lot Faster"
+    },
+    {
+      "n": "Rjali Romance Mod (BG2EE: SoA & ToB NPC)",
+      "cn": 3,
+      "wf": "RJALI",
+      "wp": "RJALI\\RJALI.TP2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Rjali Romance Mod (BG2EE:SoA & TOB NPC) created by nullset"
+    },
+    {
+      "n": "Rjalis Equipment",
+      "cn": 4,
+      "wf": "RJALI",
+      "wp": "RJALI\\RJALI.TP2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "x": 3,
+      "tp2n": "Rjali's Equipment"
+    }
+  ],
+  "gh": {
+    "o": "Black-Wyrm-Lair",
+    "r": "Rjali-Romance"
+  }
+}

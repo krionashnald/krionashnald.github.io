@@ -1,0 +1,78 @@
+{
+  "i": 152,
+  "t": "sarahtob",
+  "sv": 1,
+  "ord": 310,
+  "c": "NEW NPC MODS",
+  "n": "Sarah NPC Romance",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2
+  },
+  "no": "Sarah sarah crossmods with Auren CG Female Human Ranger.Install Sarah before Darian.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "sarah_npc",
+          "portraits/sarahtob/sarah.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Sarah",
+  "a": "theacefes",
+  "v": "v8",
+  "sum": " This mod will add Sarah, a young but independent ranger to Baldur's Gate II.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Sarah"
+  },
+  "au": "theacefes",
+  "dl": "https://github.com/AccountOrOrgName/ModExample-OptionalFeatures",
+  "co": [
+    {
+      "n": "Sarah NPC Romance Mod for BG2:ToB",
+      "cn": 0,
+      "g": "sarah_audio",
+      "scn": "Sarah NPC Romance Mod for BG2:ToB",
+      "wf": "sarahtob",
+      "wp": "sarahtob\\setup-sarahtob.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Use original audio"
+    },
+    {
+      "n": "Use revised audio from HalmyLyseas",
+      "cn": 1,
+      "g": "sarah_audio",
+      "scn": "Sarah NPC Romance Mod for BG2:ToB",
+      "wf": "sarahtob",
+      "wp": "sarahtob\\setup-sarahtob.tp2",
+      "tp2n": "Use revised audio from HalmyLyseas",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    }
+  ]
+}

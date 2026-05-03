@@ -1,0 +1,1062 @@
+{
+  "i": 642,
+  "t": "rttitempack",
+  "sv": 1,
+  "ord": 470,
+  "c": "ITEM ADDITION MODS",
+  "n": "Return to Trademeet: Item Pack",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "fr": 2,
+    "de": 3
+  },
+  "au": "al47",
+  "dl": "https://github.com/The-Gate-Project/rttitempack",
+  "no": "Adds 51 new magic items to BG2 merchants. Choose between all items at Ribald's post-Spellhold store, or distributed across Ribald, Trademeet (Wallace, Noble merchant, Big man), and Umar Hills (Elence Fielding, Beherant Diir, Min Minling). EET-native.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/The-Gate-Project/rttitempack",
+  "a": "al47",
+  "v": "v1.4",
+  "sum": "51 new magic items added to merchant stores. Choose all at Ribald’s post-Spellhold shop, or distributed across Trademeet and Umar Hills merchants.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "RTT-ItemPack"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "RTT001",
+          "amulet",
+          "Amulet of Life",
+          "Whoever wears this amulet will be protected from the life draining effects of vampires and certain other undead. (Though it is suggested that the amulet be combined with the standard garlic necklace...)\n\nSTATISTICS:\nProtection from energy drain",
+          {}
+        ],
+        [
+          "RTT002",
+          "amulet",
+          "Crystallized Demon's Tear",
+          "Your leader is a coward, and you are a fool.",
+          {
+            "wis": 2,
+            "coldResist": 30
+          }
+        ],
+        [
+          "RTT003",
+          "ring",
+          "King Strohm's Ring",
+          "Hey now, let's not turn this into something even less pleasant! What are you doing here?",
+          {
+            "ac": 4,
+            "int": 2,
+            "wis": 2,
+            "magicResist": 25,
+            "saves": 4,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+125 Max HP"
+              }
+            ],
+            "usability": {
+              "minInt": 16,
+              "minWis": 16
+            }
+          }
+        ],
+        [
+          "RTT004",
+          "axe",
+          "Axe of Confusion +2",
+          "Again? Didn't we slaughter a priest just last week?",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "RTT005",
+          "amulet",
+          "Amulet of Anti-Mind Flayer",
+          "Not for sale.",
+          {}
+        ],
+        [
+          "RTT006",
+          "belt",
+          "Greater Temper Belt",
+          "No! You let the demon go, I know; I can smell its stench! No water can remove that stink—there's not enough water in the world to cleanse you.",
+          {
+            "con": 20
+          }
+        ],
+        [
+          "RTT007",
+          "armor",
+          "Elaborate Drow Full Plate Armour +5",
+          "A friend of Quayle's needs help",
+          {
+            "ac": -4,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 19,
+              "minCon": 18
+            }
+          }
+        ],
+        [
+          "RTT008",
+          "armor",
+          "Coat of the Dwarf",
+          "Excellent. Fare you well, Guardian Telwyn.",
+          {
+            "ac": 0,
+            "con": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "RTT009",
+          "ring",
+          "Ring of Supremacy",
+          "There's no need to be rude about it.",
+          {
+            "cha": 19,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT010",
+          "helmet",
+          "Helm of Trickery",
+          "Your entire clan?! Why aren't you at Baeloth's throat?",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT011",
+          "bracers",
+          "Bracers of Dexterity",
+          "What are you doing here? Has Baeloth abducted you as well?",
+          {
+            "dex": 2
+          }
+        ],
+        [
+          "RTT012",
+          "bracers",
+          "King Strohm's Bracers",
+          "And to do that, you must obey your master. Pathetic lickspittle. You disgust me.",
+          {
+            "str": 2,
+            "dex": 2
+          }
+        ],
+        [
+          "RTT013",
+          "cloak",
+          "Dryad's cloak",
+          "Curse you, <PRO_RACE>! Very well...",
+          {
+            "cha": 21,
+            "coldResist": 100
+          }
+        ],
+        [
+          "RTT014",
+          "cloak",
+          "Cloak of Wonder",
+          "The drow summoning ritual",
+          {
+            "ac": 3,
+            "saves": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 15
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 15
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 15
+              }
+            ],
+            "usability": {
+              "minStr": 3,
+              "minDex": 3,
+              "minCon": 3,
+              "minInt": 3,
+              "minWis": 3,
+              "minCha": 3
+            }
+          }
+        ],
+        [
+          "RTT015",
+          "large sword",
+          "Druidic Blade +2",
+          "And don't forget to give them a little spending money!",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              }
+            ],
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "RTT016",
+          "mace",
+          "Mace of Persuasion",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT017",
+          "ring",
+          "Ring of the Mephit",
+          "I'm afraid this is where we part ways, Dorn Il-Khan. You've got some issues to work out, and frankly I'd rather not be around to watch you do so.",
+          {
+            "saves": 5,
+            "usability": {
+              "minInt": 16
+            }
+          }
+        ],
+        [
+          "RTT018",
+          "bracers",
+          "Bracers of the Mephit",
+          "Come with us. We could use someone with your talents.",
+          {
+            "ac": 4
+          }
+        ],
+        [
+          "RTT019",
+          "flail",
+          "King Strohm's Morning Star",
+          "Your death was inevitable, <CHARNAME>. I hope your gods are merciful, for you know I am not.",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "RTT020",
+          "shield",
+          "Small Shield +3",
+          "What—? Who is... Rasaad? You came! My brother! I'm so glad to see you!",
+          {
+            "ac": 4,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "RTT021",
+          "large sword",
+          "Mordue's Sword +2",
+          "I said—",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "RTT022",
+          "large sword",
+          "Infernal Ice +3",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "RTT023",
+          "ring",
+          "The Ring of Knowledge",
+          "You misunderstand their goals. They don't want to see you destroyed—they want you to join them.",
+          {}
+        ],
+        [
+          "RTT024",
+          "potion",
+          "Potion of Restoration",
+          "It is the truth, Sixscar. He had Karell and the others at his mercy and stayed his hand.",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "RTT025",
+          "belt",
+          "Thief's Tools",
+          "Take pity on them, <CHARNAME>. The pain of their loss is fresh. It's a grief I know too well.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "RTT026",
+          "belt",
+          "Superior Thief's Tools",
+          "He's not fallen so far as you think, Sixscar. You may find his actions reprehensible, but you cannot know what's in his heart.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "RTT027",
+          "cloak",
+          "Night Cloak",
+          "Mind your tongue, or you'll see how far you can fall—and how fast.",
+          {}
+        ],
+        [
+          "RTT028",
+          "bracers",
+          "Gloves of Strength",
+          "Perhaps there is hope for you yet, Rasaad. Selûne forgives all. Return to Athkatla with us; help us rebuild our sect.",
+          {
+            "str": 3
+          }
+        ],
+        [
+          "RTT029",
+          "armor",
+          "Wondrous Armor",
+          "Here, Rasaad. Take this. It will remind you of Selûne's favor.",
+          {
+            "ac": 0,
+            "str": 1,
+            "dex": 1,
+            "con": 1,
+            "int": 1,
+            "wis": 1,
+            "cha": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "RTT030",
+          "armor",
+          "Mechanical Plate Mail",
+          "I hope you'll find what you're looking for, Rasaad. Farewell.",
+          {
+            "ac": 2,
+            "dex": -2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 8,
+              "minCon": 16
+            }
+          }
+        ],
+        [
+          "RTT031",
+          "helmet",
+          "Helmet of Protection",
+          "You had to twist the knife just one more time, didn't you, Sixscar?",
+          {
+            "ac": 4,
+            "dex": -1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14,
+              "minDex": 14
+            }
+          }
+        ],
+        [
+          "RTT032",
+          "large sword",
+          "Wooden Sword",
+          "I know the pain of your loss, Sixscar... I feel it myself. I beg you, leave now. I'd not see it compounded.",
+          {
+            "speed": 7,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "RTT033",
+          "axe",
+          "The Hand of the Dwarf +3",
+          "The only thing the Tears of Selûne are getting at this point is a swift, merciless death.",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "str": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Dwarf",
+                "Half-Orc"
+              ],
+              "minStr": 16
+            }
+          }
+        ],
+        [
+          "RTT034",
+          "large sword",
+          "Explosive Power +1",
+          "And none will be more pleased than Rasaad when you achieve it. But you cannot believe Rasaad is guilty of these crimes. Mass murder? Have you MET this man...?",
+          {
+            "speed": 8,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "RTT035",
+          "large sword",
+          "Fire Tongue",
+          "Dare I even hope for such a thing at this point?",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmgBonus": 1,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "RTT036",
+          "large sword",
+          "Sword of Defense +2",
+          "I would. Hope is a cheap and convenient alternative to certainty.",
+          {
+            "speed": 9,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "ac": 3,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "RTT037",
+          "dagger",
+          "Dagger of Horror +3",
+          "The Twofold Truth encompasses the Selûnite teachings, and the Dark Moon's as well. It offers another way to commune with the Moonmaiden—one more accommodating to the needs of the real world.",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "RTT038",
+          "boots",
+          "Elemental Boots",
+          "Then why are you listening to this charlatan? He tempts you from what you know to be true.",
+          {
+            "fireResist": 25,
+            "coldResist": 25,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 25
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 25
+              }
+            ]
+          }
+        ],
+        [
+          "RTT039",
+          "amulet",
+          "Amulet of Fire Protection",
+          "The greater fool dwells upon it.",
+          {
+            "fireResist": 100
+          }
+        ],
+        [
+          "RTT040",
+          "amulet",
+          "Amulet of Lightning Protection",
+          "We're neither of us fools. Dragon, do you know anything of the stones we seek?",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 100
+              }
+            ]
+          }
+        ],
+        [
+          "RTT041",
+          "cloak",
+          "Assassin's Mantle",
+          "So will you help us?",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT042",
+          "sling",
+          "Halfling Sling +3",
+          "My blade will open him nose-tip to tail!",
+          {
+            "speed": 3,
+            "thac0": 5,
+            "dmgBonus": 3,
+            "profType": "sling",
+            "usability": {
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "RTT043",
+          "ring",
+          "Ring of the Elements +2",
+          "Perhaps an arrangement can be reached...",
+          {
+            "fireResist": 50,
+            "coldResist": 50,
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ]
+          }
+        ],
+        [
+          "RTT044",
+          "misc",
+          "The Book of the Dead",
+          "Truly? But the heretics are sworn to destroy Dark Moon and Sun Soul alike.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT045",
+          "misc",
+          "Wind Sphere",
+          "Oh, forget this. I'm done trying to talk with you, you wretched Selûnatic. Walk away now or you'll be dragged away later.",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT046",
+          "amulet",
+          "Amulet of Curing",
+          "Think what you will of me, Sixscar, and know I hardly think better of myself. I will do what I must to avenge Gamaz.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT047",
+          "ring",
+          "Anti-magical Ring +1",
+          "Ah. I'm sorry I asked.",
+          {
+            "ac": 1,
+            "saves": 1,
+            "charges": {
+              "count": 6,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "RTT048",
+          "staff",
+          "Staff of Judgement +1",
+          "But an understandable one, surely? And if he's successful, the death of Collus Darathon will spell the end of the Twofold Heretics, which is all to the Sun Soul's good.",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT049",
+          "large sword",
+          "Younger Sister +2",
+          "I know it.",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT049A",
+          "large sword",
+          "Elder Sister +5",
+          "You claim Rasaad is innocent?",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "RTT050",
+          "misc",
+          "Lunar Stone",
+          "No matter how dire the circumstances, you always make me smile, <CHARNAME>.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RTT051",
+          "misc",
+          "Infernal Book",
+          "You cut to the heart of the matter. Would that I had your clarity.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "All 51 items in Ribald's Special Store (after Spellhold)",
+      "pi": "al17_rttitempack-Main",
+      "scn": "RTT Item Pack",
+      "cn": 200,
+      "g": "rtt_distribution",
+      "wf": "RTTITEMPACK",
+      "wp": "RTTITEMPACK\\RTTITEMPACK.TP2",
+      "wq": "verified",
+      "no": "All 51 items at ribald3.sto (Ribald's Special Store, available after Spellhold). Convenient but concentrated.",
+      "it": 52,
+      "itC": {
+        "amulet": 6,
+        "ring": 6,
+        "axe": 2,
+        "belt": 3,
+        "armor": 4,
+        "helmet": 2,
+        "bracers": 4,
+        "cloak": 4,
+        "large sword": 9,
+        "mace": 1,
+        "flail": 1,
+        "shield": 1,
+        "potion": 1,
+        "dagger": 1,
+        "boots": 1,
+        "sling": 1,
+        "misc": 4,
+        "staff": 1
+      }
+    },
+    {
+      "n": "Items spread across multiple merchants (Ribald, Trademeet, Umar Hills)",
+      "pi": "al17_rttitempack-Dispatch",
+      "scn": "RTT Item Pack",
+      "cn": 201,
+      "g": "rtt_distribution",
+      "wf": "RTTITEMPACK",
+      "wp": "RTTITEMPACK\\RTTITEMPACK.TP2",
+      "wq": "verified",
+      "no": "Items distributed: 11 at Ribald (ribald3.sto), 8 at Wallace, 6 at Noble merchant (TRMER02), 8 at Colporteur (trmer01), plus 3 new Umar Hills merchants (RTTuh01-03). More immersive."
+    }
+  ]
+}

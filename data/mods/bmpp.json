@@ -1,0 +1,1594 @@
+{
+  "i": 781,
+  "t": "bmpp",
+  "sv": 1,
+  "ord": 210,
+  "c": "PORTRAITS",
+  "n": "Consistent Portraits",
+  "langs": {
+    "en": 0
+  },
+  "pt": {
+    "npc": {
+      "2": [
+        [
+          "ajantis",
+          "portraits/bmpp/ajantis.png",
+          "bg1"
+        ]
+      ],
+      "3": [
+        [
+          "alora",
+          "portraits/bmpp/alora.png",
+          "bg1"
+        ]
+      ],
+      "5": [
+        [
+          "caelar",
+          "portraits/bmpp/caelar.png",
+          "sod"
+        ]
+      ],
+      "8": [
+        [
+          "coran",
+          "portraits/bmpp/coran.png",
+          "bg1"
+        ]
+      ],
+      "10": [
+        [
+          "dorn",
+          "portraits/bmpp/dorn.png",
+          "bg2"
+        ]
+      ],
+      "12": [
+        [
+          "edwin",
+          "portraits/bmpp/edwin.png",
+          "bg2"
+        ]
+      ],
+      "13": [
+        [
+          "eldoth",
+          "portraits/bmpp/eldoth.png",
+          "bg1"
+        ]
+      ],
+      "14": [
+        [
+          "faldorn",
+          "portraits/bmpp/faldorn.png",
+          "bg1"
+        ]
+      ],
+      "15": [
+        [
+          "glint",
+          "portraits/bmpp/glint.png",
+          "sod"
+        ]
+      ],
+      "19": [
+        [
+          "jaheira",
+          "portraits/bmpp/jaheira.png",
+          "bg2"
+        ]
+      ],
+      "21": [
+        [
+          "kagain",
+          "portraits/bmpp/kagain.png",
+          "bg1"
+        ]
+      ],
+      "25": [
+        [
+          "minsc",
+          "portraits/bmpp/minsc.png",
+          "bg2"
+        ]
+      ],
+      "28": [
+        [
+          "neera",
+          "portraits/bmpp/neera.png",
+          "bg2"
+        ]
+      ],
+      "29": [
+        [
+          "quayle",
+          "portraits/bmpp/quayle.png",
+          "bg1"
+        ]
+      ],
+      "30": [
+        [
+          "rasaad",
+          "portraits/bmpp/rasaad.png",
+          "bg2"
+        ]
+      ],
+      "31": [
+        [
+          "safana",
+          "portraits/bmpp/safana.png",
+          "bg1"
+        ]
+      ],
+      "34": [
+        [
+          "skie",
+          "portraits/bmpp/skie.png",
+          "bg1"
+        ]
+      ],
+      "36": [
+        [
+          "viconia",
+          "portraits/bmpp/viconia.png",
+          "bg2"
+        ]
+      ],
+      "37": [
+        [
+          "voghiln",
+          "portraits/bmpp/voghiln.png",
+          "sod"
+        ]
+      ],
+      "38": [
+        [
+          "xan",
+          "portraits/bmpp/xan.png",
+          "bg1"
+        ]
+      ],
+      "39": [
+        [
+          "xzar",
+          "portraits/bmpp/xzar.png",
+          "bg1"
+        ]
+      ],
+      "40": [
+        [
+          "yeslick",
+          "portraits/bmpp/yeslick.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/dark0dave/bmp_portraits",
+  "a": "dark0dave",
+  "sum": "A set of NPC portraits for EE editions, more information [here](https://zenosziggurat.com/rpg-character-sketches-baldurs-gate-revisited-6/).",
+  "tags": [
+    "portrait"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "dark0dave",
+  "dl": "https://github.com/dark0dave/bmp_portraits",
+  "no": "Consistent NPC portrait replacements by multiple artists: Ruvan, Zenblack, Kaelyn. Each NPC portrait is a separate component. Cross-mod component patches portraits for mod-added NPCs (Fade, Solufein Rescue). English only.",
+  "co": [
+    {
+      "n": "ruvan_aerie",
+      "tp2n": "crossmod",
+      "cn": 3,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "Aerie portrait by Ruvan (alternate)",
+      "pi": "cross mod portraits",
+      "grn": "crossmod"
+    },
+    {
+      "n": "ruvan_aerie",
+      "tp2n": "ruvan_aerie",
+      "cn": 100,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan aerie",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_ajantis",
+      "tp2n": "ruvan_ajantis",
+      "cn": 101,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 101,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan ajantis",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_alora",
+      "tp2n": "ruvan_alora",
+      "cn": 102,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 102,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan alora",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_anomen",
+      "tp2n": "ruvan_anomen",
+      "cn": 103,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan anomen",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_caelar",
+      "tp2n": "ruvan_caelar",
+      "cn": 104,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 104,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan caelar",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_cernd",
+      "tp2n": "ruvan_cernd",
+      "cn": 105,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 105,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan cernd",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_clara",
+      "tp2n": "ruvan_clara",
+      "cn": 106,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 106,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan clara",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_coran",
+      "tp2n": "ruvan_coran",
+      "cn": 107,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 107,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan coran",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_corwin",
+      "tp2n": "ruvan_corwin",
+      "cn": 108,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 108,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan corwin",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_dorn",
+      "tp2n": "ruvan_dorn",
+      "cn": 109,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 109,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan dorn",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_dynaheir",
+      "tp2n": "ruvan_dynaheir",
+      "cn": 110,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 110,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan dynaheir",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_edwin",
+      "tp2n": "ruvan_edwin",
+      "cn": 111,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 111,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan edwin",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_eldoth",
+      "tp2n": "ruvan_eldoth",
+      "cn": 112,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 112,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan eldoth",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_faldorn",
+      "tp2n": "ruvan_faldorn",
+      "cn": 113,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 113,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan faldorn",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_glint",
+      "tp2n": "ruvan_glint",
+      "cn": 114,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 114,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan glint",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_haerdalis",
+      "tp2n": "ruvan_haerdalis",
+      "cn": 115,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 115,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan haerdalis",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_hexaat",
+      "tp2n": "ruvan_hexaat",
+      "cn": 116,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 116,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan hexaat",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_imeon",
+      "tp2n": "ruvan_imeon",
+      "cn": 117,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 117,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan imeon",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_jaheira",
+      "tp2n": "ruvan_jaheira",
+      "cn": 118,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 118,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan jaheira",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_jan",
+      "tp2n": "ruvan_jan",
+      "cn": 119,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 119,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan jan",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_kagain",
+      "tp2n": "ruvan_kagain",
+      "cn": 120,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 120,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan kagain",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_keldorn",
+      "tp2n": "ruvan_keldorn",
+      "cn": 121,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 121,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan keldorn",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_korgan",
+      "tp2n": "ruvan_korgan",
+      "cn": 122,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 122,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan korgan",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_mazzy",
+      "tp2n": "ruvan_mazzy",
+      "cn": 123,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 123,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan mazzy",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_minsc",
+      "tp2n": "ruvan_minsc",
+      "cn": 124,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 124,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan minsc",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_montaron",
+      "tp2n": "ruvan_montaron",
+      "cn": 125,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 125,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan montaron",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_nalia",
+      "tp2n": "ruvan_nalia",
+      "cn": 126,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 126,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan nalia",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_neera",
+      "tp2n": "ruvan_neera",
+      "cn": 127,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 127,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan neera",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_quayle",
+      "tp2n": "ruvan_quayle",
+      "cn": 128,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 128,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan quayle",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_rasaad",
+      "tp2n": "ruvan_rasaad",
+      "cn": 129,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 129,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan rasaad",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_safana",
+      "tp2n": "ruvan_safana",
+      "cn": 130,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 130,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan safana",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_sarevok",
+      "tp2n": "ruvan_sarevok",
+      "cn": 131,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 131,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan sarevok",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_sharteel",
+      "tp2n": "ruvan_sharteel",
+      "cn": 132,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 132,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan sharteel",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_skie",
+      "tp2n": "ruvan_skie",
+      "cn": 133,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 133,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan skie",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_valygar",
+      "tp2n": "ruvan_valygar",
+      "cn": 134,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 134,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan valygar",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_viconia",
+      "tp2n": "ruvan_viconia",
+      "cn": 135,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 135,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan viconia",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_voghiln",
+      "tp2n": "ruvan_voghiln",
+      "cn": 136,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 136,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan voghiln",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_xan",
+      "tp2n": "ruvan_xan",
+      "cn": 137,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 137,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan xan",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_xzar",
+      "tp2n": "ruvan_xzar",
+      "cn": 138,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 138,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan xzar",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_yeslick",
+      "tp2n": "ruvan_yeslick",
+      "cn": 139,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 139,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan yeslick",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_yoshimo",
+      "tp2n": "ruvan_yoshimo",
+      "cn": 140,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 140,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "ruvan yoshimo",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_all_npcs",
+      "tp2n": "ruvan_all_npcs",
+      "cn": 174,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 174,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "All NPC portraits by Ruvan",
+      "pi": "ruvan all npcs",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_charname",
+      "tp2n": "ruvan_charname",
+      "cn": 175,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 175,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "CHARNAME portrait by Ruvan",
+      "pi": "ruvan charname",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_crossmod",
+      "tp2n": "ruvan_crossmod",
+      "cn": 185,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 185,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Crossmod portrait support (Ruvan set 1)",
+      "pi": "ruvan crossmod",
+      "grn": "ruvan"
+    },
+    {
+      "n": "ruvan_crossmod",
+      "tp2n": "ruvan_crossmod",
+      "cn": 195,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 195,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Crossmod portrait support (Ruvan set 2)",
+      "pi": "ruvan villians",
+      "grn": "ruvan"
+    },
+    {
+      "n": "trouver_alora",
+      "tp2n": "trouver_alora",
+      "cn": 201,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 201,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "trouver alora portrais",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_jaheira",
+      "tp2n": "trouver_jaheira",
+      "cn": 202,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 202,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "trouver jaheria",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_branwen",
+      "tp2n": "trouver_branwen",
+      "cn": 203,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 203,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "trouver branwen",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_xan",
+      "tp2n": "trouver_xan",
+      "cn": 204,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 204,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "trouver xan",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_caelar",
+      "tp2n": "trouver_caelar",
+      "cn": 205,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 205,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "trouver caelar",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_baddies",
+      "tp2n": "trouver_baddies",
+      "cn": 275,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 275,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "Villain portraits by Trouver",
+      "pi": "trouver baddies portraits",
+      "grn": "trouver"
+    },
+    {
+      "n": "trouver_bg1sod",
+      "tp2n": "trouver_bg1sod",
+      "cn": 290,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 290,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "BG1/SoD portraits by Trouver",
+      "pi": "trouver bg1sod portraits",
+      "grn": "trouver"
+    },
+    {
+      "n": "zenblack_aerie",
+      "tp2n": "zenblack_aerie",
+      "cn": 300,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 300,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack aerie",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_anomen",
+      "tp2n": "zenblack_anomen",
+      "cn": 301,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 301,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack anomen",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_branwen",
+      "tp2n": "zenblack_branwen",
+      "cn": 302,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 302,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack branwen",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_caelar",
+      "tp2n": "zenblack_caelar",
+      "cn": 303,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 303,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack caelar",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_dorn",
+      "tp2n": "zenblack_dorn",
+      "cn": 304,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 304,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack dorn",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_hexaat",
+      "tp2n": "zenblack_hexaat",
+      "cn": 305,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 305,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack hexaat",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_jaheira",
+      "tp2n": "zenblack_jaheira",
+      "cn": 306,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 306,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack jaheira",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_keldorn",
+      "tp2n": "zenblack_keldorn",
+      "cn": 307,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 307,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack keldorn",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_korgan",
+      "tp2n": "zenblack_korgan",
+      "cn": 308,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 308,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack korgan",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_mazzy",
+      "tp2n": "zenblack_mazzy",
+      "cn": 309,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 309,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack mazzy",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_nalia",
+      "tp2n": "zenblack_nalia",
+      "cn": 310,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 310,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack nalia",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_neera",
+      "tp2n": "zenblack_neera",
+      "cn": 311,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 311,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack neera",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_safana",
+      "tp2n": "zenblack_safana",
+      "cn": 312,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 312,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack safana",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_skie",
+      "tp2n": "zenblack_skie",
+      "cn": 313,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 313,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack skie",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_tamoko",
+      "tp2n": "zenblack_tamoko",
+      "cn": 314,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 314,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack tamoko",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_valygar",
+      "tp2n": "zenblack_valygar",
+      "cn": 315,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 315,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack valygar",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_viconia",
+      "tp2n": "zenblack_viconia",
+      "cn": 316,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 316,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack viconia",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_xan",
+      "tp2n": "zenblack_xan",
+      "cn": 317,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 317,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack xan",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_yeslick",
+      "tp2n": "zenblack_yeslick",
+      "cn": 318,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 318,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack yeslick",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblacks_sendai",
+      "tp2n": "zenblacks_sendai",
+      "cn": 350,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 350,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Sendai portrait by Zenblack",
+      "pi": "zenblack sendai",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblacks_yagashrs",
+      "tp2n": "zenblacks_yagashrs",
+      "cn": 351,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 351,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Yaga-Shura portrait by Zenblack",
+      "pi": "zenblack yagashrs",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblacks_amelissan",
+      "tp2n": "zenblacks_amelissan",
+      "cn": 352,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 352,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Amelyssan portrait by Zenblack",
+      "pi": "zenblack amelissan",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblacks_llewren_charname",
+      "tp2n": "zenblacks_llewren_charname",
+      "cn": 375,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 375,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "CHARNAME portrait by Zenblack (Llewren style)",
+      "pi": "zenblacks llewren charname",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblacks_ruven_viconia",
+      "tp2n": "zenblacks_ruven_viconia",
+      "cn": 385,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 385,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblacks ruven viconia",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_ruven_branwen",
+      "tp2n": "zenblack_ruven_branwen",
+      "cn": 386,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 386,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack ruven branwen",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_ruven_corwin",
+      "tp2n": "zenblack_ruven_corwin",
+      "cn": 387,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 387,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack ruven corwin",
+      "grn": "zenblack"
+    },
+    {
+      "n": "zenblack_ruven_dynaheir",
+      "tp2n": "zenblack_ruven_dynaheir",
+      "cn": 388,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 388,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "pi": "zenblack ruven dynaheir",
+      "grn": "zenblack"
+    },
+    {
+      "n": "kaelyn_charname",
+      "tp2n": "kaelyn_charname",
+      "cn": 400,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 400,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "CHARNAME portrait by Kaelyn",
+      "pi": "kaelyn charname",
+      "grn": "kaelyn"
+    },
+    {
+      "n": "kaelyn_npcs",
+      "tp2n": "kaelyn_npcs",
+      "cn": 401,
+      "wf": "bmpp",
+      "wp": "bmpp\\setup-bmpp.tp2",
+      "wc": 401,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "NPC portraits by Kaelyn",
+      "pi": "kaelyn npcs",
+      "grn": "kaelyn"
+    }
+  ],
+  "gh": {
+    "o": "dark0dave",
+    "r": "bmp_portraits"
+  }
+}

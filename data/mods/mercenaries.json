@@ -1,0 +1,943 @@
+{
+  "i": 528,
+  "t": "Mercenaries",
+  "sv": 1,
+  "ord": 550,
+  "c": "QUEST MODS BG2",
+  "n": "Mercenaries of the Sword Coast",
+  "no": "mod_installer FIX REQUIRED: The tp2 references three sibling folders (mercenaries/, mercy_of_bhaal/, slaves_of_bhaal/) but mod_installer only copies the wf folder (mercenaries/). The mercy_of_bhaal/ and slaves_of_bhaal/ folders must be manually copied to the game directory, or the extracted folder structure must place all three inside the mercenaries/ folder. Without this fix, all MERCY OF BHAAL (cn:33-46) and SLAVES OF BHAAL (cn:52-67) components fail with missing file errors. LEGION OF BHAAL components (cn:0-32) work fine.",
+  "in": [
+    {
+      "t": "Copy the mercy_of_bhaal/ and slaves_of_bhaal/ folders from the extracted Mercenaries mod to your game directory as sibling folders next to mercenaries/.",
+      "type": "folder"
+    }
+  ],
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "merc_anishai",
+          "portraits/mercenaries/anishai.png",
+          "bg2"
+        ],
+        [
+          "merc_bdcul41",
+          "portraits/mercenaries/bdcul41.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv01",
+          "portraits/mercenaries/bhslv01.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv02",
+          "portraits/mercenaries/bhslv02.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv03",
+          "portraits/mercenaries/bhslv03.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv04",
+          "portraits/mercenaries/bhslv04.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv05",
+          "portraits/mercenaries/bhslv05.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv06",
+          "portraits/mercenaries/bhslv06.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv07",
+          "portraits/mercenaries/bhslv07.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv08",
+          "portraits/mercenaries/bhslv08.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv09",
+          "portraits/mercenaries/bhslv09.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv10",
+          "portraits/mercenaries/bhslv10.png",
+          "bg2"
+        ],
+        [
+          "merc_bhslv11",
+          "portraits/mercenaries/bhslv11.png",
+          "bg2"
+        ],
+        [
+          "merc_cythan0",
+          "portraits/mercenaries/cythan0.png",
+          "bg2"
+        ],
+        [
+          "merc_ehlastr",
+          "portraits/mercenaries/ehlastr.png",
+          "bg2"
+        ],
+        [
+          "merc_hlketta",
+          "portraits/mercenaries/hlketta.png",
+          "bg2"
+        ],
+        [
+          "merc_jemby",
+          "portraits/mercenaries/jemby.png",
+          "bg2"
+        ],
+        [
+          "merc_lamalha",
+          "portraits/mercenaries/lamalha.png",
+          "bg2"
+        ],
+        [
+          "merc_maneira",
+          "portraits/mercenaries/maneira.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc001",
+          "portraits/mercenaries/mosc001.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc002",
+          "portraits/mercenaries/mosc002.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc003",
+          "portraits/mercenaries/mosc003.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc004",
+          "portraits/mercenaries/mosc004.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc005",
+          "portraits/mercenaries/mosc005.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc006",
+          "portraits/mercenaries/mosc006.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc007",
+          "portraits/mercenaries/mosc007.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc008",
+          "portraits/mercenaries/mosc008.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc009",
+          "portraits/mercenaries/mosc009.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc010",
+          "portraits/mercenaries/mosc010.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc011",
+          "portraits/mercenaries/mosc011.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc012",
+          "portraits/mercenaries/mosc012.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc013",
+          "portraits/mercenaries/mosc013.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc014",
+          "portraits/mercenaries/mosc014.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc015",
+          "portraits/mercenaries/mosc015.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc016",
+          "portraits/mercenaries/mosc016.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc017",
+          "portraits/mercenaries/mosc017.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc018",
+          "portraits/mercenaries/mosc018.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc019",
+          "portraits/mercenaries/mosc019.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc020",
+          "portraits/mercenaries/mosc020.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc021",
+          "portraits/mercenaries/mosc021.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc022",
+          "portraits/mercenaries/mosc022.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc023",
+          "portraits/mercenaries/mosc023.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc024",
+          "portraits/mercenaries/mosc024.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc025",
+          "portraits/mercenaries/mosc025.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc026",
+          "portraits/mercenaries/mosc026.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc027",
+          "portraits/mercenaries/mosc027.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc028",
+          "portraits/mercenaries/mosc028.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc029",
+          "portraits/mercenaries/mosc029.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc030",
+          "portraits/mercenaries/mosc030.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc031",
+          "portraits/mercenaries/mosc031.png",
+          "bg2"
+        ],
+        [
+          "merc_mosc032",
+          "portraits/mercenaries/mosc032.png",
+          "bg2"
+        ],
+        [
+          "merc_ntnatal",
+          "portraits/mercenaries/ntnatal.png",
+          "bg2"
+        ],
+        [
+          "merc_samia",
+          "portraits/mercenaries/samia.png",
+          "bg2"
+        ],
+        [
+          "merc_slavera",
+          "portraits/mercenaries/slavera.png",
+          "bg2"
+        ],
+        [
+          "merc_slaverm",
+          "portraits/mercenaries/slaverm.png",
+          "bg2"
+        ],
+        [
+          "merc_slavers",
+          "portraits/mercenaries/slavers.png",
+          "bg2"
+        ],
+        [
+          "merc_telka00",
+          "portraits/mercenaries/telka00.png",
+          "bg2"
+        ],
+        [
+          "merc_xapprn2",
+          "portraits/mercenaries/xapprn2.png",
+          "bg2"
+        ],
+        [
+          "merc_zeela00",
+          "portraits/mercenaries/zeela00.png",
+          "bg2"
+        ]
+      ],
+      "11": [
+        [
+          "merc_ntelka",
+          "portraits/mercenaries/ntelka.png",
+          "bg2"
+        ]
+      ],
+      "35": [
+        [
+          "merc_kirinh",
+          "portraits/mercenaries/kirinh.png",
+          "bg2"
+        ]
+      ],
+      "36": [
+        [
+          "merc_icharyd",
+          "portraits/mercenaries/icharyd.png",
+          "bg2"
+        ]
+      ],
+      "40": [
+        [
+          "merc_shaldr0",
+          "portraits/mercenaries/shaldr0.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.shsforums.net/topic/59496-mod-mercenaries-of-sword-coast-for-eet/",
+  "a": "Lassal",
+  "sum": "Massive BG2 mod with 68 components adding mercenary contracts, bounty hunts, and combat missions across Amn. Highly configurable with individual toggles.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://www.shsforums.net/topic/59496-mod-mercenaries-of-sword-coast-for-eet/",
+  "langs": {
+    "en": 0
+  },
+  "au": "Wilbur",
+  "co": [
+    {
+      "n": "[LEGION OF BHAAL & MERCY OF BHAAL] Mercenaries Of The Sword Coast (Main Block)",
+      "tp2n": "[LEGION OF BHAAL & MERCY OF BHAAL] Mercenaries Of The Sword Coast (Main Block)",
+      "cn": 0,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 0,
+      "games": [
+        "eet"
+      ]
+    },
+    {
+      "n": "[LEGION OF BHAAL] Hamadriad Darina (can be recruited at Cloakwood Druids area)",
+      "tp2n": "[LEGION OF BHAAL] Hamadriad Darina (can be recruited at Cloakwood Druids area)",
+      "cn": 1,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 1
+    },
+    {
+      "n": "[LEGION OF BHAAL] Bandit Igor (can be recruited at Coast Way area)",
+      "tp2n": "[LEGION OF BHAAL] Bandit Igor (can be recruited at Coast Way area)",
+      "cn": 2,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 2
+    },
+    {
+      "n": "[LEGION OF BHAAL] Ogre Dubar (can be recruited at Lonely Peaks area)",
+      "tp2n": "[LEGION OF BHAAL] Ogre Dubar (can be recruited at Lonely Peaks area)",
+      "cn": 3,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 3
+    },
+    {
+      "n": "[LEGION OF BHAAL] Medusa Helena (can be recruited at Mutamin's Garden area)",
+      "tp2n": "[LEGION OF BHAAL] Medusa Helena (can be recruited at Mutamin's Garden area)",
+      "cn": 4,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 4
+    },
+    {
+      "n": "[LEGION OF BHAAL] Prostitute monk of Sharess Agatha (can be recruited at Feldepost's Inn Level 2 area)",
+      "tp2n": "[LEGION OF BHAAL] Prostitute monk of Sharess Agatha (can be recruited at Feldepost's Inn Level 2 area)",
+      "cn": 5,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 5
+    },
+    {
+      "n": "[LEGION OF BHAAL] Sirine archer Rada (can be recruited at Shipwreck's Coast area)",
+      "tp2n": "[LEGION OF BHAAL] Sirine archer Rada (can be recruited at Shipwreck's Coast area)",
+      "cn": 6,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 6
+    },
+    {
+      "n": "[LEGION OF BHAAL] Zombie Vladimir (can be recruited at High Hedge area house)",
+      "tp2n": "[LEGION OF BHAAL] Zombie Vladimir (can be recruited at High Hedge area house)",
+      "cn": 7,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 7
+    },
+    {
+      "n": "[LEGION OF BHAAL] Hobgoblin Madur (can be recruited at Friendly Arm Inn area)",
+      "tp2n": "[LEGION OF BHAAL] Hobgoblin Madur (can be recruited at Friendly Arm Inn area)",
+      "cn": 8,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 8
+    },
+    {
+      "n": "[LEGION OF BHAAL] Crusader Nadya Darr (can be recruited at Dead Man's Pass area)",
+      "tp2n": "[LEGION OF BHAAL] Crusader Nadya Darr (can be recruited at Dead Man's Pass area)",
+      "cn": 9,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 9
+    },
+    {
+      "n": "[LEGION OF BHAAL] Fighter Fatty Sofia (can be recruited at Belching Dragon Tavern, Nashkel area)",
+      "tp2n": "[LEGION OF BHAAL] Fighter Fatty Sofia (can be recruited at Belching Dragon Tavern, Nashkel area)",
+      "cn": 10,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 10
+    },
+    {
+      "n": "[LEGION OF BHAAL] Aasimar Panteleimona (can be recruited at Beregost Temple)",
+      "tp2n": "[LEGION OF BHAAL] Aasimar Panteleimona (can be recruited at Beregost Temple)",
+      "cn": 11,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 11
+    },
+    {
+      "n": "[LEGION OF BHAAL] Tiefling assasin Gina (can be recruited at Gullykin area)",
+      "tp2n": "[LEGION OF BHAAL] Tiefling assasin Gina (can be recruited at Gullykin area)",
+      "cn": 12,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 12
+    },
+    {
+      "n": "[LEGION OF BHAAL] Tomb explorer Dita (can be recruited at Durlag's Tower area)",
+      "tp2n": "[LEGION OF BHAAL] Tomb explorer Dita (can be recruited at Durlag's Tower area)",
+      "cn": 13,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 13
+    },
+    {
+      "n": "[LEGION OF BHAAL] Bandit Fiona (can be recruited at Bandit Camp)",
+      "tp2n": "[LEGION OF BHAAL] Bandit Fiona (can be recruited at Bandit Camp)",
+      "cn": 14,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 14
+    },
+    {
+      "n": "[LEGION OF BHAAL] Elven ranger Nefellim (can be recruited at Bear River area)",
+      "tp2n": "[LEGION OF BHAAL] Elven ranger Nefellim (can be recruited at Bear River area)",
+      "cn": 15,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 15
+    },
+    {
+      "n": "[LEGION OF BHAAL] Pirate Simona (can be recruited at Jopalin's Tavern in Baldurs Gate)",
+      "tp2n": "[LEGION OF BHAAL] Pirate Simona (can be recruited at Jopalin's Tavern in Baldurs Gate)",
+      "cn": 16,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 16
+    },
+    {
+      "n": "[LEGION OF BHAAL] Demoness and fire mage Azargoth (can be recruited at Avernus Bridge)",
+      "tp2n": "[LEGION OF BHAAL] Demoness and fire mage Azargoth (can be recruited at Avernus Bridge)",
+      "cn": 17,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 17
+    },
+    {
+      "n": "[LEGION OF BHAAL] Elven ranger Shaella (can be recruited at Umar Hills near tavern)",
+      "tp2n": "[LEGION OF BHAAL] Elven ranger Shaella (can be recruited at Umar Hills near tavern)",
+      "cn": 18,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 18
+    },
+    {
+      "n": "[LEGION OF BHAAL] Minotaur berserker Mauren (can be recruited at Windspear Hills)",
+      "tp2n": "[LEGION OF BHAAL] Minotaur berserker Mauren (can be recruited at Windspear Hills)",
+      "cn": 19,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 19
+    },
+    {
+      "n": "[LEGION OF BHAAL] Executioner Gerda (can be recruited at Athkatla's Government District near prison)",
+      "tp2n": "[LEGION OF BHAAL] Executioner Gerda (can be recruited at Athkatla's Government District near prison)",
+      "cn": 20,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 20
+    },
+    {
+      "n": "[LEGION OF BHAAL] Goblin crusader Minoga (can be recruited at Coast Way Crossing)",
+      "tp2n": "[LEGION OF BHAAL] Goblin crusader Minoga (can be recruited at Coast Way Crossing)",
+      "cn": 21,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 21
+    },
+    {
+      "n": "[LEGION OF BHAAL] Half-dragon barbarian Sera (can be recruited at Forest Valley, TOB)",
+      "tp2n": "[LEGION OF BHAAL] Half-dragon barbarian Sera (can be recruited at Forest Valley, TOB)",
+      "cn": 22,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 22
+    },
+    {
+      "n": "[LEGION OF BHAAL] Demonic blackguard Megana (can be recruited at Demon Plane, visited by Planar Sphere)",
+      "tp2n": "[LEGION OF BHAAL] Demonic blackguard Megana (can be recruited at Demon Plane, visited by Planar Sphere)",
+      "cn": 23,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 23
+    },
+    {
+      "n": "[LEGION OF BHAAL] Myconid shaman Hog (can be recruited at Myconid Area, Copper Coronet sewers)",
+      "tp2n": "[LEGION OF BHAAL] Myconid shaman Hog (can be recruited at Myconid Area, Copper Coronet sewers)",
+      "cn": 24,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 24
+    },
+    {
+      "n": "[LEGION OF BHAAL] Rakshasa kensai Zidan (can be recruited at Amkethran, near tavern, TOB)",
+      "tp2n": "[LEGION OF BHAAL] Rakshasa kensai Zidan (can be recruited at Amkethran, near tavern, TOB)",
+      "cn": 25,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 25
+    },
+    {
+      "n": "[LEGION OF BHAAL] Cannibal halfling wizard slayer Xsi (can be recruited at Planar Sphere)",
+      "tp2n": "[LEGION OF BHAAL] Cannibal halfling wizard slayer Xsi (can be recruited at Planar Sphere)",
+      "cn": 26,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 26
+    },
+    {
+      "n": "[LEGION OF BHAAL] Ninja Motoko (can be recruited at Ice Island, maze level 1)",
+      "tp2n": "[LEGION OF BHAAL] Ninja Motoko (can be recruited at Ice Island, maze level 1)",
+      "cn": 27,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 27
+    },
+    {
+      "n": "[LEGION OF BHAAL] Inquisitor Ignatius (can be recruited at Coast Way Crossing)",
+      "tp2n": "[LEGION OF BHAAL] Inquisitor Ignatius (can be recruited at Coast Way Crossing)",
+      "cn": 28,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 28
+    },
+    {
+      "n": "[LEGION OF BHAAL] Serial killer 'Trapper' (can be recruited at Baldur's Gate Sewers)",
+      "tp2n": "[LEGION OF BHAAL] Serial killer 'Trapper' (can be recruited at Baldur's Gate Sewers)",
+      "cn": 29,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 29
+    },
+    {
+      "n": "[LEGION OF BHAAL] Half-orc fighter Marakhan (can be recruited at Athkatla's City Gates)",
+      "tp2n": "[LEGION OF BHAAL] Half-orc fighter Marakhan (can be recruited at Athkatla's City Gates)",
+      "cn": 30,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 30
+    },
+    {
+      "n": "[LEGION OF BHAAL] Book collector Akumaya (can be recruited at tavern at Candlekeep)",
+      "tp2n": "[LEGION OF BHAAL] Book collector Akumaya (can be recruited at tavern at Candlekeep)",
+      "cn": 31,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 31
+    },
+    {
+      "n": "[LEGION OF BHAAL] Necromancer Isania (can be recruited at Valley of the Tombs)",
+      "tp2n": "[LEGION OF BHAAL] Necromancer Isania (can be recruited at Valley of the Tombs)",
+      "cn": 32,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 32
+    },
+    {
+      "n": "[MERCY OF BHAAL] Tomb robber Samia can be forgiven and join party (Firkaag's Maze)",
+      "tp2n": "[MERCY OF BHAAL] Tomb robber Samia can be forgiven and join party (Firkaag's Maze)",
+      "cn": 33,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 33,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Bandit mage Jemby can be forgiven and join party (Wilderness Lake)",
+      "tp2n": "[MERCY OF BHAAL] Bandit mage Jemby can be forgiven and join party (Wilderness Lake)",
+      "cn": 34,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 34,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Adventurer Kirian can be forgiven and join party (Sharp Teeth Plain)",
+      "tp2n": "[MERCY OF BHAAL] Adventurer Kirian can be forgiven and join party (Sharp Teeth Plain)",
+      "cn": 35,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 35,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Skeleton Icharyd can be forgiven and join party (Ulcaster Ruins)",
+      "tp2n": "[MERCY OF BHAAL] Skeleton Icharyd can be forgiven and join party (Ulcaster Ruins)",
+      "cn": 36,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 36,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Mage and merchant Shaldrissa can be forgiven and join party (Underground city)",
+      "tp2n": "[MERCY OF BHAAL] Mage and merchant Shaldrissa can be forgiven and join party (Underground city)",
+      "cn": 37,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 37,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Cyric cleric Lamalha and her group can be negotiated and join party (Valley of the Tombs)",
+      "tp2n": "[MERCY OF BHAAL] Cyric cleric Lamalha and her group can be negotiated and join party (Valley of the Tombs)",
+      "cn": 38,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 38,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Cyric cleric Lamalha addon - Elka and Natalka are joinable (Valley of the Tombs)",
+      "tp2n": "[MERCY OF BHAAL] Cyric cleric Lamalha addon - Elka and Natalka are joinable (Valley of the Tombs)",
+      "cn": 39,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 39,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Ranger Shallen can be saved from illithid's control and join party (Temple of Cyric, SOD)",
+      "tp2n": "[MERCY OF BHAAL] Ranger Shallen can be saved from illithid's control and join party (Temple of Cyric, SOD)",
+      "cn": 40,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 40,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Ranger Shallen can be saved from illithid's control and join party (Temple of Cyric, SOD)",
+      "tp2n": "[MERCY OF BHAAL] Ranger Shallen can be saved from illithid's control and join party (Temple of Cyric, SOD)",
+      "cn": 41,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 41,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Succubus Kirinhale can join party if freed (Durlag's Tower)",
+      "tp2n": "[MERCY OF BHAAL] Succubus Kirinhale can join party if freed (Durlag's Tower)",
+      "cn": 42,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 42,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Mage apprentice Sanasha can be forgiven and join party (Prebek's home)",
+      "tp2n": "[MERCY OF BHAAL] Mage apprentice Sanasha can be forgiven and join party (Prebek's home)",
+      "cn": 43,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 43,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Sarevok cohort mage Cythandria can join party (Iron Throne building)",
+      "tp2n": "[MERCY OF BHAAL] Sarevok cohort mage Cythandria can join party (Iron Throne building)",
+      "cn": 44,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 44,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Slave woman Elhastra can join party (Yaga Shura's Keep, TOB)",
+      "tp2n": "[MERCY OF BHAAL] Slave woman Elhastra can join party (Yaga Shura's Keep, TOB)",
+      "cn": 45,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 45,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Slaver thief Ketta can be enslaved (Guarded Compound, Athkatla, Temple district)",
+      "tp2n": "[MERCY OF BHAAL] Slaver thief Ketta can be enslaved (Guarded Compound, Athkatla, Temple district)",
+      "cn": 46,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 46,
+      "no": "FAILS: mercy_of_bhaal/ folder not copied by mod_installer. Files like SAMIA.BAF, JEMBY.cre etc. are in mercy_of_bhaal/ subfolder which is a sibling to mercenaries/, not inside it."
+    },
+    {
+      "n": "[MERCY OF BHAAL] Thief monk Anishai can join party (Mae'Var Guild)",
+      "tp2n": "[MERCY OF BHAAL] Thief monk Anishai can join party (Mae'Var Guild)",
+      "cn": 47,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 47
+    },
+    {
+      "n": "[LEGION OF BHAAL & MERCY OF BHAAL] Mercenaries can agree to sex and alcohol (You can install this mod only if your age is 18+)",
+      "tp2n": "[LEGION OF BHAAL & MERCY OF BHAAL] Mercenaries can agree to sex and alcohol (You can install this mod only if your age is 18+)",
+      "cn": 48,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 48
+    },
+    {
+      "n": "[LEGION OF BHAAL & MERCY OF BHAAL] Cannibalism system (VIOLENCE - You can install this mod only if your age is 18+ and you agree, that it is only you who are responsible for choosing this submod)",
+      "tp2n": "[LEGION OF BHAAL & MERCY OF BHAAL] Cannibalism system (VIOLENCE - You can install this mod only if your age is 18+ and you agree, that it is only you who are responsible for choosing this submod)",
+      "cn": 49,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 49
+    },
+    {
+      "n": "[LEGION OF BHAAL & MERCY OF BHAAL] Sacrifices in altair of Temple of Cyric (VIOLENCE - You can install this mod only if your age is 18+ and you agree, that it is only you who are responsible for choosing this submod)",
+      "tp2n": "[LEGION OF BHAAL & MERCY OF BHAAL] Sacrifices in altair of Temple of Cyric (VIOLENCE - You can install this mod only if your age is 18+ and you agree, that it is only you who are responsible for choosing this submod)",
+      "cn": 50,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 50
+    },
+    {
+      "n": "[CALL OF BHAAL] Mercenaries can be summoned to pocket plane and join final battle against Melissan",
+      "tp2n": "[CALL OF BHAAL] Mercenaries can be summoned to pocket plane and join final battle against Melissan",
+      "cn": 51,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 51
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Main part",
+      "tp2n": "[SLAVES OF BHAAL] Main part",
+      "cn": 52,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 52,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slaver Trader Savria (Nashkel Carnival)",
+      "tp2n": "[SLAVES OF BHAAL] Slaver Trader Savria (Nashkel Carnival)",
+      "cn": 53,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 53,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slaver Trader Veladin (Ust Natha)",
+      "tp2n": "[SLAVES OF BHAAL] Slaver Trader Veladin (Ust Natha)",
+      "cn": 54,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 54,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slaver Trader Alessandra (Amkethran)",
+      "tp2n": "[SLAVES OF BHAAL] Slaver Trader Alessandra (Amkethran)",
+      "cn": 55,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 55,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slaver Trader Favissis (Athkatla, Slums)",
+      "tp2n": "[SLAVES OF BHAAL] Slaver Trader Favissis (Athkatla, Slums)",
+      "cn": 56,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 56,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave gladiator woman Peleya (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "tp2n": "[SLAVES OF BHAAL] Slave gladiator woman Peleya (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "cn": 57,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 57,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave orc berserker Zabar (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "tp2n": "[SLAVES OF BHAAL] Slave orc berserker Zabar (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "cn": 58,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 58,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave orc ranger Malak (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "tp2n": "[SLAVES OF BHAAL] Slave orc ranger Malak (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "cn": 59,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 59,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave gladiator Paris (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "tp2n": "[SLAVES OF BHAAL] Slave gladiator Paris (available to buy from slaver trader Savria, Nashkel Carnival)",
+      "cn": 60,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 60,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave drider Kariana (available to buy from slaver trader Veladin, Ust Natha)",
+      "tp2n": "[SLAVES OF BHAAL] Slave drider Kariana (available to buy from slaver trader Veladin, Ust Natha)",
+      "cn": 61,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 61,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave monk Uranae (available to buy from slaver trader Veladin, Ust Natha)",
+      "tp2n": "[SLAVES OF BHAAL] Slave monk Uranae (available to buy from slaver trader Veladin, Ust Natha)",
+      "cn": 62,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 62,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave githyanki blackguard Sai'Runa (available to buy from slaver trader Veladin, Ust Natha)",
+      "tp2n": "[SLAVES OF BHAAL] Slave githyanki blackguard Sai'Runa (available to buy from slaver trader Veladin, Ust Natha)",
+      "cn": 63,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 63,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave archer Farrida (available to buy from slaver trader Alessandra, Amkethran)",
+      "tp2n": "[SLAVES OF BHAAL] Slave archer Farrida (available to buy from slaver trader Alessandra, Amkethran)",
+      "cn": 64,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 64,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave tribe hunter Maja (available to buy from slaver trader Alessandra, Amkethran)",
+      "tp2n": "[SLAVES OF BHAAL] Slave tribe hunter Maja (available to buy from slaver trader Alessandra, Amkethran)",
+      "cn": 65,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 65,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave gladiator man Merces (available to buy from slaver trader Favissis, Slums of Athkatla)",
+      "tp2n": "[SLAVES OF BHAAL] Slave gladiator man Merces (available to buy from slaver trader Favissis, Slums of Athkatla)",
+      "cn": 66,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 66,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    },
+    {
+      "n": "[SLAVES OF BHAAL] Slave bodyguard woman Namia (available to buy from slaver trader Favissis, Slums of Athkatla)",
+      "tp2n": "[SLAVES OF BHAAL] Slave bodyguard woman Namia (available to buy from slaver trader Favissis, Slums of Athkatla)",
+      "cn": 67,
+      "wf": "mercenaries",
+      "wp": "mercenaries\\Setup-Mercenaries.tp2",
+      "wc": 67,
+      "no": "FAILS: slaves_of_bhaal/ folder not copied by mod_installer. Same issue as Mercy of Bhaal components."
+    }
+  ]
+}

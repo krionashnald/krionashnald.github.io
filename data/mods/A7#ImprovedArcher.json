@@ -1,0 +1,545 @@
+{
+  "i": 317,
+  "t": "A7#ImprovedArcher",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 50,
+  "c": "KIT & CLASS MODS",
+  "n": "Improved Archer Kit",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "pl": 4,
+    "ru": 5,
+    "es": 6,
+    "zh-cn": 7
+  },
+  "no": "Improved Archer Kit by Argent77. Adds 4 ranged-focused kits (Ranger, Fighter, Paladin, Thief) plus late-game ammo/bows. All 5 components are fully independent — no internal dependencies. Each kit adds 1 kit slot (4 total if all installed). Well-coded, EET compatible.",
+  "ic": "Overwrites HLA file for Archer",
+  "conflicts": [
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "hard",
+      "reason": "M&G #225 rewrites Archer CLAB (hard conflict with A7 overhaul). M&G #151 reclasses Archer to Fighter, breaking A7's ranger-based kit. Choose one Archer approach.",
+      "myComps": "#0 Improved Archer Kit",
+      "theirComps": "#225 Revised Archers #151 Move Archer to Fighter",
+      "source": "Both strip SPCL121 Called Shot and rewrite clabrn02.2da. Other A7/M&G component combos are safe, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "skills_and_abilities",
+      "withId": 409,
+      "severity": "soft",
+      "reason": "Both modify Archer kit CLAB and bonuses. A7 cn:0 completely overhauls the Archer (new special shots, rebalanced progression, rewrites clabrn02.2da). SnA cn:170 applies a minor fix to match kit description THAC0/damage bonuses. A7's overhaul supersedes SnA's fix. Removed SnA cn:170 .",
+      "myComps": "#0 Improved Archer Kit",
+      "theirComps": "#170 Update Archer per kit description (REMOVED from Ultimate preset)",
+      "source": "A7 rewrites clabrn02.2da entirely; SnA cn:170 patches same CLAB; A7 supersedes, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "IMPROVED_ARCHER": {
+        "passive": [
+          {
+            "n": "Ranged THAC0",
+            "type": "thac0PerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 THAC0 with missiles per 4 levels"
+          },
+          {
+            "n": "Ranged Damage",
+            "type": "dmgPerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 damage with missiles per 4 levels"
+          },
+          {
+            "n": "Missile AC",
+            "type": "acPerLevel",
+            "rate": 6,
+            "value": 1,
+            "desc": "+1 missile AC per 6 levels"
+          },
+          {
+            "n": "Critical Hit Bonus",
+            "type": "desc",
+            "desc": "+5% critical hit chance at level 13 and 18 (total +10%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rooting Shot",
+            "freq": "1/day at lv4, extra uses scale",
+            "effects": "12 sec: ranged hits entangle target. Duration 3-5 rounds, save vs Spell (penalty scales with level).",
+            "level": 4
+          },
+          {
+            "n": "Power Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits knock back target. Save vs Breath (penalty scales with level).",
+            "level": 8
+          },
+          {
+            "n": "Explosive Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits deal 1d4 (+2/4 levels) AoE physical damage in 15' radius (friend or foe).",
+            "level": 8
+          },
+          {
+            "n": "Conjure Elemental Ammunition",
+            "freq": "1/day at lv4, +1 per 8 levels",
+            "effects": "Creates 20 enchanted arrows/bolts (8hr). Scales: +1 fire (lv4) to +4 multi-elemental with slow/blind (lv20). Double charges at lv8 and lv16.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "armor": "no metal",
+          "items": "Max 1 slot in melee weapons. No Charm Animal. -1 CON modifier."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "include": [
+            "Sure Shot",
+            "Missile Trap"
+          ],
+          "note": "Adds Sure Shot (requires War Cry) and Missile Trap"
+        },
+        "statBonus": {
+          "con": -1,
+          "note": "Innate stat modifiers: -1 CON"
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger druid spellcasting retained. No Charm Animal ability."
+        },
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ]
+      }
+    },
+    "1": {
+      "MARKSMAN": {
+        "passive": [
+          {
+            "n": "Ranged THAC0",
+            "type": "thac0PerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 THAC0 with missiles per 4 levels"
+          },
+          {
+            "n": "Ranged Damage",
+            "type": "dmgPerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 damage with missiles per 4 levels"
+          },
+          {
+            "n": "Missile AC",
+            "type": "acPerLevel",
+            "rate": 6,
+            "value": 1,
+            "desc": "+1 missile AC per 6 levels"
+          },
+          {
+            "n": "Critical Hit Bonus",
+            "type": "desc",
+            "desc": "+5% critical hit chance at level 13 and 18 (total +10%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rooting Shot",
+            "freq": "1/day at lv4, extra uses scale",
+            "effects": "12 sec: ranged hits entangle target. Duration 3-5 rounds, save vs Spell (penalty scales).",
+            "level": 4
+          },
+          {
+            "n": "Power Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits knock back target. Save vs Breath (penalty scales).",
+            "level": 8
+          },
+          {
+            "n": "Explosive Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits deal AoE physical damage in 15' radius (friend or foe).",
+            "level": 8
+          },
+          {
+            "n": "Produce Reinforced Ammunition",
+            "freq": "1/day at lv4, +1 per 8 levels",
+            "effects": "Creates 20 arrows/bolts/bullets. Scales: cumulative AC/THAC0 debuffs on targets (save vs Death), knockback and stun at higher levels.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "armor": "no metal",
+          "items": "Max 2 slots in melee weapons. Fighting styles max 1. Requires DEX 17 for dual-class."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "include": [
+            "Sure Shot"
+          ],
+          "note": "Adds Sure Shot to fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (fighter kit)."
+        },
+        "statBonus": {
+          "note": "Requires DEX 17 for dual-class"
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "2": {
+      "BOW_KNIGHT": {
+        "passive": [
+          {
+            "n": "Ranged THAC0",
+            "type": "thac0PerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 THAC0 with missiles per 4 levels"
+          },
+          {
+            "n": "Ranged Damage",
+            "type": "dmgPerLevel",
+            "rate": 4,
+            "value": 1,
+            "desc": "+1 damage with missiles per 4 levels"
+          },
+          {
+            "n": "Missile AC",
+            "type": "acPerLevel",
+            "rate": 6,
+            "value": 1,
+            "desc": "+1 missile AC per 6 levels"
+          },
+          {
+            "n": "Critical Hit Bonus",
+            "type": "desc",
+            "desc": "+5% critical hit chance at level 13 and 18 (total +10%)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rooting Shot",
+            "freq": "1/day at lv4, extra uses scale",
+            "effects": "12 sec: ranged hits entangle target. Duration 3-5 rounds, save vs Spell (penalty scales).",
+            "level": 4
+          },
+          {
+            "n": "Power Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits knock back target. Save vs Breath (penalty scales). No Explosive Shot.",
+            "level": 8
+          },
+          {
+            "n": "Evoke Blessed Ammunition",
+            "freq": "1/day at lv4, +1 per 8 levels",
+            "effects": "Creates 20 arrows/bolts/bullets (8hr). Bonus magic damage vs undead/fiends. Scales: 1d6 (lv4) to 1d6+8 with hold (lv20). Double charges at lv8/16.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "armor": "no metal",
+          "alignment": "Lawful Good only",
+          "items": "Max 1 slot in melee weapons. Fighting styles max 1. Cannot dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "include": [
+            "Sure Shot"
+          ],
+          "note": "Adds Sure Shot to paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spellcasting retained."
+        },
+        "statBonus": {
+          "note": "Requires STR 12, CON 9, WIS 13, CHA 17"
+        }
+      }
+    },
+    "3": {
+      "SHARPSHOOTER": {
+        "passive": [
+          {
+            "n": "Ranged THAC0",
+            "type": "thac0PerLevel",
+            "rate": 5,
+            "value": 1,
+            "desc": "+1 THAC0 with missiles per 5 levels"
+          },
+          {
+            "n": "Ranged Damage",
+            "type": "dmgPerLevel",
+            "rate": 5,
+            "value": 1,
+            "desc": "+1 damage with missiles per 5 levels"
+          },
+          {
+            "n": "Missile AC",
+            "type": "acPerLevel",
+            "rate": 8,
+            "value": 1,
+            "desc": "+1 missile AC per 8 levels"
+          },
+          {
+            "n": "Critical Hit Bonus",
+            "type": "desc",
+            "desc": "+5% critical hit chance at level 18 only"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Rooting Shot",
+            "freq": "1/day at lv4, extra uses scale",
+            "effects": "12 sec: ranged hits entangle target. Duration 3-5 rounds, save vs Spell (penalty scales).",
+            "level": 4
+          },
+          {
+            "n": "Explosive Shot",
+            "freq": "shot selector (shared uses)",
+            "effects": "12 sec: ranged hits deal AoE physical damage in 15' radius (friend or foe). No Power Shot.",
+            "level": 8
+          },
+          {
+            "n": "Craft Endowed Ammunition",
+            "freq": "1/day at lv4, +1 per 8 levels",
+            "effects": "Creates 20 arrows/bolts. Cumulative AC/THAC0 debuffs plus bleeding and blindness vs humanoids at higher levels.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "noBackstab": true,
+          "items": "Only 15 thief skill points per level (vs 25). Cannot use longbows. Cannot use bullets."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "include": [
+            "Missile Trap"
+          ],
+          "note": "Adds Missile Trap to thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (thief kit)."
+        },
+        "statBonus": {
+          "note": "Requires DEX 9 (DEX 17 for dual-class)"
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "IMPROVED_ARCHER",
+          "ranger",
+          "Improved Archer",
+          "Enhanced ranger archer with improved Called Shot and ranged weapon bonuses."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "MARKSMAN",
+          "fighter",
+          "Marksman",
+          "Thief variant focused on ranged combat. Sniper-like precision with ranged weapons."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "BOW_KNIGHT",
+          "paladin",
+          "Bow Knight",
+          "Paladin variant focused on archery. Ranged holy warrior with mounted combat."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "SHARPSHOOTER",
+          "thief",
+          "Sharpshooter",
+          "Stealthy ranged specialist preferring to engage enemies from a distance."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Argent77/A7-ImprovedArcher/releases",
+  "a": "Argent77",
+  "v": "v4.4",
+  "sum": "Improved Archer Kit as WeiDU mod for BG2, BG:EE, BG2:EE and IWD:EE",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v2.2",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-ImprovedArcher"
+  },
+  "dl": "https://github.com/Argent77/A7-ImprovedArcher/releases",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Improved Archer Kit",
+      "tp2n": "Improved Archer Kit",
+      "pi": "A7-IMPROVEDARCHER-ARCHER",
+      "wf": "A7#ImprovedArcher",
+      "wp": "A7#ImprovedArcher\\A7#ImprovedArcher.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "k": 1,
+      "no": "Improved Archer (Ranger kit). Rebalances Archer: stronger at high levels, less dominant early. Grants bonus damage, AC vs missiles, critical hits, and 4 special shots: Rooting Shot (entangle), Power Shot (knockback), Explosive Shot (AoE), Conjure Elemental Ammunition. Each component is independent — REQUIRE_COMPONENT is commented out in tp2. Adds 1 kit slot.",
+      "kC": {
+        "ranger": 1
+      }
+    },
+    {
+      "n": "Add fighter kit: Marksman",
+      "tp2n": "Add fighter kit: Marksman",
+      "pi": "A7-IMPROVEDARCHER-MARKSMAN",
+      "wf": "A7#ImprovedArcher",
+      "wp": "A7#ImprovedArcher\\A7#ImprovedArcher.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10,
+      "k": 1,
+      "no": "Marksman (Fighter kit). Archer mechanics adapted for Fighter class. Uses Reinforced Ammunition instead of elemental. No Set Missile Trap. Allows 2 melee proficiency slots. Independent of cn:0. Adds 1 kit slot.",
+      "kC": {
+        "fighter": 1
+      }
+    },
+    {
+      "n": "Add paladin kit: Bow Knight",
+      "tp2n": "Add paladin kit: Bow Knight",
+      "pi": "A7-IMPROVEDARCHER-BOWKNIGHT",
+      "wf": "A7#ImprovedArcher",
+      "wp": "A7#ImprovedArcher\\A7#ImprovedArcher.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 20,
+      "k": 1,
+      "no": "Bow Knight (Paladin kit). Ranged-focused Paladin with Blessed Ammunition. No Explosive Shot or Missile Trap. 1 melee proficiency slot max. Independent of cn:0. Adds 1 kit slot.",
+      "kC": {
+        "paladin": 1
+      }
+    },
+    {
+      "n": "Add thief kit: Sharpshooter",
+      "tp2n": "Add thief kit: Sharpshooter",
+      "pi": "A7-IMPROVEDARCHER-SHARPSHOOTER",
+      "wf": "A7#ImprovedArcher",
+      "wp": "A7#ImprovedArcher\\A7#ImprovedArcher.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 30,
+      "k": 1,
+      "no": "Sharpshooter (Thief kit). Ranged thief with weaker missile bonuses (every 5-8 levels). Crafts Endowed Ammunition. No Power Shot or Sure Shot HLA. Restricted skill points and backstab. Independent of cn:0. Adds 1 kit slot.",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Add +4 arrows, bolts and powerful bows to the game",
+      "tp2n": "Add +4 arrows, bolts and powerful bows to the game",
+      "pi": "A7-IMPROVEDARCHER-BOWS_AND_AMMO",
+      "wf": "A7#ImprovedArcher",
+      "wp": "A7#ImprovedArcher\\A7#ImprovedArcher.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob"
+      ],
+      "cn": 100,
+      "no": "Adds +4 arrows, +4 bolts, and 2 legendary longbows to late-game. BG2/EET: Watcher's Keep and Sendai's Enclave. No kit dependency — standalone item addition."
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "i": 345,
+  "t": "Combat_Skill_Proficiencies",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 70,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Combat Skills & Proficiencies",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "fr": 2
+  },
+  "no": "SubtleDoctor's combat proficiency overhaul. v1.5.2. Replaces vanilla weapon proficiency system with combat skills (fighting postures, physical fitness, misc skills). cn:10 and cn:50 are mutually exclusive (FORBID). cn:30 FORBIDs M&G #200. Conflicts with most proficiency mods",
+  "u": "https://github.com/subtledoctor/Combat_Skill_Proficiencies",
+  "a": "subtledoctor",
+  "v": "v1.5.2",
+  "sum": "Overhauls the weapon proficiency system with 5 components. Changes how proficiency points translate to combat bonuses.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "subtledoctor",
+    "r": "Combat_Skill_Proficiencies"
+  },
+  "prof": {
+    "10": {
+      "flags": {
+        "revisedProfSystem": true
+      },
+      "desc": "Revised proficiency system with changed specialization bonuses"
+    },
+    "50": {
+      "mode": "replace",
+      "proficiencies": [
+        {
+          "id": "STAFF",
+          "n": "Staff",
+          "cat": "melee",
+          "desc": "Quarterstaff"
+        },
+        {
+          "id": "LARGE_SWORD",
+          "n": "Large Sword",
+          "cat": "melee",
+          "desc": "Bastard Sword, Long Sword"
+        },
+        {
+          "id": "SHORT_SWORD",
+          "n": "Short Sword",
+          "cat": "melee"
+        },
+        {
+          "id": "AXE",
+          "n": "Axe",
+          "cat": "melee"
+        },
+        {
+          "id": "GREATSWORD",
+          "n": "Greatsword",
+          "cat": "melee",
+          "desc": "Two-Handed Sword"
+        },
+        {
+          "id": "KATANA",
+          "n": "Katana",
+          "cat": "melee"
+        },
+        {
+          "id": "SCIMITAR",
+          "n": "Scimitar/Wakizashi/Ninjato",
+          "cat": "melee"
+        },
+        {
+          "id": "DAGGER",
+          "n": "Dagger/Dart",
+          "cat": "melee",
+          "desc": "Dagger and Dart merged"
+        },
+        {
+          "id": "WAR_HAMMER",
+          "n": "War Hammer",
+          "cat": "melee"
+        },
+        {
+          "id": "SPEAR",
+          "n": "Spear/Halberd",
+          "cat": "melee",
+          "desc": "Spear and Halberd merged"
+        },
+        {
+          "id": "CLUB_MACE",
+          "n": "Club/Mace",
+          "cat": "melee",
+          "desc": "Club and Mace merged"
+        },
+        {
+          "id": "FLAIL",
+          "n": "Flail/Morningstar",
+          "cat": "melee"
+        },
+        {
+          "id": "SLING",
+          "n": "Sling",
+          "cat": "ranged"
+        },
+        {
+          "id": "BOW",
+          "n": "Bow",
+          "cat": "ranged",
+          "desc": "Longbow and Shortbow merged"
+        },
+        {
+          "id": "CROSSBOW",
+          "n": "Crossbow",
+          "cat": "ranged"
+        },
+        {
+          "id": "TWO_WEAPON",
+          "n": "Two-Weapon Style",
+          "cat": "style",
+          "maxPips": 3
+        },
+        {
+          "id": "SWORD_SHIELD",
+          "n": "Sword and Shield",
+          "cat": "style",
+          "maxPips": 2
+        },
+        {
+          "id": "SINGLE_WEAPON",
+          "n": "Single Weapon",
+          "cat": "style",
+          "maxPips": 2
+        },
+        {
+          "id": "TWO_HANDED",
+          "n": "Two-Handed Weapon",
+          "cat": "style",
+          "maxPips": 2
+        }
+      ],
+      "profMap": {
+        "BASTARD_SWORD": "LARGE_SWORD",
+        "LONG_SWORD": "LARGE_SWORD",
+        "TWO_HANDED_SWORD": "GREATSWORD",
+        "DART": "DAGGER",
+        "HALBERD": "SPEAR",
+        "CLUB": "CLUB_MACE",
+        "MACE": "CLUB_MACE",
+        "QUARTERSTAFF": "STAFF",
+        "FLAIL_MORNINGSTAR": "FLAIL",
+        "LONGBOW": "BOW",
+        "SHORTBOW": "BOW"
+      },
+      "desc": "Weapons grouped into consolidated categories"
+    },
+    "70": {
+      "flags": {
+        "stylesRebalanced": true
+      },
+      "desc": "Revised fighting style bonuses"
+    },
+    "90": {
+      "flags": {
+        "aprFromSpec": true
+      },
+      "desc": "All warrior classes gain APR from weapon specialization"
+    }
+  },
+  "dl": "https://github.com/subtledoctor/Combat_Skill_Proficiencies",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "Revised Proficiency System",
+      "tp2n": "Revised Proficiency System",
+      "pi": "D5_REVISED_PROFICIENCIES",
+      "wf": "Combat_Skill_Proficiencies",
+      "wp": "Combat_Skill_Proficiencies\\Combat_Skill_Proficiencies.tp2",
+      "wc": 10,
+      "wq": "manual_final",
+      "cn": 10,
+      "no": "Replaces weapon proficiencies with revised system. FORBID with cn:50 (Weapon Category Grouping). Conflicts with most proficiency overhauls"
+    },
+    {
+      "n": "Combat Skill Points",
+      "tp2n": "Combat Skill Points",
+      "pi": "D5_COMBAT_SKILLS",
+      "wf": "Combat_Skill_Proficiencies",
+      "wp": "Combat_Skill_Proficiencies\\Combat_Skill_Proficiencies.tp2",
+      "wc": 30,
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 30,
+      "no": "Adds combat skill points earned at level-up: fighting postures, physical fitness, misc skills. FORBIDs M&G #200. FORBID with cn:50"
+    },
+    {
+      "n": "Weapon Category Grouping",
+      "tp2n": "Weapon Category Grouping",
+      "pi": "D5_COMBINED_WEAPON_CATEGORIES",
+      "wf": "Combat_Skill_Proficiencies",
+      "wp": "Combat_Skill_Proficiencies\\Combat_Skill_Proficiencies.tp2",
+      "wc": 50,
+      "wq": "unresolved",
+      "cn": 50,
+      "no": "Groups similar weapons into categories (Club/Mace, Greatswords, etc.). FORBID with cn:10 and cn:30 — alternative approach"
+    },
+    {
+      "n": "Fighting Style Changes",
+      "tp2n": "Fighting Style Changes",
+      "pi": "D5_REVISED_WEAPON_STYLES",
+      "wf": "Combat_Skill_Proficiencies",
+      "wp": "Combat_Skill_Proficiencies\\Combat_Skill_Proficiencies.tp2",
+      "wc": 70,
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 70,
+      "no": "Revises fighting styles (Two-Hand, Shield, Single, Dual-Wield). Independent component"
+    },
+    {
+      "n": "APR on Spec",
+      "tp2n": "APR on Spec",
+      "pi": "D5_EE_WSPATCK_FOR_ALL",
+      "wf": "Combat_Skill_Proficiencies",
+      "wp": "Combat_Skill_Proficiencies\\Combat_Skill_Proficiencies.tp2",
+      "wc": 90,
+      "wq": "unresolved",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 90,
+      "no": "All warrior classes gain APR from specialization. Independent component"
+    }
+  ]
+}

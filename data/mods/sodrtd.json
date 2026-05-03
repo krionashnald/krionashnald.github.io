@@ -1,0 +1,149 @@
+{
+  "i": 233,
+  "t": "sodrtd",
+  "sv": 1,
+  "ord": 390,
+  "c": "NPC EXPANSIONS",
+  "n": "Road to Discovery",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "it": 3,
+    "es": 4,
+    "ru": 5,
+    "zh-cn": 6
+  },
+  "no": "Road to Discovery for SoD #L-SOD-STAT_BASED_OPTIONS;Road to Discovery for SoD - SoD - Stat-based observations and quest options from Lauriel's Themed Tweaks Mod Themes Tweaks has the same and earlier “Makes the [party] and officers aware of and talk about the crusade’s real purpose!” -Documentation.",
+  "conflicts": [
+    {
+      "with": "Reflections",
+      "withId": 41,
+      "severity": "partial",
+      "reason": "Reflections of Destiny cn:200 ('Rewriting History') rewrites SoD Caelar backstory and narrative. Road to Discovery also adds SoD content and dialogue. Users report logical inconsistencies when both installed.",
+      "myComps": "#0",
+      "theirComps": "#200 Rewriting History",
+      "source": "User report shaigan G3 topic 38225, Feb 2026",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Road_To_Discovery_for_SoD/releases",
+  "a": "jastey",
+  "v": "6.0",
+  "sum": "Adds Road to Discovery content expanding NPC backstories and revealing hidden details about companion histories through new dialogues and discoveries.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoD"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Road_To_Discovery_for_SoD"
+  },
+  "au": "jastey",
+  "dl": "https://github.com/Gibberlings3/Road_To_Discovery_for_SoD",
+  "co": [
+    {
+      "n": "SoD - Stat-based observations and quest options from Lauriel's Themed Tweaks Mod",
+      "cn": 80,
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wq": "verified",
+      "tp2n": "SoD - Stat-based observations and quest options from Lauriel's Themed Tweaks Mod",
+      "pi": "#L-SOD-STAT_BASED_OPTIONS"
+    },
+    {
+      "n": "Main Component: Tracking System",
+      "pi": "SoDRoadToDiscovery-main",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "tp2n": "Main Component: Tracking System"
+    },
+    {
+      "n": "Consistency Changes to Game Dialogues",
+      "pi": "SoDRoadToDiscovery-consistency",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 10,
+      "wq": "name_match",
+      "cn": 10,
+      "tp2n": "Consistency Changes to Game Dialogues"
+    },
+    {
+      "n": "Officers Are Aware",
+      "pi": "SoDRoadToDiscovery-aware_officers",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 20,
+      "wq": "manual_final",
+      "cn": 20,
+      "tp2n": "Officers Are Aware"
+    },
+    {
+      "n": "Give PC Informed Reply Options",
+      "pi": "SoDRoadToDiscovery-consistency_reply_options",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 30,
+      "wq": "name_match",
+      "cn": 30,
+      "tp2n": "Give PC Informed Reply Options"
+    },
+    {
+      "n": "PC Can Tell the Officers",
+      "pi": "SoDRoadToDiscovery-PC_tells_officers",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 40,
+      "wq": "name_match",
+      "cn": 40,
+      "tp2n": "PC Can Tell the Officers"
+    },
+    {
+      "n": "Add Officers Reactions",
+      "pi": "SoDRoadToDiscovery-officers_reactions",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 50,
+      "wq": "manual_final",
+      "cn": 50,
+      "tp2n": "Add Officers Reactions"
+    },
+    {
+      "n": "Additional Info Points",
+      "pi": "SoDRoadToDiscovery-additional_infopoints",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 60,
+      "wq": "name_match",
+      "cn": 60,
+      "tp2n": "Additional Info Points"
+    },
+    {
+      "n": "Add Additional Communication with Officers",
+      "pi": "SoDRoadToDiscovery-additional_communication_officers",
+      "wf": "sodrtd",
+      "wp": "sodrtd\\SODRTD.TP2",
+      "wc": 70,
+      "wq": "manual_final",
+      "cn": 70,
+      "tp2n": "Add Additional Communication with Officers"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "themed_tweaks",
+      "withId": 670,
+      "severity": "soft",
+      "reason": "Both modify SoD story dialogue and quest flow. Install order matters; some changes may overlap",
+      "orderOnly": true,
+      "myComps": "#10 Consistency Changes #30 Informed Replies #50 Officer Reactions",
+      "theirComps": "#60 Imoen wand #70 Aid Imoen #80 Stat observations #90 Ditch Corwin #100 Scouting quest #140 Snark dialogues #150 Remove cutscenes #160 Move dreams",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

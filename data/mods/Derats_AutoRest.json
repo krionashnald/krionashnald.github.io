@@ -1,0 +1,169 @@
+{
+  "i": 796,
+  "t": "Derats_AutoRest",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 510,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "AutoRest",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "u": "https://github.com/Deratiseur/AutoRest/",
+  "a": "Deratiseur",
+  "sum": "This handy little mod lets you simulate rest without having to sleep for 8 hours.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Deratiseur",
+  "dl": "https://github.com/Deratiseur/AutoRest",
+  "no": "Auto-rest system. Three choose-one groups: rest trigger method (timer/distance/manual), rest spell behavior (8 options for what happens when rest triggers), and death behavior (4 options). French and English.",
+  "co": [
+    {
+      "n": "By pressing the D key",
+      "cn": 11,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "g": "How is the rest simulated?"
+    },
+    {
+      "n": "Automatic after each battle",
+      "cn": 12,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "g": "How is the rest simulated?"
+    },
+    {
+      "n": "Automatic after each battle + by pressing the D key",
+      "cn": 13,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "g": "How is the rest simulated?"
+    },
+    {
+      "n": "all spells restored + 3D8 hp healed",
+      "cn": 21,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + 3D8 hp healed + dispel 100%",
+      "cn": 22,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Heal",
+      "cn": 23,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 23,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Heal + dispel 100%",
+      "cn": 24,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 24,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Greater Restoration",
+      "cn": 25,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 25,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Greater Restoration + dispel 100%",
+      "cn": 26,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 26,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Resurrection + Greater Restoration",
+      "cn": 27,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 27,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "all spells restored + Resurrection + Greater Restoration + dispel 100%",
+      "cn": 28,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 28,
+      "wq": "verified",
+      "g": "Choose the power of the rest"
+    },
+    {
+      "n": "Minimum life points fixed at 1",
+      "cn": 31,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 31,
+      "wq": "verified",
+      "g": "Players can't die"
+    },
+    {
+      "n": "Minimum life points fixed at 1 + Simulated death",
+      "cn": 32,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 32,
+      "wq": "verified",
+      "g": "Players can't die"
+    },
+    {
+      "n": "Minimum life points fixed at 1 + Immunity to all forms of death",
+      "cn": 33,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 33,
+      "wq": "verified",
+      "g": "Players can't die"
+    },
+    {
+      "n": "Minimum life points fixed at 1 + Simulated death + Immunity to all forms of death",
+      "cn": 34,
+      "wf": "Derats_AutoRest",
+      "wp": "Derats_AutoRest\\Setup-Derats_AutoRest.tp2",
+      "wc": 34,
+      "wq": "verified",
+      "g": "Players can't die"
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "AutoRest"
+  }
+}

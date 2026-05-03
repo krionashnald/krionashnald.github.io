@@ -1,0 +1,80 @@
+{
+  "i": 239,
+  "t": "OWRomanceExpanded",
+  "sv": 1,
+  "ord": 450,
+  "c": "NPC EXPANSIONS",
+  "n": "BG2 Romance Expanded",
+  "no": "BG2 Romance Expanded for-bg2ee-phaere-expanded goes after Unfinished Business, Will of the Wisps, Viconia Friendship and IEP banters",
+  "u": "https://www.gibberlings3.net/forums/topic/37854-v106-viconia-romance-expanded-",
+  "a": "Otherwisely",
+  "v": "v1.0.6",
+  "sum": "Expands existing BG2 romances with additional dialogue, scenes, and interactions. Adds depth to Jaheira, Viconia, Aerie, and Anomen romances.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Otherwisely",
+  "dl": "https://github.com/Otherwisely/BG2-Romance-Expanded",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Viconia Romance Expanded",
+      "pi": "OWRomanceExpanded-Viconia",
+      "wf": "Romance_Expanded",
+      "wp": "Romance_Expanded\\setup-Romance_Expanded.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "no": "DLG WEIGHT warnings (×28): REPLACE ignoring specified WEIGHT for many states in Viconia's DLG — DLG weights differ from mod's expectations. WeiDU falls back to DLG weights. Cosmetic — romance dialog works, some response ordering may differ.",
+      "tp2n": "Viconia Romance Expanded"
+    },
+    {
+      "n": "Alternate Audio (Viconia)",
+      "pi": "OWRomanceExpanded-Viconia-audio",
+      "wf": "Romance_Expanded",
+      "wp": "Romance_Expanded\\setup-Romance_Expanded.tp2",
+      "wq": "manual_final",
+      "cn": 1,
+      "tp2n": "Alternate Audio (Viconia)"
+    },
+    {
+      "n": "Phaere Expanded",
+      "pi": "OWRomanceExpanded-Phaere",
+      "wf": "Romance_Expanded",
+      "wp": "Romance_Expanded\\setup-Romance_Expanded.tp2",
+      "wq": "manual_final",
+      "cn": 2,
+      "tp2n": "Phaere Expanded"
+    },
+    {
+      "n": "Unlock Other Romances",
+      "pi": "OWRomanceExpanded-Other",
+      "wf": "Romance_Expanded",
+      "wp": "Romance_Expanded\\setup-Romance_Expanded.tp2",
+      "wq": "manual_final",
+      "cn": 3,
+      "tp2n": "Unlock Other Romances"
+    },
+    {
+      "n": "Unlock Other Romances",
+      "cn": 4,
+      "wf": "Romance_Expanded",
+      "wp": "Romance_Expanded\\setup-Romance_Expanded.tp2",
+      "wq": "verified",
+      "tp2n": "Unlock Other Romances",
+      "pi": "OWRomanceExpanded-Other",
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "Otherwisely",
+    "r": "BG2-Romance-Expanded"
+  }
+}

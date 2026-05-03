@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Anprionsa/infinity-mod-forge/schemas/mod-forge.schema.json",
+  "title": "Infinity Mod Forge — Author Metadata",
+  "description": "Metadata file that mod authors include in their repository to help Infinity Mod Forge stay up to date. Place this file as mod-forge.json in the root of your mod repository. For the evidence-grading model on conflicts/advisories, see docs/EVIDENCE_GRADING.md in the Forge repo.",
+  "type": "object",
+  "required": ["tp2", "name", "author", "components"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference for editor autocompletion."
+    },
+    "tp2": {
+      "type": "string",
+      "description": "WeiDU tp2 folder name (case-sensitive, e.g. \"stratagems\", \"cdtweaks\").",
+      "pattern": "^[A-Za-z0-9_#-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable mod name.",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name(s), comma-separated if multiple.",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "description": "Current version string (e.g. \"v6.4\", \"2.1\")."
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the mod's homepage, forum thread, or GitHub releases page."
+    },
+    "summary": {
+      "type": "string",
+      "description": "One-sentence description of what the mod does (max ~200 chars).",
+      "maxLength": 300
+    },
+    "games": {
+      "type": "array",
+      "description": "Which game phases this mod affects.",
+      "items": {
+        "type": "string",
+        "enum": ["BG1", "SoD", "SoA", "ToB"]
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Content tags for filtering. Use established tags when possible.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "qol", "restore", "story", "class", "visual", "quest", "npc",
+          "tweak", "tactical", "item", "spell", "portrait", "sound",
+          "ui", "fix", "kit", "rule", "encounter", "romance"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "languages": {
+      "type": "object",
+      "description": "Map of ISO 639-1 language code to WeiDU LANGUAGE index. Example: {\"en\": 0, \"fr\": 1, \"de\": 2}",
+      "propertyNames": {
+        "pattern": "^[a-z]{2}(-[a-z]{2,4})?$"
+      },
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "components": {
+      "type": "array",
+      "description": "List of installable components (matches BEGIN blocks in the tp2).",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/component"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "description": "Observed or mechanism-verified conflicts with other mods. Items must carry an `evidenceLevel`. Soft/untested interactions belong in `advisories[]` instead.",
+      "items": {
+        "$ref": "#/$defs/conflict"
+      }
+    },
+    "advisories": {
+      "type": "array",
+      "description": "Potential interactions with other mods — plausible mechanisms, order-only concerns, or speculative compatibility notes that have not been verified against an actual install failure. Rendered separately from `conflicts[]` in the Forge UI (neutral tone, not a red flag).",
+      "items": {
+        "$ref": "#/$defs/conflict"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "Mods that must be installed before this one.",
+      "items": {
+        "$ref": "#/$defs/dependency"
+      }
+    },
+    "knownIssues": {
+      "type": "array",
+      "description": "Known installation errors or warnings with workarounds.",
+      "items": {
+        "$ref": "#/$defs/knownIssue"
+      }
+    }
+  },
+  "$defs": {
+    "component": {
+      "type": "object",
+      "required": ["name", "number"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Component display name (as shown by WeiDU during install)."
+        },
+        "number": {
+          "type": "integer",
+          "description": "Component number (DESIGNATED value, or auto-numbered position).",
+          "minimum": 0
+        },
+        "group": {
+          "type": "string",
+          "description": "SUBCOMPONENT group name. Components sharing the same group are mutually exclusive choices."
+        },
+        "label": {
+          "type": "string",
+          "description": "WeiDU LABEL for this component (if defined in tp2)."
+        },
+        "deprecated": {
+          "type": "boolean",
+          "description": "Set true if this component is no longer recommended."
+        },
+        "removed": {
+          "type": "boolean",
+          "description": "Set true if this component was removed from the tp2 but should be tracked for compatibility."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Any installation caveats, prerequisites, or special instructions for this component."
+        },
+        "kits": {
+          "type": "integer",
+          "description": "Number of ADD_KIT calls this component makes (for engine kit-cap tracking).",
+          "minimum": 0
+        },
+        "spells": {
+          "type": "integer",
+          "description": "Number of new SPELL.IDS entries this component adds.",
+          "minimum": 0
+        },
+        "splstates": {
+          "type": "integer",
+          "description": "Number of new SPLSTATE.IDS entries this component adds.",
+          "minimum": 0
+        },
+        "items": {
+          "type": "integer",
+          "description": "Number of new items this component adds.",
+          "minimum": 0
+        }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "required": ["mod", "severity", "evidenceLevel"],
+      "additionalProperties": false,
+      "properties": {
+        "mod": {
+          "type": "string",
+          "description": "TP2 folder name of the conflicting mod."
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["hard", "partial", "soft"],
+          "description": "hard = mutually exclusive, partial = specific components conflict, soft = possible issues."
+        },
+        "evidenceLevel": {
+          "type": "string",
+          "enum": ["observed", "mechanism-verified", "speculative"],
+          "description": "How strongly this conflict is supported by evidence. `observed` = an actual install run has produced the failure (session ID or WSETUP.DEBUG excerpt must be cited in `sessionId` or `source`). `mechanism-verified` = code paths in both mods have been traced and the failure mode is mechanically plausible, but has not yet been seen in practice. `speculative` = plausible but unverified — these belong in `advisories[]`, not `conflicts[]`. Forge UI renders the three tiers with different severity styling."
+        },
+        "sessionId": {
+          "type": "string",
+          "description": "Required when `evidenceLevel = \"observed\"`. Session ID from the runner's install log (8+ hex characters), e.g. \"deeae982\" or a `Test #N` tag. Lets reviewers verify the claim against preserved WSETUP.DEBUG."
+        },
+        "source": {
+          "type": "string",
+          "description": "Free-form provenance note — upstream mod's README/readme advisory, forum thread URL, author-reported incompatibility, code-trace rationale, etc. Distinct from `sessionId` (which is an install-run reference)."
+        },
+        "orderOnly": {
+          "type": "boolean",
+          "description": "True when the conflict only manifests under a specific install order, and installing in the recommended order resolves it. The Forge UI can suppress order-only conflicts from the top-severity view since they don't require user intervention."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why these mods conflict. Prefer concrete mechanism (`Mod A does COPY_EXISTING X.SPL which Mod B's cleanup removes from override`) over vague phrasing (`may interact with`)."
+        },
+        "myComponents": {
+          "type": "string",
+          "description": "Which of YOUR component numbers are involved (e.g. \"#0 #10\")."
+        },
+        "theirComponents": {
+          "type": "string",
+          "description": "Which of THEIR component numbers are involved."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "evidenceLevel": { "const": "observed" } }, "required": ["evidenceLevel"] },
+          "then": {
+            "anyOf": [
+              { "required": ["sessionId"] },
+              { "required": ["source"] }
+            ],
+            "errorMessage": "evidenceLevel=observed requires either sessionId or source to cite the install run."
+          }
+        }
+      ]
+    },
+    "dependency": {
+      "type": "object",
+      "required": ["mod"],
+      "additionalProperties": false,
+      "properties": {
+        "mod": {
+          "type": "string",
+          "description": "TP2 folder name of the required mod."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["hard", "soft"],
+          "description": "hard = required for functionality, soft = recommended.",
+          "default": "soft"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why this dependency exists."
+        }
+      }
+    },
+    "knownIssue": {
+      "type": "object",
+      "required": ["description", "severity"],
+      "additionalProperties": false,
+      "properties": {
+        "pattern": {
+          "type": "string",
+          "description": "Regex pattern that matches this issue in WeiDU debug logs."
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "error", "warning", "info"]
+        },
+        "description": {
+          "type": "string",
+          "description": "What the issue is."
+        },
+        "workaround": {
+          "type": "string",
+          "description": "How to fix or avoid it."
+        },
+        "components": {
+          "type": "array",
+          "description": "Which component numbers are affected (empty = all).",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "forum": {
+          "type": "string",
+          "format": "uri",
+          "description": "Link to a forum thread discussing this issue."
+        }
+      }
+    }
+  }
+}

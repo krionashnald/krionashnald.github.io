@@ -1,0 +1,38 @@
+name: Validate Forge data
+
+# Run on every PR + push to main to catch conflict/advisory grading
+# regressions. See `scripts/validate_forge_data.py` for rule list.
+#
+# Grace period: uses `--grace-period` until the Phase 2 manual review
+# completes and all conflicts[] entries carry an evidenceLevel. Remove the
+# flag once the unclassified-entry count drops to zero.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/mods/**.json"
+      - "schemas/**.json"
+      - "scripts/validate_forge_data.py"
+      - ".github/workflows/validate-forge-data.yml"
+  pull_request:
+    paths:
+      - "data/mods/**.json"
+      - "schemas/**.json"
+      - "scripts/validate_forge_data.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate evidence-grading rules
+        # --grace-period demotes VLT_01/VLT_05 (missing evidenceLevel) to
+        # warnings so the job doesn't fail on the 522 historical unclassified
+        # entries. VLT_02/03/04 (structural + semantic violations) still fail
+        # the build. Remove --grace-period when Phase 2 manual review ships.
+        run: python scripts/validate_forge_data.py --grace-period

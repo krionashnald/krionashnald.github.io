@@ -1,0 +1,1109 @@
+{
+  "i": 438,
+  "t": "thepicturestandard",
+  "sv": 1,
+  "ord": 10,
+  "c": "PORTRAITS",
+  "n": "The Picture Standard",
+  "no": "PORTRAITS The Picture Standard Much more focused than PPE, and mostly dedicated to better quality image v Main Some previous mods might see their portraits for vanilla characters step on",
+  "conflicts": [
+    {
+      "with": "jaheirarecast",
+      "withId": 28,
+      "severity": "partial",
+      "reason": "Portrait component duplicates functionality",
+      "myComps": "#82000 BG1 Jaheira #82300 BG2 Jaheira #82600 Variant",
+      "theirComps": "#3 Give Jaheira her BG2 Portrait"
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both provide Edwin portraits. Cosmetic 'last installed wins' — no crashes or script breaks.",
+      "myComps": "#80000 BG1 Edwin #80300 BG2 Edwin #80600 Variant A #80900 Variant B",
+      "theirComps": "#1",
+      "source": "Portrait BMP overwrite only, no gameplay impact, 2026-03",
+      "orderOnly": true
+    },
+    {
+      "with": "Gavin",
+      "withId": 114,
+      "severity": "hard",
+      "reason": "Choose one Gavin portrait",
+      "myComps": "#15000 Vanilla #15500 Lore Alternative",
+      "theirComps": "Gavin: Alternate Portraits (Default portrait is already installed) -> Dawnbringer, by Amaurea, #5, #6, #7, #8, #9",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "l#khalidbg2ee",
+      "withId": 146,
+      "severity": "hard",
+      "reason": "Choose one Jaheira portrait",
+      "myComps": "#82000 BG1 Jaheira #82300 BG2 Jaheira #82600 Variant",
+      "theirComps": "#8, #9",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify portraits for Edwin/Edwina. Last installed wins",
+      "theirComps": "#1180 Female Edwina",
+      "orderOnly": true
+    },
+    {
+      "with": "NostalgiaPack",
+      "withId": 356,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia. Last installed wins",
+      "theirComps": "#40 #41 #42 #43 Restore BG1 Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ViconiaRevamped",
+      "withId": 225,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "theirComps": "#50 #51 #52 #53 #54 #55 #56 #57 #58 #59 #60 Viconia Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "A7-ConvenientEENPCs",
+      "withId": 232,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "theirComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify portraits for Irenicus. Last installed wins",
+      "myComps": "#0 Core component",
+      "theirComps": "#0 Restore Irenicus Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Both modify portraits for Kivan, Coran, non-joinable NPCs. Last installed wins",
+      "theirComps": "#150 Kivan portrait #155 Coran portrait #160 Non-joinable NPC portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ac-miscellaneous",
+      "withId": 427,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "theirComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "ContinousViconiaAppearance",
+      "withId": 426,
+      "severity": "soft",
+      "reason": "Both modify portraits for Viconia. Last installed wins",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Yoshimo portrait. Last installed wins",
+      "theirComps": "#13 Yoshimo Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify Anomen portrait. Last installed wins",
+      "theirComps": "#14 Anomen Original Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "soft",
+      "reason": "Both modify NPC portraits. Last installed wins",
+      "theirComps": "#15 NPC Portrait Restorations",
+      "orderOnly": true
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "BG1NPC",
+      "requiresId": 47,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'BG1NPC'"
+    },
+    {
+      "requires": "DarkHorizons",
+      "requiresId": 573,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Dark Horizons'"
+    },
+    {
+      "requires": "darkhorizonsbgee",
+      "requiresId": 512,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Dark Horizons'"
+    },
+    {
+      "requires": "DSotSC",
+      "requiresId": 458,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Dark Side of the Sword Coast'"
+    },
+    {
+      "requires": "DrizztSaga",
+      "requiresId": 513,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Drizzt Saga'"
+    },
+    {
+      "requires": "eilistraee",
+      "requiresId": 91,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Eilistraees Song'"
+    },
+    {
+      "requires": "finchnpc",
+      "requiresId": 597,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Finch NPC'"
+    },
+    {
+      "requires": "Gavin",
+      "requiresId": 114,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Gavin BG1 or BG2 NPC'"
+    },
+    {
+      "requires": "gavin_bg2",
+      "requiresId": 600,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Gavin BG1 or BG2 NPC'"
+    },
+    {
+      "requires": "Innershade",
+      "requiresId": 88,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Innershade'"
+    },
+    {
+      "requires": "Isra",
+      "requiresId": 126,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Isra BG1 and BG2 NPC'"
+    },
+    {
+      "requires": "isra_bg2",
+      "requiresId": 168,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Isra BG1 and BG2 NPC'"
+    },
+    {
+      "requires": "RR",
+      "requiresId": 311,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Rogue Rebalancing'"
+    },
+    {
+      "requires": "Sellswords",
+      "requiresId": 81,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Sellswords'"
+    },
+    {
+      "requires": "karatur",
+      "requiresId": 515,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'T'was a Slow Boat from Kara'tur'"
+    },
+    {
+      "requires": "TotDG",
+      "requiresId": 87,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Tales of the Deep Gardens'"
+    },
+    {
+      "requires": "WhiteQueen",
+      "requiresId": 89,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'The White Queen'"
+    },
+    {
+      "requires": "TOD",
+      "requiresId": 78,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Tower of Deception'"
+    },
+    {
+      "requires": "valerie",
+      "requiresId": 125,
+      "type": "soft",
+      "reason": "Alternate Portraits for 'Valerie BG1 NPC'"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "2": [
+        [
+          "aerie",
+          "portraits/default/aerie.png",
+          "bg2"
+        ],
+        [
+          "anomen",
+          "portraits/default/anomen.png",
+          "bg2"
+        ],
+        [
+          "cernd",
+          "portraits/default/cernd.png",
+          "bg2"
+        ],
+        [
+          "haerdalis",
+          "portraits/default/haerdalis.png",
+          "bg2"
+        ],
+        [
+          "jan",
+          "portraits/default/jan.png",
+          "bg2"
+        ],
+        [
+          "keldorn",
+          "portraits/default/keldorn.png",
+          "bg2"
+        ],
+        [
+          "korgan",
+          "portraits/tps/korgan.png",
+          "bg2"
+        ],
+        [
+          "korgan",
+          "portraits/default/korgan.png",
+          "bg2"
+        ],
+        [
+          "mazzy",
+          "portraits/tps/mazzy.png",
+          "bg2"
+        ],
+        [
+          "mazzy",
+          "portraits/default/mazzy.png",
+          "bg2"
+        ],
+        [
+          "nalia",
+          "portraits/tps/nalia.png",
+          "bg2"
+        ],
+        [
+          "nalia",
+          "portraits/default/nalia.png",
+          "bg2"
+        ],
+        [
+          "valygar",
+          "portraits/default/valygar.png",
+          "bg2"
+        ],
+        [
+          "yoshimo",
+          "portraits/default/yoshimo.png",
+          "bg2"
+        ]
+      ],
+      "44": [
+        [
+          "edwin",
+          "portraits/default/edwin.png",
+          "all"
+        ]
+      ],
+      "48": [
+        [
+          "imoen",
+          "portraits/default/imoen.png",
+          "all"
+        ]
+      ],
+      "49": [
+        [
+          "imoen",
+          "portraits/default_sod/imoen.png",
+          "sod"
+        ]
+      ],
+      "54": [
+        [
+          "jaheira",
+          "portraits/default/jaheira.png",
+          "all"
+        ]
+      ],
+      "57": [
+        [
+          "minsc",
+          "portraits/default/minsc.png",
+          "all"
+        ]
+      ],
+      "59": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "all"
+        ]
+      ],
+      "60": [
+        [
+          "viconia",
+          "portraits/default/viconia.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/MattyGroove/ThePictureStandard",
+  "a": "MattyGroove",
+  "v": "0.71",
+  "sum": "Replaces NPC portraits with higher-quality versions. 63 components covering companions, villains, and important characters.",
+  "tags": [
+    "tweak",
+    "portraits"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "MattyGroove",
+    "r": "ThePictureStandard"
+  },
+  "au": "MattyGroove",
+  "dl": "https://github.com/MattyGroove/ThePictureStandard",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Main Portraits: Vanilla",
+      "tp2n": "Vanilla",
+      "cn": 1000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 1000,
+      "wq": "exact",
+      "g": "tps_main",
+      "scn": "Main"
+    },
+    {
+      "n": "Main Portraits: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 1500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 1500,
+      "wq": "exact",
+      "g": "tps_main",
+      "scn": "Main"
+    },
+    {
+      "n": "Followers: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Followers",
+      "cn": 2000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 2000,
+      "wq": "exact",
+      "g": "tps_followers",
+      "scn": "Followers"
+    },
+    {
+      "n": "Followers: Variant A",
+      "tp2n": "Variant A",
+      "cn": 2300,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 2300,
+      "wq": "exact",
+      "g": "tps_followers",
+      "scn": "Followers"
+    },
+    {
+      "n": "Followers: Variant B",
+      "tp2n": "Variant B",
+      "cn": 2600,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 2600,
+      "wq": "exact",
+      "g": "tps_followers",
+      "scn": "Followers"
+    },
+    {
+      "n": "BG1NPC: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v BG1NPC",
+      "cn": 3000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 3000,
+      "wq": "exact",
+      "g": "tps_bg1npc"
+    },
+    {
+      "n": "BG1NPC: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 3500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 3500,
+      "wq": "exact",
+      "g": "tps_bg1npc"
+    },
+    {
+      "n": "Dark Horizons: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Dark Horizons",
+      "cn": 4000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 4000,
+      "wq": "exact",
+      "g": "tps_darkhorizons",
+      "scn": "Dark Horizons"
+    },
+    {
+      "n": "Dark Horizons: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 4500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 4500,
+      "wq": "exact",
+      "g": "tps_darkhorizons",
+      "scn": "Dark Horizons"
+    },
+    {
+      "n": "Drizzt Saga: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Drizzt Saga",
+      "cn": 5000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 5000,
+      "wq": "exact",
+      "g": "tps_drizzt",
+      "scn": "Drizzt Saga"
+    },
+    {
+      "n": "Drizzt Saga: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 5500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 5500,
+      "wq": "exact",
+      "g": "tps_drizzt",
+      "scn": "Drizzt Saga"
+    },
+    {
+      "n": "DSotSC: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v DSotSC",
+      "cn": 6000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 6000,
+      "wq": "exact",
+      "g": "tps_dsotsc",
+      "scn": "Dark Side of the Sword Coast"
+    },
+    {
+      "n": "DSotSC: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 6500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 6500,
+      "wq": "exact",
+      "g": "tps_dsotsc",
+      "scn": "Dark Side of the Sword Coast"
+    },
+    {
+      "n": "Eilistraee's Song: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Eilistraee's Song",
+      "cn": 7000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 7000,
+      "wq": "exact",
+      "g": "tps_eilistraee",
+      "scn": "Eilistraee's Song"
+    },
+    {
+      "n": "Eilistraee's Song: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 7500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 7500,
+      "wq": "exact",
+      "g": "tps_eilistraee",
+      "scn": "Eilistraee's Song"
+    },
+    {
+      "n": "Innershade: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Innershade",
+      "cn": 8000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 8000,
+      "wq": "exact",
+      "g": "tps_innershade",
+      "scn": "Innershade"
+    },
+    {
+      "n": "Innershade: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 8500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 8500,
+      "wq": "exact",
+      "g": "tps_innershade",
+      "scn": "Innershade"
+    },
+    {
+      "n": "I Shall Never Forget: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v I Shall Never Forget",
+      "cn": 9000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 9000,
+      "wq": "exact",
+      "g": "tps_isnf",
+      "scn": "I Shall Never Forget"
+    },
+    {
+      "n": "I Shall Never Forget: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 9500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 9500,
+      "wq": "exact",
+      "g": "tps_isnf",
+      "scn": "I Shall Never Forget"
+    },
+    {
+      "n": "Rogue Rebalancing: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Rogue Rebalancing",
+      "cn": 10000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 10000,
+      "wq": "exact",
+      "g": "tps_rr",
+      "scn": "Rogue Rebalancing"
+    },
+    {
+      "n": "Rogue Rebalancing: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 10500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 10500,
+      "wq": "exact",
+      "g": "tps_rr",
+      "scn": "Rogue Rebalancing"
+    },
+    {
+      "n": "Sellswords: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Sellswords",
+      "cn": 11000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 11000,
+      "wq": "exact",
+      "g": "tps_sellswords",
+      "scn": "Sellswords"
+    },
+    {
+      "n": "Sellswords: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 11500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 11500,
+      "wq": "exact",
+      "g": "tps_sellswords",
+      "scn": "Sellswords"
+    },
+    {
+      "n": "Deep Gardens: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Tales Of The Deep Gardens",
+      "cn": 12000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 12000,
+      "wq": "exact",
+      "g": "tps_deepgardens",
+      "scn": "Tales Of The Deep Gardens"
+    },
+    {
+      "n": "Deep Gardens: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 12500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 12500,
+      "wq": "exact",
+      "g": "tps_deepgardens",
+      "scn": "Tales Of The Deep Gardens"
+    },
+    {
+      "n": "T'Was A Slow Boat: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Twas A Slow Boat",
+      "cn": 13000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 13000,
+      "wq": "exact",
+      "g": "tps_slowboat",
+      "scn": "T'was A Slow Boat"
+    },
+    {
+      "n": "T'Was A Slow Boat: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 13500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 13500,
+      "wq": "exact",
+      "g": "tps_slowboat",
+      "scn": "T'was A Slow Boat"
+    },
+    {
+      "n": "Finch: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Finch",
+      "cn": 14000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 14000,
+      "wq": "exact",
+      "g": "tps_finch",
+      "scn": "Finch"
+    },
+    {
+      "n": "Finch: Lore Alternative",
+      "tp2n": "Alternative",
+      "cn": 14500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 14500,
+      "wq": "exact",
+      "g": "tps_finch",
+      "scn": "Finch"
+    },
+    {
+      "n": "Gavin: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Gavin",
+      "cn": 15000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 15000,
+      "wq": "exact",
+      "g": "tps_gavin",
+      "scn": "Gavin"
+    },
+    {
+      "n": "Gavin: Lore Alternative",
+      "tp2n": "Alternative",
+      "cn": 15500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 15500,
+      "wq": "exact",
+      "g": "tps_gavin",
+      "scn": "Gavin"
+    },
+    {
+      "n": "Indira",
+      "tp2n": "Indira",
+      "cn": 16000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 16000,
+      "wq": "exact"
+    },
+    {
+      "n": "Isra",
+      "tp2n": "Isra",
+      "cn": 17000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 17000,
+      "wq": "exact"
+    },
+    {
+      "n": "Valerie",
+      "tp2n": "Valerie",
+      "cn": 18000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 18000,
+      "wq": "exact"
+    },
+    {
+      "n": "White Queen: Vanilla",
+      "tp2n": "Vanilla",
+      "cn": 19000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 19000,
+      "wq": "exact",
+      "g": "tps_whitequeen",
+      "scn": "The White Queen"
+    },
+    {
+      "n": "White Queen: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "no": "v The White Queen",
+      "cn": 19500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 19500,
+      "wq": "exact",
+      "g": "tps_whitequeen",
+      "scn": "The White Queen"
+    },
+    {
+      "n": "Darkest Day: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v The Darkest Day",
+      "cn": 20000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 20000,
+      "wq": "exact",
+      "g": "tps_darkestday",
+      "scn": "The Darkest Day"
+    },
+    {
+      "n": "Darkest Day: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 20500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 20500,
+      "wq": "exact",
+      "g": "tps_darkestday",
+      "scn": "The Darkest Day"
+    },
+    {
+      "n": "Tower of Deception",
+      "tp2n": "Tower of Deception",
+      "cn": 21000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 21000,
+      "wq": "exact"
+    },
+    {
+      "n": "Siege of Dragonspear: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Siege of Dragonspear",
+      "cn": 22000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 22000,
+      "wq": "exact",
+      "g": "tps_sod",
+      "scn": "Siege of Dragonspear"
+    },
+    {
+      "n": "Siege of Dragonspear: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 22500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 22500,
+      "wq": "exact",
+      "g": "tps_sod",
+      "scn": "Siege of Dragonspear"
+    },
+    {
+      "n": "Tortured Souls: Vanilla",
+      "tp2n": "Vanilla",
+      "no": "v Tortured Souls",
+      "cn": 23000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 23000,
+      "wq": "exact",
+      "g": "tps_torturedsouls",
+      "scn": "Tortured Souls"
+    },
+    {
+      "n": "Tortured Souls: Lore Alternative",
+      "tp2n": "Lore Alternative",
+      "cn": 23500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 23500,
+      "wq": "exact",
+      "g": "tps_torturedsouls",
+      "scn": "Tortured Souls"
+    },
+    {
+      "n": "Edwin: BG1",
+      "tp2n": "BG1 Edwin",
+      "no": "v Standardized Edwin",
+      "cn": 80000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 80000,
+      "wq": "exact",
+      "g": "tps_edwin",
+      "scn": "Standardized Edwin"
+    },
+    {
+      "n": "Edwin: BG2",
+      "tp2n": "BG2 Edwin",
+      "cn": 80300,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 80300,
+      "wq": "exact",
+      "g": "tps_edwin",
+      "scn": "Standardized Edwin"
+    },
+    {
+      "n": "Edwin: Variant A",
+      "tp2n": "Variant A",
+      "cn": 80600,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 80600,
+      "wq": "exact",
+      "g": "tps_edwin",
+      "scn": "Standardized Edwin"
+    },
+    {
+      "n": "Edwin: Variant B",
+      "tp2n": "Variant B",
+      "cn": 80900,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 80900,
+      "wq": "exact",
+      "g": "tps_edwin",
+      "scn": "Standardized Edwin"
+    },
+    {
+      "n": "Imoen: BG1",
+      "tp2n": "BG1 Iomen",
+      "no": "v Standardized Imoen",
+      "cn": 81000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81000,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Imoen: BG2",
+      "tp2n": "BG2 Iomen",
+      "cn": 81100,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81100,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Imoen: SoD",
+      "tp2n": "SoD Iomen",
+      "cn": 81200,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81200,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Imoen: Variant A",
+      "tp2n": "Variant A",
+      "cn": 81300,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81300,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Imoen: Variant B",
+      "tp2n": "Variant B",
+      "cn": 81400,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81400,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Imoen: VariantMix",
+      "tp2n": "Immersive Iomen Variant",
+      "cn": 81500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 81500,
+      "wq": "exact",
+      "g": "tps_imoen",
+      "scn": "Standardized Iomen"
+    },
+    {
+      "n": "Jaheira: BG1",
+      "tp2n": "BG1 Jaheira",
+      "no": "v Standardized Jaheira",
+      "cn": 82000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 82000,
+      "wq": "exact",
+      "g": "tps_jaheira",
+      "scn": "Standardized Jaheira"
+    },
+    {
+      "n": "Jaheira: BG2",
+      "tp2n": "BG2 Jaheira",
+      "cn": 82300,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 82300,
+      "wq": "exact",
+      "g": "tps_jaheira",
+      "scn": "Standardized Jaheira"
+    },
+    {
+      "n": "Jaheira: Variant",
+      "tp2n": "Variant",
+      "cn": 82600,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 82600,
+      "wq": "exact",
+      "g": "tps_jaheira",
+      "scn": "Standardized Jaheira"
+    },
+    {
+      "n": "Minsc: BG1",
+      "tp2n": "BG1 Minsc",
+      "no": "v Standardized Minsc",
+      "cn": 83000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 83000,
+      "wq": "exact",
+      "g": "tps_minsc",
+      "scn": "Standardized Minsc"
+    },
+    {
+      "n": "Minsc: BG2",
+      "tp2n": "BG2 Minsc",
+      "cn": 83500,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 83500,
+      "wq": "exact",
+      "g": "tps_minsc",
+      "scn": "Standardized Minsc"
+    },
+    {
+      "n": "Viconia: BG1",
+      "tp2n": "BG1 Viconia",
+      "no": "v Standardized Viconia",
+      "cn": 84000,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 84000,
+      "wq": "exact",
+      "g": "tps_viconia",
+      "scn": "Standardized Viconia"
+    },
+    {
+      "n": "Viconia: BG2",
+      "tp2n": "BG2 Viconia",
+      "cn": 84100,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 84100,
+      "wq": "exact",
+      "g": "tps_viconia",
+      "scn": "Standardized Viconia"
+    },
+    {
+      "n": "Viconia: SoD",
+      "tp2n": "SoD Viconia",
+      "cn": 84200,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 84200,
+      "wq": "exact",
+      "g": "tps_viconia",
+      "scn": "Standardized Viconia"
+    },
+    {
+      "n": "Viconia: Variant A",
+      "tp2n": "Variant A",
+      "cn": 84300,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 84300,
+      "wq": "exact",
+      "g": "tps_viconia",
+      "scn": "Standardized Viconia"
+    },
+    {
+      "n": "Viconia: Variant B",
+      "tp2n": "Variant B",
+      "cn": 84400,
+      "wf": "thepicturestandard",
+      "wp": "thepicturestandard\\THEPICTURESTANDARD.TP2",
+      "wc": 84400,
+      "wq": "exact",
+      "g": "tps_viconia",
+      "scn": "Standardized Viconia"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "i": 12,
+  "t": "EET",
+  "sv": 1,
+  "ord": 10,
+  "c": "EET STARTS HERE",
+  "n": "Baldur's Gate: Enhanced Edition Trilogy",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "es": 2,
+    "fr": 3,
+    "cs": 4,
+    "ru": 5,
+    "de": 6,
+    "zh-cn": 7
+  },
+  "no": "EET core. Use RC 12.2 for game version 2.5, newest master for 2.6. Do NOT install EET_End immediately after — install all other mods first.",
+  "rq": "BGEE, SoD, BG2EE, DLC Merger",
+  "in": [
+    {
+      "t": "EET modifies BG2:EE game data irreversibly. Back up BG1:EE and BG2:EE before installing, or pass --new-pre-eet-dir / --new-eet-dir to mod_installer so it works on fresh copies and your original installs stay clean.",
+      "type": "manual"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "KITTOMES",
+      "withId": 574,
+      "severity": "hard",
+      "reason": "Not in EET compatibility.tbl — EET install will fail unless bypassed with M flag. Mod tp2 has no EET detection. Note: multiple mods reference EET compatibility constraints (KITTOMES, WMART hard; METweaks, cdtweaks partial).",
+      "source": "EET compatibility.tbl (absent), tp2 analysis (mleduque/s9-kittomes), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "partial",
+      "reason": "Some METweaks components modify BG1 areas in ways incompatible with EET's area handling.",
+      "theirComps": "#2800 Nashkel Mines back entrance #3000 Candlekeep catacombs early"
+    },
+    {
+      "with": "WMART",
+      "withId": 485,
+      "severity": "hard",
+      "reason": "Not in EET compatibility.tbl — EET install will fail. Mod unmaintained since 2013, no EET support.",
+      "source": "EET compatibility.tbl (absent), Beamdog forums, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "ToB-style NPCs tweak gives NPCs ToB experience levels in BG1 under EET.",
+      "theirComps": "#4010 ToB-Style NPCs",
+      "source": "eemodsetup"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "DlcMerger",
+      "requiresId": 3,
+      "type": "soft",
+      "reason": "EET requires DLC Merger"
+    },
+    {
+      "requires": "EET_END",
+      "requiresId": 449,
+      "type": "soft",
+      "reason": "EET needs EET_End"
+    },
+    {
+      "requires": "randomiser",
+      "requiresId": 385,
+      "type": "soft",
+      "reason": "Prevent Watcher's Keep statues from disappearing in case items were randomly placed on them by this mod"
+    }
+  ],
+  "u": "https://github.com/K4thos/EET/releases",
+  "a": "K4thos",
+  "v": "v14.0",
+  "sum": "Merges BG1:EE, SoD, BG2:EE, and ToB into a single continuous game so you play one character from Candlekeep to the Throne of Bhaal without restarting.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "K4thos",
+    "r": "EET"
+  },
+  "dl": "https://github.com/K4thos/EET/releases",
+  "au": "K4thos (swit)",
+  "co": [
+    {
+      "n": "EET core (resource importation)",
+      "cn": 0,
+      "wf": "eet",
+      "wp": "eet\\EET.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "EET core (resource importation)"
+    },
+    {
+      "n": "Create desktop shortcut",
+      "cn": 100,
+      "wf": "eet",
+      "wp": "eet\\EET.tp2",
+      "wq": "verified",
+      "tp2n": "Create desktop shortcut",
+      "no": "Optional helper: creates a desktop shortcut to the EET install. Not macOS-compatible (REQUIRE_PREDICATE blocks osx). Safe to skip.",
+      "tg": "qol"
+    }
+  ]
+}

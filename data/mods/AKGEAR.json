@@ -1,0 +1,46 @@
+{
+  "i": 638,
+  "t": "akgear",
+  "sv": 1,
+  "ord": 450,
+  "c": "ITEM ADDITION MODS",
+  "n": "Akun's Gear",
+  "no": "LOCAL FIX APPLIED: Commented out ~bg2ee~ from games_incompatible array in laf/errors/!_CheckIEgames.tpa to allow EET installation. Automated fix: eet-mod-forge-patches component #10.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/Incrementis/Akuns-Gear-",
+  "a": "Incrementis",
+  "v": "v1.4.12",
+  "sum": "This is an item mod that contains 2 enchanted katanas and 1 armor for a Wizard Slayer.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Incrementis/Akuns-Gear-",
+  "au": "Incrementis",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "\"Akun's Gear\" Mod",
+      "tp2n": "\"Akun's Gear\" Mod",
+      "cn": 1000,
+      "wf": "AKGEAR",
+      "wp": "AKGEAR\\SETUP-AKGEAR.TP2",
+      "wc": 1000,
+      "no": "LOCAL FIX APPLIED: laf/errors/!_CheckIEgames.tpa listed ~bg2ee~ as incompatible (line 14) while ~eet~ was commented out (line 9). EET runs on BG2EE executable so GAME_IS bg2ee evaluates true, triggering false incompatibility error. Patched: commented out ~bg2ee~ in games_incompatible array. Automated fix: eet-mod-forge-patches component #10."
+    }
+  ],
+  "gh": {
+    "o": "Incrementis",
+    "r": "Akuns-Gear-"
+  }
+}

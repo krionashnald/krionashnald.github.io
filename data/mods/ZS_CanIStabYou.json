@@ -1,0 +1,357 @@
+{
+  "i": 799,
+  "t": "ZS_CanIStabYou",
+  "sv": 1,
+  "pfx": "ZS",
+  "ord": 540,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Can I Stab You?",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/szaumoor/ZS_CanIStabYou-Mod",
+  "a": "RoyalProtector",
+  "sum": "This mod is a highly modular response to your preferences regarding immunity to sneak attacks.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "RoyalProtector",
+  "dl": "https://github.com/szaumoor/ZS_CanIStabYou-Mod",
+  "no": "Modular backstab and invisibility detection tweaks. Three groups: backstab immunity removal (per-creature-type), backstab immunity enforcement, and true seeing/invisibility detection removal. Internal FORBID_COMPONENT prevents conflicting picks (e.g. \"everything backstabbable\" blocks individual creature toggles). English only. No external conflicts.",
+  "co": [
+    {
+      "n": "Everything can be backstabbed",
+      "cn": 99,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 99,
+      "wq": "verified"
+    },
+    {
+      "n": "All humanoids can be backstabbed, except humanoid ToB bosses",
+      "cn": 106,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 106,
+      "wq": "verified"
+    },
+    {
+      "n": "Humanoid ToB bosses can be backstabbed",
+      "cn": 102,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 102,
+      "wq": "verified"
+    },
+    {
+      "n": "Gromnir can be backstabbed",
+      "cn": 107,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 107,
+      "wq": "verified"
+    },
+    {
+      "n": "Yaga-Shura can be backstabbed",
+      "cn": 103,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 103,
+      "wq": "verified"
+    },
+    {
+      "n": "Sendai can be backstabbed",
+      "cn": 112,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 112,
+      "wq": "verified"
+    },
+    {
+      "n": "Balthazar can be backstabbed",
+      "cn": 122,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 122,
+      "wq": "verified"
+    },
+    {
+      "n": "Abazigal can be backstabbed (human form)",
+      "cn": 113,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 113,
+      "wq": "verified"
+    },
+    {
+      "n": "Abazigal can be backstabbed (dragon form)",
+      "cn": 114,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 114,
+      "wq": "verified"
+    },
+    {
+      "n": "Amelyssan can be backstabbed",
+      "cn": 105,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 105,
+      "wq": "verified"
+    },
+    {
+      "n": "Bhaal's avatars can be backstabbed",
+      "cn": 121,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 121,
+      "wq": "verified"
+    },
+    {
+      "n": "Beholders can be backstabbed",
+      "cn": 100,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 100,
+      "wq": "verified"
+    },
+    {
+      "n": "Celestials such as Planetars, Devas, and Solars can be backstabbed",
+      "cn": 115,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 115,
+      "wq": "verified"
+    },
+    {
+      "n": "Demogorgon can be backstabbed",
+      "cn": 117,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 117,
+      "wq": "verified"
+    },
+    {
+      "n": "Demons and devils can be backstabbed (except Demogorgon)",
+      "cn": 116,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 116,
+      "wq": "verified"
+    },
+    {
+      "n": "Demiliches can be backstabbed",
+      "cn": 109,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 109,
+      "wq": "verified"
+    },
+    {
+      "n": "Dragons can be backstabbed (except Abazigal)",
+      "cn": 110,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 110,
+      "wq": "verified"
+    },
+    {
+      "n": "Golems can be backstabbed",
+      "cn": 101,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 101,
+      "wq": "verified"
+    },
+    {
+      "n": "Minotaurs can be backstabbed",
+      "cn": 104,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 104,
+      "wq": "verified"
+    },
+    {
+      "n": "Liches can be backstabbed",
+      "cn": 118,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 118,
+      "wq": "verified"
+    },
+    {
+      "n": "Slimes can be backstabbed",
+      "cn": 108,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 108,
+      "wq": "verified"
+    },
+    {
+      "n": "Mist creatures can be backstabbed",
+      "cn": 120,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 120,
+      "wq": "verified"
+    },
+    {
+      "n": "All spectral creatures are immune to backstab",
+      "cn": 201,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 201,
+      "wq": "verified",
+      "no": "Reverses backstab allowances for spectral creatures"
+    },
+    {
+      "n": "All golems are immune to backstab",
+      "cn": 205,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 205,
+      "wq": "verified",
+      "no": "Reverses backstab allowances for golems"
+    },
+    {
+      "n": "Every creature marked as able to see through invisibility is automatically immune to backstabs (version 2.6+)",
+      "cn": 300,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 300,
+      "wq": "verified",
+      "no": "Creatures with true sight are backstab-immune"
+    },
+    {
+      "n": "No creature can see through invisibility, they must rely on invisibility dispelling like any other",
+      "cn": 301,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 301,
+      "wq": "verified",
+      "no": "Removes all creature true sight abilities"
+    },
+    {
+      "n": "Dragons cannot see through invisibility, except Abazigal",
+      "cn": 302,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 302,
+      "wq": "verified"
+    },
+    {
+      "n": "Demons cannot see through invisibility, except Demogorgon",
+      "cn": 303,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 303,
+      "wq": "verified"
+    },
+    {
+      "n": "Celestials cannot see through invisibility",
+      "cn": 304,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 304,
+      "wq": "verified"
+    },
+    {
+      "n": "Liches cannot see through invisibility",
+      "cn": 305,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 305,
+      "wq": "verified"
+    },
+    {
+      "n": "Demiliches cannot see through invisibility",
+      "cn": 306,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 306,
+      "wq": "verified"
+    },
+    {
+      "n": "The Unseeing Eye cannot see through invisibility",
+      "cn": 307,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 307,
+      "wq": "verified"
+    },
+    {
+      "n": "Sendai cannot see through invisibility",
+      "cn": 308,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 308,
+      "wq": "verified"
+    },
+    {
+      "n": "Balthazar cannot see through invisibility",
+      "cn": 309,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 309,
+      "wq": "verified"
+    },
+    {
+      "n": "Yaga-Shura cannot see through invisibility",
+      "cn": 310,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 310,
+      "wq": "verified"
+    },
+    {
+      "n": "Amelyssan cannot see through invisibility",
+      "cn": 311,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 311,
+      "wq": "verified"
+    },
+    {
+      "n": "Abazigal cannot see through invisibility",
+      "cn": 312,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 312,
+      "wq": "verified"
+    },
+    {
+      "n": "Demogorgon cannot see through invisibility",
+      "cn": 313,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 313,
+      "wq": "verified"
+    },
+    {
+      "n": "Bhaal's avatars cannot see through invisibility",
+      "cn": 314,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 314,
+      "wq": "verified"
+    },
+    {
+      "n": "Rune Assassins cannot see through invisibility",
+      "cn": 315,
+      "wf": "ZS_CanIStabYou",
+      "wp": "ZS_CanIStabYou\\ZS_CanIStabYou.tp2",
+      "wc": 315,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "szaumoor",
+    "r": "ZS_CanIStabYou-Mod"
+  }
+}

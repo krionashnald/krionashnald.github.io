@@ -1,0 +1,1147 @@
+{
+  "i": 290,
+  "t": "atweaks",
+  "sv": 1,
+  "pfx": "RR",
+  "ord": 210,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "aTweaks (Your PnP Tweak Pack)",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "de": 3,
+    "it": 4,
+    "ru": 5,
+    "pl": 6
+  },
+  "cats": [
+    "SPELL MODS",
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "PnP Tweak Pack: fiend summoning, celestials, and creature-focused rule changes. Install before SCS",
+  "_legacy_ids": [
+    375,
+    377,
+    398
+  ],
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "IR detects aTweaks and adjusts. Install order dependent. Item Revisions and aTweaks overlap",
+      "orderOnly": true,
+      "myComps": "#200; #301, #302, #510; #110",
+      "theirComps": "#0 #1030",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "partial",
+      "reason": "aTweaks auto-blocks components 102, 103, 204, 205, 211 when SR detected (content duplication prevention). Components 104, 105, 150-156 have built-in SR compatibility code and install fine. Install SR before aTweaks.",
+      "orderOnly": true,
+      "myComps": "#102 Spiritual Hammer, #103 Dispel vs Globes, #204 Mislead, #205 Project Image, #211 Death Ward (auto-blocked by aTweaks installer when SR present)",
+      "theirComps": "#0",
+      "source": "aTweaks tp2 REQUIRE_PREDICATE !MOD_IS_INSTALLED spell_rev.tp2 0; c150.tpa/c190.tpa SR compat code; Bart_Tweaks crossmod patches, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Replace Baseline XP Table for Picking Locks, Disarming Traps and Learning Spells",
+      "myComps": "#261, #262; #212",
+      "theirComps": "#0 XP rewards",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "Choose one \"disable quickslot items for Simulacra and Projected Images\" tweak",
+      "myComps": "#205",
+      "theirComps": "#2180",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Choose one tweak for container storage capacity",
+      "myComps": "#500, #502",
+      "theirComps": "#3040",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Real overlap for undead only. aTweaks cn:160 and MiH cn:0 both modify undead creature stats. Neither detects the other. Install MiH before aTweaks (PnP values override). MiH has NO mephit/elemental revisions — aTweaks cn:180/190 are unique.",
+      "myComps": "#160 PnP Undead #180 PnP Mephits #190 PnP Elementals",
+      "theirComps": "#0 Revised Corporal Undead",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "No real overlap for selected components. aTweaks cn:140 (Gnome traits) modifies creature/item/script files for gnome racial encounters — does NOT modify any 2DA tables. ToF cn:20000 (Subraces) modifies savecng.2da for gnome saving throws. Different files. aTweaks cn:130 (Dwarf traits) and cn:213 (Expanded save tables) are ToF cn:40450 (Evasion) and cn:80150 (THAC0) don't touch racial trait files.",
+      "myComps": "#140 Gnome racial traits (IN preset, no 2DA overlap) #130 Dwarf traits (NOT) #213 Save tables (NOT)",
+      "theirComps": "#20000 Subraces #40450 Thief Evasion #80150 THAC0",
+      "orderOnly": true,
+      "source": "aTweaks cn:140 modifies CRE/ITM/BCS files; ToF cn:20000 modifies savecng.2da; no shared files, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "aTweaks druid shapeshift and clone tweaks are generic spell fixes. AK Shapeshifter Overhaul creates a new kit with own abilities. Complementary.",
+      "myComps": "#203 Druid shapeshift uninterruptable #204 Mislead clones",
+      "orderOnly": true,
+      "theirComps": "#5100 Shapeshifter Overhaul"
+    },
+    {
+      "with": "transitions",
+      "withId": 589,
+      "severity": "soft",
+      "reason": "Complementary — different layers. aTweaks cn:202 modifies SPIN101-106 spell EFFECTS (rewrites mechanics + casting time). Transitions cn:10 creates NEW powers (#LPWR01/#LPWR02) and grants them during BG1 dream. Transitions cn:140 GRANTS existing SPIN101-106 via AddSpecialAbility() scripts — does not modify the spell files. No shared files. aTweaks changes what the powers do; Transitions controls when you get them. Install aTweaks before Transitions.",
+      "myComps": "#202 #241 Revised Bhaalpowers #218 Regain Bhaalpowers in ToB",
+      "theirComps": "#10 BGI dream with new Bhaalspawn power #140 Irenicus movie restores Bhaalspawn powers",
+      "orderOnly": true,
+      "source": "aTweaks c202.tpa modifies SPIN101-106.SPL effects; Transitions grants via AddSpecialAbility() in scripts, never touches .spl files, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "cn:155 (Revised Fiend Summoning) and cn:156 (Fiendish Gating) require one of the PnP Fiends base components (cn:150, 152, or 153) to be installed first. Without the base component, these will silently skip.",
+      "myComps": "#155 Further Revised Fiend Summoning #156 Fiendish gating",
+      "theirComps": "#150 #152 #153 PnP Fiends base",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks aTweaks PnP creature components.",
+      "myComps": "#160 #180 #185 #190 PnP creatures",
+      "theirComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "spells": [
+        [
+          "SPPR214",
+          "modify",
+          "Spiritual Hammer changed to ranged force weapon"
+        ]
+      ]
+    },
+    "3": {
+      "spells": [
+        [
+          "SPWI302",
+          "modify",
+          "Dispel/Remove Magic can now take down Globes of Invulnerability"
+        ]
+      ]
+    },
+    "13": {
+      "spells": [
+        [
+          "SPWI514",
+          "modify",
+          "Breach can now take down Stoneskin applied by items"
+        ]
+      ]
+    },
+    "14": {
+      "spells": [
+        [
+          "SPIN101",
+          "tweak",
+          "Warrior innate abilities now cast instantly"
+        ]
+      ]
+    },
+    "22": {
+      "spells": [
+        [
+          "SPWI620",
+          "modify",
+          "Nishruu/Hakeashar vulnerable to Dispel Magic again"
+        ]
+      ]
+    },
+    "23": {
+      "spells": [
+        [
+          "SPWI202",
+          "tweak",
+          "Alignment detection spells more accurate"
+        ],
+        [
+          "SPPR105",
+          "tweak",
+          "Detect Evil more accurate"
+        ]
+      ]
+    },
+    "49": {
+      "spells": [
+        [
+          "SPPR402",
+          "modify",
+          "Revised Call Woodland Beings spell"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/TotoR115/aTweaks",
+  "a": "aVENGER & Wisp",
+  "v": "v4.53.addon",
+  "sum": "PnP-accurate tweaks to creatures, spells, and game mechanics. Brings fiends, undead, and magical effects closer to tabletop AD&D rules.",
+  "tags": [
+    "class",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v4.50",
+    "place": "post"
+  },
+  "gh": {
+    "o": "TotoR115",
+    "r": "aTweaks"
+  },
+  "dl": "https://github.com/TotoR115/aTweaks",
+  "au": "aVENGER, Wisp",
+  "co": [
+    {
+      "n": "Restore innate infravision to Half-Orc characters",
+      "cn": 100,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "no": "Restores Half-Orc infravision that was removed in Enhanced Editions.",
+      "tp2n": "Restore innate infravision to Half-Orc characters",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Prevent skeletal and incorporeal undead from being affected by Illithids' Devour Brain attack",
+      "cn": 101,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 101,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Skeletal and incorporeal undead are immune to Illusion spells (Blindness, etc.).",
+      "tp2n": "Prevent skeletal and incorporeal undead from being affected by Illithids' Devour Brain attack",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Change Spiritual Hammer into a ranged force weapon",
+      "cn": 102,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 102,
+      "wq": "exact",
+      "no": "Auto-blocked by aTweaks when Spell Revisions is installed (REQUIRE_PREDICATE !MOD_IS_INSTALLED spell_rev.tp2 0). Do not select with SR.",
+      "tp2n": "Change Spiritual Hammer into a ranged force weapon",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Allow Dispel/Remove Magic to take down Globes of Invulnerability",
+      "no": "Thrown Hammers mod requires installation after this component",
+      "cn": 103,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 103,
+      "wq": "exact",
+      "tp2n": "Allow Dispel/Remove Magic to take down Globes of Invulnerability",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Color Spray",
+      "cn": 104,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 104,
+      "wq": "exact",
+      "no": "Color Spray uses PnP rules: affects creatures based on hit dice, not level.",
+      "tp2n": "PnP Color Spray",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Dimension Door",
+      "cn": 105,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 105,
+      "wq": "exact",
+      "no": "Dimension Door uses PnP rules: teleport to visible location.",
+      "tp2n": "PnP Dimension Door",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Magical arrows and bolts deal bonus damage equal to their enchantment level",
+      "cn": 110,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 110,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "no": "Magical arrows/bolts deal bonus damage matching their enchantment level (+1, +2, etc.).",
+      "tp2n": "Magical arrows and bolts deal bonus damage equal to their enchantment level",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Scroll Scribing: Scribe everywhere",
+      "no": "See CamDawg guide on SHS for adding mod spells to scribing",
+      "cn": 115,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 115,
+      "wq": "exact",
+      "g": "scroll_scribe",
+      "scn": "Allow Mages to scribe memorized spells onto scrolls",
+      "grn": "PnP tweaks",
+      "tp2n": "Scrolls can be scribed everywhere"
+    },
+    {
+      "n": "Scroll Scribing: Only at inns and strongholds",
+      "cn": 117,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 117,
+      "wq": "exact",
+      "g": "scroll_scribe",
+      "scn": "Allow Mages to scribe memorized spells onto scrolls",
+      "grn": "PnP tweaks",
+      "no": "Scroll scribing variant: can only scribe scrolls at inns and strongholds, not anywhere.",
+      "tp2n": "Scrolls can only be scribed at inns and strongholds"
+    },
+    {
+      "n": "Restore innate disease immunity to Paladins",
+      "cn": 120,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 120,
+      "wq": "exact",
+      "no": "Restores innate disease immunity to Paladin class (removed in some EE patches).",
+      "tp2n": "Restore innate disease immunity to Paladins",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Rangers' Animal Empathy improves with experience",
+      "cn": 125,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 125,
+      "wq": "exact",
+      "no": "Ranger Animal Empathy skill improves with level, affecting more powerful creatures.",
+      "tp2n": "Rangers' Animal Empathy improves with experience",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Additional racial traits for Dwarves",
+      "cn": 130,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 130,
+      "wq": "exact",
+      "no": "Adds PnP racial traits to Dwarves (saving throw bonuses, combat bonuses vs giants).",
+      "tp2n": "Additional racial traits for Dwarves",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Additional racial traits for Gnomes",
+      "cn": 140,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 140,
+      "wq": "exact",
+      "no": "Adds PnP racial traits to Gnomes (saving throw bonuses, illusion resistance).",
+      "tp2n": "Additional racial traits for Gnomes",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Mod-added fiends are not affected",
+      "ss": 14,
+      "cn": 150,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 150,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST-TACTICAL TWEAKS",
+      "g": "pnp_fiends",
+      "scn": "PnP Fiends",
+      "grn": "PnP tweaks",
+      "no": "PnP Fiends variant: only affects vanilla fiends, not mod-added ones.",
+      "tp2n": "Mod-added fiends are not affected"
+    },
+    {
+      "n": "Mod-added fiends are also affected",
+      "ss": 14,
+      "cn": 152,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 152,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "g": "pnp_fiends",
+      "scn": "PnP Fiends",
+      "grn": "PnP tweaks",
+      "no": "PnP Fiends variant: also affects mod-added fiend creatures.",
+      "tp2n": "Mod-added fiends are also affected"
+    },
+    {
+      "n": "Give aTweaks scripts to all fiends but do not alter statistics",
+      "ss": 14,
+      "cn": 153,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 153,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "g": "pnp_fiends",
+      "scn": "PnP Fiends",
+      "grn": "PnP tweaks",
+      "no": "PnP Fiends variant: gives aTweaks AI scripts to all fiends but keeps original stats.",
+      "tp2n": "Give aTweaks scripts to all fiends but do not alter statistics"
+    },
+    {
+      "n": "Further Revised Fiend Summoning",
+      "cn": 155,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 155,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Requires PnP Fiends base (cn:150, 152, or 153) to be installed first.",
+      "tp2n": "Further Revised Fiend Summoning",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Fiendish gating",
+      "cn": 156,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 156,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Requires PnP Fiends base (cn:150, 152, or 153) to be installed first.",
+      "tp2n": "Fiendish gating",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Undead",
+      "cn": 160,
+      "ss": 15,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 160,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Revises undead creatures to PnP stats (immunities, resistances, special abilities).",
+      "tp2n": "PnP Undead",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Mephits",
+      "no": "MiH EQ has NO mephit revisions — zero overlap. aTweaks cn:180 is the only mod touching mephits.",
+      "cn": 180,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 180,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST-TACTICAL TWEAKS",
+      "tp2n": "PnP Mephits",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Fey creatures",
+      "cn": 185,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 185,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Revises fey creatures (nymphs, dryads, sprites) to PnP stats and abilities.",
+      "tp2n": "PnP Fey creatures",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Revised Call Woodland Beings spell",
+      "no": "Not balanced for BG1 content content",
+      "cn": 186,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 186,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "tp2n": "Revised Call Woodland Beings spell",
+      "grn": "PnP tweaks"
+    },
+    {
+      "cn": 187,
+      "n": "PnP Spiders, Wyverns and Ettercaps",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Revises spider, wyvern, and ettercap creatures to PnP stats. Requires BG2/ToB/BG2EE.",
+      "tp2n": "PnP Spiders, Wyverns and Ettercaps",
+      "grn": "PnP tweaks"
+    },
+    {
+      "cn": 188,
+      "n": "PnP Ooze creatures",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Revises ooze creatures to PnP stats. Requires BG2/ToB/BG2EE.",
+      "tp2n": "PnP Ooze creatures",
+      "grn": "PnP tweaks"
+    },
+    {
+      "cn": 189,
+      "n": "PnP Plant creatures",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Revises plant creatures to PnP stats. Requires BG2/ToB/BG2EE.",
+      "tp2n": "PnP Plant and creatures",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "PnP Elementals",
+      "cn": 190,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 190,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Revises elemental creatures to PnP stats. Requires BG2/ToB/BG2EE.",
+      "tp2n": "PnP Elementals",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Increase the Hit Dice of Elemental Princes",
+      "no": "other mods do similar things (MiH Fixes, ToF/SCS...)",
+      "cn": 191,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 191,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "tp2n": "Increase the Hit Dice of Elemental Princes",
+      "grn": "PnP tweaks"
+    },
+    {
+      "n": "Allow Breach to take down Stoneskin effects applied by items",
+      "no": "Allows Breach to remove Stoneskin effects from items (not just spells)",
+      "cn": 200,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 200,
+      "wq": "exact",
+      "tp2n": "Allow Breach to take down Stoneskin effects applied by items",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Instant casting for warrior innates",
+      "cn": 201,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 201,
+      "wq": "exact",
+      "no": "Warrior innate abilities (Berserker Rage, Kai, etc.) cast instantly instead of having casting time.",
+      "tp2n": "Instant casting for warrior innates",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Bhaalpowers: Enhance and standardize casting time",
+      "no": "Don't mix with Slayer Revisions",
+      "cn": 202,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 202,
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "g": "bhaalpowers",
+      "scn": "Revised Bhaalpowers",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Enhance the Bhaalpowers and standardize their casting time"
+    },
+    {
+      "n": "Bhaalpowers: Only standardize casting time",
+      "cn": 241,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 241,
+      "wq": "exact",
+      "g": "bhaalpowers",
+      "scn": "Revised Bhaalpowers",
+      "grn": "Gameplay tweaks",
+      "no": "Bhaalpowers variant: only standardizes casting time without enhancing effects.",
+      "tp2n": "Only standardize the Bhaalpowers' casting time"
+    },
+    {
+      "n": "Regain Bhaalpowers in ToB",
+      "cn": 218,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 218,
+      "wq": "exact",
+      "no": "Regain Bhaalspawn powers in ToB. Not needed with Themed Tweaks/Transitions Bhaalspawn powers dream",
+      "tp2n": "Regain Bhaalpowers in ToB",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Make druidic shapeshifting uninterruptable",
+      "no": "Makes druidic shapeshifting uninterruptable. May be incompatible with non-vanilla shapeshift mods (AK, ToF, SCS)",
+      "cn": 203,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 203,
+      "wq": "exact",
+      "tp2n": "Make druidic shapeshifting uninterruptable",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Prevent Mislead clones from singing Bard songs",
+      "no": "",
+      "cn": 204,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 204,
+      "wq": "exact",
+      "tp2n": "Prevent Mislead clones from singing Bard songs",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Prevent Project Image and Simulacrum clones from using quickslot items",
+      "cn": 205,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 205,
+      "wq": "exact",
+      "no": "",
+      "tp2n": "Prevent Project Image and Simulacrum clones from using quickslot items",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Make Death Ward protect against Vorpal Hits",
+      "cn": 211,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 211,
+      "wq": "exact",
+      "no": "Death Ward also protects against vorpal hit instant-kill effects.",
+      "tp2n": "Make Death Ward protect against Vorpal Hits",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Restore the Dispel Magic vulnerability to Nishruu and Hakeashars",
+      "no": "Not needed when using EE Fixpack",
+      "cn": 210,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 210,
+      "wq": "exact",
+      "tp2n": "Restore the Dispel Magic vulnerability to Nishruu and Hakeashars",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Make alignment detection spells more accurate",
+      "cn": 212,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 212,
+      "wq": "exact",
+      "no": "Alignment detection spells (Know Alignment, Detect Evil) give more accurate results.",
+      "tp2n": "Make alignment detection spells more accurate",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Expanded saving throw bonus tables for Dwarves, Gnomes and Halflings",
+      "no": "Old code, may cause issues. Known to conflict with jtweaks",
+      "cn": 213,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 213,
+      "wq": "exact",
+      "tp2n": "Expanded saving throw bonus tables for Dwarves, Gnomes and Halflings",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Bard Song Invis: Only Jester breaks invisibility",
+      "no": "v Bard songs break invisibility",
+      "cn": 216,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 216,
+      "wq": "exact",
+      "g": "bard_invis",
+      "scn": "Bard songs break invisibility",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Only the Jester song breaks invisibility"
+    },
+    {
+      "n": "Bard Song Invis: All songs break invisibility",
+      "cn": 217,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 217,
+      "wq": "exact",
+      "g": "bard_invis",
+      "scn": "Bard songs break invisibility",
+      "grn": "Gameplay tweaks",
+      "no": "Bard Song invisibility variant: all bard songs break invisibility when sung.",
+      "tp2n": "All Bard songs break invisibility"
+    },
+    {
+      "n": "XP Rewards: Lowered from locks, traps, scrolls",
+      "no": "May fail if DEMPIT.cre was modified by another creature mod to incompatible format",
+      "cn": 261,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 261,
+      "wq": "exact",
+      "g": "xp_rewards",
+      "scn": "Altered XP rewards from locks, traps and scrolls",
+      "grn": "Gameplay tweaks",
+      "tp2n": "Improved (lowered) XP rewards from locks, traps and scrolls"
+    },
+    {
+      "n": "XP Rewards: None from locks, traps, scrolls",
+      "cn": 262,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 262,
+      "wq": "exact",
+      "g": "xp_rewards",
+      "scn": "Altered XP rewards from locks, traps and scrolls",
+      "grn": "Gameplay tweaks",
+      "no": "XP reward variant: no XP from picking locks, disarming traps, or scribing scrolls.",
+      "tp2n": "No XP rewards from locks, traps and scrolls"
+    },
+    {
+      "n": "Unbiased quest rewards",
+      "cn": 270,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 270,
+      "wq": "exact",
+      "no": "Quest rewards are unbiased by alignment and reputation.",
+      "tp2n": "Unbiased quest rewards",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Simple Thief script",
+      "cn": 220,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 220,
+      "wq": "exact",
+      "no": "Adds a simple automated thief script for find traps, detect illusions, and backstab.",
+      "tp2n": "Simple Thief script",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Simple Bard script",
+      "cn": 230,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 230,
+      "wq": "exact",
+      "no": "Adds a simple automated bard script for bard song and spellcasting.",
+      "tp2n": "Simple Bard script",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "n": "Simple Cleric/Paladin script",
+      "cn": 239,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 239,
+      "wq": "exact",
+      "no": "Adds a simple automated cleric/paladin script for healing and buffing.",
+      "tp2n": "Simple Cleric/Paladin script",
+      "grn": "Gameplay tweaks"
+    },
+    {
+      "cn": 300,
+      "n": "IWD casting graphics: Fast animation speed (matches IWD)",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Replaces BG2 casting animations with IWD-style. Fast speed matching IWD.",
+      "g": "iwd_graphics",
+      "scn": "Use Icewind Dale's Dimension Door animation",
+      "grn": "Cosmetic tweaks",
+      "tp2n": "Fast animation speed (matches IWD)"
+    },
+    {
+      "cn": 322,
+      "n": "IWD casting graphics: Slow animation speed (matches BG2)",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "IWD casting graphics at BG2-style slow speed.",
+      "g": "iwd_graphics",
+      "scn": "Use Icewind Dale's Dimension Door animation",
+      "grn": "Cosmetic tweaks",
+      "tp2n": "Slow animation speed (matches BG2)"
+    },
+    {
+      "cn": 323,
+      "n": "IWD casting graphics: IWD for spells, BG2 for other visuals",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Hybrid: IWD animations for spell casting, BG2 animations for other effects.",
+      "g": "iwd_graphics",
+      "scn": "Use Icewind Dale's Dimension Door animation",
+      "grn": "Cosmetic tweaks",
+      "tp2n": "Use IWD animation for spells, retain BG2 animation for other visuals"
+    },
+    {
+      "cn": 324,
+      "n": "IWD casting graphics: Fast with shorter delays",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "no": "Fast IWD animations with shorter delay between animation start and creature appearance.",
+      "g": "iwd_graphics",
+      "scn": "Use Icewind Dale's Dimension Door animation",
+      "grn": "Cosmetic tweaks",
+      "tp2n": "Fast animation speed, shorter delay between animation start and creature appearance/disappearance"
+    },
+    {
+      "n": "Change the appearance of Valygar's armor",
+      "cn": 301,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 301,
+      "wq": "exact",
+      "no": "Changes Valygar's armor appearance to a different visual model.",
+      "tp2n": "Change the appearance of Valygar's armor",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "n": "Change the appearance of the Robe of Vecna",
+      "cn": 302,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 302,
+      "wq": "exact",
+      "no": "Changes the Robe of Vecna appearance to a different visual model.",
+      "tp2n": "Change the appearance of the Robe of Vecna",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "cn": 303,
+      "n": "Give Shambling Mounds their proper soundset",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED. NON-EE ONLY — REQUIRE_PREDICATE ENGINE_IS ~tob~. Will not install on EET.",
+      "tp2n": "Give Shambling Mounds their proper soundset",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "cn": 304,
+      "n": "Give Mariliths their Icewind Dale soundset",
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED. NON-EE ONLY — REQUIRE_PREDICATE ENGINE_IS ~tob~. Will not install on EET.",
+      "tp2n": "Give Mariliths their Icewind Dale soundset",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "n": "Distinctive creature coloring",
+      "cn": 310,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 310,
+      "wq": "exact",
+      "no": "Gives distinctive coloring to creature types (e.g., green for trolls, blue for ogre magi).",
+      "tp2n": "Distinctive creature coloring",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "n": "Distinctive creature soundsets",
+      "cn": 315,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 315,
+      "wq": "exact",
+      "no": "Gives distinctive soundsets to creature types.",
+      "tp2n": "Distinctive creature soundsets",
+      "grn": "Cosmetic tweaks"
+    },
+    {
+      "n": "Storage Capacity: Recommended (999)",
+      "no": "v Slightly expanded storage capacity for containers",
+      "cn": 500,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 500,
+      "wq": "exact",
+      "g": "storage_cap",
+      "scn": "Slightly expanded storage capacity for containers",
+      "grn": "Miscellaneous tweaks",
+      "tp2n": "Use the recommended storage capacity value (999)"
+    },
+    {
+      "n": "Storage Capacity: Custom value",
+      "cn": 502,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 502,
+      "wq": "exact",
+      "g": "storage_cap",
+      "scn": "Slightly expanded storage capacity for containers",
+      "grn": "Miscellaneous tweaks",
+      "no": "Manual storage capacity — ACTION_READLN prompts for custom value. Cannot be automated",
+      "in": [
+        {
+          "t": "This component prompts for manual storage capacity input (ACTION_READLN) — cannot be automated.",
+          "type": "manual"
+        }
+      ],
+      "tp2n": "Manually enter the storage capacity value"
+    },
+    {
+      "n": "Expanded temple services",
+      "no": "Heavy containers may cause slowdowns when carrying many items",
+      "cn": 510,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 510,
+      "wq": "exact",
+      "tp2n": "Expanded temple services",
+      "grn": "Miscellaneous tweaks"
+    },
+    {
+      "n": "BG2-style icons for aTweaks content",
+      "cn": 999,
+      "wf": "aTweaks",
+      "wp": "aTweaks\\SETUP-ATWEAKS.TP2",
+      "wc": 999,
+      "wq": "exact",
+      "no": "Updates aTweaks-added content to use BG2-style inventory icons.",
+      "tp2n": "BG2-style icons for aTweaks content",
+      "grn": "Miscellaneous tweaks"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "aTweaks scroll scribing changes may interact with cdtweaks storekeeper identification limits",
+      "myComps": "#115 #117 Scroll scribing",
+      "theirComps": "#2190 #2191 #2192 Storekeeper Identification",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "aTweaks expanded save tables and jtweaks save-related fixes may interact",
+      "myComps": "#213 Expanded saving throw tables",
+      "theirComps": "#90 Wish Hardiness #200 Elemental protection",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

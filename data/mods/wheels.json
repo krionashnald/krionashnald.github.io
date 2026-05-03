@@ -1,0 +1,100 @@
+{
+  "i": 112,
+  "t": "wheels",
+  "sv": 1,
+  "pfx": "DW",
+  "ord": 40,
+  "c": "QUEST MODS ToB",
+  "n": "Wheels of Prophecy",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "zh-cn": 2,
+    "ru": 3
+  },
+  "no": "DavidW warns WoP may not fully work on EE. Install before SCS. FORBID: SCS component 5900 (Improved Abazigal). Recommended with Ascension.",
+  "ic": "Ascension (balthazar issues, hopefully to be fixed in future releases)",
+  "conflicts": [
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "hard",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "myComps": "#0 Wheels of Prophecy",
+      "theirComps": "#0 Imoen Romance",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "soft",
+      "reason": "Wheels REPLACE on FINSOL01 states 0-2/4/33 does not affect Kelsey (states 16/27-32). Both use EXTEND_BOTTOM on 27-32 safely. Install Kelsey before Wheels.",
+      "orderOnly": true,
+      "myComps": "#0 Wheels of Prophecy",
+      "theirComps": "#4 Ascension-specific dialogue",
+      "source": "Wheels REPLACE only states 0-2,4,33; Kelsey modifies 16,27-32; no overlap on replaced states, 2026-03"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "balthazar",
+          "portraits/wheels/nbaltha.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/WheelsOfProphecy/releases",
+  "a": "DavidW",
+  "v": "v8.5",
+  "sum": "Overhauls how ToB's prophecy storyline unfolds, giving you more control over the Bhaalspawn plot. Changes the pacing and choices in Chapters 9-10.",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "WheelsOfProphecy"
+  },
+  "au": "DavidW",
+  "dl": "https://github.com/Gibberlings3/WheelsOfProphecy/releases",
+  "co": [
+    {
+      "n": "The Wheels of Prophecy",
+      "tp2n": "The Wheels of Prophecy",
+      "cn": 0,
+      "wf": "wheels",
+      "wp": "wheels\\setup-wheels.tp2",
+      "wc": 0,
+      "no": "Overhauls the ToB prophecy system with better pacing and choices."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "tobr",
+      "withId": 578,
+      "severity": "soft",
+      "reason": "ToBR Solar component modifies itpplane.bcs without WoP detection. May interact with WoP challenge flow. Grove (cn:4) does detect WoP.",
+      "myComps": "#0 Wheels of Prophecy",
+      "theirComps": "#2 Solar",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "partial",
+      "reason": "Both modify ToB endgame. WoP MUST install BEFORE Ascension — WoP detects Ascension absence and adjusts content. Balthazar redemption path and throne room flow are fragile when both installed. c7-fixwheels mod REQUIRED to fix variable bug (fin_balth_checkpoint_passed vs DMWWGroveRevealed) preventing quest completion. Ascension has FORBID_COMPONENT for setup-wheels.tp2 but path matching may not trigger in all setups.",
+      "myComps": "#0 Wheels of Prophecy",
+      "theirComps": "#0 Rewritten Final Chapter / #10 Balthazar can be redeemed",
+      "source": "WoP before Ascension; c7-fixwheels handles variable bug, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "BERSERKER": { "n": "Berserker", "class": "fighter", "desc": "Enrage ability grants bonus THAC0, damage, AC, and HP but cannot be controlled. Immune to level drain, fear, and charm while enraged." },
+  "WIZARDSLAYER": { "n": "Wizard Slayer", "class": "fighter", "desc": "Each hit applies cumulative spell failure on target. Magic resistance increases with level. Cannot use any magic items except weapons and armor." },
+  "KENSAI": { "n": "Kensai", "class": "fighter", "desc": "Kai ability maximizes damage for one round. Bonus to hit and damage, bonus AC. Cannot wear armor or use ranged weapons." },
+
+  "ARCHER": { "n": "Archer", "class": "ranger", "desc": "Called Shot ability applies penalties to target. Bonus THAC0 and damage with ranged weapons. Cannot wear metal armor." },
+  "STALKER": { "n": "Stalker", "class": "ranger", "desc": "Backstab ability (up to x3). Gains Haste and Minor Spell Deflection as innate abilities. Cannot wear heavier than studded leather." },
+  "BEASTMASTER": { "n": "Beastmaster", "class": "ranger", "desc": "Enhanced animal summoning and Find Familiar. Cannot wear metal armor or use metal weapons." },
+
+  "CAVALIER": { "n": "Cavalier", "class": "paladin", "desc": "Immune to fear, charm, and poison. Remove Fear 1/day. Bonus damage vs. fiends and dragons. Cannot use ranged weapons." },
+  "INQUISITOR": { "n": "Inquisitor", "class": "paladin", "desc": "Dispel Magic at 2x level, True Seeing 1/day. Immune to charm and hold. Cannot use Lay on Hands or priest spells." },
+  "UNDEAD_HUNTER": { "n": "Undead Hunter", "class": "paladin", "desc": "Bonus THAC0 and damage vs. undead. Immune to hold and level drain. Cannot use Lay on Hands." },
+
+  "PRIEST_OF_TALOS": { "n": "Priest of Talos", "class": "cleric", "desc": "Lightning Bolt 1/day. Storm Shield ability. Bonus to electrical damage spells. Cannot use non-evil aligned spells." },
+  "PRIEST_OF_HELM": { "n": "Priest of Helm", "class": "cleric", "desc": "True Seeing 1/day. Seeking Sword ability. Cannot use non-neutral aligned spells." },
+  "PRIEST_OF_LATHANDER": { "n": "Priest of Lathander", "class": "cleric", "desc": "Boon of Lathander grants bonus THAC0, damage, saves, and HP. Hold Undead ability. Cannot use non-good aligned spells." },
+
+  "TOTEMIC_DRUID": { "n": "Totemic Druid", "class": "druid", "desc": "Summon Spirit Animal ability calls a powerful spirit creature that improves with level. Cannot shapeshift." },
+  "SHAPESHIFTER": { "n": "Shapeshifter", "class": "druid", "desc": "Greater Werewolf shapeshift form. Regeneration in werewolf form. Cannot wear armor." },
+  "AVENGER": { "n": "Avenger", "class": "druid", "desc": "Gains limited mage spells (Chromatic Orb, Web, Lightning Bolt, etc.) and additional shapeshift forms (sword spider, baby wyvern, fire salamander)." },
+
+  "ASSASSIN": { "n": "Assassin", "class": "thief", "desc": "Poison Weapon ability. Higher backstab multiplier (up to x7). Cannot distribute more than 15 points per skill." },
+  "BOUNTY_HUNTER": { "n": "Bounty Hunter", "class": "thief", "desc": "Special Snare ability with additional effects (slow, stun, hold, etc.). Bonus to Set Traps. Cannot distribute more than 15 points per skill." },
+  "SWASHBUCKLER": { "n": "Swashbuckler", "class": "thief", "desc": "Bonus AC, THAC0, and damage scaling with level. Whirlwind-style extra attack. Cannot backstab." },
+
+  "BLADE": { "n": "Blade", "class": "bard", "desc": "Offensive Spin and Defensive Spin abilities. Extra proficiency pip. Reduced Bard Song and lore." },
+  "JESTER": { "n": "Jester", "class": "bard", "desc": "Bard Song confuses enemies instead of buffing allies. No Pick Pockets ability." },
+  "SKALD": { "n": "Skald", "class": "bard", "desc": "Enhanced Bard Song grants THAC0, damage, and AC bonuses to allies. Bonus to hit and damage. No Pick Pockets." },
+
+  "ABJURER": { "n": "Abjurer", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Alteration spells." },
+  "CONJURER": { "n": "Conjurer", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Divination spells." },
+  "DIVINER": { "n": "Diviner", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Conjuration spells." },
+  "ENCHANTER": { "n": "Enchanter", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Invocation spells." },
+  "ILLUSIONIST": { "n": "Illusionist", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Necromancy spells." },
+  "INVOKER": { "n": "Invoker", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Enchantment spells." },
+  "NECROMANCER": { "n": "Necromancer", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Illusion spells." },
+  "TRANSMUTER": { "n": "Transmuter", "class": "mage", "desc": "Specialist wizard. Extra spell slot per level. Cannot cast Abjuration spells." },
+
+  "SUN_SOUL_MONK": { "n": "Sun Soul Monk", "class": "monk", "desc": "Flaming Fists and Sun Soulray ranged attacks. Sun Soulbeam at high level. Trades some monk abilities for sun-themed powers." },
+  "DARK_MOON_MONK": { "n": "Dark Moon Monk", "class": "monk", "desc": "Frozen Fist and Blindness abilities. Can use Blur and Vampiric Touch. Trades some monk abilities for shadow powers." },
+
+  "DRAGON_DISCIPLE": { "n": "Dragon Disciple", "class": "sorcerer", "desc": "Breath Weapon fire attack. Bonus AC, HP, and fire resistance. Fewer spells known per level than base sorcerer." },
+
+  "BLACKGUARD": { "n": "Blackguard", "class": "paladin", "desc": "Evil counterpart to paladin. Absorb Health, Aura of Despair, and poison weapon. Can use Unholy Reaver. Must be evil." },
+
+  "DWARVEN_DEFENDER": { "n": "Dwarven Defender", "class": "fighter", "desc": "Defensive Stance grants damage resistance and AC bonus. High HP. Dwarves only. Cannot be proficient in ranged weapons." },
+
+  "SHADOWDANCER": { "n": "Shadowdancer", "class": "thief", "desc": "Shadow Step teleport and Hide in Plain Sight. Summon Shadow as HLA. Reduced backstab multiplier and skill distribution." },
+
+  "PRIEST_OF_TYR": { "n": "Priest of Tyr", "class": "cleric", "desc": "EE addition. Gains Exaltation to bolster allies and Remove Fear. War domain with bonus combat abilities." },
+  "PRIEST_OF_TEMPUS": { "n": "Priest of Tempus", "class": "cleric", "desc": "EE addition. Chaos of Battle grants random bonus. Bonus to physical combat. War-focused divine caster." }
+}

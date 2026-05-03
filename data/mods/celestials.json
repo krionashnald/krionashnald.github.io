@@ -1,0 +1,71 @@
+{
+  "i": 360,
+  "t": "celestials",
+  "sv": 1,
+  "ord": 160,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "\"P&P Celestials\"",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "pl": 3,
+    "ru": 4,
+    "it": 5,
+    "es": 6
+  },
+  "no": "PnP Celestials \"Celestials has limited interaction with other mods. It will clone existing spells into innates, so it should go after other mods which alter spells, but other than that it basically ignores existing celestial changes and rolls its own creature files and scripting.\" Meaning PnP Celestials goes after the most important spell changes, at the very least. This includes the spell tweaks shared by ToF and SCS Also changes celestial character models to vary based on type so devas, planetars, and solars look different.",
+  "u": "https://github.com/Gibberlings3/PnP_Celestials/releases",
+  "a": "Caedwyr",
+  "v": "v10",
+  "sum": "This mod modifies the Devas and Planetars that are summoned by the player so they gain most of their Monster Manual abilities and stats. I have taken some small liberties in how I adapted some of these abilities. Since the devas and planetars that are summoned are level 25 creatures and the monster manual lists them as much lower level creatures, I have chosen a class for each of the creatures and increased their statistics according to their class. ",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "PnP_Celestials"
+  },
+  "dl": "https://github.com/Gibberlings3/PnP_Celestials/releases",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "PnP Celestials",
+      "tp2n": "PnP Celestials",
+      "pi": "PnP_Celestials",
+      "wf": "celestials",
+      "wp": "celestials\\SETUP-CELESTIALS.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0
+    },
+    {
+      "n": "Deva and Planetar Animations",
+      "tp2n": "Deva and Planetar Animations",
+      "pi": "PnP_Celestials_animations",
+      "wf": "celestials",
+      "wp": "celestials\\SETUP-CELESTIALS.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1
+    }
+  ]
+}

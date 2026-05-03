@@ -1,0 +1,70 @@
+{
+  "i": 574,
+  "t": "KITTOMES",
+  "sv": 1,
+  "ord": 440,
+  "c": "QUEST MODS BG1",
+  "n": "Kit Tomes",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "eet",
+      "withId": 12,
+      "severity": "hard",
+      "reason": "Not in EET compatibility.tbl — EET install will fail unless bypassed with M flag. Mod tp2 has no EET detection.",
+      "source": "EET compatibility.tbl (absent), tp2 analysis (mleduque/s9-kittomes), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/mleduque/s9-kittomes",
+  "a": "Smeagolheart",
+  "sum": "Adds magical career tomes to BG1 that let you add a kit to any PC or NPC character, enabling normally impossible kit combinations.",
+  "tags": [
+    "story",
+    "class"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/mleduque/s9-kittomes",
+  "no": "Adds magical career tomes to BG1 that let you add a kit to any PC or NPC character, enabling normally impossible kit combinations.",
+  "au": "supercliffette",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Kit Tomes for BG:EE, EET, BGT and TuTu",
+      "cn": 0,
+      "wf": "KITTOMES",
+      "wp": "KITTOMES\\SETUP-KITTOMES.TP2",
+      "wc": 0,
+      "no": "Adds kit-specific tomes to BG1."
+    },
+    {
+      "n": "Panver's Merchandise -> Panver Sells 2 Tomes per Kit",
+      "cn": 2,
+      "wf": "KITTOMES",
+      "wp": "KITTOMES\\SETUP-KITTOMES.TP2",
+      "wc": 2,
+      "no": "Panver sells 2 tomes per kit."
+    },
+    {
+      "n": "Tome Locations -> Merchandise Only-> Panver is outside the Friendly Arm Inn",
+      "cn": 6,
+      "wf": "KITTOMES",
+      "wp": "KITTOMES\\SETUP-KITTOMES.TP2",
+      "wc": 6,
+      "no": "Panver located outside the Friendly Arm Inn."
+    }
+  ],
+  "gh": {
+    "o": "mleduque",
+    "r": "s9-kittomes"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "i": 161,
+  "t": "kelsey",
+  "sv": 1,
+  "pfx": "J#",
+  "ord": 400,
+  "c": "NEW NPC MODS",
+  "n": "Kelsey NPC",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "de": 2,
+    "ru": 3
+  },
+  "no": "Kelsey NG Male Human Sorcerer.Install Kelsey after Ascension and Solaufein mods.Install Kelsey before Keto, Nathaniel for BG2, and Yasraena.",
+  "conflicts": [
+    {
+      "with": "ascension",
+      "withId": 109,
+      "severity": "soft",
+      "reason": "Install Kelsey after Ascension. Kelsey has a dedicated Ascension compatibility component (#4) that adds interjections to Ascension's revised ToB finale. No evidence of dialogue blocking.",
+      "orderOnly": true,
+      "myComps": "#4 Ascension-specific dialogue",
+      "theirComps": "#0 Rewritten Final Chapter of Throne of Bhaal",
+      "source": "Kelsey tp2 comp 4 kelsey-asc.d patches FINBODH/FINMEL01 with APPEND; FATESP.d adds summon options. GitHub issue PPG/Kelsey#1 open since 2020 with no repro. Original entry copy-pasted from ImoenRomance conflict template, 2026-03"
+    },
+    {
+      "with": "banterpack",
+      "withId": 236,
+      "severity": "partial",
+      "reason": "Both install identical bantergoose banter accelerator script. Kelsey #3 is DEPRECATED by its own authors. Use Banter Pack #1 instead and skip Kelsey #3. All other Kelsey components (#0, #1, #4) are fully compatible with Banter Pack.",
+      "myComps": "#3 Banter Accelerator (DEPRECATED)",
+      "theirComps": "#1 SoA Banter Accelerator",
+      "source": "Kelsey tp2 DESIGNATED 3 marked DEPRECATED. Banter Pack has FORBID_FILE bantergoose.xxx check. Identical scripts, 2026-03"
+    },
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "soft",
+      "reason": "Both EXTEND_BOTTOM FINSOL01 29-32 and FATESP 6 with romance-specific guards. Additive ops, mutually exclusive conditions (only one romance active).",
+      "myComps": "#4 Ascension-specific dialogue",
+      "theirComps": "#0 Edwin Romance",
+      "source": "Both use EXTEND_BOTTOM with independent romance globals; standard WeiDU additive pattern, 2026-03"
+    },
+    {
+      "with": "chloe",
+      "withId": 556,
+      "severity": "soft",
+      "reason": "Chloe uses I_C_T on FINSOL01 27-32, Kelsey uses EXTEND_BOTTOM. Both additive, independent party checks.",
+      "myComps": "#4 Ascension-specific dialogue",
+      "theirComps": "#1 Chloe EET (Extended content)",
+      "source": "ChloeEET I_C_T and Kelsey EXTEND_BOTTOM are both additive WeiDU ops on FINSOL01, 2026-03"
+    },
+    {
+      "with": "wheels",
+      "withId": 112,
+      "severity": "soft",
+      "reason": "Wheels REPLACE on FINSOL01 states 0-2/4/33 does not affect Kelsey (states 16/27-32). Both use EXTEND_BOTTOM on 27-32 safely. Install Kelsey before Wheels.",
+      "orderOnly": true,
+      "myComps": "#4 Ascension-specific dialogue",
+      "theirComps": "#0 Wheels of Prophecy",
+      "source": "Wheels REPLACE only states 0-2,4,33; Kelsey modifies 16,27-32; no overlap on replaced states, 2026-03"
+    },
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "soft",
+      "reason": "Both modify FINSOL01 states 27-32 but use additive EXTEND_BOTTOM/I_C_T with independent conditions. Install Longer Road before Kelsey.",
+      "myComps": "#4 Ascension-specific dialogue",
+      "theirComps": "#0 Longer Road",
+      "source": "PPG/Kelsey tp2 uses EXTEND_BOTTOM/I_C_T on FINSOL01 27-32, LR uses same; additive ops, different guards, 2026-03"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "jasteys_solaufein",
+      "requiresId": 138,
+      "type": "soft",
+      "reason": "Romance \"conflict\" reactions/Solaufein (updated: jastey version)"
+    },
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "soft",
+      "reason": "Kelsey needs Ascension to talk about it"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "kelsey",
+          "portraits/kelsey/j_klsy.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Pocket-Plane-Group/Kelsey/releases",
+  "a": "Jason Compton & Ghreyfain; K4thos",
+  "v": "V6",
+  "sum": "Adds Kelsey, a sorcerer, as a joinable BG2 NPC with one of the most extensive romance and dialogue mods ever made. Fully voiced with thousands of lines.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Kelsey"
+  },
+  "au": "jcompton",
+  "dl": "https://github.com/Pocket-Plane-Group/Kelsey",
+  "co": [
+    {
+      "n": "Kelsey",
+      "cn": 0,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Kelsey"
+    },
+    {
+      "n": "Kelsey/Solaufein Content: Banter and Romance ConflictOPTIONAL, RECOMMENDED ONLY for use with Solaufein V60 AND ABOVE",
+      "cn": 1,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "no": "Requires Solaufein mod. Remove if Solaufein not installed.",
+      "tp2n": "Kelsey/Solaufein Content: Banter and Romance Conflict\nOPTIONAL, RECOMMENDED ONLY for use with Solaufein V60 AND ABOVE"
+    },
+    {
+      "n": "Install Alternate Kelsey portrait set #1, by Karse Soze (hooded Kelsey)?",
+      "cn": 2,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Alternate Kelsey portrait set #1, by Karse Soze (hooded Kelsey)?",
+      "scn": "Alternate portraits"
+    },
+    {
+      "n": "Install Alternate Kelsey portrait set #2, by Frida",
+      "cn": 20,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Alternate Kelsey portrait set #2, by Frida",
+      "scn": "Alternate portraits"
+    },
+    {
+      "n": "Install Alternate Kelsey portrait set #3, by Indi",
+      "cn": 21,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Alternate Kelsey portrait set #3, by Indi",
+      "scn": "Alternate portraits"
+    },
+    {
+      "n": "Install Alternate Kelsey portrait set #4, by Wynne Lurty",
+      "cn": 22,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Alternate Kelsey portrait set #4, by Wynne Lurty",
+      "scn": "Alternate portraits"
+    },
+    {
+      "n": "Install Alternate Kelsey portrait set #5, by Cliffette",
+      "cn": 23,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Alternate Kelsey portrait set #5, by Cliffette",
+      "scn": "Alternate portraits"
+    },
+    {
+      "n": "Install Banter Accelerator script?\n(Increases the frequency of interparty banter both from Kelsey and other NPCs)",
+      "cn": 3,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wq": "verified",
+      "tp2n": "Install Banter Accelerator script?\n(Increases the frequency of interparty banter both from Kelsey and other NPCs)"
+    },
+    {
+      "n": "Ascension-specific dialogue (Requires WeiDU Ascension, v1.4.12 or greater recommended)",
+      "cn": 4,
+      "wf": "kelsey",
+      "wp": "kelsey\\KELSEY.TP2",
+      "wc": 4,
+      "wq": "verified",
+      "no": "mod_installer: Fails with J#KLS25J.DLG not found. Kelsey ToB dialogue (cn:2) must be installed first, and this component may need a newer Kelsey version.",
+      "tp2n": "Ascension-specific dialogue (Requires WeiDU Ascension, v1.4.12 or greater recommended)"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "i": 147,
+  "t": "L#QUAYLEBG2",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 260,
+  "c": "NEW NPC MODS",
+  "n": "Quayle",
+  "no": "Quayle BG2",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "hard",
+      "reason": "Choose one Quayle and Tiax in BG2 WeiDU auto-skips the bg1npcsoa version when standalone Quayle detected.",
+      "myComps": "#0 Quayle NPC",
+      "theirComps": "#0 Gnomes in the City",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/quayle-bg2/",
+  "a": "Lava Del'Vortel",
+  "sum": "Brings Quayle from BG1 back as a joinable NPC in BG2, available as an alternative to Aerie through a mini-quest with a new area.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/quayle-bg2/",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "quayle",
+          "portraits/l_quaylebg2/ququay.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Quayle NPC for Baldur's Gate 2",
+      "pi": "L#-QUAYLEBG2",
+      "wf": "L#QUAYLEBG2",
+      "wp": "L#QUAYLEBG2\\L#QUAYLEBG2.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0
+    },
+    {
+      "n": "Quayle NPC: Player-Initiated Dialogues",
+      "pi": "L#-QUAYLEBG2-PID",
+      "wf": "L#QUAYLEBG2",
+      "wp": "L#QUAYLEBG2\\L#QUAYLEBG2.TP2",
+      "wq": "verified",
+      "cn": 1,
+      "x": 0,
+      "no": "Player-initiated dialogues. Requires main component"
+    }
+  ]
+}

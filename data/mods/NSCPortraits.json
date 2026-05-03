@@ -1,0 +1,741 @@
+{
+  "i": 931,
+  "t": "NSCPortraits",
+  "sv": 1,
+  "ord": 270,
+  "c": "PORTRAITS",
+  "n": "Gerri's NPC Portraits",
+  "u": "https://github.com/gboeck/NSC-Portraits",
+  "a": "Gerri",
+  "sum": "Replacement NPC portraits for BGT and EET. Covers BG1, BG2, and many popular mod NPCs including DSotSC, NTotSC, and Solaufein.",
+  "tags": [
+    "portrait"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Gerri",
+  "dl": "https://github.com/gboeck/NSC-Portraits",
+  "no": "NPC portrait replacements for BGT and EET by Gerri. 53 components covering BG1, BG2/ToB, and popular mod NPCs (DSotSC, NTotSC, Solaufein, etc.). Includes alternate character-creation portraits. German community mod (Kerzenburgforum).",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "nsc_aino",
+          "portraits/nscportraits/aino.png",
+          "bg2"
+        ],
+        [
+          "nsc_artemis",
+          "portraits/nscportraits/artemis.png",
+          "bg2"
+        ],
+        [
+          "nsc_avaun",
+          "portraits/nscportraits/avaun.png",
+          "bg2"
+        ],
+        [
+          "nsc_bardo",
+          "portraits/nscportraits/bardo.png",
+          "bg2"
+        ],
+        [
+          "nsc_bruen",
+          "portraits/nscportraits/bruen.png",
+          "bg2"
+        ],
+        [
+          "nsc_bruenor",
+          "portraits/nscportraits/bruenor.png",
+          "bg2"
+        ],
+        [
+          "nsc_catt",
+          "portraits/nscportraits/catt.png",
+          "bg2"
+        ],
+        [
+          "nsc_drizzt",
+          "portraits/nscportraits/drizzt.png",
+          "bg2"
+        ],
+        [
+          "nsc_j_goo",
+          "portraits/nscportraits/j_goo.png",
+          "bg2"
+        ],
+        [
+          "nsc_jarlx",
+          "portraits/nscportraits/jarlx.png",
+          "bg2"
+        ],
+        [
+          "nsc_kim",
+          "portraits/nscportraits/kim.png",
+          "bg2"
+        ],
+        [
+          "nsc_lynn",
+          "portraits/nscportraits/lynn.png",
+          "bg2"
+        ],
+        [
+          "nsc_olmar",
+          "portraits/nscportraits/olmar.png",
+          "bg2"
+        ],
+        [
+          "nsc_ril",
+          "portraits/nscportraits/ril.png",
+          "bg2"
+        ],
+        [
+          "nsc_talavan",
+          "portraits/nscportraits/talavan.png",
+          "bg2"
+        ],
+        [
+          "nsc_vesine",
+          "portraits/nscportraits/vesine.png",
+          "bg2"
+        ],
+        [
+          "nsc_willy",
+          "portraits/nscportraits/willy.png",
+          "bg2"
+        ],
+        [
+          "nsc_wulfgar",
+          "portraits/nscportraits/wulfgar.png",
+          "bg2"
+        ]
+      ]
+    },
+    "pc": {
+      "51": {
+        "label": "Gerri's Character Creation Portraits",
+        "images": [
+          "portraits/nscportraits/fbarba1.png",
+          "portraits/nscportraits/fbarba2.png",
+          "portraits/nscportraits/fbard1.png",
+          "portraits/nscportraits/fbard2.png",
+          "portraits/nscportraits/fbard3.png",
+          "portraits/nscportraits/fcleri1.png",
+          "portraits/nscportraits/fcleri2.png",
+          "portraits/nscportraits/fcleri3.png",
+          "portraits/nscportraits/fcleri4.png",
+          "portraits/nscportraits/fdrow1.png",
+          "portraits/nscportraits/fdrow2.png",
+          "portraits/nscportraits/fdrow3.png",
+          "portraits/nscportraits/fdruid1.png",
+          "portraits/nscportraits/fdruid2.png",
+          "portraits/nscportraits/fdruid3.png",
+          "portraits/nscportraits/fdwarf1.png",
+          "portraits/nscportraits/fdwarf2.png",
+          "portraits/nscportraits/felf1.png",
+          "portraits/nscportraits/felf2.png",
+          "portraits/nscportraits/felf3.png",
+          "portraits/nscportraits/ffight1.png",
+          "portraits/nscportraits/ffight2.png",
+          "portraits/nscportraits/ffight3.png",
+          "portraits/nscportraits/fgnom1.png",
+          "portraits/nscportraits/fgnom2.png",
+          "portraits/nscportraits/fhalfl1.png",
+          "portraits/nscportraits/fhalfl2.png",
+          "portraits/nscportraits/fhalfl3.png",
+          "portraits/nscportraits/fmag1.png",
+          "portraits/nscportraits/fmage2.png",
+          "portraits/nscportraits/fmage3.png",
+          "portraits/nscportraits/fmage4.png",
+          "portraits/nscportraits/forc1.png",
+          "portraits/nscportraits/fpalad1.png",
+          "portraits/nscportraits/fpalad2.png",
+          "portraits/nscportraits/fpalad3.png",
+          "portraits/nscportraits/frange1.png",
+          "portraits/nscportraits/frange2.png",
+          "portraits/nscportraits/frange3.png",
+          "portraits/nscportraits/frange4.png",
+          "portraits/nscportraits/frogue1.png",
+          "portraits/nscportraits/frogue2.png",
+          "portraits/nscportraits/frogue3.png",
+          "portraits/nscportraits/frogue4.png",
+          "portraits/nscportraits/mbarba1.png",
+          "portraits/nscportraits/mbarba2.png",
+          "portraits/nscportraits/mbarba3.png",
+          "portraits/nscportraits/mbard1.png",
+          "portraits/nscportraits/mbard2.png",
+          "portraits/nscportraits/mbard3.png",
+          "portraits/nscportraits/mcleri1.png",
+          "portraits/nscportraits/mcleri2.png",
+          "portraits/nscportraits/mcleri3.png",
+          "portraits/nscportraits/mdrow1.png",
+          "portraits/nscportraits/mdrow2.png",
+          "portraits/nscportraits/mdrow3.png",
+          "portraits/nscportraits/mdruid1.png",
+          "portraits/nscportraits/mdruid2.png",
+          "portraits/nscportraits/mdwarf1.png",
+          "portraits/nscportraits/mdwarf3.png",
+          "portraits/nscportraits/melf1.png",
+          "portraits/nscportraits/melf2.png",
+          "portraits/nscportraits/melf3.png",
+          "portraits/nscportraits/mfight1.png",
+          "portraits/nscportraits/mfight2.png",
+          "portraits/nscportraits/mfight3.png",
+          "portraits/nscportraits/mfight4.png",
+          "portraits/nscportraits/mgnom1.png",
+          "portraits/nscportraits/mgnom2.png",
+          "portraits/nscportraits/mgnom3.png",
+          "portraits/nscportraits/mhalfl1.png",
+          "portraits/nscportraits/mhalfl2.png",
+          "portraits/nscportraits/mmage1.png",
+          "portraits/nscportraits/mmage2.png",
+          "portraits/nscportraits/mmage3.png",
+          "portraits/nscportraits/mmage4.png",
+          "portraits/nscportraits/mmonk1.png",
+          "portraits/nscportraits/morc1.png",
+          "portraits/nscportraits/mpalad1.png",
+          "portraits/nscportraits/mpalad2.png",
+          "portraits/nscportraits/mpalad3.png",
+          "portraits/nscportraits/mpalad4.png",
+          "portraits/nscportraits/mpalad5.png",
+          "portraits/nscportraits/mrange1.png",
+          "portraits/nscportraits/mrange2.png",
+          "portraits/nscportraits/mrange3.png",
+          "portraits/nscportraits/mrogue2.png",
+          "portraits/nscportraits/mrogue3.png"
+        ]
+      }
+    }
+  },
+  "langs": {
+    "en": 0,
+    "de": 1
+  },
+  "co": [
+    {
+      "n": "Portraits for BG1 (BGT or EET)",
+      "cn": 0,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "tp2n": "Portraits for BG1 (BGT or EET)"
+    },
+    {
+      "n": "Portraits for BG2 and ToB",
+      "cn": 1,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "Portraits for BG2 and ToB"
+    },
+    {
+      "n": "Portraits for Dark Side of the Sword Coast",
+      "cn": 10,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 10,
+      "wq": "verified",
+      "tp2n": "Portraits for Dark Side of the Sword Coast"
+    },
+    {
+      "n": "Portraits for Northern Tales of the Sword Coast",
+      "cn": 20,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 20,
+      "wq": "verified",
+      "tp2n": "Portraits for Northern Tales of the Sword Coast"
+    },
+    {
+      "n": "Alternate Portrait for Will Scarlet of NTotSC",
+      "cn": 21,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 21,
+      "wq": "verified",
+      "tp2n": "Alternate Portrait for Will Scarlet of NTotSC"
+    },
+    {
+      "n": "Portraits for Secret of Bone Hill",
+      "cn": 30,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 30,
+      "wq": "verified",
+      "tp2n": "Portraits for Secret of Bone Hill"
+    },
+    {
+      "n": "Portraits for Stone of Askavar",
+      "cn": 50,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 50,
+      "wq": "verified",
+      "tp2n": "Portraits for Stone of Askavar"
+    },
+    {
+      "n": "Portraits for BG1 Mini-Quests and Encounters",
+      "cn": 300,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 300,
+      "wq": "verified",
+      "tp2n": "Portraits for BG1 Mini-Quests and Encounters"
+    },
+    {
+      "n": "Portraits for Lure of the Sirines Call",
+      "cn": 305,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 305,
+      "wq": "verified",
+      "tp2n": "Portraits for Lure of the Sirines Call"
+    },
+    {
+      "n": "Portraits for Grey Clan Episode I",
+      "cn": 310,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 310,
+      "wq": "verified",
+      "tp2n": "Portraits for Grey Clan Episode I"
+    },
+    {
+      "n": "Portraits for The Darkest Day",
+      "cn": 1000,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1000,
+      "wq": "verified",
+      "tp2n": "Portraits for The Darkest Day"
+    },
+    {
+      "n": "Alternate NPC-Portraits for The Darkest Day",
+      "cn": 1001,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1001,
+      "wq": "verified",
+      "tp2n": "Alternate NPC-Portraits for The Darkest Day"
+    },
+    {
+      "n": "Portraits for Region of Terror",
+      "cn": 1030,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1030,
+      "wq": "verified",
+      "tp2n": "Portraits for Region of Terror"
+    },
+    {
+      "n": "Alternate NPC-Portraits for Region of Terror",
+      "cn": 1031,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1031,
+      "wq": "verified",
+      "tp2n": "Alternate NPC-Portraits for Region of Terror"
+    },
+    {
+      "n": "Portraits for Tortured Souls (TS-BP)",
+      "cn": 1050,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1050,
+      "wq": "verified",
+      "tp2n": "Portraits for Tortured Souls (TS-BP)"
+    },
+    {
+      "n": "Alternate NPC-Portraits for Tortured Souls (TS-BP)",
+      "cn": 1051,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1051,
+      "wq": "verified",
+      "tp2n": "Alternate NPC-Portraits for Tortured Souls (TS-BP)"
+    },
+    {
+      "n": "Portraits for Tower of Deception",
+      "cn": 1300,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1300,
+      "wq": "verified",
+      "tp2n": "Portraits for Tower of Deception"
+    },
+    {
+      "n": "Portraits for Assassinations",
+      "cn": 1310,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1310,
+      "wq": "verified",
+      "tp2n": "Portraits for Assassinations"
+    },
+    {
+      "n": "Portraits for Dungeon Crawl",
+      "cn": 1320,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1320,
+      "wq": "verified",
+      "tp2n": "Portraits for Dungeon Crawl"
+    },
+    {
+      "n": "Portraits for BG2 Romantic Encounters",
+      "cn": 1330,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1330,
+      "wq": "verified",
+      "tp2n": "Portraits for BG2 Romantic Encounters"
+    },
+    {
+      "n": "Portraits for BG1 Romantic Encounters",
+      "cn": 1780,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1780,
+      "wq": "verified",
+      "tp2n": "Portraits for BG1 Romantic Encounters"
+    },
+    {
+      "n": "Portraits for Tales of Anegh",
+      "cn": 1350,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1350,
+      "wq": "verified",
+      "tp2n": "Portraits for Tales of Anegh"
+    },
+    {
+      "n": "Portraits for Ascalon's Questpack",
+      "cn": 1380,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1380,
+      "wq": "verified",
+      "tp2n": "Portraits for Ascalon's Questpack"
+    },
+    {
+      "n": "Portraits for Tales of the Deep Gardens",
+      "cn": 1360,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1360,
+      "wq": "verified",
+      "tp2n": "Portraits for Tales of the Deep Gardens"
+    },
+    {
+      "n": "Portraits for Dark Horizons",
+      "cn": 1370,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1370,
+      "wq": "verified",
+      "tp2n": "Portraits for Dark Horizons"
+    },
+    {
+      "n": "Portraits for Jan's Quest",
+      "cn": 1390,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1390,
+      "wq": "verified",
+      "tp2n": "Portraits for Jan's Quest"
+    },
+    {
+      "n": "Portraits for Planar Sphere",
+      "cn": 1400,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1400,
+      "wq": "verified",
+      "tp2n": "Portraits for Planar Sphere"
+    },
+    {
+      "n": "Portraits for Innershade",
+      "cn": 1410,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1410,
+      "wq": "verified",
+      "tp2n": "Portraits for Innershade"
+    },
+    {
+      "n": "Portraits for Fishing for Trouble",
+      "cn": 1420,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1420,
+      "wq": "verified",
+      "tp2n": "Portraits for Fishing for Trouble"
+    },
+    {
+      "n": "Portraits for Eilistraees Song",
+      "cn": 1430,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1430,
+      "wq": "verified",
+      "tp2n": "Portraits for Eilistraees Song"
+    },
+    {
+      "n": "Portraits for Expanded Thief Stronghold",
+      "cn": 1440,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1440,
+      "wq": "verified",
+      "tp2n": "Portraits for Expanded Thief Stronghold"
+    },
+    {
+      "n": "Portraits for Gavin in BG1",
+      "cn": 1450,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1450,
+      "wq": "verified",
+      "tp2n": "Portraits for Gavin in BG1"
+    },
+    {
+      "n": "Portraits for Return to Brynnlaw",
+      "cn": 1470,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1470,
+      "wq": "verified",
+      "tp2n": "Portraits for Return to Brynnlaw"
+    },
+    {
+      "n": "Portraits for Sellswords",
+      "cn": 1480,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1480,
+      "wq": "verified",
+      "tp2n": "Portraits for Sellswords"
+    },
+    {
+      "n": "Portraits for Isra in BG2",
+      "cn": 1490,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1490,
+      "wq": "verified",
+      "tp2n": "Portraits for Isra in BG2"
+    },
+    {
+      "n": "Portraits for Longer Road",
+      "cn": 1500,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1500,
+      "wq": "verified",
+      "tp2n": "Portraits for Longer Road"
+    },
+    {
+      "n": "Portraits for Zalnoya",
+      "cn": 1510,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1510,
+      "wq": "verified",
+      "tp2n": "Portraits for Zalnoya"
+    },
+    {
+      "n": "Portraits for Ding0's Questpack",
+      "cn": 1520,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1520,
+      "wq": "verified",
+      "tp2n": "Portraits for Ding0's Questpack"
+    },
+    {
+      "n": "Portraits for Slandor (The Minotaur and Lilacor)",
+      "cn": 1530,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1530,
+      "wq": "verified",
+      "tp2n": "Portraits for Slandor (The Minotaur and Lilacor)"
+    },
+    {
+      "n": "Portraits for Sirines",
+      "cn": 1540,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1540,
+      "wq": "verified",
+      "tp2n": "Portraits for Sirines"
+    },
+    {
+      "n": "Portraits for Afaaq (Djinni Companion)",
+      "cn": 1550,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1550,
+      "wq": "verified",
+      "tp2n": "Portraits for Afaaq (Djinni Companion)"
+    },
+    {
+      "n": "Portraits for Ajoc Mod",
+      "cn": 1580,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1580,
+      "wq": "verified",
+      "tp2n": "Portraits for Ajoc Mod"
+    },
+    {
+      "n": "Portraits for ISNF (I Shall Never Forget)",
+      "cn": 1590,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1590,
+      "wq": "verified",
+      "tp2n": "Portraits for ISNF (I Shall Never Forget)"
+    },
+    {
+      "n": "Portraits for Sandrah",
+      "cn": 1600,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1600,
+      "wq": "verified",
+      "tp2n": "Portraits for Sandrah"
+    },
+    {
+      "n": "Portraits for Alternatives",
+      "cn": 1610,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1610,
+      "wq": "verified",
+      "tp2n": "Portraits for Alternatives"
+    },
+    {
+      "n": "Portraits for Big Picture",
+      "cn": 1340,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 1340,
+      "wq": "verified",
+      "tp2n": "Portraits for Big Picture"
+    },
+    {
+      "n": "Portraits for Ascalon's Breagar",
+      "cn": 2000,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 2000,
+      "wq": "verified",
+      "tp2n": "Portraits for Ascalon's Breagar"
+    },
+    {
+      "n": "Portraits for Amber NPC",
+      "cn": 2010,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 2010,
+      "wq": "verified",
+      "tp2n": "Portraits for Amber NPC"
+    },
+    {
+      "n": "Portraits for Grey NPC",
+      "cn": 2020,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 2020,
+      "wq": "verified",
+      "tp2n": "Portraits for Grey NPC"
+    },
+    {
+      "n": "Alternate Portrait for Goo NPC",
+      "cn": 3000,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 3000,
+      "wq": "verified",
+      "tp2n": "Alternate Portrait for Goo NPC"
+    },
+    {
+      "n": "Alternate Portrait for Kim NPC",
+      "cn": 3010,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 3010,
+      "wq": "verified",
+      "tp2n": "Alternate Portrait for Kim NPC"
+    },
+    {
+      "n": "Alternate Female Character-Creation Portraits",
+      "cn": 5000,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 5000,
+      "wq": "verified",
+      "tp2n": "Alternate Female Character-Creation Portraits"
+    },
+    {
+      "n": "Alternate Male Character-Creation Potraits",
+      "cn": 5010,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wc": 5010,
+      "wq": "verified",
+      "tp2n": "Alternate Male Character-Creation Potraits"
+    },
+    {
+      "n": "Alternate NPC-Portraits for Drizzt Saga",
+      "cn": 41,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wq": "verified",
+      "no": "Commented out in tp2 — not installable.",
+      "gone": true
+    },
+    {
+      "n": "Shadows over Soubar",
+      "cn": 1010,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wq": "verified",
+      "no": "Placeholder file check — not installable (German placeholder text in REQUIRE_PREDICATE).",
+      "gone": true
+    },
+    {
+      "n": "Check the Bodies",
+      "cn": 1020,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wq": "verified",
+      "no": "Placeholder file check — not installable (German placeholder text in REQUIRE_PREDICATE).",
+      "gone": true
+    },
+    {
+      "n": "Never Ending Journey 2",
+      "cn": 1040,
+      "wf": "NSCPortraits",
+      "wp": "NSCPortraits\\Setup-NSCPortraits.TP2",
+      "wq": "verified",
+      "no": "Commented out in tp2 — not installable.",
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "gboeck",
+    "r": "NSC-Portraits"
+  }
+}

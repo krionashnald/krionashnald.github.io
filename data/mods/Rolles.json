@@ -1,0 +1,979 @@
+{
+  "i": 475,
+  "t": "rolles",
+  "sv": 1,
+  "ord": 360,
+  "c": "ITEM ADDITION MODS",
+  "n": "Rolles Safyer",
+  "langs": {
+    "ru": 0,
+    "en": 1,
+    "fr": 2,
+    "it": 3,
+    "pl": 4
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "conflicts": [
+    {
+      "with": "Item_Pack",
+      "withId": 278,
+      "severity": "hard",
+      "reason": "Choose one Bag of Holding",
+      "myComps": "#1",
+      "theirComps": "#1",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Spellhold-Studios/Rolles",
+  "a": "Serdrick",
+  "v": "v5.0.5",
+  "sum": "A Baldur's Gate II mod that adds a new smith to Waukeen's Promenade above the entrance to the Adventurer Mart.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Rolles"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "S#CLCK01",
+          "cloak",
+          "Cloak of the Wild Magi",
+          "Have you ever seen a bluer elf? Amazing!",
+          {
+            "ac": 1,
+            "saves": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "races": [
+                "Elf",
+                "Half-Elf",
+                "Human"
+              ]
+            }
+          }
+        ],
+        [
+          "S#SLNG01",
+          "sling",
+          "Sling +4 Arla's Dragonbane",
+          "I WOULD like an autograph, actually, but that's not why I'm here.",
+          {
+            "thac0": 4,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "apr": 0.5,
+            "profType": "sling",
+            "usability": {
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "S#SHLD01",
+          "shield",
+          "Enhanced Shield of Balduran",
+          "Stop the show now. We're getting you out of here.",
+          {
+            "ac": 4,
+            "magicResist": 10,
+            "coldResist": 20,
+            "fireResist": 20,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 20
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "S#BRAC01",
+          "bracers",
+          "Gauntlets of Grandmastery",
+          "Thanks, but I can't let you do that. We're here to take you to the wild mages' camp.",
+          {
+            "ac": 1,
+            "str": 1,
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#AMUL01",
+          "amulet",
+          "Necklace of Time Stability",
+          "Mazul the Wary",
+          {
+            "magicResist": 10,
+            "ac": 2,
+            "saves": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "S#AMUL02",
+          "amulet",
+          "Enhanced Amulet of Power",
+          "Laiq the Seer",
+          {
+            "magicResist": 10,
+            "int": 2,
+            "wis": 2,
+            "ac": 1,
+            "saves": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "S#HELM01",
+          "helmet",
+          "Restored Mask of King Strohm III",
+          "Daxus! Listen to me! Take this talisman—grip it tightly, and it'll teleport you to the camp. Get out of here!",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+110 Max HP"
+              }
+            ],
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#AX1H01",
+          "axe",
+          "Battle Axe +4 Ice and Fire",
+          "What? They ARE after me! I suppose you're right about all this. Very well. I should grip it tightly, you say? Easy enough.",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "S#SW2H01",
+          "large sword",
+          "Sacred Justice",
+          "Very well, but don't get yourself hurt.",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "magicResist": 50,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "minStr": 14
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#SW1H01",
+          "large sword",
+          "Sacred Justice",
+          "No. Stay put, and we'll handle it.",
+          {
+            "speed": 2,
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "magicResist": 50,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#BELT01",
+          "belt",
+          "Enhanced Girdle of Fortitude",
+          "What are you waiting for? Attack!",
+          {
+            "con": 18,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "S#STAF01",
+          "staff",
+          "Enhanced Staff of Curing",
+          "Daxus, this is Hayes. He'll get you to the camp safely.",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "ac": 2,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#BRAC02",
+          "bracers",
+          "Gauntlets of Crushing Hand of Vampire",
+          "And if we prove you wrong?",
+          {
+            "coldResist": 30,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 30
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "races": [
+                "Human"
+              ]
+            }
+          }
+        ],
+        [
+          "S#SW2H02",
+          "large sword",
+          "Destroyer +4",
+          "On second thought, that sounds neither bad nor one jot different from my old life.",
+          {
+            "speed": 9,
+            "thac0": 4,
+            "dmg": "2d6",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 19
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#SW2H03",
+          "large sword",
+          "Destroyer +5",
+          "Good. Now go, before more Red Wizards show up.",
+          {
+            "speed": 9,
+            "thac0": 5,
+            "dmg": "2d8",
+            "dmgBonus": 5,
+            "magicResist": 10,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 21
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#CLCK03",
+          "cloak",
+          "Cloak of Perfection",
+          "I think we'll get along—as a rule, escorts and muscles are two of my favorite things. Are you going to introduce us, <CHARNAME>?",
+          {
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ]
+          }
+        ],
+        [
+          "S#BOW01",
+          "bow",
+          "Tansheron's Bow +4",
+          "Good riddance indeed. Come along, Daxus. We've a long journey ahead of us.",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "1d6",
+            "twoHanded": true,
+            "profType": "short bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "S#LEAT01",
+          "armor",
+          "Dream of the Thief",
+          "It was a pleasure.",
+          {
+            "ac": 0,
+            "saves": 1,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 9
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#HAMM01",
+          "hammer",
+          "Dwarven Thrower +4",
+          "Indeed. Thank you.",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter"
+              ],
+              "races": [
+                "Dwarf"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "S#HAMM02",
+          "hammer",
+          "Universal Thrower +5",
+          "There's a smart one.",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "2d4",
+            "dmgBonus": 5,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "S#STAF02",
+          "staff",
+          "Enhanced Staff of the Magi",
+          "Daxus didn't make it. The Red Wizards attacked and killed him.",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Haste"
+              },
+              {
+                "type": "immunity",
+                "target": "backstab"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 6,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#DAGG01",
+          "dagger",
+          "Throwing Dagger Silent Death",
+          "Oh? Well, this was a waste of my time. Farewell.",
+          {
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "apr": 0.5,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "S#SW1H02",
+          "short sword",
+          "Short Sword of Freedom +5",
+          "He's probably upset and doesn't know what to say. I feel sorry for Daxus too, but we did all we could to save him.",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "apr": 0.5,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#SW1H03",
+          "large sword",
+          "Long Sword of Freedom +5",
+          "Hayes is right. There's no use regretting things now.",
+          {
+            "speed": 2,
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "apr": 0.5,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#CHAN01",
+          "armor",
+          "Scaly Armour Two Dragons",
+          "Goodness, the look on their faces when they realized they would never see those disgusting caverns they call home ever again! I think that deserves a bonus.",
+          {
+            "ac": 0,
+            "fireResist": 50,
+            "saveBreath": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "S#PLAT02",
+          "armor",
+          "Full Plate +4",
+          "Where do you come from, Reginald?",
+          {
+            "ac": -3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "S#BRAC03",
+          "bracers",
+          "Improved Gloves of Healing",
+          "Are you a wild mage?",
+          {
+            "ac": 2,
+            "saves": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "S#MACE01",
+          "mace",
+          "Mace of Disruption +3",
+          "So you have eyes. Good.",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "S#RING01",
+          "ring",
+          "Ring of Free Action +1",
+          "Hail, fellow half-orc. We are sons of Gruumsh.",
+          {
+            "ac": 1,
+            "saves": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "S#RING02",
+          "ring",
+          "Ring of Free Action +2",
+          "No more talking. Go.",
+          {
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "S#RING03",
+          "ring",
+          "Improved Ring of Gaxx",
+          "Wait! I've some questions for you.",
+          {
+            "ac": 2,
+            "magicResist": 10,
+            "saves": 2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "S#BAG01",
+          "container",
+          "Potion Case",
+          "Typically carried by traveling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.\n\nSTATISTICS:\n\nWeight: 2",
+          {}
+        ],
+        [
+          "S#BOOK01",
+          "misc",
+          "Tome of Leadership and Influence",
+          "One of the most popular recent tomes of leadership and influence is the cynically entitled book \"How to Win Friends and Influence People.\" Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's Charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede... \n\nSTATISTICS:\n\nCharisma: Raised by 1 point permanently\nSpecial: The book is consumed upon use\nUsage: Place into quick item slot\n\nWeight: 25",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "S#BOOK02",
+          "misc",
+          "Tome of Understanding",
+          "A typical tome of understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises, and theories of magic and metaphysics. While rarely interesting to anyone outside of their already well-educated niche market, it is said that some such tomes have even added a single point to the Wisdom of certain half-ogres. Such marvels, however, are the product of a potent magic placed upon the tome as it is being written. Unfortunately, this same magic causes the tome to disappear after a single use.\n\nSTATISTICS:\n\nWisdom: Raised by 1 point permanently\nSpecial: The book is consumed upon use\nUsage: Place into quick item slot\n\nWeight: 25",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "S#BAG02",
+          "container",
+          "Bag of Holding",
+          "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.\n\nSTATISTICS:\n\nWeight: 5",
+          {}
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Rolles",
+  "au": "Edvin",
+  "co": [
+    {
+      "n": "Rolles Safyer",
+      "cn": 0,
+      "wf": "Rolles",
+      "wp": "Rolles\\ROLLES.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "it": 35,
+      "itC": {
+        "cloak": 2,
+        "sling": 1,
+        "shield": 1,
+        "bracers": 3,
+        "amulet": 2,
+        "helmet": 1,
+        "axe": 1,
+        "large sword": 5,
+        "belt": 1,
+        "staff": 2,
+        "bow": 1,
+        "armor": 3,
+        "hammer": 2,
+        "dagger": 1,
+        "short sword": 1,
+        "mace": 1,
+        "ring": 3,
+        "container": 2,
+        "misc": 2
+      },
+      "tp2n": "Rolles Safyer"
+    },
+    {
+      "n": "Bag of Holding in Irenicus Dungeon",
+      "cn": 10,
+      "wf": "Rolles",
+      "wp": "Rolles\\ROLLES.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Bag of Holding in Irenicus Dungeon",
+      "pi": "rolles_bag_of_holding_in_irenicus_dungeon"
+    },
+    {
+      "wf": "Rolles",
+      "wp": "Rolles\\ROLLES.TP2",
+      "wq": "exact",
+      "cn": 1,
+      "n": "Bag of Holding variant",
+      "wc": 1,
+      "no": "Alternative bag of holding configuration.",
+      "gone": true
+    }
+  ]
+}

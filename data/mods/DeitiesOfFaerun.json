@@ -1,0 +1,4395 @@
+{
+  "i": 688,
+  "t": "DeitiesOfFaerun",
+  "sv": 1,
+  "ord": 390,
+  "c": "KIT & CLASS MODS",
+  "n": "Deities of Faerun",
+  "no": "Deities of Faerun by Raduziel. 53 deity-specific cleric kits (1 per deity) with unique abilities, weapon restrictions, and NPC assignments. CAN coexist with F&P if DoF sphere system (cn:2) is NOT installed — kits work as standalone class options. Sphere system (cn:2) HARD CONFLICTS with F&P cn:80. 53 kit slots if all installed (significant kit cap impact). Not .",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks weapon style and proficiency changes clash with Deities of Faerun's proficiency system",
+      "theirComps": "#2060 Weapon Styles for All #2160 #2161 #2162 #2163 #2164 Weapon Proficiency"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "hard",
+      "reason": "Both implement sphere systems for divine casters. Mutually exclusive sphere assignments.",
+      "myComps": "#2 Sphere System",
+      "theirComps": "#80 Sphere System",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 297 vs 314)",
+      "source": "lcc-docs"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 297 vs 982)",
+      "source": "lcc-docs"
+    }
+  ],
+  "spl": {
+    "2": {
+      "scope": "overhaul",
+      "spells": [
+        [
+          "SPPR104",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR201",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR305",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR406",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR504",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR611",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ],
+        [
+          "SPPR708",
+          "modify",
+          "Deity sphere system reorganizes divine spell access"
+        ]
+      ]
+    },
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF030",
+          "innate",
+          0,
+          "Conjuration",
+          "Heartwarder of Sune Ability 1",
+          "Deity-specific innate ability for Heartwarder of Sune kit."
+        ],
+        [
+          "YOURDOF031",
+          "innate",
+          0,
+          "Conjuration",
+          "Heartwarder of Sune Ability 2",
+          "Deity-specific innate ability for Heartwarder of Sune kit."
+        ],
+        [
+          "YOURDOF032",
+          "innate",
+          0,
+          "Conjuration",
+          "Heartwarder of Sune Ability 3",
+          "Deity-specific innate ability for Heartwarder of Sune kit."
+        ],
+        [
+          "YOURDOF033",
+          "innate",
+          0,
+          "Conjuration",
+          "Heartwarder of Sune Ability 4",
+          "Deity-specific innate ability for Heartwarder of Sune kit."
+        ]
+      ]
+    },
+    "4": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF040",
+          "innate",
+          0,
+          "Conjuration",
+          "Battleguard of Tempus Ability 1",
+          "Deity-specific innate ability for Battleguard of Tempus kit."
+        ]
+      ]
+    },
+    "12": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF120",
+          "innate",
+          0,
+          "Conjuration",
+          "Dawnbringer of Lathander Ability 1",
+          "Deity-specific innate ability for Dawnbringer of Lathander kit."
+        ]
+      ]
+    },
+    "18": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF180",
+          "innate",
+          0,
+          "Conjuration",
+          "Silentwalker of Mask Ability 1",
+          "Deity-specific innate ability for Silentwalker of Mask kit."
+        ],
+        [
+          "YOURDOF181",
+          "innate",
+          0,
+          "Conjuration",
+          "Silentwalker of Mask Ability 2",
+          "Deity-specific innate ability for Silentwalker of Mask kit."
+        ],
+        [
+          "YOURDOF182",
+          "innate",
+          0,
+          "Conjuration",
+          "Silentwalker of Mask Ability 3",
+          "Deity-specific innate ability for Silentwalker of Mask kit."
+        ],
+        [
+          "YOURDOF183",
+          "innate",
+          0,
+          "Conjuration",
+          "Silentwalker of Mask Ability 4",
+          "Deity-specific innate ability for Silentwalker of Mask kit."
+        ]
+      ]
+    },
+    "20": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF200",
+          "innate",
+          0,
+          "Conjuration",
+          "Talon of Malar Ability 1",
+          "Deity-specific innate ability for Talon of Malar kit."
+        ],
+        [
+          "YOURDOF201",
+          "innate",
+          0,
+          "Conjuration",
+          "Talon of Malar Ability 2",
+          "Deity-specific innate ability for Talon of Malar kit."
+        ]
+      ]
+    },
+    "21": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF210",
+          "innate",
+          0,
+          "Conjuration",
+          "Waveservant of Umberlee Ability 1",
+          "Deity-specific innate ability for Waveservant of Umberlee kit."
+        ],
+        [
+          "YOURDOF211",
+          "innate",
+          0,
+          "Conjuration",
+          "Waveservant of Umberlee Ability 2",
+          "Deity-specific innate ability for Waveservant of Umberlee kit."
+        ]
+      ]
+    },
+    "22": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF220",
+          "innate",
+          0,
+          "Conjuration",
+          "Silverstar of Selune Ability 1",
+          "Deity-specific innate ability for Silverstar of Selune kit."
+        ]
+      ]
+    },
+    "23": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF230",
+          "innate",
+          0,
+          "Conjuration",
+          "Malagent of Talona Ability 1",
+          "Deity-specific innate ability for Malagent of Talona kit."
+        ]
+      ]
+    },
+    "24": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF240",
+          "innate",
+          0,
+          "Conjuration",
+          "Pain of Loviatar Ability 1",
+          "Deity-specific innate ability for Pain of Loviatar kit."
+        ]
+      ]
+    },
+    "30": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF300",
+          "innate",
+          0,
+          "Conjuration",
+          "Doomscribe of Jergal Ability 1",
+          "Deity-specific innate ability for Doomscribe of Jergal kit."
+        ]
+      ]
+    },
+    "40": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF400",
+          "innate",
+          0,
+          "Conjuration",
+          "Wavetamer of Valkur Ability 1",
+          "Deity-specific innate ability for Wavetamer of Valkur kit."
+        ],
+        [
+          "YOURDOF401",
+          "innate",
+          0,
+          "Conjuration",
+          "Wavetamer of Valkur Ability 2",
+          "Deity-specific innate ability for Wavetamer of Valkur kit."
+        ]
+      ]
+    },
+    "43": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF430",
+          "innate",
+          0,
+          "Conjuration",
+          "Iceguardian of Ulutiu Ability 1",
+          "Deity-specific innate ability for Iceguardian of Ulutiu kit."
+        ]
+      ]
+    },
+    "45": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF450",
+          "innate",
+          0,
+          "Conjuration",
+          "Glyphscriber of Deneir Ability 1",
+          "Deity-specific innate ability for Glyphscriber of Deneir kit."
+        ],
+        [
+          "YOURDOF451",
+          "innate",
+          0,
+          "Conjuration",
+          "Glyphscriber of Deneir Ability 2",
+          "Deity-specific innate ability for Glyphscriber of Deneir kit."
+        ],
+        [
+          "YOURDOF452",
+          "innate",
+          0,
+          "Conjuration",
+          "Glyphscriber of Deneir Ability 3",
+          "Deity-specific innate ability for Glyphscriber of Deneir kit."
+        ]
+      ]
+    },
+    "48": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF480",
+          "innate",
+          0,
+          "Conjuration",
+          "Horn Guard of Yondalla Ability 1",
+          "Deity-specific innate ability for Horn Guard of Yondalla kit."
+        ]
+      ]
+    },
+    "49": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF490",
+          "innate",
+          0,
+          "Conjuration",
+          "Bloodstalker of Urdlen Ability 1",
+          "Deity-specific innate ability for Bloodstalker of Urdlen kit."
+        ],
+        [
+          "YOURDOF491",
+          "innate",
+          0,
+          "Conjuration",
+          "Bloodstalker of Urdlen Ability 2",
+          "Deity-specific innate ability for Bloodstalker of Urdlen kit."
+        ]
+      ]
+    },
+    "50": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF500",
+          "innate",
+          0,
+          "Conjuration",
+          "Luckmaiden of Haela Ability 1",
+          "Deity-specific innate ability for Luckmaiden of Haela kit."
+        ]
+      ]
+    },
+    "55": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF550",
+          "innate",
+          0,
+          "Conjuration",
+          "Feywarden of Corellon Ability 1",
+          "Deity-specific innate ability for Feywarden of Corellon kit."
+        ],
+        [
+          "YOURDOF551",
+          "innate",
+          0,
+          "Conjuration",
+          "Feywarden of Corellon Ability 2",
+          "Deity-specific innate ability for Feywarden of Corellon kit."
+        ]
+      ]
+    },
+    "56": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDOF560",
+          "innate",
+          0,
+          "Conjuration",
+          "Sonnlinor of Moradin Ability 1",
+          "Deity-specific innate ability for Sonnlinor of Moradin kit."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "0": {
+      "DOF_CORE_1": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_2": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_3": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_4": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_5": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_6": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_7": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_8": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_9": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_10": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_11": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_12": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_13": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_14": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "DOF_CORE_15": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Internal kit used by Deities of Faerun deity system"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "3": {
+      "HEARTWARDER_OF_SUNE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG. Charm/beauty. Dire Charm at lv1, Rapture at lv5, +1 CHA at lv9. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CG, NG, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": 1,
+          "note": "Innate stat modifiers: +1 CHA"
+        },
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        }
+      }
+    },
+    "4": {
+      "BATTLEGUARD_OF_TEMPUS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN. Warrior-priest. Fighter APR, weapon specialization, d10 HD. Berserker Enrage, Heroes' Feast at lv10."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CN, CG, TN, CE",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "5": {
+      "STRIFELEADER_OF_CYRIC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Madness/darkness. Immune to charm/fear/emotion. Dark Aura at lv7, Phantasmal Killer at lv10, Instill Madness at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "6": {
+      "NIGHTCLOAK_OF_SHAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NE. Darkness/shadow. +1 hit/dmg/saves at night. Darkness, Blindness, Nightmare at lv9, Shadow Door at lv13, Eyebite."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NE, LE, CE, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "7": {
+      "ALAGHOR_OF_CLANGEDDIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LG (dwarf). Warrior-priest. Fighter APR, Mastery in axes/warhammers. Spiritual Hammer, Blade Barrier at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf only",
+          "alignment": "LG, LN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "8": {
+      "HOODWINKER_OF_BARAVAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN (gnome). Illusion. +2 saves vs illusion. Mirror Image, Invisibility, Dimension Door, Mislead, Prismatic Spray."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome only",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "9": {
+      "FASTPAW_OF_BAERVAN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN (gnome). Nature. Immune to Entangle/Web. Barkskin, Call Woodland Beings, Changestaff at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome only",
+          "items": "Turns undead at -4 levels."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "10": {
+      "WATCHER_OF_HELM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Guardian. Fighter APR, -2 speed factor. Glyph of Warding, Seeking Sword. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, LG, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "11": {
+      "STORMCALLER_OF_TALOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Lightning/storm. Immune to lightning. Call Lightning, Lightning Bolt (scales), Earthquake at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "12": {
+      "DAWNBRINGER_OF_LATHANDER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NG. Sun/renewal. Turns undead at +2 levels. Faerie Fire, Boon of Lathander, False Dawn at lv9."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NG, CG, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "13": {
+      "HOLY_JUSTICE_OF_TYR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LG. Law/justice. Fighter APR. Hold Person, Holy Word at lv10, Detect Invisibility at will at lv12. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LG, LN, NG"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "14": {
+      "LOREKEEPER_OF_OGHMA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN. Knowledge. Friends at lv5, Legend Lore at lv10, permanent Free Action at lv12. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "15": {
+      "PAINBEARER_OF_ILMATER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LG. Endurance. +2 CON, +4 save vs death. Remove Fear, Draw Upon Holy Might, Martyrdom at lv12."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LG, NG, LN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "con": 2,
+          "note": "Innate stat modifiers: +2 CON"
+        },
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        }
+      }
+    },
+    "16": {
+      "DWEOMERKEEPER_OF_MYSTRA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN/NG/CN. Magic guardian. Immune to wild/miscast magic. +2 save vs spells, +2 casting speed at lv7. Immune to Breach/Secret Word at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "17": {
+      "HOLY_CHAMPION_OF_TORM": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LG. Warrior-paladin. Fighter APR, d10 HD. Command, Bolt of Glory, Holy Word at lv20. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LG, LN, NG"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "18": {
+      "SILENTWALKER_OF_MASK": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NE. Shadow/stealth. Darkness, Shadow Door, Shadow Monsters, Summon Shadows, Invisible Stalker."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NE, TN, LE",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "19": {
+      "ICEVASSAL_OF_AURIL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NE. Cold/ice. 50% cold resistance. Frost Dagger/Whip/Sword (scaling). Ice Storm, Cone of Cold, Ice Paraelemental."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NE, CE, LE",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "20": {
+      "TALON_OF_MALAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Beast/hunter. Claws weapon, fighter APR. Immune to Charm at lv7. Animal Rage at lv10."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, CN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "21": {
+      "WAVESERVANT_OF_UMBERLEE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Water/drowning. Smashing Wave, Dehydrate. Free Action at lv10, Drown at lv12, Water Elemental at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "22": {
+      "SILVERSTAR_OF_SELUNE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG. Moon/light. Infravision, immune to Blindness. Moonbeam, Moonblade, True Seeing at lv10, Shooting Star at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CG, NG, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "23": {
+      "MALAGENT_OF_TALONA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Poison/disease. Immune to disease, +4 save vs poison. Poison Weapon, Contagion, Cloud of Pestilence at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, TN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "24": {
+      "PAIN_OF_LOVIATAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LE. Pain/torment. Touch of Loviatar (scales), Whip of Pain, Symbol Pain at lv15, Ensnarement at lv20."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LE, NE, LN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "25": {
+      "DREADRULER_OF_BANE": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LE. Tyranny/fear. Immune to fear. Cloak of Fear at lv5, Mental Domination at lv7, Mystic Lash at lv10."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LE, LN, NE",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "26": {
+      "DEATHSTALKER_OF_BHAAL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LE. Death/assassination. Bone Dagger at lv2, Finger of Death at lv7, Aerial Servant at lv11. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LE, NE, CE"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "27": {
+      "GRAY_ONE_OF_MYRKUL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NE. Undead lord. Commands undead at +2 levels. Animate Dead, Dolorous Decay, Hand of Myrkul at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NE, LE, CE"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "28": {
+      "DOOMGUIDE_OF_KELEMVOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Anti-undead. Turns at +2 levels. +2 AC/saves/THAC0/dmg vs undead. Chilling Scythe, Negative Plane Protection at lv7."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, LG, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "29": {
+      "MAGISTRATI_OF_AZUTH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Arcane magic. +2 casting speed. Casts some arcane spells as divine. Magic Missile at lv7, Fireball at lv9."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, LG, TN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "30": {
+      "DOOMSCRIBE_OF_JERGAL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Death/records. Turns at +1. +1 save vs necromancy, +2 AC/saves vs undead. Skull Trap, Undead Ward, Energy Drain at lv20."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, TN, LE"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "31": {
+      "HOLY_STRATEGIST_OF_RED_KNIGHT": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Tactics. Fighter APR, scaling illusion save bonus. Clairvoyance, Mass Invisibility at lv9."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, LG, TN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "32": {
+      "BLOODREAVER_OF_GARAGOS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN/CE. Berserker-priest. Fighter APR, d10 HD. Enrage, Chaotic Combat, Blood Armor, Blade Barrier at lv9."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CN, CE",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "33": {
+      "SEER_OF_SAVRAS": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Divination. Clairvoyance, True Seeing, Farsight. Immune to Blindness at lv10, backstab at lv13. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "LN, LG, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "34": {
+      "NECROPHANT_OF_VELSHAROON": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NE. Necromancy. +2 save vs necromancy. Chill Touch, Animate Dead, Wraithform, Energy Drain, Wail of the Banshee at lv18."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NE, LE, CE"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "35": {
+      "MISTCALLER_OF_LEIRA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN. Illusion/deception. +2 save vs illusion. Mirror Image, Shadow Monsters, Mislead, Project Image x3 at lv20."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CN, CG, CE"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "36": {
+      "LUCKBRINGER_OF_TYMORA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG. Luck/fortune. Luck, Favor of Tymora, Tymora's Blessing at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CG, NG, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "37": {
+      "BLACK_FINGER_OF_BESHABA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE. Misfortune. Bad Luck, Doom, Beshaba's Mercy, Black Blade of Disaster at lv20. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CE, NE, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "38": {
+      "DOOMBRINGER_OF_HOAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN. Vengeance/lightning. Enrage, Shocking Grasp, Lightning Bolt, Protection From Normal Missiles at lv13. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "39": {
+      "WINDWALKER_OF_SHAUNDAKUL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN. Travel/wind. Fighter APR. Invisibility, Protection From Normal Missiles, Wraithform, Aerial Servant at lv12."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CN, CG, TN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "40": {
+      "WAVETAMER_OF_VALKUR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG. Sea/sailing. 3 slots Two-Weapon. Goodberry, Call Lightning, Smashing Wave, Water Elemental at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CG, NG, CN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "41": {
+      "DARKWALKER_OF_IBRANDUL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN. Darkness/stone. Infravision. Base AC 5 but -3 CHA at lv5. Stoneskin, Spike Stones."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "CN, CE, TN",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "cha": -3,
+          "note": "Innate stat modifiers: -3 CHA"
+        },
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        }
+      }
+    },
+    "42": {
+      "PACIFIST_OF_ELDATH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NG/TN. Peace. Remove Fear, Sleep (scales), Silence 15' (scales), Sanctuary (scales). Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NG, TN"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "43": {
+      "ICEGUARDIAN_OF_ULUTIU": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LN. Cold/arctic. +2 WIS, immune to all cold. Call Upon Polar Fury, shapeshift Great White Bear at lv10, Freezing Sphere."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "May never use fire. No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "statBonus": {
+          "wis": 2,
+          "note": "Innate stat modifiers: +2 WIS"
+        },
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        }
+      }
+    },
+    "44": {
+      "WOODWIFE_OF_SHIALLIA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NG. Nature/healing. Lay on Hands x3/day. Entangle, Goodberry, Animal Summoning, Heal at lv13."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NG, TN, CG",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "45": {
+      "GLYPHSCRIBER_OF_DENEIR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NG. Glyphs/writing. Immune to cursed scrolls/glyphs/symbols. Glyph of Warding, Dispel Magic, Symbol at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "NG, TN, CG"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "46": {
+      "TRAILBLAZER_OF_MARTHAMMOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "NG (dwarf). Travel/lightning. Immune to lightning. Free Action, Call Lightning, Haste (self), Dimension Door, immune to Maze/Imprisonment at lv15."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf only",
+          "items": "No Turn Undead."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description.",
+          "noTurnUndead": true
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "47": {
+      "HAWKEYE_OF_SOLONOR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG (elf, Ranger/Cleric). Archery specialist. Mastery in bows. Aim/Shattering Shot/Rapid Shot/Hail of Arrows stances. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "48": {
+      "HORN_GUARD_OF_YONDALLA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CN (halfling). Protector. +3 THAC0 slings. Shield (targetable), double Bless, Goodberry, Heroes' Feast, Dire Wolf shapeshift at lv13. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Halfling only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "49": {
+      "BLOODSTALKER_OF_URDLEN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN (gnome). Evil claw fighter. Claws weapon. Cause Light Wounds, Cloak of Fear, Creeping Doom, Slay Living."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome only",
+          "items": "Turns at -2 levels."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "50": {
+      "LUCKMAIDEN_OF_HAELA": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG (dwarf). Warrior-luck. Fighter APR. +2 all saves with melee. Shield, Aid, Draw Upon Holy Might, Heal at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "51": {
+      "TRUESWORD_OF_ARVOREEN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG (halfling). Paladin-like. Fighter APR. +2 saves with melee. Detect Evil, Lay on Hands, Strength of One. Turns at -2."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Halfling only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "52": {
+      "GLITTERBRIGHT_OF_GARL": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "TN (gnome). Trickster. Glitterdust, Tasha's Laughter, Mirror Image. +2 save vs illusion. Cloak of Displacement at lv13. Turns at -2."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Gnome only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "53": {
+      "ARACHNE_OF_LOLTH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE (drow). Spider/domination. Immune to poison. Spiderwalk, Spider Spawn, True Seeing, Domination at lv13. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Drow/Half-elf"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "54": {
+      "EYE_OF_GRUUMSH": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CE (orc/half-orc). Warrior-priest. d10 HD, Mastery in spears, fighter APR. +1 hit/dmg vs elves. Immune to Blindness at lv5. Enrage at lv11. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Half-orc only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "55": {
+      "FEYWARDEN_OF_CORELLON": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "CG (elf). Fey protector. +1/+3 save vs death. Faerie Fire, Enchanted Weapon, Prismatic Spray at lv13, Sunray at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Elf/Half-elf only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    },
+    "56": {
+      "SONNLINOR_OF_MORADIN": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "LG (dwarf). Forge priest. Spiritual Hammer, Dispel Magic, True Seeing x4/day at lv10, Aura of Flaming Death at lv15. Turns undead."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "race": "Dwarf only"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "sphereSystem": "DoF",
+          "note": "Deities of Faerun sphere-specific spell access. See passive description."
+        },
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "statBonus": {
+          "note": "See passive description for stat requirements and modifiers."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DOF_CORE_1",
+          "npc",
+          "DoF Core Kit #1",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_2",
+          "npc",
+          "DoF Core Kit #2",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_3",
+          "npc",
+          "DoF Core Kit #3",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_4",
+          "npc",
+          "DoF Core Kit #4",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_5",
+          "npc",
+          "DoF Core Kit #5",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_6",
+          "npc",
+          "DoF Core Kit #6",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_7",
+          "npc",
+          "DoF Core Kit #7",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_8",
+          "npc",
+          "DoF Core Kit #8",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_9",
+          "npc",
+          "DoF Core Kit #9",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_10",
+          "npc",
+          "DoF Core Kit #10",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_11",
+          "npc",
+          "DoF Core Kit #11",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_12",
+          "npc",
+          "DoF Core Kit #12",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_13",
+          "npc",
+          "DoF Core Kit #13",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_14",
+          "npc",
+          "DoF Core Kit #14",
+          "Internal kit used by Deities of Faerun deity system"
+        ],
+        [
+          "DOF_CORE_15",
+          "npc",
+          "DoF Core Kit #15",
+          "Internal kit used by Deities of Faerun deity system"
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "HEARTWARDER_OF_SUNE",
+          "cleric",
+          "Heartwarder of Sune",
+          "Cleric of Firehair. Charm and beauty divine magic."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "BATTLEGUARD_OF_TEMPUS",
+          "cleric",
+          "Battleguard of Tempus",
+          "Elite warrior-priest of the war god. Enhanced combat and war domain magic."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "STRIFELEADER_OF_CYRIC",
+          "cleric",
+          "Strifeleader of Cyric",
+          "Cleric of the Prince of Lies. Deception and conflict divine magic."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "NIGHTCLOAK_OF_SHAR",
+          "cleric",
+          "Nightcloak of Shar",
+          "Cleric of the Mistress of the Night. Shadow and darkness divine magic."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "ALAGHOR_OF_CLANGEDDIN",
+          "cleric",
+          "Alaghor of Clangeddin",
+          "Clangeddin Silverbeard (CLAN-gehd-din SIHL-vur-beerd) is the Father of Battle and primary dwarven war god."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "HOODWINKER_OF_BARAVAR",
+          "cleric",
+          "Hoodwinker of Baravar",
+          "Baravar Cloakshadow (BARE-uh-vahr CLOKE-sha-doh) is a sly, sneaky protector of the Forgotten Folk."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "FASTPAW_OF_BAERVAN",
+          "cleric",
+          "Fastpaw of Baervan",
+          "Baervan Wildwanderer (BAY-ur-van WILD-WAN-der-er) is the god of forest-dwelling gnomes and their..."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "WATCHER_OF_HELM",
+          "cleric",
+          "Watcher of Helm",
+          "Helm (HELM) is the epitome of the guardian, the watcher, the guard, and has in years past been greatly..."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "STORMCALLER_OF_TALOS",
+          "cleric",
+          "Stormcaller of Talos",
+          "Talos (TAH-los) is the destructive force of nature."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "DAWNBRINGER_OF_LATHANDER",
+          "cleric",
+          "Dawnbringer of Lathander",
+          "A powerful, exuberant god, Lathander (Lah-THANder) is known as the Commander of Creativity and the Morninglord."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "HOLY_JUSTICE_OF_TYR",
+          "cleric",
+          "Holy Justice of Tyr",
+          "Priest-knight of the god of justice. Detects evil, smites the unjust."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "LOREKEEPER_OF_OGHMA",
+          "cleric",
+          "Lorekeeper of Oghma",
+          "Knowledge priest of the god of invention. Enhanced lore, identification, and divination."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "PAINBEARER_OF_ILMATER",
+          "cleric",
+          "Painbearer of Ilmater",
+          "Cleric of the Crying God. Absorbs pain of allies, enhanced healing."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "DWEOMERKEEPER_OF_MYSTRA",
+          "cleric",
+          "Dweomerkeeper of Mystra",
+          "Priest of the goddess of magic. Combines arcane and divine spellcasting."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "HOLY_CHAMPION_OF_TORM",
+          "cleric",
+          "Holy Champion of Torm",
+          "Torm (TORM) is the patron of paladins and those who face danger for a greater good."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "SILENTWALKER_OF_MASK",
+          "cleric",
+          "Silentwalker of Mask",
+          "Cleric of the god of thieves. Shadow stealth combined with divine thievery magic."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "ICEVASSAL_OF_AURIL",
+          "cleric",
+          "Icevassal of Auril",
+          "Auril (AWE-ril) is most powerful in those regions that are affected by deep winters or crouch at the edges..."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "TALON_OF_MALAR",
+          "cleric",
+          "Talon of Malar",
+          "Malar (MAH-larr) is the god of the savage wild."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "WAVESERVANT_OF_UMBERLEE",
+          "cleric",
+          "Waveservant of Umberlee",
+          "Priest of the Bitch Queen. Water and storm divine magic."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "SILVERSTAR_OF_SELUNE",
+          "cleric",
+          "Silverstar of Selune",
+          "Cleric of the Moonmaiden. Lunar magic, protection against lycanthropes and shapeshifters."
+        ]
+      ]
+    },
+    "23": {
+      "new": [
+        [
+          "MALAGENT_OF_TALONA",
+          "cleric",
+          "Malagent of Talona",
+          "Talona (Tah-LOW-nah), one of the Dark Gods, is often depicted as a withered old crone with a scarred,..."
+        ]
+      ]
+    },
+    "24": {
+      "new": [
+        [
+          "PAIN_OF_LOVIATAR",
+          "cleric",
+          "Pain of Loviatar",
+          "Loviatar (Loh-VEE-a-tar), one of the Dark Gods, appears in her religion's art as a pale maiden dressed in..."
+        ]
+      ]
+    },
+    "25": {
+      "new": [
+        [
+          "DREADRULER_OF_BANE",
+          "cleric",
+          "Dreadruler of Bane",
+          "Bane (BAIN), one of the Dark Gods, was the ultimate tyrant and a thoroughly evil and malicious being who..."
+        ]
+      ]
+    },
+    "26": {
+      "new": [
+        [
+          "DEATHSTALKER_OF_BHAAL",
+          "cleric",
+          "Deathstalker of Bhaal",
+          "Priest of the dead god of murder. Assassination abilities and death magic."
+        ]
+      ]
+    },
+    "27": {
+      "new": [
+        [
+          "GRAY_ONE_OF_MYRKUL",
+          "cleric",
+          "Gray One of Myrkul",
+          "Myrkul (MER-kul), one of the Dark Gods, was the god of the dead, as opposed to the god of death, which was..."
+        ]
+      ]
+    },
+    "28": {
+      "new": [
+        [
+          "DOOMGUIDE_OF_KELEMVOR",
+          "cleric",
+          "Doomguide of Kelemvor",
+          "Kelemvor (KELL-ehm-vor), a former associate of Midnight, Cyric, and Adon during the events of the Godswar,..."
+        ]
+      ]
+    },
+    "29": {
+      "new": [
+        [
+          "MAGISTRATI_OF_AZUTH",
+          "cleric",
+          "Magistrati of Azuth",
+          "Azuth (Ah-ZOOTH) is the god of wizards and mages and to a much lesser degree, all spellcasters, as opposed..."
+        ]
+      ]
+    },
+    "30": {
+      "new": [
+        [
+          "DOOMSCRIBE_OF_JERGAL",
+          "cleric",
+          "Doomscribe of Jergal",
+          "Jergal (JER-gull), Lord of the End of Everything, is responsible for keeping records on the final..."
+        ]
+      ]
+    },
+    "31": {
+      "new": [
+        [
+          "HOLY_STRATEGIST_OF_RED_KNIGHT",
+          "cleric",
+          "Holy Strategist of Red Knight",
+          "Cleric of the goddess of strategy. Tactical buffs and battlefield control magic."
+        ]
+      ]
+    },
+    "32": {
+      "new": [
+        [
+          "BLOODREAVER_OF_GARAGOS",
+          "cleric",
+          "Bloodreaver of Garagos",
+          "Some legends claim Garagos (GAH-rah-gos) was the primary war god in western Faerûn until he was overthrown..."
+        ]
+      ]
+    },
+    "33": {
+      "new": [
+        [
+          "SEER_OF_SAVRAS",
+          "cleric",
+          "Seer of Savras",
+          "Savras (SAHV-ras) is believed to know all that has happened and all that will occur."
+        ]
+      ]
+    },
+    "34": {
+      "new": [
+        [
+          "NECROPHANT_OF_VELSHAROON",
+          "cleric",
+          "Necrophant of Velsharoon",
+          "Velsharoon (VEL-shah-roon) is the Archmage of Necromancy, a demipower who has gathered the study,..."
+        ]
+      ]
+    },
+    "35": {
+      "new": [
+        [
+          "MISTCALLER_OF_LEIRA",
+          "cleric",
+          "Mistcaller of Leira",
+          "Leira (LAlR-uh), the Lady of the Mists, was the goddess of deception and illusion and the patroness of..."
+        ]
+      ]
+    },
+    "36": {
+      "new": [
+        [
+          "LUCKBRINGER_OF_TYMORA",
+          "cleric",
+          "Luckbringer of Tymora",
+          "Priest of Lady Luck. Luck-based abilities, fortune favors in combat and saves."
+        ]
+      ]
+    },
+    "37": {
+      "new": [
+        [
+          "BLACK_FINGER_OF_BESHABA",
+          "cleric",
+          "Black Finger of Beshaba",
+          "Beshaba (Beh-SHAH-ba), the Maid of Misfortune, is a deity feared and placated in Faerûn much more than she..."
+        ]
+      ]
+    },
+    "38": {
+      "new": [
+        [
+          "DOOMBRINGER_OF_HOAR",
+          "cleric",
+          "Doombringer of Hoar",
+          "Hoar (HORE) the Doombringer is not often actively worshiped in set services, but his name is invoked by..."
+        ]
+      ]
+    },
+    "39": {
+      "new": [
+        [
+          "WINDWALKER_OF_SHAUNDAKUL",
+          "cleric",
+          "Windwalker of Shaundakul",
+          "Shaundakul (SHAWN-da-kul) the Rider of the Winds, was the god of travel and exploration in old Myth Drannor."
+        ]
+      ]
+    },
+    "40": {
+      "new": [
+        [
+          "WAVETAMER_OF_VALKUR",
+          "cleric",
+          "Wavetamer of Valkur",
+          "Valkur the Mighty is a sailor's god, a demipower who intercedes to protect ships against the cruel whimsy..."
+        ]
+      ]
+    },
+    "41": {
+      "new": [
+        [
+          "DARKWALKER_OF_IBRANDUL",
+          "cleric",
+          "Darkwalker of Ibrandul",
+          "Worshipers in Calimshan and other areas of the Shining South claim that Ibrandul (ih-BRAN-duhl) watches..."
+        ]
+      ]
+    },
+    "42": {
+      "new": [
+        [
+          "PACIFIST_OF_ELDATH",
+          "cleric",
+          "Pacifist of Eldath",
+          "Eldath (EL-dath) is the guardian of druid groves, and her presence is felt every place where there is calm."
+        ]
+      ]
+    },
+    "43": {
+      "new": [
+        [
+          "ICEGUARDIAN_OF_ULUTIU",
+          "cleric",
+          "Iceguardian of Ulutiu",
+          "Ulutiu (Oo-LOO-tee-oo) is a long-quiescent deity who has voluntarily spent the last eon in slumber, :..."
+        ]
+      ]
+    },
+    "44": {
+      "new": [
+        [
+          "WOODWIFE_OF_SHIALLIA",
+          "cleric",
+          "Woodwife of Shiallia",
+          "Shiallia (Shee-AL-lee-ah) is the patron and caretaker of pregnant forest creatures."
+        ]
+      ]
+    },
+    "45": {
+      "new": [
+        [
+          "GLYPHSCRIBER_OF_DENEIR",
+          "cleric",
+          "Glyphscriber of Deneir",
+          "Deneir (Deh-NEER) is the patron of the artist, the illuminator, the scribe, and the cartographer."
+        ]
+      ]
+    },
+    "46": {
+      "new": [
+        [
+          "TRAILBLAZER_OF_MARTHAMMOR",
+          "cleric",
+          "Trailblazer of Marthammor",
+          "Marthammor Duin (Mar-THAM-more DOO-ihn), known on other worlds as Muamman Duathal (Moo-AM-man Doo-AHthuhl)..."
+        ]
+      ]
+    },
+    "47": {
+      "new": [
+        [
+          "HAWKEYE_OF_SOLONOR",
+          "cleric",
+          "Hawkeye of Solonor",
+          "Elven cleric of the Great Archer. Archery combined with nature divine magic."
+        ]
+      ]
+    },
+    "48": {
+      "new": [
+        [
+          "HORN_GUARD_OF_YONDALLA",
+          "cleric",
+          "Horn Guard of Yondalla",
+          "Yondalla (Yon-DAH-lah) is the Protector and Provider of halflings and the chief matriarch of the halfling..."
+        ]
+      ]
+    },
+    "49": {
+      "new": [
+        [
+          "BLOODSTALKER_OF_URDLEN",
+          "cleric",
+          "Bloodstalker of Urdlen",
+          "Urdlen (URD-len), a neuter and sexless being, is the epitome of the evil impulse that rules some gnomes..."
+        ]
+      ]
+    },
+    "50": {
+      "new": [
+        [
+          "LUCKMAIDEN_OF_HAELA",
+          "cleric",
+          "Luckmaiden of Haela",
+          "Haela Brightaxe (HUH-ae-la BRITE-ax) is the patron of dwarves who love the fray, who wander the surface..."
+        ]
+      ]
+    },
+    "51": {
+      "new": [
+        [
+          "TRUESWORD_OF_ARVOREEN",
+          "cleric",
+          "Truesword of Arvoreen",
+          "Arvoreen (ARE-voh-reen) the Defender, fiery guardian of the home, is the nearest thing to a halfling war god."
+        ]
+      ]
+    },
+    "52": {
+      "new": [
+        [
+          "GLITTERBRIGHT_OF_GARL",
+          "cleric",
+          "Glitterbright of Garl",
+          "Garl Glittergold (GARL GLIHT-ter'gold) is the Watchful Protector of the Forgotten Folk and the leader of..."
+        ]
+      ]
+    },
+    "53": {
+      "new": [
+        [
+          "ARACHNE_OF_LOLTH",
+          "cleric",
+          "Arachne of Lolth",
+          "Lolth (LOLTH) is the goddess of the drow race and drow society."
+        ]
+      ]
+    },
+    "54": {
+      "new": [
+        [
+          "EYE_OF_GRUUMSH",
+          "cleric",
+          "Eye of Gruumsh",
+          "Gruumsh (GROOMSH) is the undisputed head of the pantheon of the orcs."
+        ]
+      ]
+    },
+    "55": {
+      "new": [
+        [
+          "FEYWARDEN_OF_CORELLON",
+          "cleric",
+          "Feywarden of Corellon",
+          "Cleric of the elven Creator. Elven grace with divine nature magic."
+        ]
+      ]
+    },
+    "56": {
+      "new": [
+        [
+          "SONNLINOR_OF_MORADIN",
+          "cleric",
+          "Sonnlinor of Moradin",
+          "Moradin (MOAR-uh-din) is the creator god of the dwarven race and leader of the Morndinsamman."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Raduziel/Deities-Of-Faerun",
+  "a": "Raduziel",
+  "v": "1.9.8.2",
+  "sum": "53 deity-specific cleric kits with unique abilities, weapon restrictions, and 25 NPC assignments. Optional sphere system and stronghold alterations.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1.8.4",
+    "place": "post"
+  },
+  "dl": "https://github.com/Raduziel/Deities-Of-Faerun",
+  "langs": {
+    "en": 0
+  },
+  "au": "SubtleD, Grammarsalad",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Deities of Faerun (core)",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 0,
+      "no": "Core system. Removes base cleric weapon restrictions, re-applies per deity. REQUIRED for all kits and NPC assignments. No conflicts with F&P if sphere system (cn:2) is not installed — kits work standalone.",
+      "k": 15,
+      "kC": {
+        "npc": 15
+      },
+      "tp2n": "Base Cleric Changes (required for all components)"
+    },
+    {
+      "cn": 1,
+      "n": "Kit Colors",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 1,
+      "no": "Cosmetic: assigns deity-themed colors to kit avatars. Requires core (cn:0). Purely visual.",
+      "x": 0,
+      "tp2n": "Use Kits' Colors"
+    },
+    {
+      "cn": 2,
+      "n": "Sphere System",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 2,
+      "no": "PnP sphere-based spell access for deity kits. HARD CONFLICT with Faiths & Powers sphere system (cn:80). Both rewrite divine spell tables. Choose one: DoF spheres OR F&P spheres. F&P is more comprehensive and . DoF kits work without this component.",
+      "sp": 89,
+      "x": 0,
+      "tp2n": "Spheres System (by Kjeron)"
+    },
+    {
+      "cn": 3,
+      "n": "Heartwarder of Sune",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 3,
+      "k": 1,
+      "sp": 4,
+      "x": 0,
+      "no": "Heartwarder of Sune — love/beauty/passion. Charisma bonuses, charm abilities. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Heartwarder of Sune"
+    },
+    {
+      "cn": 4,
+      "n": "Battleguard of Tempus",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 4,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Battleguard of Tempus — war/strategy. Combat bonuses, rage abilities. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Battleguard of Tempus"
+    },
+    {
+      "cn": 5,
+      "n": "Strifeleader of Cyric",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 5,
+      "k": 1,
+      "x": 0,
+      "no": "Strifeleader of Cyric — strife/murder/deception. Backstab, poison, illusion. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Strifeleader of Cyric"
+    },
+    {
+      "cn": 6,
+      "n": "Nightcloak of Shar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 6,
+      "k": 1,
+      "x": 0,
+      "no": "Nightcloak of Shar — darkness/loss/secrets. Stealth, shadow magic. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Nightcloak of Shar"
+    },
+    {
+      "cn": 7,
+      "n": "Alaghor of Clangeddin",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 7,
+      "k": 1,
+      "x": 0,
+      "no": "Alaghor of Clangeddin — dwarven battle god. Axe/hammer focus, dwarf-only. Also in Divine Remix and Yeslick NPC. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Alaghor of Clangeddin"
+    },
+    {
+      "cn": 8,
+      "n": "Hoodwinker of Baravar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 8,
+      "k": 1,
+      "x": 0,
+      "no": "Hoodwinker of Baravar — gnomish trickster god. Illusion, thieving abilities. Gnome-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Hoodwinker of Baravar"
+    },
+    {
+      "cn": 9,
+      "n": "Fastpaw of Baervan",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 9,
+      "k": 1,
+      "x": 0,
+      "no": "Fastpaw of Baervan — gnomish nature god. Animal companion, nature magic. Gnome-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Fastpaw of Baervan"
+    },
+    {
+      "cn": 10,
+      "n": "Watcher of Helm",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 10,
+      "k": 1,
+      "x": 0,
+      "no": "Watcher of Helm — guardian/protection god. Defense bonuses, vigilance abilities. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Watcher of Helm"
+    },
+    {
+      "cn": 11,
+      "n": "Stormcaller of Talos",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 11,
+      "k": 1,
+      "x": 0,
+      "no": "Stormcaller of Talos — storms/destruction. Lightning, weather magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Stormcaller of Talos"
+    },
+    {
+      "cn": 12,
+      "n": "Dawnbringer of Lathander",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 12,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Dawnbringer of Lathander — dawn/renewal/creativity. Healing, undead turning, light magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Dawnbringer of Lathander"
+    },
+    {
+      "cn": 13,
+      "n": "Holy Justice of Tyr",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 13,
+      "k": 1,
+      "x": 0,
+      "no": "Holy Justice of Tyr — justice/law. Detect evil, smite, lawful abilities. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Holy Justice of Tyr"
+    },
+    {
+      "cn": 14,
+      "n": "Lorekeeper of Oghma",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 14,
+      "k": 1,
+      "x": 0,
+      "no": "Lorekeeper of Oghma — knowledge/inspiration. Lore bonuses, identification. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Lorekeeper of Oghma"
+    },
+    {
+      "cn": 15,
+      "n": "Painbearer of Ilmater",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 15,
+      "k": 1,
+      "x": 0,
+      "no": "Painbearer of Ilmater — suffering/endurance/martyrdom. Damage absorption, healing. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Painbearer of Ilmater"
+    },
+    {
+      "cn": 16,
+      "n": "Dweomerkeeper of Mystra",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 16,
+      "k": 1,
+      "x": 0,
+      "no": "Dweomerkeeper of Mystra — magic/spellcraft. Bonus spells, spell resistance. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Dweomerkeeper of Mystra"
+    },
+    {
+      "cn": 17,
+      "n": "Holy Champion of Torm",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 17,
+      "k": 1,
+      "x": 0,
+      "no": "Holy Champion of Torm — duty/loyalty/obedience. Paladin-like abilities for clerics. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Holy Champion of Torm"
+    },
+    {
+      "cn": 18,
+      "n": "Silentwalker of Mask",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 18,
+      "k": 1,
+      "sp": 4,
+      "x": 0,
+      "no": "Silentwalker of Mask — shadows/thievery. Stealth, lockpicking, trap detection. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Silentwalker of Mask"
+    },
+    {
+      "cn": 19,
+      "n": "Icevassal of Auril",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 19,
+      "k": 1,
+      "x": 0,
+      "no": "Icevassal of Auril — cold/winter. Frost magic, cold resistance. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Icevassal of Auril"
+    },
+    {
+      "cn": 20,
+      "n": "Talon of Malar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 20,
+      "k": 1,
+      "sp": 2,
+      "x": 0,
+      "no": "Talon of Malar — hunting/stalking/bloodlust. Tracking, animal summoning, rage. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Talon of Malar"
+    },
+    {
+      "cn": 21,
+      "n": "Waveservant of Umberlee",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 21,
+      "k": 1,
+      "sp": 2,
+      "x": 0,
+      "no": "Waveservant of Umberlee — oceans/storms/drowning. Water magic, lightning. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Waveservant of Umberlee"
+    },
+    {
+      "cn": 22,
+      "n": "Silverstar of Selune",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 22,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Silverstar of Selune — moon/stars/navigation. Moonlight magic, lycanthropy protection. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Silverstar of Selune"
+    },
+    {
+      "cn": 23,
+      "n": "Malagent of Talona",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 23,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Malagent of Talona — disease/poison. Poison attacks, disease resistance. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Malagent of Talona"
+    },
+    {
+      "cn": 24,
+      "n": "Pain of Loviatar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 24,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Pain of Loviatar — pain/torment. Self-harm for power, whip proficiency. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Pain of Loviatar"
+    },
+    {
+      "cn": 25,
+      "n": "Dreadruler of Bane",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 25,
+      "k": 1,
+      "x": 0,
+      "no": "Dreadruler of Bane — tyranny/oppression. Fear, domination, dark power. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Dreadruler of Bane"
+    },
+    {
+      "cn": 26,
+      "n": "Deathstalker of Bhaal",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 26,
+      "k": 1,
+      "x": 0,
+      "no": "Deathstalker of Bhaal — death/murder. Assassination abilities, death magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Deathstalker of Bhaal"
+    },
+    {
+      "cn": 27,
+      "n": "Gray One of Myrkul",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 27,
+      "k": 1,
+      "x": 0,
+      "no": "Gray One of Myrkul — death/decay/undead. Undead summoning, necromancy. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Gray One of Myrkul"
+    },
+    {
+      "cn": 28,
+      "n": "Doomguide of Kelemvor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 28,
+      "k": 1,
+      "x": 0,
+      "no": "Doomguide of Kelemvor — death/judgment. Undead turning, protection from undead. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Doomguide of Kelemvor"
+    },
+    {
+      "cn": 29,
+      "n": "Magistrati of Azuth",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 29,
+      "k": 1,
+      "x": 0,
+      "no": "Magistrati of Azuth — arcane magic/wizards. Arcane spell access for clerics. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Magistrati of Azuth"
+    },
+    {
+      "cn": 30,
+      "n": "Doomscribe of Jergal",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 30,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Doomscribe of Jergal — fatalism/record-keeping. Divination, fate magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Doomscribe of Jergal"
+    },
+    {
+      "cn": 31,
+      "n": "Holy Strategist of Red Knight",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 31,
+      "k": 1,
+      "x": 0,
+      "no": "Holy Strategist of Red Knight — strategy/tactics. Combat planning, tactical abilities. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Holy Strategist of The Red Knight"
+    },
+    {
+      "cn": 32,
+      "n": "Bloodreaver of Garagos",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 32,
+      "k": 1,
+      "x": 0,
+      "no": "Bloodreaver of Garagos — war/slaughter. Berserker rage, blood magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Bloodreaver of Garagos"
+    },
+    {
+      "cn": 33,
+      "n": "Seer of Savras",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 33,
+      "k": 1,
+      "x": 0,
+      "no": "Seer of Savras — divination/prophecy. Far-seeing, detection abilities. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Seer of Savras"
+    },
+    {
+      "cn": 34,
+      "n": "Necrophant of Velsharoon",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 34,
+      "k": 1,
+      "x": 0,
+      "no": "Necrophant of Velsharoon — necromancy/undeath. Undead creation, lichdom aspiration. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Necrophant of Velsharoon"
+    },
+    {
+      "cn": 35,
+      "n": "Mistcaller of Leira",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 35,
+      "k": 1,
+      "x": 0,
+      "no": "Mistcaller of Leira — illusion/deception. Illusion spells, mirror images. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Mistcaller of Leira"
+    },
+    {
+      "cn": 36,
+      "n": "Luckbringer of Tymora",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 36,
+      "k": 1,
+      "x": 0,
+      "no": "Luckbringer of Tymora — good fortune/adventuring. Luck bonuses, saving throw boosts. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Luckbringer of Tymora"
+    },
+    {
+      "cn": 37,
+      "n": "Black Finger of Beshaba",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 37,
+      "k": 1,
+      "x": 0,
+      "no": "Black Finger of Beshaba — misfortune/bad luck. Curses, enemy debuffs. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Black Finger of Beshaba"
+    },
+    {
+      "cn": 38,
+      "n": "Doombringer of Hoar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 38,
+      "k": 1,
+      "x": 0,
+      "no": "Doombringer of Hoar — revenge/retribution. Retaliatory damage, vengeance abilities. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Doombringer of Hoar"
+    },
+    {
+      "cn": 39,
+      "n": "Windwalker of Shaundakul",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 39,
+      "k": 1,
+      "x": 0,
+      "no": "Windwalker of Shaundakul — travel/exploration/wind. Movement speed, wind magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Windwalker of Shaundakul"
+    },
+    {
+      "cn": 40,
+      "n": "Wavetamer of Valkur",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 40,
+      "k": 1,
+      "sp": 2,
+      "x": 0,
+      "no": "Wavetamer of Valkur — sailors/favorable winds. Water magic, navigation. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Wavetamer of Valkur"
+    },
+    {
+      "cn": 41,
+      "n": "Darkwalker of Ibrandul",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 41,
+      "k": 1,
+      "x": 0,
+      "no": "Darkwalker of Ibrandul — darkness/caverns. Darkvision, underground combat bonuses. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Darkwalker of Ibrandul"
+    },
+    {
+      "cn": 42,
+      "n": "Pacifist of Eldath",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 42,
+      "k": 1,
+      "x": 0,
+      "no": "Pacifist of Eldath — peace/quiet/springs. Nonviolent approach, healing focus. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Pacifist of Eldath"
+    },
+    {
+      "cn": 43,
+      "n": "Iceguardian of Ulutiu",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 43,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Iceguardian of Ulutiu — glaciers/arctic survival. Cold resistance, ice magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Iceguardian of Ulutiu"
+    },
+    {
+      "cn": 44,
+      "n": "Woodwife of Shiallia",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 44,
+      "k": 1,
+      "x": 0,
+      "no": "Woodwife of Shiallia — woodland/fertility. Plant magic, animal companion. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Woodwife of Shiallia"
+    },
+    {
+      "cn": 45,
+      "n": "Glyphscriber of Deneir",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 45,
+      "k": 1,
+      "sp": 3,
+      "x": 0,
+      "no": "Glyphscriber of Deneir — writing/cartography. Glyph magic, scroll crafting. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Glyphscriber of Deneir"
+    },
+    {
+      "cn": 46,
+      "n": "Trailblazer of Marthammor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 46,
+      "k": 1,
+      "x": 0,
+      "no": "Trailblazer of Marthammor — dwarven travel/exploration. Movement bonuses, dwarf-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Trailblazer of Marthammor"
+    },
+    {
+      "cn": 47,
+      "n": "Hawkeye of Solonor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 47,
+      "k": 1,
+      "x": 0,
+      "no": "Hawkeye of Solonor — elven archery/hunting. Ranged bonuses, elf-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Hawkeye of Solonor"
+    },
+    {
+      "cn": 48,
+      "n": "Horn Guard of Yondalla",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 48,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Horn Guard of Yondalla — halfling protection/home. Defensive abilities, halfling-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Horn Guard of Yondalla"
+    },
+    {
+      "cn": 49,
+      "n": "Bloodstalker of Urdlen",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 49,
+      "k": 1,
+      "sp": 2,
+      "x": 0,
+      "no": "Bloodstalker of Urdlen — gnomish evil/bloodlust. Burrowing, poison, gnome-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Bloodstalker of Urdlen"
+    },
+    {
+      "cn": 50,
+      "n": "Luckmaiden of Haela",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 50,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Luckmaiden of Haela — dwarven luck/battle. Combat luck, dwarf-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Luckmaiden of Haela"
+    },
+    {
+      "cn": 51,
+      "n": "Truesword of Arvoreen",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 51,
+      "k": 1,
+      "x": 0,
+      "no": "Truesword of Arvoreen — halfling defense/war. Martial abilities, halfling-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Truesword of Arvoreen"
+    },
+    {
+      "cn": 52,
+      "n": "Glitterbright of Garl",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 52,
+      "k": 1,
+      "x": 0,
+      "no": "Glitterbright of Garl — gnomish trickery/gems. Illusion, gem magic, gnome-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Glitterbright of Garl"
+    },
+    {
+      "cn": 53,
+      "n": "Arachne of Lolth",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 53,
+      "k": 1,
+      "x": 0,
+      "no": "Arachne of Lolth — drow spider goddess. Spider magic, poison, web. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Arachne of Lolth"
+    },
+    {
+      "cn": 54,
+      "n": "Eye of Gruumsh",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 54,
+      "k": 1,
+      "x": 0,
+      "no": "Eye of Gruumsh — orcish war god. Berserker rage, orcish abilities. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Eye of Gruumsh"
+    },
+    {
+      "cn": 55,
+      "n": "Feywarden of Corellon",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 55,
+      "k": 1,
+      "sp": 2,
+      "x": 0,
+      "no": "Feywarden of Corellon — elven creator god. Swordplay, arcane power, elf-only. Also in Divine Remix. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Feywarden of Corellon"
+    },
+    {
+      "cn": 56,
+      "n": "Sonnlinor of Moradin",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 56,
+      "k": 1,
+      "sp": 1,
+      "x": 0,
+      "no": "Sonnlinor of Moradin — dwarven creator god. Forge magic, dwarf-only. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "tp2n": "Install kit: Sonnlinor of Moradin"
+    },
+    {
+      "cn": 57,
+      "n": "NPC: Aerie as Fastpaw of Baervan",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 57,
+      "x": 9,
+      "no": "Assigns Fastpaw of Baervan kit to Aerie (gnome cleric/mage).",
+      "rd": 0,
+      "tp2n": "Aerie, the Fastpaw of Baervan"
+    },
+    {
+      "cn": 58,
+      "n": "NPC: Quayle as Hoodwinker of Baravar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 58,
+      "x": 8,
+      "no": "Assigns Hoodwinker of Baravar kit to Quayle (gnome cleric/illusionist).",
+      "rd": 0,
+      "tp2n": "Quayle, the Hoodwinker of Baravar"
+    },
+    {
+      "cn": 59,
+      "n": "NPC: Glint as Hoodwinker of Baravar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 59,
+      "x": 8,
+      "no": "Assigns Hoodwinker of Baravar kit to Glint (gnome cleric/thief, SoD).",
+      "rd": 0,
+      "tp2n": "Glint, the Hoodwinker of Baravar"
+    },
+    {
+      "cn": 60,
+      "n": "NPC: Yeslick as Alaghor of Clangeddin",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 60,
+      "x": 7,
+      "no": "Assigns Alaghor of Clangeddin kit to Yeslick (dwarf fighter/cleric).",
+      "rd": 0,
+      "tp2n": "Yeslick, the Alaghar of Clangeddin"
+    },
+    {
+      "cn": 61,
+      "n": "NPC: Tiax as Strifeleader of Cyric",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 61,
+      "x": 5,
+      "no": "Assigns Strifeleader of Cyric kit to Tiax (gnome cleric/thief).",
+      "rd": 0,
+      "tp2n": "Tiax, the Strifeleader of Cyric"
+    },
+    {
+      "cn": 62,
+      "n": "NPC: Anomen as Watcher of Helm",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 62,
+      "x": 10,
+      "no": "Assigns Watcher of Helm kit to Anomen (human fighter/cleric).",
+      "rd": 0,
+      "tp2n": "Anomen, the Watcher of Helm"
+    },
+    {
+      "cn": 63,
+      "n": "NPC: Branwen as Battleguard of Tempus",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 63,
+      "x": 4,
+      "no": "Assigns Battleguard of Tempus kit to Branwen (human cleric).",
+      "rd": 0,
+      "tp2n": "Branwen, the Battleguard of Tempus"
+    },
+    {
+      "cn": 64,
+      "n": "NPC: Viconia as Nightcloak of Shar",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 64,
+      "x": 6,
+      "no": "Assigns Nightcloak of Shar kit to Viconia (drow cleric). Thematic — Viconia worships Shar.",
+      "rd": 0,
+      "tp2n": "Viconia, the Nightcloak of Shar"
+    },
+    {
+      "cn": 65,
+      "n": "NPC: Tenya as Waveservant of Umberlee",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 65,
+      "x": 21,
+      "no": "Assigns Waveservant of Umberlee kit to Tenya (human cleric, BG1).",
+      "rd": 0,
+      "tp2n": "Tenya, the Waveservant of Umberlee"
+    },
+    {
+      "cn": 66,
+      "n": "NPC: Drake as Holy Justice of Tyr",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 66,
+      "x": 13,
+      "no": "Assigns Holy Justice of Tyr kit to Drake NPC.",
+      "rd": 0,
+      "tp2n": "Drake, the Holy Justice of Tyr"
+    },
+    {
+      "cn": 67,
+      "n": "NPC: Shar-Teel as Bloodreaver of Garagos",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 67,
+      "x": 32,
+      "no": "Assigns Bloodreaver of Garagos kit to Shar-Teel.",
+      "rd": 0,
+      "tp2n": "Shar-Teel, the Bloodreaver of Garagos"
+    },
+    {
+      "cn": 68,
+      "n": "NPC: Gavin as Dawnbringer of Lathander",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 68,
+      "x": 12,
+      "no": "Assigns Dawnbringer of Lathander kit to Gavin NPC.",
+      "rd": 0,
+      "tp2n": "Gavin, the Dawnbringer of Lathander"
+    },
+    {
+      "cn": 69,
+      "n": "NPC: Dusky as Silentwalker of Mask",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 69,
+      "x": 18,
+      "no": "Assigns Silentwalker of Mask kit to Dusky NPC.",
+      "rd": 0,
+      "tp2n": "Dusky, the Silentwalker of Mask"
+    },
+    {
+      "cn": 70,
+      "n": "NPC: Yvette as Heartwarder of Sune",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 70,
+      "x": 3,
+      "no": "Assigns Heartwarder of Sune kit to Yvette NPC.",
+      "rd": 0,
+      "tp2n": "Yvette, the Heartwarder of Sune"
+    },
+    {
+      "cn": 71,
+      "n": "NPC: Helarine as Doomguide of Kelemvor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 71,
+      "x": 28,
+      "no": "Assigns Doomguide of Kelemvor kit to Helarine NPC.",
+      "rd": 0,
+      "tp2n": "Helarine, the Doomguide of Kelemvor"
+    },
+    {
+      "cn": 72,
+      "n": "NPC: Finch as Glyphscriber of Deneir",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 72,
+      "x": 45,
+      "no": "Assigns Glyphscriber of Deneir kit to Finch NPC.",
+      "rd": 0,
+      "tp2n": "Finch, the Glyphscriber of Deneir"
+    },
+    {
+      "cn": 73,
+      "n": "NPC: Turald as Trailblazer of Marthammor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 73,
+      "x": 46,
+      "no": "Assigns Trailblazer of Marthammor kit to Turald NPC.",
+      "rd": 0,
+      "tp2n": "Turald, the Trailblazer of Marthammor"
+    },
+    {
+      "cn": 74,
+      "n": "NPC: Korin as Hawkeye of Solonor",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 74,
+      "x": 47,
+      "no": "Assigns Hawkeye of Solonor kit to Korin NPC.",
+      "rd": 0,
+      "tp2n": "Korin, the Hawkeye of Solonor Thelandira"
+    },
+    {
+      "cn": 75,
+      "n": "NPC: Nephele as Horn Guard of Yondalla",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 75,
+      "x": 48,
+      "no": "Assigns Horn Guard of Yondalla kit to Nephele NPC.",
+      "rd": 0,
+      "tp2n": "Nephele, the Horn Guard of Yondalla"
+    },
+    {
+      "cn": 76,
+      "n": "NPC: Helga as Luckmaiden of Haela",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 76,
+      "x": 50,
+      "no": "Assigns Luckmaiden of Haela kit to Helga NPC.",
+      "rd": 0,
+      "tp2n": "Helga, the Luckmaiden of Haela"
+    },
+    {
+      "cn": 77,
+      "n": "NPC: Mazzy as Truesword of Arvoreen",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 77,
+      "x": 51,
+      "no": "Assigns Truesword of Arvoreen kit to Mazzy (halfling fighter).",
+      "rd": 0,
+      "tp2n": "Mazzy, the Truesword of Arvoreen"
+    },
+    {
+      "cn": 78,
+      "n": "NPC: Dave as Stormcaller of Talos",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 78,
+      "x": 11,
+      "no": "Assigns Stormcaller of Talos kit to Dave NPC.",
+      "rd": 0,
+      "tp2n": "Dave, the Stormcaller of Talos"
+    },
+    {
+      "cn": 79,
+      "n": "NPC: Jetlaya as Dawnbringer of Lathander",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 79,
+      "x": 12,
+      "no": "Assigns Dawnbringer of Lathander kit to Jetlaya NPC.",
+      "rd": 0,
+      "tp2n": "Jetlaya, the Dawnbringer of Lathander"
+    },
+    {
+      "cn": 80,
+      "n": "NPC: Tviy as Bloodstalker of Urdlen",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 80,
+      "x": 49,
+      "no": "Assigns Bloodstalker of Urdlen kit to Tviy NPC.",
+      "rd": 0,
+      "tp2n": "T'viy, the Bloodstalker of Urdlen"
+    },
+    {
+      "cn": 81,
+      "n": "NPC: Jenora as Magistrati of Azuth",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 81,
+      "x": 29,
+      "no": "Assigns Magistrati of Azuth kit to Jenora NPC.",
+      "rd": 0,
+      "tp2n": "Strongholds Alterings (by Kjeron) - Requires the respective kit component"
+    },
+    {
+      "cn": 82,
+      "n": "Stronghold Alterations",
+      "wf": "DeitiesOfFaerun",
+      "wp": "DeitiesOfFaerun\\DEITIESOFFAERUN.TP2",
+      "wq": "exact",
+      "wc": 82,
+      "no": "Modifies cleric stronghold quests with deity-specific content and dialogue. Requires core (cn:0).",
+      "x": 0,
+      "rd": 0,
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both add deity-specific priest changes. ToF's speciality priests may overlap with DoF deity kits.",
+      "myComps": "#0 Core #2 Sphere System",
+      "theirComps": "#40650 Revised speciality priests #50400 New priest gods",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "Raduziel",
+    "r": "Deities-Of-Faerun"
+  }
+}

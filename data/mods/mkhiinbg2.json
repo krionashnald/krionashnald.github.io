@@ -1,0 +1,75 @@
+{
+  "i": 861,
+  "t": "mkhiinbg2",
+  "sv": 1,
+  "ord": 1560,
+  "c": "NEW NPC MODS",
+  "n": "M'Khiin for BG2EE",
+  "au": "bucketfulofsunshine",
+  "dl": "https://github.com/bucketfulofsunshine/mkhiinbg2",
+  "no": "Adds M'Khiin Grubdoubler (SoD goblin shaman companion) to BG2EE as a joinable NPC. Nightly/development version.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "mkhiin",
+          "portraits/mkhiinbg2/mkhiin.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/bucketfulofsunshine/mkhiinbg2",
+  "a": "bucketfulofsunshine",
+  "sum": "Adds M’Khiin Grubdoubler (SoD goblin shaman companion) to BG2EE as a joinable NPC. Includes optional alternate portrait and BAEBG2 crossmod.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "langs": {
+    "en": 0,
+    "es": 1
+  },
+  "co": [
+    {
+      "n": "M'Khiin for BG2EE",
+      "cn": 0,
+      "wf": "mkhiinbg2",
+      "wp": "mkhiinbg2\\setup-mkhiinbg2.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Main NPC component. Adds M'Khiin as a joinable companion in BG2.",
+      "tp2n": "M'Khiin NPC for BG2EE"
+    },
+    {
+      "n": "Artastrophe portrait for M'Khiin",
+      "g": "Install alternate portrait for M'Khiin?",
+      "scn": "Install alternate portrait for M'Khiin?",
+      "cn": 10,
+      "wf": "mkhiinbg2",
+      "wp": "mkhiinbg2\\setup-mkhiinbg2.tp2",
+      "wq": "verified",
+      "no": "Alternate portrait by Artastrophe. Requires main component.",
+      "tp2n": "Artastrophe"
+    },
+    {
+      "n": "BAEBG2 Crossmod",
+      "cn": 20,
+      "wf": "mkhiinbg2",
+      "wp": "mkhiinbg2\\setup-mkhiinbg2.tp2",
+      "wq": "verified",
+      "no": "Crossmod content with Bae mod. Requires Zdbae.tp2 component 0.",
+      "tp2n": "Crossmod with Baeloth for BG2"
+    }
+  ],
+  "gh": {
+    "o": "bucketfulofsunshine",
+    "r": "mkhiinbg2"
+  }
+}

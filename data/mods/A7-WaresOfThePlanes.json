@@ -1,0 +1,2585 @@
+{
+  "i": 258,
+  "t": "A7-WaresOfThePlanes",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 80,
+  "c": "ITEM ADDITION MODS",
+  "n": "Wares of the Planes",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "zh-cn": 3
+  },
+  "no": "Wares of the Planes Flat mod structure: tp2 at root level with no subfolder. May need manual folder creation for mod_installer. PARSE WARNING (cosmetic): a7-mi09.d line 258 — dialog action syntax warning. Does not affect gameplay.",
+  "in": [
+    {
+      "t": "Flat mod structure: tp2 at root level with no subfolder. May need manual folder creation for mod_installer.",
+      "type": "folder"
+    }
+  ],
+  "u": "https://github.com/Argent77/A7-WaresOfThePlanes",
+  "a": "Argent77",
+  "v": "2.2",
+  "sum": "A mod for BG:EE, SoD, BG2:EE and EET that imports a large number of items from the Planescape universe to the Baldur's Gate series and makes them available by a unique merchant.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-WaresOfThePlanes"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "A7-AM01",
+          "amulet",
+          "Tribal Necklace of the Rengarth",
+          "Necklaces like these were crafted by the nomadic Rengarth tribes over 1700 years ago. They were primarily used by the shamans of the tribes in ceremonies and occasionally as support in their skirmishes with rival tribes and the ever-present threat posed by the Netheril Empire.\n\nThese necklaces consist of bones, teeth and claws from wolves, bears, boars, and several other animals, held together by strong but flexible leather thongs. They provide a number of superficial magic abilities. But the more powerful enchantments are mysterious and resist even powerful divination attempts.\n\nThis particular necklace wound up in the possession of a Netherese noble of Thultanthar before the city was lost for centuries when it shifted into the Plane of Shadow. About 1279 DR a member of the Doomguard faction returned with it from a planar excursion and sold it to a band of adventurers in Sigil where the trail of the item was lost again until it showed up recently in possesion of Ebb Creakknees' store.\n\nDespite its crude appearance the necklace is surprisingly well made and seems to be enchanted to withstand the test of time. Every bone and claw fits seamlessly into each other, making it very sturdy but comfortably to wear at the same time. However, given its barbaric appearance, people in more civilized regions might feel repulsed if the necklace is worn openly.\n\nSTATISTICS:\n\nEquipped abilities:\n– Charisma: -1\n– Undetectable by animals (only Druids, Shamans, and Rangers)\n\nCharge abilities:\n– Charm Animal three times per day (Save vs. Spell negates)\n  Range: 30 feet\n  Duration: 2 turns\n  Area of Effect: 1 creature\n\nWeight: 2",
+          {
+            "cha": -1,
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "A7-AX01",
+          "axe",
+          "Ascension +2",
+          "\"Ascension\" is one of the finest weapons created at the Great Foundry, the home of the Believers of the Source in Sigil. It is one of three weapons called the \"Triad of Tests,\" including the hammer \"Reason\" and the dagger \"Enlightenment.\" The symbol of the faction is engraved on the axe head, and the edges of the blades are so sharp they could split a hair lengthwise.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Charisma: +1\n\nTHAC0: +2\nDamage: 1d8+2 (slashing)\nSpeed Factor: 4\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "ac": 1,
+            "cha": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX02",
+          "axe",
+          "Enchanted Battle Axe +1",
+          "Closer examination of the weapon reveals a strange symbol, very faint, on the surface of the axe head. Tracing it with your finger, there is a sudden charge, and the axe head changes before your eyes into a silvery-looking metal.\n\nThe edge is incredibly sharp, so much so it looks like it could hack through stone if necessary. The symbol you traced on the weapon is now glowing brilliantly, and if anything, the axe has become even lighter than before.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX03",
+          "axe",
+          "Battle Axe of Quality",
+          "Intricate runes are etched on the shaft and the blades of this axe. The edges of the axe are razor-sharp; it looks like it would be possible to shave with it, though that's not something that you would try until you had consumed several tankards of ale. The handle itself is made of ironwood, and leather is wrapped tightly around the handle to help secure the user's grip.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 7\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 8",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX04",
+          "axe",
+          "Blindsider +1",
+          "This magnificent axe, known as \"Blindsider,\" is truly one of a kind. It is rumored that it was the creation of one Akyzum Yar, chief metallurgist of an ancient empire on the Prime Material Plane. The Emperor whom Yar served, a vain and wicked man, commissioned the creation of \"a weapon of unsurpassed beauty.\" After years of toiling, Yar succeeded and presented the Emperor with \"Blindsider,\" whereupon he was promptly put to death so that his work could never be reproduced.\n\nThe various ores and enchantments employed in the forging of this weapon yielded a new type of metal that is lightweight, durable, and highly reflective. The axe earned its name from its tendency to reflect light into the eyes of its opponent, temporarily blinding the target so that its wielder can easily cut him down. Additionally, its wielder is granted immunity to blinding attacks as a magical byproduct of its reflective nature.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor class: +2\n– Wearer is immune to Blindness\n\nCombat abilities:\n– Hit target must save vs. Death or is blinded for one round\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "ac": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX05",
+          "axe",
+          "Butcherer of Innocents +2",
+          "This giant, axe-like cleaver earned its nickname while in the hands of Oswell Breck, a butcher who once serviced the Clerk's Ward of Sigil. The rumor goes that one day this affable and well-respected citizen suddenly went on a murderous and bloody rampage that lasted ten days and ten nights. Cleaver in hand, Oswell stalked the streets of the ward, brutally hacking down every man, woman, and child unlucky enough to cross his path until the Lady of Pain herself intervened. It is rumored that he suffered from a strange disease that slowly caused his body to waste away, and it was this disease that eroded his sanity and prompted the murder spree.\n\nThe origin of this instrument of carnage is shrouded in mystery. However, the various wizards and scholars who examined the discarded weapon after Oswell's mazing have catalogued the nature of its enchantment. The cleaver seems to feed upon its victims, sucking the very life force from them and bestowing a portion of it upon its wielder.\n\nSTATISTICS:\n\nCombat abilities:\n– Transfers 2 Hit Points from target to wielder\n\nTHAC0: +2\nDamage: 1d8+2 (slashing)\nSpeed Factor: 5\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX06",
+          "axe",
+          "Heartgrinder +3",
+          "A single teardrop of the wielder's blood, applied at the border where the axe meets the handle, is sufficient to awaken \"Heartgrinder.\" Once applied, the drop of blood freckles across the blade and handle, giving it a dull red radiance. The glow from Heartgrinder pulses, matching the heartbeat of its wielder.\n\nNo matter what the target, Heartgrinder is a powerful weapon, capable of tearing through nearly any defenses. Against targets with blood running in their veins (whether their own or another's - vampires beware), Heartgrinder inflicts additional damage, as every stroke also smashes the target's heart, no matter what location the axe struck.\n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d8+3, +3 electrical damage, +1d4 slashing damage vs. corporeal creatures\nDamage type: Slashing\nSpeed Factor: 4\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX07",
+          "axe",
+          "Hatred's Gift +1",
+          "It is not exactly clear in the annals of known planar history when \"Hatred's Gift\" was created, but by the bloody trail it has left across the planes seems to have finally reached you.\n\nThe axe exists to inspire hatred in one's enemies and fill its wielder with a berserker rage. When entering combat, the skulls along the shaft come alive, chittering their teeth, and the teeth (remnants of fiendish victims absorbed into the axe blade) extend outwards, biting and tearing into opponents with each strike.\n\nOnce equipped, \"Hatred's Gift\" cannot be dropped unless its curse is removed.\n\nSTATISTICS:\n\nEquipped abilities:\n– Causes the wielder to go berserk\n– May only be removed with a Remove Curse spell\n\nTHAC0: +1\nDamage: 2d8+1 (slashing)\nSpeed Factor: 6\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d8",
+            "dmgBonus": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX08",
+          "axe",
+          "Axe of the Jester +3",
+          "The person who created this axe must have been mad or a genius. Only the most skilled of smiths could have forged a weapon using Chaos Matter, the most unstable and unpredictable element in all the planes.\n\nStories of this particular axe have been told and retold across the planes. Heroic deeds of men defeating creatures of immense power simply by touching the axe to the creature… and of these same men dying horrible deaths while doing simple everyday tasks.\n\nZaknar the Simple - Defeated a devourer with a single swipe of this axe. Crushed to death by a falling boulder in the vast plains of Tabor.\n\nGarkon the Righteous - Struck by a mysterious discharge of energy while fighting a cranium rat.\n\nKannas - Tradesman by profession. Buried alive as the stone wall the axe was mounted on collapsed on him.\n\nKvry Matterson - A child of only nine seasons, was not only able to ward off a group of marauding fire bats, he even managed to kill 2 of them!\n\nThe list of tragedies and deeds goes on and on.\n\nSTATISTICS:\n\nEquipped abilities:\n– ???\n\nCombat abilities:\n– ???\n\nTHAC0: +3\nDamage: 1d2 (slashing)\nSpeed Factor: 3\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 2",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d2",
+            "ac": 2,
+            "int": -1,
+            "wis": -2,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-AX09",
+          "axe",
+          "Final Judgment +3",
+          "This archaic double-bladed battle-axe is reminiscent of an executioner's axe; the axe head has been forged into the symbol of the Mercykiller Faction (a red dragon with its wings outspread… the outstretched wings have been shaped into the blades of the axe.) The axe itself is huge; it would require tremendous strength to use effectively.\n\nThis axe carries part of Vhailor's essence within it. As a result, it is utterly devoted to justice and will not allow the user to rest while \"judgments\" are left to be delivered. The considerable damage it causes to an opponent is doubled if the axe strikes a guilty or chaotic creature. Furthermore, the axe itself lends some of its strength to the wielder, giving them added protection from attacks.\n\nThe origin of this axe is unknown. If you were to hazard a guess, the axe gained its powers simply from Vhailor's belief.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– May only be removed with a Remove Curse spell\n\nTHAC0: +3\nDamage: 1d8+3, +1d6 fire damage, does double damage against chaotic creatures\nDamage type: Slashing\nSpeed Factor: 4\nProficiency Type: Axe\nType: One-handed\nRequires:\n 16 Strength\n\nWeight: 12",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "ac": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 16
+            }
+          }
+        ],
+        [
+          "A7-AX10",
+          "axe",
+          "Edge of Oblivion +2",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes. \n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 7\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "coldResist": 50,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-BL01",
+          "belt",
+          "Planar Anchor",
+          "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. \n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": -50
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": -50
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": -50
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": -50
+              }
+            ]
+          }
+        ],
+        [
+          "A7-BO01",
+          "bolt",
+          "Bolts of Acheron +1",
+          "These enchanted bolts have been fashioned from one of the great cubes of Acheron. According to many planar scholars, Acheron is a plane in perpetual war with itself, where huge cubes the size of continents float through the ether and smash against each other. On the surface of these cubes, legions of soldiers wage war on each other, swarming from cube to cube and attacking whoever else they can find. The plane is filled with the ringing of steel and the great thundering impacts of the cubes striking each other.\n\nThese bolts carry a portion of Acheron's heart within them. When these bolts strike an opponent, they do so with so much force that the impact has the potential to stun an opponent and leave him helpless for a period of time.\n\nSTATISTICS:\n\nCombat abilities:\n– Target must save vs. Death or be stunned for one round\n\nTHAC0: +1\nDamage: 1d4+1 (crushing)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO02",
+          "bolt",
+          "Acidic Sponge Bolts +1",
+          "The putty-like globes on the heads of these crossbow bolts are actually dried-up aquatic sponges found in many of the great lakes of Bytopia. Seemingly unremarkable to most scholars, these tiny sponges were accidentally discovered to have the property of being able to absorb acids and store them in their bodies with no harm to themselves.\n\nAs a result, great masses of these creatures were gathered and bred for use as weapons against fiends in the Blood War. After being fed a steady diet of acid for a few days, the sponges are harvested, dried, and covered with a resin that keeps a soft bubble around the sponge. The sponge is then mounted on the head of an arrow or crossbow bolt and is ready for use.\n\nWhen the tip of the bolt strikes a creature with sufficient force, the resin bubble bursts, the sponge flattens, and the target is doused with acid.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d2+1, +6 acid damage (Save vs. Breath for half)\nDamage type: Missile\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d2",
+            "dmgBonus": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO03",
+          "bolt",
+          "\"Rule of Threes\" Bolts",
+          "These crossbow bolts are the work of a twisted mechanical genius. Just beneath the head of each bolt is a small catch, that when pressed, unlocks the head of the bolt, allowing it to divide. From what you can tell, once the bolts are unlocked, the pyramid-shaped heads are carefully fashioned so that each one splits into three on impact. Each triangle-shaped fragment then tears a different route through the target's body, wreaking havoc on his internal organs.\n\nSTATISTICS:\n\nDamage: 1d10+5 (missile)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO04",
+          "bolt",
+          "Zephyr Bolts +1",
+          "These crossbow bolts have heads with grooves cut into the sides. They do no more damage than normal crossbow bolts, but they bear a minor enchantment that allows them to correct their path in flight, making them more likely to hit an opponent.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8 (missile)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d8",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO05",
+          "bolt",
+          "Bolts of Whistling Doom +2",
+          "These bolts have somehow captured the deadly harmonic of Pandemonium and then added insult to injury by imprisoning an enraged air elemental inside the head of the bolt. When one of these bolts strike an opponent, the head shatters, and the air elemental is released. The elemental will whip around the opponent in a frenzy, making one strike before it vanishes.\n\nSTATISTICS:\n\nTHAC0: +2\nDamage: 4d4 (crushing)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 2,
+            "dmg": "4d4",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO06",
+          "bolt",
+          "Bolts of Wincing +1",
+          "Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.\n\nSTATISTICS:\n\nDamage: 1d8 (missile)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO07",
+          "bolt",
+          "Winged Bolts",
+          "The heads of these bolts have been carved to resemble a pair of feathered wings. The bolts are extremely light and look more like arrows than crossbow bolts. Although not magical, they are more accurate and do more damage when they strike an opponent than standard crossbow bolts.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+2 (missile)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO08",
+          "bolt",
+          "Jagged Bolts +1",
+          "These enchanted bolts have a series of jagged black runes traced along the shaft. When fired, the runes rise upwards like spines, forming an additional row of vicious edges that tear into a target.\n\nSTATISTICS:\n\nCombat abilities:\n– 4 extra bleeding damage spread over two rounds\n\nTHAC0: +1\nDamage: 1d4+2 (missile)\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BO09",
+          "bolt",
+          "Bolts of Kessek the Devourer +2",
+          "Also called \"Kessek's Teeth,\" the head of these enchanted bolts are made of bone and have two long fangs curving out from the center. When one of these bolts strikes an opponent, the fangs takes on a life of their own and begin eating their way slowly and painfully through the victim's body.\n\nAccording to legend, Kessek was a bariaur chieftain on the Outlands who was forced to watch his people starve during a winter storm in the Cleft of Tears many centuries ago. Trapped in the Cleft because of heavy snows, he sent scouts from his tribe out to seek aid from his neighbors, the province of Ohinru.\n\nLearning of the bariaurs' plight, the merchant princes of Ohinru saw an opportunity to wipe out the \"nomadic pests\" and claim their lands for their own. The bariaur scouts were executed and their heads mounted on the walls so that, \"the vultures might feed while the bariaurs starved.\"\n\nWhen the storms cleared and more than half of his tribe had died of starvation, Kessek finally learned what had happened to his scouts. Consumed with an insane fire, he fashioned a sheaf of bolts from the teeth and bones of his people who had starved to death. Once he had finished, he traveled to Ohinru in the night and fired his bolts blindly in the city streets, the name of each bariaur that had died whispered on his lips as he released each shaft.\n\nEach bolt he fired twisted in flight, hungrily searching for a victim and each found one… then another, then another. The night was filled with the choked screams of the citizens of Ohinru as the devourers claimed their bodies.\n\nWhen dawn touched the city, the vultures fed again. No trace of Kessek could be found.\n\nThe bolts of Kessek the Devourer can still be found scattered across the planes. It is said that for each victim the bolts claim, that another bolt is born… with the same hunger as the first.\n\nSTATISTICS:\n\nTHAC0: +4\nDamage: 1d8+2, +8 piercing damage (Save vs. Death for half)\nDamage type: Missile\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BR01",
+          "bracers",
+          "Bell's Shield",
+          "",
+          {
+            "magicResist": 10,
+            "wis": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Paladin"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BR02",
+          "bracers",
+          "Magus Shield",
+          "This bracelet is a variation of the Magus Guard. Essentially using the same spells and glyphs as its predecessor, the Magus Shield is better able to focus the energy of the enchantments placed upon it.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: 4\n\nWeight: 2",
+          {
+            "ac": 4,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BR03",
+          "bracers",
+          "Magus Guard",
+          "Considered standard equipment for any adventuring mage, bracelets such as these can be found across the planes. Judging by the markings on this particular bracelet it appears to have been made in a style quite common to Sigil. Various glyphs of warding are meticulously carved along the surface producing an almost hypnotic effect when looked at. When worn this bracelet protects the wearer from normal attacks as if they were wearing scale armor.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: 6\n\nWeight: 2",
+          {
+            "ac": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BR04",
+          "bracers",
+          "Dread Bond",
+          "Legend has it that this bracelet was created by Nacek the Sadistic. Tiny razor sharp spikes cover the entire surface of this item injecting small amounts of rare reagents into the blood stream of the user. The effect of these chemicals causes the user to feel a constant adrenaline rush of strength.\n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: +1\n– Immunity to panic\n\nWeight: 3",
+          {
+            "str": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-BR05",
+          "bracers",
+          "Spiked Gauntlets of Ogre Power",
+          "A ridge of huge black spikes bristle along the knuckles of these metal gauntlets, allowing the wearer to perforate any target they punch. Clamps line the edges of the gauntlets to secure them in place once worn.\n\nThese gauntlets bear an enchantment that allows the user to strike opponents with the strength of ten men. The spikes along the knuckles simply add insult to injury, as any victim whose bones are not shattered by the initial attack will slowly bleed to death from the jagged wounds the spikes inflict.\n\nSTATISTICS:\n\nEquipped abilities:\n– THAC0: +2 when attacking with fists\n– Damage: +1d4+2 when attacking with fists\n– Deals additional 1d4+2 piercing damage when attacking with fists\n\nWeight: 2",
+          {}
+        ],
+        [
+          "A7-BR06",
+          "bracers",
+          "Spider Bracelet",
+          "",
+          {
+            "int": -1,
+            "wis": -1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 5
+              },
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              }
+            ],
+            "usability": {
+              "minCon": 2,
+              "minInt": 2
+            }
+          }
+        ],
+        [
+          "A7-BR07",
+          "bracers",
+          "Vambraces of Evil's Warding",
+          "// #6791\n@11 =",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ]
+          }
+        ],
+        [
+          "A7-CK01",
+          "cloak",
+          "Cowl of Deepest Shadows",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "A7-DG01",
+          "dagger",
+          "Backbiter +1",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG02",
+          "dagger",
+          "Bone Dagger +1",
+          "The blade of this dagger seems to be made from the bone of some creature. The edge of this blade is extremely sharp.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d4+1 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG03",
+          "dagger",
+          "Notched Dagger +2",
+          "This dagger has various notches strategically placed about the blade. When used correctly, this dagger has the ability to catch incoming blows from bladed weapons.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1 vs. slashing attacks\n\nTHAC0: +2\nDamage: 1d4+2 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG04",
+          "dagger",
+          "Phantom Dagger +3",
+          "As if of its own volition, this dagger seems to reach out to its enemies, instinctively finding the most vulnerable spots on any creature.\n\nSTATISTICS:\n\nTHAC0: +5\nDamage: 1d4+3 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG05",
+          "dagger",
+          "Entropic Blade +3",
+          "The surface of this small dagger twists and bends as you watch, as if struggling to break free from its shape.\n\nIt looks to be made of iron, silver, and any of a number of different metals. Sometimes they blend together, other times, they submerge into the core of the blade, only to resurface again minutes later.\n\nSTATISTICS:\n\nCombat abilities:\n– Bonuses to hit and damage based on strength do not apply to this weapon\n\nTHAC0: +3\nDamage: 1d20+3 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d20",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG06",
+          "dagger",
+          "Enlightenment +2",
+          "\"Enlightenment\", along with \"Ascension\" and \"Reason\", are weapons called the \"Triad of Tests\" by the Believers of the Source in Sigil. This dagger is slim, perfectly balanced, and light as a feather. The symbol of the Godsmen is engraved along the blade, and the entire weapon seems to shiver as if in anticipation.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Charisma: +1\n\nTHAC0: +2\nDamage: 1d6+2 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "ac": 1,
+            "cha": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG07",
+          "dagger",
+          "Fiend's Blood Dagger",
+          "Years of being embedded in the flesh of a fiend have imbued this once ordinary dagger with qualities best left with their kind. Blood of the fiend has infused itself with the dagger causing it to feel slightly warm to the touch.\n\nWhen in combat the user of this dagger can hear a constant chittering in the back of his mind causing him to lose all self-control making him unstoppable in combat, but vulnerable to spells.\n\nThe history of this dagger is for the most part unknown. More than likely some fool perished while fighting the fiend, losing his dagger as well as his life. For now the name is but a description, it has yet to earn a proper title.\n\nSTATISTICS:\n\nEquipped abilities:\n– Save vs. spells: -4\n– Causes the wielder to go berserk in combat\n– May only be removed with a Remove Curse spell\n\nCombat abilities:\n– Hit target must save vs. Death at +2 or suffer 3 points of poison damage per round for 2 turns (non-cumulative)\n\nTHAC0: +2\nDamage: 1d4+2 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "saveSpell": -4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG08",
+          "dagger",
+          "Chaos Feather +1",
+          "This feather is ash-gray, fading to black around the edges. It is much larger than a bird feather, and it creates an unpleasant tingling sensation when held for more than a minute.\n\nExamination of the feather reveals that is the feather from a Vrock, one of the many races of tanar'ri that fill the Abyss. The Vrock resemble huge vultures, and they are often used as scouts for the tanar'ri forces in the Blood War.\n\nThis particular feather is believed to have been taken from a Vrock shaman, who is reported to have died by simply disbelieving himself. Possessed of a certain mental imbalance and with an odious habit of devouring his followers to gain strength, this crazy Vrock was rumored to be capable of causing others of his flock to behave erratically - much more so than for a normal tanar'ri. He convinced many of his flock to tear off their wings and take up burrowing in the ground. Other times, he preached the virtues of honesty as being more evil and destructive than any lie. When he disintegrated, only the feather was left behind as testament to his fevered existence. Some of the shaman's residue is believed to reside in this \"Chaos Feather.\"\n\nThe Chaos Feather, when used in combat as a dagger, inflicts a minor amount of damage (about the same as a conventional dagger) and has the power to confuse any target it strikes. Creatures struck by the feather may be stunned, run away, or attack their allies.\n\nMost tanar'ri consider the feather to be a sacred object. Vrocks will kill anyone possessing it in order to retrieve it.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target must save vs. Spell or are either stunned for 1 round, or confused or flee in terror for 5 rounds\n– Item can only be used a number of times before it breaks\n\nTHAC0: +1\nDamage: 1d4+1 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG09",
+          "dagger",
+          "Silver Fork",
+          "This is a silver dining fork. Its tines are especially sharp. Upon further consideration, it might be able to be used as a dagger, though it most likely wouldn't do any more damage than a conventional dagger. It might prove useful against creatures damaged only by weapons of silver or cold iron.\n\nSTATISTICS:\n\nCombat abilities:\n– Bonuses to hit and damage based on strength do not apply to this weapon\n\nTHAC0: +2 vs. lycanthropes\nDamage: 1d2, +2 vs. lycanthropes\nDamage type: Piercing\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\n\nWeight: 0",
+          {
+            "speed": 2,
+            "dmg": "1d2",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-DG10",
+          "dagger",
+          "Green Steel Dagger +1",
+          "This slim dagger has been forged out of the famed Baatorian green steel. Found only in the wastelands of Avernus, this peculiar green ore can be tempered into metal much lighter than normal steel. In addition, green steel weapons tend to retain their remarkably fine edges and are capable of dealing out more damage than their standard counterparts.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d4+1 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 0",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG11",
+          "dagger",
+          "Kaarlac's Knife",
+          "The final achievement of one Kaarlac Cragenmoor, this enchanted knife is a boon to those who practice the mystic arts. Kaarlac, ever one to aspire to greatness, sought to create a magic item that could retain an imprint of a portion of his memory - particularly the short term memory that contained his considerable spell repertoire. He theorized that, if successful, he could effectively double the amount of spell knowledge he could retain at any given time.\n\nUnfortunately, the enchantment was beyond his capability and in the midst of his fervent casting, Kaarlac went mad and plunged the knife into his own chest. His sacrifice, however, was not completely in vain, for the knife possesses enough of the intended enchantment to bestow upon its wielder the ability to memorize several additional first level spells.\n\nSTATISTICS:\n\nEquipped abilities:\n– Can memorize three extra 1st-level wizard spells\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 2,
+            "dmg": "1d4",
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG12",
+          "dagger",
+          "Porphatys Dagger +3",
+          "The acids of Porphatys, the fifth layer of Carceri, are dangerous to more than a body's physical form - they tear at his mind and soul, eating away at his reason. Weapons forged in this heart of betrayal do the same thing to their owners, but too many believe that the acidic powers of a weapon created in Porphatys are worth the risk.\n\nSTATISTICS:\n\nEquipped abilities:\n– Causes the wielder to go berserk\n– May only be removed with a Remove Curse spell\n\nTHAC0: +3\nDamage: 1d4+3, +1d6 acid damage\nDamage type: Piercing\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG13",
+          "dagger",
+          "High Quality Stiletto",
+          "This slim dagger is a beauty among its kind. It is a one-handed thrusting weapon.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d4 (piercing)\nSpeed Factor: 1\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 1,
+            "dmg": "1d4",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-DG14",
+          "dagger",
+          "Runeblade",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 3,
+            "thac0": -4,
+            "dmg": "1d4",
+            "magicResist": 25,
+            "saveSpell": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG15",
+          "dagger",
+          "Last Resort +6",
+          "This small dagger looks fragile, but a series of jagged teeth line the edge of the blade. The hilt itself is covered with dried blood, most likely the blood of the users who held the weapon and were unable to release their grip.\n\nResearch indicates that this cursed dagger has had many names, the most prominent of which was \"Last Resort.\" When equipped, the user cannot release the grip until death, or until the curse is lifted by spell or divine intervention. Although the dagger is slower than most two-handed weapons and the damage it inflicts is comparable to a scratch, it is rumored to be able to hurt almost any creature it strikes, no matter what the creature's plane of origin or its defenses. One adventurer who had freed herself from its curse actually chose to travel with it, figuring that in any instance where she *had* to use it couldn't be worsened by having it in her possession.\n\nSTATISTICS:\n\nEquipped abilities:\n– May only be removed with a Remove Curse spell\n\nCombat abilities:\n– Bonus to damage based on strength do not apply to this weapon\n\nTHAC0: +6\nDamage: 1d2 (slashing)\nSpeed Factor: 10\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 10,
+            "thac0": 6,
+            "dmg": "1d2",
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG16",
+          "dagger",
+          "Mad Splinter +1",
+          "This is a dagger-shaped fragment of stone taken from the statue of the Etherserian sorcerer Gangroighydon. It bears a powerful enchantment - each time someone is stabbed by the splinter, they have a chance of being Cursed. It is most likely that the fell curse trapped upon Gangroighydon's lips has soaked into the very stone of his petrified form, and \"poisons\" those the splinter stabs with his malicious magic.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target must save vs. Death or suffers 1 point of poison damage per second until death or getting cured\n– Item can only be used a number of times before it breaks\n\nTHAC0: +1\nDamage: 1d4+1 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "speed": 2,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG17",
+          "dagger",
+          "Widowmaker +2",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-DG18",
+          "dagger",
+          "Entropic Blade +4",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 4,
+            "dmg": "1d20",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "A7-ER01",
+          "amulet",
+          "Amber Earrings",
+          "These earrings are made from hardened sap of the razorvine. When properly prepared, items made from this substance can be enchanted with powerful spells of protection.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– The wearer can memorize 2 additional 1st-level mage spells\n\nWeight: 0",
+          {
+            "ac": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-ER02",
+          "amulet",
+          "Crimson Sphere Earrings",
+          "",
+          {
+            "fireResist": 20
+          }
+        ],
+        [
+          "A7-ER03",
+          "amulet",
+          "Dustman Earrings",
+          "",
+          {
+            "fireResist": 30,
+            "coldResist": 30,
+            "saveDeath": 2
+          }
+        ],
+        [
+          "A7-ER04",
+          "amulet",
+          "Indep Earrings",
+          "These barbed earrings mark the wearer as a member of the Indep faction from Sigil. These earrings are the home of an independent spirit which accompanies the wearer and does its best to protect them from harm. Whenever possible, the spirit gives its wearer a mental nudge to get them out of harm's way… the tiny counseling spirit provides the user with +1 to all Saving Throws, and its mere presence gives the wearer an additional bonus to avoid spells and confusion effects.\n\nMany of these enchanted items were made in the bazaars of Sigil by a silversmith from Oerth, who had found a way of shaping metal in such a way that it attracted \"free spirits\" to the metal and caused them to take up residence there. The spirit is not bound to the earrings by any means; from what scholars have determined, there is something about the earrings that the spirits find \"cozy.\"\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Saving Throws: +1\n– Save vs. Spells: +1\n– Immunity to confusion\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saveSpell": 2,
+            "saveDeath": 1,
+            "saveWand": 1,
+            "savePoly": 1,
+            "saveBreath": 1
+          }
+        ],
+        [
+          "A7-ER05",
+          "amulet",
+          "Chained-Teeth Earrings",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-ER06",
+          "amulet",
+          "Obsidian Earrings",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-ER07",
+          "amulet",
+          "Stinger Earrings",
+          "These earrings have been made from the hardened shell of a segmented, larva-like creature. Its shell has been treated with some sort of glazed finish that makes it look disturbingly alive. The wire that hooks to the ear looks like it is part of the larva itself, perhaps its stinger or antenna.\n\nTo activate the earrings' power, the wearer must prick his thumb with the stinger, allowing it to bond with its new owner. When \"awakened,\" these earrings help protect the wearer from attacks, giving the wearer's skin the same strength and durability of the larva's shell.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2, +4 vs. missile and piercing attacks\n\nWeight: 0",
+          {
+            "ac": 2
+          }
+        ],
+        [
+          "A7-HA01",
+          "hammer",
+          "Brimstone Hammer +1",
+          "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.\n\nSTATISTICS:\n\nDamage: 1d4+1 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "fireResist": 25,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "A7-HA02",
+          "hammer",
+          "Foolsmiter +2",
+          "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.\n\nSTATISTICS:\n\nDamage: 1d4+1 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "A7-HA03",
+          "hammer",
+          "Hammer of Quality",
+          "This is a finely crafted war hammer. Godsmen etchings and symbology decorate the head of the weapon and work their way down the shaft. Despite its heavy appearance, it feels much lighter than it looks.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d4+1 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 5",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d4",
+            "dmgBonus": 1,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "A7-HA04",
+          "hammer",
+          "Reason +2",
+          "This enormous hammer is the third weapon in the \"Triad of Tests\" of the Believers of the Source in Sigil. The other two are the axe \"Ascension\" and the dagger \"Enlightenment.\" Its head is covered with mystic runes and engraved with the symbol of the Godsmen. It thrums in your hands.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Charisma: +1\n\nTHAC0: +2\nDamage: 1d4+3, +2 additional crushing damage\nDamage type: Crushing\nSpeed Factor: 2\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 5",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "ac": 1,
+            "cha": 1,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "A7-HA05",
+          "hammer",
+          "Hammer of Comminution +2",
+          "Research reveals that this is a formidable weapon indeed. Far superior to a normal hammer, this war hammer (also called \"The Hammer of Comminution\") delivers a devastating strike that not only inflicts crushing damage, but also fractures any surface it contacts, whether bone, metal, or wood, inflicting extra damage… and if the victim survives, it also \"softens\" him up for the next attack.\n\nThe Hammer of Comminution was used extensively by Enote, a Doomguard priest, in 14 E.U. A philosopher who was prone to violent mood swings while debating theology, he was known to espouse the virtues of the hammer as a means of furthering the decay of dead matter. Whether or not what he struck with the hammer was dead or alive before the blow is open to debate.\n\nSTATISTICS:\n\nTHAC0: +2\nDamage: 1d4+3, +1d6 acid damage\nDamage type: Crushing\nSpeed Factor: 2\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 5",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "A7-MC01",
+          "mace",
+          "Blind Terror +2",
+          "When an opponent is struck with sufficient force, acid is released thru the spongy surface of the mace. From the resulting spray of acid, the adversary can become temporarily blinded making him easier to hit.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target must save vs. Spell or is blinded for one round\n\nTHAC0: +2\nDamage: 1d6+3, +2d4 acid damage\nDamage type: Crushing\nSpeed Factor: 5\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-MC02",
+          "mace",
+          "Baatezu Mace +1",
+          "Made from ore found only in the wastelands of Avernus. Baatezu have created a metal called Baatorian green steel. Weapons produced from this metal are lighter and stronger than those forged of ordinary steel and tend to inflict greater damage. Although produced in great quantities for the Blood Wars, weapons such as these are rarely found outside of Baator.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 2d4+2 (crushing)\nSpeed Factor: 6\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 1,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-MC03",
+          "mace",
+          "Vrock Club +2",
+          "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "A7-MC04",
+          "mace",
+          "Death of Desire +2",
+          "This mace is used by the Dustman faction of Sigil to remove all desires from the living.\n\nSTATISTICS:\n\nCombat abilities:\n– Living creatures hit by the weapon must save vs. Spell or be stunned for 1 round\n\nTHAC0: +2\nDamage: 1d6+3, +1d6 piercing damage\nDamage type: Crushing\nSpeed Factor: 5\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 11",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-MC05",
+          "mace",
+          "Devil's Due +2",
+          "This weapon has a black metal handle that seems to have grown into the narrow skull that is affixed to its top. The metal looks as if it has grown out from the skull, and spikes pierce through the eye sockets, jaw, and from the skull cap itself.\n\nThe \"metal\" is not metal at all, but the remnants of a creature's forearm that punched through the base of the fiendish skull that now bedecks the head of this weapon. The spikes that have pierced through the skull actually appear to be some sort of quills from the creature's forearm.\n\nWhen this weapon is used in combat and the spikes of the club penetrate a creature's skin, acid oozes from the quills either into the target or the wielder, doing additional damage.\n\nThe common name of this weapon is \"Devil's Due.\" To who or what event it refers to is unknown, but it was obviously a painful experience for the two parties involved.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2 vs. missile and piercing attacks\n– May only be removed with a Remove Curse spell\n\nCombat abilities:\n– Inflicts 1d6 acid damage either upon the target or the wielder\n\nTHAC0: +2\nDamage: 1d6+2\nDamage type: Crushing\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "A7-MC06",
+          "mace",
+          "Fiend Femur +2",
+          "This tanar'ri femur carries the last traces of a balor's essence within its marrow. Disgraced in battle and torn apart by its fellow fiends in a ceremonial execution, the bone has since carried with it a vengeful spite towards all of its kind.\n\nWhen the femur strikes any tanar'ri or baatezu, serrated teeth bristle up and down the length of the bone and cause tremendous damage to any tanar'ri or baatezu.\n\nSTATISTICS:\n\nTHAC0: +2, +3 vs. devils and demons\nDamage: 1d6+2, +3 vs. devils and demons\nDamage type: Crushing\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "excludedAlignments": [
+                "Lawful Good"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-MC07",
+          "mace",
+          "The Justifier +2",
+          "This mace looks much like any other mace - a spiked ball atop a wooden shaft, leather handgrip with a thong to prevent losing it in the heat of battle. Where it differs is in the Eye etched in acid on the head of the weapon, a stylized sigil of the god Horus.\n\nThis weapon is The Justifier, a mace created in the city of Heliopolis on the plane of Arcadia, designed to aid the followers of law and good. It can heal its owner, if asked, and harbors a special hatred for the forces of chaos and evil.\n\nSTATISTICS:\n\nEquipped abilities:\n– Regenerate 1 Hit Point per round\n\nTHAC0: +2, +4 vs. chaotic evil creatures\nDamage: 1d6+3, +5 vs. chaotic evil creatures\nDamage type: Crushing\nSpeed Factor: 5\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-MC08",
+          "mace",
+          "Club of Nettles",
+          "This club seems to be made from some sort of prickly plant. Small thorns adorn the head of the club and can easily be broken off.\n\nThis particular club is one of the more favored weapons of thieves. Upon making a successful hit on an opponent, tiny barbed thorns lodge into the skin and cause the victim to become disoriented for a brief period of time. This allows the thief time to safely rob and escape the victim.\n\nSTATISTICS:\n\nCombat abilities:\n– Hit target must save vs. Spell or is confused for one round\n\nTHAC0: +2\nDamage: 1d6 (crushing)\nSpeed Factor: 3\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d6",
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "A7-MC09",
+          "mace",
+          "Club of Piercing +1",
+          "This is a heavy iron club that is covered with sharp spikes.\n\nEnchantments have been placed on this club so that it can be wielded with greater accuracy.\n\nSTATISTICS:\n\nTHAC0: +3\nDamage: 1d6, +1d6 piercing damage\nDamage type: Crushing\nSpeed Factor: 6\nProficiency Type: Club\nType: One-handed\nRequires:\n 8 Strength\n\nWeight: 12",
+          {
+            "speed": 6,
+            "thac0": 3,
+            "dmg": "1d6",
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "A7-MI01",
+          "misc",
+          "Bandages",
+          "This is a roll of bandages, useful for stanching minor wounds. When applied they will heal a character for 3 hit points of damage.\n\nSTATISTICS:\n\nSpecial: Restores 3 Hit Points.\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI02",
+          "misc",
+          "Clipped Copper Charm",
+          "This copper piece has been \"clipped\"… most of the copper has been shaved off, no doubt to still keep the appearance it is a coin and allowing the 'clipper' to use the shaved copper to make another coin. Although many Hive dwellers in Sigil practice this method of \"making money,\" when the Fated faction practices it, they do so with a frightening sense of purpose, creating charms that reflect their own miserly natures.\n\nIn order to create these charms, the Fated faction seek out failed business owners and other individuals who once possessed great wealth, then had a reversal of fortune and were left destitute. These individuals are then given enchanted carving blades and asked to \"clip a copper\" for the Fated in a tedious day-long ritual, which infuses the copper coin with the last traces of their former luck. The ritual and the nature of the individual clipping the copper allows a minor enchantment to seep into the coin and affect the fortune of whoever uses it.\n\nWhen the clipped copper charm is flipped into the air, it will spill into a rain of copper pieces, and bestow some luck upon the user.\n\nSTATISTICS:\n\nCharge abilities:\n– Minor Copper Blessing: +1 bonus to Luck\n  Duration: 1 turn\n  The blessing requires a donation of 11 gold pieces to work.\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI03",
+          "misc",
+          "Gordian Knot",
+          "The knot binding the two ends of this rope together holds a powerful magic. When this knot is severed by a fighter with an edged weapon, the warrior gains a rush of confidence and arrogance, reducing their Wisdom but raising their Charisma. The user is also beset with the urge to gather an army and rush out and conquer the realms, but this urge does not rule the user's actions.\n\nIt is said that this is a knotted piece of rope that was cut in two by a conqueror on a distant prime material world. Every time the knot is severed, it disappears, showing up years later in the hands of another who can make use of its power.\n\nSTATISTICS:\n\nCharge abilities:\n– Permanent +2 bonus to Charisma\n– Permanent -1 penalty to Wisdom\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minWis": 2
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI04",
+          "misc",
+          "Elixir of Horrific Separation",
+          "This vial of Elixir of Horrific Separation was compounded by a scholar who'd found she possessed a darker half - a side of her which took control, at times, and bade her do awful things. This potion was to have 'split' the darker half away from her, creating two separate beings. Mercykillers from Sigil, however, found and executed her for a string of depraved murders before she could use it.\n\nSTATISTICS:\n\nHorrific Separation:\nWhen the elixir is consumed the enchantment takes hold and splits the less dominant part of the user into a separate being of comparable power but opposite alignment. This being can be controlled for five turns before it breaks free from the enchantment and either attacks the party or escapes. Moreover, the user's ethical part of their alignment shifts permanently towards 'neutral' (neutral good, true neutral or neutral evil).\n\nThe elixir will have no effect when consumed by a user whose ethical alignment is already 'neutral'.\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI05",
+          "misc",
+          "Moridor's Box",
+          "This appears to be a small wooden box. Intricate designs etched in gold adorn the box. At one time this box would have been worthy enough to be displayed at any aristocrat's estate. However, years of neglect have taken their toll and it appears to be falling apart. If not for the large gem mounted to the front of the box, it would be worthless.\n\nIt is not known what exactly is sealed within the box. There are countless stories about it and none of them bode well for its owner. Some say it's an ancient dragon, while others say it's the evil soul of Moridor himself. Judging by the deteriorating state of the box someone must have already examined the seal and damaged it in the process. It is only a matter of time before the seal dissolves completely and releases the entity imprisoned in the box.\n\nSTATISTICS:\n\nSpecial:\nOpening the seal releases the imprisoned entity.\n\nRequires:\n 9 Intelligence\n\nWeight: 2",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI06",
+          "misc",
+          "Baku's Horn",
+          "This nondescript wooden horn is in fact a magical item crafted on the Upper Planes. Similar to the attack of the creature for which it is named, a Baku's Horn inflicts damage upon evil creatures within the area of effect when it is sounded. Further, such creatures must make a save vs. paralyzation or flee in panic.\n\nCharge abilities:\n– Baku's Roar three times per day\n  Damage: 2d8 crushing vs. evil creatures\n  Special: Causes panic for one turn (Save vs. Paralysis negates)\n  Area of Effect: 15-ft. radius\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "A7-MI07",
+          "misc",
+          "Wesley's Hourglass",
+          "This item was originally fashioned by a powerful chronomancer with the intention to teach his students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.\n\nWhen the hourglass is smashed it enables the user to step out of the normal flow of time and manipulate objects in a limited fashion while everything around them appears to be frozen in time. The mental and physical stress induced by this state causes the user to be severely fatigued after the effect has worn off.\n\nSTATISTICS:\n\nCharge abilities:\n– Invokes \"Time Stop\"\n  Duration: 5 rounds\n  Area of Effect: The user\n  Leaves the user fatigued when the effect has worn off.\n\nRequires:\n 6 Intelligence\n\nWeight: 1",
+          {
+            "usability": {
+              "minInt": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI08",
+          "misc",
+          "Wesley's Improved Hourglass",
+          "This item was originally fashioned by a powerful chronomancer with the intention to teach his students about the nature of time. It looks like an ordinary hourglass in a wooden frame, but instead of sand it is filled with mist-smoke of the Demiplane of Time, also known as Temporal Prime.\n\nWhen the hourglass is smashed it enables the user to step out of the normal flow of time and manipulate objects in a limited fashion while everything around them appears to be frozen in time. The mental and physical stress induced by this state causes the user to be severely fatigued after the effect has worn off.\n\nEnhancing the inherent magic of the item with the help of the Rift Device allows the user to extend the temporal effect to a selected number of targets.\n\nSTATISTICS:\n\nCharge abilities:\n– Invokes \"Time Stop\"\n  Duration: 5 rounds\n  Area of Effect: The whole party\n  Leaves all affected characters fatigued when the effect has worn off.\n\nRequires:\n 6 Intelligence\n\nWeight: 1",
+          {
+            "usability": {
+              "minInt": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-MI09",
+          "broken",
+          "The Grimoire of Pestilential Thought",
+          "This black-bound tome seems to radiate a slight rotting smell, and the covers are unpleasant to the touch - like uncured human flesh left out in the sun. Rusted buckles on the cover seal it against the elements.\n\nIt is the Grimoire of Pestilential Thought, an arcane tome created ages ago for purposes unknown, the purpose of which is to teach mortals the nature of evil. Some sages warn against its use, while others urge it. It is said to grant mighty powers when services are performed for it.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "usability": {
+              "minInt": 9
+            }
+          }
+        ],
+        [
+          "A7-MI10",
+          "misc",
+          "Tear of Salieru-Dei",
+          "This glistening red tear was shed by the martyred Harmonium officer Salieru-Dei when he was put to death on the Harmonium's home plane of Ortho. Mistaken as a member of the hated Revolutionary League, Salieru-Dei's obedience and loyalty was such he could not bring himself to challenge the allegations of his superiors. At the moment of his execution, three tears fell from his right eye and turned to stone as they fell upon the flagstones of the square.\n\nIronically enough, an anarchist subsequently revealed the Harmonium's mistake to the public, discrediting them. Ever since, the tears of Salieru-Dei have been considered relics of the Harmonium... and used as a lesson to the evils of unquestioning obedience by the Revolutionary League.\n\nSTATISTICS:\n\nConstitution: Raised by 1 point permanently\n\nWeight: 0",
+          {
+            "usability": {
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-DEM01",
+          "ring",
+          "",
+          "",
+          {}
+        ],
+        [
+          "A7-DEM02",
+          "misc",
+          "Skull",
+          "",
+          {
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5
+          }
+        ],
+        [
+          "A7-DEM04",
+          "ring",
+          "",
+          "",
+          {}
+        ],
+        [
+          "A7-MI14",
+          "broken",
+          "Primer on Abyssal Languages",
+          "This introduction to abyssal languages is surprisingly detailed. It covers the basics of the most common abyssal dialects – their letters, words, grammar, and sentence structure – before going more in-depth and exploring the lore of various phrases, periphrases and double meanings that are commonly used to confuse, seduce, or manipulate lesser beings.\n\nWeight: 1",
+          {}
+        ],
+        [
+          "A7-MI15",
+          "misc",
+          "Green Steel Disc",
+          "This ornate disc has been forged out of the famed Baatorian green steel that can only be found in the wastelands of Avernus. A tracery of strange runes and markings cover the whole surface of the disc. It is unclear whether it serves a specific purpose.\n\nWeight: 2",
+          {}
+        ],
+        [
+          "A7-MS01",
+          "morning star",
+          "Heaven and Earth +4",
+          "A fearsome aura of power emanates from this massive weapon. Sharp, powerful lines adorn the shaft of this mace, which streak directly to a perfect sphere that serves as this weapon's contact point. Perfectly curved spikes emanate from the perfectly-shaped sphere, yielding an image that is at once both arresting, yet awe-inspiring. A vibrant, royal purple hue surrounds this weapon of power.\n\nUpon holding the weapon it is instantly apparent that only those that are pure of heart can truly wield it.\n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: +2\n\nTHAC0: +4\nDamage: 2d4+4, +4 additional crushing damage\nDamage type: Crushing\nSpeed Factor: 3\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 6",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "str": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-PHAZR",
+          "dagger",
+          "Phazor +5",
+          "This wondrous artifact was originally discovered by a gnomish wizard who travelled the planes for many decades. One day he came across a highly advanced culture that abandoned the use of magic in favor of engineering science. This weapon was one of their numerous inventions. It was originally designed to shoot pulses of highly concentrated light with an enormously destructive effect. After his return to Faerûn the gnome soon discovered that the energy source of the weapon depended on particular natural laws working on that plane, so he replaced it with a less powerful magical substitute.\n\nThe weapon is rather small and can only be held comfortably and safely by children or people of the short races. It can fire a limited number of charges per day in rapid succession before the energy source has to be recharged.\n\nSTATISTICS:\n\nEquipped abilities:\n– Sets attacks per round to 5\n\nCombat abilities:\n– Fires charges of magical energy that are treated as +5 for the purposes of determining what enemies they can damage\n– Target is disintegrated on a critical hit (Save vs. Death negates)\n\nTHAC0: +5 bonus\nDamage: 1d20 magic damage\nSpeed Factor: 0\nType: Two-handed\nRequires:\n 12 Intelligence\n\nWeight: 1",
+          {
+            "thac0": 5,
+            "twoHanded": true,
+            "profType": "dagger",
+            "usability": {
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ],
+              "minInt": 12
+            }
+          }
+        ],
+        [
+          "A7-PLIM",
+          "misc",
+          "Pet Lim-Lim",
+          "This is your pet Lim-Lim. It is a small insect-like creature that is originally found in the Outlands.\n\nSTATISTICS:\n\nWeight: 5",
+          {}
+        ],
+        [
+          "A7-RI01",
+          "ring",
+          "Aegis of Torment",
+          "Aegis of Torment\nRows and rows of minute skulls line the outer edge of this ring. It is crowned by an over-sized skull with fire-red gems that serves as its eyes. This ring is the physical manifestation of the suffering of the tormented slaves of Dahnthur. It was their ultimate wish to gain protection from their oppressors, and with this magical ring, their wish was finally realized. Even with the fiery red gems, a royal purple hue continually emanates outward.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +3\n– Base Hit Points: +15\n– Constitution: +3\n\nWeight: 0",
+          {
+            "ac": 3,
+            "con": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+15 Max HP"
+              }
+            ]
+          }
+        ],
+        [
+          "A7-RI02",
+          "ring",
+          "Mempa's Biting Ring",
+          "Mempa was a mage obsessed with the possibility of having her magic items lost or burgled while she was asleep or otherwise incapacitated. While the vast majority of her carried possessions were inseparable from her corpse and thus buried with her, some of her weaker items - early experiments, perhaps - were left behind and remain in the world of the living.\n\nMempa's Biting Ring, whose powerful aura protects its bearer from bodily harm, is one such item. However, once placed upon one's finger, the ring bites down and holds on so tenaciously that it is nigh impossible to remove it from the 'bitten' digit.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– May only be removed with a Remove Curse spell\n\nWeight: 0",
+          {
+            "ac": 2
+          }
+        ],
+        [
+          "A7-RI03",
+          "ring",
+          "Gehraise's Ring",
+          "This small silver ring looks like it belongs on a woman's finger. It feels slightly warm to the touch and has the power to ward off poison of any kind.\n\nSTATISTICS:\n\nEquipped abilities:\n– Save vs. Death: +3\n– Immunity to poison\n\nWeight: 0",
+          {
+            "saveDeath": 3,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ]
+          }
+        ],
+        [
+          "A7-RI04",
+          "ring",
+          "Twisted Ring",
+          "This ring looks like three rings that have been wrapped around each other. Just looking at it makes you dizzy.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nWeight: 0",
+          {
+            "ac": 1
+          }
+        ],
+        [
+          "A7-RI05",
+          "ring",
+          "Ring of the Traveler",
+          "These rings are quite common across the planes. Simple to make and in great demand, Mages usually create these items as a way to raise quick money. This particular ring has a minor enchantment on it that protects the wearer from harm.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Saving Throws: +1\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saves": 1
+          }
+        ],
+        [
+          "A7-RI06",
+          "ring",
+          "Displacer Ring",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 5
+              }
+            ]
+          }
+        ],
+        [
+          "A7-RI07",
+          "ring",
+          "Ring of Almost Invisibility",
+          "This is Yevrah's Ring of Almost Invisibility. It makes its wearer invisible - almost. Sometimes, for brief periods, the wearer becomes really, *really* close to being invisible - an event which is often disconcerting to an attacker - and is thus more difficult to strike in combat.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nWeight: 0",
+          {
+            "ac": 1
+          }
+        ],
+        [
+          "A7-RI08",
+          "ring",
+          "Serpent Ring",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "magicResist": 15,
+            "saveSpell": 2,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ]
+          }
+        ],
+        [
+          "A7-RI09",
+          "ring",
+          "Ring of Thex",
+          "This ornate silver ring is set with a single red stone of an unknown type. The ring is believed to have been created by an adventuring mage named Thex. Thex claimed she was tired of sitting back and flinging spells at enemies while the rest of her adventuring party was able to get into the thick of battle. She felt that the ring would allow her to become what she chose to call a Battlemage. The Ring of Thex was the crowning achievement of her short career.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +4\n– Hit Points: +20\n– Saving Throws: +2\n– Wisdom: -1\n\nWeight: 0",
+          {
+            "ac": 4,
+            "wis": -1,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+20 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minWis": 2
+            }
+          }
+        ],
+        [
+          "A7-RI10",
+          "ring",
+          "Ring Zero",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 3,
+            "int": 3,
+            "saveSpell": -3,
+            "magicResist": -15,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "A7-SP01",
+          "scroll",
+          "Tasha's Unbearable Derisive Laughter",
+          "Tasha's Unbearable Derisive Laughter\n(Enchantment/Charm)\n\nLevel: 3\nRange: Visual range of the caster\nDuration: 1 round/level\nCasting Time: 3\nArea of Effect: 15-ft. radius\nSaving Throw: Neg.\n\nWhat man does not feel their body fill with burning shame when mocked by a woman? Fill the ears of your enemies with the derisive scorn of a woman's laughter. Their bodies shall become clumsy and foolish, easily struck, and confidence shall be leeched from their muscles, weakening their blows.\n\nTasha's Unbearable Derisive Laughter occurs in a 15 ft. radius from that spot. All male humanoid or giant-humanoid creatures with an Intelligence > 4 in range of the spell must make a Saving Throw vs. Spell or get a -2 to their attack and damage rolls, -2 to their armor class, -2 to their Saving Throws, and have their morale lowered for the duration of the spell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-SP02",
+          "scroll",
+          "Modron Mind",
+          "Modron Mind\n(Abjuration)\n\nLevel: 3\nRange: 0\nDuration: 1 turn/level\nCasting Time: 3\nArea of Effect: The caster\nSaving Throw: None\n\nModron Mind allows the the caster to become a being of focused order. The caster gains a +2 bonus to Saving Throws versus spells of the schools of Illusion and Enchantment. The spell also enhances the caster's thought processes which results in an intelligence bonus of +1 every five levels, up to a +5 bonus at level 20.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-SP03",
+          "scroll",
+          "Vrock's Screech",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-ST01",
+          "staff",
+          "Lifeless Companion +2",
+          "The grip of the staff looks ordinary enough. The skull attached to it, however, seems to be one of a kind. It was once a servant in possession of Lothar, the master of the Bones of the Night. At that time it met another skull with an unusual repertoire of insults that it continuously spew at his fellow skull companions, and sometimes at his master as well (as long as he was out of earshot.) Some of the insults made enough of an impression that the skull attached to the tip of the staff repeats them when commanded, with the effect that any living creature within earshot lowers their guard and falls into a rage.\n\nSTATISTICS:\n\nCharge abilities:\n– Litany of Curses three times per day\n  Effects: Berserk, -2 penalty to armor class, saving throws, as well as attack and damage rolls (Save vs. Wand at -2 negates)\n  Area of Effect: Any non-deaf hostile humanoid or giant-humanoid creature within 15 ft. radius\n  Duration: 1 turn\n\nTHAC0: +2\nDamage: 1d6+2 (crushing)\nSpeed Factor: 2\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "A7-SW01",
+          "large sword",
+          "Celestial Fire +3",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "2d6",
+            "ac": 2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 10
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "A7-SW02",
+          "large sword",
+          "Abigail +1",
+          "This blade has been created for a single purpose: to eradicate oozes, slimes and jellies of all kind. The razor sharp blade is made from alchemically-strengthened black obsidian which is harder than steel and immune to the corrosive effects of oozes and related monsters.\n\nNot much is known about the origins of the blade. There are no tales recorded about adventurers slaying hordes of jellies threatening a village, nor rumors known about heroes cleaning out slime-infested caves single-handedly. Dispatching ooze and slime cannot match up to vanquishing dragons after all.\n\nSTATISTICS:\n\nCombat abilities:\n– Oozes, slimes and jellies must save vs. Death or be utterly destroyed\n\nTHAC0: +1, +3 vs. oozes, slimes and jellies\nDamage: 2d4+1, +3 vs. oozes, slimes and jellies\nDamage type: Slashing\nSpeed Factor: 7\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 7,
+            "thac0": 1,
+            "dmgBonus": 1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "A7-SW03",
+          "large sword",
+          "Dûrgaläd +3",
+          "This magnificient weapon was forged by the svartalves of Svartalfheim in Nidavellir, the third layer of Ysgard. It was made from mithral, and ancient Drow magic imbued it with the radiance of the caves of Svartalfheim. The sword was originally given to Garadun of Sigil for his bravery when he aided the svartalves in their battle against giant fiendish bats.\n\nThe weapon allows the wielder to see the true nature of all things by dispelling any illusions and deceptions that would otherwise mislead the unwary.\n\nSTATISTICS:\n\nCombat abilities:\n– Dispels illusionary protections, including projected images, when the sword strikes an opponent\n\nCharge abilities:\n– True Seeing once per day\n– Identify items three times per day\n\nTHAC0: +3\nDamage: 1d8+3 (slashing)\nSpeed Factor: 2\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 4,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "A7-SW04",
+          "large sword",
+          "Fiendblight +2",
+          "Fiendblight was originally forged by the Tanar'ri for the endless Blood War that raged across countless planes of existence. It was given to promising contenders for higher ranks or mercenaries who wanted to prove themselves in battle.\n\nWhen activated the weapon forces the wielder to clutch the grip of the sword tightly, unable to release it without the help of divine intervention or a Remove Curse spell. The true danger of the weapon, however, is revealed only in actual combat. Each successful hit causes a rush of adrenaline so intense that the wielder goes into a frenzy with the goal to score yet another hit unless a successful save vs. Spell is made. To further incentivize the wielder to reach peak performance they are rewarded with a piece of life energy from their target on a critical hit and punished with self-injury on a critical miss.\n\nSTATISTICS:\n\nEquipped abilities:\n– May only be removed with a Remove Curse spell\n\nCombat abilities:\n– Casts Larloch's Minor Drain on the target on a critical hit (no save)\n– Applies 1d4 points of slashing damage to the wielder on a critical miss (no save)\n– Each successful hit the wielder must save vs. Spell or go into a frenzy for one round with the following effects:\n   THAC0: +2 bonus\n   Damage: +2 bonus\n   Armor Class: -2 penalty\n   Save vs. Spell: -2 penalty\n   Immunity to panic\n   Causes the wielder to go berserk\n\nTHAC0: +2\nDamage: 2d4+2 (slashing)\nSpeed Factor: 6\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 9",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "A7-SW05",
+          "large sword",
+          "Thanatos +2",
+          "The scimitar is closely related to the saber, a single-edged curved sword with protective hilt. The blade has a greater curve to it and is tapered to an elongated, sharp point. The origins of the scimitar are largely unknown however they have been very popular in the southern region of the realms.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 8 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "A7-SW06",
+          "large sword",
+          "Thanatos +4",
+          "The scimitar is closely related to the saber, a single-edged curved sword with protective hilt. The blade has a greater curve to it and is tapered to an elongated, sharp point. The origins of the scimitar are largely unknown however they have been very popular in the southern region of the realms.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 8 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "A7-SW07",
+          "large sword",
+          "Morrow's End +5",
+          "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.\n\nSTATISTICS:\n\nDamage: 2d4 (slashing)\nSpeed Factor: 8\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 3,
+            "thac0": 5,
+            "dmg": "2d4",
+            "dmgBonus": 5,
+            "str": -1,
+            "dex": -1,
+            "con": -1,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "A7-WA01",
+          "wand",
+          "Abyssal Pipe",
+          "This is a small wooden pipe, carved to resemble the head of a demon.\n\nWhen used, this pipe billows forth great gouts of deadly fumes from the planes of the Abyss.\n\nSTATISTICS:\n\nCharge abilities:\n– Cloudkill\n  Damage: 1d10 poison per round\n  Special: Slays creatures with 1-4 HD; creatures with 5-6 HD must save vs. Poison at -4 or die\n  Range: 60 ft.\n  Area of Effect: 15-ft. radius\n  Duration: 1 turn\n\nRequires:\n 9 Intelligence\n\nWeight: 0",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-WA02",
+          "wand",
+          "Skeletal Key",
+          "This key has been be fashioned from the finger bones of a humanoid creature. Magical symbols have been engraved on the surface to enchant it with a spell that opens any kinds of locks on chests, boxes or doors.\n\nSTATISTICS:\n\nCharge abilities:\n– Knock\n  Range: Visual range of the caster\n  Area of Effect: Locked door or chest\n  Duration: Instant\n\nRequires:\n 9 Intelligence\n\nWeight: 1",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 10,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-WA03",
+          "wand",
+          "Rengarth Wolf Claw",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minLevel": 18
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-BSPR",
+          "helmet",
+          "",
+          "",
+          {}
+        ],
+        [
+          "A7-WA04",
+          "wand",
+          "Rengarth Panther Claw",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minLevel": 20
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-WA05",
+          "wand",
+          "Rengarth Lion Claw",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minLevel": 22
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-WA06",
+          "wand",
+          "Rengarth Boar Tusk",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minLevel": 24
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "A7-WA07",
+          "wand",
+          "Rengarth Bear Claw",
+          "Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases. \n\nWands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "minLevel": 26
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Argent77/A7-WaresOfThePlanes",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Wares of the Planes",
+      "tp2n": "Wares of the Planes",
+      "cn": 0,
+      "wf": "A7-WaresOfThePlanes",
+      "wp": "A7-WaresOfThePlanes\\A7-WaresOfThePlanes.tp2",
+      "pi": "A7-WARES_OF_THE_PLANES-MAIN",
+      "it": 115,
+      "itC": {
+        "amulet": 8,
+        "axe": 10,
+        "belt": 1,
+        "bolt": 9,
+        "bracers": 7,
+        "cloak": 1,
+        "dagger": 19,
+        "hammer": 5,
+        "mace": 9,
+        "misc": 12,
+        "broken": 2,
+        "ring": 12,
+        "morning star": 1,
+        "scroll": 3,
+        "staff": 1,
+        "large sword": 7,
+        "wand": 7,
+        "helmet": 1
+      },
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ]
+    },
+    {
+      "n": "Identify all wares (not recommended)",
+      "tp2n": "Identify all wares (not recommended)",
+      "cn": 100,
+      "wf": "A7-WaresOfThePlanes",
+      "wp": "A7-WaresOfThePlanes\\A7-WaresOfThePlanes.tp2",
+      "pi": "A7-WARES_OF_THE_PLANES-IDENTIFY_ALL",
+      "x": 0
+    },
+    {
+      "n": "Alternate merchant portrait",
+      "tp2n": "Alternate merchant portrait",
+      "cn": 200,
+      "wf": "A7-WaresOfThePlanes",
+      "wp": "A7-WaresOfThePlanes\\A7-WaresOfThePlanes.tp2",
+      "pi": "A7-WARES_OF_THE_PLANES-ALTERNATE_PORTRAIT-1",
+      "x": 0
+    }
+  ]
+}

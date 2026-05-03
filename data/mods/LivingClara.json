@@ -1,0 +1,75 @@
+{
+  "i": 715,
+  "t": "LivingClara",
+  "sv": 1,
+  "ord": 1250,
+  "c": "NEW NPC MODS",
+  "n": "Living Clara",
+  "no": "Keeps Clara alive as a joinable NPC companion in BG2EE/EET",
+  "conflicts": [
+    {
+      "with": "AllThingsMazzy",
+      "withId": 453,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1806 vs 1286)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/trow/LivingClara",
+  "a": "trow",
+  "sum": "Keeps Clara alive as a joinable NPC companion in BG2EE and EET instead of dying during her introductory scene.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "MephistoSatanDevil",
+  "dl": "https://github.com/trow/LivingClara/",
+  "langs": {
+    "zh-cn": 0,
+    "en": 1,
+    "ru": 2,
+    "fr": 3
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "clara",
+          "portraits/livingclara/yf_clar.png",
+          "bg2"
+        ],
+        [
+          "clara_little",
+          "portraits/livingclara/yf_litc.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Living Clara",
+      "cn": 0,
+      "wf": "LivingClara",
+      "wp": "LivingClara\\LivingClara.tp2",
+      "wq": "verified",
+      "no": "Prevents Clara from dying and makes her a permanent joinable NPC"
+    },
+    {
+      "n": "可选的BG2风格克拉拉的替代头像",
+      "cn": 1,
+      "wf": "LivingClara",
+      "wp": "LivingClara\\LivingClara.tp2",
+      "wq": "verified",
+      "tp2n": "可选的BG2风格克拉拉的替代头像",
+      "pi": "LivingClara-BG2_Style_Portrait"
+    }
+  ],
+  "gh": {
+    "o": "trow",
+    "r": "LivingClara"
+  }
+}

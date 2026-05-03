@@ -1,0 +1,61 @@
+{
+  "i": 6,
+  "t": "TenyaThermidor",
+  "sv": 1,
+  "ord": 50,
+  "c": "PRE EET BGEE MODS",
+  "n": "Tenya Thermidor",
+  "no": "mod_installer: tp2 may need to be moved into the TenyaThermidor subfolder for detection",
+  "rq": "Install on BG1",
+  "ic": "garrick-tt",
+  "conflicts": [
+    {
+      "with": "garrick-tt",
+      "withId": 197,
+      "severity": "hard",
+      "reason": "Direct incompatibility",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "tenya",
+          "portraits/tenya/b2_teny.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://forums.beamdog.com/discussion/33291/tenya-thermidor-v1-3/p1",
+  "a": "Coutelier",
+  "sum": "Adds young Tenya from Baldur's Gate as a joinable cleric NPC companion with water-based abilities, unique dialogue, and a personal quest involving the Bowl of Water Elemental Control.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v1.5",
+    "place": "pre"
+  },
+  "dl": "https://forums.beamdog.com/discussion/33291/tenya-thermidor-v1-3/p1",
+  "au": "Coutelier",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Tenya Thermidor for BG:EE",
+      "tp2n": "Tenya Thermidor for BG:EE",
+      "cn": 0,
+      "wf": "TenyaThermidor",
+      "wp": "TenyaThermidor\\setup-TenyaThermidor.tp2",
+      "wc": 0,
+      "wb": 1,
+      "wq": "guessed"
+    }
+  ]
+}

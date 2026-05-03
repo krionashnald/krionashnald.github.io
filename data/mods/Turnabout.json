@@ -1,0 +1,115 @@
+{
+  "i": 110,
+  "t": "turnabout",
+  "sv": 1,
+  "ord": 20,
+  "c": "QUEST MODS ToB",
+  "n": "Turnabout",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Turnabout During the final battle, you can revive certain companions to aid you in your fight if they aren’t already alive in your group: Install Turnabout after Ascension and Khalid for BG2. WARNING: Ships very large BCS scripts (d0t#alia.bcs 112KB, d0t#dyna.bcs 333KB) that cannot survive WeiDU’s BCS decompile/recompile round-trip. Mods that use SFO’s ALTER_SCRIPT_BLOCK on all BCS files (Talents of Faerun subraces cn:20000, barbarian cn:40150) will crash unless alter_script.tph is patched with PATCH_TRY around DECOMPILE_BCS_TO_BAF.",
+  "rq": "ascension",
+  "conflicts": [
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "partial",
+      "reason": "Sarevok's Remorse conflicts with Turnabout",
+      "myComps": "#0 Ascension: Turnabout",
+      "theirComps": "#24 Sarevok's Remorse",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Turnabout's large BCS scripts (d0t#alia.bcs 112KB, d0t#dyna.bcs 333KB) cannot survive WeiDU's BCS decompile/recompile round-trip. ToF cn:20000 (subraces) and cn:40150 (barbarian class) use SFO's ALTER_SCRIPT_BLOCK which calls DECOMPILE_BCS_TO_BAF without PATCH_TRY — crashes on these scripts. FIX: Patch alter_script.tph in all SFO copies (infinity-mod-runner patch #1). Without patch, ToF cn:20000 and cn:40150 fail.",
+      "myComps": "#0 Ascension: Turnabout",
+      "theirComps": "#20000 Subraces #40150 Make Barbarian into a Class #40160 Wizard Slayer for Barbarians",
+      "source": "d0t#alia.bcs/d0t#dyna.bcs Parsing.Parse_error in ALTER_SCRIPT_BLOCK, test #21 2026-04",
+      "evidenceLevel": "observed"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "ascension",
+      "requiresId": 109,
+      "type": "hard",
+      "reason": "Requires Ascension"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "balthazar",
+          "portraits/turnabout/nbaltha.png",
+          "tob"
+        ],
+        [
+          "turnabout_alianna",
+          "portraits/turnabout/alianna.png",
+          "bg2"
+        ],
+        [
+          "turnabout_alianna",
+          "portraits/turnabout/aliann2.png",
+          "bg2"
+        ],
+        [
+          "turnabout_alianna",
+          "portraits/turnabout/alihorc.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Pocket-Plane-Group/Turnabout",
+  "a": "Jason Compton",
+  "sum": "Lets you play as the villain in ToB's final act. After the normal ending, switch perspectives for an alternate climax with new tactical challenges.",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Turnabout"
+  },
+  "au": "Jason Compton",
+  "dl": "https://github.com/Pocket-Plane-Group/Turnabout",
+  "co": [
+    {
+      "n": "Ascension: Turnabout",
+      "tp2n": "Ascension: Turnabout",
+      "pi": "Turnabout-main",
+      "wf": "Turnabout",
+      "wp": "Turnabout\\SETUP-TURNABOUT.TP2",
+      "wc": 0,
+      "wq": "single_comp",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "no": "Alternative ending with reversed roles in the final battle."
+    },
+    {
+      "n": "Balthazar Epilogue Portrait, by Cliffette",
+      "tp2n": "Balthazar Epilogue Portrait, by Cliffette",
+      "pi": "Turnabout-BalthazarPortrait",
+      "wf": "Turnabout",
+      "wp": "Turnabout\\SETUP-TURNABOUT.TP2",
+      "wc": 1,
+      "wq": "single_comp",
+      "cn": 1,
+      "no": ""
+    }
+  ]
+}

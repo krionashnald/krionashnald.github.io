@@ -1,0 +1,290 @@
+{
+  "i": 311,
+  "t": "rr",
+  "sv": 1,
+  "pfx": "RR",
+  "ord": 170,
+  "c": "KIT & CLASS MODS",
+  "n": "Rogue Rebalancing",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "de": 3,
+    "ru": 4,
+    "it": 5,
+    "ja": 6,
+    "pl": 7
+  },
+  "cats": [
+    "KIT & CLASS MODS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "Use Spellhold-Studios/Rogue-Rebalancing (https://github.com/Spellhold-Studios/Rogue-Rebalancing). Both SHS and TotoR115/rr report VERSION ~v4.92~, but TotoR115's lib/ds.tpa (md5 d93e05d0...cde038) ships the old `LAF detectable_spells END` signature, which corrupts STATS.IDS on modern engines. SHS's ds.tpa (md5 a0d8fa1d...82b954) uses the modern DS library API (detectable_spells_setup + per-table calls with STR_VAR path) and leaves STATS.IDS intact. mleduque/rogue_rebalancing mirrors SHS.",
+  "_legacy_ids": [
+    402
+  ],
+  "conflicts": [
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Functionality provided by Tweaks and Tricks (per II install notes)",
+      "theirComps": "#67 True Grandmastery #68 Multiclass restrictions"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "Weapon Proficiency conflict 1",
+      "myComps": "#0; #6",
+      "theirComps": "#2160, #2161, #2162; #2270, #2271; #2280 #2271 Bard Spell Progression",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "partial",
+      "reason": "M&G #280 vs RR #1: both rewrite Assassin/Bounty Hunter CLABs and strip SPCL332 backstab — hard conflict for these components. M&G #400 vs RR #4: both overhaul all bard CLABs — hard conflict. Other component combos are safe. Install RR first if using non-conflicting components.",
+      "myComps": "#1 Thief Kit Revisions, #4 Bard Kit Revisions",
+      "theirComps": "#280 Revised Backstabs, #400 Revised Bards",
+      "source": "Both modify clabth02/03.2da and clabba01-04.2da with incompatible ability systems, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "EpicThieving",
+      "withId": 414,
+      "severity": "soft",
+      "reason": "Safe — different aspects. ET cn:300 (Pickpocketing) modifies store steal-difficulty flags and creature scripts, not thief skill 2DAs. ET cn:400 (Detect Illusions) appends new CLAB rows to thief kits — safe after RR cn:1 which modifies existing rows. ET cn:600 (Use Poison) uses EEex extended skill system (stat 690) and appends CLAB rows — independent of RR's Assassin poison rework. Install RR before ET. No shared file conflicts for selected components.",
+      "orderOnly": true,
+      "myComps": "#1 Kit Revisions #3 Racial Skills",
+      "theirComps": "#300 Epic Pickpocketing #400 Epic Detect Illusions #600 Use Poison",
+      "source": "ET appends CLAB rows (safe); RR modifies existing rows; ET cn:300 uses store files; RR cn:3 uses SKILLRAC.2DA; no cross-detection, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Component-level analysis: (1) RR cn:0 (Dual-wielding, WEAPPROF row 32) is nullified by ToF cn:81100 which externalizes proficiencies to Lua — do not use both. (2) RR cn:2 (Thief HLA revisions: Acid Trap, Danger Sense in LUTH0-4.2DA) is overwritten by ToF cn:60200 (Revised HLAs) — do not use both. (3) RR cn:1 (Kit Revisions) has soft overlap with ToF cn:40470 on SPCL414.SPL — different aspects (RR changes mechanics, ToF changes description). Install RR before ToF. (4) RR cn:3 (Racial Skills, SKILLRAC.2DA) has no ToF overlap — safe. (5) ToF cn:40450 (Evasion via CLAB splstate) is a separate system from RR's HLA evasion — they coexist.",
+      "myComps": "#0 Dual-wielding (conflicts cn:81100) #1 Kit Revisions (install order) #2 Thief HLAs (conflicts cn:60200) #3 Racial Skills (safe)",
+      "theirComps": "#40450 Thief Evasion #40470 Rebalanced traps #60200 Revised HLAs #81100 Revised Proficiency",
+      "source": "ToF cn:81100 wipes WEAPPROF to 99s+Lua; ToF cn:60200 overwrites LUTH0-4.2DA; RR cn:0/2 removed",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "2": {
+      "spells": [
+        [
+          "SPCL910",
+          "modify",
+          "Thief HLA abilities revised"
+        ]
+      ]
+    },
+    "5": {
+      "spells": [
+        [
+          "SPCL904",
+          "modify",
+          "Bard HLA abilities revised"
+        ]
+      ]
+    },
+    "6": {
+      "spells": [
+        [
+          "SPWI101",
+          "tweak",
+          "Proper spell progression tables for bards"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Rogue-Rebalancing",
+  "a": "aVENGER, Spellhold Studios",
+  "v": "v4.92",
+  "sum": "Overhauls thief and bard kits with 12 rebalanced versions. Reworks sneak attack, trap-setting, and bard song to make rogues more tactically interesting.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "prof": {
+    "0": {
+      "flags": {
+        "dualWieldRebalanced": true
+      },
+      "desc": "Proper dual-wielding implementation for thieves and bards"
+    }
+  },
+  "ki": [
+    {
+      "pattern": "STATS\\.IDS.*corrupt|BDABISHA|ds\\.tpa.*outdated|duplicate.*STATS",
+      "severity": "critical",
+      "category": "concerning",
+      "description": "Rogue Rebalancing v4.92 ships an outdated ds.tpa (Detectable Spells) library that corrupts STATS.IDS by adding duplicate nonsense entries. This causes WeiDU to fail when any later mod (especially EET_End) tries to DECOMPILE_AND_PATCH scripts containing CheckStat() lookups. Identified by argent77 (April 2026). Three users independently confirmed the issue.",
+      "workaround": "Use Angel's Rogue Rebalancing fork (which has an updated ds.tpa) instead of the original v4.92. The fork resolves the STATS.IDS corruption.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/41159-eet-end-install-error/",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dl": "https://github.com/Spellhold-Studios/Rogue-Rebalancing",
+  "au": "Wisp",
+  "co": [
+    {
+      "n": "Proper dual-wielding implementation for Thieves and Bards",
+      "tp2n": "Proper dual-wielding implementation for Thieves and Bards",
+      "cn": 0,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100"
+    },
+    {
+      "n": "Thief kit revisions",
+      "tp2n": "Thief kit revisions",
+      "no": "also done by HT's Rebalanced Weapon Styles and S&S' main component. Redundant with TA's Weapon Styles for All or ToF's Revised Weapon Proficiency System (all classes can max styles)",
+      "cn": 1,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 1,
+      "wq": "exact"
+    },
+    {
+      "n": "Thief High Level Ability revisions",
+      "tp2n": "Thief High Level Ability revisions",
+      "no": "Thief HLA revisions. MUST install AFTER Refinements — tp2 detects Refinements via tg#mass.spl and uses compatibility 2DA if found. Overwritten by Talents of Faerun cn:60200.",
+      "cn": 2,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 2,
+      "wq": "exact"
+    },
+    {
+      "n": "Proper racial adjustments for thieving skills",
+      "tp2n": "Proper racial adjustments for thieving skills",
+      "no": "The replacing skills clash with AK and ToF",
+      "cn": 3,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 3,
+      "wq": "exact"
+    },
+    {
+      "n": "Bard kit revisions",
+      "tp2n": "Bard kit revisions",
+      "no": "Redundant with HT's Expanded Racial Bonuses and ToF's Add New Races and Subraces FAILS: Detectable Spells setup aborts due to corrupted spwi705.spl (730 bytes, truncated) in rr/lib/ds/. Replace with a clean spwi705.spl before installing. See mod-level note.",
+      "cn": 4,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 4,
+      "wq": "exact"
+    },
+    {
+      "n": "Bard High Level Ability revisions",
+      "tp2n": "Bard High Level Ability revisions",
+      "no": "Bard HLA revisions. Install AFTER Refinements. Overwritten by Talents of Faerun cn:60200.",
+      "cn": 5,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 5,
+      "wq": "exact"
+    },
+    {
+      "n": "Proper spell progression for Bards",
+      "tp2n": "Proper spell progression for Bards",
+      "no": "The replacing skills clash with BW and ToF",
+      "cn": 6,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 6,
+      "wq": "exact"
+    },
+    {
+      "n": "Additional equipment for Thieves and Bards",
+      "tp2n": "Additional equipment for Thieves and Bards",
+      "no": "let IWDification do this FAILS: Detectable Spells setup aborts due to corrupted spwi705.spl (730 bytes, truncated) in rr/lib/ds/. Replace with a clean spwi705.spl before installing. See mod-level note.",
+      "cn": 7,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 7,
+      "wq": "exact"
+    },
+    {
+      "n": "Upgradeable Equipment",
+      "tp2n": "Upgradeable Equipment",
+      "cn": 8,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 8,
+      "wq": "exact",
+      "no": "May fail if Detectable Spells corruption cascades. Replace rr/lib/ds/spwi705.spl with clean copy before installing RR."
+    },
+    {
+      "n": "Use PnP thievery potions and prevent their effects from stacking",
+      "tp2n": "Use PnP thievery potions and prevent their effects from stacking",
+      "cn": 9,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 9,
+      "wq": "exact",
+      "no": "Conflicts with Talents of Faerun (683) Revised Weapon Proficiency cn:81100",
+      "cat": "POST-TACTICAL TWEAKS",
+      "scn": "Revised Thievery"
+    },
+    {
+      "n": "Retain default thievery potions and prevent their effects from stacking",
+      "tp2n": "Retain default thievery potions and prevent their effects from stacking",
+      "cn": 10,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "cat": "POST-TACTICAL TWEAKS",
+      "scn": "Revised Thievery"
+    },
+    {
+      "n": "Chosen of Cyric encounter",
+      "tp2n": "Chosen of Cyric encounter",
+      "cn": 11,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 11,
+      "wq": "exact"
+    },
+    {
+      "n": "Shadow Thief Improvements",
+      "tp2n": "Shadow Thief Improvements",
+      "no": "probably not a great choice for new players",
+      "cn": 12,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 12,
+      "wq": "exact"
+    },
+    {
+      "n": "BG2-style icons for RR content",
+      "tp2n": "BG2-style icons for RR content",
+      "no": "randomizes traps, which some people may dislike",
+      "cn": 999,
+      "wf": "RR",
+      "wp": "RR\\SETUP-RR.TP2",
+      "wc": 999,
+      "wq": "exact"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Rogue-Rebalancing"
+  }
+}

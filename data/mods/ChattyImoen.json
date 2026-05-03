@@ -1,0 +1,95 @@
+{
+  "i": 196,
+  "t": "chattyimoen",
+  "sv": 1,
+  "pfx": "AY",
+  "ord": 40,
+  "c": "NPC EXPANSIONS",
+  "n": "Chatty Imoen",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "it": 3,
+    "pl": 4,
+    "ru": 5
+  },
+  "no": "Mods that change how NPCs work or their interactions Chatty Imoen AstroBryGuy's original: The Gate Project fork:",
+  "ic": "Imoen Portraits Replacements component does the same job as one of EET Tweaks and a component from The Picture Standard mod. Pick one.",
+  "pt": {
+    "npc": {
+      "1": [
+        [
+          "imoen",
+          "portraits/chatty_imoen/imoen.png",
+          "bg2"
+        ],
+        [
+          "imoen",
+          "portraits/chatty_imoen/imoen_sod.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/ChattyImoen",
+  "a": "AstroBryGuy",
+  "v": "1.5",
+  "sum": "Makes Imoen comment on locations and events throughout BG2 more frequently with restored and new voice lines. Adds personality without new quests.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v1.3",
+    "place": "post"
+  },
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "ChattyImoen"
+  },
+  "au": "AstroBryGuy",
+  "dl": "https://github.com/The-Gate-Project/ChattyImoen",
+  "co": [
+    {
+      "n": "Chatty Imoen: Add NPC Interactions",
+      "pi": "AY-ChattyImoen-NPCInteractions",
+      "wf": "ChattyImoen",
+      "wp": "ChattyImoen\\chattyimoen.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "tp2n": "Chatty Imoen: Expanded Character Sounds"
+    },
+    {
+      "n": "Chatty Imoen: Expanded Character Sounds",
+      "pi": "AY-ChattyImoen-CharSnds",
+      "wf": "ChattyImoen",
+      "wp": "ChattyImoen\\chattyimoen.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10,
+      "tp2n": "Chatty Imoen: Add NPC Interactions"
+    }
+  ]
+}

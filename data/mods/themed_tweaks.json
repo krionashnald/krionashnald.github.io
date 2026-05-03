@@ -1,0 +1,201 @@
+{
+  "i": 670,
+  "t": "themed_tweaks",
+  "sv": 1,
+  "pfx": "#L",
+  "ord": 420,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Themed Tweaks",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "Provided by Transitions As of this writing (v3 AKA 0.3), Themed Tweaks changes SoD to be more roleplay friendly and removes content that characters shouldn’t know about yet.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "transitions",
+      "withId": 589,
+      "severity": "soft",
+      "reason": "HARD conflict on cn:200 vs Transitions cn:140. Both are functionally identical (same CUT59B.BCS script). TT cn:200 has REQUIRE_PREDICATE that auto-skips if Transitions cn:140 is installed — so cn:200 ALWAYS fails when cn:140 is present. REMOVED TT cn:200 . Also cn:80/140/150 fail due to BD0120.BCS corruption (LEXER ERROR) caused by earlier mods modifying the SoD script — same root cause as A7-MagicStore. Transitions cn:10 (BG1 dream) coexists safely.",
+      "source": "TT tp2 REQUIRE_PREDICATE !(MOD_IS_INSTALLED transitions.tp2 #L-TRANSITIONS-RESTORE_POWER); identical CUT59B scripts, 2026-04",
+      "myComps": "#200 Use Irenicus in hell movie as dream",
+      "theirComps": "#10 Use BGI ending movie as dream #140 Use Irenicus in hell movie to restore powers",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[SoD.*Stat-based observations\\]|ERROR Installing \\[SoD.*snark\\]|ERROR Installing \\[SoD.*Remove cut scenes\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "SoD-dependent components (cn:80, 140, 150) fail if BD0120.BCS is corrupted by earlier mods that trigger decompile round-trip failures on SoD area scripts. The LEXER ERROR at line 1 indicates the BCS file was truncated. mod_installer's golden BCS backup guard prevents this by restoring the pristine BD0120.BCS before each WeiDU invocation.",
+      "workaround": "These components require an uncorrupted BD0120.BCS. Check which earlier mod broke the script. May need to adjust install order or skip conflicting mods.",
+      "user_action": "check-docs",
+      "components": [
+        2,
+        5,
+        6
+      ],
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "caelar",
+          "portraits/themed_tweaks/caelar.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/lzenner/themed_tweaks",
+  "a": "lzenner",
+  "v": "v0.5",
+  "sum": "This mod main purpose is to augment the role-playing environment throughout the game series. To that end, it tweaks the storyline in various places.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/lzenner/themed_tweaks",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "SoD - Give Imoen a special wand for palace attack scene",
+      "tp2n": "SoD - Give Imoen a special wand for palace attack scene",
+      "cn": 60,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 60,
+      "no": "Requires SoD content."
+    },
+    {
+      "n": "SoD - Allow PC to give aid to Imoen after attack in palace",
+      "tp2n": "SoD - Allow PC to give aid to Imoen after attack in palace",
+      "cn": 70,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 70,
+      "no": "Requires SoD content."
+    },
+    {
+      "n": "SoD - Stat-based observations and quest options",
+      "tp2n": "SoD - Stat-based observations and quest options",
+      "cn": 80,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 80,
+      "no": "Requires SoD content."
+    },
+    {
+      "n": "SoD - Ditch Tour-Guide Corwin Schael",
+      "tp2n": "SoD - Ditch Tour-Guide Corwin Schael",
+      "cn": 90,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 90,
+      "no": "Requires SoD content."
+    },
+    {
+      "n": "SoD - Quest: Scouting the Coast Way Crossing",
+      "tp2n": "SoD - Quest: Scouting the Coast Way Crossing",
+      "cn": 100,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 100,
+      "no": "Requires SoD content."
+    },
+    {
+      "n": "SoD/BG2EE - Add a little snark to dialogues",
+      "tp2n": "SoD/BG2EE - Add a little snark to dialogues",
+      "cn": 140,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 140,
+      "no": "Requires SoD or BG2EE.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "n": "SoD/BG2EE - Remove cut scenes that the PC shouldn't be privy to",
+      "tp2n": "SoD/BG2EE - Remove cut scenes that the PC shouldn't be privy to",
+      "cn": 150,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 150,
+      "no": "Requires SoD or BG2EE.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "n": "SoD/BG2EE - Move dreams about Irenicus from SoD to BG2EE",
+      "tp2n": "SoD/BG2EE - Move dreams about Irenicus from SoD to BG2EE",
+      "cn": 160,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 160,
+      "no": "Requires SoD or BG2EE.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "n": "BG2EE - Give Imoen innnate Magic Missiles for attack scene",
+      "tp2n": "BG2EE - Give Imoen innnate Magic Missiles for attack scene",
+      "cn": 180,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 180,
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "n": "BG2EE - Use Irenicus in hell movie as dream to restore Bhaalspawn powers",
+      "tp2n": "BG2EE - Use Irenicus in hell movie as dream to restore Bhaalspawn powers",
+      "cn": 200,
+      "wf": "themed_tweaks",
+      "wp": "themed_tweaks\\THEMED_TWEAKS.TP2",
+      "wc": 200,
+      "no": "Uses Irenicus hell movie as dream to restore Bhaalspawn powers. Soft overlap with Transitions #140 which does similar.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "with": "sodrtd",
+      "withId": 233,
+      "severity": "soft",
+      "reason": "Both modify SoD story dialogue and quest flow. Install order matters; some changes may overlap",
+      "orderOnly": true,
+      "myComps": "#60 Imoen wand #70 Aid Imoen #80 Stat observations #90 Ditch Corwin #100 Scouting quest #140 Snark dialogues #150 Remove cutscenes #160 Move dreams",
+      "theirComps": "#10 Consistency Changes #30 Informed Replies #50 Officer Reactions",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "lzenner",
+    "r": "themed_tweaks"
+  }
+}

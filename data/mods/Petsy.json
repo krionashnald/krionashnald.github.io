@@ -1,0 +1,73 @@
+{
+  "i": 186,
+  "t": "Petsy",
+  "sv": 1,
+  "pfx": "L3",
+  "ord": 620,
+  "c": "NEW NPC MODS",
+  "n": "Petsy NPC",
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Petsy",
+  "dependencies": [
+    {
+      "requires": "NEPHELE",
+      "requiresId": 165,
+      "type": "soft",
+      "reason": "Petsy/Nephele"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "petsy_npc",
+          "portraits/petsy_npc/l3petsy.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/petsy/",
+  "a": "Lava Del'Vortel",
+  "v": "4.2",
+  "sum": "Romanceable halfling bard NPC available for male gnomes, dwarves, and halflings, featuring content across both SoA and ToB campaigns.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/petsy/",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Petsy Chattertone",
+      "pi": "L#-PETSYBG2",
+      "wf": "Petsy",
+      "wp": "Petsy\\PETSY.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "tp2n": "Petsy Chattertone"
+    },
+    {
+      "n": "Petsy/Nephele crossmod banters",
+      "pi": "L#-PETSYNEPHELE",
+      "wf": "Petsy",
+      "wp": "Petsy\\PETSY.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "cn": 1,
+      "cat": "NPC CROSSMOD",
+      "x": 0,
+      "tp2n": "Petsy/Nephele crossmod banters"
+    }
+  ]
+}

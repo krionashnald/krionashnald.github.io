@@ -1,0 +1,75 @@
+{
+  "i": 612,
+  "t": "Askaria",
+  "sv": 1,
+  "ord": 1140,
+  "c": "NEW NPC MODS",
+  "n": "Askaria Quest",
+  "langs": {
+    "ko": 0,
+    "en": 1,
+    "fr": 2
+  },
+  "no": "Lang 0=Korean, 1=English, 2=French. Use lang:1 for English.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "CHAOSKNIGHT",
+      "requiresId": 611,
+      "type": "hard",
+      "reason": "Askaria needs her Kit"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "askaria",
+          "portraits/askaria/zyaska.png",
+          "bg2"
+        ],
+        [
+          "chaos_knight",
+          "portraits/askaria/zychaos.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/Askaria-Quest_ChaosKnight-kit",
+  "a": "drizztdd",
+  "v": "v2.1",
+  "sum": "Askaria Npc and Quest & ChaosKnight kit and Npc",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "au": "drizztdd",
+  "dl": "https://github.com/The-Gate-Project/Askaria-Quest_ChaosKnight-kit",
+  "co": [
+    {
+      "n": "Askaria Quest for BGT, BGEE or EET",
+      "cn": 0,
+      "wf": "ASKARIA",
+      "wp": "ASKARIA\\SETUP-ASKARIA.TP2",
+      "wc": 0,
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "Askaria-Quest_ChaosKnight-kit"
+  }
+}

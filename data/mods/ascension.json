@@ -1,0 +1,472 @@
+{
+  "i": 109,
+  "t": "Ascension",
+  "sv": 1,
+  "ord": 10,
+  "c": "QUEST MODS ToB",
+  "n": "Ascension",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "es": 3,
+    "zh-cn": 4,
+    "zh-tw": 5,
+    "pl": 6,
+    "ru": 7,
+    "cs": 8,
+    "it": 9,
+    "pt": 10,
+    "sv": 11
+  },
+  "no": "Restores David Gaider's original vision for the Throne of Bhaal finale with smarter Melissan, Balthazar redemption, deeper Bhaalspawn interactions, and tougher endgame battles. The community standard for ToB overhauls.",
+  "ic": "Wheel of Prophecy (balthazar issues, hopefully to be fixed in future releases)",
+  "ki": [
+    {
+      "pattern": "BDABISHA\\.BCS|fatal.*pars.*BDABISHA",
+      "severity": "error",
+      "category": "concerning",
+      "description": "BDABISHA.BCS.BAF fatal parsing error when EET_End installs. Root cause identified by argent77 (April 2026): Rogue Rebalancing v4.92 corrupts STATS.IDS with duplicate entries via an outdated ds.tpa (Detectable Spells) library. WeiDU then chokes on CheckStat() lookups. Ascension is NOT the direct cause but was initially suspected because adding it changed install ordering. Three users confirmed (Guest Coolbeans, Guest Wasabiiwu, Guest ash).",
+      "workaround": "Use Angel's Rogue Rebalancing fork instead of the original v4.92. If not using Rogue Rebalancing, the error should not occur.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/41159-eet-end-install-error/",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Install order note. SCS Smarter Ascension components (cn:6590/6840/6850) are designed to install AFTER Ascension and supersede the Tougher battle components (cn:8-13) with improved AI. SCS detects Ascension and applies its own tactical scripts on top. Standard EET install order handles this — Ascension installs in QUEST MODS, SCS installs in TACTICAL MODS (later). Not a conflict if install order is correct.",
+      "myComps": "#8 / #9 / #10 / #11 / #12 / #13 Tougher battles",
+      "theirComps": "#6590 Smarter final villain #6840 Ascension Irenicus/Sendai #6850 Ascension demons",
+      "orderOnly": true,
+      "source": "SCS detects Ascension via MOD_IS_INSTALLED; standard category order places SCS after Ascension, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "kelsey",
+      "withId": 161,
+      "severity": "soft",
+      "reason": "Install Kelsey after Ascension. Kelsey has a dedicated Ascension compatibility component (#4) that adds interjections to Ascension's revised ToB finale. No evidence of dialogue blocking.",
+      "orderOnly": true,
+      "myComps": "#0 Rewritten Final Chapter of Throne of Bhaal",
+      "theirComps": "#4 Ascension-specific dialogue",
+      "source": "Kelsey tp2 comp 4 kelsey-asc.d patches FINBODH/FINMEL01 with APPEND; FATESP.d adds summon options. GitHub issue PPG/Kelsey#1 open since 2020 with no repro. Original entry copy-pasted from ImoenRomance conflict template, 2026-03"
+    },
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "partial",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "myComps": "Rewritten Final Chapter of Throne of Bhaal, Balthazar can be redeemed, Improved Sarevok-Player Interactions, Improved Imoen-Player Interactions in Throne of Bhaal, #60, #61",
+      "theirComps": "#0 Imoen Romance",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "partial",
+      "reason": "New Ascension has separate and better Restored Bhaalspawn Powers component",
+      "myComps": "#4 Restored Bhaalspawn Powers / #2 Improved Sarevok-Player Interactions",
+      "theirComps": "#19 Restored Bhaalspawn Powers / #24 Sarevok's Remorse",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "randomiser",
+      "withId": 385,
+      "severity": "partial",
+      "reason": "Make Gromnir a proper Barbarian is redundant if Ascension is installed",
+      "myComps": "#0 Rewritten Final Chapter / #11 Tougher Gromnir",
+      "theirComps": "#9050 Make Gromnir a proper Barbarian",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "tobr",
+      "withId": 578,
+      "severity": "soft",
+      "reason": "ToBR has built-in Ascension detection for Gromnir and Yaga Shura. Should coexist but script changes are fragile.",
+      "myComps": "#11 Tougher Gromnir #13 Tougher Yaga-Shura",
+      "theirComps": "#0 Gromnir #3 Yaga Shura"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "soft",
+      "reason": "Both modify ar5203. Ascension raises EXTRACOUNT 35→60, increases dynamic spawn limits (~16 creatures), and buffs lieutenants. MiH adds 20 static creatures. Combined within raised cap. Coexists but makes a very hard fight.",
+      "myComps": "#1500 Tougher Yaga-Shura",
+      "theirComps": "#46 Enhanced Battles: Yaga-Shura's Army",
+      "source": "Ascension yagashura.tpa EXTRACOUNT patch; MiH expand_yagas_army.tpa 20 static actors, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LICHDOM",
+      "withId": 674,
+      "severity": "soft",
+      "reason": "Install Lichdom BEFORE Ascension to avoid bugs. Users reported installation errors when Lichdom installed after Ascension.",
+      "orderOnly": true,
+      "source": "Beamdog forums user reports, 2021-2023"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "bodhi",
+          "portraits/ascension/abodhi.png",
+          "tob"
+        ],
+        [
+          "balthazar",
+          "portraits/ascension/balthaz.png",
+          "tob"
+        ],
+        [
+          "balthazar",
+          "portraits/ascension/cbaltha.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/InfinityMods/Ascension/releases",
+  "a": "David Gaider, Westley Weimar; Shawne, Cuv, JediMindTrix, White Agnus, Turambar, Miloch, ALIEN, agb1, DawidW",
+  "v": "2.1.0",
+  "sum": "Restores and expands the Throne of Bhaal finale with David Gaider's original vision: smarter Melissan, expanded Balthazar options, deeper Bhaalspawn interactions, and tougher final battles.",
+  "tags": [
+    "combat",
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "rec": {
+    "goes_with": [
+      "SCS Tactical",
+      "Improved Shade Lord",
+      "Expanded Epilogues"
+    ],
+    "avoid": [
+      "Skip if you want vanilla ToB ending"
+    ],
+    "tip": "The community standard for ToB. Install Balthazar redemption for a non-evil path."
+  },
+  "eet_compat": {
+    "ver": "v1.5",
+    "place": "post"
+  },
+  "gh": {
+    "o": "InfinityMods",
+    "r": "Ascension"
+  },
+  "au": "DavidW",
+  "dl": "https://github.com/InfinityMods/Ascension/releases",
+  "co": [
+    {
+      "n": "Rewritten Final Chapter of Throne of Bhaal",
+      "tp2n": "Rewritten Final Chapter of Throne of Bhaal",
+      "pi": "Ascension-RewrittenFinalChapterOfToB",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 0,
+      "sp": 2,
+      "spLv": {
+        "w3": 1,
+        "w7": 1
+      },
+      "no": "Rewrites the final chapter of ToB with restored Bioware content and new encounters."
+    },
+    {
+      "n": "Balthazar can be redeemed",
+      "tp2n": "Balthazar can be redeemed",
+      "ss": 1,
+      "pi": "Ascension-BalthazarCanBeRedeemed",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 10,
+      "no": "Adds redemption path for Balthazar with expanded dialogue and alternate ending."
+    },
+    {
+      "n": "Improved Sarevok-Player Interactions",
+      "tp2n": "Improved Sarevok-Player Interactions",
+      "pi": "Ascension-ImprovedSarevokPlayerInteractions",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 20,
+      "no": "Improved Sarevok dialogue with more depth and player choices."
+    },
+    {
+      "n": "Improved Imoen-Player Interactions in Throne of Bhaal",
+      "tp2n": "Improved Imoen-Player Interactions in Throne of Bhaal",
+      "pi": "Ascension-ImprovedImoenPlayerInteractions",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 30,
+      "no": "Improved Imoen dialogue and interactions in ToB."
+    },
+    {
+      "n": "Restored Bhaalspawn Powers",
+      "tp2n": "Restored Bhaalspawn Powers",
+      "pi": "Ascension-RestoredBhaalspawnPowers",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 40,
+      "no": "Restores cut Bhaalspawn powers that were removed from the original game."
+    },
+    {
+      "n": "Improved Slayer Transformation",
+      "tp2n": "Improved Slayer Transformation",
+      "no": "NOTE: MiH FR plans to do the same and something more in the future, but lacking this one causes problems for improved slayer below",
+      "pi": "Ascension-ImprovedSlayerTransformation",
+      "grn": "Ascension",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 50
+    },
+    {
+      "n": "David Gaider's expanded epilogues for Bioware NPCs",
+      "tp2n": "David Gaider's expanded epilogues for Bioware NPCs",
+      "g": "epilogues",
+      "scn": "Expanded Epilogues for Bioware NPCs",
+      "grn": "Ascension",
+      "no": "This should create files SLAYER2.spl (3 and 4 as well) on its own, but sometimes it may complain about them not being there — this may happen because a previous mod changed required files to create them.",
+      "pi": "Ascension-DavidGaiderExpandedEpilogues",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 60
+    },
+    {
+      "n": "Alternate epilogues by Shawne",
+      "tp2n": "Alternate epilogues by Shawne",
+      "g": "epilogues",
+      "scn": "Expanded Epilogues for Bioware NPCs",
+      "grn": "Ascension",
+      "pi": "Ascension-AlternateEpiloguesByShawne",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "cn": 61
+    },
+    {
+      "n": "Tougher Abazigal",
+      "tp2n": "Tougher Abazigal",
+      "no": "Warning: the following Tougher X components are no joke, and get even harder with SCS's Smarter Ascension components. Read the documentation carefully before commiting to installing them.",
+      "pi": "Ascension-TougherAbazigal",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1000
+    },
+    {
+      "n": "Tougher Balthazar",
+      "tp2n": "Tougher Balthazar",
+      "pi": "Ascension-TougherBalthazar",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1100,
+      "no": "Balthazar is significantly tougher."
+    },
+    {
+      "n": "Tougher Demogorgon",
+      "tp2n": "Tougher Demogorgon",
+      "pi": "Ascension-TougherDemogorgon",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1200,
+      "no": "Demogorgon encounter is significantly tougher."
+    },
+    {
+      "n": "Tougher Gromnir",
+      "tp2n": "Tougher Gromnir",
+      "pi": "Ascension-TougherGromnir",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1300,
+      "no": "Gromnir encounter is significantly tougher."
+    },
+    {
+      "n": "Tougher Illasera",
+      "tp2n": "Tougher Illasera",
+      "pi": "Ascension-TougherIllasera",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1400,
+      "no": "Illasera encounter is significantly tougher."
+    },
+    {
+      "n": "Tougher Yaga-Shura",
+      "tp2n": "Tougher Yaga-Shura",
+      "no": "Warning: starting a new game in ToB (ie: not continuing a game from SoA) puts you at an extreme disadvantage against Illasera's party.",
+      "pi": "Ascension-TougherYagaShura",
+      "grn": "Tougher Throne of Bhaal battles",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 1500
+    },
+    {
+      "n": "Full-body portrait for Bodhi",
+      "tp2n": "Full-body portrait for Bodhi",
+      "pi": "Ascension-FullbodyPortraitForBodhi",
+      "grn": "Additional Content (not part of original Ascension mod)",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2000,
+      "no": ""
+    },
+    {
+      "n": "Alternate Balthazar portrait, by Cuv",
+      "tp2n": "Alternate Balthazar portrait, by Cuv",
+      "pi": "Ascension-AlternateBalthazarPortrait",
+      "grn": "Additional Content (not part of original Ascension mod)",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2100,
+      "no": ""
+    },
+    {
+      "n": "Extended Epilogues for additional Beamdog NPCs, by shawne",
+      "tp2n": "Extended Epilogues for additional Beamdog NPCs, by shawne",
+      "pi": "Ascension-ExtendedEpiloguesForEENPCbyShawne",
+      "grn": "Additional Content (not part of original Ascension mod)",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2200,
+      "no": ""
+    },
+    {
+      "n": "Sharper portraits of Abazigal and Gromnir for the Enhanced Edition, by DavidW",
+      "tp2n": "Sharper portraits of Abazigal and Gromnir for the Enhanced Edition, by DavidW",
+      "pi": "Ascension-SharperPortraitsAbazigalGromnir",
+      "grn": "Additional Content (not part of original Ascension mod)",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2300,
+      "no": "Sharper portraits of Abazigal and Gromnir for EE."
+    },
+    {
+      "n": "Slightly improved cutscenes, by DavidW",
+      "tp2n": "Slightly improved cutscenes, by DavidW",
+      "pi": "Ascension-SlightlyImprovedCutscenes",
+      "grn": "Additional Content (not part of original Ascension mod)",
+      "wf": "ascension",
+      "wp": "ascension\\Ascension.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 2400,
+      "no": ""
+    }
+  ],
+  "advisories": [
+    {
+      "with": "wheels",
+      "withId": 112,
+      "severity": "partial",
+      "reason": "Managed conflict — both modify ToB endgame. Ascension has FORBID_COMPONENT for setup-wheels.tp2 (may not trigger due to path matching). WoP MUST install BEFORE Ascension — WoP detects Ascension absence and adjusts content. c7-fixwheels mod REQUIRED to fix variable bug (fin_balth_checkpoint_passed → DMWWGroveRevealed) when both installed. Balthazar redemption path and throne room flow are fragile.",
+      "myComps": "#0 Rewritten Final Chapter / #10 Balthazar can be redeemed",
+      "theirComps": "#0 Wheels of Prophecy",
+      "orderOnly": true,
+      "source": "WoP before Ascension; c7-fixwheels required; 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

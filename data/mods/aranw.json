@@ -1,0 +1,465 @@
+{
+  "i": 594,
+  "t": "aranw",
+  "sv": 1,
+  "pfx": "C-",
+  "ord": 1050,
+  "c": "NEW NPC MODS",
+  "n": "Aran Whitehand",
+  "no": "The mod’s author encouraged dual classing this character.Install Aran Whitehand before Mazzy Megamod.. mod_installer: Uses ACTION_READLN for portrait selection. May require interactive input REINSTALL BUG: @30001 translation missing during reinstall cycle — TRA file not reloaded. Harmless, first install fine.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "aran",
+          "portraits/aran/macmazey_donpedro.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_bor.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_bor_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_da.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_da_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_scruffy.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/berelinde_scruffy_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/macmazey_donpedro_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/macmazey_longhair.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/macmazey_longhair_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_beard.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_beard_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_nobeard.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_nobeard_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_photo_h.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/mcmazey_photo_h_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/nix_default_bg2.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/nix_default_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/peachplums_aran_latest_bg2.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/peachplums_aran_latest_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/peachplums_young.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/peachplums_young_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_beard_young.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_beard_young_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_darker_beard.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_darker_beard_bg2ee.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_nobeard_young.png",
+          "bg2"
+        ],
+        [
+          "aran",
+          "portraits/aran/piper_nobeard_young_bg2ee.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Aran-Whitehand",
+  "a": "cmorgan",
+  "v": "@30001",
+  "sum": "Adds Aran Whitehand, a human fighter, as a joinable BG2 NPC with extensive, often humorous dialogue and a romance option.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "cmorgan",
+  "dl": "https://github.com/Gibberlings3/Aran-Whitehand",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install Aran Whitehand for SoA and ToB: RC_Amellg 03.04.2019",
+      "cn": 0,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "KNOWN WARNING: 'EET_NPC_TRANSITION: \"c-aran.bcs\" doesn't exist in game' — Aran is a BG2-only NPC with no BG1 BCS file. EET_NPC_TRANSITION cannot find the script and warns, but the mod installs correctly. Cosmetic only.",
+      "tp2n": "Install Aran Whitehand for SoA and ToB"
+    },
+    {
+      "n": "Aran Whitehand, Mage Dual-Class stats (Tinker)",
+      "cn": 300,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Aran Whitehand, Mage Dual-Class stats (Tinker)",
+      "scn": "Customize Aran Whitehand: Class",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Aran Whitehand, Cleric Dual-Class stats (Tailor)",
+      "cn": 310,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Aran Whitehand, Cleric Dual-Class stats (Tailor)",
+      "scn": "Customize Aran Whitehand: Class",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Customize Aran Whitehand: Class -> Aran Whitehand, Fighter Single Class Stats, default (Soldier): RC_Amellg 03.04.2019",
+      "cn": 320,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wc": 320,
+      "wq": "verified",
+      "tp2n": "Aran Whitehand, Fighter Single Class Stats, default (Soldier)",
+      "scn": "Customize Aran Whitehand: Class",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Aran Whitehand, Thief Dual-Class stats, (Spy)",
+      "cn": 330,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Aran Whitehand, Thief Dual-Class stats, (Spy)",
+      "scn": "Customize Aran Whitehand: Class",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Customize Aran Whitehand: Music -> Replace Guitar Music with Midaevil Music: RC_Amellg 03.04.2019",
+      "cn": 400,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wc": 400,
+      "wq": "verified",
+      "tp2n": "Replace Guitar Music with Midaevil Music",
+      "scn": "Customize Aran Whitehand: Music",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Replace Guitar Music with Brass Ensemble Music",
+      "cn": 410,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Replace Guitar Music with Brass Ensemble Music",
+      "scn": "Customize Aran Whitehand: Music",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Content Speed: minimum 1 hour real time between dialogues (Default, recommended)",
+      "cn": 500,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 1 hour real time between dialogues (Default, recommended)",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Content Speed: minimum 15 minutes real time between dialogues",
+      "cn": 510,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 15 minutes real time between dialogues",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Content Speed: minimum 30 minutes real time between dialogues",
+      "cn": 520,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 30 minutes real time between dialogues",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Customize Aran Whitehand: Timers -> Content Speed: minimum 45 minutes real time between dialogues: RC_Amellg 03.04.2019",
+      "cn": 530,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wc": 530,
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 45 minutes real time between dialogues",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Content Speed: minimum 1 hour 30 minutes real time between dialogues",
+      "cn": 540,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 1 hour 30 minutes real time between dialogues",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Content Speed: minimum 2 hours real time between dialogues",
+      "cn": 550,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Content Speed: minimum 2 hours real time between dialogues",
+      "scn": "Customize Aran Whitehand: Timers",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Customize Aran Whitehand: Portraits -> Nix's \"Default\" portrait (fair hair, fair complexion): RC_Amellg 03.04.2019",
+      "cn": 900,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wc": 900,
+      "wq": "verified",
+      "tp2n": "Nix's \"Default\" portrait (fair hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Peachplum's \"Latest\" portrait (fair hair, fair complexion)",
+      "cn": 905,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Peachplum's \"Latest\" portrait (fair hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Berelinde's \"Boromir\" (dark brown hair, fair complexion)",
+      "cn": 910,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Berelinde's \"Boromir\" (dark brown hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Berelinde's \"Dragon Age\" (dark hair, dark complexion)",
+      "cn": 915,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Berelinde's \"Dragon Age\" (dark hair, dark complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Berelinde's \"Scruffy\"(light brown hair, fair complexion)",
+      "cn": 920,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Berelinde's \"Scruffy\"(light brown hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Macmazey's \"Don Pedro\" (dark hair, dark complexion)",
+      "cn": 925,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Macmazey's \"Don Pedro\" (dark hair, dark complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Macmazey's \"Fantasy Photo\" (long brown hair, light complexion)",
+      "cn": 930,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Macmazey's \"Fantasy Photo\" (long brown hair, light complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Macmazey's\t\"Bearded\" (dark hair, light complexion)",
+      "cn": 935,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Macmazey's\t\"Bearded\" (dark hair, light complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Macmazey's \"No Beard\" (dark hair, light complexion)",
+      "cn": 940,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Macmazey's \"No Beard\" (dark hair, light complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Macmazey's \"Horatio Photo\" (dark hair, light complexion)",
+      "cn": 945,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Macmazey's \"Horatio Photo\" (dark hair, light complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "Peachplum's \"Young Fighter\" (red hair, fair comlpexion)",
+      "cn": 950,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "Peachplum's \"Young Fighter\" (red hair, fair comlpexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "piper's \"Stalwort Bearded Young\" (light brown hair, fair complexion)",
+      "cn": 955,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "piper's \"Stalwort Bearded Young\" (light brown hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "piper's \"Mature Bearded\" (dark brown hair, medium complexion)",
+      "cn": 960,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "piper's \"Mature Bearded\" (dark brown hair, medium complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    },
+    {
+      "n": "piper's \"Stalwort Young\" (light brown hair, fair complexion)",
+      "cn": 965,
+      "wf": "aranw",
+      "wp": "aranw\\ARANW.TP2",
+      "wq": "verified",
+      "tp2n": "piper's \"Stalwort Young\" (light brown hair, fair complexion)",
+      "scn": "Customize Aran Whitehand: Portraits",
+      "grn": "Customize Aran Whitehand"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Aran-Whitehand"
+  }
+}

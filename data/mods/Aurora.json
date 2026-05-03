@@ -1,0 +1,179 @@
+{
+  "i": 634,
+  "t": "Aurora",
+  "sv": 1,
+  "ord": 600,
+  "c": "ITEM ADDITION MODS",
+  "n": "Aurora's Shoes and Boots",
+  "no": "Abandoned by Bookwyrme. EET compat by Austin. Adds boots shop plus economy and creature tweaks. SUBCOMPONENT groups have alternatives not shown (only recommended options listed).",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "aurora_npc",
+          "portraits/aurora/ibaur.png",
+          "bg2"
+        ],
+        [
+          "aurora_npc",
+          "portraits/aurora/ib_lava_aur.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.spellholdstudios.net/ie/aurora/",
+  "a": "Bookwyrme",
+  "v": "v1",
+  "sum": "Adds a new shop run by Aurora in Baldur's Gate II offering more than a dozen new pairs of boots, along with new NPCs and lore that enrich Athkatla's world.",
+  "tags": [
+    "item",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.spellholdstudios.net/ie/aurora/",
+  "au": "Lava Del'Vortel",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Aurora's Shoes and Boots",
+      "cn": 0,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Small portraits for NPCs -> Merchants and minor NPCs",
+      "cn": 10,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 10,
+      "wq": "verified",
+      "x": 0
+    },
+    {
+      "n": "Change store buying prices -> Reduce to 67% (recommended)",
+      "cn": 110,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 110,
+      "wq": "verified",
+      "g": "buy_price",
+      "x": 0
+    },
+    {
+      "n": "Change store selling prices -> Increase by 150% (recommended)",
+      "cn": 175,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 175,
+      "wq": "verified",
+      "g": "sell_price",
+      "x": 0
+    },
+    {
+      "n": "Change gem and jewelry prices -> Reduce to 67% (recommended)",
+      "cn": 215,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 215,
+      "wq": "verified",
+      "g": "gem_price",
+      "x": 0
+    },
+    {
+      "n": "Change quest gold rewards -> Fixes only",
+      "cn": 257,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 257,
+      "wq": "verified",
+      "g": "quest_gold",
+      "x": 0
+    },
+    {
+      "n": "Realistic random treasures -> Both 1 and 2 (no treasures lost)",
+      "cn": 420,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 420,
+      "wq": "verified",
+      "g": "treasures",
+      "x": 0
+    },
+    {
+      "n": "Change creature gold carried -> Reduce to 50% (recommended)",
+      "cn": 470,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 470,
+      "wq": "verified",
+      "g": "creature_gold",
+      "x": 0
+    },
+    {
+      "n": "PnP Helmed and Battle Horrors",
+      "cn": 500,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 500,
+      "wq": "verified",
+      "x": 0
+    },
+    {
+      "n": "Realistic Kobold Commandos",
+      "cn": 520,
+      "wf": "Aurora",
+      "wp": "Aurora\\SETUP-AURORA.TP2",
+      "wc": 520,
+      "wq": "verified",
+      "x": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Deepgnomes",
+      "withId": 823,
+      "severity": "partial",
+      "reason": "Deepgnomes is an EET restoration of Aurora's Shoes and Boots content. Both derive from the same source material. Installing both will likely cause duplicate content and script conflicts.",
+      "myComps": "All components",
+      "theirComps": "#0 Deepgnomes",
+      "source": "Same source mod by Bookwyrme, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "Both modify kobold creatures. May conflict depending on install order.",
+      "orderOnly": true,
+      "myComps": "#520 Realistic Kobold Commandos",
+      "theirComps": "#7030 Improved kobolds",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both mods modify store buying/selling prices. Using both may produce unexpected price scaling.",
+      "myComps": "#110, #175",
+      "theirComps": "#3070, #3071, #3072, #3073, #3320",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

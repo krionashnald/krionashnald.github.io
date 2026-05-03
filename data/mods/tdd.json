@@ -1,0 +1,106 @@
+{
+  "i": 716,
+  "t": "TDD",
+  "sv": 1,
+  "ord": 310,
+  "c": "QUEST MODS BG1",
+  "n": "The Darkest Day (Original)",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "pl": 2,
+    "de": 3,
+    "fr": 4,
+    "it": 5,
+    "es": 6
+  },
+  "no": "RESOURCE FOLDER ONLY — no tp2, no installable components. This is the original TDD v1.14 resource pack containing BAMs, areas, creatures, sounds, etc. Must be extracted to the game folder BEFORE installing TDDz (i=521). TDDz.tp2 hardcodes paths like COPY ~TDD/Bam~ ~override~, so a folder called TDD/ must exist alongside TDDz/. Download from SHS: shsforums.net/files/file/323-the-darkest-day-v114/",
+  "in": [
+    {
+      "t": "Extract the TDD/ resource folder to your game directory before installing The Darkest Day (TDDZ).",
+      "type": "folder"
+    }
+  ],
+  "rf": true,
+  "conflicts": [
+    {
+      "with": "npc_tweak",
+      "withId": 227,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1062 vs 736)",
+      "source": "lcc-docs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Reported as requirement by LCC-docs database (lcc id 1062 requires 1229)",
+      "source": "lcc-docs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "tdd_avaun",
+          "portraits/tdd/avaun.png",
+          "bg1"
+        ],
+        [
+          "tdd_bm006",
+          "portraits/tdd/bm006.png",
+          "bg1"
+        ],
+        [
+          "tdd_cm036",
+          "portraits/tdd/cm036.png",
+          "bg1"
+        ],
+        [
+          "tdd_iwhum1",
+          "portraits/tdd/iwhum1.png",
+          "bg1"
+        ],
+        [
+          "tdd_minskel",
+          "portraits/tdd/minskel.png",
+          "bg1"
+        ],
+        [
+          "tdd_tge066",
+          "portraits/tdd/tge_066.png",
+          "bg1"
+        ],
+        [
+          "tdd_vesine",
+          "portraits/tdd/vesine.png",
+          "bg1"
+        ],
+        [
+          "tdd_wm484",
+          "portraits/tdd/wm484.png",
+          "bg1"
+        ],
+        [
+          "tdd_wm489",
+          "portraits/tdd/wm489.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "http://www.shsforums.net/files/file/323-the-darkest-day-v114/",
+  "a": "TeamBG",
+  "sum": "Required dependency for TDDz (EET installer). Download from SHS, do not install directly — TDDz handles installation.",
+  "tags": [
+    "story"
+  ],
+  "dl": "http://www.shsforums.net/files/file/323-the-darkest-day-v114/",
+  "ph": [
+    "BG1"
+  ],
+  "au": "Rastor, SimDing0",
+  "co": []
+}

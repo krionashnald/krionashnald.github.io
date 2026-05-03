@@ -1,0 +1,100 @@
+{
+  "i": 573,
+  "t": "DarkHorizons",
+  "sv": 1,
+  "ord": 290,
+  "c": "QUEST MODS BG1",
+  "n": "Dark Horizons (Legacy)",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "de": 2,
+    "ru": 3,
+    "pl": 4,
+    "fr": 5,
+    "es": 6,
+    "zh-cn": 7
+  },
+  "no": "EXCLUDED: WeiDU 0xc0000005 access violation during install. Root cause analysis: 1) Massive manual INSERT_BYTES on 30+ area files with unsafe offset arithmetic — if any area was modified by another mod, offsets land wrong causing buffer overflow in WeiDU memory. Most likely crash cause. 2) WRITE_BYTE 0x2b bug (line 6784): writes to Animation ID offset instead of Wisdom (0x23b) on CMTMORW.CRE — corrupts creature but doesn't crash. 3) TIS files copied twice (from areas/ and PVRZ/) — second copy overwrites first. 4) COPY_EXISTING on mod-relative path (line 3437) — incorrect syntax. 5) 59 unused creature files in creatures/ dir (dead files, cre/ dir is the real one). Known EET bug: Oversight HQ door missing (AR0700->BG0700) — ahungry_tweaks fixes. SCS conflict: CMSTQ04.ITM blocks SCS AI install. 261 items with widespread usability flag bugs. GitHub: The-Gate-Project/DarkHorizons (author CoM_Solaufein inactive). File issue for crash + WRITE_BYTE bug. Known warning: ADD_WORLDMAP_LINKS uses invalid from_node (~N~), WeiDU defaults to all nodes. Non-fatal, travel links work correctly.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "SotSC",
+      "withId": 45,
+      "severity": "partial",
+      "reason": "Both mods modify shared BG1 area scripts. Compatible if Dark Horizons is installed BEFORE SotSC (per SotSC readme). SotSC expects Dark Horizons changes to already be present.",
+      "source": "manual"
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Generally compatible. Standard install order: Dark Horizons first, BG1 NPC Project after. Both add BG1 content but don't directly conflict.",
+      "orderOnly": true,
+      "source": "manual"
+    },
+    {
+      "with": "darkhorizonsbgee",
+      "withId": 512,
+      "severity": "hard",
+      "reason": "Same mod content under two tp2 names (legacy vs EE packaging). Install only one version.",
+      "source": "Same GitHub repo (The-Gate-Project/DarkHorizons), single tp2 with GAME_IS checks, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dh_niki",
+          "portraits/darkhorizons/cmniki.png",
+          "bg1"
+        ],
+        [
+          "dh_morwen",
+          "portraits/darkhorizons/cmtmorw.png",
+          "bg1"
+        ],
+        [
+          "dh_torturer",
+          "portraits/darkhorizons/cmttor.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/DarkHorizons",
+  "a": "TeamBG",
+  "v": "3.05",
+  "sum": "Original Dark Horizons mod (legacy version) adding a BG1 quest chain. Use Dark Horizons BG:EE (512) instead for EE compatibility.",
+  "tags": [
+    "story",
+    "abandoned"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://github.com/The-Gate-Project/DarkHorizons",
+  "au": "Kova (original), Roxanne (EET port)",
+  "co": [
+    {
+      "n": "\"Dark Horizons\" Mod",
+      "tp2n": "\"Dark Horizons\" Mod",
+      "cn": 0,
+      "wf": "DarkHorizons",
+      "wp": "DarkHorizons\\DarkHorizons.tp2",
+      "wc": 0,
+      "x": null,
+      "no": "EXCLUDED: 0xc0000005 crash. Likely caused by memory corruption from unsafe INSERT_BYTES area patching (30+ areas with manual offset recalc, no bounds checks). On EET these are BG-prefixed areas potentially modified by other mods, making offset calculations invalid."
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "DarkHorizons"
+  }
+}

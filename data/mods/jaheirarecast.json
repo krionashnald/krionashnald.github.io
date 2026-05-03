@@ -1,0 +1,153 @@
+{
+  "i": 28,
+  "t": "jaheirarecast",
+  "sv": 1,
+  "pfx": "AY",
+  "ord": 50,
+  "c": "GRAPHICS",
+  "n": "Jaheira Recast",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2
+  },
+  "no": "AstroBryGuy's original: soundsets-for-bgee-bg2ee-and-iwdee",
+  "ic": "Give Jaheira her BG2 Portrait component does the same job as one of EET Tweaks and a component from The Picture Standard mod. Pick one.",
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Jaheira Recast portrait overlaps with EET Tweaks Jaheira appearance. Cosmetic — last installed wins.",
+      "myComps": "#3 Give Jaheira her BG2 Portrait",
+      "theirComps": "#1020 Jaheira appearance (BG1) / #1021 Jaheira appearance (BG2)",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "partial",
+      "reason": "Portrait component duplicates functionality",
+      "myComps": "#3 Give Jaheira her BG2 Portrait",
+      "theirComps": "#82000 BG1 Jaheira #82300 BG2 Jaheira #82600 Variant"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "myComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "myComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "myComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Jaheira. Last installed wins",
+      "myComps": "#3 Jaheira BG2 Portrait",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "3": [
+        [
+          "jaheira",
+          "portraits/default/jaheira.png",
+          "all"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/JaheiraRecast",
+  "a": "AstroBryGuy",
+  "v": "v3.2",
+  "sum": "Restores Jaheira's planned SoD voice acting, reconnecting cut voiced dialogue lines and giving her an updated soundset, with options for BG1+BG2 sounds and her BG2 portrait.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "SoD"
+  ],
+  "gh": {
+    "o": "AstroBryGuy",
+    "r": "JaheiraRecast"
+  },
+  "dl": "https://github.com/The-Gate-Project/JaheiraRecast",
+  "au": "AstroBryGuy",
+  "co": [
+    {
+      "n": "Sounds: New SoD Character Sounds",
+      "tp2n": "Use new SoD Character Sounds",
+      "cn": 0,
+      "wf": "jaheirarecast",
+      "wp": "jaheirarecast\\JAHEIRARECAST.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "jr_sounds",
+      "scn": "Jaheira Recast: Character Sounds"
+    },
+    {
+      "n": "Sounds: BG1+BG2 Character Sounds",
+      "tp2n": "Use BG1+BG2 Character Sounds",
+      "cn": 1,
+      "wf": "jaheirarecast",
+      "wp": "jaheirarecast\\JAHEIRARECAST.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "jr_sounds",
+      "scn": "Jaheira Recast: Character Sounds"
+    },
+    {
+      "n": "Jaheira Recast: Dialog Voiceover",
+      "tp2n": "Jaheira Recast: Dialog Voiceover",
+      "cn": 2,
+      "wf": "jaheirarecast",
+      "wp": "jaheirarecast\\JAHEIRARECAST.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "ayjaheir_sod.TRA (SoD dialog translations) not found in EET installs — SoD voiceover lines silently skipped, component still installs successfully. Non-fatal."
+    },
+    {
+      "n": "Jaheira Recast: Give Jaheira her BG2 Portrait",
+      "tp2n": "Jaheira Recast: Give Jaheira her BG2 Portrait",
+      "cn": 3,
+      "wf": "jaheirarecast",
+      "wp": "jaheirarecast\\JAHEIRARECAST.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    }
+  ]
+}

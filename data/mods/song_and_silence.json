@@ -1,0 +1,738 @@
+{
+  "i": 657,
+  "t": "song_and_silence",
+  "sv": 1,
+  "pfx": "A#",
+  "ord": 300,
+  "c": "KIT & CLASS MODS",
+  "n": "Song and Silence",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "de": 3,
+    "ru": 4,
+    "it": 5,
+    "zh-cn": 6
+  },
+  "no": "Install Song & Silence after Rogue Rebalancing.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "S&S comp 0 modifies bard spell progression, but has built-in cdtweaks detection — skips its own change if cdtweaks #2270/#2271 is installed. Self-resolving conflict.",
+      "myComps": "#0 Changes to trueclass bards and thieves",
+      "theirComps": "#2270, #2271 Alter Bard Spell Progression",
+      "source": "S&S tp2: REQUIRE_PREDICATE !MOD_IS_INSTALLED cdtweak 2270/2271; neither comp",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "SnS cn:0 and ToF cn:1520 both modify clabba02.2da (bard CLAB) and luba0.2da (bard song table). Last installed wins. SnS kits (cn:2 Acrobat, cn:4 Dirgesinger) are NEW kits with own CLAB files — safe. ToF cn:41000 rebalances Jester/Skald kits — doesn't overlap with SnS kits.",
+      "myComps": "#0 Changes to trueclass bards and thieves",
+      "theirComps": "#1520 IWD bard songs #41000 #41001 Rebalanced kits",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPWI206",
+          "tweak",
+          "Bard invisibility/spell interactions adjusted"
+        ]
+      ],
+      "new": [
+        [
+          "YOURSS01",
+          "innate",
+          0,
+          "Enchantment",
+          "Enhanced Bard Song",
+          "Improved bard song with scaling bonuses."
+        ],
+        [
+          "YOURSS02",
+          "innate",
+          0,
+          "Illusion",
+          "Shadow Dance",
+          "Thief ability to blend into shadows."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "2": {
+      "ACROBAT_BARD": {
+        "passive": [
+          {
+            "n": "Missile AC",
+            "type": "acPerLevel",
+            "rate": 8,
+            "value": 1,
+            "desc": "+1 missile AC per 8 levels"
+          },
+          {
+            "n": "Half Lore",
+            "type": "desc",
+            "desc": "Lore value is halved compared to base bard"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "Studded leather or lighter",
+          "items": "Thief weapons only (no longswords, etc.)"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard bard spellcasting (half lore)."
+        },
+        "statBonus": {
+          "note": "Standard bard requirements."
+        }
+      }
+    },
+    "3": {
+      "CHORISTER_BARD": {
+        "passive": [
+          {
+            "n": "Half Lore",
+            "type": "desc",
+            "desc": "Lore value is halved"
+          },
+          {
+            "n": "Half Pick Pockets",
+            "type": "desc",
+            "desc": "Pick Pockets percentage is halved"
+          },
+          {
+            "n": "Divine Spells",
+            "type": "desc",
+            "desc": "Gains 12 priest spells as wizard-type (uses bard slots): Armor of Faith, CLW, Doom, Chant, Slow Poison, Draw Upon Holy Might, Glyph of Warding, CMW, Defensive Harmony, Holy Power, Mass Cure, Bolt of Glory"
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Gains 12 priest spells as wizard-type (castable from bard slots): Armor of Faith, CLW, Doom, Chant, Slow Poison, Draw Upon Holy Might, Glyph of Warding, CMW, Defensive Harmony, Holy Power, Mass Cure, Bolt of Glory."
+        },
+        "statBonus": {
+          "note": "Standard bard requirements. Half lore, half pick pockets."
+        }
+      }
+    },
+    "4": {
+      "DIRGESINGER_BARD": {
+        "passive": [
+          {
+            "n": "Half Lore",
+            "type": "desc",
+            "desc": "Lore value is halved"
+          },
+          {
+            "n": "Curse Song",
+            "type": "desc",
+            "desc": "Bard Song curses enemies: -1 saves/THAC0 (lv1), -2 (lv10), -3 (lv20), -4 (lv30)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Song of Horror",
+            "freq": "1/day",
+            "effects": "Horror spell as innate.",
+            "level": 5
+          },
+          {
+            "n": "Song of Grief",
+            "freq": "1/day",
+            "effects": "Confusion spell as innate.",
+            "level": 7
+          },
+          {
+            "n": "Song of Awakening",
+            "freq": "1/day",
+            "effects": "Animate Dead spell as innate.",
+            "level": 9
+          }
+        ],
+        "restrictions": {
+          "alignment": "Non-good only"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard bard spellcasting (half lore). Gains Horror/Confusion/Animate Dead as innates."
+        },
+        "statBonus": {
+          "note": "Non-good alignments only."
+        }
+      }
+    },
+    "5": {
+      "LURING_PIPER": {
+        "passive": [
+          {
+            "n": "Save vs Spells",
+            "type": "desc",
+            "desc": "+1 save vs. spells per 8 levels"
+          },
+          {
+            "n": "Charm Song",
+            "type": "desc",
+            "desc": "Bard Song charms enemies: save vs Spells at +2, with -1 penalty per 5 bard levels"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Curse",
+            "freq": "1/day",
+            "effects": "Opposite of Bless: -1 THAC0 and saves for enemies in area.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "Cannot learn Conjuration, Invocation, or Transmutation spells"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "bannedSchools": [
+            "Conjuration",
+            "Invocation",
+            "Transmutation"
+          ],
+          "note": "Cannot learn these mage schools"
+        },
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "statBonus": {
+          "note": "Standard bard requirements."
+        }
+      }
+    },
+    "6": {
+      "ADVENTURER_THIEF": {
+        "passive": [
+          {
+            "n": "Skill Bonus",
+            "type": "desc",
+            "desc": "+5% Open Locks and Find/Remove Traps every 2 levels"
+          },
+          {
+            "n": "Save Bonus",
+            "type": "desc",
+            "desc": "+1 to all saves at levels 1, 8, and 14 (total +3)"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "noBackstab": true
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (thief kit)."
+        },
+        "statBonus": {
+          "note": "No backstab multiplier. Gains Set Traps at normal rate."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    },
+    "7": {
+      "BURGLAR_THIEF": {
+        "passive": [
+          {
+            "n": "Skill Bonus",
+            "type": "desc",
+            "desc": "+10% Find Traps, Hide in Shadows, Move Silently, Open Locks"
+          },
+          {
+            "n": "Skill Penalty",
+            "type": "desc",
+            "desc": "-20% Pick Pockets and Set Traps"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Can Specialize (2 pips) in daggers, darts, slings. Set Traps gained at half rate (every 10 levels vs 5)."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (thief kit)."
+        },
+        "statBonus": {
+          "note": "+10% Find Traps/Hide/Move Silently/Open Locks. -20% Pick Pockets/Set Traps."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    },
+    "8": {
+      "SOULKNIFE_THIEF": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Manifest Mind Blade",
+            "freq": "1/day per 10 levels",
+            "effects": "Creates a short sword lasting 1 round/level. +1 enchantment per tier, heals 1 HP/hit. THAC0/damage bonus and range improve by +1 per 5 levels (max +5 at lv25).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "Cannot set traps. Only 15 skill points per level (vs 25). Can achieve Mastery (3 pips) in short swords."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. Uses psionic Mind Blade innate."
+        },
+        "statBonus": {
+          "note": "Only 15 skill points per level (vs 25)."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    },
+    "9": {
+      "SHARPSHOOTER_THIEF": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Poison Weapon (Ranged)",
+            "freq": "1/day per 4 levels",
+            "effects": "Assassin's Poison Weapon but only works on ranged attacks (melee removed).",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "noBackstab": true,
+          "items": "Grand Mastery (5 pips) in all missile weapons. No backstab."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (thief kit). Poison Weapon only works on ranged."
+        },
+        "statBonus": {
+          "note": "No backstab multiplier. Grand Mastery in all missile weapons."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    },
+    "10": {
+      "SHADOWDANCER_THIEF": {
+        "passive": [
+          {
+            "n": "Stealth Bonus",
+            "type": "desc",
+            "desc": "+5% Hide in Shadows and Move Silently per 2 levels"
+          },
+          {
+            "n": "Infravision",
+            "type": "desc",
+            "desc": "Permanent infravision"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Reflected Image",
+            "freq": "1/day",
+            "effects": "Reflected Image spell as innate.",
+            "level": 1
+          },
+          {
+            "n": "Summon Shadow",
+            "freq": "1/day",
+            "effects": "Summons a shadow creature that scales with level (4 tiers).",
+            "level": 5
+          },
+          {
+            "n": "Shadow Door",
+            "freq": "1/day at lv8, +1 at lv14 and lv20",
+            "effects": "Shadow Door spell as innate.",
+            "level": 8
+          }
+        ],
+        "restrictions": {
+          "items": "Cannot set traps. Only 15 skill points per level (vs 25). Non-EE only (EE has built-in Shadowdancer)."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool (non-EE only)"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting (thief kit). Gains Reflected Image, Summon Shadow, Shadow Door as innates."
+        },
+        "statBonus": {
+          "note": "Only 15 skill points per level. Cannot set traps. Non-EE only."
+        },
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ]
+      }
+    }
+  },
+  "kits": {
+    "2": {
+      "new": [
+        [
+          "ACROBAT_BARD",
+          "bard",
+          "Acrobat",
+          "Entertainer from carnivals and circuses. Tumbling, balance, and evasion abilities."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "CHORISTER_BARD",
+          "bard",
+          "Chorister",
+          "Sacred singer whose hymns carry divine power. Enhanced healing and buffing songs."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "DIRGESINGER_BARD",
+          "bard",
+          "Dirgesinger",
+          "Singer of sorrow and doom. Songs debuff enemies with fear, weakness, and despair."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "LURING_PIPER",
+          "bard",
+          "Luring Piper",
+          "Musician who charms and controls creatures with enchanting melodies. Rat-catcher origins."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "ADVENTURER_THIEF",
+          "thief",
+          "Adventurer",
+          "Jack-of-all-trades thief focused on exploration rather than crime. Balanced skills."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "BURGLAR_THIEF",
+          "thief",
+          "Burglar",
+          "Expert at breaking and entering. Enhanced Pick Locks, Find Traps, and stealth."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "SOULKNIFE_THIEF",
+          "thief",
+          "Soulknife",
+          "Psionic thief who manifests a blade of mental energy. Psychic combat abilities."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "SHARPSHOOTER_THIEF",
+          "thief",
+          "Sharpshooter",
+          "Stealthy ranged specialist preferring to engage enemies from a distance."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "SHADOWDANCER_THIEF",
+          "thief",
+          "Shadowdancer",
+          "Nimble warrior operating between light and darkness. Shadow Step and stealth mastery."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/SongAndSilence",
+  "a": "Andyr, Grim Squeaker, NiGHTMARE",
+  "v": "v19",
+  "sum": "This mod adds many options for those who use thieves and bards in Baldur's Gate and Baldur's Gate II.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Gibberlings3/SongAndSilence",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Changes to trueclass bards and thieves, and unmodded game kits (required for other components)",
+      "tp2n": "Changes to trueclass bards and thieves, and unmodded game kits (required for other components)",
+      "cn": 0,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 0,
+      "no": "Required for all other components. Has built-in detection for RR, IWDification, and cdtweaks — auto-skips bard table changes if those mods are present.",
+      "sp": 2
+    },
+    {
+      "n": "Add new bardic store and thief items",
+      "tp2n": "Add new bardic store and thief items",
+      "cn": 1,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 1,
+      "rd": 0,
+      "no": "Adds new magical instruments for bards and specialized thief items to shops.",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Install Acrobat bard kit",
+      "tp2n": "Install Acrobat bard kit",
+      "cn": 2,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 2,
+      "k": 1,
+      "rd": 0,
+      "no": "Acrobat bard kit. Flashy entertainer with tumbling abilities, bonus to AC and thief skills. Gains Bard Song that improves AC/saves. Restricted from heavy armor.",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Install Chorister bard kit",
+      "tp2n": "Install Chorister bard kit",
+      "cn": 3,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 3,
+      "k": 1,
+      "rd": 0,
+      "no": "Chorister bard kit. Temple musician and missionary with divine-flavored Bard Song that heals and protects allies. Can Turn Undead. Restricted from edged weapons.",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Install Dirgesinger bard kit",
+      "tp2n": "Install Dirgesinger bard kit",
+      "cn": 4,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 4,
+      "k": 1,
+      "rd": 0,
+      "no": "Dirgesinger bard kit. Melancholy bard whose songs of sorrow debuff enemies — lowering morale, causing despair. Gains fear and horror abilities. Cannot inspire allies.",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Install Luring Piper bard kit",
+      "tp2n": "Install Luring Piper bard kit",
+      "cn": 5,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 5,
+      "k": 1,
+      "rd": 0,
+      "no": "Luring Piper bard kit. Vermin control specialist whose enchanting song charms foes into traps. Gains charm and domination abilities. Less effective in direct combat.",
+      "kC": {
+        "bard": 1
+      }
+    },
+    {
+      "n": "Install Adventurer thief kit",
+      "tp2n": "Install Adventurer thief kit",
+      "cn": 6,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 6,
+      "k": 1,
+      "rd": 0,
+      "no": "Adventurer thief kit. Jack-of-all-trades, more reliable and trustworthy than typical thieves. Bonus to Open Locks, Find Traps, and Detect Illusions. No backstab penalty but fewer skill points.",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Install Burglar thief kit",
+      "tp2n": "Install Burglar thief kit",
+      "cn": 7,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 7,
+      "k": 1,
+      "no": "Burglar thief kit. Expert at breaking and entering — bonus to Find Traps, Hide in Shadows, Open Locks, and Detect Illusions. Reduced combat ability.",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Install Soulknife thief kit",
+      "tp2n": "Install Soulknife thief kit",
+      "cn": 8,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 8,
+      "k": 1,
+      "no": "Soulknife thief kit. Psionic thief who creates a blade of pure psychic energy. Gains psionic attack abilities. No proficiency in normal weapons beyond the soul blade.",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "n": "Install Sharpshooter thief kit",
+      "tp2n": "Install Sharpshooter thief kit",
+      "cn": 9,
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wc": 9,
+      "k": 1,
+      "no": "Sharpshooter thief kit. Ranged combat specialist preferring bolts and arrows over melee. Bonus to ranged THAC0 and damage. Reduced melee ability and thief skill points.",
+      "kC": {
+        "thief": 1
+      }
+    },
+    {
+      "cn": 10,
+      "n": "Install Shadowdancer thief kit",
+      "tp2n": "Install Shadowdancer thief kit",
+      "no": "Blocked on all Enhanced Edition games (REQUIRE_PREDICATE !GAME_IS bgee bg2ee iwdee eet). Legacy component for original BG2 only.",
+      "wf": "song_and_silence",
+      "wp": "song_and_silence\\SETUP-SONG_AND_SILENCE.TP2",
+      "wq": "exact",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "wc": 10,
+      "k": 1,
+      "kC": {
+        "thief": 1
+      }
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "SongAndSilence"
+  }
+}

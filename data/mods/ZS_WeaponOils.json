@@ -1,0 +1,51 @@
+{
+  "i": 270,
+  "t": "ZS_WeaponOils",
+  "sv": 1,
+  "pfx": "ZS",
+  "ord": 170,
+  "c": "ITEM ADDITION MODS",
+  "n": "Weapon Oils",
+  "no": "DEPRECATED by author — use ZS_Consumables instead. Adds 12 weapon oils (elemental, arcane, poison, alignment-based) distributed to stores and NPCs. Oils cannot stack with each other",
+  "conflicts": [
+    {
+      "with": "ZS_Consumables",
+      "withId": 714,
+      "severity": "hard",
+      "reason": "ZS_Consumables supersedes ZS_WeaponOils. The oils component is taken directly from the deprecated mod. Use one or the other",
+      "myComps": "#100 Install oils",
+      "theirComps": "#0 Install Consumables",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/szaumoor/ZS_WeaponOils",
+  "a": "Kaelyn",
+  "sum": "A WeiDu mod that introduces weapon oils to BGEE, BG2EE and EET, distributing them to various stores throughout the games",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "szaumoor",
+    "r": "ZS_WeaponOils"
+  },
+  "dl": "https://github.com/szaumoor/ZS_WeaponOils",
+  "au": "Zed Nocear",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Install oils and insert them into the world",
+      "cn": 100,
+      "wf": "ZS_WeaponOils",
+      "wp": "ZS_WeaponOils\\ZS_WeaponOils.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "no": "Adds weapon oils and distributes to stores/NPCs by class and alignment. Deprecated — ZS_Consumables supersedes this"
+    }
+  ]
+}

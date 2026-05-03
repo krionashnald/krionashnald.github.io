@@ -1,0 +1,62 @@
+{
+  "i": 82,
+  "t": "backbrynnlaw",
+  "sv": 1,
+  "ord": 200,
+  "c": "QUEST MODS BG2",
+  "n": "Back to Brynnlaw",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "zh-cn": 3,
+    "fr": 4,
+    "pl": 5
+  },
+  "no": "Back to Brynnlaw The mod’s author recommends taking Xan and Imoen in your party on your return to Brynnlaw.",
+  "conflicts": [],
+  "u": "https://github.com/Pocket-Plane-Group/Back_to_Brynnlaw/releases",
+  "a": "Kulyok, jastey",
+  "v": "v9",
+  "sum": "Adds a quest to return to Brynnlaw Island in BG2 after the main Spellhold storyline, with new content and encounters there.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v7",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Back_to_Brynnlaw"
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/Back_to_Brynnlaw/releases",
+  "au": "Weimer",
+  "co": [
+    {
+      "n": "Back to Brynnlaw mod for Baldur's Gate II",
+      "tp2n": "Back to Brynnlaw mod for Baldur's Gate II",
+      "cn": 0,
+      "wf": "BackBrynnlaw",
+      "wp": "BackBrynnlaw\\BACKBRYNNLAW.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Return to Brynnlaw island after the Spellhold chapter."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "EpicThieving",
+      "withId": 414,
+      "severity": "soft",
+      "reason": "Back to Brynnlaw copies area files to new names rather than reusing originals, so Epic Locks changes to AR15xx doors likely do not affect B2B's copied areas. Additionally, Epic Locks preserves existing unlock methods.",
+      "myComps": "#0 Back to Brynnlaw mod for Baldur's Gate II",
+      "theirComps": "Epic Locks, #1",
+      "source": "B2B readme: 'all area files have been copied and given new names'; Epic Thieving preserves key/script unlocks, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "i": 193,
+  "t": "SkipChateauIrenicus",
+  "sv": 1,
+  "ord": 10,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Skip Chateau Irenicus",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "pl": 3,
+    "ru": 4,
+    "es": 5,
+    "pt-br": 6
+  },
+  "no": "Mods that ask to be installed after new npcs Skip Chateau Irenicus It also changes the opening cutscene to be more realistic, with Imoen unlocking her cell, Thief-style.We plan to only use the component More Realistic Opening Cutscene.",
+  "ic": "dungeonbegone",
+  "u": "https://github.com/Argent77/A7-SkipChateauIrenicus/releases",
+  "a": "Argent77",
+  "v": "3.5",
+  "sum": "Lets you skip or shorten the Chateau Irenicus opening dungeon in BG2. Options range from abbreviated to completely bypassed.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-SkipChateauIrenicus"
+  },
+  "dl": "https://github.com/Argent77/A7-SkipChateauIrenicus/releases",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Skip Chateau Irenicus",
+      "tp2n": "Skip Chateau Irenicus",
+      "pi": "A7-SKIPCHATEAUIRENICUS-MAIN",
+      "wf": "SkipChateauIrenicus",
+      "wp": "SkipChateauIrenicus\\SKIPCHATEAUIRENICUS.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0
+    },
+    {
+      "n": "Vanilla NPCs only",
+      "tp2n": "Vanilla NPCs only",
+      "no": "v Deal with skipped NPCs",
+      "pi": "A7-SKIPCHATEAUIRENICUS-NPCS_VANILLA",
+      "scn": "Deal with skipped NPCs",
+      "wf": "SkipChateauIrenicus",
+      "wp": "SkipChateauIrenicus\\SKIPCHATEAUIRENICUS.TP2",
+      "wq": "single_comp",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 101
+    },
+    {
+      "n": "All available NPCs",
+      "tp2n": "All available NPCs",
+      "pi": "A7-SKIPCHATEAUIRENICUS-NPCS_ALL",
+      "scn": "Deal with skipped NPCs",
+      "wf": "SkipChateauIrenicus",
+      "wp": "SkipChateauIrenicus\\SKIPCHATEAUIRENICUS.TP2",
+      "wq": "single_comp",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 102
+    },
+    {
+      "n": "More realistic opening cutscene",
+      "tp2n": "More realistic opening cutscene",
+      "pi": "A7-SKIPCHATEAUIRENICUS-REALISTIC_OPENING_CUTSCENE",
+      "wf": "SkipChateauIrenicus",
+      "wp": "SkipChateauIrenicus\\SKIPCHATEAUIRENICUS.TP2",
+      "wc": 200,
+      "wq": "single_comp",
+      "cn": 200,
+      "no": "Fragile: text-based pattern matching on newgame.bcs. Fails if other mods modify the cutscene script before this. Known to fail in EET mega-installs."
+    }
+  ]
+}

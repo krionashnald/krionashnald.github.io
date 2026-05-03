@@ -1,0 +1,195 @@
+{
+  "i": 443,
+  "t": "enhanced-powergaming-scripts",
+  "sv": 1,
+  "pfx": "MO",
+  "ord": 10,
+  "c": "POST EET",
+  "n": "Enhanced Powergaming Scripts",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "pl": 2,
+    "ru": 3,
+    "es": 4,
+    "zh-cn": 5
+  },
+  "no": "AI scripts for pre-buffing, celestials, and simulacrum. Installs after EET_End. Completely overwrites BDDEFAI.BCS with custom AI script. Any prior BDDEFAI modifications by other mods will be lost. WIZARD_MIND_BLANK warnings are non-fatal (spell not added if SCS IWD imports not installed).",
+  "rq": "EEex",
+  "ic": "Olvyn Spells, maybe magic battles revised",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS cn:5000 (Ease-of-use Party AI) and EPS cn:15 (Pre-Buffing) both provide player party automation scripts. They can coexist — SCS provides basic party AI (auto-attack, auto-heal), EPS provides pre-combat buffing sequences. EPS scripts are assigned to specific party members and don't override SCS party AI assignments. SCS cn:5900 (Initialize AI) is enemy AI infrastructure — no overlap with EPS player scripts. EPS cn:9 (Celestials) and cn:10 (Simulacrum) enhance summoned creature AI — complementary with SCS enemy AI. Install SCS before EPS so EPS scripts layer on top.",
+      "myComps": "#14 #15 Pre-Buffing #9 Celestials",
+      "theirComps": "#5000 Party AI #5900 Initialize AI",
+      "orderOnly": true,
+      "source": "EPS pre-buffing scripts layer on top of SCS party AI; cn:9/10 enhance summoned creatures independently, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "soft",
+      "reason": "KLATU's Modal Buff AI Script overlaps with Enhanced Powergaming Scripts' buff automation",
+      "myComps": "#14 #15 Pre-Buffing",
+      "theirComps": "#2190 Modal Buff AI Script"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both provide party AI scripts. Use one or the other",
+      "myComps": "#14 #15 Pre-Buffing #300 Party AI",
+      "theirComps": "#300 Slightly improved party AI"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "morpheus562skitpack",
+      "withId": 320,
+      "severity": "soft",
+      "evidenceLevel": "speculative",
+      "orderOnly": true,
+      "reason": "Mechanism-verified, failure NOT observed in any preserved WSETUP.DEBUG across our test cycles. Both mods are by morpheus562. Trace: Morpheus562's Kitpack cn:1101 (Stormlord: Assign to Jaheira) creates MOSTL02.SPL in override. mih_metamod cn:4 'Clean up override folder' moves .SPL files into mh#clean.bif and deletes them from override/ (verified: cleanup_override.tpa preserve list excludes .spl). EPS initialize.tpa:1345 does COPY_EXISTING ~MOSTL02.SPL~ override when Stormlord is detected. WeiDU's COPY_EXISTING should resolve MOSTL02.SPL from the user-created mh#clean.bif, so the downstream failure 'Resource [MOSTL02.SPL] not found' should not fire. No session has ever been observed to produce that error. Surfaces as an advisory only — if you run with mih_metamod cn:4 enabled and see the MOSTL02 not-found error in WSETUP.DEBUG, report it and we'll promote this to an observed conflict.",
+      "myComps": "#15 Pre-Buffing #9 Celestials #10 Simulacrum",
+      "theirComps": "#1101 Stormlord: Assign to Jaheira",
+      "source": "Code trace 2026-04-21: morpheus562-s-kitpack stormlord tph creates MOSTL02.SPL; mih_metamod cleanup_override.tpa preserve list verified; EPS initialize.tpa:1345 COPY_EXISTING verified. No WSETUP.DEBUG match for 'Resource \\[MOSTL02\\.SPL\\] not found' across all preserved install logs."
+    },
+    {
+      "with": "Magic_Battles_Revised",
+      "withId": 412,
+      "severity": "soft",
+      "reason": "Maybe incompatible",
+      "myComps": "#14 #15 Pre-Buffing",
+      "theirComps": "#10 Revised Magic Battles",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "MESpells",
+      "withId": 358,
+      "severity": "soft",
+      "reason": "Mod-level note from install guide. Olvyn celestial/simulacrum spell modifications may affect EPS AI scripts. Does NOT apply to cn:980/990 (ranger/paladin progression, the only Olvyn ). Neither detects the other.",
+      "myComps": "#9 Celestials #10 Simulacrum",
+      "theirComps": "Celestial/Simulacrum spell components (not cn:980/990 which are the only Olvyn in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "eeex",
+      "requiresId": 20,
+      "type": "hard",
+      "reason": "Requires EEex engine extensions"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "Resource \\[MOSTL02\\.SPL\\] not found",
+      "severity": "warning",
+      "category": "unknown",
+      "evidenceLevel": "mechanism-verified",
+      "description": "Speculative detector — never observed to fire. Kept in place as a canary: EPS initialize.tpa:1345 does COPY_EXISTING ~MOSTL02.SPL~ override when Stormlord is detected, and mih_metamod cn:4 moves .SPL files from override/ into mh#clean.bif. WeiDU's COPY_EXISTING should still resolve from the biff, so this failure should not fire. If it does fire, the corresponding advisories[morpheus562skitpack] entry gets promoted from mechanism-verified to observed.",
+      "workaround": "If you see this in WSETUP.DEBUG, report it with the session ID so we can promote the advisory to a confirmed conflict. Short-term workaround: install EPS before mih_metamod cn:4.",
+      "user_action": "report-to-forge"
+    },
+    {
+      "pattern": "enhanced-powergaming-scripts.*0 ok.*skip|SKIPPING.*enhanced-powergaming-scripts",
+      "severity": "warning",
+      "category": "cosmetic",
+      "description": "All EPS components may silently skip when installed in the POST EET phase after eet_end, due to REQUIRE_PREDICATE or AT_INTERACTIVE_EXIT conditions that fail in the finalized game state. Observed in session 88733aac (2026-04-16): batch 510 — 0 ok, 3 skip (cn:14 Pre-Buffing Non-Accelerated, cn:9 Enhanced Summoned Celestials, cn:10 Enhanced Simulacrum). Components install fine if run before eet_end but the mod's Forge category (POST EET) intentionally positions it after.",
+      "workaround": "Known limitation of the POST EET phase. If all 3 components skip, no gameplay impact — the scripts simply don't install. Future: investigate whether EPS can safely move to EET FINALIZATION (before eet_end) without breaking its dependency chain.",
+      "user_action": "none",
+      "evidenceLevel": "observed",
+      "source": "Session references extracted from description on 2026-04-21 during Phase 2.3 validator rollout: session 88733aac"
+    }
+  ],
+  "u": "https://github.com/SarahG-579462/Enhanced-Powergaming-Scripts",
+  "a": "morpheus562",
+  "v": "v16.3",
+  "sum": "Adds improved AI scripts for your party members with 4 options: better auto-casting, smarter combat behavior, and custom tactics.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "eet_compat": {
+    "ver": "v1.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Enhanced-Powergaming-Scripts"
+  },
+  "dl": "https://github.com/SarahG-579462/Enhanced-Powergaming-Scripts",
+  "au": "morpheus562",
+  "co": [
+    {
+      "cn": 14,
+      "n": "Pre-Buffing: Non-Accelerated",
+      "tp2n": "Normal Pre-Buffing Speed",
+      "g": "prebuff",
+      "scn": "Install Enhanced Powergaming Scripts",
+      "wf": "enhanced-powergaming-scripts",
+      "wp": "enhanced-powergaming-scripts\\ENHANCED-POWERGAMING-SCRIPTS.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 14
+    },
+    {
+      "cn": 15,
+      "n": "Pre-Buffing: Accelerated",
+      "tp2n": "Accelerated Pre-Buffing Speed",
+      "g": "prebuff",
+      "scn": "Install Enhanced Powergaming Scripts",
+      "wf": "enhanced-powergaming-scripts",
+      "wp": "enhanced-powergaming-scripts\\ENHANCED-POWERGAMING-SCRIPTS.TP2",
+      "wq": "exact",
+      "wc": 15
+    },
+    {
+      "cn": 9,
+      "n": "Enhanced Scripts for Summoned Celestials",
+      "tp2n": "Install Enhanced Scripts for Summoned Celestials",
+      "wf": "enhanced-powergaming-scripts",
+      "wp": "enhanced-powergaming-scripts\\ENHANCED-POWERGAMING-SCRIPTS.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 9,
+      "x": 0,
+      "no": "Requires main component. BG2EE/EET only."
+    },
+    {
+      "cn": 10,
+      "n": "Enhanced Scripts for Simulacrum",
+      "tp2n": "Install Enhanced Scripts for Simulacrum",
+      "wf": "enhanced-powergaming-scripts",
+      "wp": "enhanced-powergaming-scripts\\ENHANCED-POWERGAMING-SCRIPTS.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 10,
+      "x": 0,
+      "no": "Requires main component. BG2EE/EET/IWDEE only."
+    }
+  ]
+}

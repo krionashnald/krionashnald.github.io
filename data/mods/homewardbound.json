@@ -1,0 +1,61 @@
+{
+  "i": 806,
+  "t": "homewardbound",
+  "sv": 1,
+  "ord": 610,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Homeward Bound",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "u": "https://github.com/Plutonium-X/MISC_Homeward",
+  "a": "berelinde",
+  "sum": "This mod allows you to send your companions home or have them return to the Throne of Bhaal Pocket Plane, and to access the epilogue of all your companions, even those who are no longer part of you...",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Plutonium-X/MISC_Homeward",
+  "no": "This mod allows you to send your companions home or have them return to the Throne of Bhaal Pocket Plane, and to access the epilogue of all your companions, even those who are no longer part of you...",
+  "au": "wisp",
+  "co": [
+    {
+      "n": "Homeward Bound",
+      "cn": 0,
+      "wf": "homewardbound",
+      "wp": "homewardbound\\setup-homewardbound.tp2",
+      "wc": 0,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "Yes, join with me now.",
+      "cn": 1,
+      "wf": "homewardbound",
+      "wp": "homewardbound\\setup-homewardbound.tp2",
+      "wc": 1,
+      "wq": "lcc-github",
+      "g": "NPC Join Timing",
+      "no": "NPC joins party immediately"
+    },
+    {
+      "n": "No, wait here for awhile, yet.",
+      "cn": 2,
+      "wf": "homewardbound",
+      "wp": "homewardbound\\setup-homewardbound.tp2",
+      "wc": 2,
+      "wq": "lcc-github",
+      "g": "NPC Join Timing",
+      "no": "NPC waits at location"
+    }
+  ],
+  "gh": {
+    "o": "Plutonium-X",
+    "r": "MISC_Homeward"
+  }
+}

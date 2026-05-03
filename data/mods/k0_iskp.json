@@ -1,0 +1,3021 @@
+{
+  "i": 250,
+  "t": "k0_iskp",
+  "sv": 1,
+  "pfx": "K0",
+  "ord": 10,
+  "c": "ITEM ADDITION MODS",
+  "n": "Trollkiller's Items, Spells, and Kitpack",
+  "no": "Item, spell, and kit pack by DaerosTrollkiller. SoD item imports use FILE_EXISTS to avoid duplicating items from other mods. Standard/new import groups require starting a new game. IWD item components avoid overlap with IWDification",
+  "conflicts": [
+    {
+      "with": "sod2bg2_iu",
+      "withId": 480,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 1587 vs 973)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/DaerosTrollkiller/Trollkillers-Item-Spell-Kitpack",
+  "a": "DaerosTrollkiller",
+  "v": "v3.0.0-BETA",
+  "sum": "A mod for Baldur's Gate 1+2 and Icewind Dale Enhanced Editions, a re-imagining of SoD to BG2 Item Upgrade",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "DaerosTrollkiller",
+    "r": "Trollkillers-Item-Spell-Kitpack"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "BDSW1H21",
+          "short sword",
+          "Vexation +2",
+          "This blade appears smooth and whole at first glance, but on closer examination, its surface is made of thousands of tiny overlapping scales. When the sword is used to stab a target unawares, scales break off and lodge in the wound, irritating the victim and draining their strength.\n\nSTATISTICS:\n\nCombat abilities:\n– Inflicts 2 points of bleeding damage per hit (one point per round)\n– Drains 2 points of Strength from the target and transfers them to the weilder for 5 rounds when a successful backstab is performed (non-cumulative)\n\nSTATISTICS:\n\nTHAC0: +2\nDamage: 1d6+2 (piercing)\nSpeed Factor: 1\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "BDBLUN04",
+          "morning star",
+          "Martyr's Morningstar +2",
+          "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.\n\nSTATISTICS:\n\nDamage: 2d4 (crushing)\nSpeed Factor: 7\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "BDBOLT02",
+          "bolt",
+          "Bolt of Ice +1",
+          "This bolt is magically enhanced so as to burst into a rolling ball of ice when it is fired. When the bolt strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1, +1d3 (cold)\nDamage type: Missile\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBOLT01",
+          "bolt",
+          "Bolt of Fire +1",
+          "This bolt is magically enhanced so as to burst into flames when it is fired. The effect is similar to a bolt doused in oil and set to flame.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: 1d8+1, +1d3 (fire)\nDamage Type: Missile\nLauncher: Crossbow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "BULL09",
+          "bullet",
+          "Bullet of Electricity +1",
+          "Each of these copper bullets is molded around the vertebrae of an electric eel. Upon impact, they release a powerful jolt to the target.\n\nSTATISTICS:\n\nDamage: 1d4+1, +1d6 electrical damage (Save vs. Spell for none)\nDamage type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "dmg": "1d4",
+            "dmgBonus": 1
+          }
+        ],
+        [
+          "BULL08",
+          "bullet",
+          "Bullet of Ice +1",
+          "Chipped from the corpse of an ice elemental, these sharp projectiles shatter upon impact to chill the target with unnatural cold.\n\nSTATISTICS:\n\nDamage: 1d4+1, +1d6 cold damage (Save vs. Spell for none)\nDamage type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "dmg": "1d4",
+            "dmgBonus": 1
+          }
+        ],
+        [
+          "BULL07",
+          "bullet",
+          "Bullet of Fire +1",
+          "Carved from the knucklebones of slain salamanders, these incendiary missiles burst into flames once they are hurled from a sling.\n\nSTATISTICS:\n\nDamage: 1d4+1, +1d6 fire damage (Save vs. Spell for none)\nDamage type: Missile\nLauncher: Sling\n\nWeight: 0",
+          {
+            "dmg": "1d4",
+            "dmgBonus": 1
+          }
+        ],
+        [
+          "BDSW1H22",
+          "large sword",
+          "Severance +2",
+          "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.\n\nSTATISTICS:\n\nDamage: 2d4 (slashing)\nSpeed Factor: 8\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+5 Max HP"
+              }
+            ],
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "BDSW1H01",
+          "large sword",
+          "Crimson Dawn +2",
+          "The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 4\nProficiency Type: Katana\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 6",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDSW1H02",
+          "large sword",
+          "Tongue of Acid +3",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDPLAT04",
+          "armor",
+          "Rhino Beetle Plate",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.\n\nSTATISTICS:\n\nArmor Class: 3 (0 vs. slashing)\nRequires:\n 12 Strength\n\nWeight: 50",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 25
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "BDBOOT01",
+          "boots",
+          "Soft Feet",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.\n\nSTATISTICS:\n\nWeight: 4",
+          {}
+        ],
+        [
+          "BDHELM01",
+          "helmet",
+          "Crown of Lies",
+          "This glittering golden crown looks impressive, but its substance is base fool's gold and the \"gems\" set around it are bits of colored glass. Placing the crown on one's head allows the wearer to prepare extra spells but fills the head with false knowledge.\n\nSTATISTICS:\n\nEquipped abilities:\n– Can memorize 2 extra 3rd-level, 1 extra 4th-level, and 1 extra 5th-level wizard spell\n– Lore: -30\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "BDHAMM01",
+          "hammer",
+          "Sundermaul +3",
+          "Mounted knights cannot effectively use long pole weapons while on horseback and, as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about eighteen inches long.\n\nSTATISTICS:\n\nDamage: 1d4+1 (crushing)\nSpeed Factor: 4\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 6",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 4,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "BDBOOT03",
+          "boots",
+          "Star-Strewn Boots",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.\n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "magicResist": 7
+          }
+        ],
+        [
+          "BDBRAC05",
+          "bracers",
+          "Stalker's Gauntlets",
+          "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.",
+          {
+            "dex": 1
+          }
+        ],
+        [
+          "BDBELT01",
+          "belt",
+          "Cloverleaf",
+          "The halfling Tip Eldermaple was noted in his town for never losing at cards. The halfling attributed his good fortune to the blessings of Tyche and lived a long, quiet, and very prosperous life.\n\nWhen Tip finally died at the age of one hundred and three, he left his favorite belt to his son, who discovered that the belt buckle had caught a four-leaf clover in the clasp. Whether Tip had placed the clover there himself, or whether it had simply been stuck there after a tumble down a hill in his youth, no one will ever know. What is known is that Tip’s fortune passed down to his son, until the belt was stolen from him by an ogre while he was traveling along the Sword Coast.\n\nSTATISTICS:\n\nEquipped abilities:\n– Luck\n\nWeight: 2",
+          {}
+        ],
+        [
+          "BDBLUN06",
+          "staff",
+          "The Uncursed Staff +1",
+          "Decades ago, an adventuring priest of Gond discovered a cursed staff in a dungeon. Despite its curse, the staff was a well-crafted and fine-looking weapon, and the priest sought a way to lift the curse. Though he was never able to do so, he was able to add an enchantment to the staff, mostly negating its cursed properties and allowing him to carry it and put it away as desired. Though the staff was little better than a regular weapon, the priest carried it the rest of his days, as it boosted his ability to carry treasure out of subsequent dungeons.\n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: 18\n\nTHAC0: -2\nDamage: 1d6-2 (crushing)\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": -2,
+            "dmg": "1d6",
+            "dmgBonus": -2,
+            "str": 18,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDBLUN07",
+          "mace",
+          "Backwhacker +2",
+          "Most thieves favor bladed weapons when striking from the shadows, but not all. Whether due to religious convictions, personal preference, or anti-establishment tendencies, some thieves prefer to backstab their enemies with a blunt instrument.\n\nSTATISTICS:\n\nCombat abilities:\n– Renders the target unconscious for 2 rounds when a backstab is performed (Save vs. Death negates)\n\nTHAC0: +2\nDamage: 1d6+2 (crushing)\nSpeed Factor: 2\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDBOW04",
+          "bow",
+          "Bow of the Banshee +2",
+          "The longbow is similar to the shortbow, except that the staff is about as tall as the archer is—usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.\n\nSTATISTICS:\n\nTHAC0: +1\nSpeed Factor: 7\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 6 Strength\n\nWeight: 3",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDBRAC03",
+          "bracers",
+          "Nimblefinger Gloves",
+          "Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.",
+          {
+            "usability": {
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Halfling"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBRD04",
+          "misc",
+          "Screaming Bagpipes",
+          "This deep purple set of bagpipes has an odd, furry texture to it. On closer inspection, the bagpipes appear to have been made of the hide of some tentacled creature, with each of its furry purple tentacles becoming one of the instrument's pipes. When played, the bagpipe growls and screeches like a creature in pain.\n\nSTATISTICS:\n\nCharge abilities:\n– Sound Burst twice per day\n  Damage: 4d8 sonic (Jester), 2d8 (others) (Save vs. Breath halves)\n  Special: Deafens for 3 rounds (Save vs. Breath negates)\n  Area of Effect: 15-ft. radius around the Bard\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDCLCK06",
+          "cloak",
+          "Cloak of Minor Arcana",
+          "Embroidered silver stars hide within the folds of this shimmering blue cloak. Wizards, especially those just beginning careers as adventureres, wear such items to aid them in their travels. As wizards grow in power and begin crafting their own equipment, they often gift these cloaks to apprentices.\n\nSTATISTICS:\n\nEquipped abilities:\n– Caster Level: +1 (Mages, Sorcerers, and Bards)\n– Lore: +10\n\nCharge abilities:\n– Generates a random arcane scroll of level 3 or below\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 10,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDALNT01",
+          "scroll",
+          "Alveus Note 01",
+          "Dear Greenbough Publishing,\n\nI write to rectify the confusion in which your last missive was apparently sent. Your reply in regards to my next manuscript, \"Adventuring With All Your Limbs Attached: Both There And Back Again\" is my latest treatsie on the adventuring mage's life. As the greatest first-level mage who has ever lived (so far), my musings and experiences are of considerable value to both the novice and seasoned adventurer. Not only is my writing style light and entertaining to read, but the contents of my manuscript could save many lives.\n\nYou understand my confusion, then, when I recieved your reply that your line of comedic tomes was full for this year and to try again in future seasons. Please check your informative travelogue lineup and respond at your earliest convenience.\n\nSincerely,\n\nAlveus Malcanter",
+          {}
+        ],
+        [
+          "BDALNT02",
+          "scroll",
+          "Alveus Note 02",
+          "(This parchment has been torn at the top. It seems to have been ripped from a larger piece.)\n\nRule Three: Taverns can be of great use for surviving an adventure. Before venturing into that dank tomb or bleak dungeon, visit the local tavern. Buy lots of drinks. Soon your party will be merrily singing and drinking the night away. While they sleep off their excesses the next morning, you can quietly leave town.\n\nRule Four: Some will tell you that second-level spells are necessary for a successful career. Don't believe them! With great power comes great responsibility, so if you stick to first-level spells, no one will expect you to stick your neck out into a dangerous situation.\n\nRule Five: A mage is only as good as their robe. Though you may never rival my exquisite collection of Faerûn's finest robes (may? I am too humble. None could rival that collection of finery), you would do well to obtain a quality tailor at the first opportunity.\n\nRemember, with intelligence, discretion, and an overwhelming, shrieking, constant fear of death, you too can be a successful adventuring mage!",
+          {}
+        ],
+        [
+          "BDALNT03",
+          "scroll",
+          "Alveus Note 03",
+          "Potential Aphorisms\n\nA green slime in the hand is worth nothing, and also you now have no hand. Wear gloves at all times.\n\nA statue is just a potential gargoyle. Carry a statue-poking stick and give it to someone in heavy armor.\n\nA pocketful of gold is good; a sackful of gold is better. But carrying a huge sack of gold makes it hard to run away, so a bag of holding is a good investment.\n\nSomething about bacon? \"Your bacon's in the fire\" is bad, but bacon is also delicious...\n\n(The writing trails off, and doodles fill the rest of the page.)",
+          {}
+        ],
+        [
+          "BDALNT04",
+          "scroll",
+          "Alveus Note 04",
+          "(This note is titled \"Advice to a Novice Mage.\")\n\nIf you are reading this, then you are, perhaps, a young mage just starting out on your career. You might aspire to the heights of some of the greatest wizards in Faerûn. \"Elminster,\" you think to yourself. \"Blackstaff. Malcanter.\"\n\nNO, not Malcanter! You chuckle at your foolishness. Who could ever compete with the greatest first-level mage to have ever lived (so far)?\n\nI am here to tell you that while, in truth, you cannot hope to ever acquire the seasoned and respected name I have made for myself, you can at least hope to reach the plateau from which my shadow seems just slightly less long and chilly as it envelops you. If you follow my advice, you will be well on your way to becoming a second-rate imitation of myself.\n\nRule One: There are some that believe taking credit for a job well done is the easiest way to build a reputation. But taking credit for a job someone ELSE did well and is now dead so they can't contradict you anyway is, in fact, more effic—\n\n(The scroll has been torn off here, and the rest is missing.)",
+          {}
+        ],
+        [
+          "BDALNT05",
+          "scroll",
+          "Alveus Note 05",
+          "This crumpled piece of parchment has been signed over and over again with the name \"Alveus Malcanter\" in increasingly flourishing style. Interspersed among the signatures are sentence fragments, including, \"I hope this book saves your life!\" and \"May you never need the advice contained herein because you listened to me and decided to become a cobbler instead!\"",
+          {}
+        ],
+        [
+          "BDALNT06",
+          "scroll",
+          "Alveus Note 06",
+          "Ideas for Next Book\n\n(The following notes are written in meticulous point-form.)\n\n– Always stay at the back of the party. Monsters rarely attack from the rear.\n\n– Middle, Middle is good too. Surround yourself with hulking companions in full plate armor.\n\n(Here follows a doodle of a stick figure in a pointy hat surrounded by armored individuals carrying enormous swords.)\n\n– Can also follow way behind group. Say one hundred yards. Cast spells from a distance and join in when the looting begins.\n\n– Perhaps one mile behind party? They can scream if they need help.\n\n(The next few points are scratched out.)\n\n– Could just stay home.",
+          {}
+        ],
+        [
+          "BDALNT07",
+          "scroll",
+          "Alveus Note 07",
+          "My Dearest Agythi,\n\nIt was with no little joy that I received your missive. Corresponding with those who have read my books and learning how my advice has positively affected their lives is a source of great pleasure for me. That you were able to write such a letter without the use of your arms makes the feat even more impressive—I suspect in the future you will take my oft-repeated mantra \"Do not wrestle an angry ogre, or indeed any ogre, if it can be avoided\" to heart.\n\nI gather from your note that you found my words less useful than one might have hoped when it came to the matter of the ogre wrestling. I have some questions regarding the events that led to such an unfortunate happenstance:\n\n1) How did you come to find yourself in amongst a pack of savage, bloodthirsty ogres? Over the years, I have offered many suggestions and strategies designed to help the prudent adventurer avoid just such a situation as this. If nothing else, my advice regarding the fortifying of one's home and the frequency with which one leaves it (my advice being \"never\"), if followed, should have prevented such a circumstance as this from ever occurring.\n\n2) Who challenged whom to the wrestling match? I do hope that it was the ogre's idea, as I'm quite certain the flaws in such a scheme originating from your side of the equation have become painfully self-evident.\n\n3) Had you ever considered a profession that carries with it slightly less risk of having one's arms torn off by a redblooding great ogre? Those who aren't cut out for adventure will often find themselves torn from it if they fail to act with the appropriate level of caution. Though they lack the potential glory a lucky few are able to wrest from a life of exploration and action, there is no shame whatsoever in fulfilling the role of a farmer, a courtesan, a tailor, or any number of other, more banal occupations. Someone has to shine my boots, after all.\n\nHowever you came to this regrettable state, I hope you will take some solace in the enclosed copy of my latest book. As you are a reader of my work, I have signed the volume and shall have the messenger take ten percent off the price I generally charge. May you find some enlightenment or entertainment in its pages during your period of convalescence.\n\nYours very truly,\nAlveus Malcanter",
+          {}
+        ],
+        [
+          "BDDAGG01",
+          "dagger",
+          "Element's Fury +2",
+          "The mage who crafted this strange dagger was obsessed with the four elemental planes and sought to create a means to join them together. Opening portals to all of them at once, he managed to join their energies together to enchant this relic, giving it properties of each plane.\n\nUnfortunately, he happened to be standing between the portals, holding the dagger in his hand; when the energies converged, they converged on him. It was the mage’s apprentice who discovered the dagger, clutched in his master’s charred and frozen hands.\n\nSTATISTICS:\n\nCombat abilities:\n– Deals an extra 1d4 cold damage to fire elementals\n– Deals an extra 1d4 fire damage to water elementals\n– Deals an extra 1d4 acid damage to earth elementals\n– Deals an extra 1d4 electrical damage to air elementals\n\nTHAC0: +2\nDamage: 1d4+2, +1 fire, cold, electrical, or acid damage (random)\nDamage type: Piercing\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "BDHALB01",
+          "halberd",
+          "Storm Pike +2",
+          "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing or piercing, whichever is better)\nSpeed Factor: 9\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 7,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "BDIOUN01",
+          "helmet",
+          "Trollblood Ioun Stone",
+          "This ioun stone gleams dark green, like a hardened globe of troll blood. Legend tells of its creation from the blood of seven different trolls, each one captured and then subjected to magical experiments for seven nights. The resulting ioun stone both grants its user a weaker form a troll's healing ability and increases their martial prowess against trolls.\n\nSTATISTICS:\n\nEquipped abilities:\n– THAC0: +3 vs. trolls\n– Regenerate 1 Hit Point per round\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "BDSHLD03",
+          "shield",
+          "Shield of Egons +2",
+          "The Egons were a family of well-respected Lathander worshippers that earned their fortune protecting those weaker than themselves. Though the Egon line has ended, its influence is still felt in the form of this shield, which is imbued with some of the power of the Morninglord himself.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +3\n– Turn Undead Level: +2 (Priests of Lathander and Undead Hunters), +1 (others)\n\nRequires:\n 12 Strength\n\nWeight: 6",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "BDSHLD04",
+          "shield",
+          "Rhino Beetle Shield +2",
+          "A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nRequires:\n 12 Strength\n\nWeight: 8",
+          {
+            "ac": 3,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 15
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDKEYR",
+          "container",
+          "Key Ring",
+          "A latch on this heavy steel ring allows it to open on a hinge. Dozens of keys may be threaded on the ring to keep them organized.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "BDXBOW01",
+          "crossbow",
+          "Astral Crossbow +2",
+          "The silvery string of this elegant weapon gleams like the silver strings connecting Astral Travelers to their bodies. Legends speak of a deva who crafted this weapon out of bits of soul from astral travelers, willingly given to the deva to forge a weapon of good. The deva passed the crossbow down to a champion of good on the mortal Plane, who wielded it for many years before falling under a glabrezu's claws.\n\nSTATISTICS:\n\nCombat abilities:\n– On a critical hit, the target falls to the ground rendered unconscious for 1 round (no save) as they are stricken with a vision of their soul leaving their body.\n\nTHAC0: +2, +4 vs. evil creatures\nDamage: +2 (missile), +4 vs. evil creatures\nSpeed Factor: 3\nProficiency Type: Crossbow\nType: Two-handed\nRequires:\n 8 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "crossbow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "BDSPER01",
+          "spear",
+          "Shadowed Spear +2",
+          "One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 6\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "ac": 2,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDBRD01",
+          "misc",
+          "The Forest Queen's Benediction",
+          "Mielikki, the Forest Queen, bestows her gifts only on those who show kindness and compassion to all living creatures. Legend tells that a bard once came upon a pack of hunters running a unicorn to ground. The bard, despite being outnumbered, threw herself at the hunters and fought them valiantly while the unicorn escaped. The hunters beat the bard near to death and left her broken body on the ground. Moments after they left, the unicorn stepped softly to the bard and extended its horn. The bard grasped the horn weakly and, to her astonishment, it came away in her hand. The bard sat up, healed of all wounds and bestowed with a valuable gift. The unicorn vanished into the trees, and the bard found the horn bestowed healing powers whenever she played it.\n\nThe cornetto can only be played by a bard of exceptional virtue and wisdom.\n\nSTATISTICS:\n\nCharge abilities:\n– Mass Cure once per day\n\nRequires:\n 13 Wisdom\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minWis": 13
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDBRAC02",
+          "bracers",
+          "Jester's Bracers",
+          "These bracers once belonged to a traveling bard famed for his sharp tongue and quick retorts. One rainy night, the bard took refuge in a rickety inn on the road to Shadowdale. There he performed for his supper, sprinkling his routine with caustic jibes as was his custom. One of the drinkers in the tavern, an old woman, stood up midway through the performance and snapped, \"You think it clever to insult and belittle others? Do so, then, for as long as you live!\" The bard found himself unable to remove his now-cursed protective bracers and was forced to spout corny jokes until he could pay a wizard to remove them.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: 5\n– Charisma: -1 (except for Jesters)\n– Wearer is forced to tell corny jokes\n– May only be removed with a Remove Curse spell\n\nWeight: 2",
+          {
+            "ac": 5,
+            "cha": -1
+          }
+        ],
+        [
+          "BDLEAT07",
+          "armor",
+          "The Night's Embrace +3",
+          "Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.\n\nSTATISTICS:\n\nArmor Class: 8 (10 vs. piercing and missile)\nRequires:\n 4 Strength\n\nWeight: 15",
+          {
+            "ac": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "BDRING10",
+          "ring",
+          "Ring of Purity",
+          "This ring, designed for the hero Zachiira, is engraved with holy symbols. When Zachiira requested aid from King Strohm III, it was the king’s royal advisor, the great and powerful Theurgist Karlash Arnostognas, who made this item, in the hope that it would aid the hero in her battle against a demon vampire. Zachiira survived the encounter, but sadly her triumphal return was met with rather less celebration and rather more grief, as the good king was already dead when she arrived. Zachiira laid the holy artifact at the entrance to the king’s tomb, and it was there the relic was discovered by wandering thrill-seekers.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2 vs. evil creatures\n– Hit Points: +10\n– Chant\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              },
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ]
+          }
+        ],
+        [
+          "BDSW1H08",
+          "large sword",
+          "Dervish Crescent +2",
+          "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The \"shamshir,\" as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDHELM15",
+          "helmet",
+          "Headband of Focus",
+          "A ribbon or band worn around the head.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDHELM12",
+          "helmet",
+          "Wizzard Hat",
+          "This classic pointed wizard's hat has the wearer's title emblazoned across it in rather gaudy sequins. The wizzard's hat makes the wearer much faster, both in casting and on foot. A wizard who runs away from combat lives to run away another day, after all.\n\nSTATISTICS:\n\nEquipped abilities:\n– Casting Speed: +1\n– Movement Speed: +2\n\nWeight: 0",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "BDDAGG05",
+          "dagger",
+          "Acid-Etched Dagger +2",
+          "The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.\n\nSTATISTICS:\n\nDamage: 1d4 (piercing)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 1",
+          {
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 2,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "BDSHLD02",
+          "shield",
+          "The Suncatcher +2",
+          "A small shield is usually round and is carried on the forearm, gripped with the shield hand. Its light weight as compared to a medium shield permits the user to carry other items in that hand, although <PRO_HESHE> cannot wield or carry another weapon.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– No protection against missile attacks\n\nRequires:\n 4 Strength\n\nWeight: 3",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDHELM04",
+          "helmet",
+          "The Guardian Devil",
+          "This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.\n\nSTATISTICS:\n\nEquipped abilities:\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 15
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 15
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 15
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "BDMISC10",
+          "shield",
+          "Reed of Echoes",
+          "A Harper bard crafted this item, intending it to be a gift for Storm Silverhand. Once completed, however, its maker decided that the reed was simply too plain. He gave it instead to a fellow Harper, the bard who carried it on missions for many years. The reed has changed hands many times since, and though it still serves its original purpose—allowing its bearer to prepare additional spells—when played as an instrument, it emits a mournful tone no musician, however skilled, can vitiate.\n\nSTATISTICS:\n\nEquipped abilities:\n– Can memorize 2 extra 1st-level, 1 extra 2nd-level, and 1 extra 3rd-level wizard spell\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            }
+          }
+        ],
+        [
+          "BDSTAF03",
+          "staff",
+          "Echo of the Fiend +3",
+          "The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDAMUL01",
+          "amulet",
+          "Amulet of Whispers",
+          "The archmage Ulcaster enjoyed making long speeches in front of his students, filibustering on any number of subjects from arcane theory to the ethics of conjuration. Most of his students enjoyed the lectures, but one of his pupils decided that he would personally stand up to interrupt the stream of words from Ulcaster's mouth.\n\nAt the next lecture, the pupil stood up and shouted, \"I won't listen to you any longer!\" To his horror, no sound issued from his throat. Ulcaster had twisted the chain of an amulet he wore, which rendered every student in the lecture hall utterly silent. The archmage was unaffected, and so carried on his lecture uninhibited.\n\nSTATISTICS:\n\nEquipped abilities:\n– Vocalize\n\nCharge abilities:\n– Silence, 15' Radius once per day\n\nWeight: 1",
+          {
+            "speed": 5,
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDAMUL03",
+          "amulet",
+          "Amulet of Abnormally Awesome Ankheg Summoning",
+          "Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 15
+              }
+            ],
+            "charges": {
+              "count": 10,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDAMUL07",
+          "amulet",
+          "Locket of Embracing",
+          "Esthia and Ambrose both served as Knights of the Mystic Fire, paladins dedicated to Mystra, goddess of magic. Esthia had this necklace commissioned for Ambrose, telling him it would ensure his safety when she could not hold him in her arms.\n\nOn his last mission, Ambrose sent the necklace back to Esthia with a note telling her he had met another woman and would never return to the chapterhouse. Heartbroken, Esthia threw the necklace into a ditch, where it was later found by a peddler.\n\nSTATISTICS:\n\nEquipped abilities:\n– Caster Level: +1 (Clerics and Paladins)\n– Can memorize two extra 1st-level divine spells\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Paladin"
+              ]
+            }
+          }
+        ],
+        [
+          "BDAMUL08",
+          "amulet",
+          "Modron Heart",
+          "Modrons are mechanical creatures of utter law and efficiency that make their home on Mechanus. Many think of modrons as soulless, emotionless beings without a heart to speak of, but this item proves those beliefs false. The Modron Heart is a core of pure law that strengthens its wearer in battle against chaotic creatures.\n\nSTATISTICS:\n\nEquipped abilities:\n– THAC0: +2 vs. chaotic\n– Damage: +2 vs. chaotic\n– Armor Class: +2 vs. chaotic\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ]
+          }
+        ],
+        [
+          "BDAX1H03",
+          "axe",
+          "Chill Axe +2",
+          "The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 7\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 7",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "str": 1,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDBELT03",
+          "belt",
+          "Belt of the Cunning Rogue",
+          "Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.\n\nSTATISTICS:\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBLUN01",
+          "mace",
+          "Mosela's Cudgel +2",
+          "Mosela was disappointed when she learned that she would be finishing her apprenticeship under the tutelage of a sorcerer—sorcerers were not known for their instructional genius—but the opportunity to work with golems was one that no enterprising young mage could reasonably pass up, and that happened to be Listrom’s specialty.\n\nUnfortunately—and it took Mosela only a few short days to discover this—Listrom knew more about making the golems than he did about controlling them, and by the end of Mosela’s first week she realized that she would need some means of protecting herself. Thus was created this cudgel that, she hoped, would keep the misbehaving constructs at bay. When Listrom lost what little sanity he had, Mosela discovered that her invention worked just as well on raving lunatics.\n\nSTATISTICS:\n\nEquipped abilities:\n– Save vs. Alteration spells: +2\n\nTHAC0: +2, +3 vs. constructs\nDamage: 1d6+2, +3 vs. constructs\nDamage type: Crushing\nSpeed Factor: 2\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 2,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDBLUN05",
+          "flail",
+          "The Hydra +2",
+          "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "BDBLUN09",
+          "morning star",
+          "Blazing Glory +3",
+          "The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.\n\nSTATISTICS:\n\nDamage: 2d4 (crushing)\nSpeed Factor: 7\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 12",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "BDBOOT12",
+          "boots",
+          "Sidestep Slippers",
+          "These soft leather slippers are favored by monks, who benefit from their enchanted traction when executing their specialized fighting style. The grip and control provided by the slippers allow a monk to dodge all but the most deadly attacks.\n\nSTATISTICS:\n\nEquipped abilities:\n– Dexterity: +1\n– Armor Class: +1\n– Save vs. Invocation spells: +2\n\nWeight: 3",
+          {
+            "ac": 1,
+            "dex": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBOW05",
+          "bow",
+          "Savage Shortbow +2",
+          "This bow appears crudely made. The knotty length of wood has numerous stumps where twigs were pruned away, and living leaves still spring from it. In spite of its apparent poor quality, the bow has clearly been enhanced with nature magic. It is rumored the wild elves of the Chondalwood make good use of such weapons, especially against invading orcs and ogres.\n\nSTATISTICS:\n\nEquipped abilities:\n– Constitution: +1 (elves and half-elves)\n\nTHAC0: +2\nDamage: +2, +3 extra vs. orcs, half-orcs, and ogres\nSpeed Factor: 4\nProficiency Type: Shortbow\nType: Two-handed\nRequires:\n 6 Strength\n\nWeight: 2",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "short bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Elf",
+                "Gnome",
+                "Half-Elf",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDBRAC01",
+          "bracers",
+          "Bracers of the Shuttered Lid",
+          "Each of these soft leather bracers, dyed gray, displays the embroidered figure of a boar in shimmering red thread. The bracers were crafted by a monk of the Black Raven Monastery who took longer to achieve mastery of her art than her peers, but reached her goals eventually.\n\nSTATISTICS:\n\nEquipped abilities:\n– Hit Points: +10\n\nCombat abilities:\n– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "races": [
+                "Human"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBRAC15",
+          "bracers",
+          "Bracers of Perseverance",
+          "Each of these soft leather bracers, dyed gray, displays the embroidered figure of a boar in shimmering red thread. The bracers were crafted by a monk of the Black Raven Monastery who took longer to achieve mastery of her art than her peers, but reached her goals eventually.\n\nSTATISTICS:\n\nEquipped abilities:\n– Hit Points: +10\n\nCombat abilities:\n– When the wearer suffers a critical miss, <PRO_HESHE> is affected by the Aid spell\n\nWeight: 2",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            }
+          }
+        ],
+        [
+          "BDBRD02",
+          "misc",
+          "Flute of the Immaculate Breeze",
+          "Originally crafted by gnomes, this flute appears diminutive at first but when picked up, it assumes the proper size for the bard who wields it. Tiny engravings of flowers, winding vines, and wispy clouds cover the length of the flute. When played, the scent of flowers fill the air and nearby spectators sometimes feel the sensation of a gentle rain on their face.\n\nSTATISTICS:\n\nCharge abilities:\n– Zone of Sweet Air twice per day\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDCHAN06",
+          "armor",
+          "Stalwart Scales +2",
+          "Splint mail is a variant of banded mail in which the metal strips are applied vertically to the backing of chain, leather, or cloth rather than horizontally as in banded mail. Since the body does not swivel in mid-torso as much as it flexes back to front, splint mail is more restrictive in battle.\n\nSTATISTICS:\n\nArmor Class: 4 (3 vs. piercing and missile, 2 vs. crushing)\nRequires:\n 8 Strength\n\nWeight: 40",
+          {
+            "ac": 2,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 10
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "BDCLCK02",
+          "cloak",
+          "Sable Cloak",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.\n\nSTATISTICS:\n\nWeight: 3",
+          {
+            "coldResist": 40
+          }
+        ],
+        [
+          "BDCLCK03",
+          "cloak",
+          "Crommus's Capelet",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.\n\nSTATISTICS:\n\nWeight: 3",
+          {}
+        ],
+        [
+          "BDHALB02",
+          "spear",
+          "Festering Spear +1",
+          "The razor-sharp tip of this spear easily cuts through armor and down to the bone. Victims of its devastating attacks bleed heavily as their wounds instantly fester and weep, dazing them with pain and making it difficult to continue the battle.\n\nSTATISTICS:\n\nCombat abilities:\n– Inflicts 2 points of bleeding damage per hit (1 point per round)\n– On a critical hit, the target is infected by disease (-2 penalty to Strength and Dexterity for 1 turn, non-cumulative)\n\nTHAC0: +1\nDamage: 1d6+1 (piercing)\nSpeed Factor: 5\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 5,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDAROW01",
+          "arrow",
+          "Arrow of Antimagic +1",
+          "The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are thirty to forty inches long.\n\nSTATISTICS:\n\nDamage: 1d6 (missile)\nLauncher: Bow\n\nWeight: 0",
+          {
+            "thac0": 1,
+            "dmg": "1d2",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "BDHAMM06",
+          "hammer",
+          "Dread Hammer +2",
+          "A Cold, Dread Hammer from a Cold, Dead Hand\nOnce the property of dwarven cleric of Abbathor, Gurn Coldhearth, this mighty war hammer was infused with dark magics soon after Coldhearth's transformation into a lich. The brown leather of the handle and gray metal of the head are purest black now, seemingly forged of a darkness so deep no light can escape it. Any hand that holds it soon grows cold and numb, but those strong enough to endure the discomfort will wield a weapon of formidable power.\n\nSTATISTICS:\n\nEquipped abilities:\n– On a critical miss, the weilder takes 1d4 points of cold damage\n\nCombat abilities:\n– Deals an extra 2d4 points of cold damage vs. good-aligned Clerics\n\nTHAC0: +2\nDamage: 1d4+3, +1 cold\nDamage Type: Crushing\nSpeed Factor: 2\nProficiency Type: War Hammer\nType: One-handed\nRequires:\n 9 Strength\n\nWeight: 5",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "war hammer",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "BDHELM05",
+          "helmet",
+          "Battle Tankard",
+          "This enormous tankard seems sized for a giant. Indeed, a rune on the tankard's base indicates it may come from the halls of Gerti Orelsdottr far to the north. Someone has carved eye and mouth holes in the tankard's side so it can be used as a helmet. Wine stains and the pervasive smell of stale beer indicate that the wearer of this \"helmet\" is used to reveling late into the night (or perhaps early into the morning).\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to fatigue\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "BDHELM06",
+          "helmet",
+          "Peacock Cap",
+          "Decades ago, Yeren the bard traveled the jungles of Chult to learn the stories and songs of those who lived within them. Though the trip was fraught with danger, Yeren's bravery was rewarded when he discovered a Chultan village. The villagers welcomed him. Over the next month, he learned of their history and art while telling them stories of life in Waterdeep. When Yeren departed, the villagers gifted him a headdress trimmed with peacock feathers. Too distinctive to wear on the streets of Waterdeep, Yeren selected one feather to sew into his cap, which he later enchanted.\n\nSTATISTICS:\n\nEquipped abilities:\n– Charisma: +2 (Bards), +1 (others)\n\nWeight: 0",
+          {
+            "cha": 1
+          }
+        ],
+        [
+          "BDHELM07",
+          "helmet",
+          "Helm of Equus",
+          "This finely crafted helm, with intricate gold designs set in black metal and attractive horse hair plumage, lends its wearer an air of authority and gravitas. This effect is only mildly impaired by the distinct odor of horse manure that lingers in the air around it.\n\nSTATISTICS:\n\nEquipped abilities:\n– Charisma: +2\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "cha": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "BDHELM10",
+          "helmet",
+          "Helm of Unwavering Purpose",
+          "This pitted bronze helmet boasts a dark crest that stretches laterally across the crown. Three silver coins, blackened with tarnish, are set in a line over the brow. The helm carries a sense of ancient resolve, of a purpose not yet fulfilled but never abandoned.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Immunity to confusion\n– Protects against critical hits\n\nWeight: 2",
+          {
+            "ac": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "BDIOUN02",
+          "helmet",
+          "Blood Red Ioun Stone",
+          "This spherical stone gleams crimson, like a hardened globe of blood. Once activated, it can enhance the wearer's hand-eye coordination, reflexes, and balance, which makes it a highly prized accessory among rogues.\n\nSTATISTICS:\n\nEquipped abilities:\n– Dexterity: +1\n– Weapon Speed Factor: +2\n\nWeight: 0",
+          {
+            "dex": 1
+          }
+        ],
+        [
+          "BDLEAT03",
+          "armor",
+          "Raconteur's Regalia +2",
+          "Studded leather armor has little in common with normal leather armor. While leather armor is a hardened shell, studded leather armor is soft and supple with hundreds of metal rivets affixed. The rivets are so close together that they form a flexible coating of hard metal that turns aside slashing and cutting attacks. The soft leather backing is little more than a means of securing the rivets in place.\n\nSTATISTICS:\n\nArmor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)\nRequires:\n 6 Strength\n\nWeight: 25",
+          {
+            "ac": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDMISC05",
+          "helmet",
+          "Purification Stone",
+          "This smooth silvery-gray stone floats in the air around its user's head, untethered by gravity or other earthly concerns. Protecting its user from poison and disease, it can be used once a day to cleanse mortal bodies of unnatural contamination.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to poison and disease\n\nCharge abilities:\n– Neutralize Poison once per day\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              }
+            ],
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDPLAT01",
+          "armor",
+          "Daeros's Full Plate +1",
+          "Full plate armor is the best armor a warrior can buy, both in appearance and protection. The perfectly fitted, interlocking plates are specially angled to deflect arrows and blows, and the entire suit is carefully adorned with rich engraving and embossed detail.\n\nSTATISTICS:\n\nArmor Class: 1 (-3 vs. slashing, -2 vs. piercing and missile)\nRequires:\n 15 Strength\n\nWeight: 70",
+          {
+            "ac": 0,
+            "fireResist": 40,
+            "saveBreath": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 15
+            }
+          }
+        ],
+        [
+          "BDPLAT03",
+          "armor",
+          "Bloody Bone Plate +2",
+          "The warrior who once wore this armor died at the hands of a friend she trusted. The mark of her betrayal remains in the bloodstains that have darkened to brown on the gleaming bone-white armor. The armor functions properly, though it makes the wearer unappealing to look at.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to backstab\n– Charisma: -1\n\nArmor Class: 1 (-2 vs. slashing)\nRequires:\n 8 Strength\n\nWeight: 20",
+          {
+            "ac": 1,
+            "cha": -1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "BDROBE01",
+          "armor",
+          "Robe of Arcane Aptitude",
+          "The provenance of this dark purple robe has been lost in the mists of history, but a faint odor of stale magic lingers in the air around the threadbare garment. The one who wore it was clearly no stranger to the Weave. Closely examining the robe, you are able to pick out a stylized flame design woven into the fabric. It seems likely the intricate pattern was always subtle, but even were that not true, countless years of wear have rendered the flames all but invisible.\n\nSTATISTICS:\n\nEquipped abilities:\n– Intelligence: +1\n– Armor Class: 5\n\nCharge abilities:\n– Spell Sequencer once per day\n\nWeight: 3",
+          {
+            "ac": 5,
+            "int": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDSLNG01",
+          "sling",
+          "Firefly +2",
+          "This sling, carefully carved from yew wood, has tiny fireflies engraved along its length. When a slingstone is fired, the fireflies glow with a soft golden light. The sling was crafted and blessed by a priestess of Yondalla and so grants its full abilities only to halfling weilders.\n\nSTATISTICS:\n\nEquipped abilities:\n– Saving Throws: +2 (halflings)\n\nTHAC0: +2\nDamage: +2, +1 (fire)\nDamage Type: Missile\nSpeed Factor: 4\nProficiency Type: Sling\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 0",
+          {
+            "speed": 4,
+            "thac0": 2,
+            "dmgBonus": 2,
+            "profType": "sling",
+            "usability": {
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "BDSW1H03",
+          "large sword",
+          "Eadro's Blade +1",
+          "Legend has it that this elegant curving blade was forged deep beneath the sea by merfolk and its hilt bound in enchanted eelskin. The truth of the matter is more mundane. The blade was crafted in Iriaebor and given to a mercenary commander who protected cargo barges moving up and down the river Chionthar. Still, it is a finely made and serviceable weapon.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2 vs. elementals and mephits\n\nCombat abilities:\n– A critical hit against an elemental or mephit will instantly banish the creature to its home plane\n\nTHAC0: +1, +2 vs. elementals and mephits\nDamage: 1d8+1, +2 vs. elementals and mephits\nDamage Type: Slashing\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 3",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ],
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDSW1H14",
+          "short sword",
+          "Fractal Blade +3",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "BDSW1H25",
+          "large sword",
+          "Spell Breaker +2",
+          "Power can corrupt even the noblest of mages, and the long-lived elves of Faerûn have seen what devastating consequences can occur when a mage loses control. This elegant longsword, its silver hilt decorated with clear blue gems, was crafted to deal with arcane spellcasters who have abused their gift. The sword assists any hunter who tracks down out-of-control mages, and has particular potency in the hands of wizard slayers or inquisitors.\n\nSTATISTICS:\n\nEquipped abilities:\n– Save vs. Spell: +4 (Wizard Slayers and Inquisitors), +2 (others)\n\nCombat abilities:\n– On a critical hit, the target is affected by Dispel Magic\n\nTHAC0: +2\nDamage: 1d8+2 (slashing)\nSpeed Factor: 3\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "saveSpell": 2,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDSW1HX5",
+          "large sword",
+          "Gift of the Demon +1",
+          "This onyx blade pulses with a sickly green light. The hilt is carved of bone and the pommel resembles the grinning skull of a gelugon. The blade has snapped in half, leaving the sword disappointingly less powerful than it was before. Demonic gifts come with a catch, and this one has just revealed itself.\n\nSTATISTICS:\n\nEquipped abilities:\n– May only be removed with a Remove Curse spell\n\nTHAC0: +1\nDamage: 1d8+1 (slashing)\nSpeed Factor: 4\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 2",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDSW2H02",
+          "large sword",
+          "Sword of Troll Decapitation +1",
+          "Runes along the length of this powerful blade spell \"\"death to trolls\"\" in multiple languages. A green gem set in the weapon's hilt glows with a pale green light. Legend tells that the famous dwarf Durlag Trollkiller used this sword in his adventuring days, but lost it during a particularly brutal fight in the Troll Hills.\n\nDespite the item's name, it does not actually decapitate trolls. A rumor sprung up regarding its powers and despite evidence to the contrary, the sword has never shaken the nickname.\n\nSTATISTICS:\n\nCombat abilities:\n– On a critical hit against a troll, the wearer gains +1 to Strength for 1 turn (non-cumulative)\n\nTHAC0: +1, +3 vs. trolls\nDamage: 1d10+1, +2 fire vs. trolls\nDamage Type: Slashing\nSpeed Factor: 9\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 12",
+          {
+            "speed": 9,
+            "thac0": 1,
+            "dmg": "1d10",
+            "dmgBonus": 1,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "BDSW2H03",
+          "large sword",
+          "Sword of Ruin +2",
+          "The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing)\nSpeed Factor: 10\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 15",
+          {
+            "speed": 8,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "BDXBOW02",
+          "crossbow",
+          "Harold +2",
+          "A crossbow is a bow mounted crosswise on a wooden or metal shaft, the latter called a tiller. The bow is usually made of ash or yew. The crossbow fires a quarrel (also called a bolt).\n\nSTATISTICS:\n\nDamage: +2\nSpeed Factor: 10\nProficiency Type: Crossbow\nType: Two-handed\nRequires:\n 12 Strength\n\nWeight: 14",
+          {
+            "speed": 8,
+            "thac0": 2,
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "crossbow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 12
+            }
+          }
+        ],
+        [
+          "BDCLCK05",
+          "cloak",
+          "Cloak of the Gargoyle",
+          "The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.\n\nSTATISTICS:\n\nWeight: 3",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 5
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 5
+              }
+            ],
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "K0RHYTEA",
+          "axe",
+          "Rhyte's Last Arrow +2",
+          "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip counterbalanced by a pointed fluke. The short handle has a point on the bottom, and the head may have a spike on the top.\n\nSTATISTICS:\n\nDamage: 1d6+1\nDamage type (melee): Slashing\nDamage type (thrown): Missile\nSpeed Factor: 4\nProficiency Type: Axe\nType: One-handed\nRequires:\n 4 Strength\n\nWeight: 1",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "BDMIRR01",
+          "misc",
+          "Gentrus's Hand Mirror",
+          "The town of Soubar has earned its reputation as a lawless and dangerous place. The rampant brigandry in the area means a great many stolen goods are funneled through Soubar's back rooms and inns. One of the town's residents, the halfling Gentrus, crafted this mirror to help him divine the true nature of items he wished to buy. After a close call with a wererat, Gentrus decided to leave Soubar for the safety of Baldur's Gate, joining a caravan traveling north. The halfling died on the road during a bandit attack, but the caravan's survivors drove off the bandits. They ensured Gentrus's body and possessions made it to his relatives.\n\nSTATISTICS:\n\nCharge abilities:\n– Identify three times per day\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BDMISC47",
+          "wand",
+          "The Secret Revealed",
+          "This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.\n\nSTATISTICS:\n\nCharge abilities:\n– The Secret Revealed\n  Damage: 4d8 magic vs. undead (Save vs. Wand for half)\n  Special: Weakens liches, leaving them more susceptible to attack\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 3,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BDMISX47",
+          "wand",
+          "The Secret Revealed",
+          "This green gemstone glows with the power of Dumathoin, the Keeper of Secrets beneath the Mountain. Its divine power exacts a heavy price on the undead, especially liches.\n\nSTATISTICS:\n\nCharge abilities:\n– The Secret Revealed\n  Damage: 4d8 magic vs. undead (Save vs. Wand for half)\n  Special: Weakens liches, leaving them more susceptible to attack\n\nWeight: 1",
+          {}
+        ],
+        [
+          "BDAMUL11",
+          "amulet",
+          "Lon's Amulet",
+          "This silver holy symbol of Selûne features a pair of feminine eyes surrounded by seven stars.\n\nSTATISTICS:\n\nEquipped abilities:\n– Wisdom: +1 (Shapeshifters)\n– Bless\n\nWeight: 1",
+          {}
+        ],
+        [
+          "BDBLUN08",
+          "mace",
+          "Glimmer of Hope +2",
+          "The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 10",
+          {
+            "speed": 5,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "wis": 1,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDHALB03",
+          "halberd",
+          "Cold Fury +2",
+          "Chilly blue frost trails like fog off the blade of this halberd. A palpable aura of cold surrounds the weapon, dealing frost damage to most enemies but wounding those that dwell in flame most severely.\n\nSTATISTICS:\n\nCombat abilities:\n– Each hit slows fire-dwelling and fire-using creatures for 3 rounds (Save vs. Spell negates)\n\nTHAC0: +2\nDamage: 1d10+2, +1d2 cold\nDamage Type: Slashing or piercing, whichever is better\nSpeed Factor: 7\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 12",
+          {
+            "speed": 7,
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ],
+        [
+          "BDSHLD08",
+          "shield",
+          "The Bloodied Guardian +2",
+          "The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm, and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1, an extra +1 vs. missile attacks\n\nRequires:\n 15 Strength\n\nWeight: 15",
+          {
+            "ac": 3,
+            "fireResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "BDMISC32",
+          "amulet",
+          "Medal of Valor",
+          "A Waterdhavian medal awarded for bravery in combat. Its silver shine has dulled over the years.\n\nSTATISTICS:\n\nEquipped abilities:\n– THAC0: +2\n\nWeight: 0",
+          {}
+        ],
+        [
+          "BDRING03",
+          "ring",
+          "Ring of the Crusade",
+          "Two small round topazes flank the symbol of Caelar Argent engraved on this ring's silver band. Such rings testify to the high status of crusaders who have shown their prowess in battle or in some way demonstrated unwavering commitment to the Shining Lady's cause.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1, +3 vs. demons and devils\n– Saving Throws: +1, +3 vs. demons and devils\n\nWeight: 0",
+          {
+            "ac": 1,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ]
+          }
+        ],
+        [
+          "BDBOW02",
+          "bow",
+          "Corinth's Bow +2",
+          "Though obviously well-used, someone has taken excellent care of this finely crafted bow. A small golden seal on one side appears to be a family crest.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n\nCombat abilities:\n– After scoring a critical hit, the wielder is affected by the Luck spell\n\nTHAC0: +3\nDamage: +4\nSpeed Factor: 5\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 18 Strength\n\nWeight: 8",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmgBonus": 4,
+            "ac": 1,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "BDWAND01",
+          "wand",
+          "Wand of Water Elemental Summoning",
+          "Seaweed strands wrap around this coral-encrusted wand. When a charge is expended, a water elemental appears to do its summoner's bidding.\n\nSTATISTICS:\n\nCharge abilities:\n– Summon lesser water elemental\n  Range: 20 ft.\n  Duration: 1 turn\n\nRequires:\n 9 Intelligence\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 5,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BDBELT04",
+          "belt",
+          "Protector of the Unworthy",
+          "Girdle of Blades: The Protector of the Unworthy\nThe most infamous owner of this item forever tainted its reputation, though it is still a truly useful item. Morinden of the Wicked Heart made his living looting the bodies of those he slew. He would goad true warriors into duels of honor—though he had little knowledge of the subject—and laugh as their blades glanced off him. Eventually he met his end at the hands of a frustrated woodsman, who had wisely cast his sword aside in favor of a tree stump.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +4 bonus vs. slashing attacks\n– Armor Class: -4 penalty vs. crushing attacks\n– May only be removed by a Remove Curse spell\n\nWeight: 2",
+          {}
+        ],
+        [
+          "BDCHAN04",
+          "armor",
+          "Commander's Chain Mail +2",
+          "Though the dents and dull spots of this chain mail show its use, someone has taken good care of the armor. Patches of bright new links show where the armor has been carefully mended. The lack of ornamentation or gilded patterns on the suit give it an honest look, as if this were the armor of a soldier who served well and honorably.\n\nSTATISTICS:\n\nEquipped abilities:\n– Charisma: +1\n– The wearer and any allies within <PRO_HISHER> visual radius are immune to fear and morale failure\n\nArmor Class: 2 (0 vs. slashing, 4 vs. crushing)\nRequires:\n 8 Strength\n\nWeight: 9",
+          {
+            "ac": 2,
+            "cha": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "BDAMUL12",
+          "amulet",
+          "The Gift",
+          "Crafted from the most delicate spider silk, an unblemished aquamarine gem its centerpiece, this necklace represents its creator's undying devotion for his beloved. It does more than accentuate its wearer's beauty, though it certainly does that as well. It also seemingly rejuvenates her, leaving her practically glowing with youth and vitality. Were arcane energies involved in its creation, or does it merely reflect the deeply-held feelings of the necklace's maker for its intended recipient? It is impossible to say; such is the magic of love.\n\nSTATISTICS:\n\nEquipped abilities:\n– Hit Points: +10\n– Charisma: +1\n– Immunity to fatigue\n\nWeight: 2",
+          {
+            "cha": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+10 Max HP"
+              }
+            ]
+          }
+        ],
+        [
+          "BDLEAT01",
+          "armor",
+          "Cornugon's Revenge +2",
+          "Beasts! Curs! Your terror ends here!",
+          {
+            "ac": 4,
+            "con": -2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BDMISC08",
+          "misc",
+          "Myconid Bloom-Sac",
+          "This bulbous organic pod apparently holds the key to myconid reproduction.\n\nSTATISTICS:\n\nCharge abilities:\n– Summon 1d4 myconids\n  Duration: 2 turns\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "B5-20M1",
+          "misc",
+          "Attack",
+          "",
+          {
+            "dmg": "5d4"
+          }
+        ],
+        [
+          "BDPLANT",
+          "ring",
+          "Ring",
+          "",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              }
+            ]
+          }
+        ],
+        [
+          "BARDIC",
+          "misc",
+          "Berserk Warrior",
+          "This horn was created by the respected bard of a now-dead Reghed barbarian tribe. The bard was called Beogin, and his songs are sung by many of the northern tribes. He carried this horn with him when he observed many titanic battles. The chief of his tribe gave him the instrument with instructions to blow it if he was ever in mortal danger. Beogin, too proud to ever call on his tribesmen for help, was killed in battle, the horn hidden under his cloak.\n\nSTATISTICS:\n\nCharge abilities:\n– Summon 2-4 berserkers once per day\n  Range: 20 ft.\n  Duration: 1 hour\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "SHAWM",
+          "misc",
+          "Owain's Lullabye",
+          "Owain's Lullabye was created by a disturbed bard named Owain Piper. Piper was a worshipper of Auril, born in the town of Silverymoon and raised to embrace the frigid environment of his homeland. He traveled extensively in the Moonsea, where he met a mage named Pelham of the Moor. Owain and Pelham became good friends and stayed in contact for over a decade. Pelham eventually enchanted Owain's Lullabye for the bard in exchange for a small sum of money. Owain rarely used the instrument in battle, typically employing it when he found late-migrating geese lounging on a lake. He would blow the horn in such a way that the geese heard it as the sound of their cousins heading south for the winter. As the geese would attempt to take flight, Owain's horn would freeze them in mid-stroke, where he would leave them to die.\n\nSTATISTICS:\n\nCharge abilities:\n– Cone of Cold\n  Damage: 10d4+10 cold (Save vs. Spell for half)\n  Range: 0\n  Area of Effect: 20-ft. cone with 60-deg. arc\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 7,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "CITTERN",
+          "misc",
+          "Cittern of War",
+          "One of the only musical instruments actively approved of by the church of Tempus, the Cittern of War was constructed by a halfling instrument maker named Relias Blackseed. Priests of Arvoreen the Defender blessed the cittern with its impressive power. Relias never intended to play his magnificent creation. He eventually sold the ruddy instrument to a bard named Gallow Deely. Gallow was a lanky, slender man often found in the company of adventurers. Though ill-suited for battle, Gallow was exceptionally gifted at putting tales of heroism to music. With the aid of the cittern, he helped the Company of Frozen Trees defeat a young green dragon in 1013 DR. His song, commemorating the occasion, was a rollicking tune called \"The Fight of Green Thirteen.\" It is played in central and western taverns to this day.\n\nSTATISTICS:\n\nCharge abilities:\n– Emotion, Courage twice per day\n  Allies receive +1 to hit, +3 to damage, +5 to temporary HP, and immunity to fear\n  Range: 0\n  Duration: 1 hour\n  Area of Effect: 7-ft. radius\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "MHORN",
+          "misc",
+          "Merry Shorthorn",
+          "The Merry Shorthorn was once owned by the half-elven bard Prophia Copperfire. She took the small instrument everywhere. Despite its rather meager powers, the Merry Shorthorn is among the most well-traveled magic items in Faerûn. It is believed that Prophia took it with her to a number of elemental planes, to Elysium and Baator, and from the Spine of the World to the distant reaches of Wa. It entertained pashas in Calimshan, quelled the anger of holy slayers in Zakhara, and bolstered a crew of sailors in the Sea of Fallen Stars. The Merry Shorthorn was lost when Prophia accidentally dropped it somewhere in the great desert Anauroch.\n\nSTATISTICS:\n\nCharge abilities:\n– Bless once per day\n  Allies receive +1 to hit, +1 to saves vs. fear effects, and increased morale\n  Range: 0\n  Duration: 6 rounds\n  Area of Effect: 15-ft. radius\n\nWeight: 1",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "HARP",
+          "misc",
+          "The Unstrung Harp",
+          "The instrument of a beatified saint of the church of Ilmater, this harp once belonged to Sephica of Ordulin. Sephica was a bard, but she did not worship the lord of songs, Milil. Instead, she devoted herself to performing ballads to the suffering throngs of Ilmatari everywhere. She was traveling with a group of Ilmatari pilgrims when they were attacked by bandits. The bandits killed and severely injured many of the pilgrims, and they cut the strings of Sephica's harp when she tried to soothe the injured travelers. After the bandits had left, Sephica prayed to Ilmater for help in a time of crisis. When she plucked at her harp strings with her eyes closed in prayer, music miraculously poured forth and healed every person who heard it. The next day, the bandits arrived and killed Sephica for healing the pilgrims. Though she was killed, the pilgrims kept the memory of her miracle alive. Their community attempted to have her accepted as an Ilmatari saint. They succeeded in 1218 DR.\n\nThe harp can only be played by a bard of exceptional virtue, wisdom, and talent.\n\nSTATISTICS:\n\nCharge abilities:\n– Heal once per day\n  Completely heals target and cures blindness, deafness, poison, disease, feeblemind, and intoxication\n  Range: Touch\n  Area of Effect: 1 creature\n\nRequires:\n 13 Wisdom\n\nWeight: 3",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minWis": 13
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "PELLON",
+          "misc",
+          "The Dire Old Lute of Pellon Kay",
+          "Pellon Kay would never appear in history books for his musical talents. If it wasn't for his famous lute, no one would have remembered him at all. Born in Sembia and raised in a musical family, Pellon Kay never took his performances seriously. Kay made dozens of enemies everywhere he went because of his acidic wit and appetite for confrontation. Sages believe that Milil frowned upon Pellon's antics, but that Talos found Pellon's attitude to be quite amusing. The avatar of Talos watched Pellon start a fight with over twenty men in a bar one night. As a gift for such destructive entertainment, Talos touched the lute that was laying next to Pellon's unconscious body. After that night, Pellon discovered that he could make men go berserk just by playing his lute in their direction. He took great delight in setting mercenaries and sailors against each other for several weeks. Eventually, Pellon Kay was laid low by a grim-featured warrior with a crossbow who didn't let Pellon get close enough to employ his magical lute. The unknown warrior threw the lute into the Sea of Fallen Stars.\n\nSTATISTICS:\n\nCharge abilities:\n– Dire Charm (Save vs. Spell negates)\n  Range: Visual range of the player\n  Duration: 2 turns\n  Area of Effect: 1 creature\n\nWeight: 2",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BELTSTO",
+          "belt",
+          "Belt of Stones",
+          "This cursed item was created by the wicked sorcerer Valom of the Deep. Valom often hired lone mercenaries to collect magic item components for him. When the unlucky sellswords came on board Valom's floating laboratory, the Dim Courser, Valom would give them the girdle as a reward for a job well done. Once the victim would try on the girdle, Valom would kick them over the side of the boat, where they would quickly drown. Valom's luck ran out when he kicked Herred of Procampur into the Sea of Fallen Stars. Herred had a potion of water breathing and a helm of underwater action with him at the time. When the huge, seaweed-covered form of Herred emerged near the docks where Valom was resting, a local priest of Tyr immediately came to his aid. Upon discovering what Valom had done, the priest of Tyr and three paladins attempted to capture him. Valom killed two of the paladins, but died in the battle. It is believed that the belt was later sold to a traveling collector who specialized in cursed clothing.\n\nSTATISTICS:\n\nEquipped abilities:\n– Strength: 6\n– May only be removed with a Remove Curse spell\n\nRequires:\n 6 Strength\n\nWeight: 2",
+          {
+            "str": 6,
+            "usability": {
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "AMULFLE",
+          "amulet",
+          "Amulet of Dark Flesh",
+          "A horrible cursed item crafted by the Calishite necromancer Niri Eddin, the Amulet of Dark Flesh is a token of disease and slow death. Eddin gave the item to his secret enemies as gifts and reclaimed it through his thief servants when the sickness had run its course. Niri is believed to still be \"alive\" somewhere in the realms despite the fact that he was a human born in 832 DR.\n\nSTATISTICS:\n\nEquipped abilities:\n– Wearer is paralyzed and diseased (1 damage every 5 seconds)\n– Can only be removed with a Remove Curse spell\n\nWeight: 1",
+          {}
+        ],
+        [
+          "VIRGIN",
+          "cloak",
+          "Wailing of Virgins",
+          "This thin cloak appears frayed at first, but upon closer inspection, the stray threads are actually human hairs from which the cloak is woven. The cloak twists in torchlight, each strand of hair raveling and unraveling about the others so subtly that it appears as if a light breeze is rippling the cloak.\n\nThis cloak is woven from the hair of virgins sent to the Burial Isle to sleep with their dead barbarian lords. It was the Seer's duty to comfort these women, to soothe their pain—in order to do so, she took a lock of hair from each and wove the strands into a cloak that would draw the spirits of fear from the virgins and steady their hearts. The result was a cloak that hangs heavy with guilt and does little to shield the wearer from the cold of the North.\n\nWhen worn, the hairs weave around the wielder's frame, the long strands lacing together like threads on a loom. The cloak will not willingly unravel itself from a wearer without being coerced by a Remove Curse spell.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +4 vs. piercing, crushing, and missile attacks\n– Armor Class: +2 vs. slashing attacks\n– Immunity to all fear-based effects, Emotion, Hopelessness, and Symbol of Hopelessness\n– Can only be removed with a Remove Curse spell\n\nCharge abilities:\n– Cloak of Fear once per day\n  Non-undead creatures flee in panic for 2d8 rounds (Save vs. Spell negates)\n  Range: 0\n  Duration: 3 rounds\n  Area of Effect: 3-ft. radius\n\nWeight: 1",
+          {
+            "usability": {
+              "races": [
+                "Elf",
+                "Half-Elf",
+                "Half-Orc",
+                "Human"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "RINGPAN",
+          "ring",
+          "Ring of Pain Amplification",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": -20
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": -20
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": -20
+              }
+            ]
+          }
+        ],
+        [
+          "GORGON",
+          "ring",
+          "Ring of the Gorgon",
+          "A powerful mage enchanted this ring to prevent petrification under the breath of his prized herd of gorgons. Zilzanzer the Magnificent raised gorgons for their blood, which he sold to safety-conscious castle owners who used it to block ethereal travel. Zilzanzer was petrified over a dozen times, each time being brought back by his faithful assistant's use of Stone to Flesh scrolls. Zilzanzer eventually decided that he should make an item to protect him from petrification. The result was the Ring of the Gorgon. Sages believe that Beshaba must have smiled upon Zilzanzer when he was born, for he was turned to stone when he put on the ring. His assistant dutifully read the Stone to Flesh scroll, bringing Zilzanzer out of his stone form. Unfortunately, Zilzanzer died in the process, this time forever.\n\nSTATISTICS:\n\nEquipped abilities:\n– Wearer is turned to stone\n\nWeight: 0",
+          {}
+        ],
+        [
+          "MOURNER",
+          "armor",
+          "Mourner's Armor +4",
+          "Leather armor, despite the popular misconception, is not soft and supple like the leather used to make a Ranger's boots or a Druid's robe. That kind of leather offers no better protection than common clothing.\n\nSTATISTICS:\n\nArmor Class: 8 (10 vs. piercing and missile)\nRequires:\n 4 Strength\n\nWeight: 15",
+          {
+            "ac": 4,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 75
+              },
+              {
+                "type": "other",
+                "desc": "+25 Max HP"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "GAUNTID",
+          "bracers",
+          "Gauntlets of Infernal Damnation",
+          "Cursed by a malefic priestess of Beshaba, goddess of bad luck, these hard black leather gloves affix themselves to whoever tries them on. Despite the extremely nasty nature of the gloves, wealthy adventurers sometimes buy the distinctive gauntlets to place in their treasure hordes, waiting for a greedy thief to try them on.\n\nSTATISTICS:\n\nEquipped abilities:\n– Shroud of Flame on the wearer (inflicts 2d6 fire damage)\n– Can only be removed with a Remove Curse spell\n\nWeight: 2",
+          {}
+        ],
+        [
+          "BDWAKI1",
+          "short sword",
+          "Morohanotsurugi +3",
+          "This weapon originally belonged to a local Kara-Tur liege-lord, Yodama Akira, who burned one of the villages under his protection to the ground on a perceived slight from the peasants. Though within Yodama's rights as liege-lord, the act deeply shamed Yodama's daimyo, who commissioned Morohanotsurugi, the double-edged sword, as a result. Morohanotsurugi was given to Yodama to teach him a simple lesson: harming others should never be without consequence.\n\nSTATISTICS:\n\nEquipped abilities:\n– Inflicts 1d8+3 (piercing) damage on wielder on every hit\n– May only be removed with a Remove Curse spell\n\nTHAC0: +3\nDamage: 1d8+3 (piercing)\nSpeed Factor: 0\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 2",
+          {
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "K0SW1H1A",
+          "large sword",
+          "Fiery Vengance +3",
+          "Im 1208DR, Blasille Ikretti, a paladin squire in the service of Mystra, had returned to her homestead after months-long training in the frozen north.  Shortly after her arrival, an insidious Ogre Magi that had been conducting surreptitous raids on the local towns targetted Blasille's home as his next conquest.  Under the cover of night, he struck.  Blasille fought as hard as she could, but was no match for the Ogre's magery.  She was captured, and forced to watch as one, by one, her friends and family were slaughtered.  The saddistic ogre took great pleasure in killing each of them slowly, while Blasille could do nothing.  For three days and nights, she was forced to witness this horror, pleading with her Goddess for help... but none came.\n\non the fourth night, utterly broken, consumed by sorrow and rage, she made one final plea:  \"Gods!  To any who would listen, hear me!  I will pay any price, bear any burden, suffer any curse, serve any master, if you will but grant me the power to destroy this fiend and avenge my fallen!\".  Her cry was heard.  In her hands, where once was held a fragment of a shattered holy symbol, was now the hilt of a weapon unlike anything she had ever seen.  Blasille then heard what sounded like a faint whisper: \"It's strength, from yours\".  Paying the cryptic message no heed, she gripped it tightly, as a blazing blue blade sprang from it.  It sliced through her iron shackles as if they were no more than parchment paper.  With a soul-shattering cry, she charged at the Ogre Magi whom had decimated her home and family.  The Ogre's haughty scowl soon gave way to a look of panic, as Blasille swatted each of his spells back at him as she approached.  With two swift strokes, Blasille bi-sected and be-headed the Ogre, spitting on his carcass before leaving it for the crows to feast on.\n\nBlasille then collapsed.  As she lay, utterly spent, her skin pale,she understood.  Her life-force is what had given the weapon it's power, and as she drew her last breath, the blade retreated back into the hilt and went dark.  Vengance had been granted, and the price for it, paid.\n\nSTATISTICS:\n\nEquipped abilities:\n– Reflects Magic Missile, Chromatic Orb, Larloch's Minor Drain, Melf's Acid Arrow, Agannazar's Scorcher, Snilloc's Snowball Swarm, Magic Stone, Doom, and Alicorn Lance back to the caster\n– Wielder takes 1 Hit Point of damage every 5 rounds while equipped\n\nTHAC0: +3\nDamage: 2d4+3, +1 magical fire damage\nDamage type: Slashing\nSpeed Factor: 2\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "bastard sword",
+            "usability": {
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "K0SW1H2A",
+          "large sword",
+          "Greasy Bastard Sword +2",
+          "Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.\n\nSTATISTICS:\n\nDamage: 2d4 (slashing)\nSpeed Factor: 8\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "K0SW1H3A",
+          "short sword",
+          "Bawk-wizashi +2",
+          "The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between twelve and twenty-four inches, is a dangerous weapon in the hands of a skilled user.\n\nSTATISTICS:\n\nDamage: 1d8 (piercing)\nSpeed Factor: 3\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "K0DAGG1A",
+          "dagger",
+          "Black Lotus +3",
+          "Kunai are small fighting blades, similar in size to a dagger, and usually feature a ringed pommel.  They are quite flexible in their usage, and one of the favored tools of assassins and thieves hailing from the far eastern lands of Kara-Tur.\n\nSTATISTICS:\n\nDamage: 1d4 (missile)\nSpeed Factor: 2\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 0",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "dmg": "2d4",
+            "dmgBonus": 3,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "K0SW1H4A",
+          "large sword",
+          "Orchid +2",
+          "The sword of the ninja, the ninjatō, is of lower quality than other Kara-Turan blades such as the katana. The ninjatō is short with a straight blade, making it ideal for subterfuge. The ninjatō is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 4\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 5",
+          {
+            "speed": 2,
+            "thac0": 2,
+            "dmg": "1d8",
+            "dmgBonus": 2,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "K0SW1H5A",
+          "large sword",
+          "Falchion of Rime +3",
+          "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The \"shamshir,\" as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "K0AX1H1A",
+          "axe",
+          "Bellowing War Axe +3",
+          "Kurg the Bellower, a dwarf whom lived Dorn's Deep during the golden era during the alliance with the elves of the Seldarine, was enamoured with both song and music that were part of the elves's culture.  He wanted to share his enthusiam with his fellow dwarves, and set about learning to sing and play from elf musicians.  The elves were a bit apprehensive at first, as they'd never heard of a dwarven bard, but nevertheless they took him under their tutelage.  Unfortunately, despite his best efforts, whenever he would perform what he had learned, the dwarves of the deep would only laugh and likened his song to that of a bleating goat.  Others would disparage his efforts by shouting: \"Ye cannae even carry an axe, much less a tune!\"\n\nUndeterred, Kurg sought help from one of his elven tutors, and the two set about forging an enchanted hand axe that would reverberate with Kurg's voice when he sang into it, resulting in the most unique and melodic tone.  At his next performance, the dwarves were both shocked and utterly delighted, marvelling at how such a wondeful sound could be produced with an axe as an instrument.  During the last days of the Deep, as the dwarves struggled against the invading orcish hordes, Kurg's song enfused them with courage and strength, allowing them to fight longer and harder than they would have been otherwise.\n\nTo this day, Kurg's disembodied voice can sometimes still be heard in the halls, bellowing a doleful dirge.\n\nSTATISTICS:\n\nEquipped abilities:\n– Upon critical hit, the axe sings Kurg's Bold Bellows for the party (Constitution +1, Hit Points +5, immunity to Sleep, Intoxication, Fatigue, and Backstab for one turn)\n\nTHAC0: +3\nDamage: 1d8+3 (slashing)\nSpeed Factor: 4\nProficiency Type: Axe\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 5",
+          {
+            "speed": 1,
+            "dmg": "1d6",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "K0CLUB1A",
+          "mace",
+          "Stonegazer +3",
+          "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 5,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "K0FLAI1A",
+          "flail",
+          "Tentacle Rod +3",
+          "The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.\n\nSTATISTICS:\n\nDamage: 1d6+1 (crushing)\nSpeed Factor: 7\nProficiency Type: Flail/Morning Star\nType: One-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 2,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 9
+            }
+          }
+        ],
+        [
+          "K0MACE1A",
+          "mace",
+          "Gold Rush +3",
+          "Around 1103DR, in a small mining village nestled deep within the Spine of the World, rumors had been circulating for months of sightings of an extremely rare greater gold elemental.  It was speculated that it was disturbed by miners who had dug too greedily, and too deep, and any miner unfortunate enough to encounter it within the tunnels met with a swift end.  Naturally, these rumors drew many adventureres to the small town, seeking to find and slay the creature, as it's golden carcass would surely be worth a sizeable fortune.  Many came, spelunking through the twisting caverns of the mine, but none ever returned.\n\nIn truth, there was no lurking gold elemental in the mines.  A few years prior, the gold and all other valuable minerals from the mine had completely dried up, and the towspeople were desperate to save their home.  They took what valuables they had remaining and traded them to a very talented gnomish tinkerer and mage to create a \"golden\" golem which they could use to lure those seeking fame and fortune to their town and reap the rewards of all their spent coin in the local shops.  The golem itself was made of pyrite, commonly known as fool's gold, and fashioned to look like an elemental.  It was thought that in the dark of the mines, no one would be able to tell the difference, and since the golem would slay any it met in the depths, there would be none to tell the tale anyhow.\n\nFor a time, the ruse worked well and the village prospered.  This would not last, however.  Eventually, an expedition from Waterdeep was sent after word had reached the faraway city.  The Waterdhavians were well-seasoned and prepared, and when they finally located the golem, they were able to bring it low.  Upon discovery of the treachery, the townspeople were forced to return with the expedition and face corporal punishment for their evil deed, which resulted in the loss of many innocent lives.\n\nOf the golem itself, found within the heap of it's body was an extremely dense, softly glowing golden orb that had served as it's power core.  It was far too dense and hard to be real gold, yet seemed to have all of it's properties, alongside the latent enchantments it possessed.  Being the only thing of value found by the expedition, it was brought back to Waterdeep and presented to the Lords of the city.  After puzzling over what to do with it, one of the Lords requesitioned it to be used in the crafting of an exquisite mace.  The mace was then presented to a high priestess of Waukeen as a gift in return for her god's favor and blessing over the entire city.\n\nDecades later, after the mace had changed many hands within the church, it was carried into it's first real battle by a cleric named Dunhaven Winterborne.  Dunhaven noticed that when he would bash in the heads of his foes with the mace, a number of gold coins would fall out to the ground, seemingly from nowhere.  Dunhaven, both bewildered and amazed by this, quickly scooped them up and moved onto his next opponent.  It wasnt long before the greed that tends to follow large amounts of gold consumed him, and others took notice.  The next day, Dunhaven, along with many of his comrades were found slain in their tents, and the mace nowhere to be found.  In the years since, it has passed through many hands, and now finds itself in yours....but for how long?\n\nSTATISTICS:\n\nCombat abilities:\n– On a critical hit, the wielder receives a random amount of gold coins, up to 99\n\nTHAC0: +3\nDamage: 1d6+4 (crushing)\nSpeed Factor: 4\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "K0HALB1A",
+          "halberd",
+          "Cavalcade +3",
+          "By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.\n\nSTATISTICS:\n\nDamage: 1d10 (slashing or piercing, whichever is better)\nSpeed Factor: 9\nProficiency Type: Halberd\nType: Two-handed\nRequires:\n 13 Strength\n\nWeight: 15",
+          {
+            "speed": 9,
+            "thac0": 3,
+            "dmg": "1d10",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 17
+            }
+          }
+        ],
+        [
+          "K0SW1H6A",
+          "large sword",
+          "Iron Will +4",
+          "Forged in the days of Netheril, of meteoric iron and heavily enchanted with raw, unfettered, ancient magics that even the most skilled of mages could not hope to comprehend, this sword was created to combat the Phaerimm.  Horrific, flying, worm-like beings that were capable of mind control of such strength as to even be able to control Beholders and Mind Flayers.  Nasty enough as that may be, they were also very adept magic wielders whom had created spells only they themselves were capable of casting.  Their spells had a side-effect of draining moisture from the surrounding area when used, and it is thought that their wide-spread use of it caused the Anauroch desert to form and spread.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to charm, dire charm, and domination\n\nTHAC0: +4\nDamage: 2d4+4, +1d4 magic damage\nDamage type: Slashing\nSpeed Factor: 4\nProficiency Type: Bastard Sword\nType: One-handed\nRequires:\n 11 Strength\n\nWeight: 6",
+          {
+            "speed": 4,
+            "thac0": 4,
+            "dmg": "2d4",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "profType": "bastard sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "minStr": 11
+            }
+          }
+        ],
+        [
+          "K0SW1H7A",
+          "large sword",
+          "Howling Moon +4",
+          "The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The \"shamshir,\" as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 4",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "K0STAF1A",
+          "staff",
+          "Frozen Bone Staff +3",
+          "In the frozen north, near the spine of the world, lay a myriad of caves, alcoves, and hidden passageways that have been used by those whom would rather practice their crafts in secret for ages, necromancy being key among them.  This staff was discovered when a band of adventurers from the Ten Towns happened upon one such cavern that was being used as a Zhent laboratory for experimenting on corpses to create new types of undead creatures to serve them.  The resident necromancers put up a heavy resistance, but were routed in the end.\nSTATISTICS:\n\nCharge abilities:\n– Conjures 1d3 of 5 Hit Dice Icebone Skeleton Warriors for 8 hours or until destroyed\n– Column of Ice\n  Damage: 8d6 cold (Save vs. Wand for half)\n  Range: 100 ft.\n  Area of Effect: 1 creature\n\nTHAC0: +3\nDamage: 1d6+3, +1d2 magical cold damage\nDamage type: Crushing\nSpeed Factor: 3\nProficiency Type: Quarterstaff\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 5",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 28,
+              "period": "permanent"
+            }
+          }
+        ],
+        [
+          "K0SPER1A",
+          "spear",
+          "Scorching Spear +4",
+          "Centuries ago, this spear was forged in the forged in the Elemental Plane of Fire's City of Brass, commissioned by a Sultan whom had several powerful artifacts created for use by his most trusted allies.  It was stolen along with a bastard sword, and a bloody swath was left across Faerûn by the Sultan as he attempted to recover them.  Over time, he grew tired of the pursuit, and returned to his plane, leaving them to be fought over by mortals.\n\nSTATISTICS:\n\nCombat abilities:\n– Returns to the wielder's hand when thrown\n– 2 attacks per round\n\nTHAC0: +4\nDamage: 1d6+4, + 2d2 magical fire damage\nDamage type (melee): Piercing\nDamage type (thrown): Missile\nSpeed Factor: 2\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "K0PLAT1A",
+          "armor",
+          "Endarire's Elven Plate +3",
+          "Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.\n\nSTATISTICS:\n\nArmor Class: 3 (0 vs. slashing)\nRequires:\n 12 Strength\n\nWeight: 50",
+          {
+            "ac": 0,
+            "int": 1,
+            "cha": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/DaerosTrollkiller/Trollkillers-Item-Spell-Kitpack",
+  "langs": {
+    "en": 0
+  },
+  "au": "K4thos",
+  "co": [
+    {
+      "n": "Add more importable Siege of Dragonspear items to Baldur's Gate 2",
+      "tp2n": "Add more importable Siege of Dragonspear items to Baldur's Gate 2",
+      "cn": 0,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Makes 40+ SoD items available in BG2 stores. Uses FILE_EXISTS checks to avoid duplicating items already present",
+      "it": 138,
+      "itC": {
+        "short sword": 4,
+        "morning star": 2,
+        "bolt": 2,
+        "bullet": 3,
+        "large sword": 15,
+        "armor": 11,
+        "boots": 3,
+        "helmet": 11,
+        "hammer": 2,
+        "bracers": 6,
+        "belt": 4,
+        "staff": 3,
+        "mace": 5,
+        "bow": 3,
+        "misc": 12,
+        "cloak": 5,
+        "scroll": 7,
+        "dagger": 3,
+        "halberd": 3,
+        "shield": 5,
+        "container": 1,
+        "crossbow": 2,
+        "spear": 3,
+        "ring": 5,
+        "amulet": 8,
+        "axe": 3,
+        "flail": 2,
+        "arrow": 1,
+        "sling": 1,
+        "wand": 3
+      },
+      "grn": "Items and Item Upgrades"
+    },
+    {
+      "n": "Standard SoD items with Voidsword +3",
+      "tp2n": "Standard SoD items with Voidsword +3",
+      "no": "Force-imports standard SoD items with Voidsword +3. Requires new game",
+      "cn": 1,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 1,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_standard_import",
+      "scn": "Force-import standard importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "grn": "Items and Item Upgrades"
+    },
+    {
+      "n": "Standard SoD items with Voidhammer +3",
+      "tp2n": "Standard SoD items with Voidhammer +3",
+      "cn": 2,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 2,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_standard_import",
+      "scn": "Force-import standard importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports standard SoD items with Voidhammer +3. Requires new game"
+    },
+    {
+      "n": "Standard SoD items with Voidsword +3 and Voidhammer +3",
+      "tp2n": "Standard SoD items with Voidsword +3 and Voidhammer +3",
+      "cn": 3,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 3,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_standard_import",
+      "scn": "Force-import standard importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports standard SoD items with both Voidsword and Voidhammer. Requires new game"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Plate & Tongue of Acid +3",
+      "tp2n": "New SoD items with Rhino Beetle Plate & Tongue of Acid +3",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game",
+      "cn": 4,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 4,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "grn": "Items and Item Upgrades"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Plate & The Guardian Devil",
+      "tp2n": "New SoD items with Rhino Beetle Plate & The Guardian Devil",
+      "cn": 5,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 5,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Plate & Echo of the Fiend +3",
+      "tp2n": "New SoD items with Rhino Beetle Plate & Echo of the Fiend +3",
+      "cn": 6,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 6,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Shield +2 & Tongue of Acid +3",
+      "tp2n": "New SoD items with Rhino Beetle Shield +2 & Tongue of Acid +3",
+      "cn": 7,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 7,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Shield +2 & The Guardian Devil",
+      "tp2n": "New SoD items with Rhino Beetle Shield +2 & The Guardian Devil",
+      "cn": 8,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 8,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game"
+    },
+    {
+      "n": "New SoD items with Rhino Beetle Shield +2 & Echo of the Fiend +3",
+      "tp2n": "New SoD items with Rhino Beetle Shield +2 & Echo of the Fiend +3",
+      "cn": 9,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 9,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports new SoD items with specific Rhino Beetle gear combination. Requires new game"
+    },
+    {
+      "n": "All new SoD items",
+      "tp2n": "All new SoD items",
+      "cn": 10,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "sod_new_import",
+      "scn": "Force-import new importable Siege of Dragonspear items into Baldur's Gate 2 (Requires starting a new game)",
+      "no": "Force-imports ALL new SoD items. Most inclusive option. Requires new game"
+    },
+    {
+      "n": "Add bard instruments from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy",
+      "tp2n": "Add bard instruments from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy",
+      "cn": 11,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 11,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Adds IWD bard instruments to BG1EE/BG2EE/EET. Uses FILE_EXISTS checks to avoid duplicates",
+      "grn": "Items and Item Upgrades"
+    },
+    {
+      "n": "Add cursed items from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy",
+      "tp2n": "Add cursed items from IWD into Baldur's Gate EE, Baldur's Gate 2 EE, EE Trilogy",
+      "cn": 12,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 12,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Adds IWD cursed items to BG1EE/BG2EE/EET. Uses FILE_EXISTS checks to avoid duplicates",
+      "grn": "Items and Item Upgrades"
+    },
+    {
+      "n": "Add new items to BG1:EE, BG2:EE, EE:Trilogy, and IWD:EE",
+      "tp2n": "Add new items to BG1:EE, BG2:EE, EE:Trilogy, and IWD:EE",
+      "no": "Adds original new items to BG1EE/BG2EE/EET/IWDEE",
+      "cn": 13,
+      "wf": "k0_iskp",
+      "wp": "k0_iskp\\k0_iskp.tp2",
+      "wc": 13,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Items and Item Upgrades"
+    }
+  ]
+}

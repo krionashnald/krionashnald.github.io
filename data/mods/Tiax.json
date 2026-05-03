@@ -1,0 +1,56 @@
+{
+  "i": 481,
+  "t": "Tiax",
+  "sv": 1,
+  "ord": 700,
+  "c": "NEW NPC MODS",
+  "n": "Tiax NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan. Makes ‘the mighty’ Tiax - the CE Gnome Thief/Cleric - recruitable in BG2 from his normal BG2 location.Install Tiax for BG2 before Mazzy Megamod and Detective’s Guild of Athkatla.",
+  "conflicts": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "soft",
+      "reason": "NOT a conflict — managed coexistence. BG1NPCSoA cn:50 auto-detects Tiax NPC via FILE_EXISTS_IN_GAME O#Tiax.cre and skips its own Tiax, installing only Quayle. Both mods coexist cleanly. Keep both — no action needed.",
+      "myComps": "#0 Tiax NPC",
+      "theirComps": "#50 Gnomes in the City: Quayle & Tiax",
+      "source": "BG1NPCSoA.tp2 line 9513: REQUIRE_PREDICATE with OR; line 9540: ACTION_IF NOT FILE_EXISTS_IN_GAME O#Tiax.cre, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Pocket-Plane-Group/Tiax_for_BGII",
+  "a": "Pocket Plane Group",
+  "v": "v6",
+  "sum": "An NPC mod for Baldur's Gate II (BGII, BGT, BGII:EE, EET)!",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Tiax_for_BGII"
+  },
+  "au": "Kulyok",
+  "dl": "https://github.com/Pocket-Plane-Group/Tiax_for_BGII",
+  "pt": false,
+  "co": [
+    {
+      "n": "Tiax NPC MOD for Baldur's Gate II",
+      "cn": 0,
+      "wf": "Tiax",
+      "wp": "Tiax\\TIAX.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "tp2n": "Tiax NPC MOD for Baldur's Gate II"
+    }
+  ]
+}

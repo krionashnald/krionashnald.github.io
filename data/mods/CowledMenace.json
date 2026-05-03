@@ -1,0 +1,94 @@
+{
+  "i": 244,
+  "t": "cowledmenace",
+  "sv": 1,
+  "ord": 20,
+  "c": "CREATURE MODS",
+  "n": "Cowled Menace",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2
+  },
+  "no": "The Cowled Menace for EET Original for EET: SarahG's fork for BG2: SarahG's fork is untested, slightly outdated. Probably easy to slap its changes into the original. Author: \"install Cowled Menace after NPC mods. Then install the rest (SCS, EET- end, etc)\" Just in case.The Twisted Rune fight has been buffed in favor of the enemies.Twisting With The Rune focuses on explaining more about the Twisted Rune’s dealings and history as an organization.",
+  "rq": "EET (except optional components)",
+  "ic": "Unofficial Item Pack[main component]",
+  "conflicts": [
+    {
+      "with": "Item_Pack",
+      "withId": 278,
+      "severity": "soft",
+      "reason": "Reverse of LCC-docs incompatibility (lcc id 1061 vs 1166)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/CowledMenace/releases",
+  "a": "Daxtreme",
+  "v": "1.0.3",
+  "sum": "Adds Cowled Wizard encounters and a storyline about magical enforcement in Athkatla. Expands the consequences of unauthorized spellcasting.",
+  "tags": [
+    "story",
+    "combat"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "CowledMenace"
+  },
+  "dl": "https://github.com/Gibberlings3/CowledMenace/releases",
+  "au": "Daxtreme",
+  "co": [
+    {
+      "n": "Main Component",
+      "cn": 1000,
+      "wf": "CowledMenace",
+      "wp": "CowledMenace\\SETUP-COWLEDMENACE.TP2",
+      "wc": 1000,
+      "wq": "exact",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Main Component"
+    },
+    {
+      "n": "Appropriate Items for High-Level Spellcasters",
+      "cn": 2100,
+      "wf": "CowledMenace",
+      "wp": "CowledMenace\\SETUP-COWLEDMENACE.TP2",
+      "wc": 2100,
+      "wq": "exact",
+      "tp2n": "Appropriate Items for High-Level Spellcasters"
+    },
+    {
+      "n": "Mages cast Gate far from themselves",
+      "cn": 3000,
+      "wf": "CowledMenace",
+      "wp": "CowledMenace\\SETUP-COWLEDMENACE.TP2",
+      "wc": 3000,
+      "wq": "exact",
+      "tp2n": "Mages cast Gate far from themselves"
+    },
+    {
+      "n": "Only for Spell Trap",
+      "cn": 3010,
+      "wf": "CowledMenace",
+      "wp": "CowledMenace\\SETUP-COWLEDMENACE.TP2",
+      "wq": "verified",
+      "tp2n": "Only for Spell Trap",
+      "scn": "Use pre-EE Spell Deflection Globe (EE only)"
+    },
+    {
+      "n": "For all spells using that animation (recommended)",
+      "cn": 3020,
+      "wf": "CowledMenace",
+      "wp": "CowledMenace\\SETUP-COWLEDMENACE.TP2",
+      "wq": "verified",
+      "tp2n": "For all spells using that animation (recommended)",
+      "scn": "Use pre-EE Spell Deflection Globe (EE only)"
+    }
+  ]
+}

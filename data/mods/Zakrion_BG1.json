@@ -1,0 +1,79 @@
+{
+  "i": 128,
+  "t": "Zakrion_BG1",
+  "sv": 1,
+  "ord": 70,
+  "c": "PRE EET BGEE MODS",
+  "n": "Zakrion",
+  "no": "BG1:EE NPC mod. INSTALL ISSUE: not on EET's recognized mod list. EET aborts with 'ZAKRION_BG1 BG:EE mod is not recognized by EET' when it's in the BG1EE WeiDU.log. Cannot be used with EET unless an EET compatibility patch is created for it. The BG2 version (Zakrion_BG2) is a separate mod and works fine post-EET.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "zakrion",
+          "portraits/zakrion_bg1/qi_za1.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/files/file/1020-zakrion/",
+  "a": "jmaeq",
+  "v": "v2.0",
+  "sum": "Adds Zakrion, a human Duelist NPC to BGEE, found near a ship wreckage on the Sword Coast, with custom portraits, voicing, a friendship track, and a semi-romance path.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://www.gibberlings3.net/files/file/1020-zakrion/",
+  "au": "jmaeq",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Zakrion for BGI:EE",
+      "cn": 1000,
+      "wf": "Zakrion_BG1",
+      "wp": "Zakrion_BG1\\Zakrion_BG1.tp2",
+      "wc": 1000,
+      "wq": "verified",
+      "no": "Main NPC component. Adds Duelist kit and Zakrion NPC to BG1. Must install pre-EET.",
+      "wb": true,
+      "tp2n": "Zakrion for BGI:EE"
+    },
+    {
+      "n": "Change Zakrion's class to Swashbuckler (from Duelist)",
+      "cn": 2000,
+      "wf": "Zakrion_BG1",
+      "wp": "Zakrion_BG1\\Zakrion_BG1.tp2",
+      "wc": 2000,
+      "wq": "verified",
+      "wb": true,
+      "tp2n": "Change Zakrion's class to Swashbuckler (from Duelist)"
+    },
+    {
+      "n": "Alternative Portrait 1 by Nyaka-N at DeviantArt",
+      "cn": 2,
+      "wf": "Zakrion_BG1",
+      "wp": "Zakrion_BG1\\Zakrion_BG1.tp2",
+      "wq": "verified",
+      "tp2n": "Alternative Portrait 1 by Nyaka-N at DeviantArt",
+      "wb": true,
+      "scn": "Alternative Portrait 1 - Zakrion"
+    },
+    {
+      "n": "Alternative Portrait 1 by Nyaka-N at DeviantArt",
+      "cn": 2001,
+      "wf": "Zakrion_BG1",
+      "wp": "Zakrion_BG1\\Zakrion_BG1.tp2",
+      "wc": 2001,
+      "wq": "verified",
+      "wb": true,
+      "gone": true,
+      "no": "v18 moved to cn:2 (was cn:2001 in older version)"
+    }
+  ]
+}

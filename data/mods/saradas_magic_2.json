@@ -1,0 +1,80 @@
+{
+  "i": 606,
+  "t": "saradas_magic_2",
+  "sv": 1,
+  "ord": 1120,
+  "c": "NEW NPC MODS",
+  "n": "Saradas Magic 2",
+  "no": "NOT INSTALLED tp2 ALWAYS block gates ee_file variable behind ACTION_IF NOT VARIABLE_IS_SET bg2_chapter. On reinstall, bg2_chapter is already set so entire ALWAYS block is skipped, ee_file never defined. Portrait COPY then tries literal path 'portraits%ee_file%' which doesn't exist. Upstream bug — ee_file OUTER_SPRINT needs to be outside the bg2_chapter guard. portraits_ee/ directory exists with correct files.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "saradas",
+          "portraits/saradas_magic_2/_sartob.png",
+          "tob"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Saradas_Magic_for_BG2",
+  "a": "Saradas",
+  "v": "v2.0.0",
+  "sum": "This mod introduces a new NPC, Saradas the archmage, who interacts in various ways with the Bhaalspawn's group. In Shadows of Amn, he is a non-playable NPC that offers many services to the Bhaalspawn's group. You can find him in the temple of Lathander, in the Temple District of Athkatla. In addition to having several exclusive dialogues that take place as the plot takes shape, his store is worth the visit. In Throne of Bhaal Saradas is finally a recruitable NPC! You can summon him through the Fate Spirit in your pocket plane. He is a human Priest of Lathander dual-classed to Mage.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Saradas",
+  "dl": "https://github.com/SpellholdStudios/Saradas_Magic_for_BG2",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Saradas has a monk sprite (original)",
+      "cn": 0,
+      "wf": "saradas_magic_2",
+      "wp": "saradas_magic_2\\saradas_magic_2.tp2",
+      "wc": 0,
+      "g": "saradas_sprite",
+      "scn": "Saradas Magic NPC Mod for BGII",
+      "tp2n": "Saradas has a monk sprite (original)",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "n": "Saradas has a mage sprite (optional)",
+      "cn": 1,
+      "wf": "saradas_magic_2",
+      "wp": "saradas_magic_2\\saradas_magic_2.tp2",
+      "wc": 1,
+      "g": "saradas_sprite",
+      "scn": "Saradas Magic NPC Mod for BGII",
+      "tp2n": "Saradas has a mage sprite (optional)",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Saradas_Magic_for_BG2"
+  }
+}

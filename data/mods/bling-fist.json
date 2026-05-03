@@ -1,0 +1,98 @@
+{
+  "i": 939,
+  "t": "bling-fist",
+  "sv": 1,
+  "ord": 405,
+  "n": "Bling Fist Monk",
+  "c": "KIT & CLASS MODS",
+  "au": "jmerry",
+  "no": "Monk kit: Order of the Golden Hand. Wraps hands in enchanted jewelry to infuse blows with divine power against fiends, lycanthropes, and undead. Replaces active abilities with bling creation system. Requires Dex 9, Con 15. English only. EE games only.",
+  "kitAbilities": {
+    "0": {
+      "J8_BLING": {
+        "passive": [
+          {
+            "n": "Enchanted Jewelry",
+            "type": "desc",
+            "desc": "Fists gain scaling enchantment (+1 to +5) and bonus damage vs fiends/lycanthropes/undead via upgradeable bling at lv3/6/9/12/15/25. At lv15+: can incorporate a magic amulet or ring."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Dazzling Strike",
+            "freq": "scaling uses",
+            "effects": "Blinds enemies for 4 rounds (save vs Spell).",
+            "level": 1
+          },
+          {
+            "n": "Disrupting Fist",
+            "freq": "scaling uses",
+            "effects": "Slays lycanthropes, banishes demons, destroys undead on hit (save vs Death -4 or die; 2d6 magic regardless).",
+            "level": 12
+          }
+        ],
+        "restrictions": {
+          "items": "Requires CHA 15. No Stunning Blow. No Quivering Palm."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "No spellcasting. No Stunning Blow or Quivering Palm (replaced by bling system)."
+        },
+        "statBonus": {
+          "note": "Requires CHA 15 minimum"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "J8_BLING",
+          "monk",
+          "Bling Fist Monk",
+          "Monk of the Golden Hand. Infuses blows with divine power via enchanted jewelry. Effective against fiends, lycanthropes, and undead. Replaces Stunning Blow/Quivering Palm with bling creation."
+        ]
+      ]
+    }
+  },
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/jmerry/bling-fist",
+  "dl": "https://github.com/jmerry/bling-fist",
+  "sum": "Adds the Order of the Golden Hand monk kit that uses enchanted jewelry for divine unarmed attacks.",
+  "tags": [
+    "kit",
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Bling Fist Monk",
+      "tp2n": "Bling Fist Monk",
+      "cn": 0,
+      "wf": "bling-fist",
+      "wp": "bling-fist\\setup-bling-fist.tp2",
+      "wq": "verified",
+      "kC": {
+        "monk": 1
+      },
+      "no": "Adds Bling Fist Monk kit. Uses ADD_KIT_EX with custom CLAB replacing Stunning Blow/Quivering Palm with bling creation."
+    }
+  ],
+  "gh": {
+    "o": "jmerry",
+    "r": "bling-fist"
+  }
+}

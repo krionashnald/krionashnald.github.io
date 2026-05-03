@@ -1,0 +1,118 @@
+{
+  "i": 549,
+  "t": "nathaniel",
+  "sv": 1,
+  "ord": 870,
+  "c": "NEW NPC MODS",
+  "n": "Nathaniel NPC",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "kelsey",
+      "requiresId": 161,
+      "type": "soft",
+      "reason": "Nathaniel/Kelsey"
+    },
+    {
+      "requires": "jasteys_solaufein",
+      "requiresId": 138,
+      "type": "soft",
+      "reason": "Nathaniel/Solaufein (updated: jastey version)"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "nathaniel",
+          "portraits/nathaniel/nath1.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Nathaniel-NPC",
+  "a": "Feuille, Miss Sakaki",
+  "v": "v4.3",
+  "sum": "Adds Nathaniel Aplin-Fletcher, a joinable NPC for BG2 — a former Flaming Fist officer from Baldur's Gate who witnessed Sarevok's devastation.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "feuille_sakaki",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/Spellhold-Studios/Nathaniel-NPC",
+  "no": "Adds Nathaniel Aplin-Fletcher, a joinable NPC for BG2 — a former Flaming Fist officer from Baldur's Gate who witnessed Sarevok's devastation.",
+  "co": [
+    {
+      "n": "Nathaniel NPC",
+      "cn": 0,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 0,
+      "tp2n": "Nathaniel NPC Mod for BGII"
+    },
+    {
+      "n": "Default portrait by Feuille",
+      "cn": 1,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 1,
+      "g": "nathaniel_portrait",
+      "tp2n": "Default portrait by Feuille"
+    },
+    {
+      "n": "Alternate portrait by K'aeloree (NWN remake)",
+      "cn": 2,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 2,
+      "g": "nathaniel_portrait",
+      "scn": "Choose a portrait for Nathaniel",
+      "tp2n": "Alternate portrait by K'aeloree (NWN remake)"
+    },
+    {
+      "n": "Install an alternative portrait for Nathaniel? -> Alternate portrait by Amaurea (Milo Ventimiglia)",
+      "cn": 3,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 3,
+      "g": "nathaniel_portrait",
+      "scn": "Choose a portrait for Nathaniel",
+      "tp2n": "Alternate portrait by Amaurea (Milo Ventimiglia)"
+    },
+    {
+      "n": "Solaufein Conflict",
+      "cn": 4,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 4,
+      "no": "Requires Solaufein NPC mod",
+      "tp2n": "Solaufein Conflict",
+      "scn": "Choose a portrait for Nathaniel"
+    },
+    {
+      "n": "Kelsey Content",
+      "cn": 5,
+      "wf": "Nathaniel",
+      "wp": "Nathaniel\\SETUP-NATHANIEL.TP2",
+      "wc": 5,
+      "no": "Requires Kelsey NPC mod installed. Kelsey is not .",
+      "tp2n": "Kelsey Content"
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Nathaniel-NPC"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "i": 804,
+  "t": "Derats_Follower_it",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 590,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Follower It",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "u": "https://github.com/Deratiseur/Follower_It",
+  "a": "Deratiseur",
+  "sum": "This mod lets you turn any companion into a follower (who doesn't count against the party limit).",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Deratiseur/Follower_It",
+  "no": "This mod lets you turn any companion into a follower (who doesn't count against the party limit).",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "Transform companions into followers",
+      "cn": 0,
+      "wf": "Derats_Follower_it",
+      "wp": "Derats_Follower_it\\setup-Derats_Follower_it.tp2",
+      "wc": 0,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "False death for 1 turn, tombstone",
+      "cn": 1,
+      "wf": "Derats_Follower_it",
+      "wp": "Derats_Follower_it\\setup-Derats_Follower_it.tp2",
+      "wc": 1,
+      "wq": "lcc-github",
+      "g": "Followers are invulnerable (cheat)"
+    },
+    {
+      "n": "False dead for 1 turn, agonizing corpse",
+      "cn": 2,
+      "wf": "Derats_Follower_it",
+      "wp": "Derats_Follower_it\\setup-Derats_Follower_it.tp2",
+      "wc": 2,
+      "wq": "lcc-github",
+      "g": "Followers are invulnerable (cheat)"
+    },
+    {
+      "n": "Fake dead indefinitely, wand to raise them, tombstone",
+      "cn": 3,
+      "wf": "Derats_Follower_it",
+      "wp": "Derats_Follower_it\\setup-Derats_Follower_it.tp2",
+      "wc": 3,
+      "wq": "lcc-github",
+      "g": "Followers are invulnerable (cheat)"
+    },
+    {
+      "n": "Fake dead indefinitely, wand to raise them, agonizing corpse",
+      "cn": 4,
+      "wf": "Derats_Follower_it",
+      "wp": "Derats_Follower_it\\setup-Derats_Follower_it.tp2",
+      "wc": 4,
+      "wq": "lcc-github",
+      "g": "Followers are invulnerable (cheat)"
+    }
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "Follower_It"
+  }
+}

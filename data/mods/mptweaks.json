@@ -1,0 +1,56 @@
+{
+  "i": 851,
+  "t": "mptweaks",
+  "sv": 1,
+  "ord": 1040,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Multiplayer Tweaks",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/lzenner/mptweaks",
+  "a": "Lauriel",
+  "sum": "This mod fixes a few problems in multiplayer sessions. During a fight, up to 5 opponents can follow a party member through a door (applies only to interior areas whose entrances can be used by NPCs).",
+  "tags": [
+    "fix"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/lzenner/mptweaks",
+  "no": "This mod fixes a few problems in multiplayer sessions. During a fight, up to 5 opponents can follow a party member through a door (applies only to interior areas whose entrances can be used by NPCs).",
+  "au": "morpheus562",
+  "co": [
+    {
+      "n": "Take it outside - mobs follow through doors",
+      "cn": 10,
+      "wf": "mptweaks",
+      "wp": "mptweaks\\mptweaks.tp2",
+      "wc": 10,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "Pause game when NPCs turn hostile during dialogue",
+      "cn": 20,
+      "wf": "mptweaks",
+      "wp": "mptweaks\\mptweaks.tp2",
+      "wc": 20,
+      "wq": "lcc-github"
+    },
+    {
+      "n": "Eltan multiplayer compatibility",
+      "cn": 30,
+      "wf": "mptweaks",
+      "wp": "mptweaks\\mptweaks.tp2",
+      "wc": 30,
+      "wq": "lcc-github"
+    }
+  ],
+  "gh": {
+    "o": "lzenner",
+    "r": "mptweaks"
+  }
+}

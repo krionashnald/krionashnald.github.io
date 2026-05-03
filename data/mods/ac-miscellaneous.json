@@ -1,0 +1,488 @@
+{
+  "i": 427,
+  "t": "ac-miscellaneous",
+  "sv": 1,
+  "pfx": "AC",
+  "ord": 220,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "AC Miscellaneous Tweaks",
+  "no": "AC Miscellaneous Tweaks by Andrea C. EET-compatible components only. cn:1600/1700 are SoD soundset choices (1-OF). Dragon Breath Fix and Revenant Animation Fix are safe bug fixes",
+  "conflicts": [
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "myComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "myComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "myComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "myComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Imoen, Edwin, Jaheira, Minsc, Viconia, Dorn, Neera, Rasaad. Last installed wins",
+      "myComps": "#201 #202 #203 #204 BG/SoD Portraits #300 Original EE NPC Portraits",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "1": [
+        [
+          "edwin",
+          "portraits/default_bg1/edwin.png",
+          "all"
+        ],
+        [
+          "imoen",
+          "portraits/default_bg1/imoen.png",
+          "all"
+        ],
+        [
+          "jaheira",
+          "portraits/default_bg1/jaheira.png",
+          "all"
+        ],
+        [
+          "minsc",
+          "portraits/default_bg1/minsc.png",
+          "all"
+        ],
+        [
+          "viconia",
+          "portraits/default_bg1/viconia.png",
+          "all"
+        ],
+        [
+          "ajantis",
+          "portraits/default_bg1/ajantis.png",
+          "bg1"
+        ],
+        [
+          "branwen",
+          "portraits/default_bg1/branwen.png",
+          "bg1"
+        ],
+        [
+          "coran",
+          "portraits/default_bg1/coran.png",
+          "bg1"
+        ],
+        [
+          "dynaheir",
+          "portraits/default_bg1/dynaheir.png",
+          "bg1"
+        ],
+        [
+          "faldorn",
+          "portraits/default_bg1/faldorn.png",
+          "bg1"
+        ],
+        [
+          "garrick",
+          "portraits/default_bg1/garrick.png",
+          "bg1"
+        ],
+        [
+          "kagain",
+          "portraits/default_bg1/kagain.png",
+          "bg1"
+        ],
+        [
+          "khalid",
+          "portraits/default_bg1/khalid.png",
+          "all"
+        ],
+        [
+          "kivan",
+          "portraits/default_bg1/kivan.png",
+          "bg1"
+        ],
+        [
+          "montaron",
+          "portraits/default_bg1/montaron.png",
+          "bg1"
+        ],
+        [
+          "quayle",
+          "portraits/default_bg1/quayle.png",
+          "bg1"
+        ],
+        [
+          "safana",
+          "portraits/default_bg1/safana.png",
+          "bg1"
+        ],
+        [
+          "sharteel",
+          "portraits/default_bg1/sharteel.png",
+          "bg1"
+        ],
+        [
+          "skie",
+          "portraits/default_bg1/skie.png",
+          "bg1"
+        ],
+        [
+          "tiax",
+          "portraits/default_bg1/tiax.png",
+          "bg1"
+        ],
+        [
+          "xan",
+          "portraits/default_bg1/xan.png",
+          "bg1"
+        ],
+        [
+          "xzar",
+          "portraits/default_bg1/xzar.png",
+          "bg1"
+        ],
+        [
+          "yeslick",
+          "portraits/default_bg1/yeslick.png",
+          "bg1"
+        ],
+        [
+          "dorn",
+          "portraits/default/dorn.png",
+          "all"
+        ],
+        [
+          "neera",
+          "portraits/default/neera.png",
+          "all"
+        ],
+        [
+          "rasaad",
+          "portraits/default/rasaad.png",
+          "all"
+        ],
+        [
+          "hexxat",
+          "portraits/default/hexxat.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.shsforums.net/files/file/1282-acs-miscellaneous-tweaks/",
+  "a": "Andrea C.",
+  "v": "v1.25",
+  "sum": "A collection of miscellaneous gameplay tweaks and fixes for the Baldur's Gate series.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "RC1",
+    "place": "post"
+  },
+  "dl": "https://www.shsforums.net/files/file/1282-acs-miscellaneous-tweaks/",
+  "au": "ac86public",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 100,
+      "n": "Miscellaneous Tweaks",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "exact",
+      "no": "Core miscellaneous tweaks. No game restriction — works on EET",
+      "tp2n": "Miscellaneous Tweaks"
+    },
+    {
+      "n": "Restore BG1 portraits and colors for all",
+      "cn": 201,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Restore BG1 portraits and colors for all",
+      "pi": "ac-miscellaneous-bgportraits",
+      "scn": "Use BG/SOD Portraits in SoA/ToB"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Imoen",
+      "cn": 202,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Restore BG1 portraits and colors; SOD for Imoen",
+      "pi": "ac-miscellaneous-sodimoen",
+      "scn": "Use BG/SOD Portraits in SoA/ToB"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Viconia",
+      "cn": 203,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Restore BG1 portraits and colors; SOD for Viconia",
+      "pi": "ac-miscellaneous-sodviccy",
+      "scn": "Use BG/SOD Portraits in SoA/ToB"
+    },
+    {
+      "n": "Restore BG1 portraits and colors; SOD for Imoen and Viconia",
+      "cn": 204,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Restore BG1 portraits and colors; SOD for Imoen and Viconia",
+      "pi": "ac-miscellaneous-sodviccimoen",
+      "scn": "Use BG/SOD Portraits in SoA/ToB"
+    },
+    {
+      "n": "EE Character Portraits for SoA/ToB and BGT",
+      "cn": 1300,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "EE Character Portraits for SoA/ToB and BGT",
+      "pi": "ac-portraits-ee"
+    },
+    {
+      "n": "EE Soundsets for BGT",
+      "cn": 1200,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "tp2n": "EE Soundsets for BGT",
+      "pi": "ac-ee-soundsets"
+    },
+    {
+      "n": "Use original portraits for EE NPCs",
+      "pi": "ac-miscellaneous-eeportraits",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 300,
+      "no": "Restores original pre-EE portraits for EE NPCs (Dorn, Neera, Rasaad). May conflict with portrait mods",
+      "tp2n": "Use original portraits for EE NPCs"
+    },
+    {
+      "n": "Pure SoD soundset",
+      "no": "v SoD soundset for BGEE",
+      "pi": "ac-sod-soundsets-pure",
+      "scn": "SoD soundset for BG:EE",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 1600,
+      "g": "sod_soundset",
+      "tp2n": "Pure SoD soundset"
+    },
+    {
+      "n": "Mixed SoD/BG:EE soundset",
+      "pi": "ac-sod-soundsets-mixed",
+      "scn": "SoD soundset for BG:EE",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 1700,
+      "g": "sod_soundset",
+      "tp2n": "Mixed SoD/BG:EE soundset"
+    },
+    {
+      "n": "Use EE colors for joinable NPCs",
+      "cn": 400,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Use EE colors for joinable NPCs",
+      "pi": "ac-miscellaneous-eecolors"
+    },
+    {
+      "n": "EE-style descriptions",
+      "cn": 500,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "EE-style descriptions",
+      "pi": "ac-miscellaneous-eedescriptions"
+    },
+    {
+      "n": "EE Slings",
+      "cn": 1400,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "tp2n": "EE Slings",
+      "pi": "ac-ee-slings"
+    },
+    {
+      "n": "BG-style archery for SoA/ToB",
+      "pi": "ac-miscellaneous-bgarchery",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 600,
+      "tp2n": "BG-style archery for SoA/ToB"
+    },
+    {
+      "n": "Restore BG/BGII inventory icons and colors",
+      "cn": 700,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Restore BG/BGII inventory icons and colors",
+      "pi": "ac-miscellaneous-bgiconscolors"
+    },
+    {
+      "n": "Restore BG Flaming Fist & Amnian Soldier appearance",
+      "cn": 800,
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "tp2n": "Restore BG Flaming Fist & Amnian Soldier appearance",
+      "pi": "ac-miscellaneous-bgflaming"
+    },
+    {
+      "n": "Dragon Breath Fix",
+      "pi": "ac-miscellaneous-breathfix",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 1100,
+      "no": "Bug fix: corrects Dragon Breath animation/damage. Safe",
+      "tp2n": "Dragon Breath Fix"
+    },
+    {
+      "n": "Random Stuff No-one Wants",
+      "pi": "ac-miscellaneous-random",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 1000,
+      "tp2n": "Random Stuff No-one Wants"
+    },
+    {
+      "n": "Revenant Animation Fix",
+      "pi": "ac-ee-revenant",
+      "wf": "Miscellaneous",
+      "wp": "Miscellaneous\\miscellaneous.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 1500,
+      "no": "Bug fix: fixes Revenant animation. Safe",
+      "tp2n": "Revenant Animation Fix"
+    }
+  ]
+}

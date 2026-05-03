@@ -1,0 +1,85 @@
+{
+  "i": 568,
+  "t": "impasylum",
+  "sv": 1,
+  "ord": 660,
+  "c": "QUEST MODS BG2",
+  "n": "Improved Asylum",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "ru": 3
+  },
+  "no": "TWO DESTRUCTIVE BEHAVIORS — safe to keep if install order is correct: Issue #1 — BHAAL1B.SPL shrinkage: cn:1 (Spellhold Lich) shrinks BHAAL1B.SPL further after mih_fr cn:15 already rewrites it (3498→2746). ImpAsylum takes it to 2410 bytes. No mod reads the file while corrupted, and Ascension restores it to 2746 from backup. Safe IF Ascension is installed after. Without Ascension, BHAAL1B ability headers may be broken (affects MIH_METAMOD PnP creatures, Jimfix, Magic_Battles_Revised). Issue #2 — stats.ids nuke: cn:0 (Detectable Spells) copies a blank file over stats.ids (4767→1 bytes), then rebuilds with only its own entries (→4420 bytes). Drops aliases: OFFENSIVE_MODIFIER, DEFENSIVE_MODIFIER, STRENGTH_MODIFIER, DEATH_WARD, LEVEL_DRAIN_IMMUNITY, PROFICIENCYCLUB, DONOTDRAW, IGNOREDRAINDEATH. Any mod installed AFTER impasylum referencing these aliases gets PARSE ERRORs. Fixed for DIMENSION_GATE by moving it before impasylum (ord 650 < 660). Ascension + SCS partially restore the file to 4709 bytes; 3 aliases permanently lost (PROFICIENCYCLUB, DONOTDRAW, IGNOREDRAINDEATH) but no mod in our presets uses them.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "drusi",
+          "portraits/imp_asylum/r_drusi.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/RoxanneSHS/Asylum",
+  "a": "Rastor",
+  "v": "v101",
+  "sum": "Expands the Spellhold Asylum section of BG2 with additional encounters, puzzles, and content within the asylum.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/RoxanneSHS/Asylum",
+  "au": "rastor",
+  "co": [
+    {
+      "n": "Improved Asylum Mod",
+      "cn": 0,
+      "wf": "impasylum",
+      "wp": "impasylum\\SETUP-IMPASYLUM.TP2",
+      "wc": 0,
+      "no": "Improved Spellhold asylum with new encounters.",
+      "tp2n": "Detectable Spells (Required for the Other Components)",
+      "grn": "Mod Requirements"
+    },
+    {
+      "n": "Spellhold Lich",
+      "cn": 1,
+      "wf": "impasylum",
+      "wp": "impasylum\\SETUP-IMPASYLUM.TP2",
+      "wc": 1,
+      "no": "Adds a lich encounter in Spellhold.",
+      "tp2n": "Improved Asylum Mod for BG2:ToB"
+    },
+    {
+      "n": "Spellhold Lich",
+      "cn": 2,
+      "wf": "impasylum",
+      "wp": "impasylum\\SETUP-IMPASYLUM.TP2",
+      "wq": "verified",
+      "tp2n": "Spellhold Lich"
+    },
+    {
+      "n": "Improved Player Scripts",
+      "cn": 3,
+      "wf": "impasylum",
+      "wp": "impasylum\\SETUP-IMPASYLUM.TP2",
+      "wq": "verified",
+      "tp2n": "Improved Player Scripts"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Asylum"
+  }
+}

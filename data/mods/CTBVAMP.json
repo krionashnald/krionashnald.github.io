@@ -1,0 +1,52 @@
+{
+  "i": 540,
+  "t": "CTBVAMP",
+  "sv": 1,
+  "ord": 820,
+  "c": "NEW NPC MODS",
+  "n": "Master Vampire NPC",
+  "no": "[LEGACY] Separate BGT-era sub-mod. In CtB v3.0+ this is consolidated into the main ctb.tp2 (BEGIN block with @800xxx tra reference). Use main CtB mod for EET installs. Removed from Mod Forge Ultimate: CtB incompatible with WeiDU 251 (DELETE_EXISTING_ANIMATIONS macro)",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/MasterVampire",
+  "a": "Roxanne",
+  "sum": "An old CtB adventure in modern version for BG2EE and EET",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/SpellholdStudios/Check_the_Bodies/releases",
+  "au": "CBisson, King Diamond (SHS)",
+  "langs": {
+    "en": 0
+  },
+  "pt": false,
+  "co": [
+    {
+      "n": "Master Vampire",
+      "cn": 0,
+      "wf": "CTBVAMP",
+      "wp": "CTBVAMP\\CTBVAMP.TP2",
+      "wc": 0
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "MasterVampire"
+  }
+}

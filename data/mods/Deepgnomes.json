@@ -1,0 +1,66 @@
+{
+  "i": 823,
+  "t": "Deepgnomes",
+  "sv": 1,
+  "ord": 780,
+  "c": "QUEST MODS BG2",
+  "n": "Deepgnomes on the Sword Coast",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "au": "Bookwyrme, Roxanne (EET adaptation)",
+  "dl": "https://github.com/RoxanneSHS/DeepgnomesEET",
+  "no": "EET-only restoration of quest and store content from Aurora's Shoes and Boots (abandoned by Bookwyrme). Adds Svirfneblin (deep gnome) encounters and Aurora's boot shop. Spawns across BG1 areas (Nashkel, Cloakwood, Larswood, Baldur's Gate) and BG2 areas (Copper Coronet, Ust Natha, Shadow Temple, Underdark). Wide area footprint.",
+  "conflicts": [],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "deepgnome_aurora",
+          "portraits/deepgnomes/aurora.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/RoxanneSHS/DeepgnomesEET/",
+  "a": "Bookwyrme, Roxanne",
+  "sum": "EET-only restoration of quest and store content from Aurora’s Shoes and Boots. Adds Svirfneblin encounters and Aurora’s boot shop across BG1 and BG2 areas.",
+  "tags": [
+    "quest",
+    "story",
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoA"
+  ],
+  "co": [
+    {
+      "n": "Deepgnomes of the Sword Coast for EET",
+      "tp2n": "Deepgnomes of the Sword Coast for EET",
+      "cn": 0,
+      "wf": "Deepgnomes",
+      "wp": "Deepgnomes\\setup-Deepgnomes.tp2",
+      "wq": "verified",
+      "no": "EET only. Extends baldur.bcs/baldur25.bcs globally. Spawns in AR0406 (Copper Coronet), AR0710, AR1404, AR2200/AR2201 (Ust Natha), AR2401 (Underdark Exit), plus BG1 areas via cpmvars."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Aurora",
+      "withId": 634,
+      "severity": "partial",
+      "reason": "Deepgnomes is an EET restoration of Aurora's Shoes and Boots content. Both derive from the same source material. Installing both will likely cause duplicate content and script conflicts.",
+      "myComps": "#0 Deepgnomes",
+      "theirComps": "All components",
+      "source": "Same source mod by Bookwyrme, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "DeepgnomesEET"
+  }
+}

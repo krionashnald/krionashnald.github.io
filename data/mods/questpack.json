@@ -1,0 +1,366 @@
+{
+  "i": 43,
+  "t": "ac_quest",
+  "sv": 1,
+  "pfx": "AC",
+  "ord": 100,
+  "c": "QUEST MODS BG1",
+  "n": "Ascalon's Questpack",
+  "langs": {
+    "de": 0,
+    "en": 1,
+    "ru": 2,
+    "it": 3,
+    "fr": 4,
+    "es": 5,
+    "zh-cn": 6
+  },
+  "no": "Ascalon's Questpack. mod_installer: Each component recompiles all dialogue files (~8-10 min per component with large installs). 13 components = ~2 hours",
+  "ic": "For compatibility with Glam's NPC Pack, install the \"Beregost\" install choice for the component \"From Wolves and Men\". Ascalon's Questpack should be installed before NPC mods, especially Ascalon's Breagar, Brage's Redemption, and Brandock the Mage.",
+  "conflicts": [
+    {
+      "with": "glamnpcpack",
+      "withId": 127,
+      "severity": "soft",
+      "reason": "Only affects comp #5 (Of Wolves and Men, High Hedge variant) which shares High Hedge House with Glam's Talassans. Both use safe EXTEND ops with independent variables. Mod author provides Beregost variant (#6) as compatibility alternative — that's the version in the database. Already covered by AscalonsQuestpack vs glamnpcpack partial entry.",
+      "myComps": "#5 Of Wolves and Men (High Hedge variant)",
+      "theirComps": "#0 Glam NPC Pack",
+      "source": "ac_quest README recommends Beregost variant for Glam compat; comp #5 not in mods.json DB (only #6 Beregost is listed), 2026-03"
+    },
+    {
+      "with": "thecalling",
+      "withId": 39,
+      "severity": "partial",
+      "reason": "Both modify Thalantyr dialogue but use compatible EXTEND_BOTTOM methods since Calling Beta 2. Install The Calling before A Job Well-Paid.",
+      "myComps": "Of Wolves and Men -> Quest uses house in Beregost., #5",
+      "theirComps": "#0 The Calling",
+      "source": "tp2 analysis, The Calling Beta 2 changelog (Feb 2019) fixed Thalantyr compat, 2026-03"
+    },
+    {
+      "with": "glamnpcpack",
+      "withId": 127,
+      "severity": "partial",
+      "reason": "Requires specific install order choices",
+      "orderOnly": true,
+      "myComps": "Of Wolves and Men (High Hedge variant), #5",
+      "theirComps": "#0 Glam NPC Pack",
+      "source": "Only High Hedge variant conflicts. Beregost variant (#6) is compatible, 2026-03"
+    },
+    {
+      "with": "c#brage",
+      "withId": 46,
+      "severity": "soft",
+      "reason": "Install order: Ascalon's Questpack must install BEFORE Brage's Redemption per readme",
+      "orderOnly": true,
+      "myComps": "#0 A Job Well-Paid",
+      "theirComps": "#0 Brage Joinable NPC"
+    },
+    {
+      "with": "BrandockTheMage",
+      "withId": 191,
+      "severity": "soft",
+      "reason": "Install order matters. Install Questpack after Brandock.",
+      "orderOnly": true,
+      "myComps": "#0 A Job Well-Paid",
+      "theirComps": "#10 Brandock the Mage"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "imoen",
+          "portraits/ascalons/imoen_sod.png",
+          "sod"
+        ],
+        [
+          "viconia",
+          "portraits/ascalons/viconia_sod.png",
+          "sod"
+        ],
+        [
+          "dorn",
+          "portraits/ascalons/dorn.png",
+          "sod"
+        ],
+        [
+          "neera",
+          "portraits/ascalons/neera.png",
+          "sod"
+        ],
+        [
+          "rasaad",
+          "portraits/ascalons/rasaad.png",
+          "sod"
+        ],
+        [
+          "glint",
+          "portraits/ascalons/glint.png",
+          "sod"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gitjas/Ascalons_Questpack/releases",
+  "a": "Ascalon, WhiteAgnus, jastey",
+  "v": "v3.5",
+  "sum": "Adds 13 new side quests to BG1 with branching outcomes. Includes investigation quests, moral dilemmas, and dungeon crawls across the Sword Coast.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v2.02",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gitjas",
+    "r": "Ascalons_Questpack"
+  },
+  "dl": "https://github.com/Gitjas/Ascalons_Questpack/releases",
+  "au": "Ascalon",
+  "co": [
+    {
+      "n": "A Job Well-Paid",
+      "tp2n": "Der Lohn fuer die Muehe",
+      "pi": "AscalonsQuestpack-JobWellPaid",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "no": "A mercenary job that pays well but has complications."
+    },
+    {
+      "n": "A Feast for the Gnolls",
+      "tp2n": "Ein Fressen fuer die Gnolle",
+      "pi": "AscalonsQuestpack-FeastforGnolls",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 1,
+      "no": "A feast-related quest involving gnoll territory."
+    },
+    {
+      "n": "Jumper: Original (inside cave)",
+      "tp2n": "Originalversion: Ugh und Hopsi sind in der Hoehle.",
+      "no": "v Jumper",
+      "pi": "AscalonsQuestpack-Rabbit",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 2,
+      "g": "jumper"
+    },
+    {
+      "n": "Jumper: Alternative (outside, compatibility)",
+      "tp2n": "Kompatibilitätsalternative: Ugh und Hopsi befinden sich draussen.",
+      "pi": "AscalonsQuestpack-Rabbit_alternative",
+      "scn": "Hopsi",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 3,
+      "g": "jumper",
+      "no": "Outdoor-compatible version of the Jumper encounter."
+    },
+    {
+      "n": "The Lost Son",
+      "tp2n": "Der verlorene Sohn",
+      "pi": "AscalonsQuestpack-LostSon",
+      "scn": "Hopsi",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 4,
+      "no": "Help find a family's lost son."
+    },
+    {
+      "n": "Of Wolves and Men: High Hedge hut",
+      "tp2n": "Haus neben Thalantyr in der Hohen Hecke verwenden.",
+      "no": "High Hedge hut conflicts with Glam NPC Pack. Beregost house overlaps with EndlessBG1 and Transitions",
+      "pi": "AscalonsQuestpack-WolvesMen_Highhedge",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 5,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 5,
+      "g": "wolves_loc"
+    },
+    {
+      "n": "Of Wolves and Men: Beregost house",
+      "tp2n": "Haus in Beregost verwenden.",
+      "pi": "AscalonsQuestpack-WolvesMen_Beregost",
+      "scn": "Von Woelfen und Maennern",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 6,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 6,
+      "g": "wolves_loc",
+      "no": "Investigate wolf attacks near a Beregost house."
+    },
+    {
+      "n": "A Home for the Gibberlings",
+      "tp2n": "Der grosse Karlini",
+      "pi": "AscalonsQuestpack-Gibberlings",
+      "scn": "Von Woelfen und Maennern",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 7,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 7,
+      "no": "Help a group of gibberlings find a new home."
+    },
+    {
+      "n": "The Great Carlini",
+      "tp2n": "Die Kreischlingszucht",
+      "pi": "AscalonsQuestpack-GreatKarlini",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 8,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 8,
+      "no": "The Great Carlini's magic show with surprises."
+    },
+    {
+      "n": "Fangirls",
+      "tp2n": "Echte Fans",
+      "pi": "AscalonsQuestpack-Fans",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 9,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 9,
+      "no": "Deal with overzealous admirers."
+    },
+    {
+      "n": "Serpents of Abbathor: Original (unfinishable in BG1)",
+      "tp2n": "Originalversion",
+      "no": "BG2 conclusion was never implemented. Use Tweaked version instead",
+      "pi": "AscalonsQuestpack-SerpentsAbbathor",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 10,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 10,
+      "g": "serpents"
+    },
+    {
+      "n": "Serpents of Abbathor: Tweaked (finishable in BG1)",
+      "tp2n": "Veraenderte Version: Quest kann abgeschlossen werden.",
+      "pi": "AscalonsQuestpack-SerpentsAbbathor_Tweak",
+      "scn": "Die Schlangen Abbathors",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 11,
+      "g": "serpents",
+      "wc": 11,
+      "no": ""
+    },
+    {
+      "n": "A Halfling among the Eyeless",
+      "tp2n": "Ein Halbling unter Augenlosen",
+      "pi": "AscalonsQuestpack-HalflingEyeless",
+      "scn": "Die Schlangen Abbathors",
+      "wf": "AC_QUEST",
+      "wp": "AC_QUEST\\ac_quest.TP2",
+      "wc": 12,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 12,
+      "no": "A halfling quest involving the Unseeing Eye cult."
+    }
+  ],
+  "advisories": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS Smarter Mages may override mage encounter scripts. Install Questpack before SCS.",
+      "orderOnly": true,
+      "myComps": "#0 A Job Well-Paid",
+      "theirComps": "#6030 Smarter Mages",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

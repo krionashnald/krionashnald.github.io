@@ -1,0 +1,580 @@
+{
+  "i": 86,
+  "t": "RE",
+  "sv": 1,
+  "pfx": "RE",
+  "ord": 240,
+  "c": "QUEST MODS BG2",
+  "n": "Romantic Encounters",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2
+  },
+  "no": "Romantic Encounters BG2 Check the readme carefully and choose the components and versions you would want. Half of it it's about people doing the naughty, be sure about what you want here. You’ve been warned.Implicitly, there’s also paid sex, at least in BG1!Generally, install Romantic Encounters for BG1 & BG2 before most mods that add NPCs. More specifically…Install Framed after BG1 Romantic Encounters.Install Romantic Encounters for BG1 after EndlessBG1 and Jarl’s Adventure Pack.",
+  "ic": "Conceptual - Valygar Romance components clash with corthalaromantique and valygarfriendship, Blame the Moon references Cernd being a shapeshifter (odd with Totemic Cernd), Coran component clashes with coran (BG2)",
+  "conflicts": [
+    {
+      "with": "coran",
+      "withId": 141,
+      "severity": "partial",
+      "reason": "RE's Coran encounter extends C6CORAN dialogue (vanilla Ch6 cameo). Coran NPC mod replaces C6CORAN entirely, making the extension point invalid",
+      "myComps": "#10 A Night with Coran",
+      "theirComps": "#0 Main Component"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Romantic_Encounters_BG2/releases",
+  "a": "Kulyok, Ajnos, berelinde, Catseye, cmorgan, Domi, Evaine Dian, gertjanvh, jastey, magrat, Western Paladin, Aeryn, Cal Jones, Thimblerig",
+  "v": "v15",
+  "sum": "Adds 54 optional romantic and social encounter scenes throughout BG2. Short vignettes adding flavor: tavern flirtations, chance meetings, and intimate moments.",
+  "tags": [
+    "romance",
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Romantic_Encounters_BG2"
+  },
+  "dl": "https://github.com/Gibberlings3/Romantic_Encounters_BG2/releases",
+  "au": "jcompton, berelinde",
+  "co": [
+    {
+      "n": "Aerie, Anomen, Jaheira and Viconia React to Romantic Encounters",
+      "cn": 0,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "Aerie, Anomen, Jaheira, Viconia, Mazzy react to RE encounters. Can optionally end romances based on player choices. Safe with NPC mods using standard romance variables",
+      "tp2n": "Aerie, Anomen, Jaheira and Viconia React to Romantic Encounters"
+    },
+    {
+      "n": "Storms and Lightning, by berelinde (Weathermistress Ada, adult content)",
+      "cn": 1,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "no": "Weathermistress Ada encounter. Adult content",
+      "tp2n": "Storms and Lightning, by berelinde (Weathermistress Ada, adult content)"
+    },
+    {
+      "n": "Aimi's Magic, by berelinde (adult content)",
+      "cn": 2,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "tp2n": "Aimi's Magic, by berelinde (adult content)"
+    },
+    {
+      "n": "Anishai's Deft Hands, by cmorgan",
+      "cn": 3,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "tp2n": "Anishai's Deft Hands, by cmorgan"
+    },
+    {
+      "n": "An Evening with Aran, by Kulyok",
+      "cn": 4,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 4,
+      "wq": "exact",
+      "no": "Evening encounter with Aran Linvail",
+      "tp2n": "An Evening with Aran, by Kulyok"
+    },
+    {
+      "n": "Bjornin's Desire, by jastey (adult content)",
+      "cn": 5,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 5,
+      "wq": "exact",
+      "no": "Bjornin encounter in Government District. Adult content",
+      "tp2n": "Bjornin's Desire, by jastey (adult content)"
+    },
+    {
+      "n": "Bodhi's Allure, by Kulyok (adult content)",
+      "cn": 6,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 6,
+      "wq": "exact",
+      "no": "Bodhi seduction encounter. Adult content",
+      "tp2n": "Bodhi's Allure, by Kulyok (adult content)"
+    },
+    {
+      "n": "Trademeet with Guildmistress Busya, by magrat",
+      "cn": 7,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 7,
+      "wq": "exact",
+      "tp2n": "Trademeet with Guildmistress Busya, by magrat"
+    },
+    {
+      "n": "The Gambling Cambion, by Kulyok",
+      "cn": 8,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 8,
+      "wq": "exact",
+      "no": "Gambling Cambion in Watcher's Keep. Requires ToB",
+      "tp2n": "The Gambling Cambion, by Kulyok"
+    },
+    {
+      "n": "Chanelle's Gifts, by cmorgan (adult content)",
+      "cn": 9,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 9,
+      "wq": "exact",
+      "tp2n": "Chanelle's Gifts, by cmorgan (adult content)"
+    },
+    {
+      "n": "A Night with Coran, by Kulyok",
+      "cn": 10,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wq": "exact",
+      "no": "Romantic encounter with vanilla BG2 Coran (Ch6 cameo). Conflicts with Coran NPC mod which replaces C6Coran dialogue entirely",
+      "tp2n": "A Night with Coran, by magrat"
+    },
+    {
+      "n": "Cyric's Test, by Kulyok",
+      "cn": 11,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 11,
+      "wq": "exact",
+      "no": "Cyric's Test in Pocket Plane. Requires ToB",
+      "tp2n": "Cyric's Test, by Kulyok"
+    },
+    {
+      "n": "A Tryst with a Pirate Lord, by Kulyok (Desharik, adult content)",
+      "cn": 12,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "tp2n": "A Tryst with a Pirate Lord, by Kulyok (Desharik, adult content)"
+    },
+    {
+      "n": "A Lonely Dryad, by Kulyok (adult content)",
+      "cn": 13,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 13,
+      "wq": "exact",
+      "tp2n": "A Lonely Dryad, by Kulyok (adult content)"
+    },
+    {
+      "n": "Edwin's Softer Side, by Kulyok",
+      "cn": 14,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 14,
+      "wq": "exact",
+      "no": "Edwin reveals a softer side. Dialogue only",
+      "tp2n": "Edwin's Softer Side, by Kulyok"
+    },
+    {
+      "n": "Eldoth' Exploits, by Kulyok",
+      "cn": 15,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 15,
+      "wq": "exact",
+      "tp2n": "Eldoth' Exploits, by Kulyok"
+    },
+    {
+      "n": "Elhan's Expansion, by Kulyok",
+      "cn": 16,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 16,
+      "wq": "exact",
+      "tp2n": "Elhan's Expansion, by Kulyok"
+    },
+    {
+      "n": "Firkraag's Unsheathed Sword",
+      "cn": 17,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 17,
+      "wq": "exact",
+      "no": "Firkraag dialogue in human form (FIRKRA02). Safe with SCS Improved Firkraag which modifies FIRKRA01 combat",
+      "tp2n": "Firkraag's Unsheathed Sword"
+    },
+    {
+      "n": "Gaelan's Contract, by Evaine Dian",
+      "cn": 18,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 18,
+      "wq": "exact",
+      "tp2n": "Gaelan's Contract, by Evaine Dian"
+    },
+    {
+      "n": "A Walk with Garren Windspear, by Kulyok",
+      "cn": 19,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 19,
+      "wq": "exact",
+      "tp2n": "A Walk with Garren Windspear, by Kulyok"
+    },
+    {
+      "n": "Enter Haer'Dalis, by Kulyok",
+      "cn": 20,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "no": "Haer'Dalis encounter. Dialogue-focused",
+      "tp2n": "Enter Haer'Dalis, by Kulyok"
+    },
+    {
+      "n": "Hendak's Heart, by jastey",
+      "cn": 21,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 21,
+      "wq": "exact",
+      "no": "Hendak encounter in Copper Coronet",
+      "tp2n": "Hendak's Heart, by jastey"
+    },
+    {
+      "n": "Ilona, a Merchant's Daughter, by Kulyok",
+      "cn": 22,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 22,
+      "wq": "exact",
+      "tp2n": "Ilona, a Merchant's Daughter, by Kulyok"
+    },
+    {
+      "n": "Jarlaxle's Fascinations, by Catseye",
+      "cn": 23,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 23,
+      "wq": "exact",
+      "tp2n": "Jarlaxle's Fascinations, by Catseye"
+    },
+    {
+      "n": "A Night with Lais in Imnesvale, by Kulyok",
+      "cn": 24,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 24,
+      "wq": "exact",
+      "tp2n": "A Night with Lais in Imnesvale, by Kulyok"
+    },
+    {
+      "n": "Laran's Promise, by berelinde (adult content)",
+      "cn": 25,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 25,
+      "wq": "exact",
+      "tp2n": "Laran's Promise, by berelinde (adult content)"
+    },
+    {
+      "n": "The Love Song of Logan, Lord Coprith, by Ajnos",
+      "cn": 26,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 26,
+      "wq": "exact",
+      "tp2n": "The Love Song of Logan, Lord Coprith, by Ajnos"
+    },
+    {
+      "n": "Mekrath and Nymphology, by Kulyok",
+      "cn": 27,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 27,
+      "wq": "exact",
+      "tp2n": "Mekrath and Nymphology, by Kulyok"
+    },
+    {
+      "n": "Mira's Special Stock, by berelinde",
+      "cn": 28,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 28,
+      "wq": "exact",
+      "tp2n": "Mira's Special Stock, by berelinde"
+    },
+    {
+      "n": "Noober Returns, by cmorgan",
+      "cn": 29,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 29,
+      "wq": "exact",
+      "no": "Noober returns! Humor component",
+      "tp2n": "Noober Returns, by cmorgan"
+    },
+    {
+      "n": "Rebecca the Gypsy, by Kulyok",
+      "cn": 30,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 30,
+      "wq": "exact",
+      "tp2n": "Rebecca the Gypsy, by Kulyok"
+    },
+    {
+      "n": "Renal Bloodscalp: A Dangerous Affair, by cmorgan (adult content)",
+      "cn": 31,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 31,
+      "wq": "exact",
+      "tp2n": "Renal Bloodscalp: A Dangerous Affair, by cmorgan (adult content)"
+    },
+    {
+      "n": "Old Ribald's Speciality, by Evaine Dian",
+      "cn": 32,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 32,
+      "wq": "exact",
+      "tp2n": "Old Ribald's Speciality, by Evaine Dian"
+    },
+    {
+      "n": "Sir Ryan Trawl, by Kulyok",
+      "cn": 33,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 33,
+      "wq": "exact",
+      "tp2n": "Sir Ryan Trawl, by Kulyok"
+    },
+    {
+      "n": "Saemon, a Pirate, by Kulyok (adult content)",
+      "cn": 34,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 34,
+      "wq": "exact",
+      "tp2n": "Saemon, a Pirate, by Kulyok (adult content)"
+    },
+    {
+      "n": "Dreaming of Sendai, by Kulyok",
+      "cn": 35,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 35,
+      "wq": "exact",
+      "no": "Dream encounter with Sendai. Requires ToB",
+      "tp2n": "Dreaming of Sendai, by Kulyok"
+    },
+    {
+      "n": "Sheri the Bardess, by cmorgan (adult content)",
+      "cn": 36,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 36,
+      "wq": "exact",
+      "tp2n": "Sheri the Bardess, by cmorgan (adult content)"
+    },
+    {
+      "n": "Solaufein in the Lust Chambers, by jastey",
+      "cn": 37,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 37,
+      "wq": "exact",
+      "no": "Solaufein encounter in Ust Natha lust chambers",
+      "tp2n": "Solaufein in the Lust Chambers, by jastey"
+    },
+    {
+      "n": "Phaere's Reward, by berelinde (Talak, pleasure slave, adult content)",
+      "cn": 38,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 38,
+      "wq": "exact",
+      "tp2n": "Phaere's Reward, by berelinde (Talak, pleasure slave, adult content)"
+    },
+    {
+      "n": "Spell Research with Teos, by Kulyok",
+      "cn": 39,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 39,
+      "wq": "exact",
+      "tp2n": "Spell Research with Teos, by Kulyok"
+    },
+    {
+      "n": "A fling with Yoshimo, by Kulyok",
+      "cn": 40,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 40,
+      "wq": "exact",
+      "tp2n": "A fling with Yoshimo, by Kulyok"
+    },
+    {
+      "n": "Isabelle's Fears, by gertjanvh (adult content)",
+      "cn": 41,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 41,
+      "wq": "exact",
+      "tp2n": "Isabelle's Fears, by gertjanvh (adult content)"
+    },
+    {
+      "n": "Anne's Rescue, by gertjanvh (adult content)",
+      "cn": 42,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 42,
+      "wq": "exact",
+      "tp2n": "Anne's Rescue, by gertjanvh (adult content)"
+    },
+    {
+      "n": "The Queen, by Domi",
+      "cn": 43,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 43,
+      "wq": "exact",
+      "tp2n": "The Queen, by Domi"
+    },
+    {
+      "n": "Valygar Romance, by Kulyok",
+      "cn": 44,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 44,
+      "wq": "exact",
+      "no": "Valygar SoA romance arc (13+ talks). May run parallel to Corthala Romantique — two romance tracks possible",
+      "tp2n": "Valygar Romance, by Kulyok"
+    },
+    {
+      "n": "Rehearsal with Chandra, by Western Paladin",
+      "no": "reportedly more sensible than the dedicated romance mods",
+      "cn": 45,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 45,
+      "wq": "exact",
+      "tp2n": "Rehearsal with Chandra, by Western Paladin"
+    },
+    {
+      "n": "Goldander Blackenrock: After a Party, by magrat",
+      "cn": 46,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 46,
+      "wq": "exact",
+      "tp2n": "Goldander Blackenrock: After a Party, by magrat"
+    },
+    {
+      "n": "A Chat with Viekang, by magrat",
+      "cn": 47,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 47,
+      "wq": "exact",
+      "no": "Chat with Viekang in Saradush. Requires ToB",
+      "tp2n": "A Chat with Viekang, by magrat"
+    },
+    {
+      "n": "Bravery or Folly? by Aeryn (Sarevok, adult content)",
+      "cn": 48,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 48,
+      "wq": "exact",
+      "no": "Sarevok encounter. Adult content. Requires ToB",
+      "tp2n": "Bravery or Folly? by Aeryn (Sarevok, adult content)"
+    },
+    {
+      "n": "Blame the Moon, by Aeryn (Cernd)",
+      "cn": 49,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 49,
+      "wq": "exact",
+      "tp2n": "Blame the Moon, by Aeryn (Cernd)"
+    },
+    {
+      "n": "Cernick's Confession, by Cal Jones",
+      "cn": 50,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 50,
+      "wq": "exact",
+      "tp2n": "Cernick's Confession, by Cal Jones"
+    },
+    {
+      "n": "Valygar Romance ToB, by Kulyok",
+      "cn": 51,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 51,
+      "wq": "exact",
+      "no": "Valygar ToB continuation. Independent of cn:44 SoA romance",
+      "tp2n": "Valygar Romance ToB, by Kulyok"
+    },
+    {
+      "n": "Minsc. Takes. A Bath, by Thimblerig",
+      "cn": 52,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 52,
+      "wq": "exact",
+      "no": "",
+      "tp2n": "Minsc. Takes. A Bath, by Thimblerig"
+    },
+    {
+      "n": "Nizidramanii'yt's Vanity, by Thimblerig",
+      "cn": 53,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 53,
+      "wq": "exact",
+      "no": "Nizidramanii'yt vanity encounter. Humor by Thimblerig",
+      "tp2n": "Nizidramanii'yt's Vanity, by Thimblerig"
+    },
+    {
+      "n": "Date Night, by SisterVigilante",
+      "cn": 54,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wc": 54,
+      "wq": "exact",
+      "no": "",
+      "tp2n": "Date Night, by SisterVigilante"
+    },
+    {
+      "n": "Nizidramanii'yt's Vanity, by Thimblerig",
+      "cn": 55,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wq": "verified",
+      "tp2n": "Nizidramanii'yt's Vanity, by Thimblerig",
+      "gone": true
+    },
+    {
+      "n": "Date Night, by SisterVigilante",
+      "cn": 56,
+      "wf": "RE",
+      "wp": "RE\\SETUP-RE.TP2",
+      "wq": "verified",
+      "tp2n": "Date Night, by SisterVigilante",
+      "gone": true
+    }
+  ]
+}

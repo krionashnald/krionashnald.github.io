@@ -1,0 +1,384 @@
+{
+  "i": 174,
+  "t": "SkitiaNPCs",
+  "sv": 1,
+  "pfx": "X3",
+  "ord": 520,
+  "c": "NEW NPC MODS",
+  "n": "Skitia NPCs",
+  "cats": [
+    "NEW NPC MODS",
+    "KIT & CLASS MODS"
+  ],
+  "_legacy_ids": [
+    328
+  ],
+  "dependencies": [
+    {
+      "requires": "morpheus562skitpack",
+      "requiresId": 320,
+      "type": "hard",
+      "reason": "Skitia cn:11 (Vanguard) uses IDS_OF_SYMBOL for C0VNGD kit from Morpheus Kitpack cn:310",
+      "myComps": "#11 Vanguard"
+    },
+    {
+      "requires": "BardicWonders",
+      "requiresId": 325,
+      "type": "hard",
+      "reason": "Skitia cn:13 (Kapellmeister) uses IDS_OF_SYMBOL for C0_KAPELLMEISTER kit from Bardic Wonders cn:1011",
+      "myComps": "#13 Kapellmeister"
+    }
+  ],
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "INVISIBLE_BLADE",
+          "npc",
+          "Invisible Blade: Vienxay",
+          "Elven mage/thief with invisible blade technique and uncanny feint."
+        ],
+        [
+          "PRIEST_OF_HAELA",
+          "npc",
+          "Priest of Haela: Helga",
+          "Dwarven cleric of Haela Brightaxe. Lucky battle-maiden with flamebolt."
+        ],
+        [
+          "WARDEN",
+          "npc",
+          "Warden: Kale",
+          "Fighter/druid warden with protective ward abilities."
+        ],
+        [
+          "LOREKEEPER",
+          "npc",
+          "Lorekeeper: Recorder",
+          "Bard lorekeeper with sonata performance abilities."
+        ],
+        [
+          "SHADOWMAGE",
+          "npc",
+          "Shadowmage: Emily",
+          "Mage specializing in shadow magic with shadow jump and displacement."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "skitia_emily",
+          "portraits/skitianpcs/x3emi.png",
+          "bg2"
+        ],
+        [
+          "skitia_helga",
+          "portraits/skitianpcs/x3hel.png",
+          "bg2"
+        ],
+        [
+          "skitia_kale",
+          "portraits/skitianpcs/x3kal.png",
+          "bg2"
+        ],
+        [
+          "skitia_rebecca",
+          "portraits/skitianpcs/x3reb.png",
+          "bg2"
+        ],
+        [
+          "skitia_isaac",
+          "portraits/skitianpcs/isaac.png",
+          "bg2"
+        ],
+        [
+          "vienxay",
+          "portraits/skitianpcs/vienxay.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Skitia/SkitiaNPCs",
+  "a": "Skitia",
+  "v": "1.1",
+  "sum": "Adds multiple joinable NPCs by Skitia across BG1 and BG2, each with unique classes, personalities, and quest content.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Skitia",
+    "r": "SkitiaNPCs"
+  },
+  "au": "Skitia",
+  "dl": "https://github.com/Skitia/SkitiaNPCs",
+  "no": "Adds 6 joinable NPCs: Helga (cleric/ranger), Kale (fighter/thief), Vienxay (elven mage), Emily (ranger), Recorder (bard), and Isaac (thief). Includes alternate class choices, portrait options, romance themes, and Artisan's Kitpack integration. English only.",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "INVISIBLE_BLADE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Elven mage/thief with invisible blade technique and uncanny feint."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "PRIEST_OF_HAELA": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Dwarven cleric of Haela Brightaxe. Lucky battle-maiden with flamebolt."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "WARDEN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Fighter/druid warden with protective ward abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "LOREKEEPER": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Bard lorekeeper with sonata performance abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      },
+      "SHADOWMAGE": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Mage specializing in shadow magic with shadow jump and displacement."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "co": [
+    {
+      "n": "Skitia NPCs for Baldur's Gate 2",
+      "cn": 0,
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "no": "Main component. Adds Helga, Kale, Vienxay, Emily, Recorder, and Isaac as joinable NPCs.",
+      "tp2n": "Skitia NPCs for Baldur's Gate 2"
+    },
+    {
+      "n": "Priest of Haelga (Fighter Multi-class)",
+      "cn": 1,
+      "g": "helga_class",
+      "scn": "Helga Alternate Class: Fighter/Priest of Haelga",
+      "grn": "Alternate Kits (I.E.: Kale Vanguard, Recorder Keppelmeister, Helga F/C)",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Priest of Haelga (Fighter Multi-class)"
+    },
+    {
+      "n": "Romance Theme Music",
+      "cn": 2,
+      "g": "romance_theme",
+      "scn": "Skitia NPCs: Romance Theme Soundtrack",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Romance Theme Music"
+    },
+    {
+      "n": "No Romance Theme Music",
+      "cn": 3,
+      "g": "romance_theme",
+      "scn": "Skitia NPCs: Romance Theme Soundtrack",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "No Romance Theme Music"
+    },
+    {
+      "n": "Helga Alt Portrait By Acifer",
+      "cn": 4,
+      "g": "helga_portrait",
+      "scn": "Helga Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Helga Alt Portrait By Acifer"
+    },
+    {
+      "n": "Helga NWN Portrait",
+      "cn": 5,
+      "g": "helga_portrait",
+      "scn": "Helga Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Helga NWN Portrait"
+    },
+    {
+      "n": "Kale Alt Portrait By Acifer",
+      "cn": 6,
+      "g": "kale_portrait",
+      "scn": "Kale Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Kale Alt Portrait By Acifer"
+    },
+    {
+      "n": "Kale NWN Portrait",
+      "cn": 7,
+      "g": "kale_portrait",
+      "scn": "Kale Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Kale NWN Portrait"
+    },
+    {
+      "n": "Vienxay Default Portrait by Crisshasart",
+      "cn": 8,
+      "g": "vienxay_portrait",
+      "scn": "Vienxay Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Vienxay Default Portrait by Crisshasart"
+    },
+    {
+      "n": "Vienxay Alt Portrait by Aeries1986",
+      "cn": 9,
+      "g": "vienxay_portrait",
+      "scn": "Vienxay Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Vienxay Alt Portrait by Aeries1986"
+    },
+    {
+      "n": "Vienxay NWN Portrait",
+      "cn": 10,
+      "g": "vienxay_portrait",
+      "scn": "Vienxay Portrait",
+      "grn": "Alternative Portraits",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Vienxay NWN Portrait"
+    },
+    {
+      "n": "Artisan's Kitpack: Invisible Blade for Isaac",
+      "cn": 11,
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "no": "Requires Artisan's Kitpack Invisible Blade kit to be installed.",
+      "tp2n": "Vanguard (Requires Vanguard Kit to be installed)",
+      "scn": "Choose an alternate class for Kale?",
+      "grn": "Alternate Kits (I.E.: Kale Vanguard, Recorder Keppelmeister, Helga F/C)"
+    },
+    {
+      "n": "Vanguard class for Kale",
+      "cn": 12,
+      "g": "kale_class",
+      "scn": "Choose an alternate class for Kale?",
+      "grn": "Alternate Kits (I.E.: Kale Vanguard, Recorder Keppelmeister, Helga F/C)",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "no": "Requires Vanguard Kit to be installed.",
+      "tp2n": "Barbarian"
+    },
+    {
+      "n": "Barbarian class for Kale",
+      "cn": 13,
+      "g": "kale_class",
+      "scn": "Choose an alternate class for Recorder?",
+      "grn": "Alternate Kits (I.E.: Kale Vanguard, Recorder Keppelmeister, Helga F/C)",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Kapellmeister (Requires the Kapellmeister Kit to be installed)"
+    },
+    {
+      "n": "Kapellmeister class for Recorder",
+      "cn": 14,
+      "g": "recorder_class",
+      "scn": "Lorekeeper tweak: Extend Mmnemonic Retrieval to match IWD Spell Progression?",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "no": "Requires the Kapellmeister Kit to be installed.",
+      "tp2n": "IWD Progression"
+    },
+    {
+      "n": "Lorekeeper: IWD Progression",
+      "cn": 15,
+      "g": "lorekeeper",
+      "scn": "Lorekeeper tweak: Extend Mmnemonic Retrieval to match IWD Spell Progression?",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "tp2n": "Default Spell"
+    },
+    {
+      "n": "Lorekeeper: Default Spell",
+      "cn": 16,
+      "g": "lorekeeper",
+      "wf": "SkitiaNPCs",
+      "wp": "SkitiaNPCs\\Setup-SkitiaNPCs.tp2",
+      "wq": "verified",
+      "gone": true
+    }
+  ]
+}

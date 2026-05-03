@@ -1,0 +1,307 @@
+{
+  "i": 37,
+  "t": "imoen_forever",
+  "sv": 1,
+  "ord": 50,
+  "c": "QUEST MODS BG1",
+  "n": "Imoen 4 Ever",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "pl": 2,
+    "ru": 3,
+    "zh-cn": 4
+  },
+  "cats": [
+    "QUEST MODS BG1",
+    "QUEST MODS ToB"
+  ],
+  "no": "Imoen 4 Ever - SoD components I4E SoD components always early but after Jastey's SoD mods",
+  "ic": "Imoen Romance (immersion), imoenisstone",
+  "_legacy_ids": [
+    118
+  ],
+  "conflicts": [
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "partial",
+      "reason": "Immersion conflict between the two Imoen mods"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Complementary. JTweaks cn:370 applies small bug fixes to Imoen scripts (XP sync, spell states). Imoen Forever adds major new content throughout SoD. Both use EXTEND on Imoen scripts — JT fixes go on top of I4E content. Install JTweaks after Imoen Forever.",
+      "theirComps": "#370 Fix Imoen script",
+      "myComps": "#0 Imoen Forever",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "14": [
+        [
+          "imoen",
+          "portraits/imoen4ever/imoen.png",
+          "all"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Imoen4Ever/releases",
+  "a": "jastey",
+  "v": "v11.6",
+  "sum": "Keeps Imoen as an active party member throughout SoD and into BG2, with new dialogue. Prevents the story from forcibly removing her.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "rec": {
+    "goes_with": [
+      "Alternatives",
+      "Ascension",
+      "BG1 NPC Project"
+    ],
+    "tip": "Keeps Imoen available through SoD and early SoA. Great for story continuity in EET."
+  },
+  "eet_compat": {
+    "ver": "v1",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Imoen4Ever"
+  },
+  "dl": "https://github.com/Gibberlings3/Imoen4Ever/releases",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Imoen 4 Ever in BGII: Imoen Returns after Talking to Gaelan in Chapter 2",
+      "pi": "Imoen4Ever-BGII-ImoenReturnsChapter2",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 0,
+      "wq": "known_folder",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "cat": "QUEST MODS ToB",
+      "no": "Imoen returns after talking to Gaelan in BG2 Chapter 2.",
+      "tp2n": "Imoen 4 Ever in BGII: Imoen Returns after Talking to Gaelan in Chapter 2"
+    },
+    {
+      "n": "Imoen 4 Ever in BGII: Give Imoen Dialogue Content in SoA",
+      "pi": "Imoen4Ever-BGII-DialoguesContentSoA",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 1,
+      "wq": "known_folder",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1,
+      "cat": "QUEST MODS ToB",
+      "no": "Gives Imoen new dialogue content throughout SoA.",
+      "tp2n": "Imoen 4 Ever in BGII: Give Imoen Dialogue Content in SoA"
+    },
+    {
+      "n": "Imoen 4 Ever in BGII: Yoshimo Comes to Brynnlaw",
+      "cn": 2,
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\setup-imoen_forever.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Imoen 4 Ever in BGII: Yoshimo Comes to Brynnlaw",
+      "pi": "Imoen4Ever-BGII-YoshimoBrynnlaw",
+      "no": "Makes Yoshimo appear at Brynnlaw only if Imoen is in party. Requires BG2-era game (bg2ee/eet/bgt/tob) and Imoen 4 Ever main component."
+    },
+    {
+      "n": "Imoen 4 Ever in BGII: Give Imoen Protection Spell in Chapters 2 & 3",
+      "pi": "Imoen4Ever-BGII-YoshimoBrynnlaw",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 3,
+      "wq": "known_folder",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 3,
+      "cat": "QUEST MODS ToB",
+      "no": "Imoen gets a protection spell during Chapters 2 and 3.",
+      "tp2n": "Imoen 4 Ever in BGII: Give Imoen Protection Spell in Chapters 2 & 3"
+    },
+    {
+      "n": "Imoen 4 Ever in BGII: Compatibility with Alternatives and Saerileth",
+      "pi": "Imoen4Ever-BGII-Compatibility_Saerileth_Alternatives",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 9,
+      "wq": "known_folder",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 9,
+      "no": "Requires Alternatives mod installed. Crossmod compatibility component — skip if not using Alternatives",
+      "cat": "QUEST MODS ToB",
+      "tp2n": "Imoen 4 Ever in BGII: Compatibility with Alternatives and Saerileth"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Imoen Remains in Group in Korlasz' Dungeon",
+      "pi": "Imoen4Ever-SoD-ImoeninGroupKorlaszDungeon",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 10,
+      "wq": "known_folder",
+      "cn": 10,
+      "no": "Incompatible with EndlessBG1 Korlasz Dungeon in BG1. Exclude when using EndlessBG1.",
+      "tp2n": "Imoen 4 Ever in SoD: Imoen Remains in Group in Korlasz' Dungeon"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)",
+      "no": "Incompatible with Reflections of Destiny's Back to the Future component",
+      "pi": "Imoen4Ever-SoD-ImoenReturnsCamp",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 11,
+      "wq": "known_folder",
+      "cn": 11,
+      "tp2n": "Imoen 4 Ever in SoD: Imoen Returns to PC in First Coalition Camp (bd1000)"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Imoen Gives Better Reason to Stay Behind in Palace",
+      "pi": "Imoen4Ever-SoD-BetterReasonPalace",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 12,
+      "wq": "known_folder",
+      "cn": 12,
+      "no": "Imoen gives a better reason for staying behind in SoD palace attack.",
+      "tp2n": "Imoen 4 Ever in SoD: Imoen Gives Better Reason to Stay Behind in Palace"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Play Cutscene With Imoen and Duke Jannath",
+      "pi": "Imoen4Ever-SoD-CutesceneImoenDukeJannath",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 13,
+      "wq": "known_folder",
+      "cn": 13,
+      "no": "Extended cutscene with Imoen and Duke Jannath in SoD.",
+      "tp2n": "Imoen 4 Ever in SoD: Play Cutscene With Imoen and Duke Jannath"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Give Imoen Dialogue Content in Chapters 8-12",
+      "pi": "Imoen4Ever-SoD-DialoguesContentChapters8to12",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 14,
+      "wq": "known_folder",
+      "cn": 14,
+      "no": "Imoen has new dialogue throughout SoD chapters 8-12. REQUIRES BG:EE with SoD DLC installed (BDIMOENB.DLG + BDBANTER.2DA must be in chitin.key). Will skip with 'BDIMOENB.DLG not in chitin.key' error if SoD files are missing from the base game install.",
+      "tp2n": "Imoen 4 Ever in SoD: Give Imoen Dialogue Content in Chapters 8-12"
+    },
+    {
+      "n": "Imoen at the End of the Game Should be the One that Was in Party (SoD Only)",
+      "pi": "Imoen4Ever-SoD-ImoenSameAtEnd",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 15,
+      "wq": "known_folder",
+      "cn": 15,
+      "no": "SoD only component. Not needed for EET installs.",
+      "tp2n": "Imoen at the End of the Game Should be the One that Was in Party (SoD Only)"
+    },
+    {
+      "n": "Use Imoen's SoD Portrait after Korlasz' Crypt",
+      "no": "v Unify Imoen's portrait",
+      "pi": "Imoen4Ever-SoD-UnifyPortrait_SoDPortrait",
+      "scn": "Imoen 4 Ever in SoD: Unify Imoen's Portrait",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 16,
+      "wq": "known_folder",
+      "cn": 16,
+      "g": "imoen_sod_portrait",
+      "tp2n": "Use Imoen's SoD Portrait after Korlasz' Crypt"
+    },
+    {
+      "n": "Use Imoen's BG1 Portrait in all of SoD",
+      "pi": "Imoen4Ever-SoD-UnifyPortrait_BG1Portrait",
+      "scn": "Imoen 4 Ever in SoD: Unify Imoen's Portrait",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 17,
+      "wq": "known_folder",
+      "cn": 17,
+      "g": "imoen_sod_portrait",
+      "no": "Imoen uses her BG1 portrait throughout all of SoD.",
+      "tp2n": "Use Imoen's BG1 Portrait in all of SoD"
+    },
+    {
+      "n": "Imoen's chest moves with the campaign, too",
+      "pi": "Imoen4Ever-SoD-MoveImoensChest",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 20,
+      "wq": "name_match",
+      "cn": 20,
+      "no": "Imoen's storage chest follows the party across campaigns.",
+      "tp2n": "Imoen's chest moves with the campaign, too"
+    },
+    {
+      "n": "Imoen 4 Ever in SoD: Give Imoen PID during chapters 8 to 12",
+      "pi": "Imoen4Ever-SoD-PIDChapters8to12",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 25,
+      "wq": "known_folder",
+      "cn": 25,
+      "no": "Imoen has player-initiated dialogue in SoD chapters 8-12.",
+      "tp2n": "Imoen 4 Ever in SoD: Give Imoen PID during chapters 8 to 12"
+    },
+    {
+      "n": "Imoen's Alternate Portrait from Acifer",
+      "pi": "Imoen4Ever-Imoen_Alternate_Portrait_Acifer",
+      "wf": "imoen_forever",
+      "wp": "imoen_forever\\IMOEN_FOREVER.TP2",
+      "wc": 30,
+      "wq": "known_folder",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 30,
+      "cat": "QUEST MODS ToB",
+      "no": "Alternative portrait for Imoen by Acifer.",
+      "tp2n": "Imoen's Alternate Portrait from Acifer"
+    }
+  ]
+}

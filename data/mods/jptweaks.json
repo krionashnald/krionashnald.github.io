@@ -1,0 +1,357 @@
+{
+  "i": 801,
+  "t": "jptweaks",
+  "sv": 1,
+  "ord": 560,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Difficulty Tweaks",
+  "u": "https://github.com/JayP236/bg-2-ee_difficulty_tweaks",
+  "a": "jaypee",
+  "sum": "A series of options designed to make the game more difficult, such as reducing the number of items in stores, preventing players from changing areas during a fight, limiting rest to inns and enclos...",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "jaypee",
+  "dl": "https://github.com/JayP236/bg-2-ee_difficulty_tweaks",
+  "no": "Difficulty-increasing tweaks: remove protection scrolls/potions/ammo/magic items from stores, decrease stock, increase prices, restrict resting to inns, block companions, and more. Many choose-one subcomponent groups. English only. No external conflicts.",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Remove Protection from Undead Scrolls",
+      "cn": 0,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "g": "Remove Protection Scrolls from Stores"
+    },
+    {
+      "n": "Remove Protection from Undead and Protection from Magic Scrolls",
+      "cn": 1,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "g": "Remove Protection Scrolls from Stores"
+    },
+    {
+      "n": "Remove All Green Protection Scrolls",
+      "cn": 2,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "g": "Remove Protection Scrolls from Stores"
+    },
+    {
+      "n": "Remove Wands from Stores",
+      "cn": 3,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove Spell Scrolls from Stores",
+      "cn": 4,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 4,
+      "wq": "verified"
+    },
+    {
+      "n": "Remove All Potions Except Potions of (Extra/Superior) Healing, Antidotes and Elixirs of Health",
+      "cn": 5,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "g": "Remove Potions from Stores"
+    },
+    {
+      "n": "Remove All Potions",
+      "cn": 6,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "g": "Remove Potions from Stores"
+    },
+    {
+      "n": "Remove Arrows of Dispelling and Detonation",
+      "cn": 7,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "g": "Remove Magical Ammo from Stores"
+    },
+    {
+      "n": "Remove All Magical Ammo",
+      "cn": 8,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "g": "Remove Magical Ammo from Stores"
+    },
+    {
+      "n": "Remove All Magical Ammo and Magical Throwing Weapons",
+      "cn": 9,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "g": "Remove Magical Ammo from Stores"
+    },
+    {
+      "n": "Remove Generic (+1, +2...) Enchanted Weapons and Armor from Stores",
+      "cn": 10,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "g": "Remove Magical Items from Stores"
+    },
+    {
+      "n": "Remove All Enchanted Weapons and Armor from Stores",
+      "cn": 11,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "g": "Remove Magical Items from Stores"
+    },
+    {
+      "n": "Remove All Magical Items from Stores",
+      "cn": 12,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "g": "Remove Magical Items from Stores"
+    },
+    {
+      "n": "Make Unlimited Supply of Items Limited",
+      "cn": 13,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 13,
+      "wq": "verified"
+    },
+    {
+      "n": "Decrease by Factor 2",
+      "cn": 14,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "g": "Decrease Amount of Items in Stock"
+    },
+    {
+      "n": "Decrease by Factor 5",
+      "cn": 15,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "g": "Decrease Amount of Items in Stock"
+    },
+    {
+      "n": "Decrease by Factor 10",
+      "cn": 16,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "g": "Decrease Amount of Items in Stock"
+    },
+    {
+      "n": "Increase by 50%",
+      "cn": 17,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 17,
+      "wq": "verified",
+      "g": "Increase Store Sell Markup"
+    },
+    {
+      "n": "Increase by 100%",
+      "cn": 18,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 18,
+      "wq": "verified",
+      "g": "Increase Store Sell Markup"
+    },
+    {
+      "n": "Increase by 200%",
+      "cn": 19,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 19,
+      "wq": "verified",
+      "g": "Increase Store Sell Markup"
+    },
+    {
+      "n": "Increase by 50%",
+      "cn": 20,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "Increase Price of Services and Drinks"
+    },
+    {
+      "n": "Increase by 100%",
+      "cn": 21,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "g": "Increase Price of Services and Drinks"
+    },
+    {
+      "n": "Increase by 200%",
+      "cn": 22,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "g": "Increase Price of Services and Drinks"
+    },
+    {
+      "n": "Increase by Factor 10",
+      "cn": 23,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 23,
+      "wq": "verified",
+      "g": "Increase Inn Room Price"
+    },
+    {
+      "n": "Increase by Factor 50",
+      "cn": 24,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 24,
+      "wq": "verified",
+      "g": "Increase Inn Room Price"
+    },
+    {
+      "n": "Increase by Factor 100",
+      "cn": 25,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 25,
+      "wq": "verified",
+      "g": "Increase Inn Room Price"
+    },
+    {
+      "n": "Remove All Items except Item Containers",
+      "cn": 26,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 26,
+      "wq": "verified",
+      "g": "Remove All Items from Stores"
+    },
+    {
+      "n": "Remove All Items",
+      "cn": 27,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 27,
+      "wq": "verified",
+      "g": "Remove All Items from Stores"
+    },
+    {
+      "n": "No Recharging of Items with Limited Charges",
+      "cn": 28,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 28,
+      "wq": "verified"
+    },
+    {
+      "n": "No Traveling during Combat",
+      "cn": 29,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 29,
+      "wq": "verified"
+    },
+    {
+      "n": "No Wild Camping in Dungeons",
+      "cn": 30,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "g": "No Wild Camping"
+    },
+    {
+      "n": "No Wild Camping in all Areas",
+      "cn": 31,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 31,
+      "wq": "verified",
+      "g": "No Wild Camping"
+    },
+    {
+      "n": "Make Potions of Invisibility and the Sandthief's Ring Limited to Thiefs",
+      "cn": 32,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 32,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Drizzt's Items Unobtainable",
+      "cn": 33,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 33,
+      "wq": "verified"
+    },
+    {
+      "n": "Make Korax the Ghoul Turn Hostile if Injured",
+      "cn": 34,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 34,
+      "wq": "verified"
+    },
+    {
+      "n": "Companions Stay in the Same Area",
+      "cn": 35,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 35,
+      "wq": "verified",
+      "g": "Block All Companions from Joining the Party"
+    },
+    {
+      "n": "Companions Escape the Area",
+      "cn": 36,
+      "wf": "jptweaks",
+      "wp": "jptweaks\\jptweaks.tp2",
+      "wc": 36,
+      "wq": "verified",
+      "g": "Block All Companions from Joining the Party"
+    }
+  ],
+  "gh": {
+    "o": "JayP236",
+    "r": "bg-2-ee_difficulty_tweaks"
+  }
+}

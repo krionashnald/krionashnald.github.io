@@ -1,0 +1,723 @@
+{
+  "i": 381,
+  "t": "tb#tweaks",
+  "sv": 1,
+  "pfx": "TB#",
+  "ord": 260,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "TB Tweaks",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "de": 2,
+    "es": 3
+  },
+  "no": "TB#Tweaks by the_bigg. Spell fixes, wish tweaks, 3E stat conversions, druid metal, stat training, difficulty system. Partially EE-compatible — WSPATCK, Backstab Visibility, and Mage Spellbook components require original engine.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "APR progression and/or Grandmastery rule conflicts",
+      "myComps": "#3550, #3600",
+      "theirComps": "#2210, #2211, #2440",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Both modify Nature's Beauty blindness duration. tb#tweaks sets 8 hours, jtweaks sets 11 years. Choose one",
+      "theirComps": "#360 Nature's Beauty blindness can be cured"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "Redundant — SR cn:0 rewrites all spell files including SPPR704 (Nature's Beauty), Imprisonment, and Flesh to Stone/Petrification spells. TB cn:100 modifies sppr704.spl, cn:150 modifies imprisonment spells, cn:200 patches ALL .spl files for petrification effects. TB does NOT detect SR. If SR installed first, TB patches SR-modified spells (harmless but pointless). If TB installed first, SR overwrites TB's changes entirely. Removed cn:100/150/200 .",
+      "myComps": "#100 Nature's Beauty Tweak #150 Imprisonment Fix #200 Flesh to Stone Fix",
+      "theirComps": "#0 Spell Revisions",
+      "source": "SR replaces SPPR/SPWI files wholesale; TB cn:200 uses COPY_EXISTING_REGEXP on all .spl; TB has no SR detection, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify druid equipment restrictions",
+      "myComps": "#7000 Druids can wear metal items",
+      "theirComps": "#2430 #2431 Druid Equipment restrictions"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "TB 3E stat components (cn:4000-6500) modify strmod/dexmod/hpconbon.2da using 3E formulas. ToF cn:80000 (Ability Score Modifiers) also rewrites these same 2DAs. Last installed wins — ToF overwrites TB. TB cn:7000 (Druids metal) modifies item usability flags — no overlap with ToF cn:40000 (class/race requirement 2DAs, different files). TB cn:7550 (Gain Stats) modifies stat allocation at chargen — no overlap with ToF stat modifier tables. Install TB before ToF.",
+      "myComps": "#4000 #4500 #5000 #6000 #6500 3E Stats #7000 Druids metal #7550 Gain Stats",
+      "theirComps": "#40000 Class/race restrictions #40610 Druid tables #80000 Ability scores",
+      "orderOnly": true,
+      "source": "TB 3rd_ed_str/dex/con.tpa rewrite strmod/dexmod/hpconbon; ToF ability_scores.tpa rewrites same files; different mechanisms for cn:7000/40000, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 248,
+      "severity": "soft",
+      "reason": "tb#tweaks 3E stat changes and druid equipment overlap with SubtleD Stat Overhauls",
+      "myComps": "#4000 #4500 #5000 #6000 #6500 3E Stats #7000 Druids wear metal",
+      "theirComps": "#100 Ability Score #110 Bonus Spell Slots #130 2H Strength #200 XP Tables"
+    },
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "Removing stat requirements vs IR rebalanced items. IR main (cn:0) No conflict.",
+      "myComps": "#3000 No stats requirements for items",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "mih_tweaks",
+      "withId": 378,
+      "severity": "soft",
+      "reason": "Both rewrite stat modifier 2DA files. Last installed wins.",
+      "myComps": "#4000 3E Strength #4500 3E Dexterity #5000 3E Constitution",
+      "theirComps": "#7 Revised Strength #8 Revised Dexterity #9 Revised Constitution"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Improved Difficulty System.*Serious dialogue\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Intermittent failure — Windows file locking (EACCES) on baldur.bcs during rollback prevents clean uninstall. The component compiles impdiff_serious.d and extends baldur.bcs. Different code path from impdiff.tpa (which has the BCS guard).",
+      "workaround": "Retry the install. If persistent, close other programs that may lock BCS files (antivirus, file indexers). May succeed on a clean retry.",
+      "user_action": "check-docs",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "http://www.shsforums.net/topic/60984-help-with-",
+  "a": "the bigg",
+  "v": "TB#Tweaks, V 2.99",
+  "sum": "26 tweaks covering convenience features, rule changes, and quality-of-life improvements. Individually selectable.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "http://www.shsforums.net/topic/60984-help-with-",
+  "au": "the bigg",
+  "co": [
+    {
+      "n": "Deprecated: original Nature's Beauty component",
+      "cn": 0,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original Imprisonment component",
+      "cn": 1,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original Drop Weapons in Panic component",
+      "cn": 2,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original DWIP + Imprisonment combined component",
+      "cn": 3,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original Unlimited Wish component",
+      "cn": 4,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original Cheesy Wish component",
+      "cn": 5,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Deprecated: original Improved Difficulty component",
+      "cn": 6,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\tb#tweaks.tp2",
+      "wq": "verified",
+      "tp2n": "Deprecated component.",
+      "dep": "v18 author-marked DEPRECATED @2 (placeholder from renumbering; still selectable but silently does nothing)"
+    },
+    {
+      "n": "Nature's Beauty Tweak.",
+      "cn": 100,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 100,
+      "wq": "verified",
+      "no": "Fixes Nature's Beauty spell to use 8-hour blindness. Redundant with Spell Revisions.",
+      "tp2n": "Nature's Beauty Tweak."
+    },
+    {
+      "n": "Imprisonment Fix.",
+      "no": "Changes Imprisonment to permanent maze instead of removing character. Redundant with Spell Revisions.",
+      "cn": 150,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 150,
+      "wq": "verified",
+      "tp2n": "Imprisonment Fix."
+    },
+    {
+      "n": "Flesh to Stone Fix.",
+      "no": "Patches all .spl files for petrification effects. Redundant with Spell Revisions.",
+      "cn": 200,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 200,
+      "wq": "verified",
+      "tp2n": "Flesh to Stone Fix."
+    },
+    {
+      "n": "Drop Weapons in Panic Effect Removal.",
+      "cn": 300,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 300,
+      "wq": "verified",
+      "no": "Removes the weapon-dropping side effect from Panic/Horror spells.",
+      "tp2n": "Drop Weapons in Panic Effect Removal."
+    },
+    {
+      "n": "Wishes Fix",
+      "cn": 1000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 1000,
+      "wq": "verified",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author.",
+      "tp2n": "Unlimited Limited Wish & Wish."
+    },
+    {
+      "n": "Wishes: Convenient Wish",
+      "cn": 1200,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 1200,
+      "wq": "verified",
+      "g": "wishes",
+      "scn": "More cheating Wishes:",
+      "no": "Simplifies Wish spell dialogue. Requires ToB (data/25spells.bif).",
+      "tp2n": "Convenient Wish."
+    },
+    {
+      "n": "Wishes: Cheesy Limited Wish & Wish",
+      "cn": 1250,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 1250,
+      "wq": "verified",
+      "g": "wishes",
+      "scn": "More cheating Wishes:",
+      "no": "Cheesy wish — all wishes available regardless of stats. Requires ToB.",
+      "tp2n": "Cheesy Limited Wish & Wish."
+    },
+    {
+      "n": "Cheesy Limited Wish.",
+      "cn": 1400,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 1400,
+      "wq": "verified",
+      "no": "Cheesy Limited Wish for SoA only. FORBID_FILE data/25spells.bif (SoA without ToB).",
+      "tp2n": "Cheesy Limited Wish."
+    },
+    {
+      "n": "Difficulty System: Funny dialogue",
+      "no": "v Improved difficulty System",
+      "cn": 2000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 2000,
+      "wq": "verified",
+      "g": "difficulty_dlg",
+      "scn": "Improved Difficulty System.",
+      "tp2n": "Funny dialogue."
+    },
+    {
+      "n": "Difficulty System: Serious dialogue (recommended)",
+      "cn": 2050,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 2050,
+      "wq": "verified",
+      "g": "difficulty_dlg",
+      "scn": "Improved Difficulty System.",
+      "no": "Intermittent failure — Windows file locking (EACCES) during rollback prevents clean uninstall. The component compiles impdiff_serious.d and extends baldur.bcs. Different code path from impdiff.tpa (which has the BCS guard). May succeed on retry.",
+      "tp2n": "Serious dialogue (recommended)."
+    },
+    {
+      "n": "Faster Romances: Light",
+      "cn": 2500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 2500,
+      "wq": "verified",
+      "g": "faster_romances",
+      "scn": "Faster Romances:",
+      "tp2n": "Light."
+    },
+    {
+      "n": "Faster Romances: Medium",
+      "cn": 2550,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 2550,
+      "wq": "verified",
+      "g": "faster_romances",
+      "scn": "Faster Romances:",
+      "tp2n": "Medium."
+    },
+    {
+      "n": "Faster Romances: Heavy",
+      "cn": 2600,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 2600,
+      "wq": "verified",
+      "g": "faster_romances",
+      "scn": "Faster Romances:",
+      "tp2n": "Heavy."
+    },
+    {
+      "n": "No stats requirements for items.",
+      "no": "Removes stat requirements from items. Partially working on EE (original items only, not mod-added).",
+      "cn": 3000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 3000,
+      "wq": "verified",
+      "tp2n": "No stats requirements for items."
+    },
+    {
+      "n": "WSPATCK for all: Always",
+      "cn": 3500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 3500,
+      "wq": "verified",
+      "g": "wspatck",
+      "scn": "WSPATCK for all (Taimon)",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~baldur.exe~ (original engine). Will not install on EET.",
+      "tp2n": "Always"
+    },
+    {
+      "n": "WSPATCK for all: Only for ** and up",
+      "cn": 3550,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 3550,
+      "wq": "verified",
+      "g": "wspatck",
+      "scn": "WSPATCK for all (Taimon)",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~baldur.exe~ (original engine). Will not install on EET.",
+      "tp2n": "Only for ** and up"
+    },
+    {
+      "n": "WSPATCK for all: Everybody gets ApR from proficiency, only Warriors from level",
+      "cn": 3600,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 3600,
+      "wq": "verified",
+      "g": "wspatck",
+      "scn": "WSPATCK for all (Taimon)",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~baldur.exe~ (original engine). Will not install on EET.",
+      "tp2n": "Everybody gets ApR from proficiency, only Warriors from level"
+    },
+    {
+      "n": "3rd edition style Strength",
+      "cn": 4000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 4000,
+      "wq": "verified",
+      "no": "Modifies strmod.2da with 3E-style strength bonuses. OVERWRITTEN by ToF cn:80000 (Ability Score Modifiers) if installed after.",
+      "tp2n": "3rd edition style Strength"
+    },
+    {
+      "n": "3rd edition style Dexterity",
+      "cn": 4500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 4500,
+      "wq": "verified",
+      "no": "Modifies dexmod.2da with 3E-style dexterity bonuses. OVERWRITTEN by ToF cn:80000 if installed after.",
+      "tp2n": "3rd edition style Dexterity"
+    },
+    {
+      "n": "3rd edition style Constitution",
+      "cn": 5000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 5000,
+      "wq": "verified",
+      "no": "Modifies hpconbon.2da with 3E-style constitution bonuses. OVERWRITTEN by ToF cn:80000 if installed after. Also conflicts with Bart_Tweaks cn:3040.",
+      "tp2n": "3rd edition style Constitution"
+    },
+    {
+      "n": "3rd edition style Intelligence",
+      "cn": 5500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 5500,
+      "wq": "verified",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Modifies intmod.2da.",
+      "tp2n": "3rd edition style Intelligence"
+    },
+    {
+      "n": "3rd edition style Wisdom",
+      "cn": 6000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 6000,
+      "wq": "verified",
+      "no": "Modifies mxsplwis.2da with 3E-style wisdom bonuses. OVERWRITTEN by ToF cn:80000 if installed after.",
+      "tp2n": "3rd edition style Wisdom"
+    },
+    {
+      "n": "3rd edition style Charisma",
+      "cn": 6500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 6500,
+      "wq": "verified",
+      "no": "Modifies chrmodst.2da with 3E-style charisma bonuses. OVERWRITTEN by ToF cn:80000 if installed after.",
+      "tp2n": "3rd edition style Charisma"
+    },
+    {
+      "n": "Druids can wear metal items",
+      "no": "Removes metal armor restriction from druids. Conflicts with cdtweaks cn:2430/2431.",
+      "cn": 7000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7000,
+      "wq": "verified",
+      "tp2n": "Druids can wear metal items"
+    },
+    {
+      "n": "Gain Stats: 5 pts, nobody over racial max",
+      "no": "Intended for Divine Remix druid components",
+      "cn": 7500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7500,
+      "wq": "verified",
+      "g": "gain_stats",
+      "scn": "Gain stats as you level up",
+      "tp2n": "5 points for a full BGT game; nobody can advance over their racial maximum."
+    },
+    {
+      "n": "Gain Stats: 5 pts, only PC over racial max",
+      "cn": 7550,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7550,
+      "wq": "verified",
+      "g": "gain_stats",
+      "scn": "Gain stats as you level up",
+      "no": "Adds 5 stat training points in BG2, only PC can exceed racial max.",
+      "tp2n": "5 points for a full BGT game; only the main character can advance over their racial maximum."
+    },
+    {
+      "n": "Gain Stats: 5 pts, everyone over racial max",
+      "cn": 7600,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7600,
+      "wq": "verified",
+      "g": "gain_stats",
+      "scn": "Gain stats as you level up",
+      "tp2n": "5 points for a full BGT game; everybody can advance over their racial maximum."
+    },
+    {
+      "n": "Gain Stats: 1 pt/4 lvls + 1/chapter, everyone over max",
+      "cn": 7650,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7650,
+      "wq": "verified",
+      "g": "gain_stats",
+      "scn": "Gain stats as you level up",
+      "tp2n": "One point every 4 levels and one point every chapter; everybody can advance over their racial maximum (@vgur)"
+    },
+    {
+      "n": "Gain Stats: 5 pts, everyone +1 over max, not retroactive",
+      "cn": 7675,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 7675,
+      "wq": "verified",
+      "g": "gain_stats",
+      "scn": "Gain stats as you level up",
+      "tp2n": "5 points for a full BGT game; everybody can advance exactly one point over their racial maximum; not retroactive (Quester)."
+    },
+    {
+      "n": "Trivial Dual-Class",
+      "cn": 8000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 8000,
+      "wq": "verified",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Removes dual-class stat requirements.",
+      "tp2n": "Trivial dual-classing."
+    },
+    {
+      "n": "Backstab Visibility: Always",
+      "cn": 8500,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 8500,
+      "wq": "verified",
+      "g": "backstab_vis",
+      "scn": "Party Members can facestab too!",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "Always"
+    },
+    {
+      "n": "Backstab Visibility: Only with Non-Detection",
+      "cn": 8550,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 8550,
+      "wq": "verified",
+      "g": "backstab_vis",
+      "scn": "Party Members can facestab too!",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "Only when under the effect of Non-Detection"
+    },
+    {
+      "n": "Mage Spellbooks: 100% drop, 100% spells",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "cn": 9000,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9000,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "tp2n": "100% of mages drop spellbooks, spellbooks contain 100% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 100% drop, 75% spells",
+      "cn": 9010,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9010,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "100% of mages drop spellbooks, spellbooks contain 75% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 100% drop, 50% spells",
+      "cn": 9020,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9020,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "100% of mages drop spellbooks, spellbooks contain 50% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 100% drop, 25% spells",
+      "cn": 9030,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9030,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "100% of mages drop spellbooks, spellbooks contain 25% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 75% drop, 100% spells",
+      "cn": 9040,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9040,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "75% of mages drop spellbooks, spellbooks contain 100% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 75% drop, 75% spells",
+      "cn": 9050,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9050,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "75% of mages drop spellbooks, spellbooks contain 75% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 75% drop, 50% spells",
+      "cn": 9060,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9060,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "75% of mages drop spellbooks, spellbooks contain 50% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 75% drop, 25% spells",
+      "cn": 9070,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9070,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "75% of mages drop spellbooks, spellbooks contain 25% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 50% drop, 100% spells",
+      "cn": 9080,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9080,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "50% of mages drop spellbooks, spellbooks contain 100% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 50% drop, 75% spells",
+      "cn": 9090,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9090,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "50% of mages drop spellbooks, spellbooks contain 75% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 50% drop, 50% spells",
+      "cn": 9100,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9100,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "50% of mages drop spellbooks, spellbooks contain 50% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 50% drop, 25% spells",
+      "cn": 9110,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9110,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "50% of mages drop spellbooks, spellbooks contain 25% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 25% drop, 100% spells",
+      "cn": 9120,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9120,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "25% of mages drop spellbooks, spellbooks contain 100% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 25% drop, 75% spells",
+      "cn": 9130,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9130,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "25% of mages drop spellbooks, spellbooks contain 75% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 25% drop, 50% spells",
+      "cn": 9140,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9140,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "25% of mages drop spellbooks, spellbooks contain 50% of memorized spells."
+    },
+    {
+      "n": "Mage Spellbooks: 25% drop, 25% spells",
+      "cn": 9150,
+      "wf": "tb#tweaks",
+      "wp": "tb#tweaks\\tb#tweaks.tp2",
+      "wc": 9150,
+      "wq": "verified",
+      "g": "spellbooks",
+      "scn": "Mages drop spellbooks.",
+      "no": "NON-EE ONLY — REQUIRE_FILE ~bgmain.exe~ (original engine). Will not install on EET.",
+      "tp2n": "25% of mages drop spellbooks, spellbooks contain 25% of memorized spells."
+    }
+  ]
+}

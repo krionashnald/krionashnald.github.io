@@ -1,0 +1,66 @@
+{
+  "i": 629,
+  "t": "luvnalia",
+  "sv": 1,
+  "ord": 550,
+  "c": "NPC EXPANSIONS",
+  "n": "Nalia Romance Revision",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "mod_installer: ALWAYS block fails (HANDLE_CHARSETS or folder setup), preventing misc.tra from loading. @1001 undefined causes cascading COPY failure on dearnise.sto. No local fix — likely permissions or path resolution issue. v2.0.0 is latest (Oct 2021)",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Faster chapter cutscenes (#3140/#3141) skip dream sequences where romance variables are set, breaking romance timers. Real mechanism but cdtweaks components not in database/not selectable.",
+      "myComps": "#0 Arnel's Nalia Romance Revision",
+      "theirComps": "#3140, #3141 Faster Chapter Cutscenes and Dreams",
+      "source": "TA tp2 REQUIRE_PREDICATE check; cdtweaks #3140/#3141 not in mods.json DB, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "deArnise",
+      "withId": 216,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 69 vs 292)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/Arnel-Nalia-Romance-Revision",
+  "a": "Arnel",
+  "v": "2.0.0",
+  "sum": "This mod adds a complete romance with Nalia, including the tree of life dialogs, beloved one in danger, Nalia's abduction by Bodhi, and other love related quests. It also adds some new quests and character interactions. We strongly recommend having Minsc in the party.",
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Arnel",
+  "dl": "https://github.com/SpellholdStudios/Arnel_Nalia_Romance_Revision",
+  "co": [
+    {
+      "n": "Arnel's Nalia Romance Revision",
+      "cn": 0,
+      "wf": "luvnalia",
+      "wp": "luvnalia\\LUVNALIA.TP2",
+      "wc": 0,
+      "tp2n": "Arnel's Nalia Romance Revision"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Arnel-Nalia-Romance-Revision"
+  }
+}

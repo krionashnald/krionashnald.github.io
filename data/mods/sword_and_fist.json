@@ -1,0 +1,138 @@
+{
+  "i": 315,
+  "t": "sword_and_fist",
+  "sv": 1,
+  "pfx": "A#",
+  "ord": 30,
+  "c": "KIT & CLASS MODS",
+  "n": "Sword and Fist",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "pl": 2,
+    "es": 3,
+    "fr": 4,
+    "it": 5,
+    "ru": 6,
+    "zh-cn": 7
+  },
+  "no": "Some kit mods that have no better place either before or after this here Sword And Fist somewhat outdated by newer mods",
+  "conflicts": [
+    {
+      "with": "KIARA-ZAIYA",
+      "withId": 164,
+      "severity": "hard",
+      "reason": "Monk HLA revisions conflict",
+      "myComps": "#0 Monk Remix",
+      "theirComps": "#2",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "d5_refinements",
+      "withId": 333,
+      "severity": "hard",
+      "reason": "Monk HLA revisions conflict",
+      "myComps": "#0 Monk Remix",
+      "theirComps": "#10 #107",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kits": {},
+  "u": "https://www.gibberlings3.net/files/file/890-sword-and-fist/",
+  "a": "Andyr, NiGHTMARE; CamDawg",
+  "v": "v12",
+  "sum": "Adds new kit and class options for warrior classes including Fighters and Monks, originally split from the Lands of Intrigue mod.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.gibberlings3.net/files/file/890-sword-and-fist/",
+  "au": "The Gibberlings Three",
+  "co": [
+    {
+      "n": "Monk Remix",
+      "cn": 1,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wc": 1,
+      "wq": "exact",
+      "k": 0,
+      "no": "Monk Remix. Overhauls the monk class with improved unarmed damage scaling, Stunning Fist, Quivering Palm, and extra attacks. Lawful-only.",
+      "tp2n": "Monk Remix"
+    },
+    {
+      "n": "Install Hexblade fighter kit",
+      "cn": 30,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wc": 30,
+      "wq": "exact",
+      "no": "Hexblade fighter kit. Curse-casting swordsman blending melee with arcane spells (Doom, Charm). Can cast in armor. Non-good only.",
+      "tp2n": "Install Hexblade fighter kit"
+    },
+    {
+      "n": "Install Duelist fighter kit",
+      "cn": 31,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wc": 31,
+      "wq": "exact",
+      "no": "Duelist fighter kit. Graceful single-weapon specialist with speed and AC bonuses. Restricted to light armor and bladed weapons.",
+      "tp2n": "Install Duelist fighter kit"
+    },
+    {
+      "n": "Install Fist of Order fighter kit",
+      "cn": 32,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wc": 32,
+      "wq": "exact",
+      "no": "Fist of Order fighter kit. Lawful enforcer wielding multiple weapons efficiently with Cloak of Fear ability. Limited specialization.",
+      "tp2n": "Install Fist of Order fighter kit"
+    },
+    {
+      "n": "Install Blackguard fighter kit",
+      "cn": 33,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Install Blackguard fighter kit",
+      "pi": "cd_sf_blackguard"
+    },
+    {
+      "n": "Install Duskblade fighter kit (by ronin69hof, ronin69hof@gmail.com",
+      "cn": 34,
+      "wf": "sword_and_fist",
+      "wp": "sword_and_fist\\SETUP-SWORD_AND_FIST.TP2",
+      "wc": 34,
+      "wq": "exact",
+      "tp2n": "Install Duskblade fighter kit (by ronin69hof, ronin69hof@gmail.com"
+    }
+  ]
+}

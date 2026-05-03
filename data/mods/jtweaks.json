@@ -1,0 +1,1087 @@
+{
+  "i": 382,
+  "t": "jtweaks",
+  "sv": 1,
+  "ord": 270,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "JTweaks",
+  "cats": [
+    "PRE-TACTICAL TWEAKS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "JTweaks by jmerry. Bug fixes, rule tweaks, and QoL improvements for BGEE/BG2EE/EET. Multicat: most components PRE-TACTICAL, Antimagic Ray components POST-TACTICAL (must install after SCS Smarter Beholders).",
+  "_legacy_ids": [
+    400
+  ],
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS cn:6550 (Smarter Beholders) rewrites beholder AI including antimagic ray behavior. If JTweaks cn:181/182 is installed first, SCS overwrites those changes — JTweaks Antimagic component becomes ineffective. If using SCS Smarter Beholders, do not install JTweaks cn:181/182. JT cn:181/182 are subcomponents (pick one) — cn:181 makes rays ignore Spell Shield, cn:182 lets Spell Shield block one ray.",
+      "myComps": "#181 #182 Antimagic Ray and Spell Shield",
+      "theirComps": "#6550 Smarter Beholders",
+      "source": "SCS rewrites beholder AI scripts; JTweaks modifies antimagic ray spell; SCS overwrites if installed after, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "Only JT cn:50 (NPC null kits) — safe due to kit==0 condition. JT cn:81-83 (Shapeshift) and cn:240 (Undead Hunter)",
+      "myComps": "#50 NPC null kits #81 #82 #83 Shapeshift corrections #240 Undead Hunter Turn Undead",
+      "orderOnly": true,
+      "theirComps": "AK kit overhauls",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "soft",
+      "reason": "JTweaks spell fixes overlap with Spell Revisions' spell overhaul",
+      "orderOnly": true,
+      "myComps": "#40 Enchant Weapon #70 Polymorph immunity #81 #82 #83 Shapeshift #140 True Sight #170 Celestial spells #181 #182 Antimagic #200 Elemental protection #360 Nature's Beauty",
+      "theirComps": "#0"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "JT cn:81-83 (Shapeshift corrections) modify polymorph/shapeshift spell files also touched by TnT cn:42 (Spider form). JT cn:360 (Nature's Beauty cure) overlaps with TnT spell fixes. JT cn:370 (Imoen script fix) has no TnT overlap. None of the conflicting JT components (cn:81-83/360) or TnT components (cn:51/52/67/68) are typically selected together — check component-by-component if mixing.",
+      "myComps": "#81 #82 #83 Shapeshift corrections #360 Nature's Beauty blindness #370 Imoen script fix",
+      "theirComps": "#42 Spider form #46 True Sight #51 Project Image #52 Mislead #67 Grandmastery #68 Multiclass restrictions",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "imoen_forever",
+      "withId": 37,
+      "severity": "soft",
+      "reason": "Complementary. JT cn:370 fixes Imoen script bugs (XP sync, spell states). Imoen Forever adds new SoD content. Both EXTEND same scripts — safe stacking. Install JTweaks after Imoen Forever.",
+      "myComps": "#370 Fix Imoen's script #410 Imoen joins at level 1",
+      "theirComps": "#0 Imoen Forever",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "HT's Expanded Shapeshifting overlaps with jtweaks' Shapeshift corrections",
+      "myComps": "#81 #82 #83 Shapeshift corrections",
+      "theirComps": "#2 Expanded Shapeshifting"
+    },
+    {
+      "with": "tb#tweaks",
+      "withId": 381,
+      "severity": "soft",
+      "reason": "Both modify Nature's Beauty blindness duration. tb#tweaks sets 8 hours, jtweaks sets 11 years. Choose one",
+      "myComps": "#360 Nature's Beauty blindness can be cured"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "ToF shapeshift and subrace changes overlap with jtweaks corrections",
+      "myComps": "#81 #82 #83 Shapeshift corrections #463 Drow MR",
+      "theirComps": "#2040 Shapeshift spells #40600 Druid shapeshift #20000 Subraces"
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "fullplate cn:1 corrupts AC#WCOHD.ITM from 794 to 746 bytes via COPY_EXISTING_REGEXP on all ITM files. Breaks jtweaks item-patching components.",
+      "theirComps": "#1 Between You And Harm",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/83360/mod-jmerrys-tweak-collection",
+  "a": "jmerry",
+  "v": "3.1",
+  "sum": "68 tweaks by jastey covering dialogue, gameplay, and convenience improvements. Wide variety of individually selectable changes.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/83360/mod-jmerrys-tweak-collection",
+  "langs": {
+    "en": 0
+  },
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Wilson's strength doesn't stack indefinitely",
+      "cn": 10,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Fixes Wilson's strength buff stacking indefinitely through repeated transformation. BG2EE/EET only.",
+      "tp2n": "Wilson's strength doesn't stack indefinitely",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Vernus can be raised",
+      "cn": 20,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Allows Vernus to be raised from the dead. Requires BG2EE/EET.",
+      "tp2n": "Vernus can be raised",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Fix Black Pits oversights",
+      "cn": 30,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 30,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Fixes various oversights in Black Pits arena mode. BGEE/EET only.",
+      "tp2n": "Fix Black Pits oversights",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Enchant Weapon works in contingencies",
+      "cn": 40,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 40,
+      "wq": "exact",
+      "no": "Fixes Enchant Weapon spell to work when placed in contingencies and sequencers.",
+      "tp2n": "Enchant Weapon works in contingencies",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Joinable NPCs don't have null kits",
+      "cn": 50,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 50,
+      "wq": "exact",
+      "no": "Assigns 'Base Class' kit (0x40000000) to all joinable NPCs with null kit (kit=0). SOFT CONFLICT with Artisan's Kitpack: AK assigns specific kits to NPCs it overhauls, so those won't be touched by JTweaks. JTweaks catches remaining null-kit NPCs that AK didn't modify. Install order: JTweaks should install AFTER AK (already correct — JTweaks PRE-TACTICAL ord:270, AK KIT & CLASS ord:110). Safe to use together.",
+      "tp2n": "Joinable NPCs don't have null kits",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "NPCs don't go in inaccessible locations",
+      "cn": 60,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 60,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Prevents NPCs from teleporting to inaccessible map locations. BG2EE/EET only.",
+      "tp2n": "NPCs don't go in inaccessible locations",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Close polymorph immunity loopholes",
+      "cn": 70,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 70,
+      "wq": "exact",
+      "no": "Closes loopholes where polymorph forms grant unintended immunities.",
+      "tp2n": "Dummy Content Change",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Shapeshift Corrections: All transformations",
+      "no": "Mage corrections incompatible with IWDification Expanded Polymorph Self and ToF/SCS shapeshift changes. Druid corrections incompatible with IWDification IWD shapeshifting",
+      "cn": 81,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 81,
+      "wq": "exact",
+      "g": "shapeshift",
+      "scn": "Shapeshift corrections",
+      "grn": "Bug Fixes",
+      "tp2n": "All transformations"
+    },
+    {
+      "n": "Shapeshift Corrections: Druid shapeshifts only",
+      "cn": 82,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 82,
+      "wq": "exact",
+      "g": "shapeshift",
+      "scn": "Shapeshift corrections",
+      "grn": "Bug Fixes",
+      "no": "Shapeshift variant: only corrects druid wildshape forms.",
+      "tp2n": "Druid shapeshifts only"
+    },
+    {
+      "n": "Shapeshift Corrections: Mage polymorphs only",
+      "cn": 83,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 83,
+      "wq": "exact",
+      "g": "shapeshift",
+      "scn": "Shapeshift corrections",
+      "grn": "Bug Fixes",
+      "no": "Shapeshift variant: only corrects mage polymorph forms.",
+      "tp2n": "Mage polymorphs and shapechanges only"
+    },
+    {
+      "n": "Wish Hardiness doesn't stack with itself",
+      "cn": 90,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 90,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Prevents Wish-granted Hardiness from stacking with itself. BG2EE/EET only.",
+      "tp2n": "Wish Hardiness doesn't stack with itself",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Hold Person doesn't display multiple strings",
+      "cn": 100,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "no": "Fixes Hold Person displaying duplicate 'Held' strings in the combat log.",
+      "tp2n": "Hold Person doesn't display multiple strings",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Barbarian Rage blocks cosmetic effects",
+      "cn": 110,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 110,
+      "wq": "exact",
+      "games": [
+        "bgee"
+      ],
+      "no": "Barbarian Rage now blocks cosmetic portrait effects (blurred, etc.). BGEE only.",
+      "tp2n": "Barbarian Rage blocks cosmetic effects",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Dueling fireshields don't go infinite",
+      "cn": 120,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 120,
+      "wq": "exact",
+      "no": "Prevents two opposing fire shields from creating infinite damage loops.",
+      "tp2n": "Dueling fireshields don't go infinite",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Standardize Wand of Missiles",
+      "cn": 130,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 130,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Standardizes Wand of Missiles to consistent damage across BG1/BG2. BGEE/EET only.",
+      "tp2n": "Standardize Wand of Missiles",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Inquisitor True Sight is consistent with other versions of the spell",
+      "cn": 140,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 140,
+      "wq": "exact",
+      "no": "Makes Inquisitor's innate True Sight match the priest spell version's behavior.",
+      "tp2n": "Inquisitor True Sight is consistent with other versions of the spell",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Temple cures work better",
+      "cn": 150,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 150,
+      "wq": "exact",
+      "no": "Temple healing services cure more conditions and work more reliably.",
+      "tp2n": "Temple cures work better",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Bala's Axe dispels reasonably well",
+      "cn": 160,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 160,
+      "wq": "exact",
+      "no": "Fixes Bala's Axe dispel-on-hit to use a reasonable dispel level.",
+      "tp2n": "Bala's Axe dispels reasonably well",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Celestials cast all of their spells at high levels",
+      "cn": 170,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 170,
+      "wq": "exact",
+      "no": "Celestials (Devas, Planetars) cast their full spell repertoire at appropriate high levels.",
+      "tp2n": "Celestials cast all of their spells at high levels",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Antimagic rays ignore Spell Shield",
+      "cn": 181,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 181,
+      "wq": "exact",
+      "g": "antimagic",
+      "scn": "Antimagic Ray and Spell Shield",
+      "grn": "Rule Changes",
+      "cat": "POST-TACTICAL TWEAKS",
+      "no": "Antimagic rays ignore Spell Shield entirely. Install AFTER SCS Smarter Beholders.",
+      "tp2n": "Antimagic rays ignore Spell Shield"
+    },
+    {
+      "n": "Spell Shield blocks one antimagic ray",
+      "cn": 182,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 182,
+      "wq": "exact",
+      "g": "antimagic",
+      "scn": "Antimagic Ray and Spell Shield",
+      "grn": "Rule Changes",
+      "no": "If using SCS Smarter Beholders, install jtweaks AFTER SCS or the Beholder component will nullify this.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "tp2n": "Spell Shield blocks one antimagic ray"
+    },
+    {
+      "n": "Death Ward protects against Aec'Letec's Death Gaze",
+      "cn": 190,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 190,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Death Ward now protects against Aec'Letec's Death Gaze. BGEE/EET only.",
+      "tp2n": "Death Ward protects against Aec'Letec's Death Gaze",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Elemental protection spells increment resistances",
+      "cn": 200,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 200,
+      "wq": "exact",
+      "no": "Elemental protection spells (Prot Fire/Cold/etc.) add to existing resistance instead of setting it.",
+      "tp2n": "Elemental protection spells increment resistances",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Vorpal weapons don't chunk",
+      "cn": 210,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 210,
+      "wq": "exact",
+      "no": "Vorpal weapons kill instantly without chunking, allowing Raise Dead.",
+      "tp2n": "Vorpal weapons don't chunk",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Resurrection can heal the living",
+      "cn": 220,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 220,
+      "wq": "exact",
+      "no": "Resurrection and Raise Dead can also heal living party members.",
+      "tp2n": "Resurrection can heal the living",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Loosen restrictions on what clones can do",
+      "cn": 230,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 230,
+      "wq": "exact",
+      "no": "Simulacrum and Project Image clones can use more abilities.",
+      "tp2n": "Loosen restrictions on what clones can do",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Undead Hunters are better at Turn Undead",
+      "cn": 240,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 240,
+      "wq": "exact",
+      "no": "Undead Hunters get improved Turn Undead progression matching their paladin focus.",
+      "tp2n": "Undead Hunters are better at Turn Undead",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Loosen NPC item restrictions",
+      "cn": 250,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 250,
+      "wq": "exact",
+      "no": "Loosens class/alignment restrictions on NPC-specific items.",
+      "tp2n": "Loosen NPC item restrictions",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Green Slime poison can be cured",
+      "cn": 260,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 260,
+      "wq": "exact",
+      "no": "Green Slime poison can be cured with Slow Poison and similar spells.",
+      "tp2n": "Green Slime poison can be cured",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Barrityl's Bigger and Better Burden",
+      "cn": 270,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 270,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Increases Barrityl's Burden bag capacity.",
+      "tp2n": "Barrityl's Bigger and Better Burden",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Allies against Bodhi are better prepared for vampires",
+      "no": "May overwrite other mods if installed after them",
+      "cn": 280,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 280,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Allies against Bodhi are better prepared for vampires",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Noober's Game",
+      "cn": 290,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 290,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Adds a comedic Noober encounter game with escalating rewards for patience.",
+      "tp2n": "Noober's Game",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Slightly improved party AI",
+      "cn": 300,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 300,
+      "wq": "exact",
+      "no": "Incompatible with other AI script mods",
+      "tp2n": "Slightly improved party AI",
+      "grn": "AI Tweaks"
+    },
+    {
+      "n": "Map notes for BGEE quests",
+      "cn": 310,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 310,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Adds map notes for BG1 quest locations.",
+      "tp2n": "Map notes for BGEE quests",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "n": "Standardize inn and tavern music",
+      "cn": 320,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 320,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Makes all inns and taverns use consistent ambient music.",
+      "tp2n": "Standardize inn and tavern music",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "n": "Randomize battle music",
+      "cn": 330,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 330,
+      "wq": "exact",
+      "no": "Randomizes which battle music track plays during encounters.",
+      "tp2n": "Randomize battle music",
+      "grn": "Cosmetic Changes"
+    },
+    {
+      "n": "Potion effects don't stack with themselves",
+      "cn": 340,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 340,
+      "wq": "exact",
+      "no": "Prevents identical potion effects from stacking (e.g., two Potions of Heroism).",
+      "tp2n": "Potion effects don't stack with themselves",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Bigger random spawns",
+      "cn": 350,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 350,
+      "wq": "exact",
+      "no": "Increases the size of random spawn groups in wilderness areas.",
+      "tp2n": "Bigger random spawns",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Nature's Beauty blindness can be cured",
+      "cn": 360,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 360,
+      "wq": "exact",
+      "no": "Alternative to tb#tweaks. tb changes duration to 8 hours, jtweaks to 11 years. Choose one",
+      "tp2n": "Nature's Beauty blindness can be cured",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Fix Imoen's script in BGEE/SoD",
+      "cn": 370,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 370,
+      "wq": "exact",
+      "no": "Fixes Imoen's join/XP sync script in BGEE and SoD.",
+      "tp2n": "Fix Imoen's script in BGEE/SoD",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Prevent characters from acting uncontrollably when under Project Image",
+      "cn": 380,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 380,
+      "wq": "exact",
+      "no": "Prevents the real character from acting when Project Image clone is active.",
+      "tp2n": "Prevent characters from acting uncontrollably when under Project Image",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Some merchants ignore reputation",
+      "cn": 390,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 390,
+      "wq": "exact",
+      "no": "Some merchants (fences, shady dealers) ignore reputation for pricing.",
+      "tp2n": "Some merchants ignore reputation",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Fire Breath Potions: Burning Hands targeting",
+      "cn": 401,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 401,
+      "wq": "exact",
+      "g": "fire_breath",
+      "scn": "Alternate targeting for Potions of Fire Breath",
+      "grn": "Rule Changes",
+      "no": "Fire Breath Potions use Burning Hands targeting (cone from caster).",
+      "tp2n": "Potions of Fire Breath use Burning Hands targeting"
+    },
+    {
+      "n": "Fire Breath Potions: Breath Weapon targeting",
+      "cn": 402,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 402,
+      "wq": "exact",
+      "g": "fire_breath",
+      "scn": "Alternate targeting for Potions of Fire Breath",
+      "grn": "Rule Changes",
+      "no": "Fire Breath Potions use Breath Weapon targeting (line from caster).",
+      "tp2n": "Potions of Fire Breath use Breath Weapon targeting"
+    },
+    {
+      "n": "Imoen always joins at level 1 outside Candlekeep",
+      "cn": 410,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 410,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Imoen joins at level 1 when recruited outside Candlekeep.",
+      "tp2n": "Imoen always joins at level 1 outside Candlekeep",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Phandalyn Rep Loss: Always lose 3",
+      "no": "Moot with Candlekeep Revisited",
+      "cn": 421,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 421,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "phandalyn",
+      "scn": "Less reputation loss for killing Phandalyn",
+      "grn": "Rule Changes",
+      "tp2n": "Always lose 3 rep"
+    },
+    {
+      "n": "Phandalyn Rep Loss: 3 or innocent penalty (whichever is less)",
+      "cn": 422,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 422,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "phandalyn",
+      "scn": "Less reputation loss for killing Phandalyn",
+      "grn": "Rule Changes",
+      "no": "Phandalyn rep loss: whichever is less between 3 and the innocent-murder penalty.",
+      "tp2n": "Lose 3 rep or innocent penalty, whichever is less"
+    },
+    {
+      "n": "Kondar works against more kinds of shapeshifters",
+      "cn": 430,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 430,
+      "wq": "exact",
+      "no": "Kondar longsword's anti-shapeshifter bonus works against more creature types.",
+      "tp2n": "Kondar works against more kinds of shapeshifters",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Random spawns scale with difficulty",
+      "cn": 440,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 440,
+      "wq": "exact",
+      "no": "Random encounter difficulty scales with the game difficulty slider setting.",
+      "tp2n": "Random spawns scale with difficulty",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Hexxat Class: Fighter/Thief",
+      "no": "May cause issues with BG1 starting scene",
+      "cn": 451,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 451,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "hexxat_class",
+      "scn": "Change Hexxat's class or kit",
+      "grn": "Content Changes",
+      "tp2n": "Make Hexxat a Fighter/Thief"
+    },
+    {
+      "n": "Hexxat Class: Shadowdancer",
+      "cn": 452,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 452,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "g": "hexxat_class",
+      "scn": "Change Hexxat's class or kit",
+      "grn": "Content Changes",
+      "no": "Hexxat variant: Hexxat uses the Shadowdancer kit.",
+      "tp2n": "Make Hexxat a Shadowdancer"
+    },
+    {
+      "n": "Candlekeep XP boost",
+      "cn": 460,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 460,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Compatibility with Candlekeep Revisited unclear",
+      "tp2n": "Candlekeep XP boost",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Variable drow MR (core component)",
+      "no": "Drow MR overhaul may clash with Sword and Dagger, ToF subraces, or Tipun subraces",
+      "cn": 463,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 463,
+      "wq": "exact",
+      "tp2n": "Variable drow MR (core component)",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Drow MR Base: Low (35)",
+      "cn": 465,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 465,
+      "wq": "exact",
+      "g": "drow_mr_base",
+      "scn": "Choose base drow MR (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "Low (35)"
+    },
+    {
+      "n": "Drow MR Base: Medium (50)",
+      "cn": 467,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 467,
+      "wq": "exact",
+      "g": "drow_mr_base",
+      "scn": "Choose base drow MR (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "Medium (50)"
+    },
+    {
+      "n": "Drow MR Base: High (65)",
+      "cn": 469,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 469,
+      "wq": "exact",
+      "g": "drow_mr_base",
+      "scn": "Choose base drow MR (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "High (65)"
+    },
+    {
+      "n": "Drow MR Progression: No level-based change",
+      "cn": 471,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 471,
+      "wq": "exact",
+      "g": "drow_mr_prog",
+      "scn": "Choose MR progression rate (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "No level-based change"
+    },
+    {
+      "n": "Drow MR Progression: Slow (1/lvl, up to 30)",
+      "cn": 472,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 472,
+      "wq": "exact",
+      "g": "drow_mr_prog",
+      "scn": "Choose MR progression rate (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "Slow (1 per level, up to level 30)"
+    },
+    {
+      "n": "Drow MR Progression: Fast (2/lvl, up to 20)",
+      "cn": 473,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 473,
+      "wq": "exact",
+      "g": "drow_mr_prog",
+      "scn": "Choose MR progression rate (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "Fast (2 per level, up to level 20)"
+    },
+    {
+      "n": "Drow Sunlight: No additional penalties",
+      "cn": 474,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 474,
+      "wq": "exact",
+      "g": "drow_sunlight",
+      "scn": "Choose sunlight penalties (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "No additional penalties"
+    },
+    {
+      "n": "Drow Sunlight: Dazzled (-2 THAC0, -2 AC vs missiles)",
+      "cn": 475,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 475,
+      "wq": "exact",
+      "g": "drow_sunlight",
+      "scn": "Choose sunlight penalties (required)",
+      "grn": "Content Changes",
+      "x": 52,
+      "tp2n": "Dazzled (-2 to hit, -2 AC versus missiles)"
+    },
+    {
+      "n": "Alternate Adoy's Belt",
+      "cn": 480,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 480,
+      "wq": "exact",
+      "no": "Changes Adoy's Belt effects to an alternate configuration.",
+      "tp2n": "Alternate Adoy's Belt",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Liia knows how to cast her spells",
+      "cn": 490,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 490,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Fixes Liia Jannath's spellbook so she actually casts her memorized spells.",
+      "tp2n": "Liia knows how to cast her spells",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Allow clones of party members to use Advanced AI",
+      "cn": 500,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 500,
+      "wq": "exact",
+      "no": "Clone copies of party members (Simulacrum, etc.) can use Advanced AI scripts.",
+      "tp2n": "Allow clones of party members to use Advanced AI",
+      "grn": "AI Tweaks"
+    },
+    {
+      "n": "BGEE Map Names: Traditional",
+      "cn": 511,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 511,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "area_names",
+      "scn": "Area names for the BGEE world map",
+      "grn": "Cosmetic Changes",
+      "no": "BG1 area names use traditional descriptive names on the world map.",
+      "tp2n": "Traditional names"
+    },
+    {
+      "n": "BGEE Map Names: Non-spoiler",
+      "cn": 512,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 512,
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "area_names",
+      "scn": "Area names for the BGEE world map",
+      "grn": "Cosmetic Changes",
+      "no": "BG1 area names use non-spoiler generic names on the world map.",
+      "tp2n": "Non-spoiler names"
+    },
+    {
+      "n": "Warrior and rogue HLAs can't be removed by spell-breakers",
+      "cn": 520,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 520,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Warrior/rogue HLAs (Whirlwind, Assassination, etc.) cannot be stripped by spell-breakers.",
+      "tp2n": "Warrior and rogue HLAs can't be removed by spell-breakers",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Deactivate Spellhold picture monsters until their doors are opened",
+      "cn": 530,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wc": 530,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Spellhold painting monsters stay inactive until their doors are opened.",
+      "tp2n": "Deactivate Spellhold picture monsters until their doors are opened",
+      "grn": "Content Changes"
+    },
+    {
+      "n": "Dummy Bug Fix",
+      "cn": 68,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Dummy Bug Fix",
+      "grn": "Bug Fixes"
+    },
+    {
+      "n": "Dummy Rule Change",
+      "cn": 69,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Dummy Rule Change",
+      "grn": "Rule Changes"
+    },
+    {
+      "n": "Dummy AI Tweak",
+      "cn": 71,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Dummy AI Tweak",
+      "grn": "AI Tweaks"
+    },
+    {
+      "n": "Dummy Cosmetic Change",
+      "cn": 72,
+      "wf": "jtweaks",
+      "wp": "jtweaks\\SETUP-JTWEAKS.TP2",
+      "wq": "verified",
+      "tp2n": "Dummy Cosmetic Change",
+      "grn": "Cosmetic Changes"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "subrace",
+      "withId": 680,
+      "severity": "soft",
+      "reason": "Both modify racial features. Subrace drow changes may conflict with jtweaks drow MR overhaul",
+      "myComps": "#463 Variable drow MR #465 #467 #469 #471 #472 #473 #474 #475 Drow MR options",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "aTweaks expanded save tables and jtweaks save-related fixes may interact",
+      "myComps": "#90 Wish Hardiness #200 Elemental protection",
+      "theirComps": "#213 Expanded saving throw tables",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "candlekeep_revisited",
+      "withId": 58,
+      "severity": "soft",
+      "reason": "Candlekeep XP boost may interact unexpectedly with Candlekeep Revisited's modified Candlekeep content",
+      "myComps": "#460 Candlekeep XP boost",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both provide party AI improvements. May conflict if both installed",
+      "myComps": "#300 Slightly improved party AI #500 Allow clones to use Advanced AI",
+      "theirComps": "#300 Slightly improved party AI",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "MESpells",
+      "withId": 358,
+      "severity": "soft",
+      "reason": "Mod-level note from install guide. Olvyn spell components may overlap with JTweaks spell fixes on shared files. Does NOT apply to cn:980/990 (ranger/paladin progression, the only Olvyn ). Neither detects the other.",
+      "myComps": "#40 Enchant Weapon #140 True Sight #170 Celestial spells #200 Elemental protection",
+      "theirComps": "Spell modification components (not cn:980/990 which are the only Olvyn in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

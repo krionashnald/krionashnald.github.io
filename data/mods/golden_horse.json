@@ -1,0 +1,116 @@
+{
+  "i": 863,
+  "t": "golden_horse",
+  "sv": 1,
+  "ord": 980,
+  "c": "QUEST MODS BG2",
+  "n": "Golden Horse Mercenary Company",
+  "au": "svj (Juraj Svitnič)",
+  "dl": "https://github.com/Spellhold-Studios/Golden-Horse",
+  "no": "Protect a joinable NPC, Revan Artecratos, from assassins in BG2 with a story tying it all together. Classic BG2/ToB + BGT only — no BG2EE or EET support in tp2 (GAME_IS tob bgt). English only.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "gh_revan",
+          "portraits/golden_horse/rqrev.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_fb",
+          "portraits/golden_horse/rqm_fb.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_fb2",
+          "portraits/golden_horse/rqm_fb2.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_fmc",
+          "portraits/golden_horse/rqm_fmc.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_ft",
+          "portraits/golden_horse/rqm_ft.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_s",
+          "portraits/golden_horse/rqm_s.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_mi",
+          "portraits/golden_horse/rqmc_mi.png",
+          "bg2"
+        ],
+        [
+          "gh_merc_mn",
+          "portraits/golden_horse/rqmf_mn.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Golden-Horse",
+  "a": "svj",
+  "sum": "Protect Revan Artecratos, a joinable NPC, from assassins in a mercenary company storyline. Includes alternate class choices for Revan. Classic BG2/ToB + BGT only — no EET support.",
+  "tags": [
+    "npc",
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Golden Horse Mercenary Company",
+      "tp2n": "Golden Horse mercenary company Mod (Requires Throne of Bhaal)",
+      "pi": "rq-Main_Golden_Horse_mercenary_company",
+      "cn": 0,
+      "wf": "golden_horse",
+      "wp": "golden_horse\\golden_horse.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "tob"
+      ],
+      "no": "Main quest and NPC component. Adds Revan Artecratos as a joinable companion with assassination plot."
+    },
+    {
+      "n": "Revan alternative class: Assassin/Mage",
+      "tp2n": "Change Revan's class from Mage/Thief >>> TO >>> Mage/Assassin multi-class",
+      "g": "revan_class",
+      "scn": "Revan's class",
+      "pi": "rq_Revan_Alt-Class_Assassin-Mage",
+      "cn": 1,
+      "wf": "golden_horse",
+      "wp": "golden_horse\\golden_horse.tp2",
+      "wq": "verified",
+      "no": "Changes Revan to Assassin/Mage multiclass."
+    },
+    {
+      "n": "Revan alternative class: Fighter/Mage/Thief",
+      "tp2n": "Change Revan's class from Mage/Thief >>> TO >>> Fighter/Mage/Thief multi-class",
+      "g": "revan_class",
+      "scn": "Revan's class",
+      "pi": "rq_Revan_Alt-Class_Fighter-Mage-Thief",
+      "cn": 2,
+      "wf": "golden_horse",
+      "wp": "golden_horse\\golden_horse.tp2",
+      "wq": "verified",
+      "no": "Changes Revan to Fighter/Mage/Thief multiclass."
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Golden-Horse"
+  }
+}

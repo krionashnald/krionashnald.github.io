@@ -1,0 +1,423 @@
+{
+  "i": 333,
+  "t": "d5_refinements",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 160,
+  "c": "KIT & CLASS MODS",
+  "n": "Refinements",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ja": 2,
+    "pl": 3,
+    "ru": 4
+  },
+  "no": "Refinements SD's updated fork: ToF already includes Refinement's HLAs (at least most of them) so no reason to mix them together v Revised HLAs Note: adds 3 entries to kitlist.2da to handle extra functions. Account for them when using extra_kits We plan to use these components: Install Refinements after Rogue Rebalancing and Tome & Blood.",
+  "ic": "stratagems will not use revised HLAs",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "Stratagems will not use revised HLAs",
+      "myComps": "#10 Install revised HLAs for all classes #11 #101 #102 #103 #104 #105 #106 #107 #108 #109 #110",
+      "theirComps": "#1500 #1510 IWD spells #2000 #2010 #2020 #2030 #2040 #2050 #2060 #2070 #2080 Spell tweaks"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks HLA tweaks overlap with Refinements' revised HLA tables",
+      "myComps": "#10 #11 #101 #102 #103 #104 #105 #106 #107 #108 #109 #110",
+      "theirComps": "#2080 Delay HLAs #2250 Sorcerer Spell Prog #2260 #2261 Mage Spell Prog #2280 #2271 Bard Spell Prog"
+    },
+    {
+      "with": "eseries",
+      "withId": 461,
+      "severity": "hard",
+      "reason": "Choose one shapeshifting feature",
+      "myComps": "#30, #31",
+      "theirComps": "#0 eSeries",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "sword_and_fist",
+      "withId": 315,
+      "severity": "hard",
+      "reason": "Monk HLA revisions conflict",
+      "myComps": "#10 #107",
+      "theirComps": "#1 Monk Remix",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "npckit",
+      "withId": 226,
+      "severity": "hard",
+      "reason": "Choose class/kit for Imoen",
+      "myComps": "\"SwashImoen\", full revision (suggested), #21, #22",
+      "theirComps": "#1400, #1410, #1411, #1412, #1413, #1414, #1415, #1416, #1417",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "FPPS tp2 uses FORBID_COMPONENT for Refinements Revised Armors. Mutually exclusive",
+      "myComps": "#5 #70 #71 #72 #73 #74 #75 Revised Armors and Shields",
+      "theirComps": "#1 Between You And Harm (alternate armour system)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Both revise the HLA system",
+      "myComps": "#10 #11 Revised HLAs #101-#110 Class HLAs",
+      "theirComps": "#60100 Minor abilities #60200 Revised HLAs"
+    },
+    {
+      "with": "MonasticOrders",
+      "withId": 656,
+      "severity": "hard",
+      "reason": "MO monks use Thief HLAs, not Monk HLAs. Refinements monk HLA changes affect only disabled vanilla Monk.",
+      "myComps": "#107 Class HLAs: Monk",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "tweaks",
+      "spells": [
+        [
+          "SPCL900",
+          "modify",
+          "HLA: Summon Planetar revised"
+        ],
+        [
+          "SPCL904",
+          "modify",
+          "HLA: Energy Blades revised"
+        ],
+        [
+          "SPCL905",
+          "modify",
+          "HLA: Improved Alacrity revised"
+        ],
+        [
+          "SPCL912",
+          "modify",
+          "HLA: Globe of Blades revised"
+        ],
+        [
+          "SPCL915",
+          "modify",
+          "HLA: Storm of Vengeance revised"
+        ]
+      ]
+    }
+  },
+  "kits": {},
+  "u": "https://github.com/UnearthedArcana/refinements/releases",
+  "a": "T.G.Maestro, the bigg; Subtledoctor",
+  "v": "Refinements v 3.31",
+  "sum": "Refinements HLA section: 17 revised High-Level Ability tables giving every class and kit more meaningful endgame power choices.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "refinements"
+  },
+  "dl": "https://github.com/UnearthedArcana/refinements/releases",
+  "au": "Demivrgvs, The Imp",
+  "co": [
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 5,
+      "n": "HLA Revisions",
+      "wc": 5,
+      "no": "Revises High Level Abilities for all classes."
+    },
+    {
+      "n": "Revised HLAs: Install for all classes",
+      "pi": "D5_REFINEMENTS_ALL_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "cn": 10,
+      "g": "revised_hlas",
+      "k": 0,
+      "no": "Revised HLAs. Install BEFORE Rogue Rebalancing (RR detects Refinements and uses compatibility 2DA). Install BEFORE Talents of Faerun (ToF overwrites these tables). Overwritten by ToF cn:60200 if both installed."
+    },
+    {
+      "n": "Revised HLAs: Choose which classes",
+      "pi": "D5_REFINEMENTS_HLAS_BY_CLASS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 11,
+      "wq": "unresolved",
+      "cn": 11,
+      "g": "revised_hlas",
+      "no": "NOT PRESENT in installed version — no DESIGNATED 11 in tp2. Per-class chooser removed; only cn:10 (install for all classes) exists."
+    },
+    {
+      "n": "SwashImoen: Full revision (suggested)",
+      "no": "Refinements' Thief nerfs UAI; let it patch RR's HLA overwrites. Not needed if using SCS/ToF NPC customization or NPC EE",
+      "pi": "D5_SWASHIMOEN_FULL",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "cn": 20,
+      "g": "swashimoen"
+    },
+    {
+      "n": "SwashImoen: Simple kit change",
+      "pi": "D5_SWASHIMOEN_KIT_ONLY",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wq": "verified",
+      "cn": 21,
+      "g": "swashimoen"
+    },
+    {
+      "n": "SwashImoen: Detect Illusions rather than Set Traps",
+      "pi": "D5_SWASHIMOEN_DETECT_ILLUSIONS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wq": "verified",
+      "cn": 22,
+      "g": "swashimoen"
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 30,
+      "n": "Shapeshifting Fix: Heal on shifting back",
+      "wc": 30,
+      "no": "Default healing behavior when shifting back to human form."
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 31,
+      "n": "Shapeshifting Fix: No heal on shifting back",
+      "wc": 31,
+      "g": "shapeshift_heal",
+      "no": "No healing when shifting back to human form."
+    },
+    {
+      "n": "Universal lesser mage robes",
+      "pi": "REFINEMENTS_UNIVERSAL_ROBES",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 40,
+      "wq": "verified",
+      "cn": 40,
+      "no": ". mod_installer: Fails with missing @800 translation in some WeiDU environments"
+    },
+    {
+      "n": "Sword Angel - New Fighter Kit",
+      "cn": 50,
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 50,
+      "wq": "verified"
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 70,
+      "n": "Revised Armors & Shields: Description updater (local)",
+      "wc": 70,
+      "no": "Updates armor/shield descriptions to match revised stats. Local language only."
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 71,
+      "n": "Revised Armors & Shields: Description updater (all languages)",
+      "wc": 71
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 72,
+      "n": "Revised Armors & Shields: Revised armor properties",
+      "wc": 72
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 73,
+      "n": "Revised Armors & Shields: Revised shield properties",
+      "wc": 73
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 74,
+      "n": "Revised Armors & Shields: Armor vs damage type",
+      "wc": 74
+    },
+    {
+      "wf": "d5_refinements",
+      "wp": "d5_refinements\\setup-refinements.tp2",
+      "wq": "exact",
+      "cn": 75,
+      "n": "Revised Armors & Shields: Full package",
+      "wc": 75
+    },
+    {
+      "n": "Class HLAs: Fighter",
+      "pi": "D5_REFINEMENTS_FIGHTER_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 101,
+      "wq": "unresolved",
+      "cn": 101,
+      "x": 1,
+      "no": "NOT PRESENT — per-class sub-options (101-110) removed in installed version."
+    },
+    {
+      "n": "Class HLAs: Barbarian",
+      "pi": "D5_REFINEMENTS_BARBARIAN_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 102,
+      "wq": "unresolved",
+      "cn": 102,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Ranger",
+      "pi": "D5_REFINEMENTS_RANGER_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 103,
+      "wq": "unresolved",
+      "cn": 103,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Paladin",
+      "pi": "D5_REFINEMENTS_PALADIN_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 104,
+      "wq": "unresolved",
+      "cn": 104,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Cleric",
+      "pi": "D5_REFINEMENTS_CLERIC_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 105,
+      "wq": "unresolved",
+      "cn": 105,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Druid",
+      "pi": "D5_REFINEMENTS_DRUID_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 106,
+      "wq": "unresolved",
+      "cn": 106,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Monk",
+      "pi": "D5_REFINEMENTS_MONK_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 107,
+      "wq": "unresolved",
+      "cn": 107,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Wizard",
+      "pi": "D5_REFINEMENTS_WIZARD_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 108,
+      "wq": "unresolved",
+      "cn": 108,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Bard",
+      "pi": "D5_REFINEMENTS_BARD_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 109,
+      "wq": "unresolved",
+      "cn": 109,
+      "x": 1
+    },
+    {
+      "n": "Class HLAs: Thief",
+      "pi": "D5_REFINEMENTS_THIEF_HLAS",
+      "wf": "refinements",
+      "wp": "refinements\\setup-refinements.tp2",
+      "wc": 110,
+      "wq": "unresolved",
+      "cn": 110,
+      "x": 1
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "FnP cleric/druid/paladin kits may interact with Refinements' revised HLAs for those classes",
+      "myComps": "#10 #104 #105 #106",
+      "theirComps": "#31 Cleric Kits #33 Druid Kits #35 #36 Paladin Kits",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "hard",
+      "reason": "HLAs for Clerics, Paladins, Druids, Rangers might conflict",
+      "myComps": "#10 #11 #103 #104 #105 #106",
+      "theirComps": "#10 Druid Remix #1000 Cleric Remix",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "soft",
+      "reason": "KLATU item tweaks may overlap with Refinements' revised HLA tables",
+      "myComps": "#10 #11 #101 #102 #103 #104 #105 #106 #107 #108 #109 #110",
+      "theirComps": "#1010 Manual of War #1020 Prepared Wishes",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

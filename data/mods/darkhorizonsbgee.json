@@ -1,0 +1,102 @@
+{
+  "i": 512,
+  "t": "darkhorizonsbgee",
+  "sv": 1,
+  "ord": 300,
+  "c": "QUEST MODS BG1",
+  "n": "Dark Horizons BG:EE",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "de": 2,
+    "ru": 3,
+    "pl": 4,
+    "fr": 5,
+    "es": 6,
+    "zh-cn": 7
+  },
+  "no": "EE version of Dark Horizons. Should install after EET Start on BG2EE — not pre-EET. See i=573 (legacy tp2 version) for notes.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "SotSC",
+      "withId": 45,
+      "severity": "partial",
+      "reason": "Both mods modify shared BG1 area scripts. Compatible if Dark Horizons is installed BEFORE SotSC (per SotSC readme). SotSC expects Dark Horizons changes to already be present.",
+      "source": "manual"
+    },
+    {
+      "with": "BG1NPC",
+      "withId": 47,
+      "severity": "soft",
+      "reason": "Generally compatible. Standard install order: Dark Horizons first, BG1 NPC Project after. Both add BG1 content but don't directly conflict.",
+      "orderOnly": true,
+      "source": "manual"
+    },
+    {
+      "with": "DarkHorizons",
+      "withId": 573,
+      "severity": "hard",
+      "reason": "Same mod content under two tp2 names (legacy vs EE packaging). Install only one version.",
+      "source": "Same GitHub repo (The-Gate-Project/DarkHorizons), single tp2 with GAME_IS checks, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dh_cmniki",
+          "portraits/dark_horizons/cmniki.png",
+          "bg1"
+        ],
+        [
+          "dh_cmtmorw",
+          "portraits/dark_horizons/cmtmorw.png",
+          "bg1"
+        ],
+        [
+          "dh_cmttor",
+          "portraits/dark_horizons/cmttor.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/DarkHorizons",
+  "a": "TeamBG",
+  "v": "3.05",
+  "sum": "Adds a BG1 quest chain involving mysterious dark forces threatening the Sword Coast. Several hours of new content with new areas and encounters.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v3",
+    "place": "post"
+  },
+  "dl": "https://github.com/The-Gate-Project/DarkHorizons",
+  "au": "Kova (original), Roxanne (EET port)",
+  "co": [
+    {
+      "n": "\"Dark Horizons\" Mod for Baldur's Gate: Enhanced Edition",
+      "tp2n": "\"Dark Horizons\" Mod",
+      "cn": 0,
+      "wf": "DarkHorizons",
+      "wp": "DarkHorizons\\DarkHorizons.tp2",
+      "wc": 0,
+      "no": "Older versions of Saradas Magic (pre-v1.2) conflict with this mod due to area script overwriting. Current versions are compatible. mod_installer: game detection fails if installed pre-EET — ELSE-IF chain (bgee → eet → tutu → totsc → bgt → FAIL) correctly includes eet at line 19, but requires EET already installed so GAME_IS eet evaluates true. When run on BGEE before EET, installs as bgee which is valid. When run post-EET, GAME_IS eet is detected. Fix: install post-EET on BG2EE executable. The recorded failure suggests it was attempted pre-EET on BGEE, or eet_cpmvars.tpa (line 23) was missing. Confirm ph is BG1 content installed in EET phase."
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "DarkHorizons"
+  }
+}

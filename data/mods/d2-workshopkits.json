@@ -1,0 +1,1098 @@
+{
+  "i": 661,
+  "t": "d2-workshopkits",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 330,
+  "c": "KIT & CLASS MODS",
+  "n": "D2 Workshop Kits",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "cats": [
+    "KIT & CLASS MODS",
+    "POST-TACTICAL TWEAKS"
+  ],
+  "no": "D2 Workshop Kits by Dan_P. Three component groups: (1) Kit Updater (cn:90-95) — standalone utility that fixes HLA tables and proficiencies for ALL kits in the game, should install AFTER all kit mods. (2) Workshop Kitpack (cn:9999-10001) — 17 Soulsborne-inspired kits. (3) Item Pack (cn:10-11) — themed items. Kit Updater is multi-cat to POST-TACTICAL TWEAKS for correct install order.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "Kit Updater option 6 can restore ToF backup before edits. Install D2WK after all kit mods, before ToF.",
+      "orderOnly": true,
+      "myComps": "#90 Kit Updater"
+    },
+    {
+      "with": "d5_5e_casting",
+      "withId": 372,
+      "severity": "soft",
+      "reason": "Kit Updater has a dedicated 5E casting option. Use this if running SubtleD's 5E casting mod.",
+      "myComps": "#94 Kit Updater for 5E casting"
+    }
+  ],
+  "kitAbilities": {
+    "6": {
+      "D2WK_BEAST_HUNTER_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter/multi. +3 vs lycanthropes/fiends. Hunter Tools (acid). Quicksilver (ranged enhancement). Max studded leather."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "studded leather max"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE",
+          "FIGHTER/MAGE/CLERIC",
+          "FIGHTER/CLERIC"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class kit. Combines fighter combat with mage spells."
+        }
+      },
+      "D2WK_WARHOUND_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter/multi. Missile defense. Grand Mastery ranged. Shockwave, Incinerate."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cannot specialize melee or fighting styles."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class fighter/mage variant."
+        }
+      },
+      "D2WK_GRAVE_WARDEN_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger/multi. +4 save vs death. Casts arcane as priest. Denial (death immunity + heal)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "chain max",
+          "alignment": "Non-evil non-chaotic",
+          "items": "No Charm Animal."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class with arcane-as-priest casting."
+        }
+      },
+      "D2WK_MOONLIGHT_KNIGHT_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger/multi. Moonscar (save bonuses). Torrent (haste on hit). Moonlight Vortex (magic beam, strong vs undead)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "AC penalty vs slash/pierce. Reduced stealth."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/RANGER"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Multi-class; uses cleric HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Cleric/Ranger multi with Moonlight abilities."
+        }
+      },
+      "D2WK_CONFESSOR_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin/multi. Arcane spells as priest. Rooting Shot (entangle). Bloodletter (lifesteal + bleed)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "studded leather max",
+          "noLayOnHands": true
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Paladin multi with arcane-as-priest casting."
+        }
+      },
+      "D2WK_TEMPLE_KNIGHT_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin/multi. Force (stun shockwave). 3x Lay On Hands. Bolt of Glory at lv9. High Mastery polearms/blunt."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "No ranged specialization. Turns undead 2 levels lower."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Paladin multi with Temple Knight abilities."
+        }
+      },
+      "D2WK_WAR_MAGICIAN_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Mage/multi. Elemental resistance scaling to 30%. Unleash Magic (reverse resist for dmg). Twisted Barricade. -2 STR/CON."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/MAGE"
+        ],
+        "statBonus": {
+          "str": -2,
+          "note": "Innate stat modifiers: -2 STR"
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class fighter/mage variant."
+        }
+      },
+      "D2WK_STARJAMMER_MC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Sorcerer/multi. Immune to spell failure/silence/deafness. 8 unique spells. Interference. -2 DEX/WIS."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "dex": -2,
+          "note": "Innate stat modifiers: -2 DEX"
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Multi-class; uses fighter HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Multi-class sorcerer variant."
+        }
+      },
+      "D2WK_BLOOD_MINISTER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Cleric. Immune to level drain/poison/disease. 4 Blood Transfusion types (healing, beast, madman, lead)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Cannot wear magic gauntlets or bracers."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "RANGER",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Standard cleric HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard cleric spells + 4 Blood Transfusion types (healing, beast, madman, lead)."
+        },
+        "statBonus": {
+          "note": "Immune to level drain/poison/disease. Cannot wear magic gauntlets or bracers."
+        }
+      },
+      "D2WK_CROW_HUNTER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Thief. Bonus vs humanoids. Splintering Shot (burst). Visceral Attack (crit + lifesteal)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "20 skill pts/level. No Set Snare."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [
+          "FIGHTER/THIEF",
+          "FIGHTER/MAGE/THIEF",
+          "MAGE/THIEF"
+        ],
+        "hlaPool": {
+          "class": "THIEF",
+          "note": "Standard thief HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Thief kit, no spells. Splintering Shot/Visceral Attack innates."
+        },
+        "statBonus": {
+          "note": "Bonus vs humanoids. 20 skill pts/level. No Set Snare."
+        }
+      },
+      "D2WK_POWDER_KEG": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Bard. Fire resist scaling to 50%. 4 unique songs (Blasting, Booming, Dust Explosion, Frenzying Flame)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "Bard Song disabled 8 rounds after use. 1/4 Pick Pockets."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "BARD",
+          "note": "Standard bard HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Bard kit. 4 unique songs (Blasting/Booming/Dust Explosion/Frenzying Flame). Bard Song disabled 8 rounds after use."
+        },
+        "statBonus": {
+          "note": "Fire resist scales to 50%. 1/4 Pick Pockets."
+        }
+      },
+      "D2WK_DRIFTER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Ranger. Immune to Grease/Web/Entangle. Faster movement. Evasion. Progressive AC bonus."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "leather/hide only",
+          "alignment": "Non-lawful",
+          "noSpells": true
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No ranger spells. Immune to Grease/Web/Entangle. Evasion passive."
+        },
+        "statBonus": {
+          "note": "Faster movement. Progressive AC bonus. Leather/hide only."
+        }
+      },
+      "D2WK_MEDIC": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Monk. Ki Energy with passive regen. 5 Medic Arts (healing, remedies, Dragonrot damage)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "8 skill pts/level. No Stunning Blow or Quivering Palm."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "note": "Standard monk HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Monk kit, no spells. Ki Energy with passive regen. 5 Medic Arts."
+        },
+        "statBonus": {
+          "note": "8 skill pts/level. No Stunning Blow or Quivering Palm."
+        }
+      },
+      "D2WK_NOBLE_SCION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Ranged bonuses. Grand Mastery bows/crossbows. Blood Bullet (HP sacrifice for damage)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "splint max",
+          "items": "Cannot specialize melee or fighting styles."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells. Blood Bullet (HP sacrifice for damage)."
+        },
+        "statBonus": {
+          "note": "Splint mail max. Cannot specialize melee or fighting styles."
+        }
+      },
+      "D2WK_FULL_METAL_JAGUAR": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Backstab immunity. Ghostwalker (mirror images). Critical Boost (melee enhancement)."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "splint max"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [
+          "FIGHTER/MAGE",
+          "FIGHTER/THIEF"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "Fighter kit, no spells. Backstab immunity. Ghostwalker (mirror images)."
+        },
+        "statBonus": {
+          "note": "Splint mail max. Backstab immunity."
+        }
+      }
+    },
+    "7": {
+      "D2WK_BEAST_HUNTER": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Fighter version of Beast Hunter."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "armor": "studded leather max"
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard fighter abilities + Hunter Tools (acid). No spells."
+        },
+        "statBonus": {
+          "note": "+3 vs lycanthropes/fiends. Studded leather max."
+        }
+      },
+      "D2WK_WARHOUND": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Fighter version of Warhound."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard fighter abilities + Shockwave/Incinerate. No spells."
+        },
+        "statBonus": {
+          "note": "Missile defense bonuses. Cannot specialize melee or fighting styles."
+        }
+      },
+      "D2WK_GRAVE_WARDEN": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Ranger version of Grave Warden."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Casts arcane spells as priest (unique system). +4 save vs death."
+        },
+        "statBonus": {
+          "note": "+4 save vs death. Chain mail max. Non-evil non-chaotic. No Charm Animal."
+        }
+      },
+      "D2WK_MOONLIGHT_KNIGHT": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Ranger version of Moonlight Knight."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger spells + Moonlight Vortex (magic beam vs undead)."
+        },
+        "statBonus": {
+          "note": "AC penalty vs slash/pierce. Reduced stealth."
+        }
+      },
+      "D2WK_CONFESSOR": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Paladin version of Confessor."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Casts arcane spells as priest (unique system). Standard paladin restrictions."
+        },
+        "statBonus": {
+          "note": "Studded leather max. No Lay On Hands."
+        }
+      },
+      "D2WK_TEMPLE_KNIGHT": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Paladin version of Temple Knight."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spells + Force shockwave + 3x Lay On Hands. Bolt of Glory at lv9."
+        },
+        "statBonus": {
+          "note": "High Mastery polearms/blunt. No ranged specialization. Turns undead 2 levels lower."
+        }
+      },
+      "D2WK_WAR_MAGICIAN": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Mage version of War Magician."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "THIEF",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Standard mage HLA pool"
+        },
+        "spellRestrictions": {
+          "specialist": "Generic",
+          "note": "Standard mage spells + Unleash Magic (reverses elemental resistances for damage)."
+        },
+        "statBonus": {
+          "str": -2,
+          "con": -2,
+          "note": "-2 STR, -2 CON. Elemental resistance scales to 30%."
+        }
+      },
+      "D2WK_STARJAMMER": {
+        "passive": [
+          {
+            "n": "Same as multiclass variant",
+            "type": "desc",
+            "desc": "Single-class Sorcerer version of Starjammer."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard sorcerer spells + 8 unique custom spells. Immune to spell failure/silence/deafness."
+        },
+        "statBonus": {
+          "dex": -2,
+          "wis": -2,
+          "note": "-2 DEX, -2 WIS."
+        }
+      }
+    }
+  },
+  "kits": {
+    "6": {
+      "new": [
+        [
+          "D2WK_BEAST_HUNTER_MC",
+          "ranger",
+          "Beast Hunter",
+          "Wherever there are beasts, there are hunters. Specialized beast-slaying ranger."
+        ],
+        [
+          "D2WK_WARHOUND_MC",
+          "fighter",
+          "Warhound",
+          "Armored soldier specializing in long-range warfare with crossbows and firearms."
+        ],
+        [
+          "D2WK_GRAVE_WARDEN_MC",
+          "cleric",
+          "Grave Warden",
+          "Tends to tombs of the slumbering dead, ensuring they remain undisturbed."
+        ],
+        [
+          "D2WK_MOONLIGHT_KNIGHT_MC",
+          "paladin",
+          "Moonlight Knight",
+          "Forlorn warrior branded by the Moonscar, dreaming of endless moonlit vistas."
+        ],
+        [
+          "D2WK_CONFESSOR_MC",
+          "paladin",
+          "Confessor",
+          "Paladin acting on behalf of a patron church, adept at hunting heretics."
+        ],
+        [
+          "D2WK_TEMPLE_KNIGHT_MC",
+          "paladin",
+          "Temple Knight",
+          "Heavily-clad knight guarding the sanctity of temples and churches."
+        ],
+        [
+          "D2WK_WAR_MAGICIAN_MC",
+          "mage",
+          "War Magician",
+          "Draws out and amplifies innate magical energies for devastating combat magic."
+        ],
+        [
+          "D2WK_STARJAMMER_MC",
+          "mage",
+          "Starjammer",
+          "Drifter from beyond the stars who escaped a great Evil. Cosmic arcane magic."
+        ],
+        [
+          "D2WK_BLOOD_MINISTER",
+          "cleric",
+          "Blood Minister",
+          "Heretical healer practicing blood ministration. Medical magic through vital fluids."
+        ],
+        [
+          "D2WK_CROW_HUNTER",
+          "thief",
+          "Crow Hunter",
+          "Acts swiftly and mercilessly against the chosen mark. Precision assassin."
+        ],
+        [
+          "D2WK_POWDER_KEG",
+          "bard",
+          "Powder Keg",
+          "Bard faction known for intricate mechanical devices and explosive performances."
+        ],
+        [
+          "D2WK_DRIFTER",
+          "ranger",
+          "Drifter",
+          "Aimless wanderer at home in adverse terrain. Survival and adaptability."
+        ],
+        [
+          "D2WK_MEDIC",
+          "monk",
+          "Medic",
+          "Skilled medical practitioner and warrior with extensive healing training."
+        ],
+        [
+          "D2WK_NOBLE_SCION",
+          "fighter",
+          "Noble Scion",
+          "Scion of a respectable line with faith in their pedigree. Noble combat training."
+        ],
+        [
+          "D2WK_FULL_METAL_JAGUAR",
+          "fighter",
+          "Full Metal Jaguar",
+          "Highly capable versatile warrior leading with burst attacks and tactical speed."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "D2WK_BEAST_HUNTER",
+          "ranger",
+          "Beast Hunter",
+          "Wherever there are beasts, there are hunters. Specialized beast-slaying ranger."
+        ],
+        [
+          "D2WK_WARHOUND",
+          "fighter",
+          "Warhound",
+          "Armored soldier specializing in long-range warfare with crossbows and firearms."
+        ],
+        [
+          "D2WK_GRAVE_WARDEN",
+          "cleric",
+          "Grave Warden",
+          "Tends to tombs of the slumbering dead, ensuring they remain undisturbed."
+        ],
+        [
+          "D2WK_MOONLIGHT_KNIGHT",
+          "paladin",
+          "Moonlight Knight",
+          "Forlorn warrior branded by the Moonscar, dreaming of endless moonlit vistas."
+        ],
+        [
+          "D2WK_CONFESSOR",
+          "paladin",
+          "Confessor",
+          "Paladin acting on behalf of a patron church, adept at hunting heretics."
+        ],
+        [
+          "D2WK_TEMPLE_KNIGHT",
+          "paladin",
+          "Temple Knight",
+          "Heavily-clad knight guarding the sanctity of temples and churches."
+        ],
+        [
+          "D2WK_WAR_MAGICIAN",
+          "mage",
+          "War Magician",
+          "Draws out and amplifies innate magical energies for devastating combat magic."
+        ],
+        [
+          "D2WK_STARJAMMER",
+          "mage",
+          "Starjammer",
+          "Drifter from beyond the stars who escaped a great Evil. Cosmic arcane magic."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/D2-mods/The-Workshop-Kitpack",
+  "a": "Dan_P",
+  "v": "5.29",
+  "sum": "17 Soulsborne-inspired kits with multiclass variants, 30+ items, and a Kit Updater that fixes proficiency/HLA conflicts with other mods.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/D2-mods/The-Workshop-Kitpack",
+  "au": "Dan_P",
+  "gh": {
+    "o": "D2-mods",
+    "r": "The-Workshop-Kitpack"
+  },
+  "co": [
+    {
+      "cn": 90,
+      "n": "Kit Updater: All updates + config options (recommended)",
+      "g": "kit_updater",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 90,
+      "no": "Kit Updater: ALL fixes. Scans kitlist.2da and rebuilds HLA tables, fixes proficiencies, updates mod compatibility for ALL kits in the game (not just Workshop Kits). Uses NO_LOG_RECORD — can be re-run anytime. Should install AFTER all other kit mods. Backs up weapprof.2da, m_dw_hld.lua (ToF feats). Recommended option.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "tp2n": "All updates, config options (choose this)"
+    },
+    {
+      "n": "HLA tables - recreates all tables",
+      "cn": 1,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "HLA tables - recreates all tables",
+      "pi": "D2_WORKSHOP_KITUPDATER2",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)"
+    },
+    {
+      "n": "Medic stuff - fixes skill points, updates Medic Arts, config options",
+      "cn": 2,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "Medic stuff - fixes skill points, updates Medic Arts, config options",
+      "pi": "D2_WORKSHOP_KITUPDATER3",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)"
+    },
+    {
+      "n": "Proficiencies - fixes issues, updates all kits",
+      "cn": 3,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "Proficiencies - fixes issues, updates all kits",
+      "pi": "D2_WORKSHOP_KITUPDATER4",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)"
+    },
+    {
+      "n": "for 5e casting by subtledoctor (tweak spell slots)",
+      "cn": 4,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "for 5e casting by subtledoctor (tweak spell slots)",
+      "pi": "D2_WORKSHOP_KITUPDATER5",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)"
+    },
+    {
+      "n": "Option 1, but restore ToF backup before edits (m_dw_hld.lua)",
+      "cn": 5,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "Option 1, but restore ToF backup before edits (m_dw_hld.lua)",
+      "pi": "D2_WORKSHOP_KITUPDATER6",
+      "scn": "Kit Updater (Safe to install at end of order. Can be re-run at any time.)"
+    },
+    {
+      "cn": 9999,
+      "n": "Workshop Kitpack: Base kits + multiclass variants",
+      "g": "kitpack",
+      "scn": "The Workshop Kitpack",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 9999,
+      "k": 15,
+      "sp": 16,
+      "spLv": {
+        "w1": 2,
+        "w2": 1,
+        "w3": 1,
+        "w4": 1,
+        "w5": 1,
+        "w6": 1,
+        "w7": 1,
+        "w8": 1,
+        "p1": 2,
+        "p2": 2,
+        "p3": 2,
+        "p4": 1
+      },
+      "no": "Workshop Kitpack: 17 Soulsborne-inspired kits (Bloodborne Hunter, Dark Souls warrior types, etc.) with multiclass variants. Adds 15 kit slots. Independent of Kit Updater.",
+      "kC": {
+        "ranger": 2,
+        "fighter": 3,
+        "cleric": 2,
+        "paladin": 3,
+        "mage": 2,
+        "thief": 1,
+        "bard": 1,
+        "monk": 1
+      },
+      "tp2n": "Base kits + multiclass variants"
+    },
+    {
+      "n": "Base kits only",
+      "cn": 7,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "Base kits only",
+      "pi": "D2_WORKSHOP_NOVARIANTS",
+      "scn": "The Workshop Kitpack"
+    },
+    {
+      "n": "Misc items only (no kits or Hunter Badges)",
+      "cn": 8,
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "verified",
+      "tp2n": "Misc items only (no kits or Hunter Badges)",
+      "pi": "D2_WORKSHOP_NOKITS",
+      "scn": "The Workshop Kitpack"
+    },
+    {
+      "cn": 10,
+      "n": "Item Pack: Standard install",
+      "g": "item_pack",
+      "scn": "Misc item pack",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 10,
+      "no": "Item Pack: Standard install. Adds Soulsborne-themed weapons, armor, and accessories to shops. Requires Workshop Kitpack (any variant). Normal gameplay.",
+      "x": 6,
+      "tp2n": "Dev mode (start with Item Sack)"
+    },
+    {
+      "cn": 91,
+      "n": "Kit Updater: HLA tables only",
+      "g": "kit_updater",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 91,
+      "no": "Kit Updater: HLA tables only. Recreates HLA tables for all kits by scanning kitlist.2da. Fixes kits that got broken HLA tables from install order issues. Standalone — does not require Workshop Kitpack. Should install AFTER all kit mods.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "gone": true
+    },
+    {
+      "cn": 92,
+      "n": "Kit Updater: Medic fixes only",
+      "g": "kit_updater",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 92,
+      "no": "Kit Updater: Medic-specific fixes only. Updates Medic Arts ability and fixes skill points for the Workshop Medic kit. Only useful if Workshop Kitpack is installed.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "gone": true
+    },
+    {
+      "cn": 93,
+      "n": "Kit Updater: Proficiency fixes only",
+      "g": "kit_updater",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 93,
+      "no": "Kit Updater: Proficiency fixes only. Fixes proficiency table issues for kits that have conflicts. Standalone — works for any kit mods.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "gone": true
+    },
+    {
+      "cn": 94,
+      "n": "Kit Updater: For 5E casting (SubtleD)",
+      "g": "kit_updater",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 94,
+      "no": "Kit Updater: For SubtleD's 5E Casting mod. Tweaks spell slots to work with 5E-style casting system. Requires 5E Spellcasting mod installed.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "gone": true
+    },
+    {
+      "cn": 95,
+      "n": "Kit Updater: All updates + restore ToF backup",
+      "g": "kit_updater",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 95,
+      "no": "Kit Updater: All fixes + restores ToF backup of m_dw_hld.lua before making edits. Use if ToF is installed and you want to preserve its feat configuration as a baseline.",
+      "cat": "POST-TACTICAL TWEAKS",
+      "gone": true
+    },
+    {
+      "cn": 10000,
+      "n": "Workshop Kitpack: Base kits only",
+      "g": "kitpack",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 10000,
+      "k": 8,
+      "sp": 16,
+      "spLv": {
+        "w1": 2,
+        "w2": 1,
+        "w3": 1,
+        "w4": 1,
+        "w5": 1,
+        "w6": 1,
+        "w7": 1,
+        "w8": 1,
+        "p1": 2,
+        "p2": 2,
+        "p3": 2,
+        "p4": 1
+      },
+      "no": "Workshop Kitpack: Base kits only (no multiclass variants). Adds 8 kit slots. Fewer kits = less kit cap impact.",
+      "kC": {
+        "ranger": 1,
+        "fighter": 1,
+        "cleric": 1,
+        "paladin": 3,
+        "mage": 2
+      },
+      "gone": true
+    },
+    {
+      "cn": 10001,
+      "n": "Workshop Kitpack: Misc items only (no kits)",
+      "g": "kitpack",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 10001,
+      "k": 0,
+      "no": "Workshop Kitpack: Misc items only — Soulsborne-themed items without any kits. Adds 6 kit slots (items that use kit slots for internal tracking). No actual character kits.",
+      "gone": true
+    },
+    {
+      "cn": 11,
+      "n": "Item Pack: Dev mode (start with Item Sack)",
+      "g": "item_pack",
+      "wf": "d2-workshopkits",
+      "wp": "d2-workshopkits\\D2-WORKSHOPKITS.TP2",
+      "wq": "exact",
+      "wc": 11,
+      "no": "Item Pack: Dev/debug mode. Starts with an Item Sack containing all items. For testing only — not for normal gameplay.",
+      "x": 6,
+      "gone": true
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "i": 677,
+  "t": "mod-caster-crafting",
+  "sv": 1,
+  "ord": 470,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Mod Caster Crafting",
+  "no": "REMOVED FROM ULTIMATE PRESET — all components require SPWI100.spl (Dancing Lights, IWD cantrip) which is not created by any mod in the preset. The EET scroll list references it but no installed mod provides it. Not a bug in this mod — it's a missing dependency.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Missing Spell Scrolls\\]|ERROR Installing \\[Leveled Scrolls\\]|ERROR Installing \\[Caster Crafting\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "All components require spell scroll files (e.g. SPWI100.spl) created by Talents of Faerun's IWD spell import (cn:1500). If ToF's IWD spell batch fails or is not installed, the scroll files don't exist and mod-caster-crafting fails. Not a bug in this mod — cascade failure from upstream ToF.",
+      "workaround": "Ensure Talents of Faerun cn:1500 (IWD arcane spell imports) installed successfully. Check ToF's install log for errors. If ToF is not in your install, these components cannot be used.",
+      "user_action": "check-docs",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/BardezAnAvatar/BGEE-Caster-Crafting",
+  "a": "BardezAnAvatar",
+  "v": "v0.7.6",
+  "sum": "Mod for Infinity Engine games that introduces crafting (scrolls, potions, wands) for casters (mage, cleric, druid, etc.)",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/BardezAnAvatar/BGEE-Caster-Crafting",
+  "au": "Bardez",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Add in missing arcane spell scrolls",
+      "tp2n": "Add in missing arcane spell scrolls",
+      "cn": 11,
+      "g": "spell_scrolls",
+      "scn": "Missing Spell Scrolls",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 11
+    },
+    {
+      "n": "Add in missing priest spell scrolls",
+      "tp2n": "Add in missing priest spell scrolls",
+      "cn": 12,
+      "g": "spell_scrolls",
+      "scn": "Missing Spell Scrolls",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 12
+    },
+    {
+      "n": "Missing Spell Scrolls -> Add in missing arcane and priest spell scrolls",
+      "tp2n": "Add in missing arcane and priest spell scrolls",
+      "cn": 13,
+      "g": "spell_scrolls",
+      "scn": "Missing Spell Scrolls",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 13
+    },
+    {
+      "n": "Leveled Scrolls: craft scrolls at higher caster levels",
+      "tp2n": "Leveled Scrolls: craft scrolls at higher caster levels",
+      "cn": 20,
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 20
+    },
+    {
+      "n": "Copy Spells from Party Member Spellbooks",
+      "tp2n": "Copy Spells from Party Member Spellbooks",
+      "cn": 31,
+      "g": "scribing_tools",
+      "scn": "Caster Crafting: Scribing Tools",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 31
+    },
+    {
+      "n": "Scribe scrolls",
+      "tp2n": "Scribe scrolls",
+      "cn": 32,
+      "g": "scribing_tools",
+      "scn": "Caster Crafting: Scribing Tools",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 32
+    },
+    {
+      "n": "Caster Crafting: Scribing Tools -> Copy Spells from Party Member Spellbooks AND Scribe scrolls",
+      "tp2n": "Copy Spells from Party Member Spellbooks AND Scribe scrolls",
+      "cn": 33,
+      "g": "scribing_tools",
+      "scn": "Caster Crafting: Scribing Tools",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 33
+    },
+    {
+      "n": "Potions for existing Spells",
+      "tp2n": "Potions for existing Spells",
+      "cn": 40,
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 40
+    },
+    {
+      "n": "Caster Crafting: Crafting Station -> Brew potions",
+      "tp2n": "Brew potions",
+      "cn": 81,
+      "g": "crafting_station",
+      "scn": "Caster Crafting: Crafting Station",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 81
+    },
+    {
+      "n": "Craft wands (Not yet implemented)",
+      "tp2n": "Craft wands (Not yet implemented)",
+      "cn": 82,
+      "g": "crafting_station",
+      "scn": "Caster Crafting: Crafting Station",
+      "no": "Wands portion not yet implemented by mod author",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 82
+    },
+    {
+      "n": "Both brew potions and craft wands (Not yet implemented)",
+      "tp2n": "Both brew potions and craft wands (Not yet implemented)",
+      "cn": 83,
+      "g": "crafting_station",
+      "scn": "Caster Crafting: Crafting Station",
+      "no": "Wands portion not yet implemented by mod author",
+      "wf": "mod-caster-crafting",
+      "wp": "mod-caster-crafting\\mod-caster-crafting.tp2",
+      "wc": 83
+    }
+  ],
+  "gh": {
+    "o": "BardezAnAvatar",
+    "r": "BGEE-Caster-Crafting"
+  }
+}

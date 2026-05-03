@@ -1,0 +1,56 @@
+{
+  "i": 429,
+  "t": "zg_bg_voices",
+  "sv": 1,
+  "pfx": "ZG",
+  "ord": 240,
+  "c": "MUSIC & AUDIO",
+  "n": "ZG BG Voices",
+  "no": "Ports the original Baldur's Gate 1 PC voicesets to Enhanced Edition 2.6+ as selectable player character soundsets. Includes 17 sets: 9 female and 8 male personalities.",
+  "conflicts": [],
+  "dl": "https://github.com/GraionDilach/Baldurs-Gate-II-Voice-Pack-for-EE-2.6/releases",
+  "u": "https://github.com/GraionDilach/Baldurs-Gate-II-Voice-Pack-for-EE-2.6/releases",
+  "a": "GraionDilach",
+  "langs": {
+    "en": 0
+  },
+  "v": "1.1.0",
+  "sum": "Baldur's Gate II Voice Pack for Infinity Engine Enhanced Edition games version 2.6 and above.",
+  "tags": [
+    "tweak",
+    "audio"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "GraionDilach",
+    "r": "Baldurs-Gate-II-Voice-Pack-for-EE-2.6"
+  },
+  "au": "zghenern",
+  "co": [
+    {
+      "n": "Baldur's Gate Voice Pack for EE 2.6+",
+      "tp2n": "Baldur's Gate Voice Pack for EE 2.6+",
+      "pi": "ZG-VOICE-BG",
+      "wf": "zg_bg_voices",
+      "wp": "zg_bg_voices\\ZG_BG_VOICES.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0
+    }
+  ],
+  "advisories": [
+    {
+      "with": "vveBG",
+      "withId": 731,
+      "severity": "soft",
+      "reason": "Both add voice content to BG1 characters. VVE provides full AI voiceover for all dialogue; ZG provides curated voice packs. May cause audio inconsistencies if both installed.",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "i": 415,
+  "t": "Trap_Overhaul",
+  "sv": 1,
+  "ord": 150,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Trap Overhaul",
+  "no": "poison skill uses EEex, prrrrobably doesn't work with UI mods and other poison reworks Kjeron's Trap Overhaul lots of options, I default to the full one, go choose any other you may want or because you're using an alternative to a feature. Also can't install in IWD? Update 24-07-25: Now it does install? @_@",
+  "conflicts": [
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Functionality provided by Trap Overhaul (per II install notes)",
+      "myComps": "#1111 #1110 #1101 #1011 #1100 #1010 #1001 #1000 #111 #110 #101 #11 #100 #10 #1 All trap overhaul options",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 #14 Trap components"
+    },
+    {
+      "with": "tnt",
+      "withId": 406,
+      "severity": "soft",
+      "reason": "Functionality provided by Trap Overhaul - Manually Added (per II install notes)",
+      "theirComps": "#2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 #14 Trap components"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "trap_overhaul.*(running [0-9]+m|stalled|SPLSTATE\\.IDS\\] loaded)",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Trap Overhaul's ADD_SPLSTATE function loops 0-255 searching for a free SPLSTATE.IDS slot. In megainstalls with 250+ existing splstates (dw_talents adds ~67, stratagems ~50+, SubtleD_Spell_Tweaks ~19, etc.), all 256 vanilla slots are full. The loop runs to completion without finding a free slot — each iteration reloads the whole SPLSTATE.IDS file via FILE_CONTAINS_EVALUATED, producing stdout silence but filling WSETUP.DEBUG with thousands of '[./override/SPLSTATE.IDS] loaded, NNNN bytes' lines. Observed in session 6693001a (2026-04-16): Trap Overhaul component 0.21 (Monk Evasion, Fast Detection, Recovery) stalled for 52 minutes before user abort, WSETUP.DEBUG grew to 39.5 MB of these lines.",
+      "workaround": "Apply Infinity Mod Runner's Trap Overhaul splstate-512 patch (manifest #55, marker _eetmr_splstate_512_v2). The patch extends the ADD_SPLSTATE search loop AND break sentinel from 256 → 512, giving enough headroom since EE engines support splstate indices >255 (stratagems already uses 256-315 successfully).",
+      "user_action": "apply-patches",
+      "evidenceLevel": "observed",
+      "source": "Session references extracted from description on 2026-04-21 during Phase 2.3 validator rollout: session 6693001a"
+    }
+  ],
+  "u": "https://forums.beamdog.com/discussion/71763/trap-detection-recovery-evasion/p1",
+  "a": "kjeron",
+  "sum": "Overhauls the trap system with 15 components: smarter trap placement, new trap types, and rebalanced trap damage and detection.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://forums.beamdog.com/discussion/71763/trap-detection-recovery-evasion/p1",
+  "au": "morpheus562",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Trap Overhaul: Monk Evasion, Fast Detection, Recovery, Anyone OpenLocks",
+      "ss": 1,
+      "cn": 1111,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1111,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Fast Detection, Recovery, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Fast Detection, Anyone OpenLocks",
+      "cn": 1110,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1110,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Fast Detection, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Recovery, Anyone OpenLocks",
+      "cn": 1101,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1101,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Recovery, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Fast Detection, Recovery, Anyone OpenLocks",
+      "cn": 1011,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1011,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Fast Detection, Recovery, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Anyone OpenLocks",
+      "cn": 1100,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1100,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Fast Detection, Anyone OpenLocks",
+      "cn": 1010,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1010,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Fast Detection, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Recovery, Anyone OpenLocks",
+      "cn": 1001,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1001,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Recovery, Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Anyone OpenLocks",
+      "cn": 1000,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1000,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Anyone OpenLocks"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Fast Detection, Recovery,",
+      "cn": 111,
+      "no": "Requires a free SPLSTATE.IDS slot. Will fail if all 256 slots are consumed by earlier mods.",
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 111,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Fast Detection, Recovery"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Fast Detection",
+      "cn": 110,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 110,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Fast Detection"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion, Recovery",
+      "cn": 101,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 101,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion, Recovery"
+    },
+    {
+      "n": "Trap Overhaul: Fast Detection, Recovery",
+      "cn": 11,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 11,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Fast Detection, Recovery"
+    },
+    {
+      "n": "Trap Overhaul: Monk Evasion",
+      "cn": 100,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 100,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Monk Evasion"
+    },
+    {
+      "n": "Trap Overhaul: Fast Detection",
+      "cn": 10,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 10,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Fast Detection"
+    },
+    {
+      "n": "Trap Overhaul: Recovery",
+      "cn": 1,
+      "wf": "Trap_Overhaul",
+      "wp": "Trap_Overhaul\\setup-Trap_Overhaul.tp2",
+      "wc": 1,
+      "wq": "guessed",
+      "g": "trap_combo",
+      "scn": "Trap Overhaul",
+      "tp2n": "Recovery"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "EpicThieving",
+      "withId": 414,
+      "severity": "soft",
+      "reason": "Both modify trap mechanics. May conflict",
+      "orderOnly": true,
+      "myComps": "#1111 #1110 #1101 #1011 #1100 #1010 #1001 #1000 #111 #110 #101 #11 #100 #10 #1 All trap overhaul options",
+      "theirComps": "#100 Epic Traps #200 Epic Trap Setting",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

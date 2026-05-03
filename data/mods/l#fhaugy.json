@@ -1,0 +1,96 @@
+{
+  "i": 181,
+  "t": "l#fhaugy",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 580,
+  "c": "NEW NPC MODS",
+  "n": "Fhaugy",
+  "no": "Fhaugy LN Male Half-Orc Monk",
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "FHAUGY_BALDURS_GATE_2_EE_NPC",
+          "npc",
+          "Twin Tusks Monk: Fhaugy",
+          "Half-orc monk with unique twin tusks fighting style."
+        ]
+      ]
+    }
+  },
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "fhaugy",
+          "portraits/l_fhaugy/l_fha.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/fhaugy/",
+  "a": "Lava Del'Vortel",
+  "v": "v1.03",
+  "sum": "Neutral half-orc monk NPC with personal quests, friendship talks, romance for male protagonists, and a custom Twin Tusks Monk kit.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/fhaugy/",
+  "langs": {
+    "en": 0
+  },
+  "kitAbilities": {
+    "0": {
+      "FHAUGY_BALDURS_GATE_2_EE_NPC": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Half-orc monk with unique twin tusks fighting style."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "co": [
+    {
+      "n": "Fhaugy - Baldur's Gate 2: EE NPC",
+      "pi": "L#-Fhaugy",
+      "wf": "FHAUGY",
+      "wp": "Fhaugy\\Fhaugy.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "k": 1,
+      "no": "If FaldornBG2 is installed, vanilla Faldorn DV is replaced with l#fald via clean_ToB_DV, causing 'Faldorn position not found within FATESP.DLG'. Fix applied: changed stringPosDV to use Eldoth (stable vanilla DV) in tp2.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Fhaugy - Baldur's Gate 2: EE NPC"
+    },
+    {
+      "n": "Fhaugy: Player-Initiated Dialogues (PIDs)",
+      "pi": "L#-Fhaugy-PID",
+      "wf": "FHAUGY",
+      "wp": "Fhaugy\\Fhaugy.tp2",
+      "wc": 1,
+      "wq": "manual_final",
+      "cn": 1,
+      "x": 0,
+      "no": "Player-initiated dialogues. Requires main component",
+      "tp2n": "Fhaugy: Player-Initiated Dialogues (PIDs)"
+    }
+  ]
+}

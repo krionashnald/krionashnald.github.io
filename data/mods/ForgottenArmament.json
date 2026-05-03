@@ -1,0 +1,358 @@
+{
+  "i": 252,
+  "t": "forgotten-armament",
+  "sv": 1,
+  "pfx": "MO",
+  "ord": 30,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Forgotten Armament",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "cats": [
+    "ITEM ADDITION MODS",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "Forgotten Armament by morpheus562. Item additions (GROUP @3006) install in ITEM ADDITION MODS. Item tweaks (GROUP @3007) install in PRE-TACTICAL TWEAKS. 6 components FORBID Item Revisions main (cn:0) — auto-skip if IR main is installed.",
+  "_legacy_ids": [
+    347
+  ],
+  "conflicts": [
+    {
+      "with": "item_rev",
+      "withId": 283,
+      "severity": "soft",
+      "reason": "6 FA components use REQUIRE_PREDICATE !MOD_IS_INSTALLED setup-item_rev.tp2 cn:0 — auto-skip if IR main installed. FA cn:26 (Armor Overhaul) also checks IR cn:1040/1042. IR main (cn:0) (only cn:1060/1070 standalone tweaks), so all FA components install fine. No conflict in current preset. cn:10 (NWN2 Weapons) has NO IR check — always safe. Hard conflict only if IR main (cn:0) is selected.",
+      "myComps": "#4 Stat Items #19 Nerf APR #21 Update Existing #23 #24 Crit Immunity #25 Set Bonuses #26 Armor Overhaul",
+      "theirComps": "#0 Item Revisions main #1040 #1042 Armor (cn:26 only)",
+      "source": "FA tp2 REQUIRE_PREDICATE !MOD_IS_INSTALLED on cn:4/19/21/23/24/25; cn:26 checks IR 1040/1042; cn:10 no IR check, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.morpheus-mart.com/",
+  "a": "morpheus562",
+  "v": "v6.0",
+  "sum": "Adds new weapons, armor, and magical items across BG1 and BG2. Items are placed in logical locations with merchant integration.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v0.4-beta",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Forgotten-Armament"
+  },
+  "dl": "https://www.morpheus-mart.com/",
+  "au": "morpheus562",
+  "co": [
+    {
+      "n": "Add New Items to the Game",
+      "tp2n": "Add New Items to the Game",
+      "cn": 20,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Core item additions. Adds new items to BG1/BG2 shops and treasure. No conflicts.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Update Existing In-Game Items",
+      "tp2n": "Update Existing In-Game Items",
+      "cn": 21,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Auto-skips if IR is installed. Updates existing item stats. INSTALLS WITH WARNINGS (non-fatal): 'no effects added to SW1H69.ITM' (3x) — sword effect slots don't match expected structure.",
+      "cat": "ITEM ADDITION MODS",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Add Breach Scrolls to Sorcerous Sundries",
+      "tp2n": "Add Breach Scrolls to Sorcerous Sundries",
+      "cn": 11,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Adds Breach scrolls to Sorcerous Sundries. Requires bgee or eet (not bg2ee standalone).",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Add Ruby Ray Scrolls to Trademeet Store",
+      "tp2n": "Add Ruby Ray Scrolls to Trademeet Store",
+      "cn": 27,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Adds Ruby Ray scrolls to Trademeet store. BG2EE/EET only.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Add Freedom Scrolls to Ribald's Store (Pre-Underdark)",
+      "tp2n": "Add Freedom Scrolls to Ribald's Store (Pre-Underdark)",
+      "cn": 29,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Adds Freedom scrolls to Ribald's store (pre-Underdark). BG2EE/EET only.",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Add Items to Orrick's Store",
+      "tp2n": "Add more Items and Scrolls to Orrick's Store",
+      "cn": 30,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "IWD:EE only — REQUIRE_PREDICATE GAME_IS ~iwdee~. Auto-skipped in EET (game type is 'eet', not 'iwdee'). Would need upstream change to GAME_IS ~iwdee eet~ plus IWD store detection to work with IWD-in-EET mods.",
+      "games": [
+        "iwdee"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Add Items to Conlan's Store",
+      "tp2n": "Add more Items to Conlan's Smithy",
+      "cn": 31,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "IWD:EE only — REQUIRE_PREDICATE GAME_IS ~iwdee~. Auto-skipped in EET. Same upstream limitation as cn:30.",
+      "games": [
+        "iwdee"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Replace Boots of Speed (Paws of the Cheetah)",
+      "tp2n": "Replace Boots of Speed (Paws of the Cheetah)",
+      "cn": 8,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Replaces Boots of Speed with Paws of the Cheetah. Cosmetic/balance change.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "Create Potions of Acid Resistance",
+      "tp2n": "Create Potions of Acid Resistance",
+      "cn": 28,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "cat": "ITEM ADDITION MODS",
+      "no": "Creates Potions of Acid Resistance and adds to shops.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install Before SCS/Tactics Remix"
+    },
+    {
+      "n": "NWN2 Style Weapons",
+      "tp2n": "NWN2 Style Weapons",
+      "cn": 10,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "Changes weapon proficiency names and descriptions to NWN2 style.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install After SCS/Tactics Remix"
+    },
+    {
+      "n": "Update Items Setting an Ability Score to Increment the Increase",
+      "tp2n": "Update Items Setting an Ability Score to Increment the Increase",
+      "cn": 4,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Changes stat-setting items (e.g. gauntlets) to use incremental bonuses instead.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install After SCS/Tactics Remix"
+    },
+    {
+      "n": "Nerf APR Increasing One-Handed Melee Weapons",
+      "tp2n": "Nerf APR Increasing One-Handed Melee Weapons",
+      "cn": 19,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Nerfs APR bonuses on one-handed melee weapons for balance.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "grn": "Install After SCS/Tactics Remix"
+    },
+    {
+      "n": "Critical Hit Immunity: Remove from Difficult Enemies",
+      "tp2n": "Remove Critical Hit Immunity from Difficult Enemies",
+      "cn": 23,
+      "g": "crit_immunity",
+      "scn": "Update Critical Hit Immunity",
+      "grn": "Install After SCS/Tactics Remix",
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Removes critical hit immunity from difficult enemies. Choose one option.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Critical Hit Immunity: Allow Difficult Enemies to Remain Immune",
+      "tp2n": "Allow Difficult Enemies to Remain Immune to Critical Hits",
+      "cn": 24,
+      "g": "crit_immunity",
+      "scn": "Update Critical Hit Immunity",
+      "grn": "Install After SCS/Tactics Remix",
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Keeps critical hit immunity on difficult enemies. Choose one option.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Add Set Bonuses to Items",
+      "tp2n": "Add Set Bonuses to Items",
+      "cn": 25,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions cn:0. Adds set bonuses when wearing matching items together.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "grn": "Install After SCS/Tactics Remix"
+    },
+    {
+      "n": "Install Armor Overhaul",
+      "tp2n": "Install Armor Overhaul",
+      "cn": 26,
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "HARD CONFLICT: FORBID Item Revisions armor component. Major armor rebalance — AC values, weight, restrictions. Conflicts with YARAS and other armor overhauls.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "grn": "Install After SCS/Tactics Remix"
+    },
+    {
+      "n": "Wand Uses Per Day: One",
+      "tp2n": "One Use Per Day",
+      "cn": 33,
+      "g": "wand_uses",
+      "scn": "Update Wands to X Uses Per Day",
+      "grn": "Install After SCS/Tactics Remix",
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "Wands have 1 use per day (most restrictive). Choose one wand option.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Wand Uses Per Day: Two",
+      "tp2n": "Two Uses Per Day",
+      "cn": 34,
+      "g": "wand_uses",
+      "scn": "Update Wands to X Uses Per Day",
+      "grn": "Install After SCS/Tactics Remix",
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "Wands have 2 uses per day (balanced). Choose one wand option.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Wand Uses Per Day: Three",
+      "tp2n": "Three Uses Per Day",
+      "cn": 35,
+      "g": "wand_uses",
+      "scn": "Update Wands to X Uses Per Day",
+      "grn": "Install After SCS/Tactics Remix",
+      "wf": "forgotten-armament",
+      "wp": "forgotten-armament\\forgotten-armament.tp2",
+      "no": "Wands have 3 uses per day (most permissive). Choose one wand option.",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "with": "POLYVORP",
+      "withId": 407,
+      "severity": "soft",
+      "reason": "Both may modify overlapping weapon items. Polyvorp replaces vorpal effects; FA Update Existing Items patches weapon stats. Install Polyvorp after FA.",
+      "myComps": "#21 Update Existing In-Game Items",
+      "source": "mod readme mention, 2026-04",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

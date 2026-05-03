@@ -1,0 +1,65 @@
+{
+  "i": 87,
+  "t": "TotDG",
+  "sv": 1,
+  "pfx": "0x",
+  "ord": 250,
+  "c": "QUEST MODS BG2",
+  "n": "Colours of Infinity: Tales of the Deep Gardens",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "pl": 3,
+    "it": 4,
+    "es": 5,
+    "ru": 6,
+    "zh-cn": 7,
+    "ko": 8
+  },
+  "no": "I assume new games and skip the option to fix savefiles Colours of Infinity",
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Worldmap optional"
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/",
+  "a": "Lava Del'Vortel",
+  "v": "12.96",
+  "sum": "Standalone BG2 quest adding a new explorable garden area with encounters, puzzles, and a self-contained storyline. Part of the Colours of Infinity series.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/tales-of-the-deep-gardens/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Yes, but don't patch the existing save games",
+      "tp2n": "Yes, but don't patch the existing save games",
+      "pi": "L#-TOTDG-NOPATCH",
+      "scn": "Colours of Infinity: Tales of the Deep Gardens",
+      "wf": "TotDG",
+      "wp": "TotDG\\TotDG.TP2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "g": "TotDG_install",
+      "no": "New game required. Recommended for fresh EET installs"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes, and patch the existing save games",
+      "x": 0,
+      "g": "TotDG_install",
+      "scn": "Colours of Infinity: Tales of the Deep Gardens",
+      "no": "Patches existing saves. Use if mid-playthrough"
+    }
+  ]
+}

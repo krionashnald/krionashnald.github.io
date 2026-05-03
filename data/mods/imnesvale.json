@@ -1,0 +1,84 @@
+{
+  "i": 469,
+  "t": "imnesvale",
+  "sv": 1,
+  "ord": 480,
+  "c": "QUEST MODS BG2",
+  "n": "Imnesvale",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "it": 3
+  },
+  "no": "Expansion of the Imnesvale village PARSE ERRORS (non-fatal, all difficulties): 10 errors across 6 BAF scripts — all reference CLERIC_RESIST_COLD which doesn't exist in EE Spell.IDS. In EE, Resist Fire/Cold is a single spell (CLERIC_RESIST_FIRE / SPPR213 covers both). The cold-resist pre-buff calls silently fail but CLERIC_RESIST_FIRE already grants both resistances, so no gameplay impact.",
+  "au": "Duality",
+  "u": "https://github.com/Spellhold-Studios/Duality_Odd_Quest_Mod",
+  "a": "Various",
+  "v": "v2.1",
+  "sum": "Tactical combat encounters in Imnesvale after returning from the Underdark. Marauding invaders attack the village. Choose difficulty level.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Imnesvale"
+  },
+  "dl": "https://github.com/Spellhold-Studios/Duality_Odd_Quest_Mod",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Install Imnesvale Mod → Easy",
+      "tp2n": "Easy",
+      "no": "60s prep time, 4 spawns, limited boss triggers.",
+      "g": "imnesvale_diff",
+      "scn": "Install Imnesvale Mod",
+      "wc": 0,
+      "wf": "imnesvale",
+      "wp": "imnesvale\\imnesvale.tp2",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "cn": 1,
+      "n": "Install Imnesvale Mod → Hard",
+      "tp2n": "Hard",
+      "no": "45s prep time, 9 spawns, some triggers enabled.",
+      "g": "imnesvale_diff",
+      "scn": "Install Imnesvale Mod",
+      "wc": 1,
+      "wf": "imnesvale",
+      "wp": "imnesvale\\imnesvale.tp2",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    },
+    {
+      "cn": 2,
+      "n": "Install Imnesvale Mod → Impossible",
+      "tp2n": "Are You Out Of Your Freaking Mind?!",
+      "no": "30s prep time, endless spawns, all triggers active.",
+      "g": "imnesvale_diff",
+      "scn": "Install Imnesvale Mod",
+      "wc": 2,
+      "wf": "imnesvale",
+      "wp": "imnesvale\\imnesvale.tp2",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    }
+  ]
+}

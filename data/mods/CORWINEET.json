@@ -1,0 +1,65 @@
+{
+  "i": 555,
+  "t": "CorwinEET",
+  "sv": 1,
+  "ord": 890,
+  "c": "NEW NPC MODS",
+  "n": "Corwin NPC",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "zh-cn": 3
+  },
+  "no": "LG Female Human Ranger",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "LCA",
+      "withId": 492,
+      "severity": "hard",
+      "reason": "Both mods add Corwin as a companion in BG2. Cannot use together.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/Corwin",
+  "a": "Roxanne",
+  "v": "v1.3",
+  "sum": "Corwin extension for EET",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "au": "Roxanne",
+  "dl": "https://github.com/RoxanneSHS/Corwin",
+  "pt": false,
+  "co": [
+    {
+      "n": "Corwin NPC",
+      "cn": 0,
+      "wf": "CORWINEET",
+      "wp": "CORWINEET\\CORWINEET.TP2",
+      "wc": 0,
+      "tp2n": "Corwin NPC",
+      "games": [
+        "bgee",
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "Corwin"
+  }
+}

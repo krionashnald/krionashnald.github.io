@@ -1,0 +1,58 @@
+{
+  "i": 96,
+  "t": "AlabasterSands",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 340,
+  "c": "QUEST MODS BG2",
+  "n": "Athkatlan Grounds: Alabaster Sands",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2,
+    "fr": 3,
+    "zh-cn": 4,
+    "it": 5
+  },
+  "u": "https://downloads.weaselmods.net/download/alabaster-sands/",
+  "a": "Lava Del'Vortel",
+  "v": "v1.9.2",
+  "sum": "Small quest mod adding Athkatla's public beach area with seven new quests, fresh characters, items, and item graphics.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v1.2",
+    "place": "post"
+  },
+  "dl": "https://downloads.weaselmods.net/download/alabaster-sands/",
+  "au": "Lava Del'Vortel",
+  "no": "Small quest mod adding Athkatla's public beach area with seven new quests, fresh characters, items, and item graphics.",
+  "co": [
+    {
+      "n": "Yes, but don't patch existing save games",
+      "tp2n": "Yes, but don't patch existing save games",
+      "pi": "L#-ALSANDS-NOPATCH",
+      "scn": "Alabaster Sands: the new area of Athkatla",
+      "wf": "AlabasterSands",
+      "wp": "AlabasterSands\\ALABASTERSANDS.TP2",
+      "wc": 0,
+      "wq": "single_comp",
+      "cn": 0,
+      "g": "alabastersands_install",
+      "no": "New game required. Recommended for fresh EET installs"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes and patch existing save games",
+      "x": 0,
+      "g": "alabastersands_install",
+      "scn": "Alabaster Sands: the new area of Athkatla",
+      "no": "Patches existing saves. Use if mid-playthrough"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "i": 700,
+  "t": "randomrolls",
+  "sv": 1,
+  "ord": 60,
+  "c": "POST EET",
+  "n": "Random Rolls",
+  "no": "Replaces the game's pseudorandom number generator with hardware RDRAND for better randomness. Patches game executable.",
+  "u": "https://github.com/drake127/randomrolls",
+  "a": "drake127",
+  "sum": "Replaces the game's pseudorandom number generator with hardware RDRAND for better randomness in dice rolls, loot tables, and combat.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/drake127/randomrolls",
+  "au": "morpheus562",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Random Rolls",
+      "cn": 1000,
+      "wf": "randomrolls",
+      "wp": "randomrolls\\randomrolls.tp2",
+      "wc": 1000,
+      "wq": "exact"
+    }
+  ],
+  "gh": {
+    "o": "drake127",
+    "r": "randomrolls"
+  }
+}

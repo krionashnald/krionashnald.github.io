@@ -1,0 +1,64 @@
+{
+  "i": 88,
+  "t": "Innershade",
+  "sv": 1,
+  "pfx": "9X",
+  "ord": 260,
+  "c": "QUEST MODS BG2",
+  "n": "Colours of Infinity: Innershade",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "it": 3,
+    "ru": 4,
+    "de": 5,
+    "zh-cn": 6,
+    "ko": 7
+  },
+  "no": "MOD BUG: DGFl.itm referenced by tp2 but not included in mod package. Cannot install. File missing from all known download sources",
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Worldmap optional"
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/innershade/",
+  "a": "Lava Del'Vortel",
+  "v": "v11.16",
+  "sum": "BG2 quest mod adding the town of Innershade with quests, shops, and NPCs. A fully developed new settlement to explore. Part of the Colours of Infinity series.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/innershade/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Yes, but don't patch the existing save games",
+      "tp2n": "Yes, but don't patch the existing save games",
+      "pi": "L#-INNERSHADE-NOPATCH",
+      "scn": "Colours of Infinity: Innershade",
+      "wf": "Innershade",
+      "wp": "Innershade\\SETUP-INNERSHADE.TP2",
+      "wc": 0,
+      "wq": "single_comp",
+      "cn": 0,
+      "no": "mod_installer: Fails loading Innershade/ITEMS/DGFl.itm. Re-download mod to fix.",
+      "g": "innershade_install"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes, and patch the existing save games",
+      "x": 0,
+      "no": "mod_installer: Fails loading Innershade/ITEMS/DGFl.itm. Re-download mod to fix.",
+      "g": "innershade_install",
+      "scn": "Colours of Infinity: Innershade"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "i": 114,
+  "t": "gavin",
+  "sv": 1,
+  "pfx": "B!",
+  "ord": 1080,
+  "c": "NEW NPC MODS",
+  "n": "Gavin NPC",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "ru": 3
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "hard",
+      "reason": "Choose one Gavin portrait",
+      "myComps": "Gavin: Alternate Portraits (Default portrait is already installed) -> Dawnbringer, by Amaurea, #5, #6, #7, #8, #9",
+      "theirComps": "#15000 Vanilla #15500 Lore Alternative",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b_gavin.png",
+          "bg1"
+        ]
+      ],
+      "3": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/amgav.png",
+          "bg1"
+        ]
+      ],
+      "4": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b_gavin1.png",
+          "bg1"
+        ]
+      ],
+      "5": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b_gavin2.png",
+          "bg1"
+        ]
+      ],
+      "6": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b_gavin4.png",
+          "bg1"
+        ]
+      ],
+      "7": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b_gavin5.png",
+          "bg1"
+        ]
+      ],
+      "8": [
+        [
+          "gavin_npc",
+          "portraits/gavin_bg1/b.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gibberlings3/Gavin_BG",
+  "a": "berelinde",
+  "v": "v15.1",
+  "sum": "Adds Gavin, a morninglord cleric, as a joinable BG1 NPC with a sweet romance, healing focus, and thoughtful dialogue.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v12",
+    "place": "post"
+  },
+  "au": "berelinde",
+  "dl": "https://github.com/Gibberlings3/Gavin_BG",
+  "no": "This mod adds Gavin, a neutral good Dawnbringer of Lathander, to Baldur's Gate Enhanced Edition or the Baldur's Gate conversion projects Tutu, Baldur's Gate Trilogy, and Enhanced Edition Trilogy.",
+  "co": [
+    {
+      "n": "Gavin NPC for Tutu, BGT, and BG:EE",
+      "cn": 0,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wc": 0,
+      "tp2n": "Gavin NPC for Tutu, BGT, and BG:EE",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu",
+        "tutu_totsc"
+      ]
+    },
+    {
+      "n": "Gavin: Romance (mature content)",
+      "cn": 1,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wc": 1,
+      "tp2n": "Speed: 1 hour real time (standard) minimum between LoveTalks",
+      "scn": "Gavin: Romance (mature content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "cn": 11,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 45 minutes real time minimum between LoveTalks",
+      "pi": "b!gavin_romance_2700",
+      "scn": "Gavin: Romance (mature content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "cn": 12,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 30 minutes real time minimum between LoveTalks",
+      "pi": "b!gavin_romance_1800",
+      "scn": "Gavin: Romance (mature content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "cn": 13,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 15 minutes real time minimum between LoveTalks",
+      "pi": "b!gavin_romance_900",
+      "scn": "Gavin: Romance (mature content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "cn": 14,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wq": "verified",
+      "tp2n": "Speed: 1 hour 30 minutes (extended) real time minimum between LoveTalks",
+      "pi": "b!gavin_romance_5400",
+      "scn": "Gavin: Romance (mature content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Gavin: Flirts (adult content)",
+      "cn": 2,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wc": 2,
+      "tp2n": "Gavin: Flirts (adult content)",
+      "grn": "Gavin: Romance"
+    },
+    {
+      "n": "Gavin: Check for Tutu-Fix Walking Speeds",
+      "cn": 3,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wq": "verified",
+      "tp2n": "Gavin: Check for Tutu-Fix Walking Speeds"
+    },
+    {
+      "n": "Gavin: Alternate Portraits (Default portrait is already installed) -> Dawnbringer, by Amaurea",
+      "cn": 4,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wc": 4,
+      "tp2n": "Dawnbringer, by Amaurea",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)"
+    },
+    {
+      "wf": "gavin",
+      "wp": "gavin\\gavin.tp2",
+      "wq": "exact",
+      "cn": 5,
+      "n": "Portrait: Dawn skies (Kaeloree)",
+      "wc": 5,
+      "g": "gavin_portrait",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)",
+      "tp2n": "Dawn skies, by Kaeloree"
+    },
+    {
+      "wf": "gavin",
+      "wp": "gavin\\gavin.tp2",
+      "wq": "exact",
+      "cn": 6,
+      "n": "Portrait: Grey skies (Kaeloree)",
+      "wc": 6,
+      "g": "gavin_portrait",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)",
+      "tp2n": "Grey skies, by Kaeloree"
+    },
+    {
+      "wf": "gavin",
+      "wp": "gavin\\gavin.tp2",
+      "wq": "exact",
+      "cn": 7,
+      "n": "Portrait: Red tunic (Miloch)",
+      "wc": 7,
+      "g": "gavin_portrait",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)",
+      "tp2n": "Red tunic, by Miloch"
+    },
+    {
+      "wf": "gavin",
+      "wp": "gavin\\gavin.tp2",
+      "wq": "exact",
+      "cn": 8,
+      "n": "Portrait: Original alternate (Kaeloree)",
+      "wc": 8,
+      "g": "gavin_portrait",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)",
+      "tp2n": "Original alternate, by Kaeloree"
+    },
+    {
+      "wf": "gavin",
+      "wp": "gavin\\gavin.tp2",
+      "wq": "exact",
+      "cn": 9,
+      "n": "Portrait: Dragon Age style (berelinde)",
+      "wc": 9,
+      "g": "gavin_portrait",
+      "scn": "Gavin: Alternate Portraits (Default portrait is already installed)",
+      "tp2n": "Dragon Age style portrait by berelinde"
+    },
+    {
+      "n": "Gavin: Player Initiated Dialogue",
+      "cn": 10,
+      "wf": "Gavin",
+      "wp": "Gavin\\GAVIN.TP2",
+      "wc": 10,
+      "tp2n": "Gavin: Player Initiated Dialogue"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Gavin_BG"
+  }
+}

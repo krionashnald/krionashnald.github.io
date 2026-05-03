@@ -1,0 +1,68 @@
+{
+  "i": 178,
+  "t": "Foundling",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 550,
+  "c": "NEW NPC MODS",
+  "n": "Colours of Infinity: Foundling",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2,
+    "zh-cn": 3
+  },
+  "no": "Foundling by Lava Del Vortel. Colours of Infinity NPC companion mod.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "foundling",
+          "portraits/foundling/l_fou.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/foundling-between-the-shades/",
+  "a": "Lava Del'Vortel",
+  "v": "v5.5.4",
+  "sum": "Shadow Adept NPC and quest mod featuring a thrall of a Shadow Dragon, introducing Shadow Weave Magic, new areas, characters, and items.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/foundling-between-the-shades/",
+  "co": [
+    {
+      "n": "Yes, but don't patch the existing save games",
+      "cn": 0,
+      "wf": "Foundling",
+      "wp": "Foundling\\Foundling.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "g": "Foundling_install",
+      "scn": "Foundling: Between the Shades",
+      "no": "New game required. Recommended for fresh EET installs",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for class choice (1=Shadow Adept, 2=SA/Thief). Requires manual input.",
+          "type": "manual"
+        }
+      ],
+      "tp2n": "Yes, but don't patch the existing save games"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "x": 0,
+      "g": "Foundling_install",
+      "scn": "Foundling: Between the Shades",
+      "no": "Patches existing saves. Use if mid-playthrough",
+      "tp2n": "Yes, and patch the existing save games"
+    }
+  ]
+}

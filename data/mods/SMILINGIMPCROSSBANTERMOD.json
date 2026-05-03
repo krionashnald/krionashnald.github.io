@@ -1,0 +1,169 @@
+{
+  "i": 632,
+  "t": "SMILINGIMPCROSSBANTERMOD",
+  "sv": 1,
+  "ord": 580,
+  "c": "NPC CROSSMOD",
+  "n": "Smiling Imp Cross Banter Mod",
+  "no": "Abandoned/outdated per author on GitHub. Do not use.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "Kivan",
+      "withId": 591,
+      "severity": "partial",
+      "reason": "Both provide an alternative Kivan portrait. Cosmetic 'last installed wins' — no crashes or script breaks.",
+      "myComps": "#225",
+      "theirComps": "#0 Alternative Portrait for Kivan",
+      "source": "Portrait BMP overwrite only, no gameplay impact. Neither component selected",
+      "orderOnly": true
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/SmilingImpCrossBanterMod",
+  "a": "Smiling Imp",
+  "sum": "Adds cross-mod banters between BG1 NPCs (Shar-Teel, Garrick, Branwen, etc.) and various mod NPCs when both are in the party.",
+  "tags": [
+    "npc",
+    "banter"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/SpellholdStudios/SmilingImpCrossBanterMod",
+  "langs": {
+    "en": 0
+  },
+  "au": "Spellhold Studios",
+  "co": [
+    {
+      "n": "Shar-Teel Banters",
+      "cn": 0,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Garrick Banters",
+      "cn": 1,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Branwen Banters",
+      "cn": 2,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "Yeslick Banters",
+      "cn": 3,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "Skie & Eldoth Banters",
+      "cn": 4,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 4,
+      "wq": "verified"
+    },
+    {
+      "n": "Alora Banters",
+      "cn": 5,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 5,
+      "wq": "verified"
+    },
+    {
+      "n": "Xzar & Montaron Banters",
+      "cn": 6,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 6,
+      "wq": "verified"
+    },
+    {
+      "n": "Tiax & Quayle Banters",
+      "cn": 7,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 7,
+      "wq": "verified"
+    },
+    {
+      "n": "Wilson Chronicles - Cross Banters",
+      "cn": 8,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 8,
+      "wq": "verified"
+    },
+    {
+      "n": "Coran & Safana Banters",
+      "cn": 9,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 9,
+      "wq": "verified"
+    },
+    {
+      "n": "Deekin Banters",
+      "cn": 10,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 10,
+      "wq": "verified"
+    },
+    {
+      "n": "Faldorn Banters",
+      "cn": 11,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 11,
+      "wq": "verified"
+    },
+    {
+      "n": "Kagain Banters",
+      "cn": 12,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 12,
+      "wq": "verified"
+    },
+    {
+      "n": "Kivan Banters",
+      "cn": 13,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 13,
+      "wq": "verified"
+    },
+    {
+      "n": "Ajantis Banters",
+      "cn": 14,
+      "wf": "SMILINGIMPCROSSBANTERMOD",
+      "wp": "SMILINGIMPCROSSBANTERMOD\\SMILINGIMPCROSSBANTERMOD.TP2",
+      "wc": 14,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "SmilingImpCrossBanterMod"
+  }
+}

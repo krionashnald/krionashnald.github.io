@@ -1,0 +1,136 @@
+{
+  "i": 719,
+  "t": "d2bar",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Barbarian Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Barbarian kit for Fighter class. Human, Dwarf, Half-elf, Half-orc. Warcries, combat masteries, two-handed sword single-hand conversion. Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_BARBARIAN": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 STR/CON, -2 INT/CHA at creation. d12 hit die."
+          },
+          {
+            "n": "Iron Skin",
+            "type": "desc",
+            "desc": "+2 AC, 10% physical DR at levels 15/20/25/30"
+          },
+          {
+            "n": "Natural Resistance",
+            "type": "desc",
+            "desc": "15% elemental resistance, poison immunity"
+          },
+          {
+            "n": "Speed",
+            "type": "desc",
+            "desc": "Increased movement speed bonuses"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Warcries",
+            "freq": "D2 skill point system",
+            "effects": "Howl, Shout, Taunt, Battle Cry/Orders/Command, War Cry.",
+            "level": 1
+          },
+          {
+            "n": "Combat Skills",
+            "freq": "D2 skill point system",
+            "effects": "Bash, Double Swing, Leap, Stun, Concentrate, Frenzy, Whirlwind, Berserk.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Human/Dwarf/Half-elf/Half-orc only",
+          "items": "No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "str": 1,
+          "int": -2,
+          "note": "Innate stat modifiers: +1 STR, -2 INT"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_BARBARIAN",
+          "barbarian",
+          "Diablo2 Barbarian",
+          "Diablo 2-inspired berserker. War cries, combat masteries, and primal fury."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "1.4",
+  "sum": "Diablo 2-inspired Barbarian kit for the Fighter class. Human, Dwarf, Half-elf, Half-orc. Warcries, combat masteries, and two-handed sword single-hand option.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Barbarian Kit",
+      "tp2n": "Diablo2 Barbarian Kit",
+      "wf": "d2bar",
+      "wp": "d2bar\\SETUP-d2bar.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "barbarian": 1
+      }
+    },
+    {
+      "n": "Extend the level restrictions of Howl and Taunt to LV32",
+      "tp2n": "Extend the level restrictions of Howl and Taunt to LV32",
+      "no": "Requires main kit component installed first",
+      "wf": "d2bar",
+      "wp": "d2bar\\SETUP-d2bar.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    },
+    {
+      "n": "Allow the Barbarian(D2) to use a Two-handed Sword with one hand",
+      "tp2n": "Allow the Barbarian(D2) to use a Two-handed Sword with one hand. Strongly advised to be installed after all MODs that bring new weapons",
+      "no": "Requires main kit component. Install after all mods that add new weapons.",
+      "wf": "d2bar",
+      "wp": "d2bar\\SETUP-d2bar.tp2",
+      "wc": 2,
+      "wq": "unverified",
+      "cn": 2
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

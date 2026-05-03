@@ -1,0 +1,89 @@
+{
+  "i": 848,
+  "t": "DetailedDescription",
+  "sv": 1,
+  "ord": 330,
+  "c": "EET FINALIZATION",
+  "n": "Detailed Description",
+  "langs": {
+    "zh-cn": 0
+  },
+  "au": "Shohy",
+  "dl": "https://github.com/shohysie/DetailedDescription",
+  "no": "Chinese-language only. Similar to AutoDescription — scans all items and spells and regenerates their descriptions to match actual in-game stats. Includes a Chinese garbled text (encoding) fixer. Install after all content mods.",
+  "u": "https://github.com/shohysie/DetailedDescription",
+  "a": "Shohy",
+  "sum": "Chinese-language equivalent of AutoDescription. Scans all items and spells and regenerates descriptions to match actual stats. Includes Chinese encoding fixer. Install after all content mods.",
+  "tags": [
+    "tool"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Fix Chinese garbled text entries (optional encoding repair)",
+      "cn": 0,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified",
+      "no": "Scans dialog.tlk for ANSI encoding issues in Chinese text and repairs them. Optional — mainly for multi-mod integrations."
+    },
+    {
+      "n": "Item descriptions: Show all details",
+      "g": "items",
+      "cn": 1,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified"
+    },
+    {
+      "n": "Item descriptions: Skip tedious details (remove spell, set state, etc.)",
+      "g": "items",
+      "cn": 2,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified"
+    },
+    {
+      "n": "Spell descriptions (registered spells only): Show all details",
+      "g": "spells",
+      "cn": 3,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified",
+      "no": "Only processes registered spells (spellbook and some vanilla special abilities). Shows min/max level effects for scaling spells."
+    },
+    {
+      "n": "Spell descriptions (registered spells only): Skip tedious details",
+      "g": "spells",
+      "cn": 4,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified"
+    },
+    {
+      "n": "Spell descriptions (all spells): Show all details",
+      "g": "spells",
+      "cn": 5,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified"
+    },
+    {
+      "n": "Spell descriptions (all spells): Skip tedious details",
+      "g": "spells",
+      "cn": 6,
+      "wf": "DetailedDescription",
+      "wp": "DetailedDescription\\SETUP-DetailedDescription.tp2",
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "DetailedDescription"
+  }
+}

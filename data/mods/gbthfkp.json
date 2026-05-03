@@ -1,0 +1,80 @@
+{
+  "i": 70,
+  "t": "gbthfkp",
+  "sv": 1,
+  "ord": 80,
+  "c": "QUEST MODS BG2",
+  "n": "Expanded Thief Stronghold",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "es": 2,
+    "ru": 3,
+    "fr": 4,
+    "it": 5,
+    "zh-cn": 6
+  },
+  "no": "Expanded Thief Stronghold Typos to be fixed: https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/issues/2 The documentation from the author and Roxanne were sparse in details regarding this mod, but the BG2 Thief stronghold now has more content after getting it!Install Expanded Thief Stronghold before Her...",
+  "rq": "EET",
+  "conflicts": [
+    {
+      "with": "d0questpack",
+      "withId": 64,
+      "severity": "soft",
+      "reason": "Both expand Shadow Thieves content but modify different files (no shared dialogues, areas, or creatures). Minor narrative incongruity possible.",
+      "myComps": "#0 Expanded Thief Stronghold",
+      "theirComps": "#5 Additional Shadow Thieves Content",
+      "source": "ETS uses new ts-prefixed dialogs, QP modifies ARAN/HABREGA; safe EXTEND on ar0300.bcs; only maevar.cre shared (different offsets), 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "exp_thief_black",
+          "portraits/exp_thief/tsblack.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/releases",
+  "a": "Gebhard Blucher",
+  "v": "v3.0.0",
+  "sum": "Expands the thief stronghold questline in BG2 with additional missions, NPCs, and a longer storyline for Shadow Thief leaders.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v3.0.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Expanded_Thief_Stronghold"
+  },
+  "dl": "https://github.com/SpellholdStudios/Expanded_Thief_Stronghold/releases",
+  "au": "Isewein",
+  "co": [
+    {
+      "n": "Expanded Thief Stronghold",
+      "tp2n": "Expanded Thief Stronghold",
+      "pi": "ts_expanded_thief_stronghold_main",
+      "wf": "gbthfkp",
+      "wp": "gbthfkp\\GBTHFKP.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "i": 702,
+  "t": "Vampire_World",
+  "sv": 1,
+  "ord": 770,
+  "c": "QUEST MODS BG2",
+  "n": "Vampire World",
+  "no": "Vampire World v0.53 by Lassal. 29 components: vampire scripts, NPC resurrection, stronghold, kits, and cross-mod content. EET-focused (no GAME_IS checks but references EET-specific content). No REQUIRE_PREDICATE checks — components install regardless of dependencies. Some components require Vampire Tales or DSotSC content to function but don't enforce it. Experimental and incomplete.",
+  "conflicts": [
+    {
+      "with": "valen",
+      "withId": 170,
+      "severity": "soft",
+      "reason": "cn:9 adds Valen to Bodhi Stronghold. Skip if using the Valen EET mod instead.",
+      "myComps": "#9 Valen in Bodhi Stronghold",
+      "theirComps": "#0 Valen NPC",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "kits": {
+    "27": {
+      "new": [
+        [
+          "KALIS_BLOODBATH_CHAMPION",
+          "npc",
+          "Kali's Bloodbath Champion",
+          "Vampire World creature kit. Blood-fueled undead warrior."
+        ]
+      ]
+    },
+    "28": {
+      "new": [
+        [
+          "NIGHT_PREDATOR",
+          "npc",
+          "Night Predator",
+          "Vampire World creature kit. Nocturnal hunter with vampiric abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://www.shsforums.net/topic/59490-mod-vampire-world-for-eet/",
+  "a": "Lassal",
+  "sum": "Vampire-themed expansion with 29 components: vampire scripts, NPC resurrection, Bodhi Stronghold, joinable vampires, kits, and cross-mod content. Experimental v0.53 — no game checks in tp2. Some components require Vampire Tales or DSotSC.",
+  "tags": [
+    "quest"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "kitAbilities": {
+    "27": {
+      "KALIS_BLOODBATH_CHAMPION": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Vampire World creature kit. Blood-fueled undead warrior."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "28": {
+      "NIGHT_PREDATOR": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Vampire World creature kit. Nocturnal hunter with vampiric abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "dl": "https://www.shsforums.net/topic/59490-mod-vampire-world-for-eet/",
+  "langs": {
+    "en": 0
+  },
+  "au": "Hendryk",
+  "co": [
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 0,
+      "n": "Vampire scripts for player and party members",
+      "wc": 0,
+      "no": "Core vampire mechanics: scripts for vampire PC/NPCs. Required by most other components.",
+      "tp2n": "[VAMPIRE WORLD] Vampire scripts for player and party members"
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 1,
+      "n": "Dominated NPCs can be taken to party",
+      "wc": 1,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 2,
+      "n": "Cloaks of Korkorran added to Thalantyr's store",
+      "wc": 2,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 3,
+      "n": "Vynona and Nami: vampiress bodyguard NPC",
+      "wc": 3,
+      "no": "Adds Vynona (vampiress bodyguard) and her servant Nami as joinable NPCs.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 4,
+      "n": "Tsolak can be resurrected (SoD)",
+      "wc": 4,
+      "no": "The vampire from SoD can be resurrected. SoD content required.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 5,
+      "n": "Creative Commons Portrait for Bodhi",
+      "wc": 5,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 6,
+      "n": "Bodhi can be resurrected",
+      "wc": 6,
+      "no": "Allows resurrecting Bodhi as a companion after her defeat.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 7,
+      "n": "Bodhi Stronghold",
+      "wc": 7,
+      "no": "Bodhi vampires can be resurrected. Grants control over Bodhi's lair as a stronghold.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 8,
+      "n": "Bodhi Stronghold vampiresses: CC portraits",
+      "wc": 8,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 9,
+      "n": "Valen added to Bodhi Stronghold",
+      "wc": 9,
+      "no": "Adds Valen to Bodhi Stronghold. Skip if using the standalone Valen NPC mod.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 10,
+      "n": "Undead lovers: resurrect romanceable NPCs as vampires",
+      "wc": 10,
+      "no": "Aerie, Anomen, Jaheira, and Viconia can be resurrected as vampires.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 11,
+      "n": "Phlydian: joinable vampiress (Saradush prison)",
+      "wc": 11,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 12,
+      "n": "Phlydian: CC portrait",
+      "wc": 12,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 13,
+      "n": "Shyressa: joinable vampiress",
+      "wc": 13,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 14,
+      "n": "Derek: joinable vampire (Bloodbark Grove)",
+      "wc": 14,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 15,
+      "n": "Phreya: joinable vampiress (Hexxat quest)",
+      "wc": 15,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 16,
+      "n": "Phreya: CC portrait",
+      "wc": 16,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 17,
+      "n": "New final choices for Solar",
+      "wc": 17,
+      "no": "Adds vampire-themed dialogue options in the final Solar conversation.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 18,
+      "n": "Miriam: CC portrait (requires Vampire Tales)",
+      "wc": 18,
+      "no": "Portrait for Miriam. REQUIRES Vampire Tales mod — no tp2 check, will install but portrait is unused without VT.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 19,
+      "n": "Kali Cult: joinable vampires (requires Vampire Tales)",
+      "wc": 19,
+      "no": "Lilith, Marial Delsol, Blood Raven joinable. REQUIRES Vampire Tales — no tp2 check, content broken without VT.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 20,
+      "n": "Kali Cult: CC portraits (requires Vampire Tales)",
+      "wc": 20,
+      "no": "Portraits for Kali Cult NPCs. REQUIRES Vampire Tales.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 21,
+      "n": "Clairis and Lord Daerthmac: joinable (requires DSotSC)",
+      "wc": 21,
+      "no": "Joinable vampires from DSotSC areas. Vampire Castle purchasable. REQUIRES Dark Side of the Sword Coast — no tp2 check.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 22,
+      "n": "Dahlia: joinable dhampir fighter",
+      "wc": 22,
+      "no": "Adds Dahlia, a dhampir (half-vampire) fighter NPC.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 23,
+      "n": "Dragomir: joinable vampire",
+      "wc": 23,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 24,
+      "n": "Dragomir: CC portrait",
+      "wc": 24,
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 25,
+      "n": "Vampire companions summoned to Pocket Plane",
+      "wc": 25,
+      "no": "Vampire NPCs from this mod can be summoned in the Pocket Plane (ToB).",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 26,
+      "n": "Adult romances for vampire companions (18+)",
+      "wc": 26,
+      "no": "ADULT CONTENT (18+). Adds romance content for vampire companions.",
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 27,
+      "n": "Kit: Kali's Bloodbath Champion (vampire fighter)",
+      "wc": 27,
+      "k": 1,
+      "no": "Adds fighter kit for vampire characters. 1 kit slot.",
+      "kC": {
+        "npc": 1
+      },
+      "gone": true
+    },
+    {
+      "wf": "vampire_world",
+      "wp": "vampire_world\\Setup-Vampire_World.tp2",
+      "wq": "exact",
+      "cn": 28,
+      "n": "Kit: Night Predator (vampire thief-fighter)",
+      "wc": 28,
+      "k": 1,
+      "no": "Adds thief-fighter kit for vampire characters. Standard vampire kit. 1 kit slot.",
+      "kC": {
+        "npc": 1
+      },
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "vampiretales",
+      "withId": 508,
+      "severity": "soft",
+      "reason": "cn:18-20 reference Vampire Tales content (Miriam, Kali Cult). No tp2 enforcement — will install but content may be broken without Vampire Tales.",
+      "myComps": "#18 Miriam portrait #19 Kali Cult #20 Kali portraits",
+      "theirComps": "#0 Vampire Tales",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

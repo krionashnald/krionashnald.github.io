@@ -1,0 +1,4712 @@
+{
+  "i": 283,
+  "t": "item_rev",
+  "sv": 1,
+  "ord": 290,
+  "c": "ITEM ADDITION MODS",
+  "n": "Item Revisions",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2
+  },
+  "no": "Item Revisions v4beta10sd19 (G3 v4b10 + SubtleDoctor patches). Comprehensive item overhaul — 790+ items changed. Main component (cn:0) conflicts with many mods but SCS and aTweaks have built-in detection (install IR first). Standalone tweaks cn:1060 (Kensai Bracers) and cn:1070 (Thief Wands) are safe to cherry-pick with zero conflicts",
+  "conflicts": [
+    {
+      "with": "ForgottenArmament",
+      "withId": 252,
+      "severity": "soft",
+      "reason": "6 FA components use REQUIRE_PREDICATE !MOD_IS_INSTALLED setup-item_rev.tp2 cn:0 — auto-skip if IR main installed. FA cn:26 also checks IR cn:1040/1042. Hard conflict only if IR main (cn:0) is selected alongside these FA components. cn:10 (NWN2 Weapons) has no IR check — always safe.",
+      "myComps": "#0 Item Revisions main #1040 #1042 Armor",
+      "theirComps": "#4 Stat Items #19 Nerf APR #21 Update Existing #23 #24 Crit Immunity #25 Set Bonuses #26 Armor Overhaul",
+      "source": "FA tp2 REQUIRE_PREDICATE !MOD_IS_INSTALLED on cn:4/19/21/23/24/25; cn:26 checks IR 1040/1042, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "soft",
+      "reason": "SCS has built-in IR detection code. Install IR BEFORE SCS. SCS silently skips overlapping features. Item Revisions and SCS overlap",
+      "orderOnly": true,
+      "myComps": "#0 #1030 #2 #3",
+      "theirComps": "#3000, #3020, #3040, #3041, #3050, #3060, #3070, #3080, #3090, #3100, #3110; #3010, #3020, #3021, #3022; #2160, #3040, #3041, #4215, #4216, #4217, #4218, #4230; #1; #5030",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "aTweaks",
+      "withId": 290,
+      "severity": "soft",
+      "reason": "IR detects aTweaks and adjusts. Install order dependent. Item Revisions and aTweaks overlap",
+      "orderOnly": true,
+      "myComps": "#0 #1030",
+      "theirComps": "#200; #301, #302, #510; #110",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "Item Revisions and weapon tweaks overlap",
+      "myComps": "#0 #1030 #1090 #1091 #1092 #1093 #12",
+      "theirComps": "#60, #2230; #1090, #1120, #3200; #2430, #2431; #2420; #2150, #2151",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Item_Pack",
+      "withId": 278,
+      "severity": "hard",
+      "reason": "Item Revisions conflict with Item Tweaks",
+      "myComps": "#0",
+      "theirComps": "#2, #3",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "UA",
+      "withId": 384,
+      "severity": "hard",
+      "reason": "Item Revisions conflict with Unique Artifacts",
+      "myComps": "#0 Item Revisions main",
+      "theirComps": "#3 Core Expanded / #4 Core Strict",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "hard",
+      "reason": "FnP Multiclass Druids conflicts with IR's weapon restriction removal for clerics",
+      "myComps": "#1090 #1091 #1092 #1093",
+      "theirComps": "#91",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ub",
+      "withId": 62,
+      "severity": "hard",
+      "reason": "IR main component conflicts with Extended ToB Item Descriptions",
+      "myComps": "#0",
+      "theirComps": "#20",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "d0tweak",
+      "withId": 371,
+      "severity": "hard",
+      "reason": "Visual Ioun Stones",
+      "myComps": "#0 #18 #19 #20",
+      "theirComps": "#11; #18",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "hard",
+      "reason": "Alter effects of CHA stat (store prices)",
+      "myComps": "#1030 #2 #3 #9 #1101",
+      "theirComps": "#2180 Store prices #2140 Spellcasting in Armor #2150 Thievery in Armor",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "tb#tweaks",
+      "withId": 381,
+      "severity": "soft",
+      "reason": "Removing stat requirements conflicts with Item Revisions' rebalanced item requirements",
+      "theirComps": "#3000 No stats requirements for items"
+    },
+    {
+      "with": "fullplate",
+      "withId": 348,
+      "severity": "hard",
+      "reason": "FPPS tp2 uses FORBID_COMPONENT for Item Revisions armor components. Mutually exclusive",
+      "myComps": "#6 #7 #8 Heavy Armor Encumbrance #9 Allow Thieving in Armor",
+      "theirComps": "#1 Between You And Harm (alternate armour system)",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Item_Tweaks",
+      "withId": 349,
+      "severity": "soft",
+      "reason": "IR main (cn:0) rewrites item files that SD IT also patches. IR main — cn:1060/1070 standalone tweaks. SD IT cn:111 (Aesthetic), cn:120 (Weapons), cn:1020 (Missile Deflection), cn:1051 (Rod of Absorption) don't touch bracer usability or wand restrictions. No conflict in current preset.",
+      "theirComps": "#100 YARAS #111 #112 Aesthetic #120 Weapons #1020 Missile Deflection #1051 #1052 Rod of Absorption",
+      "myComps": "#0 Item Revisions main (NOT in Ultimate preset)",
+      "orderOnly": true,
+      "source": "IR cn:0 COPY on item files; SD IT COPY_EXISTING patches; cn:1060/1070 modify CLAB/usability only, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "POLYVORP",
+      "withId": 407,
+      "severity": "hard",
+      "reason": "Both mods modify the same vorpal weapon items (Silver Sword, Axe of the Unyielding, Ravager). Polyvorp replaces vorpal effects with its own spell-based system; IR reworks the items entirely. Results are unpredictable.",
+      "myComps": "#0 Item Revisions main",
+      "source": "tp2 analysis + mod readme, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "valhorn",
+      "withId": 483,
+      "severity": "soft",
+      "reason": "Reported incompatible by LCC-docs database (lcc id 562 vs 541)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/ItemRevisions/releases",
+  "a": "Demivrgvs, Mike1072",
+  "v": "v4beta10sd19",
+  "sum": "Comprehensive overhaul of hundreds of items in BG2, rebalancing weapons, armor, and accessories to be more distinct and interesting. Changes item stats, descriptions, and effects.",
+  "tags": [
+    "item",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "ItemRevisions"
+  },
+  "items": {
+    "0": {
+      "scope": "overhaul",
+      "new": [
+        [
+          "FIGSPID",
+          "misc",
+          "Long Sword +1",
+          "",
+          {
+            "speed": 3,
+            "thac0": 1,
+            "dmg": "1d6",
+            "dmgBonus": 1,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "races": []
+            }
+          }
+        ],
+        [
+          "DVSQUIR",
+          "fist",
+          "Attack",
+          "Attack",
+          {
+            "speed": 3,
+            "dmg": "1d2",
+            "str": 3,
+            "dex": 3,
+            "con": 3,
+            "ac": 10
+          }
+        ],
+        [
+          "BLEAT02",
+          "armor",
+          "Hide Armor",
+          "",
+          {
+            "ac": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "DVRAT",
+          "fist",
+          "Attack",
+          "Attack",
+          {
+            "speed": 3,
+            "dmg": "1d2",
+            "str": 9,
+            "dex": 18,
+            "con": 9,
+            "ac": 4,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 90
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 90
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 90
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 90
+              }
+            ]
+          }
+        ],
+        [
+          "DVJELLY",
+          "fist",
+          "Attack",
+          "Attack",
+          {
+            "speed": 3,
+            "str": 14,
+            "dex": 9,
+            "con": 16,
+            "ac": 4,
+            "magicResist": 10,
+            "coldResist": 50,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 100
+              }
+            ]
+          }
+        ],
+        [
+          "DVWERE",
+          "fist",
+          "Attack",
+          "Attack",
+          {
+            "speed": 3,
+            "dmg": "1d8",
+            "str": 19,
+            "dex": 16,
+            "con": 15,
+            "ac": 3,
+            "magicResist": 20,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "FIGLION",
+          "misc",
+          "Attack",
+          "",
+          {
+            "thac0": 2,
+            "dmg": "1d10",
+            "dmgBonus": 2
+          }
+        ],
+        [
+          "BSW1H01",
+          "large sword",
+          "Long Sword +1",
+          "",
+          {
+            "speed": 4,
+            "thac0": 1,
+            "dmg": "1d8",
+            "dmgBonus": 1,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "BLEAT03",
+          "armor",
+          "Hide Armor",
+          "",
+          {
+            "ac": 6,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "DVTROLL",
+          "fist",
+          "Attack",
+          "Attack",
+          {
+            "speed": 1,
+            "dmg": "1d10",
+            "str": 17,
+            "dex": 11,
+            "con": 21,
+            "ac": 4,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "BLEAT01",
+          "armor",
+          "Hide Armor",
+          "",
+          {
+            "ac": 5,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "SW1H68A",
+          "large sword",
+          "",
+          "",
+          {
+            "speed": 2,
+            "thac0": 7,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            },
+            "profType": "long sword"
+          }
+        ],
+        [
+          "SW1H69A",
+          "large sword",
+          "",
+          "",
+          {
+            "speed": 1,
+            "thac0": 8,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            },
+            "profType": "long sword"
+          }
+        ],
+        [
+          "SMOUNDSU",
+          "misc",
+          "Attack",
+          "",
+          {
+            "dmg": "2d6"
+          }
+        ],
+        [
+          "DVGASFRM",
+          "misc",
+          "Gaseous Form",
+          "Attack",
+          {
+            "ac": 10,
+            "magicResist": 100,
+            "coldResist": 100,
+            "fireResist": 100,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 100
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 100
+              },
+              {
+                "type": "resistance",
+                "target": "slashing",
+                "value": 100
+              },
+              {
+                "type": "resistance",
+                "target": "piercing",
+                "value": 100
+              },
+              {
+                "type": "resistance",
+                "target": "physical",
+                "value": 100
+              },
+              {
+                "type": "resistance",
+                "target": "crushing",
+                "value": 100
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ]
+          }
+        ]
+      ],
+      "modify": [
+        [
+          "AEGIS",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AEGIS2",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMSOUL01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AMUL28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AROW15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H08A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H08B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H09A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H09B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H10A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H10B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H16A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H16B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "AX1H17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BELT11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14D",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14E",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14F",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14G",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14H",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN14I",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN30C",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN30D",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN33",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN34",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BLUN35",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOLT09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOOT12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BOW26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRAC26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRUENAXE",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BRUENPLA",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "BULL06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CATTIBOW",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CHAN21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLCK32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "CLOLTH",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "COMPON05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG11A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG11B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG12A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG12B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG22A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DAGG24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DART08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DVFLAIL",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWBLUN01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWBOLT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWBOLT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWBOLT03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWCHAN01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWCHAN02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWCLCK01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWHALB01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWPLAT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWSHLD01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWSPER01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWSW1H01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWSW1H02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "DWXBOW01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "FINSAREV",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HALB12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM06A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM06B",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM09A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HAMM12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM33",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HELM34",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "HLOLTH",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "KORAX01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "KUOBOLT",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "KUOBOLT2",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "KUOBOLT3",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "LEAT24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A1",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A2",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A3",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A4",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A5",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A6",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A7",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A8",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3A9",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3C",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3D",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3E",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3H",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3I",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3J",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3K",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3L",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3M",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3N",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3O",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC3P",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC5X",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC6W",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC72",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC73",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC75",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISC89",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "MISCBC",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NEBDAG",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPARM",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPBELT",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPBOW",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPCHAN",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPCLCK",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPMISC1",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPMISC2",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPPLAT",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPRING01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSHLD",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSTAF",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "NPSW06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "PLAT23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN33",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN34",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN35",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN36",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN37",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN38",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN39",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN40",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN41",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN42",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN43",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN44",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN45",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN46",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN48",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN52",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN53",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN55",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "POTN56",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "QUIVER06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "REAVER",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING33",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING34",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING35",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING36",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING39",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING40",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING41",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING42",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING44",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RING46",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "RODS06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SAHBOLT",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SCRL15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SHLD32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SLNG10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SPER12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "STAF24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H22",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H23",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H24",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H25",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H26",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H27",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H28",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H29",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H30",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H31",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H32",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H33",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H34",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H35",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H36",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H37",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H38",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H39",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H40",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H41",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H42",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H43",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H44",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H45",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H46",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H47",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H48",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H49",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H50",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H51",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H52",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H53",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H54",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H55",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H56",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H58",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H59",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H60",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H61",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H62",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H63",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H64",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H65",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H66",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H67",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H68",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H69",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H70",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H71",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H72",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H73",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H74",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H75",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H76",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW1H77",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H20",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "SW2H21",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2AMU",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2DAK",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2HELM",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2PLAT",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2RING",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2ROBE",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2S1H",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WA2SHIEL",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAFLAIL",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND11",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND18",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAND19",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "WAWAK",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW01",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW02",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW03",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW04",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW05",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW06",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW07",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW08",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW09",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW10",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW12",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW13",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW14",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW15",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW16",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW17",
+          "replace",
+          "Item Revisions overhaul"
+        ],
+        [
+          "XBOW18",
+          "replace",
+          "Item Revisions overhaul"
+        ]
+      ]
+    }
+  },
+  "prof": {
+    "1092": {
+      "flags": {
+        "divineMulticlassCap": 2
+      },
+      "desc": "Fighter/Cleric multiclass proficiency capped at Specialized (2 pips)"
+    },
+    "1093": {
+      "flags": {
+        "divineMulticlassCap": 2
+      },
+      "desc": "Fighter/Cleric and Fighter/Druid multiclass proficiency capped at 2 pips"
+    },
+    "1095": {
+      "flags": {
+        "divineMulticlassCap": 2
+      },
+      "desc": "Fighter/Druid multiclass proficiency capped at Specialized (2 pips)"
+    }
+  },
+  "dl": "https://github.com/Gibberlings3/ItemRevisions/releases",
+  "au": "Demivrgvs, Ardanis, Mike1072",
+  "co": [
+    {
+      "n": "Item Revisions by Demivrgvs",
+      "cn": 0,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "no": "Core overhaul: modifies ~790 items (stats, effects, descriptions, prices). Install BEFORE SCS. SCS v33+ has built-in IR detection. v4beta10sd19 is most patched version. Community opinion mixed on iconic item nerfs (Belm, Carsomyr, FoA)",
+      "it": 15,
+      "itC": {
+        "misc": 4,
+        "fist": 5,
+        "armor": 3,
+        "large sword": 3
+      },
+      "tp2n": "Item Revisions by Demivrgvs"
+    },
+    {
+      "n": "Store Revisions",
+      "no": "Overhauls store inventories. Optional masterwork weapons (off by default in settings.ini). Independent of main component",
+      "cn": 1030,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1030,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "Store Revisions"
+    },
+    {
+      "n": "Revised Armor: With Movement Speed Penalties",
+      "no": "Graduated armor penalties: DEX, speed factor, phys resistance, per-damage-type AC. More nuanced than YARAS or cdtweaks. Incompatible with Full Plate & Packing Steel (FORBID)",
+      "cn": 1040,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1040,
+      "wq": "exact",
+      "g": "revised_armor",
+      "scn": "Revised Armor",
+      "tp2n": "With Movement Speed Penalties"
+    },
+    {
+      "n": "Revised Armor: Without Movement Speed Penalties",
+      "cn": 1042,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1042,
+      "wq": "exact",
+      "g": "revised_armor",
+      "scn": "Revised Armor",
+      "no": "Same as cn:1040 but without movement speed penalties. Less punishing option",
+      "tp2n": "Without Movement Speed Penalties"
+    },
+    {
+      "n": "Allow Spellcasting in Armor: With a Chance of Arcane Casting Failure",
+      "no": "Arcane spell failure chance by armor weight (0% Elven Chain to 50% Full Plate). More nuanced than cdtweaks binary allow/deny",
+      "cn": 2,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 2,
+      "wq": "exact",
+      "g": "spellcast_armor",
+      "scn": "Allow Spellcasting in Armor",
+      "tp2n": "With a Chance of Arcane Casting Failure"
+    },
+    {
+      "n": "Allow Spellcasting in Armor: With Casting Speed Penalties for Arcane Casters",
+      "cn": 3,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 3,
+      "wq": "exact",
+      "g": "spellcast_armor",
+      "scn": "Allow Spellcasting in Armor",
+      "no": "Casting speed penalties instead of failure chance. Optional: extends to divine casters via settings.ini",
+      "tp2n": "With Casting Speed Penalties for Arcane Casters"
+    },
+    {
+      "n": "Allow Thieving Skills in Armor: Stealth Penalized by Armor",
+      "no": "Graduated stealth penalties by armor weight. More nuanced than cdtweaks (no penalty) or YARAS (bundled)",
+      "cn": 9,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 9,
+      "wq": "exact",
+      "g": "thief_armor",
+      "scn": "Allow Thieving Skills in Armor",
+      "tp2n": "Stealth is Penalized by Armor"
+    },
+    {
+      "n": "Allow Thieving Skills in Armor: Stealth Penalized by Armor and Shields",
+      "cn": 1101,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1101,
+      "wq": "exact",
+      "g": "thief_armor",
+      "scn": "Allow Thieving Skills in Armor",
+      "no": "Same as cn:9 but shields also penalize stealth",
+      "tp2n": "Stealth is Penalized by Armor and Shields"
+    },
+    {
+      "n": "Revised Shield Bonuses",
+      "cn": 10,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 10,
+      "wq": "exact",
+      "no": "Rebalances shield AC values and abilities. Standalone, no conflicts",
+      "tp2n": "Revised Shield Bonuses"
+    },
+    {
+      "n": "Weapon Changes",
+      "no": "Changes base weapon type stats globally (speed factors, damage dice). Hard-blocked by cdtweaks weapon changes. Slings nerfed (speed 6→10), daggers buffed (speed 2→1), bolts buffed (1d8→1d10)",
+      "cn": 17,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 17,
+      "wq": "exact",
+      "tp2n": "Weapon Changes"
+    },
+    {
+      "n": "Enchantment Doesn't Affect Speed Factor of Weapons",
+      "no": "Removes speed factor reduction from magical enchantment. Makes speed depend only on weapon type. Conflicts with proficiency overhauls",
+      "cn": 1080,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1080,
+      "wq": "exact",
+      "tp2n": "Enchantment Doesn't Affect Speed Factor of Weapons"
+    },
+    {
+      "n": "Dual Wielding Changes for Light and Heavy Weapons",
+      "cn": 11,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 11,
+      "wq": "exact",
+      "no": "Light weapons (+1 off-hand THAC0) vs heavy weapons (-1 penalty) for dual-wielding. Smart PnP-inspired change. Well received",
+      "tp2n": "Dual Wielding Changes for Light and Heavy Weapons"
+    },
+    {
+      "n": "Revised Backstabbing: Thief-only Weapons",
+      "no": "Backstab restricted to thief-only weapons with multiplier penalties by weapon weight. Compatible with Rogue Rebalancing (different axes)",
+      "cn": 18,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 18,
+      "wq": "exact",
+      "g": "backstab",
+      "scn": "Revised Backstabbing",
+      "tp2n": "Thief-only Weapons"
+    },
+    {
+      "n": "Revised Backstabbing: More Weapons Usable for Backstabbing",
+      "cn": 19,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 19,
+      "wq": "exact",
+      "g": "backstab",
+      "scn": "Revised Backstabbing",
+      "no": "More weapons usable for backstabbing. Less restrictive than cn:18",
+      "tp2n": "More Weapons Usable for Backstabbing"
+    },
+    {
+      "n": "Revised Backstabbing: All Melee and Ranged Weapons Usable for Backstabbing",
+      "cn": 20,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 20,
+      "wq": "exact",
+      "g": "backstab",
+      "scn": "Revised Backstabbing",
+      "no": "All melee and ranged weapons can backstab. Most permissive option",
+      "tp2n": "All Melee and Ranged Weapons Usable For Backstabbing"
+    },
+    {
+      "n": "Revised Critical Hit Aversion",
+      "cn": 1200,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1200,
+      "wq": "exact",
+      "no": "Revised critical hit immunity from helmets. Requires EE engine",
+      "tp2n": "Revised Critical Hit Aversion"
+    },
+    {
+      "n": "Items of Protection Can Be Worn with Magical Armor",
+      "no": "Protection items (rings/cloaks) can be worn with magical armor. Same as Forgotten Armament. Last-installed-wins with cdtweaks",
+      "cn": 12,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 12,
+      "wq": "exact",
+      "tp2n": "Items of Protection Can Be Worn with Magical Armor"
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Clerics Only",
+      "no": "Multiclass Fighter/Clerics can use non-blunt weapons. Conflicts with FnP multiclass approach",
+      "cn": 1090,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1090,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "scn": "Remove Weapon Restrictions from Multi-classed Divine Spellcasters",
+      "tp2n": "Clerics Only"
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Clerics and Druids",
+      "cn": 1091,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1091,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "scn": "Remove Weapon Restrictions from Multi-classed Divine Spellcasters",
+      "no": "Both Clerics and Druids can use non-blunt weapons",
+      "tp2n": "Clerics and Druids"
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Clerics Only, Halved Specialization",
+      "cn": 1092,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1092,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "scn": "Remove Weapon Restrictions from Multi-classed Divine Spellcasters",
+      "no": "Clerics can use non-blunt but proficiency capped at **",
+      "tp2n": "Clerics Only, With Halved Specialization"
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Clerics and Druids, Halved Specialization",
+      "cn": 1093,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1093,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "scn": "Remove Weapon Restrictions from Multi-classed Divine Spellcasters",
+      "no": "Both Clerics and Druids, proficiency capped at **",
+      "tp2n": "Clerics and Druids, With Halved Specialization"
+    },
+    {
+      "n": "PnP Equipment for Druids: Druids Only",
+      "no": "Restricts druids to PnP equipment (no metal armor, specific weapons). Druids only",
+      "cn": 15,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 15,
+      "wq": "exact",
+      "g": "druid_equip",
+      "scn": "PnP Equipment for Druids",
+      "tp2n": "Druids Only"
+    },
+    {
+      "n": "PnP Equipment for Druids: Druids and Fighter/Druids",
+      "cn": 16,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 16,
+      "wq": "exact",
+      "g": "druid_equip",
+      "scn": "PnP Equipment for Druids",
+      "no": "Same as cn:15 but includes Fighter/Druids",
+      "tp2n": "Druids and Fighter/Druids"
+    },
+    {
+      "n": "Kensai Can Wear Bracers",
+      "cn": 1060,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1060,
+      "wq": "exact",
+      "no": "Removes bracer/glove restriction from Kensai. Pure usability fix, no stat changes. Universally praised — one of the safest IR components",
+      "tp2n": "Kensai Can Wear Bracers"
+    },
+    {
+      "n": "Thieves Can Use Wands",
+      "cn": 1070,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1070,
+      "wq": "exact",
+      "no": "Makes wands usable by thieves with INT requirement. Pure usability fix. Clean implementation, no conflicts",
+      "tp2n": "Thieves Can Use Wands"
+    },
+    {
+      "wf": "item_rev",
+      "wp": "item_rev\\item_rev.tp2",
+      "wq": "exact",
+      "cn": 6,
+      "n": "Heavy Armor Encumbrance: Variant A",
+      "wc": 6,
+      "gone": true,
+      "no": "v18 (component removed — no longer present in item_rev tp2). REMOVED from current IR version."
+    },
+    {
+      "wf": "item_rev",
+      "wp": "item_rev\\item_rev.tp2",
+      "wq": "exact",
+      "cn": 7,
+      "n": "Heavy Armor Encumbrance: Variant B",
+      "wc": 7,
+      "gone": true,
+      "no": "v18 (component removed — no longer present in item_rev tp2). REMOVED from current IR version."
+    },
+    {
+      "wf": "item_rev",
+      "wp": "item_rev\\item_rev.tp2",
+      "wq": "exact",
+      "cn": 8,
+      "n": "Heavy Armor Encumbrance: Variant C",
+      "wc": 8,
+      "gone": true,
+      "no": "v18 (component removed — no longer present in item_rev tp2). REMOVED from current IR version."
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Druids Only",
+      "cn": 1094,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1094,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "no": "v18 (component removed — no longer present in item_rev tp2). Same as cn:1090 but for Druids only",
+      "gone": true
+    },
+    {
+      "n": "Multiclass Divine Weapon Restrictions: Druids Only, Halved Specialization",
+      "cn": 1095,
+      "wf": "item_rev",
+      "wp": "item_rev\\ITEM_REV.TP2",
+      "wc": 1095,
+      "wq": "exact",
+      "g": "divine_weapons",
+      "no": "v18 (component removed — no longer present in item_rev tp2). Druids only, proficiency capped at **",
+      "gone": true
+    }
+  ]
+}

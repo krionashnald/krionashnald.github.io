@@ -1,0 +1,134 @@
+{
+  "i": 8,
+  "t": "Drake",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 50,
+  "c": "NEW NPC MODS",
+  "n": "Drake NPC",
+  "cats": [
+    "PRE EET BGEE MODS",
+    "NEW NPC MODS"
+  ],
+  "no": "NG Male Human Cleric (Priest of Tyr). Dual-classable to any other class. PRE-EET: must install on BGEE before running EET — installing post-EET causes COPY_TRANS NEB state #17 out of range error (EET truncates NEB.DLG to 12 states). Install after Sirene, before Verr'Sza. Crossmod banters with Sirene, Aura, Verr'Sza, White. Deities of Faerun cn:66 assigns Holy Justice of Tyr kit to Drake.",
+  "wb": true,
+  "_legacy_ids": [
+    99
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "drake",
+          "portraits/drake/drake.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Drake",
+  "a": "Artemius_I",
+  "v": "1.7",
+  "sum": "Adds Drake, a human fighter, as a joinable NPC in BG1/SoD with dialogue, banters, and a personal storyline.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v1.7",
+    "place": "post"
+  },
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Drake"
+  },
+  "au": "AionZ",
+  "dl": "https://github.com/ArtemiusI/Drake",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Drake NPC for Baldur's Gate: Enhanced Edition",
+      "cn": 0,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "HARD FAIL if installed post-EET: COPY_TRANS NEB state #17 out of range 0-11. EET truncates NEB.DLG to 12 states. Must install on BGEE BEFORE running EET.",
+      "tp2n": "Drake NPC for Baldur's Gate: Enhanced Edition"
+    },
+    {
+      "n": "Portrait: Default (The Artisan)",
+      "no": "v Choose a portrait for Drake",
+      "cn": 1,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "drake_portrait",
+      "scn": "Choose a portrait for Drake:",
+      "tp2n": "Default Portrait (The Artisan)"
+    },
+    {
+      "n": "Portrait: BG2-style (The Artisan)",
+      "cn": 2,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "drake_portrait",
+      "scn": "Choose a portrait for Drake:",
+      "tp2n": "BG2-style (The Artisan)"
+    },
+    {
+      "n": "Portrait: Beta (Lava Del'Vortel)",
+      "cn": 3,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 3,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "g": "drake_portrait",
+      "scn": "Choose a portrait for Drake:",
+      "tp2n": "Beta Portrait (Lava Del'Vortel)"
+    },
+    {
+      "n": "Universal Crossbows + Crossbow Proficiency for Drake",
+      "cn": 4,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "tp2n": "OPTIONAL: Install Universal Crossbows, Crossbow Proficiency for Drake?"
+    },
+    {
+      "n": "Original Soundset by BillyYank",
+      "cn": 5,
+      "wf": "Drake",
+      "wp": "Drake\\Setup-Drake.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "tp2n": "OPTIONAL: Original Soundset by BillyYank"
+    }
+  ]
+}

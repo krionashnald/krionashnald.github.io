@@ -1,0 +1,174 @@
+{
+  "i": 478,
+  "t": "rupert",
+  "sv": 1,
+  "ord": 380,
+  "c": "ITEM ADDITION MODS",
+  "n": "Rupert the Dye Merchant",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "es": 2,
+    "it": 3,
+    "fr": 4,
+    "ru": 5
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "u": "https://github.com/Spellhold-Studios/Rupert-the-Dye-Merchant",
+  "a": "vilkacis",
+  "v": "v3.0.0",
+  "sum": "This mod adds a new merchant who sells various dyes and new outfits.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Rupert"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "JL#CMAGE",
+          "wand",
+          "Arcanist's Apparel",
+          "This is a heavy robe in the style favoured by mages and sorcerers throughout the realms. It has multiple pockets for spell components and is specially sewn to flutter dramatically without interfering with spellcasting.\n\nTo use this item, place it in a quick item slot.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "JL#CFGTR",
+          "wand",
+          "Fighter's Frock",
+          "Simple clothes made from stout, sturdy fabric, made to stand up to mostly any kind of abuse. The raiment of choice for anyone whose work is strenuous, dirty and prone to leave stains. The thick material also helps to prevent chafing from any armour worn over it.\n\nTo use this item, place it in a quick item slot.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "JL#CCLRC",
+          "wand",
+          "Cleric's Cloth",
+          "A humble garment endorsed by no less than seven out of ten clerical orders. For a nominal fee, it can be specially reinforced over the knees for lengthy prayer sessions.\n\nTo use this item, place it in a quick item slot.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "JL#CTHIF",
+          "wand",
+          "Rogue's Raiment",
+          "A set of plain, utilitarian and tight-fitting clothes. Specially made as to not restrict the wearer in any way while minimizing noise and the risk of snagging on a protruding nail or splinter, this outfit is popular with swashbucklers and scouts, as well as many shadier characters.\n\nTo use this item, place it in a quick item slot.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Rupert-the-Dye-Merchant",
+  "au": "Isewein",
+  "co": [
+    {
+      "n": "Rupert the Dye Merchant",
+      "tp2n": "Rupert the Dye Merchant",
+      "cn": 0,
+      "wf": "rupert",
+      "wp": "rupert\\RUPERT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "it": 4,
+      "itC": {
+        "wand": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,1515 @@
+{
+  "i": 273,
+  "t": "itemupgrade",
+  "sv": 1,
+  "ord": 200,
+  "c": "ITEM ADDITION MODS",
+  "n": "Item Upgrade",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "es": 3,
+    "pl": 4,
+    "ru": 5,
+    "ko": 6,
+    "zh-cn": 7
+  },
+  "no": "Item Upgrade Mod Pack by Serdrick/CrevsDaak (PPG). Adds Cromwell and Cespenar upgrade recipes for weapons, armor, and accessories. Half convenience, half weapon category rebalancing. v55",
+  "u": "https://github.com/Pocket-Plane-Group/Item_Upgrade",
+  "a": "Serdrick, CrevsDaak (PPG)",
+  "v": "v55",
+  "sum": "Adds Cromwell-style item upgrade recipes to BG2, letting you forge powerful equipment from components found throughout the game.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "C2AMUL01",
+          "amulet",
+          "Amulet of Ilmater",
+          "Amulet of Ilmater\nThis amulet combines the defensive power of an Amulet of Protection, a Periapt of Proof against Poison, the Necklace of Form Stability and the Amulet of Spell Warding to provide potent protection upon its wearer. In addition, the Amulet holds a minor blessing from the long-suffering Ilmater. The amulet was commissioned by <CHARNAME>.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to poison\n– Armor Class: +1\n– Saving Throws: +3\n\nCharge abilities:\n– Heal once per day\n  Range: Touch\n  Area of Effect: 1 creature\n\nWeight: 1",
+          {
+            "ac": 1,
+            "saves": 3,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "undead"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              }
+            ],
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2ANOM01",
+          "shield",
+          "Delryn Family Shield +4",
+          "Then I shall be disappointed. Feh, tell me what you wish to buy—quickly! I grow tired of your voice.",
+          {
+            "ac": 5,
+            "coldResist": 30,
+            "fireResist": 30,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "races": [
+                "Half-Orc",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Neutral Evil"
+              ],
+              "minStr": 14,
+              "minCha": 13
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2AX1H01",
+          "axe",
+          "Azuredge +4",
+          "Azuredge +4\nThe already potent undead-bane Azuredge was further enhanced by <CHARNAME> when <PRO_HESHE> had it coated with a veneer of pure illithium. The axe first forged by Gulen Rockfire still returns to its wielder's hand when thrown and still smites undead with a holy fervor, but now it also protects the wielder from the level-draining assaults of the more powerful graveborn. On a more decorative note, the illithium seems to have shifted the color of the weapon slightly away from its namesake.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to level drain\n\nCombat abilities:\n– Returns to the wielder's hand when thrown\n– Undead must save vs. Death at -4 or be utterly destroyed\n\nTHAC0: +4\nDamage: 1d6+4, additional 1d6+4 vs. undead\nDamage type (melee): Slashing\nDamage type (thrown): Missile\nSpeed Factor: 1\nProficiency Type: Axe\nType: One-handed\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "C2BELT01",
+          "belt",
+          "Girdle of Glory",
+          "Girdle of Glory\nCreated by <CHARNAME> to protect the wearer against slashing, piercing and blunt weapons, this belt is quite useful to anyone involved in a melee. Its potent magic turns all types of offensive blows, and yet its slim form does not inhibit movement. In addition, the belt is stylish.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +3\n\nWeight: 2",
+          {
+            "ac": 3
+          }
+        ],
+        [
+          "C2BLUN01",
+          "mace",
+          "Club +5: Pitchwife",
+          "Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.\n\nSTATISTICS:\n\nDamage: 1d6 (crushing)\nSpeed Factor: 4\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 25
+              }
+            ],
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2BLUN02",
+          "mace",
+          "Mace +5: Skullcrusher",
+          "Mace +5: Skullcrusher\nThis mace is permanently bloodstained, a telltale trace of its many years spent bashing heads. The weapon would have been the bane of humanoids throughout its history, but those that wielded it seem to have been purposely left out of historic record. Recently Skullcrusher was reforged into an even more awesome weapon by <CHARNAME>.\n\nSTATISTICS:\n\nCombat abilities:\n– Each hit lowers target's maximum hit points by 2 for 10 rounds\n\nTHAC0: +5\nDamage: 1d6+6, +6 extra vs. humanoids\nDamage type: Crushing\nSpeed Factor: 2\nProficiency Type: Mace\nType: One-handed\nRequires:\n 10 Strength\n\nWeight: 6",
+          {
+            "speed": 2,
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 6,
+            "profType": "mace",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "C2BLUN03",
+          "mace",
+          "Club +4: The Fulcrum",
+          "Club +4: The Fulcrum\nForged for <CHARNAME> by amalgamating the Bone Club and the splintered club Gnasher, The Fulcrum's powers lie in preserving balance. The spirits of the dead warriors guide the hand of the wielder to unerring accuracy and every hit from the club itself sends painful bone shards into the target. In addition, the Club does additional damage against non-neutral opponents.\n\nSTATISTICS:\n\nEquipped abilities:\n– Wielder becomes proficient to the point of Grand Mastery in Clubs.\n\nTHAC0: +4\nDamage: 1d6+4; +4 if target is Good, Evil, Lawful or Chaotic (cumulative); slivers add 2 points piercing damage each round for 4 rounds\nDamage type: Crushing\nSpeed Factor: 1\nProficiency Type: Club\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "profType": "club",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2BOOT01",
+          "boots",
+          "Boots of Celeritous Stealth",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. \n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "C2BOOT02",
+          "boots",
+          "Blizzard Boots",
+          "Are you sure you want to do that?",
+          {
+            "coldResist": 50,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "C2BOOT03",
+          "boots",
+          "Boots of the Hornet",
+          "Boots of the Hornet\nThe Boots of the Hornet are unsurpassed at increased the speed of their wearer. Combining all of the powers of the Boots of Avoidance and the Boots of Speed, these boots make it very difficult to strike the bearer indeed.\n\nSTATISTICS:\n\nEquipped abilities:\n– Doubles movement rate\n– Armor Class: +5 vs. missile attacks\n\nWeight: 4",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ]
+          }
+        ],
+        [
+          "C2BOOT04",
+          "boots",
+          "Stormlord's Heels",
+          "Boots are normally handmade by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. \n\nSTATISTICS:\n\nWeight: 4",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              }
+            ]
+          }
+        ],
+        [
+          "C2BOW01",
+          "bow",
+          "Teleomortis +4",
+          "Composite bows are longbows or shortbows whose staves are made from more than one type of material. This gives greater flexibility and makes arrows fired from this bow deliver more damage. These were developed after the normal longbow.\n\nSTATISTICS:\n\nTHAC0: +1\nDamage: +1 (missile)\nSpeed Factor: 7\nProficiency Type: Longbow\nType: Two-handed\nRequires:\n 18 Strength\n\nWeight: 10",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "twoHanded": true,
+            "profType": "long bow",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 18
+            }
+          }
+        ],
+        [
+          "C2BRAC01",
+          "bracers",
+          "Gloves of the Master Thief",
+          "Behold! Your enemies are a pack of road-weary hobgoblins that I picked up from the roadways south of Waterdeep, and they're just ITCHING for a chance to escape! I might have given them the impression that the path to freedom lies within your sundered bellies, so watch yourself.",
+          {
+            "ac": 3,
+            "saves": 1,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "C2CHAN01",
+          "armor",
+          "Incarnadine Elven Chain",
+          "The delicate yet sturdy craftsmanship of the elven races allows them to design many beautiful yet utilitarian goods. Among these is elven chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allows it to be worn by Thieves and Fighter/Mages with few restrictions.\n\nSTATISTICS:\n\nEquipped abilities:\n– Open Locks: -5%\n– Find Traps: -5%\n– Pick Pockets: -20%\n– Move Silently: -10%\n– Spellcasting is not disabled\n\nArmor Class: 5 (3 vs. slashing, 7 vs. crushing)\nRequires:\n 5 Strength\n\nWeight: 7",
+          {
+            "ac": 0,
+            "fireResist": 25,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2DAGG01",
+          "dagger",
+          "Quietus +4",
+          "Quietus +4\n<CHARNAME> arranged to have this dagger constructed out of the poisonous Pixie Prick and the deadly Boneblade. The result is a weapon worthy of any assassin. The newly refined venom from the Pixie Prick now blinds the victim and the dark lore of the Boneblade makes for deadly backstabs in the hands of a trained thief.\n\nSTATISTICS:\n\nEquipped abilities:\n– Backstab multiplier increased by one\n\nCombat abilities:\n– Hit target must save vs. Poison or either fall asleep or be blinded for 2 rounds\n\nTHAC0: +4\nDamage: 2d3+4 (piercing)\nSpeed Factor: 0\nProficiency Type: Dagger\nType: One-handed\nRequires:\n 3 Strength\n\nWeight: 3",
+          {
+            "thac0": 4,
+            "dmg": "2d3",
+            "dmgBonus": 4,
+            "profType": "dagger",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "C2HD1",
+          "short sword",
+          "Inevitable Entropy",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "races": [],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "C2HD2",
+          "short sword",
+          "Creeping Chaos",
+          "The short sword is the first type of sword to come into existence. In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger. The term short sword does not exist in sword classifications. However, it has come to be used to describe a double-edged blade about two feet in length. The sword tip is usually pointed, ideal for thrusting.\n\nSTATISTICS:\n\nDamage: 1d6 (piercing)\nSpeed Factor: 3\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ],
+              "races": [],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "C2HELM01",
+          "helmet",
+          "Citadel Helmet",
+          "You're quite jittery—what has Baeloth done to you?",
+          {
+            "coldResist": 20,
+            "fireResist": 20,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 20
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "C2HELM02",
+          "helmet",
+          "Tower of Iron Will",
+          "Tower of Iron Will\nForged at <CHARNAME>'s request, the Tower of Iron Will protects its wearer from mental assaults. It provides all of the standard defenses associated with a Helm of Charm Protection and also makes the wearer immune to Psionics. Note that the wearer is not protected from the intelligence-draining attacks of the Illithid.\n\nSTATISTICS:\n\nEquipped abilities:\n– Protects against critical hits\n– Wearer is immune to Charm\n– Wearer is immune to Psionics\n\nWeight: 3",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ]
+            }
+          }
+        ],
+        [
+          "C2HIDE01",
+          "armor",
+          "Aeger's Hide +5",
+          "You bring me to such interesting places, <CHARNAME>.",
+          {
+            "ac": 1,
+            "coldResist": 25,
+            "fireResist": 25,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 25
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "C2KELD01",
+          "armor",
+          "Improved Firecam Full-Plate Armor",
+          "Improved Firecam Full-Plate Armor\nThis suit of armor was originally designed for Keldorn and few others may wear it. The suit was later enchanted again at <CHARNAME>'s request and it now provides Keldorn with even more protection. While equipped the suit provides the wearer with a +2 bonus to all saving throws and grants the wearer with free action (able to pass through webs and other effects) and immunity to fear. Despite being incredibly strong, the armor is almost weightless.\n\nSTATISTICS:\n\nEquipped abilities:\n– Saving Throws: +2\n– Free Action\n– Immunity to Fear\n\nArmor Class: -2 (-6 vs. slashing, -5 vs. piercing and missile)\n\nWeight: 10",
+          {
+            "ac": -2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "races": [
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ],
+              "minStr": 15,
+              "minCon": 17,
+              "minInt": 2,
+              "minWis": 16,
+              "minCha": 18
+            }
+          }
+        ],
+        [
+          "C2KELD02",
+          "large sword",
+          "Hallowed Redeemer +5",
+          "Hallowed Redeemer +5\nKeldorn distinguished himself early in his career as a paladin and received this blade as a boon from Torm. It is exceptionally accurate, but also protects him in battle with a special Fireshield, and any that strike him while he wields it suffer Torm's wrath in the form of magical damage. None but Keldorn may use this sword.\n\nWith <CHARNAME>'s help and the blessing of Torm, the sword was recently re-enchanted to become even more powerful.\n\nSTATISTICS:\n\nEquipped abilities:\n– 5 points of magic damage to any who damage the wielder\n\nCombat abilities:\n– Dispel Magic on each hit\n– Hit target is silenced for two rounds\n\nTHAC0: +5\nDamage: 1d12+5 (slashing)\nSpeed Factor: 5\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 5 Strength\n 12 Intelligence\n\nWeight: 8",
+          {
+            "speed": 5,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "races": [
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ],
+              "minStr": 5,
+              "minCon": 17,
+              "minInt": 12,
+              "minCha": 18
+            }
+          }
+        ],
+        [
+          "C2KIT",
+          "misc",
+          "Improved Kitthix Figurine",
+          "Improved Kitthix Figurine\nReforged by <CHARNAME> to summon forth an even more powerful spider, the Kitthix figurine is no longer the last-ditch delaying tactic it once was. Gone are the days when Kitthix would be instructed to throw itself in front of a vastly superior foe in the hopes of momentarily distracting it. Kitthix's web-spinning and poisoning abilities have been upgraded, and the spider itself is less likely to be crushed by every passing foe.\n\nSTATISTICS:\n\nCharge abilities:\n– Summon Improved Kitthix once per day\n  Range: 20 ft.\n  Duration: 8 hours\n  The spider can phase during combat. Kitthix's melee attack inflicts 2d4+2 damage (piercing) and occurs 4 times per round. Kitthix's attack is poisonous (Save vs. Poison at -3 negates), causing 5 points of poison damage per second for two rounds, and will also immobilize its target with a web (Save vs. Spell at -2 negates).\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2KITA",
+          "misc",
+          "Sword of Arvoreen +5",
+          "Sword of Arvoreen +5\nAnother gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.\n\nWith <CHARNAME>'s help and the blessing of Arvoreen, the sword was recently re-enchanted to become even more powerful.\n\nSTATISTICS:\n\nEquipped abilities:\n– Free action\n– Strength: +1\n– Exceptional Strength: +75\n\nCombat abilities:\n– Target must save vs. Wands or be slowed for 45 seconds\n\nTHAC0: +5\nDamage: 1d6+5 (piercing)\nSpeed Factor: 0\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 2,
+            "dmg": "2d4",
+            "dmgBonus": 2,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ],
+              "races": []
+            }
+          }
+        ],
+        [
+          "C2MAZZ01",
+          "short sword",
+          "Sword of Arvoreen +5",
+          "Sword of Arvoreen +5\nAnother gift to Mazzy from Arvoreen, this short sword may only be used by halflings. The enchantments that exist within this sword give it the ability to slow any opponent struck by it.\n\nWith <CHARNAME>'s help and the blessing of Arvoreen, the sword was recently re-enchanted to become even more powerful.\n\nSTATISTICS:\n\nEquipped abilities:\n– Free action\n– Strength: +1\n– Exceptional Strength: +75\n\nCombat abilities:\n– Target must save vs. Wands or be slowed for 45 seconds\n\nTHAC0: +5\nDamage: 1d6+5 (piercing)\nSpeed Factor: 0\nProficiency Type: Short Sword\nType: One-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "str": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Increased Movement Rate"
+              }
+            ],
+            "profType": "short sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Thief"
+              ],
+              "races": [
+                "Halfling"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2PLAT01",
+          "armor",
+          "Improved Ankheg Plate Mail",
+          "Aye, ye're Baeloth's latest twerps, are ye? Well, I hope ye at least spit in his eye before ye die, unlike the last few that came through here. Useless lot!",
+          {
+            "ac": -1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 8
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2RING01",
+          "ring",
+          "Ring of Preservation +1",
+          "Ring of Preservation +1: 'Ring of the Troll Prince'\nThis ring was magically forged for <CHARNAME>. It combines the abjurative powers of King Castter De'wess' rings of protection with the recuperative powers of Huhhus' troll-fueled rings of regeneration. In addition, the ring is stylish.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +1\n– Saving Throws: +1\n– Regenerate 1 Hit Point per round\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saves": 1,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "C2RING02",
+          "ring",
+          "Ring of Preservation +2",
+          "Ring of Preservation +2: 'Ring of the Troll Guardian'\nThis ring was magically forged for <CHARNAME>. It combines the abjurative powers of Princess Akanal's guardian's ring of protection with the recuperative powers of Huhhus' troll-fueled rings of regeneration. In addition, the ring is stylish.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– Saving Throws: +2\n– Regenerate 1 Hit Point per round\n\nWeight: 0",
+          {
+            "ac": 2,
+            "saves": 2,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "C2RING03",
+          "ring",
+          "Ring of Elemental Mastery",
+          "Here we are indeed.",
+          {
+            "ac": 1,
+            "fireResist": 50,
+            "saves": 1,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              }
+            ],
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2RING04",
+          "ring",
+          "Sorcerian Ring",
+          "Sorcerian Ring: 'Grasping Power'\nThis ring is undoubtedly the pinnacle of mnemonic lucubration. Crafted at <CHARNAME>'s request from rings of Wizardry, Acuity and Metaspell Influence Amulet it allows the bearer to memorize an extra spell each day for all spell levels from one to seven. In addition, a ring of protection has been melted into the band, providing minor physical and magical defenses.\n\nSTATISTICS:\n\nEquipped abilities:\n– Can memorize one extra 1st-level spell, 2nd-level spell, 3rd-level spell, 4th-level spell, 5th-level spell, 6th-level spell, and 7th-level spell\n– Armor Class: +1\n– Saving Throws: +1\n\nWeight: 0",
+          {
+            "ac": 1,
+            "saves": 1,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "C2RING05",
+          "ring",
+          "Ring of Preservation +3",
+          "Ring of Preservation +3: 'The Warder's Signet'\nThis ring was magically forged for <CHARNAME>. It combines the abjurative powers of The Warder's Signet ring of protection with the recuperative powers of Huhhus' troll-fueled rings of regeneration. In addition, the ring is stylish.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +3\n– Saving Throws: +3\n– Regenerate 1 Hit Point per round\n\nWeight: 0",
+          {
+            "ac": 3,
+            "saves": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ]
+          }
+        ],
+        [
+          "C2ROBE01",
+          "armor",
+          "Enhanced Robe of the Good Archmagi",
+          "Your prowess in battle has become well known, <RACE>. I have seen few other mortals with your... knack, as it were. Perhaps it was my blades that aided you?",
+          {
+            "ac": 3,
+            "magicResist": 10,
+            "saves": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "C2ROBE02",
+          "armor",
+          "Enhanced Robe of the Neutral Archmagi",
+          "Oh, undoubtedly I could. But you and I both know that this geas prevents me from acting against him. It seems... odd... that such a mortal like Baeloth could have bound all of us djinn. While he possesses great magical talent, he is not invulnerable or uniquely gifted among mages. With enough practice, even you could slay him. And yet... here we are.",
+          {
+            "ac": 3,
+            "magicResist": 10,
+            "saves": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "C2ROBE03",
+          "armor",
+          "Enhanced Robe of the Evil Archmagi",
+          "Perhaps an artifact props him up, or perhaps he is of great mind and foresees all possible outcomes. A well-prepared man, or merely a lucky one? Hmm. There is a chance Laiq could shine some light on this conundrum.",
+          {
+            "ac": 3,
+            "magicResist": 10,
+            "saves": 2,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 2,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 3,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 5,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "C2SHLD01",
+          "shield",
+          "Shield of Harmony +3",
+          "Shield of Harmony +3\nAudn of the Field, Knight-Champion for the wizard Kekkim, carried this shield for most of his life. It protects the bearer from most forms of mind control, a benefit for a wizard who needed warrior allies to stay faithfully at his side. Both Kekkim and Audn have long since returned to the earth, leaving the shield to whomever might recover it from Kekkim's tower.\n\nMore recently the shield was re-enchanted by <CHARNAME>. It now provides extra physical defenses and makes the bearer immune to psionics (but not the intelligence drain of the Illithid).\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +4\n– No protection against missile attacks\n– Immunity to charm, psionics, confusion, domination, and hold\n\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "ac": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 4
+            }
+          }
+        ],
+        [
+          "C2SHLD02",
+          "shield",
+          "Holy Buckler of Amaunator +2",
+          "Holy Buckler of Amaunator +2\n<CHARNAME> had a holy symbol of Amaunator, the long-dead Sun God, forged into this buckler. It is now a potent barrier against those that would stalk the night and drain the life of the living.\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +3\n– No protection against missile and piercing attacks\n– Immunity to level drain\n\nCharge abilities:\n– False Dawn twice per day\n  Undead suffer 6d6 damage, confused on round after false dawn occurs\n  Area of Effect: 15-foot radius\n\nRequires:\n 4 Strength\n\nWeight: 2",
+          {
+            "ac": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 4
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2SPER01",
+          "spear",
+          "Throwing Spear +3",
+          "Throwing Spear +3\nOne of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. This spear trembles from the powerful magic used in its creation.\n\nUnlike almost every other spear you have encountered, this spear can be thrown. It was forged for <CHARNAME> with the help of a magical Rogue Stone. When thrown, the spear immediately returns to the hand of the wielder. (The spear may also be used as a melee weapon: select the second item ability to do so.)\n\nSTATISTICS:\n\nCombat abilities:\n– 2 attacks per round (the same rate-of-fire as a longbow)\n\nTHAC0: +3\nDamage: 1d6+3 (piercing)\nSpeed Factor: 3\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "apr": 0.5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2SPER02",
+          "spear",
+          "Throwing Unicorn Spear +3",
+          "Throwing Unicorn Spear +3\nThis graceful spear is carved to resemble the elongated horn of the unicorn. Wielders of this spear are immune to charm and hold spells, just as a unicorn might be. Whether the horn is or isn't an actual unicorn horn is the subject of much debate.\n\nThe original Unicorn Spear was reforged by <CHARNAME> to serve as a ranged weapon. When thrown, the spear immediately returns to the hand of the wielder. The immediacy of the return may explain how a throwing weapon can confer continuous effects on its wielder. Or maybe it's just magic. (The spear may also be used as a melee weapon: select the second item ability to do so.)\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to charm and hold\n– Save vs. Death: +3\n\nTHAC0: +3\nDamage: 1d6+3, +2 fire damage\nSpeed Factor: 3\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "saveDeath": 3,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2SPER03",
+          "spear",
+          "Throwing Impaler +4",
+          "Throwing Impaler +4\nThe Impaler has a palpable aura of magic that hints at the vicious nature of the weapon and why it has been a favorite of several powerful orc chieftains in the past. When a victim is struck they are, as one would guess, very nearly impaled, run through as the massive enchantment does its dirty work.\n\nAfter <CHARNAME> \"liberated\" the Impaler from the Sahuagin City-of-Caverns <PRO_HESHE> later had it reforged into a ranged weapon. When thrown, the spear immediately returns to the hand of the wielder. (The spear may also be used as a melee weapon: select the second item ability to do so.)\n\nSTATISTICS:\n\nCombat abilities:\n– 2 attacks per round (the same rate-of-fire as a longbow)\n\nTHAC0: +4\nDamage: 1d6+4, +10 piercing damage\nDamage type: Piercing\nSpeed Factor: 2\nProficiency Type: Spear\nType: Two-handed\nRequires:\n 5 Strength\n\nWeight: 3",
+          {
+            "speed": 2,
+            "thac0": 4,
+            "dmg": "1d6",
+            "dmgBonus": 4,
+            "apr": 0.5,
+            "twoHanded": true,
+            "profType": "spear",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "C2STAF01",
+          "staff",
+          "Staff of Elemental Mastery",
+          "I need magical scrolls. What do you have for sale?",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 5,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2STAF02",
+          "staff",
+          "Staff of the Woodlands +5",
+          "The future, the past, the present... I see many things. I do not always choose what I see, and if you wish to see what your future holds, I cannot guarantee it with any accuracy.",
+          {
+            "thac0": 5,
+            "dmg": "1d6",
+            "dmgBonus": 5,
+            "ac": 3,
+            "saveBreath": 1,
+            "saveDeath": 1,
+            "savePoly": 1,
+            "saveWand": 1,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "minStr": 5
+            },
+            "charges": {
+              "count": 12,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2SW1H01",
+          "large sword",
+          "Sunblade: Daystar +4",
+          "Sunblade: Daystar +4\nWhether created specifically for use in the service of Torm or appropriated at some point in the long history of the church, paladins of the Loyal Fury have made good use of Daystar in their battles against evil undead. Through magic or blessing it is empowered with the Sunray, a force of pure life energy so potent that it slays both living and unliving.\n\n<CHARNAME> appropriated this blade from a Lich near the city gates of Athkatla and has since reforged it into an even more powerful instrument of holy justice.\n\nSTATISTICS:\n\nEquipped abilities:\n– Protection From Evil\n\nCharge abilities:\n– Sunray twice per day\n Damage: 3d6 (Save vs. Spell or be blinded for 1 turn)\n Undead: An additional 1d6 points of damage per level of caster (Save vs. Spell or be destroyed)\n Range: 20 ft.\n Area: 15-ft. radius\n\nTHAC0: +4, +8 vs. evil creatures\nDamage: 1d8+4, +8 vs. evil creatures, does double damage against undead\nDamage type: Slashing\nSpeed Factor: 3\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 2",
+          {
+            "speed": 3,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2SW1H02",
+          "large sword",
+          "Celestial Fury +5",
+          "How can I engage him directly if his powers prevent it?",
+          {
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "profType": "katana",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 2,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "C2SW1H03",
+          "large sword",
+          "Water's Talon +4",
+          "Water's Talon +4\nThe blade of this weapon seems to shimmer, revealing a fluid, razor-sharp edge shaped somewhat like the talon of a bird of prey. Water's Talon was commissioned by <CHARNAME> and holds vast power over damaging liquids. Each hit sucks some of the life out of the target and confers it to the wielder. In addition, the water-like edge of the blade is forever envenomed. Much like one of its predecessors, Water's Talon provides immunity to charm. In addition, however, its mastery over water protects the user from the harmful effects of Abi-Dalzim's Horrid Wilting. Most uniquely, the liquid nature of the blade allows it to extend and splash during combat, improving the strike range granted by the weapon to a range beyond that of most two-handed swords. This allows the wielder to make otherwise-impossible attacks from the back rows of a formation or try for daring hit-and-run tactics, counting on the poison from the first hit to disable foes.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to charm\n– Immunity to domination\n– Immunity to Abi-Dalzim's Horrid Wilting\n– Striking range is that of a spear or two-handed sword\n\nCombat abilities:\n– Target suffers 2 points of damage per second for 3 turns\n– Wielder raises their maximum HP by 2 points for 3 turns on every hit\n\nTHAC0: +4\nDamage: 1d8+4 (slashing)\nSpeed Factor: 1\nProficiency Type: Scimitar/Wakizashi/Ninjatō\nType: One-handed\nRequires:\n 8 Strength\n\nWeight: 3",
+          {
+            "speed": 1,
+            "thac0": 4,
+            "dmg": "1d8",
+            "dmgBonus": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "profType": "scimitar/wakizashi/ninjato",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 8
+            }
+          }
+        ],
+        [
+          "C2SW2H01",
+          "large sword",
+          "Lilarcor +5",
+          "Lilarcor +5\nLilarcor is not quite as lovable (or annoying, depending on your viewpoint) as it was before <CHARNAME> had it upgraded. When the Mind Flayer Control Circlet was embedded in its hilt, Lilarcor seemed to lose the ability to consciously converse with those nearby and was reduced to making occasional quips. However, Lilarcor's peculiar intelligence (or lack thereof) now serves as a boon (or a blight) to the wielder: the one holding Lilarcor cannot have its intelligence adjusted for any reason. This protects against the intelligence drain associated with the Illithid and the beneficial effects of a potion of Genius.\n\nSTATISTICS:\n\nEquipped abilities:\n– Immunity to charm\n– Immunity to confusion\n– Immunity to intelligence changes\n\nTHAC0: +5\nDamage: 1d12+5 (slashing)\nSpeed Factor: 6\nProficiency Type: Two-handed Sword\nType: Two-handed\nRequires:\n 14 Strength\n\nWeight: 10",
+          {
+            "speed": 6,
+            "thac0": 5,
+            "dmg": "1d12",
+            "dmgBonus": 5,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ],
+        [
+          "C2VALY01",
+          "armor",
+          "Corthala Family Armor",
+          "How many individuals has Baeloth summoned here?",
+          {
+            "ac": 0,
+            "fireResist": 50,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "resistance",
+                "target": "electricity",
+                "value": 50
+              },
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger"
+              ],
+              "races": [
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Lawful Evil",
+                "Lawful Neutral"
+              ],
+              "minStr": 6,
+              "minDex": 18,
+              "minWis": 11
+            }
+          }
+        ],
+        [
+          "C2LEAT01",
+          "armor",
+          "Improved Human Flesh",
+          "Free Haer'Dalis from imprisonment by Mekrath",
+          {
+            "ac": 0,
+            "magicResist": 20,
+            "dex": 1,
+            "con": 1,
+            "saves": 4,
+            "special": [
+              {
+                "type": "immunity",
+                "target": "backstab"
+              },
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Thief"
+              ],
+              "minStr": 3
+            }
+          }
+        ],
+        [
+          "C2QUIV01",
+          "arrow",
+          "Quiver of Plenty +3",
+          "Quiver of Plenty +3\nThe money and resources you invested in the Quiver of Plenty have resulted in an item of truly amazing magical properties. You might even hit something with these arrows.\n\nSTATISTICS:\n\nEquipped abilities:\n– Unlimited +3 arrows\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "C2QUIV02",
+          "bolt",
+          "Case of Plenty +3",
+          "Case of Plenty +3\nThe money and resources you invested in the Case of Plenty have resulted in an item of truly amazing magical properties.\n\nSTATISTICS:\n\nEquipped abilities:\n– Unlimited +3 bolts\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d8",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "C2QUIV03",
+          "bullet",
+          "Bag of Plenty +3",
+          "Bag of Plenty +3\nThe money and resources you invested in the Bag of Plenty have resulted in an item of truly amazing magical properties. Somehow, this is unsurprising. Have you ever invested money and resources into a magical object only to discover that it is useless? Beyond the Equalizer and the Wave Halberd, I mean. I didn't think so.\n\nSTATISTICS:\n\nEquipped abilities:\n– Unlimited +3 sling bullets\n\nWeight: 0",
+          {
+            "thac0": 3,
+            "dmg": "1d4",
+            "dmgBonus": 4
+          }
+        ],
+        [
+          "C2SW2H02",
+          "large sword",
+          "Soul Reaver +6",
+          "Sun Soulray",
+          {
+            "speed": 4,
+            "thac0": 6,
+            "dmg": "1d12",
+            "dmgBonus": 6,
+            "magicResist": 50,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 14
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Pocket-Plane-Group/Item_Upgrade",
+  "au": "Jarno Mikkola",
+  "co": [
+    {
+      "n": "Original Version (new upgrades in a list)",
+      "tp2n": "Original Version (new upgrades in a list)",
+      "pi": "c2_item_upgrade_soa_original",
+      "scn": "Shadows Of Amn Item Upgrades",
+      "wf": "itemupgrade",
+      "wp": "itemupgrade\\itemupgrade.tp2",
+      "wq": "verified",
+      "cn": 0,
+      "g": "itemupgrade_style",
+      "no": "SoA item upgrades via Cromwell. Original format — new recipes in a list",
+      "it": 51,
+      "itC": {
+        "amulet": 1,
+        "shield": 3,
+        "axe": 1,
+        "belt": 1,
+        "mace": 3,
+        "boots": 4,
+        "bow": 1,
+        "bracers": 1,
+        "armor": 9,
+        "dagger": 1,
+        "short sword": 3,
+        "helmet": 2,
+        "large sword": 6,
+        "misc": 2,
+        "ring": 5,
+        "spear": 3,
+        "staff": 2,
+        "arrow": 1,
+        "bolt": 1,
+        "bullet": 1
+      }
+    },
+    {
+      "n": "Revised Version (new upgrades presented in the same style as existing upgrades)",
+      "tp2n": "Revised Version (new upgrades presented in the same style as existing upgrades)",
+      "pi": "c2_item_upgrade_soa_seamless",
+      "scn": "Shadows Of Amn Item Upgrades",
+      "wf": "itemupgrade",
+      "wp": "itemupgrade\\itemupgrade.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "cn": 10,
+      "g": "itemupgrade_style",
+      "no": "SoA item upgrades via Cromwell. Revised format — matches existing upgrade style"
+    },
+    {
+      "n": "Original Version (new upgrades in a list)",
+      "tp2n": "Original Version (new upgrades in a list)",
+      "no": "ToB item upgrades via Cespenar. Original format",
+      "pi": "c2_item_upgrade_tob_original",
+      "scn": "Throne Of Bhaal Item Upgrades",
+      "wf": "itemupgrade",
+      "wp": "itemupgrade\\itemupgrade.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1,
+      "g": "itemupgrade_tob"
+    },
+    {
+      "n": "Revised Version (new upgrades presented in the same style as existing upgrades)",
+      "tp2n": "Revised Version (new upgrades presented in the same style as existing upgrades)",
+      "pi": "c2_item_upgrade_tob_seamless",
+      "scn": "Throne Of Bhaal Item Upgrades",
+      "wf": "itemupgrade",
+      "wp": "itemupgrade\\itemupgrade.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 11,
+      "g": "itemupgrade_tob",
+      "no": "ToB item upgrades via Cespenar. Revised format"
+    },
+    {
+      "n": "Install supplemental Cespenar audio for Item Upgrade",
+      "tp2n": "Install supplemental Cespenar audio for Item Upgrade",
+      "pi": "c2_item_upgrade_cespenar_audio",
+      "wf": "itemupgrade",
+      "wp": "itemupgrade\\itemupgrade.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "cn": 12,
+      "no": "Supplemental Cespenar audio. Requires main Item Upgrade component (cn:0). Skipped if cn:0 not installed.",
+      "x": 0
+    }
+  ],
+  "gh": {
+    "o": "Pocket-Plane-Group",
+    "r": "Item_Upgrade"
+  }
+}

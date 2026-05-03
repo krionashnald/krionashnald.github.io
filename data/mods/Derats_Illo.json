@@ -1,0 +1,439 @@
+{
+  "i": 255,
+  "t": "Derats_Illo",
+  "sv": 1,
+  "pfx": "PX",
+  "ord": 50,
+  "c": "ITEM ADDITION MODS",
+  "n": "Derat's Illo",
+  "langs": {
+    "fr": 0,
+    "en": 1
+  },
+  "no": "Illo the Tattoo artist",
+  "u": "https://github.com/Deratiseur/Tatoos",
+  "a": "Deratiseur",
+  "v": "v5.3",
+  "sum": "Tomes are outdated.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Deratiseur",
+    "r": "Tatoos"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "PXILCA1",
+          "misc",
+          "Tattoo of protection",
+          "This is a magical rune inscribed on what appears to be elven skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting its power.\n\nSTATISTICS:\n\nArmor Class: +1\n\nSpecial: cannot be combined with another Tattoo of protection",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILTROI",
+          "misc",
+          "Tattoo of the three treasures",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILSOUR",
+          "misc",
+          "Tattoo of the deceitful",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting its power.\n\nSTATISTICS:\n\nBackstab multiplier : +1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILTRAN",
+          "misc",
+          "Tattoo of transcendance",
+          "This is a magical rune inscribed on what appears to be gnomish skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting its power.\n\nSTATISTICS:\n\nAll Ability scores: +1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILSUCU",
+          "misc",
+          "Tattoo of the Succubus",
+          "Draining touch (Necromancy)\nlevel: 5\nSphere: necromancy\nRange: Touch\nDuration: Special\nCasting Time: 1\nArea of Effect:  1 creature\nSaving Throw: Special\n\nUpon casting this spell, the user has to touch an opponent in order to visit the effect upon them. An item is created upon casting. The next attack the user makes, which must happen in the next 3 rounds, will use this item. If the first attack misses, the item disappears and the spell is wasted; however, if the attack succeeds, the victim automatically lose one level. This spell can be dispelled if cast between the casting of this spell and the necessary attack.",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILSUC1",
+          "fist",
+          "Draining touch",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nStrength: +1\nMaze once a day\n\nSpecial: cannot be combined with another Tattoo of creature",
+          {
+            "speed": 1,
+            "thac0": 3,
+            "usability": {
+              "minStr": 5
+            }
+          }
+        ],
+        [
+          "PXILDEMO",
+          "misc",
+          "Tattoo of the Devil",
+          "The gorge is a place of power. We would take that power for ourselves.",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILGER1",
+          "misc",
+          "Tattoo of warrior",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILMAG1",
+          "misc",
+          "Tattoo of wizard",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILVOL1",
+          "misc",
+          "Tattoo of thief",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILCLR1",
+          "misc",
+          "Tattoo of cleric",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILMOIN",
+          "misc",
+          "Tattoo of the master of the Shi",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILDRU1",
+          "misc",
+          "Tattoo of druid",
+          "Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.\n\nSTATISTICS:\n\nWeight: 25",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILPALA",
+          "misc",
+          "Tattoo of the Paragon of Virtue",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nHaste once a day",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Paladin"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILRODR",
+          "misc",
+          "Tattoo of the Forester",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nHaste once a day",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Ranger"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILBARD",
+          "misc",
+          "Tattoo of the master of masks",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nHaste once a day",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILSORC",
+          "misc",
+          "Tattoo of the Heritage",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nHaste once a day",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILACCE",
+          "misc",
+          "Tattoo of acceleration",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nHaste once a day",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILLIAN",
+          "misc",
+          "Tattoo of creepers",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nSlashing creepers twice a day",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILLANG",
+          "misc",
+          "Tattoo of the silver tongue",
+          "This is a magical rune inscribed on what appears to be gnomish skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting its power.\n\nSTATISTICS:\n\nCharisma: +2\nFriends once a day each",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILVOYA",
+          "misc",
+          "Tattoo of the traveler",
+          "This is a magical rune inscribed on what appears to be gnomish skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nMovement: +2\nDimension door once a day",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILGAST",
+          "misc",
+          "Tattoo of the Gray Waste",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nEmotion: Despair (stun, save at -4) twice a day\n\nSpecial: cannot be combined with another Tattoo of Plane",
+          {
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "PXILMONT",
+          "misc",
+          "Tattoo of Mount Celestia",
+          "This is a magical rune inscribed on what appears to be human skin. To use it, it must be applied to a part of the body, after which it fuses with the body, inscribing the rune as a tattoo and granting a power.\n\nSTATISTICS:\n\nVolcanic rain (Rain of fire/cold/acid, 9D6, 4 rounds) once a day\n\nSpecial: This tattoo is exclusive: using it prevents you from benefiting from the effects of another outer plane tattoo.",
+          {
+            "usability": {
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Neutral",
+                "Neutral Evil",
+                "Neutral Neutral"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Deratiseur/Tatoos",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "Illo the Tattoo artist",
+      "cn": 0,
+      "wf": "Derats_Illo",
+      "wp": "Derats_Illo\\Setup-Derats_Illo.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "tob"
+      ],
+      "it": 23,
+      "itC": {
+        "misc": 22,
+        "fist": 1
+      },
+      "tp2n": "Illo le Tatoueur"
+    },
+    {
+      "n": "Divide the price of tattoos by two (cheating)",
+      "cn": 1,
+      "wf": "Derats_Illo",
+      "wp": "Derats_Illo\\Setup-Derats_Illo.tp2",
+      "x": 0,
+      "tp2n": "Diviser par deux le prix des tatouages (triche)"
+    },
+    {
+      "n": "Diminuer encore plus le prix",
+      "cn": 2,
+      "wf": "Derats_Illo",
+      "wp": "Derats_Illo\\Setup-Derats_Illo.tp2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "Diminuer encore plus le prix"
+    }
+  ]
+}

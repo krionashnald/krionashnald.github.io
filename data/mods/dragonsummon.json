@@ -1,0 +1,73 @@
+{
+  "i": 302,
+  "t": "dragonsummon",
+  "sv": 1,
+  "ord": 90,
+  "c": "SPELL MODS",
+  "n": "Red Dragon Summoning",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "ru": 2,
+    "fr": 3,
+    "it": 4
+  },
+  "no": "Red Dragon Summoning Spell. mod_installer: Uses ACTION_READLN. May require interactive input. mod_installer: ACTION_READLN for Ribald choice. Requires manual input.",
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURDRAGON1",
+          "wizard",
+          9,
+          "Conjuration",
+          "Red Dragon Summoning",
+          "Summons a red dragon to fight for the caster."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Red_Dragon_Summoning_Spell",
+  "a": "Coco_Pliz",
+  "v": "v2.1.0",
+  "sum": "This mod adds a scroll to summon a dragon",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Red_Dragon_Summoning_Spell"
+  },
+  "dl": "https://github.com/SpellholdStudios/Red_Dragon_Summoning_Spell",
+  "au": "Deratiseur",
+  "co": [
+    {
+      "n": "Red Dragon Summoning Spell",
+      "tp2n": "Red Dragon Summoning Spell",
+      "cn": 0,
+      "wf": "dragonsummon",
+      "wp": "dragonsummon\\dragonsummon.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Adds Red Dragon summoning spell. May use ACTION_READLN for configuration",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for Ribald choice. Requires manual input.",
+          "type": "manual"
+        }
+      ],
+      "sp": 1
+    }
+  ]
+}

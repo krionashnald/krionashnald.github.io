@@ -1,0 +1,79 @@
+{
+  "i": 53,
+  "t": "BG1Aerie",
+  "sv": 1,
+  "pfx": "AY",
+  "ord": 200,
+  "c": "QUEST MODS BG1",
+  "n": "Aerie in BG:EE",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2,
+    "es": 3
+  },
+  "no": "Aerie for BG1EE Coutelier's original: v1-1/p1 The Gate Project's updated Fork: EET note: Coutelier's original doesn't have native EET compatibility and has to be installed during the BG1 preparation, but TGP's fork can be installed here with the rest of mods.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "aerie",
+          "portraits/aerie_bgee/aerie.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/The-Gate-Project/AerieBG1/releases",
+  "a": "Coutelier",
+  "v": "2.5",
+  "sum": "Aerie in BG:EE",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v2.0",
+    "place": "post"
+  },
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "AerieBG1"
+  },
+  "dl": "https://github.com/The-Gate-Project/AerieBG1/releases",
+  "au": "Coutelier",
+  "co": [
+    {
+      "n": "Aerie for BG:EE",
+      "tp2n": "Aerie for BG:EE",
+      "pi": "Coutelier-AerieBG1",
+      "wf": "BG1Aerie",
+      "wp": "BG1Aerie\\setup-BG1Aerie.tp2",
+      "wc": 5000,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 5000,
+      "no": "Adds Aerie as a joinable NPC for BG1."
+    },
+    {
+      "n": "Install a lighter variant of the portrait for Aerie? (This changes her BG2 portrait as well in EET.)",
+      "tp2n": "Install a lighter variant of the portrait for Aerie? (This changes her BG2 portrait as well in EET.)",
+      "pi": "Coutelier-AerieBG1-Lighter-Portrait",
+      "wf": "BG1Aerie",
+      "wp": "BG1Aerie\\setup-BG1Aerie.tp2",
+      "wc": 5001,
+      "wq": "manual_final",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 5001,
+      "no": "Lighter variant of Aerie's portrait."
+    }
+  ]
+}

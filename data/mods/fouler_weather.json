@@ -1,0 +1,51 @@
+{
+  "i": 935,
+  "t": "fouler_weather",
+  "sv": 1,
+  "ord": 50,
+  "n": "Fouler Weather",
+  "c": "GRAPHICS",
+  "au": "Maur'Vir",
+  "no": "Alters fog types and weather patterns for outdoor areas based on biome. Coastal forests get more storms/fog, inner forests more rain, desert areas get sandstorms with ground-colored fog. Special areas (Firewine Bridge, Nyalee's Hideout, etc.) get appropriate fog. Patches FOGAREA.2DA and ARE weather fields. Requires EE Fixpack. English only.",
+  "dependencies": [
+    {
+      "requires": "eefixpack",
+      "requiresId": 4,
+      "type": "hard",
+      "reason": "REQUIRE_PREDICATE checks EE Fixpack core fixes installed."
+    }
+  ],
+  "u": "https://github.com/bucketfulofsunshine/FoulerWeather",
+  "dl": "https://github.com/bucketfulofsunshine/FoulerWeather",
+  "sum": "Weather effects overhaul adding visual enhancements for rain, fog, and storms.",
+  "tags": [
+    "visual"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Fouler Weather",
+      "tp2n": "Fouler Weather",
+      "cn": 100,
+      "wf": "fouler_weather",
+      "wp": "fouler_weather\\fouler_weather.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "no": "Patches FOGAREA.2DA with biome-appropriate fog and weather probabilities for all outdoor areas. Separate 2DA tables for BGEE, BG2EE, and EET."
+    }
+  ],
+  "gh": {
+    "o": "bucketfulofsunshine",
+    "r": "FoulerWeather"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "i": 470,
+  "t": "infinitysounds",
+  "sv": 1,
+  "ord": 999,
+  "c": "MUSIC & AUDIO",
+  "n": "Infinity Sounds",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "pl": 3,
+    "ru": 4
+  },
+  "no": "Infinity Sounds v2 by Spellhold Studios. Restores BG1 sounds, adds creature voiceovers and ambient sounds. INSTALL LAST before biffing — patches ALL spell files and ALL creature files via regexp glob. Must install AFTER SCS, spell mods, and creature mods so sound changes are not overwritten.",
+  "conflicts": [
+    {
+      "with": "mih_fr",
+      "withId": 29,
+      "severity": "soft",
+      "reason": "MiH Sound Volume Fixes overlaps with Infinity Sounds volume tweaks; install one or the other",
+      "myComps": "#180 Tweak Sound Channel Volume Levels",
+      "theirComps": "#2 Sound Volume Fixes"
+    }
+  ],
+  "dl": "https://github.com/Spellhold-Studios/Infinity-Sounds",
+  "u": "https://github.com/Spellhold-Studios/Infinity-Sounds",
+  "a": "skellytz, Tash",
+  "v": "v2.2",
+  "sum": "Replaces combat, spell, and ambient sounds with higher-quality versions from IWD and other IE games. Makes battles sound more impactful.",
+  "tags": [
+    "audio"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-InfinitySounds"
+  },
+  "au": "Spellhold Studios",
+  "co": [
+    {
+      "n": "Restore BG1 Spellcasting Voices",
+      "cn": 100,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 100,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Replaces default Latin spell recitation with sinister BG1-style incantations. Cleaned of compression artifacts.",
+      "tp2n": "Restore BG1 Spellcasting Voices"
+    },
+    {
+      "n": "Restore BG1 Spellcasting Sounds",
+      "cn": 110,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 110,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Restores classic BG1 spell sound effects and fixes school-mismatched casting sounds. Patches ALL spell files.",
+      "tp2n": "Restore BG1 Spellcasting Sounds"
+    },
+    {
+      "n": "Restore BG1 Weapon Sounds",
+      "cn": 120,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 120,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Restores BG1 weapon swing and shot sounds (flails, spears, bows, crossbows). Includes tweaked bow draw/release timing.",
+      "tp2n": "Restore BG1 Weapon Sounds"
+    },
+    {
+      "n": "Restore BG1 Armor Sounds",
+      "cn": 130,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 130,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Replaces BG2 combat hit sounds with BG1 counterparts — more emphasized clashes and thumps. Adds BG1-style armor movement sounds.",
+      "tp2n": "Restore BG1 Armor Sounds"
+    },
+    {
+      "n": "Restore BG1 GUI Sounds",
+      "cn": 140,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 140,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Restores BG1 UI panel, inventory, and tooltip sounds. BG2 variants have an extra rattle that BG1 lacks.",
+      "tp2n": "Restore BG1 GUI Sounds"
+    },
+    {
+      "n": "Restore BG1 PC Soundsets",
+      "cn": 150,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "tob"
+      ],
+      "tp2n": "Restore BG1 PC Soundsets",
+      "pi": "s@-IS-BG1-PC-Soundsets"
+    },
+    {
+      "n": "Restore Gulp Sound",
+      "cn": 160,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "tob"
+      ],
+      "tp2n": "Restore Gulp Sound",
+      "pi": "s@-IS-Gulp-Sound"
+    },
+    {
+      "n": "Restore Chunked Death Sound",
+      "cn": 170,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 170,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Restores the chunked death sound from BG1 that was missing in BG2/EE. Plays when gore is enabled and HP drop well below zero.",
+      "tp2n": "Restore Chunked Death Sound"
+    },
+    {
+      "n": "Tweak Sound Channel Volume Levels",
+      "cn": 180,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 180,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Rebalances sound channel volumes between BG1 and BG2 levels. Affects narration, ambients, casting, combat, dialog, and footstep channels. Conflicts with MiH Fixes sound volume tweaks.",
+      "tp2n": "Tweak Sound Channel Volume Levels"
+    },
+    {
+      "n": "Enable Footsteps During Combat",
+      "cn": 189,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 189,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Fixes a game engine bug where footsteps are always disabled in combat due to a misspelled config key. Adds the corrected key.",
+      "tp2n": "Enable Footsteps During Combat"
+    },
+    {
+      "n": "Mute Reputation Change Sounds",
+      "cn": 190,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Mute Reputation Change Sounds",
+      "pi": "s@-IS-Mute-Rep-Sounds"
+    },
+    {
+      "n": "Mute Tooltip Paper Sound",
+      "cn": 200,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "Mute Tooltip Paper Sound",
+      "pi": "s@-IS-Mute-Tooltip-Sound"
+    },
+    {
+      "n": "Restore BG1 Ambient Sounds",
+      "cn": 210,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 210,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Adds rooster crow, horse whinny, and restored day ambient to BG1 areas. BGT/BGEE/EET only.",
+      "tp2n": "Restore BG1 Ambient Sounds"
+    },
+    {
+      "n": "Restore Environmental & Positional Audio",
+      "cn": 220,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "tob"
+      ],
+      "tp2n": "Restore Environmental & Positional Audio",
+      "pi": "s@-IS-Restore-EAX"
+    },
+    {
+      "n": "Enhance Positional Audio",
+      "cn": 221,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Enhance Positional Audio",
+      "pi": "s@-IS-Enhance-Pos-Audio"
+    },
+    {
+      "n": "Restore & Tweak Soundsets",
+      "cn": 230,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 230,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Major overhaul of creature soundsets: restores missing sounds, fixes silent attacks, synchronizes attack animations. Requires TobEx on classic BG2. Patches ALL creature files.",
+      "tp2n": "Restore & Tweak Soundsets"
+    },
+    {
+      "n": "More Existence Sounds",
+      "cn": 240,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 240,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Adds idle/existence sounds to many additional monsters, animals, and NPCs beyond what cn:230 restores. Requires cn:230.",
+      "rd": 9,
+      "tp2n": "More Existence Sounds"
+    },
+    {
+      "n": "Tweak Existence Sound Delay",
+      "cn": 250,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 250,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "tob"
+      ],
+      "no": "Reduces the delay between creature idle sounds to match BG1 behavior. Requires cn:230.",
+      "rd": 9,
+      "tp2n": "Tweak Existence Sound Delay"
+    },
+    {
+      "n": "Restore NPC Voiceovers",
+      "cn": 265,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 265,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "Restores unused NPC voiceovers from game files: Bodhi, Gaelan Bayle, Edwin, Keldorn, Anomen, Sarevok, and 100+ minor NPC lines with subtitles.",
+      "tp2n": "Restore NPC Voiceovers"
+    },
+    {
+      "n": "Additional NPC Voiceovers (by Salk)",
+      "cn": 270,
+      "wf": "infinitysounds",
+      "wp": "infinitysounds\\INFINITYSOUNDS.TP2",
+      "wc": 270,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ],
+      "no": "Additional NPC voiceover restorations by Salk. Extends cn:265 with more recovered dialogue lines.",
+      "tp2n": "Additional NPC Voiceovers (by Salk)"
+    }
+  ]
+}

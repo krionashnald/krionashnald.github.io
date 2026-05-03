@@ -1,0 +1,90 @@
+{
+  "i": 45,
+  "t": "SotSC",
+  "sv": 1,
+  "pfx": "L#",
+  "ord": 120,
+  "c": "QUEST MODS BG1",
+  "n": "Shades of the Sword Coast",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "ko": 2,
+    "ru": 3,
+    "pl": 4,
+    "de": 5,
+    "es": 6,
+    "zh-cn": 7,
+    "pt": 8
+  },
+  "no": "WARNING: Red Skeleton places hostiles creatures near a Romantic Encounters character (The Essential End) [Northern Tales of the Sword Coast placeholder] same added spells [Stone of Askavar placeholder] tutu-bgt-and-bg-ee Shades of the Sword Coast. mod_installer: Large BG1 expansion with hundreds of creature and area patches. Triggers dialogue recompilation cascade when installed after many dialogue mods",
+  "conflicts": [
+    {
+      "with": "IndiraNPC",
+      "withId": 123,
+      "severity": "partial",
+      "reason": "Minor Firewine Ruins area script overlap. Install order dependent.",
+      "orderOnly": true,
+      "myComps": "#0 Shades of the Sword Coast",
+      "theirComps": "#0 Indira NPC",
+      "source": "tp2 analysis - only genuine technical overlap among SotSC conflicts. SotSC fj_are_structure sets offset 0x94 on AR1802, Indira may also assign area script, 2026-03"
+    },
+    {
+      "with": "thecalling",
+      "withId": 39,
+      "severity": "partial",
+      "reason": "Both mods EXTEND_BOTTOM Thalantyr dialogue state 1 but use independent variables (SotSC: L#HIGKEQuest, Calling: CDBracerQuest). Should coexist with correct install order.",
+      "myComps": "#0 Shades of the Sword Coast - Expansion Pack for BGEE",
+      "theirComps": "#0 The Calling",
+      "source": "tp2 analysis of thecalling.tp2 Beta 2+ and SotSC dialogue/thalan.d, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "DarkHorizons",
+      "withId": 573,
+      "severity": "partial",
+      "reason": "Both mods modify shared BG1 area scripts. Compatible if Dark Horizons is installed BEFORE SotSC (per SotSC readme). SotSC expects Dark Horizons changes to already be present.",
+      "source": "manual",
+      "orderOnly": true
+    },
+    {
+      "with": "darkhorizonsbgee",
+      "withId": 512,
+      "severity": "partial",
+      "reason": "Both mods modify shared BG1 area scripts. Compatible if Dark Horizons is installed BEFORE SotSC (per SotSC readme). SotSC expects Dark Horizons changes to already be present.",
+      "source": "manual",
+      "orderOnly": true
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/shades-of-the-sword-coast/",
+  "a": "Lava Del'Vortel",
+  "v": "v10.4",
+  "sum": "Large BG1 quest mod adding new areas, quests, and encounters south of Baldur's Gate. Includes a new storyline involving the Shades and a dungeon complex.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://downloads.weaselmods.net/download/shades-of-the-sword-coast/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Shades of the Sword Coast - Expansion Pack for BGEE",
+      "tp2n": "Shades of the Sword Coast – Expansion Pack for BGEE",
+      "cn": 0,
+      "wf": "SotSC",
+      "wp": "SotSC\\SOTSC.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "no": "UPSTREAM BUG: SotSC/NoSoDFixes/SPIDSM0_.cre not found. SotSC.tph (line 7-8) references SPIDSM0_.cre (trailing underscore) but the actual file in SotSC/NoSoDFixes/ is spidsm01.cre (numeral 1, not underscore). Filename mismatch — the two names differ. The installed backup copy (from a prior working install) already uses the corrected name spidsm01.cre. Fix: rename NoSoDFixes/spidsm01.cre to SPIDSM0_.cre, or update SotSC.tph to reference spidsm01.cre.",
+      "in": [
+        {
+          "t": "Rename SotSC/NoSoDFixes/spidsm01.cre to SPIDSM0_.cre (upstream filename mismatch). Or use eet-mod-forge-patches #19.",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

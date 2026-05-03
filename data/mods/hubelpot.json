@@ -1,0 +1,81 @@
+{
+  "i": 153,
+  "t": "hubelpot",
+  "sv": 1,
+  "ord": 320,
+  "c": "NEW NPC MODS",
+  "n": "Hubelpot the Vegetable Merchant NPC",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Hubelpot Thistletown, the Vegetable Merchant farmer passing for a druid? Sounds like a hoot. mod_installer: Silent install failure. Check mod version compatibility",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "hubelpot",
+          "portraits/hubelpot/sc_hub.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Hubelpot_the_Vegetable_Merchant_NPC",
+  "a": "BobTokyo, SConrad",
+  "v": "v2.1.0",
+  "sum": "This mod adds the Vegetable Merchant Hubelpot Thistledown NPC to the game?",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Hubelpot_the_Vegetable_Merchant_NPC"
+  },
+  "au": "BobTokyo and SConrad",
+  "dl": "https://github.com/SpellholdStudios/Hubelpot_the_Vegetable_Merchant_NPC",
+  "co": [
+    {
+      "n": "Hubelpot is a Totemic Druid (default kit)",
+      "cn": 0,
+      "wf": "hubelpot",
+      "wp": "hubelpot\\hubelpot.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Hubelpot is a Totemic Druid (default kit)",
+      "scn": "Hubelpot Thistledown, the Vegetable Merchant NPC mod"
+    },
+    {
+      "n": "Hubelpot is a Village Druid (alternate kit)",
+      "cn": 1,
+      "wf": "hubelpot",
+      "wp": "hubelpot\\hubelpot.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "Hubelpot is a Village Druid (alternate kit)",
+      "scn": "Hubelpot Thistledown, the Vegetable Merchant NPC mod"
+    },
+    {
+      "n": "Hubelpot is a Vegetable Farmer (alternate kit)",
+      "cn": 2,
+      "wf": "hubelpot",
+      "wp": "hubelpot\\hubelpot.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "tp2n": "Hubelpot is a Vegetable Farmer (alternate kit)",
+      "scn": "Hubelpot Thistledown, the Vegetable Merchant NPC mod"
+    },
+    {
+      "n": "Alternate Portrait by Enkida",
+      "cn": 10,
+      "wf": "hubelpot",
+      "wp": "hubelpot\\hubelpot.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "tp2n": "Alternate Portrait by Enkida"
+    }
+  ]
+}

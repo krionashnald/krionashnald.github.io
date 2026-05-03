@@ -1,0 +1,316 @@
+{
+  "i": 678,
+  "t": "A7-MultiKits",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 350,
+  "c": "KIT & CLASS MODS",
+  "n": "Multiclass Kits",
+  "no": "Multiclass Kits by Argent77. Generates true multiclass kit combinations from ALL single-class kits installed at time of installation. True multiclass kits don't count against the engine's hardcoded kit limit. Install AFTER all other kit mods (AK, TnB, M&G, FnP, etc.) and BEFORE Talents of Faerun. 'All combinations' can be exponentially slow with many kits installed; 'Choose manually' or 'List kits only' recommended. Arcane multiclass kits may inherit specialist traits due to hardcoded engine behavior.",
+  "cl": [
+    {
+      "d": "2026-03-12",
+      "m": "Added from research; v1.1 released 2025-10-24"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "soft",
+      "reason": "MultiKits must install before ToF. ToF's multiclass kit system (#55100-#55900) is more comprehensive but A7 generates combinations from ANY installed kit. Some overlap in results.",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "Both provide multiclass kit options for divine casters. Install A7 after FnP so it can generate combinations from FnP kits.",
+      "orderOnly": true,
+      "theirComps": "#91 Multiclass Druids #92 Multiclass Shamans #31 Multiclass Cleric Kits"
+    },
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "soft",
+      "reason": "Both provide multiclass arcane options. Install A7 after TnB so it can generate combinations from TnB kits.",
+      "orderOnly": true,
+      "theirComps": "#80 Multiclass Sorcerers #95 Multiclass Specialists"
+    }
+  ],
+  "u": "https://github.com/Argent77/A7-MultiKits",
+  "a": "Argent77",
+  "sum": "A mod that installs all kinds of true multiclass kit combinations based on single-class kits.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/Argent77/A7-MultiKits",
+  "au": "Argent77",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Fighter / Mage — All combinations",
+      "cn": 10,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fm",
+      "no": "Installs ALL compatible Fighter/Mage kit combos. Can be very slow with many kits installed."
+    },
+    {
+      "n": "Fighter / Mage — Choose manually",
+      "cn": 11,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fm",
+      "no": "Interactive selection of which Fighter/Mage kit combos to install."
+    },
+    {
+      "n": "Fighter / Mage — List kits only",
+      "cn": 12,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fm",
+      "no": "Dry run — lists available Fighter/Mage combos without installing. Use to preview before committing."
+    },
+    {
+      "n": "Fighter / Cleric — All combinations",
+      "cn": 20,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fc"
+    },
+    {
+      "n": "Fighter / Cleric — Choose manually",
+      "cn": 21,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fc"
+    },
+    {
+      "n": "Fighter / Cleric — List kits only",
+      "cn": 22,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fc"
+    },
+    {
+      "n": "Fighter / Thief — All combinations",
+      "cn": 30,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ft"
+    },
+    {
+      "n": "Fighter / Thief — Choose manually",
+      "cn": 31,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ft"
+    },
+    {
+      "n": "Fighter / Thief — List kits only",
+      "cn": 32,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ft"
+    },
+    {
+      "n": "Fighter / Mage / Thief — All combinations",
+      "cn": 40,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmt"
+    },
+    {
+      "n": "Fighter / Mage / Thief — Choose manually",
+      "cn": 41,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmt"
+    },
+    {
+      "n": "Fighter / Mage / Thief — List kits only",
+      "cn": 42,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmt"
+    },
+    {
+      "n": "Mage / Thief — All combinations",
+      "cn": 50,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_mt"
+    },
+    {
+      "n": "Mage / Thief — Choose manually",
+      "cn": 51,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_mt"
+    },
+    {
+      "n": "Mage / Thief — List kits only",
+      "cn": 52,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_mt"
+    },
+    {
+      "n": "Cleric / Mage — All combinations",
+      "cn": 60,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cm"
+    },
+    {
+      "n": "Cleric / Mage — Choose manually",
+      "cn": 61,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cm"
+    },
+    {
+      "n": "Cleric / Mage — List kits only",
+      "cn": 62,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cm"
+    },
+    {
+      "n": "Cleric / Thief — All combinations",
+      "cn": 70,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ct"
+    },
+    {
+      "n": "Cleric / Thief — Choose manually",
+      "cn": 71,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ct"
+    },
+    {
+      "n": "Cleric / Thief — List kits only",
+      "cn": 72,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_ct"
+    },
+    {
+      "n": "Fighter / Druid — All combinations",
+      "cn": 80,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fd"
+    },
+    {
+      "n": "Fighter / Druid — Choose manually",
+      "cn": 81,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fd"
+    },
+    {
+      "n": "Fighter / Druid — List kits only",
+      "cn": 82,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fd"
+    },
+    {
+      "n": "Fighter / Mage / Cleric — All combinations",
+      "cn": 90,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmc"
+    },
+    {
+      "n": "Fighter / Mage / Cleric — Choose manually",
+      "cn": 91,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmc"
+    },
+    {
+      "n": "Fighter / Mage / Cleric — List kits only",
+      "cn": 92,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_fmc"
+    },
+    {
+      "n": "Cleric / Ranger — All combinations",
+      "cn": 100,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cr"
+    },
+    {
+      "n": "Cleric / Ranger — Choose manually",
+      "cn": 101,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cr"
+    },
+    {
+      "n": "Cleric / Ranger — List kits only",
+      "cn": 102,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "g": "mk_cr"
+    },
+    {
+      "n": "User-defined kits (via A7-MultiKits.ini)",
+      "cn": 200,
+      "wf": "A7-MultiKits",
+      "wp": "A7-MultiKits\\A7-MultiKits.TP2",
+      "wq": "exact",
+      "no": "Installs custom multiclass kit combos defined in A7-MultiKits.ini. Only available if the INI file has valid kit definitions. Requires manual configuration."
+    }
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-MultiKits"
+  }
+}

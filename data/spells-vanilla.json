@@ -1,0 +1,5967 @@
+{
+  "SPWI101": {
+    "n": "Grease",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Conjuration",
+    "desc": "Slippery area. Save vs. Breath or fall, unable to act 1 round.",
+    "icon": "spells/icons/SPWI101.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round"
+  },
+  "SPWI102": {
+    "n": "Armor",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Conjuration",
+    "desc": "Magical AC 6 armor. 9 hours.",
+    "icon": "spells/icons/SPWI102.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "9 hours"
+  },
+  "SPWI103": {
+    "n": "Burning Hands",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "1d3+2/level fire fan (max 1d3+20). Save half.",
+    "icon": "spells/icons/SPWI103.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI104": {
+    "n": "Charm Person",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Enchantment",
+    "desc": "Charms humanoid 5 rounds. Save negates.",
+    "icon": "spells/icons/SPWI104.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "60 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI105": {
+    "n": "Color Spray",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "Cone blinds + knocks out 1d4 rounds. Save negates.",
+    "icon": "spells/icons/SPWI105.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI106": {
+    "n": "Blindness",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Illusion",
+    "desc": "Permanent blindness. Save negates.",
+    "icon": "spells/icons/SPWI106.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "permanent"
+  },
+  "SPWI107": {
+    "n": "Friends",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Enchantment",
+    "desc": "+2d4 Charisma for 1d4+1 rounds.",
+    "icon": "spells/icons/SPWI107.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPWI108": {
+    "n": "Protection From Petrification",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "Immune to petrification. 1 hour.",
+    "icon": "spells/icons/SPWI108.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 hour"
+  },
+  "SPWI109": {
+    "n": "Identify",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Divination",
+    "desc": "Identifies magical item properties.",
+    "icon": "spells/icons/SPWI109.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI110": {
+    "n": "Infravision",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Divination",
+    "desc": "Grants infravision. 2 hours.",
+    "icon": "spells/icons/SPWI110.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 hours"
+  },
+  "SPWI112": {
+    "n": "Magic Missile",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Evocation",
+    "desc": "1 missile +1/2 levels (max 5), each 1d4+1. No save.",
+    "icon": "spells/icons/SPWI112.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "60 ft",
+    "dur": "instant"
+  },
+  "SPWI113": {
+    "n": "Protection From Evil",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "+2 AC/saves vs evil, charm immunity. 2 rounds/level.",
+    "icon": "spells/icons/SPWI113.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds/level"
+  },
+  "SPWI114": {
+    "n": "Shield",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Evocation",
+    "desc": "AC 4 missiles, AC 2 melee. MM immunity. 5 rounds/level.",
+    "icon": "spells/icons/SPWI114.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "5 rounds/level"
+  },
+  "SPWI115": {
+    "n": "Shocking Grasp",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "Touch 1d8+1/level electrical (max 1d8+10).",
+    "icon": "spells/icons/SPWI115.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI116": {
+    "n": "Sleep",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Enchantment",
+    "desc": "2d4 HD sleep 5 rounds/level. Max 4+1 HD.",
+    "icon": "spells/icons/SPWI116.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "death",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "5 rounds/level"
+  },
+  "SPWI117": {
+    "n": "Chill Touch",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Necromancy",
+    "desc": "Touch 1d8 cold, -1 STR 1 round. Save negates STR.",
+    "icon": "spells/icons/SPWI117.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPWI118": {
+    "n": "Chromatic Orb",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Evocation",
+    "desc": "Level-scaled effects. At 12+, save vs Death or die.",
+    "icon": "spells/icons/SPWI118.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "90 ft",
+    "dur": "instant"
+  },
+  "SPWI119": {
+    "n": "Larloch Minor Drain",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Necromancy",
+    "desc": "Drains 1d4/level HP (max 5d4), heals caster.",
+    "icon": "spells/icons/SPWI119.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "90 ft",
+    "dur": "instant"
+  },
+  "SPWI120": {
+    "n": "Reflected Image",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "Creates 1 mirror image.",
+    "icon": "spells/icons/SPWI120.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI121": {
+    "n": "Nahal Reckless Dweomer",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "Wild Mage. Casts any spell via chaos. Always Wild Surges.",
+    "icon": "spells/icons/SPWI121.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI122": {
+    "n": "Spook",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Illusion",
+    "desc": "Target flees 3 rounds. Save at -1/level negates.",
+    "icon": "spells/icons/SPWI122.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "3 rounds"
+  },
+  "SPWI124": {
+    "n": "Find Familiar",
+    "type": "wizard",
+    "lv": 1,
+    "school": "Conjuration",
+    "desc": "Permanent familiar by alignment. Bonus HP.",
+    "icon": "spells/icons/SPWI124.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "caster",
+    "rng": "self",
+    "dur": "permanent"
+  },
+  "SPWI201": {
+    "n": "Blur",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Illusion",
+    "desc": "+3 AC, +1 saves. 3+1/level rounds.",
+    "icon": "spells/icons/SPWI201.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "3+1/level rounds"
+  },
+  "SPWI202": {
+    "n": "Detect Evil",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Divination",
+    "desc": "Reveals evil creatures. 1 turn.",
+    "icon": "spells/icons/SPWI202.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "5 ft",
+    "dur": "1 turn"
+  },
+  "SPWI203": {
+    "n": "Detect Invisibility",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Divination",
+    "desc": "Reveals invisible creatures. 2 turns.",
+    "icon": "spells/icons/SPWI203.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 turns"
+  },
+  "SPWI205": {
+    "n": "Horror",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Necromancy",
+    "desc": "30ft radius flee 4 rounds. Save negates.",
+    "icon": "spells/icons/SPWI205.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "4 rounds"
+  },
+  "SPWI206": {
+    "n": "Invisibility",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Illusion",
+    "desc": "Invisible until attacking. 24 hours.",
+    "icon": "spells/icons/SPWI206.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "24 hours"
+  },
+  "SPWI207": {
+    "n": "Knock",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "Opens one locked door/chest.",
+    "icon": "spells/icons/SPWI207.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "instant"
+  },
+  "SPWI208": {
+    "n": "Know Alignment",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Divination",
+    "desc": "Reveals creature alignment.",
+    "icon": "spells/icons/SPWI208.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI210": {
+    "n": "Resist Fear",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Abjuration",
+    "desc": "Removes + prevents fear. 1 hour.",
+    "icon": "spells/icons/SPWI210.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 hour"
+  },
+  "SPWI211": {
+    "n": "Melf Acid Arrow",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Conjuration",
+    "desc": "2d4 acid +1d4/round 3 rounds.",
+    "icon": "spells/icons/SPWI211.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "60 ft",
+    "dur": "3 rounds"
+  },
+  "SPWI212": {
+    "n": "Mirror Image",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Illusion",
+    "desc": "2d4 images absorb attacks.",
+    "icon": "spells/icons/SPWI212.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI213": {
+    "n": "Stinking Cloud",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "Nausea cloud. Save vs Poison or helpless.",
+    "icon": "spells/icons/SPWI213.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "death",
+    "ct": 2,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI214": {
+    "n": "Web",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "Webs hold creatures. Save vs Breath each round.",
+    "icon": "spells/icons/SPWI214.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "instant"
+  },
+  "SPWI215": {
+    "n": "Agannazar Scorcher",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "3d6 fire jet (double at 5+). Save half.",
+    "icon": "spells/icons/SPWI215.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI216": {
+    "n": "Ghoul Touch",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Necromancy",
+    "desc": "Touch paralyzes 5 rounds. Save negates. Elves immune.",
+    "icon": "spells/icons/SPWI216.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "5 rounds"
+  },
+  "SPWI217": {
+    "n": "Vocalize",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "Cast without verbal components 5 rounds.",
+    "icon": "spells/icons/SPWI217.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "15 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI218": {
+    "n": "Luck",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Enchantment",
+    "desc": "+1 luck all rolls. 3 rounds.",
+    "icon": "spells/icons/SPWI218.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "3 rounds"
+  },
+  "SPWI219": {
+    "n": "Strength",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "STR to 18/50 (or +1d4 if 18+). 1 hour.",
+    "icon": "spells/icons/SPWI219.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 hour"
+  },
+  "SPWI220": {
+    "n": "Ray of Enfeeblement",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Enchantment",
+    "desc": "-25% STR +2%/level. 1 round/level. No save.",
+    "icon": "spells/icons/SPWI220.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "1 round/level"
+  },
+  "SPWI221": {
+    "n": "Chaos Shield",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Abjuration",
+    "desc": "Wild Mage. +15 Wild Surge rolls.",
+    "icon": "spells/icons/SPWI221.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI222": {
+    "n": "Glitterdust",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Conjuration",
+    "desc": "Outlines 10ft, reveals invisible. Save or blind 4 rounds.",
+    "icon": "spells/icons/SPWI222.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "self",
+    "dur": "4 rounds"
+  },
+  "SPWI223": {
+    "n": "Power Word Sleep",
+    "type": "wizard",
+    "lv": 2,
+    "school": "Conjuration",
+    "desc": "Sleeps target <20 HP. 5 rounds. No save.",
+    "icon": "spells/icons/SPWI223.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI301": {
+    "n": "Clairvoyance",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Divination",
+    "desc": "Reveals fog of war in area. 1 round.",
+    "icon": "spells/icons/SPWI301.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPWI302": {
+    "n": "Dispel Magic",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "50% base chance remove magic, +/- level.",
+    "icon": "spells/icons/SPWI302.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI303": {
+    "n": "Flame Arrow",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Conjuration",
+    "desc": "1+1/5 levels arrows, 1d6+4d6 fire each. Save half.",
+    "icon": "spells/icons/SPWI303.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "60 ft",
+    "dur": "instant"
+  },
+  "SPWI304": {
+    "n": "Fireball",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Evocation",
+    "desc": "1d6/level fire (max 10d6) 15ft radius. Save half.",
+    "icon": "spells/icons/SPWI304.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI305": {
+    "n": "Haste",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Alteration",
+    "desc": "+1 APR, +2 AC, x2 movement. 3+1/level rounds.",
+    "icon": "spells/icons/SPWI305.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "3+1/level rounds"
+  },
+  "SPWI306": {
+    "n": "Hold Person",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Enchantment",
+    "desc": "Paralyzes humanoid 1 round/level. Save negates.",
+    "icon": "spells/icons/SPWI306.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "1 round/level"
+  },
+  "SPWI307": {
+    "n": "Invisibility 10 Radius",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Illusion",
+    "desc": "Allies in 10ft invisible until attacking.",
+    "icon": "spells/icons/SPWI307.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI308": {
+    "n": "Lightning Bolt",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Evocation",
+    "desc": "1d6/level electrical (max 10d6). Save half.",
+    "icon": "spells/icons/SPWI308.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "50 ft",
+    "dur": "instant"
+  },
+  "SPWI309": {
+    "n": "Monster Summoning I",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Conjuration",
+    "desc": "Summons weak monsters 6+1/level rounds.",
+    "icon": "spells/icons/SPWI309.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "6+1/level rounds"
+  },
+  "SPWI310": {
+    "n": "Non-Detection",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Undetectable by divination. 8 hours.",
+    "icon": "spells/icons/SPWI310.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "8 hours"
+  },
+  "SPWI311": {
+    "n": "Protection From Normal Missiles",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Immune to non-magic missiles. 1 turn/level.",
+    "icon": "spells/icons/SPWI311.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPWI312": {
+    "n": "Slow",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Alteration",
+    "desc": "Half attacks, +4 AC penalty, -2 saves. 3+1/level rounds.",
+    "icon": "spells/icons/SPWI312.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "3+1/level rounds"
+  },
+  "SPWI313": {
+    "n": "Skull Trap",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Necromancy",
+    "desc": "Trap explodes 1d6/level magic (max 12d6).",
+    "icon": "spells/icons/SPWI313.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI314": {
+    "n": "Vampiric Touch",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Necromancy",
+    "desc": "Touch drains 1d6/2 levels (max 6d6). Caster heals.",
+    "icon": "spells/icons/SPWI314.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI315": {
+    "n": "Ghost Armor",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Conjuration",
+    "desc": "AC 3. 2 rounds/level.",
+    "icon": "spells/icons/SPWI315.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds/level"
+  },
+  "SPWI316": {
+    "n": "Dire Charm",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Enchantment",
+    "desc": "Target fights for caster 5 rounds. Save negates.",
+    "icon": "spells/icons/SPWI316.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI317": {
+    "n": "Minor Spell Deflection",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Absorbs 2d4 spell levels.",
+    "icon": "spells/icons/SPWI317.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI318": {
+    "n": "Detect Illusion",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Divination",
+    "desc": "Reveals/dispels illusions.",
+    "icon": "spells/icons/SPWI318.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPWI319": {
+    "n": "Protection From Fire",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "80% fire resistance. 1 turn/level.",
+    "icon": "spells/icons/SPWI319.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPWI320": {
+    "n": "Remove Magic",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Dispel at +2 bonus, enemies only.",
+    "icon": "spells/icons/SPWI320.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI321": {
+    "n": "Spell Thrust",
+    "type": "wizard",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Removes one spell protection (up to L5).",
+    "icon": "spells/icons/SPWI321.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "25 ft",
+    "dur": "instant"
+  },
+  "SPWI401": {
+    "n": "Confusion",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Enchantment",
+    "desc": "30ft confusion 1 round/level. Save negates.",
+    "icon": "spells/icons/SPWI401.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round/level"
+  },
+  "SPWI402": {
+    "n": "Dimension Door",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Teleports caster to visible location.",
+    "icon": "spells/icons/SPWI402.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI403": {
+    "n": "Fireshield Blue",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Evocation",
+    "desc": "50% cold resist. Attackers take cold. 1 round/level.",
+    "icon": "spells/icons/SPWI403.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI404": {
+    "n": "Ice Storm",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Evocation",
+    "desc": "3d10 cold in area. No save.",
+    "icon": "spells/icons/SPWI404.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI405": {
+    "n": "Improved Invisibility",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Illusion",
+    "desc": "Invisible even attacking. +4 saves. 3+1/level rounds.",
+    "icon": "spells/icons/SPWI405.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "3+1/level rounds"
+  },
+  "SPWI406": {
+    "n": "Minor Globe of Invulnerability",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "Immune to L1-3 spells. 1 round/level.",
+    "icon": "spells/icons/SPWI406.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI407": {
+    "n": "Monster Summoning II",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Conjuration",
+    "desc": "Summons moderate monsters.",
+    "icon": "spells/icons/SPWI407.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI408": {
+    "n": "Stoneskin",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Absorbs 1 hit/2 levels (max 10).",
+    "icon": "spells/icons/SPWI408.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI409": {
+    "n": "Emotion Hopelessness",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Enchantment",
+    "desc": "Area unable to act. Save negates. 5 rounds.",
+    "icon": "spells/icons/SPWI409.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI411": {
+    "n": "Greater Malison",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Enchantment",
+    "desc": "-2 saves to enemies. 2 rounds/level.",
+    "icon": "spells/icons/SPWI411.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "2 rounds/level"
+  },
+  "SPWI412": {
+    "n": "Otiluke Resilient Sphere",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Traps target 3 rounds. No act/harm. No save.",
+    "icon": "spells/icons/SPWI412.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "3 rounds"
+  },
+  "SPWI413": {
+    "n": "Spirit Armor",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "AC 1. 2 rounds/level.",
+    "icon": "spells/icons/SPWI413.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "2 rounds/level"
+  },
+  "SPWI414": {
+    "n": "Polymorph Other",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Target becomes squirrel. Save vs Poly negates.",
+    "icon": "spells/icons/SPWI414.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI415": {
+    "n": "Polymorph Self",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Transform into creatures. 1 turn/level.",
+    "icon": "spells/icons/SPWI415.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "polymorph",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "1 turn/level"
+  },
+  "SPWI416": {
+    "n": "Enchanted Weapon",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Weapon becomes +3. 3+1/level rounds.",
+    "icon": "spells/icons/SPWI416.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "3+1/level rounds"
+  },
+  "SPWI417": {
+    "n": "Fireshield Red",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Evocation",
+    "desc": "50% fire resist. Attackers take fire. 1 round/level.",
+    "icon": "spells/icons/SPWI417.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI418": {
+    "n": "Secret Word",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "Removes one spell protection (up to L8).",
+    "icon": "spells/icons/SPWI418.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI419": {
+    "n": "Minor Sequencer",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Evocation",
+    "desc": "Stores 2 spells L1-2 for instant release.",
+    "icon": "spells/icons/SPWI419.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI420": {
+    "n": "Teleport Field",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "Random teleport each round. 1 round/level.",
+    "icon": "spells/icons/SPWI420.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI421": {
+    "n": "Remove Curse",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "Removes curses.",
+    "icon": "spells/icons/SPWI421.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI422": {
+    "n": "Contagion",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Disease -1 stats/turn. Save vs Death negates.",
+    "icon": "spells/icons/SPWI422.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "death",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI423": {
+    "n": "Farsight",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Divination",
+    "desc": "Reveals fog of war.",
+    "icon": "spells/icons/SPWI423.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI424": {
+    "n": "Spider Spawn",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Conjuration",
+    "desc": "Summons 1-3 spiders scaling with level.",
+    "icon": "spells/icons/SPWI424.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "6 ft",
+    "dur": "instant"
+  },
+  "SPWI425": {
+    "n": "Wizard Eye",
+    "type": "wizard",
+    "lv": 4,
+    "school": "Divination",
+    "desc": "Invisible scouting eye.",
+    "icon": "spells/icons/SPWI425.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 9,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI501": {
+    "n": "Animate Dead",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Necromancy",
+    "desc": "Summons skeleton scaling with level.",
+    "icon": "spells/icons/SPWI501.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI502": {
+    "n": "Cloudkill",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Evocation",
+    "desc": "Kills <4 HD, poisons others. 1d10/round.",
+    "icon": "spells/icons/SPWI502.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "death",
+    "ct": 5,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI503": {
+    "n": "Cone of Cold",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Evocation",
+    "desc": "1d4+1/level cold (max 10d4+10). Save half.",
+    "icon": "spells/icons/SPWI503.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI504": {
+    "n": "Monster Summoning III",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Conjuration",
+    "desc": "Summons powerful monsters.",
+    "icon": "spells/icons/SPWI504.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI505": {
+    "n": "Shadow Door",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Illusion",
+    "desc": "Improved invisibility + decoy.",
+    "icon": "spells/icons/SPWI505.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI506": {
+    "n": "Domination",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "Target fights for caster 1 turn/level. Save -2 negates.",
+    "icon": "spells/icons/SPWI506.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "1 turn/level"
+  },
+  "SPWI507": {
+    "n": "Hold Monster",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "Paralyzes any creature 1 round/level. Save negates.",
+    "icon": "spells/icons/SPWI507.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "1 round/level"
+  },
+  "SPWI508": {
+    "n": "Chaos",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "Area confusion 1 round/level.",
+    "icon": "spells/icons/SPWI508.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round/level"
+  },
+  "SPWI509": {
+    "n": "Feeblemind",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "INT/WIS to 3 permanently. Save -2 negates.",
+    "icon": "spells/icons/SPWI509.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI510": {
+    "n": "Spell Immunity",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "Immune to one magic school. 1 turn/level.",
+    "icon": "spells/icons/SPWI510.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "caster",
+    "rng": "self",
+    "dur": "1 turn/level"
+  },
+  "SPWI511": {
+    "n": "Protection From Normal Weapons",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "Immune to non-magic weapons. 5 rounds/level.",
+    "icon": "spells/icons/SPWI511.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "5 rounds/level"
+  },
+  "SPWI512": {
+    "n": "Protection From Electricity",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "80% electrical resist. 1 turn/level.",
+    "icon": "spells/icons/SPWI512.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPWI513": {
+    "n": "Minor Spell Turning",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "Reflects 4 spell levels.",
+    "icon": "spells/icons/SPWI513.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI514": {
+    "n": "Breach",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "Removes all combat protections from target.",
+    "icon": "spells/icons/SPWI514.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI515": {
+    "n": "Lower Resistance",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "-10% MR -1%/level. 5 rounds.",
+    "icon": "spells/icons/SPWI515.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "5 rounds"
+  },
+  "SPWI516": {
+    "n": "Phantom Blade",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Conjuration",
+    "desc": "+3 sword (10 charges). +4 vs undead.",
+    "icon": "spells/icons/SPWI516.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI518": {
+    "n": "Conjure Lesser Fire Elemental",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Conjuration",
+    "desc": "Summons lesser fire elemental.",
+    "icon": "spells/icons/SPWI518.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI519": {
+    "n": "Sunfire",
+    "type": "wizard",
+    "lv": 5,
+    "school": "Evocation",
+    "desc": "1d6/level (max 12d6) centered on caster. Allies safe.",
+    "icon": "spells/icons/SPWI519.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 10,
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI601": {
+    "n": "Invisible Stalker",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons invisible stalker.",
+    "icon": "spells/icons/SPWI601.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI602": {
+    "n": "Globe of Invulnerability",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Immune to L1-4 spells. 1 round/level.",
+    "icon": "spells/icons/SPWI602.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI603": {
+    "n": "Contingency",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "Stores spell (up to L6) triggered by condition.",
+    "icon": "spells/icons/SPWI603.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI604": {
+    "n": "Power Word Silence",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Silences target <40 HP. No save.",
+    "icon": "spells/icons/SPWI604.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "spell",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "50 ft",
+    "dur": "instant"
+  },
+  "SPWI605": {
+    "n": "Chain Lightning",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "1d6/level to primary, arcs to nearby. Save half.",
+    "icon": "spells/icons/SPWI605.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI606": {
+    "n": "True Sight",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Divination",
+    "desc": "Reveals invisible/hidden. Dispels illusions. 1 turn.",
+    "icon": "spells/icons/SPWI606.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPWI607": {
+    "n": "Mislead",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Illusion",
+    "desc": "Caster invisible + decoy.",
+    "icon": "spells/icons/SPWI607.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI608": {
+    "n": "Pierce Magic",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Removes spell protection + lowers MR 10%.",
+    "icon": "spells/icons/SPWI608.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI609": {
+    "n": "Improved Haste",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Doubles attacks, +2 AC, x2 movement. No aging.",
+    "icon": "spells/icons/SPWI609.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI610": {
+    "n": "Spell Deflection",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Deflects 6d4 spell levels.",
+    "icon": "spells/icons/SPWI610.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI611": {
+    "n": "Flesh to Stone",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Petrifies. Save vs Petrification negates.",
+    "icon": "spells/icons/SPWI611.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI612": {
+    "n": "Stone to Flesh",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Reverses petrification.",
+    "icon": "spells/icons/SPWI612.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "80 ft",
+    "dur": "instant"
+  },
+  "SPWI613": {
+    "n": "Death Spell",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Necromancy",
+    "desc": "Kills summons + enemies <8+3 HD.",
+    "icon": "spells/icons/SPWI613.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI614": {
+    "n": "Death Fog",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "2d8 poison/round. Kills summons. 1 turn.",
+    "icon": "spells/icons/SPWI614.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn"
+  },
+  "SPWI615": {
+    "n": "Disintegrate",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Destroys target. Save vs Death negates.",
+    "icon": "spells/icons/SPWI615.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI616": {
+    "n": "Protection From Magic Energy",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Immune to magic damage. 5+1/level rounds.",
+    "icon": "spells/icons/SPWI616.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "spell",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "5+1/level rounds"
+  },
+  "SPWI617": {
+    "n": "Wyvern Call",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons wyvern.",
+    "icon": "spells/icons/SPWI617.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI618": {
+    "n": "Tensor Transformation",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Become warrior. Cannot cast.",
+    "icon": "spells/icons/SPWI618.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI619": {
+    "n": "Pierce Shield",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Removes spell protection + MR -10%.",
+    "icon": "spells/icons/SPWI619.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI620": {
+    "n": "Summon Nishruu",
+    "type": "wizard",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons spell-draining Nishruu.",
+    "icon": "spells/icons/SPWI620.png",
+    "cls": [
+      "mage",
+      "sorcerer",
+      "bard"
+    ],
+    "scr": true,
+    "si": 12,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI701": {
+    "n": "Finger of Death",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Save vs Death or die. If saved 2d8+1.",
+    "icon": "spells/icons/SPWI701.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI702": {
+    "n": "Power Word Stun",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Stuns <90 HP. No save.",
+    "icon": "spells/icons/SPWI702.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI703": {
+    "n": "Mordenkainen Sword",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "+4 fighting sword. 1 round/level.",
+    "icon": "spells/icons/SPWI703.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round/level"
+  },
+  "SPWI704": {
+    "n": "Delayed Blast Fireball",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "1d6/level fire (max 15d6). Save half.",
+    "icon": "spells/icons/SPWI704.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI705": {
+    "n": "Spell Turning",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Reflects 12 spell levels.",
+    "icon": "spells/icons/SPWI705.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "instant"
+  },
+  "SPWI706": {
+    "n": "Protection From The Elements",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Absorbs 10 HP/level elemental damage.",
+    "icon": "spells/icons/SPWI706.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI707": {
+    "n": "Project Image",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Illusion",
+    "desc": "Duplicate casts from your spells.",
+    "icon": "spells/icons/SPWI707.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI708": {
+    "n": "Ruby Ray of Reversal",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Alteration",
+    "desc": "Removes one spell protection. No save.",
+    "icon": "spells/icons/SPWI708.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI709": {
+    "n": "Khelben Warding Whip",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Strips 1 protection/round for 3 rounds.",
+    "icon": "spells/icons/SPWI709.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "3 rounds"
+  },
+  "SPWI710": {
+    "n": "Cacofiend",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons demon/devil.",
+    "icon": "spells/icons/SPWI710.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI711": {
+    "n": "Mantle",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Immune to +2 or lower weapons. 4 rounds.",
+    "icon": "spells/icons/SPWI711.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "4 rounds"
+  },
+  "SPWI712": {
+    "n": "Sphere of Chaos",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Alteration",
+    "desc": "Wild Mage. Random effects on contact.",
+    "icon": "spells/icons/SPWI712.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI713": {
+    "n": "Prismatic Spray",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "7 rays: fire/cold/electric/poison/petrify/insanity/death.",
+    "icon": "spells/icons/SPWI713.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI714": {
+    "n": "Mass Invisibility",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Illusion",
+    "desc": "All allies invisible until attacking.",
+    "icon": "spells/icons/SPWI714.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "death",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI715": {
+    "n": "Sequencer",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "Stores 3 spells (max L4) for instant release.",
+    "icon": "spells/icons/SPWI715.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "80 ft",
+    "dur": "instant"
+  },
+  "SPWI716": {
+    "n": "Limited Wish",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Wish options by Wisdom.",
+    "icon": "spells/icons/SPWI716.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI717": {
+    "n": "Control Undead",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Dominates undead 3+1/level turns.",
+    "icon": "spells/icons/SPWI717.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI718": {
+    "n": "Summon Djinni",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons djinni.",
+    "icon": "spells/icons/SPWI718.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI719": {
+    "n": "Summon Efreeti",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons efreeti.",
+    "icon": "spells/icons/SPWI719.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI720": {
+    "n": "Summon Hakeashar",
+    "type": "wizard",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons magic-draining hakeashar.",
+    "icon": "spells/icons/SPWI720.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 14,
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI801": {
+    "n": "Abi-Dalzim Horrid Wilting",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Necromancy",
+    "desc": "1d8/level (max 16d8) magic area. Save half.",
+    "icon": "spells/icons/SPWI801.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "spell",
+    "ct": 8,
+    "aoe": "area",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPWI802": {
+    "n": "Incendiary Cloud",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Evocation",
+    "desc": "1d4/level fire/round. 1 turn.",
+    "icon": "spells/icons/SPWI802.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPWI803": {
+    "n": "Symbol Death",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "Kills <60 HP in area. Save negates.",
+    "icon": "spells/icons/SPWI803.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI804": {
+    "n": "Maze",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "Traps in maze. Duration by INT. No save.",
+    "icon": "spells/icons/SPWI804.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI805": {
+    "n": "Power Word Blind",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "Blinds <100 HP permanently. No save.",
+    "icon": "spells/icons/SPWI805.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPWI806": {
+    "n": "Simulacrum",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Illusion",
+    "desc": "60% power duplicate. Casts and uses items.",
+    "icon": "spells/icons/SPWI806.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPWI807": {
+    "n": "Spell Trigger",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Evocation",
+    "desc": "Stores 3 spells (max L6) for instant release.",
+    "icon": "spells/icons/SPWI807.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI809": {
+    "n": "Bigby Clenched Fist",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Evocation",
+    "desc": "Fist 3d6 crush/round. May stun.",
+    "icon": "spells/icons/SPWI809.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI810": {
+    "n": "Symbol Stun",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "Stuns area 2d4 rounds. Save negates.",
+    "icon": "spells/icons/SPWI810.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "spell",
+    "ct": 8,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI811": {
+    "n": "Symbol Fear",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "All flee 4 rounds. Save negates.",
+    "icon": "spells/icons/SPWI811.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "4 rounds"
+  },
+  "SPWI812": {
+    "n": "Summon Fiend",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Conjuration",
+    "desc": "Summons Pit Fiend. May go hostile.",
+    "icon": "spells/icons/SPWI812.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "spell",
+    "ct": 8,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI813": {
+    "n": "Protection From Energy",
+    "type": "wizard",
+    "lv": 8,
+    "school": "Abjuration",
+    "desc": "Absorbs 10 HP/level all energy.",
+    "icon": "spells/icons/SPWI813.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 16,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "3 ft",
+    "dur": "instant"
+  },
+  "SPWI901": {
+    "n": "Meteor Swarm",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Evocation",
+    "desc": "4 meteors, 4d10+8 fire each. Save half.",
+    "icon": "spells/icons/SPWI901.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPWI902": {
+    "n": "Gate",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Conjuration",
+    "desc": "Summons Pit Fiend.",
+    "icon": "spells/icons/SPWI902.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI903": {
+    "n": "Imprisonment",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Abjuration",
+    "desc": "Banishes target permanently. Save negates.",
+    "icon": "spells/icons/SPWI903.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "80 ft",
+    "dur": "instant"
+  },
+  "SPWI904": {
+    "n": "Power Word Kill",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Conjuration",
+    "desc": "Kills <60 HP. No save.",
+    "icon": "spells/icons/SPWI904.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "60 ft",
+    "dur": "instant"
+  },
+  "SPWI905": {
+    "n": "Spell Strike",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Abjuration",
+    "desc": "Removes ALL spell protections. No save.",
+    "icon": "spells/icons/SPWI905.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI906": {
+    "n": "Wail of the Banshee",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Necromancy",
+    "desc": "All save vs Death at -2 or die.",
+    "icon": "spells/icons/SPWI906.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "death",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPWI907": {
+    "n": "Time Stop",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Alteration",
+    "desc": "Stops time 3 rounds.",
+    "icon": "spells/icons/SPWI907.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "3 rounds"
+  },
+  "SPWI908": {
+    "n": "Spell Trap",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Abjuration",
+    "desc": "Absorbs 30 spell levels into slots.",
+    "icon": "spells/icons/SPWI908.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI909": {
+    "n": "Chain Contingency",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Evocation",
+    "desc": "Stores 3 spells (max L9) by condition.",
+    "icon": "spells/icons/SPWI909.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI910": {
+    "n": "Wish",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Conjuration",
+    "desc": "Powerful options by Wisdom.",
+    "icon": "spells/icons/SPWI910.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI911": {
+    "n": "Freedom",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Abjuration",
+    "desc": "Frees from Imprisonment/Maze.",
+    "icon": "spells/icons/SPWI911.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPWI912": {
+    "n": "Shapechange",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Alteration",
+    "desc": "Shift forms at will. 1 turn.",
+    "icon": "spells/icons/SPWI912.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "80 ft",
+    "dur": "1 turn"
+  },
+  "SPWI913": {
+    "n": "Black Blade of Disaster",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Conjuration",
+    "desc": "+5 blade, vorpal on 20. 2 rounds/level.",
+    "icon": "spells/icons/SPWI913.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "death",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds/level"
+  },
+  "SPWI914": {
+    "n": "Absolute Immunity",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Abjuration",
+    "desc": "Immune to +4 or lower. 4 rounds.",
+    "icon": "spells/icons/SPWI914.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4 rounds"
+  },
+  "SPWI919": {
+    "n": "Comet",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Evocation",
+    "desc": "ToB. 1d10/level (max 20d10).",
+    "icon": "spells/icons/SPWI919.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI920": {
+    "n": "Dragon Breath",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Evocation",
+    "desc": "ToB. Fire cone 1d10/level (max 20d10).",
+    "icon": "spells/icons/SPWI920.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI921": {
+    "n": "Energy Drain",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Necromancy",
+    "desc": "ToB. Drains 2 levels. Save negates.",
+    "icon": "spells/icons/SPWI921.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPWI922": {
+    "n": "Summon Planetar",
+    "type": "wizard",
+    "lv": 9,
+    "school": "Conjuration",
+    "desc": "ToB. Summons Planetar.",
+    "icon": "spells/icons/SPWI922.png",
+    "cls": [
+      "mage",
+      "sorcerer"
+    ],
+    "scr": true,
+    "si": 18,
+    "sv": "breath",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR101": {
+    "n": "Armor of Faith",
+    "type": "priest",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "5%+5%/5 levels DR (max 25%). 3+1/level rounds.",
+    "icon": "spells/icons/SPPR101.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "3+1/level rounds"
+  },
+  "SPPR102": {
+    "n": "Bless",
+    "type": "priest",
+    "lv": 1,
+    "school": "Conjuration",
+    "desc": "+1 THAC0/morale. 6 rounds.",
+    "icon": "spells/icons/SPPR102.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "6 rounds"
+  },
+  "SPPR103": {
+    "n": "Command",
+    "type": "priest",
+    "lv": 1,
+    "school": "Enchantment",
+    "desc": "Target sleeps 1 round. Save negates.",
+    "icon": "spells/icons/SPPR103.png",
+    "sph": [
+      "charm",
+      "law"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPPR104": {
+    "n": "Cure Light Wounds",
+    "type": "priest",
+    "lv": 1,
+    "school": "Necromancy",
+    "desc": "Heals 8 HP.",
+    "icon": "spells/icons/SPPR104.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "5 ft",
+    "dur": "instant"
+  },
+  "SPPR105": {
+    "n": "Detect Evil",
+    "type": "priest",
+    "lv": 1,
+    "school": "Divination",
+    "desc": "Reveals evil. 1 turn.",
+    "icon": "spells/icons/SPPR105.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn"
+  },
+  "SPPR106": {
+    "n": "Entangle",
+    "type": "priest",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "Plants hold. Save vs Breath negates. 1 turn.",
+    "icon": "spells/icons/SPPR106.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "50 ft",
+    "dur": "1 turn"
+  },
+  "SPPR107": {
+    "n": "Magical Stone",
+    "type": "priest",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "3 +1 sling bullets.",
+    "icon": "spells/icons/SPPR107.png",
+    "sph": [
+      "combat",
+      "elemental"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR108": {
+    "n": "Protection From Evil",
+    "type": "priest",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "+2 AC/saves vs evil. 2 rounds/level.",
+    "icon": "spells/icons/SPPR108.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "2 rounds/level"
+  },
+  "SPPR109": {
+    "n": "Remove Fear",
+    "type": "priest",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "Removes/prevents fear. 1 hour.",
+    "icon": "spells/icons/SPPR109.png",
+    "sph": [
+      "protection",
+      "charm"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 hour"
+  },
+  "SPPR110": {
+    "n": "Sanctuary",
+    "type": "priest",
+    "lv": 1,
+    "school": "Abjuration",
+    "desc": "Enemies ignore caster. 2+1/level rounds.",
+    "icon": "spells/icons/SPPR110.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2+1/level rounds"
+  },
+  "SPPR111": {
+    "n": "Shillelagh",
+    "type": "priest",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "+1 staff, 2d4 damage. 4+1/level rounds.",
+    "icon": "spells/icons/SPPR111.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4+1/level rounds"
+  },
+  "SPPR112": {
+    "n": "Doom",
+    "type": "priest",
+    "lv": 1,
+    "school": "Alteration",
+    "desc": "-2 THAC0/saves. 1 turn.",
+    "icon": "spells/icons/SPPR112.png",
+    "sph": [
+      "combat",
+      "charm"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "1 turn"
+  },
+  "SPPR113": {
+    "n": "Sunscorch",
+    "type": "priest",
+    "lv": 1,
+    "school": "Evocation",
+    "desc": "1d6+1/level fire. Save or blind 3 rounds.",
+    "icon": "spells/icons/SPPR113.png",
+    "sph": [
+      "sun",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "25 ft",
+    "dur": "3 rounds"
+  },
+  "SPPR201": {
+    "n": "Aid",
+    "type": "priest",
+    "lv": 2,
+    "school": "Necromancy",
+    "desc": "+1 THAC0/saves, +1d8 HP. 1+1/level turns.",
+    "icon": "spells/icons/SPPR201.png",
+    "sph": [
+      "combat",
+      "healing",
+      "war"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR202": {
+    "n": "Barkskin",
+    "type": "priest",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "AC bonus. 4+1/level rounds.",
+    "icon": "spells/icons/SPPR202.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4+1/level rounds"
+  },
+  "SPPR203": {
+    "n": "Chant",
+    "type": "priest",
+    "lv": 2,
+    "school": "Conjuration",
+    "desc": "+1/-1 THAC0/dmg/saves. While chanting.",
+    "icon": "spells/icons/SPPR203.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR204": {
+    "n": "Charm Person or Mammal",
+    "type": "priest",
+    "lv": 2,
+    "school": "Enchantment",
+    "desc": "Charms 5 rounds. Save negates.",
+    "icon": "spells/icons/SPPR204.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "25 ft",
+    "dur": "5 rounds"
+  },
+  "SPPR205": {
+    "n": "Draw Upon Holy Might",
+    "type": "priest",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "+1/3 levels STR/DEX/CON. 1 turn.",
+    "icon": "spells/icons/SPPR205.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR206": {
+    "n": "Find Traps",
+    "type": "priest",
+    "lv": 2,
+    "school": "Divination",
+    "desc": "Reveals all traps.",
+    "icon": "spells/icons/SPPR206.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR207": {
+    "n": "Flame Blade",
+    "type": "priest",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "Fiery scimitar 1d4+4 fire.",
+    "icon": "spells/icons/SPPR207.png",
+    "sph": [
+      "combat",
+      "elemental",
+      "war"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR208": {
+    "n": "Goodberry",
+    "type": "priest",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "5 berries heal 1 HP each.",
+    "icon": "spells/icons/SPPR208.png",
+    "sph": [
+      "creation",
+      "healing"
+    ],
+    "cls": [
+      "druid",
+      "ranger"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "instant"
+  },
+  "SPPR209": {
+    "n": "Hold Person",
+    "type": "priest",
+    "lv": 2,
+    "school": "Enchantment",
+    "desc": "Paralyzes humanoid 10 rounds. Save negates.",
+    "icon": "spells/icons/SPPR209.png",
+    "sph": [
+      "charm",
+      "law"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "10 rounds"
+  },
+  "SPPR210": {
+    "n": "Know Alignment",
+    "type": "priest",
+    "lv": 2,
+    "school": "Divination",
+    "desc": "Reveals alignment.",
+    "icon": "spells/icons/SPPR210.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR211": {
+    "n": "Resist Fire and Cold",
+    "type": "priest",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "50% fire+cold resist. 1 turn/level.",
+    "icon": "spells/icons/SPPR211.png",
+    "sph": [
+      "protection",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn/level"
+  },
+  "SPPR212": {
+    "n": "Silence 15 Radius",
+    "type": "priest",
+    "lv": 2,
+    "school": "Alteration",
+    "desc": "Silences area. 2 rounds/level. Save negates.",
+    "icon": "spells/icons/SPPR212.png",
+    "sph": [
+      "combat",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds/level"
+  },
+  "SPPR213": {
+    "n": "Slow Poison",
+    "type": "priest",
+    "lv": 2,
+    "school": "Necromancy",
+    "desc": "Cures poison, heals 1 HP.",
+    "icon": "spells/icons/SPPR213.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR214": {
+    "n": "Spiritual Hammer",
+    "type": "priest",
+    "lv": 2,
+    "school": "Evocation",
+    "desc": "+1 thrown hammer (+3 vs undead). 4+1/level rounds.",
+    "icon": "spells/icons/SPPR214.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4+1/level rounds"
+  },
+  "SPPR301": {
+    "n": "Animate Dead",
+    "type": "priest",
+    "lv": 3,
+    "school": "Necromancy",
+    "desc": "Summons skeleton scaling with level.",
+    "icon": "spells/icons/SPPR301.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR302": {
+    "n": "Call Lightning",
+    "type": "priest",
+    "lv": 3,
+    "school": "Alteration",
+    "desc": "2d8+1d8/level electrical. Outdoors.",
+    "icon": "spells/icons/SPPR302.png",
+    "sph": [
+      "elemental",
+      "combat"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "80 ft",
+    "dur": "instant"
+  },
+  "SPPR303": {
+    "n": "Cure Disease",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Removes all disease.",
+    "icon": "spells/icons/SPPR303.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR304": {
+    "n": "Cure Medium Wounds",
+    "type": "priest",
+    "lv": 3,
+    "school": "Necromancy",
+    "desc": "Heals 14 HP.",
+    "icon": "spells/icons/SPPR304.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR305": {
+    "n": "Dispel Magic",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "50% remove magic +/- level.",
+    "icon": "spells/icons/SPPR305.png",
+    "sph": [
+      "protection",
+      "law"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "instant"
+  },
+  "SPPR306": {
+    "n": "Glyph of Warding",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Trap 1d4/level electrical (max 5d4).",
+    "icon": "spells/icons/SPPR306.png",
+    "sph": [
+      "combat",
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR307": {
+    "n": "Hold Animal",
+    "type": "priest",
+    "lv": 3,
+    "school": "Enchantment",
+    "desc": "Paralyzes animal. Save negates.",
+    "icon": "spells/icons/SPPR307.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR308": {
+    "n": "Invisibility Purge",
+    "type": "priest",
+    "lv": 3,
+    "school": "Divination",
+    "desc": "Reveals invisible near caster. 1 turn.",
+    "icon": "spells/icons/SPPR308.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn"
+  },
+  "SPPR309": {
+    "n": "Miscast Magic",
+    "type": "priest",
+    "lv": 3,
+    "school": "Enchantment",
+    "desc": "80% spell failure 2 rounds/level. Save negates.",
+    "icon": "spells/icons/SPPR309.png",
+    "sph": [
+      "protection",
+      "combat"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds/level"
+  },
+  "SPPR310": {
+    "n": "Protection From Fire",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "80% fire resist. 1 turn/level.",
+    "icon": "spells/icons/SPPR310.png",
+    "sph": [
+      "protection",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "ranger",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "50 ft",
+    "dur": "1 turn/level"
+  },
+  "SPPR311": {
+    "n": "Remove Curse",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Removes curses.",
+    "icon": "spells/icons/SPPR311.png",
+    "sph": [
+      "protection",
+      "law"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "instant"
+  },
+  "SPPR312": {
+    "n": "Remove Paralysis",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Removes paralysis/hold/web.",
+    "icon": "spells/icons/SPPR312.png",
+    "sph": [
+      "protection",
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR313": {
+    "n": "Rigid Thinking",
+    "type": "priest",
+    "lv": 3,
+    "school": "Enchantment",
+    "desc": "Confuses 1 round/level. Save negates.",
+    "icon": "spells/icons/SPPR313.png",
+    "sph": [
+      "charm",
+      "law"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round/level"
+  },
+  "SPPR314": {
+    "n": "Strength of One",
+    "type": "priest",
+    "lv": 3,
+    "school": "Alteration",
+    "desc": "All allies STR 18/75. 1 turn.",
+    "icon": "spells/icons/SPPR314.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 3,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn"
+  },
+  "SPPR315": {
+    "n": "Summon Insects",
+    "type": "priest",
+    "lv": 3,
+    "school": "Conjuration",
+    "desc": "1 dmg/2sec, 50% spell failure. No save.",
+    "icon": "spells/icons/SPPR315.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR316": {
+    "n": "Zone of Sweet Air",
+    "type": "priest",
+    "lv": 3,
+    "school": "Abjuration",
+    "desc": "Clears Cloudkill/Stinking Cloud/Death Fog.",
+    "icon": "spells/icons/SPPR316.png",
+    "sph": [
+      "protection"
+    ],
+    "cls": [
+      "druid",
+      "ranger",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPPR401": {
+    "n": "Animal Summoning I",
+    "type": "priest",
+    "lv": 4,
+    "school": "Conjuration",
+    "desc": "Summons 3 animals.",
+    "icon": "spells/icons/SPPR401.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR402": {
+    "n": "Call Woodland Beings",
+    "type": "priest",
+    "lv": 4,
+    "school": "Conjuration",
+    "desc": "Summons nymph.",
+    "icon": "spells/icons/SPPR402.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR403": {
+    "n": "Cause Serious Wounds",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "17 damage. Touch.",
+    "icon": "spells/icons/SPPR403.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR404": {
+    "n": "Cloak of Fear",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Enemies flee 4 rounds. Save negates.",
+    "icon": "spells/icons/SPPR404.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4 rounds"
+  },
+  "SPPR405": {
+    "n": "Cure Serious Wounds",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Heals 17 HP.",
+    "icon": "spells/icons/SPPR405.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPPR406": {
+    "n": "Death Ward",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Immune to death magic. 1 turn/level.",
+    "icon": "spells/icons/SPPR406.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "15 ft",
+    "dur": "1 turn/level"
+  },
+  "SPPR407": {
+    "n": "Defensive Harmony",
+    "type": "priest",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "+2 AC for allies. 6 rounds.",
+    "icon": "spells/icons/SPPR407.png",
+    "sph": [
+      "protection",
+      "combat",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "6 rounds"
+  },
+  "SPPR408": {
+    "n": "Farsight",
+    "type": "priest",
+    "lv": 4,
+    "school": "Divination",
+    "desc": "Reveals fog of war.",
+    "icon": "spells/icons/SPPR408.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "15 ft",
+    "dur": "instant"
+  },
+  "SPPR409": {
+    "n": "Free Action",
+    "type": "priest",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "Immune to Hold/Web/Slow. 1 turn/level.",
+    "icon": "spells/icons/SPPR409.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "25 ft",
+    "dur": "1 turn/level"
+  },
+  "SPPR410": {
+    "n": "Holy Power",
+    "type": "priest",
+    "lv": 4,
+    "school": "Evocation",
+    "desc": "Fighter THAC0, +1 dmg. 1 round/level.",
+    "icon": "spells/icons/SPPR410.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round/level"
+  },
+  "SPPR411": {
+    "n": "Lesser Restoration",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Restores 1 drained level.",
+    "icon": "spells/icons/SPPR411.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "death",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "10 ft",
+    "dur": "instant"
+  },
+  "SPPR412": {
+    "n": "Mental Domination",
+    "type": "priest",
+    "lv": 4,
+    "school": "Enchantment",
+    "desc": "Charms 1 turn/level. Save -2 negates.",
+    "icon": "spells/icons/SPPR412.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPPR413": {
+    "n": "Negative Plane Protection",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Immune to drain. 5 rounds/level.",
+    "icon": "spells/icons/SPPR413.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "5 rounds/level"
+  },
+  "SPPR414": {
+    "n": "Neutralize Poison",
+    "type": "priest",
+    "lv": 4,
+    "school": "Necromancy",
+    "desc": "Removes all poison.",
+    "icon": "spells/icons/SPPR414.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "paladin"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR415": {
+    "n": "Poison",
+    "type": "priest",
+    "lv": 4,
+    "school": "Alteration",
+    "desc": "1 dmg/sec 20 sec. Save negates.",
+    "icon": "spells/icons/SPPR415.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "6 ft",
+    "dur": "instant"
+  },
+  "SPPR416": {
+    "n": "Protection From Evil 10 Radius",
+    "type": "priest",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "+2 AC/saves vs evil for allies. 1 turn.",
+    "icon": "spells/icons/SPPR416.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric",
+      "paladin"
+    ],
+    "sv": "spell",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR417": {
+    "n": "Protection From Lightning",
+    "type": "priest",
+    "lv": 4,
+    "school": "Abjuration",
+    "desc": "80% electrical resist. 1 turn/level.",
+    "icon": "spells/icons/SPPR417.png",
+    "sph": [
+      "protection",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "paladin",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPPR501": {
+    "n": "Animal Summoning II",
+    "type": "priest",
+    "lv": 5,
+    "school": "Conjuration",
+    "desc": "Summons stronger animals.",
+    "icon": "spells/icons/SPPR501.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 8,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR502": {
+    "n": "Chaotic Commands",
+    "type": "priest",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "Immune to mental effects. 1 turn.",
+    "icon": "spells/icons/SPPR502.png",
+    "sph": [
+      "protection",
+      "chaos",
+      "law"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR503": {
+    "n": "Cure Critical Wounds",
+    "type": "priest",
+    "lv": 5,
+    "school": "Necromancy",
+    "desc": "Heals 27 HP.",
+    "icon": "spells/icons/SPPR503.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "spell",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPPR504": {
+    "n": "Flame Strike",
+    "type": "priest",
+    "lv": 5,
+    "school": "Evocation",
+    "desc": "6d8 fire. Save half.",
+    "icon": "spells/icons/SPPR504.png",
+    "sph": [
+      "combat",
+      "elemental",
+      "sun"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "instant"
+  },
+  "SPPR505": {
+    "n": "Greater Command",
+    "type": "priest",
+    "lv": 5,
+    "school": "Enchantment",
+    "desc": "Area sleep 1 round/level. Save negates.",
+    "icon": "spells/icons/SPPR505.png",
+    "sph": [
+      "charm",
+      "law"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "1 round/level"
+  },
+  "SPPR506": {
+    "n": "Insect Plague",
+    "type": "priest",
+    "lv": 5,
+    "school": "Conjuration",
+    "desc": "100% spell failure 6 rounds. Save negates.",
+    "icon": "spells/icons/SPPR506.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "6 rounds"
+  },
+  "SPPR507": {
+    "n": "Iron Skins",
+    "type": "priest",
+    "lv": 5,
+    "school": "Alteration",
+    "desc": "Absorbs 1 hit/2 levels (max 7). 12 hours.",
+    "icon": "spells/icons/SPPR507.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 2,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "12 hours"
+  },
+  "SPPR508": {
+    "n": "Magic Resistance",
+    "type": "priest",
+    "lv": 5,
+    "school": "Alteration",
+    "desc": "MR = 2%/level. 4 rounds.",
+    "icon": "spells/icons/SPPR508.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "4 rounds"
+  },
+  "SPPR509": {
+    "n": "Mass Cure",
+    "type": "priest",
+    "lv": 5,
+    "school": "Necromancy",
+    "desc": "Heals all allies 1d8+1/level.",
+    "icon": "spells/icons/SPPR509.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR510": {
+    "n": "Raise Dead",
+    "type": "priest",
+    "lv": 5,
+    "school": "Necromancy",
+    "desc": "Resurrects with 1 HP.",
+    "icon": "spells/icons/SPPR510.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 8,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR511": {
+    "n": "Righteous Magic",
+    "type": "priest",
+    "lv": 5,
+    "school": "Alteration",
+    "desc": "Max HP, STR 25, +1 dmg/level.",
+    "icon": "spells/icons/SPPR511.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR512": {
+    "n": "Slay Living",
+    "type": "priest",
+    "lv": 5,
+    "school": "Necromancy",
+    "desc": "Save vs Death or die. If saved 2d8+1.",
+    "icon": "spells/icons/SPPR512.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "35 ft",
+    "dur": "instant"
+  },
+  "SPPR513": {
+    "n": "True Seeing",
+    "type": "priest",
+    "lv": 5,
+    "school": "Divination",
+    "desc": "Reveals invisible/illusion. 1 turn.",
+    "icon": "spells/icons/SPPR513.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR514": {
+    "n": "Champion Strength",
+    "type": "priest",
+    "lv": 5,
+    "school": "Alteration",
+    "desc": "+1 THAC0/dmg per 3 levels. 1 turn.",
+    "icon": "spells/icons/SPPR514.png",
+    "sph": [
+      "combat",
+      "war"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "1 turn"
+  },
+  "SPPR515": {
+    "n": "Pixie Dust",
+    "type": "priest",
+    "lv": 5,
+    "school": "Illusion",
+    "desc": "All allies invisible.",
+    "icon": "spells/icons/SPPR515.png",
+    "sph": [
+      "protection"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR516": {
+    "n": "Spell Immunity",
+    "type": "priest",
+    "lv": 5,
+    "school": "Abjuration",
+    "desc": "Immune to one school. 1 turn/level.",
+    "icon": "spells/icons/SPPR516.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn/level"
+  },
+  "SPPR601": {
+    "n": "Aerial Servant",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons aerial servant.",
+    "icon": "spells/icons/SPPR601.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR602": {
+    "n": "Animal Summoning III",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons strongest animals.",
+    "icon": "spells/icons/SPPR602.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR603": {
+    "n": "Blade Barrier",
+    "type": "priest",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "8d8 to entrants. Save half.",
+    "icon": "spells/icons/SPPR603.png",
+    "sph": [
+      "combat",
+      "protection",
+      "war"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR604": {
+    "n": "Bolt of Glory",
+    "type": "priest",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "6d6 undead, 3d6 planar, 1d6 normal.",
+    "icon": "spells/icons/SPPR604.png",
+    "sph": [
+      "combat",
+      "sun"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR605": {
+    "n": "Conjure Animals",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons powerful animals.",
+    "icon": "spells/icons/SPPR605.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR606": {
+    "n": "Conjure Fire Elemental",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Summons fire elemental.",
+    "icon": "spells/icons/SPPR606.png",
+    "sph": [
+      "summoning",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid",
+      "shaman"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR607": {
+    "n": "Dolorous Decay",
+    "type": "priest",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "1 dmg/sec + Slow. No save. 1 turn.",
+    "icon": "spells/icons/SPPR607.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR608": {
+    "n": "False Dawn",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "Damages undead, heals party.",
+    "icon": "spells/icons/SPPR608.png",
+    "sph": [
+      "sun",
+      "combat"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR609": {
+    "n": "Fire Seeds",
+    "type": "priest",
+    "lv": 6,
+    "school": "Conjuration",
+    "desc": "4 seeds (2d8) + 1 berry (1d4 AoE).",
+    "icon": "spells/icons/SPPR609.png",
+    "sph": [
+      "elemental",
+      "combat",
+      "creation"
+    ],
+    "cls": [
+      "druid"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR610": {
+    "n": "Harm",
+    "type": "priest",
+    "lv": 6,
+    "school": "Necromancy",
+    "desc": "Reduces to 1 HP. Save negates.",
+    "icon": "spells/icons/SPPR610.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "death",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "20 ft",
+    "dur": "instant"
+  },
+  "SPPR611": {
+    "n": "Heal",
+    "type": "priest",
+    "lv": 6,
+    "school": "Necromancy",
+    "desc": "Full heal + cures conditions.",
+    "icon": "spells/icons/SPPR611.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR612": {
+    "n": "Physical Mirror",
+    "type": "priest",
+    "lv": 6,
+    "school": "Abjuration",
+    "desc": "Reflects ranged attacks. 9 rounds.",
+    "icon": "spells/icons/SPPR612.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "9 rounds"
+  },
+  "SPPR613": {
+    "n": "Sol Searing Orb",
+    "type": "priest",
+    "lv": 6,
+    "school": "Evocation",
+    "desc": "Blinds + 6d6 fire to undead.",
+    "icon": "spells/icons/SPPR613.png",
+    "sph": [
+      "sun",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR614": {
+    "n": "Wondrous Recall",
+    "type": "priest",
+    "lv": 6,
+    "school": "Alteration",
+    "desc": "Recalls 3 cast spells (L1-5).",
+    "icon": "spells/icons/SPPR614.png",
+    "sph": [
+      "divination"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR701": {
+    "n": "Confusion",
+    "type": "priest",
+    "lv": 7,
+    "school": "Enchantment",
+    "desc": "Area confusion. Save negates.",
+    "icon": "spells/icons/SPPR701.png",
+    "sph": [
+      "chaos",
+      "charm"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR702": {
+    "n": "Conjure Earth Elemental",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons earth elemental.",
+    "icon": "spells/icons/SPPR702.png",
+    "sph": [
+      "summoning",
+      "elemental"
+    ],
+    "cls": [
+      "cleric",
+      "druid"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR703": {
+    "n": "Creeping Doom",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "2 dmg/sec, 100% failure. No save.",
+    "icon": "spells/icons/SPPR703.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "druid"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 round/level"
+  },
+  "SPPR704": {
+    "n": "Earthquake",
+    "type": "priest",
+    "lv": 7,
+    "school": "Alteration",
+    "desc": "50% stun+damage 2 rounds. No save.",
+    "icon": "spells/icons/SPPR704.png",
+    "sph": [
+      "elemental",
+      "destruction"
+    ],
+    "cls": [
+      "druid"
+    ],
+    "sv": "spell",
+    "ct": 6,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 round"
+  },
+  "SPPR705": {
+    "n": "Fire Storm",
+    "type": "priest",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "2d8+1/level fire large area. Save half.",
+    "icon": "spells/icons/SPPR705.png",
+    "sph": [
+      "elemental",
+      "destruction"
+    ],
+    "cls": [
+      "druid"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR706": {
+    "n": "Gate",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Summons Pit Fiend.",
+    "icon": "spells/icons/SPPR706.png",
+    "sph": [
+      "summoning"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR707": {
+    "n": "Greater Restoration",
+    "type": "priest",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Restores all drained levels.",
+    "icon": "spells/icons/SPPR707.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 4,
+    "aoe": "single",
+    "rng": "8 ft",
+    "dur": "instant"
+  },
+  "SPPR708": {
+    "n": "Holy Word",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Evil: slow/stun/death by level. No save.",
+    "icon": "spells/icons/SPPR708.png",
+    "sph": [
+      "combat",
+      "war",
+      "law"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "40 ft",
+    "dur": "instant"
+  },
+  "SPPR709": {
+    "n": "Nature Beauty",
+    "type": "priest",
+    "lv": 7,
+    "school": "Enchantment",
+    "desc": "Save or blinded permanently.",
+    "icon": "spells/icons/SPPR709.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "druid"
+    ],
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR710": {
+    "n": "Regeneration",
+    "type": "priest",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "3 HP/sec for 1 turn.",
+    "icon": "spells/icons/SPPR710.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "1 turn"
+  },
+  "SPPR711": {
+    "n": "Resurrection",
+    "type": "priest",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Resurrects with full HP.",
+    "icon": "spells/icons/SPPR711.png",
+    "sph": [
+      "healing"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 7,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR712": {
+    "n": "Shield of the Archons",
+    "type": "priest",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Party immune drain/death. 1 turn.",
+    "icon": "spells/icons/SPPR712.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 9,
+    "aoe": "single",
+    "rng": "30 ft",
+    "dur": "1 turn"
+  },
+  "SPPR713": {
+    "n": "Sunray",
+    "type": "priest",
+    "lv": 7,
+    "school": "Evocation",
+    "desc": "3d6 all, 6d6 undead. Undead save or destroyed.",
+    "icon": "spells/icons/SPPR713.png",
+    "sph": [
+      "sun",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 3,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPPR714": {
+    "n": "Symbol Death",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Kills <60 HP. Save negates.",
+    "icon": "spells/icons/SPPR714.png",
+    "sph": [
+      "summoning",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPPR715": {
+    "n": "Symbol Fear",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Flee 4 rounds. Save negates.",
+    "icon": "spells/icons/SPPR715.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "4 rounds"
+  },
+  "SPPR716": {
+    "n": "Symbol Stun",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Stuns 2d4 rounds. Save negates.",
+    "icon": "spells/icons/SPPR716.png",
+    "sph": [
+      "charm"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 7,
+    "aoe": "area",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPPR717": {
+    "n": "Finger of Death",
+    "type": "priest",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Save or die. If saved 2d8+1.",
+    "icon": "spells/icons/SPPR717.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "none",
+    "ct": 5,
+    "aoe": "single",
+    "rng": "visual",
+    "dur": "instant"
+  },
+  "SPPR718": {
+    "n": "Energy Drain",
+    "type": "priest",
+    "lv": 7,
+    "school": "Necromancy",
+    "desc": "Drains 2 levels. Save negates.",
+    "icon": "spells/icons/SPPR718.png",
+    "sph": [
+      "combat",
+      "destruction"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "permanent"
+  },
+  "SPPR719": {
+    "n": "Unholy Word",
+    "type": "priest",
+    "lv": 7,
+    "school": "Conjuration",
+    "desc": "Good: slow/stun/death by level. No save.",
+    "icon": "spells/icons/SPPR719.png",
+    "sph": [
+      "combat",
+      "war",
+      "chaos"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "death",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPPR720": {
+    "n": "Impervious Sanctity of Mind",
+    "type": "priest",
+    "lv": 7,
+    "school": "Abjuration",
+    "desc": "Immune to mental attacks. 1 turn.",
+    "icon": "spells/icons/SPPR720.png",
+    "sph": [
+      "protection",
+      "guardian"
+    ],
+    "cls": [
+      "cleric"
+    ],
+    "sv": "spell",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "1 turn"
+  },
+  "SPCL900": {
+    "n": "Summon Planetar",
+    "type": "hla",
+    "lv": 0,
+    "school": "Conjuration",
+    "desc": "Summons Planetar.",
+    "icon": "spells/icons/SPCL900.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL901": {
+    "n": "Summon Dark Planetar",
+    "type": "hla",
+    "lv": 0,
+    "school": "Conjuration",
+    "desc": "Evil Planetar.",
+    "icon": "spells/icons/SPCL901.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL902": {
+    "n": "Dragon Breath",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "Massive fire cone.",
+    "icon": "spells/icons/SPCL902.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL903": {
+    "n": "Comet",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "1d10/level magic damage.",
+    "icon": "spells/icons/SPCL903.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL904": {
+    "n": "Energy Blades",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "9 daggers, 1d4+5 energy each.",
+    "icon": "spells/icons/SPCL904.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL905": {
+    "n": "Improved Alacrity",
+    "type": "hla",
+    "lv": 0,
+    "school": "Alteration",
+    "desc": "No casting delay 2 rounds.",
+    "icon": "spells/icons/SPCL905.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "2 rounds"
+  },
+  "SPCL910": {
+    "n": "Aura of Flaming Death",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "2d8+2 fire to nearby each round.",
+    "icon": "spells/icons/SPCL910.png",
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPCL911": {
+    "n": "Elemental Summoning",
+    "type": "hla",
+    "lv": 0,
+    "school": "Conjuration",
+    "desc": "Summons elemental prince.",
+    "icon": "spells/icons/SPCL911.png",
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPCL912": {
+    "n": "Globe of Blades",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "10d10 to melee attackers.",
+    "icon": "spells/icons/SPCL912.png",
+    "sv": "none",
+    "ct": 9,
+    "aoe": "area",
+    "rng": "self",
+    "dur": "instant"
+  },
+  "SPCL913": {
+    "n": "Implosion",
+    "type": "hla",
+    "lv": 0,
+    "school": "Alteration",
+    "desc": "Save vs Death -2 or die.",
+    "icon": "spells/icons/SPCL913.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL914": {
+    "n": "Mass Raise Dead",
+    "type": "hla",
+    "lv": 0,
+    "school": "Necromancy",
+    "desc": "Resurrects all dead party.",
+    "icon": "spells/icons/SPCL914.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL915": {
+    "n": "Storm of Vengeance",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "Acid/lightning/ice storm.",
+    "icon": "spells/icons/SPCL915.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL916": {
+    "n": "Energy Blades (Priest)",
+    "type": "hla",
+    "lv": 0,
+    "school": "Evocation",
+    "desc": "9 energy daggers (priest).",
+    "icon": "spells/icons/SPCL916.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL917": {
+    "n": "Summon Deva",
+    "type": "hla",
+    "lv": 0,
+    "school": "Conjuration",
+    "desc": "Summons Deva.",
+    "icon": "spells/icons/SPCL917.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "SPCL918": {
+    "n": "Summon Fallen Deva",
+    "type": "hla",
+    "lv": 0,
+    "school": "Conjuration",
+    "desc": "Evil Deva.",
+    "icon": "spells/icons/SPCL918.png",
+    "sv": "none",
+    "ct": 1,
+    "aoe": "single",
+    "rng": "touch",
+    "dur": "instant"
+  },
+  "_slotBaseline": {
+    "description": "Unique spell.ids slot IDs occupied in vanilla EET. ADD_SPELL uses these ranges (50 max per level). Mods consume remaining free slots.",
+    "max": 50,
+    "priest": {
+      "1": 18,
+      "2": 17,
+      "3": 19,
+      "4": 20,
+      "5": 19,
+      "6": 17,
+      "7": 33
+    },
+    "wizard": {
+      "1": 29,
+      "2": 31,
+      "3": 33,
+      "4": 40,
+      "5": 36,
+      "6": 27,
+      "7": 28,
+      "8": 30,
+      "9": 47
+    },
+    "source": "EET install test #8 spell.ids minus ADD_SPELL.IDS entries, 2026-04-01"
+  }
+}

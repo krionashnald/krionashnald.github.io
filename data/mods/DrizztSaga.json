@@ -1,0 +1,167 @@
+{
+  "i": 513,
+  "t": "drizztsaga",
+  "sv": 1,
+  "ord": 90,
+  "c": "PRE EET BGEE MODS",
+  "n": "The Drizzt Saga",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "it": 2,
+    "pl": 3,
+    "ru": 4,
+    "es": 5,
+    "zh-cn": 6
+  },
+  "no": "The Drizzt Saga by Wes Weimer. BG1 quest mod adding Drizzt Do'Urden as a joinable NPC with custom areas. Use cn:0 (travel triggers) for EET — cn:1 (BGT worldmap) is not available. cn:3 (Delayed start) may fail pre-EET with missing translation @10006.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "partial",
+      "reason": "Drizzt Saga cn:2 (not in DB) raises XP cap to 3.75M via XPCAP.2DA — too low for an EET mega-install. EET Tweaks per-campaign caps are more flexible.",
+      "theirComps": "#2000-#2003 Total XP cap",
+      "source": "Drizzt Saga tp2 comp #2 sets XPCAP to 3750000; cn:2 not in DB, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Optional worldmap integration — install bp-bgt-worldmap after EET_End if desired"
+    }
+  ],
+  "u": "https://github.com/MattyGroove/DrizztSaga",
+  "a": "MattyGroove",
+  "v": "v3.04",
+  "sum": "Drizzt Saga for BG2EE and EET",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v3",
+    "place": "pre"
+  },
+  "dl": "https://github.com/MattyGroove/DrizztSaga",
+  "au": "flysoup",
+  "co": [
+    {
+      "n": "The Drizzt Saga for BGEE/Tutu/BGT -> Default version: areas connected by travel triggers",
+      "cn": 0,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wc": 0,
+      "wb": 1,
+      "no": "Main component. Adds Drizzt quest areas connected via travel triggers. Required for EET — the worldmap version (cn:1) is BGT-only.",
+      "tp2n": "Default version: areas connected by travel triggers",
+      "games": [
+        "bgee",
+        "bgt",
+        "tutu_totsc"
+      ],
+      "scn": "The Drizzt Saga for BGEE/Tutu/BGT"
+    },
+    {
+      "n": "BP-BGT-Worldmap version",
+      "cn": 1,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "tutu_totsc"
+      ],
+      "gone": true,
+      "no": "BGT-only worldmap component. Not available in EET.",
+      "tp2n": "BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)",
+      "scn": "The Drizzt Saga for BGEE/Tutu/BGT"
+    },
+    {
+      "n": "Raise the XP cap",
+      "cn": 2,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgee",
+        "ca",
+        "eet",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "tp2n": "Raise the XP cap"
+    },
+    {
+      "n": "Delayed start: Drizzt joins after Durlag's Tower",
+      "cn": 3,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wc": 3,
+      "wb": 1,
+      "no": "Delays Drizzt's availability until after Durlag's Tower for better level-appropriate pacing. WARNING: May fail pre-EET with missing translation @10006 — works when installed post-EET.",
+      "tp2n": "Delayed start: Drizzt joins after Durlag's Tower"
+    },
+    {
+      "n": "Fewer NPC's items exploit",
+      "cn": 4,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wc": 4,
+      "wb": 1,
+      "no": "Reduces the equipment Drizzt's companions carry to prevent item farming exploits.",
+      "gone": true
+    },
+    {
+      "n": "Magical Items Nerfing",
+      "cn": 5,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wc": 5,
+      "wb": 1,
+      "no": "Tones down the power level of Drizzt Saga's unique magical items for better balance.",
+      "gone": true
+    },
+    {
+      "n": "XP from Creatures lowered by 3/4",
+      "cn": 6,
+      "wf": "DrizztSaga",
+      "wp": "DrizztSaga\\DRIZZTSAGA.TP2",
+      "wc": 6,
+      "wb": 1,
+      "no": "Reduces XP rewards from Drizzt Saga creatures by 25% to prevent overleveling in BG1.",
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "MattyGroove",
+    "r": "DrizztSaga"
+  }
+}

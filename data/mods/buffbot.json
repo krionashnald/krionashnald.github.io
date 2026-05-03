@@ -1,0 +1,57 @@
+{
+  "i": 736,
+  "t": "buffbot",
+  "sv": 1,
+  "ord": 85,
+  "c": "INTERFACE",
+  "n": "BuffBot",
+  "au": "Chrizhermann",
+  "dl": "https://github.com/Chrizhermann/bg-eeex-buffbot",
+  "no": "In-game buff automation via EEex Lua. Adds a menu and innate abilities to trigger configurable buff sequences with preset support. Requires EEex (v0.10.0+). Alpha release.",
+  "dependencies": [
+    {
+      "requires": "eeex",
+      "requiresId": 20,
+      "type": "hard",
+      "reason": "BuffBot requires EEex to be installed — uses EEex Lua scripting and LuaJIT."
+    }
+  ],
+  "u": "https://github.com/Chrizhermann/bg-eeex-buffbot",
+  "a": "Chrizhermann",
+  "sum": "Automates pre-combat buff sequences via configurable innate abilities. Supports presets and per-class spell lists. Requires EEex.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "BuffBot: In-Game Buff Automation",
+      "pi": "BuffBot-Main",
+      "wf": "buffbot",
+      "wp": "setup-buffbot.tp2",
+      "wq": "verified",
+      "cn": 0,
+      "no": "Installs Lua scripts (M_BfBot, BfBotCor, BfBotCls, BfBotScn, BfBotExe, BfBotPer, BfBotInn, BfBotUI, BfBotTst), BuffBot.menu, visual assets (parchment UI, icons), 5 innate ability tooltips, and bfbot_presets directory. Requires EEex cn:0 or cn:1."
+    },
+    {
+      "n": "BuffBot: EEex LuaJIT Support (auto-detected)",
+      "pi": "BuffBot-LuaJIT",
+      "wf": "buffbot",
+      "wp": "setup-buffbot.tp2",
+      "wq": "verified",
+      "cn": 1,
+      "no": "Patches InfinityLoader.ini to enable LuaJIT (LuaPatchMode=REPLACE_INTERNAL_WITH_EXTERNAL). Auto-skips if LuaJIT already active. Requires EEex LuaJIT files at EEex/loader/LuaJIT/."
+    }
+  ],
+  "gh": {
+    "o": "Chrizhermann",
+    "r": "bg-eeex-buffbot"
+  }
+}

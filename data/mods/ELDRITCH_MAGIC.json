@@ -1,0 +1,468 @@
+{
+  "i": 640,
+  "t": "Eldritch_Magic",
+  "sv": 1,
+  "ord": 270,
+  "c": "KIT & CLASS MODS",
+  "n": "Eldritch Magic",
+  "no": "NOT EET COMPATIBLE. All components have REQUIRE_PREDICATE GAME_IS bgee/bg2ee/iwdee — EET is not included. Will auto-skip all components on EET installs. Contains 10 kits (Bladesinger, Eldritch Knight, etc.) plus items. The Bladesinger (cn:1) globally modifies ALL bards which is highly problematic.",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "Eldritch Magic's starting XP and XP cap removal overlap with EET Tweaks' XP cap components.",
+      "myComps": "#2 #3",
+      "theirComps": "#2000 #2001 #2002 #2003"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both remove multiclass/dualclass race restrictions.",
+      "myComps": "#5",
+      "theirComps": "#2430 #2431"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURELDR1",
+          "innate",
+          0,
+          "Evocation",
+          "Eldritch Blast",
+          "Warlock innate: magical energy bolt."
+        ],
+        [
+          "YOURELDR2",
+          "innate",
+          0,
+          "Evocation",
+          "Eldritch Chain",
+          "Warlock innate: chain lightning blast."
+        ],
+        [
+          "YOURELDR3",
+          "innate",
+          0,
+          "Abjuration",
+          "Eldritch Ward",
+          "Warlock innate: damage absorption shield."
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "ABYSSAL_WARRIOR",
+          "fighter",
+          "Abyssal Warrior",
+          "Veteran of the Blood War thriving in demonic environments. Fiendish combat abilities."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "BLADESINGER",
+          "fighter",
+          "Bladesinger",
+          "Deadly elven warrior combining swordplay with arcane magic in elegant combat."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "ELDRITCH_KNIGHT",
+          "multi",
+          "Eldritch Knight",
+          "Combines martial mastery with arcane spellcasting. Armored mage-warrior."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "HERBALIST",
+          "druid",
+          "Herbalist",
+          "Nature healer using plant-based remedies. Druid variant focused on healing arts."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "PRIEST_OF_MYSTRA",
+          "cleric",
+          "Priest of Mystra",
+          "Cleric of the goddess of magic. Combines divine and arcane understanding."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "PRIESTESS_OF_LOLTH",
+          "cleric",
+          "Priestess of Lolth",
+          "Cleric of the Spider Queen. Dark divine magic and spider summoning."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "UNDEAD_HUNTER_FOR_ELVES",
+          "paladin",
+          "Undead Hunter for Elves",
+          "Elven paladin variant dedicated to destroying undead threats."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "WAR_WIZARD",
+          "mage",
+          "War Wizard",
+          "Elven combat mage trained for warfare. Offensive spellcasting with light armor."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "WILDERNESS_RUNNER",
+          "ranger",
+          "Wilderness Runner",
+          "Elven ranger deeply connected to the wilds. Enhanced speed and nature tracking."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "WINDRIDER",
+          "ranger",
+          "Windrider",
+          "Elven ranger with wind and aerial abilities. Enhanced movement and ranged combat."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/AbdelAdrian/Eldritch_Magic",
+  "a": "AbdelAdrian",
+  "sum": "Adds 10 kits (Bladesinger, Eldritch Knight, Abyssal Warrior, etc.) plus BG2EE item expansion and collectibles.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/AbdelAdrian/Eldritch_Magic",
+  "au": "Eric.McLaughlin",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "BGEE: Item Expansion [BETA]",
+      "cn": 15,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "BGEE: Item Expansion [BETA]"
+    },
+    {
+      "n": "BGEE: High Level Abilities [BETA]",
+      "cn": 16,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "BGEE: High Level Abilities [BETA]"
+    },
+    {
+      "n": "BG2EE Items: Bladesinger Artifacts only",
+      "cn": 17,
+      "g": "bg2_items",
+      "scn": "BG2EE: Item Expansion [BETA]",
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. BG2EE-only item pack option. Choose one distribution method.",
+      "tp2n": "Bladesinger's Artifacts",
+      "games": [
+        "bg2ee"
+      ]
+    },
+    {
+      "n": "BG2EE Items: Artifacts + Bhaalspawn Items",
+      "cn": 18,
+      "g": "bg2_items",
+      "scn": "BG2EE: Item Expansion [BETA]",
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. BG2EE-only item pack option. Choose one distribution method.",
+      "tp2n": "Bladesinger's Artifacts and Bhaalspawn Items",
+      "games": [
+        "bg2ee"
+      ]
+    },
+    {
+      "n": "BG2EE Items: Artifacts + Ribald/Deidre/Joluv",
+      "cn": 19,
+      "g": "bg2_items",
+      "scn": "BG2EE: Item Expansion [BETA]",
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. BG2EE-only item pack option. Choose one distribution method.",
+      "tp2n": "Bladesinger's Artifacts and Ribald, Deidre, and Joluv Mods",
+      "games": [
+        "bg2ee"
+      ]
+    },
+    {
+      "n": "BG2EE Items: Artifacts + Bhaalspawn + Merchants",
+      "cn": 20,
+      "g": "bg2_items",
+      "scn": "BG2EE: Item Expansion [BETA]",
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. BG2EE-only item pack option. Choose one distribution method.",
+      "tp2n": "Bladesinger's Artifacts, Bhaalspawn, and Ribald, Deidre, and Joluv Mods",
+      "games": [
+        "bg2ee"
+      ]
+    },
+    {
+      "n": "IWDEE: Item Expansion [BETA]",
+      "cn": 21,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "wq": "verified",
+      "games": [
+        "iwdee"
+      ],
+      "tp2n": "IWDEE: Item Expansion [BETA]"
+    },
+    {
+      "n": "Congenio's Pebble Collection",
+      "cn": 22,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Collectible pebbles scattered throughout the game — cosmetic/fun component.",
+      "tp2n": "Congenio's Pebble Collection",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Abyssal Warrior (Fighter)",
+      "cn": 0,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Abyssal Warrior — fighter kit themed around demonic/hellish abilities. Adds 1 kit slot.",
+      "sp": 3,
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Bladesinger (Bard)",
+      "cn": 1,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. WARNING: Globally modifies ALL bards — gives fighter APR, proficiencies, helmets. Highly disruptive to other bard kits and mods. Adds 1 kit slot.",
+      "kC": {
+        "bard": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Eldritch Knight (Fighter/Mage)",
+      "cn": 3,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Eldritch Knight — fighter/mage kit with martial and arcane abilities. Adds 1 kit slot.",
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Herbalist (Cleric)",
+      "cn": 5,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Herbalist — cleric kit focused on healing and potion-making. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Priest of Mystra (Cleric/Mage)",
+      "cn": 8,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Priest of Mystra — cleric/mage kit dedicated to the goddess of magic. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Priestess of Lolth (Cleric)",
+      "cn": 9,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Priestess of Lolth — cleric kit for drow-themed evil playthroughs. Adds 1 kit slot.",
+      "kC": {
+        "cleric": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Undead Hunter for Elves (Paladin)",
+      "cn": 11,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Overwrites vanilla Undead Hunter kit entry in kitlist.2da — destructive to other mods. Adds 1 kit slot.",
+      "kC": {
+        "paladin": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "War Wizard (Fighter/Mage)",
+      "cn": 12,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. War Wizard — fighter/mage kit focused on battle magic. Adds 1 kit slot.",
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Wilderness Runner (Ranger)",
+      "cn": 13,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Wilderness Runner — ranger kit with stealth and speed focus. Adds 1 kit slot.",
+      "kC": {
+        "ranger": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    },
+    {
+      "n": "Windrider (Fighter)",
+      "cn": 14,
+      "k": 1,
+      "wf": "ELDRITCH_MAGIC",
+      "wp": "ELDRITCH_MAGIC\\ELDRITCH_MAGIC.TP2",
+      "no": "NOT EET COMPATIBLE. Windrider — fighter kit with wind/speed themed abilities. Adds 1 kit slot.",
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true,
+      "games": [
+        "bg2ee",
+        "bgee",
+        "iwdee"
+      ],
+      "grn": "Kits"
+    }
+  ],
+  "gh": {
+    "o": "AbdelAdrian",
+    "r": "Eldritch_Magic"
+  }
+}

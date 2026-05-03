@@ -1,0 +1,51 @@
+{
+  "i": 534,
+  "t": "CTBICE",
+  "sv": 1,
+  "ord": 570,
+  "c": "QUEST MODS BG2",
+  "n": "Have Ice",
+  "no": "[LEGACY] Separate BGT-era sub-mod. In CtB v3.0+ this is consolidated into the main ctb.tp2. Use main CtB mod for EET installs. Check the Bodies sub-module. BG2 quest content.. Removed from Mod Forge Ultimate: CtB incompatible with WeiDU 251 (DELETE_EXISTING_ANIMATIONS macro)",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "Worldmap required"
+    }
+  ],
+  "u": "https://github.com/RoxanneSHS/HaveIce",
+  "a": "CBisson, Roxanne",
+  "sum": "Small BG1 mod adding winter-themed encounters and content.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://github.com/SpellholdStudios/Check_the_Bodies/releases",
+  "au": "CBisson, King Diamond (SHS)",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Have Ice",
+      "cn": 0,
+      "wf": "CTBICE",
+      "wp": "CTBICE\\CTBICE.TP2",
+      "wc": 0,
+      "no": "Have Ice: a cold-themed CtB quest."
+    }
+  ],
+  "gh": {
+    "o": "RoxanneSHS",
+    "r": "HaveIce"
+  }
+}

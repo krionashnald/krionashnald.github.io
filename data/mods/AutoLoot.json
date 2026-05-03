@@ -1,0 +1,48 @@
+{
+  "i": 22,
+  "t": "AutoLoot",
+  "sv": 1,
+  "ord": 90,
+  "c": "INTERFACE",
+  "n": "Auto Loot",
+  "langs": {
+    "en": 0,
+    "es": 1
+  },
+  "no": "Bubb's AutoLoot An outdated mod from 2018, but it now has a recently updated fork by LCA https://github.com/LCA-EET/AutoLoot Installs on BGEE1&2 and EET. Compatibility with other interface changing mods seems iffy; AutoLoot tries to dynamically change UI.MENU, but resorts to preset changes if particular bits have already been modified. Incompatible with SoF based mods (SCS, ToF, MiH). Those mods will break the functionality of this one. If installed before, ToF's kits fail to install. If install LCA updated it to add EET, IWDEE, BGEE, and SoD compatibility.Install Auto Loot after Love Conquers All and all mods that change the game’s user interface (UI).",
+  "u": "https://forums.beamdog.com/discussion/69899",
+  "a": "Bubb",
+  "sum": "Automatically loots containers and fallen enemies, saving you from tedious clicking. Configurable filters for what to pick up.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "eet_compat": {
+    "ver": "v1",
+    "place": "post"
+  },
+  "dl": "https://forums.beamdog.com/discussion/69899",
+  "au": "Bubb",
+  "co": [
+    {
+      "n": "Bubb's Auto Loot, for Baldur's Gate Enhanced Edition Games",
+      "tp2n": "Bubb's Auto Loot, for Baldur's Gate Enhanced Edition Games",
+      "cn": 0,
+      "wf": "AutoLoot",
+      "wp": "AutoLoot\\AUTOLOOT.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ]
+    }
+  ]
+}

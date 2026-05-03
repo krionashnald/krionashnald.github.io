@@ -1,0 +1,97 @@
+{
+  "i": 49,
+  "t": "AjantisBG1",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 160,
+  "c": "QUEST MODS BG1",
+  "n": "Ajantis BG1 Expansion Modification",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "zh-cn": 3
+  },
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Some mods seem to look for Ajantis BG1, so I put that and similar mods just after BG1NPC Ajantis BG1 Expansion goes after EndlessBG1, Transitions, Northern Tales, and BG1NPC Install the crossmod component near the end of your mod wad, soon before EET End!Install Ajantis BG1 Expansion after EndlessBG1, Imoen 4 Ever (not the SoD component), Northern Tales of the Sword Coast...",
+  "dependencies": [
+    {
+      "requires": "BG1NPC",
+      "requiresId": 47,
+      "type": "hard",
+      "reason": "AjantisBG1 Shield needs BG1NPC component",
+      "myComps": "#1 Family Shield"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/Ajantis_BG1_Expansion/releases",
+  "a": "jastey",
+  "v": "22",
+  "sum": "Expands Ajantis's BG1 story with additional dialogue, a deeper romance, and character development beyond his vanilla content.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v10",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Ajantis_BG1_Expansion"
+  },
+  "dl": "https://github.com/Gibberlings3/Ajantis_BG1_Expansion/releases",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Installs Ajantis BG1 Expansion Modification",
+      "tp2n": "Installs Ajantis BG1 Expansion Modification",
+      "pi": "AjantisBG1Expansion-main",
+      "wf": "ajantisbg1",
+      "wp": "ajantisbg1\\Setup-AjantisBG1.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 0,
+      "no": "Ajantis BG1 expansion with new dialogue and romance content."
+    },
+    {
+      "n": "Install the unique BG:EE BAM for Ajantis' Family Shield",
+      "tp2n": "Install the unique BG:EE BAM for Ajantis' Family Shield",
+      "pi": "AjantisBG1Expansion-shieldBAM",
+      "wf": "ajantisbg1",
+      "wp": "ajantisbg1\\Setup-AjantisBG1.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 1,
+      "no": "Unique BAM animation for Ajantis' Family Shield."
+    },
+    {
+      "n": "Ajantis SoD NPC: Crossmod Content",
+      "tp2n": "Ajantis SoD NPC: Crossmod Content",
+      "pi": "C#Ajantis_SoD_NPC-crossmod_content",
+      "wf": "ajantisbg1",
+      "wp": "ajantisbg1\\Setup-AjantisBG1.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "cn": 30,
+      "no": "mod_installer: STATE_WHICH_SAYS error. Crossmod requires specific partner mods.",
+      "cat": "NPC CROSSMOD"
+    }
+  ]
+}

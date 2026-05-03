@@ -1,0 +1,497 @@
+{
+  "i": 64,
+  "t": "d0questpack",
+  "sv": 1,
+  "pfx": "D0",
+  "ord": 30,
+  "c": "QUEST MODS BG2",
+  "n": "Quest Pack",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "de": 2,
+    "fr": 3,
+    "it": 4,
+    "ru": 5,
+    "zh-cn": 6
+  },
+  "no": "Ding0's Quest Pack Fix for Additional Shadow Thieves Content on EE: https://forums.pocketplane.net/index.php?topic=30064 outdated mod. These components are apparently fine, but keep them EARLY v Miscellaneous Enhancements",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "Smarter Mages",
+      "myComps": "#0",
+      "theirComps": "#6030",
+      "source": "eemodsetup"
+    },
+    {
+      "with": "gbthfkp",
+      "withId": 70,
+      "severity": "soft",
+      "reason": "Both expand Shadow Thieves content but modify different files (no shared dialogues, areas, or creatures). Minor narrative incongruity possible.",
+      "myComps": "#5 Additional Shadow Thieves Content",
+      "theirComps": "#0 Expanded Thief Stronghold",
+      "source": "ETS uses new ts-prefixed dialogs, QP modifies ARAN/HABREGA; safe EXTEND on ar0300.bcs; only maevar.cre shared (different offsets), 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.pocketplane.net/quest-pack/",
+  "a": "SimDing0, Wisp",
+  "v": "v3.5",
+  "sum": "Adds 15 new quests to BG2: additional stronghold scenarios, encounter expansions, and new quest lines. Each is self-contained and well-integrated.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "dl": "https://www.pocketplane.net/quest-pack/",
+  "au": "SimDing0",
+  "co": [
+    {
+      "cn": 0,
+      "n": "General AI Improvements",
+      "tp2n": "General AI Improvements",
+      "no": "Redundant with SCS. Only useful for non-SCS installs. SCS AI overrides these changes",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "cn": 1,
+      "n": "Creature & Area Improvements: All",
+      "tp2n": "All Creature & Area Improvements",
+      "no": "Upgrades Drow, Vampires, Mind Flayers, Beholders, area modifications. Mostly overridden by SCS creature improvements",
+      "g": "qp_creature",
+      "scn": "Creature & Area Improvements",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ]
+    },
+    {
+      "cn": 2,
+      "n": "Creature Improvements: All Creatures Only",
+      "tp2n": "All Creature Improvements",
+      "no": "Same creature enhancements without area changes. Mostly overridden by SCS",
+      "g": "qp_creature",
+      "scn": "Creature & Area Improvements",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "cn": 3,
+      "ss": 1,
+      "n": "Creature Improvements: Boss Fights Only",
+      "tp2n": "Boss Improvements Only",
+      "no": "Safest tactical option — only improves boss encounters. Less overlap with SCS",
+      "g": "qp_creature",
+      "scn": "Creature & Area Improvements",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "With Additional Random Encounters",
+      "tp2n": "With Additional Random Encounters",
+      "cn": 4,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Misc atmospheric encounters with random encounters. Most guides prefer cn:401 (without randoms)",
+      "g": "qp_misc",
+      "scn": "Miscellaneous Enhancements"
+    },
+    {
+      "n": "Without Additonal Random Encounters",
+      "tp2n": "Without Additonal Random Encounters",
+      "cn": 401,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 401,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Misc atmospheric encounters without random encounters. Cleaner option",
+      "g": "qp_misc",
+      "scn": "Miscellaneous Enhancements"
+    },
+    {
+      "n": "Additional Shadow Thieves Content",
+      "tp2n": "Additional Shadow Thieves Content",
+      "cn": 5,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Expands Shadow Thief questline. Known EE bug requires PPG fix. May affect Expanded Thief Stronghold (gbthfkp) quest triggers"
+    },
+    {
+      "n": "Alternative Harper/Xzar Plot",
+      "tp2n": "Alternative Harper/Xzar Plot",
+      "no": "Do not install in EE without the fix above.",
+      "cn": 6,
+      "ss": 1,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 6,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec"
+    },
+    {
+      "n": "Extended Reynald Sequence",
+      "tp2n": "Extended Reynald Sequence",
+      "cn": 7,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 7,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Expands fallen paladin Reynald storyline. Clean, well-regarded"
+    },
+    {
+      "n": "Intrigue In The Copper Coronet",
+      "tp2n": "Intrigue In The Copper Coronet",
+      "cn": 8,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 8,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Adds money lender Celile and debt quest in Slums"
+    },
+    {
+      "n": "Rahul Kanakia's Potion Quest",
+      "tp2n": "Rahul Kanakia's Potion Quest",
+      "cn": 9,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 9,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Temple District sewers quest about power and family"
+    },
+    {
+      "cn": 10,
+      "n": "Revised Hell Trials",
+      "tp2n": "Revised Hell Trials",
+      "no": "Adds neutral alignment paths and refined class-loss mechanics for Hell tests. Install Ascension BEFORE this. Some friction with SCS and BG2 Fixpack reported",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "IO2 Dialogue & Combat Enhancement",
+      "tp2n": "IO2 Dialogue & Combat Enhancement",
+      "no": "v Improved Oasis II reportedly the combat option bugs in EE",
+      "cn": 11,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tg": "adv",
+      "g": "qp_oasis",
+      "scn": "Improved Oasis II"
+    },
+    {
+      "n": "IO2 Dialogue Enhancement Only",
+      "tp2n": "IO2 Dialogue Enhancement Only",
+      "cn": 12,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Expanded Oasis II dialogue only. Safe alternative to cn:11",
+      "g": "qp_oasis",
+      "scn": "Improved Oasis II"
+    },
+    {
+      "n": "Saving Sanik In Brynnlaw",
+      "tp2n": "Saving Sanik In Brynnlaw",
+      "cn": 13,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 13,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Limited window to rescue Sanik from assassination in Brynnlaw"
+    },
+    {
+      "n": "Burglary Of The Bookkeeper",
+      "tp2n": "Burglary Of The Bookkeeper",
+      "cn": 14,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 14,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Mystery quest about stolen scrolls from Galoomp"
+    },
+    {
+      "n": "New Fate For The Dryads' Acorns",
+      "tp2n": "New Fate For The Dryads' Acorns",
+      "cn": 15,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 15,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Twist on acorn-return quest with evil options in De Arnise Hold"
+    },
+    {
+      "n": "The Tragedy Of Besamen",
+      "tp2n": "The Tragedy Of Besamen",
+      "cn": 16,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 16,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Graveyard tomb encounter with troubled spirit"
+    },
+    {
+      "cn": 17,
+      "n": "Further Slaver Involvement",
+      "tp2n": "Further Slaver Involvement",
+      "no": "Evil RP options: sell orphan to Lehtinan, extort slavers. Clean, no known issues",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "n": "Sending The Solamnic Knights Home",
+      "tp2n": "Sending The Solamnic Knights Home",
+      "cn": 18,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 18,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "Lets non-mage characters send Planar Sphere knights home. Fixes long-standing player complaint"
+    },
+    {
+      "n": "Nazariel The Lich",
+      "tp2n": "Nazariel The Lich",
+      "cn": 19,
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wc": 19,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tg": "rec",
+      "no": "New Underdark area with ancient lich encounter"
+    },
+    {
+      "cn": 20,
+      "n": "Reward Negotiation",
+      "tp2n": "Reward Negotiation",
+      "no": "Lets you choose specific items from Vithal reward. Minor tweak",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ]
+    },
+    {
+      "cn": 21,
+      "n": "Infernal Thievery",
+      "tp2n": "Infernal Thievery",
+      "no": "Bridge District encounter after skinner murders. Self-contained quest. Requires ToB/EE",
+      "wf": "questpack",
+      "wp": "questpack\\setup-questpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Saerileth",
+      "withId": 563,
+      "severity": "soft",
+      "reason": "Minor narrative note. Saerileth's alternate Spellhold path bypasses Shadow Thieves. D0QP chapter 6 Aran assault auto-trigger may fire on this path (minor narrative oddity). No shared file modifications.",
+      "myComps": "#5 Additional Shadow Thieves Content",
+      "theirComps": "#0 Saerileth",
+      "source": "No shared files; narrative auto-trigger only, 2026-04",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Fade",
+      "withId": 166,
+      "severity": "partial",
+      "reason": "Narrative overlap, not technical file conflict. D0QP modifies Aran Linvail storyline (REPLACE/APPEND on ARAN.dlg, Chapter 6 assault). Fade has companion commentary triggered by same AranJob globals. No shared files, but D0QP's Chapter 6 Aran assault may cause narrative oddities with Fade's Aran-related dialogues. Install D0QP before Fade.",
+      "orderOnly": true,
+      "myComps": "#5 Additional Shadow Thieves Content",
+      "theirComps": "#0 Fade NPC",
+      "source": "tp2 analysis: D0QP modifies ARAN.dlg/AR0300-0305; Fade reads AranJob globals but only extends AR0318.bcs. No shared file modifications.",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "Alternatives",
+      "withId": 69,
+      "severity": "partial",
+      "reason": "Both modify Shadow Thieves/Aran Linvail content, but Alternatives readme says 'tested with Quest Pack — install Quest Pack first.' Both use safe EXTEND/APPEND on shared area scripts (AR0300, AR0328, AR0329). Narrative overlap only (D0QP chapter 6 Aran assault may trigger on Alternatives path).",
+      "myComps": "#5 Additional Shadow Thieves Content",
+      "theirComps": "#0 Alternatives",
+      "source": "Alternatives readme: 'tested on installations that included Quest Pack'; both use EXTEND_TOP/EXTEND_BOTTOM; consistent with Fade partial rating, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

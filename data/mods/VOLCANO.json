@@ -1,0 +1,266 @@
+{
+  "i": 635,
+  "t": "volcano",
+  "sv": 1,
+  "ord": 440,
+  "c": "ITEM ADDITION MODS",
+  "n": "Improved Volcano! Pack",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "it": 2,
+    "ru": 3,
+    "fr": 4
+  },
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "u": "https://github.com/Black-Wyrm-Lair/Volcano_Pack",
+  "a": "baronius",
+  "v": "v2.5",
+  "sum": "Spells and Items for BGII: Throne of Bhaal",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "ANGBOW",
+          "bow",
+          "Let me see your items then!",
+          "Najim",
+          {
+            "speed": 3,
+            "thac0": 14,
+            "twoHanded": true,
+            "profType": "short bow"
+          }
+        ],
+        [
+          "BAVOLAR",
+          "arrow",
+          "Sulphurous Fire Arrows +3",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "thac0": 3,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "BAVOL01",
+          "scroll",
+          "Ice Golem",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BAVOL02",
+          "scroll",
+          "Ice Golem",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BAVOL03",
+          "scroll",
+          "Ice Golem",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BAVOL04",
+          "scroll",
+          "Brown Dragon",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "BAVOL05",
+          "scroll",
+          "Brown Dragon",
+          "Magnetic Impulse\n(Evocation) \nLevel: 9\nRange: 30 yards \nDuration: Special\nCasting Time: 1\nArea of Effect: 30' radius\nSaving Throw: Neg.\n\nThis spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "VOLCANO",
+          "large sword",
+          "Let me see your items then!",
+          "No. I have a Talisman of the Hearthfire. He can teleport there himself.",
+          {
+            "speed": 6,
+            "thac0": 6,
+            "dmg": "1d12",
+            "dmgBonus": 6,
+            "magicResist": 40,
+            "fireResist": 100,
+            "twoHanded": true,
+            "profType": "two-handed sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 19
+            },
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "BAVOLBA",
+          "flail",
+          "The Blue Basilisk +2",
+          "Very well. Goodbye, Hayes.",
+          {
+            "speed": 6,
+            "thac0": 2,
+            "dmg": "1d6",
+            "dmgBonus": 3,
+            "profType": "flail/morning star",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 13
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Black-Wyrm-Lair/Volcano_Pack",
+  "au": "Baronius",
+  "no": "Spells and Items for BGII: Throne of Bhaal",
+  "co": [
+    {
+      "n": "Improved Volcano! Pack",
+      "tp2n": "Improved Volcano! Pack",
+      "cn": 0,
+      "wf": "VOLCANO",
+      "wp": "VOLCANO\\VOLCANO.TP2",
+      "wc": 0,
+      "it": 9,
+      "itC": {
+        "bow": 1,
+        "arrow": 1,
+        "scroll": 5,
+        "large sword": 1,
+        "flail": 1
+      },
+      "games": [
+        "bg2ee",
+        "eet",
+        "tob"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "Black-Wyrm-Lair",
+    "r": "Volcano_Pack"
+  }
+}

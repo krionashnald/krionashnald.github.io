@@ -1,0 +1,913 @@
+{
+  "i": 948,
+  "t": "JA#BGT_Tweak",
+  "sv": 1,
+  "ord": 300,
+  "c": "NPC CUSTOMIZATION",
+  "n": "Jarl's BGT Tweak Pack",
+  "au": "Jarl; EE compatibility by White Agnus and jastey",
+  "dl": "https://www.baldurs-gate.de/index.php?resources/jarls-bgt-tweak-pack.7/",
+  "no": "Tweak pack focused on NPC customization (portraits, soundsets, avatar colors, stats, kits, alignments) plus assorted item and area tweaks. Works on BGT, BG:EE, and EET; several components are BGT-only or BGT+EET-only — see component notes. German is the primary language; English and Russian translations are partial. v2.0.1.",
+  "langs": {
+    "de": 0,
+    "en": 1,
+    "ru": 2
+  },
+  "u": "https://www.baldurs-gate.de/index.php?resources/jarls-bgt-tweak-pack.7/",
+  "a": "Jarl",
+  "sum": "German-first tweak pack: BG2 portraits/soundsets for BG1 NPCs, avatar-color swaps, stat/alignment/kit changes for named NPCs, plus item restorations and area/reputation tweaks.",
+  "tags": [
+    "npc",
+    "tweaks",
+    "items"
+  ],
+  "ph": [
+    "BG1",
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "cn": 0,
+      "n": "Give Imoen her Portrait and Soundset from BG2",
+      "tp2n": "Imoen erhaelt ihr Portrait und Soundset aus BG2",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 1,
+      "n": "More BG2 Sounds for Imoen's Soundset (German only)",
+      "tp2n": "Mehr BG2 Sounds fuer Imoens Soundset",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 2,
+      "n": "Give Minsc his Portrait and Soundset from BG2",
+      "tp2n": "Minsc erhaelt sein Portrait und Soundset aus BG2",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 3,
+      "n": "Give Jaheira her Portrait and Soundset from BG2",
+      "tp2n": "Jaheira erhaelt ihr Portrait und Soundset aus BG2",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 4,
+      "n": "Give Edwin his Portrait and Soundset from BG2",
+      "tp2n": "Edwin erhaelt sein Portrait und Soundset aus BG2",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 5,
+      "n": "More BG2 Sounds for Edwin's Soundset (German only)",
+      "tp2n": "Mehr BG2 Sounds fuer Edwins Soundset",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 6,
+      "n": "Give Viconia her Portrait and Soundset from BG2",
+      "tp2n": "Viconia erhaelt ihr Portrait und Soundset aus BG2",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 7,
+      "n": "More BG2 Sounds for Viconia's Soundset (German only)",
+      "tp2n": "Mehr BG2 Sounds fuer Viconias Soundset",
+      "g": "Portrait and Soundset from BG2 for BG1 NPCs",
+      "grn": "Portraet und Soundset aus BG2 for BG1 NPCs",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 10,
+      "n": "Give Imoen's Avatar her BG1 Colors",
+      "tp2n": "Imoen erhaelt ihre Farben aus BG1",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 11,
+      "n": "Give Minsc's Avatar his BG2 Colors",
+      "tp2n": "Minsc erhaelt seine Farben aus BG2",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 12,
+      "n": "Minsc's bald head",
+      "tp2n": "Minsks Glatze",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Minsc's avatar hair color changed to his skin color to simulate bald head. Idea by Ascalon."
+    },
+    {
+      "cn": 13,
+      "n": "Give Jaheira's Avatar her BG2 Colors",
+      "tp2n": "Jaheira erhaelt ihre Farben aus BG2",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 14,
+      "n": "Give Edwin's Avatar his BG2 Colors",
+      "tp2n": "Edwin erhaelt seine Farben aus BG2",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 15,
+      "n": "Give Viconia's Avatar her BG2 Colors",
+      "tp2n": "Viconia erhaelt ihre Farben aus BG2",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 16,
+      "n": "Give Viconia different Skin Color",
+      "tp2n": "Viconia erhaelt andere Hautfarbe",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Viconia's skin color changed to a more blue tone."
+    },
+    {
+      "cn": 17,
+      "n": "Change Xan's Avatar Greycloak from Evereska Colors",
+      "tp2n": "Xans als Graumantel aus Evereska",
+      "g": "Change of NPC Avatar Colors",
+      "grn": "AEnderung der NPC Avatar-Farben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Also adjusts Kulyok's BGII Xan accordingly."
+    },
+    {
+      "cn": 30,
+      "n": "Change Kagain's Constitution to 19",
+      "tp2n": "Kagains Konstitution auf 19",
+      "g": "Change NPC-Stats",
+      "grn": "NPC-Stats aendern",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 31,
+      "n": "Change Coran's Dexterity to 19",
+      "tp2n": "Corans Geschicklichkeit auf 19",
+      "g": "Change NPC-Stats",
+      "grn": "NPC-Stats aendern",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 32,
+      "n": "Balance thief abilities",
+      "tp2n": "Diebesf�higkeiten der NPCs neu gewichten",
+      "g": "Change NPC-Stats",
+      "grn": "NPC-Stats aendern",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Reweights thief skills per back story for Skie, Montaron, Jan, and Nalia. Only applied if NPC classes/kits unchanged."
+    },
+    {
+      "cn": 33,
+      "n": "Match NPC Stats between BG1 and BG2: Use BG1 Stats",
+      "tp2n": "BG1 Stats verwenden",
+      "g": "Change NPC-Stats",
+      "scn": "Angleichung der NPC Stats zwischen BG1 und BG2: Minsk, Jaheira, Viconia, Edwin",
+      "grn": "NPC-Stats aendern",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "pi": "Match NPC Stats between BG1 and BG2: Minsc, Jaheira, Viconia, Edwin",
+      "no": "BGT and EET only. Sub-option of 'Match NPC Stats'."
+    },
+    {
+      "cn": 34,
+      "n": "Match NPC Stats between BG1 and BG2: Use BG2 Stats",
+      "tp2n": "BG2 Stats verwenden",
+      "g": "Change NPC-Stats",
+      "scn": "Angleichung der NPC Stats zwischen BG1 und BG2: Minsk, Jaheira, Viconia, Edwin",
+      "grn": "NPC-Stats aendern",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "pi": "Match NPC Stats between BG1 and BG2: Minsc, Jaheira, Viconia, Edwin",
+      "no": "BGT and EET only. Sub-option of 'Match NPC Stats'."
+    },
+    {
+      "cn": 40,
+      "n": "Faldorn: Avenger-Kit",
+      "tp2n": "Faldorn als 'Raecher'",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Gives Faldorn the Shadow Druid (Avenger) kit."
+    },
+    {
+      "cn": 41,
+      "n": "Safana: Swashbuckler-Kit",
+      "tp2n": "Safana als 'Saebelrassler'",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 42,
+      "n": "Kivan: Archer-Kit",
+      "tp2n": "Kivan als 'Bogenschuetze'",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 43,
+      "n": "Ajantis: Cavalier-Kit",
+      "tp2n": "Ajantis als 'Ritter'",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 44,
+      "n": "Cernd: Totemic Druid-Kit",
+      "tp2n": "Cernd als 'Totem-Druide'",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 45,
+      "n": "Dynaheir Sorceress",
+      "tp2n": "Dynaheir als Hexenmeisterin",
+      "g": "Change NPC Kit or Class",
+      "grn": "NPC anderes Kit oder Klasse geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 60,
+      "n": "Change Korgan's Alignment to Neutral-Evil",
+      "tp2n": "Korgans Gesinnung auf Neutral-Boese",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 61,
+      "n": "Change Jaheira's Alignment to Neutral-Good",
+      "tp2n": "Jaheiras Gesinnung auf Neutral-Gut",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "BGII Harper's Pin adjusted accordingly."
+    },
+    {
+      "cn": 62,
+      "n": "Change Minsc's Alignment to Chaotic-Good (BG2 - recommended)",
+      "tp2n": "Minsks Gesinnung auf Chaotisch-Gut (BG2 - empfohlen!)",
+      "g": "Change NPC Alignments",
+      "scn": "Minsks Gesinnung anpassen",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "pi": "Match Minsc's Alignment",
+      "no": "Sub-option of 'Match Minsc's Alignment'."
+    },
+    {
+      "cn": 63,
+      "n": "Change Minsc's Alignment to Neutral-Good (BG1)",
+      "tp2n": "Minsks Gesinnung auf Neutral-Gut (BG1)",
+      "g": "Change NPC Alignments",
+      "scn": "Minsks Gesinnung anpassen",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "pi": "Match Minsc's Alignment",
+      "no": "Sub-option of 'Match Minsc's Alignment'."
+    },
+    {
+      "cn": 64,
+      "n": "Change Shar-Teel's Alignment to Neutral Evil",
+      "tp2n": "Shar-Teel - auf Neutral Boese",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 65,
+      "n": "Change Branwen's alignment to Chaotic Good",
+      "tp2n": "Branwen -  auf Chaotisch Gut",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 66,
+      "n": "Change Faldorn's Alignment to Neutral Evil",
+      "tp2n": "Faldorn - auf Neutral Boese",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 67,
+      "n": "Change Garrick's Alignment to Chaotic Good",
+      "tp2n": "Garrick - auf Chaotisch Gut",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Earring from 'Garrick - Tales of a Troubadour' adjusted accordingly."
+    },
+    {
+      "cn": 68,
+      "n": "Change Xan's Alignment to Lawful Good",
+      "tp2n": "Xan - auf rechtschaffen Gut",
+      "g": "Change NPC Alignments",
+      "grn": "NPC andere Gesinnung geben",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "All moonblades and Kulyok's BGII Xan adjusted accordingly."
+    },
+    {
+      "cn": 80,
+      "n": "Change Montaron's Proficiencies",
+      "tp2n": "Montaron Verbesserung",
+      "g": "Other Weapon Proficiencies and Spells for NPCs",
+      "grn": "Andere Waffenfaehigkeiten und Zauber fuer NPC",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Gives Montaron Crossbows and Two-Weapon Style instead of Slings and Axes."
+    },
+    {
+      "cn": 81,
+      "n": "Xan's improved spellbook",
+      "tp2n": "Xans verbessertes Zauberbuch",
+      "g": "Other Weapon Proficiencies and Spells for NPCs",
+      "grn": "Andere Waffenfaehigkeiten und Zauber fuer NPC",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Adds Armor, Protection from Petrification, Identify, Larloch's Minor Drain, Flaming Arrow (lvl 6 only)."
+    },
+    {
+      "cn": 82,
+      "n": "Change Kagain's proficiencies",
+      "tp2n": "Kagain Verbesserung",
+      "g": "Other Weapon Proficiencies and Spells for NPCs",
+      "grn": "Andere Waffenfaehigkeiten und Zauber fuer NPC",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Gives Weapon-with-Shield Style instead of One-Weapon Style."
+    },
+    {
+      "cn": 100,
+      "n": "Give BGII Cameos their BG1 Portrait: Garrick, Tiax, Xzar, Coran, Safana, Faldorn, Quayle",
+      "tp2n": "BGII-Cameos ihr BG1-Portrait geben: Garrick, Tiax, Xzar, Coran, Safana, Faldorn, Quayle",
+      "g": "Change of non-joinable Characters",
+      "grn": "Veraenderung nicht-aufnehmbarer Spielcharaktere",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only. Compatible with portrait mods that don't rename portrait files."
+    },
+    {
+      "cn": 101,
+      "n": "Make Mulahey Half-Orc",
+      "tp2n": "Mulahey ist nun im Spiel auch wirklich ein Halbork.",
+      "g": "Change of non-joinable Characters",
+      "grn": "Veraenderung nicht-aufnehmbarer Spielcharaktere",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only — already fixed in EE."
+    },
+    {
+      "cn": 102,
+      "n": "Give Tazok his appearance and voice from BG2",
+      "tp2n": "Tazok erh�lt das Aussehen und die Stimme aus BG2.",
+      "g": "Change of non-joinable Characters",
+      "grn": "Veraenderung nicht-aufnehmbarer Spielcharaktere",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 103,
+      "n": "Match Avatar Colors of Firebead Elfenhair in Candlekeep and Beregost",
+      "tp2n": "Avatarfarben von Firebead Elfenhaar in Kerzenburg und Beregost werden angeglichen.",
+      "g": "Change of non-joinable Characters",
+      "grn": "Veraenderung nicht-aufnehmbarer Spielcharaktere",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "BGT and EET only."
+    },
+    {
+      "cn": 130,
+      "n": "Special NPC Items (Kivan's Hunting Bow, Korgan's Axe)",
+      "tp2n": "Spezielle NPC Items",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Adds Kivan's Hunting Bow (Bandit Camp) and equips Korgan with his named axe."
+    },
+    {
+      "cn": 131,
+      "n": "More Weapons and Armor for Characters",
+      "tp2n": "Mehr Waffen und Ruestungen fuer Spielcharaktere",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Gives Imoen leather armor at lvl 1, Safana 20 throwing daggers, upgrades Berrun Ghastkill's gear to halberd and chain mail."
+    },
+    {
+      "cn": 132,
+      "n": "Give Eldoth's poisoned arrows and Perdue's short sword custom Item Icons",
+      "tp2n": "Eldoths Giftpfeile und Perdues Kurzschwert erhalten eigene Itemicons.",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only."
+    },
+    {
+      "cn": 133,
+      "n": "Some BG2 Weapons with generic item icons get custom icons",
+      "tp2n": "Einige BG2 Waffen mit mehrfach vergebenen Itemicons erhalten eigene Icons",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Targets SW1H22.ITM (Scimitar +1) and BRUENAXE.ITM (Battle Axe +3)."
+    },
+    {
+      "cn": 134,
+      "n": "Item Addon: Weapon Types from IWD2",
+      "tp2n": "Item Addon: Waffentypen aus IWD2",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Adds handaxe, greataxe, throwing hammer, composite shortbow, and sparking arrows across the trilogy."
+    },
+    {
+      "cn": 135,
+      "n": "Improved exotic weapons allocation",
+      "tp2n": "Verteilung exotischer Waffen verbessern",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Reduces Katanas/Wakizashis/Ninja-tos in BG2, adds a few to BG1."
+    },
+    {
+      "cn": 136,
+      "n": "Restore unique BG1-Items",
+      "tp2n": "Wiederherstellung einzigartiger BG1-Items",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Restores Battle Axe of Mauletar, Fallorain's Plate, Plate of the Dark, Aule's Staff, Whistling Sword."
+    },
+    {
+      "cn": 137,
+      "n": "Custom Weapon Sounds",
+      "tp2n": "Andere Waffensounds",
+      "g": "Item Tweaks",
+      "grn": "Item Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Formerly 'SOUNDPATCH PART I - GAMESOUNDS'. Replaces some projectile and weapon sounds."
+    },
+    {
+      "cn": 150,
+      "n": "Usable Back Doors for Gellana's Temple and the Temple of Umberlee",
+      "tp2n": "Hintertueren fuer Gellanas Tempel und dem Tempel der Wassekoenigin",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 151,
+      "n": "New Searchmap and Wallgroups for Nashkell and Gnoll Fortress",
+      "tp2n": "Neue Searchmap und Wallgroups fuer Nashkell und Gnollfeste",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt"
+      ],
+      "no": "BGT only. Makes Nashkel graveyard and Gnoll Fortress lower wall ring enterable."
+    },
+    {
+      "cn": 152,
+      "n": "Make \"Lucky Aello's Discount Store\" cheap for real",
+      "tp2n": "\"Billigladen des Gluecklichen Aello\" wird wirklich billig",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 153,
+      "n": "Move Dagger of Venom and Shadow Armor from Taerom's Shop to Silence's Shop",
+      "tp2n": "Giftdolch und Schattenruestung gibt es nicht mehr bei Taerom, sondern im \"Geschaeft der Stille\"",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 154,
+      "n": "Make Skull for Melicamp Quest special",
+      "tp2n": "Mache Schaedel fuer Melicamp speziell",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Removes skulls from High Hedge skeleton inventories; places one in Vale of the Tombs crypt."
+    },
+    {
+      "cn": 155,
+      "n": "Set reputation to 9 after leaving Candlekeep",
+      "tp2n": "Ruf nach Kerzenburg auf 9",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ]
+    },
+    {
+      "cn": 156,
+      "n": "Adapted Reactions of Flaming Fist after Fight in Duchal Palace",
+      "tp2n": "Angepasste Reaktionen der Flammanden Faust nach dem Kampf im Herzogspalast",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "no": "Flaming Fist mercenaries in HQ no longer attack after Duchal Palace fight. By Lumorus."
+    },
+    {
+      "cn": 157,
+      "n": "Soundpatch for some Characters (German only)",
+      "tp2n": "Soundpatch fuer manche Spielcharaktere (nur deutsche Version)",
+      "g": "General Tweaks",
+      "grn": "Allgemeine Tweaks",
+      "wf": "JA#BGT_Tweak",
+      "wp": "JA#BGT_Tweak\\Setup-JA#BGT_Tweak.tp2",
+      "wq": "verified",
+      "games": [
+        "bgt",
+        "eet"
+      ],
+      "no": "German only. Replaces some character voices: Officer Vai, Bjornin, Halbazzer Drin, Davaeorn, Taerom, Chanthalas Ulbright, commoners. Formerly 'SOUNDPATCH PART II - PERSONS'."
+    }
+  ]
+}

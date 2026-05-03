@@ -1,0 +1,58 @@
+{
+  "i": 492,
+  "t": "LCA",
+  "sv": 1,
+  "ord": 530,
+  "c": "NPC EXPANSIONS",
+  "n": "Love Conquers All (LCA)",
+  "no": "Brings Corwin to SoA/ToB and Caelar to ToB. 200+ dialogues, 12 quests, items, cutscenes. Has built-in compat patches for Blackhearts EET, CGS, and The Longer Road. Incompatible with Shine on Caelar. Optional LCA Assistant prompt during install.",
+  "conflicts": [
+    {
+      "with": "CORWINEET",
+      "withId": 555,
+      "severity": "hard",
+      "reason": "Both mods add Corwin as a companion in BG2. Cannot use together.",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SHINEONCAELAR",
+      "withId": 696,
+      "severity": "hard",
+      "reason": "Both mods modify Caelars storyline. LCA website explicitly lists Shine on Caelar as incompatible.",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/LCA-EET/LCA/releases",
+  "a": "Daniel Valle (FOSIE Mods)",
+  "sum": "Recruits Corwin in Shadows of Amn and Caelar in Throne of Bhaal with 200+ dialogues, 12 quests, new items, and AI-generated voicing.",
+  "tags": [
+    "npc",
+    "romance",
+    "quest"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "LCA-EET",
+    "r": "LCA"
+  },
+  "dl": "https://github.com/LCA-EET/LCA",
+  "langs": {
+    "en": 0
+  },
+  "au": "LCA-EET team",
+  "co": [
+    {
+      "n": "Love Conquers All (LCA)",
+      "wf": "LCA",
+      "wp": "LCA\\LCA.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "i": 98,
+  "t": "InLoveUndeath",
+  "sv": 1,
+  "ord": 360,
+  "c": "QUEST MODS ToB",
+  "n": "The Dreadful Tales: In Love, Undeath",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1
+  },
+  "no": "Quests centered around the Temple of Evening Glory, a deity of love, beauty, and undeath. Adds the joinable companion Xzele with optional romance and new areas in Athkatla.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "inlove_xzar",
+          "portraits/inlove_undeath/l_xze1.png",
+          "bg2"
+        ],
+        [
+          "inlove_xzar",
+          "portraits/inlove_undeath/l_xze2.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "YES_BUT_DONT_PATCH_EXISTING_SAVE_GAMES",
+          "npc",
+          "Undead Companion",
+          "Undead NPC companion kit with necromantic abilities."
+        ]
+      ]
+    }
+  },
+  "u": "https://downloads.weaselmods.net/download/in-love-undeath/",
+  "a": "Lava Del'Vortel",
+  "v": "v1.8.4",
+  "sum": "Quests centered around the Temple of Evening Glory, a deity of love, beauty, and undeath, with a new companion and optional romance.",
+  "tags": [
+    "quest",
+    "story"
+  ],
+  "ph": [
+    "ToB"
+  ],
+  "kitAbilities": {
+    "0": {
+      "YES_BUT_DONT_PATCH_EXISTING_SAVE_GAMES": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Undead NPC companion kit with necromantic abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    }
+  },
+  "au": "Lava Del'Vortel",
+  "dl": "https://downloads.weaselmods.net/download/in-love-undeath/",
+  "co": [
+    {
+      "n": "Yes, but don't patch existing save games",
+      "tp2n": "Yes, but don't patch existing save games",
+      "pi": "L#-XZELE-NOPATCH",
+      "scn": "The Dreadful Tales: In Love, Undeath - a new quest and companion for BG2EE",
+      "wf": "InLoveUndeath",
+      "wp": "InLoveUndeath\\InLoveUndeath.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0,
+      "k": 1,
+      "g": "inloveundeath_install",
+      "no": "New game required. Recommended for fresh EET installs",
+      "kC": {
+        "npc": 1
+      }
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes and patch existing save games",
+      "x": 0,
+      "g": "inloveundeath_install",
+      "scn": "The Dreadful Tales: In Love, Undeath - a new quest and companion for BG2EE",
+      "no": "Patches existing saves. Use if mid-playthrough"
+    },
+    {
+      "n": "Xzele: Player-Initiated Dialogues",
+      "tp2n": "Xzele: Player-Initiated Dialogues",
+      "cn": 2,
+      "wf": "InLoveUndeath",
+      "wp": "InLoveUndeath\\InLoveUndeath.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "no": "Player-initiated dialogues for Xzele."
+    }
+  ]
+}

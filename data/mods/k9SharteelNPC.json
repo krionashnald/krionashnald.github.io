@@ -1,0 +1,68 @@
+{
+  "i": 728,
+  "t": "k9SharteelNPC",
+  "sv": 1,
+  "lang": 1,
+  "ord": 50,
+  "c": "NEW NPC MODS",
+  "n": "Shar-Teel SoD",
+  "no": "Shar-Teel for Siege of Dragonspear by elminster/panshaigan. Adds Shar-Teel as a joinable NPC during SoD with dialogue, personality, and romance compatibility.",
+  "conflicts": [],
+  "u": "https://github.com/panshaigan/Shar-Teel-SoD",
+  "a": "elminster/panshaigan",
+  "sum": "Adds Shar-Teel as a joinable NPC companion during the Siege of Dragonspear campaign.",
+  "ph": [
+    "SoD"
+  ],
+  "eet_compat": {
+    "ver": "1.1",
+    "place": "pre"
+  },
+  "au": "elminster",
+  "dl": "https://github.com/panshaigan/Shar-Teel-SoD",
+  "langs": {
+    "en": 0
+  },
+  "tags": [
+    "npc",
+    "romance"
+  ],
+  "pt": false,
+  "co": [
+    {
+      "n": "Install Shar-Teel NPC Mod",
+      "cn": 0,
+      "wf": "k9SharteelNPC",
+      "wp": "k9SharteelNPC\\setup-k9SharteelNPC.tp2",
+      "wq": "verified",
+      "tp2n": "Install Shar-Teel NPC Mod",
+      "no": "Adds Shar-Teel as a fully playable NPC companion during SoD with banters and character development."
+    },
+    {
+      "n": "Shar-Teel for Siege of Dragonspear",
+      "cn": 99971,
+      "wf": "k9SharteelNPC",
+      "wp": "k9SharteelNPC\\setup-k9SharteelNPC.tp2",
+      "wq": "verified",
+      "no": "v18 moved to cn:0 (was cn:99971 in older version). Adds Shar-Teel as a fully playable NPC companion during SoD with banters and character development.",
+      "wc": 99971,
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "BG1NPCSoA",
+      "withId": 649,
+      "severity": "soft",
+      "reason": "BG1NPCSoA cn:2 adds Shar-Teel to BG2 as Nightbringer of Shar. This mod adds her to SoD. Both can coexist (different campaigns) but may have continuity inconsistencies.",
+      "myComps": "#99971 Shar-Teel for SoD",
+      "theirComps": "#2 Shar-Teel NPC in BG2",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ],
+  "gh": {
+    "o": "panshaigan",
+    "r": "Shar-Teel-SoD"
+  }
+}

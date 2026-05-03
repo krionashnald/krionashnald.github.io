@@ -1,0 +1,58 @@
+{
+  "i": 733,
+  "t": "EdwinBromance",
+  "sv": 1,
+  "ord": 1260,
+  "c": "NEW NPC MODS",
+  "n": "Edwin Bromance",
+  "au": "Glittergear",
+  "no": "Edwin friendship mod (not romance). 9 talks progressing from barely-tolerated acquaintances to true bros, with Edwina content and potential alignment shift from evil to lawful neutral. SoA only, no ToB content. Incompatible with Edwin Romance mod.",
+  "dl": "https://github.com/Glittergear/EdwinBromance",
+  "conflicts": [
+    {
+      "with": "edwinromance",
+      "withId": 205,
+      "severity": "hard",
+      "reason": "Edwin Bromance is a friendship mod and is incompatible with Edwin Romance. Both modify Edwin's dialogue and character arc.",
+      "myComps": "#0 Edwin Bromance",
+      "theirComps": "#0 Edwin Romance",
+      "source": "Author states incompatibility in mod description, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Glittergear/EdwinBromance",
+  "a": "Glittergear",
+  "sum": "Edwin friendship mod (not romance). 9 talks progressing from barely-tolerated acquaintances to true bros, with Edwina content and potential alignment shift.",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "langs": {
+    "en": 0
+  },
+  "pt": false,
+  "co": [
+    {
+      "n": "Edwin Bromance for BG2: ToB",
+      "pi": "Edwin_Bromance-Glittergear",
+      "wf": "EdwinBromance",
+      "wp": "EdwinBromance\\EdwinBromance.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "tp2n": "Edwin Bromance"
+    }
+  ],
+  "gh": {
+    "o": "Glittergear",
+    "r": "EdwinBromance"
+  }
+}

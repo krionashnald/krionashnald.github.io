@@ -1,0 +1,78 @@
+{
+  "i": 133,
+  "t": "Helga",
+  "sv": 1,
+  "ord": 120,
+  "c": "NEW NPC MODS",
+  "n": "Helga",
+  "no": "Helga BG1 Cleric, Haela kit optional, supported by F&P and DoF Requires wb:1 to install during BG1 phase — references BG1 DLG resources (BJORNI.DLG) not available in BG2EE.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "helga",
+          "portraits/helga/ahelga.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Skitia/Helga-BG1",
+  "a": "Skitia",
+  "v": "@0",
+  "sum": "Helga's NPC Mod data for BG1",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "gh": {
+    "o": "Skitia",
+    "r": "Helga-BG1"
+  },
+  "au": "Skitia",
+  "langs": {
+    "en": 0
+  },
+  "dl": "https://github.com/Skitia/Helga-BG1",
+  "co": [
+    {
+      "n": "Helga NPC Mod",
+      "cn": 0,
+      "wf": "Helga",
+      "wp": "Helga\\setup-Helga.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Helga NPC Mod"
+    },
+    {
+      "n": "Default portrait by Acifer",
+      "cn": 1,
+      "g": "helga_bg1_portrait",
+      "scn": "Choose a portrait for Helga (check mod folder for portraits):",
+      "wf": "Helga",
+      "wp": "Helga\\setup-Helga.TP2",
+      "tp2n": "Portrait: Default by Acifer"
+    },
+    {
+      "n": "Alt NWN Portrait",
+      "cn": 2,
+      "g": "helga_bg1_portrait",
+      "scn": "Choose a portrait for Helga (check mod folder for portraits):",
+      "wf": "Helga",
+      "wp": "Helga\\setup-Helga.TP2",
+      "tp2n": "Portrait: Alt NWN Portrait"
+    },
+    {
+      "n": "Fighter/Priest of Haela (Fighter Multi-class)",
+      "cn": 3,
+      "wf": "Helga",
+      "wp": "Helga\\setup-Helga.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "Fighter/Priest of Haela (Fighter Multi-class)",
+      "scn": "Helga Alternate Class: Fighter/Priest of Haela"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "i": 773,
+  "t": "d2-party-adder",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 360,
+  "c": "NPC CUSTOMIZATION",
+  "n": "Premade Party Adder",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/D2-mods/Premade-Party-Adder/",
+  "a": "Dan_P",
+  "sum": "Allows the player to add custom games to the new game screen.",
+  "tags": [
+    "npc",
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Dan_P",
+  "dl": "https://github.com/D2-mods/Premade-Party-Adder",
+  "no": "Adds premade parties for IWDEE (IWD and HoW) and Black Pits. 4 party options per campaign plus a remove-all. Includes biography fix. Mainly IWDEE — BP component works on BGEE/BG2EE/EET. English only.",
+  "co": [
+    {
+      "n": "Party 1",
+      "cn": 10,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "pi": "D2-IWDEE-PARTY1"
+    },
+    {
+      "n": "Party 2",
+      "cn": 11,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 11,
+      "wq": "verified",
+      "pi": "D2-IWDEE-PARTY2"
+    },
+    {
+      "n": "Party 3",
+      "cn": 12,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 12,
+      "wq": "verified",
+      "pi": "D2-IWDEE-PARTY3"
+    },
+    {
+      "n": "Party 4",
+      "cn": 20,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "group_20",
+      "pi": "D2-IWDEE-HPARTY1"
+    },
+    {
+      "n": "Remove default party",
+      "cn": 20,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "group_20",
+      "pi": "D2-IWDEE-HPARTY1"
+    },
+    {
+      "n": "Party 1",
+      "cn": 20,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "g": "group_20",
+      "pi": "D2-IWDEE-HPARTY1"
+    },
+    {
+      "n": "Party 2",
+      "cn": 21,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 21,
+      "wq": "verified",
+      "pi": "D2-IWDEE-HPARTY2"
+    },
+    {
+      "n": "Party 3",
+      "cn": 22,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 22,
+      "wq": "verified",
+      "pi": "D2-IWDEE-HPARTY3"
+    },
+    {
+      "n": "Party 4",
+      "cn": 30,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "g": "group_30",
+      "pi": "D2-BGEE-BPPARTY1"
+    },
+    {
+      "n": "Remove default party",
+      "cn": 30,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "g": "group_30",
+      "pi": "D2-BGEE-BPPARTY1"
+    },
+    {
+      "n": "Party 1",
+      "cn": 30,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 30,
+      "wq": "verified",
+      "g": "group_30",
+      "pi": "D2-BGEE-BPPARTY1"
+    },
+    {
+      "n": "Party 2",
+      "cn": 31,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 31,
+      "wq": "verified",
+      "pi": "D2-BGEE-BPPARTY2"
+    },
+    {
+      "n": "Party 3",
+      "cn": 32,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 32,
+      "wq": "verified",
+      "pi": "D2-BGEE-BPPARTY3"
+    },
+    {
+      "n": "Party 4",
+      "cn": 99,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 99,
+      "wq": "verified",
+      "g": "group_99",
+      "pi": "D2-IWDEE-BIOFIX"
+    },
+    {
+      "n": "Remove default party",
+      "cn": 99,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 99,
+      "wq": "verified",
+      "g": "group_99",
+      "pi": "D2-IWDEE-BIOFIX"
+    },
+    {
+      "n": "Patch CHR files to fix biography bug when importing (IWD:EE)",
+      "cn": 99,
+      "wf": "d2-party-adder",
+      "wp": "d2-party-adder\\d2-party-adder.tp2",
+      "wc": 99,
+      "wq": "verified",
+      "g": "group_99",
+      "pi": "D2-IWDEE-BIOFIX"
+    }
+  ],
+  "gh": {
+    "o": "D2-mods",
+    "r": "Premade-Party-Adder"
+  }
+}

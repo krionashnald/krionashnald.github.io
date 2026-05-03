@@ -1,0 +1,83 @@
+{
+  "i": 36,
+  "t": "c#sodboabri",
+  "sv": 1,
+  "pfx": "C#",
+  "ord": 40,
+  "c": "QUEST MODS BG1",
+  "n": "The Boareskyr Bridge Scene",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "it": 3,
+    "es": 4,
+    "ru": 5,
+    "pl": 6,
+    "cs": 7,
+    "zh-cn": 8
+  },
+  "no": "The Boareskyr Bridge Scene goes before road to discovery Improves this specific SoD scene and grants the party more choice over how to handle the situation.",
+  "u": "https://github.com/Gibberlings3/The_Boareskyr_Bridge_Scene/releases",
+  "a": "jastey",
+  "v": "v8",
+  "sum": "Expands the Boareskyr Bridge scene in SoD with additional dialogue options, NPC reactions, and role-playing choices for that pivotal story moment.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoD"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "The_Boareskyr_Bridge_Scene"
+  },
+  "dl": "https://github.com/Gibberlings3/The_Boareskyr_Bridge_Scene/releases",
+  "au": "jastey",
+  "co": [
+    {
+      "n": "Scene at Boareskyr Bridge will be Acknowledged: Add NPC Reactions",
+      "tp2n": "Scene at Boareskyr Bridge will be Acknowledged: Add NPC Reactions",
+      "pi": "c#sodboabri_AcknowledgeSceneBoareskyrBridge",
+      "wf": "c#sodboabri",
+      "wp": "c#sodboabri\\C#SODBOABRI.TP2",
+      "wc": 0,
+      "wq": "label_prefix",
+      "cn": 0,
+      "no": "NPCs react to the Boareskyr Bridge event with dialogue."
+    },
+    {
+      "n": "Add Description Text to Original Scene at Bridge",
+      "tp2n": "Add Description Text to Original Scene at Bridge",
+      "pi": "c#sodboabri_TescriptionText",
+      "wf": "c#sodboabri",
+      "wp": "c#sodboabri\\C#SODBOABRI.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "cn": 1,
+      "no": "Adds descriptive text to the original bridge scene."
+    },
+    {
+      "n": "Bridge Scene has Different Choices",
+      "tp2n": "Bridge Scene has Different Choices",
+      "pi": "c#sodboabri_DifferentChoices",
+      "wf": "c#sodboabri",
+      "wp": "c#sodboabri\\C#SODBOABRI.TP2",
+      "wc": 2,
+      "wq": "name_match",
+      "cn": 2,
+      "no": "Adds different dialogue choices during the bridge scene."
+    },
+    {
+      "n": "Add Stat Changes to Choices at Bridge",
+      "tp2n": "Add Stat Changes to Choices at Bridge",
+      "pi": "c#sodboabri_StatChanges",
+      "wf": "c#sodboabri",
+      "wp": "c#sodboabri\\C#SODBOABRI.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "cn": 3,
+      "no": "Bridge choices affect character stats."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "i": 168,
+  "t": "isra_bg2",
+  "sv": 1,
+  "ord": 470,
+  "c": "NEW NPC MODS",
+  "n": "Isra NPC",
+  "cats": [
+    null,
+    "NPC CROSSMOD"
+  ],
+  "no": "Isra BG2 goes after adrian, dace, nephele, ninde, Coran, tiax and xan",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "CDTweaks romance cheats create stutter for mod NPCs",
+      "myComps": "#0 Isra for BGII",
+      "theirComps": "#3183",
+      "source": "eemodsetup"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "isra_npc",
+          "portraits/isra_bg2/rh_isra.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/SpellholdStudios/Isra_NPC_BG2",
+  "a": "Rhaella; Gwendolyne",
+  "v": "v3.1",
+  "sum": "Adds Isra, a cavalier paladin, as a joinable NPC in BG2/ToB, continuing her story from BG1 with new quests and romance.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Isra_NPC_BG2"
+  },
+  "au": "Rhaella",
+  "dl": "https://github.com/SpellholdStudios/Isra_NPC_BG2",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Isra for BGII",
+      "cn": 0,
+      "wf": "isra_bg2",
+      "wp": "isra_bg2\\isra_bg2.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "UPSTREAM BUG: rh#fatesp.d parse error. Same mechanism as other GW-framework NPCs: gw_dlg_functions.tpa searches FATESP.DLG for the referenced fatesp_string. If that string is not found in FATESP.DLG, fatesp_state_isra and fatesp_transition_isra remain -99, causing COMPILE EVALUATE_BUFFER to fail with a parse error. Ensure Isra BG2 installs after EET has fully merged BG2 content and FATESP.DLG is populated.",
+      "tp2n": "Isra for BGII"
+    },
+    {
+      "n": "Isra Crossmod Content",
+      "cn": 1,
+      "wf": "isra_bg2",
+      "wp": "isra_bg2\\isra_bg2.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Isra Crossmod Content"
+    }
+  ]
+}

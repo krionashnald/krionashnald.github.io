@@ -1,0 +1,249 @@
+{
+  "i": 404,
+  "t": "jimfix",
+  "sv": 1,
+  "ord": 60,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Jimfix",
+  "langs": {
+    "en": 0,
+    "ru": 1
+  },
+  "no": "Jimfix by banananaut. Collection of spell fixes and QoL tweaks. Several components require SCS and/or Ascension. POST-TACTICAL category is correct — these fix/adjust SCS behavior after it installs. cn:1 is ToBEx-only (EE incompatible).",
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Jimfix does not work for IWD spells",
+      "myComps": "#0 Spell school notifications",
+      "theirComps": "#1500, #1510",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks Spellcraft makes Jimfix spell school notifications somewhat redundant",
+      "theirComps": "#6290 Spellcraft/Counterspell"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "stratagems",
+      "requiresId": 341,
+      "type": "soft",
+      "reason": "Buff expiration notifications enhanced by SCS spell system — works without, better with",
+      "myComps": "#300 Add expiration notifications for buffs",
+      "theirComps": "#6030 Smarter Mages"
+    }
+  ],
+  "u": "https://github.com/Banananaut/Jimfix",
+  "a": "banananaut",
+  "v": "v3.1a",
+  "sum": "A small collection of tweaks and fixes for BG2",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Banananaut",
+    "r": "Jimfix"
+  },
+  "dl": "https://github.com/Banananaut/Jimfix",
+  "au": "banananaut2",
+  "co": [
+    {
+      "cn": 0,
+      "n": "Fix Sunfire Power Levels",
+      "tp2n": "Fix Sunfire power levels",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Fixes Sunfire power level for dispel checks. Safe standalone fix. No requirements.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 1,
+      "n": "Enable Spell Immunity in Sequencers/Triggers",
+      "tp2n": "Enable Spell Immunity in Sequencers/Triggers",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. EE INCOMPATIBLE — requires ToBEx (non-EE only). Will auto-skip on EE/EET.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 2,
+      "n": "Shield of Reflection works on SCS Flame Arrows",
+      "tp2n": "Shield of Reflection works on SCS Flame Arrows",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Requires SCS cn:5900 (Flame Arrow). Fixes Shield of Reflection to deflect SCS Flame Arrow missiles.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 3,
+      "n": "Fix Smarter Abazigal",
+      "tp2n": "Fix Smarter Abazigal",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Requires SCS Ascension Abazigal component (dw#ascension_abazigal.mrk). Fixes Smarter Abazigal AI. Only if using SCS+Ascension together.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 4,
+      "n": "Fix Smarter Irenicus at the Throne",
+      "tp2n": "Fix Smarter Irenicus at the Throne",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Requires SCS Ascension Irenicus/Sendai component (dw#ascension_sendai_irenicus.mrk). Only if using SCS+Ascension together.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 5,
+      "n": "Remove Entourage from Ascension Fallen Solars",
+      "tp2n": "Remove entourage from Ascension Fallen Solars",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Requires Ascension Fallen Solars (dw#celestial.mrk). Removes summoned allies from Ascension Fallen Solars to reduce encounter clutter.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 100,
+      "n": "Check for and Fix Incorrect Spell Animations",
+      "tp2n": "Check for and fix incorrect spell animations",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Scans ALL spell files and fixes incorrect animation references. Safe cleanup — no conflicts. Should install after all spell mods.",
+      "grn": "Fixes"
+    },
+    {
+      "cn": 400,
+      "n": "Prevent Silent Prebuffs",
+      "tp2n": "Prevent silent prebuffs",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "dep": "Author-DEPRECATED (see `no` field for details)",
+      "no": "DEPRECATED by mod author. Forces prebuff spells to show casting animations. Anti-cheese: prevents invisible prebuffing. Patches SCS dwsw*.spl files.",
+      "grn": "Tweaks"
+    },
+    {
+      "cn": 201,
+      "n": "Spell School Notifications: Casting time > 1",
+      "tp2n": "All spells with a casting time greater than 1",
+      "g": "spell_notify",
+      "scn": "Add spell school notifications to the combat log",
+      "grn": "Tweaks",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Shows spell school in combat log when casting time > 1. Useful for counterspelling. Choose one threshold."
+    },
+    {
+      "cn": 202,
+      "n": "Spell School Notifications: Casting time > 2",
+      "tp2n": "All spells with a casting time greater than 2",
+      "g": "spell_notify",
+      "scn": "Add spell school notifications to the combat log",
+      "grn": "Tweaks",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Adds spell school text to combat log for spells with casting time > 2"
+    },
+    {
+      "cn": 203,
+      "n": "Spell School Notifications: Casting time > 3",
+      "tp2n": "All spells with a casting time greater than 3",
+      "g": "spell_notify",
+      "scn": "Add spell school notifications to the combat log",
+      "grn": "Tweaks",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Adds spell school text to combat log for spells with casting time > 3"
+    },
+    {
+      "cn": 204,
+      "n": "Spell School Notifications: Casting time > 4",
+      "tp2n": "All spells with a casting time greater than 4",
+      "g": "spell_notify",
+      "scn": "Add spell school notifications to the combat log",
+      "grn": "Tweaks",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Adds spell school text to combat log for spells with casting time > 4"
+    },
+    {
+      "cn": 205,
+      "n": "Spell School Notifications: Casting time > 5",
+      "tp2n": "All spells with a casting time greater than 5",
+      "g": "spell_notify",
+      "scn": "Add spell school notifications to the combat log",
+      "grn": "Tweaks",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Adds spell school text to combat log for spells with casting time > 5"
+    },
+    {
+      "cn": 300,
+      "n": "Add Expiration Notifications for Buffs",
+      "tp2n": "Add expiration notifications for buffs",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Shows combat log message when buff spells expire. QoL — know when Protection from Evil drops.",
+      "grn": "Tweaks"
+    },
+    {
+      "cn": 600,
+      "n": "Add Expiration Notifications for Item Buffs",
+      "tp2n": "Add expiration notifications for item buffs",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Shows combat log message when item-based buff effects expire (e.g. potions, item abilities).",
+      "grn": "Tweaks"
+    },
+    {
+      "cn": 500,
+      "n": "Reveal All Hidden Doors",
+      "tp2n": "Reveal all hidden doors",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Makes all hidden/secret doors visible on the map. Major QoL convenience. Some consider this cheating.",
+      "grn": "Tweaks"
+    },
+    {
+      "cn": 700,
+      "n": "Allow Spell Shield to Block Wish Breach and Mordenkainen Disjunction",
+      "tp2n": "Allow Spell Shield to block Wish Breach and Mordenkainen's Disjunction",
+      "wf": "jimfix",
+      "wp": "jimfix\\setup-jimfix.tp2",
+      "wq": "exact",
+      "no": "Expands Spell Shield to also block Wish Breach and Mordenkainen's Disjunction. Requires SCS (DW#WISH1.SPL). Power boost for mages.",
+      "grn": "Tweaks"
+    }
+  ]
+}

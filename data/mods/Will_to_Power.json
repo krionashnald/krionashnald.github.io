@@ -1,0 +1,831 @@
+{
+  "i": 334,
+  "t": "Will_to_Power",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 170,
+  "c": "KIT & CLASS MODS",
+  "n": "Will to Power",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "2E-inspired psionics mod by Subtledoctor. v2.13. Adds 4 psionic hybrid kits (rogue, fighter, ranger, mage). Dark Sun mode gives everyone wild talents. cn:950 FORBIDs F&P #75",
+  "conflicts": [
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "hard",
+      "reason": "FORBID_COMPONENT in tp2: Will to Power cn:950 cannot install if F&P #75 is present",
+      "myComps": "#950 Allow Multiclass Clerics to Use More Weapons",
+      "theirComps": "#75 Alter Priests Weapon/Armor Usability",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "Will_to_Power",
+      "requiresId": 334,
+      "type": "hard",
+      "reason": "Dark Sun Mode requires at least one psionic kit (cn:200-500) installed first — needs d5__psionics.d5 file",
+      "myComps": "#900 Dark Sun Mode"
+    }
+  ],
+  "spl": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWTP01",
+          "innate",
+          0,
+          "Enchantment",
+          "Mind Blast",
+          "Psionic cone stuns enemies for 1d4 rounds."
+        ],
+        [
+          "YOURWTP02",
+          "innate",
+          0,
+          "Divination",
+          "Clairsentience",
+          "Psionic detection reveals hidden enemies."
+        ],
+        [
+          "YOURWTP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Dominate Mind",
+          "Psionically dominate a humanoid target."
+        ],
+        [
+          "YOURWTP04",
+          "innate",
+          0,
+          "Abjuration",
+          "Mental Fortress",
+          "Psionic shield protects from mind attacks."
+        ],
+        [
+          "YOURWTP05",
+          "innate",
+          0,
+          "Alteration",
+          "Psychic Crush",
+          "Deals massive psionic damage to one target."
+        ],
+        [
+          "YOURWTP06",
+          "innate",
+          0,
+          "Alteration",
+          "Telekinesis",
+          "Move objects and creatures with psionic power."
+        ]
+      ]
+    },
+    "1": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWTP01",
+          "innate",
+          0,
+          "Enchantment",
+          "Mind Blast",
+          "Psionic cone stuns enemies for 1d4 rounds."
+        ],
+        [
+          "YOURWTP02",
+          "innate",
+          0,
+          "Divination",
+          "Clairsentience",
+          "Psionic detection reveals hidden enemies."
+        ],
+        [
+          "YOURWTP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Dominate Mind",
+          "Psionically dominate a humanoid target."
+        ],
+        [
+          "YOURWTP04",
+          "innate",
+          0,
+          "Abjuration",
+          "Mental Fortress",
+          "Psionic shield protects from mind attacks."
+        ],
+        [
+          "YOURWTP05",
+          "innate",
+          0,
+          "Alteration",
+          "Psychic Crush",
+          "Deals massive psionic damage to one target."
+        ],
+        [
+          "YOURWTP06",
+          "innate",
+          0,
+          "Alteration",
+          "Telekinesis",
+          "Move objects and creatures with psionic power."
+        ]
+      ]
+    },
+    "2": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWTP01",
+          "innate",
+          0,
+          "Enchantment",
+          "Mind Blast",
+          "Psionic cone stuns enemies for 1d4 rounds."
+        ],
+        [
+          "YOURWTP02",
+          "innate",
+          0,
+          "Divination",
+          "Clairsentience",
+          "Psionic detection reveals hidden enemies."
+        ],
+        [
+          "YOURWTP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Dominate Mind",
+          "Psionically dominate a humanoid target."
+        ],
+        [
+          "YOURWTP04",
+          "innate",
+          0,
+          "Abjuration",
+          "Mental Fortress",
+          "Psionic shield protects from mind attacks."
+        ],
+        [
+          "YOURWTP05",
+          "innate",
+          0,
+          "Alteration",
+          "Psychic Crush",
+          "Deals massive psionic damage to one target."
+        ],
+        [
+          "YOURWTP06",
+          "innate",
+          0,
+          "Alteration",
+          "Telekinesis",
+          "Move objects and creatures with psionic power."
+        ]
+      ]
+    },
+    "3": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWTP01",
+          "innate",
+          0,
+          "Enchantment",
+          "Mind Blast",
+          "Psionic cone stuns enemies for 1d4 rounds."
+        ],
+        [
+          "YOURWTP02",
+          "innate",
+          0,
+          "Divination",
+          "Clairsentience",
+          "Psionic detection reveals hidden enemies."
+        ],
+        [
+          "YOURWTP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Dominate Mind",
+          "Psionically dominate a humanoid target."
+        ],
+        [
+          "YOURWTP04",
+          "innate",
+          0,
+          "Abjuration",
+          "Mental Fortress",
+          "Psionic shield protects from mind attacks."
+        ],
+        [
+          "YOURWTP05",
+          "innate",
+          0,
+          "Alteration",
+          "Psychic Crush",
+          "Deals massive psionic damage to one target."
+        ],
+        [
+          "YOURWTP06",
+          "innate",
+          0,
+          "Alteration",
+          "Telekinesis",
+          "Move objects and creatures with psionic power."
+        ]
+      ]
+    },
+    "4": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURWTP01",
+          "innate",
+          0,
+          "Enchantment",
+          "Mind Blast",
+          "Psionic cone stuns enemies for 1d4 rounds."
+        ],
+        [
+          "YOURWTP02",
+          "innate",
+          0,
+          "Divination",
+          "Clairsentience",
+          "Psionic detection reveals hidden enemies."
+        ],
+        [
+          "YOURWTP03",
+          "innate",
+          0,
+          "Enchantment",
+          "Dominate Mind",
+          "Psionically dominate a humanoid target."
+        ],
+        [
+          "YOURWTP04",
+          "innate",
+          0,
+          "Abjuration",
+          "Mental Fortress",
+          "Psionic shield protects from mind attacks."
+        ],
+        [
+          "YOURWTP05",
+          "innate",
+          0,
+          "Alteration",
+          "Psychic Crush",
+          "Deals massive psionic damage to one target."
+        ],
+        [
+          "YOURWTP06",
+          "innate",
+          0,
+          "Alteration",
+          "Telekinesis",
+          "Move objects and creatures with psionic power."
+        ]
+      ]
+    }
+  },
+  "kitAbilities": {
+    "0": {
+      "PSIONICIST_ROGUEPSION_1": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "PSP system: 15 base, +5/level (to lv20), +2/level after. Devotions (4 PSP), Sciences (10), High Sciences (20). 2 new powers per level (fastest learner)."
+          },
+          {
+            "n": "Backstab",
+            "type": "backstab",
+            "desc": "Capped at x2"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 disciplines: Clairsentience, Psychokinesis, Psychometabolism, Psychoportation, Telepathy. Starts with 1 devotion from each.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic",
+          "items": "d4 HP. 15 skill pts/level. No Pick Pockets or Set Traps. Max 1 pip in weapons. Converts to Thief/Cleric multi. Requires CON 9, INT 12, WIS 9."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "note": "Chargen menu kit, converts to Thief/Cleric multi",
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Menu kit; converts to Cleric/Thief multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "PSP-based psionic system. 2 new powers per level (fastest learner)."
+        },
+        "statBonus": {
+          "note": "Requires CON 9, INT 12, WIS 9. d4 HP."
+        }
+      },
+      "PSIONICIST_ROGUEPSION_2": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "Same as Psionicist (chargen variant). Rogue/Psion multiclass."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/THIEF"
+        ],
+        "hlaPool": {
+          "class": "CLERIC",
+          "note": "Cleric/Thief multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "PSP-based psionic system."
+        },
+        "statBonus": {
+          "note": "Standard cleric/thief multi HP (d4/d6 average)."
+        }
+      }
+    },
+    "1": {
+      "SOULBLADE_FIGHTERPSION_1": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "PSP system. 2 powers at even levels, 1 at odd (through lv14), then 1/level."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "medium (leather + chain, no plate)",
+          "alignment": "Not chaotic",
+          "items": "d6 HP. Max 2 pips weapons, 3 in Two-Weapon. Converts to Fighter/Cleric multi. Can wear Elven Chain."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "MAGE"
+        ],
+        "allowedMulticlass": [],
+        "note": "Chargen menu kit, converts to Fighter/Cleric multi",
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Menu kit; converts to Fighter/Cleric multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "PSP-based psionic system. Can wear Elven Chain."
+        },
+        "statBonus": {
+          "note": "Requires CON 9, INT 12, WIS 9. d6 HP."
+        }
+      },
+      "SOULBLADE_FIGHTERPSION_2": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "Same as Soulblade (chargen variant). Fighter/Psion multiclass."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "medium (no plate)",
+          "alignment": "Not chaotic"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/CLERIC"
+        ],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Fighter/Cleric multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "PSP-based psionic system."
+        },
+        "statBonus": {
+          "note": "Fighter/Cleric multi HP."
+        }
+      }
+    },
+    "2": {
+      "PSYPHER_RANGERPSION_1": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "PSP system. Same learning rate as Soulblade."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic",
+          "noSpells": true,
+          "items": "d6 HP. No ranger spells. Max 2 pips, 3 in Two-Weapon. Converts to Ranger/Cleric multi. Can wear Elven Chain."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "note": "Chargen menu kit, converts to Ranger/Cleric multi",
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Menu kit; converts to Ranger/Cleric multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "noPriestSpells": true,
+          "note": "No ranger spells. PSP-based psionic system instead."
+        },
+        "statBonus": {
+          "note": "Requires CON 9, INT 12, WIS 9. d6 HP. No ranger alignment fall."
+        }
+      },
+      "PSYPHER_RANGERPSION_2": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "Same as Psypher (chargen variant). Ranger/Psion multiclass."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic",
+          "noSpells": true
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "RANGER/CLERIC"
+        ],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Ranger/Cleric multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "noPriestSpells": true,
+          "note": "No ranger spells. Uses PSP psionic system."
+        },
+        "statBonus": {
+          "note": "Ranger/Cleric multi HP."
+        }
+      }
+    },
+    "3": {
+      "CEREBREMANCER_MAGEPSION_1": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "PSP system. Same learning rate as Soulblade. Full Mage spellcasting retained."
+          },
+          {
+            "n": "Casting Interaction",
+            "type": "desc",
+            "desc": "Can cast arcane within 6s of psionics (+2 casting time). Cannot use psionics within 6s of casting."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines. Affinity for Enchantment/Telepathy.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic",
+          "items": "d4 HP. Max 1 pip. Limited weapons (no hammers/maces/flails/axes/katanas/bastard swords/2H/halberds/spears). Converts to Cleric/Mage multi."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "FIGHTER",
+          "CLERIC"
+        ],
+        "allowedMulticlass": [],
+        "note": "Chargen menu kit, converts to Cleric/Mage multi",
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Menu kit; converts to Cleric/Mage multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Full mage spellcasting retained + PSP psionic system. Cast within 6s of psionic: +2 casting time. No psionics within 6s of casting."
+        },
+        "statBonus": {
+          "note": "Requires CON 9, INT 12, WIS 9. d4 HP."
+        }
+      },
+      "CEREBREMANCER_MAGEPSION_2": {
+        "passive": [
+          {
+            "n": "Psionic Powers",
+            "type": "desc",
+            "desc": "Same as Cerebremancer (chargen variant). Mage/Psion multiclass with full arcane casting."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionics",
+            "freq": "PSP-based",
+            "effects": "5 psionic disciplines.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "armor": "leather only",
+          "alignment": "Not chaotic"
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "CLERIC/MAGE"
+        ],
+        "hlaPool": {
+          "class": "MAGE",
+          "note": "Cleric/Mage multi with psionic HLAs"
+        },
+        "spellRestrictions": {
+          "note": "Full mage spellcasting + psionics."
+        },
+        "statBonus": {
+          "note": "Cleric/Mage multi HP."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "PSIONICIST_ROGUEPSION_1",
+          "multi",
+          "Psionicist, rogue/psion #1",
+          "Rogue/Psion combining thief skills with psionic mental powers."
+        ],
+        [
+          "PSIONICIST_ROGUEPSION_2",
+          "multi",
+          "Psionicist, rogue/psion #2",
+          "Rogue/Psion variant with different psionic discipline focus."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "SOULBLADE_FIGHTERPSION_1",
+          "multi",
+          "Soulblade, fighter/psion #1",
+          "Fighter/Psion manifesting psychic weapons. Telekinetic strikes and mind blades."
+        ],
+        [
+          "SOULBLADE_FIGHTERPSION_2",
+          "multi",
+          "Soulblade, fighter/psion #2",
+          "Fighter/Psion variant with different psionic combat focus."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "PSYPHER_RANGERPSION_1",
+          "multi",
+          "Psypher, ranger/psion #1",
+          "Ranger/Psion combining wilderness skills with psionic tracking and telepathy."
+        ],
+        [
+          "PSYPHER_RANGERPSION_2",
+          "multi",
+          "Psypher, ranger/psion #2",
+          "Ranger/Psion variant with different psionic discipline focus."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "CEREBREMANCER_MAGEPSION_1",
+          "multi",
+          "Cerebremancer, mage/psion #1",
+          "Mage/Psion combining arcane spellcasting with psionic mental powers."
+        ],
+        [
+          "CEREBREMANCER_MAGEPSION_2",
+          "multi",
+          "Cerebremancer, mage/psion #2",
+          "Mage/Psion variant with different psionic and arcane focus."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/UnearthedArcana/Will_to_Power/releases/tag/2.3.3",
+  "a": "Subtledoctor",
+  "v": "2.13",
+  "sum": "A 2E-inspired psionics mod for BGEE/SoD/BG2EE/IWDEE",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "Will_to_Power"
+  },
+  "dl": "https://github.com/UnearthedArcana/Will_to_Power/releases/tag/2.3.3",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "Add the Psionicist, rogue/psion",
+      "tp2n": "Add the Psionicist, rogue/psion",
+      "pi": "D5_PSIONICS_PSIONICIST",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 200,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 200,
+      "k": 2,
+      "no": "Adds 2 multiclass psion kits: Rogue/Psion combinations. Adds 2 kit slots.",
+      "sp": 6,
+      "kC": {
+        "fighter": 2
+      }
+    },
+    {
+      "n": "Add the Soulblade, fighter/psion",
+      "tp2n": "Add the Soulblade, fighter/psion",
+      "pi": "D5_PSIONICS_SOULBLADE",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 300,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 300,
+      "k": 2,
+      "no": "Soulblade: fighter/psion hybrid kit. Melee combat enhanced with psionic abilities",
+      "sp": 6,
+      "kC": {
+        "fighter": 2
+      }
+    },
+    {
+      "n": "Add the Psypher, ranger/psion",
+      "tp2n": "Add the Psypher, ranger/psion",
+      "pi": "D5_PSIONICS_PSYPHER",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 400,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 400,
+      "k": 2,
+      "no": "Psypher: ranger/psion hybrid kit. Wilderness warrior with psionic powers",
+      "sp": 6,
+      "kC": {
+        "ranger": 2
+      }
+    },
+    {
+      "n": "Add the Cerebremancer, mage/psion",
+      "tp2n": "Add the Cerebremancer, mage/psion",
+      "pi": "D5_PSIONICS_CEREBREMANCER",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 500,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 500,
+      "ss": 4,
+      "k": 2,
+      "no": "Cerebremancer: mage/psion hybrid kit. Arcane magic combined with psionic abilities. INSTALLS WITH WARNINGS (non-fatal): 'no effects altered on ohbantim.spl' — SoD Banishment spell has no matching effects to patch.",
+      "sp": 6,
+      "kC": {
+        "mage": 2
+      },
+      "splstates": 2
+    },
+    {
+      "n": "Dark Sun Mode: Everyone Is a Wild Talent",
+      "tp2n": "Dark Sun Mode: Everyone Is a Wild Talent",
+      "pi": "D5_PSIONICS_DARK_SUN_MODE",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 900,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 900,
+      "no": "All characters can roll for wild talent psionic powers. Requires at least one psionic kit (cn:200-500) installed first",
+      "sp": 6
+    },
+    {
+      "n": "Allow Multiclass Clerics to Use More Weapons",
+      "tp2n": "Allow Multiclass Clerics to Use More Weapons",
+      "pi": "D5_CLERICS_USE_ALL_WEAPONS",
+      "wf": "Will_to_Power",
+      "wp": "Will_to_Power\\WILL_TO_POWER.TP2",
+      "wc": 950,
+      "wq": "norm_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 950,
+      "no": "Removes blunt-only restriction from multiclass clerics. FORBID with F&P #75 (Weapon/Armor Usability)"
+    }
+  ]
+}

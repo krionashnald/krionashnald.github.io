@@ -1,0 +1,807 @@
+{
+  "i": 420,
+  "t": "zgtweaks",
+  "sv": 1,
+  "pfx": "ZG",
+  "ord": 190,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "ZG Tweaks",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "fr": 2
+  },
+  "no": "Various tweaks by Graion Dilach. Economy adjustments (gold, jewellery, merchant prices, ammo stacks), scroll distribution, creature artwork, utility features. Most groups are pick-one alternatives.",
+  "_legacy_ids": [
+    679
+  ],
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both modify mxsplwis.2da WIS bonus spell table",
+      "myComps": "#100 Mixed PnP-BG WIS bonus spells",
+      "theirComps": "#2580 #2581 WIS Bonus Spells",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Both modify mxsplwis.2da. Last installed wins. Install HT before ZG.",
+      "myComps": "#100 Mixed PnP-BG WIS bonus spells",
+      "theirComps": "#12 INT/WIS/CHA-based Bonus Spell Slots",
+      "orderOnly": true,
+      "source": "Original note had wrong HT cn:7 (APR); actual WIS component is cn:12, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "SubtleD_Stat_Overhauls",
+      "withId": 248,
+      "severity": "soft",
+      "reason": "Both modify bonus spell slot tables",
+      "myComps": "#100 Mixed PnP-BG WIS bonus spells",
+      "theirComps": "#110 Stat-based Bonus Spell Slots #121 #122 5E Caster Bonus"
+    },
+    {
+      "with": "iwdification",
+      "withId": 292,
+      "severity": "soft",
+      "reason": "ZGT cn:101 grants ranger spell slots to Cleric-Ranger multiclass via CLAB. Only interacts with IWDification cn:170 (Ranger Spell Progression) which replaces mxsplran.2da. IWDification cn:170 No conflict.",
+      "myComps": "#101 Ranger spells for Cleric-Ranger",
+      "theirComps": "#170 Ranger Spell Progression (NOT in Ultimate preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "Bart_Tweaks",
+      "withId": 405,
+      "severity": "soft",
+      "reason": "Both overwrite mxsplwis.2da (WIS bonus spell table). Last installed wins.",
+      "myComps": "#100 Mixed PnP-BG WIS bonus spells",
+      "theirComps": "#3030 Alternative Wisdom Bonus Spells",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/GraionDilach/RandomGraionTweaks/releases",
+  "a": "GraionDilach",
+  "v": "1.17",
+  "sum": "Various tweaks presented by Graion Dilach for games on the Infinity Engine.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "GraionDilach",
+    "r": "RandomGraionTweaks"
+  },
+  "dl": "https://github.com/GraionDilach/RandomGraionTweaks/releases",
+  "au": "Graion Dilach",
+  "co": [
+    {
+      "n": "Add random arcane spell scrolls to arcane casters of their highest memorized level",
+      "tp2n": "Add random arcane spell scrolls to arcane casters of their highest memorized level",
+      "pi": "ZG-SCROLLS-FOR-MAGES",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 10,
+      "g": "zg_arcane_scrolls_arcane"
+    },
+    {
+      "n": "Add random arcane spell scrolls to arcane casters of their highest memorized level - 4",
+      "tp2n": "Add random arcane spell scrolls to arcane casters of their highest memorized level - 4",
+      "pi": "ZG-LOWLVL-SCROLLS-FOR-HIGHLVL-MAGES",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 11,
+      "g": "zg_arcane_scrolls_arcane"
+    },
+    {
+      "n": "Add random arcane spell scrolls to arcane casters up until their highest memorized level",
+      "tp2n": "Add random arcane spell scrolls to arcane casters up until their highest memorized level",
+      "pi": "ZG-RANDOM-SCROLLS-FOR-MAGES",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 12,
+      "g": "zg_arcane_scrolls_arcane"
+    },
+    {
+      "n": "Add random arcane spell scrolls to arcane casters up until their highest memorized level - 4",
+      "tp2n": "Add random arcane spell scrolls to arcane casters up until their highest memorized level - 4",
+      "pi": "ZG-RANDOM-LOWLVL-SCROLLS-FOR-HIGHLVL-MAGES",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 13,
+      "g": "zg_arcane_scrolls_arcane"
+    },
+    {
+      "n": "Add random arcane spell scrolls to divine casters of their highest memorized level",
+      "tp2n": "Add random arcane spell scrolls to divine casters of their highest memorized level",
+      "pi": "ZG-SCROLLS-FOR-CLERICS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 20,
+      "g": "zg_arcane_scrolls_divine"
+    },
+    {
+      "n": "Add random arcane spell scrolls to divine casters of their highest memorized level - 4",
+      "tp2n": "Add random arcane spell scrolls to divine casters of their highest memorized level - 4",
+      "pi": "ZG-LOWLVL-SCROLLS-FOR-HIGHLVL-CLERICS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 21,
+      "g": "zg_arcane_scrolls_divine"
+    },
+    {
+      "n": "Add random arcane spell scrolls to divine casters up until their highest memorized level",
+      "tp2n": "Add random arcane spell scrolls to divine casters up until their highest memorized level",
+      "pi": "ZG-RANDOM-SCROLLS-FOR-CLERICS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 22,
+      "g": "zg_arcane_scrolls_divine"
+    },
+    {
+      "n": "Add random arcane spell scrolls to divine casters up until their highest memorized level - 4",
+      "tp2n": "Add random arcane spell scrolls to divine casters up until their highest memorized level - 4",
+      "pi": "ZG-RANDOM-LOWLVL-SCROLLS-FOR-HIGHLVL-CLERICS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 23,
+      "g": "zg_arcane_scrolls_divine"
+    },
+    {
+      "n": "Replace nondroppable magic arrow clones -> Do not change amounts",
+      "tp2n": "Do not change amounts in affected stacks",
+      "no": "v Replace nondroppable magic arrow clones with droppable counterparts not tested with IR",
+      "pi": "ZG-DROP-MAGIC-ARROWS-100",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 31,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Decrease affected arrow stacks to 75%",
+      "tp2n": "Decrease affected arrow stacks to 75%",
+      "pi": "ZG-DROP-MAGIC-ARROWS-75",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 32,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Decrease affected arrow stacks to 66%",
+      "tp2n": "Decrease affected arrow stacks to 66%",
+      "pi": "ZG-DROP-MAGIC-ARROWS-66",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 33,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Decrease affected arrow stacks to 50%",
+      "tp2n": "Decrease affected arrow stacks to 50%",
+      "pi": "ZG-DROP-MAGIC-ARROWS-50",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 34,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Decrease affected arrow stacks to 33%",
+      "tp2n": "Decrease affected arrow stacks to 33%",
+      "pi": "ZG-DROP-MAGIC-ARROWS-33",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 35,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Decrease affected arrow stacks to 25%",
+      "tp2n": "Decrease affected arrow stacks to 25%",
+      "pi": "ZG-DROP-MAGIC-ARROWS-25",
+      "scn": "Replace nondroppable magic arrow clones with droppable counterparts",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 36,
+      "g": "zg_arrow_stacks"
+    },
+    {
+      "n": "Change gold carried by creatures -> Increase to 200%",
+      "tp2n": "Increase to 200%",
+      "no": "v Change the amount of gold carried by creatures",
+      "pi": "ZG-GRAION-GOLD-200",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 41,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "pi": "ZG-GRAION-GOLD-150",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 42,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 83%",
+      "tp2n": "Decrease to 83%",
+      "pi": "ZG-GRAION-GOLD-83",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 43,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 75%",
+      "tp2n": "Decrease to 75%",
+      "pi": "ZG-GRAION-GOLD-75",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 44,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 66%",
+      "tp2n": "Decrease to 66%",
+      "pi": "ZG-GRAION-GOLD-66",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 45,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "pi": "ZG-GRAION-GOLD-50",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 46,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 33%",
+      "tp2n": "Decrease to 33%",
+      "pi": "ZG-GRAION-GOLD-33",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 47,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change gold carried by creatures -> Decrease to 25%",
+      "tp2n": "Decrease to 25%",
+      "pi": "ZG-GRAION-GOLD-25",
+      "scn": "Change the amount of gold carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 48,
+      "g": "zg_gold_carried"
+    },
+    {
+      "n": "Change jewellery value -> Increase to 200%",
+      "tp2n": "Increase to 200%",
+      "no": "Modifies standard jewellery values. Similar to ZSTweaks cn:3 (Make jewelry more valuable) but ZGT offers decrease options too.",
+      "pi": "ZG-GRAION-GEMS-200",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 51,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "pi": "ZG-GRAION-GEMS-150",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 52,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 83%",
+      "tp2n": "Decrease to 83%",
+      "pi": "ZG-GRAION-GEMS-83",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 53,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 75%",
+      "tp2n": "Decrease to 75%",
+      "pi": "ZG-GRAION-GEMS-75",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 54,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 66%",
+      "tp2n": "Decrease to 66%",
+      "pi": "ZG-GRAION-GEMS-66",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 55,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "pi": "ZG-GRAION-GEMS-50",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 56,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 33%",
+      "tp2n": "Decrease to 33%",
+      "pi": "ZG-GRAION-GEMS-33",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 57,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Change jewellery value -> Decrease to 25%",
+      "tp2n": "Decrease to 25%",
+      "pi": "ZG-GRAION-GEMS-25",
+      "scn": "Change the value of standard jewellery (does not affect amulets/rings with magical effects/abilities)",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 58,
+      "g": "zg_jewellery_value"
+    },
+    {
+      "n": "Merchant demand price -> Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "no": "v Change the percentage of the money merchants demand for an item",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-50",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 61,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 125%",
+      "tp2n": "Increase to 125%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-125",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 62,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 133%",
+      "tp2n": "Increase to 133%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-133",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 63,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-150",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 64,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 175%",
+      "tp2n": "Increase to 175%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-175",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 65,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 200%",
+      "tp2n": "Increase to 200%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-200",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 66,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 300%",
+      "tp2n": "Increase to 300%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-300",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 67,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 400%",
+      "tp2n": "Increase to 400%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-400",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 68,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant demand price -> Increase to 500%",
+      "tp2n": "Increase to 500%",
+      "pi": "ZG-GRAION-STORES-TOPLAYERS-500",
+      "scn": "Change the percentage of the money merchants demand for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 69,
+      "g": "zg_merchant_demand"
+    },
+    {
+      "n": "Merchant sell price -> Increase to 200%",
+      "tp2n": "Increase to 200%",
+      "no": "v Change the percentage of the money merchants pay for an item",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-200",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 71,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Increase to 150%",
+      "tp2n": "Increase to 150%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-150",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 72,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 83%",
+      "tp2n": "Decrease to 83%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-83",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 73,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 75%",
+      "tp2n": "Decrease to 75%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-75",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 74,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 66%",
+      "tp2n": "Decrease to 66%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-66",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 75,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 50%",
+      "tp2n": "Decrease to 50%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-50",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 76,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 33%",
+      "tp2n": "Decrease to 33%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-33",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 77,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Merchant sell price -> Decrease to 25%",
+      "tp2n": "Decrease to 25%",
+      "pi": "ZG-GRAION-STORES-FROMPLAYERS-25",
+      "scn": "Change the percentage of the money merchants pay for an item",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 78,
+      "g": "zg_merchant_pay"
+    },
+    {
+      "n": "Change common ammo amount -> Increase to 150%",
+      "tp2n": "Increase affected stacks to 150%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 81
+    },
+    {
+      "n": "Change common ammo amount -> Decrease to 75%",
+      "tp2n": "Decrease affected stacks to 75%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 82
+    },
+    {
+      "n": "Change common ammo amount -> Decrease to 66%",
+      "tp2n": "Decrease affected stacks to 66%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 83
+    },
+    {
+      "n": "Change common ammo amount -> Decrease to 50%",
+      "tp2n": "Decrease affected stacks to 50%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 84
+    },
+    {
+      "n": "Change common ammo amount -> Decrease to 33%",
+      "tp2n": "Decrease affected stacks to 33%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 85
+    },
+    {
+      "n": "Change common ammo amount -> Decrease to 25%",
+      "tp2n": "Decrease affected stacks to 25%",
+      "g": "common_ammo",
+      "scn": "Change the nonmagical common ammunition amount carried by creatures",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "cn": 86
+    },
+    {
+      "n": "Mixed PnP-BG wisdom-based bonus spells table",
+      "tp2n": "Mixed PnP-BG wisdom-based bonus spells table",
+      "pi": "ZG-BOBW-WISDOM-TABLE",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 100,
+      "no": "Overwrites mxsplwis.2da with mixed PnP-BG wisdom bonus spells table. Hard COPY — no mod detection. Conflicts with cdtweaks, HouseTweaks, SubtleD Stat Overhauls, Bart_Tweaks cn:3030."
+    },
+    {
+      "n": "Grant Ranger spell slots to Cleric-Ranger multiclasses",
+      "tp2n": "Grant Ranger spell slots to Cleric-Ranger multiclasses",
+      "no": "Grants ranger spell slots to Cleric-Ranger multiclass via CLAB modification. Install after any mod that changes ranger spell progression (mxsplran.2da).",
+      "pi": "ZG-MULTICLASS-RANGER-SLOTS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 101
+    },
+    {
+      "n": "Change Worgs to use IWD2 artwork",
+      "tp2n": "Change Worgs to use IWD2 artwork",
+      "no": "Replaces worg creature animations with IWD2 artwork. Cosmetic only.",
+      "pi": "ZG-IWD2-WORGS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 1000
+    },
+    {
+      "n": "Change Planetars to use their SoD solar- based artwork",
+      "tp2n": "Change Planetars to use their SoD solar-based artwork",
+      "pi": "ZG-SOD-PLANETARS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 1001
+    },
+    {
+      "n": "Use NWN Basilisk artwork from Infinity Animations for Made in Heaven Dracolisk",
+      "tp2n": "Use NWN Basilisk artwork from Infinity Animations for Made in Heaven Dracolisk",
+      "pi": "ZG-MIH-DRACOLISKS-2-NWN-BASIS",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 1002
+    },
+    {
+      "n": "Equip items from inventory to fill empty slots",
+      "tp2n": "Equip items from inventory to fill empty slots",
+      "pi": "ZG-EQUIP-WHAT-I-CAN",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 9999
+    },
+    {
+      "n": "Bag of Spilling (move bugged supposed-to- be-available items to a bag in the creature's inventory)",
+      "tp2n": "Bag of Spilling (move bugged supposed-to-be-available items to a bag in the creature's inventory)",
+      "pi": "ZG-BAG-OF-SPILLING",
+      "wf": "zgtweaks",
+      "wp": "zgtweaks\\zgtweaks.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "ca",
+        "eet",
+        "iwd_in_bg2",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 10000
+    }
+  ]
+}

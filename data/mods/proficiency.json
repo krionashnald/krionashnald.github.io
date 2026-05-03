@@ -1,0 +1,587 @@
+{
+  "i": 812,
+  "t": "proficiency",
+  "sv": 1,
+  "ord": 750,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Proficiencies",
+  "langs": {
+    "en": 0
+  },
+  "u": "https://github.com/Grammarsalad/Proficiencies",
+  "a": "Grammarsalad",
+  "sum": "This mod aims to extend the skill system in Infinity Engine games, allowing characters to do new things like heal wounds, stun enemies with blunt weapons, cause hemorrhaging with blades and more.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "au": "Grammarsalad",
+  "dl": "https://github.com/Grammarsalad/Proficiencies",
+  "no": "Extends the skill/proficiency system with non-weapon proficiencies, attribute-based bonuses, class skills, and more. Many components require EEex. Choose-one groups for NWP system, attribute bonuses (Int/Wis/Cha), turning variants, class skills, and fatigue options. EE games only.",
+  "co": [
+    {
+      "n": "Weapon proficiency menu and all skills",
+      "cn": 101,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 101,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Weapon proficiency menu",
+      "cn": 102,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 102,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Dialog: Automatic Assignment (EEex recommended)",
+      "cn": 103,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 103,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Dialog: Player Selection (EEex recommended)",
+      "cn": 104,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 104,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Skills as proficiencies: Automatic Assignment (EEex required)",
+      "cn": 105,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 105,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Skills as proficiencies: Player Assignment (EEex required)",
+      "cn": 106,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 106,
+      "wq": "verified",
+      "g": "Non-Weapon Proficiencies"
+    },
+    {
+      "n": "Intelligence: PnP illusion immunity",
+      "cn": 201,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 201,
+      "wq": "verified",
+      "g": "Attributes: Intelligence"
+    },
+    {
+      "n": "Wisdom: Magic defense adjustment for high wis",
+      "cn": 301,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 301,
+      "wq": "verified",
+      "g": "Attributes: Wisdom"
+    },
+    {
+      "n": "Charisma: Spell Power for high cha (all classes)",
+      "cn": 401,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 401,
+      "wq": "verified",
+      "g": "Spell Power: Charisma"
+    },
+    {
+      "n": "Charisma: Spell Power for high cha (bards and sorcerers only)",
+      "cn": 402,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 402,
+      "wq": "verified",
+      "g": "Spell Power: Charisma"
+    },
+    {
+      "n": "Charisma: Spell Power for high cha (sorcerers only)",
+      "cn": 403,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 403,
+      "wq": "verified",
+      "g": "Spell Power: Charisma"
+    },
+    {
+      "n": "Charisma: Spell Power for high cha (bards only)",
+      "cn": 403,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 403,
+      "wq": "verified",
+      "g": "Spell Power: Charisma"
+    },
+    {
+      "n": "Variant Turning: Channel Energy",
+      "cn": 501,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 501,
+      "wq": "verified",
+      "g": "Variant Turning (requires EEex)"
+    },
+    {
+      "n": "Druid Turning: Turn or Control Beasts",
+      "cn": 551,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 551,
+      "wq": "verified",
+      "g": "Druid Turning (requires EEex)"
+    },
+    {
+      "n": "All Priests and Paladins: Turn bonus by charisma",
+      "cn": 1401,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 1401,
+      "wq": "verified",
+      "g": "Turn bonus by charisma"
+    },
+    {
+      "n": "Clerics only: Turn bonus by charisma",
+      "cn": 1402,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 1402,
+      "wq": "verified",
+      "g": "Turn bonus by charisma"
+    },
+    {
+      "n": "Paladins only: Turn bonus by charisma",
+      "cn": 1403,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 1403,
+      "wq": "verified",
+      "g": "Turn bonus by charisma"
+    },
+    {
+      "n": "Variant Attribute Bonuses for base skills.",
+      "cn": 1501,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 1501,
+      "wq": "verified"
+    },
+    {
+      "n": "Appraisal (requires EEex)",
+      "cn": 2101,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2101,
+      "wq": "verified"
+    },
+    {
+      "n": "Play Instrument- Bard Only",
+      "cn": 2111,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2111,
+      "wq": "verified",
+      "g": "Class Skills - Play Instrument (requires EEex)"
+    },
+    {
+      "n": "Play Instrument - Rogues only",
+      "cn": 2112,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2112,
+      "wq": "verified",
+      "g": "Class Skills - Play Instrument (requires EEex)"
+    },
+    {
+      "n": "Use Scroll - 10th level (requires EEex)",
+      "cn": 2121,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2121,
+      "wq": "verified",
+      "g": "Class Skills - Use Scroll"
+    },
+    {
+      "n": "Use Scroll - No Restrictions (requires EEex)",
+      "cn": 2122,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2122,
+      "wq": "verified",
+      "g": "Class Skills - Use Scroll"
+    },
+    {
+      "n": "Use Scroll - Pseudo-skill",
+      "cn": 2123,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2123,
+      "wq": "verified",
+      "g": "Class Skills - Use Scroll"
+    },
+    {
+      "n": "Sense Evil Presence - Paladins (not blackguards) Only",
+      "cn": 2141,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2141,
+      "wq": "verified",
+      "g": "Class Skills - Sense Evil Presence"
+    },
+    {
+      "n": "Sense Evil Presence - Paladins (not blackguards) and monks Only",
+      "cn": 2142,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2142,
+      "wq": "verified",
+      "g": "Class Skills - Sense Evil Presence"
+    },
+    {
+      "n": "Sense Evil Presence - Paladins, Barbarians, and Wizard Slayers only",
+      "cn": 2143,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2143,
+      "wq": "verified",
+      "g": "Class Skills - Sense Evil Presence"
+    },
+    {
+      "n": "Sense Evil Presence - Paladins (not blackguards), monks, barbarians, and wizard slayers only",
+      "cn": 2144,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2144,
+      "wq": "verified",
+      "g": "Class Skills - Sense Evil Presence"
+    },
+    {
+      "n": "Fletch - Ranger Only",
+      "cn": 2151,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2151,
+      "wq": "verified",
+      "g": "Class Skills - Fletch (requires EEex)"
+    },
+    {
+      "n": "Fletch - Rangers, base fighters and barbarians only",
+      "cn": 2152,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 2152,
+      "wq": "verified",
+      "g": "Class Skills - Fletch (requires EEex)"
+    },
+    {
+      "n": "Everybody Can Search (EEex recommended)",
+      "cn": 3001,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3001,
+      "wq": "verified"
+    },
+    {
+      "n": "Lock Pick: Bard Only",
+      "cn": 3101,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3101,
+      "wq": "verified",
+      "g": "Lock Pick"
+    },
+    {
+      "n": "Lock Pick: Monk Only",
+      "cn": 3102,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3102,
+      "wq": "verified",
+      "g": "Lock Pick"
+    },
+    {
+      "n": "Lock Pick: Monks and Bards Only",
+      "cn": 3102,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3102,
+      "wq": "verified",
+      "g": "Lock Pick"
+    },
+    {
+      "n": "Set Natural Snares: Barbarian Only",
+      "cn": 3201,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3201,
+      "wq": "verified",
+      "g": "Set Natural Snares"
+    },
+    {
+      "n": "Set Natural Snares: Rangers Only",
+      "cn": 3202,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3202,
+      "wq": "verified",
+      "g": "Set Natural Snares"
+    },
+    {
+      "n": "Set Natural Snares: Ranger, and Barbarian Only",
+      "cn": 3203,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3203,
+      "wq": "verified",
+      "g": "Set Natural Snares"
+    },
+    {
+      "n": "Hide outdoors: Barbarian only (EEex recommended)",
+      "cn": 3301,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3301,
+      "wq": "verified",
+      "g": "Hide outdoors"
+    },
+    {
+      "n": "Hide outdoors: Rangers only",
+      "cn": 3302,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3302,
+      "wq": "verified",
+      "g": "Hide outdoors"
+    },
+    {
+      "n": "Hide outdoors: Barbarian and Ranger only (EEex recommended)",
+      "cn": 3303,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 3303,
+      "wq": "verified",
+      "g": "Hide outdoors"
+    },
+    {
+      "n": "Craft Scroll Skill: Custom Version One (requires EEex)",
+      "cn": 4001,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 4001,
+      "wq": "verified",
+      "g": "Magic Item Creation - Craft Scroll"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Bard Requirement: 14",
+      "cn": 6001,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6001,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Bard Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Bard Requirement: 13",
+      "cn": 6002,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6002,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Bard Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Bard Requirement: 12",
+      "cn": 6003,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6003,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Bard Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Bard Requirement: 9",
+      "cn": 6004,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6004,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Bard Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Bard Requirement: No requirement",
+      "cn": 6005,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6005,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Bard Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Druid Requirement: 14",
+      "cn": 6011,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6011,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Druid Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Druid Requirement: 13",
+      "cn": 6012,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6012,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Druid Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Druid Requirement: 12",
+      "cn": 6013,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6013,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Druid Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Druid Requirement: 9",
+      "cn": 6014,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6014,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Druid Requirement"
+    },
+    {
+      "n": "Attributes: Charisma: Reduce Druid Requirement: No requirement",
+      "cn": 6015,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6015,
+      "wq": "verified",
+      "g": "Attributes: Charisma: Reduce Druid Requirement"
+    },
+    {
+      "n": "Custom Scroll Limits",
+      "cn": 6021,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6021,
+      "wq": "verified",
+      "g": "Scroll Use Limitations"
+    },
+    {
+      "n": "PnP Scroll Limits",
+      "cn": 6022,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6022,
+      "wq": "verified",
+      "g": "Scroll Use Limitations"
+    },
+    {
+      "n": "Combined Scroll Limits",
+      "cn": 6023,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6023,
+      "wq": "verified",
+      "g": "Scroll Use Limitations"
+    },
+    {
+      "n": "Performance Fatigue: Bard Song Fatigue",
+      "cn": 6031,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6031,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Performance Fatigue: Shaman Dance Fatigue",
+      "cn": 6032,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6032,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Performance Fatigue: Bard Song and Shaman Dance Fatigue",
+      "cn": 6033,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6033,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Berserker Enrage Fatigue",
+      "cn": 6034,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6034,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Barbarian Rage Fatigue",
+      "cn": 6035,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6035,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Zealot Frenzy Fatigue",
+      "cn": 6036,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6036,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Barbarian Rage, Berserker Enrage, and (possibly) Zealot Frenzy Fatigue",
+      "cn": 6037,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6037,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    },
+    {
+      "n": "Everybody gets Fatigued",
+      "cn": 6038,
+      "wf": "proficiency",
+      "wp": "proficiency\\SetUp-proficiency.tp2",
+      "wc": 6038,
+      "wq": "verified",
+      "g": "Performance Fatigue"
+    }
+  ],
+  "gh": {
+    "o": "Grammarsalad",
+    "r": "Proficiencies"
+  }
+}

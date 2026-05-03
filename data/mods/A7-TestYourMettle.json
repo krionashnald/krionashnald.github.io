@@ -1,0 +1,114 @@
+{
+  "i": 79,
+  "t": "A7-TestYourMettle",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 170,
+  "c": "QUEST MODS BG2",
+  "n": "Test Your Mettle!",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "fr": 3,
+    "zh-cn": 4
+  },
+  "no": "BG2 combat challenge mod with 6 arena-style encounters that test your tactical skills. Includes unique rewards for completing challenges.",
+  "conflicts": [
+    {
+      "with": "EET_Tweaks",
+      "withId": 246,
+      "severity": "soft",
+      "reason": "Both modify creature kill XP handling; choose one approach to XP reduction",
+      "myComps": "#11 / #12 / #13 / #14 Reduced XP for killing monsters",
+      "theirComps": "#2080 Party XP for killing creatures distributed individually"
+    }
+  ],
+  "u": "https://github.com/Argent77/A7-TestYourMettle/releases",
+  "a": "Argent77",
+  "v": "1.6",
+  "sum": "BG2 combat challenge mod with 6 arena-style encounters that test your tactical skills. Includes unique rewards for completing challenges.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-TestYourMettle"
+  },
+  "dl": "https://github.com/Argent77/A7-TestYourMettle/releases",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Test Your Mettle!",
+      "tp2n": "Test Your Mettle!",
+      "pi": "A7-TESTYOURMETTLE-MAIN",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 0
+    },
+    {
+      "n": "Reduce by 50%",
+      "tp2n": "Reduce by 50%",
+      "no": "v Reduced XP for killing monsters. Components 11-14 are mutually exclusive - only select ONE.",
+      "pi": "A7-TESTYOURMETTLE-REDUCE_XP_BY_50",
+      "scn": "Reduced experience for killing monsters",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wq": "verified",
+      "cn": 11
+    },
+    {
+      "n": "Reduce by 75% (recommended)",
+      "tp2n": "Reduce by 75% (recommended)",
+      "pi": "A7-TESTYOURMETTLE-REDUCE_XP_BY_75",
+      "scn": "Reduced experience for killing monsters",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wq": "verified",
+      "cn": 12
+    },
+    {
+      "n": "Reduce by 90%",
+      "tp2n": "Reduce by 90%",
+      "pi": "A7-TESTYOURMETTLE-REDUCE_XP_BY_90",
+      "scn": "Reduced experience for killing monsters",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wq": "verified",
+      "cn": 13
+    },
+    {
+      "n": "No experience",
+      "tp2n": "No experience",
+      "pi": "A7-TESTYOURMETTLE-REDUCE_XP_BY_100",
+      "scn": "Reduced experience for killing monsters",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wq": "verified",
+      "cn": 14
+    },
+    {
+      "n": "Make \"Spacewarp\" available to stores",
+      "tp2n": "Make \"Spacewarp\" available to stores",
+      "pi": "A7-TESTYOURMETTLE-SPACEWARP_IN_STORES",
+      "wf": "A7-TestYourMettle",
+      "wp": "A7-TestYourMettle\\A7-TestYourMettle.tp2",
+      "wc": 20,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 20
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "i": 154,
+  "t": "VampireTales",
+  "sv": 1,
+  "ord": 330,
+  "c": "NEW NPC MODS",
+  "n": "Vampire Tales",
+  "langs": {
+    "en": 0,
+    "es": 1,
+    "it": 2,
+    "fr": 3,
+    "ru": 4
+  },
+  "no": "Adds Miriam, a vampire thief NPC by Dark Raven. Components 1-3 are independent encounter/store improvements that work without the main NPC",
+  "conflicts": [],
+  "u": "https://github.com/The-Gate-Project/VampireTales",
+  "a": "Dark Raven",
+  "v": "v108",
+  "sum": "Miriam a vampire thief npc",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "VampireTales"
+  },
+  "au": "Dark Raven",
+  "dl": "https://github.com/The-Gate-Project/VampireTales",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "vt_miriam",
+          "portraits/vampiretales/miriam.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "co": [
+    {
+      "n": "Vampire Tales (Requires Throne of Bhaal)",
+      "pi": "Dark_Raven-Vampire_Tales_Main",
+      "wf": "vampiretales",
+      "wp": "vampiretales\\Setup-VampireTales.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "no": "Core component: adds Miriam, a vampire thief NPC. Required for the vampire storyline",
+      "tp2n": "Vampire Tales (Requires Throne of Bhaal)"
+    },
+    {
+      "n": "Improved Cult of the Unseeing Eye",
+      "cn": 1,
+      "wf": "VAMPIRETALES",
+      "wp": "VAMPIRETALES\\SETUP-VAMPIRETALES.TP2",
+      "wc": 1,
+      "no": "Improved Cult of the Unseeing Eye encounter. Independent of main NPC",
+      "rd": 0,
+      "gone": true
+    },
+    {
+      "n": "Improved Harper Fight",
+      "cn": 2,
+      "wf": "VAMPIRETALES",
+      "wp": "VAMPIRETALES\\SETUP-VAMPIRETALES.TP2",
+      "wc": 2,
+      "no": "Improved Harper Fight encounter. Independent of main NPC",
+      "rd": 0,
+      "gone": true
+    },
+    {
+      "n": "CoM Store 1",
+      "cn": 3,
+      "wf": "VAMPIRETALES",
+      "wp": "VAMPIRETALES\\SETUP-VAMPIRETALES.TP2",
+      "wc": 3,
+      "no": "CoM Store with new items. Independent of main NPC",
+      "rd": 0,
+      "gone": true
+    }
+  ],
+  "advisories": [
+    {
+      "with": "VampireWorld",
+      "withId": 702,
+      "severity": "soft",
+      "reason": "VampireWorld cn:18-20 reference Vampire Tales content (Miriam, Kali Cult). No tp2 enforcement — will install but content may be broken without Vampire Tales.",
+      "myComps": "#0 Vampire Tales",
+      "theirComps": "#18 Miriam portrait #19 Kali Cult #20 Kali portraits",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

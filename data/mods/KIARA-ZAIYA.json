@@ -1,0 +1,145 @@
+{
+  "i": 164,
+  "t": "kiara-zaiya",
+  "sv": 1,
+  "ord": 430,
+  "c": "NEW NPC MODS",
+  "n": "Kiara Zaiya",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "es": 2,
+    "de": 3,
+    "ru": 4
+  },
+  "no": "Two joinable NPCs: Zaiya (CG half-elf wild mage, found in slaver ship, Slums District — good/neutral PC only) and Kiara (NE human monk). Includes optional tougher encounters and monk HLA revisions.",
+  "conflicts": [
+    {
+      "with": "sword_and_fist",
+      "withId": 315,
+      "severity": "hard",
+      "reason": "Monk HLA revisions conflict",
+      "myComps": "#2 Alternate Monk HLAs",
+      "theirComps": "#1 Monk Remix",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "kiara",
+          "portraits/kiara_zaiya/kiara.png",
+          "bg2"
+        ],
+        [
+          "zaiya",
+          "portraits/kiara_zaiya/zaiya.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Spellhold-Studios/Kiara-Zaiya",
+  "a": "Alan M.C., Seifer, Jesara",
+  "sum": "This mod introduces two joinable NPCs, Zaiya and Kiara, to your game. Zaiya is a Chaotic Good half-elven wild mage, and Kiara is a Neutral Evil human monk. Zaiya can be found inside the slaver ship (Slums District) and will join your party only if your character is of either good or neutral alignment.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "Kiara-"
+  },
+  "au": "Alan M.C., Seifer and Jesara",
+  "dl": "https://github.com/SpellholdStudios/Kiara-Zaiya",
+  "co": [
+    {
+      "n": "Kiara-Zaiya for BG2 with vanilla sound sets",
+      "g": "main",
+      "scn": "Kiara-Zaiya for BG2",
+      "pi": "kiara-zaiya_main",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 0,
+      "no": "Installs both NPCs with standard BG2 sound sets.",
+      "tp2n": "Kiara-Zaiya for BG2 with vanilla sound sets"
+    },
+    {
+      "n": "Kiara-Zaiya for BG2 with custom sound sets (English only)",
+      "g": "main",
+      "scn": "Kiara-Zaiya for BG2",
+      "pi": "kiara-zaiya_main_cutom_soundsets",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 1,
+      "no": "Installs both NPCs with custom voice sets (English only).",
+      "tp2n": "Kiara-Zaiya for BG2 with custom sound sets (English only)"
+    },
+    {
+      "n": "Alternate Monk High level abilities by TG Maestro",
+      "pi": "kiara-zaiya_alternate_monk_hla",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 2,
+      "no": "Replaces default monk HLAs with alternate set.",
+      "tp2n": "Alternate Monk High level abilities by TG Maestro"
+    },
+    {
+      "n": "Original Amaralis battles in chapters 2 and 6",
+      "pi": "kiara-zaiya_tougher_amaralis",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 3,
+      "no": "Restores Amaralis battle encounters in chapters 2 and 6.",
+      "tp2n": "Original Amaralis battles"
+    },
+    {
+      "n": "Tougher Kiara vampire",
+      "pi": "kiara-zaiya_tougher_kiara_vampire",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 4,
+      "no": "Level 20 monk vampire Kiara with level drain and undead powers.",
+      "tp2n": "Tougher Kiara vampire"
+    },
+    {
+      "n": "Revised Suldalanessar",
+      "pi": "kiara-zaiya_revised_suldalanessar",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 5,
+      "tp2n": "Revised Suldalanessar"
+    },
+    {
+      "n": "Jao and party for SoA: another tough fight",
+      "pi": "kiara-zaiya_tougher_jao",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 6,
+      "no": "Adds a tough Jao encounter in Shadows of Amn.",
+      "tp2n": "Jao and party for SOA: another tough fight"
+    },
+    {
+      "n": "Tougher Irenicus at the Tree of Life",
+      "pi": "kiara-zaiya_tougher_irenicus_at_tree_of_life",
+      "wf": "KIARA-ZAIYA",
+      "wp": "KIARA-ZAIYA\\KIARA-ZAIYA.TP2",
+      "wq": "verified",
+      "cn": 7,
+      "no": "Tougher but still feasible Irenicus encounter at the Tree of Life.",
+      "tp2n": "Tougher Irenicus at the Tree of life"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "i": 149,
+  "t": "amber",
+  "sv": 1,
+  "pfx": "M#",
+  "ord": 280,
+  "c": "NEW NPC MODS",
+  "n": "Amber",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "es": 2,
+    "zh-cn": 3
+  },
+  "no": "Amber Not the greatest writing. No reason to install the multiplayer component if you'll play solo",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "partial",
+      "reason": "cdtweaks #3183 (Romance Cheats) creates dialogue stutter for Amber's romance. Only affects this specific component — skip Romance Cheats if using Amber.",
+      "myComps": "#0 Amber the NPC MOD",
+      "theirComps": "#3183 Romance Cheats",
+      "source": "Component-level conflict only. All other cdtweaks components are compatible with Amber, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "RJALI",
+      "withId": 631,
+      "severity": "partial",
+      "reason": "Install Amber before Rjali. Rjali comp #3 detects Amber via MOD_IS_INSTALLED and patches for multi-romance integration using DECOMPILE_AND_PATCH.",
+      "orderOnly": true,
+      "myComps": "#0 Amber the NPC MOD",
+      "theirComps": "#3 Rjali Romance Mod",
+      "source": "Rjali v12.5 multi.tpa checks MOD_IS_INSTALLED amber, patches M#Amber.bcs/dlg for multi-romance, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "amber",
+          "portraits/amber/m_amber.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/amber/",
+  "a": "Meira Erviälä & Ville Marttila, CamDawg",
+  "v": "v10",
+  "sum": "Adds Amber, a tiefling fighter/thief, as a joinable BG2 NPC with romance, personal quests, and extensive banters.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v5",
+    "place": "post"
+  },
+  "au": "Meira Erviälä & Ville Marttila AKA Darios",
+  "dl": "https://www.gibberlings3.net/mods/npcs/amber/",
+  "co": [
+    {
+      "n": "Amber the NPC MOD",
+      "cn": 0,
+      "wf": "amber",
+      "wp": "amber\\AMBER.TP2",
+      "wc": 0,
+      "wq": "verified",
+      "tp2n": "Amber the NPC MOD"
+    },
+    {
+      "n": "Multiplayer-friendly flirting for Amber",
+      "cn": 1,
+      "wf": "amber",
+      "wp": "amber\\AMBER.TP2",
+      "wc": 1,
+      "wq": "verified",
+      "tp2n": "Multiplayer-friendly flirting for Amber"
+    }
+  ]
+}

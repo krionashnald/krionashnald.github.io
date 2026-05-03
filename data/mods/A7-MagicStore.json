@@ -1,0 +1,242 @@
+{
+  "i": 373,
+  "t": "A7-MagicStore",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 230,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Magic Store of Vergadain",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "pl": 3,
+    "fr": 4,
+    "zh-cn": 5
+  },
+  "no": "Magic Store of Vergadain must go after every shop addition. Can this go any sooner? v Magic Store of Vergadain Ever.We prefer the free access version instead of the pay per visit option.Install Magic Store of Vergadain after all mods that add shops.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "magicstore_merchant",
+          "portraits/magicstore/merchant.png",
+          "bg2"
+        ]
+      ],
+      "1": [
+        [
+          "magicstore_merchant",
+          "portraits/magicstore/merchant_alt.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "ki": [
+    {
+      "pattern": "ERROR Installing \\[Magic store of Vergadain\\]",
+      "severity": "error",
+      "category": "concerning",
+      "description": "Magic Store of Vergadain fails due to BD0120.BCS corruption. The SoD script is corrupted by an earlier mod's failed rollback (typically 5E_spellcasting cn:300 failing on C#AJAN.bcs during EXTEND_TOP). Same root cause as Themed Tweaks SoD failures.",
+      "workaround": "Apply eet-mod-forge-patches BCS guard for 5E_spellcasting. If BD0120.BCS is already corrupted, restore from backup or reinstall from scratch.",
+      "user_action": "apply-patches",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Argent77/A7-MagicStore",
+  "a": "Argent77",
+  "v": "4.2",
+  "sum": "Adds Vergadain's magical shop with 13 purchasable item sets themed around different deities and playstyles.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-MagicStore"
+  },
+  "dl": "https://github.com/Argent77/A7-MagicStore",
+  "au": "Argent77",
+  "co": [
+    {
+      "n": "Fee required",
+      "tp2n": "Fee required",
+      "no": "Recommended. Store costs 300 gold to summon, adds meaningful resource cost",
+      "g": "magicstore_main",
+      "scn": "Magic store of Vergadain",
+      "pi": "A7-MAGICSTORE-MAIN_FEE",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 1
+    },
+    {
+      "n": "Free of charge",
+      "tp2n": "Free of charge",
+      "no": "Easy mode option. No cost to summon store",
+      "g": "magicstore_main",
+      "scn": "Magic store of Vergadain",
+      "pi": "A7-MAGICSTORE-MAIN_NO_FEE",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "iwdee",
+        "soa",
+        "tob",
+        "tutu",
+        "tutu_totsc"
+      ],
+      "cn": 2
+    },
+    {
+      "n": "Alternate portrait for Ghostly Merchant",
+      "tp2n": "Alternate portrait for Ghostly Merchant",
+      "no": "Cosmetic only. Changes merchant portrait",
+      "pi": "A7-MAGICSTORE-ALTERNATE_PORTRAIT",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wc": 10,
+      "wq": "verified",
+      "cn": 10
+    },
+    {
+      "n": "Prohibit resting",
+      "tp2n": "Prohibit resting",
+      "no": "Light restriction. Can still cure/donate/drink",
+      "g": "magicstore_services",
+      "scn": "Restrict available services in summoned stores",
+      "pi": "A7-MAGICSTORE-DISALLOW_RESTING",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 21
+    },
+    {
+      "n": "Prohibit resting and curing",
+      "tp2n": "Prohibit resting and curing",
+      "g": "magicstore_services",
+      "scn": "Restrict available services in summoned stores",
+      "pi": "A7-MAGICSTORE-DISALLOW_RESTING_CURING",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 22
+    },
+    {
+      "n": "Prohibit resting, curing, donating and drinking",
+      "tp2n": "Prohibit resting, curing, donating and drinking",
+      "g": "magicstore_services",
+      "scn": "Restrict available services in summoned stores",
+      "pi": "A7-MAGICSTORE-DISALLOW_RESTING_CURING_DONATING_DRINKING",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 23
+    },
+    {
+      "n": "Allow only trading",
+      "tp2n": "Allow only trading",
+      "no": "Most restrictive. Only buying/selling allowed",
+      "g": "magicstore_services",
+      "scn": "Restrict available services in summoned stores",
+      "pi": "A7-MAGICSTORE-ALLOW_TRADING_ONLY",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wc": 24,
+      "wq": "verified",
+      "cn": 24
+    },
+    {
+      "n": "Once per day",
+      "tp2n": "Once per day",
+      "no": "Most restrictive charges. Items recharge once per day",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-ONCE_PER_DAY",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 31
+    },
+    {
+      "n": "10 times per day",
+      "tp2n": "10 times per day",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-TEN_TIMES_PER_DAY",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 32
+    },
+    {
+      "n": "10 charges",
+      "tp2n": "10 charges",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-TEN_CHARGES",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 33
+    },
+    {
+      "n": "50 charges",
+      "tp2n": "50 charges",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-FIFTY_CHARGES",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 34
+    },
+    {
+      "n": "100 charges",
+      "tp2n": "100 charges",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-HUNDRED_CHARGES",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 35
+    },
+    {
+      "n": "Unlimited charges",
+      "tp2n": "Unlimited charges",
+      "no": "Unlimited charges removes any resource management from store items",
+      "g": "magicstore_charges",
+      "scn": "Tweak item charges of the Magic Store (default: 3x/day)",
+      "pi": "A7-MAGICSTORE-CHARGES-UNLIMITED_CHARGES",
+      "wf": "A7-MagicStore",
+      "wp": "A7-MagicStore\\A7-MagicStore.tp2",
+      "wq": "verified",
+      "cn": 36
+    }
+  ]
+}

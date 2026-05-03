@@ -1,0 +1,69 @@
+{
+  "i": 21,
+  "t": "bubb_spell_menu_extended",
+  "sv": 1,
+  "ord": 80,
+  "c": "INTERFACE",
+  "n": "Bubb's Spell Menu Extended",
+  "langs": {
+    "en": 0,
+    "pt-br": 1,
+    "fr": 2,
+    "de": 3,
+    "es": 4
+  },
+  "no": "wait to test? Bubb's Spell Menu Extended Can also be installed after EET_End in the Post-EET phase.",
+  "rq": "EEex",
+  "dependencies": [
+    {
+      "requires": "eeex",
+      "requiresId": 20,
+      "type": "soft",
+      "reason": "Reported as requirement by LCC-docs database (lcc id 204 requires 348)",
+      "source": "lcc-docs"
+    }
+  ],
+  "u": "https://github.com/Bubb13/Bubbs-Spell-Menu-Extended/releases",
+  "a": "Bubb",
+  "v": "v5.1",
+  "sum": "Adds a searchable, sortable spell menu for easier spell selection during gameplay. Requires EEex.",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "eet_compat": {
+    "ver": "v2.2",
+    "place": "post",
+    "notes": "Install after EET_gui, can install after EET_end"
+  },
+  "gh": {
+    "o": "Bubb13",
+    "r": "Bubbs-Spell-Menu-Extended"
+  },
+  "dl": "https://github.com/Bubb13/Bubbs-Spell-Menu-Extended/releases",
+  "au": "Bubb",
+  "co": [
+    {
+      "n": "Bubb's Spell Menu Extended",
+      "tp2n": "Bubb's Spell Menu Extended",
+      "pi": "B3-BubbsSpellMenuExtended-Main",
+      "wf": "bubb_spell_menu_extended",
+      "wp": "bubb_spell_menu_extended\\BUBB_SPELL_MENU_EXTENDED.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 0
+    }
+  ]
+}

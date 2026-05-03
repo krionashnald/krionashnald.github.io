@@ -1,0 +1,276 @@
+{
+  "i": 451,
+  "t": "abystore",
+  "sv": 1,
+  "ord": 310,
+  "c": "ITEM ADDITION MODS",
+  "n": "Unusual Oddities Shop",
+  "langs": {
+    "en": 0,
+    "pl": 1,
+    "ru": 2,
+    "fr": 3,
+    "it": 4,
+    "de": 5,
+    "zh-cn": 6
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "u": "https://github.com/Spellhold-Studios/Unusual-Oddities-Shop",
+  "a": "Rastor",
+  "v": "5.0",
+  "sum": "A mod for Baldur's Gate II that adds a very unusual merchant to the Docks district of Athkatla.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "AbyssalStore"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "R#ASOSWD",
+          "large sword",
+          "Get lost.",
+          "Who are you?",
+          {
+            "speed": 3,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              }
+            ],
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "R#ASPCHN",
+          "armor",
+          "I'm not like them. Prepare to die.",
+          "I suppose that's good, huh? Why are you here?",
+          {
+            "ac": 0,
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 9,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 17,
+                "spellType": "priest"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "priest"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric"
+              ]
+            }
+          }
+        ],
+        [
+          "R#ASSHLD",
+          "shield",
+          "Yes, show me what you have.",
+          "Actually, I'm going to kill you.",
+          {
+            "ac": 5,
+            "wis": 1,
+            "saveSpell": 3,
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ]
+            }
+          }
+        ],
+        [
+          "R#ASGCLK",
+          "cloak",
+          "Greetings. Would you like to see my wares?",
+          "Not right now.",
+          {
+            "special": [
+              {
+                "type": "extraSpellSlot",
+                "level": 33,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 65,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 129,
+                "spellType": "wizard"
+              },
+              {
+                "type": "extraSpellSlot",
+                "level": 257,
+                "spellType": "wizard"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "R#ASMGAU",
+          "bracers",
+          "Minor Mage Gauntlets",
+          "<No Text>",
+          {
+            "special": [
+              {
+                "type": "other",
+                "desc": "+15 Max HP"
+              },
+              {
+                "type": "other",
+                "desc": "Invisibility"
+              }
+            ],
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Mage",
+                "Sorcerer"
+              ]
+            }
+          }
+        ],
+        [
+          "R#ASMSTF",
+          "staff",
+          "Staff of the Dragon +3",
+          "<No Text>",
+          {
+            "speed": 7,
+            "thac0": 3,
+            "dmg": "1d8",
+            "dmgBonus": 3,
+            "twoHanded": true,
+            "profType": "quarterstaff",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Fighter",
+                "Mage",
+                "Paladin",
+                "Ranger",
+                "Shaman",
+                "Sorcerer",
+                "Thief"
+              ]
+            }
+          }
+        ],
+        [
+          "R#ASHALB",
+          "halberd",
+          "The Halberd of Knowing +5",
+          "<No Text>",
+          {
+            "speed": 4,
+            "thac0": 5,
+            "dmg": "1d8",
+            "dmgBonus": 5,
+            "coldResist": 50,
+            "str": 18,
+            "special": [
+              {
+                "type": "resistance",
+                "target": "acid",
+                "value": 50
+              }
+            ],
+            "twoHanded": true,
+            "profType": "halberd",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Fighter",
+                "Mage",
+                "Monk",
+                "Paladin",
+                "Ranger",
+                "Sorcerer"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/Unusual-Oddities-Shop",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Unusual Oddities Shop",
+      "tp2n": "Unusual Oddities Shop",
+      "cn": 0,
+      "wf": "abystore",
+      "wp": "abystore\\ABYSTORE.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "it": 7,
+      "itC": {
+        "large sword": 1,
+        "armor": 1,
+        "shield": 1,
+        "cloak": 1,
+        "bracers": 1,
+        "staff": 1,
+        "halberd": 1
+      }
+    }
+  ]
+}

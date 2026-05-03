@@ -1,0 +1,263 @@
+{
+  "i": 237,
+  "t": "iepbanters",
+  "sv": 1,
+  "pfx": "CD",
+  "ord": 430,
+  "c": "NPC CROSSMOD",
+  "n": "IEP Extended Banters",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "fr": 3,
+    "zh-cn": 4,
+    "es": 5
+  },
+  "no": "Extended NPC-NPC banters for ToB. Forbids Banter Accelerator from Banter Pack, BG1NPC, Kelsey, and Keto.",
+  "ic": "Uninstalls any previous banter accelerators.",
+  "conflicts": [
+    {
+      "with": "IMOENROMANCE",
+      "withId": 209,
+      "severity": "partial",
+      "reason": "Imoen Romance dialogues block ToB final",
+      "myComps": "#2",
+      "source": "eemodsetup"
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/IEP_Extended_Banter/releases",
+  "a": "K'aeloree, Lava Del'Vortel",
+  "v": "v5.9",
+  "sum": "Adds extensive new banter dialogue between all BG2 NPCs, including cross-game conversations. Hundreds of new inter-party interactions.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v5.4",
+    "place": "post"
+  },
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "IEP_Extended_Banter"
+  },
+  "au": "Kaeloree",
+  "dl": "https://github.com/SpellholdStudios/IEP_Extended_Banter",
+  "co": [
+    {
+      "n": "Extended NPC-NPC Interaction SoA",
+      "pi": "iep_banters",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 0,
+      "tp2n": "Extended NPC-NPC Interaction SoA"
+    },
+    {
+      "n": "Extended Minsc/Aerie Interaction ToB",
+      "pi": "iep_banters_minsc_aerie_tob",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 1,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 1,
+      "tp2n": "Extended Minsc/Aerie Interaction ToB"
+    },
+    {
+      "n": "Imoen \"Retrospection\" dialogue for BGII: ToB",
+      "pi": "iep_banters_imoen_restropection_tob",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 2,
+      "wq": "manual_final",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 2,
+      "tp2n": "Imoen \"Retrospection\" dialogue for BGII: ToB"
+    },
+    {
+      "n": "Wake-Up dialogue for Anomen Romance (By David Gaider with additions from Kulyok)",
+      "pi": "iep_banters_anomen_romance_wakeup",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 3,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 3,
+      "tp2n": "Wake-Up dialogue for Anomen Romance (By David Gaider with additions from Kulyok)"
+    },
+    {
+      "n": "NPC Conflict Revisions",
+      "pi": "iep_npc_conflicts_revision",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 4,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 4,
+      "tp2n": "NPC Conflict Revisions"
+    },
+    {
+      "n": "Restored Aerie/Jaheira/Anomen interjection in Underdark",
+      "pi": "iep_restored_npc_interjection_underdark",
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wc": 5,
+      "wq": "name_match",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "cn": 5,
+      "tp2n": "Restored Aerie/Jaheira/Anomen interjection in Underdark"
+    },
+    {
+      "n": "10 Minutes",
+      "cn": 6,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "10 Minutes",
+      "pi": "iep_banter_accelerator_10",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    },
+    {
+      "n": "15 Minutes",
+      "cn": 7,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "15 Minutes",
+      "pi": "iep_banter_accelerator_15",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    },
+    {
+      "n": "20 Minutes",
+      "cn": 8,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "20 Minutes",
+      "pi": "iep_banter_accelerator_20",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    },
+    {
+      "n": "30 Minutes",
+      "cn": 9,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "30 Minutes",
+      "pi": "iep_banter_accelerator_30",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    },
+    {
+      "n": "45 Minutes",
+      "cn": 10,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "45 Minutes",
+      "pi": "iep_banter_accelerator_45",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    },
+    {
+      "n": "60 Minutes",
+      "cn": 11,
+      "wf": "iepbanters",
+      "wp": "iepbanters\\IEPBANTERS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "soa",
+        "tob"
+      ],
+      "tp2n": "60 Minutes",
+      "pi": "iep_banter_accelerator_60",
+      "scn": "Install Banter Accelerator? How much time would you like in between NPC banters in-game?"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "A7-BANTERACCELERATOR",
+      "withId": 241,
+      "severity": "soft",
+      "reason": "Both affect banter frequency. A7 modifies the timer globally, IEP adds new banters. Compatible but combined effect may be very frequent banters.",
+      "orderOnly": true,
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

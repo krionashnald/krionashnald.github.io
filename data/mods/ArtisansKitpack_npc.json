@@ -1,0 +1,287 @@
+{
+  "i": 327,
+  "t": "ArtisansKitpack_npc",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 120,
+  "c": "KIT & CLASS MODS",
+  "n": "Artisans Kitpack NPC",
+  "no": "Assigning kits to NPCs is a matter of taste. Be sure to give them each a try in their vanilla build before assigning anything for sure",
+  "u": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "a": "Artemius_I",
+  "v": "6.0",
+  "sum": "Assigns custom kits from the Artisan's Kitpack to existing NPCs like Khalid, Minsc, and others, with options for different kit assignments.",
+  "tags": [
+    "class",
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/ArtemiusI/The-Artisan-s-Kitpack",
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Artisan's Kitpack: Give Khalid the Vanguard Kit",
+      "cn": 1101,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 1101,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Assigns Vanguard fighter kit to Khalid. Defensive warrior with shield specialization.",
+      "tp2n": "Artisan's Kitpack: Give Khalid the Vanguard Kit"
+    },
+    {
+      "n": "Arcane Archer",
+      "no": "Assigns Arcane Archer kit to Emily (Skitia NPC, BG1).",
+      "cn": 1102,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 1102,
+      "wq": "verified",
+      "tp2n": "Arcane Archer",
+      "scn": "Artisan's Kitpack: Make Skitia's Emily an"
+    },
+    {
+      "n": "Arcane Archer / Mage",
+      "cn": 1103,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 1103,
+      "wq": "verified",
+      "tp2n": "Arcane Archer / Mage",
+      "scn": "Artisan's Kitpack: Make Skitia's Emily an"
+    },
+    {
+      "n": "Arcane Archer",
+      "no": "Assigns Arcane Archer kit to Emily (Skitia NPC, BG2).",
+      "cn": 1104,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 1104,
+      "wq": "verified",
+      "tp2n": "Arcane Archer (Ranger)",
+      "scn": "Artisan's Kitpack: Make Skitia's Emily an"
+    },
+    {
+      "n": "Artisan's Kitpack: Rashemi Berserker Ranger Kit for Minsc",
+      "cn": 2001,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 2001,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Assigns Rashemi Berserker ranger kit to Minsc. Rage-based wilderness warrior from Rashemen.",
+      "tp2n": "Artisan's Kitpack: Rashemi Berserker Ranger Kit for Minsc"
+    },
+    {
+      "n": "Artisan's Kitpack: Give Ajantis the Divine Champion Kit",
+      "cn": 3101,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 3101,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Assigns Divine Champion paladin kit to Ajantis. Holy warrior with enhanced smite and auras.",
+      "tp2n": "Artisan's Kitpack: Give Ajantis the Divine Champion Kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Make Mazzy a Divine Champion",
+      "cn": 3102,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 3102,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Assigns Divine Champion paladin kit to Mazzy. Makes her a proper paladin.",
+      "tp2n": "Artisan's Kitpack: Make Mazzy a Divine Champion"
+    },
+    {
+      "n": "Artisan's Kitpack: Give Cernd the Elementalist Kit",
+      "cn": 5101,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 5101,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "no": "Assigns Elementalist druid kit to Cernd. Nature caster focused on elemental magic.",
+      "tp2n": "Artisan's Kitpack: Give Cernd the Elementalist Kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Red Wizard Mage Kit for Edwin",
+      "cn": 8,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Red Wizard Mage Kit for Edwin",
+      "no": "Assigns Red Wizard mage kit to Edwin. Thayan specialist with enhanced evocation."
+    },
+    {
+      "n": "Artisan's Kitpack: Give Imoen the Rogue Archer Kit",
+      "cn": 7101,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 7101,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "no": "Assigns Rogue Archer thief kit to Imoen. Ranged combat specialist.",
+      "tp2n": "Artisan's Kitpack: Make Imoen a Rogue Archer"
+    },
+    {
+      "n": "Artisan's Kitpack: Give Imoen the Trickster Kit",
+      "no": "may be of interest if you want to empower a pure class Imoen during BG1",
+      "cn": 7102,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 7102,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Make Imoen a Trickster"
+    },
+    {
+      "n": "Artisan's Kitpack: Give Hexxat the Invisible Blade Kit",
+      "no": "It automatically uses the first mimic skill on spellcasting. Fits Imoen particularly well. If you plan to dual class her as normal and/or are using a releveling mod, you may want to hold on dual class",
+      "cn": 7104,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 7104,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Give Hexxat the Invisible Blade Kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Give Jan the Arcane Trickster Kit",
+      "cn": 21001,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 21001,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Give Jan the Arcane Trickster Kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Give M'khiin the Warhorn Shaman Kit",
+      "cn": 9101,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 9101,
+      "wq": "verified",
+      "tp2n": "Artisan's Kitpack: Give M'khiin the Warhorn Shaman Kit"
+    },
+    {
+      "n": "Artisan's Kitpack: Make Rasaad a Sacred Fist",
+      "cn": 10004,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 10004,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Make Rasaad a Sacred Fist"
+    },
+    {
+      "n": "Artisan's Kitpack: Make Xan an Eldritch Knight",
+      "cn": 20002,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 20002,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Make Xan an Eldritch Knight"
+    },
+    {
+      "n": "Artisan's Kitpack: Make Nalia an Arcane Trickster (Sorcerer)",
+      "cn": 200010,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Artisan's Kitpack: Make Nalia an Arcane Trickster (Sorcerer)"
+    },
+    {
+      "n": "Arcane Archer / Mage",
+      "cn": 1105,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 1105,
+      "wq": "verified",
+      "gone": true
+    },
+    {
+      "n": "Artisan's Kitpack: Red Wizard Mage Kit for Edwin",
+      "cn": 5102,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 5102,
+      "wq": "verified",
+      "no": "v18 moved to cn:8 (was cn:5102 in older version)",
+      "gone": true
+    },
+    {
+      "n": "Artisan's Kitpack: Make Montaron an Assassin",
+      "cn": 7103,
+      "wf": "ArtisansKitpack_npc",
+      "wp": "ArtisansKitpack_npc\\ArtisansKitpack_npc.TP2",
+      "wc": 7103,
+      "wq": "verified",
+      "no": "Assigns Assassin thief kit to Montaron.",
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "The-Artisan-s-Kitpack"
+  }
+}

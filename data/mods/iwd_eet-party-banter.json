@@ -1,0 +1,50 @@
+{
+  "i": 850,
+  "t": "iwd_eet-party-banter",
+  "sv": 1,
+  "ord": 715,
+  "c": "POST-TACTICAL QUESTS",
+  "n": "Icewind Dale in EET Party Banter",
+  "langs": {
+    "en": 0
+  },
+  "dependencies": [
+    {
+      "requires": "IWD1_EET",
+      "requiresId": 643,
+      "type": "hard",
+      "reason": "Extends IWD area scripts (ID1001.bcs, etc.) created by IWD-in-EET"
+    }
+  ],
+  "u": "https://github.com/The-Gate-Project/iwd_eet-party-banter/",
+  "a": "AWizardDidIt",
+  "sum": "This mod adds interjections and area comments to every base companion in both BG1 and BG2 (including Beamdog NPCs) to the IWD campaign with the mod IWD1-IWD2-EET.",
+  "tags": [
+    "npc",
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/The-Gate-Project/iwd_eet-party-banter/",
+  "no": "This mod adds interjections and area comments to every base companion in both BG1 and BG2 (including Beamdog NPCs) to the IWD campaign with the mod IWD1-IWD2-EET.",
+  "au": "K4thos",
+  "co": [
+    {
+      "n": "Install IWDEET Party Banter",
+      "tp2n": "Install IWDEET Party Banter",
+      "cn": 0,
+      "wf": "iwd_eet-party-banter",
+      "wp": "iwd_eet-party-banter\\Setup-iwd_eet-party-banter.tp2",
+      "wc": 0,
+      "wq": "lcc-github"
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "iwd_eet-party-banter"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "i": 720,
+  "t": "d2dru",
+  "sv": 1,
+  "pfx": "D2",
+  "ord": 235,
+  "c": "KIT & CLASS MODS",
+  "n": "Diablo2 Druid Kit",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "zh-tw": 2
+  },
+  "no": "Diablo 2 Druid kit for Druid class. Human, Half-elf. Elemental spellcasting, werewolf/werebear shapeshifting, summoned animal companions. Elemental spells (except Armageddon) unavailable while shapeshifted. Skill points system: one per level up to 3M XP. Part of Shohy's Diablo2 Kit Pack Series. Author confirms EET compatibility. Languages: English, Simplified Chinese, Traditional Chinese.",
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Both include Remove Summoning Cap for Regular Summons — installing both is redundant but not harmful",
+      "myComps": "#1",
+      "theirComps": "#2339"
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "DIABLO2_DRUID": {
+        "passive": [
+          {
+            "n": "Stats",
+            "type": "desc",
+            "desc": "+1 WIS at creation"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Elemental Spells",
+            "freq": "D2 skill point system",
+            "effects": "Firestorm, Molten Boulder, Arctic Blast, Fissure, Twister, Tornado, Armageddon.",
+            "level": 1
+          },
+          {
+            "n": "Shapeshifting",
+            "freq": "D2 skill point system",
+            "effects": "Werewolf and Werebear forms with escalating bonuses through lv15.",
+            "level": 1
+          },
+          {
+            "n": "Summoning",
+            "freq": "D2 skill point system",
+            "effects": "Vines, Wolf companions, Grizzly.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Human/Half-elf only",
+          "items": "Cannot cast elemental spells while transformed (except Armageddon). Shapeshift bonuses cap at lv15. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "statBonus": {
+          "wis": 1,
+          "note": "Innate stat modifiers: +1 WIS"
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "DIABLO2_DRUID",
+          "druid",
+          "Diablo2 Druid",
+          "Diablo 2-inspired shapeshifter. Elemental magic, summoning, and beast forms."
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/shohysie/BG2MODS",
+  "a": "Shohy",
+  "v": "0.6",
+  "sum": "Diablo 2-inspired Druid kit for the Druid class. Human, Half-elf. Elemental spellcasting, werewolf/werebear shapeshifting, and summoned animal companions.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "s": "Diablo2 Kit Pack Series",
+  "dl": "https://github.com/shohysie/BG2MODS",
+  "au": "shohy",
+  "co": [
+    {
+      "n": "Diablo2 Druid Kit",
+      "tp2n": "Diablo2 Druid Kit",
+      "wf": "d2dru",
+      "wp": "d2dru\\SETUP-d2dru.tp2",
+      "wc": 0,
+      "wq": "unverified",
+      "cn": 0,
+      "k": 1,
+      "kC": {
+        "druid": 1
+      }
+    },
+    {
+      "n": "Remove Summoning Cap for Regular Summons (From cdtweaks)",
+      "tp2n": "Remove Summoning Cap for Regular Summons (From cdtweaks)",
+      "no": "Requires ToB",
+      "wf": "d2dru",
+      "wp": "d2dru\\SETUP-d2dru.tp2",
+      "wc": 1,
+      "wq": "unverified",
+      "cn": 1
+    }
+  ],
+  "gh": {
+    "o": "shohysie",
+    "r": "BG2MODS"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "i": 428,
+  "t": "bp-bgt-worldmap",
+  "sv": 1,
+  "pfx": "BP",
+  "ord": 230,
+  "c": "EET FINALIZATION",
+  "n": "Worldmap",
+  "no": "BP-BGT Worldmap by Yacomo et al. Enhanced world map with improved travel routes and area markers. INSTALL LAST — after ALL area-adding mods (NWN, IWD, DSotSC, ntotsc, etc.). Replaces the game worldmap with its own, auto-detecting installed mods. Can go before or after EET_End.",
+  "conflicts": [
+    {
+      "with": "NWNForBG",
+      "withId": 108,
+      "severity": "soft",
+      "reason": "BP-BGT-Worldmap must be installed AFTER NWNForBG. Worldmap mod auto-detects NWN and adds its locations.",
+      "theirComps": "#10 BP-BGT Worldmap option",
+      "orderOnly": true
+    }
+  ],
+  "u": "https://github.com/SpellholdStudios/BP-BGT-Worldmap",
+  "a": "Yacomo, King Diamond, Erebusant, Weigo, Roberciiik",
+  "sum": "Adds an enhanced world map with clearer travel routes, distance indicators, and improved area markers across all campaigns.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "SpellholdStudios",
+    "r": "BP-BGT-Worldmap"
+  },
+  "dl": "https://github.com/SpellholdStudios/BP-BGT-Worldmap",
+  "au": "Weigo",
+  "langs": {
+    "zh-cn": 0
+  },
+  "co": [
+    {
+      "n": "Worldmap for Baldur's Gate (colored icons)",
+      "tp2n": "Worldmap for Baldur's Gate - including colored Baldur's Gate map icons",
+      "pi": "worldmap-main",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "cn": 0
+    },
+    {
+      "n": "ToB Map: Use new worldmap",
+      "tp2n": "Use new Worldmap for Throne of Bhaal as well",
+      "no": "ToB map using new worldmap. NOT EET-compatible (REQUIRE !GAME_IS eet). Will be skipped on EET",
+      "pi": "worldmap-replace-tob-map",
+      "scn": "Worldmap for Throne of Bhaal",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "cn": 1,
+      "g": "tob_map"
+    },
+    {
+      "n": "ToB Map: Clothmap style",
+      "tp2n": "Clothmap-style map for Throne of Bhaal",
+      "pi": "worldmap-original-tob-map",
+      "scn": "Worldmap for Throne of Bhaal",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bg1",
+        "bg2",
+        "bg2ee",
+        "bgt",
+        "ca",
+        "how",
+        "iwd",
+        "iwd2",
+        "iwd_in_bg2",
+        "iwdee",
+        "pst",
+        "pstee",
+        "soa",
+        "sod",
+        "tob",
+        "totlm",
+        "totsc"
+      ],
+      "cn": 2,
+      "g": "tob_map",
+      "no": "ToB clothmap style. NOT EET-compatible. Will be skipped on EET"
+    },
+    {
+      "n": "Convert old Savegames",
+      "tp2n": "Convert old Savegames (No \"New Game\" needed)\n\n>> If you want to uninstall this component,\nyou have to make a backup of your savegame folder manually! <<",
+      "pi": "worldmap-update-savegame",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wq": "verified",
+      "cn": 3,
+      "no": "Convert old savegames. NOT EET-compatible (!ENGINE_IS bgee bg2ee). WARNING: backup saves manually before uninstalling"
+    },
+    {
+      "n": "Window Style: BG2",
+      "tp2n": "BG2:EE style",
+      "no": "V Larger worldmap screen window for the worldmap",
+      "pi": "worldmap-fullscreen-bg2ee",
+      "scn": "Larger worldmap screen window for the worldmap menu.ui",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wc": 4,
+      "wq": "verified",
+      "cn": 4,
+      "g": "window_style"
+    },
+    {
+      "n": "Window Style: Dragonspear",
+      "tp2n": "Dragonspear style",
+      "pi": "worldmap-fullscreen-dragonspear-ui",
+      "scn": "Larger worldmap screen window for the worldmap menu.ui",
+      "wf": "bp-bgt-worldmap",
+      "wp": "bp-bgt-worldmap\\setup-bp-bgt-worldmap.tp2",
+      "wc": 5,
+      "wq": "verified",
+      "cn": 5,
+      "g": "window_style"
+    }
+  ]
+}

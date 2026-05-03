@@ -1,0 +1,1717 @@
+{
+  "i": 232,
+  "t": "A7-ConvenientEENPCs",
+  "sv": 1,
+  "pfx": "A7",
+  "ord": 380,
+  "c": "NPC EXPANSIONS",
+  "n": "Convenient Enhanced Edition NPCs",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "de": 2,
+    "pl": 3,
+    "ru": 4,
+    "zh-cn": 5
+  },
+  "cats": [
+    "NPC EXPANSIONS",
+    "KIT & CLASS MODS"
+  ],
+  "no": "Convenient Enhanced Edition NPCs Beyond what you want or not, remember to not install NPC expansions for those you disable The portrait/class/kit change components are moot if you use another similar mod (ToF/SCS's customization, SubtleD's NPC EE...) v Modify EE NPCs",
+  "_legacy_ids": [
+    319
+  ],
+  "conflicts": [
+    {
+      "with": "npc_ee",
+      "withId": 447,
+      "severity": "hard",
+      "reason": "Both change Neera's class/kit. Choose one method.",
+      "myComps": "#540, #541, #542, #543, #544, #545, #546, #547",
+      "theirComps": "#2000 NPC Customization",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "PPE",
+      "withId": 474,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "myComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "PaintBG",
+      "withId": 690,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "myComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "thepicturestandard",
+      "withId": 438,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "myComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "bg1npc_portrait_pack",
+      "withId": 695,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "myComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    },
+    {
+      "with": "eportraits",
+      "withId": 692,
+      "severity": "soft",
+      "reason": "Both modify portraits for Baeloth, Dorn, Hexxat, Neera, Rasaad. Last installed wins",
+      "myComps": "#400 #410 #420 #430 #440 EE NPC Portraits",
+      "orderOnly": true
+    }
+  ],
+  "pt": {
+    "npc": {
+      "3": [
+        [
+          "baeloth",
+          "portraits/conv_ee_npcs/baeloth.png",
+          "all"
+        ]
+      ],
+      "5": [
+        [
+          "dorn",
+          "portraits/conv_ee_npcs/dorn.png",
+          "bg2"
+        ]
+      ],
+      "6": [
+        [
+          "hexxat",
+          "portraits/conv_ee_npcs/hexxat.png",
+          "bg2"
+        ]
+      ],
+      "9": [
+        [
+          "neera",
+          "portraits/conv_ee_npcs/neera.png",
+          "bg2"
+        ]
+      ],
+      "11": [
+        [
+          "rasaad",
+          "portraits/conv_ee_npcs/rasaad.png",
+          "bg2"
+        ]
+      ],
+      "19": [
+        [
+          "wilson",
+          "portraits/conv_ee_npcs/wilson.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Argent77/A7-NoEENPCs",
+  "a": "Argent77",
+  "v": "v5.3",
+  "sum": "Customizes the Beamdog-added NPCs (Neera, Dorn, Hexxat, Rasaad) with 20 tweaks: adjust stats, equipment, class, and story integration.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v4",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Argent77",
+    "r": "A7-NoEENPCs"
+  },
+  "au": "Argent77",
+  "dl": "https://github.com/Argent77/A7-NoEENPCs",
+  "co": [
+    {
+      "n": "Disable all NPCs",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-DISABLE_ALL",
+      "scn": "Modify Enhanced Edition NPCs",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 1,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 1,
+      "g": "mode",
+      "no": "Removes all EE NPCs (Baeloth, Dorn, Hexxat, Neera, Rasaad) from the game",
+      "tp2n": "Disable all NPCs"
+    },
+    {
+      "n": "Make all NPCs passive",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-PASSIVE_ALL",
+      "scn": "Modify Enhanced Edition NPCs",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 2,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 2,
+      "g": "mode",
+      "no": "Makes all EE NPCs passive — they won't initiate conversation until you talk to them",
+      "tp2n": "Make all NPCs passive"
+    },
+    {
+      "n": "Decide for each NPC individually",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-DECIDE_INDIVIDUALLY",
+      "scn": "Modify Enhanced Edition NPCs",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 3,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 3,
+      "g": "mode",
+      "no": "Enables per-NPC subcomponents below to disable or make passive individually",
+      "tp2n": "Decide for each NPC individually"
+    },
+    {
+      "n": "Disable Baeloth",
+      "no": "Prevents Baeloth from spawning in BGEE. Black Pits/SoD unaffected",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-BAELOTH_DISABLE",
+      "scn": "Modify individually: Baeloth",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 101,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 101,
+      "g": "baeloth",
+      "tp2n": "Disable Baeloth"
+    },
+    {
+      "n": "Make Baeloth passive",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-BAELOTH_PASSIVE",
+      "scn": "Modify individually: Baeloth",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 201,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "cn": 201,
+      "g": "baeloth",
+      "no": "Reduces Baeloth's intro cutscene, prevents him initiating conversation",
+      "tp2n": "Make Baeloth passive"
+    },
+    {
+      "n": "Disable Dorn",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-DORN_DISABLE",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 102,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 102,
+      "no": "Prevents Dorn from appearing in BGEE, SoD, and BG2EE",
+      "tp2n": "Disable Dorn"
+    },
+    {
+      "n": "Disable Hexxat",
+      "no": "Prevents Hexxat and related NPCs from appearing. BG2EE/EET only",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-HEXXAT_DISABLE",
+      "scn": "Modify individually: Hexxat",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 103,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 103,
+      "g": "hexxat",
+      "tp2n": "Disable Hexxat"
+    },
+    {
+      "n": "Make Hexxat passive",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-HEXXAT_PASSIVE",
+      "scn": "Modify individually: Hexxat",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 203,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 203,
+      "g": "hexxat",
+      "no": "Prevents Hexxat from initiating conversation. BG2EE/EET only",
+      "tp2n": "Make Hexxat passive"
+    },
+    {
+      "n": "Disable Neera",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-NEERA_DISABLE",
+      "scn": "Modify individually: Neera",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 104,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 104,
+      "g": "neera",
+      "no": "Prevents Neera from appearing in BGEE, SoD, and BG2EE",
+      "tp2n": "Disable Neera"
+    },
+    {
+      "n": "Make Neera passive",
+      "no": "In BGEE: prevents Neera initiating conversation. In BG2EE: Bridge District cutscene only triggers on talk",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-NEERA_PASSIVE",
+      "scn": "Modify individually: Neera",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 204,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 204,
+      "g": "neera",
+      "tp2n": "Make Neera passive"
+    },
+    {
+      "n": "Disable Rasaad",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-RASAAD_DISABLE",
+      "scn": "Modify individually: Rasaad",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 105,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 105,
+      "g": "rasaad",
+      "no": "Prevents Rasaad from appearing in BGEE, SoD, and BG2EE",
+      "tp2n": "Disable Rasaad"
+    },
+    {
+      "n": "Make Rasaad passive",
+      "no": "In BGEE: prevents Rasaad joining fight vs Neira/Nimbul. In BG2EE: Trademeet intro only triggers on talk",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-RASAAD_PASSIVE",
+      "scn": "Modify individually: Rasaad",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 205,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 205,
+      "g": "rasaad",
+      "tp2n": "Make Rasaad passive"
+    },
+    {
+      "n": "Move Wilson to Waukeen's Promenade",
+      "cn": 220,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Move Wilson to Waukeen's Promenade",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-WILSON_RELOCATED",
+      "grn": "Appearance"
+    },
+    {
+      "n": "Make NPC-specific items available for everyone",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-NPC_ITEMS_FOR_ALL",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 301,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 301,
+      "no": "Places disabled NPCs' personal/quest items in shops and loot. Only works if at least one NPC is disabled",
+      "tp2n": "Make NPC-specific items available for everyone"
+    },
+    {
+      "n": "Joins as controllable follower if no free party slots available",
+      "no": "SoD Avernus: Caelar joins party if slot available, otherwise controllable follower",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-CAELAR_FOLLOWER_CONDITIONAL",
+      "scn": "Allied Caelar Argent in Avernus boss battle",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 311,
+      "wq": "known_folder_uninstalled",
+      "cn": 311,
+      "g": "caelar",
+      "tp2n": "Joins as controllable follower if no free party slots available"
+    },
+    {
+      "n": "Always joins as controllable follower",
+      "pi": "A7-CONVENIENTEENPCS-APPEARANCE-CAELAR_FOLLOWER_ALWAYS",
+      "scn": "Allied Caelar Argent in Avernus boss battle",
+      "grn": "Appearance",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 312,
+      "wq": "known_folder_uninstalled",
+      "cn": 312,
+      "g": "caelar",
+      "no": "SoD Avernus: Caelar always a controllable follower, never joins party. For solo runs",
+      "tp2n": "Always joins as controllable follower"
+    },
+    {
+      "n": "Alternate version",
+      "cn": 400,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Alternate version",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-BAELOTH_ALTERNATE",
+      "scn": "Change portrait: Baeloth",
+      "grn": "Portraits"
+    },
+    {
+      "n": "Alternate version, in BG2 only",
+      "cn": 401,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Alternate version, in BG2 only",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-BAELOTH_ALTERNATE_BG2",
+      "scn": "Change portrait: Baeloth",
+      "grn": "Portraits"
+    },
+    {
+      "n": "Change portrait: Dorn (BG2 style)",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-DORN_BG2_STYLE_ALL",
+      "scn": "Change portrait: Dorn",
+      "grn": "Portraits",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 410,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 410,
+      "g": "dorn_p",
+      "no": "Change Dorn's portrait to BG2 style for the whole game",
+      "tp2n": "BG2 style"
+    },
+    {
+      "n": "BG2 style, in BG2 only",
+      "cn": 411,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "BG2 style, in BG2 only",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-DORN_BG2_STYLE_BG2",
+      "scn": "Change portrait: Dorn",
+      "grn": "Portraits"
+    },
+    {
+      "n": "Change portrait: Hexxat (BG2 style)",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-HEXXAT_BG2_STYLE",
+      "grn": "Portraits",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 420,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 420,
+      "no": "Change Hexxat AND Clara portraits to BG2 style",
+      "tp2n": "Change portrait: Hexxat (BG2 style)"
+    },
+    {
+      "n": "Change portrait: Neera (BG2 style)",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-NEERA_BG2_STYLE_ALL",
+      "scn": "Change portrait: Neera",
+      "grn": "Portraits",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 430,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 430,
+      "g": "neera_p",
+      "no": "Change Neera's portrait to BG2 style for the whole game",
+      "tp2n": "BG2 style"
+    },
+    {
+      "n": "BG2 style, in BG2 only",
+      "cn": 431,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "BG2 style, in BG2 only",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-NEERA_BG2_STYLE_BG2",
+      "scn": "Change portrait: Neera",
+      "grn": "Portraits"
+    },
+    {
+      "n": "Change portrait: Rasaad (BG2 style)",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-RASAAD_BG2_STYLE_ALL",
+      "scn": "Change portrait: Rasaad",
+      "grn": "Portraits",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 440,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 440,
+      "g": "rasaad_p",
+      "no": "Change Rasaad's portrait to BG2 style for the whole game",
+      "tp2n": "BG2 style"
+    },
+    {
+      "n": "BG2 style, in BG2 only",
+      "cn": 441,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "BG2 style, in BG2 only",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-RASAAD_BG2_STYLE_BG2",
+      "scn": "Change portrait: Rasaad",
+      "grn": "Portraits"
+    },
+    {
+      "n": "Improved portrait: Wilson",
+      "pi": "A7-CONVENIENTEENPCS-PORTRAITS-WILSON_IMPROVED",
+      "grn": "Portraits",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 450,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 450,
+      "no": "Higher-quality replacement portrait for Wilson the bear",
+      "tp2n": "Improved portrait: Wilson"
+    },
+    {
+      "n": "Reset level",
+      "cn": 500,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_RESET",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 501,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_CUSTOM",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Mage",
+      "cn": 502,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Mage",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_MAGE",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Abjurer",
+      "cn": 503,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Abjurer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_ABJURER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Conjurer",
+      "cn": 504,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Conjurer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_CONJURER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Diviner",
+      "cn": 505,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Diviner",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_DIVINER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Enchanter",
+      "cn": 506,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Enchanter",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_ENCHANTER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Illusionist",
+      "cn": 507,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Illusionist",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_ILLUSIONIST",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Invoker",
+      "cn": 508,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Invoker",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_INVOKER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Necromancer",
+      "cn": 509,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Necromancer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_NECROMANCER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Transmuter",
+      "cn": 510,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Transmuter",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_TRANSMUTER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Wild Mage",
+      "cn": 511,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Wild Mage",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_WILDMAGE",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Dragon Disciple",
+      "cn": 512,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Dragon Disciple",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_DRAGON_DISCIPLE",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Chaos Sorcerer",
+      "cn": 513,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Chaos Sorcerer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_CHAOS_SORCERER",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Shadow Adept",
+      "cn": 514,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Shadow Adept",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_SHADOW_ADEPT",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Shadow Disciple",
+      "cn": 515,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Shadow Disciple",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-BAELOTH_SHADOW_DISCIPLE",
+      "scn": "Change class/kit: Baeloth",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 520,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-DORN_RESET",
+      "scn": "Change class/kit: Dorn",
+      "grn": "Class changes"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 540,
+      "n": "Change Neera: Chaos Sorcerer",
+      "wc": 540,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Reset level"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 541,
+      "n": "Change Neera: Fighter/Wild Mage",
+      "wc": 541,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Choose your class"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 542,
+      "n": "Change Neera: Wild Mage/Thief",
+      "wc": 542,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Fighter / Wild Mage"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 543,
+      "n": "Change Neera: Cleric/Wild Mage",
+      "wc": 543,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Wild Mage / Thief"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 544,
+      "n": "Change Neera: Fighter/Wild Mage/Thief",
+      "wc": 544,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Cleric / Wild Mage"
+    },
+    {
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-ConvenientEENPCs.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 545,
+      "n": "Change Neera: Fighter/Wild Mage/Cleric",
+      "wc": 545,
+      "g": "neera_class",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "tp2n": "Fighter / Wild Mage / Thief"
+    },
+    {
+      "n": "Fighter / Wild Mage / Cleric",
+      "cn": 546,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Fighter / Wild Mage / Cleric",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-NEERA_FIGHTER_WILDMAGE_CLERIC",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Chaos Sorcerer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-NEERA_CHAOS_SORCERER",
+      "scn": "Change class/kit: Neera",
+      "grn": "Class changes",
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wc": 547,
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "cn": 547,
+      "cat": "KIT & CLASS MODS",
+      "tp2n": "Chaos Sorcerer"
+    },
+    {
+      "n": "Reset level",
+      "cn": 560,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-RASAAD_RESET",
+      "scn": "Change class/kit: Rasaad",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 561,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-RASAAD_CUSTOM",
+      "scn": "Change class/kit: Rasaad",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Monk",
+      "cn": 562,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Monk",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-RASAAD_MONK",
+      "scn": "Change class/kit: Rasaad",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Silverstar of Selune",
+      "cn": 563,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Silverstar of Selune",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-RASAAD_SILVERSTAR_OF_SELUNE",
+      "scn": "Change class/kit: Rasaad",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Brawler",
+      "cn": 564,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Brawler",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-RASAAD_BRAWLER",
+      "scn": "Change class/kit: Rasaad",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 580,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-MKHIIN_RESET",
+      "scn": "Change class/kit: M'Khiin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 600,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-GLINT_RESET",
+      "scn": "Change class/kit: Glint",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 601,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-GLINT_CUSTOM",
+      "scn": "Change class/kit: Glint",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Cleric",
+      "cn": 602,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Cleric",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-GLINT_CLERIC",
+      "scn": "Change class/kit: Glint",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Fighter / Cleric",
+      "cn": 603,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Fighter / Cleric",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-GLINT_FIGHTER_CLERIC",
+      "scn": "Change class/kit: Glint",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Cleric / Illusionist",
+      "cn": 604,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Cleric / Illusionist",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-GLINT_CLERIC_ILLUSIONIST",
+      "scn": "Change class/kit: Glint",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 620,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_RESET",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 621,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_CUSTOM",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Bard",
+      "cn": 622,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Bard",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_BARD",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Blade",
+      "cn": 623,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Blade",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_BLADE",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Thief",
+      "cn": 624,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Thief",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_THIEF",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Swashbuckler",
+      "cn": 625,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Swashbuckler",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-VOGHILN_SWASHBUCKLER",
+      "scn": "Change class/kit: Voghiln",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 640,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_RESET",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 641,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_CUSTOM",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Ranger",
+      "cn": 642,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Ranger",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_RANGER",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Stalker",
+      "cn": 643,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Stalker",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_STALKER",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Fighter",
+      "cn": 644,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Fighter",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_FIGHTER",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Wizard Slayer",
+      "cn": 645,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Wizard Slayer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_WIZARD_SLAYER",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Cleric",
+      "cn": 646,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Cleric",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_CLERIC",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Priest of Tyr",
+      "cn": 647,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Priest of Tyr",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_PRIEST_OF_TYR",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Priest of Helm",
+      "cn": 648,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Priest of Helm",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_PRIEST_OF_HELM",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Paladin",
+      "cn": 649,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Paladin",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_PALADIN",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Cavalier",
+      "cn": 650,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Cavalier",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_CAVALIER",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Inquisitor",
+      "cn": 651,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "eet"
+      ],
+      "tp2n": "Inquisitor",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CORWIN_INQUISITOR",
+      "scn": "Change class/kit: Corwin",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 660,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_RESET",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 661,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_CUSTOM",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Assassin",
+      "cn": 662,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Assassin",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_ASSASSIN",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Shadowdancer",
+      "cn": 663,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Shadowdancer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_SHADOWDANCER",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Mage / Thief",
+      "cn": 664,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mage / Thief",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_MAGE_THIEF",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Mage / Assassin",
+      "cn": 665,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mage / Assassin",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_MAGE_ASSASSIN",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Mage / Shadowdancer",
+      "cn": 666,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Mage / Shadowdancer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_MAGE_SHADOWDANCER",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Necromancer / Thief",
+      "cn": 667,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Necromancer / Thief",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_NECROMANCER_THIEF",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Fighter / Thief",
+      "cn": 668,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Fighter / Thief",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_FIGHTER_THIEF",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Fighter / Assassin",
+      "cn": 669,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Fighter / Assassin",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_FIGHTER_ASSASSIN",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Fighter / Shadowdancer",
+      "cn": 670,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Fighter / Shadowdancer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-HEXXAT_FIGHTER_SHADOWDANCER",
+      "scn": "Change class/kit: Hexxat",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Reset level",
+      "cn": 680,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Reset level",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_RESET",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 681,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_CUSTOM",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Bounty Hunter",
+      "cn": 682,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Bounty Hunter",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_BOUNTY_HUNTER",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Swashbuckler",
+      "cn": 683,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Swashbuckler",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_SWASHBUCKLER",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Shadowdancer",
+      "cn": 684,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Shadowdancer",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_SHADOW_DANCER",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Bard",
+      "cn": 685,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "tp2n": "Bard",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CLARA_BARD",
+      "scn": "Change class/kit: Clara",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Choose your class",
+      "cn": 691,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "tp2n": "Choose your class",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CAELAR_CUSTOM",
+      "scn": "Change class/kit: Caelar Argent",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Cavalier",
+      "cn": 692,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "tp2n": "Cavalier",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CAELAR_CAVALIER",
+      "scn": "Change class/kit: Caelar Argent",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Inquisitor",
+      "cn": 693,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "tp2n": "Inquisitor",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CAELAR_INQUISITOR",
+      "scn": "Change class/kit: Caelar Argent",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Undead Hunter",
+      "cn": 694,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "tp2n": "Undead Hunter",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CAELAR_UNDEAD_HUNTER",
+      "scn": "Change class/kit: Caelar Argent",
+      "grn": "Class changes"
+    },
+    {
+      "n": "Priest of Lathander",
+      "cn": 695,
+      "wf": "A7-ConvenientEENPCs",
+      "wp": "A7-ConvenientEENPCs\\A7-CONVENIENTEENPCS.TP2",
+      "wq": "verified",
+      "tp2n": "Priest of Lathander",
+      "pi": "A7-CONVENIENTEENPCS-CLASSCHANGE-CAELAR_PRIEST_OF_LATHANDER",
+      "scn": "Change class/kit: Caelar Argent",
+      "grn": "Class changes"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "S9BGEENPCTWEAKS",
+      "withId": 510,
+      "severity": "soft",
+      "reason": "Both modify BG1 NPC kits and convenience features. May conflict on overlapping NPCs",
+      "theirComps": "#2 Convenient NPCs #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 Kit assignments",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

@@ -1,0 +1,2157 @@
+{
+  "i": 933,
+  "t": "Dimension_Gate",
+  "sv": 1,
+  "ord": 940,
+  "n": "Dimension Gate",
+  "c": "ITEM ADDITION MODS",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "dg_andn",
+          "portraits/dimension_gate/__andn.png",
+          "bg2"
+        ],
+        [
+          "dg_bbldn",
+          "portraits/dimension_gate/__bbldn.png",
+          "bg2"
+        ],
+        [
+          "dg_dtrdr",
+          "portraits/dimension_gate/__dtrdr.png",
+          "bg2"
+        ],
+        [
+          "dg_fdbrd",
+          "portraits/dimension_gate/__fdbrd.png",
+          "bg2"
+        ],
+        [
+          "dg_jnprd",
+          "portraits/dimension_gate/__jnprd.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "langs": {
+    "en": 0
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "_!SCR01",
+          "scroll",
+          "Dimension Mark I",
+          "Dimension Mark I\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR02",
+          "scroll",
+          "Dimension Mark II",
+          "Dimension Mark II\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR03",
+          "scroll",
+          "Dimension Mark III",
+          "Dimension Mark III\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR04",
+          "scroll",
+          "Dimension Mark IV",
+          "Dimension Mark IV\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR05",
+          "scroll",
+          "Dimension Mark V",
+          "Dimension Mark V\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR06",
+          "scroll",
+          "Dimension Mark VI",
+          "Dimension Mark VI\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR07",
+          "scroll",
+          "Dimension Mark VII",
+          "Dimension Mark VII\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR08",
+          "scroll",
+          "Dimension Mark VIII",
+          "Dimension Mark VIII\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR09",
+          "scroll",
+          "Dimension Mark IX",
+          "Dimension Mark IX\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR00",
+          "scroll",
+          "Dimension Mark X",
+          "Dimension Mark X\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR20",
+          "scroll",
+          "Dimension Mark",
+          "Dimension Mark\n(Alteration)\n\nLevel: 9\nRange: 0\nDuration: Instant\nCasting Time: 1\nArea of Effect: Caster\nSaving Throw: None\n\n\nThis spell creates dimension rift (mark) which is used as destination point for return. Only one dimension mark can be cast at same time.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR11",
+          "scroll",
+          "Dimension Gate I",
+          "Dimension Gate I\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark I. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR12",
+          "scroll",
+          "Dimension Gate II",
+          "Dimension Gate II\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark II. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR13",
+          "scroll",
+          "Dimension Gate III",
+          "Dimension Gate III\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark III. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR14",
+          "scroll",
+          "Dimension Gate IV",
+          "Dimension Gate IV\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark IV. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR15",
+          "scroll",
+          "Dimension Gate V",
+          "Dimension Gate V\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark V. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR16",
+          "scroll",
+          "Dimension Gate VI",
+          "Dimension Gate VI\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark VI. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR17",
+          "scroll",
+          "Dimension Gate VII",
+          "Dimension Gate VII\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark VII. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR18",
+          "scroll",
+          "Dimension Gate VIII",
+          "Dimension Gate VIII\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark VIII. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR19",
+          "scroll",
+          "Dimension Gate IX",
+          "Dimension Gate IX\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark IX. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR10",
+          "scroll",
+          "Dimension Gate X",
+          "Dimension Gate X\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark X. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR21",
+          "scroll",
+          "Dimension Gate",
+          "Dimension Gate\n(Alteration)\n\nLevel: 9\nRange: Unlimited\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\n\nThis spell transports the party to any place which was previously selected with Dimension Mark. When the spell is cast, a dimension gate opens up in front of the party, who immediately steps through it. Upon passing through the gate, the party appear at chosen destination. Caster must concentrate all <PRO_HISHER> mind, otherwise the party could appear somewhere inside wall or door.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR402",
+          "scroll",
+          "Improved Dimension Door",
+          "Improved Dimension Door\n(Alteration)\n\nLevel: 5\nRange: 2000\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR51",
+          "scroll",
+          "Improved Dimension Door",
+          "Improved Dimension Door\n(Alteration)\n\nLevel: 5\nRange: 2000\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR52",
+          "scroll",
+          "Improved Dimension Door (Group)",
+          "Improved Dimension Door (Group)\n(Alteration)\n\nLevel: 5\nRange: 2000\nDuration: Instant\nCasting Time: 1\nArea of Effect: Party\nSaving Throw: None\n\nThis spell transports the party to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the party, who immediately steps through it. Upon passing through the portal, the party appear at chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR53",
+          "scroll",
+          "Gorion's Evasion",
+          "Gorion's Evasion\n(Alteration)\n\nLevel: 1\nRange: Visual\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the visual range of the caster. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR54",
+          "scroll",
+          "Gorion's Dimension Door",
+          "Gorion's Dimension Door\n(Alteration)\n\nLevel: 2\nRange: Visual\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the visual range of the caster. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR55",
+          "scroll",
+          "Gorion's Improved Dimension Door",
+          "Gorion's Improved Dimension Door\n(Alteration)\n\nLevel: 3\nRange: 800\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 9
+            },
+            "charges": {
+              "count": 2,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR56",
+          "scroll",
+          "Dimension Door",
+          "Dimension Door\n(Alteration)\n\nLevel: 1\nRange: 600\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Cleric",
+                "Druid",
+                "Paladin",
+                "Ranger",
+                "Shaman"
+              ],
+              "minInt": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCR57",
+          "scroll",
+          "Faster Than the Eye!",
+          "Faster Than the Eye!\n(Alteration)\n\nLevel: 4\nRange: 400\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Monk",
+                "Thief"
+              ],
+              "minInt": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!AML01",
+          "amulet",
+          "Amulet Of Cleansing",
+          "Amulet Of Cleansing\nWearer is protected by magic, if loses control amulet will awake him.\n\nSTATISTICS:\n– Armor Class: +3\n– Saving Throws: +3\n– Maximum Health +20\n\nEquipped abilities:\n– Wearer is freed from any negative effects if lose control, nearby enemies in 15-ft. radius lose beneficial effects\n\n  Cleanse and Purge: This spell enables the caster to hurl purification orb which explode and split to two orbs, first green cleanse orb removes all negative effects from friendly targets like Offensive Damage, Disabling, Battleground and Conjuration Effects.\nSecond red purge orb removes one protection per type like Combat, Non-Combat, Combination, Illusionary, Specific and Spell Protections. In addition enemies must save vs. Spell with -2 penalty or are afflicted by entropic purge all effects from protections type are removed.\nArea of Effect: \n\nWeight: 0",
+          {
+            "ac": 3,
+            "special": [
+              {
+                "type": "other",
+                "desc": "+20 Max HP"
+              }
+            ],
+            "charges": {
+              "count": 2,
+              "period": "permanent"
+            }
+          }
+        ],
+        [
+          "_!BHGLB1",
+          "amulet",
+          "Jon Key",
+          "This key opens doors in parallel reality library.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              },
+              {
+                "type": "immunity",
+                "target": "lycanthrope"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              }
+            ]
+          }
+        ],
+        [
+          "_!IMGLB1",
+          "amulet",
+          "Jon Key",
+          "This key opens doors in parallel reality library.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "immunity",
+                "target": "poison"
+              },
+              {
+                "type": "immunity",
+                "target": "Illusion spells"
+              },
+              {
+                "type": "immunity",
+                "target": "giant"
+              },
+              {
+                "type": "immunity",
+                "target": "lycanthrope"
+              },
+              {
+                "type": "immunity",
+                "target": "undead"
+              }
+            ]
+          }
+        ],
+        [
+          "_!JONKEY",
+          "key",
+          "Jon Key",
+          "This key opens doors in parallel reality library.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "_!LSB1",
+          "large sword",
+          "Sith Lightsaber +5",
+          "What good could this strange thing do?\n\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "apr": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!MS002",
+          "misc",
+          "High-frequency trap detector",
+          "A ancient race Antics left a very useful device here, a high-frequency trap detector.\nTrade Mark: Made by Antics corporate inc.\n\nSpecial Ability:\n– Trap Detection\n  Area of Effect: 1 creature\n  Duration: 4 Turns\n\nSTATISTICS:\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "ability",
+                "desc": "Cast Spell"
+              }
+            ]
+          }
+        ],
+        [
+          "_!MS003",
+          "misc",
+          "Dimension Trader",
+          "No one would have thought that this could be five star hotel, nor even a palace. A strong magic covers truth before the eyes of greedy thieves.\n\nSpecial Ability:\n– Call of Dimension Trader\n\n\nSTATISTICS:\n\nWeight: 1",
+          {}
+        ],
+        [
+          "_!MS004",
+          "misc",
+          "Infinite Genies Bottle",
+          "You have done as old woman said, shake with bottle and army of genies is ready to your service.\n\nSTATISTICS:\n\nCharge abilities:\n– Free genies from bottle once per day\n  Summons 5 genies for 8 hours (does not count into creature limit)\n\nWeight: 1",
+          {}
+        ],
+        [
+          "_!MS005",
+          "misc",
+          "Infinite Genies Bottle",
+          "You have done as old woman said, shake with bottle and army of genies is ready to your service.\n\nSTATISTICS:\n\nCharge abilities:\n– Free genies from bottle once per day\n  Summons 5 genies for 8 hours (does not count into creature limit)\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "_!MS006",
+          "misc",
+          "Infinite Efreeti Bottle",
+          "You have done as old woman said, shake with bottle and army of genies is ready to your service.\n\nSTATISTICS:\n\nCharge abilities:\n– Free efreeties from bottle once per day\n  Summons 5 efreeties for 8 hours (does not count into creature limit)\n\nWeight: 1",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "_!MSC001",
+          "misc",
+          "Control Crystal",
+          "This is key which controls energy barrier in the parallel reality realm.",
+          {}
+        ],
+        [
+          "_!PRGEM",
+          "gem",
+          "Enigmatic Crystal",
+          "A mysterious force emits from this crystal.",
+          {}
+        ],
+        [
+          "_!PRIRN1",
+          "ring",
+          "Ring of Holy Promise",
+          "Ring of Holy Promise\nThere is an inscription on the ring: \"Light shall protect you!\"\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– Saving Throws: +2\n– Wearer is protected by shield for 2 rounds when being hit. This effect can occurs once per 5 rounds.\n\n  Spirit Shell: Protects target from physical attacks and spells. Shield, barrier of pure light absorbs 6 physical attacks and 15 spell levels, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Magic Attack.\nTarget receives bonus +8 Armor and is immune to all magical weapons.\n\nCharge abilities:\n\n– Greater Healing 3 times per day\n  Range: Visual\n  Duration: Permanent\n  Area of Effect: 1 creature\n  \nWeight: 0",
+          {}
+        ],
+        [
+          "_!RNG01",
+          "ring",
+          "Ring of Holy Promise",
+          "Ring of Holy Promise\nThere is an inscription on the ring: \"Light shall protect you!\"\n\nSTATISTICS:\n\nEquipped abilities:\n– Armor Class: +2\n– Saving Throws: +2\n– Wearer is protected by shield for 2 rounds when being hit. This effect can occurs once per 5 rounds.\n\n  Spirit Shell: Protects target from physical attacks and spells. Shield, barrier of pure light absorbs 6 physical attacks and 15 spell levels, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Magic Attack.\nTarget receives bonus +8 Armor and is immune to all magical weapons.\n\nCharge abilities:\n\n– Greater Healing 3 times per day\n  Range: Visual\n  Duration: Permanent\n  Area of Effect: 1 creature\n  \nWeight: 0",
+          {
+            "ac": 2,
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "_!RNG02",
+          "ring",
+          "Seal Of Brave Hero",
+          "A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.\n\nSTATISTICS:\n\nWeight: 0",
+          {
+            "ac": 4,
+            "charges": {
+              "count": 3,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "_!SCP100",
+          "scroll",
+          "Regrowth",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP101",
+          "scroll",
+          "Holy Light",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Paladin"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP102",
+          "scroll",
+          "Circle of Healing",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP103",
+          "scroll",
+          "Greater Healing",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP104",
+          "scroll",
+          "Power Word: Shield",
+          "Power Word: Shield\n(Abjuration)\n\nLevel: 7\nRange: Visual\nDuration: 1 Turn\nCasting Time: Instant\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from physical attacks and spells. Shield, barrier of pure light absorbs 1 physical attack per 2 levels of caster up to maximum 10 and 3 spell levels per 2 levels of caster up to maximum 30, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Combination, Magic Attack.\nTarget receives bonus +1 Armor per 4 levels of caster up to maximum +5 AC.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP105",
+          "scroll",
+          "Redemption",
+          "Redemption\n(Necromancy)\n\nLevel: 1\nSphere: Necromantic\nRange: Touch\nDuration: Permanent\nCasting Time: 6\nArea of Effect: 1 creature\nSaving Throw: None\n\nResurrection will return a character back to life. However, Resurrection also heals the character so that they are ready for the adventuring life right away.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Paladin"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP106",
+          "scroll",
+          "Lightning Ball",
+          "Lightning Ball\n(Abjuration)\n\nLevel: 5\nRange: Visual\nDuration: 1-3 rounds\nCasting Time: 3\nArea of Effect: 4-ft. radius\nSaving Throw: Special\n\nHurls a ball of lightning at the target, dealing 1d8+5 lightning damage per 2 levels of caster up to maximum 10d8+5, half if target saves vs. Spell with -2 penalty otherwise target is stuned for 1 round per 6 levels of caster up to maximum 3 rounds at level 18.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP107",
+          "scroll",
+          "Lava Burst",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP108",
+          "scroll",
+          "Holy Nova",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP109",
+          "scroll",
+          "Healing Aura",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Paladin"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP110",
+          "scroll",
+          "Volcano",
+          "Volcano\n(Evocation)\n\nLevel: 7\nSphere: Elemental (Fire)\nRange: Visual\nDuration: 10 rounds\nCasting Time: 6\nArea of Effect: 6-ft. 8-ft. 15-ft. radius\nSaving Throw: Special\n\nVolcano hurls a rock of molten lava at a random enemy. Enemies within 6-ft. radius from centre of volcano take 1d12 magic fire damage per 2 levels of caster up to maximum 10d12, ignores magic resistances. Enemies within 8-ft. radius from centre of volcano take 1d5 fire damage per 4 levels of caster up to maximum 5d5, half if target save vs. Spell and 1d6 crushing damage per 4 levels of caster up to maximum 5d6, half if save vs. Spell, crushing damage ignores magic resistances. Enemies within 15-ft. radius from centre of volcano take 1d4 fire damage per 4 levels of caster up to maximum 5d4, half if target save vs. Spell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP111",
+          "scroll",
+          "Divine Shield",
+          "Divine shield\n(Abjuration)\n\nLevel: 1\nRange: Visual\nDuration: 2 rounds\nCasting Time: 1\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from all damage and spells for duration of spell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Paladin"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP112",
+          "scroll",
+          "Sacred Divine Shield",
+          "Sacred Divine Shield\n(Abjuration)\n\nLevel: 1\nRange: Visual\nDuration: 4 rounds\nCasting Time: 1\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from all damage and spells for duration of spell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Paladin"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP113",
+          "scroll",
+          "Divine Aegis",
+          "Divine Aegis\n(Abjuration)\n\nLevel: 7\nRange: Visual\nDuration: 1 Turn\nCasting Time: Instant\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from physical attacks and spells. Shield, barrier of pure light absorbs 1 physical attack per 2 levels of caster up to maximum 10 and 4 spell levels per 2 levels of caster up to maximum 40, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Magic Attack.\nTarget receives bonus +2 Armor per 4 levels of caster up to maximum +10 AC and is immune to all magical weapons.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP114",
+          "scroll",
+          "Spirit Shell",
+          "Spirit Shell\n(Abjuration)\n\nLevel: 6\nRange: Visual\nDuration: 2 rounds\nCasting Time: Instant\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from physical attacks and spells. Shield, barrier of pure light absorbs 6 physical attacks and 15 spell levels, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Magic Attack.\nTarget receives bonus +8 Armor and is immune to all magical weapons.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP115",
+          "scroll",
+          "Power Word: Fortitude",
+          "This scroll describes how to create squirrel magic figurine.\n\n  \"Find singing squirrel and turn him into stone\"",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCP116",
+          "scroll",
+          "Force Shield",
+          "Force Shield\n(Abjuration)\n\nLevel: 7\nRange: Visual\nDuration: 1 Turn\nCasting Time: Instant\nArea of Effect: 1 creature\nSaving Throw: None\n\nProtects target from physical attacks and spells. Shield, barrier of pure light absorbs 1 physical attack per 2 levels of caster up to maximum 10 and 4 spell levels per 2 levels of caster up to maximum 40, but only for certain spell types like:\nOffensive Damage, Battleground, Disabling, Magic Attack.\nTarget receives bonus +1 Armor, +15 fire/cold/lightning/acid resistances per 4 levels of caster up to maximum +5 AC, +75 resistances. Pierce of shield by an attack or spell causes massive explosion 1d4+2 damage as magical fire, magical cold, electricity, acid damage up to maximum 4d4+10 to all enemies within 15-ft. radius and must save vs. Breath with -4 penalty or are knocked away.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Cleric",
+                "Druid",
+                "Shaman"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCRFG",
+          "scroll",
+          "Squirrel Ritual",
+          "This scroll describes how to create squirrel magic figurine.\n\n  \"Find singing squirrel and turn him into stone\"",
+          {}
+        ],
+        [
+          "_!SCRSQ",
+          "scroll",
+          "Scroll of Teleportation",
+          "This must be the scroll which could cure squirreliness!",
+          {
+            "usability": {
+              "minInt": 9
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW100",
+          "scroll",
+          "Kirin Tor Teleport",
+          "Kirin Tor Teleport\n(Alteration)\n\nLevel: 1\nRange: 2000\nDuration: Instant\nCasting Time: 1\nArea of Effect: The caster\nSaving Throw: None\n\nThis spell transports the caster to any place within the range of the spell. When the spell is cast, a dimensional portal opens up in front of the caster, who immediately steps through it. Upon passing through the portal, the caster finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW101",
+          "scroll",
+          "Ice Block",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW102",
+          "scroll",
+          "Frost Nova",
+          "Frost Nova\n(Abjuration)\n\nLevel: 9\nRange: Visual\nDuration: 3 rounds\nCasting Time: 1\nArea of Effect: 10-ft. radius\nSaving Throw: Neg.\n\nAll enemies must save vs. Paralyze with -5 penalty, otherwise are frozen by freezing wave of frost and take 2d12+2 magic cold damage, half if save vs. Paralyze with -5 penalty.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW103",
+          "scroll",
+          "Blast Wave",
+          "Blast Wave\n(Evocation)\n\nLevel: 9\nRange: Visual\nDuration: Special\nCasting Time: 1\nArea of Effect: 11-ft. radius\nSaving Throw: Special\n\nCauses a flame explosion around yourself, dealing damage to all enemies within 11 yards, causes 1d10+3 magic fire damage per 5 levels of caster up to maximum 4d10+12, half if save vs. Breath with -5 penalty, knocking them back, and slow them for duration of spell if not save vs. Breath with -5 penalty. In addition, targets must save vs. Spell with -5 penalty or fall unconscious for 1 round. Enemies, which dear to resist massive flame from being knocked will buy full flame shower, are afflicted by ignite, suffer 1d4+1 magical fire damage per 5 levels of caster up to maximum 4d4+4 and must save vs. Spell with -2 penalty of are feared and slowed.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW104",
+          "scroll",
+          "Electro Ball",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW105",
+          "scroll",
+          "Cleanse and Purge",
+          "Cleanse and Purge\n(Abjuration)\n\nLevel: 8\nRange: 40 ft.\nDuration: Instant\nCasting Time: 3 \nArea of Effect: 15-ft. radius\nSaving Throw: Special\n\nThis spell enables the caster to hurl purification orb which explode and split to two orbs, first green cleanse orb removes all negative effects from friendly targets like Offensive Damage, Disabling, Battleground and Conjuration Effects.\nSecond red purge orb removes one protection per type like Combat, Non-Combat, Combination, Illusionary, Specific and Spell Protections. In addition enemies must save vs. Spell with -2 penalty or are afflicted by entropic purge all effects from protections type are removed.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW106",
+          "scroll",
+          "Armageddon",
+          "Armageddon\n(Evocation)\n\nLevel: 9\nRange: 270 ft.\nDuration: 4 rounds\nCasting Time: 6\nArea of Effect: 15-ft. radius\nSaving Throw: 1/2\n\nWhen the caster utters the words to this powerful spell, <PRO_HESHE> calls upon powerful forces indeed. These forces pull down meteors from above, hurling them randomly at anyone in the area of effect. Enemies caught in the destructive path of the meteors—whether will suffer 4d10 points of magic fire damage 2 times per round, half if save vs. Spell with -2 penalty. The caster is well advised to be careful in <PRO_HISHER> use of this spell.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW107",
+          "scroll",
+          "Arcane Explosion",
+          "Arcane Explosion\n(Alternation)\n\nLevel: 9\nSphere: Arcane (Magic)\nRange: Visual\nDuration: 1 rounds\nCasting Time: 3\nArea of Effect: 15-ft. radius\nSaving Throw: Special\n\nCauses an explosion of arcane magic around the caster, causing 1d15+3 magic damage per 4 levels of caster to all enemy targets within 15 yards up to maximum 5d15+15. Enemies are slowed for 1 round. In addition enemies must save vs. Breath with -4 penalty or are knocked away from caster, in such case must save vs. Spell with -4 penalty also or fall unconscious to ground for 1 round.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW108",
+          "scroll",
+          "Molten Blast",
+          "Molten Blast\n(Evocation)\n\nLevel: 7\nSphere: Elemental (Fire)\nRange: Visual\nDuration: Instant\nCasting Time: 2\nArea of Effect: Path of bolt\nSaving Throw: Special\n\nHurls incinerating flame orb, any enemy in path must save vs. Death or is incinerated, suffers 10d10+40 fire damage per 4 levels of caster up to maximum 50d10+200. In addition target takes 1d5+10 fire damager per 4 levels of caster up to maximum 5d5+10. Targets with fire resistances 100 or higher are not affected by this spell. Ignores magic resistances.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW109",
+          "scroll",
+          "Black Hole",
+          "Black Hole\n(Conjuration/Summoning)\n\nLevel: 8\nSphere: Shadow (Magic)\nRange: Visual\nDuration: 10 rounds\nCasting Time: 3\nArea of Effect: 15-ft. radius\nSaving Throw: Special\n\nCreates a black hole at the designated location, that pulls enemies to its center. Enemies within 15-ft. radius are automatically slowed for half round and must save vs. Spell with -4 penalty every half round or are pulled to the center and suffer 2d4 magic damage. In addition enemies within 8-ft. radius from center of black hole must save vs. Death with -8 penalty or are slowed for 1 round and pulled to the center of black hole by even more devastating force, suffer 2d8 crushing damage, half if save vs. Death with -8 penalty. Enemies which dear resist to this force, have to make a huge effort and are fatigued for 2 rounds. After 10 round black hole explodes and push all enemies away from center.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW110",
+          "scroll",
+          "Greater Pyroblast",
+          "Greater Pyroblast\n(Evocation)\n\nLevel: 8\nRange: 40 ft.\nDuration: 2 rounds\nCasting Time: 6\nArea of Effect: 8-ft. radius\nSaving Throw: 1/2 \n\nHurls an immense fiery boulder that deals 1d15+5 magic fire damage per 3 levels of caster up to maximum 10d15+50, half if save vs. Spell with -4 penalty. At the end of path boulder explodes and causes 1d10+2 fire damage per 3 levels of caster up to maximum 10d10+20 fire damage, half if save vs. Breath with -2 penalty, in addition enemies are afflicted by ignite 2 times per round for 2 rounds, suffer 1d6 fire damage per 10 levels of caster up to maximum 3d6 and are feared for half round if fail to save vs. Spell with -2 penalty.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW111",
+          "scroll",
+          "Blazing Barrier",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW112",
+          "scroll",
+          "Ice Barrier",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW113",
+          "scroll",
+          "Time Rift",
+          "Time Rift\n(Abjuration)\n\nLevel: 9\nRange: 0\nDuration: 10 Turns\nCasting Time: 6\nArea of Effect: 15-ft. radius\nSaving Throw: None\n\nCreates time rift sphere, which causes time anomalies, friendly targets receive +1 AC, +1 THACO, +1 casting speed, haste, aura cleansing up to maximum +4 AC / THACO / casting speed. Enemies lose -1 AC, -1 THACO, -1 casting speed, slow up to maximum -4 AC / THACO / casting speed.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW114",
+          "scroll",
+          "Prismatic Barrier",
+          "Prismatic Barrier\n(Abjuration)\n\nLevel: 7\nRange: 0\nDuration: 10 rounds\nCasting Time: 2\nArea of Effect: 7-ft. radius\nSaving Throw: None\n\nCreates magic dome, grants +50 magic resistances to all friendly targets within 7-ft. radius.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW115",
+          "scroll",
+          "Lightning Strike",
+          "Lightning Strike\n(Conjuration)\n\nLevel: 8\nRange: Visual\nDuration: 2 rounds\nCasting Time: 1\nArea of Effect: 1 creature\nSaving Throw: Special \n\nUpon casting this spell, the wizard releases a powerful stroke of electrical energy that inflicts 1d20+8 lightning damage per 4 levels of the caster (maximum damage of 5d20+40) to enemy. A successful Saving Throw vs. Spell with -4 penalty reduces this damage to half, otherwise target suffers full damage and is knocked down to ground for 2 rounds. This spell completely ignores magic and lightning resistances, summoned monsters and demons are killed immediately. Enemies killed by this spell die a terrific death.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW116",
+          "scroll",
+          "Power Word, Kill",
+          "Power Word, Kill\n(Conjuration/Summoning) \n\nLevel: 9\nRange: Visual range of the caster \nDuration: Instant\nCasting Time: 1 \nArea of Effect: 1 creature \nSaving Throw: None\n\nWhen a Power Word: Kill spell is uttered, one creature within the spell range is slain. The creature must have 100 or fewer current Hit Points, otherwise the spell has no effect. There is no Saving Throw. Spell ignores magic resistances",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW117",
+          "scroll",
+          "Flame Shock",
+          "Flame Shock\n(Evocation)\n\nLevel: 8\nRange: Visual\nDuration: 1 round/5 levels\nCasting Time: 2\nArea of Effect: 1 creature\nSaving Throw: Special\n\nSears the target with fire, causing 1d6+3 fire damage per 5 levels of caster, up to maximum 4d6+12 fire damage. In addition target must save vs. Spell with -4 penalty or suffers 1d6+3 magic fire damage and falls unconscious for 1 round per 5 levels of caster, up to maximum 4d6+12 magic fire damage and 4 rounds unconscious.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW118",
+          "scroll",
+          "Mirror Clones",
+          "",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW119",
+          "scroll",
+          "Acid Ball",
+          "Acid Ball\n(Evocation)\n\nLevel: 8\nRange: Visual\nDuration: 2 rounds/4 levels\nCasting Time: 3\nArea of Effect: 4-ft. radius\nSaving Throw: None\n\nCaster hurls acid ball, all enemies within 4 ft. radius hit by this spell suffer 1d6+4 acid damage, up to maximum 5d6+20 and must save vs. Spell with -2 penalty or receive -2 cumulative penalty to THAC0 for 2 rounds per 4 levels of caster up to maximum 10 rounds, suffers 1d10+2 acid damage per 4 levels of caster up to maximum 5d10+10 acid damage, half if save vs. Spell with -2 penalty.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW120",
+          "scroll",
+          "MK Fireball",
+          "MK Fireball\n(Evocation)\n\nLevel: 8\nRange: Visual\nDuration: Instant\nCasting Time: 3\nArea of Effect: 4-ft. radius\nSaving Throw: 1/2\n\nHurls 3 balls of fire dealing 1d10+2 magical fire damage to enemies within 4-ft. radius up to maximum 5d10+10 damage, half if save vs. Spell with -2 penalty.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW121",
+          "scroll",
+          "Glacial Spike",
+          "Glacial Spike\n(Evocation)\n\nLevel: 8\nRange: Visual\nDuration: 1 round/4 levels\nCasting Time: 2\nArea of Effect: 4-ft. radius\nSaving Throw: None\n\nCreates a massive spike of ice, dealing 2d4+8 magical cold damage, up to maximum 10d4+40, half if target save vs. Spell with -4 penalty. In addition target is slowed, loses -1 AC for 1 round per 4 levels of caster up to maximum -5 AC for 5 rounds and is frozen also for 4 seconds per 4 levels of caster up to maximum 20 seconds if fail save vs. Spell with -4 penalty.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW122",
+          "scroll",
+          "Prismatic Shield",
+          "Prismatic Shield\n(Abjuration)\n\nLevel: 7\nRange: Visual\nDuration: 4 rounds/4 levels\nCasting Time: 1\nArea of Effect: 1 creature\nSaving Throw: None\n\nCreates magic shield, grants +50 magic resistances and +50 magical damage resistances to a target.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SCW123",
+          "scroll",
+          "Enhanced Web",
+          "Enhanced Web\n(Evocation)\n\nLevel: 2\nRange: 40 ft.\nDuration: 1 turn\nCasting Time: 2\nArea of Effect: 15-ft. radius\nSaving Throw: Neg.\n\nA Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 15 ft. in radius (roughly the same size as a Fireball). Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Anyone in the area when the spell is cast must roll a Saving Throw vs. Spell with a -2 penalty. If the Saving Throw is successful, then the creature is free to move out of the area. A failed Saving Throw means the creature is stuck in the webs unable to move. Each round that a creature remains in the web, it must make a Saving Throw or be unable to move.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Sorcerer"
+              ],
+              "minInt": 5,
+              "minWis": 5
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!SQLBOO",
+          "misc",
+          "Squirrelled Boo",
+          "Boo was a fuzzy, little hamster. While Minsc believes that Boo was a miniature giant space hamster, you are rather certain that the tiny rodent was just a normal hamster. But now ... he is transformed into squirrel, Minsc is very mad from his squirreliness.\n\nSTATISTICS:\n\nSpecial ability: \n– Squirrel Song, Increases Movement Speed \n  Duration: 3 Turns\n  Cooldown: 3 Turns\n  Area of Effect: 15-ft. radius sphere\n\nWeight: 1",
+          {
+            "special": [
+              {
+                "type": "ability",
+                "desc": "Cast Spell"
+              }
+            ]
+          }
+        ],
+        [
+          "_!SQLFG",
+          "misc",
+          "Singing Squirrel Figurine",
+          "This stone squirrel figurine can sing.\n\n\nSpecial ability: \n– Squirrel Song, Increases Movement Speed \n  Duration: 3 Turns\n  Cooldown: 3 Turns\n  Area of Effect: 15-ft. radius sphere\n\nWeight: 0",
+          {
+            "special": [
+              {
+                "type": "ability",
+                "desc": "Cast Spell"
+              }
+            ]
+          }
+        ],
+        [
+          "_!TMAP",
+          "broken",
+          "Treasure map",
+          "A treasure room is marked on this old map.\n\nSTATISTICS:\n\nWeight: 0",
+          {}
+        ],
+        [
+          "_!TVCON",
+          "dart",
+          "TV remote control",
+          "This is very strange thing...",
+          {
+            "thac0": 5,
+            "dmg": "1d4",
+            "dmgBonus": 3,
+            "profType": "dart"
+          }
+        ],
+        [
+          "_!LSB2",
+          "large sword",
+          "Green Lightsaber +5",
+          "Infinite Blinding Powder\nCreates cloud of dust in a small area, 4.5-ft radius, enemies are covered by the dust, lose invisibility and are blinded for 1 round and friendly targets become invisible, non-detectable and receive +100 bonud to Hide in Shadows/Move Silently for 2 rounds\n\nSTATISTICS:\n\nCharge abilities:\n– Blinding Powder 10 times per day \n  Range: 0\n  Duration: Special\n  Area of Effect:: 4.5-ft. radius\n  Allies: Non-detection, Invisibility, +100 Hide in Shadows/Move Silently for 2 roudns\n  Enemies: Invisibility removed,  Blindness for 1 round\n\nWeight: 0",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "2d3",
+            "dmgBonus": 5,
+            "apr": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!LSB3",
+          "large sword",
+          "Sky-blue Lightsaber +5",
+          "Infinite Blinding Powder\nCreates cloud of dust in a small area, 4.5-ft radius, enemies are covered by the dust, lose invisibility and are blinded for 1 round and friendly targets become invisible, non-detectable and receive +100 bonud to Hide in Shadows/Move Silently for 2 rounds\n\nSTATISTICS:\n\nCharge abilities:\n– Blinding Powder 10 times per day \n  Range: 0\n  Duration: Special\n  Area of Effect:: 4.5-ft. radius\n  Allies: Non-detection, Invisibility, +100 Hide in Shadows/Move Silently for 2 roudns\n  Enemies: Invisibility removed,  Blindness for 1 round\n\nWeight: 0",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "2d3",
+            "dmgBonus": 5,
+            "apr": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minWis": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!LSB1A",
+          "large sword",
+          "Sith Lightsaber +5",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "dmg": "1d2",
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!LSB1M",
+          "large sword",
+          "Sith Lightsaber +5",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "thac0": 5,
+            "dmg": "1d10",
+            "dmgBonus": 5,
+            "apr": 3,
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "_!LSB1X",
+          "large sword",
+          "Very well.",
+          "These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.\n\nSTATISTICS:\n\nDamage: 1d8 (slashing)\nSpeed Factor: 5\nProficiency Type: Long Sword\nType: One-handed\nRequires:\n 6 Strength\n\nWeight: 4",
+          {
+            "speed": 1,
+            "dmg": "1d2",
+            "special": [
+              {
+                "type": "ability",
+                "desc": "Cast Spell"
+              }
+            ],
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minStr": 6
+            }
+          }
+        ],
+        [
+          "_!LSB2A",
+          "large sword",
+          "Green Lightsaber +5",
+          "Infinite Blinding Powder\nCreates cloud of dust in a small area, 4.5-ft radius, enemies are covered by the dust, lose invisibility and are blinded for 1 round and friendly targets become invisible, non-detectable and receive +100 bonud to Hide in Shadows/Move Silently for 2 rounds\n\nSTATISTICS:\n\nCharge abilities:\n– Blinding Powder 10 times per day \n  Range: 0\n  Duration: Special\n  Area of Effect:: 4.5-ft. radius\n  Allies: Non-detection, Invisibility, +100 Hide in Shadows/Move Silently for 2 roudns\n  Enemies: Invisibility removed,  Blindness for 1 round\n\nWeight: 0",
+          {
+            "speed": 1,
+            "dmg": "1d2",
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minDex": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!LSB3A",
+          "large sword",
+          "Sky-blue Lightsaber +5",
+          "Infinite Blinding Powder\nCreates cloud of dust in a small area, 4.5-ft radius, enemies are covered by the dust, lose invisibility and are blinded for 1 round and friendly targets become invisible, non-detectable and receive +100 bonud to Hide in Shadows/Move Silently for 2 rounds\n\nSTATISTICS:\n\nCharge abilities:\n– Blinding Powder 10 times per day \n  Range: 0\n  Duration: Special\n  Area of Effect:: 4.5-ft. radius\n  Allies: Non-detection, Invisibility, +100 Hide in Shadows/Move Silently for 2 roudns\n  Enemies: Invisibility removed,  Blindness for 1 round\n\nWeight: 0",
+          {
+            "speed": 1,
+            "dmg": "1d2",
+            "profType": "long sword",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Thief"
+              ],
+              "races": [
+                "Dwarf",
+                "Gnome",
+                "Half-Elf",
+                "Half-Orc",
+                "Halfling",
+                "Human"
+              ],
+              "minDex": 6
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "_!MS007",
+          "misc",
+          "Dimension Palace",
+          "Amulet Of Cleansing\nWearer is protected by magic, if loses control amulet will awake him.\n\nSTATISTICS:\n– Armor Class: +3\n– Saving Throws: +3\n– Maximum Health +20\n\nEquipped abilities:\n– Wearer is freed from any negative effects if lose control, nearby enemies in 15-ft. radius lose beneficial effects\n\n  Cleanse and Purge: This spell enables the caster to hurl purification orb which explode and split to two orbs, first green cleanse orb removes all negative effects from friendly targets like Offensive Damage, Disabling, Battleground and Conjuration Effects.\nSecond red purge orb removes one protection per type like Combat, Non-Combat, Combination, Illusionary, Specific and Spell Protections. In addition enemies must save vs. Spell with -2 penalty or are afflicted by entropic purge all effects from protections type are removed.\nArea of Effect: \n\nWeight: 0",
+          {
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ],
+        [
+          "_!MS008",
+          "misc",
+          "Infinite Blinding Powder",
+          "Infinite Blinding Powder\nCreates cloud of dust in a small area, 4.5-ft radius, enemies are covered by the dust, lose invisibility and are blinded for 1 round and friendly targets become invisible, non-detectable and receive +100 bonud to Hide in Shadows/Move Silently for 2 rounds\n\nSTATISTICS:\n\nCharge abilities:\n– Blinding Powder 10 times per day \n  Range: 0\n  Duration: Special\n  Area of Effect:: 4.5-ft. radius\n  Allies: Non-detection, Invisibility, +100 Hide in Shadows/Move Silently for 2 roudns\n  Enemies: Invisibility removed,  Blindness for 1 round\n\nWeight: 0",
+          {
+            "charges": {
+              "count": 10,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "au": "gamemacik",
+  "u": "https://www.shsforums.net/topic/61056-mod-dimension-gate-or-how-tv-bunny-searched-tv-remote-control/",
+  "dl": "https://www.shsforums.net/topic/61056-mod-dimension-gate-or-how-tv-bunny-searched-tv-remote-control/",
+  "sum": "Adds Dimension Gate I-X and Dimension Mark I-X teleportation spells for cross-map teleportation to any BG2/ToB/EET area.",
+  "no": "Teleportation spell mod by gamemacik. Dimension Gate I-X teleports to any official map; Dimension Mark I-X marks return locations. EET-compatible from v1.1.",
+  "tags": [
+    "spell",
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "co": [
+    {
+      "n": "Change spell bar location only? (by default both are innate)",
+      "cn": 0,
+      "ss": 1,
+      "wf": "Dimension_Gate",
+      "wp": "Dimension_Gate\\setup-Dimension_Gate.tp2",
+      "wc": 0,
+      "wq": "extracted",
+      "it": 101,
+      "itC": {
+        "scroll": 73,
+        "amulet": 3,
+        "key": 1,
+        "large sword": 8,
+        "misc": 10,
+        "gem": 1,
+        "ring": 3,
+        "broken": 1,
+        "dart": 1
+      },
+      "tp2n": "Dimension_Gate"
+    },
+    {
+      "n": "Change spell category and spell bar location? (by default both are innate)",
+      "cn": 1,
+      "wf": "Dimension_Gate",
+      "wp": "Dimension_Gate\\setup-Dimension_Gate.tp2",
+      "wc": 1,
+      "wq": "extracted",
+      "tp2n": "Change spell bar location only? (by default both are innate)"
+    },
+    {
+      "n": "Change spell category and spell bar location? (by default both are innate)",
+      "cn": 2,
+      "wf": "Dimension_Gate",
+      "wp": "Dimension_Gate\\setup-Dimension_Gate.tp2",
+      "wq": "verified",
+      "tp2n": "Change spell category and spell bar location? (by default both are innate)"
+    }
+  ]
+}

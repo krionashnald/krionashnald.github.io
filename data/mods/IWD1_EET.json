@@ -1,0 +1,95 @@
+{
+  "i": 643,
+  "t": "IWD1_EET",
+  "sv": 1,
+  "ord": 710,
+  "c": "POST-TACTICAL QUESTS",
+  "n": "Icewind Dale in EET",
+  "no": "BETA: Ports the entire IWD1 campaign into EET. REQUIRES IWD:EE installed (reads game files to import content, like EET reads BG1:EE). By Tipun (The Gate Project). Still unfinished — balance issues. Primary support on Russian Arcane Coast forum. Install chain: IWD1_EET → IWD2_EET → IWD_EET_End → EET_End",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "partial",
+      "reason": "SCS IWD spell import components (#1500/#1510) conflict with IWD-in-EET's own spell resources. Use IWDification for IWD spells instead (canonical G3 source, same DavidW/SFO framework). SCS's AI/tactical components (#5000+) are completely unaffected — install those freely.",
+      "theirComps": "#1500 IWD Arcane Spells, #1510 IWD Divine Spells (only these conflict; all AI/tactical components are fine)",
+      "source": "SCS tp2 has REQUIRE_PREDICATE !MOD_IS_INSTALLED iwdification on #1500/#1510; IWDification is the recommended IWD spell source for EET, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "A7-TotLM-BG2EE",
+      "withId": 297,
+      "severity": "soft",
+      "reason": "If both installed, IWD1_EET must go FIRST. Some TotLM creature/scripting improvements not available with both. TotLM v3.1+ has explicit IWD-in-EET support",
+      "theirComps": "#0 Trials of the Luremaster for Baldur's Gate"
+    }
+  ],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "hard",
+      "reason": "IWD needs support mods"
+    }
+  ],
+  "u": "https://github.com/The-Gate-Project/IWD1_EET",
+  "a": "Tipun",
+  "sum": "Integrates the Icewind Dale campaign into your EET game, playable as a side journey. Full IWD story accessible from the Sword Coast.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "ki": [
+    {
+      "pattern": "stuck.*Belhifet|Belhifet.*stuck|Boo.*inventory.*stuck|familiar.*inventory.*stuck",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Players can get stuck in the location after defeating Belhifet if Boo and/or a familiar are in inventory. Multiple users confirmed (zelazko, Chev). The transition script fails when these special items are present.",
+      "workaround": "Remove Boo and any familiar from inventory before the Belhifet fight. If already stuck, use console to remove them, then the transition should trigger.",
+      "user_action": "check-docs",
+      "forum": "https://www.gibberlings3.net/forums/topic/37436-stuck-in-the-location-after-defeating-belhifet/"
+    }
+  ],
+  "dl": "https://github.com/The-Gate-Project/IWD1_EET",
+  "au": "K4thos",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Use <CHARNAME> instead of <GABBER> etc.",
+      "tp2n": "Use <CHARNAME> instead of <GABBER> etc.",
+      "cn": 0,
+      "wf": "IWD1_EET",
+      "wp": "IWD1_EET\\SETUP-IWD1_EET.TP2",
+      "wc": 0,
+      "no": "Uses CHARNAME instead of GABBER in IWD dialogue."
+    },
+    {
+      "n": "Icewind Dale: Heart of Winter in Baldur's Gate Enhanced Edition Trilogy",
+      "tp2n": "Icewind Dale: Heart of Winter in Baldur's Gate Enhanced Edition Trilogy",
+      "cn": 1,
+      "wf": "IWD1_EET",
+      "wp": "IWD1_EET\\SETUP-IWD1_EET.TP2",
+      "wc": 1,
+      "no": "Icewind Dale: Heart of Winter fully playable within EET.",
+      "games": [
+        "eet"
+      ]
+    }
+  ],
+  "gh": {
+    "o": "The-Gate-Project",
+    "r": "IWD1_EET"
+  }
+}

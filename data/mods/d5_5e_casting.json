@@ -1,0 +1,109 @@
+{
+  "i": 372,
+  "t": "d5_5e_casting",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 220,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "5E Spellcasting",
+  "langs": {
+    "en": 0,
+    "fr": 1
+  },
+  "no": "gotta go after TA, incompatible with I4E 5E Spellcasting It turns the entire game on its head behind the screen, read the documentation carefully to be sure this is what you want This should be roughly its spot. Dunno how it'd changes with ToF present. Don't mix them. TA's Spontaneous Casting for Clerics (experimental) does similar for healing spells, if you prefer a smaller approach (Perhaps by the time you read this, Shadow Magic will officially work with 5e Casting, but did not as of this writing.)Install 5e Casting after all mods that add kits or/and spells. Also install 5e Casting after all mods that change spell tables, like Tweaks Anthology and OlvynSpells.Install 5e Casting before Stats Overhauls and Scales of Balance.",
+  "conflicts": [
+    {
+      "with": "TomeAndBlood",
+      "withId": 331,
+      "severity": "soft",
+      "reason": "TnB cn:40 (Revised Specialists) and cn:82 (Arcanist) would conflict with 5E — both TnB cn:51 (Metamagic) and cn:66 (Innate Familiar) are and safe — metamagic adds abilities independent of casting system, familiar modifies CLABs only.",
+      "theirComps": "#40 Revised Specialists (NOT) #82 Arcanist (NOT) #51 Metamagic (IN, safe) #66 Innate Familiar (IN, safe)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "d2-workshopkits",
+      "withId": 661,
+      "severity": "soft",
+      "reason": "Kit Updater has a dedicated 5E casting option. Use this if running SubtleD's 5E casting mod.",
+      "theirComps": "#94 Kit Updater for 5E casting"
+    }
+  ],
+  "u": "https://github.com/UnearthedArcana/5E_spellcasting/releases",
+  "a": "Subtledoctor",
+  "v": "2.7.1",
+  "sum": "Replaces Vancian spell memorization with a 5th Edition-style spell slot system. Fundamental change to how spellcasting works.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "v1.1",
+    "place": "post"
+  },
+  "gh": {
+    "o": "UnearthedArcana",
+    "r": "5E_spellcasting",
+    "ab": true
+  },
+  "dl": "https://github.com/UnearthedArcana/5E_spellcasting/releases",
+  "au": "SubtleD",
+  "co": [
+    {
+      "n": "Change ALL Casters to 5E Spellcasting",
+      "tp2n": "Change ALL Casters to 5E Spellcasting",
+      "pi": "D5_5E_CASTING_EVERYONE",
+      "wf": "5E_spellcasting",
+      "wp": "5E_spellcasting\\5E_spellcasting.tp2",
+      "wc": 100,
+      "wq": "manual_final",
+      "cn": 100,
+      "g": "5e_scope",
+      "no": "Changes ALL casters (wizard, bard, cleric, druid, paladin, ranger) to 5E spell slots. FORBID with cn:300. Integrates with FnP if present"
+    },
+    {
+      "n": "Change Bards to 5E Spellcasting",
+      "tp2n": "Change Bards to 5E Spellcasting",
+      "pi": "D5_5E_CASTING_BARDS",
+      "wf": "5E_spellcasting",
+      "wp": "5E_spellcasting\\5E_spellcasting.tp2",
+      "wc": 300,
+      "wq": "manual_final",
+      "cn": 300,
+      "ss": 5,
+      "g": "5e_scope",
+      "no": "Changes ONLY bards to 5E spell slots. FORBID with cn:100. Adjusts for M&G if present",
+      "splstates": 5
+    },
+    {
+      "n": "bonuses to both memorization slots and casting slots",
+      "tp2n": "bonuses to both memorization slots and casting slots",
+      "no": "v Casting slot bonuses",
+      "pi": "D5_5E_ITEM_MEM_CASTING_SLOTS",
+      "scn": "Bonus Spell Slot Items and 5E Casters",
+      "wf": "5E_spellcasting",
+      "wp": "5E_spellcasting\\5E_spellcasting.tp2",
+      "wc": 901,
+      "wq": "unresolved",
+      "cn": 901,
+      "g": "5e_item_slots"
+    },
+    {
+      "n": "bonuses to casting slots only",
+      "tp2n": "bonuses to casting slots only",
+      "pi": "D5_5E_ITEM_CASTING_SLOTS_ONLY",
+      "scn": "Bonus Spell Slot Items and 5E Casters",
+      "wf": "5E_spellcasting",
+      "wp": "5E_spellcasting\\5E_spellcasting.tp2",
+      "wc": 902,
+      "wq": "unresolved",
+      "cn": 902,
+      "g": "5e_item_slots"
+    }
+  ]
+}

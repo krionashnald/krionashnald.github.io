@@ -1,0 +1,710 @@
+{
+  "i": 409,
+  "t": "skills-and-abilities",
+  "sv": 1,
+  "pfx": "D5",
+  "ord": 110,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "Skills and Abilities",
+  "langs": {
+    "en": 0,
+    "zh-cn": 1,
+    "ru": 2
+  },
+  "no": "Skills and Abilities by morpheus562. Class/kit ability tweaks, proficiency overhaul, and new HLAs. Several components require EEex. Install after SCS, before EET_End.",
+  "rq": "EEex",
+  "conflicts": [
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "soft",
+      "reason": "Proficiency and ability tweaks overlap with M&G's revised combat mechanics",
+      "theirComps": "#225 Revised Archers #280 Revised Backstabbing #290 Revised THAC0"
+    },
+    {
+      "with": "A7#ImprovedArcher",
+      "withId": 317,
+      "severity": "soft",
+      "reason": "Both modify the Archer kit. S&A #170 updates Archer bonuses; A7 Improved Archer completely overhauls the kit. Use one or the other.",
+      "myComps": "#170 Update Archer per kit description",
+      "theirComps": "#0 Improved Archer Kit",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "METweaks",
+      "withId": 245,
+      "severity": "soft",
+      "reason": "METweaks class ability and proficiency tweaks overlap with Skills and Abilities",
+      "myComps": "#141 #142 #143 Fighter multi-class pips #300 Weapon Styles #311 #312 #313 Proficiency Progression",
+      "theirComps": "#500 #505 #510 Proficiency rate #1000 Monk Deflect Missiles #1800 Assassin backstab"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "cdtweaks weapon proficiency, styles, and grandmastery changes overlap with Skills and Abilities",
+      "myComps": "#141 #142 #143 Fighter pips #300 Weapon Styles #311 #312 #313 Proficiency Progression #400 2H Strength Bonus",
+      "theirComps": "#2060 Weapon Styles #2160 #2161 #2162 #2163 #2164 Weapon Proficiency #2200 #2210 #2211 Grandmastery #2440 Bonus APR"
+    },
+    {
+      "with": "dw_talents",
+      "withId": 683,
+      "severity": "partial",
+      "reason": "Component-level analysis: (1) SnA cn:80 (Paladin Abilities) vs ToF cn:40190/40300 — CONFLICT: both add Smite Evil and Disease Immunity to paladin CLABs with different resources, causing double abilities. Pick one paladin system. (2) SnA cn:141/143 (Fighter Pips) vs ToF cn:81100 — install SnA before ToF; ToF reads WEAPPROF.2DA into Lua before wiping it, capturing SnA's pip changes. (3) SnA cn:150 (Fighter Abilities) vs ToF cn:60100 (Feats) — independent, different delivery systems (CLAB vs Lua feats). (4) SnA cn:180 (Bard Songs), cn:400 (2H Strength), cn:750 (Concentration), cn:50 (Wizard Slayer), cn:12 (Bard Skills) — all independent, no ToF overlap on these files.",
+      "myComps": "#80 Paladin Abilities (REMOVED, conflicts) #141 #143 Fighter Pips (order-dependent) #150 Fighter Abilities (safe) #180 Bard Songs (safe) #400 2H Strength (safe, has ToF detection) #750 #50 #12 (safe)",
+      "theirComps": "#40190 Revised Paladins #40300 Smite Evil #81100 Weapon Proficiency #60100 Minor Abilities #60200 Revised HLAs #81200 Weapon Styles",
+      "source": "SnA cn:80 adds MOPALC3/MOPALC5 to CLABPA01; ToF adds PALADIN_SMITE_EVIL/#paldise to same CLABs; SnA cn:400 has built-in tof_abilitys detection, 2026-04",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "ArtisansKitpack",
+      "withId": 326,
+      "severity": "soft",
+      "reason": "No overlap . AK paladin overhauls (cn:3000-3011) SnA cn:80 (Paladin Abilities) modifies CLABPA01 — no selected AK component touches it. SnA cn:60/130/170/300",
+      "myComps": "#60 Inquisitor #80 Paladin Abilities #130 Blade #170 Archer #300 Weapon Styles",
+      "theirComps": "AK Paladin/Inquisitor/Blade overhauls (NOT in preset)",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "HouseTweaks",
+      "withId": 287,
+      "severity": "soft",
+      "reason": "Both modify proficiencies, weapon styles, and HLAs",
+      "myComps": "#710 #720 HLAs #300 Weapon Styles #311 #312 #313 Proficiency",
+      "theirComps": "#4 Rebalanced Proficiencies #5 Rebalanced Weapon Styles #7 Rebalanced APR"
+    },
+    {
+      "with": "spell_rev",
+      "withId": 288,
+      "severity": "hard",
+      "reason": "SnA #750 Concentration Check has FORBID_COMPONENT for Spell Revisions #65. Also requires EEex and forbids Tactics Remix #60.",
+      "myComps": "#720 Update Existing HLAs",
+      "theirComps": "#65 Revised HLAs",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://www.morpheus-mart.com/",
+  "a": "Grammarsalad, morpheus562",
+  "v": "v5.1",
+  "sum": "25 tweaks to skills and abilities: thieving skill adjustments, class ability changes, and proficiency modifications.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "Skills-and-Abilities"
+  },
+  "prof": {
+    "141": {
+      "multiclass": {
+        "fighterMaxPips": 3
+      },
+      "desc": "Fighter multi-classes can reach Master (3 pips)"
+    },
+    "142": {
+      "multiclass": {
+        "fighterMaxPips": 4
+      },
+      "desc": "Fighter multi-classes can reach High Master (4 pips)"
+    },
+    "143": {
+      "multiclass": {
+        "fighterMaxPips": 5
+      },
+      "desc": "Fighter multi-classes can reach Grand Master (5 pips)"
+    },
+    "300": {
+      "flags": {
+        "stylesRebalanced": true
+      },
+      "desc": "Revised weapon fighting styles"
+    },
+    "311": {
+      "add": [
+        {
+          "id": "HEAVY_ARMOR",
+          "n": "Heavy Armor",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Proficiency with heavy armor"
+        },
+        {
+          "id": "SPELLCRAFT",
+          "n": "Spellcraft",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Magical knowledge and counterspelling"
+        }
+      ],
+      "desc": "Adds Heavy Armor and Spellcraft proficiencies (vanilla progression)"
+    },
+    "312": {
+      "add": [
+        {
+          "id": "HEAVY_ARMOR",
+          "n": "Heavy Armor",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Proficiency with heavy armor"
+        },
+        {
+          "id": "SPELLCRAFT",
+          "n": "Spellcraft",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Magical knowledge and counterspelling"
+        }
+      ],
+      "profSlots": {
+        "warrior": {
+          "rate": 2
+        },
+        "priest": {
+          "rate": 3
+        },
+        "rogue": {
+          "rate": 3
+        },
+        "arcane": {
+          "rate": 4
+        }
+      },
+      "desc": "Adds new proficiencies with accelerated progression"
+    },
+    "313": {
+      "add": [
+        {
+          "id": "HEAVY_ARMOR",
+          "n": "Heavy Armor",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Proficiency with heavy armor"
+        },
+        {
+          "id": "SPELLCRAFT",
+          "n": "Spellcraft",
+          "cat": "skill",
+          "maxPips": 3,
+          "desc": "Magical knowledge and counterspelling"
+        }
+      ],
+      "profSlots": {
+        "warrior": {
+          "rate": 2
+        },
+        "priest": {
+          "rate": 3
+        },
+        "rogue": {
+          "rate": 3
+        },
+        "arcane": {
+          "rate": 3
+        }
+      },
+      "desc": "Adds new proficiencies with NWN2-style progression"
+    }
+  },
+  "dl": "https://www.morpheus-mart.com/",
+  "au": "morpheus562",
+  "co": [
+    {
+      "n": "Add HLAs to IWDEE (Lefreut UI Required)",
+      "tp2n": "Add HLAs to IWDEE (Lefreut UI Required)",
+      "cn": 730,
+      "pi": "SkillsAndAbilitiesIWDEEHLA",
+      "grn": "Spells and HLAs",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 730,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "iwdee"
+      ],
+      "no": "IWDEE ONLY — REQUIRE_PREDICATE GAME_IS ~iwdee~. Will not install on EET. Do not include in EET presets."
+    },
+    {
+      "n": "Add New HLAs for ALL Classes and Kits",
+      "tp2n": "Add New HLAs for ALL Classes and Kits",
+      "no": "Adds 11 new epic HLAs (Epic Damage Reduction, Elemental Resistance, Toughness, Prowess, etc.). Requires BG2EE/EET or IWDEE with LeUI HLAs installed. Conflicts with ToF cn:60200.",
+      "pi": "SkillsAndAbilitiesNewHLA",
+      "grn": "Spells and HLAs",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 710,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 710
+    },
+    {
+      "n": "Update Existing HLAs",
+      "tp2n": "Update Existing HLAs",
+      "no": "Modifies Greater Whirlwind, Resist Magic, War Cry, Hardiness, Evasion. FORBID_COMPONENT with Spell Revisions #65. Conflicts with ToF cn:60200.",
+      "pi": "SkillsAndAbilitiesUpdateHLA",
+      "grn": "Spells and HLAs",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "cn": 720
+    },
+    {
+      "n": "Add Concentration Check to Resist Spell Disruption",
+      "tp2n": "Add Concentration Check to Resist Spell Disruption",
+      "no": "Requires EEex. d20 + Luck + (CON/2) - 5 > Damage = resist disruption. FORBID_COMPONENT with Tactics Remix cn:60 and Spell Revisions cn:65.",
+      "pi": "SkillsAndAbilitiesConcentration",
+      "grn": "Spells and HLAs",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 750,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 750
+    },
+    {
+      "n": "Bard Skills: Add Lockpicking",
+      "tp2n": "Add Lockpicking",
+      "no": "Requires EEex. Gives bards Open Locks thief skill.",
+      "pi": "SkillsAndAbilitiesBard1",
+      "scn": "Update Skills for Bards",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 11,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 11,
+      "g": "bard_skills"
+    },
+    {
+      "n": "Bard Skills: Add Lockpicking and Find/Disarm Traps",
+      "tp2n": "Add Lockpicking and Find/Disarm Traps",
+      "no": "Requires EEex. Gives bards Open Locks and Find/Disarm Traps thief skills.",
+      "pi": "SkillsAndAbilitiesBard2",
+      "scn": "Update Skills for Bards",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 12,
+      "g": "bard_skills",
+      "wc": 12
+    },
+    {
+      "n": "Blade Kit Enhancements",
+      "tp2n": "Blade Kit Enhancements",
+      "no": "Master specialization (3 slots) in all bladed weapons, +0.5 APR at levels 10 and 20. Modifies Blade CLAB table.",
+      "pi": "SkillsAndAbilitiesBlade",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 130
+    },
+    {
+      "n": "Skald Kit Enhancements",
+      "tp2n": "Skald Kit Enhancements",
+      "no": "Modifies Skald kit abilities via CLAB table.",
+      "cn": 131,
+      "pi": "SkillsAndAbilitiesSkald",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 131,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ]
+    },
+    {
+      "n": "Bard Songs Last 1 Turn",
+      "tp2n": "Bard Songs Last 1 Turn",
+      "no": "Increases bard song duration from 1 round to 1 turn. Redundant with ToF bard song changes.",
+      "pi": "SkillsAndAbilitiesSongDuration",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 180,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 180
+    },
+    {
+      "n": "Add New Fighter Abilities",
+      "tp2n": "Add New Fighter Abilities",
+      "no": "Adds Second Wind (heal 1d10+level 1/day), Indomitable (save bonus at 9/13/17), Epic Weapon Focus and Epic Weapon Specialization HLAs. Modifies fighter CLAB.",
+      "pi": "SkillsAndAbilitiesFighter",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 150,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 150
+    },
+    {
+      "n": "Fighter Multi-Class Pips: Master (3 pips)",
+      "tp2n": "Allow Fighter Multiclasses to Achieve Master (3 pips) in Weapon Proficiencies",
+      "no": "Allows fighter multi-classes to reach Master (3 pips). Modifies WEAPPROF.2DA. Conflicts with ToF cn:81100.",
+      "pi": "SkillsAndAbilitiesWeaponProf1",
+      "scn": "Allow Fighter Multiclasses to Achieve Higher than Specialized (2 pips) in Weapons Proficiencies",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 141,
+      "g": "fighter_pips"
+    },
+    {
+      "n": "Fighter Multi-Class Pips: High Master (4 pips)",
+      "tp2n": "Allow Fighter Multiclasses to Achieve High Master (4 pips) in Weapon Proficiencies",
+      "no": "Allows fighter multi-classes to reach High Master (4 pips). Modifies WEAPPROF.2DA. Conflicts with ToF cn:81100.",
+      "pi": "SkillsAndAbilitiesWeaponProf2",
+      "scn": "Allow Fighter Multiclasses to Achieve Higher than Specialized (2 pips) in Weapons Proficiencies",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 142,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 142,
+      "g": "fighter_pips"
+    },
+    {
+      "n": "Fighter Multi-Class Pips: Grand Master (5 pips)",
+      "tp2n": "Allow Fighter Multiclasses to Achieve Grand Master (5 pips) in Weapon Proficiencies",
+      "no": "Allows fighter multi-classes to reach Grand Master (5 pips). Modifies WEAPPROF.2DA. Conflicts with ToF cn:81100.",
+      "pi": "SkillsAndAbilitiesWeaponProf3",
+      "scn": "Allow Fighter Multiclasses to Achieve Higher than Specialized (2 pips) in Weapons Proficiencies",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 143,
+      "g": "fighter_pips"
+    },
+    {
+      "n": "Update Skills for Monks",
+      "tp2n": "Update Skills for Monks",
+      "no": "Requires EEex. Gives monks Open Locks, Find/Disarm Traps, Detect Illusion thief skills. Adds Flurry of Blows and Perfect Self HLA.",
+      "pi": "SkillsAndAbilitiesMonk",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 20,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 20
+    },
+    {
+      "n": "Wizard Slayer Kit Enhancements",
+      "tp2n": "Wizard Slayer Kit Enhancements",
+      "no": "Requires EEex. Adds Detect Illusions (100), cumulative 10% spell failure per hit, 25% Dispel Magic chance on hit. Modifies Wizard Slayer CLAB.",
+      "pi": "SkillsAndAbilitiesDI1",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 50
+    },
+    {
+      "n": "Add New Paladin Abilities",
+      "tp2n": "Add New Paladin Abilities",
+      "no": "Adds Smite (1/day + CHA to attack/damage), Aura of Courage (3rd level), Sanctify Strikes HLA (+2 magic damage). Modifies CLABPA01. CONFLICTS with ToF cn:40190/40300 — both add Smite Evil to paladin CLABs with different resources.",
+      "pi": "SkillsAndAbilitiesPaladin1",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 80,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 80
+    },
+    {
+      "n": "Replace Inquisitor True Seeing for Detect Illusion Skill",
+      "tp2n": "Replace Inquisitor True Seeing for Detect Illusion Skill",
+      "no": "Requires EEex. Replaces True Seeing with Detect Illusion (100). Modifies Inquisitor CLAB.",
+      "pi": "SkillsAndAbilitiesDI2",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 60
+    },
+    {
+      "n": "Allow Inquisitor Kit to Cast Divine Spells",
+      "tp2n": "Allow Inquisitor Kit to Cast Divine Spells",
+      "no": "Removes Inquisitor's divine spell restriction. May conflict with F&P's inquisitor-as-subclass redesign.",
+      "pi": "SkillsAndAbilitiesInquisitor1",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 100
+    },
+    {
+      "n": "Turn Undead Overhaul",
+      "tp2n": "Turn Undead Overhaul",
+      "no": "Requires EEex. Once per day per 3 levels (clerics) / 4 levels (paladins), deals 2d6 + level + CHA modifier damage. Modifies Turn Undead ability.",
+      "pi": "SkillsAndAbilitiesTurnUndead",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 120,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 120
+    },
+    {
+      "n": "Adjust Cleric/Thief Actionbar",
+      "tp2n": "Adjust Cleric/Thief Actionbar",
+      "no": "Requires EEex. Replaces Turn Undead modal with Thieving Ability button for Cleric/Thief multiclass.",
+      "pi": "SkillsAndAbilitiesClericThief",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 160,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 160
+    },
+    {
+      "n": "Update Archer to provide to hit and damage bonuses per the kit description",
+      "tp2n": "Update Archer to provide to hit and damage bonuses per the kit description",
+      "no": "Adjusts Archer kit to match its description. Modifies Archer CLAB. Conflicts with A7#ImprovedArcher — use one or the other.",
+      "pi": "SkillsAndAbilitiesUpdateArcher",
+      "grn": "Class/Kit Updates",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 170
+    },
+    {
+      "n": "Update Weapon Fighting Styles",
+      "tp2n": "Update Weapon Fighting Styles",
+      "no": "Revises Two-Handed, Sword and Shield, Single-Weapon, and Two-Weapon styles. Modifies WSPATCK/WSDUAL/WSSHLD/WSSINGLE 2DA files.",
+      "pi": "SkillsAndAbilitiesWeapStyle",
+      "grn": "Proficiencies",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 300,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 300
+    },
+    {
+      "n": "Proficiency Progression: Vanilla",
+      "tp2n": "Vanilla Proficiency Progression",
+      "no": "Overhauls proficiency system with new proficiencies (Heavy Armor, Spellcraft, etc.) using vanilla progression rates. Modifies WEAPPROF.2DA extensively.",
+      "pi": "SkillsAndAbilitiesNewProf1",
+      "scn": "Overhaul Proficiency System - Add New Proficiencies and Weapon Styles",
+      "grn": "Proficiencies",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 311,
+      "g": "prof_prog"
+    },
+    {
+      "n": "Proficiency Progression: Accelerated",
+      "tp2n": "Accelerated Proficiency Progression",
+      "no": "Same proficiency overhaul with accelerated rates (warriors every 2, clerics/thieves every 3, mages every 4). FORBID_COMPONENT with ToF cn:20000. Modifies WEAPPROF.2DA extensively.",
+      "pi": "SkillsAndAbilitiesNewProf2",
+      "scn": "Overhaul Proficiency System - Add New Proficiencies and Weapon Styles",
+      "grn": "Proficiencies",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 312,
+      "g": "prof_prog"
+    },
+    {
+      "n": "Proficiency Progression: NWN2 Style",
+      "tp2n": "NWN2 Style Proficiency Progression",
+      "no": "Same proficiency overhaul with NWN2-style rates (fighters every 2, all others every 3). FORBID_COMPONENT with ToF cn:20000. Modifies WEAPPROF.2DA extensively.",
+      "pi": "SkillsAndAbilitiesNewProf3",
+      "scn": "Overhaul Proficiency System - Add New Proficiencies and Weapon Styles",
+      "grn": "Proficiencies",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 313,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 313,
+      "g": "prof_prog"
+    },
+    {
+      "n": "2H Weapon Additional Strength Bonus",
+      "tp2n": "2H Weapon Additional Strength Bonus",
+      "no": "Two-handed attacks receive 1.5x Strength damage bonus (rounded down). Has built-in ToF detection.",
+      "pi": "SkillsAndAbilitiesSTR",
+      "grn": "More Meaningful Stat Bonuses",
+      "wf": "skills-and-abilities",
+      "wp": "skills-and-abilities\\skills-and-abilities.tp2",
+      "wc": 400,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "cn": 400
+    }
+  ],
+  "advisories": [
+    {
+      "with": "Faiths_and_Powers",
+      "withId": 339,
+      "severity": "soft",
+      "reason": "S&A inquisitor and turn undead changes may conflict with F&P's sphere system and class redesigns",
+      "myComps": "#60 Inquisitor Detect Illusion #100 Inquisitor Divine Spells #120 Turn Undead Overhaul",
+      "theirComps": "#80 Sphere System #31 Cleric Kits #35 #36 Paladin Kits",
+      "evidenceLevel": "speculative"
+    },
+    {
+      "with": "SubtleD_Spell_Tweaks",
+      "withId": 305,
+      "severity": "partial",
+      "reason": "Different domains (spells vs class abilities) but HLA and CLAB table modifications may overlap. Both used together . Install SubtleD Spell Tweaks before Skills and Abilities.",
+      "orderOnly": true,
+      "myComps": "#700 PfNW/PfMW #710 New HLAs #720 Updated HLAs #750 Concentration #130 Blade #180 Bard Songs #300 Weapon Styles",
+      "theirComps": "#10 Rebalanced Schools #30 High-Level Spells Penetrate MR #55 Cure Bypass Deflection",
+      "source": "tp2 analysis — SubtleD modifies spell behavior, S&A modifies class abilities/HLAs. Overlap limited to shared CLAB/LU 2da files, 2026-03",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

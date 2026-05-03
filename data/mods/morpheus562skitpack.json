@@ -1,0 +1,1977 @@
+{
+  "i": 320,
+  "t": "morpheus562-s-kitpack",
+  "sv": 1,
+  "pfx": "MO",
+  "ord": 70,
+  "c": "KIT & CLASS MODS",
+  "n": "Morpheus562's Kitpack",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "zh-cn": 2
+  },
+  "no": "Morpheus562's Kitpack Adds some kits inspired by D&D 5e like the Fighter (Psi Warrior) and other kits inspired by Neverwinter Nights 2 like the Stormlord (Fighter/Druid).",
+  "conflicts": [],
+  "advisories": [
+    {
+      "with": "enhanced-powergaming-scripts",
+      "withId": 443,
+      "severity": "soft",
+      "evidenceLevel": "speculative",
+      "orderOnly": true,
+      "reason": "Mechanism-verified, failure NOT observed in any preserved WSETUP.DEBUG across our test cycles. Both mods are by morpheus562. Trace: Stormlord (cn:1101) creates MOSTL02.SPL in override. mih_metamod cn:4 'Clean up override folder' moves .SPL files into mh#clean.bif and removes them from override/ (verified: cleanup_override.tpa preserve list excludes .spl). EPS initialize.tpa:1345 does COPY_EXISTING ~MOSTL02.SPL~ override when Stormlord is detected; WeiDU should resolve this from the biff. No install has produced 'Resource [MOSTL02.SPL] not found'. Mirror of the advisory on enhanced-powergaming-scripts. If you observe the failure in a real install, report the session ID and we'll promote both sides to confirmed.",
+      "myComps": "#1101 Stormlord: Assign to Jaheira",
+      "theirComps": "#15 Pre-Buffing #9 Celestials #10 Simulacrum",
+      "source": "Demoted to advisories[] on 2026-04-21 during same-author audit. Mirror of enhanced-powergaming-scripts.advisories[morpheus562skitpack]."
+    }
+  ],
+  "kitAbilities": {
+    "0": {
+      "BATTLE_MASTER": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Charge",
+            "freq": "innate",
+            "effects": "Speed boost for 3 seconds.",
+            "level": 1
+          },
+          {
+            "n": "Relentless Assault",
+            "freq": "innate",
+            "effects": "Double APR for 5 rounds, then winded.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "items": "Grandmastery only in two-handed weapons; all others Proficient."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "Grandmastery only in two-handed weapons."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "1": {
+      "BATTLERAGER_ASSIGN_TO_KORGAN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Battlerager kit to Korgan."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "2": {
+      "BATTLERAGER_DO_NOT_ASSIGN_TO_KORGAN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Keeps Korgan with his default Berserker kit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "3": {
+      "BATTLERAGER_INSTALL_ONLY": {
+        "passive": [
+          {
+            "n": "Spiked Armor",
+            "type": "desc",
+            "desc": "At lv5, attackers take 1d4 piercing"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Reckless Abandon",
+            "freq": "1/day per 4 levels",
+            "effects": "+10% damage, immunities, but -2 AC, 1 dmg/round self, +10% physical damage taken. 1 turn. Winded after.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Dwarf only",
+          "alignment": "Non-lawful",
+          "ranged": false
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "Dwarf-only, non-lawful. Reckless Abandon rage with winded aftermath."
+        }
+      }
+    },
+    "4": {
+      "DEATH_KNIGHT": {
+        "passive": [
+          {
+            "n": "Killing Machine",
+            "type": "desc",
+            "desc": "At lv21, kills trigger +10% crit chance for 2 rounds"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Absorb Health",
+            "freq": "scaling",
+            "effects": "2 dmg/level, heals self.",
+            "level": 1
+          },
+          {
+            "n": "Weapon Runes",
+            "freq": "choose 1 at lv2",
+            "effects": "Swordshattering, Razorice, or Fallen Champion rune.",
+            "level": 2
+          },
+          {
+            "n": "Lichborne",
+            "freq": "scaling",
+            "effects": "Immunities, 1 turn.",
+            "level": 6
+          },
+          {
+            "n": "Presences",
+            "freq": "modal",
+            "effects": "Blood/Frost/Unholy aura.",
+            "level": 9
+          },
+          {
+            "n": "Unholy Blight",
+            "freq": "scaling",
+            "effects": "AoE insect swarm.",
+            "level": 15
+          }
+        ],
+        "restrictions": {
+          "alignment": "Evil only",
+          "items": "Max Mastery (3) in melee, Proficient in ranged. No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "note": "No dual-class per research (evil only)",
+        "spellRestrictions": {
+          "note": "Gains innate necromantic abilities (Absorb Health, Weapon Runes, Unholy Blight)."
+        },
+        "statBonus": {
+          "note": "Evil only. Killing Machine passive at lv21 (+10% crit for 2 rounds per kill)."
+        },
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool with death-themed additions (Lichborne, Unholy Blight)."
+        }
+      }
+    },
+    "5": {
+      "CHAMPION": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Fighter. Defensive warrior protecting allies with auras and shield abilities."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "canDual": true,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "FIGHTER",
+          "note": "Standard fighter HLA pool"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "Defensive warrior."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "6": {
+      "DRAGOON": {
+        "passive": [
+          {
+            "n": "Speed",
+            "type": "desc",
+            "desc": "+2 movement at lv5. Immune to knockback at lv10."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Chaotic Spring",
+            "freq": "scaling",
+            "effects": "AoE leap: 1d6/level piercing + 2s stun.",
+            "level": 3
+          },
+          {
+            "n": "Heaven's Thrust",
+            "freq": "scaling",
+            "effects": "Single-target leap: 1d8/level piercing + bleed.",
+            "level": 7
+          }
+        ],
+        "restrictions": {
+          "items": "Grandmastery only in polearms (staff/spear/halberd); all others Proficient."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "+2 movement at lv5. Immune to knockback at lv10. Grandmastery only in polearms."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "7": {
+      "PSI_WARRIOR": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "charm",
+              "fear"
+            ],
+            "desc": "Immune to charm/fear/morale failure. Guarded Mind (immune to psionic) at lv10."
+          },
+          {
+            "n": "CON Penalty",
+            "type": "desc",
+            "desc": "-2 max CON"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Psionic Strike",
+            "freq": "scaling",
+            "effects": "INT mod bonus damage, 10s.",
+            "level": 3
+          },
+          {
+            "n": "Protective Field",
+            "freq": "scaling",
+            "effects": "INT mod % physical DR, 5 turns.",
+            "level": 3
+          },
+          {
+            "n": "Telekinetic Movement",
+            "freq": "scaling",
+            "effects": "Push/pull target, save vs Death.",
+            "level": 7
+          },
+          {
+            "n": "Bulwark of Force",
+            "freq": "1/day",
+            "effects": "10% DR aura, 1 turn.",
+            "level": 15
+          }
+        ],
+        "restrictions": {
+          "items": "No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "note": "No dual-class per research",
+        "spellRestrictions": {
+          "note": "No spellcasting. Uses psionic innates (Psionic Strike, Protective Field, Telekinetic Movement)."
+        },
+        "statBonus": {
+          "con": -2,
+          "note": "-2 max CON. Immune to charm/fear/morale failure. Guarded Mind at lv10."
+        }
+      }
+    },
+    "8": {
+      "SHIELD_BREAKER": {
+        "passive": [
+          {
+            "n": "Sunder",
+            "type": "desc",
+            "desc": "25% on-hit: -10% cumulative physical DR on target (4 rounds)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Sunder",
+            "freq": "scaling",
+            "effects": "AoE 2d4 crushing + -25% physical DR + knockdown.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "ranged": false,
+          "items": "-2 all damage. No shields."
+        },
+        "canDual": true,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "-2 all damage. No shields. 25% on-hit physical DR debuff."
+        },
+        "canDualTo": [
+          "MAGE",
+          "THIEF",
+          "CLERIC",
+          "DRUID"
+        ]
+      }
+    },
+    "9": {
+      "DEATHBRINGER_ASSIGN_TO_SAREVOK": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Deathbringer kit to Sarevok."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "10": {
+      "DEATHBRINGER_DO_NOT_ASSIGN_TO_SAREVOK": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Keeps Sarevok with his default kit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "11": {
+      "DEATHBRINGER_INSTALL_ONLY": {
+        "passive": [
+          {
+            "n": "Carnage",
+            "type": "desc",
+            "desc": "At lv15, kills trigger +10% physical damage (2 rounds, stacks). At lv17, 3% on-hit for +200 slashing."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Savage Blows",
+            "freq": "scaling",
+            "effects": "Attacks drain 1 CON per hit, 10s.",
+            "level": 20
+          }
+        ],
+        "restrictions": {
+          "alignment": "Evil only",
+          "items": "No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "Evil only. Carnage at lv15, Deathbringer Assault at lv17."
+        }
+      }
+    },
+    "12": {
+      "RASHEMAAR_BERSERKER_ASSIGN_TO_MINSC": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Rashemaar Berserker kit to Minsc."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "13": {
+      "RASHEMAAR_BERSERKER_DO_NOT_ASSIGN_TO_MIN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Keeps Minsc with his default Ranger kit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "14": {
+      "RASHEMAAR_BERSERKER_INSTALL_ONLY": {
+        "passive": [],
+        "activated": [
+          {
+            "n": "Rage",
+            "freq": "1/day per 4 levels",
+            "effects": "+2 hit/damage/AC, immunities, +15 temp HP, 1 turn.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "race": "Human only",
+          "items": "No stealth. No ranged specialization."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard ranger spellcasting."
+        },
+        "statBonus": {
+          "note": "Human only. No stealth. No ranged specialization."
+        }
+      }
+    },
+    "15": {
+      "CHAMPION_OF_THE_WILD": {
+        "passive": [
+          {
+            "n": "Elegant Strike",
+            "type": "desc",
+            "desc": "DEX mod bonus to melee damage at lv2"
+          },
+          {
+            "n": "Superior Defense",
+            "type": "desc",
+            "desc": "+1/+2/+3 AC scaling"
+          },
+          {
+            "n": "STR Penalty",
+            "type": "desc",
+            "desc": "-1 max STR"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Lay On Hands",
+            "freq": "1/day",
+            "effects": "Heals 2 HP/level.",
+            "level": 1
+          },
+          {
+            "n": "Wrath of the Wild",
+            "freq": "scaling",
+            "effects": "+2 THAC0, +2d6 melee damage, 10s.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "armor": "studded leather max",
+          "items": "One-handed swords only. No Charm Animal."
+        },
+        "canDual": true,
+        "canDualTo": [
+          "CLERIC",
+          "MAGE",
+          "THIEF"
+        ],
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "RANGER",
+          "note": "Standard ranger HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Ranger spellcasting. No Charm Animal."
+        },
+        "statBonus": {
+          "str": -1,
+          "note": "-1 max STR. Studded leather max. One-handed swords only."
+        }
+      }
+    },
+    "16": {
+      "CHAMPION_OF_THE_SILVER_FLAME": {
+        "passive": [
+          {
+            "n": "Blessing",
+            "type": "desc",
+            "desc": "+1 THAC0/damage at lv1. Infravision at lv3. +2 fire damage at lv6. +2 AC/saves and MR at lv10. +1d6 fire at lv16."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "ranged": false,
+          "noLayOnHands": true
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spellcasting."
+        },
+        "statBonus": {
+          "note": "No ranged weapons. No Lay On Hands."
+        }
+      }
+    },
+    "17": {
+      "TEMPLAR": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "hold",
+              "paralysis"
+            ],
+            "desc": "Immune to hold/paralysis"
+          },
+          {
+            "n": "Damage Resistance",
+            "type": "desc",
+            "desc": "+5% physical DR per 5 levels (max 20% at lv20)"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Mass Cure",
+            "freq": "1/day",
+            "effects": "Mass Cure Wounds.",
+            "level": 3
+          }
+        ],
+        "restrictions": {
+          "items": "No Turn Undead. Max Proficient in ranged/two-handed."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Standard paladin spellcasting + Mass Cure Wounds."
+        },
+        "statBonus": {
+          "note": "No Turn Undead. Max Proficient in ranged/2H."
+        }
+      }
+    },
+    "18": {
+      "REAVER": {
+        "passive": [
+          {
+            "n": "Devour Soul",
+            "type": "desc",
+            "desc": "At lv5, 20% on-kill to heal 10 HP"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Siphon Life",
+            "freq": "scaling",
+            "effects": "1d4 life drain per hit, 10s.",
+            "level": 1
+          },
+          {
+            "n": "Death Field",
+            "freq": "scaling",
+            "effects": "AoE 4 damage drain + self-heal.",
+            "level": 10
+          }
+        ],
+        "restrictions": {
+          "alignment": "Evil only",
+          "items": "No Detect Evil. No Protection From Evil. No Lay on Hands."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Evil paladin spellcasting."
+        },
+        "statBonus": {
+          "note": "Evil only. No Detect Evil, PfE, or Lay on Hands."
+        }
+      }
+    },
+    "19": {
+      "OATHBREAKER": {
+        "passive": [
+          {
+            "n": "Theme",
+            "type": "desc",
+            "desc": "Paladin. Fallen paladin wielding dark powers from broken divine bonds."
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "alignment": "Evil"
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Fallen paladin with dark abilities."
+        },
+        "statBonus": {
+          "note": "Evil-leaning paladin."
+        }
+      }
+    },
+    "21": {
+      "GREY_KNIGHT": {
+        "passive": [
+          {
+            "n": "Immunities",
+            "type": "immunities",
+            "values": [
+              "charm",
+              "fear"
+            ],
+            "desc": "Immune to charm/fear/morale failure"
+          },
+          {
+            "n": "Fiend Hunter",
+            "type": "desc",
+            "desc": "+1 hit/damage vs fiends per 3 levels. +2 AC/saves vs fiends."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Purge Soul",
+            "freq": "scaling",
+            "effects": "AoE 2d6 + level + CHA mod damage to fiends within 15'.",
+            "level": 4
+          }
+        ],
+        "restrictions": {
+          "items": "No Turn Undead."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "PALADIN",
+          "note": "Standard paladin HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Paladin spellcasting."
+        },
+        "statBonus": {
+          "note": "Immune to charm/fear/morale. +1 hit/dmg vs fiends per 3 levels."
+        }
+      }
+    },
+    "22": {
+      "KAZE_NO_KAMA": {
+        "passive": [
+          {
+            "n": "Combat Bonus",
+            "type": "desc",
+            "desc": "+1 hit/damage per 5 levels. 10% physical DR at lv10, +2%/level to max 40% at lv25."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Kai",
+            "freq": "scaling",
+            "effects": "Max damage on hits, duration 1-5 rounds.",
+            "level": 1
+          }
+        ],
+        "restrictions": {
+          "items": "No Lay on Hands. No Stunning Blow. No Quivering Palm. No Magic Resistance at lv14+."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "MONK",
+          "include": [
+            "Timeless Self (immune to Time Stop, no casting delay)"
+          ],
+          "note": "Adds Timeless Self HLA"
+        },
+        "spellRestrictions": {
+          "noSpells": true,
+          "note": "No spellcasting."
+        },
+        "statBonus": {
+          "note": "No Lay on Hands, Stunning Blow, or Quivering Palm."
+        }
+      }
+    },
+    "23": {
+      "ARCHMAGE_PRESTIGE": {
+        "passive": [
+          {
+            "n": "Casting Level",
+            "type": "desc",
+            "desc": "+1 casting level"
+          }
+        ],
+        "activated": [
+          {
+            "n": "Arcane Fire",
+            "freq": "1/day",
+            "effects": "1d6/level single-target, bypasses MR.",
+            "level": 18
+          },
+          {
+            "n": "Grand Mage",
+            "freq": "1/day",
+            "effects": "Rememorize all spells.",
+            "level": 25
+          }
+        ],
+        "restrictions": {
+          "items": "No dual-class."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "note": "No dual-class per research",
+        "hlaPool": {
+          "class": "MAGE",
+          "include": [
+            "Arcane Fire",
+            "Spell Weaver",
+            "Grand Mage"
+          ],
+          "note": "Custom Archmage HLAs"
+        },
+        "spellRestrictions": {
+          "note": "+1 casting level. Standard mage spellcasting."
+        },
+        "statBonus": {
+          "note": "No dual-class."
+        }
+      }
+    },
+    "24": {
+      "ELDRITCH_SCION_ASSIGN_TO_XAN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Eldritch Scion kit to Xan."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "25": {
+      "ELDRITCH_SCION_ASSIGN_TO_XAN": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Eldritch Scion kit to Xan."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "26": {
+      "ELDRITCH_SCION_DO_NOT_ASSIGN_TO_NPC": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Does not assign the Eldritch Scion kit to any NPC."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "27": {
+      "ELDRITCH_SCION_INSTALL_ONLY": {
+        "passive": [
+          {
+            "n": "Martial Sorcerer",
+            "type": "desc",
+            "desc": "d8 hit die. Can wear chain/scale mail. Custom THAC0. +0.5 APR at lv9/16."
+          },
+          {
+            "n": "Enhance Weapon",
+            "type": "desc",
+            "desc": "+1 magic damage per 5 levels (max +5)"
+          }
+        ],
+        "activated": [],
+        "restrictions": {
+          "items": "-2 casting speed. -2 casting level. Can specialize (2 pips) in melee."
+        },
+        "canDual": false,
+        "allowedMulticlass": [],
+        "hlaPool": {
+          "class": "SORCERER",
+          "note": "Standard sorcerer HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Martial sorcerer: -2 casting speed, -2 caster level. Standard sorcerer spells."
+        },
+        "statBonus": {
+          "note": "d8 HD. Can wear chain/scale mail. +0.5 APR at lv9/16."
+        }
+      }
+    },
+    "28": {
+      "STORMLORD_ASSIGN_TO_JAHEIRA": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Stormlord kit to Jaheira."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "29": {
+      "STORMLORD_ASSIGN_TO_JAHEIRA": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Assigns the Stormlord kit to Jaheira."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "30": {
+      "STORMLORD_DO_NOT_ASSIGN_TO_JAHEIRA": {
+        "passive": [
+          {
+            "n": "NPC Companion",
+            "type": "desc",
+            "desc": "NPC-only kit. Keeps Jaheira with her default Fighter/Druid kit."
+          }
+        ],
+        "activated": [],
+        "restrictions": {},
+        "npcOnly": true,
+        "canDual": false,
+        "allowedMulticlass": []
+      }
+    },
+    "31": {
+      "STORMLORD_INSTALL_ONLY": {
+        "passive": [
+          {
+            "n": "Combat Bonus",
+            "type": "desc",
+            "desc": "+1 hit/damage at lv1/6/9. 25/50/75/100% electricity immunity at lv4/8/12/14."
+          }
+        ],
+        "activated": [
+          {
+            "n": "Shock Weapon",
+            "freq": "scaling",
+            "effects": "+1d8 electric damage, 2 turns.",
+            "level": 3
+          }
+        ],
+        "restrictions": {
+          "items": "Stormlord weapons only (spear, throwing axe, dart). No traditional druid elemental resistances."
+        },
+        "canDual": false,
+        "allowedMulticlass": [
+          "FIGHTER/DRUID"
+        ],
+        "hlaPool": {
+          "class": "DRUID",
+          "note": "Fighter/Druid multi; uses druid HLA pool"
+        },
+        "spellRestrictions": {
+          "note": "Druid spellcasting. Stormlord weapons only (spear/throwing axe/dart)."
+        },
+        "statBonus": {
+          "note": "F/D multiclass. Electricity immunity scales to 100% at lv14."
+        }
+      }
+    }
+  },
+  "kits": {
+    "0": {
+      "new": [
+        [
+          "BATTLE_MASTER",
+          "fighter",
+          "Battle Master",
+          "Two-handed weapon expert who wreaks havoc on the battlefield with powerful cleaving attacks."
+        ]
+      ]
+    },
+    "1": {
+      "new": [
+        [
+          "BATTLERAGER_ASSIGN_TO_KORGAN",
+          "npc",
+          "Battlerager: Assign to Korgan",
+          "Assigns the Battlerager kit to Korgan."
+        ]
+      ]
+    },
+    "2": {
+      "new": [
+        [
+          "BATTLERAGER_DO_NOT_ASSIGN_TO_KORGAN",
+          "npc",
+          "Battlerager: Do NOT assign to Korgan",
+          "Keeps Korgan with his default Berserker kit."
+        ]
+      ]
+    },
+    "3": {
+      "new": [
+        [
+          "BATTLERAGER_INSTALL_ONLY",
+          "fighter",
+          "Battlerager: Install only",
+          "Dwarven berserker entering uncontrollable battle rage. Raw fury and toughness."
+        ]
+      ]
+    },
+    "4": {
+      "new": [
+        [
+          "DEATH_KNIGHT",
+          "fighter",
+          "Death Knight",
+          "Fallen warrior wielding dark powers. Undead abilities and fear aura."
+        ]
+      ]
+    },
+    "5": {
+      "new": [
+        [
+          "CHAMPION",
+          "fighter",
+          "Champion",
+          "Elite warrior dedicated to a cause. Enhanced combat prowess and leadership."
+        ]
+      ]
+    },
+    "6": {
+      "new": [
+        [
+          "DRAGOON",
+          "fighter",
+          "Dragoon",
+          "Warrior dedicated to polearm combat. Charging attacks and reach weapon mastery."
+        ]
+      ]
+    },
+    "7": {
+      "new": [
+        [
+          "PSI_WARRIOR",
+          "fighter",
+          "Psi Warrior",
+          "Fighter augmenting physical might with psi-infused abilities. Telekinetic strikes and mental shields."
+        ]
+      ]
+    },
+    "8": {
+      "new": [
+        [
+          "SHIELD_BREAKER",
+          "fighter",
+          "Shield Breaker",
+          "Specialized fighter whose purpose is destroying enemy defenses. Sunder abilities."
+        ]
+      ]
+    },
+    "9": {
+      "new": [
+        [
+          "DEATHBRINGER_ASSIGN_TO_SAREVOK",
+          "npc",
+          "Deathbringer: Assign to Sarevok",
+          "Assigns the Deathbringer kit to Sarevok."
+        ]
+      ]
+    },
+    "10": {
+      "new": [
+        [
+          "DEATHBRINGER_DO_NOT_ASSIGN_TO_SAREVOK",
+          "npc",
+          "Deathbringer: Do NOT assign to Sarevok",
+          "Keeps Sarevok with his default kit."
+        ]
+      ]
+    },
+    "11": {
+      "new": [
+        [
+          "DEATHBRINGER_INSTALL_ONLY",
+          "fighter",
+          "Deathbringer: Install only",
+          "Dark warrior of Bhaal trained in lethal combat arts. Death-dealing strikes."
+        ]
+      ]
+    },
+    "12": {
+      "new": [
+        [
+          "RASHEMAAR_BERSERKER_ASSIGN_TO_MINSC",
+          "npc",
+          "Rashemaar Berserker: Assign to Minsc",
+          "Assigns the Rashemaar Berserker kit to Minsc."
+        ]
+      ]
+    },
+    "13": {
+      "new": [
+        [
+          "RASHEMAAR_BERSERKER_DO_NOT_ASSIGN_TO_MIN",
+          "npc",
+          "Rashemaar Berserker: Do NOT assign to Minsc",
+          "Keeps Minsc with his default Ranger kit."
+        ]
+      ]
+    },
+    "14": {
+      "new": [
+        [
+          "RASHEMAAR_BERSERKER_INSTALL_ONLY",
+          "fighter",
+          "Rashemaar Berserker: Install only",
+          "Legendary Rashemi defender. Spirit-fueled berserker rage and endurance."
+        ]
+      ]
+    },
+    "15": {
+      "new": [
+        [
+          "CHAMPION_OF_THE_WILD",
+          "fighter",
+          "Champion of the Wild",
+          "Ranger champion embodying discipline and quickness in wilderness combat."
+        ]
+      ]
+    },
+    "16": {
+      "new": [
+        [
+          "CHAMPION_OF_THE_SILVER_FLAME",
+          "paladin",
+          "Champion of the Silver Flame",
+          "Paladin dedicated to fighting supernatural evil. Bonus vs fiends and undead."
+        ]
+      ]
+    },
+    "17": {
+      "new": [
+        [
+          "TEMPLAR",
+          "paladin",
+          "Templar",
+          "Favored knight defending the faith. Enhanced divine combat abilities."
+        ]
+      ]
+    },
+    "18": {
+      "new": [
+        [
+          "REAVER",
+          "paladin",
+          "Reaver",
+          "Evil warrior reveling in death and destruction. Vampiric strikes and fear."
+        ]
+      ]
+    },
+    "19": {
+      "new": [
+        [
+          "OATHBREAKER",
+          "fighter",
+          "Oathbreaker",
+          "Fallen paladin who broke sacred oaths. Dark powers from broken divine bonds."
+        ]
+      ]
+    },
+    "20": {
+      "new": [
+        [
+          "BLACKGUARD_OVERHAUL",
+          "paladin",
+          "Blackguard Overhaul",
+          "Revised Blackguard with enhanced dark abilities and evil paladin features."
+        ]
+      ]
+    },
+    "21": {
+      "new": [
+        [
+          "GREY_KNIGHT",
+          "paladin",
+          "Grey Knight",
+          "Neutral paladin balancing good and evil. Flexible alignment with modified abilities."
+        ]
+      ]
+    },
+    "22": {
+      "new": [
+        [
+          "KAZE_NO_KAMA",
+          "monk",
+          "Kaze no Kama",
+          "Eastern martial artist wielding wind-based ki powers. Ranged ki strikes and wind abilities."
+        ]
+      ]
+    },
+    "23": {
+      "new": [
+        [
+          "ARCHMAGE_PRESTIGE",
+          "mage",
+          "Archmage Prestige",
+          "Powerful spellcaster dedicated to the art of magic. Enhanced arcane power and spell mastery."
+        ]
+      ]
+    },
+    "24": {
+      "new": [
+        [
+          "ELDRITCH_SCION_ASSIGN_TO_XAN",
+          "npc",
+          "Eldritch Scion: Assign to Xan",
+          "Assigns the Eldritch Scion kit to Xan."
+        ]
+      ]
+    },
+    "25": {
+      "new": [
+        [
+          "ELDRITCH_SCION_ASSIGN_TO_XAN",
+          "npc",
+          "Eldritch Scion: Assign to Xan",
+          "Assigns the Eldritch Scion kit to Xan."
+        ]
+      ]
+    },
+    "26": {
+      "new": [
+        [
+          "ELDRITCH_SCION_DO_NOT_ASSIGN_TO_NPC",
+          "npc",
+          "Eldritch Scion: Do NOT assign to NPC",
+          "Does not assign the Eldritch Scion kit to any NPC."
+        ]
+      ]
+    },
+    "27": {
+      "new": [
+        [
+          "ELDRITCH_SCION_INSTALL_ONLY",
+          "fighter",
+          "Eldritch Scion: Install only",
+          "Sorcerer combining innate magic with martial combat. Spell-sword fighter."
+        ]
+      ]
+    },
+    "28": {
+      "new": [
+        [
+          "STORMLORD_ASSIGN_TO_JAHEIRA",
+          "npc",
+          "Stormlord: Assign to Jaheira",
+          "Assigns the Stormlord kit to Jaheira."
+        ]
+      ]
+    },
+    "29": {
+      "new": [
+        [
+          "STORMLORD_ASSIGN_TO_JAHEIRA",
+          "npc",
+          "Stormlord: Assign to Jaheira",
+          "Assigns the Stormlord kit to Jaheira."
+        ]
+      ]
+    },
+    "30": {
+      "new": [
+        [
+          "STORMLORD_DO_NOT_ASSIGN_TO_JAHEIRA",
+          "npc",
+          "Stormlord: Do NOT assign to Jaheira",
+          "Keeps Jaheira with her default Fighter/Druid kit."
+        ]
+      ]
+    },
+    "31": {
+      "new": [
+        [
+          "STORMLORD_INSTALL_ONLY",
+          "fighter",
+          "Stormlord: Install only",
+          "Fighter/Druid wielding thunder and lightning like a warrior wields a sword."
+        ]
+      ]
+    },
+    "32": {
+      "new": [
+        [
+          "NIGHTCLOAK_MULTICLASS",
+          "ranger",
+          "Nightcloak Multiclass",
+          "Multi-class variant of the Nightcloak of Shar. Shadow divine magic with fighter combat."
+        ]
+      ]
+    }
+  },
+  "u": "https://www.morpheus-mart.com/morpheus562s-kitpack",
+  "a": "morpheus562",
+  "v": "v5.9",
+  "sum": "33 kits across fighters, rangers, paladins, clerics, mages, monks, and multiclass. Includes NPC kit assignments for Korgan, Sarevok, Minsc, Xan, and Jaheira.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://www.morpheus-mart.com/morpheus562s-kitpack",
+  "au": "morpheus562",
+  "co": [
+    {
+      "cn": 100,
+      "n": "Battle Master Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 100,
+      "k": 1,
+      "no": "Battle Master fighter kit. Grandmastery only in two-handed weapons. Charge (speed boost) at lv1, Relentless Assault (double APR for 5 rounds, then winded) at lv4.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Battle Master Kit",
+      "grn": "Fighter"
+    },
+    {
+      "cn": 151,
+      "n": "Battlerager: Assign to Korgan",
+      "g": "battlerager_npc",
+      "scn": "Install Battlerager Kit",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 151,
+      "k": 1,
+      "no": "Assigns Battlerager kit to Korgan.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Korgan"
+    },
+    {
+      "cn": 152,
+      "n": "Battlerager: Do NOT assign to Korgan",
+      "g": "battlerager_npc",
+      "scn": "Install Battlerager Kit",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 152,
+      "k": 1,
+      "no": "Installs Battlerager kit without assigning to Korgan.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Do NOT assign kit to Korgan"
+    },
+    {
+      "cn": 150,
+      "n": "Battlerager: Install kit only",
+      "g": "battlerager_npc",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "iwdee"
+      ],
+      "wc": 150,
+      "k": 1,
+      "no": "Battlerager dwarf fighter kit. Reckless melee combatant with spiked armor and damage bonuses while enraged. Dwarf-only, non-lawful.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Battlerager Kit"
+    },
+    {
+      "cn": 160,
+      "n": "Death Knight Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 160,
+      "k": 1,
+      "no": "Death Knight fighter kit. Dark warrior with unholy magic — weapon runes, unholy blight, minion summoning. Evil-only, no dual-classing.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Death Knight Kit",
+      "grn": "Fighter"
+    },
+    {
+      "cn": 130,
+      "n": "Dragoon Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 130,
+      "k": 1,
+      "no": "Dragoon fighter kit. Mobile lance/spear specialist with charge attacks and mounted combat bonuses.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Dragoon Kit",
+      "grn": "Fighter"
+    },
+    {
+      "cn": 110,
+      "n": "Psi Warrior Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 110,
+      "k": 1,
+      "no": "Psi Warrior fighter kit. Intelligence-based fighter channeling psionic energy for damage bonuses and mental barriers. CON penalty.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Psi Warrior Kit",
+      "grn": "Fighter"
+    },
+    {
+      "cn": 120,
+      "n": "Shield Breaker Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 120,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Shield Breaker Kit",
+      "grn": "Fighter"
+    },
+    {
+      "cn": 141,
+      "n": "Deathbringer: Assign to Sarevok",
+      "g": "deathbringer_npc",
+      "scn": "Install Deathbringer Prestige Kit",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 141,
+      "no": "Sarevok cannot dual-class with this kit",
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Sarevok"
+    },
+    {
+      "cn": 142,
+      "n": "Deathbringer: Do NOT assign to Sarevok",
+      "g": "deathbringer_npc",
+      "scn": "Install Deathbringer Prestige Kit",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "eet"
+      ],
+      "wc": 142,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Do NOT assign kit to Sarevok"
+    },
+    {
+      "cn": 140,
+      "n": "Deathbringer: Install kit only",
+      "g": "deathbringer_npc",
+      "grn": "Fighter",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee"
+      ],
+      "wc": 140,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Deathbringer Prestige Kit"
+    },
+    {
+      "cn": 201,
+      "n": "Rashemaar Berserker: Assign to Minsc",
+      "g": "rashemaar_npc",
+      "scn": "Install Rashemaar Berserker Kit",
+      "grn": "Ranger",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 201,
+      "k": 1,
+      "no": "Assigns Rashemaar Berserker ranger kit to Minsc. Frenzy-based warrior from Rashemen with combat rage bonuses. Human-only.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Minsc"
+    },
+    {
+      "cn": 202,
+      "n": "Rashemaar Berserker: Do NOT assign to Minsc",
+      "g": "rashemaar_npc",
+      "scn": "Install Rashemaar Berserker Kit",
+      "grn": "Ranger",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 202,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Do NOT assign kit to Minsc"
+    },
+    {
+      "cn": 200,
+      "n": "Rashemaar Berserker: Install kit only",
+      "g": "rashemaar_npc",
+      "grn": "Ranger",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 200,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Rashemaar Berserker Kit"
+    },
+    {
+      "cn": 210,
+      "n": "Champion of the Wild Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 210,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Champion of the Wild Kit",
+      "grn": "Ranger"
+    },
+    {
+      "cn": 300,
+      "n": "Champion of the Silver Flame Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 300,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Champion of the Silver Flame",
+      "grn": "Paladin"
+    },
+    {
+      "cn": 310,
+      "n": "Templar Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 310,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Templar Kit",
+      "grn": "Paladin"
+    },
+    {
+      "cn": 320,
+      "n": "Reaver Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 320,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Reaver Kit",
+      "grn": "Paladin"
+    },
+    {
+      "cn": 350,
+      "n": "Grey Knight Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 350,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Grey Knight Kit",
+      "grn": "Paladin"
+    },
+    {
+      "cn": 1200,
+      "n": "Kaze no Kama (monk kit)",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 1200,
+      "k": 1,
+      "kC": {
+        "monk": 1
+      },
+      "tp2n": "Kaze no Kama",
+      "grn": "Monk"
+    },
+    {
+      "cn": 600,
+      "n": "Archmage Prestige Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 600,
+      "k": 1,
+      "no": "Archmage Prestige Kit. Non-fatal PARSE warning from RemoveSpellRES during install — functions correctly.",
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Archmage Prestige Kit",
+      "grn": "Mage"
+    },
+    {
+      "cn": 901,
+      "n": "Eldritch Scion: Assign to Xan (keep stats)",
+      "g": "eldritch_npc",
+      "scn": "Install Eldritch Scion Kit",
+      "grn": "Sorcerer",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 901,
+      "k": 1,
+      "no": "Assigns Eldritch Scion sorcerer kit to Xan. Martial sorcerer with d8 HP, weapon specialization, and light armor casting.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Xan (Keep Original Ability Scores)"
+    },
+    {
+      "cn": 902,
+      "n": "Eldritch Scion: Assign to Xan (optimize stats)",
+      "g": "eldritch_npc",
+      "scn": "Install Eldritch Scion Kit",
+      "grn": "Sorcerer",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "wc": 902,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Xan (Optimize Ability Scores)"
+    },
+    {
+      "cn": 903,
+      "n": "Eldritch Scion: Do NOT assign to NPC",
+      "g": "eldritch_npc",
+      "scn": "Install Eldritch Scion Kit",
+      "grn": "Sorcerer",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 903,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Do NOT assign kit to an existing NPC"
+    },
+    {
+      "cn": 900,
+      "n": "Eldritch Scion: Install kit only",
+      "g": "eldritch_npc",
+      "grn": "Sorcerer",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "iwdee"
+      ],
+      "wc": 900,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Eldritch Scion Kit"
+    },
+    {
+      "cn": 1101,
+      "n": "Stormlord: Assign to Jaheira (spear focus)",
+      "g": "stormlord_npc",
+      "scn": "Install Stormlord Multiclass Kit for Fighter/Druids",
+      "grn": "Multiclass",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 1101,
+      "k": 1,
+      "no": "Fighter/Druid multiclass. Spear/throwing axe/dart only. +1 hit/damage at lv1/6/9. Shock Weapon (+1d8 electric, 2 turns) at lv3. Electricity immunity scaling to 100% at lv14. Spear proficiency variant for Jaheira.",
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Jaheira (Spear Focus)"
+    },
+    {
+      "cn": 1102,
+      "n": "Stormlord: Assign to Jaheira (throwing axe)",
+      "g": "stormlord_npc",
+      "scn": "Install Stormlord Multiclass Kit for Fighter/Druids",
+      "grn": "Multiclass",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 1102,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Assign kit to Jaheira (Throwing Axe Focus)"
+    },
+    {
+      "cn": 1103,
+      "n": "Stormlord: Do NOT assign to Jaheira",
+      "g": "stormlord_npc",
+      "scn": "Install Stormlord Multiclass Kit for Fighter/Druids",
+      "grn": "Multiclass",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "wc": 1103,
+      "k": 1,
+      "kC": {
+        "npc": 1
+      },
+      "tp2n": "Do NOT assign kit to Jaheira"
+    },
+    {
+      "cn": 1100,
+      "n": "Stormlord: Install kit only",
+      "g": "stormlord_npc",
+      "grn": "Multiclass",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "games": [
+        "iwdee"
+      ],
+      "wc": 1100,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "tp2n": "Install Stormlord Multiclass Kit for Fighter/Druids"
+    },
+    {
+      "cn": 170,
+      "n": "Champion Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "wc": 170,
+      "k": 1,
+      "no": "Champion fighter kit. Defensive warrior focused on protecting allies with auras and shield abilities.",
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true
+    },
+    {
+      "cn": 330,
+      "n": "Oathbreaker Kit",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "wc": 330,
+      "k": 1,
+      "kC": {
+        "fighter": 1
+      },
+      "gone": true
+    },
+    {
+      "cn": 340,
+      "n": "Blackguard Kit Overhaul",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "wc": 340,
+      "k": 1,
+      "no": "COMMENTED OUT in tp2 (inside /* */ block). Component exists in DESIGNATED list but code is disabled by author. Cannot install. Remove from selection.",
+      "kC": {
+        "paladin": 1
+      },
+      "gone": true
+    },
+    {
+      "cn": 1110,
+      "n": "Nightcloak Multiclass Kit (Cleric/Ranger)",
+      "wf": "morpheus562-s-kitpack",
+      "wp": "morpheus562-s-kitpack\\morpheus562-s-kitpack.tp2",
+      "wq": "exact",
+      "wc": 1110,
+      "k": 1,
+      "no": "COMMENTED OUT in tp2 (inside /* */ block at line 348). Code disabled by author. Cannot install.",
+      "kC": {
+        "ranger": 1
+      },
+      "gone": true
+    }
+  ]
+}

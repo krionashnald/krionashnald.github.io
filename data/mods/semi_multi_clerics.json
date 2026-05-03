@@ -1,0 +1,297 @@
+{
+  "i": 885,
+  "t": "semi_multi_clerics",
+  "sv": 1,
+  "ord": 870,
+  "c": "ITEM ADDITION MODS",
+  "n": "Semi Multi Clerics",
+  "langs": {
+    "en": 0,
+    "it": 1,
+    "fr": 2,
+    "es": 3,
+    "ru": 4
+  },
+  "u": "https://github.com/Spellhold-Studios/Semi-Multi-Clerics/",
+  "a": "Bob Tokyo, the bigg, JohnBob, Deratiseur",
+  "sum": "This mod adds a merchant, the Lady of Mysteries, worshipper of Mystra, who sells a magic manual giving access to some thirty divine spells, including one never seen before.",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "TACPRBG",
+          "misc",
+          "Teachings of The Lady",
+          "Book\nThe cover of this heavily bound volume is decorated with symbols of Mystra, the Lady of the Weave.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ],
+        [
+          "TACPRSP",
+          "misc",
+          "Mystra's witness",
+          "Eh? You talk funny! Bugger off you!",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Mage",
+                "Monk",
+                "Sorcerer"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "single use"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "au": "thebigg",
+  "dl": "https://github.com/vbigiani/semi_multi_clerics",
+  "no": "Adds a cleric spell merchant and spell items to BG2. Single component. English, Italian, French, Spanish, Russian.",
+  "co": [
+    {
+      "n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 1,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE-BG2",
+      "scn": "Semi-multi-clerics for BG2-ToB / BG2EE (BGT / EET)"
+    },
+    {
+      "n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 2,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE-BG2",
+      "scn": "Semi-multi-clerics for BG2-ToB / BG2EE (BGT / EET)"
+    },
+    {
+      "n": "[ORIGINAL DELAYED]\n- Accessible after Underdark / at Baldur's Gate\n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 3,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "[ORIGINAL DELAYED]\n- Accessible after Underdark / at Baldur's Gate\n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE_RETARDEE-BG2",
+      "scn": "Semi-multi-clerics for BG2-ToB / BG2EE (BGT / EET)"
+    },
+    {
+      "n": "[SOFT DELAYED]\n- Accessible after Underdark / at Baldur's Gate\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 4,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "tp2n": "[SOFT DELAYED]\n- Accessible after Underdark / at Baldur's Gate\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE_RETARDEE-BG2",
+      "scn": "Semi-multi-clerics for BG2-ToB / BG2EE (BGT / EET)"
+    },
+    {
+      "n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 5,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "how",
+        "iwd",
+        "iwdee",
+        "totlm"
+      ],
+      "tp2n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE-IWD",
+      "scn": "Semi-multi-clerics for IWD / IWDEE"
+    },
+    {
+      "n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 6,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "how",
+        "iwd",
+        "iwdee",
+        "totlm"
+      ],
+      "tp2n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE-IWD",
+      "scn": "Semi-multi-clerics for IWD / IWDEE"
+    },
+    {
+      "n": "[ORIGINAL DELAYED]\n- Accessible after Dragon's Eye\n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 7,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "how",
+        "iwd",
+        "iwdee",
+        "totlm"
+      ],
+      "tp2n": "[ORIGINAL DELAYED]\n- Accessible after Dragon's Eye\n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE_RETARDEE-IWD",
+      "scn": "Semi-multi-clerics for IWD / IWDEE"
+    },
+    {
+      "n": "[SOFT DELAYED]\n- Accessible after Dragon's Eye\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 8,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "how",
+        "iwd",
+        "iwdee",
+        "totlm"
+      ],
+      "tp2n": "[SOFT DELAYED]\n- Accessible after Dragon's Eye\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE_RETARDEE-IWD",
+      "scn": "Semi-multi-clerics for IWD / IWDEE"
+    },
+    {
+      "n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 9,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "[ORIGINAL]\n- Accessible at the beginning \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE-BG1",
+      "scn": "Semi-multi-clerics for BGEE / SOD"
+    },
+    {
+      "n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 10,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "[SOFT]\n- Accessible at the beginning\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE-BG1",
+      "scn": "Semi-multi-clerics for BGEE / SOD"
+    },
+    {
+      "n": "[ORIGINAL DELAYED]\n- Accessible at Baldur's Gate \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 11,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "[ORIGINAL DELAYED]\n- Accessible at Baldur's Gate \n- 100% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ORIGINALE_RETARDEE-BG1",
+      "scn": "Semi-multi-clerics for BGEE / SOD"
+    },
+    {
+      "n": "[SOFT DELAYED]\n- Accessible at Baldur's Gate\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "cn": 12,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee"
+      ],
+      "tp2n": "[SOFT DELAYED]\n- Accessible at Baldur's Gate\n- 25% chance of losing 2 points of Dexterite and Constitution",
+      "pi": "thebigg-semi-multi-ADOUCIE_RETARDEE-BG1",
+      "scn": "Semi-multi-clerics for BGEE / SOD"
+    },
+    {
+      "n": "Add a new reply when the store is empty",
+      "cn": 50,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "how",
+        "iwd",
+        "iwdee",
+        "tob",
+        "totlm"
+      ],
+      "tp2n": "Add a new reply when the store is empty",
+      "pi": "thebigg-semi-multi_Addition"
+    },
+    {
+      "n": "Semi Multi Clerics",
+      "cn": 0,
+      "wf": "semi_multi_clerics",
+      "wp": "semi_multi_clerics\\semi_multi_clerics.tp2",
+      "wq": "verified",
+      "no": "Adds cleric spell merchant and spell items.",
+      "itC": {
+        "misc": 2
+      },
+      "gone": true
+    }
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "Semi-Multi-Clerics"
+  }
+}

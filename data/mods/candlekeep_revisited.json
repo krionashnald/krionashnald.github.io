@@ -1,0 +1,153 @@
+{
+  "i": 58,
+  "t": "candlekeep_revisited",
+  "sv": 1,
+  "ord": 240,
+  "c": "QUEST MODS BG1",
+  "n": "Candlekeep Revisited",
+  "no": "Framed goes after BG1NPC and REBG1. Does it conflict with Candlekeep Revisited? #L-FRAMED-VOICE;Framed - Use custom voice-overs for new chapter movies #L-FRAMED-NO_VOICE;Framed - Leave out the custom chapter voice-overs Candlekeep Revisited (normal placement) A rework of the BG1 tutorial prologue arc, fleshing out characters, giving more tasks to do and acknowledging your chosen class. Not released yet, but it could be a decent mod for new players. Artisan: \"One thing I should note is that you c This means you can loot Candlekeep before leaving as any class on your main character!Install Candlekeep Revisited before Jarl’s Adventure Pack.",
+  "conflicts": [
+    {
+      "with": "randomiser",
+      "withId": 385,
+      "severity": "partial",
+      "reason": "Randomiser Mode 1 (in-game scripts) clashes with Skip Candlekeep — needs time in starting area",
+      "theirComps": "#1100 #1200 Mode 1 randomisation"
+    },
+    {
+      "with": "mih_eq",
+      "withId": 243,
+      "severity": "partial",
+      "reason": "Both COPY_EXISTING arkani3.cre, deder3.cre, deder.cre. MiH EQ patches stats/items/proficiencies, CR patches scripts/portraits/quest variables. Install order resolves: CR installs first (quest mods), MiH EQ installs later (creature mods) — MiH EQ stat upgrades win, CR quests preserved. Both work together.",
+      "orderOnly": true,
+      "theirComps": "#10 Enhanced Battles: Candlekeep Catacombs",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Design choice, not technical conflict. SCS cn:4145 (Remove tutorial NPCs) is compatible — just removes hand-holding NPCs. SCS cn:4146 (Skip Candlekeep entirely) bypasses the prologue, making Candlekeep Revisited content inaccessible. Do not use cn:4146 if you want Candlekeep Revisited content. No file-level conflict — purely a content accessibility choice.",
+      "theirComps": "#4145 Remove tutorial NPCs (compatible) #4146 Skip Candlekeep entirely (defeats purpose)",
+      "myComps": "#0 Candlekeep Revisited",
+      "orderOnly": true,
+      "source": "cn:4145 removes NPCs only; cn:4146 skips area entirely via script; no file overlap, content accessibility issue, 2026-04",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "ck_npc1",
+          "portraits/candlekeep/c0cr_01.png",
+          "bg1"
+        ],
+        [
+          "ck_npc2",
+          "portraits/candlekeep/c0cr_02.png",
+          "bg1"
+        ],
+        [
+          "ck_npc3",
+          "portraits/candlekeep/c0cr_03.png",
+          "bg1"
+        ],
+        [
+          "ck_npc4",
+          "portraits/candlekeep/c0cr_04.png",
+          "bg1"
+        ],
+        [
+          "ck_npc5",
+          "portraits/candlekeep/c0cr_05.png",
+          "bg1"
+        ]
+      ]
+    }
+  },
+  "u": "https://artisans-corner.com/candlekeep-revisited-2/",
+  "a": "The Artisan",
+  "sum": "Lets you return to Candlekeep as a visitor during BG1, with new dialogues and interactions reflecting your journey since leaving.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "dl": "https://artisans-corner.com/candlekeep-revisited-2/",
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Candlekeep Revisited: BG1 Prologue Expansion",
+      "cn": 0,
+      "wf": "candlekeep_revisited",
+      "wp": "candlekeep_revisited\\candlekeep_revisited.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Expands BG1 prologue with new quests and areas in Candlekeep.",
+      "tp2n": "Candlekeep Revisited: BG1 Prologue Expansion"
+    },
+    {
+      "n": "Candlekeep Revisited: BG1 Expanded Starting Sequence",
+      "cn": 1,
+      "wf": "candlekeep_revisited",
+      "wp": "candlekeep_revisited\\candlekeep_revisited.tp2",
+      "wc": 1,
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "no": "Expanded starting sequence with more tutorial content.",
+      "tp2n": "Candlekeep Revisited: BG1 Expanded Starting Sequence"
+    },
+    {
+      "n": "Candlekeep Revisited: New Portraits for Arkanis, Canderous, Deder, Mordaine, Osprey",
+      "cn": 2,
+      "wf": "candlekeep_revisited",
+      "wp": "candlekeep_revisited\\candlekeep_revisited.tp2",
+      "wc": 2,
+      "wq": "verified",
+      "no": "New portraits for Arkanis, Canderous, Deder, and other NPCs.",
+      "tp2n": "Candlekeep Revisited: Osprey joinable NPC for SoD"
+    },
+    {
+      "n": "Candlekeep Revisited: New Portraits for Arkanis, Canderous, Deder, Mordaine, Osprey",
+      "cn": 3,
+      "wf": "candlekeep_revisited",
+      "wp": "candlekeep_revisited\\candlekeep_revisited.tp2",
+      "wq": "verified",
+      "games": [
+        "bgee",
+        "eet"
+      ],
+      "tp2n": "Candlekeep Revisited: New Portraits for Arkanis, Canderous, Deder, Mordaine, Osprey"
+    },
+    {
+      "n": "Candlekeep Revisited: Osprey for SoD - Crossmod with Lava's Arkanis",
+      "cn": 4,
+      "wf": "candlekeep_revisited",
+      "wp": "candlekeep_revisited\\candlekeep_revisited.tp2",
+      "wq": "verified",
+      "tp2n": "Candlekeep Revisited: Osprey for SoD - Crossmod with Lava's Arkanis"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "jtweaks",
+      "withId": 382,
+      "severity": "soft",
+      "reason": "Candlekeep XP boost may interact unexpectedly with Candlekeep Revisited's modified Candlekeep content",
+      "theirComps": "#460 Candlekeep XP boost",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

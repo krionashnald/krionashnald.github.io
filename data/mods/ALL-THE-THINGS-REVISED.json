@@ -1,0 +1,108 @@
+{
+  "i": 413,
+  "t": "all-the-things-revised",
+  "sv": 1,
+  "ord": 130,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "All the Things Revised",
+  "no": "All the Things Revised by suy (Alejandro Exojo). Collection of independent tweaks: party AI script, rogue backstab changes, proficiency rebalance, and Monk item crit protection. Early version (v0.2.0) — many components are planned but not yet implemented. All components are standalone with no inter-mod dependencies. Not traified (English only).",
+  "u": "https://gitlab.com/moebiusproject/all-the-things-revised",
+  "a": "suy",
+  "sum": "A comprehensive tweak mod that revises and rebalances various game elements across the Baldur's Gate series.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://gitlab.com/moebiusproject/all-the-things-revised",
+  "au": "Alejandro Exojo",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "suy's party AI script",
+      "tp2n": "suy's party AI script",
+      "cn": 1000,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Custom party AI script (suy-ai.bcs). Compiles and copies to scripts folder.",
+      "grn": "Miscellaneous"
+    },
+    {
+      "n": "Facestab: Backstab from any angle",
+      "tp2n": "Facestab: Backstab from any angle",
+      "cn": 1000010,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Removes the behind-target positioning requirement for backstabs. Extends scripts across all campaigns (BG1/SoD/BG2).",
+      "grn": "Game mechanics"
+    },
+    {
+      "n": "Rogue's Luck: Improve attacks after stealth/invisibility",
+      "tp2n": "Rogue's Luck: Improve attacks after stealth/invisibility",
+      "cn": 1000020,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Grants attack bonuses after leaving stealth/invisibility. Adds a custom SPLPROT.2DA entry for level-based checks. Extends scripts across all campaigns.",
+      "grn": "Game mechanics"
+    },
+    {
+      "n": "Worthwhile Proficiency Points: Buff 1st and 4th proficiency point in a weapon",
+      "tp2n": "Worthwhile Proficiency Points: Buff 1st and 4th proficiency point in a weapon",
+      "cn": 1010010,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Modifies WSPECIAL.2DA: 1st proficiency pip gives +1 THAC0 (up from 0), 4th pip gives +5 damage (up from +3). Updates proficiency descriptions in ENGINEST.2DA.",
+      "grn": "Game mechanics"
+    },
+    {
+      "n": "Make Moonlight Walkers protect against critical hits",
+      "tp2n": "Make Moonlight Walkers protect against critical hits",
+      "cn": 3000010,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Adds crit protection flag to Moonlight Walkers (RSBOOT.ITM) — Sun Soul Monk boots.",
+      "grn": "Item changes"
+    },
+    {
+      "n": "Make Night Walkers protect against critical hits",
+      "tp2n": "Make Night Walkers protect against critical hits",
+      "cn": 3000020,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Adds crit protection flag to Night Walkers (OHRBOOT1.ITM) — SoD Monk boots.",
+      "grn": "Item changes"
+    },
+    {
+      "n": "Make Monk gauntlets protect against critical hits",
+      "tp2n": "Make Monk gauntlets protect against critical hits",
+      "cn": 3001000,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Adds crit protection to 5 Monk gauntlets: Bracers of the Shuttered Lid, Gauntlets of Perseverance, Gauntlets of Crushing, Tzu-Zan's Bracers, Gauntlets of Aln Zekk.",
+      "grn": "Item changes"
+    },
+    {
+      "n": "Make Monk headbands protect against critical hits",
+      "tp2n": "Make Monk headbands protect against critical hits",
+      "cn": 3002000,
+      "wf": "all-the-things-revised",
+      "wp": "all-the-things-revised\\setup-all-the-things-revised.tp2",
+      "wq": "exact",
+      "no": "Adds crit protection to 2 Monk headbands: Headband of Focus (SoD), Headband of the Devout (SoD).",
+      "grn": "Item changes"
+    }
+  ]
+}

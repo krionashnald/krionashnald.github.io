@@ -1,0 +1,155 @@
+{
+  "i": 668,
+  "t": "m7tweaks",
+  "sv": 1,
+  "ord": 400,
+  "c": "POST-TACTICAL TWEAKS",
+  "n": "M7 Tweaks",
+  "no": "Convenience tweaks for Watcher's Keep puzzles by flamewing. v1.1. Deck of Many Things card selection and Machine of Lum the Mad result picking. All components are Watcher's Keep focused",
+  "cl": [
+    {
+      "d": "2026-03-10",
+      "m": "Added from Infinity Insanity WeiDU logs"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "LongerRoad",
+      "withId": 111,
+      "severity": "hard",
+      "reason": "Lum machine conflicts",
+      "myComps": "Convenient/Cheating Machine of Lum the Mad -> Convenient: You can simply select the desired result, #21",
+      "theirComps": "#0 Longer Road",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/flamewing/m7tweaks",
+  "a": "flamewing",
+  "v": "v1.1",
+  "sum": "Convenience tweaks/cheats for BG2:ToB, BG2EE and EET",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://github.com/flamewing/m7tweaks",
+  "au": "Flamewing",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 1,
+      "n": "Convenient Deck of Many Things: Always win against Aesgareth",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Guarantees winning the card game against Aesgareth in Watcher's Keep. Standalone — does not affect card choices",
+      "tp2n": "Convenient Deck of Many Things: Always win against Aesgareth"
+    },
+    {
+      "cn": 10,
+      "n": "Deck of Many Things: Convenient",
+      "g": "deck_cards",
+      "scn": "Convenient/Cheesy/Cheating Deck of Many Things",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "See all cards and choose freely, but limited to 3 draws as normal",
+      "tp2n": "Convenient: Select from normal available choices in each draw"
+    },
+    {
+      "cn": 11,
+      "n": "Deck of Many Things: Cheesy",
+      "g": "deck_cards",
+      "scn": "Convenient/Cheesy/Cheating Deck of Many Things",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "no": "All cards visible, relaxed draw limits",
+      "tp2n": "Convenient Plus: As above, but ignore 'Bad Card' restrictions"
+    },
+    {
+      "cn": 12,
+      "n": "Deck of Many Things: Cheating",
+      "g": "deck_cards",
+      "scn": "Convenient/Cheesy/Cheating Deck of Many Things",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "no": "All cards selectable in any of the 3 draws. Full control",
+      "tp2n": "Cheesy: All cards can be selected in any of the 3 draws"
+    },
+    {
+      "cn": 13,
+      "n": "Deck of Many Things: Full Cheat",
+      "g": "deck_cards",
+      "scn": "Convenient/Cheesy/Cheating Deck of Many Things",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "no": "Maximum cheat — all cards always available",
+      "tp2n": "Cheating: As the cheesy version, but with infinite draws"
+    },
+    {
+      "cn": 20,
+      "n": "Machine of Lum the Mad: Convenient",
+      "g": "lum_machine",
+      "scn": "Convenient/Cheating Machine of Lum the Mad",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "no": "Simply select the desired result from the Machine. No guessing",
+      "tp2n": "Convenient: You can simply select the desired result"
+    },
+    {
+      "cn": 21,
+      "n": "Machine of Lum the Mad: Cheating",
+      "g": "lum_machine",
+      "scn": "Convenient/Cheating Machine of Lum the Mad",
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "exact",
+      "no": "Full cheat mode for the Machine of Lum the Mad",
+      "tp2n": "Cheating: As above, but with infinite stat bonuses"
+    },
+    {
+      "n": "Fix uncharming of Glaicas (De'Arnise Hold)",
+      "cn": 30,
+      "wf": "m7tweaks",
+      "wp": "m7tweaks\\m7tweaks.tp2",
+      "wq": "verified",
+      "games": [
+        "bg2",
+        "bgt",
+        "tob"
+      ],
+      "tp2n": "Fix uncharming of Glaicas (De'Arnise Hold)"
+    }
+  ],
+  "gh": {
+    "o": "flamewing",
+    "r": "m7tweaks"
+  }
+}

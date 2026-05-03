@@ -1,0 +1,74 @@
+{
+  "i": 32,
+  "t": "AnimalCompanions",
+  "sv": 1,
+  "ord": 40,
+  "c": "RESTORATIONS",
+  "n": "Animal Companions",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "fr": 2,
+    "pl": 3,
+    "it": 4
+  },
+  "no": "Druids and Rangers can get an animal companion that gradually increases in power. Overwrites prior changes to Rod of Resurrection. Has two install bugs: DestroySelf(5) in UBRPET.d (WeiDU parse error — takes no args), and three ACTION_READLN prompts that block automated installs. Use eet-mod-forge-patches to fix both.",
+  "ic": "Overwrites prior changes to Rod of Resurrection",
+  "ki": [
+    {
+      "pattern": "Too many arguments to \\[DestroySelf\\]|PARSE ERROR.*DestroySelf",
+      "severity": "error",
+      "category": "concerning",
+      "description": "UBRPET.d line 106 calls DestroySelf(5) but DestroySelf takes no arguments.",
+      "workaround": "Apply eet-mod-forge-patches Animal Companions component, or manually edit AnimalCompanions/files3/UBRPET.d line 106: change DestroySelf(5) to DestroySelf().",
+      "user_action": "apply-patches"
+    },
+    {
+      "pattern": "ACTION_READLN|waiting for input|interactive",
+      "severity": "warning",
+      "category": "caution",
+      "description": "Setup-AnimalCompanions.tp2 uses three ACTION_READLN prompts (druid toggle, companion name, companion selection) that block automated installs (mod_installer, PI).",
+      "workaround": "Apply eet-mod-forge-patches Animal Companions component, or manually replace the READLN block with: OUTER_SET druid = 1 and OUTER_SPRINT name ~Ser Pounce~",
+      "user_action": "apply-patches",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/thisisulb/AnimalCompanions",
+  "a": "Ulb",
+  "v": "1.6",
+  "sum": "Gives ranger and druid animal companions that level up with you, similar to the NWN system. A permanent pet that fights alongside the party.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "thisisulb",
+    "r": "AnimalCompanions",
+    "ab": true
+  },
+  "dl": "https://github.com/thisisulb/AnimalCompanions",
+  "au": "Ulb",
+  "co": [
+    {
+      "n": "Animal Companions For All Rangers (Optional: Druids)",
+      "tp2n": "Animal Companions For All Rangers (Optional: Druids)",
+      "cn": 0,
+      "wf": "ANIMALCOMPANIONS",
+      "wp": "AnimalCompanions\\Setup-AnimalCompanions.tp2",
+      "wc": 0,
+      "wq": "verified",
+      "no": "Two known bugs: DestroySelf(5) parse error in UBRPET.d, and three ACTION_READLN prompts that block automated install. Apply eet-mod-forge-patches to fix both.",
+      "in": [
+        {
+          "t": "Uses ACTION_READLN for druid/companion selection — requires manual input or eet-mod-forge-patches for automated install.",
+          "type": "manual"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "i": 39,
+  "t": "thecalling",
+  "sv": 1,
+  "ord": 60,
+  "c": "QUEST MODS BG1",
+  "n": "The Calling",
+  "langs": {
+    "en": 0,
+    "cs": 1,
+    "fr": 2,
+    "de": 3,
+    "it": 4,
+    "ko": 5,
+    "pl": 6,
+    "ru": 7,
+    "es": 8,
+    "zh-cn": 9
+  },
+  "no": "The Calling by CamDawg. Major BG1 quest chain. INSTALL ISSUE: AUTO_TRA with variable evaluation fails via mod_installer. Components 0 and 20 fail to install automatically. Component 40 (Exotic Items) works. Manual install or PI recommended.",
+  "in": [
+    {
+      "t": "Components 0 and 20 fail via mod_installer (AUTO_TRA issue). Manual install or PI recommended for these components.",
+      "type": "manual"
+    }
+  ],
+  "conflicts": [
+    {
+      "with": "SotSC",
+      "withId": 45,
+      "severity": "partial",
+      "reason": "Both mods EXTEND_BOTTOM Thalantyr dialogue state 1 but use independent variables (SotSC: L#HIGKEQuest, Calling: CDBracerQuest). Should coexist with correct install order.",
+      "myComps": "#0 The Calling",
+      "theirComps": "#0 Shades of the Sword Coast - Expansion Pack for BGEE",
+      "source": "tp2 analysis of thecalling.tp2 Beta 2+ and SotSC dialogue/thalan.d, 2026-03",
+      "orderOnly": true,
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "partial",
+      "reason": "Both modify Thalantyr dialogue but use compatible EXTEND_BOTTOM methods since Calling Beta 2. Install The Calling before A Job Well-Paid.",
+      "myComps": "#0 The Calling",
+      "theirComps": "Of Wolves and Men -> Quest uses house in Beregost., #5",
+      "source": "tp2 analysis, The Calling Beta 2 changelog (Feb 2019) fixed Thalantyr compat, 2026-03"
+    },
+    {
+      "with": "thalan",
+      "withId": 260,
+      "severity": "partial",
+      "reason": "Both heavily modify Thalantyr dialogue and shop. Compatible with EXTEND_BOTTOM since Calling Beta 2 but install order matters. Install The Calling first.",
+      "orderOnly": true,
+      "myComps": "#0 The Calling",
+      "theirComps": "#0 Thalantyr Item Upgrade",
+      "source": "tp2 analysis, both use EXTEND_BOTTOM/APPEND on THALAN.dlg, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "klatu",
+      "withId": 310,
+      "severity": "partial",
+      "reason": "Both EXTEND_BOTTOM THALAN state 1 but with independent triggers (Klatu: kla#book01, Calling: CDBracerQuest). Compatible since Calling Beta 2.",
+      "myComps": "#0 The Calling",
+      "theirComps": "#1010",
+      "source": "tp2 analysis of both mods, independent variable namespaces, 2026-03"
+    },
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "hard",
+      "reason": "cdtweaks cn:1090 (Exotic Item Pack) was the same content as The Calling cn:40. cdtweaks has DEPRECATED and removed this component, so no conflict exists in current versions.",
+      "myComps": "#40 Exotic Item Pack",
+      "theirComps": "#1090 Exotic Item Pack (DEPRECATED, will not install)",
+      "source": "Same content, mutually exclusive components, 2026-03",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "stratagems",
+      "withId": 341,
+      "severity": "hard",
+      "reason": "Choose one Peaceful Werewolf Isle Resolution",
+      "myComps": "#20 Peaceful Werewolf Isle Resolution",
+      "theirComps": "#1060",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/Gibberlings3/The_Calling/releases",
+  "a": "CamDawg",
+  "v": "v5",
+  "sum": "Major BG1 quest chain with new areas and encounters. INSTALL ISSUE: Components 0 and 20 fail via mod_installer (AUTO_TRA bug). Component 40 (Exotic Items) works. Manual install or PI recommended.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA"
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "The_Calling"
+  },
+  "dl": "https://github.com/Gibberlings3/The_Calling/releases",
+  "au": "Isaya",
+  "co": [
+    {
+      "n": "The Calling",
+      "tp2n": "The Calling",
+      "pi": "cd_the_calling_mage",
+      "wf": "thecalling",
+      "wp": "thecalling\\THECALLING.TP2",
+      "wc": 0,
+      "wq": "name_match",
+      "cn": 0,
+      "no": "Main quest content. INSTALL ISSUE: fails via mod_installer (AUTO_TRA variable evaluation). Works with manual install or PI. Conflicts with SotSC and AC_QUEST on Thalantyr dialogue (install order matters)."
+    },
+    {
+      "n": "Peaceful Werewolf Isle Resolution",
+      "tp2n": "Peaceful Werewolf Isle Resolution",
+      "pi": "cd_the_calling_peaceful_kaishas_resolution",
+      "wf": "thecalling",
+      "wp": "thecalling\\THECALLING.TP2",
+      "wc": 20,
+      "wq": "name_match",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 20,
+      "no": "Peaceful resolution for the Werewolf Isle questline. INSTALL ISSUE: same AUTO_TRA failure as cn:0. Manual install or PI recommended."
+    },
+    {
+      "n": "Exotic Item Pack",
+      "tp2n": "Exotic Item Pack",
+      "pi": "cd_the_calling_exotic_items",
+      "wf": "thecalling",
+      "wp": "thecalling\\THECALLING.TP2",
+      "wc": 40,
+      "wq": "name_match",
+      "cn": 40,
+      "no": "Adds exotic items to shops. Works via mod_installer (no AUTO_TRA issue). cdtweaks cn:1090 (same content) has been deprecated and removed."
+    }
+  ]
+}

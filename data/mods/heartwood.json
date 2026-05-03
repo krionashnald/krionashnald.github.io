@@ -1,0 +1,118 @@
+{
+  "i": 467,
+  "t": "heartwood",
+  "sv": 1,
+  "ord": 350,
+  "c": "ITEM ADDITION MODS",
+  "n": "Heart of the Wood",
+  "langs": {
+    "en": 0,
+    "ru": 1,
+    "it": 2,
+    "de": 3,
+    "fr": 4,
+    "zh-cn": 5
+  },
+  "no": "Installed (1 components). Added from WeiDU.log scan.",
+  "u": "https://github.com/Spellhold-Studios/HeartOfTheWood",
+  "a": "Tin",
+  "v": "7.0.0",
+  "sum": "A druidic wand that summons some powerful forest monsters and creatures",
+  "tags": [
+    "item"
+  ],
+  "ph": [
+    "SoA",
+    "ToB"
+  ],
+  "gh": {
+    "o": "Spellhold-Studios",
+    "r": "HeartOfTheWood"
+  },
+  "items": {
+    "0": {
+      "scope": "additions",
+      "new": [
+        [
+          "FIRBOLG1",
+          "axe",
+          "Halberd",
+          "This small piece of common oak wood gives you the strange feeling being more than a mere branch.",
+          {
+            "speed": 9,
+            "dmg": "2d10",
+            "profType": "axe",
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Bard",
+                "Fighter",
+                "Paladin",
+                "Ranger"
+              ],
+              "minStr": 10
+            }
+          }
+        ],
+        [
+          "FIRBOLG2",
+          "fist",
+          "Halberd",
+          "This small piece of common oak wood gives you the strange feeling being more than a mere branch.",
+          {
+            "dmg": "1d10",
+            "twoHanded": true
+          }
+        ],
+        [
+          "HEARTWOD",
+          "misc",
+          "Heart of the Wood",
+          "This small piece of common oak wood gives you the strange feeling being more than a mere branch.",
+          {
+            "usability": {
+              "classes": [
+                "Barbarian",
+                "Druid",
+                "Shaman"
+              ],
+              "races": [
+                "Half-Elf",
+                "Human"
+              ],
+              "excludedAlignments": [
+                "Chaotic Evil",
+                "Chaotic Good",
+                "Lawful Evil",
+                "Lawful Good"
+              ]
+            },
+            "charges": {
+              "count": 1,
+              "period": "day"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "dl": "https://github.com/Spellhold-Studios/HeartOfTheWood",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Heart of the Wood (WeiDU version)",
+      "tp2n": "Heart of the Wood (WeiDU version)",
+      "cn": 0,
+      "wf": "heartwood",
+      "wp": "heartwood\\HEARTWOOD.TP2",
+      "wc": 0,
+      "wq": "exact",
+      "it": 3,
+      "itC": {
+        "axe": 1,
+        "fist": 1,
+        "misc": 1
+      }
+    }
+  ]
+}

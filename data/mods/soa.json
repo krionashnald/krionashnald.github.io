@@ -1,0 +1,83 @@
+{
+  "i": 682,
+  "t": "soa",
+  "sv": 1,
+  "ord": 500,
+  "c": "QUEST MODS BG1",
+  "n": "The Stone of Askavar",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "pl": 2,
+    "ru": 3,
+    "es": 4,
+    "de": 5,
+    "zh-cn": 6
+  },
+  "no": "Must use Default version (component 0) for EET. BP-BGT Worldmap version causes EET install failure. Ensure you also install World Map after EET_End! I heard it was inspired by a cave in BG1 that seemed like it should be accessible but it wasn’t.",
+  "rq": "Install on BG1",
+  "conflicts": [],
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Worldmap optional"
+    }
+  ],
+  "u": "https://github.com/red-carnelian/The-Stone-of-Askavar",
+  "a": "Red Carnelian",
+  "v": "2.8",
+  "sum": "The Stone of Askavar is a WeiDU-based mod for Totsc, Tutu, BGT and BGEE. This mod involves a main quest and several subquests. There are new items and areas as well as lots of new creatures to fight.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "BG1"
+  ],
+  "eet_compat": {
+    "ver": "v1.9",
+    "place": "pre"
+  },
+  "dl": "https://github.com/red-carnelian/The-Stone-of-Askavar",
+  "au": "Red Carnelian",
+  "co": [
+    {
+      "n": "The Stone of Askavar",
+      "tp2n": "Default version: areas connected by travel triggers",
+      "cn": 0,
+      "wp": "soa\\setup-soa.tp2",
+      "wf": "soa",
+      "no": "The Stone of Askavar: BG1 quest with a new dungeon.",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "totsc",
+        "tutu_totsc"
+      ],
+      "scn": "The Stone of Askavar for TotSC/Tutu/BGT/BGEE"
+    },
+    {
+      "wf": "soa",
+      "wp": "soa\\setup-soa.tp2",
+      "wq": "exact",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet",
+        "tutu_totsc"
+      ],
+      "cn": 1,
+      "n": "BP-BGT-Worldmap version",
+      "tp2n": "BP-BGT Worldmap version: all areas added to worldmap (requires BP-BGT Worldmap)",
+      "gone": true,
+      "no": "REMOVED. BGT-only worldmap component. Not available in EET.",
+      "scn": "The Stone of Askavar for TotSC/Tutu/BGT/BGEE"
+    }
+  ],
+  "gh": {
+    "o": "red-carnelian",
+    "r": "The-Stone-of-Askavar"
+  }
+}

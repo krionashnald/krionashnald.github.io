@@ -1,0 +1,85 @@
+{
+  "i": 151,
+  "t": "aurenaseph",
+  "sv": 1,
+  "ord": 300,
+  "c": "NEW NPC MODS",
+  "n": "Auren Aseph NPC",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "ru": 2,
+    "fr": 3,
+    "es": 4,
+    "zh-cn": 5
+  },
+  "no": "Auren Aseph Fighter. Note that Auren romances Nalia, in case you plan to use Nalia romance mods. Female NG Human Fighter.Install Auren Aseph the NPC before her soundtrack.",
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "auren",
+          "portraits/auren/auren.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://www.gibberlings3.net/mods/npcs/auren/",
+  "a": "theacefes",
+  "v": "v13",
+  "sum": "Adds Auren Aseph, a human fighter, as a joinable BG2 NPC with cheerful personality, banters, and personal quest.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v10",
+    "place": "post"
+  },
+  "au": "theacefes",
+  "dl": "https://github.com/Gibberlings3/AurenAseph",
+  "co": [
+    {
+      "n": "Auren Aseph for BG2:ToB",
+      "pi": "AurenAseph-main",
+      "wf": "aurenaseph",
+      "wp": "aurenaseph\\setup-aurenaseph.tp2",
+      "wc": 0,
+      "wq": "manual_final",
+      "cn": 0,
+      "tp2n": "Auren Aseph for BG2:ToB"
+    },
+    {
+      "n": "Portrait 1 (From Neverwinter Nights Vault)",
+      "no": "v Alternate Auren Portrait",
+      "pi": "AurenAseph-Portrait_1",
+      "scn": "Alternate Auren Portrait",
+      "wf": "aurenaseph",
+      "wp": "aurenaseph\\setup-aurenaseph.tp2",
+      "wq": "manual_final",
+      "cn": 1,
+      "g": "auren_portrait",
+      "x": 0,
+      "tp2n": "Portrait 1 (From Neverwinter Nights Vault)"
+    },
+    {
+      "n": "Portrait 2 (From Neverwinter Nights)",
+      "pi": "AurenAseph-Portrait_2",
+      "scn": "Alternate Auren Portrait",
+      "wf": "aurenaseph",
+      "wp": "aurenaseph\\setup-aurenaseph.tp2",
+      "wq": "manual_final",
+      "cn": 2,
+      "g": "auren_portrait",
+      "x": 0,
+      "tp2n": "Portrait 2 (From Neverwinter Nights)"
+    }
+  ],
+  "gh": {
+    "o": "Gibberlings3",
+    "r": "AurenAseph"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "i": 194,
+  "t": "fakeimport",
+  "sv": 1,
+  "ord": 20,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Fake Import",
+  "no": "Importing mods Fake Import The cutscene bug and fix: http://www.shsforums.net/topic/56126-fake-import-mod/page-2#entry609041 TL DR: Open setup-fakeimport.tp2. Find each instance of this line: GiveItemCreate(\"chan07\",Player1,0,0,0) then add this line immediately below (with no //): Continue()",
+  "in": [
+    {
+      "t": "Open setup-fakeimport.tp2 and add Continue() after each GiveItemCreate line to fix cutscene bug.",
+      "type": "file"
+    }
+  ],
+  "u": "http://www.shsforums.net/files/file/1059-fake-import-mod/",
+  "a": "almateria",
+  "sum": "Lets you create a fake import save to start BG2/EET with custom equipment and story flags, as if you'd played through BG1 with specific choices.",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoA"
+  ],
+  "dl": "http://www.shsforums.net/files/file/1059-fake-import-mod/",
+  "au": "K4thos",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "I killed Drizzt, he's awful",
+      "cn": 0,
+      "wf": "fakeimport",
+      "wp": "fakeimport\\setup-fakeimport.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "I didn't kill Drizzt, he's my hero",
+      "cn": 1,
+      "wf": "fakeimport",
+      "wp": "fakeimport\\setup-fakeimport.tp2",
+      "wc": 1,
+      "wq": "verified"
+    }
+  ]
+}

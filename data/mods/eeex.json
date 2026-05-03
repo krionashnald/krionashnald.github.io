@@ -1,0 +1,157 @@
+{
+  "i": 20,
+  "t": "EEex",
+  "sv": 1,
+  "ord": 70,
+  "c": "ENGINE",
+  "n": "EEex",
+  "no": "EEex adds InfinityLauncher.exe — use that to start the game, not Baldur.exe. Can also be installed after EET_End in the Post-EET phase. Per Bubb (author): EEex and Spell Menu do all UI patching at runtime, so no install-order incompatibilities with UI mods. Install EEex early so mods that detect it can adjust their install. Mods installed after EEex that REQUIRE_PREDICATE it will auto-skip if EEex is absent.",
+  "u": "https://github.com/Bubb13/EEex/releases",
+  "a": "Bubb",
+  "v": "v0.11.0-alpha",
+  "sum": "Engine extension that unlocks modding capabilities beyond what the base EE engine allows. Required by several advanced mods (Bubb's Spell Menu, some kit mods).",
+  "tags": [
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "rec": {
+    "goes_with": [
+      "Infinity UI++",
+      "Bubb's Spell Menu Extended",
+      "Enhanced Powergaming Scripts"
+    ],
+    "tip": "Foundation mod for advanced features. Most UI and script mods benefit from having EEex installed first."
+  },
+  "eet_compat": {
+    "ver": "v0.2.0-alpha",
+    "place": "post",
+    "notes": "Can install after EET_end"
+  },
+  "gh": {
+    "o": "Bubb13",
+    "r": "EEex"
+  },
+  "conflicts": [
+    {
+      "with": "cdtweaks",
+      "withId": 247,
+      "severity": "soft",
+      "reason": "Order-only dependency: cdtweaks #2650, #2680, #2693, #2750, #3430, #3500, #3520 REQUIRE EEex. These silently skip if EEex is absent. Install EEex BEFORE cdtweaks.",
+      "myComps": "#0 EEex core",
+      "theirComps": "#2650 Make Grease ignitable #2680 Make Infravision Useful #2693 Alternate Concentration Check v4 #2750 Force AI to cast AoE on ground #3430 More Stoneskin Feedback #3500 Summoned Creatures Clear Fog of War #3520 Bank XP when Dualing",
+      "orderOnly": true,
+      "source": "Audit 2026-04: REQUIRE_PREDICATE MOD_IS_INSTALLED ~EEex.tp2~ 0 in setup-cdtweaks.tp2",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "ki": [
+    {
+      "pattern": "2\\.7|v2\\.7|IE 2\\.7|engine.*update",
+      "severity": "critical",
+      "category": "concerning",
+      "description": "EEex uses binary patching tied to specific EE engine versions. The upcoming IE 2.7 update (cloud saves, Apple Silicon, new languages) will require a new EEex release before it works on v2.7. Bubb (EEex author) has requested debug symbols from Beamdog for the new version (confirmed by JuliusBorisov, April 2026). Until EEex is updated, ALL EEex-dependent mods will be non-functional on v2.7 — this includes 59 cdtweaks EEex components, BuffBot, Bubb's Spell Menu Extended, Infinity UI++, and any mod with the WIN badge.",
+      "workaround": "Stay on v2.6.6 until EEex is updated for v2.7. On Steam, do NOT opt into the road_to_2.7 beta branch if using EEex mods. Monitor https://github.com/Bubb13/EEex/releases for the updated version.",
+      "user_action": "check-docs",
+      "forum": "https://forums.beamdog.com/discussion/90560/new-infinity-engine-2-7-beta-release"
+    }
+  ],
+  "dl": "https://github.com/Bubb13/EEex/releases",
+  "au": "Bubb",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "cn": 0,
+      "n": "EEex",
+      "tp2n": "EEex",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet",
+        "iwdee"
+      ],
+      "wc": 0,
+      "no": "Core EEex engine extension. Required by many mods (Skills and Abilities, HouseTweaks, etc.)."
+    },
+    {
+      "cn": 1,
+      "n": "Experimental: Use LuaJIT (can help stuttering)",
+      "tp2n": "Experimental - Use LuaJIT (can help stuttering)",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 1,
+      "no": "Experimental LuaJIT integration. Can help reduce stuttering on some systems."
+    },
+    {
+      "cn": 2,
+      "n": "Enable effect menu module (LShift to view creature spells)",
+      "tp2n": "Enable effect menu module - LShift-on-hover to view spells affecting creature",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 2,
+      "no": "Adds effect menu (hold LShift to view creature spell effects in-game)."
+    },
+    {
+      "cn": 3,
+      "n": "Enable empty container module (gray highlight)",
+      "tp2n": "Enable empty container module - Highlight empty containers in gray instead of cyan",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 3,
+      "no": "Highlights empty containers with gray tint for easier identification."
+    },
+    {
+      "cn": 4,
+      "n": "Enable hotkey module (custom spell hotkeys)",
+      "tp2n": "Enable hotkey module - Edit override/B3Hotkey.lua to create advanced spell hotkeys",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 4,
+      "no": "Enables custom spell hotkey bindings."
+    },
+    {
+      "cn": 5,
+      "n": "Enable scale module (customizable UI scaling)",
+      "tp2n": "Enable scale module - Customizable UI scaling factor",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 5,
+      "no": "Enables timer display module."
+    },
+    {
+      "cn": 6,
+      "n": "Enable time step module (advance 1 tick on keypress)",
+      "tp2n": "Enable time step module - Advance 1 game tick on keypress",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 6,
+      "no": "Enables action bar configuration module."
+    },
+    {
+      "cn": 7,
+      "n": "Enable timer module (modal/contingency/cooldown bars)",
+      "tp2n": "Enable timer module - Visual indicators for modal actions, contingencies, and spell/item cooldowns",
+      "wf": "eeex",
+      "wp": "eeex\\EEEX.TP2",
+      "wq": "exact",
+      "wc": 7,
+      "no": "Enables worldscreen module for enhanced world map."
+    }
+  ]
+}

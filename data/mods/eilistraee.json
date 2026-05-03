@@ -1,0 +1,68 @@
+{
+  "i": 91,
+  "t": "Eilistraee",
+  "sv": 1,
+  "pfx": "LSX",
+  "ord": 290,
+  "c": "QUEST MODS BG2",
+  "n": "Eilistraee's Song",
+  "langs": {
+    "en": 0,
+    "fr": 1,
+    "ru": 2,
+    "de": 3,
+    "it": 4,
+    "pl": 5,
+    "zh-cn": 6,
+    "ko": 7
+  },
+  "no": "BG2 quest mod about Eilistraee, the drow goddess of dance. Adds a storyline exploring drow culture beyond Underdark evil.",
+  "dependencies": [
+    {
+      "requires": "bp-bgt-worldmap",
+      "requiresId": 428,
+      "type": "soft",
+      "reason": "Worldmap optional"
+    }
+  ],
+  "u": "https://downloads.weaselmods.net/download/eilistraees-song/",
+  "a": "Lava Del'Vortel",
+  "v": "v7.5.1",
+  "sum": "BG2 quest mod about Eilistraee, the drow goddess of dance. Adds a storyline exploring drow culture beyond Underdark evil.",
+  "tags": [
+    "story"
+  ],
+  "ph": [
+    "SoA"
+  ],
+  "eet_compat": {
+    "ver": "v6.0",
+    "place": "post"
+  },
+  "dl": "https://downloads.weaselmods.net/download/eilistraees-song/",
+  "au": "Lava Del'Vortel",
+  "co": [
+    {
+      "n": "Yes, but don't patch the existing save games",
+      "tp2n": "Yes, but don't patch the existing save games",
+      "pi": "L#-ESONG-NOPATCH",
+      "scn": "Eilistraee's Song",
+      "wf": "eilistraee",
+      "wp": "eilistraee\\SETUP-EILISTRAEE.TP2",
+      "wc": 0,
+      "wq": "single_comp",
+      "cn": 0,
+      "g": "eilistraee_install",
+      "no": "New game required. Recommended for fresh EET installs"
+    },
+    {
+      "cn": 1,
+      "n": "Yes and patch existing save games",
+      "tp2n": "Yes, and patch the existing save games",
+      "x": 0,
+      "g": "eilistraee_install",
+      "scn": "Eilistraee's Song",
+      "no": "Patches existing saves. Use if mid-playthrough"
+    }
+  ]
+}

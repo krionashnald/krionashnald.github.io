@@ -1,0 +1,85 @@
+{
+  "i": 370,
+  "t": "PathfinderHitDice",
+  "sv": 1,
+  "ord": 200,
+  "c": "PRE-TACTICAL TWEAKS",
+  "n": "Pathfinder Hit Dice",
+  "no": "v Pathfinder Hit Dice CDTweaks and Pathfinder's creature hp mods here wouldn't affect encounter mods like tactics or butchery, probably for the better",
+  "u": "https://gitlab.com/InfinityEngineGames/BaldursGate/RulesandTweaks/PathfinderHitDice",
+  "a": "Reddbane",
+  "sum": "Replaces the default hit dice system with Pathfinder RPG hit dice values, changing the HP progression for all character classes.",
+  "tags": [
+    "tweak"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "dl": "https://gitlab.com/InfinityEngineGames/BaldursGate/RulesandTweaks/PathfinderHitDice",
+  "au": "Reddbane",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Normal Rolls (Default Game)",
+      "tp2n": "Normal Rolls (Default Game)",
+      "no": "Uses Pathfinder hit dice with normal random rolls. Pick one of cn:0-3.",
+      "cn": 0,
+      "g": "hit_dice",
+      "scn": "Pathfinder Hit Dice",
+      "wf": "PathfinderHitDice",
+      "wp": "PathfinderHitDice\\Setup-PathfinderHitDice.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "Average Rolls (CDTweaks)",
+      "tp2n": "Average Rolls (CDTweaks)",
+      "no": "Pathfinder dice with average HP per level (replicates cdtweaks effect). Standalone — does NOT require cdtweaks.",
+      "cn": 1,
+      "g": "hit_dice",
+      "scn": "Pathfinder Hit Dice",
+      "wf": "PathfinderHitDice",
+      "wp": "PathfinderHitDice\\Setup-PathfinderHitDice.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "Maximum Rolls (CDTweaks)",
+      "tp2n": "Maximum Rolls (CDTweaks)",
+      "no": "Pathfinder dice with max HP per level (replicates cdtweaks effect). Best choice if using cdtweaks Max HP — bakes both into same 2da, no order conflict.",
+      "cn": 2,
+      "g": "hit_dice",
+      "scn": "Pathfinder Hit Dice",
+      "wf": "PathfinderHitDice",
+      "wp": "PathfinderHitDice\\Setup-PathfinderHitDice.tp2",
+      "wc": 2,
+      "wq": "verified"
+    },
+    {
+      "n": "Ideal Average Rolls",
+      "tp2n": "Ideal Average Rolls",
+      "no": "Pathfinder dice with always-rounded-up average (slightly more HP than true average). Most 2da files of all options.",
+      "cn": 3,
+      "g": "hit_dice",
+      "scn": "Pathfinder Hit Dice",
+      "wf": "PathfinderHitDice",
+      "wp": "PathfinderHitDice\\Setup-PathfinderHitDice.tp2",
+      "wc": 3,
+      "wq": "verified"
+    },
+    {
+      "n": "Patch Class Descriptions",
+      "tp2n": "Patch Class Descriptions",
+      "cn": 4,
+      "wf": "PathfinderHitDice",
+      "wp": "PathfinderHitDice\\Setup-PathfinderHitDice.tp2",
+      "wc": 4,
+      "wq": "verified"
+    }
+  ]
+}

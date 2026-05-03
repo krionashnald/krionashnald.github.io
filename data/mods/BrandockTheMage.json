@@ -1,0 +1,191 @@
+{
+  "i": 191,
+  "t": "BrandockTheMage",
+  "sv": 1,
+  "ord": 670,
+  "c": "NEW NPC MODS",
+  "n": "Brandock the Mage",
+  "langs": {
+    "en": 0,
+    "de": 1,
+    "zh-cn": 2
+  },
+  "cats": [
+    "NEW NPC MODS",
+    "NPC CROSSMOD",
+    "PRE-TACTICAL TWEAKS"
+  ],
+  "no": "Brandock the Mage mage, can join as a \"7th member/familiar\" install after BGQE, The Calling, BG1NPC, Brage's Redemption, Gavin BG1, Alternatives, NPC Strongholds but before Grey the Dog",
+  "_legacy_ids": [
+    376
+  ],
+  "conflicts": [
+    {
+      "with": "AC_QUEST",
+      "withId": 43,
+      "severity": "soft",
+      "reason": "Install order matters. Install Questpack after Brandock.",
+      "orderOnly": true,
+      "myComps": "#10 Brandock the Mage",
+      "theirComps": "#0 A Job Well-Paid"
+    }
+  ],
+  "pt": {
+    "npc": {
+      "0": [
+        [
+          "brandock",
+          "portraits/brandockthemage/c_brand.png",
+          "bg2"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/Gitjas/Brandock_the_Mage",
+  "a": "Gitjas",
+  "v": "v1.8",
+  "sum": "NPC Mod for Baldurs Gate",
+  "tags": [
+    "npc"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "ver": "vBeta1",
+    "place": "post"
+  },
+  "gh": {
+    "o": "Gitjas",
+    "r": "Brandock_the_Mage"
+  },
+  "au": "jastey",
+  "dl": "https://github.com/Gitjas/Brandock_the_Mage",
+  "co": [
+    {
+      "n": "Brandock the Mage",
+      "pi": "BrandockTheMage-Main",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "bgt",
+        "eet",
+        "tob"
+      ],
+      "cn": 0,
+      "no": "Brandock the Mage NPC. Shapeshifting cleanup script uses RemoveSpellRES which triggers a non-fatal PARSE warning during install but functions correctly.",
+      "tp2n": "Brandock the Mage"
+    },
+    {
+      "n": "Brandock the Mage: Crossmod Content",
+      "pi": "BrandockTheMage-Crossmod",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 10,
+      "cat": "NPC CROSSMOD",
+      "tp2n": "Brandock the Mage: Crossmod Content"
+    },
+    {
+      "n": "Portrait: Friendly by Acifer",
+      "no": "v Alternate portrait",
+      "pi": "BrandockTheMage-Portrait_Friendly",
+      "scn": "Install Alternate Portrait",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 20,
+      "g": "portrait",
+      "tp2n": "Alternative #1: Friendly, by Acifer"
+    },
+    {
+      "n": "Portrait: Mischievous by Acifer",
+      "pi": "BrandockTheMage-Portrait_Mischievous",
+      "scn": "Install Alternate Portrait",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 21,
+      "g": "portrait",
+      "tp2n": "Alternative #2: Mischievous, by Acifer"
+    },
+    {
+      "n": "Portrait: Juvenile by Acifer",
+      "pi": "BrandockTheMage-Portrait_Juvenile",
+      "scn": "Install Alternate Portrait",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 22,
+      "g": "portrait",
+      "tp2n": "Alternative #3: Juvenile, by Acifer"
+    },
+    {
+      "n": "Portrait: Default (Insecure) by Acifer",
+      "pi": "BrandockTheMage-Portrait_Insecure",
+      "scn": "Install Alternate Portrait",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 23,
+      "g": "portrait",
+      "tp2n": "Default Portrait: Insecure, by Acifer (is included in the main component)"
+    },
+    {
+      "n": "Use Dialogue Style for Brandock's Banter in SoD",
+      "cn": 30,
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "verified",
+      "tp2n": "Use Dialogue Style for Brandock's Banter in SoD",
+      "pi": "BrandockTheMage-Dialogue_Style_SoD_Banter"
+    },
+    {
+      "n": "Scribe Integration: Cosmetic (keep original scroll abilities)",
+      "no": "Requires aTweaks 'Allow Mages to scribe memorized spells onto scrolls' which is not commonly selected. Skipped if aTweaks scribe not installed.",
+      "pi": "BrandockTheMage-aTweaks-Crossmod-Option1",
+      "scn": "Integrate aTweaks \"Allow Mages to scribe memorized spells onto scrolls\" possibilities into Brandock's Scribe Scroll Ability",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 40,
+      "g": "scribe_integrate",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "tp2n": "Cosmetic: integrate without changing original scribe scroll possibilities"
+    },
+    {
+      "n": "Scribe Integration: Substantial (Brandock can only scribe known spells)",
+      "pi": "BrandockTheMage-aTweaks-Crossmod-Option2",
+      "scn": "Integrate aTweaks \"Allow Mages to scribe memorized spells onto scrolls\" possibilities into Brandock's Scribe Scroll Ability",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wq": "known_folder_uninstalled",
+      "cn": 41,
+      "g": "scribe_integrate",
+      "no": "Not recommended for classic BG2/BGT",
+      "cat": "PRE-TACTICAL TWEAKS",
+      "tp2n": "Substantial: integrate with changing original ability so Brandock can only scribe spells he knows (NOT recommended for classic BG2/BGT)"
+    },
+    {
+      "n": "Use Short Cutscene in Thalantyr's Abode",
+      "pi": "BrandockTheMage-Make_Cutscene_Short",
+      "wf": "c#brandock",
+      "wp": "c#brandock\\c#brandock.tp2",
+      "wc": 50,
+      "wq": "known_folder_uninstalled",
+      "games": [
+        "bgee",
+        "bgt",
+        "eet"
+      ],
+      "cn": 50,
+      "tp2n": "Use Short Cutscene in Thalantyr's Abode"
+    }
+  ]
+}

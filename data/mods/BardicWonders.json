@@ -1,0 +1,352 @@
+{
+  "i": 325,
+  "t": "BardicWonders",
+  "sv": 1,
+  "pfx": "C0",
+  "ord": 100,
+  "c": "KIT & CLASS MODS",
+  "n": "Bardic Wonders",
+  "no": "Install after Shadow Magic. ToF rebalances Blade spins (levels 3/5); BW gives spin uses with levels. Casting in leather/studded leather works without penalty; other armor disables casting. Automated fix: eet-mod-forge-patches component #12.",
+  "conflicts": [
+    {
+      "with": "might_and_guile",
+      "withId": 335,
+      "severity": "soft",
+      "reason": "BW's Blade/Jester/Skald overhauls and bard mechanics overlap with M&G's Bard Overhaul.",
+      "myComps": "#1001 #1 #2 #13 #14",
+      "theirComps": "#400"
+    }
+  ],
+  "spl": {
+    "13": {
+      "spells": [
+        [
+          "SPWI102",
+          "tweak",
+          "Bards can cast in armor"
+        ]
+      ]
+    },
+    "18": {
+      "scope": "additions",
+      "new": [
+        [
+          "YOURBW01",
+          "wizard",
+          1,
+          "Enchantment",
+          "Charm Notes",
+          "Bard-specific charm via music."
+        ],
+        [
+          "YOURBW02",
+          "wizard",
+          2,
+          "Illusion",
+          "Sound Illusion",
+          "Creates illusory sounds to distract."
+        ],
+        [
+          "YOURBW03",
+          "wizard",
+          3,
+          "Enchantment",
+          "Cacophony",
+          "Deafening noise disrupts enemy casting."
+        ],
+        [
+          "YOURBW04",
+          "wizard",
+          4,
+          "Enchantment",
+          "Discordant Note",
+          "Shattering sound damages and stuns."
+        ]
+      ]
+    }
+  },
+  "kits": {
+    "1": {
+      "modify": [
+        [
+          "JESTER",
+          "replace",
+          "Complete Jester overhaul with Piercing Mockery song, Heckle, Mad Ramble abilities"
+        ]
+      ]
+    },
+    "2": {
+      "modify": [
+        [
+          "SKALD",
+          "replace",
+          "Complete Skald overhaul with weapon specialization, Battle Song of Valor, Combat Casting"
+        ]
+      ]
+    }
+  },
+  "u": "https://github.com/ArtemiusI/Bardic-Wonders",
+  "a": "Artemius_I",
+  "sum": "Adds 17 bard-focused kits and abilities. Expands bard song options and creates new bard playstyles beyond the vanilla archetypes.",
+  "tags": [
+    "class"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "eet_compat": {
+    "place": "post"
+  },
+  "gh": {
+    "o": "ArtemiusI",
+    "r": "Bardic-Wonders"
+  },
+  "dl": "https://github.com/ArtemiusI/Bardic-Wonders",
+  "au": "The Artisan",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "Bardic Wonders: Blade Overhaul",
+      "tp2n": "Bardic Wonders: Blade Overhaul",
+      "cn": 1001,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "k": 0,
+      "no": "Blade Overhaul. Rebalances the Blade bard kit with revised spin abilities and combat options.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Jester Overhaul",
+      "tp2n": "Bardic Wonders: Jester Overhaul",
+      "cn": 1002,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Skald Overhaul",
+      "tp2n": "Bardic Wonders: Skald Overhaul",
+      "cn": 1003,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Abettor of Mask Kit",
+      "tp2n": "Bardic Wonders: Abettor of Mask Kit",
+      "cn": 1004,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Abettor of Mask bard kit. Shadow-themed bard serving Mask with stealth and deception abilities.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Dancer Kit",
+      "tp2n": "Bardic Wonders: Dancer Kit",
+      "cn": 1005,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Dancer bard kit. Performance-focused bard with movement-based combat abilities and evasion.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Darkbloom Bard Kit",
+      "tp2n": "Bardic Wonders: Darkbloom Bard Kit",
+      "cn": 1006,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Darkbloom bard kit. Nature/shadow hybrid bard with plant-themed magic and dark melodies.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Storm Drummer Kit",
+      "tp2n": "Bardic Wonders: Storm Drummer Kit",
+      "cn": 1007,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Storm Drummer bard kit. Thunder-themed bard whose percussion creates lightning and sonic damage.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Troubadour Kit",
+      "tp2n": "Bardic Wonders: Troubadour Kit",
+      "cn": 1008,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Troubadour bard kit. Classic traveling minstrel with enhanced Bard Song and social abilities.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Deathsinger Kit",
+      "tp2n": "Bardic Wonders: Deathsinger Kit",
+      "cn": 1009,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Deathsinger bard kit. Necromantic bard whose songs raise undead and drain life from enemies.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Strategist Kit",
+      "tp2n": "Bardic Wonders: Strategist Kit",
+      "cn": 1010,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "no": "Strategist bard kit. Tactical commander bard who buffs allies with battle plans and combat formations.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Kapellmeister Kit",
+      "tp2n": "Bardic Wonders: Kapellmeister Kit",
+      "cn": 1011,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Gallant Paladin Kit",
+      "tp2n": "Bardic Wonders: Gallant Paladin Kit",
+      "cn": 1012,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Adds the Gallant Paladin kit. SKIPPED by WeiDU if EEex not installed — requires EEex_Actionbar.lua.",
+      "grn": "Kits"
+    },
+    {
+      "n": "Bardic Wonders: Items",
+      "tp2n": "Bardic Wonders: Items",
+      "cn": 2001,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "games": [
+        "bg2ee",
+        "bgee",
+        "eet"
+      ],
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Inspirations",
+      "tp2n": "Bardic Wonders: Inspirations",
+      "cn": 2002,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Armored Casting for Bards",
+      "tp2n": "Bardic Wonders: Armored Casting for Bards",
+      "cn": 2003,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Bard Song Mechanics Tweak",
+      "tp2n": "Bardic Wonders: Bard Song Mechanics Tweak",
+      "no": "HARD FAIL with A7-GolemConstruction: uses DECOMPILE_AND_PATCH on ALL .bcs files — chokes on A7!GXRU.BCS (golem AI script) with PARSE ERROR at line 6. Also fails on BDAERIEC.BCS (SoD Aerie) in large installs. Same SFO lib_spl.tph issue as ToF/SCS. INSTALL FIX: Apply the lib_spl.tph PATCH_IF guard to BW's copy too (BardicWonders ships its own SFO). Without fix, do not use with A7-GolemConstruction. Automated fix: eet-mod-forge-patches component #12.",
+      "cn": 2004,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Item Restriction Tweaks",
+      "tp2n": "Bardic Wonders: Item Restriction Tweaks (bards may use mage items and priest scrolls)",
+      "cn": 2005,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Bard Song Overhead Visual Effect",
+      "tp2n": "Bardic Wonders: Bard Song Overhead Visual Effect",
+      "cn": 2006,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "exact",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: High Level Abilities",
+      "tp2n": "Bardic Wonders: High Level Abilities",
+      "cn": 2007,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Adds new bard HLAs. Install after other HLA-modifying mods.",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: New Bard Spells",
+      "tp2n": "Bardic Wonders: New Bard Spells",
+      "cn": 2008,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Adds new spells for bards. Install after other spell mods.",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Mage/Bard and Fighter/Mage/Bard multi-class",
+      "tp2n": "Bardic Wonders: Mage/Bard and Fighter/Mage/Bard multi-class (EEex, under thief multis)",
+      "cn": 2009,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Adds Mage/Bard and Fighter/Mage/Bard multi-class options (listed under thief multis). SKIPPED by WeiDU if EEex not installed — requires EEex_Actionbar.lua.",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: 3e Alignment for Bards (any non-lawful)",
+      "tp2n": "Bardic Wonders: 3e Alignment for Bards (any non-lawful)",
+      "cn": 2010,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Allows bards of any non-lawful alignment (3e rules). Changes alignment restriction from chaotic-only.",
+      "grn": "Tweaks & Additions"
+    },
+    {
+      "n": "Bardic Wonders: Patch Dialogue Class Checks for Gallant, Mage/Bard and Fighter/Mage/Bard",
+      "tp2n": "Bardic Wonders: Patch Dialogue Class Checks for: Gallant, Mage/Bard and Fighter/Mage/Bard (install late)",
+      "cn": 3001,
+      "wf": "BardicWonders",
+      "wp": "BardicWonders\\SETUP-BARDICWONDERS.TP2",
+      "wq": "single_comp",
+      "no": "Patches dialogue class checks for cn:1012 and cn:2009 kits. Install late. SKIPPED by WeiDU if neither cn:1012 nor cn:2009 is installed.",
+      "grn": "Patches"
+    }
+  ],
+  "advisories": [
+    {
+      "with": "divine_remix",
+      "withId": 338,
+      "severity": "partial",
+      "reason": "HLAs for Clerics, Paladins, Druids, Rangers might conflict",
+      "source": "eemodsetup",
+      "evidenceLevel": "speculative"
+    }
+  ]
+}

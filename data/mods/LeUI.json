@@ -1,0 +1,98 @@
+{
+  "i": 16,
+  "t": "LeUI",
+  "sv": 1,
+  "ord": 30,
+  "c": "INTERFACE",
+  "n": "Lefreut's Enhanced UI (BG2EE skin)",
+  "no": "Lefreut's BG2 Enhanced LeUI Can also be installed after EET_End in the Post-EET phase.",
+  "ic": "Other UI overhauls",
+  "conflicts": [
+    {
+      "with": "LEUI-BG1EE",
+      "withId": 14,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "LeUI-SoD",
+      "withId": 15,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "infinity_ui",
+      "withId": 17,
+      "severity": "hard",
+      "reason": "UI overhaul mods are mutually exclusive",
+      "evidenceLevel": "mechanism-verified"
+    },
+    {
+      "with": "eeuitweaks",
+      "withId": 18,
+      "severity": "partial",
+      "reason": "Lefreut's skin conflicts with EEUITweaks Main Component; utility tweaks are compatible",
+      "myComps": "#0 Core component",
+      "theirComps": "#1080 Portrait Picker #1090 #1091 CharGen #2020 Message Box #2040 Level Up Glow #2060 Dialog Box #2110 Keep Dialog #2900 Record Screen #3020 #3023 #3024 #3070 Journal #3028 #3030 Customize #3040-3045 Identify #3050 #3051 Inventory #4005 #4006 #4000 #4010 #4020 #4025 Store #5000 Tooltip #5030 Scroll #5040 #5041 Fonts"
+    },
+    {
+      "with": "EET_gui",
+      "withId": 684,
+      "severity": "hard",
+      "reason": "Choose one GUI",
+      "source": "eemodsetup",
+      "evidenceLevel": "mechanism-verified"
+    }
+  ],
+  "u": "https://github.com/r-e-d/LeUI/releases",
+  "a": "Lefreut",
+  "sum": "Replaces the default UI with a cleaner, more functional interface using the BG2 visual style. Same functional improvements as the other LeUI skins.",
+  "tags": [
+    "visual",
+    "qol"
+  ],
+  "ph": [
+    "BG1",
+    "SoD",
+    "SoA",
+    "ToB"
+  ],
+  "ios": false,
+  "dl": "https://github.com/r-e-d/LeUI/releases",
+  "au": "lefreut",
+  "langs": {
+    "en": 0
+  },
+  "co": [
+    {
+      "n": "lefreut's Enhanced UI - Core component",
+      "cn": 0,
+      "wf": "LeUI",
+      "wp": "LeUI\\LeUI.tp2",
+      "wc": 0,
+      "wq": "verified"
+    },
+    {
+      "n": "lefreut's Enhanced UI - BG2 vanilla bams for spells",
+      "cn": 1,
+      "wf": "LeUI",
+      "wp": "LeUI\\LeUI.tp2",
+      "wc": 1,
+      "wq": "verified"
+    },
+    {
+      "n": "lefreut's Enhanced UI - BG2 vanilla fonts for descriptions",
+      "cn": 2,
+      "wf": "LeUI",
+      "wp": "LeUI\\LeUI.tp2",
+      "wc": 2,
+      "wq": "verified"
+    }
+  ],
+  "gh": {
+    "o": "r-e-d",
+    "r": "LeUI"
+  }
+}
